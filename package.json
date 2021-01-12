@@ -1,0 +1,32 @@
+{
+  "name": "metaforecasts",
+  "version": "0.3.0",
+  "description": "Get forecasts from various platforms",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QURIresearch/metaforecasts.git"
+  },
+  "keywords": [
+    "forecasts",
+    "predictions"
+  ],
+  "type": "module",
+  "author": "Nuño Sempere",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/QURIresearch/metaforecasts/"
+  },
+  "homepage": "https://github.com/QURIresearch/metaforecasts#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fs": "^0.0.1-security",
+    "json2csv": "^5.0.5",
+    "open": "^7.3.1",
+    "papaparse": "^5.3.0"
+  }
+}

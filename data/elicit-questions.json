@@ -1,0 +1,3035 @@
+[
+  {
+    "Title": "Will there be more than 50 prediction questions embedded in LessWrong posts and comments this month?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20there be more than 50 prediction questions embedded in LessWrong posts and comments this month?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "56.34%",
+    "# Forecasts": 336,
+    "# Forecasters": 138
+  },
+  {
+    "Title": "Will more than 50 people predict on this post?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20more than 50 people predict on this post?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "81.86%",
+    "# Forecasts": 227,
+    "# Forecasters": 120
+  },
+  {
+    "Title": "Will AGI cause an existential catastrophe?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20AGI cause an existential catastrophe?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "36.85%",
+    "# Forecasts": 158,
+    "# Forecasters": 102
+  },
+  {
+    "Title": "Will AGI cause an existential catastrophe without additional intervention from the existing AI Alignment research community?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20AGI cause an existential catastrophe without additional intervention from the existing AI Alignment research community?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "52.70%",
+    "# Forecasts": 137,
+    "# Forecasters": 95
+  },
+  {
+    "Title": "Will there be an arms race dynamic in the lead-up to AGI?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20there be an arms race dynamic in the lead-up to AGI?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "75.52%",
+    "# Forecasts": 113,
+    "# Forecasters": 91
+  },
+  {
+    "Title": "The new English Strain is at least 50% more infectious than the currently dominant American strain of Covid-19",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20new English Strain is at least 50% more infectious than the currently dominant American strain of Covid-19&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "62.91%",
+    "# Forecasts": 207,
+    "# Forecasters": 89
+  },
+  {
+    "Title": "Will a single AGI or AGI project achieve a decisive strategic advantage?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20a single AGI or AGI project achieve a decisive strategic advantage?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "61.63%",
+    "# Forecasts": 115,
+    "# Forecasters": 86
+  },
+  {
+    "Title": "How vivid is your visual imagination?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=How%20vivid is your visual imagination?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "50.68%",
+    "# Forecasts": 119,
+    "# Forecasters": 77
+  },
+  {
+    "Title": "Will we get AGI from deep learning with small variations, without more insights on a similar level to deep learning?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20we get AGI from deep learning with small variations, without more insights on a similar level to deep learning?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "33.50%",
+    "# Forecasts": 110,
+    "# Forecasters": 77
+  },
+  {
+    "Title": "Will > 50% of AGI researchers agree with safety concerns by 2030?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20> 50% of AGI researchers agree with safety concerns by 2030?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "42.70%",
+    "# Forecasts": 107,
+    "# Forecasters": 76
+  },
+  {
+    "Title": "Will we experience an existential catastrophe before we build AGI?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20we experience an existential catastrophe before we build AGI?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "11.79%",
+    "# Forecasts": 100,
+    "# Forecasters": 75
+  },
+  {
+    "Title": "How vivid is your sound imagination?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=How%20vivid is your sound imagination?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "61.17%",
+    "# Forecasts": 106,
+    "# Forecasters": 74
+  },
+  {
+    "Title": "Will there be another AI Winter (a period commonly referred to as such) before we develop AGI?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20there be another AI Winter (a period commonly referred to as such) before we develop AGI?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "28.63%",
+    "# Forecasts": 95,
+    "# Forecasters": 72
+  },
+  {
+    "Title": "Will we get AGI from 1-3 more insights on a similar level to deep learning?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20we get AGI from 1-3 more insights on a similar level to deep learning?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "43.12%",
+    "# Forecasts": 112,
+    "# Forecasters": 71
+  },
+  {
+    "Title": "There will be an additional distinct large wave of Covid-19 infections in the United States 2021",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=There%20will be an additional distinct large wave of Covid-19 infections in the United States 2021&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "60.43%",
+    "# Forecasts": 145,
+    "# Forecasters": 69
+  },
+  {
+    "Title": "How vivid is your taste imagination?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=How%20vivid is your taste imagination?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "25.73%",
+    "# Forecasts": 84,
+    "# Forecasters": 69
+  },
+  {
+    "Title": "How vivid is your smell imagination?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=How%20vivid is your smell imagination?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "25.41%",
+    "# Forecasts": 82,
+    "# Forecasters": 68
+  },
+  {
+    "Title": "Will we need > 3 breakthroughs on a similar level to deep learning to get AGI?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20we need > 3 breakthroughs on a similar level to deep learning to get AGI?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "25.38%",
+    "# Forecasts": 84,
+    "# Forecasters": 67
+  },
+  {
+    "Title": "Do you have a type of Synaesthesia?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Do%20you have a type of Synaesthesia?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "19.76%",
+    "# Forecasts": 87,
+    "# Forecasters": 66
+  },
+  {
+    "Title": "How frequently do you think in words?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=How%20frequently do you think in words?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "78.13%",
+    "# Forecasts": 86,
+    "# Forecasters": 66
+  },
+  {
+    "Title": "Do you have an internal monologue?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Do%20you have an internal monologue?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "82.28%",
+    "# Forecasts": 80,
+    "# Forecasters": 63
+  },
+  {
+    "Title": "How vivid is your touch imagination?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=How%20vivid is your touch imagination?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "36.13%",
+    "# Forecasts": 79,
+    "# Forecasters": 62
+  },
+  {
+    "Title": "How good is your memory?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=How%20good is your memory?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "53.25%",
+    "# Forecasts": 77,
+    "# Forecasters": 61
+  },
+  {
+    "Title": "How much control do you have over your mind?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=How%20much control do you have over your mind?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "45.59%",
+    "# Forecasts": 76,
+    "# Forecasters": 61
+  },
+  {
+    "Title": "Before reaching AGI, will we hit a point where we can no longer improve AI capabilities by scaling?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Before%20reaching AGI, will we hit a point where we can no longer improve AI capabilities by scaling?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "42.76%",
+    "# Forecasts": 85,
+    "# Forecasters": 57
+  },
+  {
+    "Title": "Trump will win a second term",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Trump%20will win a second term&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "46.20%",
+    "# Forecasts": 74,
+    "# Forecasters": 54
+  },
+  {
+    "Title": "Before reaching AGI, will we hit a point where we can no longer improve AI capabilities by scaling because we are unable to continue scaling?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Before%20reaching AGI, will we hit a point where we can no longer improve AI capabilities by scaling because we are unable to continue scaling?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "24.51%",
+    "# Forecasts": 75,
+    "# Forecasters": 52
+  },
+  {
+    "Title": "Before reaching AGI, will we hit a point where we can no longer improve AI capabilities by scaling because the increase in AI capabilities from scaling plateaus?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Before%20reaching AGI, will we hit a point where we can no longer improve AI capabilities by scaling because the increase in AI capabilities from scaling plateaus?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "31.56%",
+    "# Forecasts": 66,
+    "# Forecasters": 52
+  },
+  {
+    "Title": "Will the Hedonometer show an average happiness above 6.2 for Christmas day 2020?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20the Hedonometer show an average happiness above 6.2 for Christmas day 2020?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "32.77%",
+    "# Forecasts": 93,
+    "# Forecasters": 49
+  },
+  {
+    "Title": "Will the post \"Embedded Interactive Predictions on LessWrong\" get more than 80 karma by December 1st?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20the post \"Embedded Interactive Predictions on LessWrong\" get more than 80 karma by December 1st?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "89.52%",
+    "# Forecasts": 83,
+    "# Forecasters": 45
+  },
+  {
+    "Title": "Will interest in a January forecasting club be greater than 3.5/5?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20interest in a January forecasting club be greater than 3.5/5?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "55.93%",
+    "# Forecasts": 44,
+    "# Forecasters": 41
+  },
+  {
+    "Title": "Having a button/prompt for Elicit on LW would increase usage by at least 5x",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Having%20a button/prompt for Elicit on LW would increase usage by at least 5x&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "60.22%",
+    "# Forecasts": 41,
+    "# Forecasters": 37
+  },
+  {
+    "Title": "By 2025 bitcoin will no longer be the highest traded cryptocurrency. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202025 bitcoin will no longer be the highest traded cryptocurrency. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "55.49%",
+    "# Forecasts": 37,
+    "# Forecasters": 35
+  },
+  {
+    "Title": "A Singularity will not occur by the year 2040.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=A%20Singularity will not occur by the year 2040.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "68.71%",
+    "# Forecasts": 42,
+    "# Forecasters": 34
+  },
+  {
+    "Title": "Will there be a 4 year interval in which world GDP doubles before the first 1 year interval in which world GDP doubles?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20there be a 4 year interval in which world GDP doubles before the first 1 year interval in which world GDP doubles?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "61.12%",
+    "# Forecasts": 42,
+    "# Forecasters": 33
+  },
+  {
+    "Title": "Before 2025, most of Russia will become part of the United States, or the reverse, or they will in some other manner become the same sovereign state, or part of the same sovereign state",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Before%202025, most of Russia will become part of the United States, or the reverse, or they will in some other manner become the same sovereign state, or part of the same sovereign state&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "0.79%",
+    "# Forecasts": 34,
+    "# Forecasters": 32
+  },
+  {
+    "Title": "The Pope will be assassinated.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20Pope will be assassinated.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "3.03%",
+    "# Forecasts": 32,
+    "# Forecasters": 30
+  },
+  {
+    "Title": "\"There will only be three languages in the world - English, Spanish and Mandarin\" --Bill Walker, BBC",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\"There%20will only be three languages in the world - English, Spanish and Mandarin\" --Bill Walker, BBC&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "2.91%",
+    "# Forecasts": 33,
+    "# Forecasters": 29
+  },
+  {
+    "Title": "The real identity of Nakamoto Satoshi will be publicly known by 2022",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20real identity of Nakamoto Satoshi will be publicly known by 2022&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "38.97%",
+    "# Forecasts": 31,
+    "# Forecasters": 29
+  },
+  {
+    "Title": "PredictionBook will still survive by the end of 2020",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=PredictionBook%20will still survive by the end of 2020&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "83.00%",
+    "# Forecasts": 40,
+    "# Forecasters": 29
+  },
+  {
+    "Title": "Will AGI cause existential catastrophe conditional on there being a 4 year period of doubling of world GDP before a 1 year period of doubling?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20AGI cause existential catastrophe conditional on there being a 4 year period of doubling of world GDP before a 1 year period of doubling?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "36.91%",
+    "# Forecasts": 34,
+    "# Forecasters": 29
+  },
+  {
+    "Title": "Will there be a 4 year interval in which world GDP growth doubles before the first 1 year interval in which world GDP growth doubles?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20there be a 4 year interval in which world GDP growth doubles before the first 1 year interval in which world GDP growth doubles?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "47.38%",
+    "# Forecasts": 47,
+    "# Forecasters": 28
+  },
+  {
+    "Title": "Will LessWrong add a button to embed interactive predictions before 2021-07-01?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20LessWrong add a button to embed interactive predictions before 2021-07-01?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "54.94%",
+    "# Forecasts": 47,
+    "# Forecasters": 28
+  },
+  {
+    "Title": "Will AGI cause existential catastrophe conditional on there being a 1 year period of doubling of world GDP without there first being a 4 year period of doubling?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20AGI cause existential catastrophe conditional on there being a 1 year period of doubling of world GDP without there first being a 4 year period of doubling?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "47.00%",
+    "# Forecasts": 34,
+    "# Forecasters": 28
+  },
+  {
+    "Title": "Flying cars will become the dominant form of transportation in at least one major world city by 2035.  ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Flying%20cars will become the dominant form of transportation in at least one major world city by 2035.  &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "8.81%",
+    "# Forecasts": 31,
+    "# Forecasters": 28
+  },
+  {
+    "Title": "No nuclear weapon will be used for the remainder of this decade. (Does not count tests)",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=No%20nuclear weapon will be used for the remainder of this decade. (Does not count tests)&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "82.13%",
+    "# Forecasts": 32,
+    "# Forecasters": 28
+  },
+  {
+    "Title": "No military draft in the United States before 2020.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=No%20military draft in the United States before 2020.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "90.27%",
+    "# Forecasts": 33,
+    "# Forecasters": 28
+  },
+  {
+    "Title": "Before 2030 organised religions will no longer exist in any meaningful way and religion will no longer have any political influence.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Before%202030 organised religions will no longer exist in any meaningful way and religion will no longer have any political influence.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "8.68%",
+    "# Forecasts": 28,
+    "# Forecasters": 27
+  },
+  {
+    "Title": "Edward Snowden will be U.S. President before 2034",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Edward%20Snowden will be U.S. President before 2034&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "0.23%",
+    "# Forecasts": 26,
+    "# Forecasters": 26
+  },
+  {
+    "Title": "Will AGI cause existential catastrophe conditional on there being a 4 year period of doubling of world GDP growth before a 1 year period of doubling?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20AGI cause existential catastrophe conditional on there being a 4 year period of doubling of world GDP growth before a 1 year period of doubling?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "40.24%",
+    "# Forecasts": 42,
+    "# Forecasters": 26
+  },
+  {
+    "Title": "California will secede from the United States before 2021",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=California%20will secede from the United States before 2021&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "0.68%",
+    "# Forecasts": 34,
+    "# Forecasters": 26
+  },
+  {
+    "Title": "Trump wins Nobel",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Trump%20wins Nobel&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "10.55%",
+    "# Forecasts": 38,
+    "# Forecasters": 26
+  },
+  {
+    "Title": "Bitcoin was an official NSA or CIA project.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Bitcoin%20was an official NSA or CIA project.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "1.88%",
+    "# Forecasts": 26,
+    "# Forecasters": 25
+  },
+  {
+    "Title": "Will AGI cause existential catastrophe conditional on there being a 1 year period of doubling of world GDP growth without there first being a 4 year period of doubling?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20AGI cause existential catastrophe conditional on there being a 1 year period of doubling of world GDP growth without there first being a 4 year period of doubling?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "46.84%",
+    "# Forecasts": 32,
+    "# Forecasters": 24
+  },
+  {
+    "Title": "\"I predict that by 2020, China will ban foreign men from entering China, except for special cases.\"",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\"I%20predict that by 2020, China will ban foreign men from entering China, except for special cases.\"&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "9.69%",
+    "# Forecasts": 26,
+    "# Forecasters": 23
+  },
+  {
+    "Title": "Queen Elizabeth II will abdicate before her death.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Queen%20Elizabeth II will abdicate before her death.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "7.46%",
+    "# Forecasts": 26,
+    "# Forecasters": 23
+  },
+  {
+    "Title": "The Singularity will occur by 2050.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20Singularity will occur by 2050.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "35.12%",
+    "# Forecasts": 25,
+    "# Forecasters": 23
+  },
+  {
+    "Title": "50% chance of AI by 2028 --Shane Legg",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=50%%20chance of AI by 2028 --Shane Legg&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "24.39%",
+    "# Forecasts": 28,
+    "# Forecasters": 23
+  },
+  {
+    "Title": "Computer Go running on commodity hardware (<$2k) to reach world champion level (>=9 dan) by 2030",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Computer%20Go running on commodity hardware (<$2k) to reach world champion level (>=9 dan) by 2030&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "84.11%",
+    "# Forecasts": 27,
+    "# Forecasters": 22
+  },
+  {
+    "Title": "Will there be an \"Inverse AlphaFold\" by end of 2025?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20there be an \"Inverse AlphaFold\" by end of 2025?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "33.91%",
+    "# Forecasts": 33,
+    "# Forecasters": 22
+  },
+  {
+    "Title": "PredictionBook.com will be up and running 10 years from today - 5/31/2023 - with this individual prediction still accessible.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=PredictionBook.com%20will be up and running 10 years from today - 5/31/2023 - with this individual prediction still accessible.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "68.88%",
+    "# Forecasts": 25,
+    "# Forecasters": 22
+  },
+  {
+    "Title": "Polyamory will have legal status in the USA similar to 2013's gay marriage by 2035.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Polyamory%20will have legal status in the USA similar to 2013's gay marriage by 2035.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "19.35%",
+    "# Forecasts": 23,
+    "# Forecasters": 22
+  },
+  {
+    "Title": "By 2020, Eliezer Yudkowsky will have given up building friendly AI.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202020, Eliezer Yudkowsky will have given up building friendly AI.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "6.67%",
+    "# Forecasts": 24,
+    "# Forecasters": 22
+  },
+  {
+    "Title": "TurnTrout will use the Elicit embedding on LessWrong for a non-prediction question by 28-11-2020",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=TurnTrout%20will use the Elicit embedding on LessWrong for a non-prediction question by 28-11-2020&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "58.15%",
+    "# Forecasts": 39,
+    "# Forecasters": 21
+  },
+  {
+    "Title": "For most of history, a human attempting to use reasoning to do things like cooking, crafting, or planning (instead of using inherited cultural heuristics, like omens or folk wisdom), would have been substantially worse off, and faced a major increase in their risk of death (without a commensurate increase in life quality).",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=For%20most of history, a human attempting to use reasoning to do things like cooking, crafting, or planning (instead of using inherited cultural heuristics, like omens or folk wisdom), would have been substantially worse off, and faced a major increase in their risk of death (without a commensurate increase in life quality).&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "59.38%",
+    "# Forecasts": 32,
+    "# Forecasters": 21
+  },
+  {
+    "Title": "In 2070 there will be a human alive with age 150 or older.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=In%202070 there will be a human alive with age 150 or older.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "26.36%",
+    "# Forecasts": 25,
+    "# Forecasters": 21
+  },
+  {
+    "Title": "Most babies born in 2022 do not have Zika virus.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Most%20babies born in 2022 do not have Zika virus.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "99.41%",
+    "# Forecasts": 22,
+    "# Forecasters": 21
+  },
+  {
+    "Title": "China and Japan will engage in armed conflict with each other resulting in > 1,000 deaths before 2023.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=China%20and Japan will engage in armed conflict with each other resulting in > 1,000 deaths before 2023.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "7.45%",
+    "# Forecasts": 22,
+    "# Forecasters": 20
+  },
+  {
+    "Title": "Chess will be solved within 10 years, and the end result will be a draw for Black.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Chess%20will be solved within 10 years, and the end result will be a draw for Black.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "15.33%",
+    "# Forecasts": 21,
+    "# Forecasters": 20
+  },
+  {
+    "Title": "Homo sapiens will be near or fully extinct by 2100.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Homo%20sapiens will be near or fully extinct by 2100.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "21.64%",
+    "# Forecasts": 22,
+    "# Forecasters": 20
+  },
+  {
+    "Title": "Google will survive for 15 more years",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Google%20will survive for 15 more years&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "88.38%",
+    "# Forecasts": 21,
+    "# Forecasters": 20
+  },
+  {
+    "Title": "Before 2020 organized religions will have no political influence.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Before%202020 organized religions will have no political influence.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "11.68%",
+    "# Forecasts": 22,
+    "# Forecasters": 20
+  },
+  {
+    "Title": "Magick qua magick works AND hinges on the intersection between quantum physics and decision theory.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Magick%20qua magick works AND hinges on the intersection between quantum physics and decision theory.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "4.74%",
+    "# Forecasts": 23,
+    "# Forecasters": 20
+  },
+  {
+    "Title": "Background knowledge and motivation levels being equal, humans will learn how to perform new tasks at roughly equal rates.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Background%20knowledge and motivation levels being equal, humans will learn how to perform new tasks at roughly equal rates.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "18.43%",
+    "# Forecasts": 23,
+    "# Forecasters": 19
+  },
+  {
+    "Title": "Robin Hanson: In 2032, less than 50% of cars on the road will completely autonomous. (to be assessed by asking an unbiased expert if the answer is not obvious) ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Robin%20Hanson: In 2032, less than 50% of cars on the road will completely autonomous. (to be assessed by asking an unbiased expert if the answer is not obvious) &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "54.20%",
+    "# Forecasts": 20,
+    "# Forecasters": 19
+  },
+  {
+    "Title": "Machiavellian Intelligence Hypothesis: humans evolved big brains in order to succeed at social manuevering and climbing dominance hierarchies.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Machiavellian%20Intelligence Hypothesis: humans evolved big brains in order to succeed at social manuevering and climbing dominance hierarchies.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "60.07%",
+    "# Forecasts": 30,
+    "# Forecasters": 19
+  },
+  {
+    "Title": "Conditional on the AI community learning of pre-AGI catastrophic deceptive misalignment, will the ($ spent on AI alignment research)/($ spent on AI research) ratio increase by more than 50% over the two years following the catastrophe?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Conditional%20on the AI community learning of pre-AGI catastrophic deceptive misalignment, will the ($ spent on AI alignment research)/($ spent on AI research) ratio increase by more than 50% over the two years following the catastrophe?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "39.69%",
+    "# Forecasts": 35,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "Before AGI, will we learn of an example of catastrophic deceptive misalignment?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Before%20AGI, will we learn of an example of catastrophic deceptive misalignment?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "56.94%",
+    "# Forecasts": 35,
+    "# Forecasters": 19
+  },
+  {
+    "Title": "No human revived from cryonic suspension by 2040.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=No%20human revived from cryonic suspension by 2040.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "86.75%",
+    "# Forecasts": 24,
+    "# Forecasters": 19
+  },
+  {
+    "Title": "Brexit will cause hundreds of thousands of deaths from mass starvation in the UK --Charlie Stross",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Brexit%20will cause hundreds of thousands of deaths from mass starvation in the UK --Charlie Stross&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "2.21%",
+    "# Forecasts": 19,
+    "# Forecasters": 19
+  },
+  {
+    "Title": "United States will invade Australia and take over",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=United%20States will invade Australia and take over&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "10.00%",
+    "# Forecasts": 21,
+    "# Forecasters": 19
+  },
+  {
+    "Title": "90% chance of AI by 2050 --Shane Legg",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=90%%20chance of AI by 2050 --Shane Legg&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "47.05%",
+    "# Forecasts": 21,
+    "# Forecasters": 19
+  },
+  {
+    "Title": "Contrary to my left leanings, Man Made Global Warming will be proved incorrect by 2022",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Contrary%20to my left leanings, Man Made Global Warming will be proved incorrect by 2022&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "6.95%",
+    "# Forecasts": 20,
+    "# Forecasters": 19
+  },
+  {
+    "Title": "No human will visit the moon from 2012-2020.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=No%20human will visit the moon from 2012-2020.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "74.85%",
+    "# Forecasts": 20,
+    "# Forecasters": 19
+  },
+  {
+    "Title": "The United States will contain exactly 50 states by 2025.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20United States will contain exactly 50 states by 2025.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "72.43%",
+    "# Forecasts": 23,
+    "# Forecasters": 19
+  },
+  {
+    "Title": "Will First Contact happen in the form of a message (e.g. radio waves), rather than by physical visitors?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20First Contact happen in the form of a message (e.g. radio waves), rather than by physical visitors?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "64.80%",
+    "# Forecasts": 40,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "Cultural Intelligence Hypothesis: humans evolved big brains in order to be able to maintain [complicated, detailed, arbitrary-seeming cultural knowledge like 20+ step Inuit seal hunting techniques]. Everything that separates us from the apes is part of an evolutionary package designed to help us maintain this kind of culture, exploit this kind of culture, or adjust to the new abilities that this kind of culture gave us. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Cultural%20Intelligence Hypothesis: humans evolved big brains in order to be able to maintain [complicated, detailed, arbitrary-seeming cultural knowledge like 20+ step Inuit seal hunting techniques]. Everything that separates us from the apes is part of an evolutionary package designed to help us maintain this kind of culture, exploit this kind of culture, or adjust to the new abilities that this kind of culture gave us. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "34.33%",
+    "# Forecasts": 45,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "Does Pareto frontier trick allow people to circumvent the Generalized Efficient Market hypothesis? That is, take people in the 98th percentile of intelligence. Are there a few separate fields such that they could become experts in each, with less than 10 years of total time investment... and then have a realistic shot at a big money/status windfall, with relatively little *marginal* effort.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Does%20Pareto frontier trick allow people to circumvent the Generalized Efficient Market hypothesis? That is, take people in the 98th percentile of intelligence. Are there a few separate fields such that they could become experts in each, with less than 10 years of total time investment... and then have a realistic shot at a big money/status windfall, with relatively little *marginal* effort.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "69.74%",
+    "# Forecasts": 19,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "The modern Scientific Revolution occurred in Europe between the 16th and 18th Centuries. Why did it not happen in China? Historian Toby Huff claims the reason is that China was unable to produce modern science primarily because a lack of the requisite intellectual freedom. Was he basically correct?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20modern Scientific Revolution occurred in Europe between the 16th and 18th Centuries. Why did it not happen in China? Historian Toby Huff claims the reason is that China was unable to produce modern science primarily because a lack of the requisite intellectual freedom. Was he basically correct?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "36.67%",
+    "# Forecasts": 21,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "What percentage of people experience a \"Clogged drainpipe\" effect in idea generation? (That is, they'd agree that they recognised the feeling as described in the post, after attempting a babble challenge)",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=What%20percentage of people experience a \"Clogged drainpipe\" effect in idea generation? (That is, they'd agree that they recognised the feeling as described in the post, after attempting a babble challenge)&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "64.34%",
+    "# Forecasts": 50,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "We will make First Contact before we will have AGI.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=We%20will make First Contact before we will have AGI.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "12.05%",
+    "# Forecasts": 21,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "“No human will set his or her foot on Mars and return safely to earth before 2050.”",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=“No%20human will set his or her foot on Mars and return safely to earth before 2050.”&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "40.27%",
+    "# Forecasts": 26,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "Trump eventually signs an executive order forcing everyone to kneel in his presence",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Trump%20eventually signs an executive order forcing everyone to kneel in his presence&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "3.32%",
+    "# Forecasts": 22,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "The percentage of people professing to be both athiest and agnostic will increase over the next decade",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20percentage of people professing to be both athiest and agnostic will increase over the next decade&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "67.55%",
+    "# Forecasts": 22,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "Between 2016-2116, at least 1 American President will be neither Democratic or Republican.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Between%202016-2116, at least 1 American President will be neither Democratic or Republican.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "51.78%",
+    "# Forecasts": 18,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "There will be driverless taxis available for use by the public in at least one US city in 2023.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=There%20will be driverless taxis available for use by the public in at least one US city in 2023.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "64.28%",
+    "# Forecasts": 18,
+    "# Forecasters": 18
+  },
+  {
+    "Title": "A Level 7 (Chernobyl/2011 Japan level) nuclear accident will take place by end of 2020.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=A%20Level 7 (Chernobyl/2011 Japan level) nuclear accident will take place by end of 2020.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "21.62%",
+    "# Forecasts": 21,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "Another version: roughly, everything that top-humans can learn, most humans can too if they actually tried. That is, there is psychological unity of humankind in what we can learn, but not necessarily what we have learned. By contrast, a mouse really couldn't learn chess, even if they tried. And in turn, no human can learn to play 90-dimensional chess, unlike the hypothetical superintelligences that can.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Another%20version: roughly, everything that top-humans can learn, most humans can too if they actually tried. That is, there is psychological unity of humankind in what we can learn, but not necessarily what we have learned. By contrast, a mouse really couldn't learn chess, even if they tried. And in turn, no human can learn to play 90-dimensional chess, unlike the hypothetical superintelligences that can.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "29.78%",
+    "# Forecasts": 32,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "It will be illegal to drive yourself on USA public roads ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=It%20will be illegal to drive yourself on USA public roads &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "1.72%",
+    "# Forecasts": 18,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "My net financial worth will be greater than 10 million (2012-inflation adjusted), or enough to indefinitely earn a passive income to provide 100 people with cryonics, (whichever of the two is greater), by 2028",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=My%20net financial worth will be greater than 10 million (2012-inflation adjusted), or enough to indefinitely earn a passive income to provide 100 people with cryonics, (whichever of the two is greater), by 2028&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "8.39%",
+    "# Forecasts": 18,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "The Millennium Prize for solving P Versus NP will remain unclaimed by 2020.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20Millennium Prize for solving P Versus NP will remain unclaimed by 2020.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "83.95%",
+    "# Forecasts": 21,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "Nuclear power plants will no longer operate by the year 2020.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Nuclear%20power plants will no longer operate by the year 2020.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "12.79%",
+    "# Forecasts": 19,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "aliens invade earth in 2023",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=aliens%20invade earth in 2023&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "0.94%",
+    "# Forecasts": 18,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "Robin Hanson's brain will be cryogenically frozen.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Robin%20Hanson's brain will be cryogenically frozen.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "47.17%",
+    "# Forecasts": 23,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "...be an environmental disaster.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=...be%20an environmental disaster.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "30.95%",
+    "# Forecasts": 19,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "Russia will not have established moon bases by 2032",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Russia%20will not have established moon bases by 2032&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "69.33%",
+    "# Forecasts": 18,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "'2021 The first humans land on Mars.' --Arthur C. Clarke",
+    "URL": "https://elicit.org/binary?binaryQuestions.search='2021%20The first humans land on Mars.' --Arthur C. Clarke&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "1.80%",
+    "# Forecasts": 25,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "Human-level artificial general intelligence by 2030",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Human-level%20artificial general intelligence by 2030&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "26.89%",
+    "# Forecasts": 19,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "A professional athlete will voluntarily amputate their legs to use prosthetics like Oscar Pistorius, by 2021",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=A%20professional athlete will voluntarily amputate their legs to use prosthetics like Oscar Pistorius, by 2021&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "30.95%",
+    "# Forecasts": 20,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "“One or more space agencies will send a manned mission to Mars by 2035.”",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=“One%20or more space agencies will send a manned mission to Mars by 2035.”&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "35.00%",
+    "# Forecasts": 23,
+    "# Forecasters": 17
+  },
+  {
+    "Title": "An open atheist will be elected US President within 20 years.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=An%20open atheist will be elected US President within 20 years.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "8.12%",
+    "# Forecasts": 17,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "Information recorded in the predictionbook will be practically retrievable \"in ten thousand years, or so\"",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Information%20recorded in the predictionbook will be practically retrievable \"in ten thousand years, or so\"&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "19.11%",
+    "# Forecasts": 19,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "If we receive a message from outer space, will it be in a form already accessible today (e.g., radio waves)?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=If%20we receive a message from outer space, will it be in a form already accessible today (e.g., radio waves)?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "77.71%",
+    "# Forecasts": 17,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "By 2026 we will be technically capable of fixing arbitrary single-gene disorders - sickle cell anaemia, Huntington's, cystic fibrosis, Tay-Sachs, muscular dystrophy... - in living humans, with close to zero risk of severe complications.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202026 we will be technically capable of fixing arbitrary single-gene disorders - sickle cell anaemia, Huntington's, cystic fibrosis, Tay-Sachs, muscular dystrophy... - in living humans, with close to zero risk of severe complications.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "34.67%",
+    "# Forecasts": 18,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "US presidents term limits abolished",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=US%20presidents term limits abolished&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "2.24%",
+    "# Forecasts": 17,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "The strategy-stealing assumption is \"a good enough approximation that we can basically act as if it’s true\". That is, for any strategy an unaligned AI could use to influence the long-run future, there is an analogous strategy that a similarly-sized group of humans can use in order to capture a similar amount of flexible influence over the future. By “flexible” is meant that humans can decide later what to do with that influence  (which is important since humans don’t yet know what we want in the long run).",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20strategy-stealing assumption is \"a good enough approximation that we can basically act as if it’s true\". That is, for any strategy an unaligned AI could use to influence the long-run future, there is an analogous strategy that a similarly-sized group of humans can use in order to capture a similar amount of flexible influence over the future. By “flexible” is meant that humans can decide later what to do with that influence  (which is important since humans don’t yet know what we want in the long run).&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "29.04%",
+    "# Forecasts": 24,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "Will the UK terrorism threat level be ‘severe’ at 9am PST on Sun 11/22?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20the UK terrorism threat level be ‘severe’ at 9am PST on Sun 11/22?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "81.00%",
+    "# Forecasts": 24,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "Man will travel to Mars by 2030. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Man%20will travel to Mars by 2030. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "42.89%",
+    "# Forecasts": 18,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "Legal challenges initiated by the Donald Trump campaign will not change the outcome of the US Presidential election",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Legal%20challenges initiated by the Donald Trump campaign will not change the outcome of the US Presidential election&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "95.32%",
+    "# Forecasts": 19,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "Some people living today (October 17th, 2009) will also be alive on October 17th, 3009.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Some%20people living today (October 17th, 2009) will also be alive on October 17th, 3009.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "35.53%",
+    "# Forecasts": 19,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "Elon Musk will come out as trans (MtF or MtX)",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Elon%20Musk will come out as trans (MtF or MtX)&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "4.13%",
+    "# Forecasts": 16,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "A Mars colony will be established in 2026. It will be an International establishment.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=A%20Mars colony will be established in 2026. It will be an International establishment.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "4.90%",
+    "# Forecasts": 20,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "An alive human has been on mars soil and returned to earth safely before year 2100.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=An%20alive human has been on mars soil and returned to earth safely before year 2100.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "57.78%",
+    "# Forecasts": 18,
+    "# Forecasters": 16
+  },
+  {
+    "Title": "Kamala Harris will be president on Nov. 1, 2021.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Kamala%20Harris will be president on Nov. 1, 2021.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "11.81%",
+    "# Forecasts": 16,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "If a message from outer space is detected, will we answer it?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=If%20a message from outer space is detected, will we answer it?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "73.94%",
+    "# Forecasts": 17,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "If we answer it, will it be a single answer sent by all of humanity?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=If%20we answer it, will it be a single answer sent by all of humanity?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "29.44%",
+    "# Forecasts": 16,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "If First Contact yields information beyond current human knowledge, will it be shared and made available for all humans?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=If%20First Contact yields information beyond current human knowledge, will it be shared and made available for all humans?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "66.47%",
+    "# Forecasts": 17,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "Will the title of the New York Times front page article on Sun 11/22 include any of the words: ‘coronavirus,’ ‘COVID-19,’ ‘COVID,’ or ‘SARS-CoV-2’?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20the title of the New York Times front page article on Sun 11/22 include any of the words: ‘coronavirus,’ ‘COVID-19,’ ‘COVID,’ or ‘SARS-CoV-2’?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "25.33%",
+    "# Forecasts": 24,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "Extraterrestrial  life will be confirmed on at least one body by 2050. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Extraterrestrial%20 life will be confirmed on at least one body by 2050. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "55.18%",
+    "# Forecasts": 17,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "Overall, in 2019, biosecurity in the context of catastrophic risks had been underfunded and underdiscussed.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Overall,%20in 2019, biosecurity in the context of catastrophic risks had been underfunded and underdiscussed.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "80.50%",
+    "# Forecasts": 18,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "Ghislane Maxwell will die by the end of the year 12/31",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Ghislane%20Maxwell will die by the end of the year 12/31&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "14.48%",
+    "# Forecasts": 25,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "...substantially improve current housing shortages and rent prices by 2035. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=...substantially%20improve current housing shortages and rent prices by 2035. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "64.47%",
+    "# Forecasts": 15,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "The Great Filter is the discovery of AGI, because it destroys their creators (us humans).",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20Great Filter is the discovery of AGI, because it destroys their creators (us humans).&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "28.00%",
+    "# Forecasts": 20,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "A CRISPR-edited human baby will be born by 2020",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=A%20CRISPR-edited human baby will be born by 2020&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "43.47%",
+    "# Forecasts": 19,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "Are there simple changes to chimps (or other animals) that would make them much better at accumulating culture?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Are%20there simple changes to chimps (or other animals) that would make them much better at accumulating culture?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "56.90%",
+    "# Forecasts": 29,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "Will humans continually pursue all simple yet powerful changes to our AIs?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20humans continually pursue all simple yet powerful changes to our AIs?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "59.36%",
+    "# Forecasts": 25,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "Mark Zuckerberg, co-founder of Facebook, is President of the United States before 2026",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Mark%20Zuckerberg, co-founder of Facebook, is President of the United States before 2026&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "3.71%",
+    "# Forecasts": 17,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "There will NOT be a \"World War III\" within the next 10 years. (Between Russia and it's \"allies\" and NATO and/or western europe)",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=There%20will NOT be a \"World War III\" within the next 10 years. (Between Russia and it's \"allies\" and NATO and/or western europe)&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "93.31%",
+    "# Forecasts": 16,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "C still widely in use in the 2020s",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=C%20still widely in use in the 2020s&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "93.53%",
+    "# Forecasts": 15,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "USA will collapse before the People's Republic of China.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=USA%20will collapse before the People's Republic of China.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "41.47%",
+    "# Forecasts": 17,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "Jesus will not come down from the heavens to judge mankind in my life time, my childrens life time, or my grand-childrens life time.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Jesus%20will not come down from the heavens to judge mankind in my life time, my childrens life time, or my grand-childrens life time.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "92.69%",
+    "# Forecasts": 16,
+    "# Forecasters": 15
+  },
+  {
+    "Title": "\"by 2030 we should have the capability to upload a person’s consciousness to a computer system\"",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\"by%202030 we should have the capability to upload a person’s consciousness to a computer system\"&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "6.20%",
+    "# Forecasts": 15,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "Will we understand the content of a message from outer space?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20we understand the content of a message from outer space?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "47.39%",
+    "# Forecasts": 18,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "The United States will reach less than 3% unemployment at some point within the next 15 years.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20United States will reach less than 3% unemployment at some point within the next 15 years.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "11.73%",
+    "# Forecasts": 15,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "Gay marriage will remain legal throughout a Trump presidency.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Gay%20marriage will remain legal throughout a Trump presidency.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "87.18%",
+    "# Forecasts": 17,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "Banning of incandescent light bulbs globally by 2022.Incandescent lightbulbs will not be bought, manufactured or sold legally.\r\n",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Banning%20of incandescent light bulbs globally by 2022.Incandescent lightbulbs will not be bought, manufactured or sold legally.\r\n&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "11.19%",
+    "# Forecasts": 16,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "If First Contact is in physical form, will the ETI be in biological form?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=If%20First Contact is in physical form, will the ETI be in biological form?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "17.39%",
+    "# Forecasts": 18,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "The message begins with \"Execute this algorithm on a computer today, or I will make your sun go supernova tomorrow\". Should we execute it?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20message begins with \"Execute this algorithm on a computer today, or I will make your sun go supernova tomorrow\". Should we execute it?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "7.86%",
+    "# Forecasts": 14,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "...cause a water shortage such that, in 2030, residents of the Bay Area would spend on average 100% more on water, after adjusting for inflation, compared to 2020. (In 2020 the average American spends around $200/year on water)",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=...cause%20a water shortage such that, in 2030, residents of the Bay Area would spend on average 100% more on water, after adjusting for inflation, compared to 2020. (In 2020 the average American spends around $200/year on water)&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "18.07%",
+    "# Forecasts": 15,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "Microsoft will release the source code to the current version of Windows under a free-software license.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Microsoft%20will release the source code to the current version of Windows under a free-software license.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "14.00%",
+    "# Forecasts": 15,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "In the next ten years, scientists will publish a paper in a refereed journal claiming to have experimentally moved matter faster than the speed of light. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=In%20the next ten years, scientists will publish a paper in a refereed journal claiming to have experimentally moved matter faster than the speed of light. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "9.47%",
+    "# Forecasts": 15,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "The next non-Democrat to win the White House will also be a non-Republican.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20next non-Democrat to win the White House will also be a non-Republican.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "17.00%",
+    "# Forecasts": 15,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "\"Within ten years the SAT testing service will require students to take a blood test to prove they are not on cognitive enhancing drugs.\" --James Miller",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\"Within%20ten years the SAT testing service will require students to take a blood test to prove they are not on cognitive enhancing drugs.\" --James Miller&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "9.55%",
+    "# Forecasts": 20,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "I will not pass Eliezer in LW karma in the next 10 years.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=I%20will not pass Eliezer in LW karma in the next 10 years.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "82.20%",
+    "# Forecasts": 15,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "The United States will contain less than 50 states by 2025.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20United States will contain less than 50 states by 2025.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "9.82%",
+    "# Forecasts": 17,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "North Korea invades South Korea before the end of 2020",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=North%20Korea invades South Korea before the end of 2020&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "5.94%",
+    "# Forecasts": 17,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "By 2022,  autonomous drones will have been used by a government agency to kill someone.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202022,  autonomous drones will have been used by a government agency to kill someone.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "53.00%",
+    "# Forecasts": 14,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "The United States will contain more than 50 states by 2025.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20United States will contain more than 50 states by 2025.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "30.26%",
+    "# Forecasts": 19,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "By mid-century, Mandarin will be more widely spoken in Africa than English. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%20mid-century, Mandarin will be more widely spoken in Africa than English. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "28.21%",
+    "# Forecasts": 14,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "Hacking and cyberterrorism will be punishable by death worldwide by Dec. 1, 2029.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Hacking%20and cyberterrorism will be punishable by death worldwide by Dec. 1, 2029.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "7.00%",
+    "# Forecasts": 18,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "A right wing billionaire is behind the creation of bitcoin.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=A%20right wing billionaire is behind the creation of bitcoin.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "8.79%",
+    "# Forecasts": 14,
+    "# Forecasters": 14
+  },
+  {
+    "Title": "By 2022, [almost] every new car will have broadband Internet. -- Alyssa Vance",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202022, [almost] every new car will have broadband Internet. -- Alyssa Vance&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "44.15%",
+    "# Forecasts": 13,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "ETI is AGI",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=ETI%20is AGI&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "84.61%",
+    "# Forecasts": 18,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Humanity still a thing in 2036",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Humanity%20still a thing in 2036&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "89.00%",
+    "# Forecasts": 13,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "There be a \"SETI Winter\" before First Contact.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=There%20be a \"SETI Winter\" before First Contact.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "73.89%",
+    "# Forecasts": 19,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "We will experience an existential catastrophe before First Contact.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=We%20will experience an existential catastrophe before First Contact.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "40.84%",
+    "# Forecasts": 19,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "The tech will exist and be relatively safe for media to be uploaded directly into the human brain by 2026.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20tech will exist and be relatively safe for media to be uploaded directly into the human brain by 2026.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "14.62%",
+    "# Forecasts": 13,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "If First Contact is in physical form, will the ETI \"spaceship\" be larger than 1m in size?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=If%20First Contact is in physical form, will the ETI \"spaceship\" be larger than 1m in size?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "51.36%",
+    "# Forecasts": 14,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Before receiving a message from outer space, will we need a technological breakthrough (e.g., by discovering yet unknown elementary particles)",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Before%20receiving a message from outer space, will we need a technological breakthrough (e.g., by discovering yet unknown elementary particles)&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "29.33%",
+    "# Forecasts": 18,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Generic AI won't happen in the next 10 years.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Generic%20AI won't happen in the next 10 years.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "85.31%",
+    "# Forecasts": 16,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Joe Biden is the sitting president 4 years from today",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Joe%20Biden is the sitting president 4 years from today&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "33.75%",
+    "# Forecasts": 16,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "...create buildings where the expected yearly damage from earthquakes (both in terms of reduced quality of life and property destroyed) is >1.5x that of nearby buildings on old land.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=...create%20buildings where the expected yearly damage from earthquakes (both in terms of reduced quality of life and property destroyed) is >1.5x that of nearby buildings on old land.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "37.07%",
+    "# Forecasts": 15,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Will the number of active COVID cases in California increase by more than 15K between Fri 11/20 and Sun 11/22?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20the number of active COVID cases in California increase by more than 15K between Fri 11/20 and Sun 11/22?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "71.29%",
+    "# Forecasts": 21,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Reproductive human cloning widely socially accepted by 2040. -- Axel Boldt",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Reproductive%20human cloning widely socially accepted by 2040. -- Axel Boldt&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "32.06%",
+    "# Forecasts": 16,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "\"The Essential Workers\" (or similar subject) will be TIME Magazine's Person of the Year for 2020.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\"The%20Essential Workers\" (or similar subject) will be TIME Magazine's Person of the Year for 2020.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "40.27%",
+    "# Forecasts": 15,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "North Korea will invade South Korea by January 1st, 2022",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=North%20Korea will invade South Korea by January 1st, 2022&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "5.33%",
+    "# Forecasts": 15,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "All children in the US must have GPS attached to them in some sense by law if they leave their parents house.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=All%20children in the US must have GPS attached to them in some sense by law if they leave their parents house.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "4.92%",
+    "# Forecasts": 13,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Average world IQ to decrease from 2015 to 2050",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Average%20world IQ to decrease from 2015 to 2050&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "29.79%",
+    "# Forecasts": 14,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "...all-things-considered, be good for the world.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=...all-things-considered,%20be good for the world.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "81.32%",
+    "# Forecasts": 19,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Fusion Power will revolutionize the world energy demands by 2025.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Fusion%20Power will revolutionize the world energy demands by 2025.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "9.47%",
+    "# Forecasts": 15,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Our descendants will colonize millions of star systems within ten thousand years or so. -- Robin Hanson",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Our%20descendants will colonize millions of star systems within ten thousand years or so. -- Robin Hanson&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "27.64%",
+    "# Forecasts": 14,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "USA mints a coin worth $1,000,000,000 or more before 2021",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=USA%20mints a coin worth $1,000,000,000 or more before 2021&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "4.50%",
+    "# Forecasts": 16,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Truly \"Pilotless\" air travel will be the standard in 2050.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Truly%20\"Pilotless\" air travel will be the standard in 2050.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "62.71%",
+    "# Forecasts": 14,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "The Roman Catholic Church ordains female priests before 2033.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20Roman Catholic Church ordains female priests before 2033.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "18.54%",
+    "# Forecasts": 13,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "In the next ten years, self-identified Libertarians will outnumber self-identified Republicans in the US. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=In%20the next ten years, self-identified Libertarians will outnumber self-identified Republicans in the US. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "14.69%",
+    "# Forecasts": 13,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Trump dies of COVID-19",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Trump%20dies of COVID-19&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "6.63%",
+    "# Forecasts": 32,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "By 2030, mothers will be the primary breadwinner in the majority of households with children in the U.S.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202030, mothers will be the primary breadwinner in the majority of households with children in the U.S.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "38.31%",
+    "# Forecasts": 13,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "10 million",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=10%20million&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "8.42%",
+    "# Forecasts": 36,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Human level AI by 2029 (Ray Kurzweil, \"How to create a mind\")",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Human%20level AI by 2029 (Ray Kurzweil, \"How to create a mind\")&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "26.75%",
+    "# Forecasts": 16,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Saudi Arabian government collapses within the next 5 years.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Saudi%20Arabian government collapses within the next 5 years.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "10.69%",
+    "# Forecasts": 16,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Satoshi Nakamoto is just Wei Dai and this is known before 2060",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Satoshi%20Nakamoto is just Wei Dai and this is known before 2060&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "13.37%",
+    "# Forecasts": 19,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "By 2065, a majority of the world will be vegan. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202065, a majority of the world will be vegan. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "11.08%",
+    "# Forecasts": 13,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Steve Jobs' brain was cryopreserved or plastinated within two weeks of declaration of death, and this is known before 2070.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Steve%20Jobs' brain was cryopreserved or plastinated within two weeks of declaration of death, and this is known before 2070.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "4.08%",
+    "# Forecasts": 13,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Kanye West elected President by 2032 -- Scott Adams",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Kanye%20West elected President by 2032 -- Scott Adams&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "0.60%",
+    "# Forecasts": 15,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "If we find indications of a dormant artifact buried on the moon, should we dig it up?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=If%20we find indications of a dormant artifact buried on the moon, should we dig it up?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "70.00%",
+    "# Forecasts": 15,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "If the message is not shared, will it yield a decisive advantage for its owner?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=If%20the message is not shared, will it yield a decisive advantage for its owner?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "43.11%",
+    "# Forecasts": 19,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "The first person to set foot on Mars will have left Earth holding American citizenship.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20first person to set foot on Mars will have left Earth holding American citizenship.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "46.69%",
+    "# Forecasts": 13,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Effective HIV vaccine developed by 2040. -- Axel Boldt",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Effective%20HIV vaccine developed by 2040. -- Axel Boldt&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "69.69%",
+    "# Forecasts": 13,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Will a message from outer space contain deep and profound information?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20a message from outer space contain deep and profound information?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "52.47%",
+    "# Forecasts": 15,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "There will be a Youtube video with more views (on Youtube) than there will be living humans before 2020.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=There%20will be a Youtube video with more views (on Youtube) than there will be living humans before 2020.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "63.00%",
+    "# Forecasts": 13,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Joe Biden dies of coronavirus in 2020",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Joe%20Biden dies of coronavirus in 2020&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "4.64%",
+    "# Forecasts": 14,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "In 2060 there will be a human alive with age 140 or older.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=In%202060 there will be a human alive with age 140 or older.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "46.07%",
+    "# Forecasts": 14,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "North Korea and South Korea to unify by 2030",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=North%20Korea and South Korea to unify by 2030&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "20.25%",
+    "# Forecasts": 16,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "The European Union will unite into a single super state by 2030.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20European Union will unite into a single super state by 2030.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "17.50%",
+    "# Forecasts": 14,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "the average lifespan will be eighty-five to ninety in 2100. --S. Jay Olshansky",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=the%20average lifespan will be eighty-five to ninety in 2100. --S. Jay Olshansky&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "7.64%",
+    "# Forecasts": 14,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "No amendments to the United States Constitution will be ratified by 2030.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=No%20amendments to the United States Constitution will be ratified by 2030.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "60.83%",
+    "# Forecasts": 12,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "...significantly worsen traffic in San Francisco.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=...significantly%20worsen traffic in San Francisco.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "58.67%",
+    "# Forecasts": 12,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Decision-makers in media and PR, and corporate and government elites generally, have a lower tolerance for verbal conflict and taboo violations than the typical individual.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Decision-makers%20in media and PR, and corporate and government elites generally, have a lower tolerance for verbal conflict and taboo violations than the typical individual.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "79.65%",
+    "# Forecasts": 17,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Alphabet/Google buys Microsoft",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Alphabet/Google%20buys Microsoft&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "7.71%",
+    "# Forecasts": 14,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "We will detect evidence of Intelligent alien life within the next 50 years. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=We%20will detect evidence of Intelligent alien life within the next 50 years. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "24.33%",
+    "# Forecasts": 12,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "“There will be a casino on the moon by 2040.”",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=“There%20will be a casino on the moon by 2040.”&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "3.83%",
+    "# Forecasts": 12,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Will first contact cause an existential catastrophe?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20first contact cause an existential catastrophe?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "49.24%",
+    "# Forecasts": 33,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "By 2020, there will be a new World government. --Ray Kurzweil",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202020, there will be a new World government. --Ray Kurzweil&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "2.73%",
+    "# Forecasts": 15,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "100 million",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=100%20million&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "0.79%",
+    "# Forecasts": 29,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Some modes of the Large Hadron collider will never be reached and by 2025 the scientific community will debate in a peer reviewed physics journal with >median impact that this is due to the anthropic principle combined with the danger of those modes.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Some%20modes of the Large Hadron collider will never be reached and by 2025 the scientific community will debate in a peer reviewed physics journal with >median impact that this is due to the anthropic principle combined with the danger of those modes.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "14.33%",
+    "# Forecasts": 15,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "1 year continuous human habitation of the moon",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=1%20year continuous human habitation of the moon&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "15.93%",
+    "# Forecasts": 14,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "If someone does experience a clogged drainpipe effect, is it possible to \"train it away\"? That is, to, with 1000 hours of practice, get to a point where their life largely looks the same as it did before except that they report no longer experiencing the effect (and this is borne out by measures of # of quality-adjusted ideas babbled per time unit, or similar)? (It doesn't count if the only way of doing it is by, say, making sure to write 10 ideas every day, or something similar. I'm wondering if it's possible to change your cognition at a deep level, rather than using particular, deliberate, S2 techniques to sustain an equilibirum which you'd fall out of if you stopped using the techniques)",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=If%20someone does experience a clogged drainpipe effect, is it possible to \"train it away\"? That is, to, with 1000 hours of practice, get to a point where their life largely looks the same as it did before except that they report no longer experiencing the effect (and this is borne out by measures of # of quality-adjusted ideas babbled per time unit, or similar)? (It doesn't count if the only way of doing it is by, say, making sure to write 10 ideas every day, or something similar. I'm wondering if it's possible to change your cognition at a deep level, rather than using particular, deliberate, S2 techniques to sustain an equilibirum which you'd fall out of if you stopped using the techniques)&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "63.15%",
+    "# Forecasts": 26,
+    "# Forecasters": 13
+  },
+  {
+    "Title": "Lab-grown meat on sale at 20 times the price of animal-grown meat or cheaper.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Lab-grown%20meat on sale at 20 times the price of animal-grown meat or cheaper.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "63.33%",
+    "# Forecasts": 15,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "The world’s first lunar tourist by end of 2035",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20world’s first lunar tourist by end of 2035&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "51.07%",
+    "# Forecasts": 14,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "At the end of the year, all SlateStarCodex archives are rehosted by Scott on SlateStarCodex or some other site (third-party created archives don't count) AND Scott has written at least one new post on SlateStarCodex or this new site",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=At%20the end of the year, all SlateStarCodex archives are rehosted by Scott on SlateStarCodex or some other site (third-party created archives don't count) AND Scott has written at least one new post on SlateStarCodex or this new site&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "78.92%",
+    "# Forecasts": 13,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "The world’s first lunar tourist by end of 2025",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20world’s first lunar tourist by end of 2025&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "30.40%",
+    "# Forecasts": 15,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "\"Mankind is unlikely to exist in anything like its present form in 2150.\" -lukeprog",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\"Mankind%20is unlikely to exist in anything like its present form in 2150.\" -lukeprog&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "66.54%",
+    "# Forecasts": 13,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Simon Cowell will be cryogenically stored.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Simon%20Cowell will be cryogenically stored.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "18.25%",
+    "# Forecasts": 12,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Russia will be an Islamic theocracy by 31 December 2050.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Russia%20will be an Islamic theocracy by 31 December 2050.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "1.31%",
+    "# Forecasts": 13,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Riemann hypothesis proven by 2040. -- Axel Boldt",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Riemann%20hypothesis proven by 2040. -- Axel Boldt&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "37.08%",
+    "# Forecasts": 13,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "“By 2030, commercial passengers will routinely fly in pilotless planes.”",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=“By%202030, commercial passengers will routinely fly in pilotless planes.”&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "35.00%",
+    "# Forecasts": 12,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Donald Knuth will die before finishing TAOCP.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Donald%20Knuth will die before finishing TAOCP.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "86.83%",
+    "# Forecasts": 12,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "Warren Buffett: All cars on the road will be electric by year 2030",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Warren%20Buffett: All cars on the road will be electric by year 2030&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "33.58%",
+    "# Forecasts": 12,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "'By the end of the decade, it will be clear that North Korea never had nuclear weapons under Kim Jong Il.' --Kevin",
+    "URL": "https://elicit.org/binary?binaryQuestions.search='By%20the end of the decade, it will be clear that North Korea never had nuclear weapons under Kim Jong Il.' --Kevin&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "14.17%",
+    "# Forecasts": 12,
+    "# Forecasters": 12
+  },
+  {
+    "Title": "The effect of First contact is mostly neutral (e.g., invisible, indifferent, uninteresting, mild nuisance )",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20effect of First contact is mostly neutral (e.g., invisible, indifferent, uninteresting, mild nuisance )&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "55.00%",
+    "# Forecasts": 26,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "The effect of First contact is mostly harmful (e.g., selfish ETI, hazards) ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20effect of First contact is mostly harmful (e.g., selfish ETI, hazards) &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "40.82%",
+    "# Forecasts": 22,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "GRRM dies before finishing _A Song of Ice and Fire_",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=GRRM%20dies before finishing _A Song of Ice and Fire_&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "41.54%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "\"within 5 years of leaving office, the Obamas will have a net worth of more than $50 million.\" --Dennis Mangan",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\"within%205 years of leaving office, the Obamas will have a net worth of more than $50 million.\" --Dennis Mangan&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "64.82%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Will any of the NYT Coronavirus vaccine tracker numbers increase between 9am PST Fri 11/20 and 9am PST Sun 11/22?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20any of the NYT Coronavirus vaccine tracker numbers increase between 9am PST Fri 11/20 and 9am PST Sun 11/22?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "76.33%",
+    "# Forecasts": 15,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Arbital to become a top-1000 site by 2020",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Arbital%20to become a top-1000 site by 2020&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "9.00%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Heterogenity of ETI: Are they all the \"same\"? Over millions of years of evolution beyond humanity, have they evolved and converged to some \"final being\"?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Heterogenity%20of ETI: Are they all the \"same\"? Over millions of years of evolution beyond humanity, have they evolved and converged to some \"final being\"?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "26.27%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "The effect of First contact is mostly beneficial (e.g., cooperative or merely detectable)",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20effect of First contact is mostly beneficial (e.g., cooperative or merely detectable)&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "28.88%",
+    "# Forecasts": 25,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Will humans (at least one) leave the solar system within 10 years after First Contact?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20humans (at least one) leave the solar system within 10 years after First Contact?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "33.20%",
+    "# Forecasts": 15,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Will any LessWrong post made on Friday 11/20 get more than 100 karma by 9am PST on Sun 11/22?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20any LessWrong post made on Friday 11/20 get more than 100 karma by 9am PST on Sun 11/22?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "17.54%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "\"In the next 10 years, I expect at least five billion people worldwide to own smartphones\" --Marc Andreessen",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\"In%20the next 10 years, I expect at least five billion people worldwide to own smartphones\" --Marc Andreessen&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "75.17%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "A professional athlete will *not* voluntarily amputate their legs to use prosthetics like Oscar Pistorius, before 2041.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=A%20professional athlete will *not* voluntarily amputate their legs to use prosthetics like Oscar Pistorius, before 2041.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "38.64%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "At least 10 percent of people in the U.S. to be vegetarian (or in-vitro-ist) in 2030",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=At%20least 10 percent of people in the U.S. to be vegetarian (or in-vitro-ist) in 2030&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "29.08%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Germany to decommission all nuclear reactors by 2023",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Germany%20to decommission all nuclear reactors by 2023&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "57.00%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "The EA community has sometimes erred too much on the side of shutting down discussions of biology by turning them into discussions about info-hazards.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20EA community has sometimes erred too much on the side of shutting down discussions of biology by turning them into discussions about info-hazards.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "76.77%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "The core cognitive loop that causes progress in accomplished Buddhists is basically cognitive behavioral therapy, supercharged with a mental state more intense than most pharmaceuticals.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20core cognitive loop that causes progress in accomplished Buddhists is basically cognitive behavioral therapy, supercharged with a mental state more intense than most pharmaceuticals.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "44.63%",
+    "# Forecasts": 24,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Will legal factory farming end by January 1st 2100? ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20legal factory farming end by January 1st 2100? &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "23.38%",
+    "# Forecasts": 24,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "“I predict that by 2030, China will lay an ownership claim to the entire moon.”- Kelly L Anderson",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=“I%20predict that by 2030, China will lay an ownership claim to the entire moon.”- Kelly L Anderson&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "8.00%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Intel will revolutionize computing by placing the first artificial quantum computer chip on the maket by 2025.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Intel%20will revolutionize computing by placing the first artificial quantum computer chip on the maket by 2025.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "10.00%",
+    "# Forecasts": 14,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Caffeine will be an illegal substance ... in 60 countries by 2027. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Caffeine%20will be an illegal substance ... in 60 countries by 2027. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "5.42%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Goldbach's conjecture proven by 2040. -- Axel Boldt",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Goldbach's%20conjecture proven by 2040. -- Axel Boldt&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "31.64%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Machine translation no worse than human translation by 2040. -- Axel Boldt",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Machine%20translation no worse than human translation by 2040. -- Axel Boldt&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "65.93%",
+    "# Forecasts": 14,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Diagnosing standard medical conditions routinely involves DNA testing by 2040. -- Axel Boldt",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Diagnosing%20standard medical conditions routinely involves DNA testing by 2040. -- Axel Boldt&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "68.67%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "The world’s first lunar tourist by end of 2045",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20world’s first lunar tourist by end of 2045&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "56.86%",
+    "# Forecasts": 14,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "They'll clone a woolly mammoth by 2040",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=They'll%20clone a woolly mammoth by 2040&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "55.57%",
+    "# Forecasts": 14,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "With the making of the North American Union, a new revolutionary technology will be developed in the attempt to set a colony on Mars. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=With%20the making of the North American Union, a new revolutionary technology will be developed in the attempt to set a colony on Mars. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "8.92%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Before 2030 organized religions will have no political influence.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Before%202030 organized religions will have no political influence.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "10.29%",
+    "# Forecasts": 14,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "“In the year 2050, there will not be an operating fusion power plant -- a device that generates net energy via a nuclear fusion reaction and transmits it to the electrical grid -- anywhere in the world.”",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=“In%20the year 2050, there will not be an operating fusion power plant -- a device that generates net energy via a nuclear fusion reaction and transmits it to the electrical grid -- anywhere in the world.”&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "40.91%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "China will land a man on Mars by 2050.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=China%20will land a man on Mars by 2050.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "43.08%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "SIAI shuts down or relocates outside the United States before 2021.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=SIAI%20shuts down or relocates outside the United States before 2021.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "13.67%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "\"At least one human alive in the year 2000 will still be alive in 2150.\"",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\"At%20least one human alive in the year 2000 will still be alive in 2150.\"&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "56.21%",
+    "# Forecasts": 14,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "\"By March 25, 2033, there will be successful whole brain emulation.\"",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\"By%20March 25, 2033, there will be successful whole brain emulation.\"&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "16.33%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Neutrino communication will be used commercially for high-frequency trading within 10 years.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Neutrino%20communication will be used commercially for high-frequency trading within 10 years.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "10.79%",
+    "# Forecasts": 14,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Trump will run for president in 2024",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Trump%20will run for president in 2024&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "20.38%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Michelle Obama will run for office before 2021",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Michelle%20Obama will run for office before 2021&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "21.27%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "The LW user account \"Grognor\" will make a comment in a thread other than rationality quotes some time in the next ten years.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20LW user account \"Grognor\" will make a comment in a thread other than rationality quotes some time in the next ten years.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "45.92%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "The phosphine detected on Venus is widely agreed among the scientific community to be from life.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20phosphine detected on Venus is widely agreed among the scientific community to be from life.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "2.42%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Republicans will win the 2024 presidential election",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Republicans%20will win the 2024 presidential election&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "45.69%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Biden will resign sometime during the presidency conditional on him winning the election",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Biden%20will resign sometime during the presidency conditional on him winning the election&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "10.18%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Trump wins the 2020 election.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Trump%20wins the 2020 election.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "47.54%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Significant third party challengers will temporally emerge  within the next eight years in the USA.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Significant%20third party challengers will temporally emerge  within the next eight years in the USA.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "24.75%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "No amendments to the United States Constitution will be ratified by 2025.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=No%20amendments to the United States Constitution will be ratified by 2025.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "77.83%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Joe Biden gets coronavirus in 2020",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Joe%20Biden gets coronavirus in 2020&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "28.09%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "50 million",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=50%20million&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "1.65%",
+    "# Forecasts": 34,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Jeffrey Epstein was murdered and there is good evidence (e.g. footage or accepted confession or arrest warrant or conviction) that this was the case, before 2022",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Jeffrey%20Epstein was murdered and there is good evidence (e.g. footage or accepted confession or arrest warrant or conviction) that this was the case, before 2022&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "3.54%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "In 2033, more than 5% of deaths in China will be the result of state-mandated involuntary euthanasia.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=In%202033, more than 5% of deaths in China will be the result of state-mandated involuntary euthanasia.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "1.00%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "Human drivers will be illegal on *some* USA roads by 2030",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Human%20drivers will be illegal on *some* USA roads by 2030&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "44.08%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "People will choose virtual-reality clothes/make-up/accessories (like Snapchat filters), that are visible in real life to most people around them. This will be used by >10% of people, walking down the street, on dates, in business contexts.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=People%20will choose virtual-reality clothes/make-up/accessories (like Snapchat filters), that are visible in real life to most people around them. This will be used by >10% of people, walking down the street, on dates, in business contexts.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "33.09%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "We will still need human translators for serious translation work by 2040",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=We%20will still need human translators for serious translation work by 2040&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "52.69%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "some portion of England and the United States will be unified as one country or similar state within 10 years",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=some%20portion of England and the United States will be unified as one country or similar state within 10 years&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "3.77%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "The US will institute a minimum guaranteed income (aka basic guaranteed income, unconditional basic income, etc.) at a Federal level by 2045.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20US will institute a minimum guaranteed income (aka basic guaranteed income, unconditional basic income, etc.) at a Federal level by 2045.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "28.43%",
+    "# Forecasts": 14,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "\"there is a 100% chance you will see a private corporation go to war with a small country, and win, within twenty years.\" - Scott Adams",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\"there%20is a 100% chance you will see a private corporation go to war with a small country, and win, within twenty years.\" - Scott Adams&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "20.73%",
+    "# Forecasts": 11,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "At least two commercial reactors supplying fusion power to the grid by 2030. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=At%20least two commercial reactors supplying fusion power to the grid by 2030. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "23.67%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "By end of 2030, there will be commercially available self-driving cars in at least one OECD country where it will be legal to use them. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%20end of 2030, there will be commercially available self-driving cars in at least one OECD country where it will be legal to use them. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "93.25%",
+    "# Forecasts": 12,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "No fusion scheme will succeed until 2050, when ITER will be the first and only successful fusion scheme. Nothing else will even come close to meeting the triple product, nτT of ITER. There won't be a commercial fusion reactor in 2050 though, just a demo",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=No%20fusion scheme will succeed until 2050, when ITER will be the first and only successful fusion scheme. Nothing else will even come close to meeting the triple product, nτT of ITER. There won't be a commercial fusion reactor in 2050 though, just a demo&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "45.31%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "By 2025, 20% of all US driving miles to be by self-driving cars. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202025, 20% of all US driving miles to be by self-driving cars. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "31.38%",
+    "# Forecasts": 13,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "'President Mike Pence'",
+    "URL": "https://elicit.org/binary?binaryQuestions.search='President%20Mike Pence'&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "14.06%",
+    "# Forecasts": 16,
+    "# Forecasters": 11
+  },
+  {
+    "Title": "By 2050, a biologically functional but cosmetic novel body part produced by 3D printing technology will be demonstrated in a human, in vivo. For example: A horn, pointy ears, or an extra thumb. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202050, a biologically functional but cosmetic novel body part produced by 3D printing technology will be demonstrated in a human, in vivo. For example: A horn, pointy ears, or an extra thumb. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "75.09%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Fewer than 30% of the US Population self-identify as Christians.\r\n\r\nhttp://www.pewforum.org/2015/05/12/americas-changing-religious-landscape/",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Fewer%20than 30% of the US Population self-identify as Christians.\r\n\r\nhttp://www.pewforum.org/2015/05/12/americas-changing-religious-landscape/&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "19.80%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Trump dies of Coronavirus in 2020",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Trump%20dies of Coronavirus in 2020&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "1.36%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Google self driving car will get in an accident (involving human injury or property damage > $2k) before end of 2018.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Google%20self driving car will get in an accident (involving human injury or property damage > $2k) before end of 2018.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "48.00%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Trump Elected and constitutional crisis with US military disobeying direct orders from POTUS",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Trump%20Elected and constitutional crisis with US military disobeying direct orders from POTUS&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "11.30%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "WWIII starts before 2030.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=WWIII%20starts before 2030.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "8.86%",
+    "# Forecasts": 14,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Caitlyn Jenner = POTUS",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Caitlyn%20Jenner = POTUS&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "4.20%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Will this question get an answer, within a month, I judge as \"very insightful and directly relevant to how I approach Babble challenges in the future, enabling me to learn and grow faster?\"",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20this question get an answer, within a month, I judge as \"very insightful and directly relevant to how I approach Babble challenges in the future, enabling me to learn and grow faster?\"&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "29.64%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Airbnb to be acquired by 2025",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Airbnb%20to be acquired by 2025&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "34.64%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Will Rob Wiblin post more than 12 tweets (not including retweets) between 9am PST on Fri 11/20 and 9am PST on Sun 11/22?",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Will%20Rob Wiblin post more than 12 tweets (not including retweets) between 9am PST on Fri 11/20 and 9am PST on Sun 11/22?&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "52.69%",
+    "# Forecasts": 13,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "P!=NP, and proven by 2040 --Ken",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=P!=NP,%20and proven by 2040 --Ken&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "44.17%",
+    "# Forecasts": 12,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Ecstasy (MDMA) will be legalized for prescription use in the U.S. by 2025. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Ecstasy%20(MDMA) will be legalized for prescription use in the U.S. by 2025. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "26.10%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "A working brain-to-brain direct communication interface will be demonstrated in human clinical trials by 2025.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=A%20working brain-to-brain direct communication interface will be demonstrated in human clinical trials by 2025.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "41.30%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Advanced cultural skills are not very useful for species with sub-human levels of general cognitive skills and social skills.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Advanced%20cultural skills are not very useful for species with sub-human levels of general cognitive skills and social skills.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "34.38%",
+    "# Forecasts": 16,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "By 2050, there will be at least one person cryonically frozen in space.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202050, there will be at least one person cryonically frozen in space.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "15.80%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "“By the year 2150, over 50% of schools in the USA or Western Europe will require classes in defending against robot attacks.”",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=“By%20the year 2150, over 50% of schools in the USA or Western Europe will require classes in defending against robot attacks.”&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "7.42%",
+    "# Forecasts": 12,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "We ask ETI \"do we live in a simulation\"? They answer \"yes\".",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=We%20ask ETI \"do we live in a simulation\"? They answer \"yes\".&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "17.92%",
+    "# Forecasts": 13,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Robust mouse rejuvenation by 2020 -- Aubrey de Grey",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Robust%20mouse rejuvenation by 2020 -- Aubrey de Grey&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "13.14%",
+    "# Forecasts": 14,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "SpaceX will launch a Mars orbit or flyby mission before 2021",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=SpaceX%20will launch a Mars orbit or flyby mission before 2021&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "70.67%",
+    "# Forecasts": 12,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Advanced cultural skills are not directly selected for in species with sub-human levels of general cognitive skills and social skills.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Advanced%20cultural skills are not directly selected for in species with sub-human levels of general cognitive skills and social skills.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "46.70%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Advanced cultural skills are too complex for species with sub-human levels of general cognitive skills and social skills to acquire.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Advanced%20cultural skills are too complex for species with sub-human levels of general cognitive skills and social skills to acquire.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "27.79%",
+    "# Forecasts": 14,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "By 2085 there will be at least one confirmed person who has lived to 150",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202085 there will be at least one confirmed person who has lived to 150&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "33.46%",
+    "# Forecasts": 13,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "EU to dissolve by 2040.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=EU%20to dissolve by 2040.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "39.45%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Russia and Morocco have joined the European Union, and the EU slowly takes on the character of a nation; it has a common foreign policy and a standing army by 2040. -- Axel Boldt",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Russia%20and Morocco have joined the European Union, and the EU slowly takes on the character of a nation; it has a common foreign policy and a standing army by 2040. -- Axel Boldt&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "10.92%",
+    "# Forecasts": 12,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "No human will visit the moon from 2012 to 2032",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=No%20human will visit the moon from 2012 to 2032&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "52.73%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "By 2035, the general consensus will be that the US federal government orchestrated the 9/11 attacks. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202035, the general consensus will be that the US federal government orchestrated the 9/11 attacks. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "13.08%",
+    "# Forecasts": 12,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Within the next 1000 years we will discover that the singularity already happened a very long time ago and that we are the AIs that resulted from it.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Within%20the next 1000 years we will discover that the singularity already happened a very long time ago and that we are the AIs that resulted from it.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "15.50%",
+    "# Forecasts": 12,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "HIV will be eradicated by 2040 (Daniel Lemire)",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=HIV%20will be eradicated by 2040 (Daniel Lemire)&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "56.91%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "A Confirmed SETI detection of an ET technological civilization.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=A%20Confirmed SETI detection of an ET technological civilization.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "12.09%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "By the time most of the world’s population has made the transition to a vegan or cultured-meat diet, the rearing of other sentient beings for human consumption will be illegal under international law. -- David Pearce",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%20the time most of the world’s population has made the transition to a vegan or cultured-meat diet, the rearing of other sentient beings for human consumption will be illegal under international law. -- David Pearce&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "16.00%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "The First Domed City will exist before 2040. This will be the first above-ground structure since The third World War (WWIII).",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20First Domed City will exist before 2040. This will be the first above-ground structure since The third World War (WWIII).&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "6.09%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "HIV will be cured by 2025, but 5 new viruses deadlier than it will replace it.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=HIV%20will be cured by 2025, but 5 new viruses deadlier than it will replace it.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "7.09%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Alien/Time travelling human presence revealed on 27th of March 2022",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Alien/Time%20travelling human presence revealed on 27th of March 2022&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "0.50%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Generic molecular assemblers won't be developed within the next 20 years. \r\n\r\nBy “generic” I mean they can build macroscopic (≥ 10 mm³) objects for any reasonable function, and by “molecular” meaning 50%+ of chemical bonds don't come from bulk chemistry.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Generic%20molecular assemblers won't be developed within the next 20 years. \r\n\r\nBy “generic” I mean they can build macroscopic (≥ 10 mm³) objects for any reasonable function, and by “molecular” meaning 50%+ of chemical bonds don't come from bulk chemistry.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "77.10%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "More than 50% of all passenger cars on the road are completely autonomous, self-driving vehicles.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=More%20than 50% of all passenger cars on the road are completely autonomous, self-driving vehicles.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "26.38%",
+    "# Forecasts": 13,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "The Internet Archive will operate through 2025-07-01",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=The%20Internet Archive will operate through 2025-07-01&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "78.90%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "“The End of State Sovereignty: By 2030, some form of international federation or global governmental structure will emerge that can exercise ultimate authority over world affairs.”",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=“The%20End of State Sovereignty: By 2030, some form of international federation or global governmental structure will emerge that can exercise ultimate authority over world affairs.”&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "11.46%",
+    "# Forecasts": 13,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "“China will break apart by 2030”",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=“China%20will break apart by 2030”&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "24.60%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Scotland holds another independence referendum in the next 5 years. ",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Scotland%20holds another independence referendum in the next 5 years. &binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "55.60%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "In 10 years I will think Reddit/LW-style reputational/karma systems will be a bad thing (compared to non-karma systems like OB).",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=In%2010 years I will think Reddit/LW-style reputational/karma systems will be a bad thing (compared to non-karma systems like OB).&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "20.40%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "homosexuality criminalized in the US",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=homosexuality%20criminalized in the US&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "2.50%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "By the end of 2063, the consumption of meat from animals will be illegal in at least one area of Europe or North America with a population of at least 100,000",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%20the end of 2063, the consumption of meat from animals will be illegal in at least one area of Europe or North America with a population of at least 100,000&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "60.36%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Larry King's brain will be cryopreserved or plastinated within 2 weeks of declaration of death, and this is known before 2070",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Larry%20King's brain will be cryopreserved or plastinated within 2 weeks of declaration of death, and this is known before 2070&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "22.08%",
+    "# Forecasts": 12,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "\". The revenue for higher ed is falling into a black hole. I predict that by 2021 the whole enterprise will cease to exist in anything resembling its current form.\" --Dan King",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=\".%20The revenue for higher ed is falling into a black hole. I predict that by 2021 the whole enterprise will cease to exist in anything resembling its current form.\" --Dan King&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "11.46%",
+    "# Forecasts": 13,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "By 2030 the Singularity Institute for Artificial Intelligence will have given up on friendly AI and instead focus on fail-safe mechanisms.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=By%202030 the Singularity Institute for Artificial Intelligence will have given up on friendly AI and instead focus on fail-safe mechanisms.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "30.90%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Reservatrol or a chemically similar compound will be an accepted anti-aging treatment in humans by 2025",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Reservatrol%20or a chemically similar compound will be an accepted anti-aging treatment in humans by 2025&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "29.08%",
+    "# Forecasts": 13,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Elon Musk has sent a crewed mission to Mars",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Elon%20Musk has sent a crewed mission to Mars&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "17.30%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "In 2038 the population of the US will be 2 billion, none of them illegal. -Moldbug",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=In%202038 the population of the US will be 2 billion, none of them illegal. -Moldbug&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "9.36%",
+    "# Forecasts": 14,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "Mars to have detectable non-anthropogenic life on it",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=Mars%20to have detectable non-anthropogenic life on it&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "21.70%",
+    "# Forecasts": 10,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "1,000,000+ planets will have been cataloged by 2035",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=1,000,000+%20planets will have been cataloged by 2035&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "41.08%",
+    "# Forecasts": 13,
+    "# Forecasters": 10
+  },
+  {
+    "Title": "At least one self-described \"anarchist\" will be voted into a national office in the United States by 2021.",
+    "URL": "https://elicit.org/binary?binaryQuestions.search=At%20least one self-described \"anarchist\" will be voted into a national office in the United States by 2021.&binaryQuestions.sortBy=popularity&limit=20&offset=0",
+    "Platform": "Elicit",
+    "Binary question?": true,
+    "Percentage": "36.82%",
+    "# Forecasts": 11,
+    "# Forecasters": 10
+  }
+]

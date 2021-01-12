@@ -1,0 +1,10 @@
+[ {
+  "Title": "Some title",
+  "URL": "someurl.com",
+  "Platform": "some platform",
+  "Binary question?": true,
+  "Percentage": "X%/none",
+  "# Forecasts": 15,
+  "# Forecasters": 10
+}
+]

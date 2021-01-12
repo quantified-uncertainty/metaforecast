@@ -1,0 +1,218 @@
+[
+  {
+    "Title": "How many AI papers will be posted on arXiv between July 1 and December 31, 2021, inclusive?",
+    "URL": "https://www.cset-foretell.com/questions/103-how-many-ai-papers-will-be-posted-on-arxiv-between-july-1-and-december-31-2021-inclusive",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "11",
+    "# Forecasters": "11"
+  },
+  {
+    "Title": "How many members will the Alphabet Workers Union have by December 31, 2021?",
+    "URL": "https://www.cset-foretell.com/questions/105-how-many-members-will-the-alphabet-workers-union-have-by-december-31-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "25",
+    "# Forecasters": "25"
+  },
+  {
+    "Title": "What percentage of U.S. news articles about AI will be about privacy and security between July 1 and December 31, 2021, inclusive?",
+    "URL": "https://www.cset-foretell.com/questions/104-what-percentage-of-u-s-news-articles-about-ai-will-be-about-privacy-and-security-between-july-1-and-december-31-2021-inclusive",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "11",
+    "# Forecasters": "10"
+  },
+  {
+    "Title": "Will NVIDIA acquire Arm by March 31, 2022?",
+    "URL": "https://www.cset-foretell.com/questions/102-will-nvidia-acquire-arm-by-march-30-2022",
+    "Platform": "CSET-foretell",
+    "Binary question?": true,
+    "Percentage": "51%",
+    "# Forecasts": "38",
+    "# Forecasters": "31"
+  },
+  {
+    "Title": "How many of the top chipmakers in China will be subject to new export controls in 2021?",
+    "URL": "https://www.cset-foretell.com/questions/101-on-how-many-of-china-s-top-chipmakers-will-the-united-states-impose-new-export-controls-in-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "49",
+    "# Forecasters": "48"
+  },
+  {
+    "Title": "What percentage of the combined revenue of the top five semiconductor manufacturing equipment producers will come from China in 2021?",
+    "URL": "https://www.cset-foretell.com/questions/100-what-percentage-of-the-collective-revenue-of-the-leading-semiconductor-manufacturing-equipment-producers-will-come-from-china-between-july-1-2020-and-june-30-2021-inclusive",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "43",
+    "# Forecasters": "41"
+  },
+  {
+    "Title": "Will the United States return to compliance with the 2015 Iran nuclear deal by December 31, 2021?",
+    "URL": "https://www.cset-foretell.com/questions/99-will-the-united-states-re-enter-the-2015-nuclear-deal-with-iran-by-december-31-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": true,
+    "Percentage": "65%",
+    "# Forecasts": "101",
+    "# Forecasters": "75"
+  },
+  {
+    "Title": "What will be the value, in dollars, of all Chinese imports of semiconductor manufacturing equipment in 2021?",
+    "URL": "https://www.cset-foretell.com/questions/95-what-will-be-the-value-in-dollars-of-all-chinese-imports-of-semiconductor-manufacturing-equipment-in-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "59",
+    "# Forecasters": "50"
+  },
+  {
+    "Title": "When will Ant Financial have an IPO in China or Hong Kong?",
+    "URL": "https://www.cset-foretell.com/questions/97-when-will-ant-financial-have-an-ipo-in-china-or-hong-kong",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "131",
+    "# Forecasters": "98"
+  },
+  {
+    "Title": "What will be the value, in dollars, of all Chinese imports of semiconductor chips in 2021?",
+    "URL": "https://www.cset-foretell.com/questions/96-what-will-be-the-value-in-dollars-of-all-chinese-imports-of-semiconductor-chips-in-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "59",
+    "# Forecasters": "52"
+  },
+  {
+    "Title": "What will be the value, in dollars, of U.S. exports of semiconductor chips to China in the first half of 2021?",
+    "URL": "https://www.cset-foretell.com/questions/93-what-will-the-dollar-value-of-u-s-exports-of-semiconductor-chips-to-china-be-in-the-first-half-of-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "67",
+    "# Forecasters": "55"
+  },
+  {
+    "Title": "What will be the value, in dollars, of U.S. exports of semiconductor manufacturing equipment to China in the first half of 2021? ",
+    "URL": "https://www.cset-foretell.com/questions/92-what-will-the-dollar-value-of-u-s-exports-of-semiconductor-manufacturing-equipment-to-china-be-in-the-first-half-of-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "55",
+    "# Forecasters": "42"
+  },
+  {
+    "Title": "What percentage of U.S. residents will have an unfavorable view of China, as reflected in the 2022 Pew Global Attitudes Survey?",
+    "URL": "https://www.cset-foretell.com/questions/91-conditional-on-vice-president-biden-s-election-what-percentage-of-u-s-residents-will-have-an-unfavorable-view-of-china-as-reflected-in-the-2022-pew-global-attitudes-survey",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "138",
+    "# Forecasters": "121"
+  },
+  {
+    "Title": "What percentage of U.S. AI publications will have a Chinese co-author in 2021?",
+    "URL": "https://www.cset-foretell.com/questions/86-what-percentage-of-u-s-ai-publications-will-be-u-s-china-collaborations-in-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "82",
+    "# Forecasters": "77"
+  },
+  {
+    "Title": "Will the U.S. government file an antitrust lawsuit against Apple, Amazon, or Facebook between January 20, 2021 and January 19, 2025?",
+    "URL": "https://www.cset-foretell.com/questions/89-conditional-on-vice-president-biden-s-election-will-the-u-s-government-file-an-antitrust-lawsuit-against-apple-amazon-or-facebook-between-january-20-2021-and-january-19-2025",
+    "Platform": "CSET-foretell",
+    "Binary question?": true,
+    "Percentage": "71%",
+    "# Forecasts": "120",
+    "# Forecasters": "89"
+  },
+  {
+    "Title": "What will the trade-to-GDP ratio for China be in the first two quarters of 2021?",
+    "URL": "https://www.cset-foretell.com/questions/84-what-will-the-ratio-of-trade-imports-exports-of-goods-to-gdp-be-china-in-the-first-two-quarters-january-1-through-june-30-of-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "53",
+    "# Forecasters": "42"
+  },
+  {
+    "Title": "What will the trade-to-GDP ratio for all OECD member countries be in the first two quarters of 2021?",
+    "URL": "https://www.cset-foretell.com/questions/83-what-will-the-ratio-of-trade-imports-exports-of-goods-to-gdp-be-for-oecd-member-countries-in-the-first-two-quarters-january-1-through-june-30-of-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "47",
+    "# Forecasters": "34"
+  },
+  {
+    "Title": "What percentage of U.S. residents will have an unfavorable view of China, as reflected in the 2021 Pew Global Attitudes Survey?",
+    "URL": "https://www.cset-foretell.com/questions/80-what-percentage-of-u-s-citizens-will-have-an-unfavorable-view-of-china-as-reflected-in-the-2021-pew-global-attitudes-survey",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "200",
+    "# Forecasters": "158"
+  },
+  {
+    "Title": "What percentage of O visas will go to Chinese nationals in FY 2021 (October 1, 2020 to September 30, 2021)?",
+    "URL": "https://www.cset-foretell.com/questions/79-conditional-on-biden-s-election-what-percentage-of-o-visas-will-go-to-chinese-nationals-in-fy-2021-october-1-2020-to-september-30-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "84",
+    "# Forecasters": "68"
+  },
+  {
+    "Title": "What will total U.S. trade volume with China (imports and exports of goods) be in 2021?",
+    "URL": "https://www.cset-foretell.com/questions/76-what-will-total-u-s-trade-volume-with-china-imports-and-exports-of-goods-be-in-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "80",
+    "# Forecasters": "61"
+  },
+  {
+    "Title": "What percentage of U.S. corporate press releases about AI will reference AI ethics in 2021?",
+    "URL": "https://www.cset-foretell.com/questions/45-what-percent-of-u-s-corporate-press-releases-about-ai-will-be-about-ai-ethics-in-2021",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "169",
+    "# Forecasters": "126"
+  },
+  {
+    "Title": "How much will the U.S. government spend on surveillance-related AI grants between June 1, 2020 and May 31, 2021, inclusive?",
+    "URL": "https://www.cset-foretell.com/questions/41-how-much-will-the-u-s-government-spend-on-surveillance-related-ai-grants-between-june-1-2020-and-may-31-2021-inclusive",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "79",
+    "# Forecasters": "62"
+  },
+  {
+    "Title": "How many times will the Japanese Air Force respond to threats to Japan's territorial airspace by Chinese military aircraft between April 1, 2020 and March 31, 2021, inclusive?",
+    "URL": "https://www.cset-foretell.com/questions/32-how-many-sorties-against-chinese-aircraft-will-the-japanese-air-self-defense-force-conduct-by-april-30th-2020",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "85",
+    "# Forecasters": "55"
+  },
+  {
+    "Title": "How many new H-1B visa applications submitted by the \"Big 5\" tech companies will the U.S. grant between October 1, 2020 and September 30, 2021, inclusive?",
+    "URL": "https://www.cset-foretell.com/questions/23-how-many-new-h-1b-applications-submitted-by-the-big-5-tech-companies-will-the-u-s-grant-in-fy-2020",
+    "Platform": "CSET-foretell",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "119",
+    "# Forecasters": "75"
+  }
+]
