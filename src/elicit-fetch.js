@@ -1,11 +1,12 @@
 /* Imports */
 import fs from "fs"
+import axios from "axios"
 import Papa from "papaparse"
 import open from "open"
 import readline from "readline"
 
 /* Definitions */
-let downloadurl = 'https://elicit.org/binary?binaryQuestion&binaryQuestions.sortBy=popularity&limit=20&offset=0&predictors=community'
+let elicitEndpoint = "https://elicit.org/api/v1/binary-questions/csv?binaryQuestions.resolved=false&binaryQuestions.search=&binaryQuestions.sortBy=popularity&predictors=community"
 
 /* Support functions */
 let avg = (array) => array.reduce((a, b) => Number(a) + Number(b)) / array.length;
@@ -45,7 +46,7 @@ function processArray(arrayQuestions){
 
     let numforecasters = (unique(forecasters)).length
     if(numforecasters >= 10){
-      let url = `https://elicit.org/binary?binaryQuestions.search=${title.replace(" ", "%20")}&binaryQuestions.sortBy=popularity&limit=20&offset=0`
+      let url = `https://elicit.org/binary?binaryQuestions.search=${title.replace(/ /g, "%20")}&binaryQuestions.sortBy=popularity&limit=20&offset=0`
       let forecasts = questionsObj[question].forecasts
 
       //console.log(forecasts)
@@ -89,14 +90,9 @@ async function awaitdownloadconfirmation(message,callback){
 let filePath = "./data/elicit-binary_export.csv"
 
 export async function elicit(){
-  console.log('A browser tab will open. Please download the csv to /data/elicit-binary_export.csv by clicking on "Download CSV"')
-  await sleep(3000)
-  await open(downloadurl);
-  await awaitdownloadconfirmation('Press enter when you have downloaded the csv to /data/elicit-binary_export.csv',async () => {
-    let csvFile = fs.readFileSync(filePath, {encoding: 'utf8'})
-    let csvData = csvFile.toString(csvFile)  
-    //console.log(csvData)
-    await Papa.parse(csvData, {
+  let csvContent = await axios.get(elicitEndpoint)
+    .then(query => query.data)
+  await Papa.parse(csvContent, {
         header: true,
         complete: results => {
           console.log('Downloaded', results.data.length, 'records.'); 
@@ -104,7 +100,6 @@ export async function elicit(){
           //console.log(results.data)
           processArray(results.data)
         }
-      });
-  })
+    });
 }
 //elicit()

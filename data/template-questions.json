@@ -4,7 +4,6 @@
   "Platform": "some platform",
   "Binary question?": true,
   "Percentage": "X%/none",
-  "# Forecasts": 15,
-  "# Forecasters": 10
+  "# Forecasts": 15
 }
 ]

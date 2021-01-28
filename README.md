@@ -1,13 +1,24 @@
-## How to use your own cookies
-Private session cookies are necessary to query CSET-foretell and Good Judgment Open. You can get said cookies by creating an account in said platforms and then making and inspecting a request (e.g., by making a prediction). After doing this, you should create a `src/privatekeys.json`, in the same format as `src/privatekeys_example.json`
+## What this is 
+
+This is a set of libraries and a command line interface that fetches probabilities/forecasts from prediction markets and forecasting platforms. These forecasts are then hosted on airtable, and used to power a small search engine for probabilities. 
+
+Eventually, this could become more elaborate; for example, forecasts could be ranked according to their quality. For now, a demo can be found [here](https://www.loki.red/metaforecasts/) (try searching "Trump"), and the database can be perused [here](https://www.loki.red/metaforecasts/data/). 
 
 ## How to run
+
+### 1. Download this repository
+
+``git clone https://github.com/QURIresearch/metaforecasts``
+
+### 2. Enter your own cookies
+Private session cookies are necessary to query CSET-foretell and Good Judgment Open. You can get said cookies by creating an account in said platforms and then making and inspecting a request (e.g., by making a prediction). After doing this, you should create a `src/privatekeys.json`, in the same format as `src/privatekeys_example.json`
+
+### 3. Actually run
 
 From the top level directory, enter: `npm run start`
 
 ## Various notes
 
-- This will eventually be a webpage where users can just search for keywords and obtain forecasts related to those keywords. For example, by searching "Trump" and get probabilities related to various scenarios involving him. 
-- A demo of this functionality can be found [here](https://www.loki.red/metaforecasts/), the database can be found [here](https://www.loki.red/metaforecasts/data/), and a csv with the raw data [here](https://www.loki.red/metaforecasts/merged-questions.csv).
-- These probabilities could then be rated and annotated, e.g., prediction markets rarely go above 95% or below 5%. 
-- For elicit and metaculus, this library currently filters questions with <10 predictions
+- Right now, I'm fetching only a couple of common properties, such as the title, url, platform, whether a question is binary (yes/no), its percentage, and the number of forecasts. However, the code contains more fields commented out, such as trade volume, liquidity, etc. 
+- A note as to quality: Good Judgment Open ~ Metaculus > CSET > PredictIt ~> Polymarket >> Elicit > Omen. Further, prediction markets rarely go above 95% or below 5%.
+- For elicit and metaculus, this library currently filters questions with <10 predictions.

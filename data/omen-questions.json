@@ -1,0 +1,137 @@
+[
+  {
+    "Title": "Will the Ethereum block gas limit be >= 25,000,000 gas in any block on April 1st 2021?",
+    "URL": "https://omen.eth.link/#/0x06c942fd737bc53571a34667b2ae3b669f1f502d",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.997652780320339389668726385868353",
+      "0.002347219679660610331273614131647038"
+    ],
+    "Percentage": "99.7653%"
+  },
+  {
+    "Title": "Will UNI governance approve a new liquidity mining program by the end of February, 2021?",
+    "URL": "https://omen.eth.link/#/0x32848849f5b7e30ff75f57838fea8f9663c3d9de",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.1086728608079395832263016792869373",
+      "0.8913271391920604167736983207130627"
+    ],
+    "Percentage": "10.8673%"
+  },
+  {
+    "Title": "Will at least 6000 YFI tokens be minted till end of Feb?",
+    "URL": "https://omen.eth.link/#/0x7a236ecb8686068fd0f41c88773bb9cb40856e6d",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.4810827016169048678561288717963137",
+      "0.5189172983830951321438711282036863"
+    ],
+    "Percentage": "48.1083%"
+  },
+  {
+    "Title": "Will Uniswap V3 be launched and usable in Q1 2021? (includes mainnet or Layer2)",
+    "URL": "https://omen.eth.link/#/0x8bcf27b20670a4f32973cbf231b8904029da1ccb",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.4013812037799882539689575072876216",
+      "0.5986187962200117460310424927123784"
+    ],
+    "Percentage": "40.1381%"
+  },
+  {
+    "Title": "When will the FDA approve the use of an existing, orally-administered vaccine for the prevention of COVID-19?",
+    "URL": "https://omen.eth.link/#/0x9598659e3fc7d5a618b57e94be2ac37e5d774905",
+    "Platform": "Omen",
+    "Binary question?": false,
+    "marginalPrices": [
+      "0.01515661495857047678999833535985743",
+      "0.01515661495857047678999833535985743",
+      "0.01515661495857047678999833535985743",
+      "0.01515661495857047678999833535985743",
+      "0.9393735401657180928400066585605703"
+    ],
+    "Percentage": "none"
+  },
+  {
+    "Title": "Will The Flippening happen in 2021? (Will another blockchain's market cap exceed Bitcoin's market cap in 2021?)",
+    "URL": "https://omen.eth.link/#/0xa6da2bc89a433b9cdcc7271077a119139f4d305c",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.5",
+      "0.5"
+    ],
+    "Percentage": "50.0000%"
+  },
+  {
+    "Title": "Will United States v Griffith (case 19 MAG 10987) resolve with Griffith convicted of a felony such as violating IEEPA?",
+    "URL": "https://omen.eth.link/#/0xcc6cc7204eeba3f76168458b3ac725af89bb9fbb",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.6000000000000000000199061948971275",
+      "0.3999999999999999999800938051028725"
+    ],
+    "Percentage": "60.0000%"
+  },
+  {
+    "Title": "Will Joe Biden be the US President at the end of 2021?",
+    "URL": "https://omen.eth.link/#/0xd450b6c4db569f600cb42acc0a6cd3a140c4894b",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.8510322451182968590048070388296782",
+      "0.1489677548817031409951929611703218"
+    ],
+    "Percentage": "85.1032%"
+  },
+  {
+    "Title": "What will be the outcome of the 2020 US Presidential Election for the office of President of the United States, where the winner is the one receiving the most votes from certified electors of the Electoral College, those votes having been officially counted by the United States Congress under VICE PRESIDENT MICHAEL PENCE on January 6, 2021 (per the Electoral Count Act of 1887)?",
+    "URL": "https://omen.eth.link/#/0xdbf41f1f2d28216eb4e76b9ed3856180c2daa479",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.9900000000000001225706801609666705",
+      "0.00999999999999987742931983903332947"
+    ],
+    "Percentage": "99.0000%"
+  },
+  {
+    "Title": "Will Compound Chain be launched and usable by the end of Q2 2021?",
+    "URL": "https://omen.eth.link/#/0xe018254be84e200bfb9947dc57df8943cb2ac1b2",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.399999999999999999999976",
+      "0.600000000000000000000024"
+    ],
+    "Percentage": "40.0000%"
+  },
+  {
+    "Title": "Will UNI governance approve a new liquidity mining program by the end of February, 2021?",
+    "URL": "https://omen.eth.link/#/0xed6940e49cee029c4664d9794c04d5f9e5597632",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.117266969703417233389287613062571",
+      "0.882733030296582766610712386937429"
+    ],
+    "Percentage": "11.7267%"
+  },
+  {
+    "Title": "Will at least 6000 YFI tokens be minted till end of Feb?",
+    "URL": "https://omen.eth.link/#/0xf2f5db144ec6dcd40a9e425b67a4930a3f442a16",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.3126524159386235616135925047260208",
+      "0.6873475840613764383864074952739792"
+    ],
+    "Percentage": "31.2652%"
+  }
+]

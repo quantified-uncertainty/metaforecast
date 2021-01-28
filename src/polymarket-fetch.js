@@ -6,10 +6,17 @@ import axios from "axios"
 let graphQLendpoint = 'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
 let units = 10**6
 
-/* Support functions */
+/* Support functions
 async function fetchAllContractInfo(){ // for info which the polymarket graphql API
   let data = fs.readFileSync("./data/polymarket-contract-list.json")
   let response = JSON.parse(data)
+  return response
+}
+ */
+async function fetchAllContractInfo(){ // for info which the polymarket graphql API
+  let response = await axios.get('https://strapi-matic.poly.market/markets?active=true&_sort=volume:desc')
+    .then(query => query.data);
+  response = response.filter(res => res.closed != true)
   return response
 }
 
@@ -58,13 +65,13 @@ async function fetch_all(){
   
   let combinedObj = ({})
   for(let info of allInfo){
-    let address = info.address
+    let address = info.marketMakerAddress
     let addressLowerCase = address.toLowerCase()
     //delete info.history
     combinedObj[addressLowerCase] = {
-      title: info.title,
-      url: info.url, 
-      address: info.address
+      title: info.question,
+      url: "https://polymarket.com/market/" + info.slug, 
+      address: address
     }
   }
   for(let data of allData){
