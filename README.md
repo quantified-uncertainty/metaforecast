@@ -2,7 +2,7 @@
 
 This is a set of libraries and a command line interface that fetches probabilities/forecasts from prediction markets and forecasting platforms. These forecasts are then hosted on airtable, and used to power a search engine for probabilities. 
 
-Eventually, this could become more elaborate; for example, forecasts could be ranked according to their quality. For now, a demo can be found [here](https://www.loki.red/metaforecasts/) (try searching "Trump", "China" or "Semiconductors"), and the database can be perused [here](https://www.loki.red/metaforecasts/data/). 
+Eventually, this could become more elaborate; for example, forecasts could be ranked according to their quality. For now, a demo can be found [here](https://www.loki.red/metaforecasts/) (try searching "Trump", "China" or "Semiconductors"), and the database can be perused [here](https://www.loki.red/metaforecasts/data/). I also have a json endpoint [here](https://www.loki.red/metaforecasts/data/metaforecasts.json) and a csv endpoint [here](https://www.loki.red/metaforecasts/data/metaforecasts.csv).
 
 ![](./metaforecasts.png)
 
