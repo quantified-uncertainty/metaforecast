@@ -3,7 +3,7 @@ import fs from 'fs'
 import axios from "axios"
 
 /* Definitions */
-let graphQLendpoint = 'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
+let graphQLendpoint = "https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
 let units = 10**6
 
 /* Support functions

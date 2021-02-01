@@ -1,59 +1,35 @@
 [
   {
-    "Title": "Will DeFi Dominance on CoinGecko be above 10% on March 15, 2021?",
-    "URL": "https://polymarket.com/market/will-de-fi-dominance-on-coin-gecko-be-above-10-on-march-15-2021",
-    "Platform": "PolyMarket",
-    "Binary question?": true,
-    "Percentage": "20.3269%",
-    "# Forecasts": "69.00"
-  },
-  {
-    "Title": "How many more tweets will be on the @DonaldJTrumpJr account by February 1, 2021?",
-    "URL": "https://polymarket.com/market/how-many-more-tweets-will-be-on-the-donald-j-trump-jr-account-by-february-1-2021",
+    "Title": "How many more tweets will be on the @ElonMusk account on February 3, 2021?",
+    "URL": "https://polymarket.com/market/how-many-more-tweets-will-be-on-the-elon-musk-account-on-february-3-2021",
     "Platform": "PolyMarket",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "798.00"
+    "# Forecasts": "649.00"
+  },
+  {
+    "Title": "Will Dogecoin be above $.069 on February 2nd?",
+    "URL": "https://polymarket.com/market/will-dogecoin-be-above-069-on-february-2nd",
+    "Platform": "PolyMarket",
+    "Binary question?": true,
+    "Percentage": "3.5382%",
+    "# Forecasts": "239.00"
+  },
+  {
+    "Title": "Will Tesla announce a Bitcoin purchase before March 1, 2021?",
+    "URL": "https://polymarket.com/market/will-tesla-announce-a-bitcoin-purchase-before-march-1-2021",
+    "Platform": "PolyMarket",
+    "Binary question?": true,
+    "Percentage": "15.5817%",
+    "# Forecasts": "1284.00"
   },
   {
     "Title": "Will Donald Trump's Twitter account be active on March 1, 2021?",
     "URL": "https://polymarket.com/market/will-donald-trump-s-twitter-account-be-active-on-march-1-2021",
     "Platform": "PolyMarket",
     "Binary question?": true,
-    "Percentage": "4.4456%",
-    "# Forecasts": "247.00"
-  },
-  {
-    "Title": "Will ETH be above $1500 on February 3rd, 2021?",
-    "URL": "https://polymarket.com/market/will-eth-be-above-1500-on-february-3rd-2021",
-    "Platform": "PolyMarket",
-    "Binary question?": true,
-    "Percentage": "20.6871%",
-    "# Forecasts": "165.00"
-  },
-  {
-    "Title": "Will there be enough signatures for a vote on the recall of Gov. Newsom by March 17?",
-    "URL": "https://polymarket.com/market/will-there-be-enough-signatures-for-a-vote-on-recall-of-gov-newsom-by-march-17",
-    "Platform": "PolyMarket",
-    "Binary question?": true,
-    "Percentage": "68.4254%",
-    "# Forecasts": "34.00"
-  },
-  {
-    "Title": "Will Joe Biden be President of the USA on March 1, 2021?",
-    "URL": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-march-1-2021",
-    "Platform": "PolyMarket",
-    "Binary question?": true,
-    "Percentage": "96.5852%",
-    "# Forecasts": "3239.00"
-  },
-  {
-    "Title": "Who will the world's richest person be on February 27, 2021?",
-    "URL": "https://polymarket.com/market/who-will-the-world-s-richest-person-be-on-february-27-2021",
-    "Platform": "PolyMarket",
-    "Binary question?": false,
-    "Percentage": "none",
-    "# Forecasts": "558.00"
+    "Percentage": "5.2869%",
+    "# Forecasts": "264.00"
   },
   {
     "Title": "How many Senators will vote to convict Donald Trump on incitement by March 1?",
@@ -61,103 +37,151 @@
     "Platform": "PolyMarket",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "377.00"
+    "# Forecasts": "956.00"
   },
   {
-    "Title": "Will Tesla announce a Bitcoin purchase before March 1, 2021?",
-    "URL": "https://polymarket.com/market/will-tesla-announce-a-bitcoin-purchase-before-march-1-2021",
-    "Platform": "PolyMarket",
-    "Binary question?": true,
-    "Percentage": "12.5256%",
-    "# Forecasts": "975.00"
-  },
-  {
-    "Title": "Will 100 million people have received a dose of an approved COVID-19 vaccine in The US by April 1, 2021?",
-    "URL": "https://polymarket.com/market/will-100-million-people-have-received-a-dose-of-an-approved-covid-19-vaccine-in-the-us-by-april-1-2021",
-    "Platform": "PolyMarket",
-    "Binary question?": true,
-    "Percentage": "59.9503%",
-    "# Forecasts": "890.00"
-  },
-  {
-    "Title": "Will Bitcoin or Tesla have a higher market cap on March 1, 2021?",
-    "URL": "https://polymarket.com/market/will-bitcoin-or-tesla-have-a-higher-market-cap-on-march-1-2021",
-    "Platform": "PolyMarket",
-    "Binary question?": true,
-    "Percentage": "32.2396%",
-    "# Forecasts": "288.00"
-  },
-  {
-    "Title": "How many more tweets will be on the @ElonMusk account on February 3, 2021?",
-    "URL": "https://polymarket.com/market/how-many-more-tweets-will-be-on-the-elon-musk-account-on-february-3-2021",
+    "Title": "Who will the world's richest person be on February 27, 2021?",
+    "URL": "https://polymarket.com/market/who-will-the-world-s-richest-person-be-on-february-27-2021",
     "Platform": "PolyMarket",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "179.00"
+    "# Forecasts": "686.00"
   },
   {
-    "Title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
-    "URL": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
+    "Title": "How many more tweets will be on the @DonaldJTrumpJr account by February 1, 2021?",
+    "URL": "https://polymarket.com/market/how-many-more-tweets-will-be-on-the-donald-j-trump-jr-account-by-february-1-2021",
     "Platform": "PolyMarket",
-    "Binary question?": true,
-    "Percentage": "93.1437%",
-    "# Forecasts": "451.00"
-  },
-  {
-    "Title": "Will $BTC break $50k before April 1st, 2021?",
-    "URL": "https://polymarket.com/market/will-btc-break-50k-before-april-1st-2021",
-    "Platform": "PolyMarket",
-    "Binary question?": true,
-    "Percentage": "27.6431%",
-    "# Forecasts": "1259.00"
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "2385.00"
   },
   {
     "Title": "Will YFI total supply be greater than 30,000 by March 15th?",
     "URL": "https://polymarket.com/market/will-yfi-total-supply-be-greater-than-30-000-by-march-15th",
     "Platform": "PolyMarket",
     "Binary question?": true,
-    "Percentage": "86.4956%",
-    "# Forecasts": "118.00"
+    "Percentage": "88.5820%",
+    "# Forecasts": "156.00"
   },
   {
-    "Title": "Will Donald Trump be President of the USA on March 31, 2021?",
-    "URL": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-march-31-2021",
+    "Title": "Will Joe Biden be President of the USA on March 1, 2021?",
+    "URL": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-march-1-2021",
     "Platform": "PolyMarket",
     "Binary question?": true,
-    "Percentage": "4.9602%",
-    "# Forecasts": "1144.00"
+    "Percentage": "96.0691%",
+    "# Forecasts": "3419.00"
   },
   {
-    "Title": "Which party will control the senate?",
-    "URL": "https://polymarket.com/market/which-party-will-control-the-senate",
+    "Title": "Will 100 million people have received a dose of an approved COVID-19 vaccine in The US by April 1, 2021?",
+    "URL": "https://polymarket.com/market/will-100-million-people-have-received-a-dose-of-an-approved-covid-19-vaccine-in-the-us-by-april-1-2021",
     "Platform": "PolyMarket",
     "Binary question?": true,
-    "Percentage": "0.4525%",
-    "# Forecasts": "1554.00"
+    "Percentage": "59.8311%",
+    "# Forecasts": "1062.00"
   },
   {
-    "Title": "What rating will theneedledrop give Drake’s \"Certified Lover Boy\"?",
-    "URL": "https://polymarket.com/market/what-rating-will-theneedledrop-give-drake-s-certified-lover-boy",
+    "Title": "Will $BTC break $50k before April 1st, 2021?",
+    "URL": "https://polymarket.com/market/will-btc-break-50k-before-april-1st-2021",
     "Platform": "PolyMarket",
     "Binary question?": true,
-    "Percentage": "52.0540%",
-    "# Forecasts": "56.00"
+    "Percentage": "38.0059%",
+    "# Forecasts": "1486.00"
   },
   {
-    "Title": "$2000 stimulus checks by February 28, 2021?",
-    "URL": "https://polymarket.com/market/2000-stimulus-checks-by-february-28-2021",
+    "Title": "Will Bitcoin or Tesla have a higher market cap on March 1, 2021?",
+    "URL": "https://polymarket.com/market/will-bitcoin-or-tesla-have-a-higher-market-cap-on-march-1-2021",
     "Platform": "PolyMarket",
     "Binary question?": true,
-    "Percentage": "26.0828%",
-    "# Forecasts": "946.00"
+    "Percentage": "33.0425%",
+    "# Forecasts": "316.00"
+  },
+  {
+    "Title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
+    "URL": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
+    "Platform": "PolyMarket",
+    "Binary question?": true,
+    "Percentage": "90.3575%",
+    "# Forecasts": "474.00"
+  },
+  {
+    "Title": "Will the Trail Blazers or the Bucks win their February 1st matchup?",
+    "URL": "https://polymarket.com/market/will-the-trail-blazers-or-the-bucks-win-their-february-1st-matchup",
+    "Platform": "PolyMarket",
+    "Binary question?": true,
+    "Percentage": "20.6931%",
+    "# Forecasts": "30.00"
   },
   {
     "Title": "Will the Senate convict Donald Trump on impeachment by April 29, 2021?",
     "URL": "https://polymarket.com/market/will-the-senate-convict-donald-trump-on-impeachment-before-june-1-2021",
     "Platform": "PolyMarket",
     "Binary question?": true,
-    "Percentage": "5.0066%",
-    "# Forecasts": "553.00"
+    "Percentage": "7.0351%",
+    "# Forecasts": "640.00"
+  },
+  {
+    "Title": "Superbowl 55: Kansas City Chiefs vs Tampa Bay Buccaneers",
+    "URL": "https://polymarket.com/market/will-the-kansas-city-chiefs-win-superbowl-55",
+    "Platform": "PolyMarket",
+    "Binary question?": true,
+    "Percentage": "61.2180%",
+    "# Forecasts": "629.00"
+  },
+  {
+    "Title": "Will Donald Trump be President of the USA on March 31, 2021?",
+    "URL": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-march-31-2021",
+    "Platform": "PolyMarket",
+    "Binary question?": true,
+    "Percentage": "5.4605%",
+    "# Forecasts": "1401.00"
+  },
+  {
+    "Title": "Will DeFi Dominance on CoinGecko be above 10% on March 15, 2021?",
+    "URL": "https://polymarket.com/market/will-de-fi-dominance-on-coin-gecko-be-above-10-on-march-15-2021",
+    "Platform": "PolyMarket",
+    "Binary question?": true,
+    "Percentage": "7.8102%",
+    "# Forecasts": "96.00"
+  },
+  {
+    "Title": "$2000 stimulus checks by February 28, 2021?",
+    "URL": "https://polymarket.com/market/2000-stimulus-checks-by-february-28-2021",
+    "Platform": "PolyMarket",
+    "Binary question?": true,
+    "Percentage": "27.2357%",
+    "# Forecasts": "1070.00"
+  },
+  {
+    "Title": "What rating will theneedledrop give Drake’s \"Certified Lover Boy\"?",
+    "URL": "https://polymarket.com/market/what-rating-will-theneedledrop-give-drake-s-certified-lover-boy",
+    "Platform": "PolyMarket",
+    "Binary question?": true,
+    "Percentage": "55.5800%",
+    "# Forecasts": "62.00"
+  },
+  {
+    "Title": "Will there be enough signatures for a vote on the recall of Gov. Newsom by March 17?",
+    "URL": "https://polymarket.com/market/will-there-be-enough-signatures-for-a-vote-on-recall-of-gov-newsom-by-march-17",
+    "Platform": "PolyMarket",
+    "Binary question?": true,
+    "Percentage": "63.1510%",
+    "# Forecasts": "124.00"
+  },
+  {
+    "Title": "Will ETH be above $1500 on February 3rd, 2021?",
+    "URL": "https://polymarket.com/market/will-eth-be-above-1500-on-february-3rd-2021",
+    "Platform": "PolyMarket",
+    "Binary question?": true,
+    "Percentage": "6.2112%",
+    "# Forecasts": "1049.00"
+  },
+  {
+    "Title": "How many subscribers will /r/wallstreetbets have on February 7, 2021?",
+    "URL": "https://polymarket.com/market/how-many-subscribers-will-rwallstreetbets-have-on-february-7-2021",
+    "Platform": "PolyMarket",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "1757.00"
   },
   {
     "title": "Will Coinbase delist Ripple (XRP) before they begin publicly trading?",
@@ -165,35 +189,19 @@
     "address": "0x361A583ef3A5f41Aa126465387b7f5e978F8A0C1"
   },
   {
-    "Title": "Superbowl 55: Kansas City Chiefs vs Tampa Bay Buccaneers",
-    "URL": "https://polymarket.com/market/will-the-kansas-city-chiefs-win-superbowl-55",
-    "Platform": "PolyMarket",
-    "Binary question?": true,
-    "Percentage": "59.5820%",
-    "# Forecasts": "505.00"
-  },
-  {
     "Title": " Will Kim Kardashian or Kanye West file for divorce before March 1, 2021?",
     "URL": "https://polymarket.com/market/will-kim-kardashian-or-kanye-west-file-for-divorce-before-march-1-2021",
     "Platform": "PolyMarket",
     "Binary question?": true,
-    "Percentage": "26.3912%",
-    "# Forecasts": "155.00"
+    "Percentage": "21.3404%",
+    "# Forecasts": "169.00"
   },
   {
     "Title": "Donald Trump federally charged by February 20th?",
     "URL": "https://polymarket.com/market/donald-trump-federally-charged-by-february-20th",
     "Platform": "PolyMarket",
     "Binary question?": true,
-    "Percentage": "5.4501%",
-    "# Forecasts": "265.00"
-  },
-  {
-    "Title": "What will Coinbase’s market cap be 1 week after it starts publicly trading?",
-    "URL": "https://polymarket.com/market/what-will-coinbase-s-market-cap-be-1-week-after-it-starts-publicly-trading",
-    "Platform": "PolyMarket",
-    "Binary question?": true,
-    "Percentage": "72.4711%",
-    "# Forecasts": "263.00"
+    "Percentage": "3.9565%",
+    "# Forecasts": "292.00"
   }
 ]

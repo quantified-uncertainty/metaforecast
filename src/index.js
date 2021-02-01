@@ -90,7 +90,7 @@ let executeoption = async (option) => {
       break;
     case 9:
       await elicit()
-      await sleep(30000) // The user only has 30secs. Not really ideal. 
+      //await sleep(30000) // The user only has 30secs. Not really ideal. 
       await csetforetell()
       await goodjudgmentopen()
       await metaculus()

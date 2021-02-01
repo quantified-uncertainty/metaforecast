@@ -5,10 +5,10 @@
     "Platform": "Omen",
     "Binary question?": true,
     "marginalPrices": [
-      "0.997652780320339389668726385868353",
-      "0.002347219679660610331273614131647038"
+      "0.9886301130345439673746235229155343",
+      "0.01136988696545603262537647708446573"
     ],
-    "Percentage": "99.7653%"
+    "Percentage": "98.8630%"
   },
   {
     "Title": "Will UNI governance approve a new liquidity mining program by the end of February, 2021?",
@@ -20,17 +20,6 @@
       "0.8913271391920604167736983207130627"
     ],
     "Percentage": "10.8673%"
-  },
-  {
-    "Title": "Will at least 6000 YFI tokens be minted till end of Feb?",
-    "URL": "https://omen.eth.link/#/0x7a236ecb8686068fd0f41c88773bb9cb40856e6d",
-    "Platform": "Omen",
-    "Binary question?": true,
-    "marginalPrices": [
-      "0.4810827016169048678561288717963137",
-      "0.5189172983830951321438711282036863"
-    ],
-    "Percentage": "48.1083%"
   },
   {
     "Title": "Will Uniswap V3 be launched and usable in Q1 2021? (includes mainnet or Layer2)",
@@ -67,17 +56,6 @@
       "0.5"
     ],
     "Percentage": "50.0000%"
-  },
-  {
-    "Title": "Will United States v Griffith (case 19 MAG 10987) resolve with Griffith convicted of a felony such as violating IEEPA?",
-    "URL": "https://omen.eth.link/#/0xcc6cc7204eeba3f76168458b3ac725af89bb9fbb",
-    "Platform": "Omen",
-    "Binary question?": true,
-    "marginalPrices": [
-      "0.6000000000000000000199061948971275",
-      "0.3999999999999999999800938051028725"
-    ],
-    "Percentage": "60.0000%"
   },
   {
     "Title": "Will Joe Biden be the US President at the end of 2021?",
@@ -118,20 +96,9 @@
     "Platform": "Omen",
     "Binary question?": true,
     "marginalPrices": [
-      "0.117266969703417233389287613062571",
-      "0.882733030296582766610712386937429"
+      "0.1095186501966299113862061692110534",
+      "0.8904813498033700886137938307889466"
     ],
-    "Percentage": "11.7267%"
-  },
-  {
-    "Title": "Will at least 6000 YFI tokens be minted till end of Feb?",
-    "URL": "https://omen.eth.link/#/0xf2f5db144ec6dcd40a9e425b67a4930a3f442a16",
-    "Platform": "Omen",
-    "Binary question?": true,
-    "marginalPrices": [
-      "0.3126524159386235616135925047260208",
-      "0.6873475840613764383864074952739792"
-    ],
-    "Percentage": "31.2652%"
+    "Percentage": "10.9519%"
   }
 ]

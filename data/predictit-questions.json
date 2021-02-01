@@ -1,12 +1,5 @@
 [
   {
-    "Title": "Which party will control the Senate after 2020 election?",
-    "URL": "https://www.predictit.org/markets/detail/4366/Which-party-will-control-the-Senate-after-2020-election",
-    "Platform": "PredictIt",
-    "Binary question?": false,
-    "Percentage": "none"
-  },
-  {
     "Title": "Which of these 5 European leaders will leave office next?",
     "URL": "https://www.predictit.org/markets/detail/5717/Which-of-these-5-European-leaders-will-leave-office-next",
     "Platform": "PredictIt",
@@ -18,25 +11,11 @@
     "URL": "https://www.predictit.org/markets/detail/6453/Will-Trump-pardon-himself-in-his-first-term",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "2%"
-  },
-  {
-    "Title": "What will be the popular vote margin in the 2020 presidential election?",
-    "URL": "https://www.predictit.org/markets/detail/6663/What-will-be-the-popular-vote-margin-in-the-2020-presidential-election",
-    "Platform": "PredictIt",
-    "Binary question?": false,
-    "Percentage": "none"
+    "Percentage": "1%"
   },
   {
     "Title": "Which party will win the 2020 House race in Iowa's 2nd District?",
     "URL": "https://www.predictit.org/markets/detail/6789/Which-party-will-win-the-2020-House-race-in-Iowa's-2nd-District",
-    "Platform": "PredictIt",
-    "Binary question?": false,
-    "Percentage": "none"
-  },
-  {
-    "Title": "What percentage of the presidential vote will not be for the two major parties?",
-    "URL": "https://www.predictit.org/markets/detail/6809/What-percentage-of-the-presidential-vote-will-not-be-for-the-two-major-parties",
     "Platform": "PredictIt",
     "Binary question?": false,
     "Percentage": "none"
@@ -63,13 +42,6 @@
     "Percentage": "none"
   },
   {
-    "Title": "How many votes in the 2020 U.S. presidential election?",
-    "URL": "https://www.predictit.org/markets/detail/6882/How-many-votes-in-the-2020-US-presidential-election",
-    "Platform": "PredictIt",
-    "Binary question?": false,
-    "Percentage": "none"
-  },
-  {
     "Title": "Which party will win the House in the 2022 election?",
     "URL": "https://www.predictit.org/markets/detail/6892/Which-party-will-win-the-House-in-the-2022-election",
     "Platform": "PredictIt",
@@ -79,13 +51,6 @@
   {
     "Title": "How many U.S. House delegations will Republicans win in the 2020 election?",
     "URL": "https://www.predictit.org/markets/detail/6925/How-many-US-House-delegations-will-Republicans-win-in-the-2020-election",
-    "Platform": "PredictIt",
-    "Binary question?": false,
-    "Percentage": "none"
-  },
-  {
-    "Title": "How closely will the election results match the polls?",
-    "URL": "https://www.predictit.org/markets/detail/6936/How-closely-will-the-election-results-match-the-polls",
     "Platform": "PredictIt",
     "Binary question?": false,
     "Percentage": "none"
@@ -102,7 +67,7 @@
     "URL": "https://www.predictit.org/markets/detail/6946/Will-there-be-more-than-9-Supreme-Court-justices-at-any-point-in-2021",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "10%"
+    "Percentage": "9%"
   },
   {
     "Title": "Who will be the Senate-confirmed Secretary of Defense on Mar. 1?",
@@ -130,7 +95,7 @@
     "URL": "https://www.predictit.org/markets/detail/6953/Will-Kamala-Harris-file-to-run-for-president-before-the-end-of-2022",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "24%"
+    "Percentage": "23%"
   },
   {
     "Title": "Who will be the Senate-confirmed Treasury Secretary on Mar. 1?",
@@ -179,7 +144,7 @@
     "URL": "https://www.predictit.org/markets/detail/6975/Will-Mike-Pence-file-to-run-for-president-before-the-end-of-2022",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "20%"
+    "Percentage": "22%"
   },
   {
     "Title": "Who will be the Senate-confirmed Interior Secretary on Mar. 1?",
@@ -228,14 +193,14 @@
     "URL": "https://www.predictit.org/markets/detail/6983/Will-Alexandria-Ocasio-Cortez-run-in-the-2022-Democratic-primary-in-NY-14",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "51%"
+    "Percentage": "56%"
   },
   {
     "Title": "Will Pete Buttigieg be confirmed to a Cabinet position by Mar. 1?",
     "URL": "https://www.predictit.org/markets/detail/6986/Will-Pete-Buttigieg-be-confirmed-to-a-Cabinet-position-by-Mar-1",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "99%"
+    "Percentage": "98%"
   },
   {
     "Title": "Who will be the Senate-confirmed Veterans Affairs Secretary on Mar. 1?",
@@ -284,7 +249,7 @@
     "URL": "https://www.predictit.org/markets/detail/6994/Will-Donald-Trump-file-to-run-for-president-before-the-end-of-2021",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "33%"
+    "Percentage": "32%"
   },
   {
     "Title": "Which party will win the 2021 New Jersey gubernatorial election?",
@@ -312,7 +277,7 @@
     "URL": "https://www.predictit.org/markets/detail/7003/Will-Andrew-Yang-run-in-the-2021-NYC-Democratic-Mayoral-primary",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "96%"
+    "Percentage": "97%"
   },
   {
     "Title": "Will Israel hold national elections for Knesset in 2021?",
@@ -326,7 +291,7 @@
     "URL": "https://www.predictit.org/markets/detail/7013/Will-a-woman-be-elected-US-president-in-2024",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "43%"
+    "Percentage": "42%"
   },
   {
     "Title": "Will Alexandria Ocasio-Cortez file to run for president before the end of 2023?",
@@ -340,7 +305,7 @@
     "URL": "https://www.predictit.org/markets/detail/7015/Will-Alexandria-Ocasio-Cortez-run-in-the-2022-NY-Democratic-Senate-primary",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "27%"
+    "Percentage": "25%"
   },
   {
     "Title": "Which party will win the U.S. Senate election in Pennsylvania in 2022?",
@@ -361,7 +326,7 @@
     "URL": "https://www.predictit.org/markets/detail/7018/Will-Donald-Trump-Jr-run-in-the-2022-Pennsylvania-Republican-Senate-primary",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "12%"
+    "Percentage": "13%"
   },
   {
     "Title": "Will Lara Trump run  in the 2022 North Carolina Republican Senate primary?",
@@ -382,7 +347,7 @@
     "URL": "https://www.predictit.org/markets/detail/7021/Will-Ivanka-Trump-run-in-the-2022-Florida-Republican-Senate-primary",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "25%"
+    "Percentage": "26%"
   },
   {
     "Title": "Which party will win the U.S. Senate election in Florida in 2022?",
@@ -403,7 +368,7 @@
     "URL": "https://www.predictit.org/markets/detail/7035/Will-Benjamin-Netanyahu-be-prime-minister-of-Israel-on-June-30,-2021",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "71%"
+    "Percentage": "72%"
   },
   {
     "Title": "How many seats will Israel's Likud Party win in the next Knesset election?",
@@ -417,7 +382,7 @@
     "URL": "https://www.predictit.org/markets/detail/7039/Will-there-be-enough-signatures-by-Mar-17-for-a-vote-on-recall-of-Gov-Newsom",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "63%"
+    "Percentage": "66%"
   },
   {
     "Title": "Who will be chancellor of Germany on Dec. 31?",
@@ -438,14 +403,14 @@
     "URL": "https://www.predictit.org/markets/detail/7050/Will-the-Senate-convict-Donald-Trump-in-Biden's-first-100-days",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "6%"
+    "Percentage": "7%"
   },
   {
     "Title": "Will Lisa Murkowski be a Republican on April 1?",
     "URL": "https://www.predictit.org/markets/detail/7051/Will-Lisa-Murkowski-be-a-Republican-on-April-1",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "92%"
+    "Percentage": "90%"
   },
   {
     "Title": "Who will win the 2024 Republican presidential nomination?",
@@ -466,14 +431,14 @@
     "URL": "https://www.predictit.org/markets/detail/7055/Will-Mitch-McConnell-vote-to-convict-on-incitement-by-Apr-29",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "13%"
+    "Percentage": "15%"
   },
   {
     "Title": "Will Mitt Romney vote to convict on incitement by Apr. 29?",
     "URL": "https://www.predictit.org/markets/detail/7056/Will-Mitt-Romney-vote-to-convict-on-incitement-by-Apr-29",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "90%"
+    "Percentage": "92%"
   },
   {
     "Title": "Who will win the 2024 Democratic presidential nomination?",
@@ -487,14 +452,14 @@
     "URL": "https://www.predictit.org/markets/detail/7058/Will-Susan-Collins-vote-to-convict-on-incitement-by-Apr-29",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "62%"
+    "Percentage": "64%"
   },
   {
     "Title": "Will John Thune vote to convict on incitement by Apr. 29?",
     "URL": "https://www.predictit.org/markets/detail/7059/Will-John-Thune-vote-to-convict-on-incitement-by-Apr-29",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "7%"
+    "Percentage": "9%"
   },
   {
     "Title": "How many seats will Holland's VVD win in the next election?",
@@ -515,7 +480,7 @@
     "URL": "https://www.predictit.org/markets/detail/7066/Will-Thom-Tillis-vote-to-convict-on-incitement-by-Apr-29",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "5%"
+    "Percentage": "9%"
   },
   {
     "Title": "Will Joe Manchin vote to convict on incitement by Apr. 29?",
@@ -543,14 +508,14 @@
     "URL": "https://www.predictit.org/markets/detail/7071/Will-Rob-Portman-vote-to-convict-on-incitement-by-Apr-29",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "20%"
+    "Percentage": "23%"
   },
   {
     "Title": "Will the Senate censure Ted Cruz before May 1?",
     "URL": "https://www.predictit.org/markets/detail/7072/Will-the-Senate-censure-Ted-Cruz-before-May-1",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "15%"
+    "Percentage": "12%"
   },
   {
     "Title": "How many Senators vote to confirm Gina Raimondo as Commerce Secretary?",
@@ -564,14 +529,14 @@
     "URL": "https://www.predictit.org/markets/detail/7074/Will-the-Senate-censure-Josh-Hawley-before-May-1",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "20%"
+    "Percentage": "16%"
   },
   {
     "Title": "Will Biden policy to raise minimum wage to $15 per hour in 2021 succeed?",
     "URL": "https://www.predictit.org/markets/detail/7075/Will-Biden-policy-to-raise-minimum-wage-to-$15-per-hour-in-2021-succeed",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "7%"
+    "Percentage": "10%"
   },
   {
     "Title": "How many Senators vote to confirm Alejandro Mayorkas as Homeland Security Sec.?",
@@ -585,21 +550,21 @@
     "URL": "https://www.predictit.org/markets/detail/7077/Will-Lisa-Murkowski-vote-to-convict-on-incitement-by-Apr-29",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "87%"
+    "Percentage": "76%"
   },
   {
     "Title": "Will Italy hold national elections before June 1?",
     "URL": "https://www.predictit.org/markets/detail/7078/Will-Italy-hold-national-elections-before-June-1",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "25%"
+    "Percentage": "21%"
   },
   {
     "Title": "Will Ben Sasse vote to convict on incitement by Apr. 29?",
     "URL": "https://www.predictit.org/markets/detail/7080/Will-Ben-Sasse-vote-to-convict-on-incitement-by-Apr-29",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "80%"
+    "Percentage": "77%"
   },
   {
     "Title": "How many Senators vote to confirm Jennifer Granholm as Energy Secretary?",
@@ -613,13 +578,83 @@
     "URL": "https://www.predictit.org/markets/detail/7082/Will-Sarah-Huckabee-Sanders-win-the-2022-Arkansas-GOP-gubernatorial-primary",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "79%"
+    "Percentage": "80%"
   },
   {
     "Title": "Will the District of Columbia become a U.S. state in 2021?",
     "URL": "https://www.predictit.org/markets/detail/7083/Will-the-District-of-Columbia-become-a-US-state-in-2021",
     "Platform": "PredictIt",
     "Binary question?": true,
-    "Percentage": "12%"
+    "Percentage": "11%"
+  },
+  {
+    "Title": "Will Pat Toomey vote to convict on incitement by Apr. 29?",
+    "URL": "https://www.predictit.org/markets/detail/7084/Will-Pat-Toomey-vote-to-convict-on-incitement-by-Apr-29",
+    "Platform": "PredictIt",
+    "Binary question?": true,
+    "Percentage": "64%"
+  },
+  {
+    "Title": "Which party will win the U.S. Senate election in Ohio in 2022?",
+    "URL": "https://www.predictit.org/markets/detail/7085/Which-party-will-win-the-US-Senate-election-in-Ohio-in-2022",
+    "Platform": "PredictIt",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "How many Senators vote to confirm Marcia Fudge as HUD Secretary?",
+    "URL": "https://www.predictit.org/markets/detail/7086/How-many-Senators-vote-to-confirm-Marcia-Fudge-as-HUD-Secretary",
+    "Platform": "PredictIt",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "Who will win the 2022 Ohio Republican Senate primary?",
+    "URL": "https://www.predictit.org/markets/detail/7087/Who-will-win-the-2022-Ohio-Republican-Senate-primary",
+    "Platform": "PredictIt",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "Will Puerto Rico become a U.S. state in 2021?",
+    "URL": "https://www.predictit.org/markets/detail/7088/Will-Puerto-Rico-become-a-US-state-in-2021",
+    "Platform": "PredictIt",
+    "Binary question?": true,
+    "Percentage": "6%"
+  },
+  {
+    "Title": "Will Chuck Grassley vote to convict on incitement by Apr. 29?",
+    "URL": "https://www.predictit.org/markets/detail/7089/Will-Chuck-Grassley-vote-to-convict-on-incitement-by-Apr-29",
+    "Platform": "PredictIt",
+    "Binary question?": true,
+    "Percentage": "6%"
+  },
+  {
+    "Title": "How many Senators vote to confirm L. Thomas-Greenfield as UN Ambassador by 3/15?",
+    "URL": "https://www.predictit.org/markets/detail/7090/How-many-Senators-vote-to-confirm-L-Thomas-Greenfield-as-UN-Ambassador-by-3-15",
+    "Platform": "PredictIt",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "How many Biden Cabinet members will be confirmed by Mar. 1?",
+    "URL": "https://www.predictit.org/markets/detail/7091/How-many-Biden-Cabinet-members-will-be-confirmed-by-Mar-1",
+    "Platform": "PredictIt",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "Will the federal minimum wage be $9.50 per hour or higher by September 1?",
+    "URL": "https://www.predictit.org/markets/detail/7092/Will-the-federal-minimum-wage-be-$950-per-hour-or-higher-by-September-1",
+    "Platform": "PredictIt",
+    "Binary question?": true,
+    "Percentage": "39%"
+  },
+  {
+    "Title": "How many Senators vote to confirm Tom Vilsack as Agriculture Sec. by 3/31?",
+    "URL": "https://www.predictit.org/markets/detail/7093/How-many-Senators-vote-to-confirm-Tom-Vilsack-as-Agriculture-Sec-by-3-31",
+    "Platform": "PredictIt",
+    "Binary question?": false,
+    "Percentage": "none"
   }
 ]

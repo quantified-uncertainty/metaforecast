@@ -5,8 +5,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "59",
-    "# Forecasters": "54"
+    "# Forecasts": "81",
+    "# Forecasters": "75"
   },
   {
     "Title": "Conditional on President Trump being convicted of \"incitement of insurrection,\" what will the Senate's average Bipartisan Index score be from 2021-2022?",
@@ -14,8 +14,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "62",
-    "# Forecasters": "58"
+    "# Forecasts": "74",
+    "# Forecasters": "69"
   },
   {
     "Title": "How much will the U.S. Department of Defense spend on AI research contracts between July 1 and December 31, 2021, inclusive?",
@@ -23,8 +23,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "45",
-    "# Forecasters": "44"
+    "# Forecasts": "69",
+    "# Forecasters": "64"
   },
   {
     "Title": "How much will the U.S. Department of Defense spend on AI grants between July 1 and December 31, 2021, inclusive?",
@@ -32,8 +32,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "51",
-    "# Forecasters": "46"
+    "# Forecasts": "79",
+    "# Forecasters": "73"
   },
   {
     "Title": "How many AI papers will be posted on arXiv between July 1 and December 31, 2021, inclusive?",
@@ -41,8 +41,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "21",
-    "# Forecasters": "21"
+    "# Forecasts": "24",
+    "# Forecasters": "24"
   },
   {
     "Title": "How many members will the Alphabet Workers Union have by December 31, 2021?",
@@ -50,8 +50,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "55",
-    "# Forecasters": "51"
+    "# Forecasts": "69",
+    "# Forecasters": "64"
   },
   {
     "Title": "What percentage of U.S. news articles about AI will be about privacy and security between July 1 and December 31, 2021, inclusive?",
@@ -59,17 +59,17 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "28",
-    "# Forecasters": "26"
+    "# Forecasts": "35",
+    "# Forecasters": "33"
   },
   {
     "Title": "Will NVIDIA acquire Arm by March 31, 2022?",
     "URL": "https://www.cset-foretell.com/questions/102-will-nvidia-acquire-arm-by-march-30-2022",
     "Platform": "CSET-foretell",
     "Binary question?": true,
-    "Percentage": "51%",
-    "# Forecasts": "58",
-    "# Forecasters": "44"
+    "Percentage": "47%",
+    "# Forecasts": "71",
+    "# Forecasters": "53"
   },
   {
     "Title": "How many of the top chipmakers in China will be subject to new export controls in 2021?",
@@ -77,8 +77,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "66",
-    "# Forecasters": "62"
+    "# Forecasts": "72",
+    "# Forecasters": "66"
   },
   {
     "Title": "What percentage of the combined revenue of the top five semiconductor manufacturing equipment producers will come from China in 2021?",
@@ -86,17 +86,17 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "49",
-    "# Forecasters": "46"
+    "# Forecasts": "51",
+    "# Forecasters": "48"
   },
   {
     "Title": "Will the United States return to compliance with the 2015 Iran nuclear deal by December 31, 2021?",
     "URL": "https://www.cset-foretell.com/questions/99-will-the-united-states-re-enter-the-2015-nuclear-deal-with-iran-by-december-31-2021",
     "Platform": "CSET-foretell",
     "Binary question?": true,
-    "Percentage": "",
-    "# Forecasts": "148",
-    "# Forecasters": "108"
+    "Percentage": "64%",
+    "# Forecasts": "168",
+    "# Forecasters": "127"
   },
   {
     "Title": "What will be the value, in dollars, of all Chinese imports of semiconductor manufacturing equipment in 2021?",
@@ -104,8 +104,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "63",
-    "# Forecasters": "54"
+    "# Forecasts": "65",
+    "# Forecasters": "56"
   },
   {
     "Title": "When will Ant Financial have an IPO in China or Hong Kong?",
@@ -113,8 +113,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "146",
-    "# Forecasters": "105"
+    "# Forecasts": "154",
+    "# Forecasters": "111"
   },
   {
     "Title": "What will be the value, in dollars, of all Chinese imports of semiconductor chips in 2021?",
@@ -122,8 +122,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "63",
-    "# Forecasters": "55"
+    "# Forecasts": "65",
+    "# Forecasters": "56"
   },
   {
     "Title": "What will be the value, in dollars, of U.S. exports of semiconductor chips to China in the first half of 2021?",
@@ -149,8 +149,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "149",
-    "# Forecasters": "131"
+    "# Forecasts": "155",
+    "# Forecasters": "136"
   },
   {
     "Title": "What percentage of U.S. AI publications will have a Chinese co-author in 2021?",
@@ -158,35 +158,17 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "88",
-    "# Forecasters": "83"
+    "# Forecasts": "89",
+    "# Forecasters": "84"
   },
   {
     "Title": "Will the U.S. government file an antitrust lawsuit against Apple, Amazon, or Facebook between January 20, 2021 and January 19, 2025?",
     "URL": "https://www.cset-foretell.com/questions/89-conditional-on-vice-president-biden-s-election-will-the-u-s-government-file-an-antitrust-lawsuit-against-apple-amazon-or-facebook-between-january-20-2021-and-january-19-2025",
     "Platform": "CSET-foretell",
     "Binary question?": true,
-    "Percentage": "71%",
-    "# Forecasts": "137",
-    "# Forecasters": "105"
-  },
-  {
-    "Title": "What will the trade-to-GDP ratio for China be in the first two quarters of 2021?",
-    "URL": "https://www.cset-foretell.com/questions/84-what-will-the-ratio-of-trade-imports-exports-of-goods-to-gdp-be-china-in-the-first-two-quarters-january-1-through-june-30-of-2021",
-    "Platform": "CSET-foretell",
-    "Binary question?": false,
-    "Percentage": "none",
-    "# Forecasts": "58",
-    "# Forecasters": "46"
-  },
-  {
-    "Title": "What will the trade-to-GDP ratio for all OECD member countries be in the first two quarters of 2021?",
-    "URL": "https://www.cset-foretell.com/questions/83-what-will-the-ratio-of-trade-imports-exports-of-goods-to-gdp-be-for-oecd-member-countries-in-the-first-two-quarters-january-1-through-june-30-of-2021",
-    "Platform": "CSET-foretell",
-    "Binary question?": false,
-    "Percentage": "none",
-    "# Forecasts": "55",
-    "# Forecasters": "39"
+    "Percentage": "70%",
+    "# Forecasts": "141",
+    "# Forecasters": "109"
   },
   {
     "Title": "What percentage of U.S. residents will have an unfavorable view of China, as reflected in the 2021 Pew Global Attitudes Survey?",
@@ -194,8 +176,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "208",
-    "# Forecasters": "165"
+    "# Forecasts": "213",
+    "# Forecasters": "169"
   },
   {
     "Title": "What percentage of O visas will go to Chinese nationals in FY 2021 (October 1, 2020 to September 30, 2021)?",
@@ -203,8 +185,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "87",
-    "# Forecasters": "70"
+    "# Forecasts": "89",
+    "# Forecasters": "72"
   },
   {
     "Title": "What will total U.S. trade volume with China (imports and exports of goods) be in 2021?",
@@ -212,8 +194,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "82",
-    "# Forecasters": "63"
+    "# Forecasts": "84",
+    "# Forecasters": "64"
   },
   {
     "Title": "What percentage of U.S. corporate press releases about AI will reference AI ethics in 2021?",
@@ -221,8 +203,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "172",
-    "# Forecasters": "128"
+    "# Forecasts": "174",
+    "# Forecasters": "129"
   },
   {
     "Title": "How much will the U.S. government spend on surveillance-related AI grants between June 1, 2020 and May 31, 2021, inclusive?",
@@ -230,8 +212,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "84",
-    "# Forecasters": "67"
+    "# Forecasts": "87",
+    "# Forecasters": "68"
   },
   {
     "Title": "How many times will the Japanese Air Force respond to threats to Japan's territorial airspace by Chinese military aircraft between April 1, 2020 and March 31, 2021, inclusive?",
@@ -239,7 +221,7 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "89",
+    "# Forecasts": "90",
     "# Forecasters": "57"
   },
   {
@@ -248,7 +230,7 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "119",
+    "# Forecasts": "120",
     "# Forecasters": "75"
   }
 ]

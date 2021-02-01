@@ -1,39 +1,93 @@
 [
   {
+    "Title": "Will there be a new prime minister of Italy before 1 September 2021?",
+    "URL": "https://www.gjopen.com/questions/1919-will-there-be-a-new-prime-minister-of-italy-before-1-september-2021",
+    "Platform": "Good Judgment Open",
+    "Binary question?": true,
+    "Percentage": "21%",
+    "# Forecasts": "38",
+    "# Forecasters": "31"
+  },
+  {
+    "Title": "Will the United States report more deaths attributed to COVID-19 as of 31 December 2021 than will the European Union?",
+    "URL": "https://www.gjopen.com/questions/1916-will-the-united-states-report-more-deaths-attributed-to-covid-19-as-of-31-december-2021-than-will-the-european-union",
+    "Platform": "Good Judgment Open",
+    "Binary question?": true,
+    "Percentage": "35%",
+    "# Forecasts": "62",
+    "# Forecasters": "45"
+  },
+  {
+    "Title": "How many vacancies will arise on the U.S. Supreme Court in 2021?",
+    "URL": "https://www.gjopen.com/questions/1915-how-many-vacancies-will-arise-on-the-u-s-supreme-court-in-2021",
+    "Platform": "Good Judgment Open",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "71",
+    "# Forecasters": "61"
+  },
+  {
+    "Title": "What will be the combined U.S. domestic theater box office gross for June, July, and August 2021?",
+    "URL": "https://www.gjopen.com/questions/1920-what-will-be-the-combined-u-s-domestic-theater-box-office-gross-for-june-july-and-august-2021",
+    "Platform": "Good Judgment Open",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "34",
+    "# Forecasters": "26"
+  },
+  {
+    "Title": "Before 1 October 2021, will the Republic of Chad announce that legislative elections currently scheduled for 24 October 2021 will be postponed or canceled?",
+    "URL": "https://www.gjopen.com/questions/1918-before-1-october-2021-will-the-republic-of-chad-announce-that-legislative-elections-currently-scheduled-for-24-october-2021-will-be-postponed-or-canceled",
+    "Platform": "Good Judgment Open",
+    "Binary question?": true,
+    "Percentage": "90%",
+    "# Forecasts": "21",
+    "# Forecasters": "19"
+  },
+  {
+    "Title": "At close of business on 16 June 2021, will the upper limit of the Federal Reserve's target range for the federal funds rate be lower, the same, or higher than it was at close of business on 28 April 2021?",
+    "URL": "https://www.gjopen.com/questions/1917-at-close-of-business-on-16-june-2021-will-the-upper-limit-of-the-federal-reserve-s-target-range-for-the-federal-funds-rate-be-lower-the-same-or-higher-than-it-was-at-close-of-business-on-28-april-2021",
+    "Platform": "Good Judgment Open",
+    "Binary question?": false,
+    "Percentage": "none",
+    "# Forecasts": "33",
+    "# Forecasters": "31"
+  },
+  {
     "Title": "Will the UN declare that a famine exists in any part of Yemen in 2021?",
     "URL": "https://www.gjopen.com/questions/1908-will-the-un-declare-that-a-famine-exists-in-any-part-of-yemen-in-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "54%",
-    "# Forecasts": "56",
-    "# Forecasters": "45"
+    "Percentage": "70%",
+    "# Forecasts": "89",
+    "# Forecasters": "66"
   },
   {
     "Title": "Will Russia conduct a flight test of an RS-28 Sarmat ICBM before 1 August 2021?",
     "URL": "https://www.gjopen.com/questions/1912-will-russia-conduct-a-flight-test-of-an-rs-28-sarmat-icbm-before-1-august-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "64%",
-    "# Forecasts": "58",
-    "# Forecasters": "44"
+    "Percentage": "69%",
+    "# Forecasts": "83",
+    "# Forecasters": "64"
   },
   {
     "Title": "Will Chinese businessman Jack Ma physically appear in public outside of the People's Republic of China (PRC) before 1 April 2021?",
     "URL": "https://www.gjopen.com/questions/1909-will-chinese-businessman-jack-ma-physically-appear-in-public-outside-of-the-people-s-republic-of-china-prc-before-1-april-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "1%",
-    "# Forecasts": "86",
-    "# Forecasters": "71"
+    "Percentage": "5%",
+    "# Forecasts": "124",
+    "# Forecasters": "99"
   },
   {
     "Title": "Will U.S. President Joe Biden and Russian President Vladimir Putin hold a bilateral meeting in 2021?",
     "URL": "https://www.gjopen.com/questions/1911-will-u-s-president-joe-biden-and-russian-president-vladimir-putin-hold-a-bilateral-meeting-in-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "10%",
-    "# Forecasts": "150",
-    "# Forecasters": "113"
+    "Percentage": "15%",
+    "# Forecasts": "213",
+    "# Forecasters": "154"
   },
   {
     "Title": "When will the Public Health Agency of Canada (PHAC) report 1.1 million or more total cases of COVID-19 in Canada?",
@@ -41,8 +95,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "75",
-    "# Forecasters": "52"
+    "# Forecasts": "99",
+    "# Forecasters": "61"
   },
   {
     "Title": "How many U.S. states will have an infection rate of 1.0 or greater for COVID-19 as of 31 March 2021?",
@@ -50,17 +104,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "80",
-    "# Forecasters": "53"
+    "# Forecasts": "127",
+    "# Forecasters": "75"
   },
   {
     "Title": "Before 1 January 2022, will there be a lethal confrontation between the national military forces of Iran and the United States either in Iran or at sea?",
     "URL": "https://www.gjopen.com/questions/1910-before-1-january-2022-will-there-be-a-lethal-confrontation-between-the-national-military-forces-of-iran-and-the-united-states-either-in-iran-or-at-sea",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "2%",
-    "# Forecasts": "88",
-    "# Forecasters": "75"
+    "Percentage": "5%",
+    "# Forecasts": "102",
+    "# Forecasters": "86"
   },
   {
     "Title": "Will the Scottish National Party win a majority of seats in the next Scottish Parliament election?",
@@ -68,8 +122,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "90%",
-    "# Forecasts": "121",
-    "# Forecasters": "108"
+    "# Forecasts": "142",
+    "# Forecasters": "119"
   },
   {
     "Title": "Will Nicaragua diplomatically recognize the People's Republic of China before 7 November 2021?",
@@ -77,8 +131,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "15%",
-    "# Forecasts": "50",
-    "# Forecasters": "40"
+    "# Forecasts": "57",
+    "# Forecasters": "46"
   },
   {
     "Title": "How many seats will the United Russia party win in the 2021 Russian State Duma elections?",
@@ -86,8 +140,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "70",
-    "# Forecasters": "58"
+    "# Forecasts": "80",
+    "# Forecasters": "64"
   },
   {
     "Title": "Before 15 July 2021, will an election be held for Moldova's parliament?",
@@ -95,8 +149,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "39",
-    "# Forecasters": "29"
+    "# Forecasts": "47",
+    "# Forecasters": "33"
   },
   {
     "Title": "When will a new Dutch government be sworn in after the 2021 general election?",
@@ -104,17 +158,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "73",
-    "# Forecasters": "53"
+    "# Forecasts": "83",
+    "# Forecasters": "57"
   },
   {
     "Title": "Will a Russian senior government official or Russian naval vessel visit Nicaragua before 7 November 2021?",
     "URL": "https://www.gjopen.com/questions/1900-will-a-russian-senior-government-official-or-russian-naval-vessel-visit-nicaragua-before-7-november-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "42%",
-    "# Forecasts": "49",
-    "# Forecasters": "38"
+    "Percentage": "50%",
+    "# Forecasts": "53",
+    "# Forecasters": "40"
   },
   {
     "Title": "What will Uber's end-of-day market capitalization be on 31 December 2021?",
@@ -122,8 +176,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "94",
-    "# Forecasters": "54"
+    "# Forecasts": "112",
+    "# Forecasters": "58"
   },
   {
     "Title": "Which NFL team will win Super Bowl LV?",
@@ -131,26 +185,26 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "166",
-    "# Forecasters": "88"
+    "# Forecasts": "178",
+    "# Forecasters": "91"
   },
   {
     "Title": "Will North Macedonia announce that it has completed its census before 1 October 2021?",
     "URL": "https://www.gjopen.com/questions/1897-will-north-macedonia-announce-that-it-has-completed-its-census-before-1-october-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "52%",
-    "# Forecasts": "78",
-    "# Forecasters": "53"
+    "Percentage": "57%",
+    "# Forecasts": "86",
+    "# Forecasters": "55"
   },
   {
     "Title": "Will the New START treaty be extended by Russia and the U.S. before 6 February 2021?",
     "URL": "https://www.gjopen.com/questions/1899-will-the-new-start-treaty-be-extended-by-russia-and-the-u-s-before-6-february-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "100%",
-    "# Forecasts": "217",
-    "# Forecasters": "105"
+    "Percentage": "",
+    "# Forecasts": "242",
+    "# Forecasters": "110"
   },
   {
     "Title": "Will Mexico hold a referendum on President Andrés Manuel López Obrador before 1 September 2021?",
@@ -158,26 +212,26 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "69",
-    "# Forecasters": "48"
+    "# Forecasts": "74",
+    "# Forecasters": "49"
   },
   {
     "Title": "Before 1 October 2021, will any group of Amazon employees in the U.S. vote in the affirmative to form a union?",
     "URL": "https://www.gjopen.com/questions/1894-before-1-october-2021-will-any-group-of-amazon-employees-in-the-u-s-vote-in-the-affirmative-to-form-a-union",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "74%",
-    "# Forecasts": "128",
-    "# Forecasters": "90"
+    "Percentage": "77%",
+    "# Forecasts": "143",
+    "# Forecasters": "96"
   },
   {
     "Title": "Will the U.S. leveraged loan default rate reach or exceed 5.0% before 1 September 2021?",
     "URL": "https://www.gjopen.com/questions/1896-will-the-u-s-leveraged-loan-default-rate-reach-or-exceed-5-0-before-1-september-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "32%",
-    "# Forecasts": "120",
-    "# Forecasters": "67"
+    "Percentage": "25%",
+    "# Forecasts": "139",
+    "# Forecasters": "72"
   },
   {
     "Title": "Will Daniel Ortega cease to be the president of Nicaragua before 11 January 2022?",
@@ -185,17 +239,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "4%",
-    "# Forecasts": "67",
-    "# Forecasters": "33"
+    "# Forecasts": "72",
+    "# Forecasters": "34"
   },
   {
     "Title": "Before 15 March 2021, will there be a lethal confrontation between the national military forces of Iran and the United States either in Iran or at sea?",
     "URL": "https://www.gjopen.com/questions/1892-before-15-march-2021-will-there-be-a-lethal-confrontation-between-the-national-military-forces-of-iran-and-the-united-states-either-in-iran-or-at-sea",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "3%",
-    "# Forecasts": "176",
-    "# Forecasters": "127"
+    "Percentage": "2%",
+    "# Forecasts": "184",
+    "# Forecasters": "132"
   },
   {
     "Title": "When will AMC Entertainment Holdings Inc. (AMC), the parent company of AMC Theatres, file for bankruptcy?",
@@ -203,8 +257,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "138",
-    "# Forecasters": "57"
+    "# Forecasts": "152",
+    "# Forecasters": "59"
   },
   {
     "Title": "At close of business on 31 December 2021, will Apple be the most valuable publicly traded company in the world?",
@@ -212,8 +266,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "125",
-    "# Forecasters": "90"
+    "# Forecasts": "144",
+    "# Forecasters": "95"
   },
   {
     "Title": "Which team will win the World Cup qualifying match between Nicaragua and St. Lucia?",
@@ -221,8 +275,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "83",
-    "# Forecasters": "64"
+    "# Forecasts": "89",
+    "# Forecasters": "67"
   },
   {
     "Title": "How many seats in the Legislative Assembly will New Ideas (Nuevas Ideas) win in the 2021 Salvadoran legislative election?",
@@ -230,8 +284,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "34",
-    "# Forecasters": "18"
+    "# Forecasts": "42",
+    "# Forecasters": "20"
   },
   {
     "Title": "What will be the closing price of Mercado Libre stock on 15 February 2021?",
@@ -239,26 +293,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "181",
-    "# Forecasters": "47"
-  },
-  {
-    "Title": "How many confirmed cases of COVID-19 will have been reported by the World Health Organization (WHO) for the Americas Region as of 1 February 2021?",
-    "URL": "https://www.gjopen.com/questions/1887-how-many-confirmed-cases-of-covid-19-will-have-been-reported-by-the-world-health-organization-who-for-the-americas-region-as-of-1-february-2021",
-    "Platform": "Good Judgment Open",
-    "Binary question?": false,
-    "Percentage": "none",
-    "# Forecasts": "566",
-    "# Forecasters": "116"
-  },
-  {
-    "Title": "How many confirmed cases of COVID-19 will have been reported by the World Health Organization (WHO) for the United Kingdom as of 1 February 2021?",
-    "URL": "https://www.gjopen.com/questions/1886-how-many-confirmed-cases-of-covid-19-will-have-been-reported-by-the-world-health-organization-who-for-the-united-kingdom-as-of-1-february-2021",
-    "Platform": "Good Judgment Open",
-    "Binary question?": false,
-    "Percentage": "none",
-    "# Forecasts": "602",
-    "# Forecasters": "123"
+    "# Forecasts": "208",
+    "# Forecasters": "48"
   },
   {
     "Title": "What will be the closing yield for the 30-year U.S. Treasury on 31 December 2021?",
@@ -266,17 +302,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "127",
-    "# Forecasters": "63"
+    "# Forecasts": "135",
+    "# Forecasters": "65"
   },
   {
     "Title": "Will legislation amending or repealing Section 230 of the Communications Act of 1934 become law before 14 August 2021?",
     "URL": "https://www.gjopen.com/questions/1882-will-legislation-amending-or-repealing-section-230-of-the-communications-act-of-1934-become-law-before-14-august-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "15%",
-    "# Forecasts": "140",
-    "# Forecasters": "79"
+    "Percentage": "12%",
+    "# Forecasts": "150",
+    "# Forecasters": "80"
   },
   {
     "Title": "When will Mexico’s Chamber of Deputies approve the Federal Law for the Regulation of Cannabis?",
@@ -284,8 +320,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "22",
-    "# Forecasters": "17"
+    "# Forecasts": "28",
+    "# Forecasters": "19"
   },
   {
     "Title": "On 1 March 2021, how many states will have a number of daily new COVID-19 cases per 100k residents of 75.0 or higher?",
@@ -293,8 +329,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "292",
-    "# Forecasters": "87"
+    "# Forecasts": "327",
+    "# Forecasters": "90"
   },
   {
     "Title": "On 1 March 2021, how many states will have a COVID-19 positivity rate greater than 10.0%?",
@@ -302,8 +338,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "208",
-    "# Forecasters": "80"
+    "# Forecasts": "247",
+    "# Forecasters": "87"
   },
   {
     "Title": "Before 1 April 2021, will an election be held for Israel's Knesset?",
@@ -311,8 +347,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "217",
-    "# Forecasters": "127"
+    "# Forecasts": "228",
+    "# Forecasters": "128"
   },
   {
     "Title": "At close of business on 28 April 2021, will the upper limit of the Federal Reserve's target range for the federal funds rate be lower, the same, or higher than it was at close of business on 17 March 2021?",
@@ -320,7 +356,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "87",
+    "# Forecasts": "88",
     "# Forecasters": "73"
   },
   {
@@ -328,9 +364,9 @@
     "URL": "https://www.gjopen.com/questions/1876-before-1-january-2022-will-the-diem-association-co-founded-by-facebook-launch-a-stablecoin",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "44%",
-    "# Forecasts": "114",
-    "# Forecasters": "70"
+    "Percentage": "45%",
+    "# Forecasts": "118",
+    "# Forecasters": "71"
   },
   {
     "Title": "Before 19 June 2021, will the end-of-day closing value for the Turkish lira against the U.S. dollar exceed 9.00?",
@@ -338,7 +374,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "3%",
-    "# Forecasts": "122",
+    "# Forecasts": "127",
     "# Forecasters": "56"
   },
   {
@@ -347,8 +383,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "346",
-    "# Forecasters": "171"
+    "# Forecasts": "361",
+    "# Forecasters": "177"
   },
   {
     "Title": "Will the U.S. Food and Drug Administration (FDA) and/or the EU's European Medicines Agency (EMA) approve a COVID-19 vaccine from Chinese companies Sinovac or Sinopharm before 1 September 2021?",
@@ -356,44 +392,44 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "295",
-    "# Forecasters": "191"
+    "# Forecasts": "319",
+    "# Forecasters": "198"
   },
   {
     "Title": "Before 1 January 2022, will a commercial, open to the public, ride-hailing service that uses autonomous vehicles without back-up drivers nor remote operators be launched in the People's Republic of China?",
     "URL": "https://www.gjopen.com/questions/1870-before-1-january-2022-will-a-commercial-open-to-the-public-ride-hailing-service-that-uses-autonomous-vehicles-without-back-up-drivers-nor-remote-operators-be-launched-in-the-people-s-republic-of-china",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "16%",
-    "# Forecasts": "204",
-    "# Forecasters": "135"
+    "Percentage": "15%",
+    "# Forecasts": "218",
+    "# Forecasters": "140"
   },
   {
     "Title": "Will the United States and China sign a trade agreement before 1 July 2021?",
     "URL": "https://www.gjopen.com/questions/1872-will-the-united-states-and-china-sign-a-trade-agreement-before-1-july-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "5%",
-    "# Forecasts": "259",
-    "# Forecasters": "198"
+    "Percentage": "4%",
+    "# Forecasts": "276",
+    "# Forecasters": "206"
   },
   {
     "Title": "Before 14 August 2021, will an executive order be signed or federal legislation become law that would forgive $10,000 or more in principal on federal student loan debts for at least five million student loan borrowers?",
     "URL": "https://www.gjopen.com/questions/1873-before-14-august-2021-will-an-executive-order-be-signed-or-federal-legislation-become-law-that-would-forgive-10-000-or-more-in-principal-on-federal-student-loan-debts-for-at-least-five-million-student-loan-borrowers",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "25%",
-    "# Forecasts": "183",
-    "# Forecasters": "91"
+    "Percentage": "",
+    "# Forecasts": "193",
+    "# Forecasters": "94"
   },
   {
     "Title": "Will the monthly occupancy level of European hotels next reach 50.0% or higher before June 2021, according to Smith Travel Research?",
     "URL": "https://www.gjopen.com/questions/1874-will-the-monthly-occupancy-level-of-european-hotels-next-reach-50-0-or-higher-before-june-2021-according-to-smith-travel-research",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "20%",
-    "# Forecasts": "236",
-    "# Forecasters": "91"
+    "Percentage": "15%",
+    "# Forecasts": "259",
+    "# Forecasters": "95"
   },
   {
     "Title": "Before 15 July 2021, will Canadians Michael Kovrig and/or Michael Spavor leave China?",
@@ -401,17 +437,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "201",
-    "# Forecasters": "97"
+    "# Forecasts": "219",
+    "# Forecasters": "99"
   },
   {
     "Title": "Will Japan, the People's Republic of China, and South Korea sign a trilateral free trade agreement before 1 January 2022?",
     "URL": "https://www.gjopen.com/questions/1868-will-japan-the-people-s-republic-of-china-and-south-korea-sign-a-trilateral-free-trade-agreement-before-1-january-2022",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "8%",
-    "# Forecasts": "181",
-    "# Forecasters": "114"
+    "Percentage": "",
+    "# Forecasts": "185",
+    "# Forecasters": "117"
   },
   {
     "Title": "When will a Carnival Cruise Line cruise next depart from the continental U.S.?",
@@ -419,8 +455,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "164",
-    "# Forecasters": "88"
+    "# Forecasts": "181",
+    "# Forecasters": "94"
   },
   {
     "Title": "Before 1 January 2022, will a release date for The Winds of Winter be announced by the author and/or publisher?",
@@ -428,26 +464,26 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "57%",
-    "# Forecasts": "60",
-    "# Forecasters": "41"
+    "# Forecasts": "63",
+    "# Forecasters": "43"
   },
   {
     "Title": "Before 7 May 2021, will the Bank of England set its Bank Rate to below zero?",
     "URL": "https://www.gjopen.com/questions/1861-before-7-may-2021-will-the-bank-of-england-set-its-bank-rate-to-below-zero",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "10%",
-    "# Forecasts": "247",
-    "# Forecasters": "174"
+    "Percentage": "8%",
+    "# Forecasts": "260",
+    "# Forecasters": "178"
   },
   {
     "Title": "Will net international migration between the U.S. and abroad for 2021 be higher than the net international migration for 2020?",
     "URL": "https://www.gjopen.com/questions/1865-will-net-international-migration-between-the-u-s-and-abroad-for-2021-be-higher-than-the-net-international-migration-for-2020",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "85%",
-    "# Forecasts": "81",
-    "# Forecasters": "56"
+    "Percentage": "90%",
+    "# Forecasts": "86",
+    "# Forecasters": "57"
   },
   {
     "Title": "In Cedar Point Nursery v. Hassid, will the Supreme Court rule that California's access regulation, as applied to Cedar Point Nursery, is a per se physical taking under the federal constitution?",
@@ -455,7 +491,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "66%",
-    "# Forecasts": "48",
+    "# Forecasts": "52",
     "# Forecasters": "30"
   },
   {
@@ -464,8 +500,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "129",
-    "# Forecasters": "39"
+    "# Forecasts": "138",
+    "# Forecasters": "40"
   },
   {
     "Title": "Before 1 July 2021, will presidential and/or parliamentary elections be held in Kyrgyzstan?",
@@ -473,7 +509,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "85",
+    "# Forecasts": "86",
     "# Forecasters": "28"
   },
   {
@@ -481,9 +517,9 @@
     "URL": "https://www.gjopen.com/questions/1856-will-the-imf-estimate-for-world-gdp-growth-for-2021-be-higher-in-its-april-2021-world-economic-outlook-report-relative-to-its-october-2020-report",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "79%",
-    "# Forecasts": "258",
-    "# Forecasters": "157"
+    "Percentage": "85%",
+    "# Forecasts": "285",
+    "# Forecasters": "161"
   },
   {
     "Title": "Who will win the 2021 presidential election in Peru?",
@@ -491,7 +527,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "103",
+    "# Forecasts": "107",
     "# Forecasters": "67"
   },
   {
@@ -500,8 +536,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "50%",
-    "# Forecasts": "349",
-    "# Forecasters": "177"
+    "# Forecasts": "369",
+    "# Forecasters": "181"
   },
   {
     "Title": "Who will be appointed as the next leader of the Communist Party in Vietnam?",
@@ -509,7 +545,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "194",
+    "# Forecasts": "204",
     "# Forecasters": "93"
   },
   {
@@ -518,8 +554,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "400",
-    "# Forecasters": "221"
+    "# Forecasts": "416",
+    "# Forecasters": "227"
   },
   {
     "Title": "How many COVID-19 vaccines will be approved and/or authorized for emergency use by the U.S. FDA as of 31 March 2021?",
@@ -527,8 +563,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "826",
-    "# Forecasters": "298"
+    "# Forecasts": "898",
+    "# Forecasters": "306"
   },
   {
     "Title": "How many vehicles will Tesla deliver to customers in the first half of 2021?",
@@ -536,17 +572,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "384",
-    "# Forecasters": "193"
+    "# Forecasts": "403",
+    "# Forecasters": "195"
   },
   {
     "Title": "Before 1 October 2021, will Jair Bolsonaro cease to be the president of Brazil?",
     "URL": "https://www.gjopen.com/questions/1851-before-1-october-2021-will-jair-bolsonaro-cease-to-be-the-president-of-brazil",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "",
-    "# Forecasts": "252",
-    "# Forecasters": "188"
+    "Percentage": "6%",
+    "# Forecasts": "258",
+    "# Forecasters": "189"
   },
   {
     "Title": "Will the average price of a gallon of gasoline fall below $1.95 for any week before 2 March 2021?",
@@ -554,35 +590,35 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "1%",
-    "# Forecasts": "342",
-    "# Forecasters": "130"
+    "# Forecasts": "356",
+    "# Forecasters": "132"
   },
   {
     "Title": "Will Nicolas Maduro cease to be president of Venezuela before 1 April 2021?",
     "URL": "https://www.gjopen.com/questions/1843-will-nicolas-maduro-cease-to-be-president-of-venezuela-before-1-april-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "3%",
-    "# Forecasts": "388",
-    "# Forecasters": "186"
+    "Percentage": "2%",
+    "# Forecasts": "396",
+    "# Forecasters": "188"
   },
   {
     "Title": "In 2021, will total fire activity in the Amazon exceed the 2020 total count?",
     "URL": "https://www.gjopen.com/questions/1842-in-2021-will-total-fire-activity-in-the-amazon-exceed-the-2020-total-count",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "",
-    "# Forecasts": "195",
-    "# Forecasters": "114"
+    "Percentage": "68%",
+    "# Forecasts": "199",
+    "# Forecasters": "115"
   },
   {
     "Title": "Will the U.S. consume more energy from renewable sources in May 2021 than it did in May 2019, according to the U.S. Energy Information Administration (EIA)?",
     "URL": "https://www.gjopen.com/questions/1840-will-the-u-s-consume-more-energy-from-renewable-sources-in-may-2021-than-it-did-in-may-2019-according-to-the-u-s-energy-information-administration-eia",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "95%",
-    "# Forecasts": "257",
-    "# Forecasters": "172"
+    "Percentage": "96%",
+    "# Forecasts": "261",
+    "# Forecasters": "173"
   },
   {
     "Title": "On 12 May 2021, will Ethiopia's Tigray region be under a federally-imposed state of emergency?",
@@ -590,8 +626,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "85%",
-    "# Forecasts": "235",
-    "# Forecasters": "157"
+    "# Forecasts": "243",
+    "# Forecasters": "158"
   },
   {
     "Title": "Between 13 November 2020 and 12 February 2021, will the closing price per barrel of WTI crude oil be higher than the closing price per barrel of Brent crude oil?",
@@ -599,8 +635,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "0%",
-    "# Forecasts": "243",
-    "# Forecasters": "105"
+    "# Forecasts": "251",
+    "# Forecasters": "106"
   },
   {
     "Title": "When will the World Health Organization (WHO) report more than 20 million confirmed cases of COVID-19 for the South-East Asia Region?",
@@ -608,8 +644,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "218",
-    "# Forecasters": "85"
+    "# Forecasts": "225",
+    "# Forecasters": "86"
   },
   {
     "Title": "Will the People's Republic of China (PRC) officially declare an air-defense identification zone (ADIZ) over any part of the South China Sea before 1 March 2021?",
@@ -617,8 +653,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "5%",
-    "# Forecasts": "340",
-    "# Forecasters": "207"
+    "# Forecasts": "355",
+    "# Forecasters": "208"
   },
   {
     "Title": "Between 9 November 2020 and 28 February 2021, will a country cease to formally recognize Taiwan?",
@@ -626,17 +662,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "2%",
-    "# Forecasts": "420",
-    "# Forecasters": "215"
+    "# Forecasts": "440",
+    "# Forecasters": "221"
   },
   {
     "Title": "Will Russia and the People's Republic of China (PRC) conduct any joint naval exercises before 1 March 2021?",
     "URL": "https://www.gjopen.com/questions/1833-will-russia-and-the-people-s-republic-of-china-prc-conduct-any-joint-naval-exercises-before-1-march-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "93%",
-    "# Forecasts": "349",
-    "# Forecasters": "146"
+    "Percentage": "95%",
+    "# Forecasts": "368",
+    "# Forecasters": "149"
   },
   {
     "Title": "When will the World Health Organization (WHO) report more than 35 million confirmed cases of COVID-19 for the Europe Region?",
@@ -644,8 +680,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "360",
-    "# Forecasters": "99"
+    "# Forecasts": "371",
+    "# Forecasters": "103"
   },
   {
     "Title": "At close of business on 17 March 2021, will the upper limit of the Federal Reserve's target range for the federal funds rate be lower, the same, or higher than it was at close of business on 27 January 2021?",
@@ -661,8 +697,8 @@
     "URL": "https://www.gjopen.com/questions/1825-before-1-may-2021-will-mahmoud-abbas-cease-to-be-president-of-the-palestinian-authority",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "4%",
-    "# Forecasts": "164",
+    "Percentage": "",
+    "# Forecasts": "168",
     "# Forecasters": "55"
   },
   {
@@ -670,9 +706,9 @@
     "URL": "https://www.gjopen.com/questions/1822-before-1-january-2022-will-amazon-announce-that-it-will-spin-off-amazon-web-services-aws",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "4%",
-    "# Forecasts": "239",
-    "# Forecasters": "139"
+    "Percentage": "3%",
+    "# Forecasts": "247",
+    "# Forecasters": "141"
   },
   {
     "Title": "Will Apple's iPhone net sales be higher in FY 2021 than FY 2019?",
@@ -680,7 +716,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "95%",
-    "# Forecasts": "227",
+    "# Forecasts": "234",
     "# Forecasters": "101"
   },
   {
@@ -689,16 +725,16 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "973",
-    "# Forecasters": "177"
+    "# Forecasts": "1018",
+    "# Forecasters": "180"
   },
   {
     "Title": "Will Prayut Chan-o-cha cease to be the prime minister of Thailand before 23 April 2021?",
     "URL": "https://www.gjopen.com/questions/1820-will-prayut-chan-o-cha-cease-to-be-the-prime-minister-of-thailand-before-23-april-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "",
-    "# Forecasts": "233",
+    "Percentage": "2%",
+    "# Forecasts": "236",
     "# Forecasters": "59"
   },
   {
@@ -706,8 +742,8 @@
     "URL": "https://www.gjopen.com/questions/1815-before-1-september-2021-will-egypt-ethiopia-and-sudan-sign-an-agreement-governing-the-filling-of-the-grand-ethiopian-renaissance-dam-gerd-reservoir",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "3%",
-    "# Forecasts": "162",
+    "Percentage": "5%",
+    "# Forecasts": "166",
     "# Forecasters": "57"
   },
   {
@@ -716,7 +752,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "129",
+    "# Forecasts": "130",
     "# Forecasters": "40"
   },
   {
@@ -725,7 +761,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "99%",
-    "# Forecasts": "119",
+    "# Forecasts": "120",
     "# Forecasters": "52"
   },
   {
@@ -734,17 +770,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "388",
-    "# Forecasters": "140"
+    "# Forecasts": "408",
+    "# Forecasters": "141"
   },
   {
     "Title": "For any seven consecutive day period between 9 October 2020 and 15 June 2021, will there be fewer than 50,000 combined total confirmed new cases of COVID-19 in the United States?",
     "URL": "https://www.gjopen.com/questions/1806-for-any-seven-consecutive-day-period-between-9-october-2020-and-15-june-2021-will-there-be-fewer-than-50-000-combined-total-confirmed-new-cases-of-covid-19-in-the-united-states",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "12%",
-    "# Forecasts": "513",
-    "# Forecasters": "146"
+    "Percentage": "10%",
+    "# Forecasts": "539",
+    "# Forecasters": "150"
   },
   {
     "Title": "What will be the delinquency rate on commercial real estate loans (excluding farmland) in the United States in the second quarter of 2021?",
@@ -752,7 +788,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "215",
+    "# Forecasts": "220",
     "# Forecasters": "64"
   },
   {
@@ -761,8 +797,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "319",
-    "# Forecasters": "82"
+    "# Forecasts": "344",
+    "# Forecasters": "89"
   },
   {
     "Title": "When will Lebanon's parliament give a vote of confidence to a new government?",
@@ -770,8 +806,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "329",
-    "# Forecasters": "56"
+    "# Forecasts": "344",
+    "# Forecasters": "62"
   },
   {
     "Title": "Before 1 March 2021, will there be a lethal confrontation at sea between the forces of India and the People's Republic of China?",
@@ -779,8 +815,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "0%",
-    "# Forecasts": "368",
-    "# Forecasters": "183"
+    "# Forecasts": "378",
+    "# Forecasters": "185"
   },
   {
     "Title": "In Fulton v. City of Philadelphia (City), will the Supreme Court rule that the City's requirement that Catholic Social Services (CSS) not discriminate against same-sex couples as a condition for working with the City's foster children is unconstitutional?",
@@ -788,7 +824,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "97%",
-    "# Forecasts": "190",
+    "# Forecasts": "193",
     "# Forecasters": "64"
   },
   {
@@ -797,8 +833,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "2%",
-    "# Forecasts": "340",
-    "# Forecasters": "150"
+    "# Forecasts": "346",
+    "# Forecasters": "151"
   },
   {
     "Title": "Which country will the 2020-21 UEFA Champions League final winner be from?",
@@ -806,8 +842,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "226",
-    "# Forecasters": "101"
+    "# Forecasts": "233",
+    "# Forecasters": "105"
   },
   {
     "Title": "When will 25,000 or more fans next attend a Premier League match?",
@@ -815,17 +851,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "535",
-    "# Forecasters": "185"
+    "# Forecasts": "557",
+    "# Forecasters": "192"
   },
   {
     "Title": "Before 18 September 2021, will Boris Johnson cease to be prime minister of the United Kingdom?",
     "URL": "https://www.gjopen.com/questions/1789-before-18-september-2021-will-boris-johnson-cease-to-be-prime-minister-of-the-united-kingdom",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "9%",
-    "# Forecasts": "911",
-    "# Forecasters": "418"
+    "Percentage": "8%",
+    "# Forecasts": "935",
+    "# Forecasters": "422"
   },
   {
     "Title": "Will there be a complex coordinated terrorist attack (CCTA) in the United States either directed or inspired by a foreign terrorist organization before 1 September 2021?",
@@ -833,26 +869,26 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "5%",
-    "# Forecasts": "329",
-    "# Forecasters": "156"
+    "# Forecasts": "340",
+    "# Forecasters": "158"
   },
   {
     "Title": "Will any 2020 California election results be altered by a cyberattack against a voting system?",
     "URL": "https://www.gjopen.com/questions/1782-will-any-2020-california-election-results-be-altered-by-a-cyberattack-against-a-voting-system",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "",
-    "# Forecasts": "280",
-    "# Forecasters": "141"
+    "Percentage": "0%",
+    "# Forecasts": "289",
+    "# Forecasters": "144"
   },
   {
     "Title": "Will there be a complex coordinated terrorist attack (CCTA) in the United States before 1 September 2021?",
     "URL": "https://www.gjopen.com/questions/1781-will-there-be-a-complex-coordinated-terrorist-attack-ccta-in-the-united-states-before-1-september-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "",
-    "# Forecasts": "534",
-    "# Forecasters": "145"
+    "Percentage": "26%",
+    "# Forecasts": "561",
+    "# Forecasters": "150"
   },
   {
     "Title": "When will the Transportation Security Administration (TSA) next screen two million or more travelers in a single day?",
@@ -860,8 +896,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "675",
-    "# Forecasters": "159"
+    "# Forecasts": "686",
+    "# Forecasters": "160"
   },
   {
     "Title": "In Google v. Oracle America, will the Supreme Court rule that the Copyright Act protects the Oracle computer source code that Google copied for its Android operating system?",
@@ -869,8 +905,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "92%",
-    "# Forecasts": "183",
-    "# Forecasters": "74"
+    "# Forecasts": "186",
+    "# Forecasters": "75"
   },
   {
     "Title": "In California v. Texas, will the Supreme Court rule that reducing the penalty amount for the individual mandate of the Affordable Care Act (ACA) to zero rendered the individual mandate provision unconstitutional?",
@@ -878,17 +914,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "0%",
-    "# Forecasts": "299",
-    "# Forecasters": "74"
+    "# Forecasts": "304",
+    "# Forecasters": "75"
   },
   {
     "Title": "Before 1 January 2022, will the United States Olympic Committee announce that it is boycotting the 2022 Winter Olympics?",
     "URL": "https://www.gjopen.com/questions/1764-before-1-january-2022-will-the-united-states-olympic-committee-announce-that-it-is-boycotting-the-2022-winter-olympics",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "5%",
-    "# Forecasts": "490",
-    "# Forecasters": "172"
+    "Percentage": "",
+    "# Forecasts": "503",
+    "# Forecasters": "173"
   },
   {
     "Title": "How many Arab League member states other than Palestine will diplomatically recognize the State of Israel as of 28 August 2021?",
@@ -896,8 +932,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "440",
-    "# Forecasters": "91"
+    "# Forecasts": "445",
+    "# Forecasters": "93"
   },
   {
     "Title": "When will the EU amend its Own Resources Decision to help finance the EU's proposed COVID-19 recovery package?",
@@ -905,7 +941,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "186",
+    "# Forecasts": "191",
     "# Forecasters": "49"
   },
   {
@@ -914,8 +950,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "276",
-    "# Forecasters": "82"
+    "# Forecasts": "315",
+    "# Forecasters": "105"
   },
   {
     "Title": "Before 1 January 2023, will Amazon or a subsidiary use a Zoox autonomous vehicle to deliver a package and/or for a public ride-hailing service?",
@@ -923,8 +959,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "205",
-    "# Forecasters": "79"
+    "# Forecasts": "227",
+    "# Forecasters": "95"
   },
   {
     "Title": "Before 14 February 2021, will former King Juan Carlos I and/or former Catalan President Carles Puigdemont return to Spain?",
@@ -932,8 +968,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "233",
-    "# Forecasters": "101"
+    "# Forecasts": "239",
+    "# Forecasters": "102"
   },
   {
     "Title": "Before 1 January 2023, how many major automakers will debut a passenger vehicle powered by a solid-state battery?",
@@ -941,8 +977,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "214",
-    "# Forecasters": "56"
+    "# Forecasts": "239",
+    "# Forecasters": "72"
   },
   {
     "Title": "When will SpaceX's satellite internet service, Starlink, begin offering commercial service in North America?",
@@ -950,7 +986,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "472",
+    "# Forecasts": "485",
     "# Forecasters": "97"
   },
   {
@@ -959,17 +995,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "2%",
-    "# Forecasts": "257",
-    "# Forecasters": "128"
+    "# Forecasts": "258",
+    "# Forecasters": "129"
   },
   {
     "Title": "Before 1 January 2022, will the U.S. Senate expand the scope of matters for which a filibuster cannot be used?",
     "URL": "https://www.gjopen.com/questions/1718-before-1-january-2022-will-the-u-s-senate-expand-the-scope-of-matters-for-which-a-filibuster-cannot-be-used",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "9%",
-    "# Forecasts": "530",
-    "# Forecasters": "131"
+    "Percentage": "10%",
+    "# Forecasts": "544",
+    "# Forecasters": "134"
   },
   {
     "Title": "Between 1 January 2021 and 31 December 2022, will a firm or paid backup driver operating a self-driving vehicle face criminal charges in relation to an accident involving a self-driving vehicle in the U.S.?",
@@ -977,8 +1013,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "185",
-    "# Forecasters": "72"
+    "# Forecasts": "206",
+    "# Forecasters": "88"
   },
   {
     "Title": "How many new energy vehicles (NEVs) will be sold in China in 2021 and 2022 combined?",
@@ -986,8 +1022,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "176",
-    "# Forecasters": "45"
+    "# Forecasts": "193",
+    "# Forecasters": "53"
   },
   {
     "Title": "How many public DC fast charge electric vehicle charging stations will be available in the United States by 31 December 2022?",
@@ -995,8 +1031,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "165",
-    "# Forecasters": "30"
+    "# Forecasts": "186",
+    "# Forecasters": "40"
   },
   {
     "Title": "How many cases of COVID-19 will be reported by the Africa CDC as of 1 April 2021?",
@@ -1004,8 +1040,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "907",
-    "# Forecasters": "140"
+    "# Forecasts": "941",
+    "# Forecasters": "141"
   },
   {
     "Title": "Before 1 May 2021, will it be officially announced that the Tokyo 2020 Summer Olympics and/or Paralympics will be canceled?",
@@ -1013,17 +1049,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "1111",
-    "# Forecasters": "369"
+    "# Forecasts": "1156",
+    "# Forecasters": "379"
   },
   {
     "Title": "Between 1 January 2021 and 31 December 2022, will legislation enabling the creation of federal safety standards for autonomous vehicles (AVs) become law?",
     "URL": "https://www.gjopen.com/questions/1659-between-1-january-2021-and-31-december-2022-will-legislation-enabling-the-creation-of-federal-safety-standards-for-autonomous-vehicles-avs-become-law",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "72%",
-    "# Forecasts": "206",
-    "# Forecasters": "96"
+    "Percentage": "75%",
+    "# Forecasts": "220",
+    "# Forecasters": "105"
   },
   {
     "Title": "Will there be a lethal confrontation between the national military forces, militia, and/or law enforcement personnel of the People's Republic of China and those of Brunei, Indonesia, Malaysia, the Philippines, Singapore, and/or Vietnam before 1 April 2021?",
@@ -1031,8 +1067,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "5%",
-    "# Forecasts": "855",
-    "# Forecasters": "391"
+    "# Forecasts": "884",
+    "# Forecasters": "406"
   },
   {
     "Title": "How many total Model 3 and Model Y vehicles will Tesla deliver to customers in 2021 and 2022?",
@@ -1040,8 +1076,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "234",
-    "# Forecasters": "68"
+    "# Forecasts": "255",
+    "# Forecasters": "78"
   },
   {
     "Title": "How many total Fast Charge (&gt;22kW) public charging points for electric vehicles will be installed in the European Union by 31 December 2022?",
@@ -1049,8 +1085,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "233",
-    "# Forecasters": "64"
+    "# Forecasts": "249",
+    "# Forecasters": "70"
   },
   {
     "Title": "Before 1 January 2023, how many major automakers will sell a self-driving passenger vehicle manufactured without a steering wheel?",
@@ -1058,17 +1094,17 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "339",
-    "# Forecasters": "186"
+    "# Forecasts": "360",
+    "# Forecasters": "204"
   },
   {
     "Title": "Between 1 January 2021 and 31 December 2022, will the European Union delay and/or relax the implementation and/or enforcement of any of its CO2 emission performance standards for new passenger cars and/or new light commercial vehicles?",
     "URL": "https://www.gjopen.com/questions/1620-between-1-january-2021-and-31-december-2022-will-the-european-union-delay-and-or-relax-the-implementation-and-or-enforcement-of-any-of-its-co2-emission-performance-standards-for-new-passenger-cars-and-or-new-light-commercial-vehicles",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "2%",
-    "# Forecasts": "163",
-    "# Forecasters": "80"
+    "Percentage": "3%",
+    "# Forecasts": "171",
+    "# Forecasters": "85"
   },
   {
     "Title": "What will be the 2022 industry-wide average cost of Li-ion batteries used in battery-powered electric vehicles?",
@@ -1076,8 +1112,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "221",
-    "# Forecasters": "86"
+    "# Forecasts": "232",
+    "# Forecasters": "91"
   },
   {
     "Title": "What total percentage of global vehicle sales in 2022 will be battery electric vehicles (BEVs) and plug-in hybrid electric vehicles (PHEVs)? ",
@@ -1085,8 +1121,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "331",
-    "# Forecasters": "132"
+    "# Forecasts": "350",
+    "# Forecasters": "142"
   },
   {
     "Title": "Before 1 July 2021, will the Chilean government pass legislation that caps administrative fees and/or operating profits of the country's pension fund managers?",
@@ -1094,7 +1130,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "1%",
-    "# Forecasts": "253",
+    "# Forecasts": "255",
     "# Forecasters": "96"
   },
   {
@@ -1103,7 +1139,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "2%",
-    "# Forecasts": "284",
+    "# Forecasts": "286",
     "# Forecasters": "129"
   }
 ]
