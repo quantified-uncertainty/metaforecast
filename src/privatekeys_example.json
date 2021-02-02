@@ -1,4 +1,5 @@
 {
   "csetforetellcookie": "_cset_prod_fof_session=xxx; landing_url=https://www.cset-foretell.com/;  randomization_seed=xxx; remember_user_token=xxx; ",
-  "goodjudmentopencookie": "__cfduid=xxx; _gj_prod_flyover_forecasts_session=xxx; randomization_seed=xxx; referring_url=https://www.gjopen.com/; remember_user_token=xxx;"
+  "goodjudmentopencookie": "__cfduid=xxx; _gj_prod_flyover_forecasts_session=xxx; randomization_seed=xxx; referring_url=https://www.gjopen.com/; remember_user_token=xxx;",
+  "hypermindcookie": "lumAuth=xxxx:yyyyyyyyyyyyyyyyy"
 }

@@ -10,12 +10,13 @@ import {metaculus} from "./metaculus-fetch.js"
 import {polymarket} from "./polymarket-fetch.js"
 import {predictit} from "./predictit-fetch.js"
 import {omen} from "./omen-fetch.js"
+import {hypermind} from "./hypermind-fetch.js"
 
 /* Definitions */
 let opts = {}
 let json2csvParser = new Parser({ transforms:  [transforms.flatten()]});
 //let parse = csv => json2csvParser.parse(csv);
-let sets = ["template", "elicit", "metaculus", "predictit", "polymarket", "csetforetell", "goodjudmentopen", "omen"]
+let sets = ["template", "elicit", "metaculus", "predictit", "polymarket", "csetforetell", "goodjudmentopen", "omen", "hypermind"]
 let suffix = "-questions"
 let locationData = "./data/"
 let sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -86,9 +87,12 @@ let executeoption = async (option) => {
       omen()
       break;
     case 8:
-      coverttocsvandmerge()
+      hypermind()
       break;
     case 9:
+      coverttocsvandmerge()
+      break;
+    case 10:
       await elicit()
       //await sleep(30000) // The user only has 30secs. Not really ideal. 
       await csetforetell()
@@ -97,6 +101,7 @@ let executeoption = async (option) => {
       await polymarket()
       await predictit()
       await omen()
+      await hypermind()
       await coverttocsvandmerge()
       break;
     default:
@@ -114,7 +119,8 @@ let whattodoMessage = `What do you want to do?
 [5]: Download predictions from polymarket
 [6]: Download predictions from predictit
 [7]: Download predictions from omen
-[8]: Convert predictions to csvs and merge them into one big file (requires steps 1-7)
-[9]: All of the above
+[8]: Download predictions from hypermind
+[9]: Convert predictions to csvs and merge them into one big file (requires steps 1-8)
+[10]: All of the above
 Choose one option, wisely: #`
 whattodo(whattodoMessage, executeoption)

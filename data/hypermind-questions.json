@@ -1,0 +1,261 @@
+[
+  {
+    "Title": "In 2021, will Donald Trump be barred from holding future elected office in the USA?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=USA",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "22.52252252252252%"
+  },
+  {
+    "Title": "Will Kamala Harris be the first woman to become president of the United States?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=USA",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "63.888888888888886%"
+  },
+  {
+    "Title": "At the 2021 Tokyo Olympics, will the USA earn more medals than they ever did during Obama's presidency (121)?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=USA",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "35%"
+  },
+  {
+    "Title": "In 2021, will Joe Biden invoke the Insurrection Act?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=USA",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "5%"
+  },
+  {
+    "Title": "Who will be elected president of France in 2022?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=FRA",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "Who will compete in the second round of the French presidential election?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=FRA",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "In France, when will the first round of the regional elections take place?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=FRA",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "In France, when will the 7 day average of new confirmed cases of Covid-19 fall back below 5,000?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=FRA",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "At the 2021 Tokyo Olympics, will Japan or France earn more medals?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=FRA",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "Following the next parliamentary elections win Morocco, who will succeed Saad-Eddine El Othmani as prime minister?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "In Niger, who will win the (February) 2021 presidential election?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "In 2021, will Faustin-Archange Touadéra lose power in the Central African Republic?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "8%"
+  },
+  {
+    "Title": "In 2021, will Abdelmadjid Tebboune lose power in Algeria?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "8%"
+  },
+  {
+    "Title": "In January 2021, how many battle deaths will there be in the G5 Sahel countries?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "25.510204081632654%"
+  },
+  {
+    "Title": "In Congo, who will win the (March) 2021 presidential election?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "In Chad, who will win the (April) 2021 presidential election?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "In Somalia, who will win the (Feb) 2021 presidential election? ",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "When will worldwide commercial air traffic rise back above 100,000 flights per day?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=INT",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "In 2021, who will succeed Benjamin Netanyahu as prime minister of Israel?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=INT",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "In 2021, how much will the arctic sea ice shrink?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=INT",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "Who will succeed Angela Merkel as chancellor of Germany?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=INT",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "When will the FDA approve a COVID-19 vaccine?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=COV",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "Which threshold will gold prices (per ounce) reach first? ",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "44.554455445544555%"
+  },
+  {
+    "Title": "What will be the closing share price of GameStop (GME) on Feb. 26, 2021?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "Which threshold will the Dow Jones Industrial Average hit first?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "53.92156862745098%"
+  },
+  {
+    "Title": "Which threshold will the French index CAC 40 hit first?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "59%"
+  },
+  {
+    "Title": "Will the new Bond film \"No Time to Die\" be released in 2021?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "94%"
+  },
+  {
+    "Title": "In 2021, will the Olympic Games take place?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
+    "Platform": "Hypermind",
+    "Binary question?": true,
+    "Percentage": "62%"
+  },
+  {
+    "Title": "What will be the year-over-year growth rate of U.S. Nominal GDP in Q1 2021?",
+    "URL": "https://prod.hypermind.com/ngdp/en/showcase/showcase.html",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "What will be the year-over-year growth rate of U.S. Nominal GDP in Q4 2021?",
+    "URL": "https://prod.hypermind.com/ngdp/en/showcase/showcase.html",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "What will be the year-over-year growth rate of U.S. Nominal GDP in Q4 2022?",
+    "URL": "https://prod.hypermind.com/ngdp/en/showcase/showcase.html",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "As of April 1, 2021, how many million individuals in the United-States will have received at least one dose of an FDA-approved Covid-19 vaccine?",
+    "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "As of July 1, 2021, how many million individuals in the United-States will have received at least one dose of an FDA-approved Covid-19 vaccine?",
+    "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "As of October 1, 2021, how many million individuals in the United-States will have received at least one dose of an FDA-approved Covid-19 vaccine?",
+    "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "When will new confirmed COVID-19 deaths in the USA (7-day rolling average) first drop below 3 per million people?",
+    "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "When will new confirmed COVID-19 deaths in the USA (7-day rolling average) first drop below 1 per million people?",
+    "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  },
+  {
+    "Title": "When will new confirmed COVID-19 deaths in the USA (7-day rolling average) first drop below 0.1 per million people?",
+    "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none"
+  }
+]
