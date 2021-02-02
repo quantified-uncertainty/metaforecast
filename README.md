@@ -22,6 +22,6 @@ From the top level directory, enter: `npm run start`
 ## Various notes
 
 - Right now, I'm fetching only a couple of common properties, such as the title, url, platform, whether a question is binary (yes/no), its percentage, and the number of forecasts. However, the code contains more fields commented out, such as trade volume, liquidity, etc. 
-- A note as to quality: Tentatively, Good Judgment Open ~ Metaculus > CSET > PredictIt ~> Polymarket >> Elicit > Omen. Further, prediction markets rarely go above 95% or below 5%. I'm not really sure where Hypermind falls in that spectrum.
+- A note as to quality: Tentatively, Good Judgment >> Good Judgment Open ~ Metaculus > CSET > PredictIt ~> Polymarket >> Elicit > Omen. Further, prediction markets rarely go above 95% or below 5%. I'm not really sure where Hypermind falls in that spectrum.
 - For elicit and metaculus, this library currently filters questions with <10 predictions.
 - Omen *does* have very few active predictions at the moment; this is not a mistake. 

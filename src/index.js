@@ -5,6 +5,7 @@ import readline from "readline"
 
 import {csetforetell} from "./csetforetell-fetch.js"
 import {elicit} from "./elicit-fetch.js" // Currently doesn't "fetch"; elicit must be downloaded manually. 
+import {goodjudgment} from "./goodjudgment-fetch.js"
 import {goodjudgmentopen} from "./goodjudmentopen-fetch.js"
 import {metaculus} from "./metaculus-fetch.js"
 import {polymarket} from "./polymarket-fetch.js"
@@ -16,7 +17,7 @@ import {hypermind} from "./hypermind-fetch.js"
 let opts = {}
 let json2csvParser = new Parser({ transforms:  [transforms.flatten()]});
 //let parse = csv => json2csvParser.parse(csv);
-let sets = ["template", "elicit", "metaculus", "predictit", "polymarket", "csetforetell", "goodjudmentopen", "omen", "hypermind"]
+let sets = ["template", "elicit", "metaculus", "predictit", "polymarket", "csetforetell", "goodjudgment","goodjudmentopen", "omen", "hypermind"]
 let suffix = "-questions"
 let locationData = "./data/"
 let sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -72,36 +73,39 @@ let executeoption = async (option) => {
       elicit()
       break;
     case 3:
-      goodjudgmentopen()
+      goodjudgment()
       break;
     case 4:
-      metaculus()
+      goodjudgmentopen()
       break;
     case 5:
-      polymarket()
+      hypermind()
       break;
     case 6:
-      predictit()
+      metaculus()
       break;
     case 7:
       omen()
       break;
     case 8:
-      hypermind()
+      polymarket()
       break;
-    case 9:
-      coverttocsvandmerge()
+    case 9:    
+      predictit()
       break;
     case 10:
+      coverttocsvandmerge()
+      break;
+    case 11:
       await elicit()
-      //await sleep(30000) // The user only has 30secs. Not really ideal. 
       await csetforetell()
+      await goodjudgment()
       await goodjudgmentopen()
+      await hypermind()
       await metaculus()
+      await omen()
       await polymarket()
       await predictit()
-      await omen()
-      await hypermind()
       await coverttocsvandmerge()
       break;
     default:
@@ -114,13 +118,14 @@ let executeoption = async (option) => {
 let whattodoMessage = `What do you want to do?
 [1]: Download predictions from csetforetell
 [2]: Download predictions from elicit
-[3]: Download predictions from goodjudgmentopen
-[4]: Download predictions from metaculus
-[5]: Download predictions from polymarket
-[6]: Download predictions from predictit
+[3]: Download predictions from goodjudgment
+[4]: Download predictions from goodjudgmentopen
+[5]: Download predictions from hypermind
+[6]: Download predictions from metaculus
 [7]: Download predictions from omen
-[8]: Download predictions from hypermind
-[9]: Convert predictions to csvs and merge them into one big file (requires steps 1-8)
-[10]: All of the above
+[8]: Download predictions from polymarket
+[9]: Download predictions from predictit
+[10]: Convert predictions to csvs and merge them into one big file (requires previous steps)
+[11]: All of the above
 Choose one option, wisely: #`
 whattodo(whattodoMessage, executeoption)
