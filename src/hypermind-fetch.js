@@ -96,7 +96,7 @@ export async function hypermind(){
       URL: "https://predict.hypermind.com/dash/dash/dash.html?list="+slug,
       Platform: "Hypermind",
       "Binary question?" : (res.otcms.length==2),
-      "Percentage": (res.otcms.length==2)?res.otcms[0].price +"%": "none"
+      "Percentage": (res.otcms.length==2) ? Number(res.otcms[0].price).toFixed(2) +"%" : "none"
     }))
     results1.push(...objs)
   }
