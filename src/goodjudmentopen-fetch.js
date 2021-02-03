@@ -1,6 +1,7 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
+import textVersion from "textversionjs"
 
 /* Definitions */
 let htmlEndPoint = 'https://www.gjopen.com/questions?page='
@@ -62,6 +63,15 @@ async function fetchStats(questionUrl, cookie){
     percentage = crowdpercentage
   }
 
+  // Description
+  let descriptionraw = response.split(`<div id="question-background" class="collapse smb">`)[1]
+  let descriptionprocessed1 = descriptionraw.split(`</div>`)[0]
+  let descriptionprocessed2= textVersion(descriptionprocessed1)
+  let descriptionprocessed3 = descriptionprocessed2.split("\n")
+    .filter(string => !string.includes("Confused? Check our"))
+    .join("\n")
+  let description = descriptionprocessed3
+  
   // Number of forecasts
   let numforecasts = response.split("prediction_sets_count&quot;:")[1].split(",")[0]
   //console.log(numforecasts)
@@ -73,6 +83,7 @@ async function fetchStats(questionUrl, cookie){
   let result = {
     "Binary question?": isbinary,
     "Percentage": percentage,
+    "Description": description, 
     "# Forecasts": numforecasts,
     "# Forecasters": numforecasters
   }

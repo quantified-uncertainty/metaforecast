@@ -4,6 +4,7 @@
   "Platform": "some platform",
   "Binary question?": true,
   "Percentage": "X%/none",
+  "Description": "Some long description which may contain html",
   "# Forecasts": 15
 }
 ]

@@ -97,8 +97,8 @@ let executeoption = async (option) => {
       coverttocsvandmerge()
       break;
     case 11:
-      await elicit()
       await csetforetell()
+      await elicit()
       await goodjudgment()
       await goodjudgmentopen()
       await hypermind()

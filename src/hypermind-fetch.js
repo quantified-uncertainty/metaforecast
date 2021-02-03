@@ -1,6 +1,7 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
+import textVersion from "textversionjs"
 
 /* Definitions */
 let hypermindEnpoint1 = 'https://predict.hypermind.com/dash/jsx.json'
@@ -91,37 +92,68 @@ export async function hypermind(){
     console.log(slug)
     await sleep(1000 + Math.random()*1000)
     let result = await fetchHypermindData1(slug)
-    let objs = result.map(res => ({
-      Title: res.props.title.split("%%fr")[0].replace("%%en:", ""),
-      URL: "https://predict.hypermind.com/dash/dash/dash.html?list="+slug,
-      Platform: "Hypermind",
-      "Binary question?" : (res.otcms.length==2),
-      "Percentage": (res.otcms.length==2) ? Number(res.otcms[0].price).toFixed(2) +"%" : "none"
-    }))
+    //console.log(result)
+    
+    let objs = result.map(res => {
+      let descriptionraw = res.props.details
+      let descriptionprocessed1 = descriptionraw.split("%%fr")[0]
+      let descriptionprocessed2 = descriptionprocessed1.replaceAll("<BR>", "\n")
+      let descriptionprocessed3 = descriptionprocessed2.replace("%%en:", "")
+      let descriptionprocessed4 = descriptionprocessed3.replace(`Shares of the correct outcome will be worth 100<sup>ℍ</sup>, while the others will be worthless (0<sup>ℍ</sup>).<p>`, "")
+      let descriptionprocessed5 = textVersion(descriptionprocessed4)
+      let description = descriptionprocessed5 
+      return ({
+        Title: res.props.title.split("%%fr")[0].replace("%%en:", ""),
+        URL: "https://predict.hypermind.com/dash/dash/dash.html?list="+slug,
+        Platform: "Hypermind",
+        "Binary question?" : (res.otcms.length==2),
+        "Percentage": (res.otcms.length==2) ? Number(res.otcms[0].price).toFixed(2) +"%" : "none",
+        "Description": description
+      })
+    
+    })
     results1.push(...objs)
   }
   
   console.log("GDP")
   await sleep(1000 + Math.random()*1000)
   let results2 = await fetchHypermindData2()
-  let results2processed = results2.map(res => ({
+  let results2processed = results2.map(res => {
+    //console.log(res.props.details)
+    let descriptionraw = res.props.details.split("<hr size=1>")[0]
+    let descriptionprocessed1 = textVersion(descriptionraw)
+    let descriptionprocessed2 = descriptionprocessed1.split("![image]")[0]
+    let description = descriptionprocessed2
+    //console.log(description)
+    return({
     Title: res.props.title,
     URL: "https://prod.hypermind.com/ngdp/en/showcase/showcase.html",
     Platform: "Hypermind",
+    Description: description,
     "Binary question?" : false,
     "Percentage": "none"
-  }))
+  })
+  })
+  
   
   console.log("COVID-19 OpenPhil")
   await sleep(1000 + Math.random()*1000)
   let results3 = await fetchHypermindData3()
-  let results3processed = results3.map(res => ({
-    Title: res.props.title,
-    URL: "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
-    Platform: "Hypermind",
-    "Binary question?" : false,
-    "Percentage": "none"
-  }))
+  //  console.log(results3)
+  let results3processed = results3.map(res => {
+    let descriptionraw = res.props.details.split("<hr size=1>")[0]
+    let descriptionprocessed1 = textVersion(descriptionraw)
+    let descriptionprocessed2 = descriptionprocessed1.split("![image]")[0]
+    let description = descriptionprocessed2
+    return({
+      Title: res.props.title,
+      URL: "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
+      Platform: "Hypermind",
+      "Description": description,
+      "Binary question?" : false,
+      "Percentage": "none"
+    })
+  })
   
   let resultsTotal=[...results1, ...results2processed, ...results3processed]
 

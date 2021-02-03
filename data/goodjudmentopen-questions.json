@@ -4,18 +4,20 @@
     "URL": "https://www.gjopen.com/questions/1919-will-there-be-a-new-prime-minister-of-italy-before-1-september-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "21%",
-    "# Forecasts": "38",
-    "# Forecasters": "31"
+    "Percentage": "35%",
+    "Description": "After the resignation of Prime Minister Giuseppe Conte, how the next Italian government will be formed -- and how Italy will continue to weather the COVID-19 crisis -- remains to be seen ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/lots-of-eu-cash-for-italy-but-what-about-structural-reform) , [BBC] (https://www.bbc.com/news/world-europe-55802611) , [thelocal.it] (https://www.thelocal.it/20210105/early-elections-or-waste-of-time-heres-what-italys-latest-political-crisis-means) ). Neither a reappointment of Conte nor the appointment of a caretaker prime minister would count.\n",
+    "# Forecasts": "71",
+    "# Forecasters": "53"
   },
   {
     "Title": "Will the United States report more deaths attributed to COVID-19 as of 31 December 2021 than will the European Union?",
     "URL": "https://www.gjopen.com/questions/1916-will-the-united-states-report-more-deaths-attributed-to-covid-19-as-of-31-december-2021-than-will-the-european-union",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "35%",
-    "# Forecasts": "62",
-    "# Forecasters": "45"
+    "Percentage": "20%",
+    "Description": "The outcome will be determined using deaths data as reported by WHO for the United States and for those countries that were EU member states as of 1 January 2021 ( [WHO] (https://covid19.who.int/table) , see 'Deaths - cumulative total',  [European Union] (https://europa.eu/european-union/about-eu/countries_en#tab-0-1) ). Data for 2021 will be evaluated at approximately 5:00PM ET on 3 January 2022 and inclusive of deaths before this question's launch.\n",
+    "# Forecasts": "88",
+    "# Forecasters": "62"
   },
   {
     "Title": "How many vacancies will arise on the U.S. Supreme Court in 2021?",
@@ -23,8 +25,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "71",
-    "# Forecasters": "61"
+    "Description": "The last vacancy on the Supreme Court occurred when Justice Ruth Bader Ginsburg passed away in 2020 ( [NPR] (https://www.npr.org/2020/09/18/100306972/justice-ruth-bader-ginsburg-champion-of-gender-equality-dies-at-87) , [Supreme Court] (https://www.supremecourt.gov/about/biographies.aspx) ). For the purposes of this question, any new seats established by Congress would constitute arisen vacancies.\n",
+    "# Forecasts": "93",
+    "# Forecasters": "80"
   },
   {
     "Title": "What will be the combined U.S. domestic theater box office gross for June, July, and August 2021?",
@@ -32,17 +35,19 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "34",
-    "# Forecasters": "26"
+    "Description": "The movie industry has seen its box office returns plummet due to the coronavirus pandemic, and there is concern it may never fully recover ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/the-pandemic-has-shaken-up-the-movie-business) , [LA Times] (https://www.latimes.com/entertainment-arts/business/story/2020-12-09/everything-hollywood-lost-during-the-pandemic) ). The outcome will be determined by Box Office Mojo with the sum of the \"Cumulative Gross\" column for June, July, and August 2021 ( [Box Office Mojo] (https://www.boxofficemojo.com/month/by-year/2021/?grossesOption=calendarGrosses) ). For June, July, and August 2020, the combined U.S. domestic theater box office gross was $39,293,148.\n",
+    "# Forecasts": "42",
+    "# Forecasters": "32"
   },
   {
     "Title": "Before 1 October 2021, will the Republic of Chad announce that legislative elections currently scheduled for 24 October 2021 will be postponed or canceled?",
     "URL": "https://www.gjopen.com/questions/1918-before-1-october-2021-will-the-republic-of-chad-announce-that-legislative-elections-currently-scheduled-for-24-october-2021-will-be-postponed-or-canceled",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "90%",
-    "# Forecasts": "21",
-    "# Forecasters": "19"
+    "Percentage": "92%",
+    "Description": "Elections for Chad's legislature, the National Assembly, were last held in 2011, with 2015 elections postponed five times ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/covid-19-will-help-unscrupulous-incumbents-in-african-elections) , [Barron's] (https://www.barrons.com/news/chad-sets-october-2021-for-delayed-legislative-election-state-radio-01593699304) , [Le Monde] (https://www.lemonde.fr/afrique/article/2020/07/03/tchad-les-legislatives-reportees-depuis-5-ans-fixees-a-octobre-2021_6045040_3212.html) [in French]).\n",
+    "# Forecasts": "31",
+    "# Forecasters": "26"
   },
   {
     "Title": "At close of business on 16 June 2021, will the upper limit of the Federal Reserve's target range for the federal funds rate be lower, the same, or higher than it was at close of business on 28 April 2021?",
@@ -50,44 +55,49 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "33",
-    "# Forecasters": "31"
+    "Description": "The U.S. federal funds rate is the interest rate charged for overnight lending among financial institutions with accounts at the Federal Reserve and sets the base rate for borrowing costs across the financial system ( [Federal Reserve] (https://www.federalreserve.gov/monetarypolicy/fomc.htm) ). The target range for the federal funds rate is set by the Federal Open Market Committee (FOMC). Its June meeting is scheduled for 15-16 June 2021.\n",
+    "# Forecasts": "43",
+    "# Forecasters": "39"
   },
   {
     "Title": "Will the UN declare that a famine exists in any part of Yemen in 2021?",
     "URL": "https://www.gjopen.com/questions/1908-will-the-un-declare-that-a-famine-exists-in-any-part-of-yemen-in-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "70%",
-    "# Forecasts": "89",
-    "# Forecasters": "66"
+    "Percentage": "53%",
+    "Description": "Years of civil war and other factors have greatly increased food insecurity in Yemen, and the UN and others fear that US policy toward Houthi rebels may exacerbate the problems and lead to famine in the country ( [UN] (https://news.un.org/en/story/2021/01/1082082) , [Radio Canada International] (https://www.rcinet.ca/en/2021/01/16/aid-groups-worry-u-s-terrorist-designation-of-yemen-rebels-will-hasten-famine/) , [In Depth News] (https://www.indepthnews.net/index.php/sustainability/food-security-nutrition-sustainable-agriculture/4093-desert-locust-upsurge-continues-to-threaten-food-security-in-the-horn-of-africa) ). For general information on how famines are declared, see: [Integrated Food Security Phase Classification] (http://www.ipcinfo.org/ipcinfo-website/alerts-archive/issue-24/en/) , [NPR] (http://www.npr.org/sections/goatsandsoda/2017/02/23/516642447/who-declares-a-famine-and-what-does-that-actually-mean) .\n",
+    "# Forecasts": "99",
+    "# Forecasters": "69"
   },
   {
     "Title": "Will Russia conduct a flight test of an RS-28 Sarmat ICBM before 1 August 2021?",
     "URL": "https://www.gjopen.com/questions/1912-will-russia-conduct-a-flight-test-of-an-rs-28-sarmat-icbm-before-1-august-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "69%",
-    "# Forecasts": "83",
-    "# Forecasters": "64"
+    "Percentage": "70%",
+    "Description": "Russia has been developing a new intercontinental ballistic missile (ICBM), the RS-28 Sarmat, for years ( [TASS] (https://tass.com/defense/1236575) , [Daily Mail] (https://www.dailymail.co.uk/news/article-9110579/Russia-planning-flight-test-new-missile-capable-destroying-area-size-France.html) ). Russia reportedly planned for five flight tests in 2020, but none were conducted ( [CSIS] (https://missilethreat.csis.org/russia-to-deploy-sarmat-icbm-in-2021/) ). Whether the flight test is deemed successful is immaterial.\n",
+    "# Forecasts": "89",
+    "# Forecasters": "66"
   },
   {
     "Title": "Will Chinese businessman Jack Ma physically appear in public outside of the People's Republic of China (PRC) before 1 April 2021?",
     "URL": "https://www.gjopen.com/questions/1909-will-chinese-businessman-jack-ma-physically-appear-in-public-outside-of-the-people-s-republic-of-china-prc-before-1-april-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "5%",
-    "# Forecasts": "124",
-    "# Forecasters": "99"
+    "Percentage": "10%",
+    "Description": "Alibaba founder Jack Ma made his first public appearance on 20 January 2021 after three months since an October 2020 event in Shanghai where he was critical of Chinese regulators ( [Reuters] (https://www.reuters.com/article/china-alibaba-jack-ma/alibabas-jack-ma-makes-first-public-appearance-in-three-months-idINKBN29P0CV) , [NPR] (https://www.npr.org/2021/01/08/954046428/alibaba-founder-jack-ma-has-fallen-off-the-radar-here-are-some-clues-why) , [CNBC] (https://www.cnbc.com/2020/10/24/alibaba-founder-jack-ma-on-ant-group-ipo-pricing.html) ). An early January report indicated that Ma wasn't missing, but rather \"lying low\" ( [CNBC] (https://www.cnbc.com/2021/01/05/alibaba-founder-jack-ma-is-laying-low-for-the-time-being-not-missing.html) , [Newsweek] (https://www.newsweek.com/jack-ma-missing-billionaire-video-alibaba-1558672) ). For the purposes of this question, both Hong Kong and Macau are considered to be parts of the PRC.\n",
+    "# Forecasts": "131",
+    "# Forecasters": "102"
   },
   {
     "Title": "Will U.S. President Joe Biden and Russian President Vladimir Putin hold a bilateral meeting in 2021?",
     "URL": "https://www.gjopen.com/questions/1911-will-u-s-president-joe-biden-and-russian-president-vladimir-putin-hold-a-bilateral-meeting-in-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "15%",
-    "# Forecasts": "213",
-    "# Forecasters": "154"
+    "Percentage": "",
+    "Description": "The world is watching how U.S.-Russia relations will evolve under President Biden ( [NPR] (https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come) , [CNBC] (https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html) , [New Statesman] (https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship) ). For the purposes of this question, a bilateral meeting would be a pre-planned summit or event, rather than, e.g., a one-on-one on the sidelines of a multilateral meeting. A virtual meeting would not count.\nVersión en Español:\nPregunta: ¿Celebrarán el presidente de los Estados Unidos, Joe Biden, y el presidente ruso, Vladimir Putin, una reunión bilateral en 2021?\nInformación adicional: El mundo está observando cómo evolucionarán las relaciones entre Estados Unidos y Rusia bajo el presidente Biden ( [NPR] (https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come) , [CNBC] (https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html) , [New Statesman] (https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship) ). A los efectos de esta pregunta, una reunión bilateral sería una cumbre o evento planificado previamente, en lugar de, por ejemplo, un \"uno a uno\" al margen de una reunión multilateral. Una reunión virtual no contaría a efectos de esta pregunta.\nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ( [FAQs] (https://www.gjopen.com/faq#question) ) o envíenos un [correo electrónico] (/cdn-cgi/l/email-protection#9bf8f7fae9f2fdf2f8faeff2f4f5e8dbfcf4f4fff1eefffcf6fef5efb5f8f4f6a4e8eef9f1fef8efa6caeefee8eff2f4f5bea9abd8f7fae9f2fdf2f8faeff2f4f5) . Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor [clique aquí] (https://goodjudgment.com/) .\n",
+    "# Forecasts": "222",
+    "# Forecasters": "157"
   },
   {
     "Title": "When will the Public Health Agency of Canada (PHAC) report 1.1 million or more total cases of COVID-19 in Canada?",
@@ -95,8 +105,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "99",
-    "# Forecasters": "61"
+    "Description": "COVID-19 cases in Canada jumped with the onset of winter, and officials are working to get the outbreak under control ( [CBC] (https://www.cbc.ca/news/world/coronavirus-covid19-canada-world-january21-2021-1.5881761) ). The outcome will be determined based on data provided by PHAC ( [PHAC] (https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html) ). Daily number data can be obtained by clicking the \".CSV\" button to the right of the primary graphic on the linked PHAC page. See daily number data (\"numtoday\") associated with daily entries for \"Canada\" under \"prname.\"\n",
+    "# Forecasts": "116",
+    "# Forecasters": "63"
   },
   {
     "Title": "How many U.S. states will have an infection rate of 1.0 or greater for COVID-19 as of 31 March 2021?",
@@ -104,7 +115,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "127",
+    "Description": "The infection rate (also known as Rt) \"is the estimated number of new people each COVID-positive person will infect\" ( [COVID Act Now - Glossary] (https://covidactnow.org/glossary#infection-rate) ). The outcome will be determined using data from [covidactnow.org] (https://covidactnow.org) at approximately 5:00PM ET on 31 March 2021. See the table \"Compare,\" set to \"States,\" under \"INFECTION RATE.\" As of 19 January 2021, 19 states had an infection rate at or above a 1.0. For the purposes of this question, the District of Columbia is considered a state.\n",
+    "# Forecasts": "137",
     "# Forecasters": "75"
   },
   {
@@ -112,9 +124,10 @@
     "URL": "https://www.gjopen.com/questions/1910-before-1-january-2022-will-there-be-a-lethal-confrontation-between-the-national-military-forces-of-iran-and-the-united-states-either-in-iran-or-at-sea",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "5%",
-    "# Forecasts": "102",
-    "# Forecasters": "86"
+    "Percentage": "",
+    "Description": "Tensions between the U.S. and Iran remain high ( [AP] (https://apnews.com/article/donald-trump-iran-coronavirus-pandemic-baghdad-ali-khamenei-de61647fe1796de76dc718f8933690c9) , [Bloomberg] (https://www.bloomberg.com/news/articles/2021-01-06/iran-tests-suicide-drones-amid-its-tense-standoff-with-trump) , [BBC] (https://www.bbc.com/news/world-middle-east-55530366) ). A lethal confrontation is one that results in at least one fatality (total, not each) for the national military forces of either side. For the purposes of this question, Iran's national military forces include the Revolutionary Guard Corps and Law Enforcement Forces. A lethal confrontation taking place in Iranian airspace or international airspace over the sea would count.\n",
+    "# Forecasts": "109",
+    "# Forecasters": "90"
   },
   {
     "Title": "Will the Scottish National Party win a majority of seats in the next Scottish Parliament election?",
@@ -122,16 +135,18 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "90%",
-    "# Forecasts": "142",
-    "# Forecasters": "119"
+    "Description": "The next Scottish Parliament election is scheduled to be held on 6 May 2021 ( [Edinburgh Live] (https://www.edinburghlive.co.uk/news/uk-world-news/covid-scotland-nicola-sturgeon-says-19564859) , [Parliament.scot] (https://www.parliament.scot/visitandlearn/96259.aspx) , [Parliament.scot - Current State of the Parties] (https://www.parliament.scot/msps/12450.aspx) ). First Minister of Scotland Nicola Sturgeon, leader of the Scottish National Party and opponent of Brexit, is seeking a strong result in the election to build momentum for a new referendum on Scottish independence from the United Kingdom ( [BBC] (https://www.bbc.com/news/uk-politics-54879211) ).\n",
+    "# Forecasts": "148",
+    "# Forecasters": "121"
   },
   {
     "Title": "Will Nicaragua diplomatically recognize the People's Republic of China before 7 November 2021?",
     "URL": "https://www.gjopen.com/questions/1903-will-nicaragua-diplomatically-recognize-the-people-s-republic-of-china-before-7-november-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "15%",
-    "# Forecasts": "57",
+    "Percentage": "11%",
+    "Description": "In recent decades, many countries have ceased to recognize the Republic of China (ROC), commonly known as Taiwan, in favor of recognition of the People's Republic of China (PRC). A handful of countries continue to recognize the ROC, including Nicaragua ( [Taiwan Ministry of Foreign Affairs] (https://www.mofa.gov.tw/en/AlliesIndex.aspx?n=DF6F8F246049F8D6&amp;sms=A76B7230ADF29736) , [Springer Link] (https://link.springer.com/article/10.1007/s11366-020-09682-8#Sec5) , [Taipei Times] (https://www.taipeitimes.com/News/front/archives/2020/10/27/2003745865) , [AP] (https://apnews.com/article/90e8938980404130a63641162d125db2) ). An announcement by Nicaragua would count (e.g., [NY Times] (https://www.nytimes.com/2020/09/12/world/middleeast/bahrain-israel.html) , [CNN] (https://edition.cnn.com/2020/08/13/middleeast/mideast-trump-full-statement-uae-israel-intl/index.html) ).\nVersión en Español: \nPregunta: ¿Nicaragua reconocerá diplomáticamente a la República Popular China antes del 7 de noviembre de 2021?\nInformación adicional: En las últimas décadas, muchos países han dejado de reconocer a la República de China, comúnmente conocida como Taiwán, en favor del reconocimiento de la República Popular de China. Un puñado de países continúan reconociendo a la República de China, incluyendo Nicaragua ( [Ministerio de Relaciones Exteriores de Taiwán] (https://www.mofa.gov.tw/en/AlliesIndex.aspx?n=DF6F8F246049F8D6&amp;sms=A76B7230ADF29736) , [Springer Link] (https://link.springer.com/article/10.1007/s11366-020-09682-8#Sec5) , [T] (https://www.taipeitimes.com/News/front/archives/2020/10/27/2003745865) [aipei Times] (https://www.taipeitimes.com/News/front/archives/2020/10/27/2003745865) , [AP] (https://apnews.com/article/90e8938980404130a63641162d125db2) ). Un anuncio de Nicaragua contaría a efectos de la resolución de esta pregunta (por ejemplo, [NY Times] (https://www.nytimes.com/2020/09/12/world/middleeast/bahrain-israel.html) , [CNN] (https://edition.cnn.com/2020/08/13/middleeast/mideast-trump-full-statement-uae-israel-intl/index.html) ). La versión en español de esta pregunta ha sido incluida sólo a efectos informativos, y en situaciones donde existe una diferencia de interpretación entre las versiones en inglés y español, prevalecerá la versión original en inglés.\nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ( [FAQs] (https://www.gjopen.com/faq#question) ) o envíenos un [correo electrónico] (http://clarifications@goodjudgment.com) . Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor [clique aquí] (https://goodjudgment.com/) .\n",
+    "# Forecasts": "60",
     "# Forecasters": "46"
   },
   {
@@ -140,8 +155,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "80",
-    "# Forecasters": "64"
+    "Description": "Elections for the Russian State Duma, the lower house of Russia's federal legislature, are currently scheduled for 19 September 2021 ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/vladimir-putin-v-alexei-navalny) , [Moscow Times] (https://www.themoscowtimes.com/2020/02/12/early-state-duma-elections-a69267) ). The United Russia Party will need to win 226 or more seats to maintain its majority in the Duma ( [RT] (https://www.rt.com/russia/509962-putin-kremlin-foreign-interference-election/) , [Forbes] (https://www.forbes.com/sites/jamesrodgerseurope/2020/12/19/russia-in-2021-six-things-to-watch/?sh=5406dcf922d7) ). In the event of a delay/postponement of the elections, the closing date would not be extended for this question.\n",
+    "# Forecasts": "86",
+    "# Forecasters": "67"
   },
   {
     "Title": "Before 15 July 2021, will an election be held for Moldova's parliament?",
@@ -149,7 +165,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "47",
+    "Description": "Newly elected Moldovan President Maia Sandu of the Action and Solidarity Party (PAS) has called for parliament to be dissolved and snap elections to be held ( [Reuters] (https://www.reuters.com/article/moldova-president-premier/moldovan-president-appoints-interim-pm-but-pushes-for-snap-election-idINKBN29512D) ). Since she won on a pro-EU platform, it remains to be seen if the pro-Russian Party of Socialists of the Republic of Moldova (PSRM) can maintain its support ( [BBC] (https://www.bbc.com/news/world-europe-55135213) , [Reuters] (https://www.reuters.com/article/us-moldova-election-results/moldova-set-for-coalition-talks-after-inconclusive-election-idUSKCN1QE11O) ). The closing date for this question will not be extended.\n",
+    "# Forecasts": "50",
     "# Forecasters": "33"
   },
   {
@@ -158,16 +175,18 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "83",
-    "# Forecasters": "57"
+    "Description": "The next Dutch general election is scheduled for 17 March 2021 ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/a-difficult-year-looms-for-the-european-union) , [Dutch News] (https://www.dutchnews.nl/news/2020/12/a-record-86-parties-register-for-the-march-2021-general-election/) , [BBC] (https://www.bbc.com/news/world-europe-55674146) , [houseofrepresentatives.nl] (https://www.houseofrepresentatives.nl/cabinet) ). After the 2017 election, it took political parties a record amount of time for a new coalition government to be installed ( [Reuters] (https://www.reuters.com/article/us-netherlands-government/new-dutch-government-sworn-in-after-record-negotiations-idUSKBN1CV15D) ). A caretaker government would not count.\n",
+    "# Forecasts": "92",
+    "# Forecasters": "61"
   },
   {
     "Title": "Will a Russian senior government official or Russian naval vessel visit Nicaragua before 7 November 2021?",
     "URL": "https://www.gjopen.com/questions/1900-will-a-russian-senior-government-official-or-russian-naval-vessel-visit-nicaragua-before-7-november-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "50%",
-    "# Forecasts": "53",
+    "Percentage": "45%",
+    "Description": "While the Nicaraguan government faces sanctions and pressure from the U.S. government and others, Russia's ties with the Central American nation seem to remain strong ( [Costa Rica News] (https://thecostaricanews.com/russia-confirms-plans-to-produce-its-coronavirus-vaccine-in-nicaragua/) , [The Moscow Times] (https://www.themoscowtimes.com/2021/01/04/foreign-policy-experts-map-russias-plans-for-2021-a72365) , [Kyiv Post] (https://www.kyivpost.com/ukraine-politics/ukraine-starts-applying-sanctions-against-nicaragua-because-of-consulate-in-crimea.html) , [Washington Post] (https://www.washingtonpost.com/world/the_americas/the-soviet-union-fought-the-cold-war-in-nicaragua-now-putins-russia-is-back/2017/04/08/b43039b0-0d8b-11e7-aa57-2ca1b05c41b8_story.html) ). For the purposes of this question, a Russian senior government official is the head of state or an official listed as such by the Russian government ( [government.ru] (http://government.ru/en/gov/persons/) ).\n",
+    "# Forecasts": "61",
     "# Forecasters": "40"
   },
   {
@@ -176,8 +195,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "112",
-    "# Forecasters": "58"
+    "Description": "Outcome will be determined by the end-of-day \"Market Cap\" figure as reported by Bloomberg ( [Bloomberg] (https://www.bloomberg.com/quote/UBER:US) ).\n",
+    "# Forecasts": "117",
+    "# Forecasters": "59"
   },
   {
     "Title": "Which NFL team will win Super Bowl LV?",
@@ -185,26 +205,29 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "178",
-    "# Forecasters": "91"
+    "Description": "Super Bowl LV (55) is scheduled for Sunday 7 February in Tampa, FL ( [NFL] (https://www.nfl.com/super-bowl) ).\n",
+    "# Forecasts": "187",
+    "# Forecasters": "98"
   },
   {
     "Title": "Will North Macedonia announce that it has completed its census before 1 October 2021?",
     "URL": "https://www.gjopen.com/questions/1897-will-north-macedonia-announce-that-it-has-completed-its-census-before-1-october-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "57%",
-    "# Forecasts": "86",
-    "# Forecasters": "55"
+    "Percentage": "75%",
+    "Description": "North Macedonia has not completed a census since 2002, partly due to concern that it could disrupt the country's ethnic-conscious government ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/emigration-and-low-birth-rates-are-affecting-the-balkans) , [Financial Times] (https://www.ft.com/content/5dafc7e1-d233-48c4-bd6b-90a2ed45a6e7) , [OBC Transeuropa] (https://www.balcanicaucaso.org/eng/Areas/North-Macedonia/North-Macedonia-census-yes-census-no-207268) , [Balkan Insight] (https://balkaninsight.com/2020/10/09/north-macedonia-makes-fresh-push-for-long-overdue-census/) ). A census that is started but not completed would not count (e.g., [OBC Transeuropa] (https://www.balcanicaucaso.org/eng/Areas/North-Macedonia/Census-fails-in-Macedonia-105372) ). The actual release of data is immaterial.\n",
+    "# Forecasts": "92",
+    "# Forecasters": "56"
   },
   {
     "Title": "Will the New START treaty be extended by Russia and the U.S. before 6 February 2021?",
     "URL": "https://www.gjopen.com/questions/1899-will-the-new-start-treaty-be-extended-by-russia-and-the-u-s-before-6-february-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "",
-    "# Forecasts": "242",
-    "# Forecasters": "110"
+    "Percentage": "100%",
+    "Description": "Russia and the U.S. signed the current \"New START\" treaty in 2010, which was intended to further reduce stockpiles of nuclear weapons in each country ( [Moscow Times] (https://www.themoscowtimes.com/2020/10/16/putin-proposes-one-year-extension-of-new-start-treaty-a71780) ). The treaty is set to expire on 5 February 2021 unless it is extended for up to five years by mutual agreement or superseded by another agreement ( [Federation of American Scientists] (https://fas.org/sgp/crs/nuke/R41219.pdf) , [Newsweek] (https://www.newsweek.com/start-treaty-russia-putin-biden-nuclear-arms-1555874) ).\n",
+    "# Forecasts": "248",
+    "# Forecasters": "111"
   },
   {
     "Title": "Will Mexico hold a referendum on President Andrés Manuel López Obrador before 1 September 2021?",
@@ -212,44 +235,49 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "74",
-    "# Forecasters": "49"
+    "Description": "Mexican President Andrés Manuel López Obrador, known by AMLO, has suggested that a referendum on his presidency be held in conjunction with the June 2021 midterm elections ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/amlo-proposes-a-referendum-on-his-presidency-in-mexico) , [Reuters] (https://www.reuters.com/article/us-mexico-president/mexico-presidents-rating-at-one-year-high-with-election-in-sight-poll-idUSKBN2820SU) ). Whether a referendum is binding or has any legal effect would be immaterial.\n",
+    "# Forecasts": "80",
+    "# Forecasters": "51"
   },
   {
     "Title": "Before 1 October 2021, will any group of Amazon employees in the U.S. vote in the affirmative to form a union?",
     "URL": "https://www.gjopen.com/questions/1894-before-1-october-2021-will-any-group-of-amazon-employees-in-the-u-s-vote-in-the-affirmative-to-form-a-union",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "77%",
-    "# Forecasts": "143",
-    "# Forecasters": "96"
+    "Percentage": "78%",
+    "Description": "An election is expected to be held at a warehouse near Birmingham, Alabama, one of the first times Amazon workers have held a vote on whether to unionize ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/new-thinking-is-needed-on-workers-rights) ,  [NY Times] (https://www.nytimes.com/2020/12/22/business/amazon-union-vote-bessemer-alabama.html) , [The Hill] (https://thehill.com/policy/technology/531500-amazon-workers-in-alabama-inch-closer-to-union-vote) ). A vote must be sanctioned by the National Labor Relations Board (NLRB) to count.\nNOTE 11 January 2021: Any Amazon subsidiary wholly-owned by Amazon would count.\n",
+    "# Forecasts": "147",
+    "# Forecasters": "98"
   },
   {
     "Title": "Will the U.S. leveraged loan default rate reach or exceed 5.0% before 1 September 2021?",
     "URL": "https://www.gjopen.com/questions/1896-will-the-u-s-leveraged-loan-default-rate-reach-or-exceed-5-0-before-1-september-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "25%",
-    "# Forecasts": "139",
-    "# Forecasters": "72"
+    "Percentage": "",
+    "Description": "The economic impacts of COVID-19 have seen an increase in loan default rates, but when the default cycle will peak remains unknown ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/corporate-defaults-will-be-surprisingly-few) , [S&amp;P Global] (https://www.spglobal.com/marketintelligence/en/news-insights/blog/2021-leveraged-loan-survey-defaults-edge-higher-credit-quality-a-concern) ). The outcome will be determined using the U.S. leveraged loan default rates published by S&amp;P Global Market Intelligence at https://www.spglobal.com/marketintelligence/en/campaigns/leveraged-loan. Under the \"Leveraged Loan Trends\" section, click on the \"Default Rate\" tab to show the \"Leveraged loan default rates - US (principal amount)\" graph. The rate reported for 30 September 2020 was 4.17.\n",
+    "# Forecasts": "146",
+    "# Forecasters": "74"
   },
   {
     "Title": "Will Daniel Ortega cease to be the president of Nicaragua before 11 January 2022?",
     "URL": "https://www.gjopen.com/questions/1891-will-daniel-ortega-be-cease-to-be-the-president-of-nicaragua-before-11-january-2022",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "4%",
-    "# Forecasts": "72",
-    "# Forecasters": "34"
+    "Percentage": "",
+    "Description": "President Daniel Ortega is expected to run for reelection in the 2021 Nicaraguan general election, scheduled for 7 November 2021 ( [ABC News] (https://abcnews.go.com/International/wireStory/nicaraguan-government-sets-date-presidential-election-71785222) , [Council on Foreign Relations] (https://www.cfr.org/blog/ten-elections-watch-2021) , [AP] (https://apnews.com/article/elections-blockades-central-america-daniel-ortega-nicaragua-14d04033e443f6da9bf3d11aec0dae47) ). Inauguration day is set by Article 148 of the constitution at 10 January 2022 ( [Nicaragua Constitution] (https://noticias.asamblea.gob.ni//constitucion/Libro_Constitucion.pdf) [in Spanish], [Nicaragua Constitution] (https://www.constituteproject.org/constitution/Nicaragua_2014.pdf?lang=en)  [in English]).\n",
+    "# Forecasts": "76",
+    "# Forecasters": "35"
   },
   {
     "Title": "Before 15 March 2021, will there be a lethal confrontation between the national military forces of Iran and the United States either in Iran or at sea?",
     "URL": "https://www.gjopen.com/questions/1892-before-15-march-2021-will-there-be-a-lethal-confrontation-between-the-national-military-forces-of-iran-and-the-united-states-either-in-iran-or-at-sea",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "2%",
-    "# Forecasts": "184",
-    "# Forecasters": "132"
+    "Percentage": "1%",
+    "Description": "Tensions between the U.S. and Iran remain high ( [AP] (https://apnews.com/article/donald-trump-iran-coronavirus-pandemic-baghdad-ali-khamenei-de61647fe1796de76dc718f8933690c9) , [Bloomberg] (https://www.bloomberg.com/news/articles/2021-01-06/iran-tests-suicide-drones-amid-its-tense-standoff-with-trump) , [BBC] (https://www.bbc.com/news/world-middle-east-55530366) ). A lethal confrontation is one that results in at least one fatality (total, not each) for the national military forces of either side. For the purposes of this question, Iran's national military forces include the Revolutionary Guard Corps and Law Enforcement Forces. A lethal confrontation taking place in Iranian airspace or international airspace over the sea would count.\n",
+    "# Forecasts": "194",
+    "# Forecasters": "135"
   },
   {
     "Title": "When will AMC Entertainment Holdings Inc. (AMC), the parent company of AMC Theatres, file for bankruptcy?",
@@ -257,7 +285,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "152",
+    "Description": "AMC, the world's largest movie theater chain, is facing challenges as the COVID-19 pandemic continues ( [CNBC] (https://www.cnbc.com/2021/01/05/coronavirus-amc-seeks-550-million-as-stock-closes-at-record-low.html) , [Motley Fool] (https://www.fool.com/investing/2020/12/14/amc-entertainment-lenders-urge-it-to-declare-bankr/) ).\n",
+    "# Forecasts": "155",
     "# Forecasters": "59"
   },
   {
@@ -266,8 +295,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "144",
-    "# Forecasters": "95"
+    "Description": "On 31 July 2020, Apple passed Saudi Aramco to become the world's most valuable publicly traded company ( [CNBC] (https://www.cnbc.com/2020/07/31/apple-surpasses-saudi-aramco-to-become-worlds-most-valuable-company.html) , [NPR] (https://www.npr.org/2020/08/19/903858871/apple-is-1st-2-trillion-american-company) ). The outcome will be determined using market capitalization data as provided by Bloomberg ( [Bloomberg - APPL] (https://www.bloomberg.com/quote/AAPL:US) , see \"MARKET CAP\"). For companies with shares denominated in a currency other than U.S. dollars, the relevant dollar exchange rate as of 31 December 2021 will be used to assess its value in dollars (e.g., [Bloomberg - ARAMCO] (https://www.bloomberg.com/quote/ARAMCO:AB) , [Bloomberg - SAR] (https://www.bloomberg.com/quote/USDSAR:CUR) ).\n",
+    "# Forecasts": "146",
+    "# Forecasters": "96"
   },
   {
     "Title": "Which team will win the World Cup qualifying match between Nicaragua and St. Lucia?",
@@ -275,7 +305,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "89",
+    "Description": "Nicaragua is scheduled to face St. Lucia in a first round World Cup qualifying match on 24 March 2021 ( [CONCACAF] (https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds) ).\nVersión en Español: \nPregunta: ¿Qué equipo ganará el partido de clasificación entre Nicaragua y Santa Lúcia para el Mundial de Fútbol?\nInformación adicional: Nicaragua va a enfrentarse con Santa Lúcia en la primera rueda de clasificación para el Mundial de Fútbol el 24 de marzo de 2021 ( [CONCACAF] (https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds) ). La versión en español de esta pregunta ha sido incluida sólo a efectos informativos, y en situaciones donde existe una diferencia de interpretación entre las versiones en inglés y español, prevalecerá la versión original en inglés. \nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ( [FAQs] (https://www.gjopen.com/faq#question) ) o envíenos un [correo electrónico] (/cdn-cgi/l/email-protection#ed8e818c9f848b848e8c998482839ead8a8282898798898a80888399c38e8280d29e988f87888e99d0bc98889e99848283c8dfddae818c9f848b848e8c99848283) . Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor clique [aquí] (https://goodjudgment.com/) . \n",
+    "# Forecasts": "90",
     "# Forecasters": "67"
   },
   {
@@ -284,8 +315,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "42",
-    "# Forecasters": "20"
+    "Description": "The 2021 Salvadoran legislative election is scheduled for 28 February 2021 and all 84 seats in the Legislative Assembly are to be contested ( [21votes.com] (https://21votes.com/el-salvador-elections/) , [El Salvador Perspectives] (http://www.elsalvadorperspectives.com/2020/08/el-salvador-looks-toward-2021-national.html) ). New Ideas (Nuevas Ideas) is a political party recently created by Salvadoran President Nayib Bukele ( [NY Times] (https://www.nytimes.com/2020/05/05/world/americas/el-salvador-nayib-bukele.html) , [World Politics Review] (https://www.worldpoliticsreview.com/articles/24345/el-salvador-s-elections-reveal-voters-frustration-with-politics-as-usual) ). A seat gained as part of a Coalition Pact (Pacto de Coalición) will count toward the resolution of this question ( [Tribunal Supremo Electoral] (https://www.tse.gob.sv/elecciones-2021/inicio#pactos-de-coalicion)  [in Spanish], [Gato Encerrado] (https://gatoencerrado.news/2020/09/01/nuevas-ideas-pacto-91-coaliciones-con-gana-pcn-y-cd-para-elecciones-2021/)  [in Spanish]).\nVersión en Español:\nPregunta: ¿Cuantos escaños ganará Nuevas Ideas en la Asamblea Legislativa de El Salvador en las elecciones de 2021? \nInformación adicional: Las elecciones legislativas de El Salvador están agendadas para el 28 de febrero de 2021 y todos los 84 escaños en la Asamblea Legislativa están en juego ( [21votes.com] (https://21votes.com/el-salvador-elections/) , [El Salvador Perspectives] (http://www.elsalvadorperspectives.com/2020/08/el-salvador-looks-toward-2021-national.html) ). Nuevas Ideas es un partido político recientemente creado por el Presidente de El Savador, Nayib Bukele ( [NY Times] (https://www.nytimes.com/2020/05/05/world/americas/el-salvador-nayib-bukele.html) , [World Politics Review] (https://www.worldpoliticsreview.com/articles/24345/el-salvador-s-elections-reveal-voters-frustration-with-politics-as-usual) ). Un escaño obtenido como parte de un Pacto de Coalición contará para la resolución de esta pregunta ( [Tribunal Supremo Electoral] (https://www.tse.gob.sv/elecciones-2021/inicio#pactos-de-coalicion) , [Gato Encerrado] (https://gatoencerrado.news/2020/09/01/nuevas-ideas-pacto-91-coaliciones-con-gana-pcn-y-cd-para-elecciones-2021/) ). La versión en español de esta pregunta ha sido incluida sólo a efectos informativos, y en situaciones donde existe una diferencia de interpretación entre las versiones en inglés y español, prevalecerá la versión original en inglés. \nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ( [FAQs] (https://www.gjopen.com/faq#question) ) o envíenos un [correo electrónico] (/cdn-cgi/l/email-protection#15767974677c737c7674617c7a7b6655727a7a717f60717278707b613b767a782a6660777f7076612844607066617c7a7b302725567974677c737c7674617c7a7b) . Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor clique [aquí] (https://goodjudgment.com/) .\n",
+    "# Forecasts": "43",
+    "# Forecasters": "21"
   },
   {
     "Title": "What will be the closing price of Mercado Libre stock on 15 February 2021?",
@@ -293,7 +325,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "208",
+    "Description": "Latin American e-commerce company Mercado Libre has had a major surge in business during the COVID-19 pandemic ( [eMarketer] (https://www.emarketer.com/content/mercado-libre-will-surpass-20-billion-ecommerce-sales-2020) ). The outcome will be determined by the end-of-day closing value reported by Bloomberg ( [Bloomberg] (https://www.bloomberg.com/quote/MELI:US) ).\nVersión en Español: \nPregunta: ¿Cual será el precio de cierre de la acción de Mercado Libre el 15 de febrero de 2021?  \nInformación adicional: La empresa de e-commerce latino-americana Mercado Libre ha visto un gran crecimiento durante la pandemia de COVID-19 ( [eMarketer] (https://www.emarketer.com/content/mercado-libre-will-surpass-20-billion-ecommerce-sales-2020) ). El resultado de esta pregunta será determinado por el precio de cierre reportado por Bloomberg ( [Bloomberg] (https://www.bloomberg.com/quote/MELI:US) ). La versión en español de esta pregunta ha sido incluida sólo a efectos informativos, y en situaciones donde existe una diferencia de interpretación entre las versiones en inglés y español, prevalecerá la versión original en inglés. \nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ( [FAQs] (https://www.gjopen.com/faq#question) ) o envíenos un [correo electrónico] (/cdn-cgi/l/email-protection#55363934273c333c3634213c3a3b2615323a3a313f20313238303b217b363a386a2620373f3036216804203026213c3a3b706765163934273c333c3634213c3a3b) . Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor clique aquí.\n",
+    "# Forecasts": "223",
     "# Forecasters": "48"
   },
   {
@@ -302,7 +335,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "135",
+    "Description": "The yield on 30-year U.S. Treasury saw new record lows in March 2020 as the scale of the economic impact of COVID-19 became clear ( [CNBC] (https://www.cnbc.com/2020/03/09/10-year-treasury-yield-plunges.html) , [Investopedia] (https://www.investopedia.com/terms/1/30-yeartreasury.asp) ). The outcome will be determined using data as reported by CNBC ( [CNBC] (https://www.cnbc.com/quotes/?symbol=US30Y) ).\n",
+    "# Forecasts": "139",
     "# Forecasters": "65"
   },
   {
@@ -310,8 +344,9 @@
     "URL": "https://www.gjopen.com/questions/1882-will-legislation-amending-or-repealing-section-230-of-the-communications-act-of-1934-become-law-before-14-august-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "12%",
-    "# Forecasts": "150",
+    "Percentage": "13%",
+    "Description": "Section 230 is a statute that protects social media companies from liability for content their users post ( [CBS News] (https://www.cbsnews.com/news/what-is-section-230-and-why-do-so-many-lawmakers-want-to-repeal-it/) , [Council on Foreign Relations] (https://www.cfr.org/in-brief/trump-and-section-230-what-know) , [Federation of American Scientists] (https://fas.org/sgp/crs/misc/LSB10306.pdf) , [Cornell] (https://www.law.cornell.edu/uscode/text/47/230) , [TechCrunch] (https://techcrunch.com/2020/12/23/trump-ndaa-veto-section-230/) ).\n",
+    "# Forecasts": "155",
     "# Forecasters": "80"
   },
   {
@@ -320,7 +355,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "28",
+    "Description": "After several delays and being approved by the Senate of the Republic, the Federal Law for the Regulation of Cannabis is scheduled for a vote by Mexico’s Chamber of Deputies sometime between February and April 2021 ( [Forbes] (https://www.forbes.com/sites/roberthoban/2021/12/27/will-we-see-mexico-legalize-cannabis-in-2021/?sh=180c18034ed9) , [Wall Street Journal] (https://www.wsj.com/articles/mexico-set-to-become-worlds-largest-legal-cannabis-market-11609263506) , [Xataka] (https://www.xataka.com.mx/medicina-y-salud/consumir-marihuana-sera-legal-mexico-todo-que-hay-que-saber-nueva-regulacion-consumo-ludico-cannabis)  [in Spanish], [El Economista] (https://www.eleconomista.com.mx/politica/Diputados-deben-subsanar-deficiencias-en-legislacion-que-descriminaliza-la-mariguana-expertos-20201129-0008.html)  [in Spanish]). The approval of an amended version of the legislation approved by the Mexican Senate would count. Whether the legislation actually becomes law is immaterial, and procedural votes other than final approval by the Chamber would not count.\n",
+    "# Forecasts": "29",
     "# Forecasters": "19"
   },
   {
@@ -329,7 +365,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "327",
+    "Description": "As the U.S. tries to reduce COVID-19 cases, the question remains whether the U.S. health care system can handle the load ( [CDC] (https://www.cdc.gov/coronavirus/2019-ncov/covid-data/covidview/index.html) ). The outcome will be determined using data from https://covidactnow.org at 5:00PM ET on 1 March 2021. See the table \"Compare,\" set to \"States,\" under \"DAILY NEW CASES PER 100K.\" For the purposes of this question, the District of Columbia is considered a state.\n",
+    "# Forecasts": "338",
     "# Forecasters": "90"
   },
   {
@@ -338,7 +375,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "247",
+    "Description": "As the U.S. tries to reduce COVID-19 cases, the question remains whether the U.S. health care system can handle the load ( [CDC] (https://www.cdc.gov/coronavirus/2019-ncov/covid-data/covidview/index.html) ). The outcome will be determined using data from https://covidactnow.org at 5:00PM ET on 1 March 2021. See the table “Compare,” set to \"States,\" under \"POSITIVE TEST RATE.\" For the purposes of this question, the District of Columbia is considered a state.\n",
+    "# Forecasts": "258",
     "# Forecasters": "87"
   },
   {
@@ -347,8 +385,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "228",
-    "# Forecasters": "128"
+    "Description": "Disagreements within the ruling coalition, most recently over the budget, may lead Israel to hold its fourth election in two years ( [NY Times] (https://www.nytimes.com/2020/12/02/world/middleeast/israeli-parliament-election.html) , [Times of Israel] (https://www.timesofisrael.com/bill-to-dissolve-knesset-set-for-delay-until-next-week-angering-blue-and-white/) , [Foreign Policy] (https://foreignpolicy.com/2020/12/22/israeli-knesset-likely-to-dissolve-as-extension-vote-fails/) ).\n",
+    "# Forecasts": "237",
+    "# Forecasters": "129"
   },
   {
     "Title": "At close of business on 28 April 2021, will the upper limit of the Federal Reserve's target range for the federal funds rate be lower, the same, or higher than it was at close of business on 17 March 2021?",
@@ -356,8 +395,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "88",
-    "# Forecasters": "73"
+    "Description": "The U.S. federal funds rate is the interest rate charged for overnight lending among financial institutions with accounts at the Federal Reserve and sets the base rate for borrowing costs across the financial system ( [Federal Reserve] (https://www.federalreserve.gov/monetarypolicy/fomc.htm) ). The target range for the federal funds rate is set by the Federal Open Market Committee (FOMC). Its April meeting is scheduled for 27-28 April 2021.\n",
+    "# Forecasts": "91",
+    "# Forecasters": "74"
   },
   {
     "Title": "Before 1 January 2022, will the Diem Association, co-founded by Facebook, launch a stablecoin?",
@@ -365,17 +405,19 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "45%",
-    "# Forecasts": "118",
-    "# Forecasters": "71"
+    "Description": "The Diem Association, formerly known as Libra Association and related to Facebook, is planning to launch a single-currency stablecoin in 2021 ( [CNBC] (https://www.cnbc.com/2020/12/08/facebook-hopes-the-cryptocurrency-diem-it-backs-will-launch-in-2021.html) , [Diem] (https://www.diem.com/en-us/white-paper/) , [Securities.io] (https://www.securities.io/investing-in-diem-facebooks-libra-project-everything-you-need-to-know/) , [Investopedia] (https://www.investopedia.com/terms/s/stablecoin.asp) ).\n",
+    "# Forecasts": "120",
+    "# Forecasters": "72"
   },
   {
     "Title": "Before 19 June 2021, will the end-of-day closing value for the Turkish lira against the U.S. dollar exceed 9.00?",
     "URL": "https://www.gjopen.com/questions/1878-before-19-june-2021-will-the-end-of-day-closing-value-for-the-turkish-lira-against-the-u-s-dollar-exceed-9-00",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "3%",
-    "# Forecasts": "127",
-    "# Forecasters": "56"
+    "Percentage": "2%",
+    "Description": "The lira has been under pressure amid Turkey's tensions with the U.S. and the EU, compounded by COVID-19 ( [Reuters] (https://www.reuters.com/article/emerging-markets/emerging-markets-turkeys-lira-falls-past-8-per-dollar-fx-stocks-eye-6th-week-of-gains-idUSL4N2IR24P) , [Bloomberg] (https://www.bloomberg.com/news/articles/2020-12-11/turkish-lira-declines-as-u-s-sanctions-risk-sours-appetite) ). The outcome will be determined using data as reported by Bloomberg ( [Bloomberg] (https://www.bloomberg.com/quote/USDTRY:CUR) ).\n",
+    "# Forecasts": "131",
+    "# Forecasters": "57"
   },
   {
     "Title": "Will the People's Republic of China and the EU sign a Comprehensive Agreement on Investment before 1 January 2022?",
@@ -383,8 +425,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "361",
-    "# Forecasters": "177"
+    "Description": "While both China and the EU have committed to reaching an agreement by the end of 2020, it is uncertain this will be the case ( [European Parliament - Briefing] (https://www.europarl.europa.eu/RegData/etudes/BRIE/2020/652066/EPRS_BRI(2020)652066_EN.pdf) , [European Parliament - (EU-CHINA CAI)] (https://www.europarl.europa.eu/legislative-train/theme-a-balanced-and-progressive-trade-policy-to-harness-globalisation/file-eu-china-investment-agreement) , [CEPS] (https://www.ceps.eu/eu-china-comprehensive-agreement-on-investment/) , [South China Morning Post] (https://www.scmp.com/news/china/diplomacy/article/3113906/eu-and-china-set-further-investment-talks-end-year-deadline) , [Core.ac.uk] (https://core.ac.uk/download/pdf/148912339.pdf) ). For details on the negotiation and ratification process of trade agreements involving the EU, please see the following: https://trade.ec.europa.eu/doclib/docs/2012/june/tradoc_149616.pdf, https://www.europarl.europa.eu/legislative-train/theme-a-balanced-and-progressive-trade-policy-to-harness-globalisation/file-eu-china-investment-agreement.\n",
+    "# Forecasts": "366",
+    "# Forecasters": "178"
   },
   {
     "Title": "Will the U.S. Food and Drug Administration (FDA) and/or the EU's European Medicines Agency (EMA) approve a COVID-19 vaccine from Chinese companies Sinovac or Sinopharm before 1 September 2021?",
@@ -392,7 +435,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "319",
+    "Description": "Sinovac and Sinopharm are among the many Chinese developers of COVID-19 vaccines ( [NY Times] (https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html) , [Sinopharm] (http://www.sinopharm.com/1156.html) , [Sinovac] (http://www.sinovac.com/) , [Guardian] (https://www.theguardian.com/world/2020/dec/14/chinas-sinopharm-vaccine-how-effective-is-it-and-where-will-it-be-rolled-out) , [BBC] (https://www.bbc.com/news/world-asia-china-55212787) ). For more details of the EMA’s vaccine approval process, please see: [AP] (https://apnews.com/article/europe-vaccine-approval-explained-193bc87c8930c54bfc9b9b21c4a9e3f0) , [EMA] (https://www.ema.europa.eu/en/human-regulatory/overview/public-health-threats/coronavirus-disease-covid-19/treatments-vaccines-covid-19) , [EMA - Approvals] (https://www.ema.europa.eu/en/human-regulatory/overview/public-health-threats/coronavirus-disease-covid-19/treatments-vaccines/covid-19-vaccines-studies-approval) . For more details regarding the FDA’s vaccine approval process, please see: [FDA - Vaccine Development] (https://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/vaccine-development-101) , [FDA - Emergency Preparedness] (https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/covid-19-vaccines) . Emergency use approvals would count.\n",
+    "# Forecasts": "328",
     "# Forecasters": "198"
   },
   {
@@ -401,8 +445,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "15%",
-    "# Forecasts": "218",
-    "# Forecasters": "140"
+    "Description": "Several companies are developing autonomous vehicles in China with the goal of launching a commercial open to the public ride-hailing service ( [CNBC] (https://www.cnbc.com/2020/12/04/fully-driverless-cars-are-being-tested-in-china-for-the-first-time.html) , [TechCrunch] (https://techcrunch.com/2020/12/02/autox-removes-safety-drivers/) , [CGTN] (https://news.cgtn.com/news/2020-10-11/Baidu-rolls-out-self-driving-taxi-service-in-Beijing-UvCnsSa3g4/index.html) ). The service must involve payment to count for resolution of this question.\nNote 2 February 2021: A ride-hailing service using AVs that have remote monitors capable of taking control of the vehicle would not count.\n",
+    "# Forecasts": "225",
+    "# Forecasters": "142"
   },
   {
     "Title": "Will the United States and China sign a trade agreement before 1 July 2021?",
@@ -410,16 +455,18 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "4%",
-    "# Forecasts": "276",
-    "# Forecasters": "206"
+    "Description": "The latest trade agreement between the United States and China was the so-called “Phase One” agreement signed in January 2020 ( [U.S. Trade Representative] (https://ustr.gov/sites/default/files/files/agreements/phase%20one%20agreement/US_China_Agreement_Fact_Sheet.pdf) , [CNBC] (https://www.cnbc.com/2020/01/15/trump-and-china-sign-phase-one-trade-agreement.html) , [Reuters] (https://www.reuters.com/article/us-usa-trade-china-details-factbox-idUSKBN1ZE2IF) , [FOX Business] (https://www.foxbusiness.com/markets/us-china-phase-one-trade-deal-whats-next) , [Reuters] (https://www.reuters.com/article/us-usa-trade-china-idUSKBN28C0HV) ).\n",
+    "# Forecasts": "285",
+    "# Forecasters": "208"
   },
   {
     "Title": "Before 14 August 2021, will an executive order be signed or federal legislation become law that would forgive $10,000 or more in principal on federal student loan debts for at least five million student loan borrowers?",
     "URL": "https://www.gjopen.com/questions/1873-before-14-august-2021-will-an-executive-order-be-signed-or-federal-legislation-become-law-that-would-forgive-10-000-or-more-in-principal-on-federal-student-loan-debts-for-at-least-five-million-student-loan-borrowers",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "",
-    "# Forecasts": "193",
+    "Percentage": "20%",
+    "Description": "Some Democrats are pushing President-elect Joe Biden to cancel federal student loan debt on his first day in office, while Biden has pushed for congressional action ( [Forbes] (https://www.forbes.com/sites/zackfriedman/2020/12/12/10-questions-about-bidens-plan-to-cancel-student-loans/) , [NY Times] (https://www.nytimes.com/2020/12/10/us/biden-clashes-with-liberals-over-student-loan-cancellation.html) , [Nerd Wallet] (https://www.nerdwallet.com/article/loans/student-loans/student-loan-debt#total-federal-student-loan-debt) ). There is also disagreement as to whether the president can cancel student loan debt without Congress ( [CNBC] (https://www.cnbc.com/2020/11/21/can-joe-biden-forgive-student-debt-without-congress-experts-weigh-in.html) , [Forbes] (https://www.forbes.com/sites/robertberger/2020/11/30/will-biden-cancel-your-student-loans-in-january) ). Any injunction sought to block such an executive order or federal legislation would be immaterial, as would the date that principal forgiveness would take effect.\n",
+    "# Forecasts": "198",
     "# Forecasters": "94"
   },
   {
@@ -428,7 +475,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "15%",
-    "# Forecasts": "259",
+    "Description": "Travel demand in Europe has taken a major hit due to the COVID-19 pandemic ( [Fodor's Travel Guide] (https://www.fodors.com/news/news/coronavirus-outbreak-should-you-cancel-a-trip-to-europe-right-now) ). The outcome will be determined using data as reported by Smith Travel Research and its monthly European hotel performance reports, which are generally released the third week of the following month. The reports can be found at https://str.com/data-insights/news/press-releases by setting \"Region\" to \"Europe,\" and \"Type\" to \"Monthly.\" After selecting a particular monthly report, see \"Occupancy\" under the \"Euro Constant currency\" section. In October 2020, the occupancy level was 32.3% ( [Smith Travel Research] (https://str.com/press-release/str-europe-hotel-performance-october-2020) )\n",
+    "# Forecasts": "264",
     "# Forecasters": "95"
   },
   {
@@ -437,17 +485,19 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "219",
-    "# Forecasters": "99"
+    "Description": "Soon after Huawei executive Meng Wanzhou was arrested in Vancouver in December 2018, two Canadian nationals, Michael Kovrig and Michael Spavor, were arrested in China ( [Guardian] (https://www.theguardian.com/world/2018/dec/12/china-canada-diplomat-michael-kovrig-detention-latest-) , [Toronto Star] (https://www.thestar.com/news/canada/2020/06/24/two-michaels-fight-is-bigger-than-canada-global-observers-say-and-the-world-is-watching.html) , [CBC] (https://www.cbc.ca/player/play/1395286595882) , [South China Morning Post] (https://www.scmp.com/news/china/diplomacy/article/3112949/huaweis-meng-wanzhou-back-canadian-court-first-time-reports) ).\n",
+    "# Forecasts": "225",
+    "# Forecasters": "100"
   },
   {
     "Title": "Will Japan, the People's Republic of China, and South Korea sign a trilateral free trade agreement before 1 January 2022?",
     "URL": "https://www.gjopen.com/questions/1868-will-japan-the-people-s-republic-of-china-and-south-korea-sign-a-trilateral-free-trade-agreement-before-1-january-2022",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "",
-    "# Forecasts": "185",
-    "# Forecasters": "117"
+    "Percentage": "8%",
+    "Description": "In the wake of the signing of the Regional Comprehensive Economic Partnership (RCEP), there's speculation that a trilateral free trade agreement among Japan, the People's Republic of China, and South Korea may be within reach ( [Yahoo News] (https://sg.news.yahoo.com/china-japan-south-korea-rcep-051029662.html) , [Reuters] (https://www.reuters.com/article/us-japan-china/japan-and-china-agree-to-restart-business-travel-coordinate-on-east-china-sea-idUSKBN284042) , [Japanese Ministry of Foreign Affairs] (https://www.mofa.go.jp/ecm/ep/page23e_000337.html) ). Ratification by the parties to the agreement is not required for a \"Yes\" resolution.\n",
+    "# Forecasts": "189",
+    "# Forecasters": "118"
   },
   {
     "Title": "When will a Carnival Cruise Line cruise next depart from the continental U.S.?",
@@ -455,7 +505,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "181",
+    "Description": "While CDC restrictions due to COVID-19 have been relaxed, there is ongoing uncertainty regarding when a Carnival Cruise Line cruise will depart next ( [CNN] (https://edition.cnn.com/travel/article/carnival-cruise-canceled-trnd/index.html) , [CDC] (https://www.cdc.gov/quarantine/cruise/index.html) ). A cruise must include ticketed passengers to count.\n",
+    "# Forecasts": "183",
     "# Forecasters": "94"
   },
   {
@@ -463,8 +514,9 @@
     "URL": "https://www.gjopen.com/questions/1864-before-1-january-2022-will-a-release-date-for-the-winds-of-winter-be-announced-by-the-author-and-or-publisher",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "57%",
-    "# Forecasts": "63",
+    "Percentage": "",
+    "Description": "The Winds of Winter is the sixth novel in the fantasy series that inspired HBO's Game of Thrones ( [Rotten Tomatoes] (https://www.rottentomatoes.com/tv/game-of-thrones) ). There has been talk that the book could be released soon, though similar claims have been made in the past ( [NY Times] (https://www.nytimes.com/2020/06/24/books/george-rr-martin-winds-of-winter.html) , [Express] (https://www.express.co.uk/entertainment/books/1359042/Winds-of-Winter-release-date-George-RR-Martin-blog-ASOIAF-expert-Game-of-Thrones) , [Entertainment Weekly] (https://ew.com/article/2015/04/03/george-rr-martin-winds-date/) ).\n",
+    "# Forecasts": "65",
     "# Forecasters": "43"
   },
   {
@@ -473,8 +525,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "8%",
-    "# Forecasts": "260",
-    "# Forecasters": "178"
+    "Description": "The Bank of England's benchmark interest rate is known as the \"Bank Rate\" ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/britain-will-face-disruption-and-deficit-while-many-britons-will-face-the-dole) , [Bank of England] (https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate) ). Amid the COVID-19 pandemic and negotiations with the EU regarding an end to the Brexit transition period, the Bank of England has explored setting negative interest rates for the UK ( [BBC] (https://www.bbc.com/news/business-54314971) , [Guardian] (https://www.theguardian.com/business/2020/oct/20/bank-of-england-negative-interest-rates-gertjan-vlieghe-covid) , [S&amp;P Global] (https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/uk-banks-ready-for-painful-negative-interest-rates-market-has-baked-them-in-61330250) ,  [Financial Times] (https://www.ft.com/content/72500c20-4a49-4fa9-a3c8-40ce1d26f436) ). \n",
+    "# Forecasts": "263",
+    "# Forecasters": "179"
   },
   {
     "Title": "Will net international migration between the U.S. and abroad for 2021 be higher than the net international migration for 2020?",
@@ -482,17 +535,19 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "90%",
-    "# Forecasts": "86",
-    "# Forecasters": "57"
+    "Description": "Net international migration between the U.S. and abroad projected for 2019 was at its lowest level of the decade at 595,000 ( [Census Bureau] (https://www.census.gov/library/stories/2019/12/net-international-migration-projected-to-fall-lowest-levels-this-decade.html) ). The outcome will be determined using data on the projected net international migration for 2021 as first reported by the U.S. Census Bureau ( [Census Bureau] (https://www.census.gov/data/datasets/time-series/demo/popest/2010s-state-total.html) ). Download the Excel file \"Population, Population Change, and Estimated Components of Population Change.\" See the row designated \"10\" under \"SUMLEV\" and \"United States\" under \"NAME.\" The relevant data are titled \"INTERNATIONALMIG[year].\" For methodological information, see the \"Nation, States, Counties, and Puerto Rico Population\" Methodology file here: https://www.census.gov/programs-surveys/popest/technical-documentation/methodology.html.\n",
+    "# Forecasts": "90",
+    "# Forecasters": "58"
   },
   {
     "Title": "In Cedar Point Nursery v. Hassid, will the Supreme Court rule that California's access regulation, as applied to Cedar Point Nursery, is a per se physical taking under the federal constitution?",
     "URL": "https://www.gjopen.com/questions/1863-in-cedar-point-nursery-v-hassid-will-the-supreme-court-rule-that-california-s-access-regulation-as-applied-to-cedar-point-nursery-is-a-per-se-physical-taking-under-the-federal-constitution",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "66%",
-    "# Forecasts": "52",
-    "# Forecasters": "30"
+    "Percentage": "70%",
+    "Description": "Cedar Point Nursery sued California over state regulations allowing union organizers access to employees on their employers' property without compensation under limited circumstances ( [Oyez] (https://www.oyez.org/cases/2020/20-107) , [SCOTUSblog] (https://www.scotusblog.com/case-files/cases/cedar-point-nursery-v-hassid/) , [Bloomberg Law] (https://news.bloomberglaw.com/daily-labor-report/california-farmers-get-supreme-court-review-of-union-access-rule) , [National Law Review] (https://www.natlawreview.com/article/scotus-to-consider-whether-california-unconstitutionally-takes-private-property-when) ). The trial court dismissed the lawsuit and the 9th Circuit Court of Appeals affirmed ( [Casetext] (https://casetext.com/case/nursery-v-shiroma) ). The Supreme Court is expected to hand down its decision in its 2020 term, but if it does not, the question will close as \"No.\" If the Court decides this case without addressing this question's particular issue of law, the question will close as \"No.\"\n",
+    "# Forecasts": "54",
+    "# Forecasters": "31"
   },
   {
     "Title": "What will be the closing price of natural gas (per MMBtu) on 1 June 2021, according to Bloomberg?",
@@ -500,7 +555,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "138",
+    "Description": "The outcome will be determined using futures price data as reported by Bloomberg ( [Bloomberg] (https://www.bloomberg.com/quote/NG1:COM) ).\n",
+    "# Forecasts": "142",
     "# Forecasters": "40"
   },
   {
@@ -509,17 +565,19 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "86",
-    "# Forecasters": "28"
+    "Description": "Kyrgyzstan experienced political upheaval in the wake of vote-rigging allegations in its October 2020 parliamentary elections ( [Economist] (https://www.economist.com/the-economist-explains/2020/11/10/whats-happening-in-kyrgyzstan) , [BBC] (https://www.bbc.com/news/world-asia-54493185) ). On 17 November 2020, the Kyrgyz parliament adopted amendments to the law on elections mandating that they take place no later than June 2021 ( [Diplomat] (https://thediplomat.com/2020/10/kyrgyzstan-punts-on-elections-to-pursue-constitutional-reforms/) ). Whether results are annulled after the election is held would not impact the counting of an election having been held (e.g., [BBC] (https://www.bbc.com/news/world-asia-54432030) ).\n",
+    "# Forecasts": "89",
+    "# Forecasters": "29"
   },
   {
     "Title": "Will the IMF estimate for world GDP growth for 2021 be higher in its April 2021 World Economic Outlook report relative to its October 2020 report?",
     "URL": "https://www.gjopen.com/questions/1856-will-the-imf-estimate-for-world-gdp-growth-for-2021-be-higher-in-its-april-2021-world-economic-outlook-report-relative-to-its-october-2020-report",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "85%",
-    "# Forecasts": "285",
-    "# Forecasters": "161"
+    "Percentage": "88%",
+    "Description": "The International Monetary Fund (IMF) and others are projecting a significant contraction in the global economy in the coming years ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/16/governments-must-judge-if-the-economic-recovery-needs-more-help) , [IMF - June 2020] (https://www.imf.org/en/Publications/WEO/Issues/2020/06/24/WEOUpdateJune2020) , [World Economic Forum] (https://www.weforum.org/agenda/2020/09/oecd-global-gdp-pre-pandemic-level-2021-sustainable-resilient/) ). The outcome will be determined using IMF purchasing power parity GDP data from the first release of the World Economic Outlook Database in 2021, which is expected in April 2021. At the IMF website ( [IMF] (https://www.imf.org/en/Publications/SPROLLS/world-economic-outlook-databases#sort=%40imfdate%20descending) ), choose the appropriate \"World Economic Outlook Database\"; then choose \"Entire Dataset\"; then download the \"By Country Groups\" file in the \"Tab Delimited Values\" section. On the spreadsheet, refer to the line of data, usually near the top, that has the Subject Descriptor as \"Gross domestic product, constant prices\" and Units as \"Percent change.\" Scroll over to the appropriate year. Estimated world GDP growth for 2021 was 5.152%, according to the October 2020 report ( [IMF - October 2020] (https://www.imf.org/-/media/Files/Publications/WEO/WEO-Database/2020/02/WEOOct2020alla.ashx) ).\nThe Superforecaster version of this question is at [The Economist dashboard] (https://goodjudgment.io/economist/) .\n",
+    "# Forecasts": "288",
+    "# Forecasters": "162"
   },
   {
     "Title": "Who will win the 2021 presidential election in Peru?",
@@ -527,17 +585,19 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "107",
-    "# Forecasters": "67"
+    "Description": "Peru has seen a series of presidents come and go in late 2020 ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/latin-americas-leaders-will-have-plenty-of-headaches) , [CNN] (https://www.cnn.com/2020/11/18/americas/peru-protests-explainer-scli-intl/index.html) , [Reuters] (https://www.reuters.com/article/us-peru-politics-idUSKBN27W1KU) ). The presidential election is scheduled for 2021 with the first round of voting taking place on 11 April 2021 and a runoff scheduled for 6 June 2021 if needed ( [Peruvian Times] (https://www.peruviantimes.com/09/general-elections-to-be-held-april-2021/32266/) ).\nNOTE 15 December 2020: If the first round of the election takes place and requires a subsequent runoff scheduled for after 30 September 2021, the suspend date would be extended to accommodate the runoff. If no election takes place before 1 October 2021, the suspend date would not be extended and the question would resolve on that answer bin.\n",
+    "# Forecasts": "114",
+    "# Forecasters": "70"
   },
   {
     "Title": "Before 4 June 2021, will the United Kingdom's Office for National Statistics (ONS) report that the percentage of working adults who \"worked from home exclusively\" fell below 20%?",
     "URL": "https://www.gjopen.com/questions/1855-before-4-june-2021-will-the-united-kingdom-s-office-for-national-statistics-ons-report-that-the-percentage-of-working-adults-who-worked-from-home-exclusively-fell-below-20",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "50%",
-    "# Forecasts": "369",
-    "# Forecasters": "181"
+    "Percentage": "",
+    "Description": "The COVID-19 pandemic has forced many workers to work from home, and this trend may continue even after the pandemic has passed ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/16/new-technological-behaviours-will-outlast-the-pandemic) , [BBC] (https://www.bbc.com/news/uk-wales-53946487) ). The outcome will be determined using data as reported in the ONS' Opinions and Lifestyle Survey. In their report from 26 November 2020, the ONS reported that 30% of working adults worked from home exclusively ( [ONS] (https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/coronavirustheukeconomyandsocietyfasterindicators/26november2020) , see Figure 1 under Section 4). In the event that the release of the reports is changed or delayed, the outcome will be determined based on the most recently reported figure as of the close of business on 3 June 2021.\nThe Superforecaster version of this question is at [The Economist dashboard] (https://goodjudgment.io/economist/) .\n",
+    "# Forecasts": "377",
+    "# Forecasters": "184"
   },
   {
     "Title": "Who will be appointed as the next leader of the Communist Party in Vietnam?",
@@ -545,7 +605,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "204",
+    "Description": "Vietnam's next National Party Congress is scheduled for January 2021, at which the next secretary-general of the party is meant to be appointed ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/vietnams-communist-party-will-have-a-new-leader) , [Vietnam Times] (https://vietnamtimes.org.vn/website-of-13th-national-party-congress-launched-24904.html) ). Rumors have suggested some of the top leadership positions could be consolidated ( [Diplomat] (https://thediplomat.com/2020/09/three-horse-race-for-vietnams-next-communist-party-chief/) ).\nNOTE 26 January 2021: If a new leader other than the incumbent is not appointed before 1 March 2021, then the question will close \"A new leader will not be appointed before 1 March 2021.\"\n",
+    "# Forecasts": "211",
     "# Forecasters": "93"
   },
   {
@@ -554,8 +615,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "416",
-    "# Forecasters": "227"
+    "Description": "After bouncing back from the worst domestic economic effects of COVID-19, whether China can meet or exceed its prior pace of growth remains to be seen ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/chinas-economy-will-hold-up-well-in-the-coming-year) ). The outcome will be determined based on data released by China's National Bureau of Statistics ( [National Bureau of Statistics] (http://data.stats.gov.cn/english/easyquery.htm?cn=B01) ). The relevant data are listed as \"Indices of Gross Domestic Product (preceding year=100), Current Quarter.\" For 2Q 2020, the index was 103.2, which equates to 3.2% growth. The question will be suspended on 30 June 2021 and closed when the relevant data for 2Q 2021 are released, scheduled for July 2021.\n",
+    "# Forecasts": "424",
+    "# Forecasters": "230"
   },
   {
     "Title": "How many COVID-19 vaccines will be approved and/or authorized for emergency use by the U.S. FDA as of 31 March 2021?",
@@ -563,8 +625,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "898",
-    "# Forecasters": "306"
+    "Description": "The race to develop COVID-19 vaccines is on ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/16/the-path-to-a-covid-19-vaccine-may-be-quick-but-it-will-be-bumpy) , [FDA] (https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/covid-19-vaccines) , [FDA] (https://www.fda.gov/vaccines-blood-biologics/vaccines/emergency-use-authorization-vaccines-explained) ).\n",
+    "# Forecasts": "916",
+    "# Forecasters": "309"
   },
   {
     "Title": "How many vehicles will Tesla deliver to customers in the first half of 2021?",
@@ -572,8 +635,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "403",
-    "# Forecasters": "195"
+    "Description": "As more automakers jockey for electric vehicle market share, Tesla will continue to push for its own growth ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/the-battle-within-the-electric-vehicle-industry-will-intensify) ). Tesla delivered 88,496 vehicles during Q1 2020 and 90,891 vehicles during Q2 2020, for a total of 179,387 in the first half of 2020 ( [Tesla Q1 2020] (https://tesla-cdn.thron.com/static/HZTKGL_TSLA_Update_Letter_2020-1Q_VGVL6F.pdf) , [Tesla Q2 2020] (https://tesla-cdn.thron.com/static/DK2EWG_TSLA_Update_Letter_2020-2Q_G6S6GG.pdf) ). The outcome will be determined using Tesla's official quarterly updates once available, typically found under \"Shareholder Deck\" here: https://ir.tesla.com. The question will be suspended on 30 June 2021 and closed when the relevant data for Q2 2021 are released, expected in July 2021.\n",
+    "# Forecasts": "407",
+    "# Forecasters": "196"
   },
   {
     "Title": "Before 1 October 2021, will Jair Bolsonaro cease to be the president of Brazil?",
@@ -581,8 +645,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "6%",
-    "# Forecasts": "258",
-    "# Forecasters": "189"
+    "Description": "Since taking office in 2019, President Bolsonaro has thus far survived scandals and the devastating effects of COVID-19 in the country ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/neither-plagues-nor-scandals-will-topple-brazils-populist-president) ).\n",
+    "# Forecasts": "262",
+    "# Forecasters": "191"
   },
   {
     "Title": "Will the average price of a gallon of gasoline fall below $1.95 for any week before 2 March 2021?",
@@ -590,7 +655,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "1%",
-    "# Forecasts": "356",
+    "Description": "The initial onset of the COVID-19 pandemic drove gasoline prices under $2.00 per gallon across much of the country ( [Newsweek] (https://www.newsweek.com/gas-prices-are-lowest-years-oil-prices-plummet-due-coronavirus-outbreak-1498622) ). The outcome will be determined using data as reported by the Energy Information Administration for \"Weekly U.S. All Grades All Formulations Retail Gasoline Prices\" ( [EIA] (https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&amp;s=EMM_EPM0_PTE_NUS_DPG&amp;f=W) ).\n",
+    "# Forecasts": "362",
     "# Forecasters": "132"
   },
   {
@@ -599,7 +665,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "2%",
-    "# Forecasts": "396",
+    "Description": "Nicolas Maduro remains in power despite continued international pressure and domestic instability ( [Guardian] (https://www.theguardian.com/world/2020/oct/25/leopoldo-lopez-flees-venezuela-vowing-to-continue-fighting-maduro-regime) , [Al Jazeera] (https://www.aljazeera.com/news/2020/11/9/maduro-hopes-to-resume-decent-dialogue-with-us-after-biden-win) , [Newsweek] (https://www.newsweek.com/venezuela-defend-start-dialogue-trump-biden-wins-1544542) ).\nThis question is a longer-term companion of [#1642] (https://www.gjopen.com/questions/1642-will-nicolas-maduro-cease-to-be-president-of-venezuela-before-1-january-2021) .\n",
+    "# Forecasts": "399",
     "# Forecasters": "188"
   },
   {
@@ -607,9 +674,10 @@
     "URL": "https://www.gjopen.com/questions/1842-in-2021-will-total-fire-activity-in-the-amazon-exceed-the-2020-total-count",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "68%",
-    "# Forecasts": "199",
-    "# Forecasters": "115"
+    "Percentage": "70%",
+    "Description": "The increasing number of fires in South America, particularly Brazil, has captured international attention ( [Guardian] (https://www.theguardian.com/environment/2020/oct/01/brazil-amazon-rainforest-worst-fires-in-decade) , [BBC] (https://www.bbc.com/news/world-latin-america-53893161) ). The outcome will be determined with data reported by the GFED in its \"Cumulative Monthly Fire Counts\" chart in the “Totals” section, seeing whether the Cumulative Monthly Fire Counts for 2021 exceeds the entire total for 31 December 2020 ( [Global Fire Emissions Database] (http://www.globalfiredata.org/forecast.html) ).\n",
+    "# Forecasts": "203",
+    "# Forecasters": "117"
   },
   {
     "Title": "Will the U.S. consume more energy from renewable sources in May 2021 than it did in May 2019, according to the U.S. Energy Information Administration (EIA)?",
@@ -617,8 +685,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "96%",
-    "# Forecasts": "261",
-    "# Forecasters": "173"
+    "Description": "A record amount of renewable energy was consumed in 2019, though COVID-19 took its toll on overall energy consumption in the Spring of 2020 ( [EIA 19 October 2020] (https://www.eia.gov/todayinenergy/detail.php?id=45516) , [EIA 30 June 2020] (https://www.eia.gov/todayinenergy/detail.php?id=44276) ). The outcome will be determined using data provided by the EIA for \"Total\" under \"Renewable Energy\" ( [EIA TABLE 1.3 PRIMARY ENERGY CONSUMPTION BY SOURCE] (https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T01.03) ). In May 2019, the U.S. consumed 1.059944 quadrillion Btus of energy from renewable sources.\nNOTE 4 January 2021: The EIA figure for \"Total\" under \"Renewable Energy\" has been slightly revised since the question was launched. To be clear, the outcome will be determined using data as reported for May 2019 and May 2021 when May 2021 data are first reported by the EIA.\n",
+    "# Forecasts": "263",
+    "# Forecasters": "174"
   },
   {
     "Title": "On 12 May 2021, will Ethiopia's Tigray region be under a federally-imposed state of emergency?",
@@ -626,7 +695,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "85%",
-    "# Forecasts": "243",
+    "Description": "On 4 November 2020, Ethiopian Prime Minister Abiy Ahmed declared, and lawmakers approved, a state of emergency in the Tigray region following unrest that included an attack on a military base and controversial regional elections ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/abiy-ahmed-presents-ethiopias-voters-with-an-unhappy-choice) ,  [Al Jazeera] (https://www.aljazeera.com/news/2020/11/4/ethiopia-declares-state-of-emergency-in-opposition-tigray-region) , [BBC] (https://www.bbc.com/news/world-africa-54805088) , [CNN] (https://www.cnn.com/2020/11/05/africa/ethiopia-abiy-unrest-explainer-intl/index.html) ). The state of emergency can last up to 6 months at which point it expires or the government votes to renew it ( [Ethiopian Constitution] (https://www.servat.unibe.ch/icl/et00000_.html) , see Article 93).\n",
+    "# Forecasts": "244",
     "# Forecasters": "158"
   },
   {
@@ -635,8 +705,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "0%",
-    "# Forecasts": "251",
-    "# Forecasters": "106"
+    "Description": "West Texas Intermediate (WTI) is a benchmark price for oil in the U.S., while Brent is a benchmark price for oil from the North Sea ( [Investopedia] (https://www.investopedia.com/ask/answers/052615/what-difference-between-brent-crude-and-west-texas-intermediate.asp) ). The spread, or difference, between the price of the two is an important metric in energy markets ( [Oil Price] (https://oilprice.com/Energy/Energy-General/The-Big-Oil-Price-Gamble-US-Producers-Cut-Back-On-Hedging.html) , [CME Group] (https://www.cmegroup.com/education/whitepapers/worldwide-oil-wti-brent-spread.html) ). The outcome will be determined using futures prices as provided by Bloomberg (WTI: [Bloomberg - WTI] (https://www.bloomberg.com/quote/CL1:COM) , Brent: [Bloomberg - Brent] (https://www.bloomberg.com/quote/CO1:COM) ).\n",
+    "# Forecasts": "254",
+    "# Forecasters": "108"
   },
   {
     "Title": "When will the World Health Organization (WHO) report more than 20 million confirmed cases of COVID-19 for the South-East Asia Region?",
@@ -644,7 +715,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "225",
+    "Description": "The outcome will be determined using data as reported by the World Health Organization ( [WHO COVID-19 Dashboard] (https://covid19.who.int/) ).\n",
+    "# Forecasts": "231",
     "# Forecasters": "86"
   },
   {
@@ -653,8 +725,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "5%",
-    "# Forecasts": "355",
-    "# Forecasters": "208"
+    "Description": "In recent years, there has been speculation that China would declare an ADIZ over the South China Sea ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/south-east-asian-countries-are-trapped-between-two-superpowers) ,  [National Interest] (https://nationalinterest.org/feature/will-china-set-air-defense-identification-zone-south-china-sea-160896) , [CNN] (https://www.cnn.com/2016/07/13/asia/south-china-sea-ruling-reaction-adiz/) ). An extension of the existing East China Sea ADIZ to cover part of the South China Sea would count. For more information on air defense identification zones and the conflict in the South China Sea, see: [Defense.info] (https://defense.info/global-dynamics/2020/08/will-china-declare-an-air-defense-identification-zone-in-south-china-sea/) , [Economist] (https://www.economist.com/china/2020/06/17/chinas-next-move-in-the-south-china-sea) , [Inquirer.net] (https://globalnation.inquirer.net/188899/china-plan-to-control-south-china-sea-airspace-dangerous-says-lorenzana) .\n",
+    "# Forecasts": "361",
+    "# Forecasters": "209"
   },
   {
     "Title": "Between 9 November 2020 and 28 February 2021, will a country cease to formally recognize Taiwan?",
@@ -662,8 +735,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "2%",
-    "# Forecasts": "440",
-    "# Forecasters": "221"
+    "Description": "In recent decades, many countries have ceased to recognize the Republic of China (ROC), commonly known as Taiwan, in favor of recognition of the People’s Republic of China (PRC). A handful of countries continue to recognize the ROC ( [Taiwan Ministry of Foreign Affairs] (https://www.mofa.gov.tw/en/AlliesIndex.aspx?n=DF6F8F246049F8D6&amp;sms=A76B7230ADF29736) ). Two countries in Oceania, the Solomon Islands and Kiribati, were the countries to most recently cease to recognize the ROC ( [Newsweek] (https://www.newsweek.com/who-recognizes-taiwan-two-change-china-1460559) ).\n",
+    "# Forecasts": "450",
+    "# Forecasters": "226"
   },
   {
     "Title": "Will Russia and the People's Republic of China (PRC) conduct any joint naval exercises before 1 March 2021?",
@@ -671,8 +745,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "95%",
-    "# Forecasts": "368",
-    "# Forecasters": "149"
+    "Description": "Russia and China have engaged in joint naval exercises in the past, both bilaterally and with other nations ( [Diplomat] (https://thediplomat.com/2019/04/china-russia-kick-off-bilateral-naval-exercise-joint-sea/) , [CNN] (https://www.cnn.com/2019/12/27/asia/china-russia-iran-military-drills-intl-hnk/index.html) ). Both Russia and the PRC conducting joint naval exercises with one or more other navies would also count.\nNOTE 13 November 2020: The joint exercises must include both Russia and China to count.\n",
+    "# Forecasts": "377",
+    "# Forecasters": "150"
   },
   {
     "Title": "When will the World Health Organization (WHO) report more than 35 million confirmed cases of COVID-19 for the Europe Region?",
@@ -680,7 +755,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "371",
+    "Description": "Europe’s “second wave” of COVID-19 has increased concerns regarding the impact of the disease on the continent ( [Economist] (https://www.economist.com/briefing/2020/11/07/the-second-wave-of-covid-19-has-sent-much-of-europe-back-into-lockdown) , [Guardian] (https://www.theguardian.com/world/2020/nov/05/europes-second-wave-anger-in-italy-as-covid-restrictions-bite-across-continent) ). The outcome will be determined using data as reported by the World Health Organization ( [WHO COVID-19 Dashboard] (https://covid19.who.int/) ).\n",
+    "# Forecasts": "375",
     "# Forecasters": "103"
   },
   {
@@ -689,8 +765,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "134",
-    "# Forecasters": "83"
+    "Description": "The U.S. federal funds rate is the interest rate charged for overnight lending among financial institutions with accounts at the Federal Reserve and sets the base rate for borrowing costs across the financial system ( [Federal Reserve] (https://www.federalreserve.gov/monetarypolicy/fomc.htm) ). The target range for the federal funds rate is set by the Federal Open Market Committee (FOMC). Its March meeting is scheduled for 16-17 March 2021.\n",
+    "# Forecasts": "138",
+    "# Forecasters": "85"
   },
   {
     "Title": "Before 1 May 2021, will Mahmoud Abbas cease to be president of the Palestinian Authority?",
@@ -698,17 +775,19 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "",
-    "# Forecasts": "168",
-    "# Forecasters": "55"
+    "Description": "Palestinian Authority President Mahmoud Abbas finds himself under increased pressure as Arab states improve ties with Israel and political rivals jockey for position ( [Middle East Monitor] (https://www.middleeastmonitor.com/20201027-the-growing-calls-to-replace-the-palestinian-leadership/) , [Times of Israel] (https://www.timesofisrael.com/abbas-slams-israel-sudan-deal-no-one-can-speak-on-behalf-of-palestinians/) , [Foreign Policy] (https://foreignpolicy.com/2020/10/30/mohammed-dahlan-uae-palestinians-israel/) ).\n",
+    "# Forecasts": "171",
+    "# Forecasters": "56"
   },
   {
     "Title": "Before 1 January 2022, will Amazon announce that it will spin off Amazon Web Services (AWS)?",
     "URL": "https://www.gjopen.com/questions/1822-before-1-january-2022-will-amazon-announce-that-it-will-spin-off-amazon-web-services-aws",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "3%",
-    "# Forecasts": "247",
-    "# Forecasters": "141"
+    "Percentage": "2%",
+    "Description": "As Amazon has grown it has received increased scrutiny, and there have been calls for it to spin off its cloud computing platform, Amazon Web Services (AWS) ( [Medium] (https://medium.com/swlh/should-amazon-spin-off-aws-e15d6e307506) , [CNBC] (https://www.cnbc.com/2020/07/24/former-amazon-senior-engineer-calls-for-aws-spinoff.html) , [Vox] (https://www.vox.com/recode/2020/10/6/21505027/congress-big-tech-antitrust-report-facebook-google-amazon-apple-mark-zuckerberg-jeff-bezos-tim-cook) , [Investopedia] (https://www.investopedia.com/terms/s/spinoff.asp) ). The date when the spinoff would take effect is immaterial to the resolution of this question.\n",
+    "# Forecasts": "253",
+    "# Forecasters": "143"
   },
   {
     "Title": "Will Apple's iPhone net sales be higher in FY 2021 than FY 2019?",
@@ -716,8 +795,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "95%",
-    "# Forecasts": "234",
-    "# Forecasters": "101"
+    "Description": "Apple's iPhone net sales have fluctuated over the years, and as of October 2020 Apple has begun to sell the new iPhone 12 and its variants ( [Apple] (https://www.apple.com/iphone/) ). Industry analysts speculate whether 5G capability will bolster declining iPhone sales or if the pandemic's global impact on supply chains and expendable income will hinder iPhone sales ( [9 to 5 Mac] (https://9to5mac.com/2019/11/25/iphone-12-5g-demand/) , [ABS-CBN] (https://news.abs-cbn.com/business/10/14/20/in-china-apples-5g-iphone-12-sparks-fever-pitch-but-divided-reaction) ). Apple Inc.'s Fiscal Year (FY) annual report for 2021 is expected by early November 2021 at https://investor.apple.com/investor-relations/default.aspx under the \"Annual Reports on Form 10-K\" section. For FY 2020, Apple reported net iPhone sales of $137.781 billion, compared to $142.381 billion in FY 2019 ( [Apple 10-K (2020)] (https://d18rn0p25nwr6d.cloudfront.net/CIK-0000320193/7b5717ca-6222-48e6-801c-9ea28feeef86.pdf) , see page 21).\n",
+    "# Forecasts": "238",
+    "# Forecasters": "102"
   },
   {
     "Title": "How many countries will have 100,000 or more deaths attributed to COVID-19 as of 30 April 2021?",
@@ -725,26 +805,29 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "1018",
-    "# Forecasters": "180"
+    "Description": "As of 23 October 2020, 3 countries have more than one hundred thousand deaths from COVID-19: the U.S., Brazil, and India ( [France24] (https://www.france24.com/en/20201003-india-s-covid-19-death-toll-tops-100-000-behind-us-and-brazil) ). The outcome of this question will be determined using data reported by the World Health Organization at approximately 5:00PM ET on 30 April 2021 ( [WHO COVID-19 Dashboard] (https://covid19.who.int/) ).\n",
+    "# Forecasts": "1036",
+    "# Forecasters": "181"
   },
   {
     "Title": "Will Prayut Chan-o-cha cease to be the prime minister of Thailand before 23 April 2021?",
     "URL": "https://www.gjopen.com/questions/1820-will-prayut-chan-o-cha-cease-to-be-the-prime-minister-of-thailand-before-23-april-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "2%",
-    "# Forecasts": "236",
-    "# Forecasters": "59"
+    "Percentage": "1%",
+    "Description": "Prime Minister Prayut Chan-o-cha faces an array of challenges, including calls for him to resign and protests in the streets of Bangkok against the actions of the monarchy ( [BBC] (https://www.bbc.com/news/world-asia-54573349) , [Deutsche Welle] (https://www.dw.com/en/thailand-pm-refuses-to-step-down-as-protesters-defy-police/a-55301495) , [CNN] (https://www.cnn.com/2020/10/19/asia/thailand-weekend-protests-monarchy-intl-hnk/index.html) ).\n",
+    "# Forecasts": "241",
+    "# Forecasters": "60"
   },
   {
     "Title": "Before 1 September 2021, will Egypt, Ethiopia, and Sudan sign an agreement governing the filling of the Grand Ethiopian Renaissance Dam (GERD) reservoir?",
     "URL": "https://www.gjopen.com/questions/1815-before-1-september-2021-will-egypt-ethiopia-and-sudan-sign-an-agreement-governing-the-filling-of-the-grand-ethiopian-renaissance-dam-gerd-reservoir",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "5%",
-    "# Forecasts": "166",
-    "# Forecasters": "57"
+    "Percentage": "4%",
+    "Description": "Tensions between Egypt, Ethiopia, and Sudan have escalated over Ethiopia's filling of the GERD, designed to become the largest hydroelectric plant in Africa and provide electricity to millions of people ( [Al-Monitor] (https://www.al-monitor.com/pulse/originals/2020/10/egypt-ethiopia-sudan-talks-stalled-nile-dam.html) , [BBC] (https://www.bbc.com/news/world-africa-53432948) , [Foreign Policy] (https://foreignpolicy.com/2020/09/28/renaissance-dam-ethiopia-egypt-negotiations/) ). The filling of the reservoir has stoked diplomatic backlash from Egypt and Sudan due to the potential impacts on water flows, including a referral of the matter to the UN Security Council ( [Egypt Today] (https://www.egypttoday.com/Article/1/88770/Egypt-refers-GERD-issue-to-UN-Security-Council) , [UN] (https://www.un.org/press/en/2020/sc14232.doc.htm) ).\n",
+    "# Forecasts": "169",
+    "# Forecasters": "59"
   },
   {
     "Title": "Between 16 October 2020 and 31 December 2021, how many successful flight tests of the Common Hypersonic Glide Body (C-HGB) will the United States conduct?",
@@ -752,7 +835,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "130",
+    "Description": "The U.S., China, Russia, and other countries are working to develop hypersonic weapons ( [Federation of American Scientists] (https://fas.org/sgp/crs/weapons/R45811.pdf) , [ScienceMag.org] (https://www.sciencemag.org/news/2020/01/national-pride-stake-russia-china-united-states-race-build-hypersonic-weapons) , [NY Times] (https://www.nytimes.com/2019/06/19/magazine/hypersonic-missiles.html) ). The U.S. Army and Navy collaborated on and successfully tested the C-HGB in March 2020 and are looking to conduct further flight tests in 2021 ( [Defense News] (https://www.defensenews.com/digital-show-dailies/smd/2020/08/05/heres-how-the-dod-plans-to-meet-its-ambitious-hypersonic-missile-test-schedule/) ). A flight test will be considered “successful” if the U.S. military announces that the C-HGB reaches its designated impact point ( [Defense News] (https://www.defensenews.com/smr/army-modernization/2020/03/20/pentagons-major-hypersonic-glide-body-flight-test-deemed-success/) ).\nNOTE 29 October 2020: The simultaneous successful testing of two C-HGBs would count as two tests.\n",
+    "# Forecasts": "132",
     "# Forecasters": "40"
   },
   {
@@ -761,7 +845,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "99%",
-    "# Forecasts": "120",
+    "Description": "Boom Technology recently unveiled the XB-1, a one-third scale prototype of its future Overture supersonic airliner, and plans to test fly it for the first time in 2021 ( [Boom Supersonic] (https://boom-press-assets.s3-us-west-2.amazonaws.com/Boom-Supersonic-XB1-Rollout-Press-Release.pdf) , [BoomSupersonic.com] (https://boomsupersonic.com) , [Flight Global] (https://www.flightglobal.com/airframers/boom-rolls-out-xb-1-supersonic-demonstrator-lays-out-overture-timeline/140513.article) ). For the purposes of this question, a test flight would be deemed successful if the aircraft takes off and lands. \n",
+    "# Forecasts": "121",
     "# Forecasters": "52"
   },
   {
@@ -770,7 +855,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "408",
+    "Description": "Travel from the U.S. to Canada for discretionary reasons (non-essential), such as for tourism, recreation or entertainment, is currently prohibited due to COVID-19 ( [Government of Canada] (https://www.cbsa-asfc.gc.ca/services/covid/non-canadians-canadiens-eng.html) , [U.S. Embassy - Canada] (https://ca.usembassy.gov/travel-restrictions-fact-sheet/) , [Bloomberg] (https://www.bloomberg.com/news/articles/2020-10-08/canada-will-pitch-safe-tourism-to-travelers-once-borders-open) ). Permitting discretionary travel for one or more points of entry from the U.S. to Canada would count.\n",
+    "# Forecasts": "412",
     "# Forecasters": "141"
   },
   {
@@ -779,7 +865,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "10%",
-    "# Forecasts": "539",
+    "Description": "The outcome of this question will be determined using data for the United States reported by the World Health Organization between 9 October 2020 and 30 June 2021 ( [WHO COVID-19 Dashboard] (https://covid19.who.int/region/amro/country/us) ). For the seven consecutive day period from 22 September 2020 and 28 September 2020 (using daily numbers), WHO reported 305,412 combined total confirmed new cases. Total confirmed new cases data for days prior to 9 October 2020 are immaterial to the resolution of this question. The data provided on the WHO Coronavirus Disease (COVID-19) Dashboard at approximately 5:00PM ET each day will now be used to resolve this question.\n",
+    "# Forecasts": "543",
     "# Forecasters": "150"
   },
   {
@@ -788,7 +875,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "220",
+    "Description": "As the economic fallout of the COVID-19 pandemic continues to grow, there are fears that the commercial real estate market will get hit particularly hard ( [LMTonline] (https://www.lmtonline.com/business/article/Wave-of-foreclosures-seen-hitting-commercial-real-15573246.php) , [Real Estate Weekly] (https://rew-online.com/wave-of-distressed-sales-on-horizon-as-loan-delinquency-jumps/) , [Commercial Property Executive] (https://www.cpexecutive.com/post/commercial-multifamily-mortgage-delinquency-rates-affected-by-the-pandemic/) ). The question will be suspended on 30 June 2021 and the outcome determined using data provided by the Federal Reserve Economic Data (FRED) database, sometime in the third quarter 2021 ( [FRED] (https://fred.stlouisfed.org/series/DRCRELEXFACBS) ).\n",
+    "# Forecasts": "222",
     "# Forecasters": "64"
   },
   {
@@ -797,7 +885,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "344",
+    "Description": "The future rate of housing starts, a measure of new home building in the US, will likely be impacted by the economic fallout from the coronavirus pandemic, fires in the western United States straining the lumber industry, and record-low mortgage rates ( [Morningstar] (https://www.morningstar.com/news/dow-jones/202009175758/us-housing-starts-slip-in-august) , [KATU] (https://katu.com/news/following-the-money/timber-industry-hit-hard-by-fires-will-have-generational-impact) ). The question will be suspended on 30 April 2021 and the outcome determined using data provided by the Federal Reserve Economic Data (FRED) database for April 2021, typically in May ( [FRED] (https://fred.stlouisfed.org/series/HOUST) ). For April 2020, housing starts totaled 0.934 million.\n",
+    "# Forecasts": "347",
     "# Forecasters": "89"
   },
   {
@@ -806,8 +895,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "344",
-    "# Forecasters": "62"
+    "Description": "Mustapha Adib, who was chosen to form a government after the previous one had been toppled following a massive explosion in Beirut in early August 2020, resigned on 26 September 2020, citing tensions among the various political groups in the country ( [BBC] (https://www.bbc.com/news/world-middle-east-54307896) , [Economist] (https://www.economist.com/the-economist-explains/2018/12/21/why-lebanon-struggles-to-form-governments) , [France24] (https://www.france24.com/en/20200927-live-france-s-macron-speaks-about-lebanon-s-crisis-after-pm-designate-quits) , [AP] (https://apnews.com/article/virus-outbreak-beirut-emmanuel-macron-lebanon-financial-markets-257abf1fd90d95ef27f8344204be30e3) ).\n",
+    "# Forecasts": "358",
+    "# Forecasters": "63"
   },
   {
     "Title": "Before 1 March 2021, will there be a lethal confrontation at sea between the forces of India and the People's Republic of China?",
@@ -815,7 +905,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "0%",
-    "# Forecasts": "378",
+    "Description": "A violent clash in mid-June 2020 between soldiers along a disputed stretch of border between India and China left at least 20 dead, sparking concerns over continued escalation of tensions between the two neighbors ( [BBC] (https://www.bbc.com/news/world-asia-53061476) , [Washington Post] (https://www.washingtonpost.com/business/why-chinese-and-indian-troops-are-clashing-again/2020/09/02/0c1f5f90-ed01-11ea-bd08-1b10132b458f_story.html) , [Fox News] (https://www.foxnews.com/world/china-india-shots-fired-border-dispute) , [Wall Street Journal] (https://www.wsj.com/articles/india-seeks-naval-edge-as-china-penetrates-indian-ocean-11600945203) ). A lethal confrontation is one that results in one or more fatalities of the forces-the national military forces, militia, and/or law enforcement officials-of either side. For the purposes of this question, \"at sea\" means any territorial or international waters and the airspace above them.\nNOTE 29 September 2020: Pangong Tso/Pangong Lake would not be considered to be \"at sea.\"\n",
+    "# Forecasts": "379",
     "# Forecasters": "185"
   },
   {
@@ -824,7 +915,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "97%",
-    "# Forecasts": "193",
+    "Description": "In March 2018, the City barred Catholic Social Services (CSS) from placing children in foster homes because of the CSS policy of not licensing same-sex couples to be foster parents ( [Oyez] (https://www.oyez.org/cases/2020/19-123) ). CSS sued, arguing for its right to free exercise of religion and free speech ( [Ballotpedia] (https://ballotpedia.org/Fulton_v._City_of_Philadelphia,_Pennsylvania) ). The district court and Third Circuit Court of Appeals ruled for the City ( [Third Circuit Court of Appeals] (http://www2.ca3.uscourts.gov/opinarch/182574p.pdf) , [SCOTUSblog] (https://www.scotusblog.com/case-files/cases/fulton-v-city-of-philadelphia-pennsylvania/) ). The Supreme Court is expected to hand down its decision in its 2020 term, but if it does not, the question will close as no. If the Court decides this case without addressing this question's particular issue of law, the question will close as \"No.\"\n",
+    "# Forecasts": "195",
     "# Forecasters": "64"
   },
   {
@@ -833,8 +925,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "2%",
-    "# Forecasts": "346",
-    "# Forecasters": "151"
+    "Description": "Erdoğan is embroiled in several controversies in the region, including active engagement in the Libyan civil war, oil &amp; gas exploration in the eastern Mediterranean, and Turkey's acquisition of Russian S-400 missile systems despite warnings from the U.S. and NATO ( [Al Jazeera] (https://www.aljazeera.com/news/2020/07/turkey-illegitimate-haftar-withdraw-key-libya-areas-200722160827376.html) , [BBC] (https://www.bbc.com/news/world-europe-53906360) , [Defense News] (https://www.defensenews.com/breaking-news/2020/08/12/congress-has-secretly-blocked-us-arms-sales-to-turkey-for-nearly-two-years/) ).\n",
+    "# Forecasts": "351",
+    "# Forecasters": "152"
   },
   {
     "Title": "Which country will the 2020-21 UEFA Champions League final winner be from?",
@@ -842,8 +935,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "233",
-    "# Forecasters": "105"
+    "Description": "The 2020-21 UEFA Champions League final is scheduled to be played at Atatürk Olympic Stadium in Istanbul, Turkey on 29 May 2021 ( [UEFA] (https://www.uefa.com/uefachampionsleague/news/025e-0fac7ce8f2d4-6d86444e8807-1000--2020-21-all-you-need-to-know/) , [UEFA (Clubs)] (https://www.uefa.com/uefachampionsleague/clubs/) ).\n",
+    "# Forecasts": "238",
+    "# Forecasters": "106"
   },
   {
     "Title": "When will 25,000 or more fans next attend a Premier League match?",
@@ -851,8 +945,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "557",
-    "# Forecasters": "192"
+    "Description": "Fans in the UK have been restricted from sporting events due to the coronavirus, and there is uncertainty about when they can return in large numbers ( [BBC] (https://www.bbc.com/sport/54094363) , [Sky Sports] (https://www.skysports.com/football/news/11661/12069059/coronavirus-premier-league-concerned-by-delays-to-fans-return) , [Goal] (https://www.goal.com/en-us/news/will-there-be-fans-at-premier-league-matches-in-2020-21-when/1sz2evfoff4101efeqoy9hmppq) , [Premier League] (https://www.premierleague.com/fixtures) ).\n",
+    "# Forecasts": "559",
+    "# Forecasters": "193"
   },
   {
     "Title": "Before 18 September 2021, will Boris Johnson cease to be prime minister of the United Kingdom?",
@@ -860,8 +955,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "8%",
-    "# Forecasts": "935",
-    "# Forecasters": "422"
+    "Description": "Prime Minister Boris Johnson's premiership began in July 2019 after Theresa May stepped down ( [Britannica] (https://www.britannica.com/biography/Boris-Johnson) ). He continues to lead the UK through final Brexit negotiations with the EU ( [Economist] (https://www.economist.com/the-world-ahead/2020/11/17/brexit-and-covid-19-show-up-the-disunited-kingdom) ,  [BBC] (https://www.bbc.com/news/uk-politics-54156419) , [Independent] (https://www.independent.co.uk/news/uk/politics/keir-starmer-coronavirus-self-isolating-labour-covid-19-symptoms-b435681.html) ).\n",
+    "# Forecasts": "946",
+    "# Forecasters": "426"
   },
   {
     "Title": "Will there be a complex coordinated terrorist attack (CCTA) in the United States either directed or inspired by a foreign terrorist organization before 1 September 2021?",
@@ -869,7 +965,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "5%",
-    "# Forecasts": "340",
+    "Description": "CCTAs are a major concern for law enforcement and emergency planners ( [FEMA] (https://www.fema.gov/media-library-data/1532550673102-c4846f270150682decbda99b37524ca6/Planning_Considerations-Complex_Coordinated_Terrorist_Attacks.pdf) ). For the purposes of this question, a CCTA is an [1] act of terrorism [2] involving multiple perpetrators working in concert [3] initiated with little or no warning [4] and employing one or more weapon systems (e.g., firearms, explosives, fire as a weapon, poison gas) [5] that is intended to result in large numbers of casualties. For the purposes of this question, \"terrorism\" is as defined by federal law in 18 U.S.C. § 2331(5) ( [Cornell] (https://www.law.cornell.edu/uscode/text/18/2331) ). A foreign terrorist organization (FTO) is an organization designated as an FTO by the US Department of State ( [State.gov] (https://www.state.gov/foreign-terrorist-organizations/) ). Examples of CCTAs include the 2004 Madrid train bombings, the 2008 Mumbai attacks, 2013 Boston Marathon bombings, and the 2015 San Bernardino, CA, office attack.\n",
+    "# Forecasts": "343",
     "# Forecasters": "158"
   },
   {
@@ -877,18 +974,20 @@
     "URL": "https://www.gjopen.com/questions/1782-will-any-2020-california-election-results-be-altered-by-a-cyberattack-against-a-voting-system",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "0%",
-    "# Forecasts": "289",
-    "# Forecasters": "144"
+    "Percentage": "",
+    "Description": "Cyberattacks against voting systems in the 2020 elections are an object of continuing concern, including in California ( [Washington Post] (https://www.washingtonpost.com/national-security/russian-hackers-who-disrupted-2016-election-targeting-political-parties-again-microsoft-says/2020/09/10/301dd5fe-f36c-11ea-bc45-e5d48ab44b9f_story.html) , [CBS SF BayArea] (https://sanfrancisco.cbslocal.com/2020/09/08/san-mateo-co-voter-registrar-working-with-state-feds-to-repel-hackers-foreign-cyberattacks/) , [California AB 2125] (https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2125) , [National Conference of State Legislatures] (https://www.ncsl.org/research/elections-and-campaigns/post-election-audits635926066.aspx) ). A relevant cyberattack against a federal, state, or local election system that changes vote totals and/or an election outcome for California would count. For purposes of this question, \"voting system\" is a system as defined by the U.S. Election Assistance Commission ( [U.S. Election Assistance Commission] (https://www.eac.gov/voting-system) ). This question will resolve based on available evidence no later than 1 May 2021.\n",
+    "# Forecasts": "292",
+    "# Forecasters": "145"
   },
   {
     "Title": "Will there be a complex coordinated terrorist attack (CCTA) in the United States before 1 September 2021?",
     "URL": "https://www.gjopen.com/questions/1781-will-there-be-a-complex-coordinated-terrorist-attack-ccta-in-the-united-states-before-1-september-2021",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "26%",
-    "# Forecasts": "561",
-    "# Forecasters": "150"
+    "Percentage": "25%",
+    "Description": "CCTAs are a major concern for law enforcement and emergency planners ( [FEMA] (https://www.fema.gov/media-library-data/1532550673102-c4846f270150682decbda99b37524ca6/Planning_Considerations-Complex_Coordinated_Terrorist_Attacks.pdf) ). For the purposes of this question, a CCTA is an [1] act of terrorism [2] involving multiple perpetrators working in concert [3] initiated with little or no warning [4] and employing one or more weapon systems (e.g., firearms, explosives, fire as a weapon, poison gas) [5] that is intended to result in large numbers of casualties. For the purposes of this question, \"terrorism\" is as defined by federal law in 18 U.S.C. § 2331(5) ( [Cornell] (https://www.law.cornell.edu/uscode/text/18/2331) ). Examples of CCTAs include the 2004 Madrid train bombings, the 2008 Mumbai attacks, 2013 Boston Marathon bombings, and the 2015 San Bernardino, CA, office attack.\n",
+    "# Forecasts": "571",
+    "# Forecasters": "151"
   },
   {
     "Title": "When will the Transportation Security Administration (TSA) next screen two million or more travelers in a single day?",
@@ -896,7 +995,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "686",
+    "Description": "Commercial air travel in the U.S. is increasing, but still remains much lower than before the COVID-19 pandemic ( [CNN] (https://edition.cnn.com/travel/article/tsa-checkpoint-numbers-new-pandemic-high/index.html) ). The outcome will be determined using Total Traveler Throughput data reported by the TSA ( [TSA] (https://www.tsa.gov/coronavirus/passenger-throughput) ). The TSA last screened two million or more travelers in a single day on 8 March 2020.\n",
+    "# Forecasts": "693",
     "# Forecasters": "160"
   },
   {
@@ -905,7 +1005,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "92%",
-    "# Forecasts": "186",
+    "Description": "To implement its Android operating system, “Google copied 11,500 lines of Oracle’s original, human-readable computer source code, as well as the intricate structure and organization of 37 large packages of computer programs” ( [Supremecourt.gov] (https://www.supremecourt.gov/DocketPDF/18/18-956/93436/20190327160337558_190311%20for%20E-Filing.pdf) ). Oracle sued Google for copyright infringement and the issue has reached the Supreme Court ( [Oyez] (https://www.oyez.org/cases/2020/18-956) , [SCOTUSblog] (https://www.scotusblog.com/case-files/cases/google-llc-v-oracle-america-inc/) , [Lexology] (https://www.lexology.com/library/detail.aspx?g=ecf5cd6d-2b66-4240-b5d9-efab3c581830) , [ZDNet] (https://www.zdnet.com/article/google-vs-oracle-the-next-chapter/) ). Whether the Supreme Court rules on Google’s copying of Oracle’s code being fair use or not is immaterial to the resolution of this question. The Supreme Court is expected to hand down its decision in its 2020 term, but if it does not, the question will resolve as \"No.\" If the Court decides this case without addressing this question's particular issue of law, the question will close as \"No.\"\n",
+    "# Forecasts": "187",
     "# Forecasters": "75"
   },
   {
@@ -914,6 +1015,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "0%",
+    "Description": "After the Supreme Court upheld the constitutionality of the ACA in NFIB v. Sibelius, Congress subsequently reduced the penalty for failing to acquire health insurance to $0 ( [Kaiser Family Foundation] (https://www.kff.org/health-reform/issue-brief/explaining-texas-v-u-s-a-guide-to-the-case-challenging-the-aca/) , [Law.cornell.edu] (https://www.law.cornell.edu/uscode/text/26/5000A) (see §(3)(A)), [The Hill] (https://thehill.com/policy/healthcare/365785-congress-repeals-obamacare-mandate-fulfilling-longtime-gop-goal) ). Texas sued to have the ACA declared unconstitutional and prevailed in both District Court and the 5th Circuit Court of Appeals ( [Politico] (https://static.politico.com/17/86/6721f2eb435fb2512430e54c2904/220.pdf) , [Casetext] (https://casetext.com/case/texas-v-united-states-31) ). The Supreme Court is expected to hand down its decision in its 2020 term, but if it does not, the question will close as no. If the Court decides this case without addressing this question's particular issue of law, the question will close as \"No.\"\n",
     "# Forecasts": "304",
     "# Forecasters": "75"
   },
@@ -922,8 +1024,9 @@
     "URL": "https://www.gjopen.com/questions/1764-before-1-january-2022-will-the-united-states-olympic-committee-announce-that-it-is-boycotting-the-2022-winter-olympics",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "",
-    "# Forecasts": "503",
+    "Percentage": "5%",
+    "Description": "Countries have boycotted the Olympics for various reasons throughout history ( [Montreal Gazette] (https://montrealgazette.com/sports/montreal-olympics-african-boycott-of-1976-games-changed-the-world) , [Dept. of State] (https://2001-2009.state.gov/r/pa/ho/time/qfp/104481.htm) , [History.com] (https://www.history.com/this-day-in-history/soviets-announce-boycott-of-1984-olympics) ). Some groups are calling on nations to boycott the 2022 Beijing Winter Olympics due to China's treatment of its Uighur population ( [Daily Sabah] (https://www.dailysabah.com/world/asia-pacific/rights-group-criticizes-ioc-over-uighurs-issue-in-china) , [Politico] (https://www.politico.com/news/2020/08/25/trump-administration-china-genocide-uighurs-401581) , [Olympic.org] (https://www.olympic.org/beijing-2022) ).\n",
+    "# Forecasts": "507",
     "# Forecasters": "173"
   },
   {
@@ -932,7 +1035,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "445",
+    "Description": "The Arab League consists of 22 member states ( [BBC] (https://www.bbc.com/news/world-middle-east-15747941) , [CNN] (https://www.cnn.com/2013/07/30/world/meast/arab-league-fast-facts/index.html) , [Arab League] (http://www.lasportal.org/Pages/Welcome.aspx) ). As of 28 August 2020, three members other than Palestine--Egypt, Jordan, and recently the United Arab Emirates--diplomatically recognize Israel, though others could follow ( [France24] (https://www.france24.com/en/20200824-after-uae-israel-deal-which-arab-nation-will-next-forge-ties) , [Economist] (https://www.economist.com/middle-east-and-africa/2020/08/22/the-arab-countries-most-likely-to-recognise-israel) , [Whitehouse.gov] (https://www.whitehouse.gov/briefings-statements/joint-statement-united-states-state-israel-united-arab-emirates/) ). A suspended Arab League member diplomatically recognizing Israel would count ( [Guardian] (https://www.theguardian.com/world/2011/nov/12/syria-suspended-arab-league) ).\nNOTE 2 September 2020: The question is framed \"as of,\" so Egypt, Jordan, and the UAE would count toward resolution so long as they diplomatically recognize Israel as of 28 August 2021.\nNOTE 14 December 2020: As of the date of this clarification (14 December 2020), for the purposes of this question, the October announcement on the normalization of relations between Sudan and Israel constitutes Sudan diplomatically recognizing the State of Israel.\n",
+    "# Forecasts": "447",
     "# Forecasters": "93"
   },
   {
@@ -941,7 +1045,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "191",
+    "Description": "As part of the COVID-19 recovery plan called the \"Next Generation EU\" (NGEU), an amendment of the Own Resources Decision has been proposed ( [European Council] (https://www.consilium.europa.eu/media/45109/210720-euco-final-conclusions-en.pdf) , [European Parliament] (https://www.europarl.europa.eu/legislative-train/theme-new-boost-for-jobs-growth-and-investment/file-mff-post-2020-own-resources) , [European Commission] (https://ec.europa.eu/commission/presscorner/detail/en/qanda_20_935) ). An amendment of the Own Resources Decision requires approval by all Member States in accordance with their constitutional requirements ( [Ernst &amp; Young] (https://taxnews.ey.com/news/2020-1869-european-council-adopts-conclusions-on-recovery-plan-and-eu-budget-for-2021-2027-including-agreement-on-introduction-of-new-taxes) , [European Commission] (https://ec.europa.eu/commission/presscorner/detail/en/QANDA_20_1024) ). The question would resolve upon the last Member State approving the amendment. When the amended Own Resources Decision would take effect is immaterial.\n",
+    "# Forecasts": "196",
     "# Forecasters": "49"
   },
   {
@@ -950,8 +1055,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "315",
-    "# Forecasters": "105"
+    "Description": "Tesla recently announced it will manufacture the Cybertruck at its new factory location in Austin, TX ( [Digital Trends] (https://www.digitaltrends.com/cars/tesla-cybertruck-price-interior-release-date-specs-news/) , [The Verge] (https://www.theverge.com/2020/7/22/21334860/tesla-cybertruck-factory-austin-texas-location-model-y) , [Teslarati] (https://www.teslarati.com/tesla-cybertruck-gigafactory-austin-texas-video/) , [Inverse] (https://www.inverse.com/innovation/61141-tesla-cybertruck-pics-price) ). The outcome will be determined using Tesla's official quarterly updates once available, typically found here: https://ir.tesla.com/financial-information/quarterly-results.\n",
+    "# Forecasts": "317",
+    "# Forecasters": "106"
   },
   {
     "Title": "Before 1 January 2023, will Amazon or a subsidiary use a Zoox autonomous vehicle to deliver a package and/or for a public ride-hailing service?",
@@ -959,8 +1065,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "227",
-    "# Forecasters": "95"
+    "Description": "In late June 2020, Amazon acquired self-driving technology company Zoox for approximately $1.3 billion ( [CNBC] (https://www.cnbc.com/2020/06/26/amazon-spending-1-billion-on-zoox-will-have-to-invest-billions-more.html) , [Forbes] (https://www.forbes.com/sites/bradtempleton/2020/07/16/amazon-zoox-deal-details-leak-and-hint-at-expensive-acquihire/#50676c1d4ec2) ). While Amazon has framed the acquisition as a move into ride-hailing, there is speculation that the move could lead to greater automation of package deliveries ( [Amazon] (https://blog.aboutamazon.com/company-news/were-acquiring-zoox-to-help-bring-their-vision-of-autonomous-ride-hailing-to-reality) , [India Times] (https://www.indiatimes.com/auto/alternative/amazon-zoox-robo-delivery-518186.html) , [Forbes] (https://www.forbes.com/sites/davidsilver/2020/07/03/autonomous-delivery-will-reduce-the-cost-of-residential-package-delivery/#77928f2f4844) ). An autonomous vehicle with a backup driver would count for resolution. A public ride-hailing service does not need to involve payment to count for resolution.\n",
+    "# Forecasts": "235",
+    "# Forecasters": "98"
   },
   {
     "Title": "Before 14 February 2021, will former King Juan Carlos I and/or former Catalan President Carles Puigdemont return to Spain?",
@@ -968,7 +1075,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "239",
+    "Description": "Former King Juan Carlos I of Spain has reportedly left Spain in light of recent controversies, while former Catalan President Carles Puigdemont has continued living abroad in exile following the 2017 independence referendum that the Spanish government declared to be illegal ( [BBC] (https://www.bbc.com/news/world-europe-53710555) , [CatalanNews] (https://www.catalannews.com/politics/item/carles-puigdemont-elected-jxcat-president-with-99-3-of-votes) , [AP] (https://apnews.com/4f40dee005924aab99670da40122309e) ).\n",
+    "# Forecasts": "242",
     "# Forecasters": "102"
   },
   {
@@ -977,8 +1085,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "239",
-    "# Forecasters": "72"
+    "Description": "Recent advances in battery technology, particularly solid-state batteries, could give rise to a new generation of electric vehicles ( [Car and Driver] (https://www.caranddriver.com/news/a31409442/samsung-solid-state-battery-revealed/) , [Electrek] (https://electrek.co/2020/04/23/work-on-goodenoughs-breakthrough-solid-state-ev-battery-moves-forward/)) . Some companies have announced plans to debut such vehicles, even if not necessarily for mass production yet ( [Road/Show] (https://www.cnet.com/roadshow/news/toyota-solid-state-battery-electric-olympics/) , [Digital Trends] (https://www.digitaltrends.com/cars/toyota-may-introduce-solid-state-batteries-for-electric-cars-by-2020/) ). For examples of vehicle debuts, see: [CNBC] (https://www.cnbc.com/2020/08/06/gms-push-to-compete-with-tesla-begins-with-cadillac-lyriq-crossover-debut-thursday.html) , [Axios] (https://www.axios.com/tesla-debuts-first-electric-pickup-truck-cee48fef-fccc-4390-bdc5-1dfede8a8a3e.html) . For the purposes of this question, \"major automakers\" refers to any of the 50 motor vehicle manufacturers included by the International Organization of Motor Vehicle Manufacturers in its 2017 list ( [OICA] (http://www.oica.net/wp-content/uploads/World-Ranking-of-Manufacturers-1.pdf) ). A vehicle would not need to be solely powered by solid-state batteries to count.\nNOTE 20 August 2020: For purposes of this question, for a vehicle to be considered \"powered\" by a solid-state battery it must be propelled, at least in part, by the use of a solid-state battery\nNOTE 2 October 2020:  For purposes of this question, a \"passenger vehicle\" is a motor vehicle with at least four wheels, used for the transport of passengers, and comprising no more than eight seats in addition to the driver's seat (http://www.oica.net/wp-content/uploads/stats-definition1.pdf). \n",
+    "# Forecasts": "244",
+    "# Forecasters": "74"
   },
   {
     "Title": "When will SpaceX's satellite internet service, Starlink, begin offering commercial service in North America?",
@@ -986,8 +1095,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "485",
-    "# Forecasters": "97"
+    "Description": "As of early August 2020, SpaceX had launched nearly 600 of Starlink's expected 12,000 satellites and begun beta testing Starlink's internet service with users across the United States ( [CNBC] (https://www.cnbc.com/2020/08/10/spacex-starlink-satellte-production-now-120-per-month.html) , [TechCrunch] (https://techcrunch.com/2020/07/15/leak-reveals-details-of-spacexs-starlink-internet-service-beta-program/) , [Starlink] (https://www.starlink.com/) ). For the purposes of this question, commercial service must be non-beta.\n",
+    "# Forecasts": "488",
+    "# Forecasters": "99"
   },
   {
     "Title": "Between August 2020 and July 2021, will global land and ocean surface temperatures rise 1.5°C or more above the 20th century average for any single month?",
@@ -995,16 +1105,18 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "2%",
-    "# Forecasts": "258",
-    "# Forecasters": "129"
+    "Description": "Some expect the 1.5°C temperature threshold to be breached within the next five years, and recent predictions indicate any climate warming reprieve due to the global shutdown in the wake of COVID-19 may be temporary ( [BBC] (https://www.bbc.com/news/science-environment-53342806) , [World Meteorological Organization] (https://public.wmo.int/en/our-mandate/climate/wmo-statement-state-of-global-climate) , [BBC] (https://www.bbc.com/news/science-environment-45678338) ). The outcome will be determined using data provided by the National Oceanic and Atmospheric Administration's Global Climate Reports ( [NOAA] (https://www.ncdc.noaa.gov/sotc/) ). For June 2020, the global land and ocean surface temperature was 0.92°C above the 20th century average for June ( [NOAA - June 2020 Report] (https://www.ncdc.noaa.gov/sotc/global/202006) ).\nConfused? Check our  [FAQ] (https://www.gjopen.com/faq#question)  or  [ask us for help] (/cdn-cgi/l/email-protection#62010e03100b040b0103160b0d0c1122050d0d06081706050f070c164c010d0f5d111700080701165f33170711160b0d0c475052210e03100b040b0103160b0d0c) . To learn more about Good Judgment and Superforecasting,  [click here] (https://goodjudgment.com/) .\n",
+    "# Forecasts": "262",
+    "# Forecasters": "130"
   },
   {
     "Title": "Before 1 January 2022, will the U.S. Senate expand the scope of matters for which a filibuster cannot be used?",
     "URL": "https://www.gjopen.com/questions/1718-before-1-january-2022-will-the-u-s-senate-expand-the-scope-of-matters-for-which-a-filibuster-cannot-be-used",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "10%",
-    "# Forecasts": "544",
+    "Percentage": "",
+    "Description": "In April 2017, Senate Republicans eliminated the filibuster for the confirmation of Supreme Court Justices by changing the rules so that debate on nominees could be ended with a simple majority vote rather than a three-fifths majority ( [Reuters] (https://www.reuters.com/article/us-usa-court-gorsuch-idUSKBN17814Y) ). Whether the filibuster will be further eroded remains to be seen ( [The Atlantic] (https://www.theatlantic.com/politics/archive/2020/07/why-senate-filibuster-could-be-gone-2021/614278/) , [Brookings Institute] (https://www.brookings.edu/policy2020/votervital/what-is-the-senate-filibuster-and-what-would-it-take-to-eliminate-it/) ).\nConfused? Check our  [FAQ] (https://www.gjopen.com/faq#question)  or  [ask us for help] (/cdn-cgi/l/email-protection#d9bab5b8abb0bfb0bab8adb0b6b7aa99beb6b6bdb3acbdbeb4bcb7adf7bab6b4e6aaacbbb3bcbaade488acbcaaadb0b6b7fcebe99ab5b8abb0bfb0bab8adb0b6b7) . To learn more about Good Judgment and Superforecasting,  [click here] (https://goodjudgment.com/) .\n",
+    "# Forecasts": "546",
     "# Forecasters": "134"
   },
   {
@@ -1013,8 +1125,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "206",
-    "# Forecasters": "88"
+    "Description": "Legal liability for accidents involving self-driving vehicles and features allowing autonomous driving continue to evolve ( [Ars Technica] (https://arstechnica.com/cars/2020/06/tesla-driver-blames-autopilot-for-crash-into-police-car/) ,  [ABC News] (https://abcnews.go.com/Technology/wireStory/us-agency-eyes-fatal-crash-involving-driving-car-66374234) ,  [NY Times] (https://www.nytimes.com/2019/03/05/technology/uber-self-driving-car-arizona.html) ,  [Centre for International Governance Innovation] (https://www.cigionline.org/articles/who-responsible-when-autonomous-systems-fail) ). The charges for a firm or backup driver are not required to be related to the same accident for resolving this question.\nThis question is the longer-term companion of question  [#1695] (https://www.gjopen.com/questions/1695-between-10-july-and-31-december-2020-will-a-firm-or-paid-backup-driver-operating-a-self-driving-vehicle-face-criminal-charges-in-relation-to-an-accident-involving-a-self-driving-vehicle-in-the-u-s) . The questions are substantively the same, save for the relevant time period. While they are companions, they are independent questions and the resolution of one will not necessarily impact the other.\nNOTE 13 November 2020: For the purposes of this question, to \"face criminal charges\" is to be criminally charged, irrespective of any future scheduled trial. Charges filed in 2020 or earlier against a person or firm who/that continues to be criminally charged in 2021 or beyond would not count toward the resolution of this question (2021-2022) unless they/it were criminally charged in relation to a different criminal offense.\n",
+    "# Forecasts": "212",
+    "# Forecasters": "89"
   },
   {
     "Title": "How many new energy vehicles (NEVs) will be sold in China in 2021 and 2022 combined?",
@@ -1022,8 +1135,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "193",
-    "# Forecasters": "53"
+    "Description": "Amid the ongoing COVID-19 pandemic, the Chinese government announced in March 2020 that it would extend subsidies on NEVs through 2022, though at lower levels than in the past ( [Reuters] (https://www.reuters.com/article/us-china-autos-electric-subsidies/china-to-cut-new-energy-vehicle-subsidies-by-10-this-year-idUSKCN225177) ,  [Shine.cn] (https://www.shine.cn/biz/auto/2006089801/) ,  [CNBC] (https://www.cnbc.com/2020/05/04/electric-cars-take-the-spotlight-in-chinas-post-coronavirus-stimulus-plans.html) ,  [Inside EVs] (https://insideevs.com/news/428471/china-market-sales-may-2020-nev/) ). In 2019, NEV sales were 1.206 million ( [Caam.org] (http://www.caam.org.cn/chn/4/cate_154/con_5228367.html)  [in Chinese]). The outcome will be determined using data from the China Association of Automobile Manufacturers (CAAM) for 2020 (e.g.,  [Caam.org.cn - Automotive Statistics] (http://www.caam.org.cn/chn/21/cate_463/list_1.html) ,  [Caam.org.cn] (http://www.caam.org.cn/)  [in Chinese],  [Caam.org.cn] (http://www.caam.org.cn/english)  [in English],  [China Daily] (https://www.chinadaily.com.cn/a/202001/14/WS5e1cfea2a310128217270a2c.html) ).\nThis question is the longer-term companion of question  [#1697] (https://www.gjopen.com/questions/1697-how-many-new-energy-vehicles-nevs-will-be-sold-in-china-in-2020) . The questions are substantively the same, save for the relevant time period. While they are companions, they are independent questions and the resolution of one will not necessarily impact the other.\n",
+    "# Forecasts": "198",
+    "# Forecasters": "54"
   },
   {
     "Title": "How many public DC fast charge electric vehicle charging stations will be available in the United States by 31 December 2022?",
@@ -1031,8 +1145,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "186",
-    "# Forecasters": "40"
+    "Description": "The adoption of electric vehicles (EVs) is subject to a \"chicken and egg\" problem such that potential consumers are waiting for an extensive charging network and businesses are awaiting more electric cars on the roads to justify building more charging stations. This problem is especially relevant for DC fast charge stations that can fully charge the EV in less than 30 minutes ( [MY EV] (https://www.myev.com/research/buyers-sellers-advice/heres-what-you-need-to-know-about-dc-fast-charging) ). The outcome will be determined using data from the U.S. Department of Energy's Alternative Fuels Data Center on 31 December 2022 at 5:00PM ET ( [Alternative Fuels Data Center] (https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC) ). Data on public DC fast charge stations can be found by selecting the \"Advanced Filters\" tab.  First select \"Location\" on the left and set \"Country\" to be \"United States\" while keeping \"State/Territory\" to be \"All.\" Then select \"Fuel\" on the left. Under \"Filter by Fuel Type\" select \"Electric\" and set \"Charger types\" to be only \"DC Fast\" while keeping \"Connectors\" and \"Networks\" to be \"All.\"\n",
+    "# Forecasts": "191",
+    "# Forecasters": "41"
   },
   {
     "Title": "How many cases of COVID-19 will be reported by the Africa CDC as of 1 April 2021?",
@@ -1040,7 +1155,8 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "941",
+    "Description": "The full impact of the COVID-19 pandemic on the African continent, home to over 1.2 billion people, remains a topic of intense speculation ( [CNN] (https://www.cnn.com/2020/06/16/africa/africa-coronavirus-cases-prevention-intl/index.html) , [Scientific American] (https://www.scientificamerican.com/article/african-countries-scramble-to-ramp-up-testing-for-covid-19/) , [Lancet] (https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31237-X/fulltext) ). The outcome will be determined using cases data from the Africa Centres for Disease Control and Prevention (Africa CDC) Dashboard at 5:00PM ET on 1 April 2021 ( [Africa CDC] (https://africacdc.org/covid-19/) ).\nCheck our  [FAQ] (https://www.gjopen.com/faq#question)  or  [ask us for help] (/cdn-cgi/l/email-protection#0f6c636e7d6669666c6e7b6660617c4f6860606b657a6b68626a617b216c6062307c7a6d656a6c7b325e7a6a7c7b6660612a3d3f4c636e7d6669666c6e7b666061) . To learn more about Good Judgment and Superforecasting,  [click here] (https://goodjudgment.com/) .\n",
+    "# Forecasts": "958",
     "# Forecasters": "141"
   },
   {
@@ -1049,8 +1165,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "1156",
-    "# Forecasters": "379"
+    "Description": "Coronavirus concerns already forced the postponement of the 2020 Olympics and Paralympics to summer 2021 ( [ESPN] (https://www.espn.com/olympics/story/_/id/28946033/tokyo-olympics-officially-postponed-2021) , [Olympic Games] (https://tokyo2020.org/en/) , [Paralympic Games] (https://tokyo2020.org/en/paralympics/) ). Various concerns such as cost, vaccine availability, and international travel safety have some concerned about the rescheduled games taking place at all ( [BBC] (https://www.bbc.com/sport/olympics/52747797) ). Postponement(s) alone would not count.\nCheck our  [FAQ] (https://www.gjopen.com/faq#question)  or  [ask us for help] (/cdn-cgi/l/email-protection#aac9c6cbd8c3ccc3c9cbdec3c5c4d9eacdc5c5cec0dfcecdc7cfc4de84c9c5c795d9dfc8c0cfc9de97fbdfcfd9dec3c5c48f989ae9c6cbd8c3ccc3c9cbdec3c5c4) . To learn more about Good Judgment and Superforecasting,  [click here] (https://goodjudgment.com/) .\n",
+    "# Forecasts": "1170",
+    "# Forecasters": "381"
   },
   {
     "Title": "Between 1 January 2021 and 31 December 2022, will legislation enabling the creation of federal safety standards for autonomous vehicles (AVs) become law?",
@@ -1058,8 +1175,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "75%",
-    "# Forecasts": "220",
-    "# Forecasters": "105"
+    "Description": "Congress has yet to adopt legislation to create federal safety standards for the testing and/or use of AVs ( [The Hill] (https://thehill.com/policy/transportation/automobiles/472341-wheels-begin-to-turn-on-self-driving-car-legislation) ,  [Federation of American Scientists] (https://fas.org/sgp/crs/misc/R45985.pdf) ,  [Congress.gov (House Bill)] (https://www.congress.gov/bill/115th-congress/house-bill/3388) ,  [Congress.gov (Senate Bill)] (https://www.congress.gov/bill/115th-congress/senate-bill/1885) ). Legislators are renewing efforts the 116th Congress, though the COVID-19 pandemic has acted as a \"bump in the road\" ( [The Hill] (https://thehill.com/policy/technology/498863-action-on-driverless-cars-hits-speed-bump-as-congress-focuses-on-pandemic) ,  [Legal Reader] (https://www.legalreader.com/self-driving-cars-and-the-law/) ). The date the law and/or standards would take effect is immaterial.\nThis question is the longer-term companion of question #1658. The questions are substantively the same, save for the relevant time period. If the shorter-term question closes Yes, then this longer-term question will be voided.\nCheck our  [FAQ] (https://www.gjopen.com/faq#question)  or  [ask us for help] (/cdn-cgi/l/email-protection#e88b84899a818e818b899c8187869ba88f87878c829d8c8f858d869cc68b8785d79b9d8a828d8b9cd5b99d8d9b9c818786cddad8ab84899a818e818b899c818786) . To learn more about Good Judgment and Superforecasting,  [click here] (https://goodjudgment.com/) .\n",
+    "# Forecasts": "221",
+    "# Forecasters": "106"
   },
   {
     "Title": "Will there be a lethal confrontation between the national military forces, militia, and/or law enforcement personnel of the People's Republic of China and those of Brunei, Indonesia, Malaysia, the Philippines, Singapore, and/or Vietnam before 1 April 2021?",
@@ -1067,8 +1185,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "5%",
-    "# Forecasts": "884",
-    "# Forecasters": "406"
+    "Description": "Over the years, China has used various forces to project power toward its neighbors in and around the South China Sea ( [CNN] (https://www.cnn.com/2020/06/07/asia/china-malaysia-indonesia-south-china-sea-intl-hnk/index.html) , [Center for Strategic and International Studies] (https://amti.csis.org/maritime-claims-map/) , [Council on Foreign Relations] (https://www.cfr.org/global-conflict-tracker/conflict/territorial-disputes-south-china-sea) , [Diplomat] (https://thediplomat.com/2015/11/little-blue-men-doing-chinas-dirty-work-in-the-south-china-sea/) ). A lethal confrontation is one that results in one fatality for the military forces, militia, and/or law enforcement of either side.\nCheck our  [FAQ] (https://www.gjopen.com/faq#question)  or  [ask us for help] (/cdn-cgi/l/email-protection#c6a5aaa7b4afa0afa5a7b2afa9a8b586a1a9a9a2acb3a2a1aba3a8b2e8a5a9abf9b5b3a4aca3a5b2fb97b3a3b5b2afa9a8e3f4f685aaa7b4afa0afa5a7b2afa9a8) . To learn more about Good Judgment and Superforecasting,  [click here] (https://goodjudgment.com/) .\n",
+    "# Forecasts": "900",
+    "# Forecasters": "412"
   },
   {
     "Title": "How many total Model 3 and Model Y vehicles will Tesla deliver to customers in 2021 and 2022?",
@@ -1076,8 +1195,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "255",
-    "# Forecasters": "78"
+    "Description": "Adding to ongoing Model 3 car deliveries, Tesla began Model Y SUV deliveries ahead of schedule during the first quarter of 2020 ( [Reuters] (https://www.reuters.com/article/us-tesla-deliveries/tesla-sees-strong-model-y-production-deliveries-shares-rise-idUSKBN21K3A3) ). Combined deliveries of Model 3 and Model Y vehicles during Q1 2020 totaled 76,266 ( [Tesla] (https://ir.tesla.com/static-files/c1723af4-ffda-4881-ae12-b6f3c972b795) ). The outcome will be determined using Tesla's official quarterly updates once available, typically found here https://ir.tesla.com/financial-information/quarterly-results.\n",
+    "# Forecasts": "258",
+    "# Forecasters": "79"
   },
   {
     "Title": "How many total Fast Charge (&gt;22kW) public charging points for electric vehicles will be installed in the European Union by 31 December 2022?",
@@ -1085,8 +1205,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "249",
-    "# Forecasters": "70"
+    "Description": "The adoption of electric vehicles is subject to a \"chicken and egg\" problem where potential consumers want a more extensive charging network, but businesses want more electric cars on the roads to justify building those new charging stations ( [Smart Energy International] (https://www.smart-energy.com/industry-sectors/electric-vehicles/european-countries-with-fastest-ev-charger-adoption-revealed/) , [Reuters] (https://www.reuters.com/article/us-autoshow-geneva-carbon-explainer/explainer-why-automakers-are-on-a-drive-to-sell-electric-cars-in-europe-idUSKBN20Q1MM) ). Europe has gone from zero Fast Charger locations in 2011 to 15,136 as of 2019. This question will be suspended on 30 June 2021 and resolved using data from the European Alternative Fuels Observatory ( [EAFO] (https://www.eafo.eu/alternative-fuels/electricity/charging-infra-stats) ) for all of 2022, via the graph \"Normal and Fast Public Charging Points (2022)\" when the filter for \"Charger type\" is set to \"Fast (&gt;22kW)\" and the filters at the top of the page are set to \"European Union\" and \"2022\".\n",
+    "# Forecasts": "250",
+    "# Forecasters": "71"
   },
   {
     "Title": "Before 1 January 2023, how many major automakers will sell a self-driving passenger vehicle manufactured without a steering wheel?",
@@ -1094,17 +1215,19 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "360",
-    "# Forecasters": "204"
+    "Description": "Many automakers are planning to unveil more autonomous vehicles in the coming years ( [NHTSA] (https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety) , [U.S. News] (https://cars.usnews.com/cars-trucks/cars-that-are-almost-self-driving,%20https://www.mobileye.com/future-of-mobility/history-autonomous-driving/) ). For the purposes of this question, \"major automakers\" refers to any of the 50 motor vehicle manufacturers included by the International Organization of Motor Vehicle Manufacturers in its 2017 list ( [OICA] (http://www.oica.net/wp-content/uploads/World-Ranking-of-Manufacturers-1.pdf) ). This question will be suspended on 30 June 2021. Vehicles on sale solely for fixed routes (e.g., shuttles) would not count. Presales would not count.\nCheck our  [FAQ] (https://www.gjopen.com/faq#question)  or  [ask us for help] (/cdn-cgi/l/email-protection#a9cac5c8dbc0cfc0cac8ddc0c6c7dae9cec6c6cdc3dccdcec4ccc7dd87cac6c496dadccbc3cccadd94f8dcccdaddc0c6c78c9b99eac5c8dbc0cfc0cac8ddc0c6c7) . To learn more about Good Judgment and Superforecasting,  [click here] (https://goodjudgment.com/) .\n",
+    "# Forecasts": "361",
+    "# Forecasters": "205"
   },
   {
     "Title": "Between 1 January 2021 and 31 December 2022, will the European Union delay and/or relax the implementation and/or enforcement of any of its CO2 emission performance standards for new passenger cars and/or new light commercial vehicles?",
     "URL": "https://www.gjopen.com/questions/1620-between-1-january-2021-and-31-december-2022-will-the-european-union-delay-and-or-relax-the-implementation-and-or-enforcement-of-any-of-its-co2-emission-performance-standards-for-new-passenger-cars-and-or-new-light-commercial-vehicles",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "3%",
-    "# Forecasts": "171",
-    "# Forecasters": "85"
+    "Percentage": "2%",
+    "Description": "Due to impacts of the COVID-19 pandemic, the auto industry in the EU is seeking relief from CO2 emission performance standards regulations ( [European Automobile Manufacturers Association] (https://www.acea.be/news/article/covid-19-auto-sector-letter-to-von-der-leyen) ,  [Europa] (https://ec.europa.eu/clima/policies/transport/vehicles/regulation_en) ,  [Electrive] (https://www.electrive.com/2020/03/30/european-car-industry-lobby-groups-question-co2-targets-in-the-face-of-covid19/) ). For more information on EU CO2 emission performance standards, see  [REGULATION (EU) 2019/631] (https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0631) , particularly Article 4 and the annexes. The date a change would take effect is immaterial to the resolution of this question.\n",
+    "# Forecasts": "174",
+    "# Forecasters": "86"
   },
   {
     "Title": "What will be the 2022 industry-wide average cost of Li-ion batteries used in battery-powered electric vehicles?",
@@ -1112,8 +1235,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "232",
-    "# Forecasters": "91"
+    "Description": "Lowering the cost of battery packs through R&amp;D investments, manufacturing improvements, and economies of scale is a major consideration for bringing down the price of battery-powered electric vehicles (BEVs) and making them more competitive with gasoline-fueled internal combustion engines ( [Clean Technica] (https://cleantechnica.com/2020/02/12/teslas-advantage-with-its-battery-technology-low-cost/) ,  [Financial Times] (https://www.ft.com/content/8441929c-5e43-11ea-b0ab-339c2307bcd4) ). This question will be suspended on 30 June 2021 and resolved using the Mack Institute's analysis for 2022, which will replicate an approach for calculating the industry-wide average cost of Li-ion batteries published in a  [2015 Nature Climate Change study] (https://mediamanager.sei.org/documents/Publications/SEI-Nature-pre-pub-2015-falling-costs-battery-packs-BEVs.pdf) . The Mack Institute found that there was \"a 16% annual decline in the cost of battery packs between 2007 and 2019, and the industry-wide average cost of battery packs in 2019 was US$ 161 per kWh\" ( [The Mack Institute] (https://mackinstitute.wharton.upenn.edu/2020/electric-vehicle-battery-costs-decline/) ).\n",
+    "# Forecasts": "233",
+    "# Forecasters": "92"
   },
   {
     "Title": "What total percentage of global vehicle sales in 2022 will be battery electric vehicles (BEVs) and plug-in hybrid electric vehicles (PHEVs)? ",
@@ -1121,8 +1245,9 @@
     "Platform": "Good Judgment Open",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "350",
-    "# Forecasters": "142"
+    "Description": "Climate change and other environmental concerns continue to drive a greater focus on electric vehicles ( [Reuters] (https://www.reuters.com/article/us-autoshow-geneva-carbon-explainer/explainer-why-automakers-are-on-a-drive-to-sell-electric-cars-in-europe-idUSKBN20Q1MM) , [NASDAQ] (https://www.nasdaq.com/articles/oil-prices-are-tumbling-but-global-electric-vehicles-will-be-just-fine-says-ubs-2020-03-11) , [CSP] (https://www.cspdailynews.com/fuels/what-global-economic-slump-means-evs) , [IEA] (https://www.iea.org/reports/global-ev-outlook-2019) ). This question will be suspended on 30 June 2021 and the outcome will be determined using open source data provided by [EV-volumes.com] (http://www.ev-volumes.com/) for 2022, expected to be released in early 2023. The global BEV &amp; PHEV share for 2019 was 2.5% ( [EV-volumes.com] (http://www.ev-volumes.com/country/total-world-plug-in-vehicle-volumes/) ). In the event that the relevant data for 2022 are not available from EV-volumes.com in 2023, this question will be resolved using data from other credible automotive industry sources.\n",
+    "# Forecasts": "355",
+    "# Forecasters": "143"
   },
   {
     "Title": "Before 1 July 2021, will the Chilean government pass legislation that caps administrative fees and/or operating profits of the country's pension fund managers?",
@@ -1130,6 +1255,7 @@
     "Platform": "Good Judgment Open",
     "Binary question?": true,
     "Percentage": "1%",
+    "Description": "Amid large-scale economic protests, calls for reform of Chile’s pension system have grown ( [Financial Times] (https://www.ft.com/content/4f8107f8-0fd4-11ea-a7e6-62bf4f9e548a) , [AP] (https://apnews.com/31ab8e9f5b9a467abdda53616edc72c2) , [IPE] (https://www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/10018671.fullarticle) , [El Universal] (https://www.eluniversal.com.mx/mundo/diez-puntos-para-entender-el-sistema-de-pensiones-que-no-quieren-los-chilenos) [in Spanish]). A constitutional amendment to the same effect would count. Legislation enabling or delegating new regulatory authority to cap administrative fees and/or operating profits would count.\nPlease note that this question is a companion to Question #1417, which closes in 2020 ( [Question #1417] (https://www.gjopen.com/questions/1417) ). We will be analyzing the differences between forecasts with the different closing dates.\n",
     "# Forecasts": "255",
     "# Forecasters": "96"
   },
@@ -1138,8 +1264,9 @@
     "URL": "https://www.gjopen.com/questions/1412-before-1-july-2021-will-the-chilean-government-pass-legislation-nationalizing-private-pension-fund-assets",
     "Platform": "Good Judgment Open",
     "Binary question?": true,
-    "Percentage": "2%",
-    "# Forecasts": "286",
-    "# Forecasters": "129"
+    "Percentage": "1%",
+    "Description": "Amid large-scale economic protests, calls for the reform of Chile’s pension system have grown ( [Reuters] (https://www.reuters.com/article/us-chile-protests-pensions/chiles-fiery-anger-fueled-by-fears-of-poverty-in-old-age-idUSKBN1XB3U8) , [IPE] (https://www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/10018671.fullarticle) , [Economist] (https://www.economist.com/the-americas/2019/06/08/chile-tinkers-with-its-ground-breaking-pensions-system) , [Economist Intelligence Unit] (https://www.eiu.com/industry/article/1898259973/chiles-pension-reform-makes-progress/2019-07-23) , [Financial Times] (https://www.ft.com/content/4f8107f8-0fd4-11ea-a7e6-62bf4f9e548a) ). Examples of nationalization include, but are not limited to, the enactment of legislation compelling the divestiture or transfer of privately held pension funds to a public entity or the state, or a constitutional amendment to the same effect. The date or dates of actual asset nationalization would be immaterial.\nPlease note that this question is a companion to Question #1418, which closes in 2020 ( [Question #1418] (https://www.gjopen.com/questions/1418) ). We will be analyzing the differences between forecasts with the different closing dates.\n",
+    "# Forecasts": "288",
+    "# Forecasters": "130"
   }
 ]

@@ -1,6 +1,7 @@
 /* Imports */
 import axios from "axios"
 import fs from 'fs'
+import textVersion from "textversionjs"
 
 /* Definitions */
 let jsonEndPoint = 'https://www.metaculus.com/api2/questions/?page='
@@ -19,6 +20,15 @@ async function fetchMetaculusQuestions(page=1){
   //console.log(response)
   return response
 }
+
+async function fetchMetaculusQuestionDescription(slug){
+  let response = await axios({
+    method: 'get',
+    url: "https://www.metaculus.com" + slug
+  }).then(response => response.data)
+  return response
+}
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -31,7 +41,7 @@ export async function metaculus(){
   let metaculusQuestionsInit = await fetchMetaculusQuestions(1)
   let numQueries = Math.round(Number(metaculusQuestionsInit.count)/20)
   console.log(`Downloading... This might take a while. Total number of queries: ${numQueries}`)
-  for(let i = 1; i <= numQueries; i++){ // change numQueries to 10 if one want to just test
+  for(let i = 4; i <= numQueries; i++){ // change numQueries to 10 if one want to just test
     if (i%20 == 0){
       console.log("Sleeping for 5secs")
       await sleep(5000)
@@ -44,6 +54,12 @@ export async function metaculus(){
         (result.publish_time < now) && 
         (now < result.close_time)
       ){
+        //console.log(result)
+        let questionPage = await fetchMetaculusQuestionDescription(result.page_url)
+        let descriptionraw = questionPage.split(`<div class="question__content">`)[1]
+        let descriptionprocessed1 = descriptionraw.split("</div>")[0]
+        let descriptionprocessed2 = textVersion(descriptionprocessed1)
+        let description = descriptionprocessed2
         let isbinary = result.possibilities.type == "binary"  
         let interestingInfo = ({
           "Title": result.title,
@@ -51,16 +67,16 @@ export async function metaculus(){
           "Platform": "Metaculus",
           "Binary question?": isbinary,
           "Percentage": isbinary?(Number(result.community_prediction.full.q2)*100+"%"):"none",
+          "Description": description,
           "# Forecasts": result.number_of_predictions
-
           //"status": result.status,
           //"publish_time": result.publish_time,
           //"close_time": result.close_time,
           //"type": result.possibilities.type, // We want binary ones here.
           //"last_activity_time": result.last_activity_time,
         })
-        
         if(Number(result.number_of_predictions) >= 10){
+          console.log(interestingInfo)
           all_questions.push(interestingInfo)
         }
         

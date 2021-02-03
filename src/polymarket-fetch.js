@@ -71,7 +71,8 @@ async function fetch_all(){
     combinedObj[addressLowerCase] = {
       title: info.question,
       url: "https://polymarket.com/market/" + info.slug, 
-      address: address
+      address: address,
+      description: info.description
     }
   }
   for(let data of allData){
@@ -89,8 +90,9 @@ async function fetch_all(){
         URL: obj.url, 
         Platform: "PolyMarket",
         "Binary question?" : isbinary,
-        "Percentage": isbinary?(percentage.toFixed(4) + "%"):"none",
-        "# Forecasts": Number(data.tradesQuantity).toFixed(2)
+        "Percentage": isbinary?(percentage.toFixed(2) + "%"):"none",
+        "Description": obj.description,
+        "# Forecasts": Number(data.tradesQuantity).toFixed(0)
         /*liquidity: liquidity.toFixed(2),
         tradevolume: tradevolume.toFixed(2),
         address: obj.address*/

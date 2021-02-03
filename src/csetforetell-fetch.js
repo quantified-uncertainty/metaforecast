@@ -1,6 +1,7 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
+import textVersion from "textversionjs"
 
 /* Definitions */
 let htmlEndPoint = 'https://www.cset-foretell.com/questions?page='
@@ -62,6 +63,17 @@ async function fetchStats(questionUrl, cookie){
     percentage = crowdpercentage
   }
   
+  // Description
+  let descriptionraw = response.split(`  <meta name="description" content="`)[1]
+  let descriptionprocessed1 = descriptionraw.split(`">`)[0]
+  let descriptionprocessed2 = descriptionprocessed1.replace(">", "")
+  let descriptionprocessed3 = descriptionprocessed2.replace("To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.", ``)
+  let descriptionprocessed4=descriptionprocessed3.replaceAll("\r\n\r\n", "\n")
+  let descriptionprocessed5=descriptionprocessed4.replaceAll("\n\n", "\n")  
+  let descriptionprocessed6=descriptionprocessed5.replaceAll("&quot;", `"`)
+  let descriptionprocessed7=descriptionprocessed6.replaceAll("&#39;", "'")
+  let descriptionprocessed8=textVersion(descriptionprocessed7)
+  let description = descriptionprocessed8
   // Number of forecasts
   let numforecasts = response.split("prediction_sets_count&quot;:")[1].split(",")[0]
   //console.log(numforecasts)
@@ -74,7 +86,8 @@ async function fetchStats(questionUrl, cookie){
     "Binary question?": isbinary,
     "Percentage": percentage,
     "# Forecasts": numforecasts,
-    "# Forecasters": numforecasters
+    "# Forecasters": numforecasters,
+    "Description": description
   }
   
   return result
