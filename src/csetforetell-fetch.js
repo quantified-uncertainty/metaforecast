@@ -2,6 +2,7 @@
 import fs from 'fs'
 import axios from "axios"
 import textVersion from "textversionjs"
+import {getstars} from "./stars.js"
 
 /* Definitions */
 let htmlEndPoint = 'https://www.cset-foretell.com/questions?page='
@@ -87,7 +88,8 @@ async function fetchStats(questionUrl, cookie){
     "Percentage": percentage,
     "# Forecasts": numforecasts,
     "# Forecasters": numforecasters,
-    "Description": description
+    "Description": description,
+    "Stars": numforecasts>100? getstars(2):getstars(1)
   }
   
   return result

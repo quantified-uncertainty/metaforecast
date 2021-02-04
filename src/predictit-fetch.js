@@ -2,6 +2,7 @@
 import fs from 'fs'
 import axios from "axios"
 import textVersion from "textversionjs"
+import {getstars} from "./stars.js"
 
 /* Support functions */
 async function fetchmarkets(){
@@ -44,7 +45,8 @@ export async function predictit(){
       Platform: "PredictIt",
       "Binary question?": isbinary,
       "Percentage": isbinary? Number(Number(market.contracts[0].lastTradePrice)*100).toFixed(0)+"%" : "none",
-      "Description": description
+      "Description": description,
+      "Stars": getstars(2)
       //"qualityindicators": {}
     })
     console.log(obj)

@@ -2,6 +2,7 @@
 import axios from "axios"
 import fs from 'fs'
 import textVersion from "textversionjs"
+import {getstars} from "./stars.js"
 
 /* Definitions */
 let jsonEndPoint = 'https://www.metaculus.com/api2/questions/?page='
@@ -68,7 +69,8 @@ export async function metaculus(){
           "Binary question?": isbinary,
           "Percentage": isbinary?(Number(result.community_prediction.full.q2)*100+"%"):"none",
           "Description": description,
-          "# Forecasts": result.number_of_predictions
+          "# Forecasts": result.number_of_predictions,
+          "Stars": result.number_of_predictions > 300? getstars(4):(result.number_of_predictions > 100? getstars(3): getstars(2))
           //"status": result.status,
           //"publish_time": result.publish_time,
           //"close_time": result.close_time,

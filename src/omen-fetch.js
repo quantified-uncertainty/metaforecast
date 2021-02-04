@@ -1,6 +1,7 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
+import {getstars} from "./stars.js"
 
 /* Definitions */
 let graphQLendpoint = 'https://api.thegraph.com/subgraphs/name/protofire/omen'
@@ -63,7 +64,8 @@ async function fetch_all(){
         "Binary question?" : isbinary,
         marginalPrices: data.outcomeTokenMarginalPrices,
         "Percentage": isbinary?(percentage.toFixed(4) + "%"):"none",
-        "Description": ""
+        "Description": "",
+        "Stars": getstars(1)
       }
       console.log(obj)
       results.push(obj)

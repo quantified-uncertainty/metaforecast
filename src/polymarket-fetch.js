@@ -1,9 +1,10 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
+import {getstars} from "./stars.js"
 
 /* Definitions */
-let graphQLendpoint = "https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
+let graphQLendpoint = "https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
 let units = 10**6
 
 /* Support functions
@@ -92,7 +93,8 @@ async function fetch_all(){
         "Binary question?" : isbinary,
         "Percentage": isbinary?(percentage.toFixed(2) + "%"):"none",
         "Description": obj.description,
-        "# Forecasts": Number(data.tradesQuantity).toFixed(0)
+        "# Forecasts": Number(data.tradesQuantity).toFixed(0),
+        "Stars": getstars(2)
         /*liquidity: liquidity.toFixed(2),
         tradevolume: tradevolume.toFixed(2),
         address: obj.address*/

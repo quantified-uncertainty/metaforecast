@@ -2,6 +2,7 @@
 import fs from 'fs'
 import axios from "axios"
 import textVersion from "textversionjs"
+import {getstars} from "./stars.js"
 
 /* Definitions */
 let hypermindEnpoint1 = 'https://predict.hypermind.com/dash/jsx.json'
@@ -108,7 +109,8 @@ export async function hypermind(){
         Platform: "Hypermind",
         "Binary question?" : (res.otcms.length==2),
         "Percentage": (res.otcms.length==2) ? Number(res.otcms[0].price).toFixed(2) +"%" : "none",
-        "Description": description
+        "Description": description,
+        "Stars": getstars(3)
       })
     
     })
@@ -131,7 +133,8 @@ export async function hypermind(){
     Platform: "Hypermind",
     Description: description,
     "Binary question?" : false,
-    "Percentage": "none"
+    "Percentage": "none",
+    "Stars": getstars(3)
   })
   })
   
@@ -151,7 +154,8 @@ export async function hypermind(){
       Platform: "Hypermind",
       "Description": description,
       "Binary question?" : false,
-      "Percentage": "none"
+      "Percentage": "none",
+      "Stars": getstars(3)
     })
   })
   

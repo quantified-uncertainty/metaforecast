@@ -2,6 +2,7 @@
 import fs from 'fs'
 import axios from "axios"
 import textVersion from "textversionjs"
+import {getstars} from "./stars.js"
 
 /* Definitions */
 let htmlEndPoint = 'https://www.gjopen.com/questions?page='
@@ -85,7 +86,8 @@ async function fetchStats(questionUrl, cookie){
     "Percentage": percentage,
     "Description": description, 
     "# Forecasts": numforecasts,
-    "# Forecasters": numforecasters
+    "# Forecasters": numforecasters,
+    "Stars": numforecasts>100?getstars(3):getstars(2)
   }
   return result
 }

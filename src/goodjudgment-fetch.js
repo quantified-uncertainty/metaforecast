@@ -2,6 +2,7 @@
 import axios from "axios"
 import fs from "fs"
 import textVersion from "textversionjs"
+import {getstars} from "./stars.js"
 
 /* Definitions */
 let endpoints = ["https://goodjudgment.io/superforecasts/", "https://goodjudgment.io/economist/"]
@@ -47,7 +48,8 @@ export async function goodjudgment(){
           "Platform": "Good Judgment",
           "Binary question?": false,
           "Percentage": "none",
-          "Description": description
+          "Description": description,
+          "Stars": getstars(4)
       })
       results.push(standardObj)
 

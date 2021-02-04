@@ -5,15 +5,17 @@
     "Platform": "Hypermind",
     "Binary question?": true,
     "Percentage": "21.82%",
-    "Description": "\n"
+    "Description": "\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "Will Kamala Harris be the first woman to become president of the United States?",
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=USA",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "63.89%",
-    "Description": "This question will settle when a woman becomes president of the United States of America.\n"
+    "Percentage": "71.00%",
+    "Description": "This question will settle when a woman becomes president of the United States of America.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "At the 2021 Tokyo Olympics, will the USA earn more medals than they ever did during Obama's presidency (121)?",
@@ -21,7 +23,8 @@
     "Platform": "Hypermind",
     "Binary question?": true,
     "Percentage": "35.00%",
-    "Description": "While Barack Obama was president, the United States won: - 121 medals in 2016 - 104 medals in 2012 - 112 medals in 2008 24/01/2021: If the Tokyo Olympics are canceled in 2021, this question will be resolved according to the medals obtained at the next Olympics.\n"
+    "Description": "While Barack Obama was president, the United States won: - 121 medals in 2016 - 104 medals in 2012 - 112 medals in 2008 24/01/2021: If the Tokyo Olympics are canceled in 2021, this question will be resolved according to the medals obtained at the next Olympics.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In 2021, will Joe Biden invoke the Insurrection Act?",
@@ -29,7 +32,8 @@
     "Platform": "Hypermind",
     "Binary question?": true,
     "Percentage": "5.00%",
-    "Description": "The Insurrection Act is a United States federal law that empowers the President of the United States to deploy U.S. military and federalized National Guard troops within the United States in particular circumstances, such as to suppress civil disorder, insurrection and rebellion. See: [https://en.wikipedia.org/wiki/Insurrection_Act_of_1807] (https://en.wikipedia.org/wiki/Insurrection_Act_of_1807) \n"
+    "Description": "The Insurrection Act is a United States federal law that empowers the President of the United States to deploy U.S. military and federalized National Guard troops within the United States in particular circumstances, such as to suppress civil disorder, insurrection and rebellion. See: [https://en.wikipedia.org/wiki/Insurrection_Act_of_1807] (https://en.wikipedia.org/wiki/Insurrection_Act_of_1807) \n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "Who will be elected president of France in 2022?",
@@ -37,7 +41,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "\n"
+    "Description": "\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "Who will compete in the second round of the French presidential election?",
@@ -45,7 +50,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "The French presidential election is scheduled in the spring of 2022. In this question, \"Le Pen\" refers to Marine Le pen, not to her niece Marion Marechal Le Pen.\n"
+    "Description": "The French presidential election is scheduled in the spring of 2022. In this question, \"Le Pen\" refers to Marine Le pen, not to her niece Marion Marechal Le Pen.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In France, when will the first round of the regional elections take place?",
@@ -53,7 +59,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "\n"
+    "Description": "\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In France, when will the 7 day average of new confirmed cases of Covid-19 fall back below 5,000?",
@@ -61,7 +68,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "This question will be settled according to the numbers published by OurWorldInData here: [https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World] (https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World) \n"
+    "Description": "This question will be settled according to the numbers published by OurWorldInData here: [https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World] (https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World) \n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "At the 2021 Tokyo Olympics, will Japan or France earn more medals?",
@@ -69,7 +77,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "24/01/2021: If the Tokyo Olympics are cancelled, or if they take place elsewhere than in Japan, the shares will be paid out at the following prices: France = 23 H Japan = 74 H Same = 3 H\n"
+    "Description": "24/01/2021: If the Tokyo Olympics are cancelled, or if they take place elsewhere than in Japan, the shares will be paid out at the following prices: France = 23 H Japan = 74 H Same = 3 H\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "Following the next parliamentary elections win Morocco, who will succeed Saad-Eddine El Othmani as prime minister?",
@@ -77,7 +86,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "Parliamentary elections are scheduled in September 2021. The PJD (Justice and Development Party) has been in power for the last ten years. Shall the party be renamed or splinter before the elections, any personality issued for its ranks before the renaming or split shall still be considered \"from PJD\".\n"
+    "Description": "Parliamentary elections are scheduled in September 2021. The PJD (Justice and Development Party) has been in power for the last ten years. Shall the party be renamed or splinter before the elections, any personality issued for its ranks before the renaming or split shall still be considered \"from PJD\".\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In Niger, who will win the (February) 2021 presidential election?",
@@ -85,7 +95,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "The second round of the presidential election is scheduled on February 21, 2021.\n"
+    "Description": "The second round of the presidential election is scheduled on February 21, 2021.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In 2021, will Faustin-Archange Touadéra lose power in the Central African Republic?",
@@ -93,7 +104,8 @@
     "Platform": "Hypermind",
     "Binary question?": true,
     "Percentage": "8.00%",
-    "Description": "Shares of the correct outcome will be worth 100&Hopf; while the other will be worthless (0&Hopf;). Touadéra, president of the Central African Republic, will be deemed to have lost power in the following cases: 1) death; 2) imprisonment, house arrest, or capture by hostile forces for at least 48 hours; 3) resignation; 4) been stripped of his office and/or replaced by formal government, judicial, or electorate action; 5) fled the country, gone into exile, or disappeared entirely from public view such that it is unclear whether he is alive or residing within his country; 6) been deemed in a prolonged state of mental incapacitation. In the first four situations, the question will close immediately; for options 5 and 6, we will observe a two-week waiting period beginning when the circumstance is first reported in the media, then judge the date of power-loss retroactively. However, if 31 December 2021, the question's expiry date, falls within the 2-week waiting period for options 5 or 6, we will consider that Touadéra has lost power before the end of the year (local time).\n"
+    "Description": "Shares of the correct outcome will be worth 100&Hopf; while the other will be worthless (0&Hopf;). Touadéra, president of the Central African Republic, will be deemed to have lost power in the following cases: 1) death; 2) imprisonment, house arrest, or capture by hostile forces for at least 48 hours; 3) resignation; 4) been stripped of his office and/or replaced by formal government, judicial, or electorate action; 5) fled the country, gone into exile, or disappeared entirely from public view such that it is unclear whether he is alive or residing within his country; 6) been deemed in a prolonged state of mental incapacitation. In the first four situations, the question will close immediately; for options 5 and 6, we will observe a two-week waiting period beginning when the circumstance is first reported in the media, then judge the date of power-loss retroactively. However, if 31 December 2021, the question's expiry date, falls within the 2-week waiting period for options 5 or 6, we will consider that Touadéra has lost power before the end of the year (local time).\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In 2021, will Abdelmadjid Tebboune lose power in Algeria?",
@@ -101,15 +113,17 @@
     "Platform": "Hypermind",
     "Binary question?": true,
     "Percentage": "8.00%",
-    "Description": "Shares of the correct outcome will be worth 100&Hopf; while the other will be worthless (0&Hopf;). Tebboune, president of Algeria, will be deemed to have lost power in the following cases: 1) death; 2) imprisonment, house arrest, or capture by hostile forces for at least 48 hours; 3) resignation; 4) been stripped of his office and/or replaced by formal government, judicial, or electorate action; 5) fled the country, gone into exile, or disappeared entirely from public view such that it is unclear whether he is alive or residing within his country; 6) been deemed in a prolonged state of mental incapacitation. In the first four situations, the question will close immediately; for options 5 and 6, we will observe a two-week waiting period beginning when the circumstance is first reported in the media, then judge the date of power-loss retroactively. However, if 31 December 2021, the question's expiry date, falls within the 2-week waiting period for options 5 or 6, we will consider that Tebboune has lost power before the end of the year (local time).\n"
+    "Description": "Shares of the correct outcome will be worth 100&Hopf; while the other will be worthless (0&Hopf;). Tebboune, president of Algeria, will be deemed to have lost power in the following cases: 1) death; 2) imprisonment, house arrest, or capture by hostile forces for at least 48 hours; 3) resignation; 4) been stripped of his office and/or replaced by formal government, judicial, or electorate action; 5) fled the country, gone into exile, or disappeared entirely from public view such that it is unclear whether he is alive or residing within his country; 6) been deemed in a prolonged state of mental incapacitation. In the first four situations, the question will close immediately; for options 5 and 6, we will observe a two-week waiting period beginning when the circumstance is first reported in the media, then judge the date of power-loss retroactively. However, if 31 December 2021, the question's expiry date, falls within the 2-week waiting period for options 5 or 6, we will consider that Tebboune has lost power before the end of the year (local time).\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In January 2021, how many battle deaths will there be in the G5 Sahel countries?",
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "12.00%",
-    "Description": "This question will be judged according to the number of \"fatalities\" published by ACLED ( [http://www.acleddata.com] (http://www.acleddata.com) ) in the \"Battle\" category. A public dashboard with regular updates and historical data is available here: [https://acleddata.com/dashboard/#/dashboard] (https://acleddata.com/dashboard/#/dashboard) \n"
+    "Percentage": "8.00%",
+    "Description": "This question will be judged according to the number of \"fatalities\" published by ACLED ( [http://www.acleddata.com] (http://www.acleddata.com) ) in the \"Battle\" category. A public dashboard with regular updates and historical data is available here: [https://acleddata.com/dashboard/#/dashboard] (https://acleddata.com/dashboard/#/dashboard) \n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In Congo, who will win the (March) 2021 presidential election?",
@@ -117,7 +131,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "A presidential election is planned on march 21, 2021. It could also be pushed back to a later date in 2021, in which case it would just delay the resolution of this question.\n"
+    "Description": "A presidential election is planned on march 21, 2021. It could also be pushed back to a later date in 2021, in which case it would just delay the resolution of this question.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In Chad, who will win the (April) 2021 presidential election?",
@@ -125,7 +140,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "A presidential election is planned on April 11, 2021. It could also be pushed back to a later date in 2021, in which case it would just delay the resolution of this question.\n"
+    "Description": "A presidential election is planned on April 11, 2021. It could also be pushed back to a later date in 2021, in which case it would just delay the resolution of this question.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In Somalia, who will win the (Feb) 2021 presidential election? ",
@@ -133,7 +149,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "A presidential election is planned for February 2021. It could also be pushed back to a later date in 2021, in which case it would just delay the resolution of this question.\n"
+    "Description": "A presidential election is planned for February 2021. It could also be pushed back to a later date in 2021, in which case it would just delay the resolution of this question.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "When will worldwide commercial air traffic rise back above 100,000 flights per day?",
@@ -141,7 +158,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "This question will be settled according to the data published by [Flightradar24.com] (https://www.flightradar24.com/data/statistics) in the \"Number of commercial flights...\" chart.\n"
+    "Description": "This question will be settled according to the data published by [Flightradar24.com] (https://www.flightradar24.com/data/statistics) in the \"Number of commercial flights...\" chart.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In 2021, who will succeed Benjamin Netanyahu as prime minister of Israel?",
@@ -149,7 +167,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "Shares of the correct outcome will be worth 100ℍ, while the others will be worthless (0ℍ). Parliamentary elections are scheduled in March 2021.\n"
+    "Description": "Shares of the correct outcome will be worth 100ℍ, while the others will be worthless (0ℍ). Parliamentary elections are scheduled in March 2021.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In 2021, how much will the arctic sea ice shrink?",
@@ -157,7 +176,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "Shares of the correct outcome will be worth 100&Hopf; while the others will be worthless (0&Hopf;). \nFollow daily updates of the arctic sea ice shrinkage with <a target=_new href='http://nsidc.org/arcticseaicenews/charctic-interactive-sea-ice-graph/'>this link</a>\n"
+    "Description": "Shares of the correct outcome will be worth 100&Hopf; while the others will be worthless (0&Hopf;). \nFollow daily updates of the arctic sea ice shrinkage with <a target=_new href='http://nsidc.org/arcticseaicenews/charctic-interactive-sea-ice-graph/'>this link</a>\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "Who will succeed Angela Merkel as chancellor of Germany?",
@@ -165,7 +185,8 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "Parliamentary elections are scheduled in Germany at the end of September.\n"
+    "Description": "Parliamentary elections are scheduled in Germany at the end of September.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "When will the FDA approve a COVID-19 vaccine?",
@@ -173,15 +194,17 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "\n"
+    "Description": "\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "Which threshold will gold prices (per ounce) reach first? ",
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "42.57%",
-    "Description": "Shares of the correct outcome will be worth 100ℍ, while the other will be worthless (0ℍ).\nFollow godlier prices here: [https://www.monex.com/gold-prices/] (https://www.monex.com/gold-prices/) \n"
+    "Percentage": "39.00%",
+    "Description": "Shares of the correct outcome will be worth 100ℍ, while the other will be worthless (0ℍ).\nFollow godlier prices here: [https://www.monex.com/gold-prices/] (https://www.monex.com/gold-prices/) \n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "What will be the closing share price of GameStop (GME) on Feb. 26, 2021?",
@@ -189,39 +212,44 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "Follow GameStop's stock price here: [https://www.marketwatch.com/investing/stock/GME] (https://www.marketwatch.com/investing/stock/GME) \n"
+    "Description": "Follow GameStop's stock price here: [https://www.marketwatch.com/investing/stock/GME] (https://www.marketwatch.com/investing/stock/GME) \n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "Which threshold will the Dow Jones Industrial Average hit first?",
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "70.00%",
-    "Description": "This question starts on November 16, 2020, but there is no time limit on its resolution. It will be resolved as soon as the value of the Dow Jones index reaches or crosses either of the specified thresholds, even temporarily.\n"
+    "Percentage": "66.00%",
+    "Description": "This question starts on November 16, 2020, but there is no time limit on its resolution. It will be resolved as soon as the value of the Dow Jones index reaches or crosses either of the specified thresholds, even temporarily.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "Which threshold will the French index CAC 40 hit first?",
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "59.41%",
-    "Description": "This question starts on November 16, 2020, but there is no time limit on its resolution. It will be resolved as soon as the value of the CAC 40 index reaches or crosses either of the specified thresholds, even temporarily.\n"
+    "Percentage": "60.00%",
+    "Description": "This question starts on November 16, 2020, but there is no time limit on its resolution. It will be resolved as soon as the value of the CAC 40 index reaches or crosses either of the specified thresholds, even temporarily.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "Will the new Bond film \"No Time to Die\" be released in 2021?",
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "94.00%",
-    "Description": "On January 22, MGM pushed back the film's release to October 8, 2021... 23/01/21: It doesn't matter how the movie is released - online or in theaters - as long as it is via a distribution channel approved by MGM.\n"
+    "Percentage": "91.26%",
+    "Description": "On January 22, MGM pushed back the film's release to October 8, 2021... 23/01/21: It doesn't matter how the movie is released - online or in theaters - as long as it is via a distribution channel approved by MGM.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "In 2021, will the Olympic Games take place?",
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "73.53%",
-    "Description": "The Olympics Games are currently scheduled to start in Japan in July 2021... This question will resolve as \"Yes\" if the Olympic Games take place anywhere at anytime in 2021.\n"
+    "Percentage": "67.00%",
+    "Description": "The Olympics Games are currently scheduled to start in Japan in July 2021... This question will resolve as \"Yes\" if the Olympic Games take place anywhere at anytime in 2021.\n",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "What will be the year-over-year growth rate of U.S. Nominal GDP in Q1 2021?",
@@ -229,7 +257,8 @@
     "Platform": "Hypermind",
     "Description": "This question compares 2021:Q1 to 2020:Q1. It should be read as: “What will be the Year-over-year growth rate in Q1 2021?\"\nThe 'answer' to this question will be based on the advance estimate of nominal GDP growth in 2021:Q1, which will be published in the spring of 2021.\nAll of the information used to calculate the growth rate will appear in the BEA website, Table 1.1.5, line 1:\nhttps://apps.bea.gov/iTable/iTable.cfm?reqid=19&amp;step=2#reqid=19&amp;step=2&amp;isuri=1&amp;1921=survey\nThe growth rate will be calculated using the latest estimates of both 2021:Q1 and 2020:Q1 nominal GDP:\nGrowth Rate (%) = 100 * (2021:Q1/2020:Q1 - 1)\nNote that the nominal GDP growth rate is expressed as a percentage (not decimal.) It is then rounded off to the nearest tenth of a percent.\nFinally, beware that the 2020:Q1 estimate that will be used in the calculation is the revised estimate that will be published along with the release of the 2021:Q1 estimate.\n",
     "Binary question?": false,
-    "Percentage": "none"
+    "Percentage": "none",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "What will be the year-over-year growth rate of U.S. Nominal GDP in Q4 2021?",
@@ -237,7 +266,8 @@
     "Platform": "Hypermind",
     "Description": "This question compares 2021:Q4 to 2020:Q4.\nThe 'answer' to this question will be based on the advance estimate of nominal GDP growth in 2021:Q4 which will be published in 2022:Q1.\nAll of the information used to calculate the growth rate will appear in the BEA website, Table 1.1.5, line 1:\nhttps://apps.bea.gov/iTable/iTable.cfm?reqid=19&amp;step=2#reqid=19&amp;step=2&amp;isuri=1&amp;1921=survey\nThe growth rate will be calculated using the latest estimates of both 2021:Q4 and 2020:Q4 nominal GDP:\nGrowth Rate (%) = 100 * (2021:Q4/2020:Q4 - 1)\nNote that the nominal GDP growth rate is expressed as a percentage (not decimal.) It is then rounded off to the nearest tenth of a percent.\nFinally, beware that the 2020:Q4 estimate that will be used in the calculation is the revised estimate that will be published along with the release of the 2021:Q4 estimate.\n",
     "Binary question?": false,
-    "Percentage": "none"
+    "Percentage": "none",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "What will be the year-over-year growth rate of U.S. Nominal GDP in Q4 2022?",
@@ -245,7 +275,8 @@
     "Platform": "Hypermind",
     "Description": "This question compares 2022:Q4 to 2021:Q4. \nThe 'answer' to this question will be based on the advance estimate of nominal GDP growth in 2022:Q4, which will be published in 2023:Q1.\nAll of the information used to calculate the growth rate will appear in the BEA website, Table 1.1.5, line 1:\nhttps://apps.bea.gov/iTable/iTable.cfm?reqid=19&amp;step=2#reqid=19&amp;step=2&amp;isuri=1&amp;1921=survey\nThe growth rate will be calculated using the latest estimates of both 2022:Q4 and 2021:Q4 nominal GDP:\nGrowth Rate (%) = 100 * (2022:Q4/2021:Q4 - 1)\nNote that the nominal GDP growth rate is expressed as a percentage (not decimal.) It is then rounded off to the nearest tenth of a percent.\nFinally, beware that the 2021:Q4 estimate that will be used in the calculation is the revised estimate that will be published along with the release of the 2022:Q14estimate.\n",
     "Binary question?": false,
-    "Percentage": "none"
+    "Percentage": "none",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "As of April 1, 2021, how many million individuals in the United-States will have received at least one dose of an FDA-approved Covid-19 vaccine?",
@@ -253,7 +284,8 @@
     "Platform": "Hypermind",
     "Description": "This question will be preferably* settled according to the data published on April 1, 2021 by the CDC here: [https://covid.cdc.gov/covid-data-tracker/#vaccinations] (https://covid.cdc.gov/covid-data-tracker/#vaccinations) .\nFor the purposes of this question, FDA “Emergency Use Authorization” or “compassionate use” counts as approval.\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on the source for this statistic used by Our World in Data. If Our World in Data does not track this statistic (as of Dec 26 2020 it does not), Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the FDA or credible reporting by major news publications.\n",
     "Binary question?": false,
-    "Percentage": "none"
+    "Percentage": "none",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "As of July 1, 2021, how many million individuals in the United-States will have received at least one dose of an FDA-approved Covid-19 vaccine?",
@@ -261,7 +293,8 @@
     "Platform": "Hypermind",
     "Description": "This question will be preferably* settled according to the data published on July 1, 2021 by the CDC here: [https://covid.cdc.gov/covid-data-tracker/#vaccinations] (https://covid.cdc.gov/covid-data-tracker/#vaccinations) .\nFor the purposes of this question, FDA “Emergency Use Authorization” or “compassionate use” counts as approval.\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on the source for this statistic used by Our World in Data. If Our World in Data does not track this statistic (as of Dec 26 2020 it does not), Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the FDA or credible reporting by major news publications.\n",
     "Binary question?": false,
-    "Percentage": "none"
+    "Percentage": "none",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "As of October 1, 2021, how many million individuals in the United-States will have received at least one dose of an FDA-approved Covid-19 vaccine?",
@@ -269,7 +302,8 @@
     "Platform": "Hypermind",
     "Description": "This question will be preferably* settled according to the data published on October 1, 2021 by the CDC here: [https://covid.cdc.gov/covid-data-tracker/#vaccinations] (https://covid.cdc.gov/covid-data-tracker/#vaccinations) .\nFor the purposes of this question, FDA “Emergency Use Authorization” or “compassionate use” counts as approval.\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on the source for this statistic used by Our World in Data. If Our World in Data does not track this statistic (as of Dec 26 2020 it does not), Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the FDA or credible reporting by major news publications.\n",
     "Binary question?": false,
-    "Percentage": "none"
+    "Percentage": "none",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "When will new confirmed COVID-19 deaths in the USA (7-day rolling average) first drop below 3 per million people?",
@@ -277,7 +311,8 @@
     "Platform": "Hypermind",
     "Description": "This question will be preferably* settled according to the data published by Our World in Data here: https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;country=USA&amp;region=World&amp;deathsMetric=true&amp;interval=smoothed&amp;perCapita=true&amp;smoothing=7&amp;pickerMetric=total_cases&amp;pickerSort=desc\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the CDC or WHO.\n",
     "Binary question?": false,
-    "Percentage": "none"
+    "Percentage": "none",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "When will new confirmed COVID-19 deaths in the USA (7-day rolling average) first drop below 1 per million people?",
@@ -285,7 +320,8 @@
     "Platform": "Hypermind",
     "Description": "This question will be preferably* settled according to the data published by Our World in Data here: https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;country=USA&amp;region=World&amp;deathsMetric=true&amp;interval=smoothed&amp;perCapita=true&amp;smoothing=7&amp;pickerMetric=total_cases&amp;pickerSort=desc\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the CDC or WHO.\n",
     "Binary question?": false,
-    "Percentage": "none"
+    "Percentage": "none",
+    "Stars": "★★★☆☆"
   },
   {
     "Title": "When will new confirmed COVID-19 deaths in the USA (7-day rolling average) first drop below 0.1 per million people?",
@@ -293,6 +329,7 @@
     "Platform": "Hypermind",
     "Description": "This question will be preferably* settled according to the data published by Our World in Data here: https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;country=USA&amp;region=World&amp;deathsMetric=true&amp;interval=smoothed&amp;perCapita=true&amp;smoothing=7&amp;pickerMetric=total_cases&amp;pickerSort=desc\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the CDC or WHO.\n",
     "Binary question?": false,
-    "Percentage": "none"
+    "Percentage": "none",
+    "Stars": "★★★☆☆"
   }
 ]

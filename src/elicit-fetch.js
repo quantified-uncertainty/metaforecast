@@ -4,6 +4,7 @@ import axios from "axios"
 import Papa from "papaparse"
 import open from "open"
 import readline from "readline"
+import {getstars} from "./stars.js"
 
 /* Definitions */
 let elicitEndpoint = "https://elicit.org/api/v1/binary-questions/csv?binaryQuestions.resolved=false&binaryQuestions.search=&binaryQuestions.sortBy=popularity&predictors=community"
@@ -60,7 +61,8 @@ function processArray(arrayQuestions){
         "Binary question?": true,
         "Percentage": percentage.toFixed(2) + "%",
         "# Forecasts": numforecasts,
-        "# Forecasters": numforecasters
+        "# Forecasters": numforecasters,
+        "Stars": getstars(1)
       })
       results.push(standardObj)
     }
