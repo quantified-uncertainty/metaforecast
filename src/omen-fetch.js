@@ -57,13 +57,14 @@ async function fetch_all(){
       let numYes = Number(data.outcomeTokenMarginalPrices[0])
       let numNo = Number(data.outcomeTokenMarginalPrices[1])
       let percentage = (numYes/(numYes+numNo))*100
+      let percentageFormatted = isbinary?(percentage.toFixed(0) + "%"):"none"
       let obj = {
         Title: data.question.title,
         URL: "https://omen.eth.link/#/"+data.id, 
         Platform: "Omen",
         "Binary question?" : isbinary,
         marginalPrices: data.outcomeTokenMarginalPrices,
-        "Percentage": isbinary?(percentage.toFixed(4) + "%"):"none",
+        "Percentage": percentageFormatted,
         "Description": "",
         "Stars": getstars(1)
       }

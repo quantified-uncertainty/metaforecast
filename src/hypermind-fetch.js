@@ -1,7 +1,7 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
-import textVersion from "textversionjs"
+import toMarkdown from "./toMarkdown.js"
 import {getstars} from "./stars.js"
 
 /* Definitions */
@@ -101,14 +101,16 @@ export async function hypermind(){
       let descriptionprocessed2 = descriptionprocessed1.replaceAll("<BR>", "\n")
       let descriptionprocessed3 = descriptionprocessed2.replace("%%en:", "")
       let descriptionprocessed4 = descriptionprocessed3.replace(`Shares of the correct outcome will be worth 100<sup>ℍ</sup>, while the others will be worthless (0<sup>ℍ</sup>).<p>`, "")
-      let descriptionprocessed5 = textVersion(descriptionprocessed4)
+      let descriptionprocessed5 = toMarkdown(descriptionprocessed4)
       let description = descriptionprocessed5 
+      
+      let percentage = (res.otcms.length==2) ? Number(res.otcms[0].price).toFixed(0) +"%" : "none"
       return ({
         Title: res.props.title.split("%%fr")[0].replace("%%en:", ""),
         URL: "https://predict.hypermind.com/dash/dash/dash.html?list="+slug,
         Platform: "Hypermind",
         "Binary question?" : (res.otcms.length==2),
-        "Percentage": (res.otcms.length==2) ? Number(res.otcms[0].price).toFixed(2) +"%" : "none",
+        "Percentage": percentage,
         "Description": description,
         "Stars": getstars(3)
       })
@@ -123,7 +125,7 @@ export async function hypermind(){
   let results2processed = results2.map(res => {
     //console.log(res.props.details)
     let descriptionraw = res.props.details.split("<hr size=1>")[0]
-    let descriptionprocessed1 = textVersion(descriptionraw)
+    let descriptionprocessed1 = toMarkdown(descriptionraw)
     let descriptionprocessed2 = descriptionprocessed1.split("![image]")[0]
     let description = descriptionprocessed2
     //console.log(description)
@@ -145,7 +147,7 @@ export async function hypermind(){
   //  console.log(results3)
   let results3processed = results3.map(res => {
     let descriptionraw = res.props.details.split("<hr size=1>")[0]
-    let descriptionprocessed1 = textVersion(descriptionraw)
+    let descriptionprocessed1 = toMarkdown(descriptionraw)
     let descriptionprocessed2 = descriptionprocessed1.split("![image]")[0]
     let description = descriptionprocessed2
     return({

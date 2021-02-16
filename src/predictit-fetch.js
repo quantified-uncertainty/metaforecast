@@ -1,7 +1,7 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
-import textVersion from "textversionjs"
+import toMarkdown from "./toMarkdown.js"
 import {getstars} from "./stars.js"
 
 /* Support functions */
@@ -36,15 +36,15 @@ export async function predictit(){
     let isbinary = market.contracts.length == 1;
     await sleep(3000*(1+Math.random()))
     let descriptionraw = await fetchmarketrules(market.id)
-    let descriptionprocessed1 = textVersion(descriptionraw)
+    let descriptionprocessed1 = toMarkdown(descriptionraw)
     let description= descriptionprocessed1
-    
+    let percentageFormatted = isbinary? Number(Number(market.contracts[0].lastTradePrice)*100).toFixed(0)+"%" : "none"
     let obj = ({
       Title: market["name"],
       URL: market.url,
       Platform: "PredictIt",
       "Binary question?": isbinary,
-      "Percentage": isbinary? Number(Number(market.contracts[0].lastTradePrice)*100).toFixed(0)+"%" : "none",
+      "Percentage": percentageFormatted,
       "Description": description,
       "Stars": getstars(2)
       //"qualityindicators": {}

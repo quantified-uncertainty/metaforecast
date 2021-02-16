@@ -86,12 +86,13 @@ async function fetch_all(){
       let tradevolume = (Number(data.collateralBuyVolume) + Number(data.collateralSellVolume))/units
       let liquidity =  Number(data.liquidityParameter)/units
       let percentage = Number(data.outcomeTokenPrices[0])*100
+      let percentageFormatted = isbinary?(percentage.toFixed(0) + "%"):"none"
       combinedObj[addressLowerCase] = {
         Title: obj.title,
         URL: obj.url, 
         Platform: "PolyMarket",
         "Binary question?" : isbinary,
-        "Percentage": isbinary?(percentage.toFixed(2) + "%"):"none",
+        "Percentage": percentageFormatted,
         "Description": obj.description,
         "# Forecasts": Number(data.tradesQuantity).toFixed(0),
         "Stars": getstars(2)

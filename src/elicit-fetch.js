@@ -59,7 +59,7 @@ function processArray(arrayQuestions){
         "URL": url,
         "Platform": "Elicit",
         "Binary question?": true,
-        "Percentage": percentage.toFixed(2) + "%",
+        "Percentage": percentage.toFixed(0) + "%",
         "# Forecasts": numforecasts,
         "# Forecasters": numforecasters,
         "Stars": getstars(1)

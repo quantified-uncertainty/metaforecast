@@ -1,7 +1,7 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
-import textVersion from "textversionjs"
+import toMarkdown from "./toMarkdown.js"
 import {getstars} from "./stars.js"
 
 /* Definitions */
@@ -59,7 +59,7 @@ async function fetchStats(questionUrl, cookie){
   if(isbinary){
     // Crowd percentage
     let htmlElements = response.split("\n")
-    let h3Element = htmlElements.filter(str => str.includes("h3"))[0]
+    let h3Element = htmlElements.filter(str => str.includes("<h3>"))[0]
     let crowdpercentage = h3Element.split(">")[1].split("<")[0]
     percentage = crowdpercentage
   }
@@ -73,7 +73,7 @@ async function fetchStats(questionUrl, cookie){
   let descriptionprocessed5=descriptionprocessed4.replaceAll("\n\n", "\n")  
   let descriptionprocessed6=descriptionprocessed5.replaceAll("&quot;", `"`)
   let descriptionprocessed7=descriptionprocessed6.replaceAll("&#39;", "'")
-  let descriptionprocessed8=textVersion(descriptionprocessed7)
+  let descriptionprocessed8=toMarkdown(descriptionprocessed7)
   let description = descriptionprocessed8
   // Number of forecasts
   let numforecasts = response.split("prediction_sets_count&quot;:")[1].split(",")[0]

@@ -8,7 +8,7 @@
       "0.9886301130345439673746235229155343",
       "0.01136988696545603262537647708446573"
     ],
-    "Percentage": "98.8630%",
+    "Percentage": "99%",
     "Description": "",
     "Stars": "★☆☆☆☆"
   },
@@ -18,10 +18,23 @@
     "Platform": "Omen",
     "Binary question?": true,
     "marginalPrices": [
-      "0.1086728608079395832263016792869373",
-      "0.8913271391920604167736983207130627"
+      "0.05619249869291096914111418771235427",
+      "0.9438075013070890308588858122876457"
     ],
-    "Percentage": "10.8673%",
+    "Percentage": "6%",
+    "Description": "",
+    "Stars": "★☆☆☆☆"
+  },
+  {
+    "Title": "Will GIP-5 pass? (GIP-5: Remove Gnosis Impact from the GnosisDAO Governance Process)",
+    "URL": "https://omen.eth.link/#/0x4a7ccee82790339756a044d7815126f242ab18cd",
+    "Platform": "Omen",
+    "Binary question?": true,
+    "marginalPrices": [
+      "0.5",
+      "0.5"
+    ],
+    "Percentage": "50%",
     "Description": "",
     "Stars": "★☆☆☆☆"
   },
@@ -34,7 +47,7 @@
       "0.4013812037799882539689575072876216",
       "0.5986187962200117460310424927123784"
     ],
-    "Percentage": "40.1381%",
+    "Percentage": "40%",
     "Description": "",
     "Stars": "★☆☆☆☆"
   },
@@ -63,7 +76,7 @@
       "0.5",
       "0.5"
     ],
-    "Percentage": "50.0000%",
+    "Percentage": "50%",
     "Description": "",
     "Stars": "★☆☆☆☆"
   },
@@ -76,20 +89,20 @@
       "0.8510322451182968590048070388296782",
       "0.1489677548817031409951929611703218"
     ],
-    "Percentage": "85.1032%",
+    "Percentage": "85%",
     "Description": "",
     "Stars": "★☆☆☆☆"
   },
   {
-    "Title": "What will be the outcome of the 2020 US Presidential Election for the office of President of the United States, where the winner is the one receiving the most votes from certified electors of the Electoral College, those votes having been officially counted by the United States Congress under VICE PRESIDENT MICHAEL PENCE on January 6, 2021 (per the Electoral Count Act of 1887)?",
-    "URL": "https://omen.eth.link/#/0xdbf41f1f2d28216eb4e76b9ed3856180c2daa479",
+    "Title": "Will GIP-5 pass? (GIP-5: Remove Gnosis Impact from the GnosisDAO Governance Process)",
+    "URL": "https://omen.eth.link/#/0xdad7da2870846ed40a48cc5485b10d56612a990e",
     "Platform": "Omen",
     "Binary question?": true,
     "marginalPrices": [
-      "0.9900000000000001225706801609666705",
-      "0.00999999999999987742931983903332947"
+      "0.5",
+      "0.5"
     ],
-    "Percentage": "99.0000%",
+    "Percentage": "50%",
     "Description": "",
     "Stars": "★☆☆☆☆"
   },
@@ -102,7 +115,7 @@
       "0.399999999999999999999976",
       "0.600000000000000000000024"
     ],
-    "Percentage": "40.0000%",
+    "Percentage": "40%",
     "Description": "",
     "Stars": "★☆☆☆☆"
   },
@@ -112,10 +125,10 @@
     "Platform": "Omen",
     "Binary question?": true,
     "marginalPrices": [
-      "0.1095186501966299113862061692110534",
-      "0.8904813498033700886137938307889466"
+      "0.09881741545424704776990330647246071",
+      "0.9011825845457529522300966935275393"
     ],
-    "Percentage": "10.9519%",
+    "Percentage": "10%",
     "Description": "",
     "Stars": "★☆☆☆☆"
   }

@@ -1,7 +1,7 @@
 /* Imports */
 import axios from "axios"
 import fs from 'fs'
-import textVersion from "textversionjs"
+import toMarkdown from "./toMarkdown.js"
 import {getstars} from "./stars.js"
 
 /* Definitions */
@@ -22,18 +22,35 @@ async function fetchMetaculusQuestions(page=1){
   return response
 }
 
-async function fetchMetaculusQuestionDescription(slug){
-  let response = await axios({
-    method: 'get',
-    url: "https://www.metaculus.com" + slug
-  }).then(response => response.data)
-  return response
-}
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+async function fetchMetaculusQuestionDescription(slug){
+  try{
+    let response = await axios({
+    method: 'get',
+      url: "https://www.metaculus.com" + slug
+    }).then(response => response.data)
+    return response
+  }catch(error){
+    console.log(`We encountered some error when attempting to fetch a metaculus page. Trying again`)
+    await sleep(10000)
+    try{
+      let response = await axios({
+      method: 'get',
+        url: "https://www.metaculus.com" + slug
+      }).then(response => response.data)
+      return response
+    }catch(error){
+      console.log(`We encountered some error when attempting to fetch a metaculus page.`)
+      console.log("Error", error)
+      throw "Giving up"
+    }
+  }
+
+}
 
 /* Body */
 
@@ -56,18 +73,20 @@ export async function metaculus(){
         (now < result.close_time)
       ){
         //console.log(result)
+        await sleep(1000)
         let questionPage = await fetchMetaculusQuestionDescription(result.page_url)
         let descriptionraw = questionPage.split(`<div class="question__content">`)[1]
         let descriptionprocessed1 = descriptionraw.split("</div>")[0]
-        let descriptionprocessed2 = textVersion(descriptionprocessed1)
+        let descriptionprocessed2 = toMarkdown(descriptionprocessed1)
         let description = descriptionprocessed2
         let isbinary = result.possibilities.type == "binary"  
+        let percentage = isbinary? ((Number(result.community_prediction.full.q2)*100).toFixed(0)+"%") : "none"
         let interestingInfo = ({
           "Title": result.title,
           "URL": "https://www.metaculus.com" + result.page_url,
           "Platform": "Metaculus",
           "Binary question?": isbinary,
-          "Percentage": isbinary?(Number(result.community_prediction.full.q2)*100+"%"):"none",
+          "Percentage": percentage,
           "Description": description,
           "# Forecasts": result.number_of_predictions,
           "Stars": result.number_of_predictions > 300? getstars(4):(result.number_of_predictions > 100? getstars(3): getstars(2))

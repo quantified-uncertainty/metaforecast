@@ -1,7 +1,7 @@
 /* Imports */
 import axios from "axios"
 import fs from "fs"
-import textVersion from "textversionjs"
+import toMarkdown from "./toMarkdown.js"
 import {getstars} from "./stars.js"
 
 /* Definitions */
@@ -10,7 +10,6 @@ let endpoints = ["https://goodjudgment.io/superforecasts/", "https://goodjudgmen
 /* Support functions */
 
 /* Body */
-
 export async function goodjudgment(){
   let results = []
   for(let endpoint of endpoints){
@@ -35,7 +34,7 @@ export async function goodjudgment(){
       let descriptionraw = question.split("BACKGROUND:")[1]
       //let descriptionprocessed1 = descriptionraw.replace(" Examples of Superforecaster commentary in italics", "")
       let descriptionprocessed1 = descriptionraw.split("SUPERFORECASTER COMMENTARY HIGHLIGHTS")[0]
-      let descriptionprocessed2 = textVersion(descriptionprocessed1)
+      let descriptionprocessed2 = toMarkdown(descriptionprocessed1)
       let descriptionprocessed3 = descriptionprocessed2.split("\n").filter(string => !string.includes("Examples of Superforecaster"))
       let descriptionprocessed4 = descriptionprocessed3.join("\n")
       let descriptionprocessed5 = descriptionprocessed4.replace("AT A GLANCE:\n", "")

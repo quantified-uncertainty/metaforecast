@@ -4,7 +4,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=USA",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "21.82%",
+    "Percentage": "3%",
     "Description": "\n",
     "Stars": "★★★☆☆"
   },
@@ -13,7 +13,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=USA",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "71.00%",
+    "Percentage": "72%",
     "Description": "This question will settle when a woman becomes president of the United States of America.\n",
     "Stars": "★★★☆☆"
   },
@@ -22,7 +22,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=USA",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "35.00%",
+    "Percentage": "34%",
     "Description": "While Barack Obama was president, the United States won: - 121 medals in 2016 - 104 medals in 2012 - 112 medals in 2008 24/01/2021: If the Tokyo Olympics are canceled in 2021, this question will be resolved according to the medals obtained at the next Olympics.\n",
     "Stars": "★★★☆☆"
   },
@@ -31,8 +31,8 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=USA",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "5.00%",
-    "Description": "The Insurrection Act is a United States federal law that empowers the President of the United States to deploy U.S. military and federalized National Guard troops within the United States in particular circumstances, such as to suppress civil disorder, insurrection and rebellion. See: [https://en.wikipedia.org/wiki/Insurrection_Act_of_1807] (https://en.wikipedia.org/wiki/Insurrection_Act_of_1807) \n",
+    "Percentage": "4%",
+    "Description": "The Insurrection Act is a United States federal law that empowers the President of the United States to deploy U.S. military and federalized National Guard troops within the United States in particular circumstances, such as to suppress civil disorder, insurrection and rebellion. See: [https://en.wikipedia.org/wiki/Insurrection_Act_of_1807](https://en.wikipedia.org/wiki/Insurrection_Act_of_1807) \n",
     "Stars": "★★★☆☆"
   },
   {
@@ -68,7 +68,7 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "This question will be settled according to the numbers published by OurWorldInData here: [https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World] (https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World) \n",
+    "Description": "This question will be settled according to the numbers published by OurWorldInData here: [https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World](https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World)\n",
     "Stars": "★★★☆☆"
   },
   {
@@ -90,6 +90,15 @@
     "Stars": "★★★☆☆"
   },
   {
+    "Title": "In the Ivory Coast, how many seats will the RHDP party of president Ouattara win in the March 2021 parliamentary elections?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none",
+    "Description": "The presidential party RHDP currently occupies 148 seats in the 255 seats assembly. An absolute majority requires 128 seats.\n",
+    "Stars": "★★★☆☆"
+  },
+  {
     "Title": "In Niger, who will win the (February) 2021 presidential election?",
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
     "Platform": "Hypermind",
@@ -103,7 +112,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "8.00%",
+    "Percentage": "8%",
     "Description": "Shares of the correct outcome will be worth 100&Hopf; while the other will be worthless (0&Hopf;). Touadéra, president of the Central African Republic, will be deemed to have lost power in the following cases: 1) death; 2) imprisonment, house arrest, or capture by hostile forces for at least 48 hours; 3) resignation; 4) been stripped of his office and/or replaced by formal government, judicial, or electorate action; 5) fled the country, gone into exile, or disappeared entirely from public view such that it is unclear whether he is alive or residing within his country; 6) been deemed in a prolonged state of mental incapacitation. In the first four situations, the question will close immediately; for options 5 and 6, we will observe a two-week waiting period beginning when the circumstance is first reported in the media, then judge the date of power-loss retroactively. However, if 31 December 2021, the question's expiry date, falls within the 2-week waiting period for options 5 or 6, we will consider that Touadéra has lost power before the end of the year (local time).\n",
     "Stars": "★★★☆☆"
   },
@@ -112,17 +121,8 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "8.00%",
+    "Percentage": "23%",
     "Description": "Shares of the correct outcome will be worth 100&Hopf; while the other will be worthless (0&Hopf;). Tebboune, president of Algeria, will be deemed to have lost power in the following cases: 1) death; 2) imprisonment, house arrest, or capture by hostile forces for at least 48 hours; 3) resignation; 4) been stripped of his office and/or replaced by formal government, judicial, or electorate action; 5) fled the country, gone into exile, or disappeared entirely from public view such that it is unclear whether he is alive or residing within his country; 6) been deemed in a prolonged state of mental incapacitation. In the first four situations, the question will close immediately; for options 5 and 6, we will observe a two-week waiting period beginning when the circumstance is first reported in the media, then judge the date of power-loss retroactively. However, if 31 December 2021, the question's expiry date, falls within the 2-week waiting period for options 5 or 6, we will consider that Tebboune has lost power before the end of the year (local time).\n",
-    "Stars": "★★★☆☆"
-  },
-  {
-    "Title": "In January 2021, how many battle deaths will there be in the G5 Sahel countries?",
-    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
-    "Platform": "Hypermind",
-    "Binary question?": true,
-    "Percentage": "8.00%",
-    "Description": "This question will be judged according to the number of \"fatalities\" published by ACLED ( [http://www.acleddata.com] (http://www.acleddata.com) ) in the \"Battle\" category. A public dashboard with regular updates and historical data is available here: [https://acleddata.com/dashboard/#/dashboard] (https://acleddata.com/dashboard/#/dashboard) \n",
     "Stars": "★★★☆☆"
   },
   {
@@ -158,7 +158,7 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "This question will be settled according to the data published by [Flightradar24.com] (https://www.flightradar24.com/data/statistics) in the \"Number of commercial flights...\" chart.\n",
+    "Description": "This question will be settled according to the data published by [Flightradar24.com](https://www.flightradar24.com/data/statistics) in the \"Number of commercial flights...\" chart.\n",
     "Stars": "★★★☆☆"
   },
   {
@@ -189,6 +189,15 @@
     "Stars": "★★★☆☆"
   },
   {
+    "Title": "In 2021, when will North Korea first launch a ballistic missile?",
+    "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=INT",
+    "Platform": "Hypermind",
+    "Binary question?": false,
+    "Percentage": "none",
+    "Description": "Only MRBM, IRBM, LRICBM and FRICBM will be considered, excluding SRBM short-range missiles.\n",
+    "Stars": "★★★☆☆"
+  },
+  {
     "Title": "When will the FDA approve a COVID-19 vaccine?",
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=COV",
     "Platform": "Hypermind",
@@ -202,8 +211,8 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "39.00%",
-    "Description": "Shares of the correct outcome will be worth 100ℍ, while the other will be worthless (0ℍ).\nFollow godlier prices here: [https://www.monex.com/gold-prices/] (https://www.monex.com/gold-prices/) \n",
+    "Percentage": "39%",
+    "Description": "Shares of the correct outcome will be worth 100ℍ, while the other will be worthless (0ℍ).\nFollow godlier prices here: [https://www.monex.com/gold-prices/](https://www.monex.com/gold-prices/)\n",
     "Stars": "★★★☆☆"
   },
   {
@@ -212,7 +221,7 @@
     "Platform": "Hypermind",
     "Binary question?": false,
     "Percentage": "none",
-    "Description": "Follow GameStop's stock price here: [https://www.marketwatch.com/investing/stock/GME] (https://www.marketwatch.com/investing/stock/GME) \n",
+    "Description": "Follow GameStop's stock price here: [https://www.marketwatch.com/investing/stock/GME](https://www.marketwatch.com/investing/stock/GME)\n",
     "Stars": "★★★☆☆"
   },
   {
@@ -220,7 +229,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "66.00%",
+    "Percentage": "90%",
     "Description": "This question starts on November 16, 2020, but there is no time limit on its resolution. It will be resolved as soon as the value of the Dow Jones index reaches or crosses either of the specified thresholds, even temporarily.\n",
     "Stars": "★★★☆☆"
   },
@@ -229,7 +238,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "60.00%",
+    "Percentage": "78%",
     "Description": "This question starts on November 16, 2020, but there is no time limit on its resolution. It will be resolved as soon as the value of the CAC 40 index reaches or crosses either of the specified thresholds, even temporarily.\n",
     "Stars": "★★★☆☆"
   },
@@ -238,7 +247,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "91.26%",
+    "Percentage": "94%",
     "Description": "On January 22, MGM pushed back the film's release to October 8, 2021... 23/01/21: It doesn't matter how the movie is released - online or in theaters - as long as it is via a distribution channel approved by MGM.\n",
     "Stars": "★★★☆☆"
   },
@@ -247,7 +256,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "67.00%",
+    "Percentage": "72%",
     "Description": "The Olympics Games are currently scheduled to start in Japan in July 2021... This question will resolve as \"Yes\" if the Olympic Games take place anywhere at anytime in 2021.\n",
     "Stars": "★★★☆☆"
   },
@@ -255,7 +264,7 @@
     "Title": "What will be the year-over-year growth rate of U.S. Nominal GDP in Q1 2021?",
     "URL": "https://prod.hypermind.com/ngdp/en/showcase/showcase.html",
     "Platform": "Hypermind",
-    "Description": "This question compares 2021:Q1 to 2020:Q1. It should be read as: “What will be the Year-over-year growth rate in Q1 2021?\"\nThe 'answer' to this question will be based on the advance estimate of nominal GDP growth in 2021:Q1, which will be published in the spring of 2021.\nAll of the information used to calculate the growth rate will appear in the BEA website, Table 1.1.5, line 1:\nhttps://apps.bea.gov/iTable/iTable.cfm?reqid=19&amp;step=2#reqid=19&amp;step=2&amp;isuri=1&amp;1921=survey\nThe growth rate will be calculated using the latest estimates of both 2021:Q1 and 2020:Q1 nominal GDP:\nGrowth Rate (%) = 100 * (2021:Q1/2020:Q1 - 1)\nNote that the nominal GDP growth rate is expressed as a percentage (not decimal.) It is then rounded off to the nearest tenth of a percent.\nFinally, beware that the 2020:Q1 estimate that will be used in the calculation is the revised estimate that will be published along with the release of the 2021:Q1 estimate.\n",
+    "Description": "This question compares 2021:Q1 to 2020:Q1. It should be read as: “What will be the Year-over-year growth rate in Q1 2021?\"\nThe 'answer' to this question will be based on the advance estimate of nominal GDP growth in 2021:Q1, which will be published in the spring of 2021.\nAll of the information used to calculate the growth rate will appear in the BEA website, Table 1.1.5, line 1:\n[https://apps.bea.gov/iTable/iTable.cfm?reqid=19&amp;step=2#reqid=19&amp;step=2&amp;isuri=1&amp;1921=survey](https://apps.bea.gov/iTable/iTable.cfm?reqid=19&amp;step=2#reqid=19&amp;step=2&amp;isuri=1&amp;1921=survey)\nThe growth rate will be calculated using the latest estimates of both 2021:Q1 and 2020:Q1 nominal GDP:\nGrowth Rate (%) = 100 * (2021:Q1/2020:Q1 - 1)\nNote that the nominal GDP growth rate is expressed as a percentage (not decimal.) It is then rounded off to the nearest tenth of a percent.\nFinally, beware that the 2020:Q1 estimate that will be used in the calculation is the revised estimate that will be published along with the release of the 2021:Q1 estimate.\n",
     "Binary question?": false,
     "Percentage": "none",
     "Stars": "★★★☆☆"
@@ -264,7 +273,7 @@
     "Title": "What will be the year-over-year growth rate of U.S. Nominal GDP in Q4 2021?",
     "URL": "https://prod.hypermind.com/ngdp/en/showcase/showcase.html",
     "Platform": "Hypermind",
-    "Description": "This question compares 2021:Q4 to 2020:Q4.\nThe 'answer' to this question will be based on the advance estimate of nominal GDP growth in 2021:Q4 which will be published in 2022:Q1.\nAll of the information used to calculate the growth rate will appear in the BEA website, Table 1.1.5, line 1:\nhttps://apps.bea.gov/iTable/iTable.cfm?reqid=19&amp;step=2#reqid=19&amp;step=2&amp;isuri=1&amp;1921=survey\nThe growth rate will be calculated using the latest estimates of both 2021:Q4 and 2020:Q4 nominal GDP:\nGrowth Rate (%) = 100 * (2021:Q4/2020:Q4 - 1)\nNote that the nominal GDP growth rate is expressed as a percentage (not decimal.) It is then rounded off to the nearest tenth of a percent.\nFinally, beware that the 2020:Q4 estimate that will be used in the calculation is the revised estimate that will be published along with the release of the 2021:Q4 estimate.\n",
+    "Description": "This question compares 2021:Q4 to 2020:Q4.\nThe 'answer' to this question will be based on the advance estimate of nominal GDP growth in 2021:Q4 which will be published in 2022:Q1.\nAll of the information used to calculate the growth rate will appear in the BEA website, Table 1.1.5, line 1:\n[https://apps.bea.gov/iTable/iTable.cfm?reqid=19&step=2#reqid=19&step=2&isuri=1&1921=survey](https://apps.bea.gov/iTable/iTable.cfm?reqid=19&step=2#reqid=19&step=2&isuri=1&1921=survey)\nThe growth rate will be calculated using the latest estimates of both 2021:Q4 and 2020:Q4 nominal GDP:\nGrowth Rate (%) = 100 * (2021:Q4/2020:Q4 - 1)\nNote that the nominal GDP growth rate is expressed as a percentage (not decimal.) It is then rounded off to the nearest tenth of a percent.\nFinally, beware that the 2020:Q4 estimate that will be used in the calculation is the revised estimate that will be published along with the release of the 2021:Q4 estimate.\n",
     "Binary question?": false,
     "Percentage": "none",
     "Stars": "★★★☆☆"
@@ -273,7 +282,7 @@
     "Title": "What will be the year-over-year growth rate of U.S. Nominal GDP in Q4 2022?",
     "URL": "https://prod.hypermind.com/ngdp/en/showcase/showcase.html",
     "Platform": "Hypermind",
-    "Description": "This question compares 2022:Q4 to 2021:Q4. \nThe 'answer' to this question will be based on the advance estimate of nominal GDP growth in 2022:Q4, which will be published in 2023:Q1.\nAll of the information used to calculate the growth rate will appear in the BEA website, Table 1.1.5, line 1:\nhttps://apps.bea.gov/iTable/iTable.cfm?reqid=19&amp;step=2#reqid=19&amp;step=2&amp;isuri=1&amp;1921=survey\nThe growth rate will be calculated using the latest estimates of both 2022:Q4 and 2021:Q4 nominal GDP:\nGrowth Rate (%) = 100 * (2022:Q4/2021:Q4 - 1)\nNote that the nominal GDP growth rate is expressed as a percentage (not decimal.) It is then rounded off to the nearest tenth of a percent.\nFinally, beware that the 2021:Q4 estimate that will be used in the calculation is the revised estimate that will be published along with the release of the 2022:Q14estimate.\n",
+    "Description": "This question compares 2022:Q4 to 2021:Q4. \nThe 'answer' to this question will be based on the advance estimate of nominal GDP growth in 2022:Q4, which will be published in 2023:Q1.\nAll of the information used to calculate the growth rate will appear in the BEA website, Table 1.1.5, line 1:\n[https://apps.bea.gov/iTable/iTable.cfm?reqid=19&step=2#reqid=19&step=2&isuri=1&1921=survey](https://apps.bea.gov/iTable/iTable.cfm?reqid=19&step=2#reqid=19&step=2&isuri=1&1921=survey)\nThe growth rate will be calculated using the latest estimates of both 2022:Q4 and 2021:Q4 nominal GDP:\nGrowth Rate (%) = 100 * (2022:Q4/2021:Q4 - 1)\nNote that the nominal GDP growth rate is expressed as a percentage (not decimal.) It is then rounded off to the nearest tenth of a percent.\nFinally, beware that the 2021:Q4 estimate that will be used in the calculation is the revised estimate that will be published along with the release of the 2022:Q14estimate.\n",
     "Binary question?": false,
     "Percentage": "none",
     "Stars": "★★★☆☆"
@@ -282,7 +291,7 @@
     "Title": "As of April 1, 2021, how many million individuals in the United-States will have received at least one dose of an FDA-approved Covid-19 vaccine?",
     "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
     "Platform": "Hypermind",
-    "Description": "This question will be preferably* settled according to the data published on April 1, 2021 by the CDC here: [https://covid.cdc.gov/covid-data-tracker/#vaccinations] (https://covid.cdc.gov/covid-data-tracker/#vaccinations) .\nFor the purposes of this question, FDA “Emergency Use Authorization” or “compassionate use” counts as approval.\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on the source for this statistic used by Our World in Data. If Our World in Data does not track this statistic (as of Dec 26 2020 it does not), Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the FDA or credible reporting by major news publications.\n",
+    "Description": "This question will be preferably* settled according to the data published on April 1, 2021 by the CDC here: [https://covid.cdc.gov/covid-data-tracker/#vaccinations](https://covid.cdc.gov/covid-data-tracker/#vaccinations).\nFor the purposes of this question, FDA “Emergency Use Authorization” or “compassionate use” counts as approval.\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on the source for this statistic used by Our World in Data. If Our World in Data does not track this statistic (as of Dec 26 2020 it does not), Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the FDA or credible reporting by major news publications.\n",
     "Binary question?": false,
     "Percentage": "none",
     "Stars": "★★★☆☆"
@@ -291,7 +300,7 @@
     "Title": "As of July 1, 2021, how many million individuals in the United-States will have received at least one dose of an FDA-approved Covid-19 vaccine?",
     "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
     "Platform": "Hypermind",
-    "Description": "This question will be preferably* settled according to the data published on July 1, 2021 by the CDC here: [https://covid.cdc.gov/covid-data-tracker/#vaccinations] (https://covid.cdc.gov/covid-data-tracker/#vaccinations) .\nFor the purposes of this question, FDA “Emergency Use Authorization” or “compassionate use” counts as approval.\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on the source for this statistic used by Our World in Data. If Our World in Data does not track this statistic (as of Dec 26 2020 it does not), Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the FDA or credible reporting by major news publications.\n",
+    "Description": "This question will be preferably* settled according to the data published on July 1, 2021 by the CDC here: [https://covid.cdc.gov/covid-data-tracker/#vaccinations](https://covid.cdc.gov/covid-data-tracker/#vaccinations).\nFor the purposes of this question, FDA “Emergency Use Authorization” or “compassionate use” counts as approval.\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on the source for this statistic used by Our World in Data. If Our World in Data does not track this statistic (as of Dec 26 2020 it does not), Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the FDA or credible reporting by major news publications.\n",
     "Binary question?": false,
     "Percentage": "none",
     "Stars": "★★★☆☆"
@@ -300,7 +309,7 @@
     "Title": "As of October 1, 2021, how many million individuals in the United-States will have received at least one dose of an FDA-approved Covid-19 vaccine?",
     "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
     "Platform": "Hypermind",
-    "Description": "This question will be preferably* settled according to the data published on October 1, 2021 by the CDC here: [https://covid.cdc.gov/covid-data-tracker/#vaccinations] (https://covid.cdc.gov/covid-data-tracker/#vaccinations) .\nFor the purposes of this question, FDA “Emergency Use Authorization” or “compassionate use” counts as approval.\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on the source for this statistic used by Our World in Data. If Our World in Data does not track this statistic (as of Dec 26 2020 it does not), Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the FDA or credible reporting by major news publications.\n",
+    "Description": "This question will be preferably* settled according to the data published on October 1, 2021 by the CDC here: [https://covid.cdc.gov/covid-data-tracker/#vaccinations](https://covid.cdc.gov/covid-data-tracker/#vaccinations).\nFor the purposes of this question, FDA “Emergency Use Authorization” or “compassionate use” counts as approval.\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on the source for this statistic used by Our World in Data. If Our World in Data does not track this statistic (as of Dec 26 2020 it does not), Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the FDA or credible reporting by major news publications.\n",
     "Binary question?": false,
     "Percentage": "none",
     "Stars": "★★★☆☆"
@@ -309,7 +318,7 @@
     "Title": "When will new confirmed COVID-19 deaths in the USA (7-day rolling average) first drop below 3 per million people?",
     "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
     "Platform": "Hypermind",
-    "Description": "This question will be preferably* settled according to the data published by Our World in Data here: https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;country=USA&amp;region=World&amp;deathsMetric=true&amp;interval=smoothed&amp;perCapita=true&amp;smoothing=7&amp;pickerMetric=total_cases&amp;pickerSort=desc\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the CDC or WHO.\n",
+    "Description": "This question will be preferably settled according to [the data published by Our World in Data](https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;country=USA&amp;region=World&amp;deathsMetric=true&amp;interval=smoothed&amp;perCapita=true&amp;smoothing=7&amp;pickerMetric=total_cases&amp;pickerSort=desc). \nShould this data source not be available in a timely manner to settle the question, Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the CDC or WHO.\n",
     "Binary question?": false,
     "Percentage": "none",
     "Stars": "★★★☆☆"
@@ -318,7 +327,7 @@
     "Title": "When will new confirmed COVID-19 deaths in the USA (7-day rolling average) first drop below 1 per million people?",
     "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
     "Platform": "Hypermind",
-    "Description": "This question will be preferably* settled according to the data published by Our World in Data here: https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;country=USA&amp;region=World&amp;deathsMetric=true&amp;interval=smoothed&amp;perCapita=true&amp;smoothing=7&amp;pickerMetric=total_cases&amp;pickerSort=desc\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the CDC or WHO.\n",
+    "Description": "This question will be preferably settled according to [the data published by Our World in Data](https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;country=USA&amp;region=World&amp;deathsMetric=true&amp;interval=smoothed&amp;perCapita=true&amp;smoothing=7&amp;pickerMetric=total_cases&amp;pickerSort=desc). \nShould this data source not be available in a timely manner to settle the question, Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the CDC or WHO.\n",
     "Binary question?": false,
     "Percentage": "none",
     "Stars": "★★★☆☆"
@@ -327,7 +336,16 @@
     "Title": "When will new confirmed COVID-19 deaths in the USA (7-day rolling average) first drop below 0.1 per million people?",
     "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
     "Platform": "Hypermind",
-    "Description": "This question will be preferably* settled according to the data published by Our World in Data here: https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;country=USA&amp;region=World&amp;deathsMetric=true&amp;interval=smoothed&amp;perCapita=true&amp;smoothing=7&amp;pickerMetric=total_cases&amp;pickerSort=desc\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the CDC or WHO.\n",
+    "Description": "This question will be preferably settled according to [the data published by Our World in Data](https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;country=USA&amp;region=World&amp;deathsMetric=true&amp;interval=smoothed&amp;perCapita=true&amp;smoothing=7&amp;pickerMetric=total_cases&amp;pickerSort=desc). \nShould this data source not be available in a timely manner to settle the question, Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the CDC or WHO.\n",
+    "Binary question?": false,
+    "Percentage": "none",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "When will at least 45 U.S. states (incl. Washington D.C.) have had no measures for workplace closures for a full week?",
+    "URL": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
+    "Platform": "Hypermind",
+    "Description": "This question will be settled according to the data compiled by the Oxford COVID-19 Government Response Tracker (OxCGRT), using the subnational data in [OxCGRT's \"primary\" dataset](https://github.com/OxCGRT/USA-covid-policy).* \nThe relevant data are [plotted and regularly updated](https://prod.hypermind.com/ngdp/en/OxCGRT.html) for easy reference. This question will resolve when the light-blue line (\"no measures\") rises at 45 or more in the \"7 days average\" version of the graph.\nIf OxCGRT's primary dataset stops reporting these data before the question resolves, Hypermind might rely on other sources it deems most reliable and relevant to settle the question, for example OxCGRT's [secondary dataset](https://github.com/OxCGRT/USA-covid-policy) on USA subnational data, or another source that reports a statistic comparable to OxCGRT's current concept of \"no measures for workplace closures.\" If no such source is available, this question might be suspended without ever being resolved.\n*For this question, \"no measures for workplace closures\" will correspond to a 0 for the \"C2_Workplace closing\" variable, as described in the dataset's [codebook](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md). For this question to resolve, it must be the case that for 7 days in a row, the \"C2_Workplace closing\" variable is set to 0 for at least 45 U.S. states (the STATE_TOTAL jurisdictions) or 44 U.S. states and Washington D.C..\n",
     "Binary question?": false,
     "Percentage": "none",
     "Stars": "★★★☆☆"

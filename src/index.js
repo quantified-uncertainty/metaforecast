@@ -12,12 +12,13 @@ import {polymarket} from "./polymarket-fetch.js"
 import {predictit} from "./predictit-fetch.js"
 import {omen} from "./omen-fetch.js"
 import {hypermind} from "./hypermind-fetch.js"
+import {smarkets} from "./smarkets-fetch.js"
 
 /* Definitions */
 let opts = {}
 let json2csvParser = new Parser({ transforms:  [transforms.flatten()]});
 //let parse = csv => json2csvParser.parse(csv);
-let sets = ["template", "elicit", "metaculus", "predictit", "polymarket", "csetforetell", "goodjudgment","goodjudmentopen", "omen", "hypermind"]
+let sets = ["template", "elicit", "metaculus", "predictit", "polymarket", "csetforetell", "goodjudgment","goodjudmentopen", "omen", "hypermind", "smarkets"]
 let suffix = "-questions"
 let locationData = "./data/"
 let sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -32,7 +33,7 @@ let getJSON = (set) => {
 }
 let csvfromjson = (json) => json2csvParser.parse(json)
 
-let writefile = (data, set, filetype = ".csv") => {
+let writefile = (data, set, suffix, filetype = ".csv") => {
   fs.writeFileSync(locationData + set + suffix + filetype, data)
 }
 
@@ -41,13 +42,13 @@ let coverttocsvandmerge = () => {
   for(let set of sets){
     let json = getJSON(set)
     let csv = csvfromjson(json)
-    writefile(csv, set)
+    writefile(csv, set, suffix)
     merged = merged.concat(json)
     //console.log(merged)
   }
-  writefile(JSON.stringify(merged, null, 2), "merged", ".json")
+  writefile(JSON.stringify(merged, null, 2), "metaforecasts", "", ".json")
   let mergedcsv = csvfromjson(merged)
-  writefile(mergedcsv, "merged")
+  writefile(mergedcsv, "metaforecasts", "")
   console.log("Done")
 
 }
@@ -94,9 +95,12 @@ let executeoption = async (option) => {
       predictit()
       break;
     case 10:
-      coverttocsvandmerge()
+      smarkets()
       break;
     case 11:
+      coverttocsvandmerge()
+      break;
+    case 12:
       await csetforetell()
       await elicit()
       await goodjudgment()
@@ -125,7 +129,8 @@ let whattodoMessage = `What do you want to do?
 [7]: Download predictions from omen
 [8]: Download predictions from polymarket
 [9]: Download predictions from predictit
-[10]: Convert predictions to csvs and merge them into one big file (requires previous steps)
-[11]: All of the above
+[10]: Download predictions from smarkets
+[11]: Convert predictions to csvs and merge them into one big file (requires previous steps)
+[12]: All of the above
 Choose one option, wisely: #`
 whattodo(whattodoMessage, executeoption)

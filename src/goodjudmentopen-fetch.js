@@ -1,8 +1,8 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
-import textVersion from "textversionjs"
 import {getstars} from "./stars.js"
+import toMarkdown from "./toMarkdown.js"
 
 /* Definitions */
 let htmlEndPoint = 'https://www.gjopen.com/questions?page='
@@ -59,15 +59,17 @@ async function fetchStats(questionUrl, cookie){
   if(isbinary){
     // Crowd percentage
     let htmlElements = response.split("\n")
-    let h3Element = htmlElements.filter(str => str.includes("h3"))[0]
+    let h3Element = htmlElements.filter(str => str.includes("<h3>"))[0]
+    console.log(h3Element)
     let crowdpercentage = h3Element.split(">")[1].split("<")[0]
     percentage = crowdpercentage
+    console.log(percentage)
   }
 
   // Description
   let descriptionraw = response.split(`<div id="question-background" class="collapse smb">`)[1]
   let descriptionprocessed1 = descriptionraw.split(`</div>`)[0]
-  let descriptionprocessed2= textVersion(descriptionprocessed1)
+  let descriptionprocessed2= toMarkdown(descriptionprocessed1)
   let descriptionprocessed3 = descriptionprocessed2.split("\n")
     .filter(string => !string.includes("Confused? Check our"))
     .join("\n")
