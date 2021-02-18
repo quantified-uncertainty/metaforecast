@@ -1,0 +1,862 @@
+[
+  {
+    "Title": "OFTW moves more than $2.5 million to GiveWell top charities in 2020.",
+    "URL": "https://www.givewell.org/about/impact/one-for-the-world/july-2018-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "25%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Conditioned on it still being active, OFTW moves more than $5 million to GiveWell top charities in 2023.",
+    "URL": "https://www.givewell.org/about/impact/one-for-the-world/july-2018-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "We renew our support to OFTW after one year.",
+    "URL": "https://www.givewell.org/about/impact/one-for-the-world/july-2018-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "75%",
+    "Description": "Resolution: September 2019",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "We renew our support to OFTW after two years.",
+    "URL": "https://www.givewell.org/about/impact/one-for-the-world/july-2018-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "50%",
+    "Description": "Resolution: September 2020",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Zusha! is recommended as a top charity by year-end 2017",
+    "URL": "https://www.givewell.org/charities/gui2de/january-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "35%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Zusha! appears more cost-effective than AMF",
+    "URL": "https://www.givewell.org/charities/gui2de/january-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "10%",
+    "Description": "Resolution: By year-end 2017",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Zusha! appears roughly as cost-effective as AMF",
+    "URL": "https://www.givewell.org/charities/gui2de/january-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "Resolution: By year-end 2017",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Zusha! appears less cost-effective than AMF (but is still a top charity recommendation)",
+    "URL": "https://www.givewell.org/charities/gui2de/january-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "10%",
+    "Description": "Resolution: By year-end 2017",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Good Ventures gives additional funding to Charity Science: Health in one year",
+    "URL": "https://www.givewell.org/charities/charity-science/charity-science-health/november-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "80%",
+    "Description": "Resolution: 2017",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Charity Science: Health becomes (or creates) a GiveWell top charity by giving season 2019",
+    "URL": "https://www.givewell.org/charities/charity-science/charity-science-health/november-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "We will recommend another GiveWell Incubation Grant to Charity Science Health by August 2018",
+    "URL": "https://www.givewell.org/charities/charity-science/charity-science-health/july-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "80%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Charity Science Health will be a GiveWell top charity by the end of 2019",
+    "URL": "https://www.givewell.org/charities/charity-science/charity-science-health/july-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Good Ventures gives Results for Development a second grant of approximately the same size in 12 months",
+    "URL": "https://www.givewell.org/charities/results-for-development/may-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "70%",
+    "Description": "Resolution: 2017",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Results for Development is a top charity by the end of 2019",
+    "URL": "https://www.givewell.org/charities/results-for-development/may-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "25%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": "New Incentives increases vaccination rates by >17 percentage points and this is detected by the RCT",
+    "URL": "https://www.givewell.org/charities/new-incentives/november-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "New Incentives increases vaccination rates by >17 percentage points and this is not detected by the RCT",
+    "URL": "https://www.givewell.org/charities/new-incentives/november-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "0.1%",
+    "Description": "Actual estimate was \"small probability, close to 0%\"",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "New Incentives increases vaccination rates by between 6 and 17 percentage points and this is detected by the RCT",
+    "URL": "https://www.givewell.org/charities/new-incentives/november-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "55%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "New Incentives increases vaccination rates by between 6 and 17 percentage points and this is either not detected by the RCT or is unclear",
+    "URL": "https://www.givewell.org/charities/new-incentives/november-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "New Incentives increases vaccination rates by <6 percentage points and we either conclude as much or are uncertain enough that we choose not to pursue New Incentives further",
+    "URL": "https://www.givewell.org/charities/new-incentives/november-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": "New Incentives increases vaccination rates by <6 percentage points and we falsely believe it is higher and do pursue New Incentives further",
+    "URL": "https://www.givewell.org/charities/new-incentives/november-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "5%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "After seeing the RCT results, we are significantly uncertain about whether or not to recommend New Incentives as a top charity",
+    "URL": "https://www.givewell.org/charities/new-incentives/november-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "20%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "GiveWell estimates that New Incentives is >3x as cost-effective as GiveDirectly",
+    "URL": "https://www.givewell.org/charities/new-incentives/november-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "50%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "GiveWell estimates that New Incentives is >2x as cost-effective as AMF:",
+    "URL": "https://www.givewell.org/charities/new-incentives/november-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "7%",
+    "Description": "Actual estimate was \"<10%\".",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "New Incentives becomes a top charity by November 2020",
+    "URL": "https://www.givewell.org/charities/new-incentives/november-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "50%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": "New Incentives is a top charity in 2016",
+    "URL": "https://www.givewell.org/charities/new-incentives/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "10%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "New Incentives is a top charity in 2017",
+    "URL": "https://www.givewell.org/charities/new-incentives/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "12.5%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "New Incentives is a top charity in 2018",
+    "URL": "https://www.givewell.org/charities/new-incentives/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Our 2017 cost-effectiveness estimate for New Incentives is at least twice as good as our 2017 estimate for unconditional cash transfers",
+    "URL": "https://www.givewell.org/charities/new-incentives/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "67%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Our 2017 cost-effectiveness estimate for New Incentives is at least five times as good as our 2017 estimate for unconditional cash transfers",
+    "URL": "https://www.givewell.org/charities/new-incentives/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": "Our 2017 cost-effectiveness estimate for New Incentives is at least ten times as good as our 2017 estimate for unconditional cash transfers",
+    "URL": "https://www.givewell.org/charities/new-incentives/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "5%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "New Incentives brings in at least $250,000 from a funder other than Good Ventures and the Lampert Family Foundation by the end of 2018",
+    "URL": "https://www.givewell.org/charities/new-incentives/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "25%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "New Incentives still operates in 2019",
+    "URL": "https://www.givewell.org/charities/new-incentives/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "40%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "We provide funding for an RCT of New Incentives' program",
+    "URL": "https://www.givewell.org/charities/new-incentives/april-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "70%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "New Incentives is a top charity at the end of 2019",
+    "URL": "https://www.givewell.org/charities/new-incentives/april-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "50%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": "No Lean Season is a top charity at the end of giving season 2017",
+    "URL": "https://www.givewell.org/charities/evidence-action/december-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "65%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "We find a significant error in Evidence Action's financial documents in 2018",
+    "URL": "https://www.givewell.org/charities/evidence-action/april-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "An Evidence Action Beta program other than No Lean Season becomes a top charity by the end of 2021",
+    "URL": "https://www.givewell.org/charities/evidence-action/april-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "25%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "The Deworm the World Initiative's room for more funding (including execution levels 1 and 2) exceeds $10 million as of November 2018",
+    "URL": "https://www.givewell.org/charities/evidence-action/april-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "60%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "GiveWell Incubation Grants provides at least $250,000 to an Evidence Action Beta program other than No Lean Season by the end of 2018",
+    "URL": "https://www.givewell.org/charities/evidence-action/april-2017-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "60%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": "No Lean Season (or a related organization) is a top charity in 2017",
+    "URL": "https://www.givewell.org/evidence-action/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "No Lean Season (or a related organization) is a top charity in 2018",
+    "URL": "https://www.givewell.org/evidence-action/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "20%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "No Lean Season (or a related organization) is a top charity in 2019",
+    "URL": "https://www.givewell.org/evidence-action/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "25%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Our 2016 cost-effectiveness estimate for No Lean Season is at least five times as good as cash transfers",
+    "URL": "https://www.givewell.org/evidence-action/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "50%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Our 2016 cost-effectiveness estimate for No Lean Season is less than twice as good as cash transfers",
+    "URL": "https://www.givewell.org/evidence-action/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Our 2016 cost-effectiveness estimate for No Lean Season is at least ten times as good as cash transfers",
+    "URL": "https://www.givewell.org/evidence-action/march-2016-grant#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "15%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Innovations for Poverty Action — Mindset Engagement in Cash Transfers. The study detects an effect that is too small relative to the cost of implementing the intervention for it to be worth scaling up.",
+    "URL": "https://www.givewell.org/international/charities/ipa/may-2016-grant#Risks_of_the_grant_and_internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "50%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Innovations for Poverty Action — Mindset Engagement in Cash Transfers. The study yields a result that we're not confident in",
+    "URL": "https://www.givewell.org/international/charities/ipa/may-2016-grant#Risks_of_the_grant_and_internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "25%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Innovations for Poverty Action — Mindset Engagement in Cash Transfers. The study detects an effect that would be worth scaling up, but we are unable to find an implementer interested in doing so",
+    "URL": "https://www.givewell.org/international/charities/ipa/may-2016-grant#Risks_of_the_grant_and_internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "7.5%",
+    "Description": "(for instance, if GiveDirectly were to decide not to incorporate the intervention because it is too time-intensive or diverts attention from other activities, or because GiveDirectly interprets the study's results differently than we do).",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Innovations for Poverty Action — Mindset Engagement in Cash Transfers. The intervention has no measurable effect, and we could have predicted this prior to the study by surveying the existing literature more thoroughly",
+    "URL": "https://www.givewell.org/international/charities/ipa/may-2016-grant#Risks_of_the_grant_and_internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "7.5%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "GiveWell’s best guess is that Evidence Action’s intervention increases coverage relative to the counterfactual in the first year of Phase 2 of the program by at least 4 percentage points",
+    "URL": "https://www.givewell.org/research/incubation-grants/december-2018-evidence-action-beta-iron-folic-acid-phase-2#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "60%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "GiveWell’s best guess is that Evidence Action’s intervention increases coverage relative to the counterfactual in the second year of Phase 2 of the program by at least 8 percentage points (cumulatively)",
+    "URL": "https://www.givewell.org/research/incubation-grants/december-2018-evidence-action-beta-iron-folic-acid-phase-2#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "50%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Evidence Action requests funding for Phase 3 of this program because it believes Phase 2 to have been successful",
+    "URL": "https://www.givewell.org/research/incubation-grants/december-2018-evidence-action-beta-iron-folic-acid-phase-2#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "75%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Estimates of anemia rates from the India National Family Health Survey in an average of 5 randomly chosen non-Evidence Action-supported states do not show anemia declining by more than 2 percentage points per year over the last 5 years (e.g., due to iron fortification or other changes)",
+    "URL": "https://www.givewell.org/research/incubation-grants/december-2018-evidence-action-beta-iron-folic-acid-phase-2#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "80%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": "Evidence Action ultimately spends at least $15 million total on IFA technical assistance that we retrospectively model as 10x as effective (or more) than cash transfers (using our January 2018 CEA as a baseline)",
+    "URL": "https://www.givewell.org/research/incubation-grants/december-2018-evidence-action-beta-iron-folic-acid-phase-2#Internal_forecasts",
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "35%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  },
+  {
+    "Title": ,
+    "URL": ,
+    "Platform": "GiveWell",
+    "Binary question?": true,
+    "Percentage": "%",
+    "Description": "",
+    "Stars": "★★★☆☆"
+  }
+]

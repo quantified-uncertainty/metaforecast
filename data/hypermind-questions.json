@@ -22,7 +22,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=USA",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "34%",
+    "Percentage": "24%",
     "Description": "While Barack Obama was president, the United States won: - 121 medals in 2016 - 104 medals in 2012 - 112 medals in 2008 24/01/2021: If the Tokyo Olympics are canceled in 2021, this question will be resolved according to the medals obtained at the next Olympics.\n",
     "Stars": "★★★☆☆"
   },
@@ -31,7 +31,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=USA",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "4%",
+    "Percentage": "3%",
     "Description": "The Insurrection Act is a United States federal law that empowers the President of the United States to deploy U.S. military and federalized National Guard troops within the United States in particular circumstances, such as to suppress civil disorder, insurrection and rebellion. See: [https://en.wikipedia.org/wiki/Insurrection_Act_of_1807](https://en.wikipedia.org/wiki/Insurrection_Act_of_1807) \n",
     "Stars": "★★★☆☆"
   },
@@ -112,7 +112,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "8%",
+    "Percentage": "3%",
     "Description": "Shares of the correct outcome will be worth 100&Hopf; while the other will be worthless (0&Hopf;). Touadéra, president of the Central African Republic, will be deemed to have lost power in the following cases: 1) death; 2) imprisonment, house arrest, or capture by hostile forces for at least 48 hours; 3) resignation; 4) been stripped of his office and/or replaced by formal government, judicial, or electorate action; 5) fled the country, gone into exile, or disappeared entirely from public view such that it is unclear whether he is alive or residing within his country; 6) been deemed in a prolonged state of mental incapacitation. In the first four situations, the question will close immediately; for options 5 and 6, we will observe a two-week waiting period beginning when the circumstance is first reported in the media, then judge the date of power-loss retroactively. However, if 31 December 2021, the question's expiry date, falls within the 2-week waiting period for options 5 or 6, we will consider that Touadéra has lost power before the end of the year (local time).\n",
     "Stars": "★★★☆☆"
   },
@@ -121,7 +121,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "23%",
+    "Percentage": "13%",
     "Description": "Shares of the correct outcome will be worth 100&Hopf; while the other will be worthless (0&Hopf;). Tebboune, president of Algeria, will be deemed to have lost power in the following cases: 1) death; 2) imprisonment, house arrest, or capture by hostile forces for at least 48 hours; 3) resignation; 4) been stripped of his office and/or replaced by formal government, judicial, or electorate action; 5) fled the country, gone into exile, or disappeared entirely from public view such that it is unclear whether he is alive or residing within his country; 6) been deemed in a prolonged state of mental incapacitation. In the first four situations, the question will close immediately; for options 5 and 6, we will observe a two-week waiting period beginning when the circumstance is first reported in the media, then judge the date of power-loss retroactively. However, if 31 December 2021, the question's expiry date, falls within the 2-week waiting period for options 5 or 6, we will consider that Tebboune has lost power before the end of the year (local time).\n",
     "Stars": "★★★☆☆"
   },
@@ -211,7 +211,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "39%",
+    "Percentage": "35%",
     "Description": "Shares of the correct outcome will be worth 100ℍ, while the other will be worthless (0ℍ).\nFollow godlier prices here: [https://www.monex.com/gold-prices/](https://www.monex.com/gold-prices/)\n",
     "Stars": "★★★☆☆"
   },
@@ -238,7 +238,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "78%",
+    "Percentage": "80%",
     "Description": "This question starts on November 16, 2020, but there is no time limit on its resolution. It will be resolved as soon as the value of the CAC 40 index reaches or crosses either of the specified thresholds, even temporarily.\n",
     "Stars": "★★★☆☆"
   },
@@ -256,7 +256,7 @@
     "URL": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
     "Platform": "Hypermind",
     "Binary question?": true,
-    "Percentage": "72%",
+    "Percentage": "69%",
     "Description": "The Olympics Games are currently scheduled to start in Japan in July 2021... This question will resolve as \"Yes\" if the Olympic Games take place anywhere at anytime in 2021.\n",
     "Stars": "★★★☆☆"
   },

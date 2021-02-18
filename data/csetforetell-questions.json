@@ -5,8 +5,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "21",
-    "# Forecasters": "21",
+    "# Forecasts": "23",
+    "# Forecasters": "23",
     "Description": "Related question. This question was previously issued for the period July 1 to December 31, 2020. You can view it here. The crowd's mean forecast was $73.7 billion, and the correct answer was $59.0 billion. Data and resolution details. This question resolves based on Crunchbase data. Crunchbase classifies every company under multiple “category groups.” For this question, companies are classified as “tech” if software, hardware, internet services, or information technology are among their category groups. These categories are overlapping. A company is \"private\" if it's not publicly traded. This question resolves on January 30, 2022, 30 days after the forecast period ends. The question -- and the graph below -- therefore includes only transactions entered into Crunchbase within 30 days of the date of its announcement. Historically, 80% of new funding is entered into Crunchbase within 30 days. The chart below does not include an anomalous $100 billion raised by Broadcom Limited in February 2018. The data underlying the graph is here.This question is a metric for the following scenarios: Tech Companies Threaten Democracy The Impact of COVID-19 on the ML Research Field Three Possible 2025 Worlds that Should Inform Policy Today For more on this metric, see the accompanying Foretell metric analysis: \"Are Established Tech Companies Crowding Out Startups?\"\n",
     "Stars": "★☆☆☆☆"
   },
@@ -16,20 +16,20 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "19",
-    "# Forecasters": "19",
+    "# Forecasts": "20",
+    "# Forecasters": "20",
     "Description": "Related question. This question was previously issued for the period July 1 to December 31, 2020. You can view it here. The crowd's mean forecast was $19.35 billion, and the correct answer was $18.67 billion. Data and resolution details. This question resolves based on Crunchbase data. Crunchbase classifies every company under multiple “category groups.” For this question, companies are classified as “tech” if software, hardware, internet services, or information technology are among their category groups. These categories are overlapping. A company is classified as a startup if the funding round in question is any of the following: pre-seed, seed, angel, series a, series b, or venture round. This question resolves on January 30, 2022, 30 days after the forecast period ends. The question -- and the graph below -- therefore includes only transactions entered into Crunchbase within 30 days of the date of its announcement. Historically, 80% of new funding is entered into Crunchbase within 30 days. The data underlying the graph is here.This question is a metric for the following scenarios:Tech Companies Threaten DemocracyFor more on this metric, see the accompanying Foretell metric analysis: \"Are Established Tech Companies Crowding Out Startups?\"\n",
     "Stars": "★☆☆☆☆"
   },
   {
-    "Title": "Conditional on President Trump NOT being convicted of \"incitement of insurrection,\" what will the Senate's average Bipartisan Index score be from 2021-2022?",
+    "Title": "What will the Senate's average Bipartisan Index score be from 2021-2022?",
     "URL": "https://www.cset-foretell.com/questions/109-conditional-on-president-trump-not-being-convicted-of-incitement-of-insurrection-what-will-the-senate-s-average-bipartisan-index-score-be-from-2021-2022",
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "89",
-    "# Forecasters": "81",
-    "Description": "Related question. This question has a sister question conditional on President Trump's conviction. You can view it here. After the Senate trial, we will close and void (not score) the question whose condition didn't occur and keep the other question open. Context. On January 13, 2021, the U.S. House of Representatives impeached President Trump for \"incitement of insurrection,\" setting up a trial in the Senate. If two-thirds of present Senators vote to convict President Trump, it would take only a simple majority of Senators to bar him from federal office in the future. A point of disagreement is whether a conviction would lead to a more or less divided country. Congressional bipartisanship is one measure, albeit an imperfect one, of how divided the country is.Data and resolution details. This question resolves based on the average Bipartisan Index score of all members of the Senate during the117th Congress, which runs from January 3, 2021 through January 3, 2023. The Bipartisan Index, a joint project of the Lugar Center and Georgetown's McCourt School of Public Policy, quantifies congressional members’ bipartisan behavior on the basis of bill sponsorship and co-sponsorship. The Bipartisan Index scores for this period are expected to be published in March 2023.The graph below shows the Senate's average Bipartisan Index score over time. Notably, the average score increased during the Trump Administration. The Lugar Center has hypothesized a \"Trump Effect\" in which \"the details of legislative work have offered Republican Senators an avenue to express subtle independence and broaden their appeal without reference to the daily media focus on President Trump.\" \n",
+    "# Forecasts": "92",
+    "# Forecasters": "84",
+    "Description": "Related question. This question was previously issued conditional on Trump not being convicted. A sister question was conditioned on Trump being convicted. After Trump was not convicted, we voided the sister question and removed the condition from this question. As of the Senate's vote on conviction, the median forecasted Bipartisan Index Score for the question conditioned on Trump's conviction was 0.1244; the median forecasted Bipartisan Index Score for the question conditioned on Trump not being convicted -- this question -- was 0.0718. Context. On January 13, 2021, the U.S. House of Representatives impeached President Trump for \"incitement of insurrection,\" setting up a trial in the Senate. If two-thirds of present Senators vote to convict President Trump, it would take only a simple majority of Senators to bar him from federal office in the future. A point of disagreement is whether a conviction would lead to a more or less divided country. Congressional bipartisanship is one measure, albeit an imperfect one, of how divided the country is.Data and resolution details. This question resolves based on the average Bipartisan Index score of all members of the Senate during the117th Congress, which runs from January 3, 2021 through January 3, 2023. The Bipartisan Index, a joint project of the Lugar Center and Georgetown's McCourt School of Public Policy, quantifies congressional members’ bipartisan behavior on the basis of bill sponsorship and co-sponsorship. The Bipartisan Index scores for this period are expected to be published in March 2023.The graph below shows the Senate's average Bipartisan Index score over time. Notably, the average score increased during the Trump Administration. The Lugar Center has hypothesized a \"Trump Effect\" in which \"the details of legislative work have offered Republican Senators an avenue to express subtle independence and broaden their appeal without reference to the daily media focus on President Trump.\" \n",
     "Stars": "★☆☆☆☆"
   },
   {
@@ -82,8 +82,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "40",
-    "# Forecasters": "38",
+    "# Forecasts": "41",
+    "# Forecasters": "39",
     "Description": "Related question. This question was previously issued for the period June 15 to August 15, 2020. You can view it here. The crowd's mean forecast  was 1.15%, and the correct answer was 1.3%. Those two months were not representative of the second half of 2020 overall, however, which was 0.7%.Data and resolution details. This question is based on data from Nexis Metabase, a corpus of global news articles on a variety of topics. An article is on the topic of AI if it mentions the term \"artificial intelligence\"; and it's on the topic of privacy and security if it mentions the terms \"privacy\" and \"security.\"  The data underlying the graph is here.This question is a metric for the following world forecasts: COVID-19 Surveillance Strengthens Authoritarian Governments Three Possible 2025 Worlds that Should Inform Policy Today \n",
     "Stars": "★☆☆☆☆"
   },
@@ -170,8 +170,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "75",
-    "# Forecasters": "59",
+    "# Forecasts": "76",
+    "# Forecasters": "60",
     "Description": "Related questions. This question is part of a cluster that includes U.S. exports of semiconductor manufacturing equipment to China, Chinese imports of semiconductor manufacturing equipment, and Chinese imports of semiconductor chips.Context. The semiconductor manufacturing process has many components manufactured through complicated, highly globalized supply chains. China's ability to produce advanced semiconductor chips is particularly dependent on U.S., Japanese, and Dutch imports of advanced semiconductor manufacturing equipment (SME) -- the tools used by chip factories to make chips. Although China is building up its chip manufacturing capacity using imported SME, it is still reliant on imports for most of the semiconductor chips it consumes. China is especially reliant on the United States, Taiwan, and South Korea for imports of the most advanced semiconductor chips. Therefore, export controls on chips could reduce China's access to them. If China cannot import SME, it will remain dependent on imports for chips. This question focuses on semiconductor chips.Data and resolution details. This question resolves based on United Nations Comtrade data. We classified exports as semiconductor chips if they have Harmonized System (HS) code 8542.  The data underlying the graph is here.This question is a metric for a forthcoming scenario on the future of the semiconductor industry.\n",
     "Stars": "★☆☆☆☆"
   },
@@ -181,7 +181,7 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "61",
+    "# Forecasts": "62",
     "# Forecasters": "45",
     "Description": "Related questions. This question is part of a cluster that includes U.S. exports of semiconductor chips to China, Chinese imports of semiconductor manufacturing equipment, and Chinese imports of semiconductor chips.Context. The semiconductor manufacturing process has many components manufactured through complicated, highly globalized supply chains. China's ability to produce advanced semiconductor chips is particularly dependent on U.S., Japanese, and Dutch imports of advanced semiconductor manufacturing equipment (SME) -- i.e., the tools used by chip factories to make chips. Although China is building up its chip manufacturing capacity using imported SME, it is still reliant on imports for most of the semiconductor chips it consumes. China is especially reliant on the United States, Taiwan, and South Korea for imports of the most advanced semiconductor chips. Therefore, export controls on chips could reduce China's access to them. If China cannot import SME, it will remain dependent on imports for chips. This question focuses on SME. The United States is considering a number of actions that would reduce the export of SME to China. In September, the Trump Administration restricted exports to China’s Semiconductor Manufacturing International Corporation (SMIC). Data and resolution details. This question resolves based on United Nations Comtrade data. We classified exports as SME if they have any of the following Harmonized System (HS) codes 8486, 903082, 903141, 854311, 901041.  The data underlying the graph is here.This question is a metric for a forthcoming scenario on the future of the semiconductor industry.\n",
     "Stars": "★☆☆☆☆"
@@ -192,8 +192,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "163",
-    "# Forecasters": "141",
+    "# Forecasts": "164",
+    "# Forecasters": "142",
     "Description": "Related questions. This question was previously conditioned on Vice President Biden's election. Now that Vice President has been elected, we dropped the condition. We also closed the sister question conditional on President Trump's re-election. You can view it here. We previously asked a non-conditional version of this question regarding the 2021 pew survey, which is still live. You can view it here. Context. The percentage of U.S. residents with unfavorable views of China has increased steeply in response to concerns over the trade war, China’s growing military, and lack of faith in President Xi Jinping. According to a 2018 survey by the Pew Research Center, 47 percent of U.S. residents had an unfavorable view of China. That number has since risen steadily, reaching 66 percent in a March 2020 survey and 73 percent in a June-July 2020 survey.Data and resolution details. Pew conducts its U.S. Global Attitudes Survey at irregular intervals. Since 2014, it's conducted the survey annually between February and June. In 2020, it conducted two surveys, one in March and a second in June-July. This question resolves based on the results of a Pew U.S. Global Attitudes Survey that begins sometime between February 1 and June 30, 2022. If no survey begins during that period, this question will not be scored. You can read more about Pew's sampling methodology here. The data underlying the graph is here.This question is a metric for the following scenario: Three Possible 2025 Worlds that Should Inform Policy Today To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
     "Stars": "★★☆☆☆"
   },
@@ -203,7 +203,7 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "93",
+    "# Forecasts": "94",
     "# Forecasters": "87",
     "Description": "Context. As U.S.-China tensions increase, policymakers are paying greater attention to areas in which the two countries are entangled. One such area relevant to tech-security policy is AI research collaborations. To date, the U.S.-China decoupling trends apparent in economic and immigration data do not appear to be impacting research collaborations. Whether potential conflicts between academic and security interests will begin to affect research collaborations is unclear.Data and resolution details. This question resolves based on Dimensions data. We classified publications as AI/ML-relevant or not using a predictive model trained on arXiv publication data, where a publication is relevant if it’s categorized on arXiv under any of artificial intelligence, machine learning, computer vision, computation and language, multiagent systems, or robotics. To read more about this method, see “Identifying the Development and Application of Artificial Intelligence in Scientific Text.” A publication is a U.S. publication if any author is affiliated with a U.S.-based organization. A publication is a U.S.-China collaboration if at least one author is affiliated with a U.S.-based organization and at least one author is affiliated with a China-based organization. The data underlying the graph is here.This question is a metric for the following scenarios: Three Possible 2025 Worlds that Should Inform Policy Today An Isolated China in a Globalized World To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
     "Stars": "★☆☆☆☆"
@@ -214,8 +214,8 @@
     "Platform": "CSET-foretell",
     "Binary question?": true,
     "Percentage": "70%",
-    "# Forecasts": "145",
-    "# Forecasters": "113",
+    "# Forecasts": "146",
+    "# Forecasters": "114",
     "Description": "Related questions. This question was previously conditioned on Vice President Biden's election. Now that Vice President has been elected, we dropped the condition. We also closed the sister question conditional on President Trump's re-election. You can view it here. Context. Because the commercial sector, rather than the U.S. government, is pushing the frontier of AI development, the relationship between tech companies and the U.S. government has national security implications. This relationship has been affected by the increasingly likely prospect that the U.S. government will use antitrust laws to break up the companies. After a 16 month investigation, the Democratic members of the House Judiciary Subcommittee on Antitrust concluded on October 6, 2020 that Amazon, Apple, Facebook, and Google have engaged in anti-competitive behavior. On October 20, 2020, the Department of Justice filed a long-awaited antitrust lawsuit against Google. Data and resolution details. This question resolves based on a court filing or official announcement by the U.S. government. A lawsuit qualifies as an antitrust lawsuit if it's brought, at least in part, under the Sherman Act of 1890, Clayton Act of 1914, or Federal Trade Commission Act of 1914. ***This question is a metric for the following scenarios:Three Possible 2025 Worlds that Should Inform Policy Today\n",
     "Stars": "★★☆☆☆"
   },
@@ -247,7 +247,7 @@
     "Platform": "CSET-foretell",
     "Binary question?": false,
     "Percentage": "none",
-    "# Forecasts": "91",
+    "# Forecasts": "92",
     "# Forecasters": "67",
     "Description": "Related question. This question was previously issued for 2020. You can view those forecasts here. The actual data for 2020 will be included in the graph below as soon as it's available.Context. The U.S. and China are the world's two largest economies and each other's largest trading partner. Since 2018, they have been engaged in an escalating trade war, and the COVID-19 pandemic has further reduced trade.  Data and resolution details. This question resolves based on U.S. Census Bureau data. It includes trade in goods only, not services. Total exports and imports for the eight months ending August 30, 2020 were $332 billion, which puts the 2020 figure on pace for $498 billion. Data for those eight months are not included in the graph below.  The data underlying the graph is here.This question is a metric for the following scenarios: Three Possible 2025 Worlds that Should Inform Policy Today An Isolated China in a Globalized World To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
     "Stars": "★☆☆☆☆"
