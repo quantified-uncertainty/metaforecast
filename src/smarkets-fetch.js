@@ -138,7 +138,7 @@ export async function smarkets(){
       "platform": "Smarkets",
       "options": options,
       "description": market.description, 
-      "stars": getstars(2)
+      "stars": 2
     }
     //console.log(result)
     results.push(result)

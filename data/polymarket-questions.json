@@ -7,17 +7,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.8972214770270854675358879731764318",
+        "probability": "0.898096828653361895742451832842419",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.1027785229729145324641120268235682",
+        "probability": "0.101903171346638104257548167157581",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "622",
-    "stars": "★★☆☆☆"
+    "numforecasts": "625",
+    "stars": 2
   },
   {
     "title": "Will the Hawks or the Celtics win their February 17, 2021 matchup?",
@@ -37,7 +37,7 @@
       }
     ],
     "numforecasts": "274",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Will Donald Trump be President of the USA on March 31, 2021?",
@@ -57,7 +57,7 @@
       }
     ],
     "numforecasts": "2578",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Will Joe Biden be President of the USA on March 1, 2021?",
@@ -77,7 +77,7 @@
       }
     ],
     "numforecasts": "4046",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Will Hashmasks be the highest volume NFT category by 7-day volume on February 25, 2021?",
@@ -87,17 +87,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1489495603971045984534209679056292",
+        "probability": "0.1354490692596779893290750486161457",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8510504396028954015465790320943708",
+        "probability": "0.8645509307403220106709249513838543",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "195",
-    "stars": "★★☆☆☆"
+    "numforecasts": "198",
+    "stars": 2
   },
   {
     "title": "Will Johnson and Johnson's COVID-19 vaccine receive FDA approval or Emergency Use Authorization (EUA) by March 15, 2021?",
@@ -117,7 +117,7 @@
       }
     ],
     "numforecasts": "122",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "$2000 stimulus checks by February 28, 2021?",
@@ -127,17 +127,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.02331354522289679605178329566667993",
+        "probability": "0.02313363461512452084934403365854438",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9766864547771032039482167043333201",
+        "probability": "0.9768663653848754791506559663414556",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1905",
-    "stars": "★★☆☆☆"
+    "numforecasts": "1906",
+    "stars": 2
   },
   {
     "title": "Will Apple, Amazon, or Twitter announce a Bitcoin purchase before April 1, 2021?",
@@ -147,17 +147,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.396165948011759280955931875231685",
+        "probability": "0.3642827043875029788717086640109072",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.603834051988240719044068124768315",
+        "probability": "0.6357172956124970211282913359890928",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "237",
-    "stars": "★★☆☆☆"
+    "numforecasts": "243",
+    "stars": 2
   },
   {
     "title": "Will Novak Djokovic win the Australian Open?",
@@ -177,7 +177,7 @@
       }
     ],
     "numforecasts": "318",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Will ETH be above $2000 on March 1st, 2021?",
@@ -187,17 +187,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.5114050084947337388860028265416297",
+        "probability": "0.5142276384931051066310181500175302",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.4885949915052662611139971734583703",
+        "probability": "0.4857723615068948933689818499824698",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1309",
-    "stars": "★★☆☆☆"
+    "numforecasts": "1311",
+    "stars": 2
   },
   {
     "title": "How many more tweets will be on the @MCuban account on February 17, 2021?",
@@ -237,7 +237,7 @@
       }
     ],
     "numforecasts": "824",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
@@ -257,7 +257,7 @@
       }
     ],
     "numforecasts": "56",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": " Will Kim Kardashian or Kanye West file for divorce before March 1, 2021?",
@@ -277,7 +277,7 @@
       }
     ],
     "numforecasts": "255",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Will Bitcoin ($BTC) be above $55k on February 24, 2021?",
@@ -297,7 +297,7 @@
       }
     ],
     "numforecasts": "174",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Will the price of Unisocks be above $100,000 on February 28, 2021?",
@@ -317,7 +317,7 @@
       }
     ],
     "numforecasts": "200",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Will the Heat or the Warriors win their February 17th matchup?",
@@ -337,6 +337,6 @@
       }
     ],
     "numforecasts": "366",
-    "stars": "★★☆☆☆"
+    "stars": 2
   }
 ]

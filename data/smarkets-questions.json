@@ -121,7 +121,7 @@
       }
     ],
     "description": "Contracts to be added on request",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Gender of next Conservative leader",
@@ -140,7 +140,7 @@
       }
     ],
     "description": "What will be the gender of the next permanent Conservative Party leader, after Boris Johnson?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Next German Chancellor after Angela Merkel",
@@ -259,7 +259,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Next permanent leader of the SNP after Nicola Sturgeon",
@@ -332,7 +332,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Year in which Boris Johnson will cease to be Prime Minister",
@@ -359,7 +359,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Boris Johnson to be the last Prime Minister of a four country UK",
@@ -378,7 +378,7 @@
       }
     ],
     "description": "With disruptions caused by the post Brexit settlement with the EU could the country could split apart. This would make Boris Johnson the last PM of a four-country UK. ",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Next Prime Minister after Boris Johnson",
@@ -552,7 +552,7 @@
       }
     ],
     "description": "Contracts to be added on request",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "NY-22 Congressional District Winner",
@@ -571,7 +571,7 @@
       }
     ],
     "description": "Which party will win in New York's 22nd Congressional District in the 2020 House of Representatives Election? Contracts to be added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Year of next General Election",
@@ -605,7 +605,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Year of next Scottish referendum",
@@ -644,7 +644,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Next Cabinet Member to leave",
@@ -758,7 +758,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Party to get the most seats",
@@ -782,7 +782,7 @@
       }
     ],
     "description": "Contracts to be added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "USA and UK to sign a trade deal in 2021",
@@ -801,7 +801,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Year of next General Election in Hungary",
@@ -830,7 +830,7 @@
       }
     ],
     "description": "The Hungarian parliament passed a state of emergency bill in March 2020 giving prime minister Viktor Orbán the power to rule by decree, only ending when Orbán's government sees fit. During this period, no elections will be held. The next Hungarian parliamentary election is scheduled to take place in 2022 or earlier, but will it?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Most seats in the Welsh Assembly Elections 2021",
@@ -859,7 +859,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Winner of the 2022 French presidential election",
@@ -952,7 +952,7 @@
       }
     ],
     "description": "Which candidate will win the 2022 French presidential election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Macron first round vote share",
@@ -979,7 +979,7 @@
       }
     ],
     "description": "What will incumbent president Emmanuel Macron's vote share be in the first round of the 2022 French presidential election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Next permanent leader of the Labour Party, after Keir Starmer",
@@ -1157,7 +1157,7 @@
       }
     ],
     "description": "Keir Starmer was elected Labour Party leader on 4 April 2020. Who will be his successor?\r\n\r\nOther candidates available on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Gender of the next Labour leader",
@@ -1176,7 +1176,7 @@
       }
     ],
     "description": "The Labour Party has never had a permanent female leader. Could Keir Starmer's successor be the first?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Year of next General Election to take place in Israel",
@@ -1200,7 +1200,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "First Minister to leave the Cabinet?",
@@ -1219,7 +1219,7 @@
       }
     ],
     "description": "With the controversies over the ordering of PPE and the delivery of it to hospitals will Dominic Raab or Matt Hancock leave the Cabinet first? ",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Keir Starmer exit date",
@@ -1243,7 +1243,7 @@
       }
     ],
     "description": "When will Keir Starmer cease to be leader of the Labour Party?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 London mayoral election winner",
@@ -1252,37 +1252,37 @@
     "options": [
       {
         "name": "Sadiq Khan",
-        "probability": 0.927550615323541,
+        "probability": 0.9260800634165673,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Bailey",
-        "probability": 0.022528781262405716,
+        "probability": 0.0215021799445105,
         "type": "PROBABILITY"
       },
       {
         "name": "Siân Berry",
-        "probability": 0.00009924573243350536,
+        "probability": 0.00009908838684106222,
         "type": "PROBABILITY"
       },
       {
         "name": "Siobhan Benita",
-        "probability": 0.00009924573243350536,
+        "probability": 0.00009908838684106222,
         "type": "PROBABILITY"
       },
       {
         "name": "Brian Rose",
-        "probability": 0.04962286621675268,
+        "probability": 0.05212049147839872,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid",
-        "probability": 0.00009924573243350536,
+        "probability": 0.00009908838684106222,
         "type": "PROBABILITY"
       }
     ],
     "description": "Who will be elected mayor of London in the 2021 mayoral election? Contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Sadiq Khan to get over 50% in first round",
@@ -1301,7 +1301,7 @@
       }
     ],
     "description": "Will Sadiq Khan receive over 50% of the vote in the first round of the 2021 London mayoral election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 West Midlands mayoral election winner",
@@ -1330,7 +1330,7 @@
       }
     ],
     "description": "Who will be elected mayor of the West Midlands in the 2021 mayoral election? Contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 Tees Valley mayoral election winner",
@@ -1349,7 +1349,7 @@
       }
     ],
     "description": "Who will be elected mayor of the Tees Valley in the 2021 mayoral election? Contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Scottish Parliament election 2021 winner",
@@ -1378,7 +1378,7 @@
       }
     ],
     "description": "Which party will win the most seats in the 2021 Scottish Parliament election? Contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Scottish Parliament election 2021 most seats (w/o SNP)",
@@ -1407,7 +1407,7 @@
       }
     ],
     "description": "Which party (excluding the SNP) will win the most seats in the 2021 Scottish Parliament election? Contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Local elections highest vote share",
@@ -1426,7 +1426,7 @@
       }
     ],
     "description": "Which party will receive the highest national equivalent vote share at the 2021 United Kingdom local elections?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Next permanent leader of fine gael after Leo Varadkar",
@@ -1515,7 +1515,7 @@
       }
     ],
     "description": "Contracts to be added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Irish reunification referendum before 2023",
@@ -1534,7 +1534,7 @@
       }
     ],
     "description": "Will Northern Ireland hold a referendum on Irish reunification on or before 31 December 2022?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Next Scottish First Minister",
@@ -1618,7 +1618,7 @@
       }
     ],
     "description": "Who will be the next First Minister of Scotland after Nicola Sturgeon? Other contracts available on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "French Presidential election to happen before 2022",
@@ -1637,7 +1637,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Will Keir Starmer face a leadership challenge?",
@@ -1656,7 +1656,7 @@
       }
     ],
     "description": "Will any candidate receive the nominations of at least 20% of Labour MPs to challenge Keir Starmer for the party leadership before the next UK general election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "UK to begin imports of chlorinated chicken",
@@ -1675,7 +1675,7 @@
       }
     ],
     "description": "Will the UK begin importing chlorine-washed chicken products following the end of the transition period on 31 December 2020, but on or before 30 June 2021?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Washington, D.C. to become a state before 2022",
@@ -1694,7 +1694,7 @@
       }
     ],
     "description": "Will Washington, D.C. become a state before 1 January 2022?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Puerto Rico to become a state before 2022",
@@ -1713,7 +1713,7 @@
       }
     ],
     "description": "Will Puerto Rico become a state before 1 January 2022?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Next Fianna Fáil leader",
@@ -1807,7 +1807,7 @@
       }
     ],
     "description": "Who will be the next permanent Fianna Fáil leader after Micheál Martin? Contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Next Scottish independence referendum result (before 2022)",
@@ -1826,7 +1826,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Will the SNP have an overall majority following the 2021 Scottish Election?",
@@ -1835,17 +1835,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.8137771918259723,
+        "probability": 0.8309732748304747,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.1862228081740277,
+        "probability": 0.16902672516952533,
         "type": "PROBABILITY"
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Next general election overall majority",
@@ -1874,7 +1874,7 @@
       }
     ],
     "description": "Which party (if any) will win an overall majority at the next UK general election? Contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Date of next Japanese general election",
@@ -1893,7 +1893,7 @@
       }
     ],
     "description": "When will the next Japanese general election take place?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Belarus to have a General Election in 2021",
@@ -1912,7 +1912,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Joe Biden to serve full term",
@@ -1931,7 +1931,7 @@
       }
     ],
     "description": "Will Joe Biden serve his first term as President of the United States in full? See market rules for more details.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2024 Democratic presidential nominee",
@@ -2030,7 +2030,7 @@
       }
     ],
     "description": "Who will be the Democratic candidate for the 2024 US presidential election? Other contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2024 Republican presidential nominee",
@@ -2124,7 +2124,7 @@
       }
     ],
     "description": "Who will be the Republican candidate for the 2024 US presidential election? Other contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2024 US presidential winner",
@@ -2133,47 +2133,47 @@
     "options": [
       {
         "name": "Joe Biden",
-        "probability": 0.159437848315968,
+        "probability": 0.16298709132585354,
         "type": "PROBABILITY"
       },
       {
         "name": "Kamala Harris",
-        "probability": 0.24230676035861398,
+        "probability": 0.24128362890577873,
         "type": "PROBABILITY"
       },
       {
         "name": "Donald Trump",
-        "probability": 0.13460140537921006,
+        "probability": 0.13403305585716008,
         "type": "PROBABILITY"
       },
       {
         "name": "Tucker Carlson",
-        "probability": 0.027501817300702686,
+        "probability": 0.027385691880805887,
         "type": "PROBABILITY"
       },
       {
         "name": "Tom Cotton",
-        "probability": 0.0121153380179307,
+        "probability": 0.012064181445288938,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Pence",
-        "probability": 0.0484613520717228,
+        "probability": 0.04825672578115575,
         "type": "PROBABILITY"
       },
       {
         "name": "Donald Trump Jr.",
-        "probability": 0.07123818754543251,
+        "probability": 0.07093738689829895,
         "type": "PROBABILITY"
       },
       {
         "name": "Ted Cruz",
-        "probability": 0.0242306760358614,
+        "probability": 0.024128362890577876,
         "type": "PROBABILITY"
       },
       {
         "name": "Alexandria Ocasio-Cortez",
-        "probability": 0.08080930457959776,
+        "probability": 0.08046809024007721,
         "type": "PROBABILITY"
       },
       {
@@ -2183,7 +2183,7 @@
       },
       {
         "name": "Nikki Haley",
-        "probability": 0.07814393021565301,
+        "probability": 0.07781397032211365,
         "type": "PROBABILITY"
       },
       {
@@ -2213,7 +2213,7 @@
       },
       {
         "name": "Pete Buttigieg",
-        "probability": 0.060576690089653495,
+        "probability": 0.06032090722644468,
         "type": "PROBABILITY"
       },
       {
@@ -2253,7 +2253,7 @@
       },
       {
         "name": "Ivanka Trump",
-        "probability": 0.060576690089653495,
+        "probability": 0.06032090722644468,
         "type": "PROBABILITY"
       },
       {
@@ -2273,7 +2273,7 @@
       }
     ],
     "description": "Who will win the 2024 United States presidential election? Candidates added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Will the Brexit/Reform Party reach 10% in a YouGov poll?",
@@ -2292,7 +2292,7 @@
       }
     ],
     "description": "Will the Brexit Party or Reform Party reach 10% in a UK voting intention poll conducted by YouGov by 23 March 2021?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 London mayoral election second place",
@@ -2331,7 +2331,7 @@
       }
     ],
     "description": "Who will finish in second place in the 2021 London mayoral election? Candidates added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Women's Equality Party to win a seat in the London Assembly",
@@ -2350,7 +2350,7 @@
       }
     ],
     "description": "Will the Women's Equality Party win at least one seat in the London Assembly at the 2021 London Assembly election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Party's Candidate to win the the 2024 US election",
@@ -2369,7 +2369,7 @@
       }
     ],
     "description": "Contracts available on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "London Assembly: Labour majority",
@@ -2388,7 +2388,7 @@
       }
     ],
     "description": "Will Labour win a majority on the London Assembly following the 2021 election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Senate-confirmed Treasury Secretary on 1st March 2021",
@@ -2442,7 +2442,7 @@
       }
     ],
     "description": "Contracts added on request",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Senate-confirmed Attorney General on 1st March 2021",
@@ -2491,7 +2491,7 @@
       }
     ],
     "description": "Contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Senate-confirmed Secretary of State on the 15th February 2021",
@@ -2530,7 +2530,7 @@
       }
     ],
     "description": "Contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "How many party leaders will still be in post at the end of 2021?",
@@ -2554,7 +2554,7 @@
       }
     ],
     "description": "How many of the following four party leaders will still be in position on 31 December 2021: Boris Johnson, Keir Starmer, Ed Davey and Nicola Sturgeon?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 Norwegian election: Most votes",
@@ -2588,7 +2588,7 @@
       }
     ],
     "description": "Which party will receive the highest vote share in the 2021 Norwegian parliamentary election? (Norwegian names in brackets)",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 Norwegian election: Largest minor party",
@@ -2612,7 +2612,7 @@
       }
     ],
     "description": "Which party will receive the highest vote share in the 2021 Norwegian election, excluding the Conservative and Labour parties? Parties added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 Dutch election: PVV seats",
@@ -2636,7 +2636,7 @@
       }
     ],
     "description": "How many seats will PVV win in the 2021 Dutch general election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 Dutch election: Government seats",
@@ -2665,7 +2665,7 @@
       }
     ],
     "description": "How many seats will the People's Party for Freedom and Democracy (VVD), Christian Democratic Appeal (CDA), Democrats 66 (D66) and Christian Union (CU) win in the 2021 Dutch general election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 Dutch election: Biggest left party",
@@ -2689,7 +2689,7 @@
       }
     ],
     "description": "Which of the following three parties will win the most seats in the 2021 Dutch general election: GroenLinks, Socialist Party or Labour Party?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Brexit Party to control any council",
@@ -2708,7 +2708,7 @@
       }
     ],
     "description": "Will the Brexit Party/Reform Party win a majority of seats on any council at the 2021 local elections?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Brexit Party to win a seat in the London Assembly",
@@ -2727,7 +2727,7 @@
       }
     ],
     "description": "Will the Brexit Party/Reform Party win at least one seat in the London Assembly at the 2021 London Assembly election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "London Assembly: Liberal Democrat seats",
@@ -2746,7 +2746,7 @@
       }
     ],
     "description": "How many seats will the Liberal Democrats win in the 2021 London Assembly election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Joe Biden's first international visit",
@@ -2785,7 +2785,7 @@
       }
     ],
     "description": "Which of these countries will be visited by Joe Biden first in his role as President of the United States?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Biden approval on day 100",
@@ -2794,37 +2794,37 @@
     "options": [
       {
         "name": "Under 45%",
-        "probability": 0.031069884726224784,
+        "probability": 0.03125849415602065,
         "type": "PROBABILITY"
       },
       {
         "name": "45–49.9%",
-        "probability": 0.18759005763688757,
+        "probability": 0.1887288212376551,
         "type": "PROBABILITY"
       },
       {
         "name": "50–54.9%",
-        "probability": 0.35455691642651294,
+        "probability": 0.36241732354806555,
         "type": "PROBABILITY"
       },
       {
         "name": "55–59.9%",
-        "probability": 0.3310518731988472,
+        "probability": 0.3212829573253601,
         "type": "PROBABILITY"
       },
       {
         "name": "60–64.9%",
-        "probability": 0.08186239193083573,
+        "probability": 0.08235933677629789,
         "type": "PROBABILITY"
       },
       {
         "name": "65% or over",
-        "probability": 0.013868876080691641,
+        "probability": 0.013953066956600523,
         "type": "PROBABILITY"
       }
     ],
     "description": "What will Joe Biden's approval rating be on FiveThirtyEight on day 100 of his presidency?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Matt Hancock to remain Health Secretary",
@@ -2843,7 +2843,7 @@
       }
     ],
     "description": "Will Matt Hancock be in position as Health Secretary on 1 July 2021?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Gavin Williamson to remain Education Secretary",
@@ -2862,7 +2862,7 @@
       }
     ],
     "description": "Will Gavin Williamson be in position as Education Secretary on 1 July 2021?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Party to provide the Premier following the 2021 Western Australia state election",
@@ -2891,7 +2891,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 West Yorkshire mayoral election winner",
@@ -2910,7 +2910,7 @@
       }
     ],
     "description": "Who will be elected mayor of West Yorkshire in the 2021 mayoral election? Contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Rutherglen and Hamilton West by-election winner",
@@ -2929,7 +2929,7 @@
       }
     ],
     "description": "Which party will win the Rutherglen and Hamilton West by-election? Contracts added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Most seats in the Bulgarian National Assembly election",
@@ -2953,7 +2953,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Rutherglen and Hamilton West by-election: SNP vote share",
@@ -2977,7 +2977,7 @@
       }
     ],
     "description": "What percentage of the vote will the SNP candidate receive in the Rutherglen and Hamilton West by-election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Netanyahu to be Israeli PM on 1 July?",
@@ -2996,7 +2996,7 @@
       }
     ],
     "description": "Will Benjamin Netanyahu be Prime Minister of Israel on 1 July 2021?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "London elections: In-person voting",
@@ -3015,7 +3015,7 @@
       }
     ],
     "description": "Will in-person voting go ahead in the 2021 London elections, or will they be conducted by postal voting only?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "London Elections to take place on 6th May 2021",
@@ -3034,7 +3034,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Next Scottish Labour leader",
@@ -3103,7 +3103,7 @@
       }
     ],
     "description": "Who will be the next permanent leader of the Scottish Labour Party? Candidates added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "$2,000 stimulus checks in Biden's first 100 days",
@@ -3122,7 +3122,7 @@
       }
     ],
     "description": "Will the House and Senate agree to stimulus checks of $2,000 to American citizens (excluding the $600 already paid) in the first 100 days of Joe Biden's presidency?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "New York City mayoral election 2021: Democratic candidate",
@@ -3171,7 +3171,7 @@
       }
     ],
     "description": "Who will win the Democratic primary to be the party's candidate for the 2021 New York City mayoral election? Candidates added on request.",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Trump to create new political party",
@@ -3190,7 +3190,7 @@
       }
     ],
     "description": "Will Donald Trump create (or affiliate himself with) a new political party in 2021?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Most seats following the German Federal Election 2021",
@@ -3219,7 +3219,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Donald Trump Jr. to run in the 2022 Pennsylvania Republican Senate primary",
@@ -3238,7 +3238,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2022 House of Representatives control",
@@ -3257,7 +3257,7 @@
       }
     ],
     "description": "Which party will win the most seats in the 2022 House of Representatives elections?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "President Joe Biden to leave office in his first term via Impeachment, Resignation or the 25th Amendment",
@@ -3276,7 +3276,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2022 Senate control",
@@ -3295,7 +3295,7 @@
       }
     ],
     "description": "Which party will control the United States Senate following the 2022 midterm elections?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Lisa Nandy to remain the Labour Party's Shadow Secretary of State for FCO until at least the 1st January 2022",
@@ -3314,7 +3314,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2022 House and Senate control",
@@ -3343,7 +3343,7 @@
       }
     ],
     "description": "Who will control the House and Senate following the 2022 midterm elections?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Harriet Tubman to appear on the US $20 note in 2021",
@@ -3362,7 +3362,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 Dutch election: Most seats",
@@ -3381,7 +3381,7 @@
       }
     ],
     "description": "Which party will win the most seats in the 2021 Dutch general election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Turnout of the Scottish Parliament Election in 2021 (FPTP figure)",
@@ -3410,7 +3410,7 @@
       }
     ],
     "description": "",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "Marjorie Taylor Greene to be expelled from Congress",
@@ -3429,7 +3429,7 @@
       }
     ],
     "description": "Will US Representative Marjorie Taylor Greene be expelled from the House of Representatives by the end of April 2021?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 Israeli election: Likud seats",
@@ -3463,7 +3463,7 @@
       }
     ],
     "description": "How many seats will Likud win in the March 2021 Israeli legislative election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   },
   {
     "title": "2021 Israeli election: Joint List seats",
@@ -3482,6 +3482,6 @@
       }
     ],
     "description": "How many seats will the Joint List win in the 2021 Israeli legislative election?",
-    "stars": "★★☆☆☆"
+    "stars": 2
   }
 ]

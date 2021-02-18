@@ -107,7 +107,7 @@ async function fetch_all(){
         "description": obj.description,
         "options": options,
         "numforecasts": Number(data.tradesQuantity).toFixed(0),
-        "stars": getstars(2)
+        "stars": 2
         /*liquidity: liquidity.toFixed(2),
         tradevolume: tradevolume.toFixed(2),
         address: obj.address*/
