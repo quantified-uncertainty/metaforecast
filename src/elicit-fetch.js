@@ -52,17 +52,27 @@ function processArray(arrayQuestions){
 
       //console.log(forecasts)
       //console.log(avg(forecasts))
-      let percentage = avg(forecasts)
+      let probability = avg(forecasts)/100
       let numforecasts = forecasts.length;
       let standardObj = ({
-        "Title": title,
-        "URL": url,
-        "Platform": "Elicit",
-        "Binary question?": true,
-        "Percentage": percentage.toFixed(0) + "%",
-        "# Forecasts": numforecasts,
-        "# Forecasters": numforecasters,
-        "Stars": getstars(1)
+        "title": title,
+        "url": url,
+        "platform": "Elicit",
+        "options": [
+          {
+            "name": "Yes",
+            "probability": probability,
+            "type": "PROBABILITY"
+          },
+          {
+            "name": "No",
+            "probability": 1-probability,
+            "type": "PROBABILITY"
+          }
+        ],
+        "numforecasts": numforecasts,
+        "numforecasters": numforecasters,
+        "stars": 1
       })
       results.push(standardObj)
     }

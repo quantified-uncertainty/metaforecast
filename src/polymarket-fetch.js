@@ -69,15 +69,19 @@ async function fetch_all(){
     let address = info.marketMakerAddress
     let addressLowerCase = address.toLowerCase()
     //delete info.history
+    if(info.outcomes[0]!="Long" || info.outcomes[1]!="Short")
     combinedObj[addressLowerCase] = {
       title: info.question,
       url: "https://polymarket.com/market/" + info.slug, 
       address: address,
-      description: info.description
+      description: info.description,
+      outcomes: info.outcomes,
+      options: []
     }
   }
   for(let data of allData){
     let addressLowerCase = data.id
+    console.log(data)
     if(combinedObj[addressLowerCase] != undefined){
       //console.log(addressLowerCase)
       let obj = combinedObj[addressLowerCase]
@@ -87,15 +91,23 @@ async function fetch_all(){
       let liquidity =  Number(data.liquidityParameter)/units
       let percentage = Number(data.outcomeTokenPrices[0])*100
       let percentageFormatted = isbinary?(percentage.toFixed(0) + "%"):"none"
+      let options = []
+      for(let outcome in data.outcomeTokenPrices){
+        options.push({
+          "name": obj.outcomes[outcome],
+          "probability": data.outcomeTokenPrices[outcome],
+          "type": "PROBABILITY"
+        })
+      }
+
       combinedObj[addressLowerCase] = {
-        Title: obj.title,
-        URL: obj.url, 
-        Platform: "PolyMarket",
-        "Binary question?" : isbinary,
-        "Percentage": percentageFormatted,
-        "Description": obj.description,
-        "# Forecasts": Number(data.tradesQuantity).toFixed(0),
-        "Stars": getstars(2)
+        "title": obj.title,
+        "url": obj.url, 
+        "platform": "PolyMarket",
+        "description": obj.description,
+        "options": options,
+        "numforecasts": Number(data.tradesQuantity).toFixed(0),
+        "stars": getstars(2)
         /*liquidity: liquidity.toFixed(2),
         tradevolume: tradevolume.toFixed(2),
         address: obj.address*/

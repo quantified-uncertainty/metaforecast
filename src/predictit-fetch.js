@@ -30,7 +30,7 @@ function sleep(ms) {
 /* Body */
 export async function predictit(){
   let response = await fetchmarkets()
-  //console.log(response)
+  console.log(response)
   let result=[]
   for(let market of response){
     let isbinary = market.contracts.length == 1;
@@ -39,14 +39,27 @@ export async function predictit(){
     let descriptionprocessed1 = toMarkdown(descriptionraw)
     let description= descriptionprocessed1
     let percentageFormatted = isbinary? Number(Number(market.contracts[0].lastTradePrice)*100).toFixed(0)+"%" : "none"
+
+    let options = market.contracts.map(contract => ({
+      "name": contract.name,
+      "probability": contract.lastTradePrice,
+      "type": "PROBABILITY"
+    }))
+    let totalValue = options
+    .map(element => Number(element.probability))
+    .reduce((a,b) => (a+b), 0)
+    options = options.map(element => ({
+      ...element,
+      probability: Number(element.probability)/totalValue
+    }))
+
     let obj = ({
-      Title: market["name"],
-      URL: market.url,
-      Platform: "PredictIt",
-      "Binary question?": isbinary,
-      "Percentage": percentageFormatted,
-      "Description": description,
-      "Stars": getstars(2)
+      "title": market["name"],
+      "url": market.url,
+      "platform": "PredictIt",
+      "options": options,
+      "description": description,
+      "stars": 2
       //"qualityindicators": {}
     })
     console.log(obj)

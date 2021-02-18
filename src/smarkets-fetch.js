@@ -92,30 +92,55 @@ export async function smarkets(){
   
   let results = []
   for(let market of markets){
-    console.log("================")
-    console.log(market)
-    let isBinary = false
-    let percentage = "none"
+    //console.log("================")
+    //console.log("Market: ", market)
     let name = market.name
+
     let contracts = await fetchContracts(market.id)
+    //console.log("Contracts: ", contracts)
+    let prices = await fetchPrices(market.id)
+    //console.log("Prices: ", prices["last_executed_prices"][market.id])
+
+    let options = {}
+    for(let contract of contracts["contracts"]){
+      options[contract.id] = {name: contract.name}
+    }
+    for(let price of prices["last_executed_prices"][market.id]){
+      options[price.contract_id] = {...options[price.contract_id], 
+        probability: Number(price.last_executed_price),
+        type: "PROBABILITY"
+      }
+    }
+    options = Object.values(options)
+    let totalValue = options
+      .map(element => Number(element.probability))
+      .reduce((a,b) => (a+b), 0)
+    
+    options = options.map(element => ({
+      ...element,
+      probability: Number(element.probability)/totalValue
+    }))
+
+    //console.log(options)
+
+    /*
     if(contracts["contracts"].length == 2){
       isBinary = true
-      let prices = await fetchPrices(market.id)
       percentage = ( Number(prices["last_executed_prices"][market.id][0].last_executed_price) + (100 - Number(prices["last_executed_prices"][market.id][1].last_executed_price)) ) / 2
       percentage = Math.round(percentage)+"%"
       let contractName = contracts["contracts"][0].name
       name = name+ (contractName=="Yes"?'':` (${contracts["contracts"][0].name})`)
     }
+    */
     let result = {
-      "Title": name,
-      "URL": "https://smarkets.com/event/"+ market.event_id +  market.slug,
-      "Platform": "Smarkets",
-      "Binary question?": isBinary,
-      "Percentage": percentage,
-      "Description": market.description, 
-      "Stars": getstars(2)
+      "title": name,
+      "url": "https://smarkets.com/event/"+ market.event_id +  market.slug,
+      "platform": "Smarkets",
+      "options": options,
+      "description": market.description, 
+      "stars": getstars(2)
     }
-    console.log(result)
+    //console.log(result)
     results.push(result)
   }
   //console.log(results)

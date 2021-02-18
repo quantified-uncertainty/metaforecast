@@ -79,17 +79,32 @@ export async function metaculus(){
         let descriptionprocessed1 = descriptionraw.split("</div>")[0]
         let descriptionprocessed2 = toMarkdown(descriptionprocessed1)
         let description = descriptionprocessed2
+        
         let isbinary = result.possibilities.type == "binary"  
-        let percentage = isbinary? ((Number(result.community_prediction.full.q2)*100).toFixed(0)+"%") : "none"
+        let options = []
+        if(isbinary){
+          let probability = Number(result.community_prediction.full.q2)
+          options = [
+            {
+              "name": "Yes",
+              "probability": probability,
+              "type": "PROBABILITY"
+            },
+            {
+              "name": "No",
+              "probability": 1-probability,
+              "type": "PROBABILITY"
+            }
+          ]
+        }
         let interestingInfo = ({
-          "Title": result.title,
-          "URL": "https://www.metaculus.com" + result.page_url,
-          "Platform": "Metaculus",
-          "Binary question?": isbinary,
-          "Percentage": percentage,
-          "Description": description,
-          "# Forecasts": result.number_of_predictions,
-          "Stars": result.number_of_predictions > 300? getstars(4):(result.number_of_predictions > 100? getstars(3): getstars(2))
+          "title": result.title,
+          "url": "https://www.metaculus.com" + result.page_url,
+          "platform": "Metaculus",
+          "options": options,
+          "description": description,
+          "numforecasts": result.number_of_predictions,
+          "stars": result.number_of_predictions > 300? 4:(result.number_of_predictions > 100? 3: 2)
           //"status": result.status,
           //"publish_time": result.publish_time,
           //"close_time": result.close_time,

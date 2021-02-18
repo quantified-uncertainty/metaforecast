@@ -2,6 +2,7 @@
 import fs from 'fs'
 import axios from "axios"
 import toMarkdown from "./toMarkdown.js"
+import {Tabletojson} from "tabletojson"
 import {getstars} from "./stars.js"
 
 /* Definitions */
@@ -55,13 +56,31 @@ async function fetchStats(questionUrl, cookie){
   
   // Is binary?
   let isbinary = response.includes("binary?&quot;:true")
-  let percentage = "none"
+  let options = []
   if(isbinary){
     // Crowd percentage
     let htmlElements = response.split("\n")
     let h3Element = htmlElements.filter(str => str.includes("<h3>"))[0]
     let crowdpercentage = h3Element.split(">")[1].split("<")[0]
-    percentage = crowdpercentage
+    let probability = Number(crowdpercentage.replace("%", ""))/100
+    options.push(({
+      name: "Yes",
+      probability: probability,
+      type: "PROBABILITY"
+    }), ({
+      name: "No",
+      probability: +(1-probability).toFixed(2), // avoids floating point shenanigans
+      type: "PROBABILITY"
+    }))
+  }else{
+    let optionsHtmlElement = "<table" + response.split("tbody")[1] + "table>"
+    let tablesAsJson = Tabletojson.convert(optionsHtmlElement)
+    let firstTable = tablesAsJson[0]
+    options = firstTable.map(element => ({
+      name: element['0'],
+      probability: Number(element['1'].replace("%",""))/100,
+      type: "PROBABILITY"
+    }))
   }
   
   // Description
@@ -84,12 +103,11 @@ async function fetchStats(questionUrl, cookie){
   //console.log(numpredictors)
   
   let result = {
-    "Binary question?": isbinary,
-    "Percentage": percentage,
-    "# Forecasts": numforecasts,
-    "# Forecasters": numforecasters,
-    "Description": description,
-    "Stars": numforecasts>100? getstars(2):getstars(1)
+    "description": description, 
+    "options": options,
+    "numforecasts": numforecasts,
+    "numforecasters": numforecasters,
+    "stars": numforecasts>100?3:2
   }
   
   return result

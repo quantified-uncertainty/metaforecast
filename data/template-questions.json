@@ -1,11 +1,26 @@
 [ {
-  "Title": "Some title",
-  "URL": "someurl.com",
-  "Platform": "some platform",
-  "Binary question?": true,
-  "Percentage": "X%/none",
-  "Description": "Some long description which may contain html",
-  "# Forecasts": 15,
-  "Stars": "★★☆☆☆"
+  "title": "Some title",
+  "url": "someurl.com",
+  "platform": "some platform",
+  "options": [
+    {
+      "name": "Option 1",
+      "probability": 0.25,
+      "type": "PROBABILITY"
+    },
+    {
+      "name": "Option 2",
+      "probability": 0.5,
+      "type": "PROBABILITY"
+    },
+    {
+      "name": "Option 3",
+      "probability": 0.24,
+      "type": "PROBABILITY"
+    }
+  ],
+  "description": "Some long description which may contain html",
+  "numforecasts": 15,
+  "stars": 2
 }
 ]

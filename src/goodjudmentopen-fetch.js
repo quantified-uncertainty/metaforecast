@@ -1,6 +1,7 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
+import {Tabletojson} from "tabletojson"
 import {getstars} from "./stars.js"
 import toMarkdown from "./toMarkdown.js"
 
@@ -55,15 +56,34 @@ async function fetchStats(questionUrl, cookie){
   // Is binary?
   let isbinary = response.includes("binary?&quot;:true")
 
-  let percentage = "none"
+  let options = []
   if(isbinary){
     // Crowd percentage
     let htmlElements = response.split("\n")
     let h3Element = htmlElements.filter(str => str.includes("<h3>"))[0]
     console.log(h3Element)
     let crowdpercentage = h3Element.split(">")[1].split("<")[0]
-    percentage = crowdpercentage
-    console.log(percentage)
+    let probability = Number(crowdpercentage.replace("%", ""))/100
+    options.push(({
+      name: "Yes",
+      probability: probability,
+      type: "PROBABILITY"
+    }), ({
+      name: "No",
+      probability: +(1-probability).toFixed(2), // avoids floating point shenanigans
+      type: "PROBABILITY"
+    }))
+  }else{
+    let optionsHtmlElement = "<table" + response.split("tbody")[1] + "table>"
+    let tablesAsJson = Tabletojson.convert(optionsHtmlElement)
+    let firstTable = tablesAsJson[0]
+    options = firstTable.map(element => ({
+      name: element['0'],
+      probability: Number(element['1'].replace("%",""))/100,
+      type: "PROBABILITY"
+    }))
+    //console.log(optionsHtmlElement)
+    //console.log(options)
   }
 
   // Description
@@ -84,12 +104,11 @@ async function fetchStats(questionUrl, cookie){
   //console.log(numpredictors)
   
   let result = {
-    "Binary question?": isbinary,
-    "Percentage": percentage,
-    "Description": description, 
-    "# Forecasts": numforecasts,
-    "# Forecasters": numforecasters,
-    "Stars": numforecasts>100?getstars(3):getstars(2)
+    "description": description, 
+    "options": options,
+    "numforecasts": numforecasts,
+    "numforecasters": numforecasters,
+    "stars": numforecasts>100?3:2
   }
   return result
 }
@@ -137,6 +156,7 @@ export async function goodjudgmentopen(){
           console.log(question)
           questions.push(question)
       } catch(error){
+        console.log(error)
         console.log(`We encountered some error when fetching the URL: ${url}, so it won't appear on the final json`)
       }
     }
@@ -147,6 +167,7 @@ export async function goodjudgmentopen(){
     try{
       response = await fetchPage(i,cookie)
     }catch(error){
+      console.log(error)
       console.log(`We encountered some error when fetching page #${i}, so it won't appear on the final json`)
     }
   }

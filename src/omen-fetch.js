@@ -52,21 +52,25 @@ async function fetch_all(){
     data.resolutionTimestamp == null &
     data.question.title != "ssdds"){
       console.log(data)
-      console.log(data.usdLiquidityMeasure)
-      let isbinary = Number(data.outcomeSlotCount) == 2
-      let numYes = Number(data.outcomeTokenMarginalPrices[0])
-      let numNo = Number(data.outcomeTokenMarginalPrices[1])
-      let percentage = (numYes/(numYes+numNo))*100
-      let percentageFormatted = isbinary?(percentage.toFixed(0) + "%"):"none"
+      //console.log(data.usdLiquidityMeasure)
+      let options = data.outcomeTokenMarginalPrices.map((price, slotnum) => {
+        let name = `Option ${slotnum}`
+        if (data.outcomeTokenMarginalPrices.length == 2 && slotnum == 0) name = "Yes"
+        if (data.outcomeTokenMarginalPrices.length == 2 && slotnum == 1) name = "No"
+        return ({
+          "name": name,
+          "probability": Number(price),
+          "type": "PROBABILITY"
+        })
+      })
+
       let obj = {
-        Title: data.question.title,
-        URL: "https://omen.eth.link/#/"+data.id, 
-        Platform: "Omen",
-        "Binary question?" : isbinary,
-        marginalPrices: data.outcomeTokenMarginalPrices,
-        "Percentage": percentageFormatted,
-        "Description": "",
-        "Stars": getstars(1)
+        "title": data.question.title,
+        "url": "https://omen.eth.link/#/"+data.id, 
+        "platform": "Omen",
+        "options": options,
+        "description": "",
+        "stars": 1
       }
       console.log(obj)
       results.push(obj)
