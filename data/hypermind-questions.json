@@ -378,12 +378,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.12871287128712872,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.8712871287128712,
+        "probability": 0.87,
         "type": "PROBABILITY"
       }
     ],
@@ -702,47 +702,47 @@
     "options": [
       {
         "name": "≥ $400",
-        "probability": 0.00909090909090909,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "[$300, $400[",
-        "probability": 0.01818181818181818,
+        "probability": 0.019047619047619046,
         "type": "PROBABILITY"
       },
       {
         "name": "[$200, $300[",
-        "probability": 0.00909090909090909,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "[$100, $200[",
-        "probability": 0.00909090909090909,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "[$0, $100[",
-        "probability": 0.1,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "[$75, $100[",
-        "probability": 0.01818181818181818,
+        "probability": 0.019047619047619046,
         "type": "PROBABILITY"
       },
       {
         "name": "[$50, $75[",
-        "probability": 0.1909090909090909,
+        "probability": 0.14285714285714285,
         "type": "PROBABILITY"
       },
       {
         "name": "[$25, $50[",
-        "probability": 0.5636363636363636,
+        "probability": 0.6,
         "type": "PROBABILITY"
       },
       {
         "name": "[$0, $25[",
-        "probability": 0.1818181818181818,
+        "probability": 0.19047619047619047,
         "type": "PROBABILITY"
       }
     ],

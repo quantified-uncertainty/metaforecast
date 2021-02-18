@@ -1,2 +1,2 @@
-"Title","URL","Platform","Binary question?","Percentage","Description","# Forecasts","Stars"
-"Some title","someurl.com","some platform",true,"X%/none","Some long description which may contain html",15,"★★☆☆☆"
+"title","url","platform","options","description","numforecasts","stars"
+"Some title","someurl.com","some platform","[{""name"":""Option 1"",""probability"":0.25,""type"":""PROBABILITY""},{""name"":""Option 2"",""probability"":0.5,""type"":""PROBABILITY""},{""name"":""Option 3"",""probability"":0.24,""type"":""PROBABILITY""}]","Some long description which may contain html",15,2

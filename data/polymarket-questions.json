@@ -7,16 +7,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9010864391575892370620412951502151",
+        "probability": "0.8972214770270854675358879731764318",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.09891356084241076293795870484978491",
+        "probability": "0.1027785229729145324641120268235682",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "618",
+    "numforecasts": "622",
     "stars": "★★☆☆☆"
   },
   {
@@ -127,16 +127,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.01862323556738080595251448593339124",
+        "probability": "0.02331354522289679605178329566667993",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9813767644326191940474855140666088",
+        "probability": "0.9766864547771032039482167043333201",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1904",
+    "numforecasts": "1905",
     "stars": "★★☆☆☆"
   },
   {
@@ -167,16 +167,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.6101238735943695551691644525750213",
+        "probability": "0.5945985979586345944918821740375526",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.3898761264056304448308355474249787",
+        "probability": "0.4054014020413654055081178259624474",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "316",
+    "numforecasts": "318",
     "stars": "★★☆☆☆"
   },
   {
@@ -187,16 +187,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.5170178444818343218442102256880796",
+        "probability": "0.5114050084947337388860028265416297",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.4829821555181656781557897743119204",
+        "probability": "0.4885949915052662611139971734583703",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1305",
+    "numforecasts": "1309",
     "stars": "★★☆☆☆"
   },
   {
@@ -207,36 +207,36 @@
     "options": [
       {
         "name": "Less Than 20",
-        "probability": "0.9996616906587430961102228253237538",
+        "probability": "0.9996660071908931085809655515791122",
         "type": "PROBABILITY"
       },
       {
         "name": "20-29",
-        "probability": "0.00006833478256211006284350810712914217",
+        "probability": "0.00006759350446567884056053478503335756",
         "type": "PROBABILITY"
       },
       {
         "name": "30-39",
-        "probability": "0.00007815828267995839322761111188614374",
+        "probability": "0.00007731045003292509459540633570069339",
         "type": "PROBABILITY"
       },
       {
         "name": "40-49",
-        "probability": "0.00006870634332285275801950086795329312",
+        "probability": "0.00006796103490526414142488483313646192",
         "type": "PROBABILITY"
       },
       {
         "name": "50-59",
-        "probability": "0.00006021628071455896557272682340116867",
+        "probability": "0.00005891642551572057140037965090742418",
         "type": "PROBABILITY"
       },
       {
         "name": "60 or More",
-        "probability": "0.00006289365197742371011382776587647275",
+        "probability": "0.00006221139418730277105324281610978755",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "823",
+    "numforecasts": "824",
     "stars": "★★☆☆☆"
   },
   {
@@ -267,16 +267,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1014636377222777590756136391381111",
+        "probability": "0.1034503537186229435255207987775941",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8985363622777222409243863608618889",
+        "probability": "0.8965496462813770564744792012224059",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "254",
+    "numforecasts": "255",
     "stars": "★★☆☆☆"
   },
   {
@@ -287,16 +287,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.3862767139116435555996667648218157",
+        "probability": "0.3873757546721096209991098570284256",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.6137232860883564444003332351781843",
+        "probability": "0.6126242453278903790008901429715744",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "172",
+    "numforecasts": "174",
     "stars": "★★☆☆☆"
   },
   {
@@ -307,16 +307,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.2226110687068358531853466976498831",
+        "probability": "0.2395586525809620837053150821011964",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.7773889312931641468146533023501169",
+        "probability": "0.7604413474190379162946849178988036",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "196",
+    "numforecasts": "200",
     "stars": "★★☆☆☆"
   },
   {
