@@ -76,40 +76,6 @@
     "stars": 1
   },
   {
-    "title": "When will the FDA approve the use of an existing, orally-administered vaccine for the prevention of COVID-19?",
-    "url": "https://omen.eth.link/#/0x9598659e3fc7d5a618b57e94be2ac37e5d774905",
-    "platform": "Omen",
-    "options": [
-      {
-        "name": "Option 0",
-        "probability": 0.015156614958570477,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Option 1",
-        "probability": 0.015156614958570477,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Option 2",
-        "probability": 0.015156614958570477,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Option 3",
-        "probability": 0.015156614958570477,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Option 4",
-        "probability": 0.9393735401657181,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "",
-    "stars": 1
-  },
-  {
     "title": "Will The Flippening happen in 2021? (Will another blockchain's market cap exceed Bitcoin's market cap in 2021?)",
     "url": "https://omen.eth.link/#/0xa6da2bc89a433b9cdcc7271077a119139f4d305c",
     "platform": "Omen",

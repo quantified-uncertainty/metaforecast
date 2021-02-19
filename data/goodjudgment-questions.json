@@ -7,22 +7,22 @@
     "options": [
       {
         "name": "National Rally (Rassemblement national)",
-        "probability": 0.14,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "The Republicans (Les Républicains)",
-        "probability": 0.07,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
         "name": "The Republic Forward (La République En Marche !)",
-        "probability": 0.74,
+        "probability": 0.76,
         "type": "PROBABILITY"
       },
       {
         "name": "Unbowed France (La France Insoumise)",
-        "probability": 0.01,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
@@ -41,22 +41,22 @@
     "options": [
       {
         "name": "Brothers of Italy (Fratelli d'Italia)",
-        "probability": 0.12,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Democratic Party (Partito Democratico)",
-        "probability": 0.33,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Five Star Movement (Movimento 5 Stelle)",
         "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
+        "name": "Democratic Party (Partito Democratico)",
+        "probability": 0.35,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Five Star Movement (Movimento 5 Stelle)",
+        "probability": 0.09,
+        "type": "PROBABILITY"
+      },
+      {
         "name": "League (Lega)",
-        "probability": 0.43,
+        "probability": 0.44,
         "type": "PROBABILITY"
       },
       {
@@ -104,12 +104,12 @@
       },
       {
         "name": "On 20 January 2025",
-        "probability": 0.54,
+        "probability": 0.53,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 21 January 2025",
-        "probability": 0.36,
+        "probability": 0.37,
         "type": "PROBABILITY"
       }
     ],
@@ -128,17 +128,17 @@
       },
       {
         "name": "Between 2.5 million and 5 million, inclusive",
-        "probability": 0.86,
+        "probability": 0.89,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 5 million but fewer than 10 million",
-        "probability": 0.13,
+        "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 10 million and 20 million, inclusive",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -162,12 +162,12 @@
       },
       {
         "name": "Between 1 February 2021 and 31 March 2021",
-        "probability": 0.28,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 April 2021 and 31 May 2021",
-        "probability": 0.7,
+        "probability": 0.68,
         "type": "PROBABILITY"
       },
       {
@@ -201,12 +201,12 @@
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.42,
+        "probability": 0.39,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.48,
+        "probability": 0.51,
         "type": "PROBABILITY"
       },
       {
@@ -230,17 +230,17 @@
       },
       {
         "name": "Between 1 March 2021 and 30 April 2021",
-        "probability": 0.86,
+        "probability": 0.87,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.14,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -293,17 +293,17 @@
       },
       {
         "name": "Lower by more than 0% but less than 4% ",
-        "probability": 0.24,
+        "probability": 0.19,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by between 0% and 4%, inclusive",
-        "probability": 0.68,
+        "probability": 0.69,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 4%",
-        "probability": 0.06,
+        "probability": 0.1,
         "type": "PROBABILITY"
       }
     ],
@@ -322,12 +322,12 @@
       },
       {
         "name": "Higher by between 0% and 100%",
-        "probability": 0.46,
+        "probability": 0.45,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 100%",
-        "probability": 0.53,
+        "probability": 0.54,
         "type": "PROBABILITY"
       }
     ],
@@ -375,12 +375,12 @@
     "options": [
       {
         "name": "10% or less",
-        "probability": 0.04,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 10% but less than 20%",
-        "probability": 0.79,
+        "probability": 0.8,
         "type": "PROBABILITY"
       },
       {

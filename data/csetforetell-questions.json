@@ -7,32 +7,32 @@
     "options": [
       {
         "name": "Less than $40 billion",
-        "probability": 0.0588,
+        "probability": 0.060599999999999994,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $40 billion and $60 billion, inclusive",
-        "probability": 0.2231,
+        "probability": 0.2261,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $60 billion but less than or equal to $80 billion",
-        "probability": 0.37810000000000005,
+        "probability": 0.3833,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $80 billion but less than or equal to $100 billion",
-        "probability": 0.2469,
+        "probability": 0.24170000000000003,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $100 billion",
-        "probability": 0.0931,
+        "probability": 0.0883,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "23",
-    "numforecasters": "23",
+    "numforecasts": "25",
+    "numforecasters": "25",
     "stars": 2
   },
   {
@@ -43,7 +43,7 @@
     "options": [
       {
         "name": "Less than $13 billion",
-        "probability": 0.030699999999999998,
+        "probability": 0.0313,
         "type": "PROBABILITY"
       },
       {
@@ -53,22 +53,22 @@
       },
       {
         "name": "More than $17 billion but less than or equal to $21 billion",
-        "probability": 0.4836,
+        "probability": 0.48560000000000003,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $21 billion but less than or equal to $25 billion",
-        "probability": 0.28859999999999997,
+        "probability": 0.2869,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $25 billion",
-        "probability": 0.0721,
+        "probability": 0.0713,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "20",
-    "numforecasters": "20",
+    "numforecasts": "22",
+    "numforecasters": "22",
     "stars": 2
   },
   {
@@ -79,22 +79,22 @@
     "options": [
       {
         "name": "Less than -0.25",
-        "probability": 0.1376,
+        "probability": 0.1361,
         "type": "PROBABILITY"
       },
       {
         "name": "Between -0.25 and 0, inclusive",
-        "probability": 0.3234,
+        "probability": 0.3214,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0 but less than or equal to 0.25",
-        "probability": 0.3271,
+        "probability": 0.3283,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.25 but less than or equal to 0.5",
-        "probability": 0.1672,
+        "probability": 0.16949999999999998,
         "type": "PROBABILITY"
       },
       {
@@ -103,8 +103,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "92",
-    "numforecasters": "84",
+    "numforecasts": "93",
+    "numforecasters": "85",
     "stars": 2
   },
   {
@@ -161,22 +161,22 @@
       },
       {
         "name": "More than $70 million but less than or equal to $110 million",
-        "probability": 0.3119,
+        "probability": 0.31170000000000003,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $110 million but less than or equal to $150 million",
-        "probability": 0.1833,
+        "probability": 0.1841,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $150 million",
-        "probability": 0.10980000000000001,
+        "probability": 0.1093,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "90",
-    "numforecasters": "84",
+    "numforecasts": "91",
+    "numforecasters": "85",
     "stars": 2
   },
   {
@@ -223,22 +223,22 @@
     "options": [
       {
         "name": "Less than 800",
-        "probability": 0.1375,
+        "probability": 0.1377,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 800 and 4,000",
-        "probability": 0.4061,
+        "probability": 0.4064,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 4,000 but less than or equal to 20,000",
-        "probability": 0.311,
+        "probability": 0.3107,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 20,000 but less than or equal to 100,000",
-        "probability": 0.1139,
+        "probability": 0.11380000000000001,
         "type": "PROBABILITY"
       },
       {
@@ -247,7 +247,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "99",
+    "numforecasts": "100",
     "numforecasters": "89",
     "stars": 2
   },
@@ -304,8 +304,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "87",
-    "numforecasters": "61",
+    "numforecasts": "88",
+    "numforecasters": "62",
     "stars": 2
   },
   {
@@ -387,8 +387,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "203",
-    "numforecasters": "152",
+    "numforecasts": "206",
+    "numforecasters": "153",
     "stars": 3
   },
   {
@@ -435,27 +435,27 @@
     "options": [
       {
         "name": "Before February 17, 2021",
-        "probability": 0.05,
+        "probability": 0.048799999999999996,
         "type": "PROBABILITY"
       },
       {
         "name": "Between February 17 and May 19, 2021, inclusive",
-        "probability": 0.12140000000000001,
+        "probability": 0.1204,
         "type": "PROBABILITY"
       },
       {
         "name": "After May 19, but before or equal to November 17, 2021",
-        "probability": 0.2569,
+        "probability": 0.2566,
         "type": "PROBABILITY"
       },
       {
         "name": "After November 17, 2021",
-        "probability": 0.5717,
+        "probability": 0.5742,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "163",
-    "numforecasters": "114",
+    "numforecasts": "165",
+    "numforecasters": "116",
     "stars": 3
   },
   {
@@ -538,32 +538,32 @@
     "options": [
       {
         "name": "Less than $2.2 billion",
-        "probability": 0.08869999999999999,
+        "probability": 0.0922,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $2.2 billion but less than or equal to $2.7 billion",
-        "probability": 0.2748,
+        "probability": 0.2756,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $2.7 billion and $3.2 billion, inclusive",
-        "probability": 0.31129999999999997,
+        "probability": 0.3109,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $3.2 billion and $3.7 billion, inclusive",
-        "probability": 0.19940000000000002,
+        "probability": 0.1978,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $3.7 billion",
-        "probability": 0.1258,
+        "probability": 0.1234,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "62",
-    "numforecasters": "45",
+    "numforecasts": "63",
+    "numforecasters": "46",
     "stars": 2
   },
   {
@@ -610,32 +610,32 @@
     "options": [
       {
         "name": "Less than 15%",
-        "probability": 0.0762,
+        "probability": 0.0751,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 15% and 17%, inclusive",
-        "probability": 0.14679999999999999,
+        "probability": 0.1477,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 17% but less than or equal to 19%",
-        "probability": 0.2833,
+        "probability": 0.29100000000000004,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 19% but less than or equal to 21%",
-        "probability": 0.3323,
+        "probability": 0.3284,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 21%",
-        "probability": 0.1613,
+        "probability": 0.15789999999999998,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "94",
-    "numforecasters": "87",
+    "numforecasts": "96",
+    "numforecasters": "89",
     "stars": 2
   },
   {
@@ -775,32 +775,32 @@
     "options": [
       {
         "name": "Less than 1.5%",
-        "probability": 0.0646,
+        "probability": 0.0663,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1.5% and 3%, inclusive",
-        "probability": 0.1374,
+        "probability": 0.1401,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 3% but less than or equal to 4.5%",
-        "probability": 0.2119,
+        "probability": 0.213,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 4.5% but less than or equal to 6%",
-        "probability": 0.26780000000000004,
+        "probability": 0.2673,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 6%",
-        "probability": 0.3184,
+        "probability": 0.3134,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "178",
-    "numforecasters": "132",
+    "numforecasts": "180",
+    "numforecasters": "133",
     "stars": 3
   },
   {
@@ -847,32 +847,32 @@
     "options": [
       {
         "name": "Less than 675",
-        "probability": 0.3508,
+        "probability": 0.34340000000000004,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 675 and 750, inclusive",
-        "probability": 0.30579999999999996,
+        "probability": 0.3068,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 750 but less than or equal to 825",
-        "probability": 0.177,
+        "probability": 0.1812,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 825 but less than or equal to 900",
-        "probability": 0.114,
+        "probability": 0.1149,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 900",
-        "probability": 0.0525,
+        "probability": 0.0537,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "91",
-    "numforecasters": "58",
+    "numforecasts": "92",
+    "numforecasters": "59",
     "stars": 2
   },
   {
@@ -883,32 +883,32 @@
     "options": [
       {
         "name": "Less than 5,000",
-        "probability": 0.2245,
+        "probability": 0.2231,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 5,000 and 7,500, inclusive",
-        "probability": 0.23379999999999998,
+        "probability": 0.2341,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 7,500 but less than or equal to 10,000",
-        "probability": 0.2589,
+        "probability": 0.2606,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 10,000 but less than or equal to12,500",
-        "probability": 0.1723,
+        "probability": 0.17190000000000003,
         "type": "PROBABILITY"
       },
       {
         "name": "More than12,500",
-        "probability": 0.1106,
+        "probability": 0.1104,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "123",
-    "numforecasters": "77",
+    "numforecasts": "124",
+    "numforecasters": "78",
     "stars": 3
   }
 ]

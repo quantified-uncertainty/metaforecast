@@ -92,7 +92,7 @@
       },
       {
         "name": "Anne Hidalgo",
-        "probability": 0.028846153846153844,
+        "probability": 0.038461538461538464,
         "type": "PROBABILITY"
       },
       {
@@ -107,7 +107,7 @@
       },
       {
         "name": "Emmanuel Macron",
-        "probability": 0.5865384615384616,
+        "probability": 0.548076923076923,
         "type": "PROBABILITY"
       },
       {
@@ -132,7 +132,7 @@
       },
       {
         "name": "Another man",
-        "probability": 0.14423076923076925,
+        "probability": 0.17307692307692307,
         "type": "PROBABILITY"
       }
     ],
@@ -146,22 +146,22 @@
     "options": [
       {
         "name": "Macron and Le Pen",
-        "probability": 0.6372549019607843,
+        "probability": 0.62,
         "type": "PROBABILITY"
       },
       {
         "name": "Macron, but not Le Pen",
-        "probability": 0.1568627450980392,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "Le Pen, but not Macron",
-        "probability": 0.1764705882352941,
+        "probability": 0.22,
         "type": "PROBABILITY"
       },
       {
         "name": "Neither of them",
-        "probability": 0.02941176470588235,
+        "probability": 0.03,
         "type": "PROBABILITY"
       }
     ],
@@ -209,37 +209,37 @@
       },
       {
         "name": "February 2021",
-        "probability": 0.018691588785046728,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "March 2021",
-        "probability": 0.14953271028037382,
+        "probability": 0.1238095238095238,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.08,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "April 2021",
-        "probability": 0.16822429906542055,
+        "probability": 0.16190476190476188,
         "type": "PROBABILITY"
       },
       {
         "name": "May 2021",
-        "probability": 0.23364485981308414,
+        "probability": 0.26666666666666666,
         "type": "PROBABILITY"
       },
       {
         "name": "June 2021",
-        "probability": 0.23364485981308414,
+        "probability": 0.23809523809523805,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe after June 2021",
-        "probability": 0.19626168224299065,
+        "probability": 0.2,
         "type": "PROBABILITY"
       }
     ],
@@ -306,17 +306,17 @@
     "options": [
       {
         "name": "> 148 (more than currently)",
-        "probability": 0.49504950495049505,
+        "probability": 0.76,
         "type": "PROBABILITY"
       },
       {
         "name": "128 (absolute majority) to 148 ",
-        "probability": 0.48514851485148514,
+        "probability": 0.22,
         "type": "PROBABILITY"
       },
       {
         "name": "< 128",
-        "probability": 0.019801980198019802,
+        "probability": 0.02,
         "type": "PROBABILITY"
       }
     ],
@@ -378,12 +378,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.13,
+        "probability": 0.14705882352941177,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.87,
+        "probability": 0.8529411764705883,
         "type": "PROBABILITY"
       }
     ],
@@ -504,27 +504,27 @@
     "options": [
       {
         "name": "Q1, 2021 (or before)",
-        "probability": 0.009900990099009901,
+        "probability": 0.008547008547008546,
         "type": "PROBABILITY"
       },
       {
         "name": "Q2, 2021",
-        "probability": 0.1188118811881188,
+        "probability": 0.13675213675213674,
         "type": "PROBABILITY"
       },
       {
         "name": "Q3, 2021",
-        "probability": 0.2178217821782178,
+        "probability": 0.2735042735042735,
         "type": "PROBABILITY"
       },
       {
         "name": "Q4, 2021",
-        "probability": 0.12871287128712872,
+        "probability": 0.1282051282051282,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.5247524752475248,
+        "probability": 0.45299145299145294,
         "type": "PROBABILITY"
       }
     ],
@@ -625,27 +625,27 @@
     "options": [
       {
         "name": "in Q1, 2021",
-        "probability": 0.19047619047619047,
+        "probability": 0.08653846153846154,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q2, 2021",
-        "probability": 0.27777777777777773,
+        "probability": 0.3365384615384615,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q3, 2021",
-        "probability": 0.0873015873015873,
+        "probability": 0.10576923076923077,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q4, 2021",
-        "probability": 0.1349206349206349,
+        "probability": 0.16346153846153846,
         "type": "PROBABILITY"
       },
       {
         "name": "Perhaps later",
-        "probability": 0.3095238095238095,
+        "probability": 0.3076923076923077,
         "type": "PROBABILITY"
       }
     ],
@@ -664,12 +664,12 @@
       },
       {
         "name": "Q1, 2021",
-        "probability": 0.05,
+        "probability": 0.09523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.95,
+        "probability": 0.9047619047619047,
         "type": "PROBABILITY"
       }
     ],
@@ -683,12 +683,12 @@
     "options": [
       {
         "name": ">= 2,200 USD",
-        "probability": 0.35135135135135137,
+        "probability": 0.33333333333333326,
         "type": "PROBABILITY"
       },
       {
         "name": "<= 1,700 USD",
-        "probability": 0.6486486486486487,
+        "probability": 0.6666666666666665,
         "type": "PROBABILITY"
       }
     ],
@@ -702,47 +702,47 @@
     "options": [
       {
         "name": "≥ $400",
-        "probability": 0.009523809523809523,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "[$300, $400[",
-        "probability": 0.019047619047619046,
+        "probability": 0.018691588785046728,
         "type": "PROBABILITY"
       },
       {
         "name": "[$200, $300[",
-        "probability": 0.009523809523809523,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "[$100, $200[",
-        "probability": 0.009523809523809523,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "[$0, $100[",
-        "probability": 0.13,
+        "probability": 0.17,
         "type": "PROBABILITY"
       },
       {
         "name": "[$75, $100[",
-        "probability": 0.019047619047619046,
+        "probability": 0.018691588785046728,
         "type": "PROBABILITY"
       },
       {
         "name": "[$50, $75[",
-        "probability": 0.14285714285714285,
+        "probability": 0.09345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "[$25, $50[",
-        "probability": 0.6,
+        "probability": 0.719626168224299,
         "type": "PROBABILITY"
       },
       {
         "name": "[$0, $25[",
-        "probability": 0.19047619047619047,
+        "probability": 0.12149532710280374,
         "type": "PROBABILITY"
       }
     ],
@@ -756,12 +756,12 @@
     "options": [
       {
         "name": "≥ 32,000",
-        "probability": 0.9,
+        "probability": 0.84,
         "type": "PROBABILITY"
       },
       {
         "name": "≤ 28,000",
-        "probability": 0.1,
+        "probability": 0.16,
         "type": "PROBABILITY"
       }
     ],
@@ -775,12 +775,12 @@
     "options": [
       {
         "name": "≥ 6,000",
-        "probability": 0.8,
+        "probability": 0.75,
         "type": "PROBABILITY"
       },
       {
         "name": "≤ 5,000",
-        "probability": 0.2,
+        "probability": 0.25,
         "type": "PROBABILITY"
       }
     ],
@@ -813,12 +813,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.6929824561403508,
+        "probability": 0.6875,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.30701754385964913,
+        "probability": 0.3125,
         "type": "PROBABILITY"
       }
     ],
