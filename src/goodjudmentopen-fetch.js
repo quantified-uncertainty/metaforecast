@@ -148,9 +148,9 @@ export async function goodjudgmentopen(){
           }
         }
         let question = ({
-            "Title": title,
-            "URL": url,
-            "Platform": "Good Judgment Open",
+            "title": title,
+            "url": url,
+            "platform": "Good Judgment Open",
             ...moreinfo
           })
           console.log(question)

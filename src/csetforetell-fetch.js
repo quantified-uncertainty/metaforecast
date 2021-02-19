@@ -147,9 +147,9 @@ export async function csetforetell(){
           }
         }
         let question = ({
-            "Title": title,
-            "URL": url,
-            "Platform": "CSET-foretell",
+            "title": title,
+            "url": url,
+            "platform": "CSET-foretell",
             ...moreinfo
           })
           console.log(question)
