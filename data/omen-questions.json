@@ -38,25 +38,6 @@
     "stars": 1
   },
   {
-    "title": "Will GIP-5 pass? (GIP-5: Remove Gnosis Impact from the GnosisDAO Governance Process)",
-    "url": "https://omen.eth.link/#/0x4a7ccee82790339756a044d7815126f242ab18cd",
-    "platform": "Omen",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.7962816778825309,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.20371832211746907,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "",
-    "stars": 1
-  },
-  {
     "title": "Will Uniswap V3 be launched and usable in Q1 2021? (includes mainnet or Layer2)",
     "url": "https://omen.eth.link/#/0x8bcf27b20670a4f32973cbf231b8904029da1ccb",
     "platform": "Omen",
@@ -107,25 +88,6 @@
       {
         "name": "No",
         "probability": 0.14896775488170313,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "",
-    "stars": 1
-  },
-  {
-    "title": "Will GIP-5 pass? (GIP-5: Remove Gnosis Impact from the GnosisDAO Governance Process)",
-    "url": "https://omen.eth.link/#/0xdad7da2870846ed40a48cc5485b10d56612a990e",
-    "platform": "Omen",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.7706872480787278,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.22931275192127215,
         "type": "PROBABILITY"
       }
     ],
