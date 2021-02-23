@@ -18,7 +18,7 @@ import {smarkets} from "./smarkets-fetch.js"
 let opts = {}
 let json2csvParser = new Parser({ transforms:  [transforms.flatten()]});
 //let parse = csv => json2csvParser.parse(csv);
-let sets = ["template", "elicit", "metaculus", "predictit", "polymarket", "csetforetell", "goodjudgment","goodjudmentopen", "omen", "hypermind", "smarkets"]
+let sets = ["template", "elicit", "metaculus", "predictit", "polymarket", "csetforetell", "givewellopenphil", "goodjudgment","goodjudmentopen", "omen", "hypermind", "smarkets"]
 let suffix = "-questions"
 let locationData = "./data/"
 let sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));

@@ -1,8 +1,8 @@
 ## What this is 
 
-This is a set of libraries and a command line interface that fetches probabilities/forecasts from prediction markets and forecasting platforms. These forecasts are then hosted on airtable, and used to power a search engine for probabilities. 
+This is a set of libraries and a command line interface that fetches probabilities/forecasts from prediction markets and forecasting platforms. 
 
-For now, a demo can be found [here](https://metaforecast.org/) (try searching "Trump", "China" or "Semiconductors"), and the database can be perused [here](https://airtable.com/shrUotmcMmmTdIjmX). I also have a json endpoint [here](https://metaforecast.org/data/metaforecasts.json) and a csv endpoint [here](https://metaforecast.org/data/metaforecasts.csv).
+These forecasts are then used to power a search engine for probabilities, which can be found [here](https://metaforecast.org/) (try searching "Trump", "China" or "Semiconductors") (source code [here](https://github.com/QURIresearch/metaforecast-website-nextjs)). A json endpoint can be found [here](https://metaforecast.org/data/metaforecasts.json).
 
 I also created a search engine using Elicit's IDE, which uses GPT-3 to deliver vastly superior semantic search (as opposed to fuzzy word matching). If you have access to the Elicit IDE, you can use the action "Search Metaforecast database".
 
