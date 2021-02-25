@@ -46,6 +46,7 @@ let coverttocsvandmerge = () => {
     merged = merged.concat(json)
     //console.log(merged)
   }
+  merged = merged.map(element => ({...element, optionsstringforsearch: element.options.map(option => option.name).join(", ")}))
   writefile(JSON.stringify(merged, null, 2), "metaforecasts", "", ".json")
   let mergedcsv = csvfromjson(merged)
   writefile(mergedcsv, "metaforecasts", "")
