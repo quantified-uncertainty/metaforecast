@@ -1,5 +1,83 @@
 [
   {
+    "title": "What will the combined revenue of Alphabet, Amazon, Apple, Facebook, and Microsoft be in the second half of 2021?",
+    "url": "https://www.cset-foretell.com/questions/114-what-will-the-combined-revenue-of-alphabet-amazon-apple-facebook-and-microsoft-be-in-the-second-half-of-2021",
+    "platform": "CSET-foretell",
+    "description": "Previous version. This question was previously issued for the first half of 2021. The median forecast for the first half of 2021 was $557 billion. Although that question has not yet resolved, based on data for the second half of 2020 -- $631 billion -- big tech revenue appears to be increasing ahead of the crowd's predictions. You can view those forecasts here.Context. Even as the economic crisis deepened, large tech companies have have demonstrated resilience, beating Wall Street Analysts’ expectations. Data and Resolution Details. This question resolves based on the 10-Q filings of Alphabet Inc., Amazon.com Inc., Apple Inc., Facebook Inc., and Microsoft Inc. It resolves when these companies’ 10-Q filings for the fourth quarter of 2021 are publicly available.  The data underlying the graph is here.This question is a metric for the following scenarios: Tech Companies Threaten Democracy The Impact of COVID-19 on the ML Research Field Three Possible 2025 Worlds that Should Inform Policy Today \n",
+    "options": [
+      {
+        "name": "Less than $470 billion",
+        "probability": 0.013000000000000001,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between $470 billion and $540 billion, inclusive",
+        "probability": 0.0635,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than $540 billion but less than or equal to $610 billion",
+        "probability": 0.14,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than $610 billion but less than or equal to $680 billion",
+        "probability": 0.34850000000000003,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than $680 billion",
+        "probability": 0.435,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "20",
+    "numforecasters": "20",
+    "stars": 2
+  },
+  {
+    "title": "Will the Chinese military or other maritime security forces fire upon another country's civil or military vessel in the South China Sea between July 1 and December 31, 2021, inclusive?",
+    "url": "https://www.cset-foretell.com/questions/113-will-the-chinese-military-or-other-maritime-security-forces-fire-upon-another-country-s-civil-or-military-vessel-in-the-south-china-sea-between-july-1-and-december-31-2021-inclusive",
+    "platform": "CSET-foretell",
+    "description": "Related questions. This question was previously issued for the first half of 2021. The final crowd forecast was 11%. The probability generally declined during the period the question was open. You can view that question and the results here. A variation on this question was also issued for Summer 2020. You can view that question and the results here. Context. The South China Sea is host to vast natural gas resources as well as a number of competing territorial claims. China has built military bases on several coral atolls and reefs in the South China Sea, and rejected an international tribunal's ruling that it has no historic rights claim to resources in certain sea areas. These bases now include sophisticated facilities meant to enable military operations in this strategic area. The U.S. conducts Freedom of Navigation Operations (FONOPs) to demonstrate China’s lack of claim to the area, which have sometimes led to tense encounters between the U.S. and Chinese navies. China’s Maritime Militia and Coast Guard have also clashed with foreign fishing vessels in the area. Data and resolution details. This question resolves based on popular media sources. \"Fires upon\" assumes the discharge of a weapon with lethal intent and does not include methods such as water cannons, rubber bullets, or ramming.***This question is a metric for the following scenarios: Three Possible 2025 Worlds that Should Inform Policy Today An Isolated China in a Globalized World \n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.29,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.71,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "33",
+    "numforecasters": "32",
+    "stars": 2
+  },
+  {
+    "title": "Will Xi Jinping be General Secretary of the Chinese Communist Party's Central Committee on December 31, 2022?",
+    "url": "https://www.cset-foretell.com/questions/115-will-xi-jingping-be-general-secretary-of-the-chinese-communist-party-s-central-committee-on-december-31-2022",
+    "platform": "CSET-foretell",
+    "description": "Context. The Chinese Communist Party will elect a new 370-member Central Committee at its next quinquennial National Congress, likely in October or November 2022. Immediately after this Party Congress, the new 20th Central Committee will hold a plenary meeting that selects the Party’s General Secretary for the incoming five-year term.The General Secretary chairs the Central Committee’s top 25-member Politburo and the Politburo’s elite seven-member Standing Committee. Since the early 1990s, the General Secretary has concurrently served as President of the People’s Republic of China and Chairperson of the Central Military Commission. The General Secretary is thus the “paramount leader” of the three sectors of regime power: the Party, the State, and the People’s Liberation Army.Xi Jinping became General Secretary after the 18th Party Congress in November 2012 and was reselected for a second term at the 19th Party Congress in October 2017. When Xi began his tenure the expectation both within the Party and among domestic and international observes of China was that he would follow the succession norm set by his predecessors Hu Jintao and Jiang Zemin of stepping down as leader after serving two full five-year terms.But since coming to power, Xi has reversed the Party’s previous trend toward “collective leadership” and become the powerful “core leader” of a far more personalized political set-up. Xi has crippled rival power centers in the Party, elevated close associates to key leadership positions, centralized policymaking authority in “leading small groups” that he chairs, and asserted unparalleled authority over the armed forces and security services. These developments have led many observers to argue that Xi will secure a norm-defying third term as General Secretary at the 20th Party Congress. In March 2018, China’s legislature amended the State Constitution to delete a two-term limit for Presidents of the People’s Republic, removing the only formal barrier to Xi serving as paramount leader indefinitely.Other analysts warn that Xi’s position is more precarious because of the backlash generated by policies that target rival elites, suppress civil society, and potentially slow China’s growth. Xi, who turns 69 years old in 2022, would also have to win exemption from a 20-year-old norm that cadres aged 68 or older are not appointed to a new PBSC term.Resolution details. This question resolves based on the leadership positions listed on the website of People’s Daily, the official mouthpiece of the Chinese Communist Party’s Central Committee. The next General Secretary should be announced in the communique of the First Plenary Meeting of the 20th Central Committee of the Chinese Communist Party, likely in October or November 2022.***This question was contributed by Neil Thomas and Jordan Schneider.\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.85,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.15,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "62",
+    "numforecasters": "55",
+    "stars": 2
+  },
+  {
     "title": "How much funding will private U.S. tech companies raise between July 1 and December 31, 2021, inclusive?",
     "url": "https://www.cset-foretell.com/questions/111-how-much-funding-will-private-u-s-tech-companies-raise-between-july-1-and-december-31-2021-inclusive",
     "platform": "CSET-foretell",
@@ -7,32 +85,32 @@
     "options": [
       {
         "name": "Less than $40 billion",
-        "probability": 0.0719,
+        "probability": 0.06570000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $40 billion and $60 billion, inclusive",
-        "probability": 0.231,
+        "probability": 0.22829999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $60 billion but less than or equal to $80 billion",
-        "probability": 0.3619,
+        "probability": 0.3978,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $80 billion but less than or equal to $100 billion",
-        "probability": 0.24050000000000002,
+        "probability": 0.21960000000000002,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $100 billion",
-        "probability": 0.09480000000000001,
+        "probability": 0.08869999999999999,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "31",
-    "numforecasters": "30",
+    "numforecasts": "34",
+    "numforecasters": "33",
     "stars": 2
   },
   {
@@ -43,32 +121,32 @@
     "options": [
       {
         "name": "Less than $13 billion",
-        "probability": 0.0317,
+        "probability": 0.032,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $13 billion and $17 billion, inclusive",
-        "probability": 0.1406,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $17 billion but less than or equal to $21 billion",
-        "probability": 0.4778,
+        "probability": 0.4825,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $21 billion but less than or equal to $25 billion",
-        "probability": 0.2783,
+        "probability": 0.28,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $25 billion",
-        "probability": 0.0717,
+        "probability": 0.0755,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "25",
-    "numforecasters": "25",
+    "numforecasts": "29",
+    "numforecasters": "29",
     "stars": 2
   },
   {
@@ -79,33 +157,33 @@
     "options": [
       {
         "name": "Less than -0.25",
-        "probability": 0.13970000000000002,
+        "probability": 0.1484,
         "type": "PROBABILITY"
       },
       {
         "name": "Between -0.25 and 0, inclusive",
-        "probability": 0.3187,
+        "probability": 0.3178,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0 but less than or equal to 0.25",
-        "probability": 0.33409999999999995,
+        "probability": 0.3283,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.25 but less than or equal to 0.5",
-        "probability": 0.1618,
+        "probability": 0.1602,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.5",
-        "probability": 0.045700000000000005,
+        "probability": 0.0453,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "97",
-    "numforecasters": "88",
-    "stars": 2
+    "numforecasts": "103",
+    "numforecasters": "93",
+    "stars": 3
   },
   {
     "title": "How much will the U.S. Department of Defense spend on AI research contracts between July 1 and December 31, 2021, inclusive?",
@@ -120,27 +198,27 @@
       },
       {
         "name": "Between $200 million and $350 million, inclusive",
-        "probability": 0.22899999999999998,
+        "probability": 0.2229,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $350 million but less than or equal to $500 million",
-        "probability": 0.34380000000000005,
+        "probability": 0.3361,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $500 million but less than or equal to $650 million",
-        "probability": 0.2288,
+        "probability": 0.22920000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $650 million",
-        "probability": 0.1454,
+        "probability": 0.1586,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "76",
-    "numforecasters": "70",
+    "numforecasts": "82",
+    "numforecasters": "74",
     "stars": 2
   },
   {
@@ -151,33 +229,33 @@
     "options": [
       {
         "name": "Less than $30 million",
-        "probability": 0.0572,
+        "probability": 0.0545,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $30 million and $70 million, inclusive",
-        "probability": 0.3322,
+        "probability": 0.3126,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $70 million but less than or equal to $110 million",
-        "probability": 0.3123,
+        "probability": 0.3171,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $110 million but less than or equal to $150 million",
-        "probability": 0.1893,
+        "probability": 0.2024,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $150 million",
-        "probability": 0.109,
+        "probability": 0.1133,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "93",
-    "numforecasters": "87",
-    "stars": 2
+    "numforecasts": "102",
+    "numforecasters": "96",
+    "stars": 3
   },
   {
     "title": "How many AI papers will be posted on arXiv between July 1 and December 31, 2021, inclusive?",
@@ -187,32 +265,32 @@
     "options": [
       {
         "name": "Less than 26,000",
-        "probability": 0.0564,
+        "probability": 0.055,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 26,000 and 28,000, inclusive",
-        "probability": 0.1182,
+        "probability": 0.11789999999999999,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 28,000 but less than or equal to 30,000",
-        "probability": 0.2555,
+        "probability": 0.25079999999999997,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 30,000 but less than or equal to 32,000",
-        "probability": 0.3468,
+        "probability": 0.3417,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 32,000",
-        "probability": 0.2232,
+        "probability": 0.2346,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "34",
-    "numforecasters": "32",
+    "numforecasts": "37",
+    "numforecasters": "34",
     "stars": 2
   },
   {
@@ -223,33 +301,33 @@
     "options": [
       {
         "name": "Less than 800",
-        "probability": 0.1377,
+        "probability": 0.1373,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 800 and 4,000",
-        "probability": 0.4064,
+        "probability": 0.405,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 4,000 but less than or equal to 20,000",
-        "probability": 0.3107,
+        "probability": 0.3106,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 20,000 but less than or equal to 100,000",
-        "probability": 0.11380000000000001,
+        "probability": 0.11449999999999999,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 100,000",
-        "probability": 0.0315,
+        "probability": 0.0326,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "100",
-    "numforecasters": "89",
-    "stars": 2
+    "numforecasts": "103",
+    "numforecasters": "90",
+    "stars": 3
   },
   {
     "title": "What percentage of U.S. news articles about AI will be about privacy and security between July 1 and December 31, 2021, inclusive?",
@@ -259,32 +337,32 @@
     "options": [
       {
         "name": "Less than 0.45%",
-        "probability": 0.0526,
+        "probability": 0.04769999999999999,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 0.45% and 0.7%, inclusive",
-        "probability": 0.1589,
+        "probability": 0.1753,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.7% but less than or equal to 0.95%",
-        "probability": 0.2704,
+        "probability": 0.27899999999999997,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.95% but less than or equal to 1.2%",
-        "probability": 0.23370000000000002,
+        "probability": 0.23670000000000002,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 1.2%",
-        "probability": 0.2844,
+        "probability": 0.2613,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "41",
-    "numforecasters": "39",
+    "numforecasts": "45",
+    "numforecasters": "43",
     "stars": 2
   },
   {
@@ -295,17 +373,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.46,
+        "probability": 0.49,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.54,
+        "probability": 0.51,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "88",
-    "numforecasters": "62",
+    "numforecasts": "94",
+    "numforecasters": "67",
     "stars": 2
   },
   {
@@ -316,22 +394,22 @@
     "options": [
       {
         "name": "Zero",
-        "probability": 0.3194,
+        "probability": 0.3214,
         "type": "PROBABILITY"
       },
       {
         "name": "One",
-        "probability": 0.36060000000000003,
+        "probability": 0.3776,
         "type": "PROBABILITY"
       },
       {
         "name": "Two or more",
-        "probability": 0.32,
+        "probability": 0.301,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "79",
-    "numforecasters": "72",
+    "numforecasts": "80",
+    "numforecasters": "73",
     "stars": 2
   },
   {
@@ -342,32 +420,32 @@
     "options": [
       {
         "name": "Less than 20%",
-        "probability": 0.08380000000000001,
+        "probability": 0.0857,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 25%, inclusive",
-        "probability": 0.1844,
+        "probability": 0.18489999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 25% but less than or equal to 30%",
-        "probability": 0.3482,
+        "probability": 0.3397,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 30% but less than or equal to 35%",
-        "probability": 0.2515,
+        "probability": 0.2586,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 35%",
-        "probability": 0.1321,
+        "probability": 0.1311,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "52",
-    "numforecasters": "49",
+    "numforecasts": "54",
+    "numforecasters": "51",
     "stars": 2
   },
   {
@@ -387,8 +465,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "222",
-    "numforecasters": "163",
+    "numforecasts": "225",
+    "numforecasters": "164",
     "stars": 3
   },
   {
@@ -399,32 +477,32 @@
     "options": [
       {
         "name": "Less than $20 billion",
-        "probability": 0.1074,
+        "probability": 0.1073,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $20 billion but less than or equal to $30 billion",
-        "probability": 0.3274,
+        "probability": 0.32549999999999996,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $30 billion and $40 billion, inclusive",
-        "probability": 0.3208,
+        "probability": 0.324,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $40 billion and $50 billion, inclusive",
-        "probability": 0.1564,
+        "probability": 0.155,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $50 billion",
-        "probability": 0.08789999999999999,
+        "probability": 0.0883,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "69",
-    "numforecasters": "57",
+    "numforecasts": "70",
+    "numforecasters": "58",
     "stars": 2
   },
   {
@@ -435,27 +513,27 @@
     "options": [
       {
         "name": "Before February 17, 2021",
-        "probability": 0.048499999999999995,
+        "probability": 0.0483,
         "type": "PROBABILITY"
       },
       {
         "name": "Between February 17 and May 19, 2021, inclusive",
-        "probability": 0.1204,
+        "probability": 0.1198,
         "type": "PROBABILITY"
       },
       {
         "name": "After May 19, but before or equal to November 17, 2021",
-        "probability": 0.2568,
+        "probability": 0.2462,
         "type": "PROBABILITY"
       },
       {
         "name": "After November 17, 2021",
-        "probability": 0.5743,
+        "probability": 0.5857,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "170",
-    "numforecasters": "116",
+    "numforecasts": "173",
+    "numforecasters": "118",
     "stars": 3
   },
   {
@@ -466,32 +544,32 @@
     "options": [
       {
         "name": "Less than $260 billion",
-        "probability": 0.0765,
+        "probability": 0.0783,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $260 billion and $300 billion, inclusive",
-        "probability": 0.1923,
+        "probability": 0.2022,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $300 billion but less than or equal to $340 billion",
-        "probability": 0.38130000000000003,
+        "probability": 0.37439999999999996,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $340 billion but less than or equal to $380 billion",
-        "probability": 0.2345,
+        "probability": 0.23120000000000002,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $380 billion",
-        "probability": 0.1155,
+        "probability": 0.1139,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "70",
-    "numforecasters": "58",
+    "numforecasts": "71",
+    "numforecasters": "59",
     "stars": 2
   },
   {
@@ -502,32 +580,32 @@
     "options": [
       {
         "name": "Less than $3.9 billion",
-        "probability": 0.069,
+        "probability": 0.0698,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $3.9 billion but less than or equal to $4.5 billion",
-        "probability": 0.1583,
+        "probability": 0.1686,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $4.5 billion and $5.1 billion, inclusive",
-        "probability": 0.29710000000000003,
+        "probability": 0.2926,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $5.1 billion and $5.7 billion, inclusive",
-        "probability": 0.315,
+        "probability": 0.31,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $5.7 billion",
-        "probability": 0.1605,
+        "probability": 0.1591,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "77",
-    "numforecasters": "61",
+    "numforecasts": "78",
+    "numforecasters": "62",
     "stars": 2
   },
   {
@@ -538,32 +616,32 @@
     "options": [
       {
         "name": "Less than $2.2 billion",
-        "probability": 0.0931,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $2.2 billion but less than or equal to $2.7 billion",
-        "probability": 0.2772,
+        "probability": 0.2861,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $2.7 billion and $3.2 billion, inclusive",
-        "probability": 0.3091,
+        "probability": 0.3164,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $3.2 billion and $3.7 billion, inclusive",
-        "probability": 0.1966,
+        "probability": 0.1861,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $3.7 billion",
-        "probability": 0.1241,
+        "probability": 0.1215,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "64",
-    "numforecasters": "46",
+    "numforecasts": "68",
+    "numforecasters": "48",
     "stars": 2
   },
   {
@@ -574,32 +652,32 @@
     "options": [
       {
         "name": "Less than 59%",
-        "probability": 0.1496,
+        "probability": 0.1543,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 59% and 66%, inclusive",
-        "probability": 0.20629999999999998,
+        "probability": 0.20350000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 66% but less than or equal to 73%",
-        "probability": 0.2696,
+        "probability": 0.2692,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 73% but less than or equal to 80%",
-        "probability": 0.2588,
+        "probability": 0.2582,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 80%",
-        "probability": 0.1158,
+        "probability": 0.1148,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "166",
-    "numforecasters": "144",
+    "numforecasts": "169",
+    "numforecasters": "146",
     "stars": 3
   },
   {
@@ -610,32 +688,32 @@
     "options": [
       {
         "name": "Less than 15%",
-        "probability": 0.0767,
+        "probability": 0.07980000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 15% and 17%, inclusive",
-        "probability": 0.1502,
+        "probability": 0.151,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 17% but less than or equal to 19%",
-        "probability": 0.2921,
+        "probability": 0.29760000000000003,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 19% but less than or equal to 21%",
-        "probability": 0.3243,
+        "probability": 0.3259,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 21%",
-        "probability": 0.1568,
+        "probability": 0.1457,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "98",
-    "numforecasters": "91",
+    "numforecasts": "99",
+    "numforecasters": "92",
     "stars": 2
   },
   {
@@ -655,8 +733,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "149",
-    "numforecasters": "117",
+    "numforecasts": "151",
+    "numforecasters": "119",
     "stars": 3
   },
   {
@@ -667,32 +745,32 @@
     "options": [
       {
         "name": "Less than 59%",
-        "probability": 0.11230000000000001,
+        "probability": 0.1134,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 59% and 66%, inclusive",
-        "probability": 0.1725,
+        "probability": 0.17309999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 66% but less than or equal to 73%",
-        "probability": 0.2948,
+        "probability": 0.2932,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 73% but less than or equal to 80%",
-        "probability": 0.2978,
+        "probability": 0.297,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 80%",
-        "probability": 0.12269999999999999,
+        "probability": 0.1233,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "234",
-    "numforecasters": "178",
+    "numforecasts": "235",
+    "numforecasters": "179",
     "stars": 3
   },
   {
@@ -703,17 +781,17 @@
     "options": [
       {
         "name": "Less than 2%",
-        "probability": 0.0724,
+        "probability": 0.07690000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 2% and 3.5%, inclusive",
-        "probability": 0.2273,
+        "probability": 0.22870000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 3.5% but less than or equal to 5%",
-        "probability": 0.39759999999999995,
+        "probability": 0.39039999999999997,
         "type": "PROBABILITY"
       },
       {
@@ -723,13 +801,13 @@
       },
       {
         "name": "More than 6.5%",
-        "probability": 0.0851,
+        "probability": 0.0864,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "99",
-    "numforecasters": "79",
-    "stars": 2
+    "numforecasts": "101",
+    "numforecasters": "80",
+    "stars": 3
   },
   {
     "title": "What will total U.S. trade volume with China (imports and exports of goods) be in 2021?",
@@ -739,32 +817,32 @@
     "options": [
       {
         "name": "Less than $400 billion",
-        "probability": 0.0859,
+        "probability": 0.0862,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $400 billion and $480 billion, inclusive",
-        "probability": 0.21850000000000003,
+        "probability": 0.2194,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $480 billion but less than or equal to $560 billion",
-        "probability": 0.36479999999999996,
+        "probability": 0.36450000000000005,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $560 billion but less than or equal to $640 billion",
-        "probability": 0.23829999999999998,
+        "probability": 0.2372,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $640 billion",
-        "probability": 0.0926,
+        "probability": 0.0928,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "93",
-    "numforecasters": "67",
+    "numforecasts": "95",
+    "numforecasters": "68",
     "stars": 2
   },
   {
@@ -775,12 +853,12 @@
     "options": [
       {
         "name": "Less than 1.5%",
-        "probability": 0.0667,
+        "probability": 0.06709999999999999,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1.5% and 3%, inclusive",
-        "probability": 0.1404,
+        "probability": 0.1405,
         "type": "PROBABILITY"
       },
       {
@@ -790,7 +868,7 @@
       },
       {
         "name": "More than 4.5% but less than or equal to 6%",
-        "probability": 0.267,
+        "probability": 0.26649999999999996,
         "type": "PROBABILITY"
       },
       {
@@ -799,7 +877,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "181",
+    "numforecasts": "182",
     "numforecasters": "133",
     "stars": 3
   },
@@ -847,32 +925,32 @@
     "options": [
       {
         "name": "Less than 675",
-        "probability": 0.3531,
+        "probability": 0.3593,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 675 and 750, inclusive",
-        "probability": 0.3079,
+        "probability": 0.30260000000000004,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 750 but less than or equal to 825",
-        "probability": 0.17739999999999997,
+        "probability": 0.17559999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 825 but less than or equal to 900",
-        "probability": 0.10980000000000001,
+        "probability": 0.10949999999999999,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 900",
-        "probability": 0.0519,
+        "probability": 0.053,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "94",
-    "numforecasters": "61",
+    "numforecasts": "96",
+    "numforecasters": "62",
     "stars": 2
   },
   {

@@ -6,12 +6,12 @@
     "options": [
       {
         "name": "Republican",
-        "probability": 0.7524752475247525,
+        "probability": 0.7653061224489796,
         "type": "PROBABILITY"
       },
       {
         "name": "Democratic",
-        "probability": 0.24752475247524752,
+        "probability": 0.23469387755102042,
         "type": "PROBABILITY"
       }
     ],
@@ -25,22 +25,22 @@
     "options": [
       {
         "name": "Democratic",
-        "probability": 0.5288461538461539,
+        "probability": 0.5140186915887851,
         "type": "PROBABILITY"
       },
       {
         "name": "Republican",
-        "probability": 0.4326923076923077,
+        "probability": 0.42990654205607476,
         "type": "PROBABILITY"
       },
       {
         "name": "Libertarian",
-        "probability": 0.019230769230769232,
+        "probability": 0.02803738317757009,
         "type": "PROBABILITY"
       },
       {
         "name": "Green",
-        "probability": 0.019230769230769232,
+        "probability": 0.02803738317757009,
         "type": "PROBABILITY"
       }
     ],
@@ -54,12 +54,12 @@
     "options": [
       {
         "name": "Democratic",
-        "probability": 0.5436893203883496,
+        "probability": 0.5490196078431373,
         "type": "PROBABILITY"
       },
       {
         "name": "Republican",
-        "probability": 0.45631067961165045,
+        "probability": 0.45098039215686275,
         "type": "PROBABILITY"
       }
     ],
@@ -92,47 +92,47 @@
     "options": [
       {
         "name": "22 or fewer",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "23",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "24",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "25",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "26",
-        "probability": 0.23636363636363636,
+        "probability": 0.2293577981651376,
         "type": "PROBABILITY"
       },
       {
         "name": "27",
-        "probability": 0.6909090909090908,
+        "probability": 0.7064220183486238,
         "type": "PROBABILITY"
       },
       {
         "name": "28",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "29",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "30 or more",
-        "probability": 0.01818181818181818,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       }
     ],
@@ -213,78 +213,78 @@
     "platform": "PredictIt",
     "options": [
       {
-        "name": "Marty Walsh",
-        "probability": 0.2631578947368421,
-        "type": "PROBABILITY"
-      },
-      {
         "name": "Bernie Sanders",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Jenny Yang",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Julie Su",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Bill Spriggs",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Andy Levin",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Sara Nelson",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Tom Perez",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Eugene Scalia",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Seth Harris",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Marty Walsh",
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Sharon Block",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Abby Finkenauer",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Patrick Gaspard",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Chris Lu",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       },
       {
         "name": "Rahm Emanuel",
-        "probability": 0.05263157894736841,
+        "probability": 0.06666666666666667,
         "type": "PROBABILITY"
       }
     ],
@@ -449,53 +449,53 @@
     "platform": "PredictIt",
     "options": [
       {
-        "name": "Marcia Fudge",
-        "probability": 0.18181818181818185,
-        "type": "PROBABILITY"
-      },
-      {
         "name": "Keisha Lance Bottoms",
-        "probability": 0.09090909090909093,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Jane Castor",
-        "probability": 0.09090909090909093,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Alvin Brown",
-        "probability": 0.09090909090909093,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Karen Bass",
-        "probability": 0.09090909090909093,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Diane Yentel",
-        "probability": 0.09090909090909093,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Maurice Jones",
-        "probability": 0.09090909090909093,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Ben Carson",
-        "probability": 0.09090909090909093,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Garcetti",
-        "probability": 0.09090909090909093,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Pete Buttigieg",
-        "probability": 0.09090909090909093,
+        "probability": 0.1,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Marcia Fudge",
+        "probability": 0.1,
         "type": "PROBABILITY"
       }
     ],
@@ -508,68 +508,68 @@
     "platform": "PredictIt",
     "options": [
       {
-        "name": "Xavier Becerra",
-        "probability": 0.14285714285714288,
-        "type": "PROBABILITY"
-      },
-      {
         "name": "Pramila Jayapal",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Michelle L. Grisham",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Jeffrey Zeints",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Karen Bass",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Vivek Murthy",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandy Cohen",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "David Kessler",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Alex Azar",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Hargan",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Charlie Baker",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Gina Raimondo",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Xavier Becerra",
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Stacey Stewart",
-        "probability": 0.07142857142857144,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       }
     ],
@@ -582,98 +582,98 @@
     "platform": "PredictIt",
     "options": [
       {
-        "name": "Gina Raimondo",
-        "probability": 0.3333333333333332,
-        "type": "PROBABILITY"
-      },
-      {
         "name": "Meg Whitman",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Terry McAuliffe",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Andrew Yang",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Ray Washburne",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Linda McMahon",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Mellody Hobson",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Wilbur Ross",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Tom Steyer",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Gene Sperling",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Neera Tanden",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "John Podesta",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Heather Boushey",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Pete Buttigieg",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Gina Raimondo",
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Ursula Burns",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Susan Helper",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Rohit Chopra",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Indra Nooyi",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Dominic Ng",
-        "probability": 0.03703703703703703,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       }
     ],
@@ -726,37 +726,37 @@
     "options": [
       {
         "name": "Jennifer Granholm",
-        "probability": 0.9411764705882353,
+        "probability": 0.9428571428571428,
         "type": "PROBABILITY"
       },
       {
         "name": "Ernest Moniz",
-        "probability": 0.00980392156862745,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "E. Sherwood-Randall",
-        "probability": 0.00980392156862745,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "Arun Majumdar",
-        "probability": 0.00980392156862745,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "Jay Inslee",
-        "probability": 0.00980392156862745,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "Dan Brouillette",
-        "probability": 0.00980392156862745,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "Dan Reicher",
-        "probability": 0.00980392156862745,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       }
     ],
@@ -833,62 +833,62 @@
     "options": [
       {
         "name": "William Burns",
-        "probability": 0.3125,
+        "probability": 0.15384615384615388,
         "type": "PROBABILITY"
       },
       {
         "name": "Tom Donilon",
-        "probability": 0.0625,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Avril Haines",
-        "probability": 0.0625,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Morell",
-        "probability": 0.0625,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Gina Haspel",
-        "probability": 0.0625,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Elissa Slotkin",
-        "probability": 0.0625,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "David Cohen",
-        "probability": 0.0625,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Susan Gordon",
-        "probability": 0.0625,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Darrell Blocker",
-        "probability": 0.0625,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Vincent Stewart",
-        "probability": 0.0625,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Jeh Johnson",
-        "probability": 0.0625,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       },
       {
         "name": "Lisa Monaco",
-        "probability": 0.0625,
+        "probability": 0.07692307692307694,
         "type": "PROBABILITY"
       }
     ],
@@ -902,72 +902,72 @@
     "options": [
       {
         "name": "Miguel Cardona",
-        "probability": 0.831168831168831,
+        "probability": 0.6829268292682925,
         "type": "PROBABILITY"
       },
       {
         "name": "Lily Eskelsen Garcia",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "Randi Weingarten",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "L. Darling-Hammond",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "Amy Gutmann",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "Betsy DeVos",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "Jahana Hayes",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "Tony Thurmond",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "Freeman A. Hrabowski",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "Sonja Santelises",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "Eduardo Padrón",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "Sean Spiller",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "Leslie Fenwick",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       },
       {
         "name": "Sharon Contreras",
-        "probability": 0.012987012987012984,
+        "probability": 0.024390243902439015,
         "type": "PROBABILITY"
       }
     ],
@@ -1113,63 +1113,63 @@
     "platform": "PredictIt",
     "options": [
       {
-        "name": "Michael Regan",
-        "probability": 0.4499999999999999,
-        "type": "PROBABILITY"
-      },
-      {
         "name": "Mary Nichols",
-        "probability": 0.04999999999999999,
+        "probability": 0.08333333333333334,
         "type": "PROBABILITY"
       },
       {
         "name": "Jay Inslee",
-        "probability": 0.04999999999999999,
+        "probability": 0.08333333333333334,
         "type": "PROBABILITY"
       },
       {
         "name": "Heather McTeer Toney",
-        "probability": 0.04999999999999999,
+        "probability": 0.08333333333333334,
         "type": "PROBABILITY"
       },
       {
         "name": "Andrew Wheeler",
-        "probability": 0.04999999999999999,
+        "probability": 0.08333333333333334,
         "type": "PROBABILITY"
       },
       {
         "name": "Daniel Esty",
-        "probability": 0.04999999999999999,
+        "probability": 0.08333333333333334,
         "type": "PROBABILITY"
       },
       {
         "name": "Collin O'Mara",
-        "probability": 0.04999999999999999,
+        "probability": 0.08333333333333334,
         "type": "PROBABILITY"
       },
       {
         "name": "Richard Revesz",
-        "probability": 0.04999999999999999,
+        "probability": 0.08333333333333334,
         "type": "PROBABILITY"
       },
       {
         "name": "Mustafa Santiago Ali",
-        "probability": 0.04999999999999999,
+        "probability": 0.08333333333333334,
         "type": "PROBABILITY"
       },
       {
         "name": "Gina McCarthy",
-        "probability": 0.04999999999999999,
+        "probability": 0.08333333333333334,
         "type": "PROBABILITY"
       },
       {
         "name": "Brenda Mallory",
-        "probability": 0.04999999999999999,
+        "probability": 0.08333333333333334,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Michael Regan",
+        "probability": 0.08333333333333334,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Garcetti",
-        "probability": 0.04999999999999999,
+        "probability": 0.08333333333333334,
         "type": "PROBABILITY"
       }
     ],
@@ -1356,93 +1356,93 @@
     "platform": "PredictIt",
     "options": [
       {
-        "name": "Katherine Tai",
-        "probability": 0.14999999999999997,
-        "type": "PROBABILITY"
-      },
-      {
         "name": "Jimmy Gomez",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Nelson Cunningham",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Thea Mei Lee",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Michael Wessel",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Beth Baltzan",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Katherine Tai",
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Sherrod Brown",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Ron Kind",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Cedric Richmond",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Lighthizer",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Rahm Emanuel",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Pete Buttigieg",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Miriam Sapiro",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Jennifer Hillman",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Todd Tucker",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Cathy Feingold",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Tom Perriello",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Dan Newhouse",
-        "probability": 0.04999999999999999,
+        "probability": 0.05555555555555555,
         "type": "PROBABILITY"
       }
     ],
@@ -1489,12 +1489,12 @@
     "options": [
       {
         "name": "Democratic",
-        "probability": 0.89,
+        "probability": 0.9,
         "type": "PROBABILITY"
       },
       {
         "name": "Republican",
-        "probability": 0.11,
+        "probability": 0.1,
         "type": "PROBABILITY"
       }
     ],
@@ -1508,72 +1508,72 @@
     "options": [
       {
         "name": "Andrew Yang",
-        "probability": 0.39999999999999997,
+        "probability": 0.4122807017543859,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Adams",
-        "probability": 0.18260869565217389,
+        "probability": 0.19298245614035087,
         "type": "PROBABILITY"
       },
       {
         "name": "Scott Stringer",
-        "probability": 0.13913043478260867,
+        "probability": 0.12280701754385964,
         "type": "PROBABILITY"
       },
       {
         "name": "Maya Wiley",
-        "probability": 0.1043478260869565,
+        "probability": 0.10526315789473682,
         "type": "PROBABILITY"
       },
       {
         "name": "Raymond McGuire",
-        "probability": 0.0608695652173913,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Donovan",
-        "probability": 0.017391304347826084,
+        "probability": 0.026315789473684206,
         "type": "PROBABILITY"
       },
       {
         "name": "Dianne Morales",
-        "probability": 0.017391304347826084,
+        "probability": 0.017543859649122806,
         "type": "PROBABILITY"
       },
       {
         "name": "Kathryn Garcia",
-        "probability": 0.017391304347826084,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "John Catsimatidis",
-        "probability": 0.017391304347826084,
+        "probability": 0.017543859649122806,
         "type": "PROBABILITY"
       },
       {
         "name": "Carlos Menchaca",
-        "probability": 0.008695652173913042,
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       },
       {
         "name": "Loree Sutton",
-        "probability": 0.008695652173913042,
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       },
       {
         "name": "Curtis Sliwa",
-        "probability": 0.008695652173913042,
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       },
       {
         "name": "Max Rose",
-        "probability": 0.008695652173913042,
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       },
       {
         "name": "Zach Iscol",
-        "probability": 0.008695652173913042,
+        "probability": 0.008771929824561403,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "John Catsimatidis",
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       }
     ],
@@ -1657,12 +1657,12 @@
     "options": [
       {
         "name": "Democratic",
-        "probability": 0.6078431372549019,
+        "probability": 0.6019417475728155,
         "type": "PROBABILITY"
       },
       {
         "name": "Republican",
-        "probability": 0.39215686274509803,
+        "probability": 0.39805825242718446,
         "type": "PROBABILITY"
       }
     ],
@@ -1676,12 +1676,12 @@
     "options": [
       {
         "name": "Republican",
-        "probability": 0.5757575757575757,
+        "probability": 0.58,
         "type": "PROBABILITY"
       },
       {
         "name": "Democratic",
-        "probability": 0.42424242424242425,
+        "probability": 0.42,
         "type": "PROBABILITY"
       }
     ],
@@ -1723,42 +1723,42 @@
     "options": [
       {
         "name": "Samantha Power",
-        "probability": 0.8205128205128204,
+        "probability": 0.7499999999999999,
         "type": "PROBABILITY"
       },
       {
         "name": "Ertharin Cousin",
-        "probability": 0.025641025641025637,
+        "probability": 0.03571428571428571,
         "type": "PROBABILITY"
       },
       {
         "name": "Liz Schrayer",
-        "probability": 0.025641025641025637,
+        "probability": 0.03571428571428571,
         "type": "PROBABILITY"
       },
       {
         "name": "Frederick Barton",
-        "probability": 0.025641025641025637,
+        "probability": 0.03571428571428571,
         "type": "PROBABILITY"
       },
       {
         "name": "Jeremy Konyndyk",
-        "probability": 0.025641025641025637,
+        "probability": 0.03571428571428571,
         "type": "PROBABILITY"
       },
       {
         "name": "John Barsa",
-        "probability": 0.025641025641025637,
+        "probability": 0.03571428571428571,
         "type": "PROBABILITY"
       },
       {
         "name": "Ami Bera",
-        "probability": 0.025641025641025637,
+        "probability": 0.03571428571428571,
         "type": "PROBABILITY"
       },
       {
         "name": "Gayle Smith",
-        "probability": 0.025641025641025637,
+        "probability": 0.03571428571428571,
         "type": "PROBABILITY"
       }
     ],
@@ -1786,12 +1786,12 @@
     "options": [
       {
         "name": "Republican",
-        "probability": 0.7623762376237624,
+        "probability": 0.7549019607843137,
         "type": "PROBABILITY"
       },
       {
         "name": "Democratic",
-        "probability": 0.2376237623762376,
+        "probability": 0.24509803921568626,
         "type": "PROBABILITY"
       }
     ],
@@ -1805,22 +1805,22 @@
     "options": [
       {
         "name": "Terry McAuliffe",
-        "probability": 0.8173076923076923,
+        "probability": 0.8484848484848485,
         "type": "PROBABILITY"
       },
       {
         "name": "Jennifer Carroll Foy",
-        "probability": 0.125,
+        "probability": 0.11111111111111112,
         "type": "PROBABILITY"
       },
       {
         "name": "Jennifer McClellan",
-        "probability": 0.028846153846153844,
+        "probability": 0.020202020202020204,
         "type": "PROBABILITY"
       },
       {
         "name": "Justin Fairfax",
-        "probability": 0.028846153846153844,
+        "probability": 0.020202020202020204,
         "type": "PROBABILITY"
       }
     ],
@@ -1848,52 +1848,52 @@
     "options": [
       {
         "name": "23 or fewer",
-        "probability": 0.009615384615384616,
+        "probability": 0.020618556701030927,
         "type": "PROBABILITY"
       },
       {
         "name": "24 or 25",
-        "probability": 0.04807692307692308,
+        "probability": 0.041237113402061855,
         "type": "PROBABILITY"
       },
       {
         "name": "26 or 27",
-        "probability": 0.10576923076923077,
+        "probability": 0.10309278350515463,
         "type": "PROBABILITY"
       },
       {
         "name": "28 or 29",
-        "probability": 0.23076923076923075,
+        "probability": 0.23711340206185566,
         "type": "PROBABILITY"
       },
       {
         "name": "30 or 31",
-        "probability": 0.22115384615384615,
+        "probability": 0.21649484536082472,
         "type": "PROBABILITY"
       },
       {
         "name": "32 or 33",
-        "probability": 0.17307692307692307,
+        "probability": 0.17525773195876287,
         "type": "PROBABILITY"
       },
       {
         "name": "34 or 35",
-        "probability": 0.10576923076923077,
+        "probability": 0.10309278350515463,
         "type": "PROBABILITY"
       },
       {
         "name": "36 or 37",
-        "probability": 0.04807692307692308,
+        "probability": 0.05154639175257732,
         "type": "PROBABILITY"
       },
       {
         "name": "38 or 39",
-        "probability": 0.028846153846153844,
+        "probability": 0.020618556701030927,
         "type": "PROBABILITY"
       },
       {
         "name": "40 or more",
-        "probability": 0.028846153846153844,
+        "probability": 0.03092783505154639,
         "type": "PROBABILITY"
       }
     ],
@@ -1921,77 +1921,82 @@
     "options": [
       {
         "name": "Markus Söder",
-        "probability": 0.4196428571428571,
+        "probability": 0.4144144144144144,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet",
-        "probability": 0.40178571428571425,
+        "probability": 0.37837837837837834,
         "type": "PROBABILITY"
       },
       {
         "name": "Angela Merkel",
-        "probability": 0.03571428571428571,
+        "probability": 0.036036036036036036,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Ralph Brinkhaus",
+        "probability": 0.027027027027027025,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.017857142857142856,
+        "probability": 0.018018018018018018,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock",
-        "probability": 0.017857142857142856,
+        "probability": 0.018018018018018018,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.017857142857142856,
+        "probability": 0.018018018018018018,
         "type": "PROBABILITY"
       },
       {
         "name": "Jens Spahn",
-        "probability": 0.017857142857142856,
+        "probability": 0.018018018018018018,
         "type": "PROBABILITY"
       },
       {
         "name": "Christian Lindner",
-        "probability": 0.008928571428571428,
+        "probability": 0.009009009009009009,
         "type": "PROBABILITY"
       },
       {
         "name": "Katja Kipping",
-        "probability": 0.008928571428571428,
+        "probability": 0.009009009009009009,
         "type": "PROBABILITY"
       },
       {
         "name": "Alice Weidel",
-        "probability": 0.008928571428571428,
+        "probability": 0.009009009009009009,
         "type": "PROBABILITY"
       },
       {
         "name": "Alexander Gauland",
-        "probability": 0.008928571428571428,
+        "probability": 0.009009009009009009,
         "type": "PROBABILITY"
       },
       {
         "name": "Bernd Riexinger",
-        "probability": 0.008928571428571428,
+        "probability": 0.009009009009009009,
         "type": "PROBABILITY"
       },
       {
         "name": "Friedrich Merz",
-        "probability": 0.008928571428571428,
+        "probability": 0.009009009009009009,
         "type": "PROBABILITY"
       },
       {
         "name": "Norbert Röttgen",
-        "probability": 0.008928571428571428,
+        "probability": 0.009009009009009009,
         "type": "PROBABILITY"
       },
       {
         "name": "A. Kramp-Karrenbauer",
-        "probability": 0.008928571428571428,
+        "probability": 0.009009009009009009,
         "type": "PROBABILITY"
       }
     ],
@@ -2005,37 +2010,37 @@
     "options": [
       {
         "name": "Kirk Cox",
-        "probability": 0.47474747474747475,
+        "probability": 0.5865384615384615,
         "type": "PROBABILITY"
       },
       {
         "name": "Pete Snyder",
-        "probability": 0.26262626262626265,
+        "probability": 0.22115384615384615,
         "type": "PROBABILITY"
       },
       {
         "name": "Amanda Chase",
-        "probability": 0.17171717171717174,
+        "probability": 0.11538461538461538,
         "type": "PROBABILITY"
       },
       {
         "name": "Glenn Youngkin",
-        "probability": 0.06060606060606061,
+        "probability": 0.04807692307692308,
         "type": "PROBABILITY"
       },
       {
         "name": "Neil Chatterjee",
-        "probability": 0.010101010101010102,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmett Hanger",
-        "probability": 0.010101010101010102,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Bill Stanley",
-        "probability": 0.010101010101010102,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       }
     ],
@@ -2063,82 +2068,82 @@
     "options": [
       {
         "name": "Donald Trump",
-        "probability": 0.19354838709677416,
+        "probability": 0.2857142857142856,
         "type": "PROBABILITY"
       },
       {
         "name": "Ron DeSantis",
-        "probability": 0.11290322580645161,
+        "probability": 0.11607142857142852,
         "type": "PROBABILITY"
       },
       {
         "name": "Nikki Haley",
-        "probability": 0.10483870967741934,
+        "probability": 0.09821428571428567,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Pence",
-        "probability": 0.07258064516129031,
+        "probability": 0.06249999999999997,
         "type": "PROBABILITY"
       },
       {
         "name": "Ted Cruz",
-        "probability": 0.06451612903225805,
+        "probability": 0.05357142857142854,
         "type": "PROBABILITY"
       },
       {
         "name": "Kristi Noem",
-        "probability": 0.06451612903225805,
+        "probability": 0.05357142857142854,
         "type": "PROBABILITY"
       },
       {
         "name": "Tom Cotton",
-        "probability": 0.04838709677419354,
+        "probability": 0.04464285714285712,
         "type": "PROBABILITY"
       },
       {
         "name": "Marco Rubio",
-        "probability": 0.04838709677419354,
+        "probability": 0.04464285714285712,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Pompeo",
-        "probability": 0.04032258064516128,
+        "probability": 0.0357142857142857,
         "type": "PROBABILITY"
       },
       {
         "name": "Mitt Romney",
-        "probability": 0.04032258064516128,
+        "probability": 0.0357142857142857,
         "type": "PROBABILITY"
       },
       {
         "name": "Tucker Carlson",
-        "probability": 0.04032258064516128,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Donald Trump Jr.",
-        "probability": 0.04032258064516128,
+        "probability": 0.0357142857142857,
         "type": "PROBABILITY"
       },
       {
         "name": "Josh Hawley",
-        "probability": 0.04032258064516128,
+        "probability": 0.0357142857142857,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Donald Trump Jr.",
+        "probability": 0.02678571428571427,
         "type": "PROBABILITY"
       },
       {
         "name": "Tim Scott",
-        "probability": 0.032258064516129024,
+        "probability": 0.02678571428571427,
         "type": "PROBABILITY"
       },
       {
         "name": "Rick Scott",
-        "probability": 0.032258064516129024,
+        "probability": 0.02678571428571427,
         "type": "PROBABILITY"
       },
       {
         "name": "Larry Hogan",
-        "probability": 0.02419354838709677,
+        "probability": 0.01785714285714285,
         "type": "PROBABILITY"
       }
     ],
@@ -2152,37 +2157,37 @@
     "options": [
       {
         "name": "Kamala Harris",
-        "probability": 0.3877551020408163,
+        "probability": 0.39,
         "type": "PROBABILITY"
       },
       {
         "name": "Joe Biden",
-        "probability": 0.35714285714285715,
+        "probability": 0.34,
         "type": "PROBABILITY"
       },
       {
         "name": "Pete Buttigieg",
-        "probability": 0.0816326530612245,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
         "name": "A. Ocasio-Cortez",
-        "probability": 0.061224489795918366,
+        "probability": 0.07,
         "type": "PROBABILITY"
       },
       {
         "name": "Elizabeth Warren",
-        "probability": 0.05102040816326531,
+        "probability": 0.05,
         "type": "PROBABILITY"
       },
       {
         "name": "Bernie Sanders",
-        "probability": 0.030612244897959183,
+        "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
         "name": "Hillary Clinton",
-        "probability": 0.030612244897959183,
+        "probability": 0.03,
         "type": "PROBABILITY"
       }
     ],
@@ -2196,37 +2201,37 @@
     "options": [
       {
         "name": "33 or fewer",
-        "probability": 0.07547169811320754,
+        "probability": 0.07547169811320756,
         "type": "PROBABILITY"
       },
       {
         "name": "34 or 35",
-        "probability": 0.11320754716981131,
+        "probability": 0.14150943396226418,
         "type": "PROBABILITY"
       },
       {
         "name": "36 or 37",
-        "probability": 0.1981132075471698,
+        "probability": 0.2075471698113208,
         "type": "PROBABILITY"
       },
       {
         "name": "38 or 39",
-        "probability": 0.22641509433962262,
+        "probability": 0.22641509433962267,
         "type": "PROBABILITY"
       },
       {
         "name": "40 or 41",
-        "probability": 0.20754716981132074,
+        "probability": 0.1886792452830189,
         "type": "PROBABILITY"
       },
       {
         "name": "42 or 43",
-        "probability": 0.12264150943396226,
+        "probability": 0.1037735849056604,
         "type": "PROBABILITY"
       },
       {
         "name": "44 or more",
-        "probability": 0.056603773584905655,
+        "probability": 0.05660377358490567,
         "type": "PROBABILITY"
       }
     ],
@@ -2240,27 +2245,27 @@
     "options": [
       {
         "name": "Michelle Wu",
-        "probability": 0.5647058823529411,
+        "probability": 0.534090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "Kim Janey",
-        "probability": 0.2941176470588235,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "A. Essaibi-George",
-        "probability": 0.07058823529411763,
+        "probability": 0.2954545454545454,
         "type": "PROBABILITY"
       },
       {
         "name": "Andrea Campbell",
-        "probability": 0.058823529411764705,
+        "probability": 0.07954545454545454,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "A. Essaibi-George",
+        "probability": 0.06818181818181818,
         "type": "PROBABILITY"
       },
       {
         "name": "Marty Walsh",
-        "probability": 0.011764705882352941,
+        "probability": 0.022727272727272724,
         "type": "PROBABILITY"
       }
     ],
@@ -2288,52 +2293,52 @@
     "options": [
       {
         "name": "67 or fewer",
-        "probability": 0.86,
+        "probability": 0.9158878504672896,
         "type": "PROBABILITY"
       },
       {
         "name": "68 to 70",
-        "probability": 0.01,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "71 to 73",
-        "probability": 0.01,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "74 to 76",
-        "probability": 0.01,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "77 to 79",
-        "probability": 0.02,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "80 to 82",
-        "probability": 0.02,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "83 to 85",
-        "probability": 0.03,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "86 to 88",
-        "probability": 0.02,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "89 to 91",
-        "probability": 0.01,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       },
       {
         "name": "92 or more",
-        "probability": 0.01,
+        "probability": 0.009345794392523364,
         "type": "PROBABILITY"
       }
     ],
@@ -2383,65 +2388,6 @@
     "stars": 2
   },
   {
-    "title": "How many Senators vote to confirm Jennifer Granholm as Energy Secretary?",
-    "url": "https://www.predictit.org/markets/detail/7081/How-many-Senators-vote-to-confirm-Jennifer-Granholm-as-Energy-Secretary",
-    "platform": "PredictIt",
-    "options": [
-      {
-        "name": "67 or fewer",
-        "probability": 0.13861386138613863,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "68 to 70",
-        "probability": 0.13861386138613863,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "71 to 73",
-        "probability": 0.18811881188118812,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "74 to 76",
-        "probability": 0.2079207920792079,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "77 to 79",
-        "probability": 0.15841584158415842,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "80 to 82",
-        "probability": 0.07920792079207921,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "83 to 85",
-        "probability": 0.04950495049504951,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "86 to 88",
-        "probability": 0.019801980198019802,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "89 to 91",
-        "probability": 0.009900990099009901,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "92 or more",
-        "probability": 0.009900990099009901,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "The contract that resolves to Yes shall correspond to the number or range of votes cast in the U.S. Senate, in a vote commencing before the End Date listed below, in favor of the confirmation of Jennifer Granholm to the position of Secretary of Energy, according to the official vote tally reported by the website senate.gov or, should that source be unavailable, the Congressional Record or other official source.\nA vote on the nomination shall be considered to have commenced once at least one Senator has cast a vote. So long as such a vote commences before the End Date, the full results of the vote will be used to resolve this market, even if the vote concludes after the End Date. The results of the vote need not be available at the identified settlement source at the End Date.\nShould no confirmation vote on the nomination of Ms. Granholm to the position of Secretary of Energy commence before the End Date; or should such a vote result in the rejection of the nominee via a procedure that does not result in the recording of a tally of votes; or should Ms. Granholm be confirmed to position of Secretary of Energy in a vote that commences only after the End Date; the contract identifying the range \"67 or fewer\" shall resolve to Yes. Should a vote result in the confirmation of the nominee via a procedure that does not result in the recording of a tally of votes, the contract identifying the range \"92 or more\" shall resolve to Yes. Should more than one Senate confirmation vote on the nomination of Ms. Granholm to the position of Secretary of Energy be held before the End Date, the outcome of the first such vote will be used to resolve this market. \nThe outcomes of committee votes, hearings, or reports, cloture votes and other procedural votes will have no impact on the resolution of this market.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 03/01/2021 11:59 PM (ET)\n",
-    "stars": 2
-  },
-  {
     "title": "Will Sarah Huckabee Sanders win the 2022 Arkansas GOP gubernatorial primary?",
     "url": "https://www.predictit.org/markets/detail/7082/Will-Sarah-Huckabee-Sanders-win-the-2022-Arkansas-GOP-gubernatorial-primary",
     "platform": "PredictIt",
@@ -2476,12 +2422,12 @@
     "options": [
       {
         "name": "Republican",
-        "probability": 0.7623762376237624,
+        "probability": 0.7549019607843137,
         "type": "PROBABILITY"
       },
       {
         "name": "Democratic",
-        "probability": 0.2376237623762376,
+        "probability": 0.24509803921568626,
         "type": "PROBABILITY"
       }
     ],
@@ -2495,52 +2441,52 @@
     "options": [
       {
         "name": "61 or fewer",
-        "probability": 0.9142857142857143,
+        "probability": 0.9166666666666666,
         "type": "PROBABILITY"
       },
       {
         "name": "62 to 64",
-        "probability": 0.009523809523809523,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       },
       {
         "name": "65 to 67",
-        "probability": 0.009523809523809523,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       },
       {
         "name": "68 to 70",
-        "probability": 0.009523809523809523,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       },
       {
         "name": "71 to 73",
-        "probability": 0.009523809523809523,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       },
       {
         "name": "74 to 76",
-        "probability": 0.009523809523809523,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       },
       {
         "name": "77 to 79",
-        "probability": 0.009523809523809523,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       },
       {
         "name": "80 to 82",
-        "probability": 0.009523809523809523,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       },
       {
         "name": "83 to 85",
-        "probability": 0.009523809523809523,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       },
       {
         "name": "86 or more",
-        "probability": 0.009523809523809523,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       }
     ],
@@ -2554,67 +2500,67 @@
     "options": [
       {
         "name": "Jane Timken",
-        "probability": 0.5,
+        "probability": 0.4757281553398058,
         "type": "PROBABILITY"
       },
       {
         "name": "Josh Mandel",
-        "probability": 0.1909090909090909,
+        "probability": 0.18446601941747573,
         "type": "PROBABILITY"
       },
       {
         "name": "J. D. Vance",
-        "probability": 0.1272727272727273,
+        "probability": 0.14563106796116504,
         "type": "PROBABILITY"
       },
       {
         "name": "Steve Stivers",
-        "probability": 0.06363636363636364,
+        "probability": 0.0679611650485437,
         "type": "PROBABILITY"
       },
       {
         "name": "Jim Jordan",
-        "probability": 0.03636363636363636,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Frank LaRose",
-        "probability": 0.01818181818181818,
+        "probability": 0.038834951456310676,
         "type": "PROBABILITY"
       },
       {
         "name": "Rob Portman",
-        "probability": 0.00909090909090909,
+        "probability": 0.019417475728155338,
         "type": "PROBABILITY"
       },
       {
         "name": "Jon Husted",
-        "probability": 0.00909090909090909,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "Mary Taylor",
-        "probability": 0.00909090909090909,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "Jim Renacci",
-        "probability": 0.00909090909090909,
+        "probability": 0.009708737864077669,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Frank LaRose",
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "Brad Wenstrup",
-        "probability": 0.00909090909090909,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Turner",
-        "probability": 0.00909090909090909,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "Warren Davidson",
-        "probability": 0.00909090909090909,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       }
     ],
@@ -2636,117 +2582,58 @@
     "stars": 2
   },
   {
-    "title": "How many Senators vote to confirm L. Thomas-Greenfield as UN Ambassador by 3/15?",
-    "url": "https://www.predictit.org/markets/detail/7090/How-many-Senators-vote-to-confirm-L-Thomas-Greenfield-as-UN-Ambassador-by-3-15",
-    "platform": "PredictIt",
-    "options": [
-      {
-        "name": "58 or fewer",
-        "probability": 0.00909090909090909,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "59 to 61",
-        "probability": 0.00909090909090909,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "62 to 64",
-        "probability": 0.00909090909090909,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "65 to 67",
-        "probability": 0.01818181818181818,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "68 to 70",
-        "probability": 0.01818181818181818,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "71 to 73",
-        "probability": 0.054545454545454536,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "74 to 76",
-        "probability": 0.24545454545454545,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "77 to 79",
-        "probability": 0.5,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "80 to 82",
-        "probability": 0.09090909090909091,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "83 or more",
-        "probability": 0.045454545454545456,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "Please Note: PredictIt added a supplementary comment at the bottom of the Rules on 02/22/2021.\nThe contract that resolves to Yes shall correspond to the number or range of votes cast in the U.S. Senate, in a vote commencing before the End Date listed below, in favor of the confirmation of Linda Thomas-Greenfield to the position of Ambassador to the United Nations, according to the official vote tally reported by the website senate.gov or, should that source be unavailable, the Congressional Record or other official source.\nA vote on the nomination shall be considered to have commenced once at least one Senator has cast a vote. So long as such a vote commences before the End Date, the full results of the vote will be used to resolve this market, even if the vote concludes after the End Date. The results of the vote need not be available at the identified settlement source at the End Date.\nShould no confirmation vote on the nomination of Ms. Thomas-Greenfield to the position of Ambassador to the United Nations commence before the End Date; or should such a vote result in the rejection of the nominee via a procedure that does not result in the recording of a tally of votes; or should Ms. Thomas-Greenfield be confirmed to position of Ambassador to the United Nations in a vote that commences only after the End Date; the contract identifying the range \"58 or fewer\" shall resolve to Yes. Should a vote result in the confirmation of the nominee via a procedure that does not result in the recording of a tally of votes, the contract identifying the range \"83 or more\" shall resolve to Yes. Should more than one Senate confirmation vote on the nomination of Ms. Thomas-Greenfield to the position of Ambassador to the United Nations be held before the End Date, the outcome of the first such vote will be used to resolve this market. \nThe outcomes of committee votes, hearings, or reports, cloture votes and other procedural votes will have no impact on the resolution of this market.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 03/15/2021 11:59 PM (ET)\n\nSupplementary Comment(s)\n\nCreated On: 02/22/2021 7:04 PM (ET)\nNOTICE: WE ARE EXPECTING VERY HEAVY TRADING IN THIS MARKET DURING THE SENATE CONFIRMATION VOTE.\nOffers are processed in the order in which they are received. This means that an offer you submit when a certain price is showing may not be filled at that price -- or at all -- because of all the offers already submitted ahead of yours. Do not resubmit offers that are already in process. See also Section 3 iii of PredictIt's Terms and Conditions.\n",
-    "stars": 2
-  },
-  {
     "title": "How many Biden Cabinet members will be confirmed by Mar. 1?",
     "url": "https://www.predictit.org/markets/detail/7091/How-many-Biden-Cabinet-members-will-be-confirmed-by-Mar-1",
     "platform": "PredictIt",
     "options": [
       {
         "name": "4 or fewer",
-        "probability": 0.008928571428571428,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "5 or 6",
-        "probability": 0.008928571428571428,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "7 or 8",
-        "probability": 0.008928571428571428,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "9 or 10",
-        "probability": 0.08035714285714285,
+        "probability": 0.07547169811320754,
         "type": "PROBABILITY"
       },
       {
         "name": "11 or 12",
-        "probability": 0.7410714285714285,
+        "probability": 0.8490566037735849,
         "type": "PROBABILITY"
       },
       {
         "name": "13 or 14",
-        "probability": 0.11607142857142856,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "15 or 16",
-        "probability": 0.008928571428571428,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "17 or 18",
-        "probability": 0.008928571428571428,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "19 or 20",
-        "probability": 0.008928571428571428,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "21 or more",
-        "probability": 0.008928571428571428,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       }
     ],
@@ -2765,65 +2652,6 @@
       }
     ],
     "description": "This market shall resolve to Yes in the event that the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point between the launch of this market and the End Date listed below, according to the U.S. Department of Labor. \nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 09/01/2021 11:59 PM (ET)\n",
-    "stars": 2
-  },
-  {
-    "title": "How many Senators vote to confirm Tom Vilsack as Agriculture Sec. by 3/31?",
-    "url": "https://www.predictit.org/markets/detail/7093/How-many-Senators-vote-to-confirm-Tom-Vilsack-as-Agriculture-Sec-by-3-31",
-    "platform": "PredictIt",
-    "options": [
-      {
-        "name": "70 or fewer",
-        "probability": 0.009009009009009009,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "71 to 73",
-        "probability": 0.009009009009009009,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "74 to 76",
-        "probability": 0.009009009009009009,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "77 to 79",
-        "probability": 0.018018018018018018,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "80 to 82",
-        "probability": 0.036036036036036036,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "83 to 85",
-        "probability": 0.09909909909909909,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "86 to 88",
-        "probability": 0.16216216216216214,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "89 to 91",
-        "probability": 0.23423423423423423,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "92 to 94",
-        "probability": 0.2252252252252252,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "95 or more",
-        "probability": 0.19819819819819817,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "Please Note: PredictIt added a supplementary comment at the bottom of the Rules on 02/22/2021.\nThe contract that resolves to Yes shall correspond to the number or range of votes cast in the U.S. Senate, in a vote commencing before the End Date listed below, in favor of the confirmation of Tom Vilsack to the position of Secretary of Agriculture, according to the official vote tally reported by the website senate.gov or, should that source be unavailable, the Congressional Record or other official source.\nA vote on the nomination shall be considered to have commenced once at least one Senator has cast a vote. So long as such a vote commences before the End Date, the full results of the vote will be used to resolve this market, even if the vote concludes after the End Date. The results of the vote need not be available at the identified settlement source at the End Date.\nShould no confirmation vote on the nomination of Mr. Vilsack to the position of Secretary of Agriculture commence before the End Date; or should such a vote result in the rejection of the nominee via a procedure that does not result in the recording of a tally of votes; or should Mr. Vilsack be confirmed to position of Secretary of Agriculture in a vote that commences only after the End Date; the contract identifying the range \"70 or fewer\" shall resolve to Yes. Should a vote result in the confirmation of the nominee via a procedure that does not result in the recording of a tally of votes, the contract identifying the range \"95 or more\" shall resolve to Yes. Should more than one Senate confirmation vote on the nomination of Mr. Vilsack to the position of Secretary of Agriculture be held before the End Date, the outcome of the first such vote will be used to resolve this market. \nThe outcomes of committee votes, hearings, or reports, cloture votes and other procedural votes will have no impact on the resolution of this market.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 03/31/2021 11:59 PM (ET)\n\nSupplementary Comment(s)\n\nCreated On: 02/22/2021 7:05 PM (ET)\nNOTICE: WE ARE EXPECTING VERY HEAVY TRADING IN THIS MARKET DURING THE SENATE CONFIRMATION VOTE.\nOffers are processed in the order in which they are received. This means that an offer you submit when a certain price is showing may not be filled at that price -- or at all -- because of all the offers already submitted ahead of yours. Do not resubmit offers that are already in process. See also Section 3 iii of PredictIt's Terms and Conditions.\n",
     "stars": 2
   },
   {
@@ -2875,56 +2703,56 @@
     "options": [
       {
         "name": "64 or fewer",
-        "probability": 0.21212121212121213,
+        "probability": 0.2761904761904762,
         "type": "PROBABILITY"
       },
       {
         "name": "65 to 67",
-        "probability": 0.13131313131313133,
+        "probability": 0.5523809523809524,
         "type": "PROBABILITY"
       },
       {
         "name": "68 to 70",
-        "probability": 0.15151515151515152,
+        "probability": 0.10476190476190478,
         "type": "PROBABILITY"
       },
       {
         "name": "71 to 73",
-        "probability": 0.14141414141414144,
+        "probability": 0.009523809523809526,
         "type": "PROBABILITY"
       },
       {
         "name": "74 to 76",
-        "probability": 0.14141414141414144,
+        "probability": 0.009523809523809526,
         "type": "PROBABILITY"
       },
       {
         "name": "77 to 79",
-        "probability": 0.12121212121212122,
+        "probability": 0.009523809523809526,
         "type": "PROBABILITY"
       },
       {
         "name": "80 to 82",
-        "probability": 0.06060606060606061,
+        "probability": 0.009523809523809526,
         "type": "PROBABILITY"
       },
       {
         "name": "83 to 85",
-        "probability": 0.020202020202020204,
+        "probability": 0.009523809523809526,
         "type": "PROBABILITY"
       },
       {
         "name": "86 to 88",
-        "probability": 0.010101010101010102,
+        "probability": 0.009523809523809526,
         "type": "PROBABILITY"
       },
       {
         "name": "89 or more",
-        "probability": 0.010101010101010102,
+        "probability": 0.009523809523809526,
         "type": "PROBABILITY"
       }
     ],
-    "description": "The contract that resolves to Yes shall correspond to the number or range of votes cast in the U.S. Senate, in a vote commencing before the End Date listed below, in favor of the confirmation of Miguel Cardona to the position of Secretary of Education, according to the official vote tally reported by the website senate.gov or, should that source be unavailable, the Congressional Record or other official source.\nA vote on the nomination shall be considered to have commenced once at least one Senator has cast a vote. So long as such a vote commences before the End Date, the full results of the vote shall be used to resolve this market, even if the vote concludes after the End Date. The results of the vote need not be available at the identified settlement source at the End Date.\nShould no confirmation vote on the nomination of Mr. Cardona to the position of Secretary of Education commence before the End Date; or should such a vote result in the rejection of the nominee via a procedure that does not result in the recording of a tally of votes; or should Mr. Cardona be confirmed to position of Secretary of Education in a vote that commences only after the End Date; the contract identifying the range \"64 or fewer\" shall resolve to Yes. Should a vote result in the confirmation of the nominee via a procedure that does not result in the recording of a tally of votes, the contract identifying the range \"89 or more\" shall resolve to Yes. Should more than one Senate confirmation vote on the nomination of Mr. Cardona to the position of Secretary of Education be held before the End Date, the outcome of the first such vote shall be used to resolve this market. \nThe outcomes of committee votes, hearings, or reports, cloture votes and other procedural votes shall have no impact on the resolution of this market.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 03/31/2021 11:59 PM (ET)\n",
+    "description": "Please Note: PredictIt added a supplementary comment at the bottom of the Rules on 02/23/2021.\nThe contract that resolves to Yes shall correspond to the number or range of votes cast in the U.S. Senate, in a vote commencing before the End Date listed below, in favor of the confirmation of Miguel Cardona to the position of Secretary of Education, according to the official vote tally reported by the website senate.gov or, should that source be unavailable, the Congressional Record or other official source.\nA vote on the nomination shall be considered to have commenced once at least one Senator has cast a vote. So long as such a vote commences before the End Date, the full results of the vote shall be used to resolve this market, even if the vote concludes after the End Date. The results of the vote need not be available at the identified settlement source at the End Date.\nShould no confirmation vote on the nomination of Mr. Cardona to the position of Secretary of Education commence before the End Date; or should such a vote result in the rejection of the nominee via a procedure that does not result in the recording of a tally of votes; or should Mr. Cardona be confirmed to position of Secretary of Education in a vote that commences only after the End Date; the contract identifying the range \"64 or fewer\" shall resolve to Yes. Should a vote result in the confirmation of the nominee via a procedure that does not result in the recording of a tally of votes, the contract identifying the range \"89 or more\" shall resolve to Yes. Should more than one Senate confirmation vote on the nomination of Mr. Cardona to the position of Secretary of Education be held before the End Date, the outcome of the first such vote shall be used to resolve this market. \nThe outcomes of committee votes, hearings, or reports, cloture votes and other procedural votes shall have no impact on the resolution of this market.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 03/31/2021 11:59 PM (ET)\n\nSupplementary Comment(s)\n\nCreated On: 02/23/2021 11:21 AM (ET)\nNOTICE: WE ARE EXPECTING VERY HEAVY TRADING IN THIS MARKET DURING THE SENATE CONFIRMATION VOTE.\nOffers are processed in the order in which they are received. This means that an offer you submit when a certain price is showing may not be filled at that price -- or at all -- because of all the offers already submitted ahead of yours. Do not resubmit offers that are already in process. See also Section 3 iii of PredictIt's Terms and Conditions.\n",
     "stars": 2
   },
   {
@@ -2948,62 +2776,62 @@
     "options": [
       {
         "name": "Julia Letlow",
-        "probability": 0.8909090909090909,
+        "probability": 0.8990825688073394,
         "type": "PROBABILITY"
       },
       {
         "name": "Candy Christophe",
-        "probability": 0.01818181818181818,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "Jim Davis",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "Allen Guillory Sr.",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "Chad Conerly",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Lansden",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "Jaycee Magnuson",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "Horace Melton III",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "Vinny Mendoza",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "Richard Pannell",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "Sancha Smith",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       },
       {
         "name": "Errol Victor Sr.",
-        "probability": 0.00909090909090909,
+        "probability": 0.009174311926605503,
         "type": "PROBABILITY"
       }
     ],
@@ -3017,12 +2845,12 @@
     "options": [
       {
         "name": "Troy Carter",
-        "probability": 0.6666666666666666,
+        "probability": 0.6754385964912281,
         "type": "PROBABILITY"
       },
       {
         "name": "Karen Peterson",
-        "probability": 0.20175438596491227,
+        "probability": 0.19298245614035087,
         "type": "PROBABILITY"
       },
       {
@@ -3101,52 +2929,52 @@
     "options": [
       {
         "name": "Lenín Moreno",
-        "probability": 0.8762886597938143,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Nicolás Maduro",
-        "probability": 0.03092783505154639,
+        "probability": 0.7798165137614678,
         "type": "PROBABILITY"
       },
       {
         "name": "Daniel Ortega",
-        "probability": 0.020618556701030927,
+        "probability": 0.055045871559633024,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Nicolás Maduro",
+        "probability": 0.03669724770642201,
         "type": "PROBABILITY"
       },
       {
         "name": "Jair Bolsonaro",
-        "probability": 0.010309278350515464,
+        "probability": 0.018348623853211007,
         "type": "PROBABILITY"
       },
       {
         "name": "Francisco Sagasti",
-        "probability": 0.010309278350515464,
+        "probability": 0.018348623853211007,
         "type": "PROBABILITY"
       },
       {
         "name": "Sebastián Piñera",
-        "probability": 0.010309278350515464,
+        "probability": 0.018348623853211007,
         "type": "PROBABILITY"
       },
       {
         "name": "Iván Duque",
-        "probability": 0.010309278350515464,
+        "probability": 0.018348623853211007,
         "type": "PROBABILITY"
       },
       {
         "name": "A. M. López Obrador",
-        "probability": 0.010309278350515464,
+        "probability": 0.018348623853211007,
         "type": "PROBABILITY"
       },
       {
         "name": "Alberto Fernández",
-        "probability": 0.010309278350515464,
+        "probability": 0.018348623853211007,
         "type": "PROBABILITY"
       },
       {
         "name": "Luis Arce",
-        "probability": 0.010309278350515464,
+        "probability": 0.018348623853211007,
         "type": "PROBABILITY"
       }
     ],
@@ -3160,12 +2988,12 @@
     "options": [
       {
         "name": "Democratic",
-        "probability": 0.5247524752475248,
+        "probability": 0.5294117647058824,
         "type": "PROBABILITY"
       },
       {
         "name": "Republican",
-        "probability": 0.4752475247524752,
+        "probability": 0.47058823529411764,
         "type": "PROBABILITY"
       }
     ],
@@ -3179,52 +3007,52 @@
     "options": [
       {
         "name": "67 or fewer",
-        "probability": 0.3055555555555555,
+        "probability": 0.5242718446601942,
         "type": "PROBABILITY"
       },
       {
         "name": "68 to 70",
-        "probability": 0.1574074074074074,
+        "probability": 0.1941747572815534,
         "type": "PROBABILITY"
       },
       {
         "name": "71 to 73",
-        "probability": 0.16666666666666666,
+        "probability": 0.14563106796116504,
         "type": "PROBABILITY"
       },
       {
         "name": "74 to 76",
-        "probability": 0.1574074074074074,
+        "probability": 0.058252427184466014,
         "type": "PROBABILITY"
       },
       {
         "name": "77 to 79",
-        "probability": 0.08333333333333333,
+        "probability": 0.029126213592233007,
         "type": "PROBABILITY"
       },
       {
         "name": "80 to 82",
-        "probability": 0.06481481481481481,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "83 to 85",
-        "probability": 0.027777777777777776,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "86 to 88",
-        "probability": 0.018518518518518517,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "89 to 91",
-        "probability": 0.009259259259259259,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "92 or more",
-        "probability": 0.009259259259259259,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       }
     ],
@@ -3238,52 +3066,52 @@
     "options": [
       {
         "name": "Hassan Rouhani",
-        "probability": 0.49038461538461536,
+        "probability": 0.4414414414414414,
         "type": "PROBABILITY"
       },
       {
         "name": "Benjamin Netanyahu",
-        "probability": 0.2019230769230769,
+        "probability": 0.24324324324324323,
         "type": "PROBABILITY"
       },
       {
         "name": "Scott Morrison",
-        "probability": 0.13461538461538464,
+        "probability": 0.11711711711711711,
         "type": "PROBABILITY"
       },
       {
         "name": "Suga Yoshihide",
-        "probability": 0.09615384615384616,
+        "probability": 0.09909909909909909,
         "type": "PROBABILITY"
       },
       {
         "name": "Kim Jong-un",
-        "probability": 0.028846153846153844,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Xi Jinping",
-        "probability": 0.009615384615384616,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Moon Jae-in",
-        "probability": 0.009615384615384616,
+        "probability": 0.027027027027027025,
         "type": "PROBABILITY"
       },
       {
         "name": "Narendra Modi",
-        "probability": 0.009615384615384616,
+        "probability": 0.018018018018018018,
         "type": "PROBABILITY"
       },
       {
         "name": "Joko Widodo",
-        "probability": 0.009615384615384616,
+        "probability": 0.018018018018018018,
         "type": "PROBABILITY"
       },
       {
         "name": "Recep Tayyip Erdoğan",
-        "probability": 0.009615384615384616,
+        "probability": 0.018018018018018018,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Xi Jinping",
+        "probability": 0.009009009009009009,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Moon Jae-in",
+        "probability": 0.009009009009009009,
         "type": "PROBABILITY"
       }
     ],
@@ -3311,12 +3139,12 @@
     "options": [
       {
         "name": "Democratic",
-        "probability": 0.6274509803921569,
+        "probability": 0.6261682242990654,
         "type": "PROBABILITY"
       },
       {
         "name": "Republican",
-        "probability": 0.37254901960784315,
+        "probability": 0.37383177570093457,
         "type": "PROBABILITY"
       }
     ],
@@ -3330,52 +3158,52 @@
     "options": [
       {
         "name": "67 or fewer",
-        "probability": 0.09900990099009899,
+        "probability": 0.14285714285714288,
         "type": "PROBABILITY"
       },
       {
         "name": "68 to 70",
-        "probability": 0.0693069306930693,
+        "probability": 0.07619047619047621,
         "type": "PROBABILITY"
       },
       {
         "name": "71 to 73",
-        "probability": 0.09900990099009899,
+        "probability": 0.1142857142857143,
         "type": "PROBABILITY"
       },
       {
         "name": "74 to 76",
-        "probability": 0.1584158415841584,
+        "probability": 0.17142857142857146,
         "type": "PROBABILITY"
       },
       {
         "name": "77 to 79",
-        "probability": 0.1683168316831683,
+        "probability": 0.18095238095238098,
         "type": "PROBABILITY"
       },
       {
         "name": "80 to 82",
-        "probability": 0.1683168316831683,
+        "probability": 0.17142857142857146,
         "type": "PROBABILITY"
       },
       {
         "name": "83 to 85",
-        "probability": 0.14851485148514848,
+        "probability": 0.08571428571428573,
         "type": "PROBABILITY"
       },
       {
         "name": "86 to 88",
-        "probability": 0.05940594059405939,
+        "probability": 0.038095238095238106,
         "type": "PROBABILITY"
       },
       {
         "name": "89 to 91",
-        "probability": 0.0198019801980198,
+        "probability": 0.009523809523809526,
         "type": "PROBABILITY"
       },
       {
         "name": "92 or more",
-        "probability": 0.0099009900990099,
+        "probability": 0.009523809523809526,
         "type": "PROBABILITY"
       }
     ],
@@ -3389,52 +3217,52 @@
     "options": [
       {
         "name": "49 or fewer",
-        "probability": 0.20833333333333331,
+        "probability": 0.13861386138613863,
         "type": "PROBABILITY"
       },
       {
         "name": "50 to 53",
-        "probability": 0.5208333333333333,
+        "probability": 0.6732673267326733,
         "type": "PROBABILITY"
       },
       {
         "name": "54 to 57",
-        "probability": 0.16666666666666666,
+        "probability": 0.10891089108910891,
         "type": "PROBABILITY"
       },
       {
         "name": "58 to 61",
-        "probability": 0.031249999999999997,
+        "probability": 0.019801980198019802,
         "type": "PROBABILITY"
       },
       {
         "name": "62 to 65",
-        "probability": 0.020833333333333332,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "66 to 69",
-        "probability": 0.010416666666666666,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "70 to 73",
-        "probability": 0.010416666666666666,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "74 to 77",
-        "probability": 0.010416666666666666,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "78 to 81",
-        "probability": 0.010416666666666666,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "82 or more",
-        "probability": 0.010416666666666666,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       }
     ],
@@ -3448,7 +3276,7 @@
     "options": [
       {
         "name": "Alvin Bragg",
-        "probability": 0.36842105263157887,
+        "probability": 0.37894736842105253,
         "type": "PROBABILITY"
       },
       {
@@ -3462,18 +3290,18 @@
         "type": "PROBABILITY"
       },
       {
-        "name": "Eliza Orlins",
-        "probability": 0.07368421052631578,
-        "type": "PROBABILITY"
-      },
-      {
         "name": "Cyrus Vance",
         "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
+        "name": "Eliza Orlins",
+        "probability": 0.05263157894736841,
+        "type": "PROBABILITY"
+      },
+      {
         "name": "Lucy Lang",
-        "probability": 0.04210526315789473,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
@@ -3502,52 +3330,52 @@
     "options": [
       {
         "name": "Abdelmadjid Tebboune",
-        "probability": 0.3097345132743362,
+        "probability": 0.29357798165137605,
         "type": "PROBABILITY"
       },
       {
         "name": "Uhuru Kenyatta",
-        "probability": 0.22123893805309733,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Abiy Ahmed",
-        "probability": 0.1327433628318584,
+        "probability": 0.21100917431192656,
         "type": "PROBABILITY"
       },
       {
         "name": "Muhammadu Buhari",
-        "probability": 0.11504424778761062,
+        "probability": 0.13761467889908252,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Abiy Ahmed",
+        "probability": 0.12844036697247704,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmerson Mnangagwa",
-        "probability": 0.053097345132743355,
+        "probability": 0.06422018348623852,
         "type": "PROBABILITY"
       },
       {
         "name": "Félix Tshisekedi",
-        "probability": 0.04424778761061947,
+        "probability": 0.04587155963302751,
         "type": "PROBABILITY"
       },
       {
         "name": "Nana Akufo-Addo",
-        "probability": 0.04424778761061947,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Abdel Fattah Al-Sisi",
-        "probability": 0.026548672566371678,
+        "probability": 0.04587155963302751,
         "type": "PROBABILITY"
       },
       {
         "name": "Cyril Ramaphosa",
-        "probability": 0.026548672566371678,
+        "probability": 0.027522935779816505,
         "type": "PROBABILITY"
       },
       {
         "name": "Paul Kagame",
-        "probability": 0.026548672566371678,
+        "probability": 0.027522935779816505,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Abdel Fattah Al-Sisi",
+        "probability": 0.018348623853211003,
         "type": "PROBABILITY"
       }
     ],
@@ -3575,62 +3403,62 @@
     "options": [
       {
         "name": "12 or fewer",
-        "probability": 0.008849557522123895,
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       },
       {
         "name": "13",
-        "probability": 0.008849557522123895,
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       },
       {
         "name": "14",
-        "probability": 0.008849557522123895,
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       },
       {
         "name": "15",
-        "probability": 0.008849557522123895,
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       },
       {
         "name": "16",
-        "probability": 0.008849557522123895,
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       },
       {
         "name": "17",
-        "probability": 0.008849557522123895,
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       },
       {
         "name": "18",
-        "probability": 0.01769911504424779,
+        "probability": 0.008771929824561403,
         "type": "PROBABILITY"
       },
       {
         "name": "19",
-        "probability": 0.03539823008849558,
+        "probability": 0.026315789473684206,
         "type": "PROBABILITY"
       },
       {
         "name": "20",
-        "probability": 0.07964601769911504,
+        "probability": 0.05263157894736841,
         "type": "PROBABILITY"
       },
       {
         "name": "21",
-        "probability": 0.168141592920354,
+        "probability": 0.10526315789473682,
         "type": "PROBABILITY"
       },
       {
         "name": "22",
-        "probability": 0.3008849557522124,
+        "probability": 0.25438596491228066,
         "type": "PROBABILITY"
       },
       {
         "name": "23 or more",
-        "probability": 0.3451327433628319,
+        "probability": 0.4999999999999999,
         "type": "PROBABILITY"
       }
     ],
@@ -3644,52 +3472,57 @@
     "options": [
       {
         "name": "Terrell McSweeny",
-        "probability": 0.5421686746987951,
+        "probability": 0.3205128205128205,
         "type": "PROBABILITY"
       },
       {
         "name": "Jonathan Kanter",
-        "probability": 0.2650602409638554,
+        "probability": 0.30769230769230765,
         "type": "PROBABILITY"
       },
       {
         "name": "Renata Hesse",
-        "probability": 0.09638554216867469,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Rebecca Slaughter",
-        "probability": 0.024096385542168672,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Deborah Feinstein",
-        "probability": 0.012048192771084336,
+        "probability": 0.23076923076923075,
         "type": "PROBABILITY"
       },
       {
         "name": "Susan Davies",
-        "probability": 0.012048192771084336,
+        "probability": 0.03846153846153846,
         "type": "PROBABILITY"
       },
       {
-        "name": "Sonia Pfaffenroth",
-        "probability": 0.012048192771084336,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Dave Gelfand",
-        "probability": 0.012048192771084336,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Steven Sunshine",
-        "probability": 0.012048192771084336,
+        "name": "Rebecca Slaughter",
+        "probability": 0.02564102564102564,
         "type": "PROBABILITY"
       },
       {
         "name": "Jon Leibowitz",
-        "probability": 0.012048192771084336,
+        "probability": 0.02564102564102564,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Deborah Feinstein",
+        "probability": 0.01282051282051282,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Sonia Pfaffenroth",
+        "probability": 0.01282051282051282,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Dave Gelfand",
+        "probability": 0.01282051282051282,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Steven Sunshine",
+        "probability": 0.01282051282051282,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jon Sallet",
+        "probability": 0,
         "type": "PROBABILITY"
       }
     ],
@@ -3703,17 +3536,17 @@
     "options": [
       {
         "name": "Andrés Arauz",
-        "probability": 0.7352941176470588,
+        "probability": 0.7777777777777778,
         "type": "PROBABILITY"
       },
       {
         "name": "Guillermo Lasso",
-        "probability": 0.2549019607843137,
+        "probability": 0.21212121212121213,
         "type": "PROBABILITY"
       },
       {
         "name": "Yaku Pérez",
-        "probability": 0.00980392156862745,
+        "probability": 0.010101010101010102,
         "type": "PROBABILITY"
       }
     ],
@@ -3727,52 +3560,52 @@
     "options": [
       {
         "name": "49 or fewer",
-        "probability": 0.8055555555555555,
+        "probability": 0.7,
         "type": "PROBABILITY"
       },
       {
         "name": "50 to 52",
-        "probability": 0.12037037037037036,
+        "probability": 0.21818181818181814,
         "type": "PROBABILITY"
       },
       {
         "name": "53 to 55",
-        "probability": 0.009259259259259259,
+        "probability": 0.01818181818181818,
         "type": "PROBABILITY"
       },
       {
         "name": "56 to 58",
-        "probability": 0.009259259259259259,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "59 to 61",
-        "probability": 0.009259259259259259,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "62 to 64",
-        "probability": 0.009259259259259259,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "65 to 67",
-        "probability": 0.009259259259259259,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "68 to 70",
-        "probability": 0.009259259259259259,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "71 to 73",
-        "probability": 0.009259259259259259,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "74 or more",
-        "probability": 0.009259259259259259,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       }
     ],
@@ -3786,52 +3619,52 @@
     "options": [
       {
         "name": "Suga Yoshihide",
-        "probability": 0.3619047619047619,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Emmanuel Macron",
-        "probability": 0.10476190476190476,
+        "probability": 0.3962264150943396,
         "type": "PROBABILITY"
       },
       {
         "name": "Joe Biden",
-        "probability": 0.09523809523809523,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Boris Johnson",
-        "probability": 0.09523809523809523,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Jair Bolsonaro",
-        "probability": 0.09523809523809523,
+        "probability": 0.10377358490566037,
         "type": "PROBABILITY"
       },
       {
         "name": "Justin Trudeau",
-        "probability": 0.0857142857142857,
+        "probability": 0.09433962264150944,
         "type": "PROBABILITY"
       },
       {
-        "name": "Cyril Ramaphosa",
-        "probability": 0.05714285714285714,
+        "name": "Boris Johnson",
+        "probability": 0.09433962264150944,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Emmanuel Macron",
+        "probability": 0.08490566037735849,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jair Bolsonaro",
+        "probability": 0.07547169811320754,
         "type": "PROBABILITY"
       },
       {
         "name": "Vladimir Putin",
-        "probability": 0.047619047619047616,
+        "probability": 0.04716981132075472,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Cyril Ramaphosa",
+        "probability": 0.04716981132075472,
         "type": "PROBABILITY"
       },
       {
         "name": "Xi Jinping",
-        "probability": 0.02857142857142857,
+        "probability": 0.028301886792452827,
         "type": "PROBABILITY"
       },
       {
         "name": "Recep Tayyip Erdoğan",
-        "probability": 0.02857142857142857,
+        "probability": 0.028301886792452827,
         "type": "PROBABILITY"
       }
     ],
@@ -3845,27 +3678,27 @@
     "options": [
       {
         "name": "Tim Ryan",
-        "probability": 0.6105263157894737,
+        "probability": 0.5729166666666666,
         "type": "PROBABILITY"
       },
       {
         "name": "Amy Acton",
-        "probability": 0.3157894736842105,
+        "probability": 0.35416666666666663,
         "type": "PROBABILITY"
       },
       {
         "name": "Nan Whaley",
-        "probability": 0.052631578947368425,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Joyce Beatty",
-        "probability": 0.010526315789473686,
+        "probability": 0.04166666666666666,
         "type": "PROBABILITY"
       },
       {
         "name": "Emilia Sykes",
-        "probability": 0.010526315789473686,
+        "probability": 0.02083333333333333,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Joyce Beatty",
+        "probability": 0.010416666666666664,
         "type": "PROBABILITY"
       }
     ],
@@ -3879,27 +3712,27 @@
     "options": [
       {
         "name": "John Fetterman",
-        "probability": 0.7875,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Conor Lamb",
-        "probability": 0.09999999999999999,
+        "probability": 0.7469879518072289,
         "type": "PROBABILITY"
       },
       {
         "name": "Madeleine Dean",
-        "probability": 0.049999999999999996,
+        "probability": 0.12048192771084337,
         "type": "PROBABILITY"
       },
       {
-        "name": "Jim Kenney",
-        "probability": 0.0375,
+        "name": "Conor Lamb",
+        "probability": 0.08433734939759036,
         "type": "PROBABILITY"
       },
       {
         "name": "Joe Sestak",
-        "probability": 0.024999999999999998,
+        "probability": 0.024096385542168672,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jim Kenney",
+        "probability": 0.024096385542168672,
         "type": "PROBABILITY"
       }
     ],
@@ -3918,12 +3751,12 @@
       },
       {
         "name": "63 or 64",
-        "probability": 0.0297029702970297,
+        "probability": 0.04950495049504951,
         "type": "PROBABILITY"
       },
       {
         "name": "65 or 66",
-        "probability": 0.06930693069306931,
+        "probability": 0.07920792079207921,
         "type": "PROBABILITY"
       },
       {
@@ -3938,12 +3771,12 @@
       },
       {
         "name": "71 or 72",
-        "probability": 0.24752475247524752,
+        "probability": 0.2376237623762376,
         "type": "PROBABILITY"
       },
       {
         "name": "73 or 74",
-        "probability": 0.13861386138613863,
+        "probability": 0.1188118811881188,
         "type": "PROBABILITY"
       },
       {
@@ -3972,27 +3805,27 @@
     "options": [
       {
         "name": "Ryan Costello",
-        "probability": 0.32075471698113206,
+        "probability": 0.34,
         "type": "PROBABILITY"
       },
       {
         "name": "Guy Reschenthaler",
-        "probability": 0.2830188679245283,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
         "name": "Everett Stern",
-        "probability": 0.20754716981132074,
+        "probability": 0.2,
         "type": "PROBABILITY"
       },
       {
         "name": "Donald Trump Jr.",
-        "probability": 0.09433962264150944,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "Charlie Dent",
-        "probability": 0.09433962264150944,
+        "probability": 0.08,
         "type": "PROBABILITY"
       }
     ],
@@ -4006,12 +3839,12 @@
     "options": [
       {
         "name": "Democratic",
-        "probability": 0.6138613861386139,
+        "probability": 0.6078431372549019,
         "type": "PROBABILITY"
       },
       {
         "name": "Republican",
-        "probability": 0.38613861386138615,
+        "probability": 0.39215686274509803,
         "type": "PROBABILITY"
       }
     ],
@@ -4025,12 +3858,12 @@
     "options": [
       {
         "name": "Democratic",
-        "probability": 0.6666666666666667,
+        "probability": 0.676470588235294,
         "type": "PROBABILITY"
       },
       {
         "name": "Republican",
-        "probability": 0.33333333333333337,
+        "probability": 0.3235294117647059,
         "type": "PROBABILITY"
       }
     ],
@@ -4044,12 +3877,12 @@
     "options": [
       {
         "name": "Republican",
-        "probability": 0.5346534653465347,
+        "probability": 0.53,
         "type": "PROBABILITY"
       },
       {
         "name": "Democratic",
-        "probability": 0.4653465346534653,
+        "probability": 0.47,
         "type": "PROBABILITY"
       }
     ],
@@ -4063,22 +3896,32 @@
     "options": [
       {
         "name": "Shalanda Young",
-        "probability": 0.6095238095238095,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Gene Sperling",
-        "probability": 0.1619047619047619,
+        "probability": 0.4653465346534653,
         "type": "PROBABILITY"
       },
       {
         "name": "Neera Tanden",
-        "probability": 0.14285714285714285,
+        "probability": 0.24752475247524752,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Gene Sperling",
+        "probability": 0.1188118811881188,
         "type": "PROBABILITY"
       },
       {
         "name": "Ann O'Leary",
-        "probability": 0.0857142857142857,
+        "probability": 0.07920792079207921,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Martha Coven",
+        "probability": 0.04950495049504951,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Sarah Bianchi",
+        "probability": 0.039603960396039604,
         "type": "PROBABILITY"
       }
     ],
@@ -4092,56 +3935,378 @@
     "options": [
       {
         "name": "64 or fewer",
-        "probability": 0.025210084033613446,
+        "probability": 0.018867924528301886,
         "type": "PROBABILITY"
       },
       {
         "name": "65 to 67",
-        "probability": 0.016806722689075633,
+        "probability": 0.028301886792452827,
         "type": "PROBABILITY"
       },
       {
         "name": "68 to 70",
-        "probability": 0.016806722689075633,
+        "probability": 0.056603773584905655,
         "type": "PROBABILITY"
       },
       {
         "name": "71 to 73",
-        "probability": 0.08403361344537816,
+        "probability": 0.12264150943396226,
         "type": "PROBABILITY"
       },
       {
         "name": "74 to 76",
-        "probability": 0.10924369747899161,
+        "probability": 0.16981132075471697,
         "type": "PROBABILITY"
       },
       {
         "name": "77 to 79",
-        "probability": 0.14285714285714288,
+        "probability": 0.16037735849056603,
         "type": "PROBABILITY"
       },
       {
         "name": "80 to 82",
-        "probability": 0.1596638655462185,
+        "probability": 0.1509433962264151,
         "type": "PROBABILITY"
       },
       {
         "name": "83 to 85",
-        "probability": 0.16806722689075632,
+        "probability": 0.11320754716981131,
         "type": "PROBABILITY"
       },
       {
         "name": "86 to 88",
-        "probability": 0.15126050420168066,
+        "probability": 0.09433962264150944,
         "type": "PROBABILITY"
       },
       {
         "name": "89 or more",
-        "probability": 0.12605042016806722,
+        "probability": 0.08490566037735849,
         "type": "PROBABILITY"
       }
     ],
     "description": "The contract that resolves to Yes shall correspond to the number or range of votes cast in the U.S. Senate, in a vote commencing before the End Date listed below, in favor of the confirmation of Merrick Garland to the position of Attorney General, according to the official vote tally reported by the website senate.gov or, should that source be unavailable, the Congressional Record or other official source.\nA vote on the nomination shall be considered to have commenced once at least one Senator has cast a vote. So long as such a vote commences before the End Date, the full results of the vote shall be used to resolve this market, even if the vote concludes after the End Date. The results of the vote need not be available at the identified settlement source at the End Date.\nShould no confirmation vote on the nomination of Mr. Garland to the position of Attorney General commence before the End Date; or should such a vote result in the rejection of the nominee via a procedure that does not result in the recording of a tally of votes; or should Mr. Garland be confirmed to position of Attorney General in a vote that commences only after the End Date; the contract identifying the range \"64 or fewer\" shall resolve to Yes. Should a vote result in the confirmation of the nominee via a procedure that does not result in the recording of a tally of votes, the contract identifying the range \"89 or more\" shall resolve to Yes. Should more than one Senate confirmation vote on the nomination of Mr. Garland to the position of Attorney General be held before the End Date, the outcome of the first such vote shall be used to resolve this market. \nThe outcomes of committee votes, hearings, or reports, cloture votes and other procedural votes shall have no impact on the resolution of this market.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 03/31/2021 11:59 PM (ET)\n",
+    "stars": 2
+  },
+  {
+    "title": "Will Joe Biden resign during his first term?",
+    "url": "https://www.predictit.org/markets/detail/7136/Will-Joe-Biden-resign-during-his-first-term",
+    "platform": "PredictIt",
+    "options": [
+      {
+        "name": "Will Joe Biden resign during his first term?",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Please Note: PredictIt added a supplementary comment at the bottom of the Rules on 02/25/2021.\nThis market shall resolve to Yes in the event that President Joe Biden resigns and permanently departs from the office of the presidency before the End Date listed below. A temporary transfer of presidential powers and duties under Section 3 of the 25th Amendment to the U.S. Constitution shall not be sufficient to cause this market to resolve to Yes.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 01/20/2025 11:59 AM (ET)\n\nSupplementary Comment(s)\n\nCreated On: 02/25/2021 10:57 AM (ET)\nIn response to trader inquiries: This market is solely about whether Joe Biden will resign from and leave the office of the Presidency of the United States before the End Date. No scenario other than Mr. Biden resigning from and leaving office before the End Date will cause this market to resolve to Yes. Mr. Biden's departure from office for any other reason will not cause this market to resolve to Yes. If Mr. Biden announces a resignation effective at a future date, but does not leave the office of the Presidency by the End Date, this market will resolve to No.\n",
+    "stars": 2
+  },
+  {
+    "title": "How many valid Newsom recall signatures reported in next California update?",
+    "url": "https://www.predictit.org/markets/detail/7137/How-many-valid-Newsom-recall-signatures-reported-in-next-California-update",
+    "platform": "PredictIt",
+    "options": [
+      {
+        "name": "Fewer than 1M",
+        "probability": 0.26666666666666666,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1M to 1.05M",
+        "probability": 0.19999999999999998,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1.05M to 1.1M",
+        "probability": 0.1714285714285714,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1.1M to 1.15M",
+        "probability": 0.11428571428571428,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1.15M to 1.2M",
+        "probability": 0.07619047619047618,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1.2M to 1.25M",
+        "probability": 0.05714285714285714,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1.25M to 1.3M",
+        "probability": 0.03809523809523809,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1.3M to 1.35M",
+        "probability": 0.019047619047619046,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1.35M to 1.4M",
+        "probability": 0.019047619047619046,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1.4M or more",
+        "probability": 0.03809523809523809,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "The contract that resolves to Yes shall be that which identifies, in the current effort to recall Governor Gavin Newsom (filed by Orrin E. Heatlie), the cumulative total number of valid signatures that have been officially reported by the California Secretary of State in its next status report subsequent to the launch of this market on February 23, 2021. At the time of the launch of this market, signature validation reports are made available at https://www.sos.ca.gov/elections/recalls/current-recall-efforts.\nShould the result fall precisely on the threshold between two contracts, this market will resolve to the contract with the higher numerical range.\nPredictIt may determine how and when to settle the market based on all information available to PredictIt at the relevant time.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\n",
+    "stars": 2
+  },
+  {
+    "title": "How many Senators vote to confirm Deb Haaland as Interior Secretary by 3/31?",
+    "url": "https://www.predictit.org/markets/detail/7138/How-many-Senators-vote-to-confirm-Deb-Haaland-as-Interior-Secretary-by-3-31",
+    "platform": "PredictIt",
+    "options": [
+      {
+        "name": "49 or fewer",
+        "probability": 0.11214953271028036,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "50 or 51",
+        "probability": 0.29906542056074764,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "52 or 53",
+        "probability": 0.3364485981308411,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "54 or 55",
+        "probability": 0.13084112149532712,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "56 or 57",
+        "probability": 0.04672897196261682,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "58 or 59",
+        "probability": 0.02803738317757009,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "60 or 61",
+        "probability": 0.018691588785046728,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "62 or 63",
+        "probability": 0.009345794392523364,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "64 or 65",
+        "probability": 0.009345794392523364,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "66 or more",
+        "probability": 0.009345794392523364,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "The contract that resolves to Yes shall correspond to the number or range of votes cast in the U.S. Senate, in a vote commencing before the End Date listed below, in favor of the confirmation of Rep. Deb Haaland (D-NM) to the position of Secretary of the Interior, according to the official vote tally reported by the website senate.gov or, should that source be unavailable, the Congressional Record or other official source.\nA vote on the nomination shall be considered to have commenced once at least one Senator has cast a vote. So long as such a vote commences before the End Date, the full results of the vote will be used to resolve this market, even if the vote concludes after the End Date. The results of the vote need not be available at the identified settlement source at the End Date.\nAny vote cast by the Vice President on the nomination shall not be considered for purposes of this market.\nShould no confirmation vote on the nomination of Rep. Haaland to the position of Secretary of the Interior commence before the End Date; or should such a vote result in the rejection of the nominee via a procedure that does not result in the recording of a tally of votes; or should Rep. Haaland be confirmed to position of Secretary of the Interior in a vote that commences only after the End Date; the contract identifying the range \"49 or fewer\" shall resolve to Yes. Should a vote result in the confirmation of the nominee via a procedure that does not result in the recording of a tally of votes, the contract identifying the range \"66 or more\" shall resolve to Yes. Should more than one Senate confirmation vote on the nomination of Rep. Haaland to the position of Secretary of the Interior be held before the End Date, the outcome of the first such vote will be used to resolve this market. \nThe outcomes of committee votes, hearings, or reports, cloture votes and other procedural votes will have no impact on the resolution of this market.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 03/31/2021 11:59 PM (ET)\n",
+    "stars": 2
+  },
+  {
+    "title": "Who will be serving as California Attorney General on May 1?",
+    "url": "https://www.predictit.org/markets/detail/7139/Who-will-be-serving-as-California-Attorney-General-on-May-1",
+    "platform": "PredictIt",
+    "options": [
+      {
+        "name": "Rob Bonta",
+        "probability": 0.39473684210526316,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Adam Schiff",
+        "probability": 0.32894736842105265,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Xavier Becerra",
+        "probability": 0.13157894736842105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Diana Becton",
+        "probability": 0.07894736842105263,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jeff Rosen",
+        "probability": 0.02631578947368421,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Darrell Steinberg",
+        "probability": 0.02631578947368421,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Rick Chavez Zbur",
+        "probability": 0.013157894736842105,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "The contract that resolves to Yes shall be that which identifies the individual serving as Attorney General of the State of California on the End Date listed below.\nShould no one be serving as Attorney General of the State of California on the End Date listed below, all contracts in this market shall resolve to No.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 05/01/2021 11:59 PM (ET)\n",
+    "stars": 2
+  },
+  {
+    "title": "How many Senators vote to confirm William Burns as CIA Director by 3/31?",
+    "url": "https://www.predictit.org/markets/detail/7140/How-many-Senators-vote-to-confirm-William-Burns-as-CIA-Director-by-3-31",
+    "platform": "PredictIt",
+    "options": [
+      {
+        "name": "70 or fewer",
+        "probability": 0.06422018348623854,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "71 to 73",
+        "probability": 0.018348623853211007,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "74 to 76",
+        "probability": 0.03669724770642201,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "77 to 79",
+        "probability": 0.055045871559633024,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "80 to 82",
+        "probability": 0.07339449541284403,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "83 to 85",
+        "probability": 0.12844036697247707,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "86 to 88",
+        "probability": 0.1834862385321101,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "89 to 91",
+        "probability": 0.16513761467889906,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "92 to 94",
+        "probability": 0.1559633027522936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "95 or more",
+        "probability": 0.11926605504587155,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "The contract that resolves to Yes shall correspond to the number or range of votes cast in the U.S. Senate, in a vote commencing before the End Date listed below, in favor of the confirmation of William Burns to the position of Director of the Central Intelligence Agency, according to the official vote tally reported by the website senate.gov or, should that source be unavailable, the Congressional Record or other official source.\nA vote on the nomination shall be considered to have commenced once at least one Senator has cast a vote. So long as such a vote commences before the End Date, the full results of the vote will be used to resolve this market, even if the vote concludes after the End Date. The results of the vote need not be available at the identified settlement source at the End Date.\nShould no confirmation vote on the nomination of Mr. Burns to the position of Director of the Central Intelligence Agency commence before the End Date; or should such a vote result in the rejection of the nominee via a procedure that does not result in the recording of a tally of votes; or should Mr. Burns be confirmed to position of Director of the Central Intelligence Agency in a vote that commences only after the End Date; the contract identifying the range \"70 or fewer\" shall resolve to Yes. Should a vote result in the confirmation of the nominee via a procedure that does not result in the recording of a tally of votes, the contract identifying the range \"95 or more\" shall resolve to Yes. Should more than one Senate confirmation vote on the nomination of Mr. Burns to the position of Director of the Central Intelligence Agency be held before the End Date, the outcome of the first such vote will be used to resolve this market. \nThe outcomes of committee votes, hearings, or reports, cloture votes and other procedural votes will have no impact on the resolution of this market.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 03/31/2021 11:59 PM (ET)\n",
+    "stars": 2
+  },
+  {
+    "title": "Will Adam Kinzinger win the 2022 House GOP nomination in any Illinois district?",
+    "url": "https://www.predictit.org/markets/detail/7141/Will-Adam-Kinzinger-win-the-2022-House-GOP-nomination-in-any-Illinois-district",
+    "platform": "PredictIt",
+    "options": [
+      {
+        "name": "Will Adam Kinzinger win the 2022 House GOP nomination in any Illinois district?",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "This market shall resolve to Yes in the event that Rep. Adam Kinzinger wins the 2022 Republican nomination for Representative in Congress from any U.S. House district in Illinois.\nPredictIt may determine how and when to settle the market based on all information available to PredictIt at the relevant time. PredictIt reserves the right to wait for further official, party, judicial or other relevant announcements, reports or decisions to resolve any ambiguity or uncertainty before the market is settled. Markets may stay open or incur a delay in settlement well past the date of the contest in certain circumstances. If there is any change to an event, or any situation arises, that is not in PredictIt’s view addressed adequately by the market rules, PredictIt will decide the fairest and most appropriate course of action.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\n",
+    "stars": 2
+  },
+  {
+    "title": "Will Andrew Cuomo be Governor of New York at the end of the year?",
+    "url": "https://www.predictit.org/markets/detail/7142/Will-Andrew-Cuomo-be-Governor-of-New-York-at-the-end-of-the-year",
+    "platform": "PredictIt",
+    "options": [
+      {
+        "name": "Will Andrew Cuomo be Governor of New York at the end of the year?",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "This market shall resolve to Yes in the event that Andrew Cuomo serves as Governor of New York upon the End Date listed below. \nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 12/31/2021 11:59 PM (ET)\n",
+    "stars": 2
+  },
+  {
+    "title": "How many Yea votes in the House for the American Rescue Plan?",
+    "url": "https://www.predictit.org/markets/detail/7143/How-many-Yea-votes-in-the-House-for-the-American-Rescue-Plan",
+    "platform": "PredictIt",
+    "options": [
+      {
+        "name": "218 or fewer",
+        "probability": 0.027777777777777776,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "219",
+        "probability": 0.037037037037037035,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "220",
+        "probability": 0.05555555555555555,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "221",
+        "probability": 0.21296296296296297,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "222",
+        "probability": 0.12037037037037036,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "223",
+        "probability": 0.09259259259259259,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "224",
+        "probability": 0.13888888888888887,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "225",
+        "probability": 0.10185185185185185,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "226",
+        "probability": 0.09259259259259259,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "227 or more",
+        "probability": 0.12037037037037036,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "The contract that resolves to Yes shall be that which identifies the number of members of the U.S. House of Representatives who, before the End Date listed below, vote in favor of passage of the American Rescue Plan.\nShould more than one such vote be held before the End Date, the outcome of the first such vote shall be used to resolve this market. Should no such vote conclude by the End Date, or should the first such vote result in the rejection of the bill via voice vote or other procedure that does not result in the recording of a tally of votes, the contract identifying the range \"218 or fewer\" shall resolve to Yes. Should such vote result in the passage of the bill via voice vote or other procedure that does not result in the recording of a tally of votes, the contract identifying the range \"227 or more\" shall resolve as Yes. \nThe outcomes of committee votes, hearings, or reports, and other procedural votes will have no impact on the resolution of this market.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\nEnd Date: 03/19/2021 11:59 AM (ET)\n",
     "stars": 2
   }
 ]

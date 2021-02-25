@@ -7,27 +7,27 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.31,
+        "probability": 0.24,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.35,
+        "probability": 0.44,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.14,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 November 2021 and 31 December 2021",
-        "probability": 0.19,
+        "probability": 0.17,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 January 2022",
-        "probability": 0.01,
+        "probability": 0.02,
         "type": "PROBABILITY"
       }
     ],
@@ -41,133 +41,51 @@
     "options": [
       {
         "name": "The Games will begin",
-        "probability": 0.91,
+        "probability": 0.96,
         "type": "PROBABILITY"
       },
       {
         "name": "The Games will be postponed again by more than a day",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "The Games will be cancelled",
-        "probability": 0.07,
+        "probability": 0.03,
         "type": "PROBABILITY"
       }
     ],
     "stars": 4
   },
   {
-    "title": "Which party's candidate will win the next presidential election in France?</a>",
+    "title": "When will the number of COVID-19 vaccine doses administered reach 1.5 billion worldwide?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "France is scheduled to hold its next presidential election in April 2022, with a possible <a href=\"https://www.politico.eu/europe-poll-of-polls/france/\" target=\"_blank\">run-off</a> two weeks later. Incumbent Emmanuel Macron may run <a href=\"https://www.nytimes.com/2020/12/16/world/europe/france-macron-right.html\" target=\"_blank\">again</a>, but he has not yet committed to doing so.",
+    "description": "With several COVID-19 vaccines now approved in different jurisdictions to fight the pandemic, the focus has shifted to <a href=\"https://www.france24.com/en/health/20210204-more-people-now-vaccinated-against-covid-19-than-infected-worldwide-data-shows\" target=\"_blank\">vaccination</a>. The outcome will be determined using data as reported by <a href=\"https://ourworldindata.org/grapher/cumulative-covid-vaccinations\" target=\"_blank\">Our World in Data</a> for World. Click on the \"TABLE\" tab, scroll to the bottom to reach the entry for \"World,\" and see the relevant number in the column titled \"End.\" The date slider must be located all the way to the right to see the latest figure.",
     "options": [
       {
-        "name": "National Rally (Rassemblement national)",
-        "probability": 0.14,
+        "name": "Before 1 July 2021",
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {
-        "name": "The Republicans (Les Républicains)",
-        "probability": 0.07,
+        "name": "Between 1 July 2021 and 31 August 2021",
+        "probability": 0.63,
         "type": "PROBABILITY"
       },
       {
-        "name": "The Republic Forward (La République En Marche !)",
-        "probability": 0.72,
+        "name": "Between 1 September 2021 and 31 October 2021",
+        "probability": 0.19,
         "type": "PROBABILITY"
       },
       {
-        "name": "Unbowed France (La France Insoumise)",
+        "name": "Between 1 November 2021 and 31 December 2021",
         "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
-        "name": "None of the above",
-        "probability": 0.05,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 4
-  },
-  {
-    "title": "In the next Italian general election, which party will win the largest number of parliamentary seats?</a>",
-    "url": "https://goodjudgment.io/superforecasts/",
-    "platform": "Good Judgment",
-    "description": "The next Italian general election is due by 28 May 2023, though a <a href=\"https://www.thelocal.it/20210126/explained-why-has-italy-prime-minister-resigned-and-what-happens-now\" target=\"_blank\">snap</a> general election could be <a href=\"http://www.senato.it/documenti/repository/istituzione/costituzione_inglese.pdf\" target=\"_blank\">called</a> before then. The question will resolve on the total number of <a href=\"https://www.politico.eu/europe-poll-of-polls/italy/\" target=\"_blank\">seats</a> won in the Chamber of Deputies and the Senate combined.",
-    "options": [
-      {
-        "name": "Brothers of Italy (Fratelli d'Italia)",
-        "probability": 0.1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Democratic Party (Partito Democratico)",
-        "probability": 0.38,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Five Star Movement (Movimento 5 Stelle)",
-        "probability": 0.07,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "League (Lega)",
-        "probability": 0.43,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "None of the parties above will win the largest number of seats or there will be a tie",
-        "probability": 0.02,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 4
-  },
-  {
-    "title": "Before 1 April 2022, will Jair Bolsonaro cease to be the president of Brazil?</a>",
-    "url": "https://goodjudgment.io/superforecasts/",
-    "platform": "Good Judgment",
-    "description": "Since taking office in 2019, there have been <a href=\"https://www.bloomberg.com/news/articles/2019-05-24/impeach-bolsonaro-just-five-months-in-talk-has-already-begun\" target=\"_blank\">calls</a> to <a href=\"https://www.cnbc.com/2020/04/03/coronavirus-brazils-bolsonaro-faces-calls-for-his-impeachment.html\" target=\"_blank\">impeach</a> President Bolsonaro, most recently due to his policies relating to the <a href=\"https://www.reuters.com/article/us-health-coronavirus-brazil-bolsonaro-a/brazils-bolsonaro-isolated-weakened-by-coronavirus-denial-idUSKBN21K333\" target=\"_blank\">COVID-19</a> pandemic.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.03,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.97,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 4
-  },
-  {
-    "title": "When will Joe Biden cease to be president of the United States?</a>",
-    "url": "https://goodjudgment.io/superforecasts/",
-    "platform": "Good Judgment",
-    "description": "The next inauguration for president of the United States is scheduled for <a href=\"https://www.archives.gov/founding-docs/amendments-11-27#xx\" target=\"_blank\">20   January</a> 2025. A transfer of presidential powers and duties to an acting president under Section 3 or Section 4 of the <a href=\"https://www.archives.gov/founding-docs/amendments-11-27#xxv\" target=\"_blank\">25th   Amendment</a> for more than 30 consecutive calendar days would count.",
-    "options": [
-      {
-        "name": "Before 20 January 2023",
-        "probability": 0.03,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 20 January 2023 and 19 January 2025",
-        "probability": 0.06,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "On 20 January 2025",
-        "probability": 0.52,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Not before 21 January 2025",
-        "probability": 0.39,
+        "name": "Not before 1 January 2022",
+        "probability": 0.01,
         "type": "PROBABILITY"
       }
     ],
@@ -186,12 +104,12 @@
       },
       {
         "name": "Between 1 February 2021 and 31 March 2021",
-        "probability": 0.34,
+        "probability": 0.49,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 April 2021 and 31 May 2021",
-        "probability": 0.64,
+        "probability": 0.49,
         "type": "PROBABILITY"
       },
       {
@@ -208,68 +126,34 @@
     "stars": 4
   },
   {
-    "title": "When will Germany report that 75 million cumulative vaccine doses for COVID-19 have been given?</a>",
+    "title": "How many total cases of COVID-19 worldwide will be estimated as of 31 March 2021?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "The Pfizer vaccine was developed with German partner BioNTech, but the rollout in Germany has been <a href=\"https://www.dw.com/en/coronavirus-vaccine-german-health-minister-jens-spahn-under-fire/a-56144390\" target=\"_blank\">criticized</a> for being <a href=\"https://www.reuters.com/article/us-health-coronavirus-vaccines-germany/scarce-doses-and-empty-vaccination-centres-germanys-vaccine-rollout-headache-idUSKBN29F0BP\" target=\"_blank\">slow</a>. The outcome will be determined using data published by the German government's <a href=\"https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.html\" target=\"_blank\">Robert   Koch Institut</a> [in German]. Click on the first link under \"Daten\" at the bottom of the page to download an xlsx file. In the xlsx file that opens (currently named \"Impfquotenmonitoring.xlsx\"), see the \"Gesamt_bis_einschl_[date]\" (Total up to and including [date]) sheet. Refer to column \"Gesamtzahl bisher verabreichter Impfstoffdosen\" (Total number of vaccine doses given to date) in the row \"Gesamt\" (Total). The question will resolve on the date indicated in the xlsx file. Whether a particular vaccine's regimen requires one or more doses is immaterial.",
+    "description": "This question was commissioned by <a href=\"https://www.openphilanthropy.org/blog/forecasting-covid-19-pandemic\" target=\"_blank\">Open   Philanthropy</a>.The outcome will be determined based not on available data on confirmed cases, but on credible case estimates of COVID-19 from approved scientific sources, which are, in ranked order: WHO, The Lancet, the New England Journal of Medicine, Nature, Science, and the Proceedings of the National Academy of Sciences of the United States of America (e.g., <a href=\"https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2820%2932009-2/fulltext\" target=\"_blank\">here</a>, <a href=\"https://www.nature.com/articles/s41467-020-18272-4\" target=\"_blank\">here</a>, <a href=\"https://apnews.com/article/virus-outbreak-archive-united-nations-54a3a5869c9ae4ee623497691e796083\" target=\"_blank\">here</a>). This question will be suspended on 31 March 2021 and closed on 30 June 2021, after assessing estimates for the period ending 31 March 2021. If estimates provided are a range, the midpoint of the range will be used to determine the outcome of the question. If more than one estimate from the highest-ranked publication is available as of 30 June 2021, the most recent estimate will be used. The outcome will be determined based on estimates inclusive of cases before this question's launch. For the companion forecasting question on confirmed cases of COVID-19, please see #1438.",
     "options": [
       {
-        "name": "Before 1 May 2021",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.33,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.5,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Not before 1 November 2021",
-        "probability": 0.15,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 4
-  },
-  {
-    "title": "When will the UK report that 35 million people in the UK have been vaccinated for COVID-19?</a>",
-    "url": "https://goodjudgment.io/superforecasts/",
-    "platform": "Good Judgment",
-    "description": "The UK gave the first dose of Pfizer's COVID-19 vaccine on 8 December 2020 and is <a href=\"https://www.npr.org/sections/coronavirus-live-updates/2020/12/08/944125280/u-k-begins-nationwide-coronavirus-immunization-largest-in-nations-history\" target=\"_blank\">pushing</a> to <a href=\"https://www.bbc.com/news/uk-55227325\" target=\"_blank\">execute</a> its <a href=\"https://www.gov.uk/government/publications/national-protocol-for-covid-19-mrna-vaccine-bnt162b2-pfizerbiontech\" target=\"_blank\">plan</a>. The outcome will be determined using data when and as reported by the <a href=\"https://www.gov.uk/coronavirus\" target=\"_blank\">UK</a> <a href=\"https://twitter.com/nadhimzahawi/status/1339167258866814976\" target=\"_blank\">government</a>. For the purposes of this question, a person will be considered to have been vaccinated upon receiving a single dose of a vaccine, irrespective of plans or requirements for additional doses for the same people.",
-    "options": [
-      {
-        "name": "Before 1 March 2021",
+        "name": "Fewer than 200 million",
         "probability": 0,
         "type": "PROBABILITY"
       },
       {
-        "name": "Between 1 March 2021 and 30 April 2021",
-        "probability": 0.86,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.13,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 July 2021 and 31 August 2021",
+        "name": "Between 200 million and 500 million, inclusive",
         "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
-        "name": "Not before 1 September 2021",
-        "probability": 0,
+        "name": "More than 500 million but fewer than 960 million",
+        "probability": 0.2,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 960 million and 1.6 billion, inclusive",
+        "probability": 0.74,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 1.6 billion",
+        "probability": 0.05,
         "type": "PROBABILITY"
       }
     ],
@@ -283,12 +167,12 @@
     "options": [
       {
         "name": "Less than 23%",
-        "probability": 0.25,
+        "probability": 0.27,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 23% and 27%, inclusive",
-        "probability": 0.72,
+        "probability": 0.7,
         "type": "PROBABILITY"
       },
       {
@@ -317,12 +201,12 @@
       },
       {
         "name": "Lower by more than 0% but less than 4% ",
-        "probability": 0.1,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by between 0% and 4%, inclusive",
-        "probability": 0.76,
+        "probability": 0.74,
         "type": "PROBABILITY"
       },
       {
@@ -346,12 +230,12 @@
       },
       {
         "name": "Higher by between 0% and 100%",
-        "probability": 0.45,
+        "probability": 0.52,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 100%",
-        "probability": 0.54,
+        "probability": 0.47,
         "type": "PROBABILITY"
       }
     ],
@@ -370,22 +254,22 @@
       },
       {
         "name": "Between 1 April 2021 and 30 June 2021",
-        "probability": 0.94,
+        "probability": 0.95,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 30 September 2021",
-        "probability": 0.05,
+        "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 October 2021 and 31 December 2021",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 January 2022",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       }
     ],
@@ -399,7 +283,7 @@
     "options": [
       {
         "name": "10% or less",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -409,7 +293,7 @@
       },
       {
         "name": "Between 20% and 30%, inclusive",
-        "probability": 0.16,
+        "probability": 0.17,
         "type": "PROBABILITY"
       },
       {
