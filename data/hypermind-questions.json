@@ -82,57 +82,57 @@
     "options": [
       {
         "name": "Xavier Bertrand",
-        "probability": 0.028571428571428567,
+        "probability": 0.02912621359223301,
         "type": "PROBABILITY"
       },
       {
         "name": "Pierre de Villiers",
-        "probability": 0.019047619047619046,
+        "probability": 0.01941747572815534,
         "type": "PROBABILITY"
       },
       {
         "name": "Anne Hidalgo",
-        "probability": 0.028571428571428567,
+        "probability": 0.02912621359223301,
         "type": "PROBABILITY"
       },
       {
         "name": "Yannick Jadot",
-        "probability": 0.009523809523809523,
+        "probability": 0.00970873786407767,
         "type": "PROBABILITY"
       },
       {
         "name": "Marine Le Pen",
-        "probability": 0.11428571428571427,
+        "probability": 0.11650485436893204,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmanuel Macron",
-        "probability": 0.5619047619047619,
+        "probability": 0.5728155339805825,
         "type": "PROBABILITY"
       },
       {
         "name": "Jean-Luc Mélenchon",
-        "probability": 0.019047619047619046,
+        "probability": 0.01941747572815534,
         "type": "PROBABILITY"
       },
       {
         "name": "Valérie Pécresse",
-        "probability": 0.009523809523809523,
+        "probability": 0.00970873786407767,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Piolle",
-        "probability": 0.009523809523809523,
+        "probability": 0.00970873786407767,
         "type": "PROBABILITY"
       },
       {
         "name": "Another woman",
-        "probability": 0.03809523809523809,
+        "probability": 0.03883495145631068,
         "type": "PROBABILITY"
       },
       {
         "name": "Another man",
-        "probability": 0.16190476190476188,
+        "probability": 0.14563106796116507,
         "type": "PROBABILITY"
       }
     ],
@@ -228,37 +228,37 @@
       },
       {
         "name": "February 2021",
-        "probability": 0.01,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "March 2021",
-        "probability": 0.05,
+        "probability": 0.04901960784313725,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.19,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "April 2021",
         "probability": 0.18,
         "type": "PROBABILITY"
       },
       {
+        "name": "April 2021",
+        "probability": 0.1764705882352941,
+        "type": "PROBABILITY"
+      },
+      {
         "name": "May 2021",
-        "probability": 0.28,
+        "probability": 0.2745098039215686,
         "type": "PROBABILITY"
       },
       {
         "name": "June 2021",
-        "probability": 0.25,
+        "probability": 0.2549019607843137,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe after June 2021",
-        "probability": 0.23,
+        "probability": 0.2352941176470588,
         "type": "PROBABILITY"
       }
     ],
@@ -523,27 +523,27 @@
     "options": [
       {
         "name": "Q1, 2021 (or before)",
-        "probability": 0.009433962264150943,
+        "probability": 0.010869565217391304,
         "type": "PROBABILITY"
       },
       {
         "name": "Q2, 2021",
-        "probability": 0.14150943396226415,
+        "probability": 0.16304347826086957,
         "type": "PROBABILITY"
       },
       {
         "name": "Q3, 2021",
-        "probability": 0.25471698113207547,
+        "probability": 0.2934782608695652,
         "type": "PROBABILITY"
       },
       {
         "name": "Q4, 2021",
-        "probability": 0.12264150943396226,
+        "probability": 0.15217391304347824,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.4716981132075472,
+        "probability": 0.3804347826086956,
         "type": "PROBABILITY"
       }
     ],
@@ -581,17 +581,17 @@
     "options": [
       {
         "name": "Worse than the 2012 record",
-        "probability": 0.26666666666666666,
+        "probability": 0.2803738317757009,
         "type": "PROBABILITY"
       },
       {
         "name": "Worse than 2020, but not worse than 2012",
-        "probability": 0.2571428571428571,
+        "probability": 0.2523364485981308,
         "type": "PROBABILITY"
       },
       {
         "name": "Not worse than 2020",
-        "probability": 0.4761904761904761,
+        "probability": 0.4672897196261683,
         "type": "PROBABILITY"
       }
     ],
@@ -605,32 +605,32 @@
     "options": [
       {
         "name": "Marcus Söder (CSU)",
-        "probability": 0.11428571428571427,
+        "probability": 0.11538461538461538,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet (CDU)",
-        "probability": 0.8476190476190476,
+        "probability": 0.8461538461538461,
         "type": "PROBABILITY"
       },
       {
         "name": "Another member of CDU/CSU",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "A member of SPD",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "A member of the Green party",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Someone else",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       }
     ],
@@ -721,47 +721,47 @@
     "options": [
       {
         "name": "≥ $400",
-        "probability": 0.010309278350515462,
+        "probability": 0.03225806451612903,
         "type": "PROBABILITY"
       },
       {
         "name": "[$300, $400[",
-        "probability": 0.09278350515463916,
+        "probability": 0.008064516129032258,
         "type": "PROBABILITY"
       },
       {
         "name": "[$200, $300[",
-        "probability": 0.20618556701030927,
+        "probability": 0.008064516129032258,
         "type": "PROBABILITY"
       },
       {
         "name": "[$100, $200[",
-        "probability": 0.36082474226804123,
+        "probability": 0.46774193548387094,
         "type": "PROBABILITY"
       },
       {
         "name": "[$0, $100[",
-        "probability": 0.26,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
         "name": "[$75, $100[",
-        "probability": 0.1649484536082474,
+        "probability": 0.4032258064516129,
         "type": "PROBABILITY"
       },
       {
         "name": "[$50, $75[",
-        "probability": 0.09278350515463916,
+        "probability": 0.0564516129032258,
         "type": "PROBABILITY"
       },
       {
         "name": "[$25, $50[",
-        "probability": 0.06185567010309278,
+        "probability": 0.016129032258064516,
         "type": "PROBABILITY"
       },
       {
         "name": "[$0, $25[",
-        "probability": 0.010309278350515462,
+        "probability": 0.008064516129032258,
         "type": "PROBABILITY"
       }
     ],
@@ -794,12 +794,12 @@
     "options": [
       {
         "name": "≥ 6,000",
-        "probability": 0.7920792079207921,
+        "probability": 0.8,
         "type": "PROBABILITY"
       },
       {
         "name": "≤ 5,000",
-        "probability": 0.20792079207920794,
+        "probability": 0.2,
         "type": "PROBABILITY"
       }
     ],

@@ -1,245 +1,5 @@
 [
   {
-    "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
-    "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Floyd Mayweather will win his boxing exhibition match against Logan Paul set to take place on February 20th, 2021. If Floyd Mayweather is declared the winner of this bout, either by knockout or by judgement, this market will resolve “Yes.” If Logan Paul is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed to a date earlier than May 1st, 2021, the same market resolution conditions will apply for whenever the fight is rescheduled. In the event the boxing match does not take place before then, the market will resolve to .90 for \"Yes\" and .10 for \"No\", which is in line with existing market odds at time of deployment. More info can be found about this fight on the Fanmio website here: https://fanmio.com/products/floyd-mayweather-vs-logan-paul-special-exhibition-fight. In the event of ambiguity in regards to the outcome, this market will be resolved in good faith by the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9004602089750065381421307006509014",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.09953979102499346185786929934909861",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "678",
-    "stars": 2
-  },
-  {
-    "title": "How many more tweets will be on the @SouljaBoy account on February 25, 2021?",
-    "url": "https://polymarket.com/market/how-many-more-tweets-will-be-on-the-souljaboy-account-on-february-25-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on the number of tweets that will be posted to Soulja Boy’s Twitter account prior to the resolution date, February 25, 2021 at 3:00pm EST. \n\nAt 3:00pm EST on the resolution date, the number of total tweets posted by the Twitter account @SouljaBoy, shall exceed 122,116 (the \"Baseline\") by the number or range identified in the contract, as indicated by the number under the label \"TWEETS\" on the account detail viewable on the desktop version of https://tweetdeck.twitter.com/. This account detail can be viewed by using a Twitter account to log into the website https://tweetdeck.twitter.com/, searching for @SouljaBoy, then clicking the verified account labeled “@SouljaBoy” from the search results. Should the total tweets reported by that source at that time appear not to include one or more tweets posted by @SouljaBoy just before 3:00pm, and still available on that account's timeline at 3:00pm, Polymarket may use additional sources in determining whether any such tweet(s) should be included in the market's resolution. The number by which the total tweets on the resolution date exceeds the Baseline may not equal the number of tweets actually posted over that time period, in light of numerous factors, including but not limited to the fact that the account's total tweets upon launch of the market may differ from the Baseline, tweets may be deleted prior to the resolution date of this market, and specialized tweets such as quotes, retweets, replies, promoted tweets, may or may not be included in that total.\n\nNeither Soulja Boy, nor any authorized user of the account in question, need be the author of any such tweets, nor must any authorized user maintain control of the account. Should the resolution source be unavailable at that date and time, for any reason other than deletion, deactivation, or a change in the privacy settings of the account, Polymarket may postpone settlement of this market until the source becomes available. In such a case, the account's total tweets will be measured once Polymarket becomes aware that the source has again become available. If Polymarket deems the source to be permanently unavailable, this market will resolve to the lowest bracket. Should an updated count of total tweets not be available from twitter.com at the date and time of expiration, due to apparent deletion, deactivation, suspension, or a change in privacy settings by a user of the account or by Twitter, this market will resolve to the lowest bracket. The blocking of one or more Twitter accounts by @SouljaBoy will not be considered to render the settlement source unavailable.\n\nShould the navigation, layout, URL, or labeling of the elements of the settlement source be altered by Twitter or Tweetdeck prior to expiration (other than via deletion or deactivation of the account), this market will still be resolved according to the aforementioned formula, so long as Polymarket can reasonably determine the relevant number of total tweets from twitter.com. The merging, migration, or other combination of one or more Twitter accounts will not in and of itself cause the settlement source to be considered unavailable, so long as an updated count of total tweets can be determined according to the aforementioned formula, even if such combination causes an increase or decrease in that count that does not represent the number of tweets posted to the account during the time period in question.\n\nIn the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Less than 60",
-        "probability": "0.001667121075933551810793441559612527",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "60-75",
-        "probability": "0.001756884424287397065857946478621256",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "76-90",
-        "probability": "0.9881517582582211700993571388404296",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "91-105",
-        "probability": "0.006463842491339848523397511104439176",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "106-120",
-        "probability": "0.00110242969038084494741716044997299",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "more than 120",
-        "probability": "0.0008579640598371875531768015669243072",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "2259",
-    "stars": 2
-  },
-  {
-    "title": "Will Andrew Yang win the Democratic primary for Mayor of New York City in 2021?",
-    "url": "https://polymarket.com/market/will-andrew-yang-win-the-democratic-primary-for-mayor-of-new-york-city-in-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Andrew Yang will win the Democratic primary for New York City Mayor in 2021. This market will resolve to \"Yes\" if Yang is the winner of the Democratic primary for Mayor of New York City, and \"No\" otherwise. The primary is currently scheduled for June 22, 2021. In the event that the primary is not held on that date, the resolution of this market will be delayed until the primary takes place. If no primary is held in 2021, this market will resolve to \"No\". The resolution source for this market will be any official CNN publication that declares Andrew Yang the primary winner. In the event of conflicting sources between CNN and WSJ (https://www.wsj.com) or Associated Press (https://apnews.com/), the market will only be resolved once there is a definitive winner. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n\n \n\n\n\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.4723811429966341299314784611388092",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.5276188570033658700685215388611908",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "39",
-    "stars": 2
-  },
-  {
-    "title": "Will ETH be above $2000 on March 1st, 2021?",
-    "url": "https://polymarket.com/market/will-eth-be-above-2000-on-march-1st-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the USD price of Ether $ETH will be above $2000 on March 1st, 2021, 12:00pm EST, according to coinmarketcap.com/currencies/ethereum/. This market will resolve to “Yes“ if ETH is trading above $2000 according to Coinmarketcap on the resolution date, and “No“ otherwise. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.09642407138960944903983670803846492",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9035759286103905509601632919615351",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "2557",
-    "stars": 2
-  },
-  {
-    "title": "Will Apple, Amazon, or Twitter announce a Bitcoin purchase before April 1, 2021?",
-    "url": "https://polymarket.com/market/will-apple-amazon-or-twitter-announce-a-bitcoin-purchase-before-april-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Apple ($AAPL), Amazon ($AMZN), or Twitter ($TWTR) will announce either their intention to purchase Bitcoin ($BTC) off their balance sheet, the completion of such a purchase, or, in any other way, ownership of BTC on their balance sheet. This announcement may come from any official channel. This market will resolve to “Yes” if Apple, Amazon, or Twitter satisfies any of the aforementioned resolution conditions before the resolution date, April 1, 2021, 12:00am EST. If for any reason the market conditions are not met by the resolution date, this market will resolve to “No”. In the event of ambiguity in regards to the outcome of this market, it will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.2743268498672829468042817552910414",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.7256731501327170531957182447089586",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "400",
-    "stars": 2
-  },
-  {
-    "title": "Who will win UFC 259: Blachowicz vs. Adesanya?",
-    "url": "https://polymarket.com/market/who-will-win-ufc-259-blachowicz-vs-adesanya",
-    "platform": "PolyMarket",
-    "description": "This is a market on who will win the UFC 259 fight between Błachowicz and Adesanya, set to take place on March 6, 2021. This market will resolve to the winner of the bout, either by knockout or by judgment. If the UFC 259 fight is rescheduled to take place on a date other than March 6, 2021, the same rules will apply if the fight is rescheduled to any day before May 1, 2021. If the fight does not take place by May 1, 2021, this market will resolve to 50:50. If the fight is a draw, this market will resolve to 50:50. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
-    "options": [
-      {
-        "name": "Blachowicz",
-        "probability": "0.3029940752768165833007803177981252",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Adesanya",
-        "probability": "0.6970059247231834166992196822018748",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "20",
-    "stars": 2
-  },
-  {
-    "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
-    "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the federal minimum wage will be $9.50 per hour or higher by April 1, 12:00pm EST. This market will resolve to \"Yes\" if the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point prior to the resolution date, and \"No\" otherwise. The primary resolution source for this market will be the U.S. Department of Labor's website, https://www.dol.gov/.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.02971599953660038716108863583567596",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.970284000463399612838911364164324",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "114",
-    "stars": 2
-  },
-  {
-    "title": "Will Bitcoin ($BTC) be above $55k on March 15, 2021?",
-    "url": "https://polymarket.com/market/will-bitcoin-btc-be-above-55k-on-march-15-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the USD price of Bitcoin $BTC will be above $55000 on March 15, 2021, 12:00pm EST, according to coinmarketcap.com/currencies/bitcoin/. This market will resolve to “Yes“ if BTC is trading above $55000 according to Coinmarketcap on the resolution date, and “No“ otherwise. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.4264258456545563771457892876267802",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.5735741543454436228542107123732198",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "167",
-    "stars": 2
-  },
-  {
-    "title": "Will Donald Trump be President of the USA on March 31, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-march-31-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Donald Trump will be President of the United States on March 31, 2021, 12pm EST. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by official US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.02503666177398388423872521870496669",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9749633382260161157612747812950333",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "2801",
-    "stars": 2
-  },
-  {
-    "title": "Will Johnson and Johnson's COVID-19 vaccine receive FDA approval or Emergency Use Authorization (EUA) by March 15, 2021?",
-    "url": "https://polymarket.com/market/will-johnson-and-johnson-s-covid-19-vaccine-receive-fda-approval-or-emergency-use-authorization-eua-by-march-15-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Johnson and Johnson's COVID-19 vaccine will receive regulatory approval in the USA in the form of either FDA approval OR Emergency Use Authorization, whichever comes first. This market will resolve to “Yes” if Johnson and Johnson's COVID-19 vaccine receives FDA approval or EUA prior to the resolution date, March 15, 2021, 12:00 pm EST, and \"No\" otherwise.\n\nThis market will be resolved in good faith, according to the FDA list of licensed vaccines (https://www.fda.gov/vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states), the FDA EUA list (https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization), as well as any other resolution source deemed appropriate by the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9929610872717626792120887941150289",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.007038912728237320787911205884971144",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "170",
-    "stars": 2
-  },
-  {
-    "title": "Will Joe Biden be President of the USA on March 1, 2021?",
-    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-march-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Joe Biden will be President of the United States on March 1, 2021, 11:59 PM EST. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, [https://www.whitehouse.gov/](https://www.whitehouse.gov/)",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9955177659788314026305367008564552",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.004482234021168597369463299143544816",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "4272",
-    "stars": 2
-  },
-  {
     "title": "Will Joe Biden's approval rating be 54% or higher on March 15, 2021?",
     "url": "https://polymarket.com/market/will-joe-bidens-approval-rating-be-54-or-higher-on-march-15-2021",
     "platform": "PolyMarket",
@@ -247,16 +7,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.6282688970112242881121509565831968",
+        "probability": "0.5912332059742390355768436548647593",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.3717311029887757118878490434168032",
+        "probability": "0.4087667940257609644231563451352407",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "79",
+    "numforecasts": "98",
     "stars": 2
   },
   {
@@ -267,36 +27,216 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.2481663031951169807968121015208215",
+        "probability": "0.278006628968392680727230006188014",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.7518336968048830192031878984791785",
+        "probability": "0.721993371031607319272769993811986",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "92",
+    "numforecasts": "107",
     "stars": 2
   },
   {
-    "title": "$2000 stimulus checks by February 28, 2021?",
-    "url": "https://polymarket.com/market/2000-stimulus-checks-by-february-28-2021",
+    "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
+    "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
     "platform": "PolyMarket",
-    "description": "This market concerns whether or not legislation will be signed into law by February 28, 2021, 11:59pm EST which includes direct government stimulus payments to US citizens of $2000. This market will resolve to “Yes” if any such legislation becomes law prior to the resolution date according to the official Congress website, regardless of if the stimulus checks have been paid out yet. This market will resolve to “No” if no such legislation becomes law prior to the resolution date. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). The resolution source will be congress.gov/bill, the official website of Congress.\n\nClarifying Note: In the event of an amendment that effectively increases stimulus payments from $600 to $2000, this market will resolve to \"Yes\". In the event of an additional payment of $1400 to supplement existing $600 payments, this market will resolve to \"Yes\". In the event of a $2000 payment to supplement the existing $600 payment, this market will resolve to \"Yes\".",
+    "description": "This is a market on whether Floyd Mayweather will win his boxing exhibition match against Logan Paul set to take place on February 20th, 2021. If Floyd Mayweather is declared the winner of this bout, either by knockout or by judgement, this market will resolve “Yes.” If Logan Paul is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed to a date earlier than May 1st, 2021, the same market resolution conditions will apply for whenever the fight is rescheduled. In the event the boxing match does not take place before then, the market will resolve to .90 for \"Yes\" and .10 for \"No\", which is in line with existing market odds at time of deployment. More info can be found about this fight on the Fanmio website here: https://fanmio.com/products/floyd-mayweather-vs-logan-paul-special-exhibition-fight. In the event of ambiguity in regards to the outcome, this market will be resolved in good faith by the Markets Integrity Committee (MIC).",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.004009368324484115709987663982584843",
+        "probability": "0.9022469599974555351328838275115093",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9959906316755158842900123360174152",
+        "probability": "0.09775304000254446486711617248849072",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "2030",
+    "numforecasts": "680",
+    "stars": 2
+  },
+  {
+    "title": "Will Bitcoin ($BTC) be above $55k on March 15, 2021?",
+    "url": "https://polymarket.com/market/will-bitcoin-btc-be-above-55k-on-march-15-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if the USD price of Bitcoin $BTC will be above $55000 on March 15, 2021, 12:00pm EST, according to coinmarketcap.com/currencies/bitcoin/. This market will resolve to “Yes“ if BTC is trading above $55000 according to Coinmarketcap on the resolution date, and “No“ otherwise. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.3080860448017389804247558463594093",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.6919139551982610195752441536405907",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "262",
+    "stars": 2
+  },
+  {
+    "title": "Will ETH be above $2000 on March 1st, 2021?",
+    "url": "https://polymarket.com/market/will-eth-be-above-2000-on-march-1st-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if the USD price of Ether $ETH will be above $2000 on March 1st, 2021, 12:00pm EST, according to coinmarketcap.com/currencies/ethereum/. This market will resolve to “Yes“ if ETH is trading above $2000 according to Coinmarketcap on the resolution date, and “No“ otherwise. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.03294620721044738846451705962445239",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9670537927895526115354829403755476",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "2620",
+    "stars": 2
+  },
+  {
+    "title": "Will Apple, Amazon, or Twitter announce a Bitcoin purchase before April 1, 2021?",
+    "url": "https://polymarket.com/market/will-apple-amazon-or-twitter-announce-a-bitcoin-purchase-before-april-1-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Apple ($AAPL), Amazon ($AMZN), or Twitter ($TWTR) will announce either their intention to purchase Bitcoin ($BTC) off their balance sheet, the completion of such a purchase, or, in any other way, ownership of BTC on their balance sheet. This announcement may come from any official channel. This market will resolve to “Yes” if Apple, Amazon, or Twitter satisfies any of the aforementioned resolution conditions before the resolution date, April 1, 2021, 12:00am EST. If for any reason the market conditions are not met by the resolution date, this market will resolve to “No”. In the event of ambiguity in regards to the outcome of this market, it will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.2490115960477614583795568035061873",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.7509884039522385416204431964938127",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "408",
+    "stars": 2
+  },
+  {
+    "title": "Who will win UFC 259: Blachowicz vs. Adesanya?",
+    "url": "https://polymarket.com/market/who-will-win-ufc-259-blachowicz-vs-adesanya",
+    "platform": "PolyMarket",
+    "description": "This is a market on who will win the UFC 259 fight between Błachowicz and Adesanya, set to take place on March 6, 2021. This market will resolve to the winner of the bout, either by knockout or by judgment. If the UFC 259 fight is rescheduled to take place on a date other than March 6, 2021, the same rules will apply if the fight is rescheduled to any day before May 1, 2021. If the fight does not take place by May 1, 2021, this market will resolve to 50:50. If the fight is a draw, this market will resolve to 50:50. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
+    "options": [
+      {
+        "name": "Blachowicz",
+        "probability": "0.3046373037273517250034379791950288",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Adesanya",
+        "probability": "0.6953626962726482749965620208049712",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "21",
+    "stars": 2
+  },
+  {
+    "title": "Will Johnson and Johnson's COVID-19 vaccine receive FDA approval or Emergency Use Authorization (EUA) by March 15, 2021?",
+    "url": "https://polymarket.com/market/will-johnson-and-johnson-s-covid-19-vaccine-receive-fda-approval-or-emergency-use-authorization-eua-by-march-15-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Johnson and Johnson's COVID-19 vaccine will receive regulatory approval in the USA in the form of either FDA approval OR Emergency Use Authorization, whichever comes first. This market will resolve to “Yes” if Johnson and Johnson's COVID-19 vaccine receives FDA approval or EUA prior to the resolution date, March 15, 2021, 12:00 pm EST, and \"No\" otherwise.\n\nThis market will be resolved in good faith, according to the FDA list of licensed vaccines (https://www.fda.gov/vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states), the FDA EUA list (https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization), as well as any other resolution source deemed appropriate by the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9854555339133524836606458548413984",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.01454446608664751633935414515860157",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "183",
+    "stars": 2
+  },
+  {
+    "title": "Will Donald Trump be President of the USA on March 31, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-march-31-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Donald Trump will be President of the United States on March 31, 2021, 12pm EST. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by official US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.0264302380349717265967367613839364",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9735697619650282734032632386160636",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "2830",
+    "stars": 2
+  },
+  {
+    "title": "How many more tweets will be on the @WHCOS account on March 4, 2021?",
+    "url": "https://polymarket.com/market/how-many-more-tweets-will-be-on-the-whcos-account-on-march-4-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on the number of tweets that will be posted to White House Chief of Staff’s Twitter account prior to the resolution date, March 4, 2021 at 3:00pm EST. \n\nAt 3:00pm EST on the resolution date, the number of total tweets posted by the Twitter account @WHCOS, shall exceed 1,201 (the \"Baseline\") by the number or range identified in the contract, as indicated by the number under the label \"TWEETS\" on the account detail viewable on the desktop version of https://tweetdeck.twitter.com/. This account detail can be viewed by using a Twitter account to log into the website https://tweetdeck.twitter.com/, searching for @WHCOS, then clicking the verified account labeled “@WHCOS” from the search results. Should the total tweets reported by that source at that time appear not to include one or more tweets posted by @WHCOS just before 3:00pm, and still available on that account's timeline at 3:00pm, Polymarket may use additional sources in determining whether any such tweet(s) should be included in the market's resolution. The number by which the total tweets on the resolution date exceeds the Baseline may not equal the number of tweets actually posted over that time period, in light of numerous factors, including but not limited to the fact that the account's total tweets upon launch of the market may differ from the Baseline, tweets may be deleted prior to the resolution date of this market, and specialized tweets such as quotes, retweets, replies, promoted tweets, may or may not be included in that total.\n\nNeither Ronald Klain, nor any authorized user of the account in question, need be the author of any such tweets, nor must any authorized user maintain control of the account. Should the resolution source be unavailable at that date and time, for any reason other than deletion, deactivation, or a change in the privacy settings of the account, Polymarket may postpone settlement of this market until the source becomes available. In such a case, the account's total tweets will be measured once Polymarket becomes aware that the source has again become available. If Polymarket deems the source to be permanently unavailable, this market will resolve to the lowest bracket. Should an updated count of total tweets not be available from twitter.com at the date and time of expiration, due to apparent deletion, deactivation, suspension, or a change in privacy settings by a user of the account or by Twitter, this market will resolve to the lowest bracket. The blocking of one or more Twitter accounts by @WHCOS will not be considered to render the settlement source unavailable.\n\nShould the navigation, layout, URL, or labeling of the elements of the settlement source be altered by Twitter or Tweetdeck prior to expiration (other than via deletion or deactivation of the account), this market will still be resolved according to the aforementioned formula, so long as Polymarket can reasonably determine the relevant number of total tweets from twitter.com. The merging, migration, or other combination of one or more Twitter accounts will not in and of itself cause the settlement source to be considered unavailable, so long as an updated count of total tweets can be determined according to the aforementioned formula, even if such combination causes an increase or decrease in that count that does not represent the number of tweets posted to the account during the time period in question.\n\nIn the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Less than 170",
+        "probability": "0.06430328880578920369202607740694427",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "170-185",
+        "probability": "0.05004088067387826503329302061874125",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "186-200",
+        "probability": "0.07481154781248809283877935440324109",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "201-215",
+        "probability": "0.09831808435750345312522075938891994",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "216-230",
+        "probability": "0.1787415859465528425785640653439941",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 230",
+        "probability": "0.5337846124037881427321167228381595",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "135",
+    "stars": 2
+  },
+  {
+    "title": "Will Joe Biden be President of the USA on March 1, 2021?",
+    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-march-1-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Joe Biden will be President of the United States on March 1, 2021, 11:59 PM EST. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, [https://www.whitehouse.gov/](https://www.whitehouse.gov/)",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9957505008183852969116973649164355",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.004249499181614703088302635083564485",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "4311",
     "stars": 2
   },
   {
@@ -307,16 +247,36 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.06965083411255005480945210192976622",
+        "probability": "0.0242293417432455338205620517744352",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9303491658874499451905478980702338",
+        "probability": "0.9757706582567544661794379482255648",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "499",
+    "numforecasts": "515",
+    "stars": 2
+  },
+  {
+    "title": "$2000 stimulus checks by February 28, 2021?",
+    "url": "https://polymarket.com/market/2000-stimulus-checks-by-february-28-2021",
+    "platform": "PolyMarket",
+    "description": "This market concerns whether or not legislation will be signed into law by February 28, 2021, 11:59pm EST which includes direct government stimulus payments to US citizens of $2000. This market will resolve to “Yes” if any such legislation becomes law prior to the resolution date according to the official Congress website, regardless of if the stimulus checks have been paid out yet. This market will resolve to “No” if no such legislation becomes law prior to the resolution date. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). The resolution source will be congress.gov/bill, the official website of Congress.\n\nClarifying Note: In the event of an amendment that effectively increases stimulus payments from $600 to $2000, this market will resolve to \"Yes\". In the event of an additional payment of $1400 to supplement existing $600 payments, this market will resolve to \"Yes\". In the event of a $2000 payment to supplement the existing $600 payment, this market will resolve to \"Yes\".",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.004392212558737191680681295942628374",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9956077874412628083193187040573716",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "2039",
     "stars": 2
   },
   {
@@ -327,16 +287,56 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.5642001394341220904864833625170756",
+        "probability": "0.5702409591722482540092315086100984",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.4357998605658779095135166374829244",
+        "probability": "0.4297590408277517459907684913899016",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "2100",
+    "numforecasts": "2173",
+    "stars": 2
+  },
+  {
+    "title": "Will ETH be above $2000 on April 1st, 2021?",
+    "url": "https://polymarket.com/market/will-eth-be-above-2000-on-april-1st-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if the USD price of Ether $ETH will be above $2000 on April 1st, 2021, 12:00pm EST, according to coinmarketcap.com/currencies/ethereum/. This market will resolve to “Yes“ if ETH is trading above $2000 according to Coinmarketcap on the resolution date, and “No“ otherwise. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.3058684843028542455566095324800681",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.6941315156971457544433904675199319",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "79",
+    "stars": 2
+  },
+  {
+    "title": "Will Beeple's \"Everydays: The First 5000 Days\" sell for more than $10 million in its Christie's auction?",
+    "url": "https://polymarket.com/market/will-beeple-s-everydays-the-first-5000-days-sell-for-more-than-10-million-in-its-christie-s-auction",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the final sale price for Beeple’s \"Everydays: The First 5000 Days\", currently on auction at Christie's, will be above $10 million. This market will resolve to “Yes” if the final hammer price of the auction is greater than $10 million USD and the sale is confirmed as successful, and “No” otherwise”. The auction is being conducted by Christie's and is scheduled to take place from February 25th to March 11th. In the event the auction is postponed, resolution of this market will be delayed accordingly. If the auction is canceled entirely, this market will resolve to “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.4640226100947257693085757841216682",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.5359773899052742306914242158783318",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "27",
     "stars": 2
   },
   {
@@ -347,16 +347,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9750738251043425938141977808504955",
+        "probability": "0.9436482387552235892497453511881497",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.02492617489565740618580221914950453",
+        "probability": "0.05635176124477641075025464881185034",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "3",
+    "numforecasts": "30",
     "stars": 2
   }
 ]
