@@ -13,6 +13,7 @@ for(let datum of data){
   let probability = Math.round(Number(datum["Percentage"].replace("%","")))/100
     let result = ({
     "title": datum["Title"],
+    "url": datum["URL"],
     "platform": datum["Platform"],
     "description": datum["Description"],
     "options": [
