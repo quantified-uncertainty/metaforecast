@@ -7,32 +7,32 @@
     "options": [
       {
         "name": "Less than $470 billion",
-        "probability": 0.0113,
+        "probability": 0.0383,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $470 billion and $540 billion, inclusive",
-        "probability": 0.0617,
+        "probability": 0.1039,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $540 billion but less than or equal to $610 billion",
-        "probability": 0.1413,
+        "probability": 0.2339,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $610 billion but less than or equal to $680 billion",
-        "probability": 0.3465,
+        "probability": 0.35960000000000003,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $680 billion",
-        "probability": 0.4391,
+        "probability": 0.2643,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "23",
-    "numforecasters": "23",
+    "numforecasts": "33",
+    "numforecasters": "33",
     "stars": 2
   },
   {
@@ -43,17 +43,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.27,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.73,
+        "probability": 0.75,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "37",
-    "numforecasters": "36",
+    "numforecasts": "57",
+    "numforecasters": "56",
     "stars": 2
   },
   {
@@ -64,18 +64,18 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.84,
+        "probability": 0.83,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.16,
+        "probability": 0.17,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "68",
-    "numforecasters": "60",
-    "stars": 2
+    "numforecasts": "103",
+    "numforecasters": "88",
+    "stars": 3
   },
   {
     "title": "How much funding will private U.S. tech companies raise between July 1 and December 31, 2021, inclusive?",
@@ -85,32 +85,32 @@
     "options": [
       {
         "name": "Less than $40 billion",
-        "probability": 0.06570000000000001,
+        "probability": 0.0629,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $40 billion and $60 billion, inclusive",
-        "probability": 0.22829999999999998,
+        "probability": 0.2229,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $60 billion but less than or equal to $80 billion",
-        "probability": 0.3978,
+        "probability": 0.40630000000000005,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $80 billion but less than or equal to $100 billion",
-        "probability": 0.21960000000000002,
+        "probability": 0.2229,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $100 billion",
-        "probability": 0.08869999999999999,
+        "probability": 0.085,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "34",
-    "numforecasters": "33",
+    "numforecasts": "35",
+    "numforecasters": "34",
     "stars": 2
   },
   {
@@ -157,32 +157,32 @@
     "options": [
       {
         "name": "Less than -0.25",
-        "probability": 0.1484,
+        "probability": 0.1508,
         "type": "PROBABILITY"
       },
       {
         "name": "Between -0.25 and 0, inclusive",
-        "probability": 0.3178,
+        "probability": 0.3089,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0 but less than or equal to 0.25",
-        "probability": 0.3283,
+        "probability": 0.3206,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.25 but less than or equal to 0.5",
-        "probability": 0.1602,
+        "probability": 0.175,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.5",
-        "probability": 0.0453,
+        "probability": 0.0447,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "103",
-    "numforecasters": "93",
+    "numforecasts": "107",
+    "numforecasters": "96",
     "stars": 3
   },
   {
@@ -193,32 +193,32 @@
     "options": [
       {
         "name": "Less than $200 million",
-        "probability": 0.054000000000000006,
+        "probability": 0.0538,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $200 million and $350 million, inclusive",
-        "probability": 0.21960000000000002,
+        "probability": 0.218,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $350 million but less than or equal to $500 million",
-        "probability": 0.3383,
+        "probability": 0.3369,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $500 million but less than or equal to $650 million",
-        "probability": 0.23120000000000002,
+        "probability": 0.2365,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $650 million",
-        "probability": 0.15689999999999998,
+        "probability": 0.1547,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "84",
-    "numforecasters": "76",
+    "numforecasts": "88",
+    "numforecasters": "80",
     "stars": 2
   },
   {
@@ -229,32 +229,32 @@
     "options": [
       {
         "name": "Less than $30 million",
-        "probability": 0.0545,
+        "probability": 0.050300000000000004,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $30 million and $70 million, inclusive",
-        "probability": 0.31010000000000004,
+        "probability": 0.2977,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $70 million but less than or equal to $110 million",
-        "probability": 0.3176,
+        "probability": 0.3271,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $110 million but less than or equal to $150 million",
-        "probability": 0.2039,
+        "probability": 0.1949,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $150 million",
-        "probability": 0.1139,
+        "probability": 0.13,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "103",
-    "numforecasters": "97",
+    "numforecasts": "109",
+    "numforecasters": "102",
     "stars": 3
   },
   {
@@ -265,32 +265,32 @@
     "options": [
       {
         "name": "Less than 26,000",
-        "probability": 0.055,
+        "probability": 0.0525,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 26,000 and 28,000, inclusive",
-        "probability": 0.11789999999999999,
+        "probability": 0.1158,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 28,000 but less than or equal to 30,000",
-        "probability": 0.25079999999999997,
+        "probability": 0.23829999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 30,000 but less than or equal to 32,000",
-        "probability": 0.3417,
+        "probability": 0.35,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 32,000",
-        "probability": 0.2346,
+        "probability": 0.2433,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "37",
-    "numforecasters": "34",
+    "numforecasts": "38",
+    "numforecasters": "35",
     "stars": 2
   },
   {
@@ -301,22 +301,22 @@
     "options": [
       {
         "name": "Less than 800",
-        "probability": 0.1367,
+        "probability": 0.1389,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 800 and 4,000",
-        "probability": 0.4105,
+        "probability": 0.41509999999999997,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 4,000 but less than or equal to 20,000",
-        "probability": 0.3073,
+        "probability": 0.3017,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 20,000 but less than or equal to 100,000",
-        "probability": 0.11349999999999999,
+        "probability": 0.11220000000000001,
         "type": "PROBABILITY"
       },
       {
@@ -325,8 +325,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "104",
-    "numforecasters": "91",
+    "numforecasts": "107",
+    "numforecasters": "92",
     "stars": 3
   },
   {
@@ -337,32 +337,32 @@
     "options": [
       {
         "name": "Less than 0.45%",
-        "probability": 0.04769999999999999,
+        "probability": 0.0461,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 0.45% and 0.7%, inclusive",
-        "probability": 0.1753,
+        "probability": 0.1729,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.7% but less than or equal to 0.95%",
-        "probability": 0.27899999999999997,
+        "probability": 0.2926,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.95% but less than or equal to 1.2%",
-        "probability": 0.23670000000000002,
+        "probability": 0.23550000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 1.2%",
-        "probability": 0.2613,
+        "probability": 0.2529,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "45",
-    "numforecasters": "43",
+    "numforecasts": "46",
+    "numforecasters": "44",
     "stars": 2
   },
   {
@@ -373,18 +373,18 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.49,
+        "probability": 0.48,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.51,
+        "probability": 0.52,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "95",
-    "numforecasters": "68",
-    "stars": 2
+    "numforecasts": "101",
+    "numforecasters": "72",
+    "stars": 3
   },
   {
     "title": "How many of the top chipmakers in China will be subject to new export controls in 2021?",
@@ -394,22 +394,22 @@
     "options": [
       {
         "name": "Zero",
-        "probability": 0.3214,
+        "probability": 0.30329999999999996,
         "type": "PROBABILITY"
       },
       {
         "name": "One",
-        "probability": 0.3776,
+        "probability": 0.3908,
         "type": "PROBABILITY"
       },
       {
         "name": "Two or more",
-        "probability": 0.301,
+        "probability": 0.306,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "80",
-    "numforecasters": "73",
+    "numforecasts": "85",
+    "numforecasters": "76",
     "stars": 2
   },
   {
@@ -420,32 +420,32 @@
     "options": [
       {
         "name": "Less than 20%",
-        "probability": 0.0833,
+        "probability": 0.0974,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 25%, inclusive",
-        "probability": 0.18109999999999998,
+        "probability": 0.1808,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 25% but less than or equal to 30%",
-        "probability": 0.3428,
+        "probability": 0.3563,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 30% but less than or equal to 35%",
-        "probability": 0.2639,
+        "probability": 0.2421,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 35%",
-        "probability": 0.12890000000000001,
+        "probability": 0.1234,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "55",
-    "numforecasters": "52",
+    "numforecasts": "59",
+    "numforecasters": "55",
     "stars": 2
   },
   {
@@ -465,45 +465,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "225",
-    "numforecasters": "164",
+    "numforecasts": "238",
+    "numforecasters": "168",
     "stars": 3
-  },
-  {
-    "title": "What will be the value, in dollars, of all Chinese imports of semiconductor manufacturing equipment in 2021?",
-    "url": "https://www.cset-foretell.com/questions/95-what-will-be-the-value-in-dollars-of-all-chinese-imports-of-semiconductor-manufacturing-equipment-in-2021",
-    "platform": "CSET-foretell",
-    "description": "Related questions. This question is part of a cluster that includes U.S. exports of semiconductor chips to China, U.S. exports of semiconductor manufacturing equipment to China, and Chinese imports of semiconductor chips.Context. The semiconductor manufacturing process has many components manufactured through complicated, highly globalized supply chains. China's ability to produce advanced semiconductor chips is particularly dependent on U.S., Japanese, and Dutch imports of advanced semiconductor manufacturing equipment (SME) -- i.e., the tools used by chip factories to make chips. Although China is building up its chip manufacturing capacity using imported SME, it is still reliant on imports for most of the semiconductor chips it consumes. China is especially reliant on the United States, Taiwan, and South Korea for imports of the most advanced semiconductor chips. Therefore, export controls on chips could reduce China's access to them. If China cannot import SME, it will remain dependent on imports for chips. This question focuses on SME. The United States is considering a number of actions that would reduce the export of SME to China. In September, the Trump Administration restricted exports to China’s Semiconductor Manufacturing International Corporation (SMIC). Data and resolution details. This question resolves based on United Nations Comtrade data. We classified imports as SME if they have any of the following Harmonized System (HS) codes 8486, 903082, 903141, 854311, 901041.  The data underlying the graph is here.This question is a metric for a forthcoming scenario on the future of the semiconductor industry.\n",
-    "options": [
-      {
-        "name": "Less than $20 billion",
-        "probability": 0.1073,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $20 billion but less than or equal to $30 billion",
-        "probability": 0.32549999999999996,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between $30 billion and $40 billion, inclusive",
-        "probability": 0.324,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between $40 billion and $50 billion, inclusive",
-        "probability": 0.155,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $50 billion",
-        "probability": 0.0883,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "70",
-    "numforecasters": "58",
-    "stars": 2
   },
   {
     "title": "When will Ant Financial have an IPO in China or Hong Kong?",
@@ -513,136 +477,28 @@
     "options": [
       {
         "name": "Before February 17, 2021",
-        "probability": 0.0483,
+        "probability": 0.0453,
         "type": "PROBABILITY"
       },
       {
         "name": "Between February 17 and May 19, 2021, inclusive",
-        "probability": 0.1198,
+        "probability": 0.11689999999999999,
         "type": "PROBABILITY"
       },
       {
         "name": "After May 19, but before or equal to November 17, 2021",
-        "probability": 0.2462,
+        "probability": 0.24480000000000002,
         "type": "PROBABILITY"
       },
       {
         "name": "After November 17, 2021",
-        "probability": 0.5857,
+        "probability": 0.593,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "173",
-    "numforecasters": "118",
+    "numforecasts": "179",
+    "numforecasters": "120",
     "stars": 3
-  },
-  {
-    "title": "What will be the value, in dollars, of all Chinese imports of semiconductor chips in 2021?",
-    "url": "https://www.cset-foretell.com/questions/96-what-will-be-the-value-in-dollars-of-all-chinese-imports-of-semiconductor-chips-in-2021",
-    "platform": "CSET-foretell",
-    "description": "Related questions. This question is part of a cluster that includes U.S. exports of semiconductor chips to China, U.S. exports of semiconductor manufacturing equipment to China, and Chinese imports of semiconductor manufacturing equipment.Context.  The semiconductor manufacturing process has many components manufactured through complicated, highly globalized supply chains. China's ability to produce advanced semiconductor chips is particularly dependent on U.S., Japanese, and Dutch imports of advanced semiconductor manufacturing equipment (SME) -- the tools used by chip factories to make chips. Although China is building up its chip manufacturing capacity using imported SME, it is still reliant on imports for most of the semiconductor chips it consumes. China is especially reliant on the United States, Taiwan, and South Korea for imports of the most advanced semiconductor chips. Therefore, export controls on chips could reduce China's access to them. If China cannot import SME, it will remain dependent on imports for chips. This question focuses on semiconductor chips.Data and resolution details. This question resolves based on United Nations Comtrade data. We classified imports as semiconductor chips if they have Harmonized System (HS) code 8542.  The data underlying the graph is here.This question is a metric for a forthcoming scenario on the future of the semiconductor industry.\n",
-    "options": [
-      {
-        "name": "Less than $260 billion",
-        "probability": 0.0783,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between $260 billion and $300 billion, inclusive",
-        "probability": 0.2022,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $300 billion but less than or equal to $340 billion",
-        "probability": 0.37439999999999996,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $340 billion but less than or equal to $380 billion",
-        "probability": 0.23120000000000002,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $380 billion",
-        "probability": 0.1139,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "71",
-    "numforecasters": "59",
-    "stars": 2
-  },
-  {
-    "title": "What will be the value, in dollars, of U.S. exports of semiconductor chips to China in the first half of 2021?",
-    "url": "https://www.cset-foretell.com/questions/93-what-will-the-dollar-value-of-u-s-exports-of-semiconductor-chips-to-china-be-in-the-first-half-of-2021",
-    "platform": "CSET-foretell",
-    "description": "Related questions. This question is part of a cluster that includes U.S. exports of semiconductor manufacturing equipment to China, Chinese imports of semiconductor manufacturing equipment, and Chinese imports of semiconductor chips.Context. The semiconductor manufacturing process has many components manufactured through complicated, highly globalized supply chains. China's ability to produce advanced semiconductor chips is particularly dependent on U.S., Japanese, and Dutch imports of advanced semiconductor manufacturing equipment (SME) -- the tools used by chip factories to make chips. Although China is building up its chip manufacturing capacity using imported SME, it is still reliant on imports for most of the semiconductor chips it consumes. China is especially reliant on the United States, Taiwan, and South Korea for imports of the most advanced semiconductor chips. Therefore, export controls on chips could reduce China's access to them. If China cannot import SME, it will remain dependent on imports for chips. This question focuses on semiconductor chips.Data and resolution details. This question resolves based on United Nations Comtrade data. We classified exports as semiconductor chips if they have Harmonized System (HS) code 8542.  The data underlying the graph is here.This question is a metric for a forthcoming scenario on the future of the semiconductor industry.\n",
-    "options": [
-      {
-        "name": "Less than $3.9 billion",
-        "probability": 0.0698,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $3.9 billion but less than or equal to $4.5 billion",
-        "probability": 0.1686,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between $4.5 billion and $5.1 billion, inclusive",
-        "probability": 0.2926,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between $5.1 billion and $5.7 billion, inclusive",
-        "probability": 0.31,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $5.7 billion",
-        "probability": 0.1591,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "78",
-    "numforecasters": "62",
-    "stars": 2
-  },
-  {
-    "title": "What will be the value, in dollars, of U.S. exports of semiconductor manufacturing equipment to China in the first half of 2021? ",
-    "url": "https://www.cset-foretell.com/questions/92-what-will-the-dollar-value-of-u-s-exports-of-semiconductor-manufacturing-equipment-to-china-be-in-the-first-half-of-2021",
-    "platform": "CSET-foretell",
-    "description": "Related questions. This question is part of a cluster that includes U.S. exports of semiconductor chips to China, Chinese imports of semiconductor manufacturing equipment, and Chinese imports of semiconductor chips.Context. The semiconductor manufacturing process has many components manufactured through complicated, highly globalized supply chains. China's ability to produce advanced semiconductor chips is particularly dependent on U.S., Japanese, and Dutch imports of advanced semiconductor manufacturing equipment (SME) -- i.e., the tools used by chip factories to make chips. Although China is building up its chip manufacturing capacity using imported SME, it is still reliant on imports for most of the semiconductor chips it consumes. China is especially reliant on the United States, Taiwan, and South Korea for imports of the most advanced semiconductor chips. Therefore, export controls on chips could reduce China's access to them. If China cannot import SME, it will remain dependent on imports for chips. This question focuses on SME. The United States is considering a number of actions that would reduce the export of SME to China. In September, the Trump Administration restricted exports to China’s Semiconductor Manufacturing International Corporation (SMIC). Data and resolution details. This question resolves based on United Nations Comtrade data. We classified exports as SME if they have any of the following Harmonized System (HS) codes 8486, 903082, 903141, 854311, 901041.  The data underlying the graph is here.This question is a metric for a forthcoming scenario on the future of the semiconductor industry.\n",
-    "options": [
-      {
-        "name": "Less than $2.2 billion",
-        "probability": 0.09,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $2.2 billion but less than or equal to $2.7 billion",
-        "probability": 0.2861,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between $2.7 billion and $3.2 billion, inclusive",
-        "probability": 0.3164,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between $3.2 billion and $3.7 billion, inclusive",
-        "probability": 0.1861,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $3.7 billion",
-        "probability": 0.1215,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "68",
-    "numforecasters": "48",
-    "stars": 2
   },
   {
     "title": "What percentage of U.S. residents will have an unfavorable view of China, as reflected in the 2022 Pew Global Attitudes Survey?",
@@ -652,32 +508,32 @@
     "options": [
       {
         "name": "Less than 59%",
-        "probability": 0.1543,
+        "probability": 0.1446,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 59% and 66%, inclusive",
-        "probability": 0.20350000000000001,
+        "probability": 0.20190000000000002,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 66% but less than or equal to 73%",
-        "probability": 0.2692,
+        "probability": 0.2702,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 73% but less than or equal to 80%",
-        "probability": 0.2582,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 80%",
-        "probability": 0.1148,
+        "probability": 0.1233,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "169",
-    "numforecasters": "146",
+    "numforecasts": "172",
+    "numforecasters": "148",
     "stars": 3
   },
   {
@@ -688,33 +544,33 @@
     "options": [
       {
         "name": "Less than 15%",
-        "probability": 0.07980000000000001,
+        "probability": 0.078,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 15% and 17%, inclusive",
-        "probability": 0.151,
+        "probability": 0.1545,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 17% but less than or equal to 19%",
-        "probability": 0.29760000000000003,
+        "probability": 0.2938,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 19% but less than or equal to 21%",
-        "probability": 0.3259,
+        "probability": 0.3209,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 21%",
-        "probability": 0.1457,
+        "probability": 0.1528,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "99",
-    "numforecasters": "92",
-    "stars": 2
+    "numforecasts": "101",
+    "numforecasters": "94",
+    "stars": 3
   },
   {
     "title": "Will the U.S. government file an antitrust lawsuit against Apple, Amazon, or Facebook between January 20, 2021 and January 19, 2025?",
@@ -733,8 +589,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "151",
-    "numforecasters": "119",
+    "numforecasts": "155",
+    "numforecasters": "120",
     "stars": 3
   },
   {
@@ -745,105 +601,33 @@
     "options": [
       {
         "name": "Less than 59%",
-        "probability": 0.1134,
+        "probability": 0.11320000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 59% and 66%, inclusive",
-        "probability": 0.17309999999999998,
+        "probability": 0.1728,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 66% but less than or equal to 73%",
-        "probability": 0.2932,
+        "probability": 0.2901,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 73% but less than or equal to 80%",
-        "probability": 0.297,
+        "probability": 0.2991,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 80%",
-        "probability": 0.1233,
+        "probability": 0.12480000000000001,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "235",
-    "numforecasters": "179",
+    "numforecasts": "239",
+    "numforecasters": "180",
     "stars": 3
-  },
-  {
-    "title": "What percentage of O visas will go to Chinese nationals in FY 2021 (October 1, 2020 to September 30, 2021)?",
-    "url": "https://www.cset-foretell.com/questions/79-conditional-on-biden-s-election-what-percentage-of-o-visas-will-go-to-chinese-nationals-in-fy-2021-october-1-2020-to-september-30-2021",
-    "platform": "CSET-foretell",
-    "description": "Related question. This question was previously conditioned on Vice President Biden's election. Now that Vice President has been elected, we dropped the condition. We also closed the sister question conditional on President Trump's re-election. You can view it here. A variation of this question—specific to O-1 visas—was previously issued for July 1 to September 30, 2020. You can view those forecasts here. Context. This question includes O-1, O-2, and O-3 visas. O-1 is a category of U.S. visa for individuals with extraordinary ability or achievement in the sciences, arts, education, business, or athletics. O-2 visas are for individuals who assist the recipients of O-1 visas, and O-3 visas are for the spouses or children of recipients of O-1 or O-2 visas. The initial authorized period of stay is up to three years, with the possibility of extension.Data and resolution details. This question asks about what will happen assuming Vice President Biden is elected. If he is not, this question will not be scored. If President Trump is re-elected, the companion question will be scored instead.This question is based on U.S. Department of State data. The Department of State provides both annual and (unofficial) monthly statistics on nonimmigrant visa issuances. This question resolves when the Department of State publishes O visa statistics for either fiscal year 2021 or the month of September 2021, whichever comes first. This question includes visas for Mainland China only, not Taiwan.    The data underlying the graph is here.This question is a metric for the following scenarios: Three Possible 2025 Worlds that Should Inform Policy Today An Isolated China in a Globalized World To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
-    "options": [
-      {
-        "name": "Less than 2%",
-        "probability": 0.07690000000000001,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 2% and 3.5%, inclusive",
-        "probability": 0.22870000000000001,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 3.5% but less than or equal to 5%",
-        "probability": 0.39039999999999997,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 5% but less than or equal to 6.5%",
-        "probability": 0.21760000000000002,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 6.5%",
-        "probability": 0.0864,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "101",
-    "numforecasters": "80",
-    "stars": 3
-  },
-  {
-    "title": "What will total U.S. trade volume with China (imports and exports of goods) be in 2021?",
-    "url": "https://www.cset-foretell.com/questions/76-what-will-total-u-s-trade-volume-with-china-imports-and-exports-of-goods-be-in-2021",
-    "platform": "CSET-foretell",
-    "description": "Related question. This question was previously issued for 2020. You can view those forecasts here. The actual data for 2020 will be included in the graph below as soon as it's available.Context. The U.S. and China are the world's two largest economies and each other's largest trading partner. Since 2018, they have been engaged in an escalating trade war, and the COVID-19 pandemic has further reduced trade.  Data and resolution details. This question resolves based on U.S. Census Bureau data. It includes trade in goods only, not services. Total exports and imports for the eight months ending August 30, 2020 were $332 billion, which puts the 2020 figure on pace for $498 billion. Data for those eight months are not included in the graph below.  The data underlying the graph is here.This question is a metric for the following scenarios: Three Possible 2025 Worlds that Should Inform Policy Today An Isolated China in a Globalized World To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
-    "options": [
-      {
-        "name": "Less than $400 billion",
-        "probability": 0.08539999999999999,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between $400 billion and $480 billion, inclusive",
-        "probability": 0.2169,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $480 billion but less than or equal to $560 billion",
-        "probability": 0.36310000000000003,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $560 billion but less than or equal to $640 billion",
-        "probability": 0.2396,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than $640 billion",
-        "probability": 0.095,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "96",
-    "numforecasters": "69",
-    "stars": 2
   },
   {
     "title": "What percentage of U.S. corporate press releases about AI will reference AI ethics in 2021?",
@@ -868,16 +652,16 @@
       },
       {
         "name": "More than 4.5% but less than or equal to 6%",
-        "probability": 0.26649999999999996,
+        "probability": 0.2667,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 6%",
-        "probability": 0.3129,
+        "probability": 0.3126,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "182",
+    "numforecasts": "183",
     "numforecasters": "133",
     "stars": 3
   },

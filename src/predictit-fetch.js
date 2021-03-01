@@ -48,10 +48,28 @@ export async function predictit(){
     let totalValue = options
     .map(element => Number(element.probability))
     .reduce((a,b) => (a+b), 0)
-    options = options.map(element => ({
-      ...element,
-      probability: Number(element.probability)/totalValue
-    }))
+    
+    if(options.length != 1 && totalValue>1){
+      options = options.map(element => ({
+        ...element,
+        probability: Number(element.probability)/totalValue
+      }))
+    }else if(options.length == 1){
+      let option = options[0]
+      let probability = option["probability"]
+      options = [
+          {
+            "name": "Yes",
+            "probability": probability,
+            "type": "PROBABILITY"
+          },
+          {
+            "name": "No",
+            "probability": 1-probability,
+            "type": "PROBABILITY"
+          }
+        ]
+    }
 
     let obj = ({
       "title": market["name"],
