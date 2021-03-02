@@ -16,140 +16,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "50",
-    "numforecasters": "40",
-    "stars": 2
+    "numforecasts": "62",
+    "numforecasters": "46",
+    "stars": 3
   },
   {
     "title": "Will France grant the China Global Television Network (CGTN) a license to broadcast in France before 1 January 2022?",
     "url": "https://www.gjopen.com/questions/1950-will-france-grant-the-china-global-television-network-cgtn-a-license-to-broadcast-in-france-before-1-january-2022",
     "platform": "Good Judgment Open",
     "description": "In February 2021, the UK Office of Communications (Ofcom) revoked CGTN’s license to broadcast in the country, therefore cutting its access to other countries in Europe ([Ofcom](https://www.ofcom.org.uk/about-ofcom/latest/media/media-releases/2021/ofcom-revokes-cgtn-licence-to-broadcast-in-uk), [Deutsche Welle](https://www.dw.com/en/chinas-cgtn-may-no-longer-broadcast-in-germany-after-uk-row/a-56550247), [Council of Europe](https://www.coe.int/en/web/conventions/full-list/-/conventions/treaty/132/signatures?p_auth=TlFV50gT) [not the EU]). The Financial Times has reported that CGTN approached French regulators in December 2020 about seeking a license to broadcast in France, which could return CGTN to the UK and elsewhere ([Financial Times](https://www.ft.com/content/c2948fa5-4f3a-4824-87c2-83b4d4152c0e), [Reuters](https://www.reuters.com/article/china-france-cgtn/chinas-state-broadcaster-applies-to-france-for-right-to-air-in-europe-ft-idUSFWN2KP1N7), [Politico.eu](https://www.politico.eu/article/china-global-television-network-cgtn-applies-french-license/)). The date a license would take effect would be immaterial.\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.38,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.62,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "23",
-    "numforecasters": "20",
-    "stars": 2
-  },
-  {
-    "title": "Between 26 January 2021 and 31 December 2021, how many members of the Politburo will Chinese state media announce have been arrested and/or expelled from their posts?",
-    "url": "https://www.gjopen.com/questions/1949-between-26-january-2021-and-31-december-2021-how-many-members-of-the-politburo-will-chinese-state-media-announce-have-been-arrested-and-or-expelled-from-their-posts",
-    "platform": "Good Judgment Open",
-    "description": "China’s Politburo is the primary policy-making and executive committee of the Chinese Communist Party ([BBC](https://www.bbc.com/news/world-asia-pacific-13904441), [Gov.cn](http://english.www.gov.cn/news/top_news/2017/10/25/content_281475920736982.htm), [Brookings](https://www.brookings.edu/interactives/chinas-new-politburo-standing-committee/)). Various Politburo members have been arrested and/or expelled in recent years, which was seen by many observers as the result of Xi Jinping consolidating power in the country ([BBC](https://www.bbc.com/news/world-asia-china-41691917), [Tribune India](https://www.tribuneindia.com/news/comment/xi-jinping-chinas-chairman-of-everything-199980)).\n",
-    "options": [
-      {
-        "name": "0",
-        "probability": 0.1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "1",
-        "probability": 0.34,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "2 or more",
-        "probability": 0.56,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "20",
-    "numforecasters": "17",
-    "stars": 2
-  },
-  {
-    "title": "Before 15 August 2021, will Alexei Navalny be convicted on any fraud charges related to his activities with his non-profit organizations?",
-    "url": "https://www.gjopen.com/questions/1945-before-15-august-2021-will-alexei-navalny-be-convicted-on-any-fraud-charges-related-to-his-activities-with-his-non-profit-organizations",
-    "platform": "Good Judgment Open",
-    "description": "Russian opposition leader Alexei Navalny is already facing various criminal charges and sentences, which supporters contend is an effort to silence his criticism of President Putin and the Russian government ([Deutsche Welle](https://www.dw.com/en/russia-alexei-navalny-returns-to-court-for-slander-case/a-56464613), [Moscow Times](https://www.themoscowtimes.com/2021/02/02/as-it-happened-navalny-sentenced-to-2-years-and-8-months-in-penal-colony-a72803)). In December 2020, the Investigative Committee, Russia's main criminal investigative committee, accused Navalny of fraud related to his use of funds from his various non-profit organizations ([Investigative Committee of the Russian Federation](https://sledcom.ru/news/item/1526952/) [in Russian], [Moscow Times](https://www.themoscowtimes.com/2020/12/29/russia-opens-fraud-probe-against-navalny-a72522)).\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.7,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.3,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "133",
-    "numforecasters": "122",
-    "stars": 3
-  },
-  {
-    "title": "For how many weeks will Adam Grant's \"Think Again\" be on the New York Times Best Sellers list for Combined Print &amp; E-Book Nonfiction between 21 February 2021 and 11 July 2021?",
-    "url": "https://www.gjopen.com/questions/1944-for-how-many-weeks-will-adam-grant-s-think-again-be-on-the-new-york-times-best-sellers-list-for-combined-print-e-book-nonfiction-between-21-february-2021-and-11-july-2021",
-    "platform": "Good Judgment Open",
-    "description": "Author Adam Grant's latest book, \"Think Again: The Power of Knowing What You Don't Know,\" was released on 2 February 2021 ([Adamgrant.net](https://www.adamgrant.net/book/think-again/)). The outcome will be determined using the New York Times' Combined Print &amp; E-Book Nonfiction Best Sellers list ([NY Times](https://www.nytimes.com/books/best-sellers/combined-print-and-e-book-nonfiction/)).\nNOTE 26 February 2021: Any appearance of Think Again on lists dated between 21 February 2021 and 11 July 2021 would count.\n",
-    "options": [
-      {
-        "name": "Fewer than 4",
-        "probability": 0.06,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 4 and 8",
-        "probability": 0.51,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 9 and 13",
-        "probability": 0.31,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 14 and 18",
-        "probability": 0.09,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 18",
-        "probability": 0.03,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "88",
-    "numforecasters": "80",
-    "stars": 2
-  },
-  {
-    "title": "Will the percentage of Global Business Travel Association survey respondents planning to resume international business travel in the near future (next 1-3 months) reach 20% or higher before September 2021?",
-    "url": "https://www.gjopen.com/questions/1947-will-the-percentage-of-global-business-travel-association-survey-respondents-planning-to-resume-international-business-travel-in-the-near-future-next-1-3-months-reach-20-or-higher-before-september-2021",
-    "platform": "Good Judgment Open",
-    "description": "The Global Business Travel Association (GBTA) has been conducting rolling surveys of companies around the world on the state of business travel during the COVID-19 pandemic ([Economist](https://www.economist.com/the-world-ahead/2020/11/17/some-executives-cant-wait-to-hit-the-road-again), [GTBA](https://www.gbta.org/research-tools/covid-19-member-polls)). The outcome will be determined using GBTA's COVID-19 Member Poll Results and would close upon the first survey released in August 2021, if not sooner ([GBTA](https://www.gbta.org/research-tools/covid-19-member-polls)). Among companies that have canceled or suspended most or all international trips, 7% planned to resume international business travel in the near future according to the February 2021 survey ([GBTA - Poll Results 18 February 2021](https://www.gbta.org/Portals/0/Documents/gbta-poll-results-021821.pdf), see questions 20 and 21, [GTBA - Key Highlights 18 February 2021](https://www.gbta.org/Portals/0/Documents/gbta-poll-key-highlights-021821.pdf), see infographics on pages 4, 7, and 8).\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.75,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.25,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "113",
-    "numforecasters": "107",
-    "stars": 3
-  },
-  {
-    "title": "In NCAA v. Alston, will the Supreme Court rule that NCAA rules restricting education-related benefits for student-athletes violate federal antitrust law?",
-    "url": "https://www.gjopen.com/questions/1946-in-ncaa-v-alston-will-the-supreme-court-rule-that-ncaa-rules-restricting-education-related-benefits-for-student-athletes-violate-federal-antitrust-law",
-    "platform": "Good Judgment Open",
-    "description": "The National Collegiate Athletic Association (NCAA) has various rules defining the eligibility of many athletes to participate in college sports, including caps on education-based benefits ([NCAA](https://www.ncaa.org/about/student-athlete-eligibility)). Certain athletes sued claiming that such caps violate federal antitrust law ([CBS Sports](https://www.cbssports.com/college-football/news/breaking-down-the-ncaas-forthcoming-supreme-court-battle-with-its-big-brother-status-and-amateurism-at-stake/), [Oyez](https://www.oyez.org/cases/2020/20-512)). The athletes prevailed in district court and in the 9th Circuit ([SCOTUSblog](https://www.scotusblog.com/case-files/cases/national-collegiate-athletic-association-v-alston/)). The Supreme Court is expected to hand down its decision in its 2020 term, but if it does not, the question will close as \"No.\" If the Court decides this case without addressing this question's particular issue of law, the question will close as \"No.\" Oral arguments are scheduled for 31 March 2021 ([Supremecourt.gov](https://www.supremecourt.gov/oral_arguments/calendars/MonthlyArgumentCalMarch2021.html)).\n",
     "options": [
       {
         "name": "Yes",
@@ -162,9 +37,134 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "65",
-    "numforecasters": "61",
-    "stars": 2
+    "numforecasts": "29",
+    "numforecasters": "24",
+    "stars": 3
+  },
+  {
+    "title": "Between 26 January 2021 and 31 December 2021, how many members of the Politburo will Chinese state media announce have been arrested and/or expelled from their posts?",
+    "url": "https://www.gjopen.com/questions/1949-between-26-january-2021-and-31-december-2021-how-many-members-of-the-politburo-will-chinese-state-media-announce-have-been-arrested-and-or-expelled-from-their-posts",
+    "platform": "Good Judgment Open",
+    "description": "China’s Politburo is the primary policy-making and executive committee of the Chinese Communist Party ([BBC](https://www.bbc.com/news/world-asia-pacific-13904441), [Gov.cn](http://english.www.gov.cn/news/top_news/2017/10/25/content_281475920736982.htm), [Brookings](https://www.brookings.edu/interactives/chinas-new-politburo-standing-committee/)). Various Politburo members have been arrested and/or expelled in recent years, which was seen by many observers as the result of Xi Jinping consolidating power in the country ([BBC](https://www.bbc.com/news/world-asia-china-41691917), [Tribune India](https://www.tribuneindia.com/news/comment/xi-jinping-chinas-chairman-of-everything-199980)).\n",
+    "options": [
+      {
+        "name": "0",
+        "probability": 0.51,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1",
+        "probability": 0.35,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "2 or more",
+        "probability": 0.14,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "32",
+    "numforecasters": "26",
+    "stars": 3
+  },
+  {
+    "title": "Before 15 August 2021, will Alexei Navalny be convicted on any fraud charges related to his activities with his non-profit organizations?",
+    "url": "https://www.gjopen.com/questions/1945-before-15-august-2021-will-alexei-navalny-be-convicted-on-any-fraud-charges-related-to-his-activities-with-his-non-profit-organizations",
+    "platform": "Good Judgment Open",
+    "description": "Russian opposition leader Alexei Navalny is already facing various criminal charges and sentences, which supporters contend is an effort to silence his criticism of President Putin and the Russian government ([Deutsche Welle](https://www.dw.com/en/russia-alexei-navalny-returns-to-court-for-slander-case/a-56464613), [Moscow Times](https://www.themoscowtimes.com/2021/02/02/as-it-happened-navalny-sentenced-to-2-years-and-8-months-in-penal-colony-a72803)). In December 2020, the Investigative Committee, Russia's main criminal investigative committee, accused Navalny of fraud related to his use of funds from his various non-profit organizations ([Investigative Committee of the Russian Federation](https://sledcom.ru/news/item/1526952/) [in Russian], [Moscow Times](https://www.themoscowtimes.com/2020/12/29/russia-opens-fraud-probe-against-navalny-a72522)).\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.68,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.32,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "148",
+    "numforecasters": "131",
+    "stars": 3
+  },
+  {
+    "title": "For how many weeks will Adam Grant's \"Think Again\" be on the New York Times Best Sellers list for Combined Print &amp; E-Book Nonfiction between 21 February 2021 and 11 July 2021?",
+    "url": "https://www.gjopen.com/questions/1944-for-how-many-weeks-will-adam-grant-s-think-again-be-on-the-new-york-times-best-sellers-list-for-combined-print-e-book-nonfiction-between-21-february-2021-and-11-july-2021",
+    "platform": "Good Judgment Open",
+    "description": "Author Adam Grant's latest book, \"Think Again: The Power of Knowing What You Don't Know,\" was released on 2 February 2021 ([Adamgrant.net](https://www.adamgrant.net/book/think-again/)). The outcome will be determined using the New York Times' Combined Print &amp; E-Book Nonfiction Best Sellers list ([NY Times](https://www.nytimes.com/books/best-sellers/combined-print-and-e-book-nonfiction/)).\nNOTE 26 February 2021: Any appearance of Think Again on lists dated between 21 February 2021 and 11 July 2021 would count.\n",
+    "options": [
+      {
+        "name": "Fewer than 4",
+        "probability": 0.04,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 4 and 8",
+        "probability": 0.48,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 9 and 13",
+        "probability": 0.34,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 14 and 18",
+        "probability": 0.11,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 18",
+        "probability": 0.03,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "96",
+    "numforecasters": "87",
+    "stars": 3
+  },
+  {
+    "title": "Will the percentage of Global Business Travel Association survey respondents planning to resume international business travel in the near future (next 1-3 months) reach 20% or higher before September 2021?",
+    "url": "https://www.gjopen.com/questions/1947-will-the-percentage-of-global-business-travel-association-survey-respondents-planning-to-resume-international-business-travel-in-the-near-future-next-1-3-months-reach-20-or-higher-before-september-2021",
+    "platform": "Good Judgment Open",
+    "description": "The Global Business Travel Association (GBTA) has been conducting rolling surveys of companies around the world on the state of business travel during the COVID-19 pandemic ([Economist](https://www.economist.com/the-world-ahead/2020/11/17/some-executives-cant-wait-to-hit-the-road-again), [GTBA](https://www.gbta.org/research-tools/covid-19-member-polls)). The outcome will be determined using GBTA's COVID-19 Member Poll Results and would close upon the first survey released in August 2021, if not sooner ([GBTA](https://www.gbta.org/research-tools/covid-19-member-polls)). Among companies that have canceled or suspended most or all international trips, 7% planned to resume international business travel in the near future according to the February 2021 survey ([GBTA - Poll Results 18 February 2021](https://www.gbta.org/Portals/0/Documents/gbta-poll-results-021821.pdf), see questions 20 and 21, [GTBA - Key Highlights 18 February 2021](https://www.gbta.org/Portals/0/Documents/gbta-poll-key-highlights-021821.pdf), see infographics on pages 4, 7, and 8).\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.7,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.3,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "120",
+    "numforecasters": "114",
+    "stars": 3
+  },
+  {
+    "title": "In NCAA v. Alston, will the Supreme Court rule that NCAA rules restricting education-related benefits for student-athletes violate federal antitrust law?",
+    "url": "https://www.gjopen.com/questions/1946-in-ncaa-v-alston-will-the-supreme-court-rule-that-ncaa-rules-restricting-education-related-benefits-for-student-athletes-violate-federal-antitrust-law",
+    "platform": "Good Judgment Open",
+    "description": "The National Collegiate Athletic Association (NCAA) has various rules defining the eligibility of many athletes to participate in college sports, including caps on education-based benefits ([NCAA](https://www.ncaa.org/about/student-athlete-eligibility)). Certain athletes sued claiming that such caps violate federal antitrust law ([CBS Sports](https://www.cbssports.com/college-football/news/breaking-down-the-ncaas-forthcoming-supreme-court-battle-with-its-big-brother-status-and-amateurism-at-stake/), [Oyez](https://www.oyez.org/cases/2020/20-512)). The athletes prevailed in district court and in the 9th Circuit ([SCOTUSblog](https://www.scotusblog.com/case-files/cases/national-collegiate-athletic-association-v-alston/)). The Supreme Court is expected to hand down its decision in its 2020 term, but if it does not, the question will close as \"No.\" If the Court decides this case without addressing this question's particular issue of law, the question will close as \"No.\" Oral arguments are scheduled for 31 March 2021 ([Supremecourt.gov](https://www.supremecourt.gov/oral_arguments/calendars/MonthlyArgumentCalMarch2021.html)).\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.42,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.58,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "70",
+    "numforecasters": "65",
+    "stars": 3
   },
   {
     "title": "How many federal firearm background checks will be initiated in the US from April 2021 through June 2021?",
@@ -179,28 +179,28 @@
       },
       {
         "name": "Between 8,000,000 and 10,000,000, inclusive",
-        "probability": 0.11,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 10,000,000 but fewer than 12,000,000",
-        "probability": 0.44,
+        "probability": 0.4,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 12,000,000 and 14,000,000, inclusive",
-        "probability": 0.39,
+        "probability": 0.4,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 14,000,000",
-        "probability": 0.06,
+        "probability": 0.07,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "78",
-    "numforecasters": "65",
-    "stars": 2
+    "numforecasts": "82",
+    "numforecasters": "67",
+    "stars": 3
   },
   {
     "title": "What will be the end-of-day price of Cardano's Ada cryptocurrency on 1 July 2021?",
@@ -215,12 +215,12 @@
       },
       {
         "name": "Between $0.50 and $1.00, inclusive",
-        "probability": 0.07,
+        "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $1.00 but less than $2.50",
-        "probability": 0.89,
+        "probability": 0.85,
         "type": "PROBABILITY"
       },
       {
@@ -234,9 +234,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "34",
+    "numforecasts": "38",
     "numforecasters": "19",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "What will be the US civilian unemployment rate (U3) for August 2021?",
@@ -246,17 +246,17 @@
     "options": [
       {
         "name": "Less than 5.4%",
-        "probability": 0.09,
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 5.4% and 5.9%, inclusive",
-        "probability": 0.51,
+        "probability": 0.53,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 5.9% but less than 6.6%",
-        "probability": 0.33,
+        "probability": 0.34,
         "type": "PROBABILITY"
       },
       {
@@ -270,9 +270,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "79",
-    "numforecasters": "61",
-    "stars": 2
+    "numforecasts": "82",
+    "numforecasters": "62",
+    "stars": 3
   },
   {
     "title": "What will be the closing yield for the 10-year US Treasury on 16 September 2021?",
@@ -287,17 +287,17 @@
       },
       {
         "name": "Between 1.000 and 1.500, inclusive",
-        "probability": 0.26,
+        "probability": 0.27,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 1.500 but less than 2.000",
-        "probability": 0.5,
+        "probability": 0.48,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 2.000 and 2.500, inclusive",
-        "probability": 0.2,
+        "probability": 0.21,
         "type": "PROBABILITY"
       },
       {
@@ -306,9 +306,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "56",
-    "numforecasters": "35",
-    "stars": 2
+    "numforecasts": "59",
+    "numforecasters": "36",
+    "stars": 3
   },
   {
     "title": "Will California hold a recall election for Governor Gavin Newsom before 1 January 2022?",
@@ -332,9 +332,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "67",
+    "numforecasts": "68",
     "numforecasters": "39",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "Will be the end-of-day price of a Dogecoin on 15 March 2021 be higher as compared to the end-of-day price on 15 February 2021?",
@@ -353,9 +353,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "86",
-    "numforecasters": "41",
-    "stars": 2
+    "numforecasts": "95",
+    "numforecasters": "47",
+    "stars": 3
   },
   {
     "title": "Which will happen next regarding the price of a bitcoin?",
@@ -379,8 +379,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "196",
-    "numforecasters": "140",
+    "numforecasts": "207",
+    "numforecasters": "145",
     "stars": 3
   },
   {
@@ -391,18 +391,18 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.75,
+        "probability": 0.78,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.25,
+        "probability": 0.22,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "49",
+    "numforecasts": "51",
     "numforecasters": "39",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "Before 15 December 2021, will the U.S. either formally seek to join or formally begin renegotiations with signatories regarding the TPP or CPTPP?",
@@ -421,7 +421,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "112",
+    "numforecasts": "113",
     "numforecasters": "67",
     "stars": 3
   },
@@ -433,17 +433,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.66,
+        "probability": 0.65,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.34,
+        "probability": 0.35,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "118",
-    "numforecasters": "65",
+    "numforecasts": "126",
+    "numforecasters": "67",
     "stars": 3
   },
   {
@@ -463,9 +463,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "72",
+    "numforecasts": "74",
     "numforecasters": "47",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "Will there be an act of domestic terrorism in the United States resulting in 10 or more fatalities before 1 January 2022?",
@@ -475,16 +475,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.26,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.74,
+        "probability": 0.75,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "148",
+    "numforecasts": "150",
     "numforecasters": "99",
     "stars": 3
   },
@@ -496,17 +496,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.01,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.99,
+        "probability": 0.98,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "135",
-    "numforecasters": "113",
+    "numforecasts": "136",
+    "numforecasters": "114",
     "stars": 3
   },
   {
@@ -517,12 +517,12 @@
     "options": [
       {
         "name": "Yes, only SpaceX",
-        "probability": 0.31,
+        "probability": 0.32,
         "type": "PROBABILITY"
       },
       {
         "name": "Yes, only Virgin Galactic",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -536,7 +536,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "129",
+    "numforecasts": "131",
     "numforecasters": "101",
     "stars": 3
   },
@@ -557,7 +557,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "122",
+    "numforecasts": "123",
     "numforecasters": "71",
     "stars": 3
   },
@@ -598,9 +598,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "95",
+    "numforecasts": "98",
     "numforecasters": "48",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "Between 5 February 2021 and 31 October 2021, will anti-government protests in Russia result in five or more fatalities?",
@@ -619,7 +619,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "121",
+    "numforecasts": "122",
     "numforecasters": "80",
     "stars": 3
   },
@@ -642,7 +642,7 @@
     ],
     "numforecasts": "89",
     "numforecasters": "64",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "Will the United States report more deaths attributed to COVID-19 as of 31 December 2021 than will the European Union?",
@@ -749,9 +749,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "76",
+    "numforecasts": "78",
     "numforecasters": "51",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "At close of business on 16 June 2021, will the upper limit of the Federal Reserve's target range for the federal funds rate be lower, the same, or higher than it was at close of business on 28 April 2021?",
@@ -775,9 +775,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "75",
+    "numforecasts": "76",
     "numforecasters": "59",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "Will the UN declare that a famine exists in any part of Yemen in 2021?",
@@ -838,7 +838,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "190",
+    "numforecasts": "191",
     "numforecasters": "126",
     "stars": 3
   },
@@ -846,21 +846,21 @@
     "title": "Will U.S. President Joe Biden and Russian President Vladimir Putin hold a bilateral meeting in 2021?",
     "url": "https://www.gjopen.com/questions/1911-will-u-s-president-joe-biden-and-russian-president-vladimir-putin-hold-a-bilateral-meeting-in-2021",
     "platform": "Good Judgment Open",
-    "description": "The world is watching how U.S.-Russia relations will evolve under President Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). For the purposes of this question, a bilateral meeting would be a pre-planned summit or event, rather than, e.g., a one-on-one on the sidelines of a multilateral meeting. A virtual meeting would not count.\nVersión en Español:\nPregunta: ¿Celebrarán el presidente de los Estados Unidos, Joe Biden, y el presidente ruso, Vladimir Putin, una reunión bilateral en 2021?\nInformación adicional: El mundo está observando cómo evolucionarán las relaciones entre Estados Unidos y Rusia bajo el presidente Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). A los efectos de esta pregunta, una reunión bilateral sería una cumbre o evento planificado previamente, en lugar de, por ejemplo, un \"uno a uno\" al margen de una reunión multilateral. Una reunión virtual no contaría a efectos de esta pregunta.\nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#f2919e93809b949b9193869b9d9c81b2959d9d96988796959f979c86dc919d9fcd81879098979186cfa3879781869b9d9cd7c0c2b19e93809b949b9193869b9d9c). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor [clique aquí](https://goodjudgment.com/).\n",
+    "description": "The world is watching how U.S.-Russia relations will evolve under President Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). For the purposes of this question, a bilateral meeting would be a pre-planned summit or event, rather than, e.g., a one-on-one on the sidelines of a multilateral meeting. A virtual meeting would not count.\nVersión en Español:\nPregunta: ¿Celebrarán el presidente de los Estados Unidos, Joe Biden, y el presidente ruso, Vladimir Putin, una reunión bilateral en 2021?\nInformación adicional: El mundo está observando cómo evolucionarán las relaciones entre Estados Unidos y Rusia bajo el presidente Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). A los efectos de esta pregunta, una reunión bilateral sería una cumbre o evento planificado previamente, en lugar de, por ejemplo, un \"uno a uno\" al margen de una reunión multilateral. Una reunión virtual no contaría a efectos de esta pregunta.\nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#5f3c333e2d3639363c3e2b3630312c1f3830303b352a3b38323a312b713c3032602c2a3d353a3c2b620e2a3a2c2b3630317a6d6f1c333e2d3639363c3e2b363031). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor [clique aquí](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.12,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.88,
+        "probability": 0.9,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "304",
-    "numforecasters": "181",
+    "numforecasts": "309",
+    "numforecasters": "182",
     "stars": 3
   },
   {
@@ -881,7 +881,7 @@
       },
       {
         "name": "Between 1 April 2021 and 30 April 2021",
-        "probability": 0.05,
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
@@ -891,11 +891,11 @@
       },
       {
         "name": "Not before 1 June 2021",
-        "probability": 0.4,
+        "probability": 0.39,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "278",
+    "numforecasts": "280",
     "numforecasters": "68",
     "stars": 3
   },
@@ -907,12 +907,12 @@
     "options": [
       {
         "name": "7 or fewer",
-        "probability": 0.9,
+        "probability": 0.89,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 8 and 14",
-        "probability": 0.09,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
@@ -931,8 +931,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "243",
-    "numforecasters": "83",
+    "numforecasts": "252",
+    "numforecasters": "87",
     "stars": 3
   },
   {
@@ -952,8 +952,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "136",
-    "numforecasters": "107",
+    "numforecasts": "138",
+    "numforecasters": "108",
     "stars": 3
   },
   {
@@ -973,7 +973,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "205",
+    "numforecasts": "206",
     "numforecasters": "137",
     "stars": 3
   },
@@ -996,7 +996,7 @@
     ],
     "numforecasts": "76",
     "numforecasters": "48",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "How many seats will the United Russia party win in the 2021 Russian State Duma elections?",
@@ -1053,7 +1053,7 @@
     ],
     "numforecasts": "62",
     "numforecasters": "34",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "When will a new Dutch government be sworn in after the 2021 general election?",
@@ -1063,12 +1063,12 @@
     "options": [
       {
         "name": "Between 18 March 2021 and 17 June 2021",
-        "probability": 0.74,
+        "probability": 0.73,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 18 June 2021 and 17 September 2021",
-        "probability": 0.21,
+        "probability": 0.22,
         "type": "PROBABILITY"
       },
       {
@@ -1077,7 +1077,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "140",
+    "numforecasts": "144",
     "numforecasters": "74",
     "stars": 3
   },
@@ -1100,7 +1100,7 @@
     ],
     "numforecasts": "82",
     "numforecasters": "43",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "What will Uber's end-of-day market capitalization be on 31 December 2021?",
@@ -1134,7 +1134,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "187",
+    "numforecasts": "188",
     "numforecasters": "64",
     "stars": 3
   },
@@ -1146,16 +1146,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.86,
+        "probability": 0.88,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.14,
+        "probability": 0.12,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "138",
+    "numforecasts": "142",
     "numforecasters": "63",
     "stars": 3
   },
@@ -1202,8 +1202,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "234",
-    "numforecasters": "126",
+    "numforecasts": "239",
+    "numforecasters": "128",
     "stars": 3
   },
   {
@@ -1223,7 +1223,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "211",
+    "numforecasts": "214",
     "numforecasters": "87",
     "stars": 3
   },
@@ -1246,7 +1246,7 @@
     ],
     "numforecasts": "96",
     "numforecasters": "37",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "Before 15 March 2021, will there be a lethal confrontation between the national military forces of Iran and the United States either in Iran or at sea?",
@@ -1265,8 +1265,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "260",
-    "numforecasters": "160",
+    "numforecasts": "268",
+    "numforecasters": "166",
     "stars": 3
   },
   {
@@ -1291,7 +1291,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "171",
+    "numforecasts": "172",
     "numforecasters": "64",
     "stars": 3
   },
@@ -1317,24 +1317,24 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "180",
-    "numforecasters": "102",
+    "numforecasts": "181",
+    "numforecasters": "103",
     "stars": 3
   },
   {
     "title": "Which team will win the World Cup qualifying match between Nicaragua and St. Lucia?",
     "url": "https://www.gjopen.com/questions/1885-which-team-will-win-the-world-cup-qualifying-match-between-nicaragua-and-st-lucia",
     "platform": "Good Judgment Open",
-    "description": "Nicaragua is scheduled to face St. Lucia in a first round World Cup qualifying match on 24 March 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)).\nVersión en Español: \nPregunta: ¿Qué equipo ganará el partido de clasificación entre Nicaragua y Santa Lúcia para el Mundial de Fútbol?\nInformación adicional: Nicaragua va a enfrentarse con Santa Lúcia en la primera rueda de clasificación para el Mundial de Fútbol el 24 de marzo de 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)). La versión en español de esta pregunta ha sido incluida sólo a efectos informativos, y en situaciones donde existe una diferencia de interpretación entre las versiones en inglés y español, prevalecerá la versión original en inglés. \nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#b6d5dad7c4dfd0dfd5d7c2dfd9d8c5f6d1d9d9d2dcc3d2d1dbd3d8c298d5d9db89c5c3d4dcd3d5c28be7c3d3c5c2dfd9d8938486f5dad7c4dfd0dfd5d7c2dfd9d8). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor clique [aquí](https://goodjudgment.com/). \n",
+    "description": "Nicaragua is scheduled to face St. Lucia in a first round World Cup qualifying match on 24 March 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)).\nVersión en Español: \nPregunta: ¿Qué equipo ganará el partido de clasificación entre Nicaragua y Santa Lúcia para el Mundial de Fútbol?\nInformación adicional: Nicaragua va a enfrentarse con Santa Lúcia en la primera rueda de clasificación para el Mundial de Fútbol el 24 de marzo de 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)). La versión en español de esta pregunta ha sido incluida sólo a efectos informativos, y en situaciones donde existe una diferencia de interpretación entre las versiones en inglés y español, prevalecerá la versión original en inglés. \nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#5a39363b28333c33393b2e333534291a3d35353e302f3e3d373f342e7439353765292f38303f392e670b2f3f292e3335347f686a19363b28333c33393b2e333534). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor clique [aquí](https://goodjudgment.com/). \n",
     "options": [
       {
         "name": "Nicaragua",
-        "probability": 0.85,
+        "probability": 0.84,
         "type": "PROBABILITY"
       },
       {
         "name": "St. Lucia",
-        "probability": 0.09,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
@@ -1343,8 +1343,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "108",
-    "numforecasters": "76",
+    "numforecasts": "112",
+    "numforecasters": "79",
     "stars": 3
   },
   {
@@ -1379,7 +1379,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "224",
+    "numforecasts": "225",
     "numforecasters": "71",
     "stars": 3
   },
@@ -1433,7 +1433,7 @@
     ],
     "numforecasts": "45",
     "numforecasters": "19",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "Before 1 April 2021, will an election be held for Israel's Knesset?",
@@ -1457,8 +1457,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "295",
-    "numforecasters": "132",
+    "numforecasts": "299",
+    "numforecasters": "133",
     "stars": 3
   },
   {
@@ -1504,8 +1504,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "150",
-    "numforecasters": "79",
+    "numforecasts": "156",
+    "numforecasters": "80",
     "stars": 3
   },
   {
@@ -1551,7 +1551,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "423",
+    "numforecasts": "427",
     "numforecasters": "188",
     "stars": 3
   },
@@ -1582,7 +1582,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "389",
+    "numforecasts": "390",
     "numforecasters": "207",
     "stars": 3
   },
@@ -1603,7 +1603,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "258",
+    "numforecasts": "259",
     "numforecasters": "145",
     "stars": 3
   },
@@ -1624,7 +1624,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "330",
+    "numforecasts": "332",
     "numforecasters": "222",
     "stars": 3
   },
@@ -1645,7 +1645,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "258",
+    "numforecasts": "259",
     "numforecasters": "101",
     "stars": 3
   },
@@ -1666,7 +1666,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "378",
+    "numforecasts": "380",
     "numforecasters": "103",
     "stars": 3
   },
@@ -1688,16 +1688,16 @@
       },
       {
         "name": "Yes, both Michael Kovrig and Michael Spavor",
-        "probability": 0.11,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.89,
+        "probability": 0.87,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "291",
+    "numforecasts": "292",
     "numforecasters": "102",
     "stars": 3
   },
@@ -1718,7 +1718,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "227",
+    "numforecasts": "228",
     "numforecasters": "123",
     "stars": 3
   },
@@ -1735,12 +1735,12 @@
       },
       {
         "name": "Between 1 April and 30 June 2021",
-        "probability": 0.06,
+        "probability": 0.05,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July and 30 September 2021",
-        "probability": 0.55,
+        "probability": 0.56,
         "type": "PROBABILITY"
       },
       {
@@ -1754,7 +1754,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "225",
+    "numforecasts": "229",
     "numforecasters": "97",
     "stars": 3
   },
@@ -1777,7 +1777,7 @@
     ],
     "numforecasts": "81",
     "numforecasters": "44",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "Before 7 May 2021, will the Bank of England set its Bank Rate to below zero?",
@@ -1796,8 +1796,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "353",
-    "numforecasters": "197",
+    "numforecasts": "357",
+    "numforecasters": "198",
     "stars": 3
   },
   {
@@ -1819,7 +1819,7 @@
     ],
     "numforecasts": "98",
     "numforecasters": "59",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "In Cedar Point Nursery v. Hassid, will the Supreme Court rule that California's access regulation, as applied to Cedar Point Nursery, is a per se physical taking under the federal constitution?",
@@ -1840,7 +1840,7 @@
     ],
     "numforecasts": "69",
     "numforecasters": "31",
-    "stars": 2
+    "stars": 3
   },
   {
     "title": "What will be the closing price of natural gas (per MMBtu) on 1 June 2021, according to Bloomberg?",
@@ -1874,7 +1874,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "208",
+    "numforecasts": "210",
     "numforecasters": "42",
     "stars": 3
   },
@@ -1905,7 +1905,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "107",
+    "numforecasts": "108",
     "numforecasters": "29",
     "stars": 3
   },
@@ -1926,7 +1926,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "351",
+    "numforecasts": "355",
     "numforecasters": "172",
     "stars": 3
   },
@@ -1967,7 +1967,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "156",
+    "numforecasts": "159",
     "numforecasters": "78",
     "stars": 3
   },
@@ -1988,7 +1988,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "485",
+    "numforecasts": "489",
     "numforecasters": "196",
     "stars": 3
   },
@@ -2024,7 +2024,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "492",
+    "numforecasts": "494",
     "numforecasters": "245",
     "stars": 3
   },
@@ -2051,17 +2051,17 @@
       },
       {
         "name": "3",
-        "probability": 0.89,
+        "probability": 0.9,
         "type": "PROBABILITY"
       },
       {
         "name": "4 or more",
-        "probability": 0.11,
+        "probability": 0.1,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1302",
-    "numforecasters": "397",
+    "numforecasts": "1322",
+    "numforecasters": "404",
     "stars": 3
   },
   {
@@ -2091,7 +2091,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "482",
+    "numforecasts": "484",
     "numforecasters": "210",
     "stars": 3
   },
@@ -2112,7 +2112,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "306",
+    "numforecasts": "307",
     "numforecasters": "200",
     "stars": 3
   },
@@ -2133,8 +2133,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "451",
-    "numforecasters": "201",
+    "numforecasts": "454",
+    "numforecasters": "202",
     "stars": 3
   },
   {
@@ -2166,17 +2166,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.97,
+        "probability": 0.98,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "296",
-    "numforecasters": "182",
+    "numforecasts": "297",
+    "numforecasters": "183",
     "stars": 3
   },
   {
@@ -2196,7 +2196,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "276",
+    "numforecasts": "279",
     "numforecasters": "162",
     "stars": 3
   },
@@ -2258,8 +2258,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "155",
-    "numforecasters": "90",
+    "numforecasts": "159",
+    "numforecasters": "94",
     "stars": 3
   },
   {
@@ -2279,7 +2279,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "210",
+    "numforecasts": "211",
     "numforecasters": "57",
     "stars": 3
   },
@@ -2291,17 +2291,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.02,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.98,
+        "probability": 0.97,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "295",
-    "numforecasters": "156",
+    "numforecasts": "296",
+    "numforecasters": "157",
     "stars": 3
   },
   {
@@ -2321,8 +2321,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "255",
-    "numforecasters": "105",
+    "numforecasts": "256",
+    "numforecasters": "106",
     "stars": 3
   },
   {
@@ -2357,8 +2357,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1277",
-    "numforecasters": "193",
+    "numforecasts": "1284",
+    "numforecasters": "194",
     "stars": 3
   },
   {
@@ -2378,8 +2378,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "271",
-    "numforecasters": "60",
+    "numforecasts": "272",
+    "numforecasters": "61",
     "stars": 3
   },
   {
@@ -2399,8 +2399,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "192",
-    "numforecasters": "61",
+    "numforecasts": "193",
+    "numforecasters": "62",
     "stars": 3
   },
   {
@@ -2426,17 +2426,17 @@
       },
       {
         "name": "3",
-        "probability": 0.97,
+        "probability": 0.95,
         "type": "PROBABILITY"
       },
       {
         "name": "4 or more",
-        "probability": 0.03,
+        "probability": 0.05,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "144",
-    "numforecasters": "41",
+    "numforecasts": "147",
+    "numforecasters": "43",
     "stars": 3
   },
   {
@@ -2483,16 +2483,16 @@
       },
       {
         "name": "Between 1 April 2021 and 31 May 2021",
-        "probability": 0.23,
+        "probability": 0.21,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 June 2021",
-        "probability": 0.77,
+        "probability": 0.79,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "487",
+    "numforecasts": "489",
     "numforecasters": "148",
     "stars": 3
   },
@@ -2504,16 +2504,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.08,
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.92,
+        "probability": 0.94,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "657",
+    "numforecasts": "663",
     "numforecasters": "153",
     "stars": 3
   },
@@ -2525,22 +2525,22 @@
     "options": [
       {
         "name": "Less than 2.00%",
-        "probability": 0.44,
+        "probability": 0.41,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 2.00% and 4.00%, inclusive",
-        "probability": 0.44,
+        "probability": 0.45,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 4.00% but less than 6.00%",
-        "probability": 0.12,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 6.00% and 8.00%, inclusive",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -2549,8 +2549,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "325",
-    "numforecasters": "116",
+    "numforecasts": "329",
+    "numforecasters": "118",
     "stars": 3
   },
   {
@@ -2576,17 +2576,17 @@
       },
       {
         "name": "Between 1.4 million and 1.6 million, inclusive",
-        "probability": 0.13,
+        "probability": 0.16,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 1.6 million",
-        "probability": 0.87,
+        "probability": 0.84,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "433",
-    "numforecasters": "92",
+    "numforecasts": "437",
+    "numforecasters": "93",
     "stars": 3
   },
   {
@@ -2607,16 +2607,16 @@
       },
       {
         "name": "Between 1 February 2021 and 31 March 2021",
-        "probability": 0.15,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 April 2021",
-        "probability": 0.85,
+        "probability": 0.87,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "411",
+    "numforecasts": "416",
     "numforecasters": "65",
     "stars": 3
   },
@@ -2637,7 +2637,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "205",
+    "numforecasts": "206",
     "numforecasters": "64",
     "stars": 3
   },
@@ -2658,7 +2658,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "387",
+    "numforecasts": "389",
     "numforecasters": "159",
     "stars": 3
   },
@@ -2670,12 +2670,12 @@
     "options": [
       {
         "name": "England",
-        "probability": 0.37,
+        "probability": 0.36,
         "type": "PROBABILITY"
       },
       {
         "name": "France",
-        "probability": 0.07,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
@@ -2704,7 +2704,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "293",
+    "numforecasts": "295",
     "numforecasters": "111",
     "stars": 3
   },
@@ -2740,7 +2740,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "652",
+    "numforecasts": "653",
     "numforecasters": "199",
     "stars": 3
   },
@@ -2761,7 +2761,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1086",
+    "numforecasts": "1089",
     "numforecasters": "448",
     "stars": 3
   },
@@ -2803,8 +2803,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "310",
-    "numforecasters": "149",
+    "numforecasts": "312",
+    "numforecasters": "150",
     "stars": 3
   },
   {
@@ -2860,7 +2860,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "774",
+    "numforecasts": "777",
     "numforecasters": "164",
     "stars": 3
   },
@@ -2923,7 +2923,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "586",
+    "numforecasts": "587",
     "numforecasters": "180",
     "stars": 3
   },
@@ -2990,8 +2990,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "218",
-    "numforecasters": "50",
+    "numforecasts": "219",
+    "numforecasters": "51",
     "stars": 3
   },
   {
@@ -3115,24 +3115,24 @@
       },
       {
         "name": "Between 1 April 2021 and 30 June 2021",
-        "probability": 0.19,
+        "probability": 0.16,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 July 2021",
-        "probability": 0.81,
+        "probability": 0.84,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "650",
-    "numforecasters": "165",
+    "numforecasts": "662",
+    "numforecasters": "169",
     "stars": 3
   },
   {
     "title": "Between August 2020 and July 2021, will global land and ocean surface temperatures rise 1.5°C or more above the 20th century average for any single month?",
     "url": "https://www.gjopen.com/questions/1715-between-august-2020-and-july-2021-will-global-land-and-ocean-surface-temperatures-rise-1-5-c-or-more-above-the-20th-century-average-for-any-single-month",
     "platform": "Good Judgment Open",
-    "description": "Some expect the 1.5°C temperature threshold to be breached within the next five years, and recent predictions indicate any climate warming reprieve due to the global shutdown in the wake of COVID-19 may be temporary ([BBC](https://www.bbc.com/news/science-environment-53342806), [World Meteorological Organization](https://public.wmo.int/en/our-mandate/climate/wmo-statement-state-of-global-climate), [BBC](https://www.bbc.com/news/science-environment-45678338)). The outcome will be determined using data provided by the National Oceanic and Atmospheric Administration's Global Climate Reports ([NOAA](https://www.ncdc.noaa.gov/sotc/)). For June 2020, the global land and ocean surface temperature was 0.92°C above the 20th century average for June ([NOAA - June 2020 Report](https://www.ncdc.noaa.gov/sotc/global/202006)).\nConfused? Check our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#5b38373a29323d32383a2f323435281b3c34343f312e3f3c363e352f7538343664282e39313e382f660a2e3e282f3234357e696b18373a29323d32383a2f323435). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Some expect the 1.5°C temperature threshold to be breached within the next five years, and recent predictions indicate any climate warming reprieve due to the global shutdown in the wake of COVID-19 may be temporary ([BBC](https://www.bbc.com/news/science-environment-53342806), [World Meteorological Organization](https://public.wmo.int/en/our-mandate/climate/wmo-statement-state-of-global-climate), [BBC](https://www.bbc.com/news/science-environment-45678338)). The outcome will be determined using data provided by the National Oceanic and Atmospheric Administration's Global Climate Reports ([NOAA](https://www.ncdc.noaa.gov/sotc/)). For June 2020, the global land and ocean surface temperature was 0.92°C above the 20th century average for June ([NOAA - June 2020 Report](https://www.ncdc.noaa.gov/sotc/global/202006)).\nConfused? Check our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#086b64697a616e616b697c6167667b486f67676c627d6c6f656d667c266b6765377b7d6a626d6b7c35597d6d7b7c6167662d3a384b64697a616e616b697c616766). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3153,7 +3153,7 @@
     "title": "Before 1 January 2022, will the U.S. Senate expand the scope of matters for which a filibuster cannot be used?",
     "url": "https://www.gjopen.com/questions/1718-before-1-january-2022-will-the-u-s-senate-expand-the-scope-of-matters-for-which-a-filibuster-cannot-be-used",
     "platform": "Good Judgment Open",
-    "description": "In April 2017, Senate Republicans eliminated the filibuster for the confirmation of Supreme Court Justices by changing the rules so that debate on nominees could be ended with a simple majority vote rather than a three-fifths majority ([Reuters](https://www.reuters.com/article/us-usa-court-gorsuch-idUSKBN17814Y)). Whether the filibuster will be further eroded remains to be seen ([The Atlantic](https://www.theatlantic.com/politics/archive/2020/07/why-senate-filibuster-could-be-gone-2021/614278/), [Brookings Institute](https://www.brookings.edu/policy2020/votervital/what-is-the-senate-filibuster-and-what-would-it-take-to-eliminate-it/)).\nConfused? Check our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#04676865766d626d6765706d6b6a7744636b6b606e71606369616a702a676b693b7771666e6167703955716177706d6b6a213634476865766d626d6765706d6b6a). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "In April 2017, Senate Republicans eliminated the filibuster for the confirmation of Supreme Court Justices by changing the rules so that debate on nominees could be ended with a simple majority vote rather than a three-fifths majority ([Reuters](https://www.reuters.com/article/us-usa-court-gorsuch-idUSKBN17814Y)). Whether the filibuster will be further eroded remains to be seen ([The Atlantic](https://www.theatlantic.com/politics/archive/2020/07/why-senate-filibuster-could-be-gone-2021/614278/), [Brookings Institute](https://www.brookings.edu/policy2020/votervital/what-is-the-senate-filibuster-and-what-would-it-take-to-eliminate-it/)).\nConfused? Check our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#f5969994879c939c9694819c9a9b86b5929a9a919f80919298909b81db969a98ca8680979f909681c8a4809086819c9a9bd0c7c5b69994879c939c9694819c9a9b). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3166,7 +3166,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "600",
+    "numforecasts": "601",
     "numforecasters": "142",
     "stars": 3
   },
@@ -3277,7 +3277,7 @@
     "title": "How many cases of COVID-19 will be reported by the Africa CDC as of 1 April 2021?",
     "url": "https://www.gjopen.com/questions/1674-how-many-cases-of-covid-19-will-be-reported-by-the-africa-cdc-as-of-1-april-2021",
     "platform": "Good Judgment Open",
-    "description": "The full impact of the COVID-19 pandemic on the African continent, home to over 1.2 billion people, remains a topic of intense speculation ([CNN](https://www.cnn.com/2020/06/16/africa/africa-coronavirus-cases-prevention-intl/index.html), [Scientific American](https://www.scientificamerican.com/article/african-countries-scramble-to-ramp-up-testing-for-covid-19/), [Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31237-X/fulltext)). The outcome will be determined using cases data from the Africa Centres for Disease Control and Prevention (Africa CDC) Dashboard at 5:00PM ET on 1 April 2021 ([Africa CDC](https://africacdc.org/covid-19/)).\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#a1c2cdc0d3c8c7c8c2c0d5c8cecfd2e1c6cecec5cbd4c5c6ccc4cfd58fc2cecc9ed2d4c3cbc4c2d59cf0d4c4d2d5c8cecf849391e2cdc0d3c8c7c8c2c0d5c8cecf). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "The full impact of the COVID-19 pandemic on the African continent, home to over 1.2 billion people, remains a topic of intense speculation ([CNN](https://www.cnn.com/2020/06/16/africa/africa-coronavirus-cases-prevention-intl/index.html), [Scientific American](https://www.scientificamerican.com/article/african-countries-scramble-to-ramp-up-testing-for-covid-19/), [Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31237-X/fulltext)). The outcome will be determined using cases data from the Africa Centres for Disease Control and Prevention (Africa CDC) Dashboard at 5:00PM ET on 1 April 2021 ([Africa CDC](https://africacdc.org/covid-19/)).\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#0e6d626f7c6768676d6f7a6761607d4e6961616a647b6a69636b607a206d6163317d7b6c646b6d7a335f7b6b7d7a6761602b3c3e4d626f7c6768676d6f7a676160). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Fewer than 2.5 million",
@@ -3305,15 +3305,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1095",
-    "numforecasters": "144",
+    "numforecasts": "1100",
+    "numforecasters": "146",
     "stars": 3
   },
   {
     "title": "Before 1 May 2021, will it be officially announced that the Tokyo 2020 Summer Olympics and/or Paralympics will be canceled?",
     "url": "https://www.gjopen.com/questions/1668-before-1-may-2021-will-it-be-officially-announced-that-the-tokyo-2020-summer-olympics-and-or-paralympics-will-be-canceled",
     "platform": "Good Judgment Open",
-    "description": "Coronavirus concerns already forced the postponement of the 2020 Olympics and Paralympics to summer 2021 ([ESPN](https://www.espn.com/olympics/story/_/id/28946033/tokyo-olympics-officially-postponed-2021), [Olympic Games](https://tokyo2020.org/en/), [Paralympic Games](https://tokyo2020.org/en/paralympics/)). Various concerns such as cost, vaccine availability, and international travel safety have some concerned about the rescheduled games taking place at all ([BBC](https://www.bbc.com/sport/olympics/52747797)). Postponement(s) alone would not count.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#debdb2bfacb7b8b7bdbfaab7b1b0ad9eb9b1b1bab4abbab9b3bbb0aaf0bdb1b3e1adabbcb4bbbdaae38fabbbadaab7b1b0fbecee9db2bfacb7b8b7bdbfaab7b1b0). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Coronavirus concerns already forced the postponement of the 2020 Olympics and Paralympics to summer 2021 ([ESPN](https://www.espn.com/olympics/story/_/id/28946033/tokyo-olympics-officially-postponed-2021), [Olympic Games](https://tokyo2020.org/en/), [Paralympic Games](https://tokyo2020.org/en/paralympics/)). Various concerns such as cost, vaccine availability, and international travel safety have some concerned about the rescheduled games taking place at all ([BBC](https://www.bbc.com/sport/olympics/52747797)). Postponement(s) alone would not count.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#4d2e212c3f242b242e2c392422233e0d2a2222292738292a20282339632e2220723e382f27282e39701c38283e39242223687f7d0e212c3f242b242e2c39242223). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes, the Olympics only",
@@ -3327,24 +3327,24 @@
       },
       {
         "name": "Yes, both",
-        "probability": 0.21,
+        "probability": 0.19,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.79,
+        "probability": 0.81,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1542",
-    "numforecasters": "552",
+    "numforecasts": "1557",
+    "numforecasters": "560",
     "stars": 3
   },
   {
     "title": "Between 1 January 2021 and 31 December 2022, will legislation enabling the creation of federal safety standards for autonomous vehicles (AVs) become law?",
     "url": "https://www.gjopen.com/questions/1659-between-1-january-2021-and-31-december-2022-will-legislation-enabling-the-creation-of-federal-safety-standards-for-autonomous-vehicles-avs-become-law",
     "platform": "Good Judgment Open",
-    "description": "Congress has yet to adopt legislation to create federal safety standards for the testing and/or use of AVs ([The Hill](https://thehill.com/policy/transportation/automobiles/472341-wheels-begin-to-turn-on-self-driving-car-legislation), [Federation of American Scientists](https://fas.org/sgp/crs/misc/R45985.pdf), [Congress.gov (House Bill)](https://www.congress.gov/bill/115th-congress/house-bill/3388), [Congress.gov (Senate Bill)](https://www.congress.gov/bill/115th-congress/senate-bill/1885)). Legislators are renewing efforts the 116th Congress, though the COVID-19 pandemic has acted as a \"bump in the road\" ([The Hill](https://thehill.com/policy/technology/498863-action-on-driverless-cars-hits-speed-bump-as-congress-focuses-on-pandemic), [Legal Reader](https://www.legalreader.com/self-driving-cars-and-the-law/)). The date the law and/or standards would take effect is immaterial.\nThis question is the longer-term companion of question #1658. The questions are substantively the same, save for the relevant time period. If the shorter-term question closes Yes, then this longer-term question will be voided.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#e6858a87948f808f8587928f898895a6818989828c9382818b838892c885898bd99593848c838592dbb7938395928f8988c3d4d6a58a87948f808f8587928f8988). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Congress has yet to adopt legislation to create federal safety standards for the testing and/or use of AVs ([The Hill](https://thehill.com/policy/transportation/automobiles/472341-wheels-begin-to-turn-on-self-driving-car-legislation), [Federation of American Scientists](https://fas.org/sgp/crs/misc/R45985.pdf), [Congress.gov (House Bill)](https://www.congress.gov/bill/115th-congress/house-bill/3388), [Congress.gov (Senate Bill)](https://www.congress.gov/bill/115th-congress/senate-bill/1885)). Legislators are renewing efforts the 116th Congress, though the COVID-19 pandemic has acted as a \"bump in the road\" ([The Hill](https://thehill.com/policy/technology/498863-action-on-driverless-cars-hits-speed-bump-as-congress-focuses-on-pandemic), [Legal Reader](https://www.legalreader.com/self-driving-cars-and-the-law/)). The date the law and/or standards would take effect is immaterial.\nThis question is the longer-term companion of question #1658. The questions are substantively the same, save for the relevant time period. If the shorter-term question closes Yes, then this longer-term question will be voided.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#60030c0112090609030114090f0e1320070f0f040a1504070d050e144e030f0d5f1315020a0503145d3115051314090f0e455250230c0112090609030114090f0e). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3365,21 +3365,21 @@
     "title": "Will there be a lethal confrontation between the national military forces, militia, and/or law enforcement personnel of the People's Republic of China and those of Brunei, Indonesia, Malaysia, the Philippines, Singapore, and/or Vietnam before 1 April 2021?",
     "url": "https://www.gjopen.com/questions/1652-will-there-be-a-lethal-confrontation-between-the-national-military-forces-militia-and-or-law-enforcement-personnel-of-the-people-s-republic-of-china-and-those-of-brunei-indonesia-malaysia-the-philippines-singapore-and-or-vietnam-before-1-april-2021",
     "platform": "Good Judgment Open",
-    "description": "Over the years, China has used various forces to project power toward its neighbors in and around the South China Sea ([CNN](https://www.cnn.com/2020/06/07/asia/china-malaysia-indonesia-south-china-sea-intl-hnk/index.html), [Center for Strategic and International Studies](https://amti.csis.org/maritime-claims-map/), [Council on Foreign Relations](https://www.cfr.org/global-conflict-tracker/conflict/territorial-disputes-south-china-sea), [Diplomat](https://thediplomat.com/2015/11/little-blue-men-doing-chinas-dirty-work-in-the-south-china-sea/)). A lethal confrontation is one that results in one fatality for the military forces, militia, and/or law enforcement of either side.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#2a49464b58434c43494b5e434544596a4d45454e405f4e4d474f445e0449454715595f48404f495e177b5f4f595e4345440f181a69464b58434c43494b5e434544). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Over the years, China has used various forces to project power toward its neighbors in and around the South China Sea ([CNN](https://www.cnn.com/2020/06/07/asia/china-malaysia-indonesia-south-china-sea-intl-hnk/index.html), [Center for Strategic and International Studies](https://amti.csis.org/maritime-claims-map/), [Council on Foreign Relations](https://www.cfr.org/global-conflict-tracker/conflict/territorial-disputes-south-china-sea), [Diplomat](https://thediplomat.com/2015/11/little-blue-men-doing-chinas-dirty-work-in-the-south-china-sea/)). A lethal confrontation is one that results in one fatality for the military forces, militia, and/or law enforcement of either side.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#dab9b6bba8b3bcb3b9bbaeb3b5b4a99abdb5b5beb0afbebdb7bfb4aef4b9b5b7e5a9afb8b0bfb9aee78bafbfa9aeb3b5b4ffe8ea99b6bba8b3bcb3b9bbaeb3b5b4). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.97,
+        "probability": 0.98,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "985",
-    "numforecasters": "433",
+    "numforecasts": "989",
+    "numforecasters": "435",
     "stars": 3
   },
   {
@@ -3458,7 +3458,7 @@
     "title": "Before 1 January 2023, how many major automakers will sell a self-driving passenger vehicle manufactured without a steering wheel?",
     "url": "https://www.gjopen.com/questions/1633-before-1-january-2023-how-many-major-automakers-will-sell-a-self-driving-passenger-vehicle-manufactured-without-a-steering-wheel",
     "platform": "Good Judgment Open",
-    "description": "Many automakers are planning to unveil more autonomous vehicles in the coming years ([NHTSA](https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety), [U.S. News](https://cars.usnews.com/cars-trucks/cars-that-are-almost-self-driving,%20https://www.mobileye.com/future-of-mobility/history-autonomous-driving/)). For the purposes of this question, \"major automakers\" refers to any of the 50 motor vehicle manufacturers included by the International Organization of Motor Vehicle Manufacturers in its 2017 list ([OICA](http://www.oica.net/wp-content/uploads/World-Ranking-of-Manufacturers-1.pdf)). This question will be suspended on 30 June 2021. Vehicles on sale solely for fixed routes (e.g., shuttles) would not count. Presales would not count.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#03606f62716a656a6062776a6c6d7043646c6c67697667646e666d772d606c6e3c707661696660773e52766670776a6c6d263133406f62716a656a6062776a6c6d). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Many automakers are planning to unveil more autonomous vehicles in the coming years ([NHTSA](https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety), [U.S. News](https://cars.usnews.com/cars-trucks/cars-that-are-almost-self-driving,%20https://www.mobileye.com/future-of-mobility/history-autonomous-driving/)). For the purposes of this question, \"major automakers\" refers to any of the 50 motor vehicle manufacturers included by the International Organization of Motor Vehicle Manufacturers in its 2017 list ([OICA](http://www.oica.net/wp-content/uploads/World-Ranking-of-Manufacturers-1.pdf)). This question will be suspended on 30 June 2021. Vehicles on sale solely for fixed routes (e.g., shuttles) would not count. Presales would not count.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#b3d0dfd2c1dad5dad0d2c7dadcddc0f3d4dcdcd7d9c6d7d4ded6ddc79dd0dcde8cc0c6d1d9d6d0c78ee2c6d6c0c7dadcdd968183f0dfd2c1dad5dad0d2c7dadcdd). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "0",
@@ -3519,12 +3519,12 @@
       },
       {
         "name": "Between $80 and $100 per kWh, inclusive",
-        "probability": 0.47,
+        "probability": 0.49,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $100 but less than $120 per kWh",
-        "probability": 0.42,
+        "probability": 0.4,
         "type": "PROBABILITY"
       },
       {
@@ -3538,8 +3538,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "262",
-    "numforecasters": "94",
+    "numforecasts": "264",
+    "numforecasters": "95",
     "stars": 3
   },
   {
@@ -3574,7 +3574,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "403",
+    "numforecasts": "404",
     "numforecasters": "146",
     "stars": 3
   },

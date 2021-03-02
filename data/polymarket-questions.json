@@ -1,25 +1,5 @@
 [
   {
-    "title": "Will Joe Biden be President of the USA on April 30, 2021?",
-    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-april-30-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Joe Biden will be President of the United States on April 30, 2021, 11:59 PM EST. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, https://www.whitehouse.gov/",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9457596407915190243817740214496317",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.05424035920848097561822597855036829",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "253",
-    "stars": 2
-  },
-  {
     "title": "Will Apple, Amazon, or Twitter announce a Bitcoin purchase before April 1, 2021?",
     "url": "https://polymarket.com/market/will-apple-amazon-or-twitter-announce-a-bitcoin-purchase-before-april-1-2021",
     "platform": "PolyMarket",
@@ -27,37 +7,77 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.3373409332839135317101248649363384",
+        "probability": "0.2647961731013341962204277026633759",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.6626590667160864682898751350636616",
+        "probability": "0.7352038268986658037795722973366241",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "472",
-    "stars": 2
+    "numforecasts": "530",
+    "stars": 4
   },
   {
-    "title": "Will ETH be above $1500 on March 7th, 2021?",
-    "url": "https://polymarket.com/market/will-eth-be-above-1500-on-march-7th-2021",
+    "title": "Will the US have fewer than 50,000 new COVID-19 cases on any day before March 15, 2021?",
+    "url": "https://polymarket.com/market/will-the-us-have-fewer-than-50-000-new-covid-19-cases-on-any-day-before-march-15-2021-1",
     "platform": "PolyMarket",
-    "description": "This is a market on if the USD price of Ether $ETH will be above $1500 on March 7th, 2021, 12:00pm EST, according to coinmarketcap.com/currencies/ethereum/. This market will resolve to “Yes“ if ETH is trading above $1500 according to Coinmarketcap on the resolution date, and “No“ otherwise. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "description": "This is a market on whether there will be a single day after the creation of this market and prior to the resolution date, March 15, 2021, 12:00 pm EST, with fewer than 50,000 recorded COVID-19 cases in the United States. This market will resolve to “Yes\" if on any single day prior to the resolution date there are fewer than 50,000 COVID-19 cases recorded. This market will resolve to “No\" if there is no single day the United States records fewer than 50,000 COVID-19 cases according to the resolution source. The resolution source for this market will be https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases, the CDC's official count of Coronavirus cases. \n\nIn response to trader inquiry: If it can be reasonably construed that the resolution source, the CDC, will publish corrected or otherwise revised COVID-19 case numbers, resolution of this market will consider only those revised numbers. In the event of an initial report which counts case numbers as lower than 50,000 but which is later revised (within 48 hours), only the revised numbers will be considered for the resolution of this market. Accordingly, resolution of this market may be delayed up to 48 hours if revised numbers are expected to be published. Only revisions of case numbers for dates posted by March 15, 2021, 12:00pm EST will be considered. If case numbers for March 14 are not posted prior to March 15, 2021, 12:00pm EST, those numbers will not be considered.\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.5950123472631209491552004890841122",
+        "probability": "0.8248217287969907822900296261160104",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.4049876527368790508447995109158878",
+        "probability": "0.1751782712030092177099703738839896",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "452",
-    "stars": 2
+    "numforecasts": "3156",
+    "stars": 4
+  },
+  {
+    "title": "Will there be more than 120 million confirmed COVID-19 cases globally by April 1, 2021?",
+    "url": "https://polymarket.com/market/will-there-be-more-than-120-million-confirmed-covid-19-cases-globally-by-april-1-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on the cumulative number of COVID-19 cases there will be globally by April 1, 2021, 11:59 pm EST. This market will resolve to “Yes” if there are more than 120,000,000 confirmed cases of COVID-19 globally on or before the resolution date. This market will resolve to “No” if there are never more than 120,000,000 confirmed cases of COVID-19 globally by the resolution date. The resolution source for this market will be the cumulative number of confirmed cases of COVID-19, globally, as indicated by the World Health Organization’s Coronavirus Disease Dashboard (https://covid19.who.int/).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.955244463744624980908175890974739",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.044755536255375019091824109025261",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "116",
+    "stars": 4
+  },
+  {
+    "title": "Will Beeple's \"Everydays: The First 5000 Days\" sell for more than $10 million in its Christie's auction?",
+    "url": "https://polymarket.com/market/will-beeple-s-everydays-the-first-5000-days-sell-for-more-than-10-million-in-its-christie-s-auction",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the final sale price for Beeple’s \"Everydays: The First 5000 Days\", currently on auction at Christie's, will be above $10 million. This market will resolve to “Yes” if the final hammer price of the auction is greater than $10 million USD and the sale is confirmed as successful, and “No” otherwise”. The auction is being conducted by Christie's and is scheduled to take place from February 25th to March 11th. In the event the auction is postponed, resolution of this market will be delayed accordingly. If the auction is canceled entirely, this market will resolve to “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.4756028905269645841860727393298424",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.5243971094730354158139272606701576",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "78",
+    "stars": 4
   },
   {
     "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
@@ -71,26 +91,6 @@
     "options": []
   },
   {
-    "title": "Will ETH be above $2000 on March 1st, 2021?",
-    "url": "https://polymarket.com/market/will-eth-be-above-2000-on-march-1st-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the USD price of Ether $ETH will be above $2000 on March 1st, 2021, 12:00pm EST, according to coinmarketcap.com/currencies/ethereum/. This market will resolve to “Yes“ if ETH is trading above $2000 according to Coinmarketcap on the resolution date, and “No“ otherwise. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.002782569568877281797244397102395533",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9972174304311227182027556028976045",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "2808",
-    "stars": 2
-  },
-  {
     "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
     "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1-1",
     "platform": "PolyMarket",
@@ -98,57 +98,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.02549378122960506517711031161728569",
+        "probability": "0.01684886180923374564962421237306903",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9745062187703949348228896883827143",
+        "probability": "0.983151138190766254350375787626931",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "121",
-    "stars": 2
-  },
-  {
-    "title": "Will there be more than 120 million confirmed COVID-19 cases globally by April 1, 2021?",
-    "url": "https://polymarket.com/market/will-there-be-more-than-120-million-confirmed-covid-19-cases-globally-by-april-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on the cumulative number of COVID-19 cases there will be globally by April 1, 2021, 11:59 pm EST. This market will resolve to “Yes” if there are more than 120,000,000 confirmed cases of COVID-19 globally on or before the resolution date. This market will resolve to “No” if there are never more than 120,000,000 confirmed cases of COVID-19 globally by the resolution date. The resolution source for this market will be the cumulative number of confirmed cases of COVID-19, globally, as indicated by the World Health Organization’s Coronavirus Disease Dashboard (https://covid19.who.int/).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.972300733291765503727108196437359",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.02769926670823449627289180356264103",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "92",
-    "stars": 2
-  },
-  {
-    "title": "Will the US have fewer than 50,000 new COVID-19 cases on any day before March 15, 2021?",
-    "url": "https://polymarket.com/market/will-the-us-have-fewer-than-50-000-new-covid-19-cases-on-any-day-before-march-15-2021-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether there will be a single day after the creation of this market and prior to the resolution date, March 15, 2021, 12:00 pm EST, with fewer than 50,000 recorded COVID-19 cases in the United States. This market will resolve to “Yes\" if on any single day prior to the resolution date there are fewer than 50,000 COVID-19 cases recorded. This market will resolve to “No\" if there is no single day the United States records fewer than 50,000 COVID-19 cases according to the resolution source. The resolution source for this market will be [https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases](https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases), the CDC's official count of Coronavirus cases. \n\nIn response to trader inquiry: If it can be reasonably construed that the resolution source, the CDC, will publish corrected or otherwise revised COVID-19 case numbers, resolution of this market will consider only those revised numbers. In the event of an initial report which counts case numbers as lower than 50,000 but which is later revised (within 48 hours), only the revised numbers will be considered for the resolution of this market. Accordingly, resolution of this market may be delayed up to 48 hours if revised numbers are expected to be published. Only revisions of case numbers for dates posted by March 15, 2021, 12:00pm EST will be considered. If case numbers for March 14 are not posted prior to March 15, 2021, 12:00pm EST, those numbers will not be considered.\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.7413479707437311603554851365370952",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.2586520292562688396445148634629048",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "2657",
-    "stars": 2
+    "numforecasts": "131",
+    "stars": 4
   },
   {
     "title": "Will Donald Trump be President of the USA on March 31, 2021?",
@@ -158,57 +118,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.02353226476671221159191113035259389",
+        "probability": "0.01827366861209288451922618451176289",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9764677352332877884080888696474061",
+        "probability": "0.9817263313879071154807738154882371",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "2954",
-    "stars": 2
-  },
-  {
-    "title": "Will Joe Biden be President of the USA on March 1, 2021?",
-    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-march-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Joe Biden will be President of the United States on March 1, 2021, 11:59 PM EST. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, [https://www.whitehouse.gov/](https://www.whitehouse.gov/)",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9995834126860994719972528602267245",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.0004165873139005280027471397732755311",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "4623",
-    "stars": 2
-  },
-  {
-    "title": "Will Beeple's \"Everydays: The First 5000 Days\" sell for more than $10 million in its Christie's auction?",
-    "url": "https://polymarket.com/market/will-beeple-s-everydays-the-first-5000-days-sell-for-more-than-10-million-in-its-christie-s-auction",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether the final sale price for Beeple’s \"Everydays: The First 5000 Days\", currently on auction at Christie's, will be above $10 million. This market will resolve to “Yes” if the final hammer price of the auction is greater than $10 million USD and the sale is confirmed as successful, and “No” otherwise”. The auction is being conducted by Christie's and is scheduled to take place from February 25th to March 11th. In the event the auction is postponed, resolution of this market will be delayed accordingly. If the auction is canceled entirely, this market will resolve to “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.4304694036194306218706718458407938",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.5695305963805693781293281541592062",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "54",
-    "stars": 2
+    "numforecasts": "2999",
+    "stars": 4
   },
   {
     "title": "Will Andrew Yang win the Democratic primary for Mayor of New York City in 2021?",
@@ -218,17 +138,37 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.4408614677718856270862259029165812",
+        "probability": "0.450474706183786588423937890359378",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.5591385322281143729137740970834188",
+        "probability": "0.549525293816213411576062109640622",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "90",
-    "stars": 2
+    "numforecasts": "101",
+    "stars": 4
+  },
+  {
+    "title": "Who will win UFC 259: Blachowicz vs. Adesanya?",
+    "url": "https://polymarket.com/market/who-will-win-ufc-259-blachowicz-vs-adesanya",
+    "platform": "PolyMarket",
+    "description": "This is a market on who will win the UFC 259 fight between Błachowicz and Adesanya, set to take place on March 6, 2021. This market will resolve to the winner of the bout, either by knockout or by judgment. If the UFC 259 fight is rescheduled to take place on a date other than March 6, 2021, the same rules will apply if the fight is rescheduled to any day before May 1, 2021. If the fight does not take place by May 1, 2021, this market will resolve to 50:50. If the fight is a draw, this market will resolve to 50:50. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
+    "options": [
+      {
+        "name": "Blachowicz",
+        "probability": "0.3214151498810068517920317035522269",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Adesanya",
+        "probability": "0.6785848501189931482079682964477731",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "50",
+    "stars": 4
   },
   {
     "title": "New government stimulus checks by March 15, 2021?",
@@ -238,17 +178,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9015636790348051877792680608544386",
+        "probability": "0.8583908421501612714245532602067349",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.09843632096519481222073193914556142",
+        "probability": "0.1416091578498387285754467397932651",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "304",
-    "stars": 2
+    "numforecasts": "331",
+    "stars": 4
   },
   {
     "title": "Will there be enough signatures for a vote on the recall of Gov. Newsom by March 17?",
@@ -258,16 +198,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.7930783234251881323126686197531004",
+        "probability": "0.8139752041979941074048220530797372",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.2069216765748118676873313802468996",
+        "probability": "0.1860247958020058925951779469202628",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "819",
-    "stars": 2
+    "numforecasts": "831",
+    "stars": 4
   }
 ]

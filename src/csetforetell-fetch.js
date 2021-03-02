@@ -1,9 +1,9 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
-import toMarkdown from "./toMarkdown.js"
 import {Tabletojson} from "tabletojson"
-import {getstars} from "./stars.js"
+import toMarkdown from "./toMarkdown.js"
+import {calculateStars} from "./stars.js"
 
 /* Definitions */
 let htmlEndPoint = 'https://www.cset-foretell.com/questions?page='
@@ -107,7 +107,7 @@ async function fetchStats(questionUrl, cookie){
     "options": options,
     "numforecasts": numforecasts,
     "numforecasters": numforecasters,
-    "stars": numforecasts>100?3:2
+    "stars": calculateStars("CSET-foretell", {numforecasts})
   }
   
   return result

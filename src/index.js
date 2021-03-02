@@ -48,8 +48,8 @@ let coverttocsvandmerge = () => {
   }
   merged = merged.map(element => ({...element, optionsstringforsearch: element.options.map(option => option.name).join(", ")}))
   writefile(JSON.stringify(merged, null, 2), "metaforecasts", "", ".json")
-  let mergedcsv = csvfromjson(merged)
-  writefile(mergedcsv, "metaforecasts", "")
+  //let mergedcsv = csvfromjson(merged)
+  //writefile(mergedcsv, "metaforecasts", "")
   console.log("Done")
 
 }
@@ -131,7 +131,7 @@ let whattodoMessage = `What do you want to do?
 [8]: Download predictions from polymarket
 [9]: Download predictions from predictit
 [10]: Download predictions from smarkets
-[11]: Convert predictions to csvs and merge them into one big file (requires previous steps)
+[11]: Merge jsons them into one big json (requires previous steps)
 [12]: All of the above
 Choose one option, wisely: #`
 whattodo(whattodoMessage, executeoption)

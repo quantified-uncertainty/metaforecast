@@ -76,25 +76,6 @@
     "stars": 1
   },
   {
-    "title": "Will The Flippening happen in 2021? (Will another blockchain's market cap exceed Bitcoin's market cap in 2021?)",
-    "url": "https://omen.eth.link/#/0xa6da2bc89a433b9cdcc7271077a119139f4d305c",
-    "platform": "Omen",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.5,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.5,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "",
-    "stars": 1
-  },
-  {
     "title": "Will Joe Biden be the US President at the end of 2021?",
     "url": "https://omen.eth.link/#/0xd450b6c4db569f600cb42acc0a6cd3a140c4894b",
     "platform": "Omen",
