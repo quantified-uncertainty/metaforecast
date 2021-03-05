@@ -45,6 +45,15 @@ function calculateStarsElicit(data) {
   return starsInteger
 }
 
+function calculateStarsForetold(data) {
+  let nuno = data => 2
+  let eli = (data) => null
+  let misha = (data) => null
+  let starsDecimal = average([nuno(data)]) //, eli(data), misha(data)])
+  let starsInteger = Math.round(starsDecimal)
+  return starsInteger
+}
+
 function calculateStarsGiveWellOpenPhil(data) {
   let nuno = data => 2
   let eli = (data) => null
@@ -134,6 +143,9 @@ export function calculateStars(platform, data) {
       break;
     case "Elicit":
       stars = calculateStarsElicit(data)
+      break;
+    case "Foretold":
+      stars = calculateStarsForetold(data)
       break;
     case "GiveWell/OpenPhilanthropy":
       stars = calculateStarsGiveWellOpenPhil(data)

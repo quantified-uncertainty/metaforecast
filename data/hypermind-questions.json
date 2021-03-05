@@ -6,12 +6,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.0297029702970297,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.9702970297029703,
+        "probability": 0.97,
         "type": "PROBABILITY"
       }
     ],
@@ -82,57 +82,57 @@
     "options": [
       {
         "name": "Xavier Bertrand",
-        "probability": 0.018518518518518517,
+        "probability": 0.019230769230769232,
         "type": "PROBABILITY"
       },
       {
         "name": "Pierre de Villiers",
-        "probability": 0.018518518518518517,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Anne Hidalgo",
-        "probability": 0.027777777777777776,
+        "probability": 0.028846153846153844,
         "type": "PROBABILITY"
       },
       {
         "name": "Yannick Jadot",
-        "probability": 0.009259259259259259,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Marine Le Pen",
-        "probability": 0.14814814814814814,
+        "probability": 0.1346153846153846,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmanuel Macron",
-        "probability": 0.5555555555555556,
+        "probability": 0.5673076923076923,
         "type": "PROBABILITY"
       },
       {
         "name": "Jean-Luc Mélenchon",
-        "probability": 0.027777777777777776,
+        "probability": 0.019230769230769232,
         "type": "PROBABILITY"
       },
       {
         "name": "Valérie Pécresse",
-        "probability": 0.009259259259259259,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Piolle",
-        "probability": 0.009259259259259259,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Another woman",
-        "probability": 0.027777777777777776,
+        "probability": 0.05769230769230769,
         "type": "PROBABILITY"
       },
       {
         "name": "Another man",
-        "probability": 0.14814814814814814,
+        "probability": 0.1346153846153846,
         "type": "PROBABILITY"
       }
     ],
@@ -146,22 +146,22 @@
     "options": [
       {
         "name": "Macron and Le Pen",
-        "probability": 0.619047619047619,
+        "probability": 0.6132075471698113,
         "type": "PROBABILITY"
       },
       {
         "name": "Macron, but not Le Pen",
-        "probability": 0.15238095238095237,
+        "probability": 0.1509433962264151,
         "type": "PROBABILITY"
       },
       {
         "name": "Le Pen, but not Macron",
-        "probability": 0.2,
+        "probability": 0.1981132075471698,
         "type": "PROBABILITY"
       },
       {
         "name": "Neither of them",
-        "probability": 0.028571428571428567,
+        "probability": 0.03773584905660377,
         "type": "PROBABILITY"
       }
     ],
@@ -175,12 +175,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.9423076923076923,
+        "probability": 0.9393939393939396,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.05769230769230769,
+        "probability": 0.06060606060606061,
         "type": "PROBABILITY"
       }
     ],
@@ -194,17 +194,17 @@
     "options": [
       {
         "name": "In June, 2021 (as planned)",
-        "probability": 0.9405940594059407,
+        "probability": 0.9134615384615385,
         "type": "PROBABILITY"
       },
       {
         "name": "Later in 2021",
-        "probability": 0.019801980198019802,
+        "probability": 0.04807692307692307,
         "type": "PROBABILITY"
       },
       {
         "name": "Not in 2021",
-        "probability": 0.039603960396039604,
+        "probability": 0.038461538461538464,
         "type": "PROBABILITY"
       }
     ],
@@ -228,37 +228,37 @@
       },
       {
         "name": "February 2021",
-        "probability": 0.00980392156862745,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "March 2021",
-        "probability": 0.06862745098039215,
+        "probability": 0.0425531914893617,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.06,
+        "probability": 0.17,
         "type": "PROBABILITY"
       },
       {
         "name": "April 2021",
-        "probability": 0.14705882352941177,
+        "probability": 0.1595744680851064,
         "type": "PROBABILITY"
       },
       {
         "name": "May 2021",
-        "probability": 0.28431372549019607,
+        "probability": 0.22340425531914893,
         "type": "PROBABILITY"
       },
       {
         "name": "June 2021",
-        "probability": 0.28431372549019607,
+        "probability": 0.35106382978723405,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe after June 2021",
-        "probability": 0.20588235294117646,
+        "probability": 0.22340425531914893,
         "type": "PROBABILITY"
       }
     ],
@@ -290,28 +290,47 @@
     "stars": 3
   },
   {
+    "title": "Will there be a deadly confrontation between Moroccan and Algerian armed forces in 2021?",
+    "url": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
+    "platform": "Hypermind",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.07,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.93,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "To be considered \"deadly\", the military confrontation - Including indirect clashes via drones, missiles, cyber, etc. - must cause at least one death among military personnel on either side. ",
+    "stars": 3
+  },
+  {
     "title": "Following the next parliamentary elections win Morocco, who will succeed Saad-Eddine El Othmani as prime minister?",
     "url": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
     "platform": "Hypermind",
     "options": [
       {
         "name": "Saad-Eddine El Othmani",
-        "probability": 0.29523809523809524,
+        "probability": 0.2818181818181818,
         "type": "PROBABILITY"
       },
       {
         "name": "Abdelilah Benkirane",
-        "probability": 0.07619047619047618,
+        "probability": 0.07272727272727272,
         "type": "PROBABILITY"
       },
       {
         "name": "Someone else from PJD",
-        "probability": 0.047619047619047616,
+        "probability": 0.04545454545454545,
         "type": "PROBABILITY"
       },
       {
         "name": "Someone else not from PJD",
-        "probability": 0.580952380952381,
+        "probability": 0.6,
         "type": "PROBABILITY"
       }
     ],
@@ -343,35 +362,6 @@
     "stars": 3
   },
   {
-    "title": "In Niger, who will win the (February) 2021 presidential election?",
-    "url": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
-    "platform": "Hypermind",
-    "options": [
-      {
-        "name": "Mohamed Bazoum",
-        "probability": 1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Mahamane Ousmane",
-        "probability": 1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Someone else",
-        "probability": 1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No official winner in 2021",
-        "probability": 1,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "The second round of the presidential election is scheduled on February 21, 2021.",
-    "stars": 3
-  },
-  {
     "title": "In 2021, will Faustin-Archange Touadéra lose power in the Central African Republic?",
     "url": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
     "platform": "Hypermind",
@@ -397,12 +387,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.25,
+        "probability": 0.08080808080808081,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.75,
+        "probability": 0.9191919191919193,
         "type": "PROBABILITY"
       }
     ],
@@ -416,27 +406,27 @@
     "options": [
       {
         "name": "Denis Sassou Nguesso",
-        "probability": 0.9423076923076923,
+        "probability": 0.9428571428571427,
         "type": "PROBABILITY"
       },
       {
         "name": "Guy Brice Parfait Kolélas",
-        "probability": 0.019230769230769232,
+        "probability": 0.019047619047619046,
         "type": "PROBABILITY"
       },
       {
         "name": "Mathias Dzon",
-        "probability": 0.009615384615384616,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "Someone else",
-        "probability": 0.009615384615384616,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "No election in 2021",
-        "probability": 0.019230769230769232,
+        "probability": 0.019047619047619046,
         "type": "PROBABILITY"
       }
     ],
@@ -489,27 +479,27 @@
     "options": [
       {
         "name": "Mohamed Abdullahi Mohamed",
-        "probability": 0.8839285714285715,
+        "probability": 0.8333333333333333,
         "type": "PROBABILITY"
       },
       {
         "name": "Abshir Aden Ferro",
-        "probability": 0.08928571428571429,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Sharif Sheikh Ahmed",
-        "probability": 0.00892857142857143,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Someone else",
-        "probability": 0.00892857142857143,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "No election in 2021",
-        "probability": 0.00892857142857143,
+        "probability": 0.1372549019607843,
         "type": "PROBABILITY"
       }
     ],
@@ -523,27 +513,27 @@
     "options": [
       {
         "name": "Q1, 2021 (or before)",
-        "probability": 0.009900990099009901,
+        "probability": 0.008695652173913044,
         "type": "PROBABILITY"
       },
       {
         "name": "Q2, 2021",
-        "probability": 0.1485148514851485,
+        "probability": 0.1565217391304348,
         "type": "PROBABILITY"
       },
       {
         "name": "Q3, 2021",
-        "probability": 0.24752475247524752,
+        "probability": 0.3217391304347826,
         "type": "PROBABILITY"
       },
       {
         "name": "Q4, 2021",
-        "probability": 0.13861386138613863,
+        "probability": 0.1217391304347826,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.4554455445544554,
+        "probability": 0.391304347826087,
         "type": "PROBABILITY"
       }
     ],
@@ -581,17 +571,17 @@
     "options": [
       {
         "name": "Worse than the 2012 record",
-        "probability": 0.3627450980392157,
+        "probability": 0.28712871287128716,
         "type": "PROBABILITY"
       },
       {
         "name": "Worse than 2020, but not worse than 2012",
-        "probability": 0.2745098039215686,
+        "probability": 0.26732673267326734,
         "type": "PROBABILITY"
       },
       {
         "name": "Not worse than 2020",
-        "probability": 0.3627450980392157,
+        "probability": 0.44554455445544555,
         "type": "PROBABILITY"
       }
     ],
@@ -605,32 +595,32 @@
     "options": [
       {
         "name": "Marcus Söder (CSU)",
-        "probability": 0.08823529411764705,
+        "probability": 0.1485148514851485,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet (CDU)",
-        "probability": 0.8725490196078431,
+        "probability": 0.8019801980198019,
         "type": "PROBABILITY"
       },
       {
         "name": "Another member of CDU/CSU",
-        "probability": 0.00980392156862745,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "A member of SPD",
-        "probability": 0.00980392156862745,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "A member of the Green party",
-        "probability": 0.00980392156862745,
+        "probability": 0.019801980198019802,
         "type": "PROBABILITY"
       },
       {
         "name": "Someone else",
-        "probability": 0.00980392156862745,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       }
     ],
@@ -644,7 +634,7 @@
     "options": [
       {
         "name": "in Q1, 2021",
-        "probability": 0.0849056603773585,
+        "probability": 0.10377358490566038,
         "type": "PROBABILITY"
       },
       {
@@ -654,17 +644,17 @@
       },
       {
         "name": "in Q3, 2021",
-        "probability": 0.09433962264150944,
+        "probability": 0.12264150943396226,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q4, 2021",
-        "probability": 0.16037735849056603,
+        "probability": 0.1509433962264151,
         "type": "PROBABILITY"
       },
       {
         "name": "Perhaps later",
-        "probability": 0.330188679245283,
+        "probability": 0.2924528301886793,
         "type": "PROBABILITY"
       }
     ],
@@ -678,22 +668,22 @@
     "options": [
       {
         "name": "USA",
-        "probability": 0.06862745098039215,
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
         "name": "France",
-        "probability": 0.46078431372549017,
+        "probability": 0.55,
         "type": "PROBABILITY"
       },
       {
         "name": "Germany",
-        "probability": 0.3431372549019608,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
         "name": "United Kingdom",
-        "probability": 0.12745098039215685,
+        "probability": 0.13,
         "type": "PROBABILITY"
       }
     ],
@@ -707,7 +697,7 @@
     "options": [
       {
         "name": "USA",
-        "probability": 0.67,
+        "probability": 0.77,
         "type": "PROBABILITY"
       },
       {
@@ -717,12 +707,12 @@
       },
       {
         "name": "Germany",
-        "probability": 0.05,
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
         "name": "United Kingdom",
-        "probability": 0.23,
+        "probability": 0.12,
         "type": "PROBABILITY"
       }
     ],
@@ -741,12 +731,12 @@
       },
       {
         "name": "Q1, 2021",
-        "probability": 0.05,
+        "probability": 0.030612244897959186,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.95,
+        "probability": 0.9693877551020408,
         "type": "PROBABILITY"
       }
     ],
@@ -754,76 +744,32 @@
     "stars": 3
   },
   {
-    "title": "Which threshold will gold prices (per ounce) reach first? ",
-    "url": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
+    "title": "In Niger, who will win the (February) 2021 presidential election?",
+    "url": "https://predict.hypermind.com/dash/dash/dash.html?list=POL",
     "platform": "Hypermind",
     "options": [
       {
-        "name": ">= 2,200 USD",
-        "probability": 0.12,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "<= 1,700 USD",
-        "probability": 0.88,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "Shares of the correct outcome will be worth 100ℍ, while the other will be worthless (0ℍ).Follow godlier prices here: [https://www.monex.com/gold-prices/](https://www.monex.com/gold-prices/)",
-    "stars": 3
-  },
-  {
-    "title": "What will be the closing share price of GameStop (GME) on Feb. 26, 2021?",
-    "url": "https://predict.hypermind.com/dash/dash/dash.html?list=ECO",
-    "platform": "Hypermind",
-    "options": [
-      {
-        "name": "≥ $400",
+        "name": "Mohamed Bazoum",
         "probability": 1,
         "type": "PROBABILITY"
       },
       {
-        "name": "[$300, $400[",
+        "name": "Mahamane Ousmane",
         "probability": 1,
         "type": "PROBABILITY"
       },
       {
-        "name": "[$200, $300[",
+        "name": "Someone else",
         "probability": 1,
         "type": "PROBABILITY"
       },
       {
-        "name": "[$100, $200[",
-        "probability": 1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "[$0, $100[",
-        "probability": 1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "[$75, $100[",
-        "probability": 1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "[$50, $75[",
-        "probability": 1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "[$25, $50[",
-        "probability": 1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "[$0, $25[",
+        "name": "No official winner in 2021",
         "probability": 1,
         "type": "PROBABILITY"
       }
     ],
-    "description": "Follow GameStop's stock price here: [https://www.marketwatch.com/investing/stock/GME](https://www.marketwatch.com/investing/stock/GME)",
+    "description": "The second round of the presidential election is scheduled on February 21, 2021.",
     "stars": 3
   },
   {
@@ -852,12 +798,12 @@
     "options": [
       {
         "name": "≥ 6,000",
-        "probability": 0.71,
+        "probability": 0.83,
         "type": "PROBABILITY"
       },
       {
         "name": "≤ 5,000",
-        "probability": 0.29,
+        "probability": 0.17,
         "type": "PROBABILITY"
       }
     ],
@@ -890,12 +836,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.82,
+        "probability": 0.8285714285714285,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.18,
+        "probability": 0.17142857142857143,
         "type": "PROBABILITY"
       }
     ],

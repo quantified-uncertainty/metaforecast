@@ -19,25 +19,6 @@
     "stars": 1
   },
   {
-    "title": "Will UNI governance approve a new liquidity mining program by the end of February, 2021?",
-    "url": "https://omen.eth.link/#/0x32848849f5b7e30ff75f57838fea8f9663c3d9de",
-    "platform": "Omen",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.05619249869291097,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.943807501307089,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "",
-    "stars": 1
-  },
-  {
     "title": "Will EIP1559 be live on Mainnet before September? ",
     "url": "https://omen.eth.link/#/0x36cb6942bc9e2b07d7ad4fe33b3fef11be05a28c",
     "platform": "Omen",
@@ -88,44 +69,6 @@
       {
         "name": "No",
         "probability": 0.14896775488170313,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "",
-    "stars": 1
-  },
-  {
-    "title": "Will Compound Chain be launched and usable by the end of Q2 2021?",
-    "url": "https://omen.eth.link/#/0xe018254be84e200bfb9947dc57df8943cb2ac1b2",
-    "platform": "Omen",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.4,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.6,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "",
-    "stars": 1
-  },
-  {
-    "title": "Will UNI governance approve a new liquidity mining program by the end of February, 2021?",
-    "url": "https://omen.eth.link/#/0xed6940e49cee029c4664d9794c04d5f9e5597632",
-    "platform": "Omen",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.08089382091153287,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.9191061790884671,
         "type": "PROBABILITY"
       }
     ],

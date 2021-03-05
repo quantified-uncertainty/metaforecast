@@ -1,0 +1,1193 @@
+[
+  {
+    "title": "Hours of 80,000 Hours podcast content released",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/0926981c-1cc8-4e21-a3e4-865a3c544e67",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 2.5,
+    "stars": 2
+  },
+  {
+    "title": "% global rate of \"$1.90 a day\" poverty in 2030",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/e1ca8cc6-33a4-4e38-9ef3-553a050ba0a9",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 5.5,
+    "stars": 2
+  },
+  {
+    "title": "A bioengineering project kills at least five thousand people by 2023-02-15",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/9386c0c2-d8df-4e17-9aba-98b2b60c6608",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.06,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.94,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 4,
+    "stars": 2
+  },
+  {
+    "title": "A bioengineering project kills at least five people by 2023-02-15",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/ecd31a5b-75ae-4785-89f9-6be85ade3af0",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.15,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.85,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 3,
+    "stars": 2
+  },
+  {
+    "title": "How many papers will cite \"Logical Induction\" by Garrabrant, S. et al. at the end of 2020?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/12d6442f-3f73-43af-a5b5-de66df236bde",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "How many papers will cite \"Risks from Learned Optimization in Advanced Machine Learning Systems\" by Hubinger, E. et al. at the end of 2020?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/85769e44-27fe-4f28-aff2-16ffc735c573",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "Will GiveWell renew the grant to the Centre for Pesticide Suicide Prevention?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/be2b184b-9162-453b-a31a-f31204388324",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.65,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.35,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 1.5,
+    "stars": 2
+  },
+  {
+    "title": "By the end of 2020, what % of US hens will live in cage-free housing?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/b5077bdb-25ff-4027-9a41-3dd5e78e08ac",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 4.5,
+    "stars": 2
+  },
+  {
+    "title": "Will SB 592 clear the California state Assembly?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/d97e690d-baeb-4e45-bf48-dca41535e1e1",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.695,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.30500000000000005,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "5 cities with at least 50k population implement approval voting by 2022",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/b5ef0f81-18c4-42fa-864e-e8dc0d9ea8d6",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.245,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.755,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 7.5,
+    "stars": 2
+  },
+  {
+    "title": "How many preregistrations on OSF will there be at the end of 2023?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/efbd2e5c-185d-451b-a54a-72be1a302a10",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "How many preregistrations on OSF will there be at the end of 2022?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/f69988cc-f2c2-4dc9-aca0-2aae01a2606d",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 4,
+    "stars": 2
+  },
+  {
+    "title": "How many preregistrations on OSF will there be at the end of 2021?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/862c4482-b77e-49bd-89e6-c28bd664f0f7",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 7,
+    "stars": 2
+  },
+  {
+    "title": "What % of grant dollars made to AI Safety by OpenPhil in 2020 will go to the University of Oxford?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/51eaef45-463b-4c85-bd6c-62e267bfbadd",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "What % of grant dollars made to AI Safety by OpenPhil in 2020 will go to UC Berkeley?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/bfdeb28d-deb4-44b8-91e0-a840b5564620",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "How much in grants will OpenPhil recommend to Global Health and Development between 2020 and 2030?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/feff8be7-0a44-48d7-99a2-0015faa64c14",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "How much in grants will OpenPhil recommend to U.S. policy between 2020 and 2030?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/ee8e154d-c7d8-4337-905d-0fd5e1fdd924",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "How many preregistrations on OSF will there be at the end of 2020?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/8ae516ed-5d4d-4008-bcf8-d86e4ae814d6",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 15,
+    "stars": 2
+  },
+  {
+    "title": "How much in grants will OpenPhil recommend to scientific research between 2020 and 2030?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/dfc6e8e4-0a36-4e57-b3d1-004fce0bbd4d",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 3,
+    "stars": 2
+  },
+  {
+    "title": "How much in grants will OpenPhil recommend to AI safety between 2020 and 2030?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/cb1d4afc-7200-48b3-aa75-06e0b4d451b4",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "What will the Metaculus community median probability for AI catastrophe by 2100 be in 2030?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/b9034665-5ab1-44df-9af3-0a954759b3df",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "What % of grant dollars made to AI Safety by OpenPhil in 2020 will go to MIRI?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/7265aead-923a-4a61-957a-be846741a889",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 6,
+    "stars": 2
+  },
+  {
+    "title": "How many of Eliezer Yudkowsky, Paul Christiano, Nate Soares, and Dario Amodei will still be working on AI safety by the end of 2029?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/0b2ff995-6b72-49d3-90b6-e5ba9ebb5781",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 6.5,
+    "stars": 2
+  },
+  {
+    "title": "Will MIRI still exist in 2023?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/6fbca8b0-740b-4c9e-b0cb-aa5bdc30a4ba",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.9233333333333333,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.07666666666666666,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 7,
+    "stars": 2
+  },
+  {
+    "title": "How many nuclear warheads will the US have in 2029?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/b76f74a0-c3a0-4530-b27c-e462ef593893",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "Will Good Policies still be running at the end of 2022?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/1a5a05b6-0dc7-4725-b559-e732d394ed28",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.7,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.30000000000000004,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "How much will GiveWell guess it will cost to get an outcome as good as saving a life, at the end of 2020?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/1e42ecfd-5117-4e91-9eb8-f27920029131",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 8,
+    "stars": 2
+  },
+  {
+    "title": "How many papers will cite \"Embedded Agency\" by Demski, A. and Garrabrant, S. at the end of 2020?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/2336bbb0-538b-44c4-a48d-04c9c5e842de",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 7,
+    "stars": 2
+  },
+  {
+    "title": "What percentage of grant dollars from the Global Health and Development EA Fund distributed in 2020 will go towards deworming organisations?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/7fd75c13-a2ed-4e76-9d44-09867d06ca5a",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 3,
+    "stars": 2
+  },
+  {
+    "title": "When will more than half of the main broad types of conventional whole pieces of farmed animal muscle tissue have at least one cost-competitive cultured alternative, in years after 2020?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/a71cd5b8-fdcf-45f7-9168-822e11c0e406",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 2.5,
+    "stars": 2
+  },
+  {
+    "title": "When will more than half of the main broad types of conventional ground meats will have at least one cost-competitive cultured alternative, in years after 2020?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/35caf084-9436-49c3-a046-eea6a8c8bf7a",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 4,
+    "stars": 2
+  },
+  {
+    "title": "When will more than half of the main broad types of conventional acellular animal products have at least one cost-competitive cultured alternative, in years after 2020?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/089b42c8-ab9d-420c-9088-899b33df9efc",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "What will the balance + payouts be for the Long Term Future Fund at the end of 2021?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/dc8c4beb-2f68-40e6-88e0-7fef557ef534",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 4,
+    "stars": 2
+  },
+  {
+    "title": "What will the balance + payouts be for the EA Meta Fund at the end of 2021?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/1244c18b-8b0d-45a1-9d66-97f8f6c7c60b",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "What will the balance + payouts be for the Animal Welfare EA Fund at the end of 2021?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/a547db8c-3906-43d6-afa8-138b9406ec53",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 4,
+    "stars": 2
+  },
+  {
+    "title": "Will the Albert Schweitzer Foundation remain an ACE top charity in 2022?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/1b3674e6-a036-4887-80bb-fea8f24ff118",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.7333333333333333,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.2666666666666667,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "Will the Albert Schweitzer Foundation remain an ACE top charity in 2021?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/eedcf35c-1acc-45c6-9600-36c9a6efd53a",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.8166666666666668,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.18333333333333324,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 5.5,
+    "stars": 2
+  },
+  {
+    "title": "Will Animal Equality remain an ACE top charity in 2022?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/294d918c-99fb-4bb8-a162-2b248b328789",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.44666666666666666,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.5533333333333333,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "Will Animal Equality remain an ACE top charity in 2021?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/605b7ed3-fd73-4979-8252-a86dcb4dc04a",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.49666666666666665,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.5033333333333334,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "Will the Good Food Institute remain an ACE top charity in 2022?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/563268d2-81b3-4bab-9ef5-c7a0a731a743",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.7866666666666667,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.21333333333333326,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "Will the Good Food Institute remain an ACE top charity in 2021?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/d05a9b4b-317e-419b-acdd-9f1945f2372a",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.8533333333333333,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.14666666666666672,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 5.5,
+    "stars": 2
+  },
+  {
+    "title": "Will the Humane League remain an ACE top charity in 2022?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/6d2dc33f-87d3-4817-8577-8e8643c7b94b",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.7666666666666667,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.23333333333333328,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "Will the Humane League remain an ACE top charity in 2021?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/51970fcb-bc3d-4be6-aa7a-41ca9eef0ff3",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.8333333333333333,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.16666666666666674,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 5.5,
+    "stars": 2
+  },
+  {
+    "title": "What will the balance + payouts be for the Animal Welfare EA Fund at the end of 2020?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/dd958638-c4fd-4b91-831c-ca3289ddc4ee",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 6,
+    "stars": 2
+  },
+  {
+    "title": "What will the balance + payouts be for the EA Meta Fund at the end of 2020?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/61187fa6-4bb5-42ab-acb5-c3a68e109353",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 4,
+    "stars": 2
+  },
+  {
+    "title": "What will the balance + payouts be for the Long Term Future Fund at the end of 2020?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/aa037535-a09e-464e-bc64-90964df4cf9f",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "At the end of 2021, will the most cost-effective charity recommended by Givewell be a deworming charity?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/4f960f70-1058-420e-b7de-bc432888fa1e",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.825,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.17500000000000004,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "How much will GiveWell guess it will cost to get an outcome as good as saving a life, at the end of 2021?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/02f00f76-d8d6-4f57-b033-ff849062538b",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "At the end of 2022, will Animal Charity Evaluators recommend a charity working on reducing wild animal suffering as a top charity?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/6cbf55b8-42cd-4f27-b339-adc9dff43275",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.59,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.41000000000000003,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 6,
+    "stars": 2
+  },
+  {
+    "title": "At the end of 2021, will Animal Charity Evaluators recommend a charity working on reducing wild animal suffering as a top charity?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/52faee5b-2de3-433a-bd92-538b5696bcb8",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.575,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.42500000000000004,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "At the end of 2023, will Animal Charity Evaluators recommend a charity working on reducing wild animal suffering as a top charity?",
+    "url": "https://www.foretold.io/c/0104d8e8-07e4-464b-8b32-74ef22b49f21/m/7d8556b6-7fbb-4bbe-ba42-db8911babe3f",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.24,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.76,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "Will there be more new COVID-19 cases this year than new HIV infections?",
+    "url": "https://www.foretold.io/c/c47c6bc8-2c9b-4a83-9583-d1ed80a40fa2/m/8f14e026-51a8-4fca-920f-d29b37f61763",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.7,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.30000000000000004,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 8,
+    "stars": 2
+  },
+  {
+    "title": "At the end of the outbreak, what will the ratio (deaths)/(confirmed cases) be?",
+    "url": "https://www.foretold.io/c/c47c6bc8-2c9b-4a83-9583-d1ed80a40fa2/m/d093d140-8c5a-4ffd-a4ad-ec0edcc7cb7d",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 15,
+    "stars": 2
+  },
+  {
+    "title": "Will the current outbreak result in a global disaster (>50 million deaths resulting from the pathogen within 1 year)?",
+    "url": "https://www.foretold.io/c/c47c6bc8-2c9b-4a83-9583-d1ed80a40fa2/m/f70dd133-ebb8-4201-88a8-09f6b94eed78",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.02,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.98,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 9.5,
+    "stars": 2
+  },
+  {
+    "title": "At the end of the outbreak, how many confirmed cases?",
+    "url": "https://www.foretold.io/c/c47c6bc8-2c9b-4a83-9583-d1ed80a40fa2/m/b533b5bf-723d-40af-b558-daf971097507",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 27,
+    "stars": 2
+  },
+  {
+    "title": "At the end of the outbreak, how many deaths?",
+    "url": "https://www.foretold.io/c/c47c6bc8-2c9b-4a83-9583-d1ed80a40fa2/m/984cd816-3284-4906-91f5-3b1446e47463",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 49.5,
+    "stars": 2
+  },
+  {
+    "title": "When will the outbreak end?",
+    "url": "https://www.foretold.io/c/c47c6bc8-2c9b-4a83-9583-d1ed80a40fa2/m/95268867-0601-4377-920c-6a26618e2a70",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 25.5,
+    "stars": 2
+  },
+  {
+    "title": "By mid-2023, what will be the maximum compute (measured in petaflop/s-days), used in training by a published AI system?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/b9bfcc0b-cd82-4904-903d-566ff57ed3b4",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "By mid-2022, what will be the maximum compute (measured in petaflop/s-days), used in training by a published AI system?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/380a3ab8-8b05-42f6-80b9-4217b04fd930",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "By mid-2021, what will be the maximum compute (measured in petaflop/s-days), used in training by a published AI system?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/b5914f95-593d-4217-b862-b2ab5d0d51f8",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 3.5,
+    "stars": 2
+  },
+  {
+    "title": "How well do these two questions capture something significant about algorithmic progress?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/74586dc1-fd77-4b49-bbcb-b40ae0db09f8",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 3,
+    "stars": 2
+  },
+  {
+    "title": "By 2023, what will be the smallest number of frames required for the Atari performance of a basic DQN?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/f8c595c5-dd7e-4bb6-9650-0de3625b50eb",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "By 2022, what will be the smallest number of frames required for the Atari performance of a basic DQN?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/b93bc8f1-5798-43b5-a0f6-26c8f6f0c7c7",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "By 2021, what will be the smallest number of frames required for the Atari performance of a basic DQN?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/ef463b8f-50ef-4e5f-93de-fbe3abd53570",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "By mid-2023, what will be the smallest number of years of gameplay required for OpenAI Five-level dota performance?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/98933e35-e4ed-4958-a36a-3d4154900bce",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "By mid-2022, what will be the smallest number of years of gameplay required for OpenAI Five-level dota performance?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/c5b3dc97-4b67-46c5-93ac-2905113df000",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "By mid-2021, what will be the smallest number of years of gameplay required for OpenAI Five-level dota performance?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/2c6253e6-8425-475c-90ba-ff4ab82b5483",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "How many years from now (Sep 2019) will it take to Physically assemble any LEGO set given the pieces and instructions, using specialized robotics hardware?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/69bf7756-ddb7-4d5c-b5c2-a223cffffe7d",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 4.5,
+    "stars": 2
+  },
+  {
+    "title": "By mid-2020, what will be the maximum compute (measured in petaflop/s-days), used in training by a published AI system?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/70033fc2-af6e-4200-8aae-6d970a3e57ea",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 3.5,
+    "stars": 2
+  },
+  {
+    "title": "By mid-2020, what will be the smallest number of years of gameplay required for OpenAI Five-level dota performance?",
+    "url": "https://www.foretold.io/c/cf663021-f87f-4632-ad82-962d889a2d39/m/75e157b5-ffc1-4b1b-9eda-7997dac7e20b",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "What will be the rate of homelessness per 100,000 people in England in 2021?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/b1949fbe-ce22-46d9-83a1-a5c2c53cd826",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 6.5,
+    "stars": 2
+  },
+  {
+    "title": "What will be the rate of homelessness per 100,000 people in England in 2022?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/b73619d7-8e1e-41a6-9e9f-6cfe22a1dad1",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 3,
+    "stars": 2
+  },
+  {
+    "title": "What will be the rate of homelessness per 100,000 people in England in 2023?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/3b91112d-19e3-486b-8ecc-ba9a7a372c09",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 3,
+    "stars": 2
+  },
+  {
+    "title": "If Conservatives win the next election, will they form a minority government?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/2465e95a-abc4-45a2-8ab3-855ecf295ded",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.3,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.7,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "If Conservatives win the next election, will they form a majority government?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/8289150f-cfec-4327-b981-5fc0d624eb65",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.6,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.4,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "How many seats will Labour win the in the next general election?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/16581899-ae00-44e9-9d17-602ca38c6878",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "Will Labour win the next election?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/4e3274f7-c1b0-4a70-80ae-c931c87dca8d",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.35,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.65,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 7,
+    "stars": 2
+  },
+  {
+    "title": "Will Conservatives win the next election?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/ff1f3bd2-3939-4414-b1cb-817b92ed3786",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.65,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.35,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 9.5,
+    "stars": 2
+  },
+  {
+    "title": "If Boris Johnson is leader of the Conservatives in the election after the 2019 UK general election, will they win that general election?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/cb081989-7005-4dea-8288-eeb54b5e8bd6",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.71,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.29000000000000004,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 2,
+    "stars": 2
+  },
+  {
+    "title": "If Sajid Javid is leader of the Conservatives in the election after the 2019 UK general election, will they win that general election?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/f682e558-edaf-45e9-9e4e-df4529dd7aa0",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.6,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.4,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "What will be the rate of homelessness per 100,000 people in England in 2024?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/a97b0fa0-1eeb-4bc2-8bec-00e557f5dd91",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "Will Scotland leave the United Kingdom by 2030?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/2c2e2991-3720-4786-ae82-448e328f8800",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.1,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.9,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "Will Brexit be a hard Brexit?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/b4f040ed-8145-4e23-8118-c4e06fd90a11",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.5,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.5,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 3.5,
+    "stars": 2
+  },
+  {
+    "title": "If Brexit occurs under a Conservative majority government elected in the 2019 election, will it be a hard Brexit?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/04a10cb2-d13f-4af7-8b70-12675dc25e9d",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.4,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.6,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 3.5,
+    "stars": 2
+  },
+  {
+    "title": "When will the next UK general election be?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/3165d0d1-547c-4104-8eb7-3c7508298b8d",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 4,
+    "stars": 2
+  },
+  {
+    "title": "Will Scotland leave the United Kingdom by 2025?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/a9bd15c4-95dd-49eb-8a3d-f546209bd444",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.05,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.95,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "If Keir Starmer is leader of Labour in the election after the 2019 UK general election, will they win that general election?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/e06b7c2f-a385-4c3c-9fa9-00787ac6aed3",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.32,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.6799999999999999,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 11.5,
+    "stars": 2
+  },
+  {
+    "title": "Will there be a second Brexit referendum announced before 2022?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/2461fab4-c594-49fd-9b2a-acdfc52356ba",
+    "platform": "Foretold",
+    "description": "",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.01,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.99,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 5,
+    "stars": 2
+  },
+  {
+    "title": "What will be the tuition fee cap for UK students in 2024?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/fbc91180-f338-449d-a795-234ac42854ec",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 3,
+    "stars": 2
+  },
+  {
+    "title": "If there is a soft Brexit, what will be the average yearly GDP growth of the UK in the following five years?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/f3d44e2b-4d2a-47bd-acbd-61cab5e6a126",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 1,
+    "stars": 2
+  },
+  {
+    "title": "If there is a hard Brexit, what will be the average yearly GDP growth of the UK in the following five years?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/8221741f-ac27-4651-bf2c-7a887fc82313",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 3,
+    "stars": 2
+  },
+  {
+    "title": "What will be mean UK broadband download speeds in 2024?",
+    "url": "https://www.foretold.io/c/47ff5c49-9c20-4f3d-bd57-1897c35cd42d/m/fb8780cd-e2b3-4435-bf50-c46fed1db5a8",
+    "platform": "Foretold",
+    "description": "",
+    "options": [],
+    "numforecasts": 3,
+    "stars": 2
+  }
+]

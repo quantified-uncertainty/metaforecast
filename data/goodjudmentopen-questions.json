@@ -1,23 +1,272 @@
 [
   {
+    "title": "How many U.S. adult and pediatric hospital admissions with confirmed COVID-19 cases will there be for the week ending 27 March 2021?",
+    "url": "https://www.gjopen.com/questions/1952-how-many-u-s-adult-and-pediatric-hospital-admissions-with-confirmed-covid-19-cases-will-there-be-for-the-week-ending-27-march-2021",
+    "platform": "Good Judgment Open",
+    "description": "The outcome will be determined using hospital admissions data as recorded in the Department of Health and Human Services' \"COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries\" for the week ending 27 March 2021 ([Healthdata.gov](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries)). The total will be calculated by adding data from two columns, \"previous_day_admission_adult_covid_confirmed\" and \"previous_day_admission_pediatric_covid_confirmed,\" inclusive of the District of Columbia, Puerto Rico, and U.S. Virgin Islands. As these are \"previous day\" data, we will use the data dated 22 March 2021 through 28 March 2021, inclusive. The data will be accessed no sooner than 4 April 2021.\n",
+    "options": [
+      {
+        "name": "Fewer than 15,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 15,000 and 25,000, inclusive",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 25,000 but fewer than 35,000",
+        "probability": 0.28,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 35,000 and 45,000, inclusive",
+        "probability": 0.72,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 45,000 but fewer than 55,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 55,000 and 65,000, inclusive",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 65,000 but fewer than 75,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 75,000 and 85,000, inclusive",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 85,000 but fewer than 95,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "95,000 or more",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "6",
+    "numforecasters": "6",
+    "stars": 3
+  },
+  {
+    "title": "How many confirmed cases of COVID-19 in the U.S. will be reported for the week ending 27 March 2021?",
+    "url": "https://www.gjopen.com/questions/1954-how-many-confirmed-cases-of-covid-19-in-the-u-s-will-be-reported-for-the-week-ending-27-march-2021",
+    "platform": "Good Judgment Open",
+    "description": "The outcome will be determined using COVID-19 confirmed cases data as recorded in the Johns Hopkins University (JHU) CSSE GitHub data repository for 21 March 2021 through 27 March 2021, inclusive ([JHU CSSE GitHub](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv)). The total will be calculated by taking the sum of the 20 March 2021 column and subtracting it from the sum of the 27 March 2021 column, inclusive of all rows. The data will be accessed no sooner than 4 April 2021.\n",
+    "options": [
+      {
+        "name": "Fewer than 100,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 100,000 and 200,000, inclusive",
+        "probability": 0.04,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 200,000 but fewer than 300,000",
+        "probability": 0.21,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 300,000 and 400,000, inclusive",
+        "probability": 0.38,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 400,000 but fewer than 500,000",
+        "probability": 0.32,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 500,000 and 600,000, inclusive",
+        "probability": 0.05,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 600,000 but fewer than 700,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 700,000 and 800,000, inclusive",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 800,000 but fewer than 900,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "900,000 or more",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "23",
+    "numforecasters": "20",
+    "stars": 3
+  },
+  {
+    "title": "How many people in the U.S. will have received one or more doses of a COVID-19 vaccine as of 31 March 2021, according to the CDC?",
+    "url": "https://www.gjopen.com/questions/1955-how-many-people-in-the-u-s-will-have-received-one-or-more-doses-of-a-covid-19-vaccine-as-of-31-march-2021-according-to-the-cdc",
+    "platform": "Good Judgment Open",
+    "description": "The outcome will be determined using COVID-19 vaccination data as reported by the CDC (updated daily) for “People Receiving 1 or More Doses” ([CDC](https://covid.cdc.gov/covid-data-tracker/#vaccination-trends)). The data will be accessed no sooner than 4 April 2021. If the CDC changes how it reports vaccination data, we will provide clarifying language as necessary. For the purposes of this question, a person receiving a single-dose vaccine would count as a person having received one or more doses of a COVID-19 vaccine.\n",
+    "options": [
+      {
+        "name": "Fewer than 70,000,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 70,000,000 and 75,000,000, inclusive",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 75,000,000 but fewer than 80,000,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 80,000,000 and 85,000,000, inclusive",
+        "probability": 0.15,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 85,000,000 but fewer than 90,000,000",
+        "probability": 0.44,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 90,000,000 and 95,000,000, inclusive",
+        "probability": 0.41,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 95,000,000 but fewer than 100,000,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 100,000,000 and 105,000,000, inclusive",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 105,000,000 but fewer than 110,000,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 110,000,000 and 115,000,000, inclusive",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 115,000,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "42",
+    "numforecasters": "30",
+    "stars": 3
+  },
+  {
+    "title": "How many deaths attributed to COVID-19 in the U.S. will be reported for the week ending 27 March 2021?",
+    "url": "https://www.gjopen.com/questions/1953-how-many-deaths-attributed-to-covid-19-in-the-u-s-will-be-reported-for-the-week-ending-27-march-2021",
+    "platform": "Good Judgment Open",
+    "description": "The outcome will be determined using COVID-19 deaths data as recorded in the Johns Hopkins University (JHU) CSSE GitHub data repository for 21 March 2021 through 27 March 2021, inclusive ([JHU CSSE GitHub](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv)). The total will be calculated by taking the sum of the 20 March 2021 column and subtracting it from the sum of the 27 March 2021 column, inclusive of all rows. The data will be accessed no sooner than 4 April 2021.\n",
+    "options": [
+      {
+        "name": "Fewer than 4,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 4,000 and 6,000, inclusive",
+        "probability": 0.25,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 6,000 but fewer than 8,000",
+        "probability": 0.5,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 8,000 and 10,000, inclusive",
+        "probability": 0.25,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 10,000 but fewer than 12,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 12,000 and 14,000 inclusive",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 14,000 but fewer than 16,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 16,000 and 18,000 inclusive",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 18,000 but fewer than 20,000",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "20,000 or more",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "24",
+    "numforecasters": "19",
+    "stars": 3
+  },
+  {
     "title": "Will the People's Republic of China's (PRC's) military expenditure as a percentage of GDP be greater in 2021 than it was in 2019?",
     "url": "https://www.gjopen.com/questions/1951-will-the-people-s-republic-of-china-s-prc-s-military-expenditure-as-a-percentage-of-gdp-be-greater-in-2021-than-it-was-in-2019",
     "platform": "Good Judgment Open",
-    "description": "The outcome will be determined using data provided by SIPRI ([SIPRI](https://www.sipri.org/databases/milex), see the \"Data for all countries\" spreadsheet under the \"Excel file\" section). The question will be suspended on 31 December 2021 and resolved when the data are first released, typically in the spring of the following year. For 2019, SIPRI reported that the PRC's military expenditure as a percentage of GDP was 1.8886% (\"Share of GDP sheet,\" cell BU99).\n",
+    "description": "The outcome will be determined using data provided by SIPRI ([SIPRI](https://www.sipri.org/databases/milex), see the \"Data for all countries\" spreadsheet under the \"Excel file\" section). The question will be suspended on 31 December 2021 and resolved when the data are first released, typically in the spring of the following year. For 2019, SIPRI reported that the PRC's military expenditure as a percentage of GDP was 1.8886% (\"Share of GDP sheet,\" cell BU99).\nNOTE 3 March 2021: For resolution, we will compare the data for 2021 and for 2019 as they are reported in 2022.\n",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.7,
+        "probability": 0.75,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.3,
+        "probability": 0.25,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "62",
-    "numforecasters": "46",
+    "numforecasts": "75",
+    "numforecasters": "54",
     "stars": 3
   },
   {
@@ -28,17 +277,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.4,
+        "probability": 0.65,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.6,
+        "probability": 0.35,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "29",
-    "numforecasters": "24",
+    "numforecasts": "46",
+    "numforecasters": "30",
     "stars": 3
   },
   {
@@ -49,22 +298,22 @@
     "options": [
       {
         "name": "0",
-        "probability": 0.51,
+        "probability": 0.74,
         "type": "PROBABILITY"
       },
       {
         "name": "1",
-        "probability": 0.35,
+        "probability": 0.22,
         "type": "PROBABILITY"
       },
       {
         "name": "2 or more",
-        "probability": 0.14,
+        "probability": 0.04,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "32",
-    "numforecasters": "26",
+    "numforecasts": "41",
+    "numforecasters": "30",
     "stars": 3
   },
   {
@@ -75,17 +324,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.68,
+        "probability": 0.5,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.32,
+        "probability": 0.5,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "148",
-    "numforecasters": "131",
+    "numforecasts": "184",
+    "numforecasters": "152",
     "stars": 3
   },
   {
@@ -96,17 +345,17 @@
     "options": [
       {
         "name": "Fewer than 4",
-        "probability": 0.04,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 4 and 8",
-        "probability": 0.48,
+        "probability": 0.5,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 9 and 13",
-        "probability": 0.34,
+        "probability": 0.37,
         "type": "PROBABILITY"
       },
       {
@@ -116,12 +365,12 @@
       },
       {
         "name": "More than 18",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "96",
-    "numforecasters": "87",
+    "numforecasts": "112",
+    "numforecasters": "93",
     "stars": 3
   },
   {
@@ -132,17 +381,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.7,
+        "probability": 0.75,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.3,
+        "probability": 0.25,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "120",
-    "numforecasters": "114",
+    "numforecasts": "145",
+    "numforecasters": "137",
     "stars": 3
   },
   {
@@ -162,8 +411,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "70",
-    "numforecasters": "65",
+    "numforecasts": "83",
+    "numforecasters": "75",
     "stars": 3
   },
   {
@@ -179,27 +428,27 @@
       },
       {
         "name": "Between 8,000,000 and 10,000,000, inclusive",
-        "probability": 0.13,
+        "probability": 0.16,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 10,000,000 but fewer than 12,000,000",
-        "probability": 0.4,
+        "probability": 0.49,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 12,000,000 and 14,000,000, inclusive",
-        "probability": 0.4,
+        "probability": 0.32,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 14,000,000",
-        "probability": 0.07,
+        "probability": 0.03,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "82",
-    "numforecasters": "67",
+    "numforecasts": "95",
+    "numforecasters": "76",
     "stars": 3
   },
   {
@@ -210,7 +459,7 @@
     "options": [
       {
         "name": "Less than $0.50",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
@@ -220,7 +469,7 @@
       },
       {
         "name": "More than $1.00 but less than $2.50",
-        "probability": 0.85,
+        "probability": 0.86,
         "type": "PROBABILITY"
       },
       {
@@ -234,7 +483,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "38",
+    "numforecasts": "43",
     "numforecasters": "19",
     "stars": 3
   },
@@ -246,32 +495,32 @@
     "options": [
       {
         "name": "Less than 5.4%",
-        "probability": 0.06,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 5.4% and 5.9%, inclusive",
-        "probability": 0.53,
+        "probability": 0.55,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 5.9% but less than 6.6%",
-        "probability": 0.34,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 6.6% and 7.1%, inclusive",
-        "probability": 0.06,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 7.1%",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "82",
-    "numforecasters": "62",
+    "numforecasts": "93",
+    "numforecasters": "70",
     "stars": 3
   },
   {
@@ -287,7 +536,7 @@
       },
       {
         "name": "Between 1.000 and 1.500, inclusive",
-        "probability": 0.27,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
@@ -302,12 +551,12 @@
       },
       {
         "name": "More than 2.500",
-        "probability": 0.03,
+        "probability": 0.05,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "59",
-    "numforecasters": "36",
+    "numforecasts": "69",
+    "numforecasters": "38",
     "stars": 3
   },
   {
@@ -318,12 +567,12 @@
     "options": [
       {
         "name": "Yes, and Newsom will be recalled",
-        "probability": 0.07,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "Yes, but Newsom will not be recalled",
-        "probability": 0.87,
+        "probability": 0.82,
         "type": "PROBABILITY"
       },
       {
@@ -332,8 +581,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "68",
-    "numforecasters": "39",
+    "numforecasts": "72",
+    "numforecasters": "41",
     "stars": 3
   },
   {
@@ -353,8 +602,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "95",
-    "numforecasters": "47",
+    "numforecasts": "120",
+    "numforecasters": "55",
     "stars": 3
   },
   {
@@ -365,22 +614,22 @@
     "options": [
       {
         "name": "Bitcoin will have a price of $25,000 or less",
-        "probability": 0.16,
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {
         "name": "Bitcoin will have a price of $100,000 or more",
-        "probability": 0.14,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "Neither will occur before 1 July 2021",
-        "probability": 0.7,
+        "probability": 0.73,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "207",
-    "numforecasters": "145",
+    "numforecasts": "247",
+    "numforecasters": "169",
     "stars": 3
   },
   {
@@ -391,17 +640,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.78,
+        "probability": 0.71,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.22,
+        "probability": 0.29,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "51",
-    "numforecasters": "39",
+    "numforecasts": "54",
+    "numforecasters": "42",
     "stars": 3
   },
   {
@@ -421,8 +670,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "113",
-    "numforecasters": "67",
+    "numforecasts": "118",
+    "numforecasters": "68",
     "stars": 3
   },
   {
@@ -433,16 +682,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.65,
+        "probability": 0.52,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.35,
+        "probability": 0.48,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "126",
+    "numforecasts": "138",
     "numforecasters": "67",
     "stars": 3
   },
@@ -463,7 +712,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "74",
+    "numforecasts": "75",
     "numforecasters": "47",
     "stars": 3
   },
@@ -484,8 +733,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "150",
-    "numforecasters": "99",
+    "numforecasts": "161",
+    "numforecasters": "101",
     "stars": 3
   },
   {
@@ -505,8 +754,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "136",
-    "numforecasters": "114",
+    "numforecasts": "144",
+    "numforecasters": "119",
     "stars": 3
   },
   {
@@ -536,8 +785,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "131",
-    "numforecasters": "101",
+    "numforecasts": "138",
+    "numforecasters": "105",
     "stars": 3
   },
   {
@@ -557,8 +806,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "123",
-    "numforecasters": "71",
+    "numforecasts": "130",
+    "numforecasters": "73",
     "stars": 3
   },
   {
@@ -569,7 +818,7 @@
     "options": [
       {
         "name": "Brooklyn Nets",
-        "probability": 0.19,
+        "probability": 0.21,
         "type": "PROBABILITY"
       },
       {
@@ -579,7 +828,7 @@
       },
       {
         "name": "Los Angeles Lakers",
-        "probability": 0.27,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
@@ -589,7 +838,7 @@
       },
       {
         "name": "Another team",
-        "probability": 0.33,
+        "probability": 0.32,
         "type": "PROBABILITY"
       },
       {
@@ -598,8 +847,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "98",
-    "numforecasters": "48",
+    "numforecasts": "102",
+    "numforecasters": "49",
     "stars": 3
   },
   {
@@ -619,7 +868,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "122",
+    "numforecasts": "126",
     "numforecasters": "80",
     "stars": 3
   },
@@ -631,17 +880,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.15,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.85,
+        "probability": 0.88,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "89",
-    "numforecasters": "64",
+    "numforecasts": "91",
+    "numforecasters": "65",
     "stars": 3
   },
   {
@@ -661,8 +910,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "215",
-    "numforecasters": "100",
+    "numforecasts": "224",
+    "numforecasters": "101",
     "stars": 3
   },
   {
@@ -673,12 +922,12 @@
     "options": [
       {
         "name": "0",
-        "probability": 0.61,
+        "probability": 0.57,
         "type": "PROBABILITY"
       },
       {
         "name": "1",
-        "probability": 0.38,
+        "probability": 0.42,
         "type": "PROBABILITY"
       },
       {
@@ -692,8 +941,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "196",
-    "numforecasters": "130",
+    "numforecasts": "207",
+    "numforecasters": "133",
     "stars": 3
   },
   {
@@ -704,17 +953,17 @@
     "options": [
       {
         "name": "Less than $200 million",
-        "probability": 0.14,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $200 million and $500 million, inclusive",
-        "probability": 0.4,
+        "probability": 0.42,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $500 million but less than $1 billion",
-        "probability": 0.33,
+        "probability": 0.35,
         "type": "PROBABILITY"
       },
       {
@@ -728,8 +977,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "107",
-    "numforecasters": "66",
+    "numforecasts": "113",
+    "numforecasters": "69",
     "stars": 3
   },
   {
@@ -740,17 +989,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.76,
+        "probability": 0.8,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.24,
+        "probability": 0.2,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "78",
-    "numforecasters": "51",
+    "numforecasts": "82",
+    "numforecasters": "52",
     "stars": 3
   },
   {
@@ -775,7 +1024,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "76",
+    "numforecasts": "77",
     "numforecasters": "59",
     "stars": 3
   },
@@ -787,16 +1036,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.34,
+        "probability": 0.35,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.66,
+        "probability": 0.65,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "157",
+    "numforecasts": "163",
     "numforecasters": "78",
     "stars": 3
   },
@@ -808,16 +1057,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.7,
+        "probability": 0.72,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.3,
+        "probability": 0.28,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "120",
+    "numforecasts": "122",
     "numforecasters": "83",
     "stars": 3
   },
@@ -838,15 +1087,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "191",
-    "numforecasters": "126",
+    "numforecasts": "201",
+    "numforecasters": "129",
     "stars": 3
   },
   {
     "title": "Will U.S. President Joe Biden and Russian President Vladimir Putin hold a bilateral meeting in 2021?",
     "url": "https://www.gjopen.com/questions/1911-will-u-s-president-joe-biden-and-russian-president-vladimir-putin-hold-a-bilateral-meeting-in-2021",
     "platform": "Good Judgment Open",
-    "description": "The world is watching how U.S.-Russia relations will evolve under President Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). For the purposes of this question, a bilateral meeting would be a pre-planned summit or event, rather than, e.g., a one-on-one on the sidelines of a multilateral meeting. A virtual meeting would not count.\nVersión en Español:\nPregunta: ¿Celebrarán el presidente de los Estados Unidos, Joe Biden, y el presidente ruso, Vladimir Putin, una reunión bilateral en 2021?\nInformación adicional: El mundo está observando cómo evolucionarán las relaciones entre Estados Unidos y Rusia bajo el presidente Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). A los efectos de esta pregunta, una reunión bilateral sería una cumbre o evento planificado previamente, en lugar de, por ejemplo, un \"uno a uno\" al margen de una reunión multilateral. Una reunión virtual no contaría a efectos de esta pregunta.\nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#5f3c333e2d3639363c3e2b3630312c1f3830303b352a3b38323a312b713c3032602c2a3d353a3c2b620e2a3a2c2b3630317a6d6f1c333e2d3639363c3e2b363031). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor [clique aquí](https://goodjudgment.com/).\n",
+    "description": "The world is watching how U.S.-Russia relations will evolve under President Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). For the purposes of this question, a bilateral meeting would be a pre-planned summit or event, rather than, e.g., a one-on-one on the sidelines of a multilateral meeting. A virtual meeting would not count.\nVersión en Español:\nPregunta: ¿Celebrarán el presidente de los Estados Unidos, Joe Biden, y el presidente ruso, Vladimir Putin, una reunión bilateral en 2021?\nInformación adicional: El mundo está observando cómo evolucionarán las relaciones entre Estados Unidos y Rusia bajo el presidente Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). A los efectos de esta pregunta, una reunión bilateral sería una cumbre o evento planificado previamente, en lugar de, por ejemplo, un \"uno a uno\" al margen de una reunión multilateral. Una reunión virtual no contaría a efectos de esta pregunta.\nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#284b44495a414e414b495c4147465b684f47474c425d4c4f454d465c064b4745175b5d4a424d4b5c15795d4d5b5c4147460d1a186b44495a414e414b495c414746). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor [clique aquí](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
@@ -859,8 +1108,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "309",
-    "numforecasters": "182",
+    "numforecasts": "321",
+    "numforecasters": "184",
     "stars": 3
   },
   {
@@ -881,7 +1130,7 @@
       },
       {
         "name": "Between 1 April 2021 and 30 April 2021",
-        "probability": 0.06,
+        "probability": 0.05,
         "type": "PROBABILITY"
       },
       {
@@ -891,11 +1140,11 @@
       },
       {
         "name": "Not before 1 June 2021",
-        "probability": 0.39,
+        "probability": 0.4,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "280",
+    "numforecasts": "285",
     "numforecasters": "68",
     "stars": 3
   },
@@ -931,8 +1180,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "252",
-    "numforecasters": "87",
+    "numforecasts": "271",
+    "numforecasters": "92",
     "stars": 3
   },
   {
@@ -952,8 +1201,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "138",
-    "numforecasters": "108",
+    "numforecasts": "141",
+    "numforecasters": "109",
     "stars": 3
   },
   {
@@ -973,7 +1222,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "206",
+    "numforecasts": "212",
     "numforecasters": "137",
     "stars": 3
   },
@@ -994,7 +1243,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "76",
+    "numforecasts": "77",
     "numforecasters": "48",
     "stars": 3
   },
@@ -1011,21 +1260,21 @@
       },
       {
         "name": "Between 226 seats and 299 seats",
-        "probability": 0.32,
+        "probability": 0.38,
         "type": "PROBABILITY"
       },
       {
         "name": "300 seats or more",
-        "probability": 0.66,
+        "probability": 0.59,
         "type": "PROBABILITY"
       },
       {
         "name": "Russian State Duma elections will not be held before 20 September 2021",
-        "probability": 0.01,
+        "probability": 0.02,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "135",
+    "numforecasts": "141",
     "numforecasters": "87",
     "stars": 3
   },
@@ -1051,7 +1300,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "62",
+    "numforecasts": "65",
     "numforecasters": "34",
     "stars": 3
   },
@@ -1077,7 +1326,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "144",
+    "numforecasts": "145",
     "numforecasters": "74",
     "stars": 3
   },
@@ -1098,7 +1347,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "82",
+    "numforecasts": "83",
     "numforecasters": "43",
     "stars": 3
   },
@@ -1110,17 +1359,17 @@
     "options": [
       {
         "name": "Less than $75 billion",
-        "probability": 0.11,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $75 billion and $100 billion, inclusive",
-        "probability": 0.27,
+        "probability": 0.28,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $100 billion but less than $125 billion",
-        "probability": 0.44,
+        "probability": 0.46,
         "type": "PROBABILITY"
       },
       {
@@ -1130,11 +1379,11 @@
       },
       {
         "name": "More than $150 billion",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "188",
+    "numforecasts": "193",
     "numforecasters": "64",
     "stars": 3
   },
@@ -1146,16 +1395,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.88,
+        "probability": 0.86,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.12,
+        "probability": 0.14,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "142",
+    "numforecasts": "144",
     "numforecasters": "63",
     "stars": 3
   },
@@ -1181,7 +1430,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "105",
+    "numforecasts": "106",
     "numforecasters": "63",
     "stars": 3
   },
@@ -1202,8 +1451,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "239",
-    "numforecasters": "128",
+    "numforecasts": "245",
+    "numforecasters": "130",
     "stars": 3
   },
   {
@@ -1214,16 +1463,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.05,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.95,
+        "probability": 0.97,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "214",
+    "numforecasts": "223",
     "numforecasters": "87",
     "stars": 3
   },
@@ -1244,7 +1493,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "96",
+    "numforecasts": "98",
     "numforecasters": "37",
     "stars": 3
   },
@@ -1265,8 +1514,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "268",
-    "numforecasters": "166",
+    "numforecasts": "294",
+    "numforecasters": "181",
     "stars": 3
   },
   {
@@ -1291,8 +1540,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "172",
-    "numforecasters": "64",
+    "numforecasts": "177",
+    "numforecasters": "66",
     "stars": 3
   },
   {
@@ -1303,33 +1552,33 @@
     "options": [
       {
         "name": "Yes, the most valuable in the world",
-        "probability": 0.71,
+        "probability": 0.72,
         "type": "PROBABILITY"
       },
       {
         "name": "No, but the most valuable in the United States",
-        "probability": 0.2,
+        "probability": 0.21,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.09,
+        "probability": 0.07,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "181",
-    "numforecasters": "103",
+    "numforecasts": "186",
+    "numforecasters": "105",
     "stars": 3
   },
   {
     "title": "Which team will win the World Cup qualifying match between Nicaragua and St. Lucia?",
     "url": "https://www.gjopen.com/questions/1885-which-team-will-win-the-world-cup-qualifying-match-between-nicaragua-and-st-lucia",
     "platform": "Good Judgment Open",
-    "description": "Nicaragua is scheduled to face St. Lucia in a first round World Cup qualifying match on 24 March 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)).\nVersión en Español: \nPregunta: ¿Qué equipo ganará el partido de clasificación entre Nicaragua y Santa Lúcia para el Mundial de Fútbol?\nInformación adicional: Nicaragua va a enfrentarse con Santa Lúcia en la primera rueda de clasificación para el Mundial de Fútbol el 24 de marzo de 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)). La versión en español de esta pregunta ha sido incluida sólo a efectos informativos, y en situaciones donde existe una diferencia de interpretación entre las versiones en inglés y español, prevalecerá la versión original en inglés. \nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#5a39363b28333c33393b2e333534291a3d35353e302f3e3d373f342e7439353765292f38303f392e670b2f3f292e3335347f686a19363b28333c33393b2e333534). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor clique [aquí](https://goodjudgment.com/). \n",
+    "description": "Nicaragua is scheduled to face St. Lucia in a first round World Cup qualifying match on 24 March 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)).\nVersión en Español: \nPregunta: ¿Qué equipo ganará el partido de clasificación entre Nicaragua y Santa Lúcia para el Mundial de Fútbol?\nInformación adicional: Nicaragua va a enfrentarse con Santa Lúcia en la primera rueda de clasificación para el Mundial de Fútbol el 24 de marzo de 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)). La versión en español de esta pregunta ha sido incluida sólo a efectos informativos, y en situaciones donde existe una diferencia de interpretación entre las versiones en inglés y español, prevalecerá la versión original en inglés. \nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#e7848b86958e818e8486938e888994a7808888838d9283808a828993c984888ad89492858d828493dab6928294938e8889c2d5d7a48b86958e818e8486938e8889). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor clique [aquí](https://goodjudgment.com/). \n",
     "options": [
       {
         "name": "Nicaragua",
-        "probability": 0.84,
+        "probability": 0.85,
         "type": "PROBABILITY"
       },
       {
@@ -1339,12 +1588,12 @@
       },
       {
         "name": "There will be a draw",
-        "probability": 0.06,
+        "probability": 0.05,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "112",
-    "numforecasters": "79",
+    "numforecasts": "125",
+    "numforecasters": "90",
     "stars": 3
   },
   {
@@ -1360,17 +1609,17 @@
       },
       {
         "name": "Between 1.500 and 2.000, inclusive",
-        "probability": 0.23,
+        "probability": 0.22,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 2.000 but less than 2.500",
-        "probability": 0.6,
+        "probability": 0.62,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 2.500 and 3.000, inclusive",
-        "probability": 0.17,
+        "probability": 0.16,
         "type": "PROBABILITY"
       },
       {
@@ -1379,7 +1628,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "225",
+    "numforecasts": "231",
     "numforecasters": "71",
     "stars": 3
   },
@@ -1400,7 +1649,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "205",
+    "numforecasts": "208",
     "numforecasters": "85",
     "stars": 3
   },
@@ -1417,7 +1666,7 @@
       },
       {
         "name": "Between 1 March and 31 March 2021",
-        "probability": 0.74,
+        "probability": 0.75,
         "type": "PROBABILITY"
       },
       {
@@ -1427,11 +1676,11 @@
       },
       {
         "name": "Not before 1 May 2021",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "45",
+    "numforecasts": "46",
     "numforecasters": "19",
     "stars": 3
   },
@@ -1457,7 +1706,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "299",
+    "numforecasts": "304",
     "numforecasters": "133",
     "stars": 3
   },
@@ -1495,16 +1744,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5,
+        "probability": 0.54,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5,
+        "probability": 0.46,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "156",
+    "numforecasts": "158",
     "numforecasters": "80",
     "stars": 3
   },
@@ -1525,7 +1774,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "167",
+    "numforecasts": "168",
     "numforecasters": "60",
     "stars": 3
   },
@@ -1537,12 +1786,12 @@
     "options": [
       {
         "name": "Yes, and the EU will ratify it before 1 January 2022",
-        "probability": 0.16,
+        "probability": 0.17,
         "type": "PROBABILITY"
       },
       {
         "name": "Yes, and the EU will not ratify it before 1 January 2022",
-        "probability": 0.84,
+        "probability": 0.83,
         "type": "PROBABILITY"
       },
       {
@@ -1551,8 +1800,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "427",
-    "numforecasters": "188",
+    "numforecasts": "431",
+    "numforecasters": "189",
     "stars": 3
   },
   {
@@ -1582,8 +1831,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "390",
-    "numforecasters": "207",
+    "numforecasts": "394",
+    "numforecasters": "208",
     "stars": 3
   },
   {
@@ -1603,7 +1852,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "259",
+    "numforecasts": "263",
     "numforecasters": "145",
     "stars": 3
   },
@@ -1624,8 +1873,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "332",
-    "numforecasters": "222",
+    "numforecasts": "336",
+    "numforecasters": "224",
     "stars": 3
   },
   {
@@ -1636,17 +1885,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.25,
+        "probability": 0.2,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.75,
+        "probability": 0.8,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "259",
-    "numforecasters": "101",
+    "numforecasts": "262",
+    "numforecasters": "102",
     "stars": 3
   },
   {
@@ -1666,8 +1915,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "380",
-    "numforecasters": "103",
+    "numforecasts": "391",
+    "numforecasters": "104",
     "stars": 3
   },
   {
@@ -1688,16 +1937,16 @@
       },
       {
         "name": "Yes, both Michael Kovrig and Michael Spavor",
-        "probability": 0.13,
+        "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.87,
+        "probability": 0.89,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "292",
+    "numforecasts": "297",
     "numforecasters": "102",
     "stars": 3
   },
@@ -1718,7 +1967,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "228",
+    "numforecasts": "231",
     "numforecasters": "123",
     "stars": 3
   },
@@ -1740,12 +1989,12 @@
       },
       {
         "name": "Between 1 July and 30 September 2021",
-        "probability": 0.56,
+        "probability": 0.57,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 October 2021 and 31 December 2021",
-        "probability": 0.36,
+        "probability": 0.35,
         "type": "PROBABILITY"
       },
       {
@@ -1754,7 +2003,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "229",
+    "numforecasts": "237",
     "numforecasters": "97",
     "stars": 3
   },
@@ -1796,8 +2045,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "357",
-    "numforecasters": "198",
+    "numforecasts": "366",
+    "numforecasters": "202",
     "stars": 3
   },
   {
@@ -1817,7 +2066,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "98",
+    "numforecasts": "99",
     "numforecasters": "59",
     "stars": 3
   },
@@ -1838,7 +2087,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "69",
+    "numforecasts": "70",
     "numforecasters": "31",
     "stars": 3
   },
@@ -1860,12 +2109,12 @@
       },
       {
         "name": "More than $2.50 but less than $3.00",
-        "probability": 0.58,
+        "probability": 0.59,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $3.00 and $3.50, inclusive",
-        "probability": 0.21,
+        "probability": 0.2,
         "type": "PROBABILITY"
       },
       {
@@ -1874,7 +2123,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "210",
+    "numforecasts": "217",
     "numforecasters": "42",
     "stars": 3
   },
@@ -1886,7 +2135,7 @@
     "options": [
       {
         "name": "Yes, only for president",
-        "probability": 0.05,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
@@ -1896,7 +2145,7 @@
       },
       {
         "name": "Yes, for both president and parliament",
-        "probability": 0.95,
+        "probability": 0.91,
         "type": "PROBABILITY"
       },
       {
@@ -1905,7 +2154,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "108",
+    "numforecasts": "111",
     "numforecasters": "29",
     "stars": 3
   },
@@ -1926,8 +2175,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "355",
-    "numforecasters": "172",
+    "numforecasts": "371",
+    "numforecasters": "177",
     "stars": 3
   },
   {
@@ -1948,7 +2197,7 @@
       },
       {
         "name": "A candidate from Fuerza Popular (Popular Force)",
-        "probability": 0.14,
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {
@@ -1958,7 +2207,7 @@
       },
       {
         "name": "Another candidate",
-        "probability": 0.73,
+        "probability": 0.72,
         "type": "PROBABILITY"
       },
       {
@@ -1967,7 +2216,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "159",
+    "numforecasts": "163",
     "numforecasters": "78",
     "stars": 3
   },
@@ -1979,16 +2228,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.35,
+        "probability": 0.32,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.65,
+        "probability": 0.68,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "489",
+    "numforecasts": "505",
     "numforecasters": "196",
     "stars": 3
   },
@@ -2024,7 +2273,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "494",
+    "numforecasts": "501",
     "numforecasters": "245",
     "stars": 3
   },
@@ -2051,17 +2300,17 @@
       },
       {
         "name": "3",
-        "probability": 0.9,
+        "probability": 0.92,
         "type": "PROBABILITY"
       },
       {
         "name": "4 or more",
-        "probability": 0.1,
+        "probability": 0.08,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1322",
-    "numforecasters": "404",
+    "numforecasts": "1378",
+    "numforecasters": "427",
     "stars": 3
   },
   {
@@ -2077,7 +2326,7 @@
       },
       {
         "name": "Between 150,000 and 250,000, inclusive",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -2087,12 +2336,12 @@
       },
       {
         "name": "350,000 or more",
-        "probability": 0.73,
+        "probability": 0.74,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "484",
-    "numforecasters": "210",
+    "numforecasts": "489",
+    "numforecasters": "211",
     "stars": 3
   },
   {
@@ -2133,8 +2382,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "454",
-    "numforecasters": "202",
+    "numforecasts": "470",
+    "numforecasters": "212",
     "stars": 3
   },
   {
@@ -2166,17 +2415,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.98,
+        "probability": 0.97,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.02,
+        "probability": 0.03,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "297",
-    "numforecasters": "183",
+    "numforecasts": "306",
+    "numforecasters": "185",
     "stars": 3
   },
   {
@@ -2187,16 +2436,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.86,
+        "probability": 0.89,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.14,
+        "probability": 0.11,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "279",
+    "numforecasts": "282",
     "numforecasters": "162",
     "stars": 3
   },
@@ -2223,16 +2472,16 @@
       },
       {
         "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 July 2021",
-        "probability": 0.97,
+        "probability": 0.98,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "273",
+    "numforecasts": "276",
     "numforecasters": "88",
     "stars": 3
   },
@@ -2258,8 +2507,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "159",
-    "numforecasters": "94",
+    "numforecasts": "166",
+    "numforecasters": "98",
     "stars": 3
   },
   {
@@ -2279,7 +2528,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "211",
+    "numforecasts": "214",
     "numforecasters": "57",
     "stars": 3
   },
@@ -2291,17 +2540,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.03,
+        "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.97,
+        "probability": 0.96,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "296",
-    "numforecasters": "157",
+    "numforecasts": "301",
+    "numforecasters": "159",
     "stars": 3
   },
   {
@@ -2321,7 +2570,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "256",
+    "numforecasts": "259",
     "numforecasters": "106",
     "stars": 3
   },
@@ -2348,17 +2597,17 @@
       },
       {
         "name": "7 or 8",
-        "probability": 0.92,
+        "probability": 0.94,
         "type": "PROBABILITY"
       },
       {
         "name": "9 or more",
-        "probability": 0.08,
+        "probability": 0.06,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1284",
-    "numforecasters": "194",
+    "numforecasts": "1310",
+    "numforecasters": "196",
     "stars": 3
   },
   {
@@ -2378,8 +2627,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "272",
-    "numforecasters": "61",
+    "numforecasts": "277",
+    "numforecasters": "62",
     "stars": 3
   },
   {
@@ -2399,7 +2648,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "193",
+    "numforecasts": "195",
     "numforecasters": "62",
     "stars": 3
   },
@@ -2447,16 +2696,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.97,
+        "probability": 0.96,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.03,
+        "probability": 0.04,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "124",
+    "numforecasts": "127",
     "numforecasters": "54",
     "stars": 3
   },
@@ -2483,17 +2732,17 @@
       },
       {
         "name": "Between 1 April 2021 and 31 May 2021",
-        "probability": 0.21,
+        "probability": 0.2,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 June 2021",
-        "probability": 0.79,
+        "probability": 0.8,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "489",
-    "numforecasters": "148",
+    "numforecasts": "497",
+    "numforecasters": "149",
     "stars": 3
   },
   {
@@ -2504,17 +2753,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.06,
+        "probability": 0.05,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.94,
+        "probability": 0.95,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "663",
-    "numforecasters": "153",
+    "numforecasts": "682",
+    "numforecasters": "154",
     "stars": 3
   },
   {
@@ -2525,7 +2774,7 @@
     "options": [
       {
         "name": "Less than 2.00%",
-        "probability": 0.41,
+        "probability": 0.4,
         "type": "PROBABILITY"
       },
       {
@@ -2535,12 +2784,12 @@
       },
       {
         "name": "More than 4.00% but less than 6.00%",
-        "probability": 0.13,
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 6.00% and 8.00%, inclusive",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -2549,8 +2798,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "329",
-    "numforecasters": "118",
+    "numforecasts": "343",
+    "numforecasters": "127",
     "stars": 3
   },
   {
@@ -2585,7 +2834,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "437",
+    "numforecasts": "441",
     "numforecasters": "93",
     "stars": 3
   },
@@ -2607,16 +2856,16 @@
       },
       {
         "name": "Between 1 February 2021 and 31 March 2021",
-        "probability": 0.13,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 April 2021",
-        "probability": 0.87,
+        "probability": 0.9,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "416",
+    "numforecasts": "421",
     "numforecasters": "65",
     "stars": 3
   },
@@ -2637,8 +2886,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "206",
-    "numforecasters": "64",
+    "numforecasts": "207",
+    "numforecasters": "65",
     "stars": 3
   },
   {
@@ -2658,7 +2907,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "389",
+    "numforecasts": "393",
     "numforecasters": "159",
     "stars": 3
   },
@@ -2704,7 +2953,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "295",
+    "numforecasts": "296",
     "numforecasters": "111",
     "stars": 3
   },
@@ -2740,7 +2989,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "653",
+    "numforecasts": "661",
     "numforecasters": "199",
     "stars": 3
   },
@@ -2761,7 +3010,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1089",
+    "numforecasts": "1093",
     "numforecasters": "448",
     "stars": 3
   },
@@ -2782,7 +3031,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "362",
+    "numforecasts": "368",
     "numforecasters": "159",
     "stars": 3
   },
@@ -2803,8 +3052,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "312",
-    "numforecasters": "150",
+    "numforecasts": "316",
+    "numforecasters": "152",
     "stars": 3
   },
   {
@@ -2815,17 +3064,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.18,
+        "probability": 0.2,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.82,
+        "probability": 0.8,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "656",
-    "numforecasters": "162",
+    "numforecasts": "676",
+    "numforecasters": "164",
     "stars": 3
   },
   {
@@ -2851,17 +3100,17 @@
       },
       {
         "name": "Between 1 July 2021 and 30 September 2021",
-        "probability": 0.53,
+        "probability": 0.52,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 October 2021",
-        "probability": 0.21,
+        "probability": 0.22,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "777",
-    "numforecasters": "164",
+    "numforecasts": "784",
+    "numforecasters": "165",
     "stars": 3
   },
   {
@@ -2872,16 +3121,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.95,
+        "probability": 0.93,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.05,
+        "probability": 0.07,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "199",
+    "numforecasts": "201",
     "numforecasters": "77",
     "stars": 3
   },
@@ -2902,7 +3151,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "314",
+    "numforecasts": "316",
     "numforecasters": "76",
     "stars": 3
   },
@@ -2923,8 +3172,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "587",
-    "numforecasters": "180",
+    "numforecasts": "598",
+    "numforecasters": "181",
     "stars": 3
   },
   {
@@ -2990,8 +3239,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "219",
-    "numforecasters": "51",
+    "numforecasts": "226",
+    "numforecasters": "53",
     "stars": 3
   },
   {
@@ -3026,7 +3275,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "351",
+    "numforecasts": "354",
     "numforecasters": "116",
     "stars": 3
   },
@@ -3057,7 +3306,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "270",
+    "numforecasts": "273",
     "numforecasters": "104",
     "stars": 3
   },
@@ -3115,24 +3364,24 @@
       },
       {
         "name": "Between 1 April 2021 and 30 June 2021",
-        "probability": 0.16,
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 July 2021",
-        "probability": 0.84,
+        "probability": 0.85,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "662",
-    "numforecasters": "169",
+    "numforecasts": "687",
+    "numforecasters": "183",
     "stars": 3
   },
   {
     "title": "Between August 2020 and July 2021, will global land and ocean surface temperatures rise 1.5°C or more above the 20th century average for any single month?",
     "url": "https://www.gjopen.com/questions/1715-between-august-2020-and-july-2021-will-global-land-and-ocean-surface-temperatures-rise-1-5-c-or-more-above-the-20th-century-average-for-any-single-month",
     "platform": "Good Judgment Open",
-    "description": "Some expect the 1.5°C temperature threshold to be breached within the next five years, and recent predictions indicate any climate warming reprieve due to the global shutdown in the wake of COVID-19 may be temporary ([BBC](https://www.bbc.com/news/science-environment-53342806), [World Meteorological Organization](https://public.wmo.int/en/our-mandate/climate/wmo-statement-state-of-global-climate), [BBC](https://www.bbc.com/news/science-environment-45678338)). The outcome will be determined using data provided by the National Oceanic and Atmospheric Administration's Global Climate Reports ([NOAA](https://www.ncdc.noaa.gov/sotc/)). For June 2020, the global land and ocean surface temperature was 0.92°C above the 20th century average for June ([NOAA - June 2020 Report](https://www.ncdc.noaa.gov/sotc/global/202006)).\nConfused? Check our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#086b64697a616e616b697c6167667b486f67676c627d6c6f656d667c266b6765377b7d6a626d6b7c35597d6d7b7c6167662d3a384b64697a616e616b697c616766). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Some expect the 1.5°C temperature threshold to be breached within the next five years, and recent predictions indicate any climate warming reprieve due to the global shutdown in the wake of COVID-19 may be temporary ([BBC](https://www.bbc.com/news/science-environment-53342806), [World Meteorological Organization](https://public.wmo.int/en/our-mandate/climate/wmo-statement-state-of-global-climate), [BBC](https://www.bbc.com/news/science-environment-45678338)). The outcome will be determined using data provided by the National Oceanic and Atmospheric Administration's Global Climate Reports ([NOAA](https://www.ncdc.noaa.gov/sotc/)). For June 2020, the global land and ocean surface temperature was 0.92°C above the 20th century average for June ([NOAA - June 2020 Report](https://www.ncdc.noaa.gov/sotc/global/202006)).\nConfused? Check our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#83e0efe2f1eae5eae0e2f7eaecedf0c3e4ecece7e9f6e7e4eee6edf7ade0eceebcf0f6e1e9e6e0f7bed2f6e6f0f7eaeceda6b1b3c0efe2f1eae5eae0e2f7eaeced). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3145,15 +3394,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "283",
-    "numforecasters": "136",
+    "numforecasts": "286",
+    "numforecasters": "137",
     "stars": 3
   },
   {
     "title": "Before 1 January 2022, will the U.S. Senate expand the scope of matters for which a filibuster cannot be used?",
     "url": "https://www.gjopen.com/questions/1718-before-1-january-2022-will-the-u-s-senate-expand-the-scope-of-matters-for-which-a-filibuster-cannot-be-used",
     "platform": "Good Judgment Open",
-    "description": "In April 2017, Senate Republicans eliminated the filibuster for the confirmation of Supreme Court Justices by changing the rules so that debate on nominees could be ended with a simple majority vote rather than a three-fifths majority ([Reuters](https://www.reuters.com/article/us-usa-court-gorsuch-idUSKBN17814Y)). Whether the filibuster will be further eroded remains to be seen ([The Atlantic](https://www.theatlantic.com/politics/archive/2020/07/why-senate-filibuster-could-be-gone-2021/614278/), [Brookings Institute](https://www.brookings.edu/policy2020/votervital/what-is-the-senate-filibuster-and-what-would-it-take-to-eliminate-it/)).\nConfused? Check our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#f5969994879c939c9694819c9a9b86b5929a9a919f80919298909b81db969a98ca8680979f909681c8a4809086819c9a9bd0c7c5b69994879c939c9694819c9a9b). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "In April 2017, Senate Republicans eliminated the filibuster for the confirmation of Supreme Court Justices by changing the rules so that debate on nominees could be ended with a simple majority vote rather than a three-fifths majority ([Reuters](https://www.reuters.com/article/us-usa-court-gorsuch-idUSKBN17814Y)). Whether the filibuster will be further eroded remains to be seen ([The Atlantic](https://www.theatlantic.com/politics/archive/2020/07/why-senate-filibuster-could-be-gone-2021/614278/), [Brookings Institute](https://www.brookings.edu/policy2020/votervital/what-is-the-senate-filibuster-and-what-would-it-take-to-eliminate-it/)).\nConfused? Check our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#2d4e414c5f444b444e4c594442435e6d4a4242494758494a40484359034e4240125e584f47484e59107c58485e59444243081f1d6e414c5f444b444e4c59444243). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3166,7 +3415,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "601",
+    "numforecasts": "608",
     "numforecasters": "142",
     "stars": 3
   },
@@ -3183,7 +3432,7 @@
       },
       {
         "name": "Yes, a paid backup driver",
-        "probability": 0.07,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
@@ -3193,12 +3442,12 @@
       },
       {
         "name": "No",
-        "probability": 0.78,
+        "probability": 0.77,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "235",
-    "numforecasters": "92",
+    "numforecasts": "236",
+    "numforecasters": "93",
     "stars": 3
   },
   {
@@ -3233,7 +3482,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "238",
+    "numforecasts": "239",
     "numforecasters": "57",
     "stars": 3
   },
@@ -3269,7 +3518,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "226",
+    "numforecasts": "227",
     "numforecasters": "46",
     "stars": 3
   },
@@ -3277,7 +3526,7 @@
     "title": "How many cases of COVID-19 will be reported by the Africa CDC as of 1 April 2021?",
     "url": "https://www.gjopen.com/questions/1674-how-many-cases-of-covid-19-will-be-reported-by-the-africa-cdc-as-of-1-april-2021",
     "platform": "Good Judgment Open",
-    "description": "The full impact of the COVID-19 pandemic on the African continent, home to over 1.2 billion people, remains a topic of intense speculation ([CNN](https://www.cnn.com/2020/06/16/africa/africa-coronavirus-cases-prevention-intl/index.html), [Scientific American](https://www.scientificamerican.com/article/african-countries-scramble-to-ramp-up-testing-for-covid-19/), [Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31237-X/fulltext)). The outcome will be determined using cases data from the Africa Centres for Disease Control and Prevention (Africa CDC) Dashboard at 5:00PM ET on 1 April 2021 ([Africa CDC](https://africacdc.org/covid-19/)).\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#0e6d626f7c6768676d6f7a6761607d4e6961616a647b6a69636b607a206d6163317d7b6c646b6d7a335f7b6b7d7a6761602b3c3e4d626f7c6768676d6f7a676160). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "The full impact of the COVID-19 pandemic on the African continent, home to over 1.2 billion people, remains a topic of intense speculation ([CNN](https://www.cnn.com/2020/06/16/africa/africa-coronavirus-cases-prevention-intl/index.html), [Scientific American](https://www.scientificamerican.com/article/african-countries-scramble-to-ramp-up-testing-for-covid-19/), [Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31237-X/fulltext)). The outcome will be determined using cases data from the Africa Centres for Disease Control and Prevention (Africa CDC) Dashboard at 5:00PM ET on 1 April 2021 ([Africa CDC](https://africacdc.org/covid-19/)).\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#56353a37243f303f3537223f39382516313939323c2332313b3338227835393b692523343c3335226b07233325223f3938736466153a37243f303f3537223f3938). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Fewer than 2.5 million",
@@ -3305,15 +3554,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1100",
-    "numforecasters": "146",
+    "numforecasts": "1121",
+    "numforecasters": "155",
     "stars": 3
   },
   {
     "title": "Before 1 May 2021, will it be officially announced that the Tokyo 2020 Summer Olympics and/or Paralympics will be canceled?",
     "url": "https://www.gjopen.com/questions/1668-before-1-may-2021-will-it-be-officially-announced-that-the-tokyo-2020-summer-olympics-and-or-paralympics-will-be-canceled",
     "platform": "Good Judgment Open",
-    "description": "Coronavirus concerns already forced the postponement of the 2020 Olympics and Paralympics to summer 2021 ([ESPN](https://www.espn.com/olympics/story/_/id/28946033/tokyo-olympics-officially-postponed-2021), [Olympic Games](https://tokyo2020.org/en/), [Paralympic Games](https://tokyo2020.org/en/paralympics/)). Various concerns such as cost, vaccine availability, and international travel safety have some concerned about the rescheduled games taking place at all ([BBC](https://www.bbc.com/sport/olympics/52747797)). Postponement(s) alone would not count.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#4d2e212c3f242b242e2c392422233e0d2a2222292738292a20282339632e2220723e382f27282e39701c38283e39242223687f7d0e212c3f242b242e2c39242223). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Coronavirus concerns already forced the postponement of the 2020 Olympics and Paralympics to summer 2021 ([ESPN](https://www.espn.com/olympics/story/_/id/28946033/tokyo-olympics-officially-postponed-2021), [Olympic Games](https://tokyo2020.org/en/), [Paralympic Games](https://tokyo2020.org/en/paralympics/)). Various concerns such as cost, vaccine availability, and international travel safety have some concerned about the rescheduled games taking place at all ([BBC](https://www.bbc.com/sport/olympics/52747797)). Postponement(s) alone would not count.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#96f5faf7e4fff0fff5f7e2fff9f8e5d6f1f9f9f2fce3f2f1fbf3f8e2b8f5f9fba9e5e3f4fcf3f5e2abc7e3f3e5e2fff9f8b3a4a6d5faf7e4fff0fff5f7e2fff9f8). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes, the Olympics only",
@@ -3322,29 +3571,29 @@
       },
       {
         "name": "Yes, the Paralympics only",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "Yes, both",
-        "probability": 0.19,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.81,
+        "probability": 0.86,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1557",
-    "numforecasters": "560",
+    "numforecasts": "1650",
+    "numforecasters": "612",
     "stars": 3
   },
   {
     "title": "Between 1 January 2021 and 31 December 2022, will legislation enabling the creation of federal safety standards for autonomous vehicles (AVs) become law?",
     "url": "https://www.gjopen.com/questions/1659-between-1-january-2021-and-31-december-2022-will-legislation-enabling-the-creation-of-federal-safety-standards-for-autonomous-vehicles-avs-become-law",
     "platform": "Good Judgment Open",
-    "description": "Congress has yet to adopt legislation to create federal safety standards for the testing and/or use of AVs ([The Hill](https://thehill.com/policy/transportation/automobiles/472341-wheels-begin-to-turn-on-self-driving-car-legislation), [Federation of American Scientists](https://fas.org/sgp/crs/misc/R45985.pdf), [Congress.gov (House Bill)](https://www.congress.gov/bill/115th-congress/house-bill/3388), [Congress.gov (Senate Bill)](https://www.congress.gov/bill/115th-congress/senate-bill/1885)). Legislators are renewing efforts the 116th Congress, though the COVID-19 pandemic has acted as a \"bump in the road\" ([The Hill](https://thehill.com/policy/technology/498863-action-on-driverless-cars-hits-speed-bump-as-congress-focuses-on-pandemic), [Legal Reader](https://www.legalreader.com/self-driving-cars-and-the-law/)). The date the law and/or standards would take effect is immaterial.\nThis question is the longer-term companion of question #1658. The questions are substantively the same, save for the relevant time period. If the shorter-term question closes Yes, then this longer-term question will be voided.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#60030c0112090609030114090f0e1320070f0f040a1504070d050e144e030f0d5f1315020a0503145d3115051314090f0e455250230c0112090609030114090f0e). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Congress has yet to adopt legislation to create federal safety standards for the testing and/or use of AVs ([The Hill](https://thehill.com/policy/transportation/automobiles/472341-wheels-begin-to-turn-on-self-driving-car-legislation), [Federation of American Scientists](https://fas.org/sgp/crs/misc/R45985.pdf), [Congress.gov (House Bill)](https://www.congress.gov/bill/115th-congress/house-bill/3388), [Congress.gov (Senate Bill)](https://www.congress.gov/bill/115th-congress/senate-bill/1885)). Legislators are renewing efforts the 116th Congress, though the COVID-19 pandemic has acted as a \"bump in the road\" ([The Hill](https://thehill.com/policy/technology/498863-action-on-driverless-cars-hits-speed-bump-as-congress-focuses-on-pandemic), [Legal Reader](https://www.legalreader.com/self-driving-cars-and-the-law/)). The date the law and/or standards would take effect is immaterial.\nThis question is the longer-term companion of question #1658. The questions are substantively the same, save for the relevant time period. If the shorter-term question closes Yes, then this longer-term question will be voided.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#67040b06150e010e0406130e08091427000808030d1203000a0209134904080a581412050d0204135a36120214130e0809425557240b06150e010e0406130e0809). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3357,7 +3606,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "233",
+    "numforecasts": "234",
     "numforecasters": "109",
     "stars": 3
   },
@@ -3365,7 +3614,7 @@
     "title": "Will there be a lethal confrontation between the national military forces, militia, and/or law enforcement personnel of the People's Republic of China and those of Brunei, Indonesia, Malaysia, the Philippines, Singapore, and/or Vietnam before 1 April 2021?",
     "url": "https://www.gjopen.com/questions/1652-will-there-be-a-lethal-confrontation-between-the-national-military-forces-militia-and-or-law-enforcement-personnel-of-the-people-s-republic-of-china-and-those-of-brunei-indonesia-malaysia-the-philippines-singapore-and-or-vietnam-before-1-april-2021",
     "platform": "Good Judgment Open",
-    "description": "Over the years, China has used various forces to project power toward its neighbors in and around the South China Sea ([CNN](https://www.cnn.com/2020/06/07/asia/china-malaysia-indonesia-south-china-sea-intl-hnk/index.html), [Center for Strategic and International Studies](https://amti.csis.org/maritime-claims-map/), [Council on Foreign Relations](https://www.cfr.org/global-conflict-tracker/conflict/territorial-disputes-south-china-sea), [Diplomat](https://thediplomat.com/2015/11/little-blue-men-doing-chinas-dirty-work-in-the-south-china-sea/)). A lethal confrontation is one that results in one fatality for the military forces, militia, and/or law enforcement of either side.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#dab9b6bba8b3bcb3b9bbaeb3b5b4a99abdb5b5beb0afbebdb7bfb4aef4b9b5b7e5a9afb8b0bfb9aee78bafbfa9aeb3b5b4ffe8ea99b6bba8b3bcb3b9bbaeb3b5b4). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Over the years, China has used various forces to project power toward its neighbors in and around the South China Sea ([CNN](https://www.cnn.com/2020/06/07/asia/china-malaysia-indonesia-south-china-sea-intl-hnk/index.html), [Center for Strategic and International Studies](https://amti.csis.org/maritime-claims-map/), [Council on Foreign Relations](https://www.cfr.org/global-conflict-tracker/conflict/territorial-disputes-south-china-sea), [Diplomat](https://thediplomat.com/2015/11/little-blue-men-doing-chinas-dirty-work-in-the-south-china-sea/)). A lethal confrontation is one that results in one fatality for the military forces, militia, and/or law enforcement of either side.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#31525d5043585758525045585e5f4271565e5e555b4455565c545f451f525e5c0e4244535b5452450c6044544245585e5f140301725d5043585758525045585e5f). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3378,8 +3627,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "989",
-    "numforecasters": "435",
+    "numforecasts": "1004",
+    "numforecasters": "444",
     "stars": 3
   },
   {
@@ -3414,7 +3663,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "283",
+    "numforecasts": "284",
     "numforecasters": "81",
     "stars": 3
   },
@@ -3441,16 +3690,16 @@
       },
       {
         "name": "Between 35,000 and 40,000, inclusive",
-        "probability": 0.05,
+        "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 40,000",
-        "probability": 0.95,
+        "probability": 0.96,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "273",
+    "numforecasts": "274",
     "numforecasters": "73",
     "stars": 3
   },
@@ -3458,7 +3707,7 @@
     "title": "Before 1 January 2023, how many major automakers will sell a self-driving passenger vehicle manufactured without a steering wheel?",
     "url": "https://www.gjopen.com/questions/1633-before-1-january-2023-how-many-major-automakers-will-sell-a-self-driving-passenger-vehicle-manufactured-without-a-steering-wheel",
     "platform": "Good Judgment Open",
-    "description": "Many automakers are planning to unveil more autonomous vehicles in the coming years ([NHTSA](https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety), [U.S. News](https://cars.usnews.com/cars-trucks/cars-that-are-almost-self-driving,%20https://www.mobileye.com/future-of-mobility/history-autonomous-driving/)). For the purposes of this question, \"major automakers\" refers to any of the 50 motor vehicle manufacturers included by the International Organization of Motor Vehicle Manufacturers in its 2017 list ([OICA](http://www.oica.net/wp-content/uploads/World-Ranking-of-Manufacturers-1.pdf)). This question will be suspended on 30 June 2021. Vehicles on sale solely for fixed routes (e.g., shuttles) would not count. Presales would not count.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#b3d0dfd2c1dad5dad0d2c7dadcddc0f3d4dcdcd7d9c6d7d4ded6ddc79dd0dcde8cc0c6d1d9d6d0c78ee2c6d6c0c7dadcdd968183f0dfd2c1dad5dad0d2c7dadcdd). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Many automakers are planning to unveil more autonomous vehicles in the coming years ([NHTSA](https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety), [U.S. News](https://cars.usnews.com/cars-trucks/cars-that-are-almost-self-driving,%20https://www.mobileye.com/future-of-mobility/history-autonomous-driving/)). For the purposes of this question, \"major automakers\" refers to any of the 50 motor vehicle manufacturers included by the International Organization of Motor Vehicle Manufacturers in its 2017 list ([OICA](http://www.oica.net/wp-content/uploads/World-Ranking-of-Manufacturers-1.pdf)). This question will be suspended on 30 June 2021. Vehicles on sale solely for fixed routes (e.g., shuttles) would not count. Presales would not count.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#3f5c535e4d5659565c5e4b5650514c7f5850505b554a5b58525a514b115c5052004c4a5d555a5c4b026e4a5a4c4b5650511a0d0f7c535e4d5659565c5e4b565051). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "0",
@@ -3481,8 +3730,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "381",
-    "numforecasters": "215",
+    "numforecasts": "382",
+    "numforecasters": "216",
     "stars": 3
   },
   {
@@ -3524,12 +3773,12 @@
       },
       {
         "name": "More than $100 but less than $120 per kWh",
-        "probability": 0.4,
+        "probability": 0.41,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $120 and $140 per kWh, inclusive",
-        "probability": 0.05,
+        "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
@@ -3538,7 +3787,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "264",
+    "numforecasts": "267",
     "numforecasters": "95",
     "stars": 3
   },
@@ -3555,17 +3804,17 @@
       },
       {
         "name": "Between 2.5% and 4.5%, inclusive",
-        "probability": 0.03,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 4.5% but less than 6.5%",
-        "probability": 0.48,
+        "probability": 0.49,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 6.5% and 8.5%, inclusive",
-        "probability": 0.35,
+        "probability": 0.36,
         "type": "PROBABILITY"
       },
       {
@@ -3574,7 +3823,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "404",
+    "numforecasts": "409",
     "numforecasters": "146",
     "stars": 3
   },
@@ -3595,7 +3844,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "260",
+    "numforecasts": "261",
     "numforecasters": "97",
     "stars": 3
   },

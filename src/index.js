@@ -4,7 +4,8 @@ import fs from 'fs'
 import readline from "readline"
 
 import {csetforetell} from "./csetforetell-fetch.js"
-import {elicit} from "./elicit-fetch.js" // Currently doesn't "fetch"; elicit must be downloaded manually. 
+import {elicit} from "./elicit-fetch.js"
+import {foretold} from "./foretold-fetch.js"
 import {goodjudgment} from "./goodjudgment-fetch.js"
 import {goodjudgmentopen} from "./goodjudmentopen-fetch.js"
 import {metaculus} from "./metaculus-fetch.js"
@@ -18,7 +19,7 @@ import {smarkets} from "./smarkets-fetch.js"
 let opts = {}
 let json2csvParser = new Parser({ transforms:  [transforms.flatten()]});
 //let parse = csv => json2csvParser.parse(csv);
-let sets = ["template", "elicit", "metaculus", "predictit", "polymarket", "csetforetell", "givewellopenphil", "goodjudgment","goodjudmentopen", "omen", "hypermind", "smarkets"]
+let sets = ["template", "elicit", "foretold", "metaculus", "predictit", "polymarket", "csetforetell", "givewellopenphil", "goodjudgment","goodjudmentopen", "omen", "hypermind", "smarkets"]
 let suffix = "-questions"
 let locationData = "./data/"
 let sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -75,35 +76,39 @@ let executeoption = async (option) => {
       elicit()
       break;
     case 3:
-      goodjudgment()
+      foretold()
       break;
     case 4:
-      goodjudgmentopen()
+      goodjudgment()
       break;
     case 5:
-      hypermind()
+      goodjudgmentopen()
       break;
     case 6:
-      metaculus()
+      hypermind()
       break;
     case 7:
-      omen()
+      metaculus()
       break;
     case 8:
+      omen()
+      break;
+    case 9:
       polymarket()
       break;
-    case 9:    
+    case 10:    
       predictit()
       break;
-    case 10:
+    case 11:
       smarkets()
       break;
-    case 11:
+    case 12:
       coverttocsvandmerge()
       break;
-    case 12:
+    case 13:
       await csetforetell()
       await elicit()
+      await foretold()
       await goodjudgment()
       await goodjudgmentopen()
       await hypermind()
@@ -111,6 +116,7 @@ let executeoption = async (option) => {
       await omen()
       await polymarket()
       await predictit()
+      await smarkets()
       await coverttocsvandmerge()
       break;
     default:
@@ -123,15 +129,17 @@ let executeoption = async (option) => {
 let whattodoMessage = `What do you want to do?
 [1]: Download predictions from csetforetell
 [2]: Download predictions from elicit
-[3]: Download predictions from goodjudgment
-[4]: Download predictions from goodjudgmentopen
-[5]: Download predictions from hypermind
-[6]: Download predictions from metaculus
-[7]: Download predictions from omen
-[8]: Download predictions from polymarket
-[9]: Download predictions from predictit
-[10]: Download predictions from smarkets
-[11]: Merge jsons them into one big json (requires previous steps)
-[12]: All of the above
+[3]: Download predictions from foretold
+[4]: Download predictions from goodjudgment
+[5]: Download predictions from goodjudgmentopen
+[6]: Download predictions from hypermind
+[7]: Download predictions from metaculus
+[8]: Download predictions from omen
+[9]: Download predictions from polymarket
+[10]: Download predictions from predictit
+[11]: Download predictions from smarkets
+[12]: Merge jsons them into one big json (requires previous steps)
+[13]: All of the above
 Choose one option, wisely: #`
+
 whattodo(whattodoMessage, executeoption)

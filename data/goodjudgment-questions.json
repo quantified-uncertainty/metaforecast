@@ -7,22 +7,22 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.13,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.64,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 September 2021 and 31 October 2021",
         "probability": 0.2,
         "type": "PROBABILITY"
       },
       {
+        "name": "Between 1 July 2021 and 31 August 2021",
+        "probability": 0.71,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 1 September 2021 and 31 October 2021",
+        "probability": 0.07,
+        "type": "PROBABILITY"
+      },
+      {
         "name": "Between 1 November 2021 and 31 December 2021",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -56,12 +56,12 @@
       },
       {
         "name": "Between 470,000 and 540,000, inclusive",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 540,000",
-        "probability": 0.98,
+        "probability": 0.99,
         "type": "PROBABILITY"
       }
     ],
@@ -71,7 +71,7 @@
     "title": "As of 31 March 2021, what will be the highest seven-day median of COVID-19 confirmed new cases in WHO's Europe Region?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "The status of the COVID-19 outbreak through spring 2021 is an open question, as \"<a href=\"https://apnews.com/article/virus-outbreak-pandemics-italy-madrid-eastern-europe-159a68a460337948d25281c153994c70\" target=\"_blank\">next   waves</a>\" are experienced in the fall and winter. The outcome will be determined using the World Health Organization's Coronavirus Disease (COVID-19) <a href=\"https://covid19.who.int/\" target=\"_blank\">Dashboard</a>. The value for a given day will come from the data available on the WHO dashboard at close of business of the day in question. If a data point is not available at that time, the first posting on the WHO dashboard thereafter will be used. Any subsequent revisions to the data are immaterial. To simplify the process, the data will be captured and posted <a href=\"https://docs.google.com/spreadsheets/d/1szi8i948AJRAqlYG82NhcW0qDMuLm6UlAyW_AbFsQ_0/\" target=\"_blank\">here</a> each day.",
+    "description": "The status of the COVID-19 outbreak through spring 2021 is an open question, as \"<a href=\"https://apnews.com/article/virus-outbreak-pandemics-italy-madrid-eastern-europe-159a68a460337948d25281c153994c70\" target=\"_blank\">next waves</a>\" are experienced in the fall and winter. The outcome will be determined using the World Health Organization's Coronavirus Disease (COVID-19) <a href=\"https://covid19.who.int/\" target=\"_blank\">Dashboard</a>. The value for a given day will come from the data available on the WHO dashboard at close of business of the day in question. If a data point is not available at that time, the first posting on the WHO dashboard thereafter will be used. Any subsequent revisions to the data are immaterial. To simplify the process, the data will be captured and posted <a href=\"https://docs.google.com/spreadsheets/d/1szi8i948AJRAqlYG82NhcW0qDMuLm6UlAyW_AbFsQ_0/\" target=\"_blank\">here</a> each day.",
     "options": [
       {
         "name": "Less than 275,000",
@@ -109,7 +109,7 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.33,
+        "probability": 0.16,
         "type": "PROBABILITY"
       },
       {
@@ -119,17 +119,17 @@
       },
       {
         "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.06,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 November 2021 and 31 December 2021",
-        "probability": 0.15,
+        "probability": 0.27,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 January 2022",
-        "probability": 0.03,
+        "probability": 0.05,
         "type": "PROBABILITY"
       }
     ],
@@ -143,7 +143,7 @@
     "options": [
       {
         "name": "The Games will begin",
-        "probability": 0.96,
+        "probability": 0.97,
         "type": "PROBABILITY"
       },
       {
@@ -153,7 +153,7 @@
       },
       {
         "name": "The Games will be cancelled",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       }
     ],
@@ -205,7 +205,7 @@
       },
       {
         "name": "Between 1 April 2021 and 30 June 2021",
-        "probability": 0.97,
+        "probability": 0.98,
         "type": "PROBABILITY"
       },
       {
@@ -215,7 +215,7 @@
       },
       {
         "name": "Between 1 October 2021 and 31 December 2021",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -244,12 +244,12 @@
       },
       {
         "name": "More than 500 million but fewer than 960 million",
-        "probability": 0.16,
+        "probability": 0.14,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 960 million and 1.6 billion, inclusive",
-        "probability": 0.77,
+        "probability": 0.79,
         "type": "PROBABILITY"
       },
       {
@@ -268,12 +268,12 @@
     "options": [
       {
         "name": "Less than 23%",
-        "probability": 0.22,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 23% and 27%, inclusive",
-        "probability": 0.74,
+        "probability": 0.7,
         "type": "PROBABILITY"
       },
       {
@@ -292,7 +292,7 @@
     "options": [
       {
         "name": "Lower by more than 8%",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -302,12 +302,12 @@
       },
       {
         "name": "Lower by more than 0% but less than 4% ",
-        "probability": 0.14,
+        "probability": 0.18,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by between 0% and 4%, inclusive",
-        "probability": 0.72,
+        "probability": 0.67,
         "type": "PROBABILITY"
       },
       {
@@ -331,12 +331,12 @@
       },
       {
         "name": "Higher by between 0% and 100%",
-        "probability": 0.53,
+        "probability": 0.49,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 100%",
-        "probability": 0.46,
+        "probability": 0.5,
         "type": "PROBABILITY"
       }
     ],
@@ -355,7 +355,7 @@
       },
       {
         "name": "Between 1 April 2021 and 30 June 2021",
-        "probability": 0.97,
+        "probability": 0.98,
         "type": "PROBABILITY"
       },
       {
@@ -365,7 +365,7 @@
       },
       {
         "name": "Between 1 October 2021 and 31 December 2021",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -389,7 +389,7 @@
       },
       {
         "name": "More than 10% but less than 20%",
-        "probability": 0.84,
+        "probability": 0.83,
         "type": "PROBABILITY"
       },
       {
@@ -399,7 +399,7 @@
       },
       {
         "name": "More than 30%",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       }
     ],
