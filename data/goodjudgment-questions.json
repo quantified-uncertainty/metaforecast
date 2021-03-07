@@ -7,17 +7,17 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.2,
+        "probability": 0.19,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.71,
+        "probability": 0.73,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.07,
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
@@ -102,58 +102,67 @@
     "stars": 4
   },
   {
-    "title": "When will the U.S. Transportation Security Administration (TSA) next screen 1.4 million or more travelers per day for seven consecutive days?</a>",
+    "title": "How many total cases of COVID-19 worldwide will be estimated as of 31 March 2021?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "With COVID-19 vaccine approvals, airlines are looking to <a href=\"https://www.bloomberg.com/professional/blog/north-american-post-pandemic-travel-recovery-report/\" target=\"_blank\">recover</a> from the drop in travel caused by the pandemic. The outcome will be determined using the \"TSA checkpoint travel numbers\" reported by the TSA (<a href=\"https://www.tsa.gov/coronavirus/passenger-throughput\" target=\"_blank\">www.tsa.gov/coronavirus/passenger-throughput</a>). The question will resolve when data in the column \"2021 Traveler Throughput\" first shows seven consecutive days of 1.4 million or more travelers.",
+    "description": "This question was commissioned by <a href=\"https://www.openphilanthropy.org/blog/forecasting-covid-19-pandemic\" target=\"_blank\">Open Philanthropy</a>.The outcome will be determined based not on available data on confirmed cases, but on credible case estimates of COVID-19 from approved scientific sources, which are, in ranked order: WHO, The Lancet, the New England Journal of Medicine, Nature, Science, and the Proceedings of the National Academy of Sciences of the United States of America (e.g., <a href=\"https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2820%2932009-2/fulltext\" target=\"_blank\">here</a>, <a href=\"https://www.nature.com/articles/s41467-020-18272-4\" target=\"_blank\">here</a>, <a href=\"https://apnews.com/article/virus-outbreak-archive-united-nations-54a3a5869c9ae4ee623497691e796083\" target=\"_blank\">here</a>). This question will be suspended on 31 March 2021 and closed on 30 June 2021, after assessing estimates for the period ending 31 March 2021. If estimates provided are a range, the midpoint of the range will be used to determine the outcome of the question. If more than one estimate from the highest-ranked publication is available as of 30 June 2021, the most recent estimate will be used. The outcome will be determined based on estimates inclusive of cases before this question's launch. For the companion forecasting question on confirmed cases of COVID-19, please see #1438.",
     "options": [
       {
-        "name": "Before 1 July 2021",
+        "name": "Fewer than 200 million",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 200 million and 500 million, inclusive",
+        "probability": 0.01,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 500 million but fewer than 960 million",
         "probability": 0.16,
         "type": "PROBABILITY"
       },
       {
-        "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.43,
+        "name": "Between 960 million and 1.6 billion, inclusive",
+        "probability": 0.79,
         "type": "PROBABILITY"
       },
       {
-        "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.09,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 November 2021 and 31 December 2021",
-        "probability": 0.27,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Not before 1 January 2022",
-        "probability": 0.05,
+        "name": "More than 1.6 billion",
+        "probability": 0.04,
         "type": "PROBABILITY"
       }
     ],
     "stars": 4
   },
   {
-    "title": "What will happen next with regard to the Tokyo Olympics?</a>",
+    "title": "When will enough doses of FDA-approved COVID-19 vaccine(s) to inoculate 200 million people be distributed in the United States?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "The <a href=\"https://www.olympic.org/tokyo-2020\" target=\"_blank\">Games</a> of the XXXII Olympiad were scheduled to begin on 24 July 2020 in <a href=\"https://tokyo2020.org/en/\" target=\"_blank\">Tokyo</a>. Due to the COVID-19 pandemic, they have been <a href=\"https://japantoday.com/category/sports/postponed-tokyo-olympics-hit-1-year-to-go-mark-again\" target=\"_blank\">postponed</a> to 23 July 2021. Public <a href=\"https://english.kyodonews.net/news/2020/07/342812540942-urgent-59-discontent-with-japan-govt-response-to-pandemic-poll.html\" target=\"_blank\">opinion</a> in Japan is divided between holding, postponing, and cancelling the Games.",
     "options": [
       {
-        "name": "The Games will begin",
-        "probability": 0.97,
+        "name": "Before 1 April 2021",
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
-        "name": "The Games will be postponed again by more than a day",
+        "name": "Between 1 April 2021 and 30 June 2021",
+        "probability": 0.99,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 1 July 2021 and 30 September 2021",
         "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
-        "name": "The Games will be cancelled",
-        "probability": 0.02,
+        "name": "Between 1 October 2021 and 31 December 2021",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Not before 1 January 2022",
+        "probability": 0,
         "type": "PROBABILITY"
       }
     ],
@@ -172,12 +181,12 @@
       },
       {
         "name": "Between 1 February 2021 and 31 March 2021",
-        "probability": 0.74,
+        "probability": 0.82,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 April 2021 and 31 May 2021",
-        "probability": 0.26,
+        "probability": 0.18,
         "type": "PROBABILITY"
       },
       {
@@ -194,32 +203,67 @@
     "stars": 4
   },
   {
-    "title": "When will enough doses of FDA-approved COVID-19 vaccine(s) to inoculate 200 million people be distributed in the United States?</a>",
+    "title": "When will Germany report that 75 million cumulative vaccine doses for COVID-19 have been given?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
+    "description": "The Pfizer vaccine was developed with German partner BioNTech, but the rollout in Germany has been <a href=\"https://www.dw.com/en/coronavirus-vaccine-german-health-minister-jens-spahn-under-fire/a-56144390\" target=\"_blank\">criticized</a> for being <a href=\"https://www.reuters.com/article/us-health-coronavirus-vaccines-germany/scarce-doses-and-empty-vaccination-centres-germanys-vaccine-rollout-headache-idUSKBN29F0BP\" target=\"_blank\">slow</a>. The outcome will be determined using data published by the German government's <a href=\"https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.html\" target=\"_blank\">Robert Koch Institut</a> [in German]. Click on the first link under \"Daten\" at the bottom of the page to download an xlsx file. In the xlsx file that opens (currently named \"Impfquotenmonitoring.xlsx\"), see the \"Gesamt_bis_einschl_[date]\" (Total up to and including [date]) sheet. Refer to column \"Gesamtzahl bisher verabreichter Impfstoffdosen\" (Total number of vaccine doses given to date) in the row \"Gesamt\" (Total). The question will resolve on the date indicated in the xlsx file. Whether a particular vaccine's regimen requires one or more doses is immaterial.",
     "options": [
       {
-        "name": "Before 1 April 2021",
+        "name": "Before 1 May 2021",
         "probability": 0,
         "type": "PROBABILITY"
       },
       {
-        "name": "Between 1 April 2021 and 30 June 2021",
-        "probability": 0.98,
+        "name": "Between 1 May 2021 and 30 June 2021",
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
-        "name": "Between 1 July 2021 and 30 September 2021",
+        "name": "Between 1 July 2021 and 31 August 2021",
+        "probability": 0.38,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 1 September 2021 and 31 October 2021",
+        "probability": 0.52,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Not before 1 November 2021",
+        "probability": 0.09,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 4
+  },
+  {
+    "title": "When will the UK report that 35 million people in the UK have been vaccinated for COVID-19?</a>",
+    "url": "https://goodjudgment.io/superforecasts/",
+    "platform": "Good Judgment",
+    "description": "The UK gave the first dose of Pfizer's COVID-19 vaccine on 8 December 2020 and is <a href=\"https://www.npr.org/sections/coronavirus-live-updates/2020/12/08/944125280/u-k-begins-nationwide-coronavirus-immunization-largest-in-nations-history\" target=\"_blank\">pushing</a> to <a href=\"https://www.bbc.com/news/uk-55227325\" target=\"_blank\">execute</a> its <a href=\"https://www.gov.uk/government/publications/national-protocol-for-covid-19-mrna-vaccine-bnt162b2-pfizerbiontech\" target=\"_blank\">plan</a>. The outcome will be determined using data when and as reported by the <a href=\"https://www.gov.uk/coronavirus\" target=\"_blank\">UK</a> <a href=\"https://twitter.com/nadhimzahawi/status/1339167258866814976\" target=\"_blank\">government</a>. For the purposes of this question, a person will be considered to have been vaccinated upon receiving a single dose of a vaccine, irrespective of plans or requirements for additional doses for the same people.",
+    "options": [
+      {
+        "name": "Before 1 March 2021",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 1 March 2021 and 30 April 2021",
+        "probability": 0.97,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 1 May 2021 and 30 June 2021",
         "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
-        "name": "Between 1 October 2021 and 31 December 2021",
-        "probability": 0,
+        "name": "Between 1 July 2021 and 31 August 2021",
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
-        "name": "Not before 1 January 2022",
+        "name": "Not before 1 September 2021",
         "probability": 0,
         "type": "PROBABILITY"
       }
@@ -227,34 +271,58 @@
     "stars": 4
   },
   {
-    "title": "How many total cases of COVID-19 worldwide will be estimated as of 31 March 2021?</a>",
+    "title": "When will the U.S. Transportation Security Administration (TSA) next screen 1.4 million or more travelers per day for seven consecutive days?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "This question was commissioned by <a href=\"https://www.openphilanthropy.org/blog/forecasting-covid-19-pandemic\" target=\"_blank\">Open Philanthropy</a>.The outcome will be determined based not on available data on confirmed cases, but on credible case estimates of COVID-19 from approved scientific sources, which are, in ranked order: WHO, The Lancet, the New England Journal of Medicine, Nature, Science, and the Proceedings of the National Academy of Sciences of the United States of America (e.g., <a href=\"https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2820%2932009-2/fulltext\" target=\"_blank\">here</a>, <a href=\"https://www.nature.com/articles/s41467-020-18272-4\" target=\"_blank\">here</a>, <a href=\"https://apnews.com/article/virus-outbreak-archive-united-nations-54a3a5869c9ae4ee623497691e796083\" target=\"_blank\">here</a>). This question will be suspended on 31 March 2021 and closed on 30 June 2021, after assessing estimates for the period ending 31 March 2021. If estimates provided are a range, the midpoint of the range will be used to determine the outcome of the question. If more than one estimate from the highest-ranked publication is available as of 30 June 2021, the most recent estimate will be used. The outcome will be determined based on estimates inclusive of cases before this question's launch. For the companion forecasting question on confirmed cases of COVID-19, please see #1438.",
+    "description": "With COVID-19 vaccine approvals, airlines are looking to <a href=\"https://www.bloomberg.com/professional/blog/north-american-post-pandemic-travel-recovery-report/\" target=\"_blank\">recover</a> from the drop in travel caused by the pandemic. The outcome will be determined using the \"TSA checkpoint travel numbers\" reported by the TSA (<a href=\"https://www.tsa.gov/coronavirus/passenger-throughput\" target=\"_blank\">www.tsa.gov/coronavirus/passenger-throughput</a>). The question will resolve when data in the column \"2021 Traveler Throughput\" first shows seven consecutive days of 1.4 million or more travelers.",
     "options": [
       {
-        "name": "Fewer than 200 million",
-        "probability": 0,
+        "name": "Before 1 July 2021",
+        "probability": 0.37,
         "type": "PROBABILITY"
       },
       {
-        "name": "Between 200 million and 500 million, inclusive",
+        "name": "Between 1 July 2021 and 31 August 2021",
+        "probability": 0.48,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 1 September 2021 and 31 October 2021",
+        "probability": 0.05,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 1 November 2021 and 31 December 2021",
+        "probability": 0.08,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Not before 1 January 2022",
+        "probability": 0.02,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 4
+  },
+  {
+    "title": "What will happen next with regard to the Tokyo Olympics?</a>",
+    "url": "https://goodjudgment.io/superforecasts/",
+    "platform": "Good Judgment",
+    "description": "The <a href=\"https://www.olympic.org/tokyo-2020\" target=\"_blank\">Games</a> of the XXXII Olympiad were scheduled to begin on 24 July 2020 in <a href=\"https://tokyo2020.org/en/\" target=\"_blank\">Tokyo</a>. Due to the COVID-19 pandemic, they have been <a href=\"https://japantoday.com/category/sports/postponed-tokyo-olympics-hit-1-year-to-go-mark-again\" target=\"_blank\">postponed</a> to 23 July 2021. Public <a href=\"https://english.kyodonews.net/news/2020/07/342812540942-urgent-59-discontent-with-japan-govt-response-to-pandemic-poll.html\" target=\"_blank\">opinion</a> in Japan is divided between holding, postponing, and cancelling the Games.",
+    "options": [
+      {
+        "name": "The Games will begin",
+        "probability": 0.98,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "The Games will be postponed again by more than a day",
         "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
-        "name": "More than 500 million but fewer than 960 million",
-        "probability": 0.14,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 960 million and 1.6 billion, inclusive",
-        "probability": 0.79,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 1.6 billion",
-        "probability": 0.06,
+        "name": "The Games will be cancelled",
+        "probability": 0.01,
         "type": "PROBABILITY"
       }
     ],
@@ -268,12 +336,12 @@
     "options": [
       {
         "name": "Less than 23%",
-        "probability": 0.26,
+        "probability": 0.24,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 23% and 27%, inclusive",
-        "probability": 0.7,
+        "probability": 0.72,
         "type": "PROBABILITY"
       },
       {
@@ -302,17 +370,17 @@
       },
       {
         "name": "Lower by more than 0% but less than 4% ",
-        "probability": 0.18,
+        "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by between 0% and 4%, inclusive",
-        "probability": 0.67,
+        "probability": 0.76,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 4%",
-        "probability": 0.13,
+        "probability": 0.11,
         "type": "PROBABILITY"
       }
     ],
@@ -331,12 +399,12 @@
       },
       {
         "name": "Higher by between 0% and 100%",
-        "probability": 0.49,
+        "probability": 0.47,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 100%",
-        "probability": 0.5,
+        "probability": 0.52,
         "type": "PROBABILITY"
       }
     ],
@@ -355,12 +423,12 @@
       },
       {
         "name": "Between 1 April 2021 and 30 June 2021",
-        "probability": 0.98,
+        "probability": 0.99,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 30 September 2021",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -384,17 +452,17 @@
     "options": [
       {
         "name": "10% or less",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 10% but less than 20%",
-        "probability": 0.83,
+        "probability": 0.82,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 30%, inclusive",
-        "probability": 0.13,
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {

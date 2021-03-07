@@ -10,15 +10,15 @@ let all_questions = [];
 let now = new Date().toISOString()
 
 /* Support functions */
-async function fetchMetaculusQuestions(page = 1) {
+async function fetchMetaculusQuestions(next) {
   // Numbers about a given address: how many, how much, at what price, etc.
   let response = await axios(({
-    url: jsonEndPoint + page,
+    url: next,
     method: 'GET',
     headers: ({ 'Content-Type': 'application/json' })
   }))
     .then(res => res.data)
-  //console.log(response)
+  console.log(response)
   return response
 }
 
@@ -56,16 +56,19 @@ async function fetchMetaculusQuestionDescription(slug) {
 
 export async function metaculus() {
 
-  let metaculusQuestionsInit = await fetchMetaculusQuestions(1)
-  let numQueries = Math.round(Number(metaculusQuestionsInit.count) / 20)
-  console.log(`Downloading... This might take a while. Total number of queries: ${numQueries}`)
-  for (let i = 4; i <= numQueries; i++) { // change numQueries to 10 if one want to just test
+  // let metaculusQuestionsInit = await fetchMetaculusQuestions(1)
+  // let numQueries = Math.round(Number(metaculusQuestionsInit.count) / 20)
+  // console.log(`Downloading... This might take a while. Total number of queries: ${numQueries}`)
+  // for (let i = 4; i <= numQueries; i++) { // change numQueries to 10 if one want to just test
+  let next = "https://www.metaculus.com/api2/questions/"
+  let i = 1
+  while(next){
     if (i % 20 == 0) {
       console.log("Sleeping for 5secs")
       await sleep(5000)
     }
     console.log(`Query #${i}`)
-    let metaculusQuestions = await fetchMetaculusQuestions(i)
+    let metaculusQuestions = await fetchMetaculusQuestions(next)
     let results = metaculusQuestions.results;
     for (let result of results) {
       if (
@@ -118,6 +121,8 @@ export async function metaculus() {
 
       }
     }
+    next = metaculusQuestions.next
+    i = i+1
   }
 
   let string = JSON.stringify(all_questions, null, 2)
