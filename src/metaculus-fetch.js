@@ -73,7 +73,7 @@ export async function metaculus() {
     for (let result of results) {
       if (
         (result.publish_time < now) &&
-        (now < result.close_time)
+        (now < result.resolve_time)
       ) {
         //console.log(result)
         await sleep(1000)
