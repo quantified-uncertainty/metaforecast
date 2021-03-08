@@ -7,32 +7,32 @@
     "options": [
       {
         "name": "Less than $470 billion",
-        "probability": 0.037599999999999995,
+        "probability": 0.0493,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $470 billion and $540 billion, inclusive",
-        "probability": 0.0941,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $540 billion but less than or equal to $610 billion",
-        "probability": 0.22210000000000002,
+        "probability": 0.2133,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $610 billion but less than or equal to $680 billion",
-        "probability": 0.3452,
+        "probability": 0.3403,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $680 billion",
-        "probability": 0.301,
+        "probability": 0.297,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "42",
-    "numforecasters": "41",
+    "numforecasts": "44",
+    "numforecasters": "43",
     "stars": 2
   },
   {
@@ -43,17 +43,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.27,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.73,
+        "probability": 0.74,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "74",
-    "numforecasters": "70",
+    "numforecasts": "78",
+    "numforecasters": "74",
     "stars": 2
   },
   {
@@ -73,8 +73,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "121",
-    "numforecasters": "102",
+    "numforecasts": "127",
+    "numforecasters": "108",
     "stars": 3
   },
   {
@@ -157,32 +157,32 @@
     "options": [
       {
         "name": "Less than -0.25",
-        "probability": 0.1512,
+        "probability": 0.14679999999999999,
         "type": "PROBABILITY"
       },
       {
         "name": "Between -0.25 and 0, inclusive",
-        "probability": 0.3188,
+        "probability": 0.3135,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0 but less than or equal to 0.25",
-        "probability": 0.31379999999999997,
+        "probability": 0.3201,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.25 but less than or equal to 0.5",
-        "probability": 0.1726,
+        "probability": 0.1759,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.5",
-        "probability": 0.0435,
+        "probability": 0.0436,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "110",
-    "numforecasters": "98",
+    "numforecasts": "113",
+    "numforecasters": "100",
     "stars": 3
   },
   {
@@ -229,12 +229,12 @@
     "options": [
       {
         "name": "Less than $30 million",
-        "probability": 0.0463,
+        "probability": 0.046900000000000004,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $30 million and $70 million, inclusive",
-        "probability": 0.3015,
+        "probability": 0.3019,
         "type": "PROBABILITY"
       },
       {
@@ -244,17 +244,17 @@
       },
       {
         "name": "More than $110 million but less than or equal to $150 million",
-        "probability": 0.1929,
+        "probability": 0.19190000000000002,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $150 million",
-        "probability": 0.1267,
+        "probability": 0.1268,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "114",
-    "numforecasters": "106",
+    "numforecasts": "116",
+    "numforecasters": "108",
     "stars": 3
   },
   {
@@ -265,32 +265,32 @@
     "options": [
       {
         "name": "Less than 26,000",
-        "probability": 0.0504,
+        "probability": 0.0492,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 26,000 and 28,000, inclusive",
-        "probability": 0.1112,
+        "probability": 0.1092,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 28,000 but less than or equal to 30,000",
-        "probability": 0.2288,
+        "probability": 0.2296,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 30,000 but less than or equal to 32,000",
-        "probability": 0.336,
+        "probability": 0.33649999999999997,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 32,000",
-        "probability": 0.2736,
+        "probability": 0.2754,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "40",
-    "numforecasters": "36",
+    "numforecasts": "41",
+    "numforecasters": "37",
     "stars": 2
   },
   {
@@ -382,8 +382,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "104",
-    "numforecasters": "73",
+    "numforecasts": "105",
+    "numforecasters": "74",
     "stars": 3
   },
   {
@@ -394,22 +394,22 @@
     "options": [
       {
         "name": "Zero",
-        "probability": 0.32170000000000004,
+        "probability": 0.33130000000000004,
         "type": "PROBABILITY"
       },
       {
         "name": "One",
-        "probability": 0.3811,
+        "probability": 0.376,
         "type": "PROBABILITY"
       },
       {
         "name": "Two or more",
-        "probability": 0.29719999999999996,
+        "probability": 0.2927,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "88",
-    "numforecasters": "78",
+    "numforecasts": "89",
+    "numforecasters": "79",
     "stars": 2
   },
   {
@@ -456,17 +456,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.6,
+        "probability": 0.59,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.4,
+        "probability": 0.41,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "258",
-    "numforecasters": "174",
+    "numforecasts": "262",
+    "numforecasters": "175",
     "stars": 3
   },
   {
@@ -544,32 +544,32 @@
     "options": [
       {
         "name": "Less than 15%",
-        "probability": 0.0775,
+        "probability": 0.0679,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 15% and 17%, inclusive",
-        "probability": 0.1532,
+        "probability": 0.1553,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 17% but less than or equal to 19%",
-        "probability": 0.292,
+        "probability": 0.3125,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 19% but less than or equal to 21%",
-        "probability": 0.3109,
+        "probability": 0.305,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 21%",
-        "probability": 0.1663,
+        "probability": 0.1593,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "104",
-    "numforecasters": "95",
+    "numforecasts": "111",
+    "numforecasters": "98",
     "stars": 3
   },
   {
@@ -591,42 +591,6 @@
     ],
     "numforecasts": "155",
     "numforecasters": "120",
-    "stars": 3
-  },
-  {
-    "title": "What percentage of U.S. residents will have an unfavorable view of China, as reflected in the 2021 Pew Global Attitudes Survey?",
-    "url": "https://www.cset-foretell.com/questions/80-what-percentage-of-u-s-citizens-will-have-an-unfavorable-view-of-china-as-reflected-in-the-2021-pew-global-attitudes-survey",
-    "platform": "CSET-foretell",
-    "description": "Context. The percentage of U.S. residents with unfavorable views of China has increased steeply in response to concerns over the trade war, China’s growing military, and lack of faith in President Xi Jinping. According to a 2018 survey by the Pew Research Center, 47 percent of U.S. residents had an unfavorable view of China. That number has since risen steadily, reaching 66 percent in a March 2020 survey and 73 percent in a June-July 2020 survey.Data and resolution details. Pew conducts its U.S. Global Attitudes Survey at irregular intervals. Since 2014, it's conducted the survey annually between February and June. In 2020, it conducted two surveys, one in March and a second in June-July. This question resolves based on the results of a Pew U.S. Global Attitudes Survey that begins sometime between February 1 and June 30, 2021. If no survey begins during that period, this question will not be scored. You can read more about Pew's sampling methodology here. The data underlying the graph is here.This question is a metric for the following scenario: Three Possible 2025 Worlds that Should Inform Policy Today To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
-    "options": [
-      {
-        "name": "Less than 59%",
-        "probability": 0.11220000000000001,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 59% and 66%, inclusive",
-        "probability": 0.17170000000000002,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 66% but less than or equal to 73%",
-        "probability": 0.2878,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 73% but less than or equal to 80%",
-        "probability": 0.3049,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 80%",
-        "probability": 0.1234,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "242",
-    "numforecasters": "182",
     "stars": 3
   },
   {
@@ -673,32 +637,32 @@
     "options": [
       {
         "name": "Less than 675",
-        "probability": 0.3636,
+        "probability": 0.3826,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 675 and 750, inclusive",
-        "probability": 0.31,
+        "probability": 0.2993,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 750 but less than or equal to 825",
-        "probability": 0.1795,
+        "probability": 0.1761,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 825 but less than or equal to 900",
-        "probability": 0.1002,
+        "probability": 0.09630000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 900",
-        "probability": 0.0466,
+        "probability": 0.045700000000000005,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "102",
-    "numforecasters": "63",
+    "numforecasts": "105",
+    "numforecasters": "66",
     "stars": 3
   }
 ]

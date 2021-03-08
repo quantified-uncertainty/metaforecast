@@ -1,5 +1,25 @@
 [
   {
+    "title": "Will Donald Trump be President of the USA on May 31, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-may-31-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Donald Trump will be President of the United States on May 31, 2021, 12 pm ET. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.04362323410844767939963177518202151",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9563767658915523206003682248179785",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "102",
+    "stars": 4
+  },
+  {
     "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
     "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
     "platform": "PolyMarket",
@@ -7,28 +27,37 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9025904062700764642551528216597443",
+        "probability": "0.9013748586414486533130605654885246",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.09740959372992353574484717834025572",
+        "probability": "0.0986251413585513466869394345114754",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "721",
+    "numforecasts": "723",
     "stars": 4
   },
   {
     "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
     "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1-1",
-    "address": "0x36BB6f09327d1A7D0930668345655d6A6e3c6b20",
+    "platform": "PolyMarket",
     "description": "This is a market on if the federal minimum wage will be $9.50 per hour or higher by April 1, 12:00pm EST. This market will resolve to \"Yes\" if the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point prior to the resolution date, and \"No\" otherwise. The primary resolution source for this market will be the U.S. Department of Labor's website, https://www.dol.gov/.",
-    "outcomes": [
-      "Yes",
-      "No"
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.01456986683448128899201154478899746",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9854301331655187110079884552110025",
+        "type": "PROBABILITY"
+      }
     ],
-    "options": []
+    "numforecasts": "157",
+    "stars": 4
   },
   {
     "title": "Will Joe Biden's approval rating be 54% or higher on March 15, 2021?",
@@ -38,36 +67,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.5922690092000522779081613694725283",
+        "probability": "0.5429675010103772436429096649505996",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.4077309907999477220918386305274717",
+        "probability": "0.4570324989896227563570903350494004",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "348",
-    "stars": 4
-  },
-  {
-    "title": "Will Donald Trump be President of the USA on March 31, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-march-31-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Donald Trump will be President of the United States on March 31, 2021, 12pm EST. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by official US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.01428626098489305771182621788648866",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9857137390151069422881737821135113",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "3295",
+    "numforecasts": "392",
     "stars": 4
   },
   {
@@ -78,36 +87,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1037850776367937712365868678952302",
+        "probability": "0.1047586563328496070788850040024748",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8962149223632062287634131321047698",
+        "probability": "0.8952413436671503929211149959975252",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "83",
-    "stars": 4
-  },
-  {
-    "title": "New government stimulus checks by March 15, 2021?",
-    "url": "https://polymarket.com/market/new-government-stimulus-checks-by-march-15-2021",
-    "platform": "PolyMarket",
-    "description": "This market concerns whether or not legislation will be signed into law by March 15, 2021, 12:00pm EST which includes direct government stimulus payments to US citizens. This market will resolve to “Yes” if any such legislation becomes law prior to the resolution date according to the official Congress website, regardless of if the stimulus checks have been paid out yet. This market will resolve to “No” if no such legislation becomes law prior to the resolution date. If the stimulus payment is only available to a certain subset of US citizens, this market will still resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). The resolution source will be congress.gov/bill, the official website of Congress.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9782538207860741130258555773468584",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.02174617921392588697414442265314155",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "596",
+    "numforecasts": "91",
     "stars": 4
   },
   {
@@ -118,16 +107,96 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9383426063173342395056578822128255",
+        "probability": "0.945411013497345277834355815925536",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.0616573936826657604943421177871745",
+        "probability": "0.05458898650265472216564418407446405",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "767",
+    "numforecasts": "852",
+    "stars": 4
+  },
+  {
+    "title": "Will Uniswap v3 launch before April 30, 2021?",
+    "url": "https://polymarket.com/market/will-uniswap-v3-launch-before-april-30-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Uniswap v3 will launch before April 30th, 2021, 12:00 am ET. “Launch” in this context can be defined as being deployed and usable on the Ethereum mainnet and publicly announced via the official Uniswap Twitter and/or Blog. V3 can be defined as Uniswap v3.0.0 or greater. If Uniswap v3 is officially announced and is deployed on the mainnet of a given L2 scaling solution, with or without some bridging mechanism from Ethereum mainnet, the market will still resolve to \"Yes\".",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.1000088021372956222173337235615067",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.8999911978627043777826662764384933",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "66",
+    "stars": 4
+  },
+  {
+    "title": "Will Donald Trump be President of the USA on March 31, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-march-31-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Donald Trump will be President of the United States on March 31, 2021, 12pm EST. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by official US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.01479126561756588071986562671041005",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9852087343824341192801343732895899",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "3364",
+    "stars": 4
+  },
+  {
+    "title": "New government stimulus checks by March 15, 2021?",
+    "url": "https://polymarket.com/market/new-government-stimulus-checks-by-march-15-2021",
+    "platform": "PolyMarket",
+    "description": "This market concerns whether or not legislation will be signed into law by March 15, 2021, 12:00pm EST which includes direct government stimulus payments to US citizens. This market will resolve to “Yes” if any such legislation becomes law prior to the resolution date according to the official Congress website, regardless of if the stimulus checks have been paid out yet. This market will resolve to “No” if no such legislation becomes law prior to the resolution date. If the stimulus payment is only available to a certain subset of US citizens, this market will still resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). The resolution source will be congress.gov/bill, the official website of Congress.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9667695168191735773339115589371309",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.03323048318082642266608844106286906",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "618",
+    "stars": 4
+  },
+  {
+    "title": "Will any of SuperRare, Zora, Foundation, OpenSea, or NiftyGateway have a live token by April 30th, 2021?",
+    "url": "https://polymarket.com/market/will-any-of-super-rare-zora-foundation-open-sea-or-nifty-gateway-have-a-live-token-by-april-30th-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if at least one of the following projects - SuperRare, NiftyGateway, Zora, Foundation, or OpenSea - will have a live token by April 30th, 2021, 12pm EST. Having a live token, in this context, can be defined as a deployed-to-mainnet, actively transferrable and/or tradable token that is in some way native to the application, and substantiated by the respective project via website or social media channels. Empirically speaking, having a live token will be considered fulfilled if official project channels announce the introduction of the token and it is live on mainnet, and swappable and acquirable (i.e. via Uniswap). In the case of a token being announced but not yet transferrable or “live”, that will not satisfy market conditions. If the token is deployed to mainnet (in any form, including some sort of voucher), but is not transferrable, that will also not satisfy market conditions. In the case of ERC20 tokens, if the token is deployed, but there is no existing Uniswap pool for the token, it will be considered not “live” and thus will not satisfy market conditions. For clarity, this market is about fungible tokens, and not NFTs related to a platform. Once one of these projects has a live token, this market will resolve to \"Yes\". If the resolution date is reached and none of the projects have a token, the market will resolve to \"No\". In the case of ambiguity, the market will be resolved in good faith by the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.3923681823134877529676620655329725",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.6076318176865122470323379344670275",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "19",
     "stars": 4
   },
   {
@@ -138,77 +207,37 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.4797381013292123136619314978444659",
+        "probability": "0.45869502016622486223273049350794",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.5202618986707876863380685021555341",
+        "probability": "0.54130497983377513776726950649206",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "126",
+    "numforecasts": "131",
     "stars": 4
   },
   {
-    "title": "Will Andrew Cuomo be Governor of New York on June 1, 2021?",
-    "url": "https://polymarket.com/market/will-andrew-cuomo-be-governor-of-new-york-on-june-1-2021",
+    "title": "Will the average Ethereum gas price be below 130 Gwei on March 20?",
+    "url": "https://polymarket.com/market/will-the-average-ethereum-gas-price-be-below-130-gwei-on-march-20",
     "platform": "PolyMarket",
-    "description": "This is a market on whether Andrew Cuomo will be governor of New York on June 1, 2021, 12:00 pm ET. This market will resolve to “Yes” if, on the resolution date, Andrew Cuomo is the Governor of New York as substantiated by official government sources like https://www.governor.ny.gov/. If, for any reason, Andrew Cuomo is not the sitting Governor of New York on that date, this market will resolve to “No”.  The resolution source for this market is https://www.governor.ny.gov/. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "description": "This is a market on whether the average Ethereum gas price will be below 130 Gwei on March 20, 2021. This market will resolve to \"Yes\" if Avg Gas Price is listed as being below 130 Gwei for that date, on Etherscan. If Avg Gas Price is 130 Gwei or higher, this market will resolve to \"No\". The resolution source for this market is https://etherscan.io/chart/gasprice. This market will resolve when data is available for the date of March 20, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). ",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.7988761039682734077181639725934345",
+        "probability": "0.5612835878784322639229718937535726",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.2011238960317265922818360274065655",
+        "probability": "0.4387164121215677360770281062464274",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "94",
+    "numforecasts": "2",
     "stars": 3
-  },
-  {
-    "title": "Will ETH be above $1500 on March 7th, 2021?",
-    "url": "https://polymarket.com/market/will-eth-be-above-1500-on-march-7th-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the USD price of Ether $ETH will be above $1500 on March 7th, 2021, 12:00pm EST, according to coinmarketcap.com/currencies/ethereum/. This market will resolve to “Yes“ if ETH is trading above $1500 according to Coinmarketcap on the resolution date, and “No“ otherwise. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9997277162813358301013561917408765",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.0002722837186641698986438082591235352",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "2245",
-    "stars": 3
-  },
-  {
-    "title": "Will the Tokyo Summer Olympics be cancelled or postponed by May 1, 2021?",
-    "url": "https://polymarket.com/market/will-the-tokyo-summer-olympics-be-cancelled-or-postponed",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether the Tokyo Summer Olympics will be canceled or postponed prior to May 1, 2021, 12:00pm EST. The opening ceremony is currently scheduled to take place on July 23, 2021. If an official statement is published by the International Olympic Committee on https://www.olympic.org/ which announces that the ceremony will take place on a date later than July 23, 2021, this market will resolve to “Yes\". If no such announcement is made prior to the resolution date, this market will resolve to “No\". The resolution source for this market will be an official statement published to olympic.org, the official website of the International Olympic Committee. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.1089138869398000671566351621910351",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.8910861130601999328433648378089649",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "239",
-    "stars": 4
   },
   {
     "title": "Will ETH be above $2000 on April 1st, 2021?",
@@ -218,37 +247,57 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.3442695524534932485445110944704756",
+        "probability": "0.3506373749139563440709149225354222",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.6557304475465067514554889055295244",
+        "probability": "0.6493626250860436559290850774645778",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "349",
+    "numforecasts": "426",
     "stars": 4
   },
   {
-    "title": "Will Donald Trump be President of the USA on May 31, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-may-31-2021",
+    "title": "Will the Tokyo Summer Olympics be cancelled or postponed by May 1, 2021?",
+    "url": "https://polymarket.com/market/will-the-tokyo-summer-olympics-be-cancelled-or-postponed",
     "platform": "PolyMarket",
-    "description": "This is a market on if Donald Trump will be President of the United States on May 31, 2021, 12 pm ET. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "description": "This is a market on whether the Tokyo Summer Olympics will be canceled or postponed prior to May 1, 2021, 12:00pm EST. The opening ceremony is currently scheduled to take place on July 23, 2021. If an official statement is published by the International Olympic Committee on https://www.olympic.org/ which announces that the ceremony will take place on a date later than July 23, 2021, this market will resolve to “Yes\". If no such announcement is made prior to the resolution date, this market will resolve to “No\". The resolution source for this market will be an official statement published to olympic.org, the official website of the International Olympic Committee. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.04141542959661707716254055386508762",
+        "probability": "0.140894399141350354152909901245227",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9585845704033829228374594461349124",
+        "probability": "0.859105600858649645847090098754773",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "61",
+    "numforecasts": "247",
     "stars": 4
+  },
+  {
+    "title": "Will Donald Trump file to run for president before June 1, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-file-to-run-for-president-before-june-1-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Donald Trump will file to run for president prior to June 1, 2021. The linked PredictIt question is the basis for the creation of this market and will be referenced as the leading resolution source: https://www.predictit.org/markets/detail/6994/Will-Donald-Trump-file-to-run-for-president-before-the-end-of-2021. If the PredictIt question resolves to \"Yes\" prior to June 1, 2021, this market will resolve to “Yes”, and “No” otherwise.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.05284697941811101448356581329694619",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9471530205818889855164341867030538",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "49",
+    "stars": 3
   },
   {
     "title": "Will there be enough signatures for a vote on the recall of Gov. Newsom by March 17?",
@@ -258,16 +307,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.8849598718521151481280201135347557",
+        "probability": "0.9012705611557196906805184754055062",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.1150401281478848518719798864652443",
+        "probability": "0.09872943884428030931948152459449382",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "885",
+    "numforecasts": "912",
     "stars": 4
   }
 ]

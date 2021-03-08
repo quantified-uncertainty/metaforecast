@@ -6,12 +6,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.039603960396039604,
+        "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.9603960396039604,
+        "probability": 0.96,
         "type": "PROBABILITY"
       }
     ],
@@ -25,12 +25,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.72,
+        "probability": 0.71,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.28,
+        "probability": 0.29,
         "type": "PROBABILITY"
       }
     ],
@@ -44,12 +44,12 @@
     "options": [
       {
         "name": "Yes, more than 121",
-        "probability": 0.32,
+        "probability": 0.35238095238095235,
         "type": "PROBABILITY"
       },
       {
         "name": "No, not more than 121",
-        "probability": 0.68,
+        "probability": 0.6476190476190475,
         "type": "PROBABILITY"
       }
     ],
@@ -82,57 +82,57 @@
     "options": [
       {
         "name": "Xavier Bertrand",
-        "probability": 0.019047619047619046,
+        "probability": 0.0196078431372549,
         "type": "PROBABILITY"
       },
       {
         "name": "Pierre de Villiers",
-        "probability": 0.009523809523809523,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Anne Hidalgo",
-        "probability": 0.028571428571428567,
+        "probability": 0.02941176470588235,
         "type": "PROBABILITY"
       },
       {
         "name": "Yannick Jadot",
-        "probability": 0.019047619047619046,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Marine Le Pen",
-        "probability": 0.13333333333333333,
+        "probability": 0.1372549019607843,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmanuel Macron",
-        "probability": 0.5619047619047619,
+        "probability": 0.5882352941176471,
         "type": "PROBABILITY"
       },
       {
         "name": "Jean-Luc Mélenchon",
-        "probability": 0.019047619047619046,
+        "probability": 0.0196078431372549,
         "type": "PROBABILITY"
       },
       {
         "name": "Valérie Pécresse",
-        "probability": 0.009523809523809523,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Piolle",
-        "probability": 0.009523809523809523,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Another woman",
-        "probability": 0.057142857142857134,
+        "probability": 0.02941176470588235,
         "type": "PROBABILITY"
       },
       {
         "name": "Another man",
-        "probability": 0.13333333333333333,
+        "probability": 0.1372549019607843,
         "type": "PROBABILITY"
       }
     ],
@@ -212,60 +212,6 @@
     "stars": 3
   },
   {
-    "title": "In France, when will the 7 day average of new confirmed cases of Covid-19 fall back below 5,000?",
-    "url": "https://predict.hypermind.com/dash/dash/dash.html?list=FRA",
-    "platform": "Hypermind",
-    "options": [
-      {
-        "name": "Nov-Dec, 2020",
-        "probability": 0,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "January 2021",
-        "probability": 0,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "February 2021",
-        "probability": 0,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "March 2021",
-        "probability": 0.03092783505154639,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Maybe later",
-        "probability": 0.14,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "April 2021",
-        "probability": 0.11340206185567009,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "May 2021",
-        "probability": 0.25773195876288657,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "June 2021",
-        "probability": 0.35051546391752575,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Maybe after June 2021",
-        "probability": 0.24742268041237112,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "This question will be settled according to the numbers published by OurWorldInData here: [https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World](https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World)",
-    "stars": 3
-  },
-  {
     "title": "At the 2021 Tokyo Olympics, will Japan or France earn more medals?",
     "url": "https://predict.hypermind.com/dash/dash/dash.html?list=FRA",
     "platform": "Hypermind",
@@ -290,18 +236,72 @@
     "stars": 3
   },
   {
+    "title": "In France, when will the 7 day average of new confirmed cases of Covid-19 fall back below 5,000?",
+    "url": "https://predict.hypermind.com/dash/dash/dash.html?list=FRA",
+    "platform": "Hypermind",
+    "options": [
+      {
+        "name": "Nov-Dec, 2020",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "January 2021",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "February 2021",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "March 2021",
+        "probability": 0.03773584905660377,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Maybe later",
+        "probability": 0.12,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "April 2021",
+        "probability": 0.14150943396226415,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "May 2021",
+        "probability": 0.24528301886792453,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "June 2021",
+        "probability": 0.32075471698113206,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Maybe after June 2021",
+        "probability": 0.25471698113207547,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "This question will be settled according to the numbers published by OurWorldInData here: [https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World](https://ourworldindata.org/grapher/daily-covid-cases-7-day?tab=chart&stackMode=absolute&time=2020-08-08..latest&country=~FRA&region=World)",
+    "stars": 3
+  },
+  {
     "title": "Will there be a deadly confrontation between Moroccan and Algerian armed forces in 2021?",
     "url": "https://predict.hypermind.com/dash/dash/dash.html?list=AFR",
     "platform": "Hypermind",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.07,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.93,
+        "probability": 0.9,
         "type": "PROBABILITY"
       }
     ],
@@ -315,22 +315,22 @@
     "options": [
       {
         "name": "Saad-Eddine El Othmani",
-        "probability": 0.2818181818181818,
+        "probability": 0.36470588235294116,
         "type": "PROBABILITY"
       },
       {
         "name": "Abdelilah Benkirane",
-        "probability": 0.07272727272727272,
+        "probability": 0.09411764705882353,
         "type": "PROBABILITY"
       },
       {
         "name": "Someone else from PJD",
-        "probability": 0.04545454545454545,
+        "probability": 0.05882352941176471,
         "type": "PROBABILITY"
       },
       {
         "name": "Someone else not from PJD",
-        "probability": 0.6,
+        "probability": 0.4823529411764706,
         "type": "PROBABILITY"
       }
     ],
@@ -513,27 +513,27 @@
     "options": [
       {
         "name": "Q1, 2021 (or before)",
-        "probability": 0.00892857142857143,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "Q2, 2021",
-        "probability": 0.16964285714285715,
+        "probability": 0.17,
         "type": "PROBABILITY"
       },
       {
         "name": "Q3, 2021",
-        "probability": 0.35714285714285715,
+        "probability": 0.4,
         "type": "PROBABILITY"
       },
       {
         "name": "Q4, 2021",
-        "probability": 0.125,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.3392857142857143,
+        "probability": 0.29,
         "type": "PROBABILITY"
       }
     ],
@@ -547,17 +547,17 @@
     "options": [
       {
         "name": "Benjamin Netanyahu",
-        "probability": 0.6428571428571429,
+        "probability": 0.71,
         "type": "PROBABILITY"
       },
       {
         "name": "Another Likud politician",
-        "probability": 0.04081632653061225,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "Another politician not from Likud",
-        "probability": 0.3163265306122449,
+        "probability": 0.28,
         "type": "PROBABILITY"
       }
     ],
@@ -571,17 +571,17 @@
     "options": [
       {
         "name": "Worse than the 2012 record",
-        "probability": 0.24509803921568626,
+        "probability": 0.2277227722772277,
         "type": "PROBABILITY"
       },
       {
         "name": "Worse than 2020, but not worse than 2012",
-        "probability": 0.2647058823529412,
+        "probability": 0.26732673267326734,
         "type": "PROBABILITY"
       },
       {
         "name": "Not worse than 2020",
-        "probability": 0.49019607843137253,
+        "probability": 0.504950495049505,
         "type": "PROBABILITY"
       }
     ],
@@ -634,27 +634,27 @@
     "options": [
       {
         "name": "in Q1, 2021",
-        "probability": 0.06862745098039215,
+        "probability": 0.0660377358490566,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q2, 2021",
-        "probability": 0.3431372549019608,
+        "probability": 0.330188679245283,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q3, 2021",
-        "probability": 0.12745098039215685,
+        "probability": 0.12264150943396226,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q4, 2021",
-        "probability": 0.1568627450980392,
+        "probability": 0.1509433962264151,
         "type": "PROBABILITY"
       },
       {
         "name": "Perhaps later",
-        "probability": 0.30392156862745096,
+        "probability": 0.330188679245283,
         "type": "PROBABILITY"
       }
     ],
@@ -668,22 +668,22 @@
     "options": [
       {
         "name": "USA",
-        "probability": 0.05,
+        "probability": 0.04504504504504505,
         "type": "PROBABILITY"
       },
       {
         "name": "France",
-        "probability": 0.51,
+        "probability": 0.5045045045045046,
         "type": "PROBABILITY"
       },
       {
         "name": "Germany",
-        "probability": 0.3,
+        "probability": 0.32432432432432434,
         "type": "PROBABILITY"
       },
       {
         "name": "United Kingdom",
-        "probability": 0.14,
+        "probability": 0.12612612612612614,
         "type": "PROBABILITY"
       }
     ],
@@ -697,22 +697,22 @@
     "options": [
       {
         "name": "USA",
-        "probability": 0.77,
+        "probability": 0.7641509433962264,
         "type": "PROBABILITY"
       },
       {
         "name": "France",
-        "probability": 0.06,
+        "probability": 0.04716981132075472,
         "type": "PROBABILITY"
       },
       {
         "name": "Germany",
-        "probability": 0.05,
+        "probability": 0.07547169811320754,
         "type": "PROBABILITY"
       },
       {
         "name": "United Kingdom",
-        "probability": 0.12,
+        "probability": 0.11320754716981131,
         "type": "PROBABILITY"
       }
     ],
@@ -731,45 +731,16 @@
       },
       {
         "name": "Q1, 2021",
-        "probability": 0.030303030303030304,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.9696969696969697,
+        "probability": 0.97,
         "type": "PROBABILITY"
       }
     ],
     "description": "",
-    "stars": 3
-  },
-  {
-    "title": "In Niger, who will win the (February) 2021 presidential election?",
-    "url": "https://predict.hypermind.com/dash/dash/dash.html?list=POL",
-    "platform": "Hypermind",
-    "options": [
-      {
-        "name": "Mohamed Bazoum",
-        "probability": 1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Mahamane Ousmane",
-        "probability": 1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Someone else",
-        "probability": 1,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No official winner in 2021",
-        "probability": 1,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "The second round of the presidential election is scheduled on February 21, 2021.",
     "stars": 3
   },
   {
@@ -798,12 +769,12 @@
     "options": [
       {
         "name": "≥ 6,000",
-        "probability": 0.679245283018868,
+        "probability": 0.8571428571428571,
         "type": "PROBABILITY"
       },
       {
         "name": "≤ 5,000",
-        "probability": 0.32075471698113206,
+        "probability": 0.14285714285714285,
         "type": "PROBABILITY"
       }
     ],
@@ -836,12 +807,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.86,
+        "probability": 0.89,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.14,
+        "probability": 0.11,
         "type": "PROBABILITY"
       }
     ],
