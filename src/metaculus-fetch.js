@@ -108,6 +108,13 @@ export async function metaculus() {
           "description": description,
           "numforecasts": result.number_of_predictions,
           "stars": calculateStars("Metaculus", ({ numforecasts: result.number_of_predictions })),
+          "resolution_data": {
+	    	"publish_time": result.publish_time,
+          	"resolution": result.resolution,
+          	"close_time": result.close_time,
+	  	"resolve_time": result.resolve_time
+          	
+          }
           //"status": result.status,
           //"publish_time": result.publish_time,
           //"close_time": result.close_time,
