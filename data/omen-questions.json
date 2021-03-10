@@ -44,12 +44,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.40138120377998826,
+        "probability": 0.30016535470057903,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5986187962200118,
+        "probability": 0.699834645299421,
         "type": "PROBABILITY"
       }
     ],

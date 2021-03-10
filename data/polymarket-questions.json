@@ -1,62 +1,22 @@
 [
   {
-    "title": "Will Donald Trump be President of the USA on May 31, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-may-31-2021",
+    "title": "Will the average Ethereum gas price be below 130 Gwei on March 20?",
+    "url": "https://polymarket.com/market/will-the-average-ethereum-gas-price-be-below-130-gwei-on-march-20",
     "platform": "PolyMarket",
-    "description": "This is a market on if Donald Trump will be President of the United States on May 31, 2021, 12 pm ET. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "description": "This is a market on whether the average Ethereum gas price will be below 130 Gwei on March 20, 2021. This market will resolve to \"Yes\" if Avg Gas Price is listed as being below 130 Gwei for that date, on Etherscan. If Avg Gas Price is 130 Gwei or higher, this market will resolve to \"No\". The resolution source for this market is https://etherscan.io/chart/gasprice. This market will resolve when data is available for the date of March 20, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). ",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.04362323410844767939963177518202151",
+        "probability": "0.4747596824714982987645226857825057",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9563767658915523206003682248179785",
+        "probability": "0.5252403175285017012354773142174943",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "102",
-    "stars": 4
-  },
-  {
-    "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
-    "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Floyd Mayweather will win his boxing exhibition match against Logan Paul set to take place on February 20th, 2021. If Floyd Mayweather is declared the winner of this bout, either by knockout or by judgement, this market will resolve “Yes.” If Logan Paul is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed to a date earlier than May 1st, 2021, the same market resolution conditions will apply for whenever the fight is rescheduled. In the event the boxing match does not take place before then, the market will resolve to .90 for \"Yes\" and .10 for \"No\", which is in line with existing market odds at time of deployment. More info can be found about this fight on the Fanmio website here: https://fanmio.com/products/floyd-mayweather-vs-logan-paul-special-exhibition-fight. In the event of ambiguity in regards to the outcome, this market will be resolved in good faith by the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9013748586414486533130605654885246",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.0986251413585513466869394345114754",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "723",
-    "stars": 4
-  },
-  {
-    "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
-    "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the federal minimum wage will be $9.50 per hour or higher by April 1, 12:00pm EST. This market will resolve to \"Yes\" if the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point prior to the resolution date, and \"No\" otherwise. The primary resolution source for this market will be the U.S. Department of Labor's website, https://www.dol.gov/.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.01456986683448128899201154478899746",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9854301331655187110079884552110025",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "157",
+    "numforecasts": "24",
     "stars": 4
   },
   {
@@ -67,16 +27,67 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.5429675010103772436429096649505996",
+        "probability": "0.3599518973738807357714468587396873",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.4570324989896227563570903350494004",
+        "probability": "0.6400481026261192642285531412603127",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "392",
+    "numforecasts": "483",
+    "stars": 4
+  },
+  {
+    "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
+    "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Floyd Mayweather will win his boxing exhibition match against Logan Paul set to take place on February 20th, 2021. If Floyd Mayweather is declared the winner of this bout, either by knockout or by judgement, this market will resolve “Yes.” If Logan Paul is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed to a date earlier than May 1st, 2021, the same market resolution conditions will apply for whenever the fight is rescheduled. In the event the boxing match does not take place before then, the market will resolve to .90 for \"Yes\" and .10 for \"No\", which is in line with existing market odds at time of deployment. More info can be found about this fight on the Fanmio website here: https://fanmio.com/products/floyd-mayweather-vs-logan-paul-special-exhibition-fight. In the event of ambiguity in regards to the outcome, this market will be resolved in good faith by the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9006907275214002116819108602514002",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.09930927247859978831808913974859976",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "726",
+    "stars": 4
+  },
+  {
+    "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
+    "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1-1",
+    "address": "0x36BB6f09327d1A7D0930668345655d6A6e3c6b20",
+    "description": "This is a market on if the federal minimum wage will be $9.50 per hour or higher by April 1, 12:00pm EST. This market will resolve to \"Yes\" if the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point prior to the resolution date, and \"No\" otherwise. The primary resolution source for this market will be the U.S. Department of Labor's website, https://www.dol.gov/.",
+    "outcomes": [
+      "Yes",
+      "No"
+    ],
+    "options": []
+  },
+  {
+    "title": "Will Joe Biden be President of the USA on April 30, 2021?",
+    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-april-30-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Joe Biden will be President of the United States on April 30, 2021, 11:59 PM EST. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, https://www.whitehouse.gov/",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9472111059794047642143098718776742",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.05278889402059523578569012812232582",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "927",
     "stars": 4
   },
   {
@@ -87,56 +98,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1047586563328496070788850040024748",
+        "probability": "0.08602343324392723872247252157153729",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8952413436671503929211149959975252",
+        "probability": "0.9139765667560727612775274784284627",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "91",
-    "stars": 4
-  },
-  {
-    "title": "Will Joe Biden be President of the USA on April 30, 2021?",
-    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-april-30-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Joe Biden will be President of the United States on April 30, 2021, 11:59 PM EST. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, https://www.whitehouse.gov/",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.945411013497345277834355815925536",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.05458898650265472216564418407446405",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "852",
-    "stars": 4
-  },
-  {
-    "title": "Will Uniswap v3 launch before April 30, 2021?",
-    "url": "https://polymarket.com/market/will-uniswap-v3-launch-before-april-30-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Uniswap v3 will launch before April 30th, 2021, 12:00 am ET. “Launch” in this context can be defined as being deployed and usable on the Ethereum mainnet and publicly announced via the official Uniswap Twitter and/or Blog. V3 can be defined as Uniswap v3.0.0 or greater. If Uniswap v3 is officially announced and is deployed on the mainnet of a given L2 scaling solution, with or without some bridging mechanism from Ethereum mainnet, the market will still resolve to \"Yes\".",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.1000088021372956222173337235615067",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.8999911978627043777826662764384933",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "66",
+    "numforecasts": "98",
     "stars": 4
   },
   {
@@ -147,16 +118,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.01479126561756588071986562671041005",
+        "probability": "0.01356556579834193356187740697112239",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9852087343824341192801343732895899",
+        "probability": "0.9864344342016580664381225930288776",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "3364",
+    "numforecasts": "3437",
     "stars": 4
   },
   {
@@ -167,16 +138,56 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9667695168191735773339115589371309",
+        "probability": "0.9950419005145640380044067953452461",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.03323048318082642266608844106286906",
+        "probability": "0.00495809948543596199559320465475387",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "618",
+    "numforecasts": "640",
+    "stars": 4
+  },
+  {
+    "title": "Will Donald Trump be federally charged by June 1st? ",
+    "url": "https://polymarket.com/market/will-donald-trump-be-federally-charged-by-june-1st-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether President Donald J. Trump shall be indicted or otherwise formally charged with a federal crime, as publicly confirmed before June 1st, 2021 12:00 PM ET by an authorized representative of the charging agency(ies) or judicial venue(s). If he is charged with a federal crime on or before June 1st, 2021 12:00 PM ET, this market will resolve to “Yes”. If he is charged with any crime that is not a federal crime or is not charged with any crimes, this market will resolve “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). \n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.1182045588380736017131550800622118",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.8817954411619263982868449199377882",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "17",
+    "stars": 3
+  },
+  {
+    "title": "Will Andrew Yang win the Democratic primary for Mayor of New York City in 2021?",
+    "url": "https://polymarket.com/market/will-andrew-yang-win-the-democratic-primary-for-mayor-of-new-york-city-in-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Andrew Yang will win the Democratic primary for New York City Mayor in 2021. This market will resolve to \"Yes\" if Yang is the winner of the Democratic primary for Mayor of New York City, and \"No\" otherwise. The primary is currently scheduled for June 22, 2021. In the event that the primary is not held on that date, the resolution of this market will be delayed until the primary takes place. If no primary is held in 2021, this market will resolve to \"No\". The resolution source for this market will be any official CNN publication that declares Andrew Yang the primary winner. In the event of conflicting sources between CNN and WSJ (https://www.wsj.com) or Associated Press (https://apnews.com/), the market will only be resolved once there is a definitive winner. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n\n \n\n\n\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.4826623178647927182117863416542698",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.5173376821352072817882136583457302",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "143",
     "stars": 4
   },
   {
@@ -187,57 +198,57 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.3923681823134877529676620655329725",
+        "probability": "0.3913458169230817418771462098445261",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.6076318176865122470323379344670275",
+        "probability": "0.6086541830769182581228537901554739",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "19",
+    "numforecasts": "26",
     "stars": 4
   },
   {
-    "title": "Will Andrew Yang win the Democratic primary for Mayor of New York City in 2021?",
-    "url": "https://polymarket.com/market/will-andrew-yang-win-the-democratic-primary-for-mayor-of-new-york-city-in-2021",
+    "title": "Will Beeple's \"Everydays: The First 5000 Days\" sell for more than $20 million in its Christie's auction?",
+    "url": "https://polymarket.com/market/will-beeple-s-everydays-the-first-5000-days-sell-for-more-than-20-million-in-its-christie-s-auction",
     "platform": "PolyMarket",
-    "description": "This is a market on if Andrew Yang will win the Democratic primary for New York City Mayor in 2021. This market will resolve to \"Yes\" if Yang is the winner of the Democratic primary for Mayor of New York City, and \"No\" otherwise. The primary is currently scheduled for June 22, 2021. In the event that the primary is not held on that date, the resolution of this market will be delayed until the primary takes place. If no primary is held in 2021, this market will resolve to \"No\". The resolution source for this market will be any official CNN publication that declares Andrew Yang the primary winner. In the event of conflicting sources between CNN and WSJ (https://www.wsj.com) or Associated Press (https://apnews.com/), the market will only be resolved once there is a definitive winner. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n\n \n\n\n\n",
+    "description": "This is a market on whether the final sale price for Beeple’s \"Everydays: The First 5000 Days\", currently on auction at Christie's, will be above $20 million. This market will resolve to “Yes” if the final hammer price of the auction is greater than $20 million USD and the sale is confirmed as successful, and “No” otherwise”. The auction is being conducted by Christie's and is scheduled to take place from February 25th to March 11th. In the event the auction is postponed, resolution of this market will be delayed accordingly. If the auction is canceled entirely, this market will resolve to “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.45869502016622486223273049350794",
+        "probability": "0.7677266271891552967524099455639778",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.54130497983377513776726950649206",
+        "probability": "0.2322733728108447032475900544360222",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "131",
+    "numforecasts": "58",
     "stars": 4
   },
   {
-    "title": "Will the average Ethereum gas price be below 130 Gwei on March 20?",
-    "url": "https://polymarket.com/market/will-the-average-ethereum-gas-price-be-below-130-gwei-on-march-20",
+    "title": "Will 150 million people have received a dose of an approved COVID-19 vaccine in the US by May 1, 2021?",
+    "url": "https://polymarket.com/market/will-150-million-people-have-received-a-dose-of-an-approved-covid-19-vaccine-in-the-us-by-may-1-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on whether the average Ethereum gas price will be below 130 Gwei on March 20, 2021. This market will resolve to \"Yes\" if Avg Gas Price is listed as being below 130 Gwei for that date, on Etherscan. If Avg Gas Price is 130 Gwei or higher, this market will resolve to \"No\". The resolution source for this market is https://etherscan.io/chart/gasprice. This market will resolve when data is available for the date of March 20, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). ",
+    "description": "This is a market on whether 150 million people in The United States of America will have initiated vaccination, according to the CDC COVID tracker, by the resolution date, May 1, 2021, 12 PM ET. This market will resolve to \"Yes\" if 150 million people or more are listed as having received their initial dose of vaccination by the resolution source. This only concerns the first dose of vaccination. For vaccines requiring two doses for inoculation, this market considers only the first dose to be considered having initiated vaccination. This market will resolve to \"No\" if, for any reason, fewer than 150 million people have initiated vaccination by the resolution date. The resolution source for this market will be the official data published by the CDC available at https://covid.cdc.gov/covid-data-tracker/#vaccinations\n\nThis market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.5612835878784322639229718937535726",
+        "probability": "0.633847200283777309202593033020977",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.4387164121215677360770281062464274",
+        "probability": "0.366152799716222690797406966979023",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "2",
-    "stars": 3
+    "numforecasts": "65",
+    "stars": 4
   },
   {
     "title": "Will ETH be above $2000 on April 1st, 2021?",
@@ -247,16 +258,56 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.3506373749139563440709149225354222",
+        "probability": "0.4031862808226497473480395855147911",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.6493626250860436559290850774645778",
+        "probability": "0.5968137191773502526519604144852089",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "426",
+    "numforecasts": "556",
+    "stars": 4
+  },
+  {
+    "title": "Will Beeple's \"Everydays: The First 5000 Days\" sell for more than $10 million in its Christie's auction?",
+    "url": "https://polymarket.com/market/will-beeple-s-everydays-the-first-5000-days-sell-for-more-than-10-million-in-its-christie-s-auction",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the final sale price for Beeple’s \"Everydays: The First 5000 Days\", currently on auction at Christie's, will be above $10 million. This market will resolve to “Yes” if the final hammer price of the auction is greater than $10 million USD and the sale is confirmed as successful, and “No” otherwise”. The auction is being conducted by Christie's and is scheduled to take place from February 25th to March 11th. In the event the auction is postponed, resolution of this market will be delayed accordingly. If the auction is canceled entirely, this market will resolve to “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9979108694248703831222352764505788",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.002089130575129616877764723549421245",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "285",
+    "stars": 3
+  },
+  {
+    "title": "Will North Dakota have the most COVID-19 cases per 100k residents on May 15, 2021?",
+    "url": "https://polymarket.com/market/will-north-dakota-have-the-most-covid-19-cases-per-100k-residents-on-may-15-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on the state with the most COVID-19 cases per 100k residents on the resolution date, May 15, 12 PM ET. This market will resolve to “Yes” if North Dakota has the most COVID-19 cases per 100k residents on May 15, 2021, and “No” otherwise. The resolution source for this market will be https://www.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/. There will be no resolution delay for any anticipated data revisions. If, for any reason, data is not published prior to the resolution date, that data will not be considered for the resolution of this market. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.3912732160707983222341532945443109",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.6087267839292016777658467054556891",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "53",
     "stars": 4
   },
   {
@@ -267,16 +318,101 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.140894399141350354152909901245227",
+        "probability": "0.09461066955581347935321630177276889",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.859105600858649645847090098754773",
+        "probability": "0.9053893304441865206467836982272311",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "247",
+    "numforecasts": "266",
+    "stars": 4
+  },
+  {
+    "title": "Will Texas, Florida, or California have the highest 7-day daily average of COVID-19 cases on April 15, 2021?",
+    "url": "https://polymarket.com/market/will-texas-florida-or-california-have-the-highest-7-day-daily-average-of-covid-19-cases-on-april-15-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on which of the following states will have the highest 7-day daily average of COVID-19 cases on April 15, 2021, 12:00 PM ET: Texas, Florida, or California. The resolution source for this Market will be the New York Times’ U.S. state-by-state COVID-19 case count dashboard (https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html#states). This market will resolve to whichever state out of Texas, Florida, or California has the highest 7-day daily average of COVID-19 cases on the resolution date. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). \n",
+    "options": [
+      {
+        "name": "Texas",
+        "probability": "0.3698748876628675851571800738370197",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Florida",
+        "probability": "0.3930984910937624151044067952705361",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "California",
+        "probability": "0.2370266212433699997384131308924442",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "29",
+    "stars": 3
+  },
+  {
+    "title": "Will ETH be above $1750 on March 22nd, 2021?",
+    "url": "https://polymarket.com/market/will-eth-be-above-1750-on-march-22nd-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on if the USD price of Ether $ETH will be above $1750 on March 22nd, 2021, 12:00pm ET, according to coinmarketcap.com/currencies/ethereum/. This market will resolve to “Yes“ if ETH is trading above $1750 according to Coinmarketcap on the resolution date, and “No“ otherwise. If price data is temporarily unavailable on Coinmarketcap at the time of resolution, coingecko.com/en/coins/ethereum will instead be referenced. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.5874473321433342642042382446241169",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.4125526678566657357957617553758831",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "325",
+    "stars": 4
+  },
+  {
+    "title": "Will daily CO2 emissions be above 418 ppm on March 22, 2021?",
+    "url": "https://polymarket.com/market/will-daily-co2-emissions-be-above-418-ppm-on-march-22-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether CO2 emissions will be above 418.00 parts per million (ppm) for the date of March 22, 2021 as measured by the National Oceanic and Atmospheric Administration’s Mauna Loa observatory (https://www.esrl.noaa.gov/gmd/ccgg/trends/monthly.html). This market will resolve to “Yes” if the daily average CO2 emissions are greater than 418.00 ppm for March 22, and “No” otherwise. This market will resolve when data is first available for the date of March 22, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.5684059800248149446239868478670666",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.4315940199751850553760131521329334",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "21",
+    "stars": 3
+  },
+  {
+    "title": "Will Bitcoin ($BTC) be above $55k on March 15, 2021?",
+    "url": "https://polymarket.com/market/will-bitcoin-btc-be-above-55k-on-march-15-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if the USD price of Bitcoin $BTC will be above $55000 on March 15, 2021, 12:00pm EST, according to coinmarketcap.com/currencies/bitcoin/. This market will resolve to “Yes“ if BTC is trading above $55000 according to Coinmarketcap on the resolution date, and “No“ otherwise. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.6427574213385116975632521268689137",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.3572425786614883024367478731310863",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "1673",
     "stars": 4
   },
   {
@@ -287,36 +423,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.05284697941811101448356581329694619",
+        "probability": "0.06440130798962022405449447402665096",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9471530205818889855164341867030538",
+        "probability": "0.935598692010379775945505525973349",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "49",
+    "numforecasts": "55",
     "stars": 3
-  },
-  {
-    "title": "Will there be enough signatures for a vote on the recall of Gov. Newsom by March 17?",
-    "url": "https://polymarket.com/market/will-there-be-enough-signatures-for-a-vote-on-recall-of-gov-newsom-by-march-17",
-    "platform": "PolyMarket",
-    "description": "This is a market on if there will be enough petition signatures for a vote on the recall of California Governor Gavin Newson prior to March 17, 2021. This market will resolve to \"Yes\" if a recall election is triggered and \"No\" otherwise. The linked PredictIt question will be referenced as the leading resolution source, https://www.predictit.org/markets/detail/7039/Will-there-be-enough-signatures-by-Mar-17-for-a-vote-on-recall-of-Gov-Newsom. This market will resolve when the PredictIt market is resolved, to the same outcome.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9012705611557196906805184754055062",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.09872943884428030931948152459449382",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "912",
-    "stars": 4
   }
 ]
