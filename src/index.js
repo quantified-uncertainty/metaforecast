@@ -108,7 +108,7 @@ let executeoption = async (option) => {
     case 13:
       await csetforetell()
       await elicit()
-      await foretold()
+      //await foretold()
       await goodjudgment()
       await goodjudgmentopen()
       await hypermind()
