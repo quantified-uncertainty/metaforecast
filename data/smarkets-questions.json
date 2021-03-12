@@ -149,27 +149,27 @@
     "options": [
       {
         "name": "Friedrich Merz",
-        "probability": 0.00588493631971893,
+        "probability": 0.005923437361860137,
         "type": "PROBABILITY"
       },
       {
         "name": "Annegret Kramp-Karrenbauer",
-        "probability": 0.019060166886253845,
+        "probability": 0.019184864291397753,
         "type": "PROBABILITY"
       },
       {
         "name": "Jens Spahn",
-        "probability": 0.05665349143610014,
+        "probability": 0.05702413579701176,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet",
-        "probability": 0.3721563460693896,
+        "probability": 0.3810450004420476,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.06508563899868249,
+        "probability": 0.049155689152152765,
         "type": "PROBABILITY"
       },
       {
@@ -189,7 +189,7 @@
       },
       {
         "name": "Ralph Brinkhaus",
-        "probability": 0.03513394817742645,
+        "probability": 0.03536380514543365,
         "type": "PROBABILITY"
       },
       {
@@ -224,7 +224,7 @@
       },
       {
         "name": "Ursula Von der Leyen",
-        "probability": 0.027404479578392628,
+        "probability": 0.02758376801343825,
         "type": "PROBABILITY"
       },
       {
@@ -239,17 +239,17 @@
       },
       {
         "name": "Markus Söder",
-        "probability": 0.38190601668862545,
+        "probability": 0.38776412341968,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.03381642512077295,
+        "probability": 0.03403766245247989,
         "type": "PROBABILITY"
       },
       {
         "name": "Norbert Röttgen",
-        "probability": 0.0028985507246376816,
+        "probability": 0.002917513924498276,
         "type": "PROBABILITY"
       },
       {
@@ -790,12 +790,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.31289404108196056,
+        "probability": 0.2934948492941626,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.6871059589180395,
+        "probability": 0.7065051507058375,
         "type": "PROBABILITY"
       }
     ],
@@ -1273,41 +1273,41 @@
     "options": [
       {
         "name": "Sadiq Khan",
-        "probability": 0.9347869573914784,
+        "probability": 0.9407146451937592,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Bailey",
-        "probability": 0.026305261052210448,
+        "probability": 0.026472068444891795,
         "type": "PROBABILITY"
       },
       {
         "name": "Siân Berry",
-        "probability": 0.0010002000400080018,
+        "probability": 0.00010065425264217412,
         "type": "PROBABILITY"
       },
       {
-        "probability": 0.00010002000400080019,
+        "probability": 0.00010065425264217412,
         "type": "PROBABILITY"
       },
       {
         "name": "Brian Rose",
-        "probability": 0.03570714142828566,
+        "probability": 0.03140412682435833,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid",
-        "probability": 0.0010002000400080018,
+        "probability": 0.00010065425264217412,
         "type": "PROBABILITY"
       },
       {
         "name": "Luisa Porritt",
-        "probability": 0.00010002000400080019,
+        "probability": 0.00010065425264217412,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox",
-        "probability": 0.0010002000400080018,
+        "probability": 0.0010065425264217413,
         "type": "PROBABILITY"
       }
     ],
@@ -1321,12 +1321,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.22508980903762524,
+        "probability": 0.28001209555488354,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.7749101909623747,
+        "probability": 0.7199879044451164,
         "type": "PROBABILITY"
       }
     ],
@@ -1695,12 +1695,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.036243302867948315,
+        "probability": 0.0832417307884481,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.9637566971320517,
+        "probability": 0.9167582692115519,
         "type": "PROBABILITY"
       }
     ],
@@ -1951,12 +1951,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5384764489242101,
+        "probability": 0.5288406624785836,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.46152355107578985,
+        "probability": 0.4711593375214163,
         "type": "PROBABILITY"
       }
     ],
@@ -1970,32 +1970,32 @@
     "options": [
       {
         "name": "Joe Biden",
-        "probability": 0.38062883026911803,
+        "probability": 0.3583343785275304,
         "type": "PROBABILITY"
       },
       {
         "name": "Kamala Harris",
-        "probability": 0.3976818545163869,
+        "probability": 0.3743885613947071,
         "type": "PROBABILITY"
       },
       {
         "name": "Elizabeth Warren",
-        "probability": 0.05555555555555555,
+        "probability": 0.05230151762197416,
         "type": "PROBABILITY"
       },
       {
         "name": "Alexandria Ocasio-Cortez",
-        "probability": 0.02664535038635758,
+        "probability": 0.08365734353442869,
         "type": "PROBABILITY"
       },
       {
         "name": "Michelle Obama",
-        "probability": 0.049293898214761524,
+        "probability": 0.04640662235043271,
         "type": "PROBABILITY"
       },
       {
         "name": "Pete Buttigieg",
-        "probability": 0.06661337596589395,
+        "probability": 0.06271165182490906,
         "type": "PROBABILITY"
       },
       {
@@ -2015,7 +2015,7 @@
       },
       {
         "name": "Bernie Sanders",
-        "probability": 0.022248867572608577,
+        "probability": 0.020945691709519626,
         "type": "PROBABILITY"
       },
       {
@@ -2055,7 +2055,7 @@
       },
       {
         "name": "Michael Bloomberg",
-        "probability": 0.001332267519317879,
+        "probability": 0.0012542330364981814,
         "type": "PROBABILITY"
       }
     ],
@@ -2069,57 +2069,57 @@
     "options": [
       {
         "name": "Donald Trump",
-        "probability": 0.2992592592592592,
+        "probability": 0.29622716971070523,
         "type": "PROBABILITY"
       },
       {
         "name": "Donald Trump Jr.",
-        "probability": 0.02249158249158249,
+        "probability": 0.022263698173576853,
         "type": "PROBABILITY"
       },
       {
         "name": "Tom Cotton",
-        "probability": 0.03205387205387205,
+        "probability": 0.031729102786295156,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Pence",
-        "probability": 0.06734006734006734,
+        "probability": 0.06345820557259031,
         "type": "PROBABILITY"
       },
       {
         "name": "Tucker Carlson",
-        "probability": 0.029225589225589224,
+        "probability": 0.028929476069857348,
         "type": "PROBABILITY"
       },
       {
         "name": "Ted Cruz",
-        "probability": 0.05616161616161616,
+        "probability": 0.055592587654979334,
         "type": "PROBABILITY"
       },
       {
         "name": "Nikki Haley",
-        "probability": 0.16026936026936028,
+        "probability": 0.1586455139314758,
         "type": "PROBABILITY"
       },
       {
         "name": "Marco Rubio",
-        "probability": 0.026936026936026935,
+        "probability": 0.026663111585121982,
         "type": "PROBABILITY"
       },
       {
         "name": "Josh Hawley",
-        "probability": 0.05858585858585858,
+        "probability": 0.05799226769764031,
         "type": "PROBABILITY"
       },
       {
         "name": "Ivanka Trump",
-        "probability": 0.08417508417508418,
+        "probability": 0.0833222237035062,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Pompeo",
-        "probability": 0.046464646464646465,
+        "probability": 0.04599386748433542,
         "type": "PROBABILITY"
       },
       {
@@ -2144,17 +2144,17 @@
       },
       {
         "name": "Rick Scott",
-        "probability": 0.013468013468013467,
+        "probability": 0.013331555792560991,
         "type": "PROBABILITY"
       },
       {
         "name": "Tim Scott",
-        "probability": 0,
+        "probability": 0.013331555792560991,
         "type": "PROBABILITY"
       },
       {
         "name": "Ron DeSantis",
-        "probability": 0.10356902356902357,
+        "probability": 0.10251966404479403,
         "type": "PROBABILITY"
       }
     ],
@@ -2317,12 +2317,12 @@
     "options": [
       {
         "name": "Shaun Bailey",
-        "probability": 0.8785863198649856,
+        "probability": 0.8487046632124352,
         "type": "PROBABILITY"
       },
       {
         "name": "Sadiq Khan",
-        "probability": 0,
+        "probability": 0.02044276966556759,
         "type": "PROBABILITY"
       },
       {
@@ -2337,12 +2337,12 @@
       },
       {
         "name": "Brian Rose",
-        "probability": 0.06621661868360965,
+        "probability": 0.07847385774846914,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid",
-        "probability": 0.05519706145140474,
+        "probability": 0.05237870937352802,
         "type": "PROBABILITY"
       }
     ],
@@ -2404,94 +2404,6 @@
       }
     ],
     "description": "Will Labour win a majority on the London Assembly following the 2021 election?",
-    "stars": 2
-  },
-  {
-    "title": "Senate-confirmed Attorney General on 1st March 2021",
-    "url": "https://smarkets.com/event/41947823/politics/us/biden-s-first-cabinet/attorney-general",
-    "platform": "Smarkets",
-    "options": [
-      {
-        "name": "Doug Jones",
-        "probability": 0.006960879855213698,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Sally Yates",
-        "probability": 0.2597104273980231,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Xavier Becerra",
-        "probability": 0.011624669358206875,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Bill Barr",
-        "probability": 0.004663789502993178,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Amy Klobuchar",
-        "probability": 0.011624669358206875,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Tom Perez",
-        "probability": 0.009257970207434218,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Julian Castro",
-        "probability": 0.006960879855213698,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Merrick Garland",
-        "probability": 0.6891967144647082,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "Contracts added on request.",
-    "stars": 2
-  },
-  {
-    "title": "Senate-confirmed Secretary of State on the 15th February 2021",
-    "url": "https://smarkets.com/event/41947824/politics/us/biden-s-first-cabinet/secretary-of-state",
-    "platform": "Smarkets",
-    "options": [
-      {
-        "name": "Susan Rice",
-        "probability": 0.0781983109164842,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Chris Coons",
-        "probability": 0.09540193931811071,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Antony Blinken",
-        "probability": 0.7742414763841101,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Mike Pompeo",
-        "probability": 0.05215827338129496,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "William Burns",
-        "probability": 0,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Chris Murphy",
-        "probability": 0,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "Contracts added on request.",
     "stars": 2
   },
   {
@@ -2717,32 +2629,32 @@
     "options": [
       {
         "name": "United Kingdom",
-        "probability": 0.6280929136509005,
+        "probability": 0.7204754278007249,
         "type": "PROBABILITY"
       },
       {
         "name": "Republic of Ireland",
-        "probability": 0.21309543847837065,
+        "probability": 0.12045856865885526,
         "type": "PROBABILITY"
       },
       {
         "name": "France",
-        "probability": 0.033664366268305004,
+        "probability": 0.03371828373935767,
         "type": "PROBABILITY"
       },
       {
         "name": "Germany",
-        "probability": 0.10267631711833025,
+        "probability": 0.10284076540504088,
         "type": "PROBABILITY"
       },
       {
         "name": "China",
-        "probability": 0.014054872917017337,
+        "probability": 0.014077383461181826,
         "type": "PROBABILITY"
       },
       {
         "name": "Ukraine",
-        "probability": 0.008416091567076251,
+        "probability": 0.008429570934839417,
         "type": "PROBABILITY"
       }
     ],
@@ -2756,32 +2668,32 @@
     "options": [
       {
         "name": "Under 45%",
-        "probability": 0.027507574549513636,
+        "probability": 0.0283973989628776,
         "type": "PROBABILITY"
       },
       {
         "name": "45–49.9%",
-        "probability": 0.15946420028703556,
+        "probability": 0.1646226026833484,
         "type": "PROBABILITY"
       },
       {
         "name": "50–54.9%",
-        "probability": 0.4803061712645511,
+        "probability": 0.49888879743188735,
         "type": "PROBABILITY"
       },
       {
         "name": "55–59.9%",
-        "probability": 0.21551586668792858,
+        "probability": 0.18709358794962547,
         "type": "PROBABILITY"
       },
       {
         "name": "60–64.9%",
-        "probability": 0.1049274437888694,
+        "probability": 0.10832167256564326,
         "type": "PROBABILITY"
       },
       {
         "name": "65% or over",
-        "probability": 0.012278743422101739,
+        "probability": 0.012675940406617828,
         "type": "PROBABILITY"
       }
     ],
@@ -2814,12 +2726,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5558575699918455,
+        "probability": 0.37464865354973254,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.4441424300081544,
+        "probability": 0.6253513464502675,
         "type": "PROBABILITY"
       }
     ],
@@ -3024,27 +2936,27 @@
     "options": [
       {
         "name": "Andrew Yang",
-        "probability": 0.5087912087912088,
+        "probability": 0.5402559680493783,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Adams",
-        "probability": 0.20347985347985345,
+        "probability": 0.17454842516111463,
         "type": "PROBABILITY"
       },
       {
         "name": "Scott Stringer",
-        "probability": 0.08324175824175824,
+        "probability": 0.08250884995915403,
         "type": "PROBABILITY"
       },
       {
         "name": "Raymond McGuire",
-        "probability": 0.041666666666666664,
+        "probability": 0.04129980938549514,
         "type": "PROBABILITY"
       },
       {
         "name": "Maya Wiley",
-        "probability": 0.10897435897435898,
+        "probability": 0.10801488608514115,
         "type": "PROBABILITY"
       },
       {
@@ -3054,7 +2966,7 @@
       },
       {
         "name": "Dianne Morales",
-        "probability": 0.05384615384615384,
+        "probability": 0.053372061359716796,
         "type": "PROBABILITY"
       },
       {
@@ -3486,12 +3398,12 @@
     "options": [
       {
         "name": "Less than 2.0%",
-        "probability": 0.553072625698324,
+        "probability": 0.5994000999833361,
         "type": "PROBABILITY"
       },
       {
         "name": "2.0% or more",
-        "probability": 0.44692737430167595,
+        "probability": 0.4005999000166639,
         "type": "PROBABILITY"
       }
     ],
@@ -3629,22 +3541,22 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.6115724618269489,
+        "probability": 0.6831238779174147,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.15947852486829184,
+        "probability": 0.18821065230400957,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.1144745066523797,
+        "probability": 0.06433273488928785,
         "type": "PROBABILITY"
       },
       {
         "name": "Scottish Green",
-        "probability": 0.1144745066523797,
+        "probability": 0.06433273488928785,
         "type": "PROBABILITY"
       }
     ],
@@ -3763,12 +3675,12 @@
     "options": [
       {
         "name": "Conservative",
-        "probability": 0.855316219140356,
+        "probability": 0.8685577307231322,
         "type": "PROBABILITY"
       },
       {
         "name": "Plaid Cymru",
-        "probability": 0.14468378085964398,
+        "probability": 0.13144226927686778,
         "type": "PROBABILITY"
       }
     ],
@@ -3982,6 +3894,311 @@
       }
     ],
     "description": "Will the UK hold a referendum on the abolition of the monarchy by the end of 2024?",
+    "stars": 2
+  },
+  {
+    "title": "Aberconwy",
+    "url": "https://smarkets.com/event/42112669/politics/uk/welsh-senedd-constituencies/aberconwy",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Conservative",
+        "probability": null,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Plaid Cymru",
+        "probability": null,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": null,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Aberconwy at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Blaenau Gwent",
+    "url": "https://smarkets.com/event/42112671/politics/uk/welsh-senedd-constituencies/blaenau-gwent",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Labour",
+        "probability": null,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Plaid Cymru",
+        "probability": null,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Blaenau Gwent at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Brecon and Radnorshire",
+    "url": "https://smarkets.com/event/42112672/politics/uk/welsh-senedd-constituencies/brecon-and-radnorshire",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Liberal Democrat",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Conservative",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Brecon and Radnorshire at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Caerphilly",
+    "url": "https://smarkets.com/event/42112687/politics/uk/welsh-senedd-constituencies/caerphilly",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Plaid Cymru",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Conservative",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Caerphilly at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Cardiff Central",
+    "url": "https://smarkets.com/event/42112704/politics/uk/welsh-senedd-constituencies/cardiff-central",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrat",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Cardiff Central at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Cardiff North",
+    "url": "https://smarkets.com/event/42112712/politics/uk/welsh-senedd-constituencies/cardiff-north",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Labour",
+        "probability": null,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Conservative",
+        "probability": null,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Cardiff North at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Cardiff West",
+    "url": "https://smarkets.com/event/42112713/politics/uk/welsh-senedd-constituencies/cardiff-west",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Plaid Cymru",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Conservative",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Cardiff West at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Ceredigion",
+    "url": "https://smarkets.com/event/42112716/politics/uk/welsh-senedd-constituencies/ceredigion",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Plaid Cymru",
+        "probability": null,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrat",
+        "probability": null,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Ceredigion at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Clwyd South",
+    "url": "https://smarkets.com/event/42112717/politics/uk/welsh-senedd-constituencies/clwyd-south",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Labour",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Conservative",
+        "probability": 1,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Plaid Cymru",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Clwyd South at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Gower",
+    "url": "https://smarkets.com/event/42112718/politics/uk/welsh-senedd-constituencies/gower",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Conservative",
+        "probability": null,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": null,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Gower at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Llanelli",
+    "url": "https://smarkets.com/event/42112719/politics/uk/welsh-senedd-constituencies/llanelli",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Plaid Cymru",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Llanelli at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Preseli Pembrokeshire",
+    "url": "https://smarkets.com/event/42112720/politics/uk/welsh-senedd-constituencies/preseli-pembrokeshire",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Conservative",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Preseli Pembrokeshire at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Vale of Clwyd",
+    "url": "https://smarkets.com/event/42112722/politics/uk/welsh-senedd-constituencies/vale-of-clwyd",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Conservative",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Vale of Clwyd at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Vale of Glamorgan",
+    "url": "https://smarkets.com/event/42112723/politics/uk/welsh-senedd-constituencies/vale-of-glamorgan",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Conservative",
+        "probability": null,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": null,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Vale of Glamorgan at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Wrexham",
+    "url": "https://smarkets.com/event/42112724/politics/uk/welsh-senedd-constituencies/wrexham",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Conservative",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Wrexham at the 2021 Welsh Senedd election?",
     "stars": 2
   }
 ]

@@ -55,24 +55,5 @@
     ],
     "description": "",
     "stars": 1
-  },
-  {
-    "title": "Will Joe Biden be the US President at the end of 2021?",
-    "url": "https://omen.eth.link/#/0xd450b6c4db569f600cb42acc0a6cd3a140c4894b",
-    "platform": "Omen",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.8510322451182969,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.14896775488170313,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "",
-    "stars": 1
   }
 ]
