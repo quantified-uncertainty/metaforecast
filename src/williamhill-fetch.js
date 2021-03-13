@@ -93,8 +93,8 @@ let processResults = (html) => {
       ...element,
       probability: Number(element.probability) / totalValue
     }))
-    // Filter very unlikely probabilities
-    options = options.filter(element => element.probability > 0.02)
+    // Filter very unlikely probabilities: Not here, but on the front end
+    // options = options.filter(element => element.probability > 0.02)
 
     let obj = ({
       "title": title,

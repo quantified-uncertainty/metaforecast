@@ -89,6 +89,256 @@
         "name": "James Murray",
         "probability": 0.021242228371742073,
         "type": "PROBABILITY"
+      },
+      {
+        "name": "David Lammy",
+        "probability": 0.018118371258250592,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Dan Jarvis",
+        "probability": 0.018118371258250592,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Clive Lewis",
+        "probability": 0.018118371258250592,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Seema Malhotra",
+        "probability": 0.018118371258250592,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Lousie Haigh",
+        "probability": 0.018118371258250592,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jess Phillips",
+        "probability": 0.018118371258250592,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Rebecca Long-Bailey",
+        "probability": 0.018118371258250592,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Dan Carden",
+        "probability": 0.018118371258250592,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Zarah Sultana",
+        "probability": 0.01502499079952488,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Hilary Benn",
+        "probability": 0.01502499079952488,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Shabana Mahmood",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Stephen Kinnock",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jim McMahon",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Stella Creasy",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "David Miliband",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Emma Hardy",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Bridget Phillipson",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Richard Burgon",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Ed Miliband",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Matthew Pennycook",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Lucy Powell",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Dawn Butler",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Alison McGovern",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Janet Daby",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jonathan Ashworth",
+        "probability": 0.01207891417216706,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Ian Murray",
+        "probability": 0.009194397354933135,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Wes Streeting",
+        "probability": 0.009194397354933135,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Peter Kyle",
+        "probability": 0.009194397354933135,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Darren Jones",
+        "probability": 0.009194397354933135,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Chi Onwurah",
+        "probability": 0.009194397354933135,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Rosie Duffield",
+        "probability": 0.009194397354933135,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Diane Abbott",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Nia Griffith",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jonathan Reynolds",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liz Kendall",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "John McDonnell",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Preet Gill",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Helen Hayes",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Vicky Foxcroft",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Lloyd Russell-Moyle",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Nadia Whittome",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Angela Eagle",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Justin Madders",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Ian Lavery",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Bell Ribeiro-Addy",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Emily Thornberry",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Barry Gardiner",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jeremy Corbyn",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Kate Osamor",
+        "probability": 0.0060992536908962385,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Tony Blair",
+        "probability": 0.004079633263447153,
+        "type": "PROBABILITY"
       }
     ],
     "stars": 2
@@ -112,6 +362,61 @@
         "name": "Shaun Bailey",
         "probability": 0.05022934536417672,
         "type": "PROBABILITY"
+      },
+      {
+        "name": "Laurence Fox",
+        "probability": 0.01674311512139224,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Richard Tice",
+        "probability": 0.01674311512139224,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Justine Greening",
+        "probability": 0.008454444269217863,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "David Kurten",
+        "probability": 0.004248253090502508,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Luisa Porritt",
+        "probability": 0.004248253090502508,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jeremy Corbyn",
+        "probability": 0.0034019875346255144,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Piers Corbyn",
+        "probability": 0.0034019875346255144,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Farah London",
+        "probability": 0.0034019875346255144,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Sian Berry",
+        "probability": 0.0034019875346255144,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Peter Gammons",
+        "probability": 0.0034019875346255144,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Mandu Reid",
+        "probability": 0.0034019875346255144,
+        "type": "PROBABILITY"
       }
     ],
     "stars": 2
@@ -129,6 +434,21 @@
       {
         "name": "Liam Byrne (Labour)",
         "probability": 0.32976932368130674,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Ashvir Sangha (Independent)",
+        "probability": 0.008978867723995976,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jenny Wilkinson (Lib Dem)",
+        "probability": 0.008978867723995976,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Tim Weller (Independent)",
+        "probability": 0.0045117693538487234,
         "type": "PROBABILITY"
       }
     ],
@@ -148,6 +468,16 @@
         "name": "Laura Evans (Conservative)",
         "probability": 0.028842169433388114,
         "type": "PROBABILITY"
+      },
+      {
+        "name": "Melanie Horrocks (Green)",
+        "probability": 0.006494263316127125,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Michael Elston (Independent)",
+        "probability": 0.0032579194708810496,
+        "type": "PROBABILITY"
       }
     ],
     "stars": 2
@@ -165,6 +495,21 @@
       {
         "name": "Conservative Candidate",
         "probability": 0.14241445304529837,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Andrew Cooper (Green)",
+        "probability": 0.009165286582123162,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Stewart Golton (Lib Dem)",
+        "probability": 0.009165286582123162,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Bob Buxton (Yorkshire Party)",
+        "probability": 0.006130423475459863,
         "type": "PROBABILITY"
       }
     ],
@@ -214,6 +559,36 @@
         "name": "Dianne Morales",
         "probability": 0.021821710530707354,
         "type": "PROBABILITY"
+      },
+      {
+        "name": "Carlos Menchaca",
+        "probability": 0.014547807020471568,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Loree Sutton",
+        "probability": 0.014547807020471568,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Curtis Sliwa",
+        "probability": 0.011073703851403731,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Cleopatra Fitzgerald",
+        "probability": 0.0073459223568717825,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Bill Pepitone",
+        "probability": 0.0073459223568717825,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Abbey Laurel-Smith",
+        "probability": 0.0073459223568717825,
+        "type": "PROBABILITY"
       }
     ],
     "stars": 2
@@ -236,6 +611,11 @@
       {
         "name": "Plaid Cymru",
         "probability": 0.035090581179491896,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrat",
+        "probability": 0.006042086825607876,
         "type": "PROBABILITY"
       }
     ],
@@ -269,6 +649,11 @@
       {
         "name": "Annalena Baerbock",
         "probability": 0.043241137125416475,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Alice Weidel",
+        "probability": 0.013553192233339492,
         "type": "PROBABILITY"
       }
     ],
@@ -411,6 +796,156 @@
       {
         "name": "Ivanka Trump",
         "probability": 0.02059990932041934,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Elizabeth Warren",
+        "probability": 0.013733272880279559,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Andrew Cuomo",
+        "probability": 0.013733272880279559,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Mike Pompeo",
+        "probability": 0.013733272880279559,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Marco Rubio",
+        "probability": 0.013733272880279559,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Candace Owens",
+        "probability": 0.013733272880279559,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Tom Cotton",
+        "probability": 0.013733272880279559,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Amy Klobuchar",
+        "probability": 0.010453685326779963,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Gavin Newsom",
+        "probability": 0.010453685326779963,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Dan Crenshaw",
+        "probability": 0.010453685326779963,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Bernie Sanders",
+        "probability": 0.010453685326779963,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Andrew Yang",
+        "probability": 0.010453685326779963,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Mitt Romney",
+        "probability": 0.010453685326779963,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Paul Ryan",
+        "probability": 0.010453685326779963,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Kanye West",
+        "probability": 0.010453685326779963,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Josh Hawley",
+        "probability": 0.010453685326779963,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Tim Scott",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Rick Scott",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jared Kushner",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Gretchen Whitmer",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Mike DeWine",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "John Hickenlooper",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Tim Kaine",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Megan Rapinoe",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Mark Zuckerberg",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Michael Bloomberg",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Hillary Clinton",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Meghan Markle",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jim Jordan",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Matt Gaetz",
+        "probability": 0.006934622939547105,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Kimberly Guilfoyle",
+        "probability": 0.006934622939547105,
         "type": "PROBABILITY"
       }
     ],
