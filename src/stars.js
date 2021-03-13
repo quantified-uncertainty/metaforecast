@@ -90,6 +90,15 @@ function calculateStarsHypermind(data) {
   return starsInteger
 }
 
+function calculateStarsLadbrokes(data) {
+  let nuno = data => 2
+  let eli = (data) => null
+  let misha = (data) => null
+  let starsDecimal = average([nuno(data)]) //, eli(data), misha(data)])
+  let starsInteger = Math.round(starsDecimal)
+  return starsInteger
+}
+
 function calculateStarsMetaculus(data) {
   let nuno = data => data.numforecasts > 300 ? 4 : (data.numforecasts > 100 ? 3 : 2)
   let eli = (data) => 3
@@ -135,6 +144,15 @@ function calculateStarsSmarkets(data) {
   return starsInteger
 }
 
+function calculateStarsWilliamHill(data) {
+  let nuno = data => 2
+  let eli = (data) => null
+  let misha = (data) => null
+  let starsDecimal = average([nuno(data)]) //, eli(data), misha(data)])
+  let starsInteger = Math.round(starsDecimal)
+  return starsInteger
+}
+
 export function calculateStars(platform, data) {
   let stars = 2;
   switch (platform) {
@@ -159,6 +177,9 @@ export function calculateStars(platform, data) {
     case "Hypermind":
       stars = calculateStarsHypermind(data)
       break;
+    case "Hypermind":
+      stars = calculateStarsLadbrokes(data)
+      break;
     case "Metaculus":
       stars = calculateStarsMetaculus(data)
       break;
@@ -173,6 +194,9 @@ export function calculateStars(platform, data) {
       break;
     case "Smarkets":
       stars = calculateStarsSmarkets(data)
+      break;
+    case "WilliamHill":
+      calculateStarsWilliamHill(data)
       break;
     default:
       stars = 2

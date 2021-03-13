@@ -1,5 +1,149 @@
 [
   {
+    "title": "How many new H-1B visa applications submitted by the \"Big 5\" tech companies will the U.S. grant in FY 2022 (September 2021 through October 2022)?",
+    "url": "https://www.cset-foretell.com/questions/118-how-many-new-h-1b-visa-applications-submitted-by-the-big-5-tech-companies-will-the-u-s-grant-in-fiscal-year-2022",
+    "platform": "CSET-foretell",
+    "description": "Related question. This question was previously issued for FY 2021. The mean crowd forecast for that question is 8,122. You can view those forecasts here.Context. H-1B is a visa category for skilled workers, accounting for about 108,000 annual entrants. It's also a common immigration pathway for AI-skilled workers. Data and resolution details. This question resolves based on \"initial approvals\" reported in the USCIS annual summary for FY 2021.  The fiscal year is October 1 through September 30. The chart below is based on the same data for previous fiscal years. The \"Big 5\" tech companies are Google, Amazon, Apple, Facebook, and Microsoft, including all affiliates with those words at the beginning of their title. For example, Amazon includes Amazon Web Services and Amazon Fulfillment Services. The H-1B Employer Data Hub provides quarterly updates on H-1B statistics. For example, if one downloads all data for FY 2020 and then filters by the Big-5 tech companies, they'll see H-1B statistics as of the most recent quarter for which there's data.  The data underlying the graph is here.This question is a metric for the following scenarios:Three Possible 2025 Worlds that Should Inform Policy TodayTo suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
+    "options": [
+      {
+        "name": "Less than 7,500",
+        "probability": 0.064,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 7,500 and 9,500, inclusive",
+        "probability": 0.138,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 9,500 but less than or equal to 11,500",
+        "probability": 0.32799999999999996,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 11,500 but less than or equal to 13,500",
+        "probability": 0.142,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 13,500",
+        "probability": 0.32799999999999996,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "5",
+    "numforecasters": "5",
+    "stars": 2
+  },
+  {
+    "title": "How many U.S. job postings requiring machine learning skills will be published between July 1 and December 31, 2021, inclusive?",
+    "url": "https://www.cset-foretell.com/questions/116-how-many-postings-for-u-s-jobs-requiring-machine-learning-skills-will-be-published-between-july-1-and-december-31-2021-inclusive",
+    "platform": "CSET-foretell",
+    "description": "Related questions. This question was previously issued for 2020 Q3 and 2021 Q1. You can view those forecasts here and here. For 2020 Q3, the answer was 39,364 and the median crowd forecast was 37,271. We will add the resolution for the 2021 Q1 question as soon as the data is available. Context. Job postings reflect the priorities and expectations of employers. They provide hints about future research and development. Data and resolution details. This question is based on data from Burning Glass Technologies. The date of a job posting is the date Burning Glass retrieves the data. The question resolves when CSET receives Burning Glass data through December 31, 2021. The data underlying the graph is here.This question is a metric for the following scenarios: The Impact of COVID-19 on the ML Research Field Three Possible 2025 Worlds that Should Inform Policy Today To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
+    "options": [
+      {
+        "name": "Less than 70,000",
+        "probability": 0.0333,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 70,000 and 90,000, inclusive",
+        "probability": 0.17,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 90,000 but less than or equal to 110,000",
+        "probability": 0.3333,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 110,000 but less than or equal to 130,000",
+        "probability": 0.2267,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 130,000",
+        "probability": 0.23670000000000002,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "3",
+    "numforecasters": "3",
+    "stars": 2
+  },
+  {
+    "title": "What will total U.S. trade volume with China (imports and exports of goods) be in 2022?",
+    "url": "https://www.cset-foretell.com/questions/117-what-will-total-u-s-trade-volume-with-china-imports-and-exports-of-goods-be-in-2022",
+    "platform": "CSET-foretell",
+    "description": "Related question. This question was previously issued for 2020 and 2021. The crowd's mean forecast for 2020 was $506 billion, and the correct answer was $560.1 billion. The crowd's mean forecast for 2021 is $524 billion. You can view those forecasts here and here. Context. The U.S. and China are the world's two largest economies and each other's largest trading partner. Since 2018, they have been engaged in an escalating trade war, and the COVID-19 pandemic has further reduced trade.  Data and resolution details. This question resolves based on U.S. Census Bureau data. It includes trade in goods only, not services. The data underlying the graph is here.This question is a metric for the following scenarios: Three Possible 2025 Worlds that Should Inform Policy Today An Isolated China in a Globalized World To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
+    "options": [
+      {
+        "name": "Less than $400 billion",
+        "probability": 0.05,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between $400 billion and $525 billion, inclusive",
+        "probability": 0.245,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than $525 billion but less than or equal to $650 billion",
+        "probability": 0.305,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than $650 billion but less than or equal to $775 billion",
+        "probability": 0.35,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than $775 billion",
+        "probability": 0.05,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "2",
+    "numforecasters": "2",
+    "stars": 2
+  },
+  {
+    "title": "What percentage of O visas will go to Chinese nationals in FY 2022 (September 2021 through October 2022)?",
+    "url": "https://www.cset-foretell.com/questions/119-what-percentage-of-o-visas-will-go-to-chinese-nationals-in-fiscal-year-2022",
+    "platform": "CSET-foretell",
+    "description": "Related questions. This question was previously issued for FY 2021. Initially two versions of that question were published, one conditioned on Vice President Biden's election, and one conditioned on President Trump's election. After Vice President Biden was elected, we dropped the condition on one question and voided the other. You can view the Biden/FY 2021 forecasts here and the Trump/FY 2021 (voided) forecasts here. And here is a blog post discussing the forecasts. The mean crowd forecast for FY 2021 is 4.3%.A variation of this question—specific to O-1 visas—was previously issued for July 1 to September 30, 2020. You can view those forecasts here. Context. This question includes O-1, O-2, and O-3 visas. O-1 is a category of U.S. visa for individuals with extraordinary ability or achievement in the sciences, arts, education, business, or athletics. O-2 visas are for individuals who assist the recipients of O-1 visas, and O-3 visas are for the spouses or children of recipients of O-1 or O-2 visas. The initial authorized period of stay is up to three years, with the possibility of extension.Data and resolution details. This question is based on U.S. Department of State data. The Department of State provides both annual and (unofficial) monthly statistics on nonimmigrant visa issuances. This question resolves when the Department of State publishes O visa statistics for either fiscal year 2022 or the month of September 2022, whichever comes first. This question includes visas for Mainland China only, not Taiwan. Although FY 2021 data in its entirety is not yet available, for the first four months of FY 2021 (October - January), 1.1% of O visas went to Chinese nationals.    The data underlying the graph is here.This question is a metric for the following scenarios: Three Possible 2025 Worlds that Should Inform Policy Today An Isolated China in a Globalized World To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
+    "options": [
+      {
+        "name": "Less than 3%",
+        "probability": 0.14,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 3% and 4.5%, inclusive",
+        "probability": 0.3,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 4.5% but less than or equal to 6%",
+        "probability": 0.4075,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 6% but less than or equal to 7.5%",
+        "probability": 0.1075,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 7.5%",
+        "probability": 0.045,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "4",
+    "numforecasters": "4",
+    "stars": 2
+  },
+  {
     "title": "What will the combined revenue of Alphabet, Amazon, Apple, Facebook, and Microsoft be in the second half of 2021?",
     "url": "https://www.cset-foretell.com/questions/114-what-will-the-combined-revenue-of-alphabet-amazon-apple-facebook-and-microsoft-be-in-the-second-half-of-2021",
     "platform": "CSET-foretell",
@@ -43,17 +187,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.24,
+        "probability": 0.23,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.76,
+        "probability": 0.77,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "85",
-    "numforecasters": "81",
+    "numforecasts": "89",
+    "numforecasters": "84",
     "stars": 2
   },
   {
@@ -73,8 +217,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "135",
-    "numforecasters": "114",
+    "numforecasts": "138",
+    "numforecasters": "117",
     "stars": 3
   },
   {
@@ -157,31 +301,31 @@
     "options": [
       {
         "name": "Less than -0.25",
-        "probability": 0.156,
+        "probability": 0.16010000000000002,
         "type": "PROBABILITY"
       },
       {
         "name": "Between -0.25 and 0, inclusive",
-        "probability": 0.3165,
+        "probability": 0.3186,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0 but less than or equal to 0.25",
-        "probability": 0.3125,
+        "probability": 0.30760000000000004,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.25 but less than or equal to 0.5",
-        "probability": 0.16879999999999998,
+        "probability": 0.1681,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.5",
-        "probability": 0.0463,
+        "probability": 0.045599999999999995,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "118",
+    "numforecasts": "119",
     "numforecasters": "104",
     "stars": 3
   },
@@ -229,31 +373,31 @@
     "options": [
       {
         "name": "Less than $30 million",
-        "probability": 0.0483,
+        "probability": 0.0479,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $30 million and $70 million, inclusive",
-        "probability": 0.3072,
+        "probability": 0.3015,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $70 million but less than or equal to $110 million",
-        "probability": 0.32880000000000004,
+        "probability": 0.3299,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $110 million but less than or equal to $150 million",
-        "probability": 0.19,
+        "probability": 0.1956,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $150 million",
-        "probability": 0.1257,
+        "probability": 0.1252,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "117",
+    "numforecasts": "118",
     "numforecasters": "109",
     "stars": 3
   },
@@ -465,8 +609,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "268",
-    "numforecasters": "176",
+    "numforecasts": "269",
+    "numforecasters": "177",
     "stars": 3
   },
   {
@@ -477,7 +621,7 @@
     "options": [
       {
         "name": "Before February 17, 2021",
-        "probability": 0.0392,
+        "probability": 0.038599999999999995,
         "type": "PROBABILITY"
       },
       {
@@ -487,16 +631,16 @@
       },
       {
         "name": "After May 19, but before or equal to November 17, 2021",
-        "probability": 0.2432,
+        "probability": 0.2441,
         "type": "PROBABILITY"
       },
       {
         "name": "After November 17, 2021",
-        "probability": 0.6081,
+        "probability": 0.6078,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "197",
+    "numforecasts": "199",
     "numforecasters": "126",
     "stars": 3
   },
@@ -589,7 +733,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "159",
+    "numforecasts": "160",
     "numforecasters": "124",
     "stars": 3
   },

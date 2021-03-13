@@ -25,6 +25,8 @@
   "dependencies": {
     "axios": "^0.21.1",
     "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "isomorphic-fetch": "^3.0.0",
     "json2csv": "^5.0.5",
     "open": "^7.3.1",
     "papaparse": "^5.3.0",

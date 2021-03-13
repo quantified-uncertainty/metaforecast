@@ -1,36 +1,5 @@
 [
   {
-    "title": "Will Texas reinstate a mask mandate by April 11, 2021?",
-    "url": "https://polymarket.com/market/will-texas-reinstate-a-mask-mandate-by-april-11-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether the State of Texas will reinstate a mask mandate by April 11, 2021, 12:00 PM ET. This market will resolve to “Yes” if an executive order is issued by the Governor of Texas which mandates the use of a face covering over the nose and mouth when inside a commercial entity or other building or space open to the public, or when in an outdoor public space, and “No” otherwise. If such a mandate does not apply to some limited subset of people or cases (e.g. people younger than 10, any person with medical conditions that prevent wearing face covering, while eating, while exercising outdoors, as with the previous mask mandate), this market will still resolve to “Yes”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). As a general principle, this market will resolve to “Yes” if Texas implements any mask mandate that is substantially similar to the July 2, 2020 Texas Mask Mandate (Executive Order 29), which requires most people to wear masks in public most of the time (https://open.texas.gov/uploads/files/organization/opentexas/EO-GA-29-use-of-face-coverings-during-COVID-19-IMAGE-07-02-2020.pdf). \n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.05829421923210072879808059175181826",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9417057807678992712019194082481817",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "13",
-    "stars": 3
-  },
-  {
-    "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
-    "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
-    "address": "0xB0E171C4e2490b97b3CEbAF36FA4006318A09b25",
-    "description": "This is a market on whether Floyd Mayweather will win his boxing exhibition match against Logan Paul set to take place on February 20th, 2021. If Floyd Mayweather is declared the winner of this bout, either by knockout or by judgement, this market will resolve “Yes.” If Logan Paul is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed to a date earlier than May 1st, 2021, the same market resolution conditions will apply for whenever the fight is rescheduled. In the event the boxing match does not take place before then, the market will resolve to .90 for \"Yes\" and .10 for \"No\", which is in line with existing market odds at time of deployment. More info can be found about this fight on the Fanmio website here: https://fanmio.com/products/floyd-mayweather-vs-logan-paul-special-exhibition-fight. In the event of ambiguity in regards to the outcome, this market will be resolved in good faith by the Markets Integrity Committee (MIC).",
-    "outcomes": [
-      "Yes",
-      "No"
-    ],
-    "options": []
-  },
-  {
     "title": "Will any NBA Topshot sell for more than $300,000 by March 20, 2021?",
     "url": "https://polymarket.com/market/will-any-nba-topshot-sell-for-more-than-300000-by-march-20-2021",
     "platform": "PolyMarket",
@@ -38,16 +7,36 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.09728362770307546172914330719671408",
+        "probability": "0.05902598232681666200982481701164344",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9027163722969245382708566928032859",
+        "probability": "0.9409740176731833379901751829883566",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "112",
+    "numforecasts": "128",
+    "stars": 4
+  },
+  {
+    "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
+    "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Floyd Mayweather will win his boxing exhibition match against Logan Paul set to take place on February 20th, 2021. If Floyd Mayweather is declared the winner of this bout, either by knockout or by judgement, this market will resolve “Yes.” If Logan Paul is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed to a date earlier than May 1st, 2021, the same market resolution conditions will apply for whenever the fight is rescheduled. In the event the boxing match does not take place before then, the market will resolve to .90 for \"Yes\" and .10 for \"No\", which is in line with existing market odds at time of deployment. More info can be found about this fight on the Fanmio website here: https://fanmio.com/products/floyd-mayweather-vs-logan-paul-special-exhibition-fight. In the event of ambiguity in regards to the outcome, this market will be resolved in good faith by the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9036515950928511635358167191699817",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.09634840490714883646418328083001827",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "733",
     "stars": 4
   },
   {
@@ -58,36 +47,47 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9452114734015495869638118769811163",
+        "probability": "0.9435356536350608715565417406926213",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.0547885265984504130361881230188837",
+        "probability": "0.05646434636493912844345825930737869",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1034",
+    "numforecasts": "1071",
     "stars": 4
   },
   {
     "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
     "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1-1",
-    "platform": "PolyMarket",
+    "address": "0x36BB6f09327d1A7D0930668345655d6A6e3c6b20",
     "description": "This is a market on if the federal minimum wage will be $9.50 per hour or higher by April 1, 12:00pm EST. This market will resolve to \"Yes\" if the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point prior to the resolution date, and \"No\" otherwise. The primary resolution source for this market will be the U.S. Department of Labor's website, https://www.dol.gov/.",
+    "outcomes": [
+      "Yes",
+      "No"
+    ],
+    "options": []
+  },
+  {
+    "title": "Will North Dakota have the most COVID-19 cases per 100k residents on May 15, 2021?",
+    "url": "https://polymarket.com/market/will-north-dakota-have-the-most-covid-19-cases-per-100k-residents-on-may-15-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on the state with the most COVID-19 cases per 100k residents on the resolution date, May 15, 12 PM ET. This market will resolve to “Yes” if North Dakota has the most COVID-19 cases per 100k residents on May 15, 2021, and “No” otherwise. The resolution source for this market will be https://www.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/. There will be no resolution delay for any anticipated data revisions. If, for any reason, data is not published prior to the resolution date, that data will not be considered for the resolution of this market. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.01432606808215417991803017917628304",
+        "probability": "0.3887745743430308318676912690621931",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.985673931917845820081969820823717",
+        "probability": "0.6112254256569691681323087309378069",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "162",
+    "numforecasts": "77",
     "stars": 4
   },
   {
@@ -98,37 +98,28 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.01389516044373435378063182721520866",
+        "probability": "0.01932603319246159979936740052424197",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9861048395562656462193681727847913",
+        "probability": "0.980673966807538400200632599475758",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "3568",
+    "numforecasts": "3626",
     "stars": 4
   },
   {
     "title": "Will any of SuperRare, Zora, Foundation, OpenSea, or NiftyGateway have a live token by April 30th, 2021?",
     "url": "https://polymarket.com/market/will-any-of-super-rare-zora-foundation-open-sea-or-nifty-gateway-have-a-live-token-by-april-30th-2021",
-    "platform": "PolyMarket",
+    "address": "0x0d914cee6A5BaA3596c7350A045C5F5600A5FA36",
     "description": "This is a market on if at least one of the following projects - SuperRare, NiftyGateway, Zora, Foundation, or OpenSea - will have a live token by April 30th, 2021, 12pm EST. Having a live token, in this context, can be defined as a deployed-to-mainnet, actively transferrable and/or tradable token that is in some way native to the application, and substantiated by the respective project via website or social media channels. Empirically speaking, having a live token will be considered fulfilled if official project channels announce the introduction of the token and it is live on mainnet, and swappable and acquirable (i.e. via Uniswap). In the case of a token being announced but not yet transferrable or “live”, that will not satisfy market conditions. If the token is deployed to mainnet (in any form, including some sort of voucher), but is not transferrable, that will also not satisfy market conditions. In the case of ERC20 tokens, if the token is deployed, but there is no existing Uniswap pool for the token, it will be considered not “live” and thus will not satisfy market conditions. For clarity, this market is about fungible tokens, and not NFTs related to a platform. Once one of these projects has a live token, this market will resolve to \"Yes\". If the resolution date is reached and none of the projects have a token, the market will resolve to \"No\". In the case of ambiguity, the market will be resolved in good faith by the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.3936958189982918074487164528450583",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.6063041810017081925512835471549417",
-        "type": "PROBABILITY"
-      }
+    "outcomes": [
+      "Yes",
+      "No"
     ],
-    "numforecasts": "32",
-    "stars": 4
+    "options": []
   },
   {
     "title": "New government stimulus checks by March 15, 2021?",
@@ -138,16 +129,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9983116079227596854271689748822649",
+        "probability": "0.9986520290786028718671701259930864",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.001688392077240314572831025117735145",
+        "probability": "0.001347970921397128132829874006913591",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "663",
+    "numforecasts": "674",
     "stars": 4
   },
   {
@@ -158,76 +149,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.4834566778345329977315227656538549",
+        "probability": "0.4788164960544351181242255057673392",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.5165433221654670022684772343461451",
+        "probability": "0.5211835039455648818757744942326608",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "160",
-    "stars": 4
-  },
-  {
-    "title": "Will Andrew Cuomo be Governor of New York on June 1, 2021?",
-    "url": "https://polymarket.com/market/will-andrew-cuomo-be-governor-of-new-york-on-june-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Andrew Cuomo will be governor of New York on June 1, 2021, 12:00 pm ET. This market will resolve to “Yes” if, on the resolution date, Andrew Cuomo is the Governor of New York as substantiated by official government sources like https://www.governor.ny.gov/. If, for any reason, Andrew Cuomo is not the sitting Governor of New York on that date, this market will resolve to “No”.  The resolution source for this market is https://www.governor.ny.gov/. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.5083291423100863410233022113049097",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.4916708576899136589766977886950903",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "433",
-    "stars": 4
-  },
-  {
-    "title": "Will ETH be above $2000 on April 1st, 2021?",
-    "url": "https://polymarket.com/market/will-eth-be-above-2000-on-april-1st-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the USD price of Ether $ETH will be above $2000 on April 1st, 2021, 12:00pm EST, according to coinmarketcap.com/currencies/ethereum/. This market will resolve to “Yes“ if ETH is trading above $2000 according to Coinmarketcap on the resolution date, and “No“ otherwise. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.3621072996119438479113176365007371",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.6378927003880561520886823634992629",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "625",
-    "stars": 4
-  },
-  {
-    "title": "Will North Dakota have the most COVID-19 cases per 100k residents on May 15, 2021?",
-    "url": "https://polymarket.com/market/will-north-dakota-have-the-most-covid-19-cases-per-100k-residents-on-may-15-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on the state with the most COVID-19 cases per 100k residents on the resolution date, May 15, 12 PM ET. This market will resolve to “Yes” if North Dakota has the most COVID-19 cases per 100k residents on May 15, 2021, and “No” otherwise. The resolution source for this market will be https://www.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/. There will be no resolution delay for any anticipated data revisions. If, for any reason, data is not published prior to the resolution date, that data will not be considered for the resolution of this market. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.4078498238685099705471928355126659",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.5921501761314900294528071644873341",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "64",
+    "numforecasts": "162",
     "stars": 4
   },
   {
@@ -238,36 +169,96 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.5114862844848516747636818003808942",
+        "probability": "0.6698391012972897454267571311051374",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.4885137155151483252363181996191058",
+        "probability": "0.3301608987027102545732428688948626",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "463",
+    "numforecasts": "634",
     "stars": 4
   },
   {
-    "title": "Will the Tokyo Summer Olympics be cancelled or postponed by May 1, 2021?",
-    "url": "https://polymarket.com/market/will-the-tokyo-summer-olympics-be-cancelled-or-postponed",
+    "title": "Will ETH be above $2000 on April 1st, 2021?",
+    "url": "https://polymarket.com/market/will-eth-be-above-2000-on-april-1st-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on whether the Tokyo Summer Olympics will be canceled or postponed prior to May 1, 2021, 12:00pm EST. The opening ceremony is currently scheduled to take place on July 23, 2021. If an official statement is published by the International Olympic Committee on https://www.olympic.org/ which announces that the ceremony will take place on a date later than July 23, 2021, this market will resolve to “Yes\". If no such announcement is made prior to the resolution date, this market will resolve to “No\". The resolution source for this market will be an official statement published to olympic.org, the official website of the International Olympic Committee. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
+    "description": "This is a market on if the USD price of Ether $ETH will be above $2000 on April 1st, 2021, 12:00pm EST, according to coinmarketcap.com/currencies/ethereum/. This market will resolve to “Yes“ if ETH is trading above $2000 according to Coinmarketcap on the resolution date, and “No“ otherwise. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.100364088706585908006574882025732",
+        "probability": "0.461650644497800453902327728625603",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.899635911293414091993425117974268",
+        "probability": "0.538349355502199546097672271374397",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "284",
+    "numforecasts": "679",
+    "stars": 4
+  },
+  {
+    "title": "Will Jeff Bezos or Elon Musk have a higher net worth on April 25, 2021?",
+    "url": "https://polymarket.com/market/will-jeff-bezos-or-elon-musk-have-a-higher-net-worth-on-april-25-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on who will have a higher net worth on April 25, 2021, 12:00 PM EST, Jeff Bezos or Elon Musk. The resolution options for this market are Jeff Bezos, the founder and longtime CEO of Amazon, and Elon Musk, current CEO of Tesla. The resolution source for this market will be Forbes’ World’s Real Time Billionaires list (http://forbes.com/real-time-billionaires). This market will resolve to Jeff Bezos if, according to the resolution source, he has a higher net worth, in USD, than Elon Musk on the resolution date. This market will resolve to Elon Musk if, according to the resolution source, he has a higher net worth, in USD, than Jeff Bezos on the resolution date. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n",
+    "options": [
+      {
+        "name": "Bezos",
+        "probability": "0.7258803817512032679919939815925194",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Musk",
+        "probability": "0.2741196182487967320080060184074806",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "63",
+    "stars": 4
+  },
+  {
+    "title": "Will Donald Trump be President of the USA on May 31, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-may-31-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Donald Trump will be President of the United States on May 31, 2021, 12 pm ET. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.05160390973624614342096611719880092",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9483960902637538565790338828011991",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "407",
+    "stars": 4
+  },
+  {
+    "title": "Will box office sales be higher than $200 million in the first quarter of 2021?",
+    "url": "https://polymarket.com/market/will-box-office-sales-be-higher-than-200-million-in-the-first-quarter-of-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether box office sales for the first quarter of 2021 will be higher than $200 million, as measured by cumulative gross sales. The resolution date for this market is April 3, 12:00 PM ET, but only data concerning sales for the first quarter will be considered. This market considers calendar grosses rather than in-quarter releases. This market will resolve to “Yes” if cumulative gross sales are above $200 million on the resolution date, and “No” otherwise. The resolution source for this market will be https://www.boxofficemojo.com/quarter/?ref_=bo_nb_hm_secondarytab. ",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.6640572012578467357347805310725474",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.3359427987421532642652194689274526",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "50",
     "stars": 4
   },
   {
@@ -278,96 +269,56 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.632820983255770104366547045114876",
+        "probability": "0.8849859138514669051289170708005449",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.367179016744229895633452954885124",
+        "probability": "0.1150140861485330948710829291994551",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "2596",
+    "numforecasts": "3206",
     "stars": 4
   },
   {
-    "title": "Will Donald Trump file to run for president before June 1, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-file-to-run-for-president-before-june-1-2021-1",
+    "title": "Will the Tokyo Summer Olympics be cancelled or postponed by May 1, 2021?",
+    "url": "https://polymarket.com/market/will-the-tokyo-summer-olympics-be-cancelled-or-postponed",
     "platform": "PolyMarket",
-    "description": "This is a market on whether Donald Trump will file to run for president prior to June 1, 2021. The linked PredictIt question is the basis for the creation of this market and will be referenced as the leading resolution source: https://www.predictit.org/markets/detail/6994/Will-Donald-Trump-file-to-run-for-president-before-the-end-of-2021. If the PredictIt question resolves to \"Yes\" prior to June 1, 2021, this market will resolve to “Yes”, and “No” otherwise.",
+    "description": "This is a market on whether the Tokyo Summer Olympics will be canceled or postponed prior to May 1, 2021, 12:00pm EST. The opening ceremony is currently scheduled to take place on July 23, 2021. If an official statement is published by the International Olympic Committee on https://www.olympic.org/ which announces that the ceremony will take place on a date later than July 23, 2021, this market will resolve to “Yes\". If no such announcement is made prior to the resolution date, this market will resolve to “No\". The resolution source for this market will be an official statement published to olympic.org, the official website of the International Olympic Committee. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.06715900669498866710782071644646634",
+        "probability": "0.091548406892143212385392240040001",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9328409933050113328921792835535337",
+        "probability": "0.908451593107856787614607759959999",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "66",
-    "stars": 3
-  },
-  {
-    "title": "Will Jeff Bezos or Elon Musk have a higher net worth on April 25, 2021?",
-    "url": "https://polymarket.com/market/will-jeff-bezos-or-elon-musk-have-a-higher-net-worth-on-april-25-2021-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on who will have a higher net worth on April 25, 2021, 12:00 PM EST, Jeff Bezos or Elon Musk. The resolution options for this market are Jeff Bezos, the founder and longtime CEO of Amazon, and Elon Musk, current CEO of Tesla. The resolution source for this market will be Forbes’ World’s Real Time Billionaires list (http://forbes.com/real-time-billionaires). This market will resolve to Jeff Bezos if, according to the resolution source, he has a higher net worth, in USD, than Elon Musk on the resolution date. This market will resolve to Elon Musk if, according to the resolution source, he has a higher net worth, in USD, than Jeff Bezos on the resolution date. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n",
-    "options": [
-      {
-        "name": "Bezos",
-        "probability": "0.688457840279010427492001639781704",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Musk",
-        "probability": "0.311542159720989572507998360218296",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "54",
-    "stars": 3
-  },
-  {
-    "title": "Will Donald Trump be President of the USA on May 31, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-may-31-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Donald Trump will be President of the United States on May 31, 2021, 12 pm ET. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.04717515894490500720389270952511503",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.952824841055094992796107290474885",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "355",
+    "numforecasts": "285",
     "stars": 4
   },
   {
-    "title": "Will Clubhouse officially announce they’ve been acquired before June 1st, 2021? ",
-    "url": "https://polymarket.com/market/will-clubhouse-officially-announce-theyve-been-acquired-before-june-1st-2021",
+    "title": "Will the average Ethereum gas price be below 130 Gwei on March 20?",
+    "url": "https://polymarket.com/market/will-the-average-ethereum-gas-price-be-below-130-gwei-on-march-20",
     "platform": "PolyMarket",
-    "description": "This is a market on whether Clubhouse will announce they've been acquired before June 1st, 2021, with the term acquired meaning the official announcement and public reporting of an acquisition, with a for-profit company purchasing majority ownership of Clubhouse and/or the respective entity. Note, this is not in reference to the final close date of the acquisition. This market will resolve immediately upon the resolution conditions being met, and thus, if, for whatever reason, the acquisition is not successfully completed, the market will have already resolved to “Yes”.",
+    "description": "This is a market on whether the average Ethereum gas price will be below 130 Gwei on March 20, 2021. This market will resolve to \"Yes\" if Avg Gas Price is listed as being below 130 Gwei for that date, on Etherscan. If Avg Gas Price is 130 Gwei or higher, this market will resolve to \"No\". The resolution source for this market is https://etherscan.io/chart/gasprice. This market will resolve when data is available for the date of March 20, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). ",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.2002129005179530250578558801674456",
+        "probability": "0.4454041228571956517550168221474722",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.7997870994820469749421441198325544",
+        "probability": "0.5545958771428043482449831778525278",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "28",
+    "numforecasts": "53",
     "stars": 4
   },
   {
@@ -378,27 +329,96 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.6195444866581061794177625963749882",
+        "probability": "0.6487090934152266695603391098874658",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.3804555133418938205822374036250118",
+        "probability": "0.3512909065847733304396608901125342",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "4154",
+    "numforecasts": "4466",
+    "stars": 4
+  },
+  {
+    "title": "Will Clubhouse officially announce they’ve been acquired before June 1st, 2021? ",
+    "url": "https://polymarket.com/market/will-clubhouse-officially-announce-theyve-been-acquired-before-june-1st-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Clubhouse will announce they've been acquired before June 1st, 2021, with the term acquired meaning the official announcement and public reporting of an acquisition, with a for-profit company purchasing majority ownership of Clubhouse and/or the respective entity. Note, this is not in reference to the final close date of the acquisition. This market will resolve immediately upon the resolution conditions being met, and thus, if, for whatever reason, the acquisition is not successfully completed, the market will have already resolved to “Yes”.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.1667088352530984217343162130372868",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.8332911647469015782656837869627132",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "31",
+    "stars": 4
+  },
+  {
+    "title": "Will Donald Trump file to run for president before June 1, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-file-to-run-for-president-before-june-1-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Donald Trump will file to run for president prior to June 1, 2021. The linked PredictIt question is the basis for the creation of this market and will be referenced as the leading resolution source: https://www.predictit.org/markets/detail/6994/Will-Donald-Trump-file-to-run-for-president-before-the-end-of-2021. If the PredictIt question resolves to \"Yes\" prior to June 1, 2021, this market will resolve to “Yes”, and “No” otherwise.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.05170087651765483042668209011824899",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.948299123482345169573317909881751",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "68",
+    "stars": 4
+  },
+  {
+    "title": "Will Donald Trump be federally charged by June 1st? ",
+    "url": "https://polymarket.com/market/will-donald-trump-be-federally-charged-by-june-1st-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether President Donald J. Trump shall be indicted or otherwise formally charged with a federal crime, as publicly confirmed before June 1st, 2021 12:00 PM ET by an authorized representative of the charging agency(ies) or judicial venue(s). If he is charged with a federal crime on or before June 1st, 2021 12:00 PM ET, this market will resolve to “Yes”. If he is charged with any crime that is not a federal crime or is not charged with any crimes, this market will resolve “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). \n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.08179629983207540093615884883569868",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9182037001679245990638411511643013",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "46",
     "stars": 4
   },
   {
     "title": "Will any Knicks game have greater than 20% attendance before the NBA season ends?",
     "url": "https://polymarket.com/market/will-any-knicks-game-have-greater-than-20-attendance-before-the-nba-season-ends",
-    "address": "0xa8B8c6cd59ECDe225D62185Cd3cAdE606e51b545",
+    "platform": "PolyMarket",
     "description": "This is a market on whether there will be a New York Knicks game at Madison Square Garden where more than 20% of the seats are filled by the end of the NBA season, including the playoffs. This market will resolve to “Yes” if there is any New York Knicks home game at Madison Square Garden, where official attendance is 3,963 or higher (3,963 is the lowest number that puts attendance over 20% of the 19,812 seating capacity at MSG for NBA games), before the end of the NBA  season. This market will resolve to “No” if there is not a single New York Knicks home game at Madison Square Garden, where official attendance is higher than 3,963. The resolution source for this market will be the official attendance data provided in the NBA gamebooks (https://www.nba.com/stats/gamebooks/). The resolution date for this market will be the day the Knicks are eliminated from this NBA season. Resolution may be delayed in the event of a change or postponement in the NBA’s schedule.\n",
-    "outcomes": [
-      "Yes",
-      "No"
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.6495192955803167727753009134972571",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.3504807044196832272246990865027429",
+        "type": "PROBABILITY"
+      }
     ],
-    "options": []
+    "numforecasts": "33",
+    "stars": 4
   }
 ]
