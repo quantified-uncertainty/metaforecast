@@ -45,9 +45,10 @@ let processResults = async (json) => {
   
   for(let normalMarket of normalMarkets){
     let title = normalMarket.parent + ": " + normalMarket.name
+    title = title.replace("Boris Johnson Specials", "Boris Johnson") // small kludge
     let options = normalMarket.children.map(child => {
       let name = child.outcome.name
-      name = name.replace("Boris Johnson Specials", "Boris Johnson") // small kludge
+
       let priceData = child.outcome.children[0].price
       let priceDecimal = Number(priceData.priceDec)
       let probability = 1/priceDecimal
@@ -73,7 +74,7 @@ let processResults = async (json) => {
 
     let obj = ({
       "title": title,
-      "url": "https://sports.ladbrokes.com/event/politics/",
+      "url": "https://sports.ladbrokes.com/sport/politics/outrights",
       "platform": "Ladbrokes",
       "options": options,
       "stars": calculateStars("Ladbrokes", ({}))
@@ -88,12 +89,13 @@ let processResults = async (json) => {
     //console.log(title)
     specialMarket.children.forEach(child => {
       let name = specialMarket.parent.includes("Specials")? child.outcome.name : specialMarket.parent + ": " + child.outcome.name
+      name = name.replace("Boris Johnson Specials", "Boris Johnson") // small kludge
       let priceData = child.outcome.children[0].price
       let priceDecimal = Number(priceData.priceDec)
       let probability = 1/priceDecimal
       let obj = ({
         "title": name,
-        "url": "https://sports.ladbrokes.com/event/politics/",
+        "url": "https://sports.ladbrokes.com/sport/politics/outrights",
         "platform": "LadBrokes",
         "options": [
           {
