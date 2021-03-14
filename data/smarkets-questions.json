@@ -867,37 +867,37 @@
     "options": [
       {
         "name": "Emmanuel Macron",
-        "probability": 0.5378460406511542,
+        "probability": 0.5363963465264323,
         "type": "PROBABILITY"
       },
       {
         "name": "Marine Le Pen",
-        "probability": 0.18035500781752964,
+        "probability": 0.18092074914660022,
         "type": "PROBABILITY"
       },
       {
         "name": "Jean-Luc Mélenchon",
-        "probability": 0.047181090775314995,
+        "probability": 0.04732908939939109,
         "type": "PROBABILITY"
       },
       {
         "name": "François Baroin",
-        "probability": 0.06566724914926883,
+        "probability": 0.0658732355383338,
         "type": "PROBABILITY"
       },
       {
         "name": "Xavier Bertrand",
-        "probability": 0.03540881081578221,
+        "probability": 0.035519881907925085,
         "type": "PROBABILITY"
       },
       {
         "name": "Yannick Jadot",
-        "probability": 0.04598546859192495,
+        "probability": 0.04612971676353907,
         "type": "PROBABILITY"
       },
       {
         "name": "Olivier Faure",
-        "probability": 0.04377816609951255,
+        "probability": 0.0439154903588892,
         "type": "PROBABILITY"
       },
       {
@@ -917,7 +917,7 @@
       },
       {
         "name": "Anne Hidalgo",
-        "probability": 0.04377816609951255,
+        "probability": 0.0439154903588892,
         "type": "PROBABILITY"
       },
       {
@@ -1273,41 +1273,41 @@
     "options": [
       {
         "name": "Sadiq Khan",
-        "probability": 0.9407146451937592,
+        "probability": 0.9429285357321339,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Bailey",
-        "probability": 0.026472068444891795,
+        "probability": 0.02628685657171414,
         "type": "PROBABILITY"
       },
       {
         "name": "Siân Berry",
-        "probability": 0.00010065425264217412,
+        "probability": 0.00009995002498750624,
         "type": "PROBABILITY"
       },
       {
-        "probability": 0.00010065425264217412,
+        "probability": 0.00009995002498750624,
         "type": "PROBABILITY"
       },
       {
         "name": "Brian Rose",
-        "probability": 0.03140412682435833,
+        "probability": 0.02938530734632683,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid",
-        "probability": 0.00010065425264217412,
+        "probability": 0.00009995002498750624,
         "type": "PROBABILITY"
       },
       {
         "name": "Luisa Porritt",
-        "probability": 0.00010065425264217412,
+        "probability": 0.00009995002498750624,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox",
-        "probability": 0.0010065425264217413,
+        "probability": 0.0009995002498750624,
         "type": "PROBABILITY"
       }
     ],
@@ -2317,12 +2317,12 @@
     "options": [
       {
         "name": "Shaun Bailey",
-        "probability": 0.8450626381724391,
+        "probability": 0.8494444444444444,
         "type": "PROBABILITY"
       },
       {
         "name": "Sadiq Khan",
-        "probability": 0.019988946204863668,
+        "probability": 0.018518518518518517,
         "type": "PROBABILITY"
       },
       {
@@ -2337,12 +2337,12 @@
       },
       {
         "name": "Brian Rose",
-        "probability": 0.08373249815770081,
+        "probability": 0.08055555555555555,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid",
-        "probability": 0.05121591746499631,
+        "probability": 0.051481481481481475,
         "type": "PROBABILITY"
       }
     ],
@@ -2437,27 +2437,27 @@
     "options": [
       {
         "name": "Conservative (Høyre)",
-        "probability": 0.47996515679442503,
+        "probability": 0.46105867870332373,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour (Arbeiderpartiet)",
-        "probability": 0.29996832435856824,
+        "probability": 0.31087402544111614,
         "type": "PROBABILITY"
       },
       {
         "name": "Centre (Senterpartiet)",
-        "probability": 0.13200823566677225,
+        "probability": 0.1368075502667214,
         "type": "PROBABILITY"
       },
       {
         "name": "Progress (Fremskrittspartiet)",
-        "probability": 0.04402914159011719,
+        "probability": 0.04562987279441936,
         "type": "PROBABILITY"
       },
       {
         "name": "Socialist Left (Sosialistisk Venstreparti)",
-        "probability": 0.04402914159011719,
+        "probability": 0.04562987279441936,
         "type": "PROBABILITY"
       }
     ],
@@ -2519,22 +2519,22 @@
     "options": [
       {
         "name": "Fewer than 65",
-        "probability": 0.14137901789500468,
+        "probability": 0.052059925093632956,
         "type": "PROBABILITY"
       },
       {
         "name": "65–69",
-        "probability": 0.2019336782291578,
+        "probability": 0.22294007490636703,
         "type": "PROBABILITY"
       },
       {
         "name": "70–74",
-        "probability": 0.27809346111440925,
+        "probability": 0.30702247191011234,
         "type": "PROBABILITY"
       },
       {
         "name": "75 or more",
-        "probability": 0.37859384276142816,
+        "probability": 0.41797752808988764,
         "type": "PROBABILITY"
       }
     ],
@@ -2668,32 +2668,32 @@
     "options": [
       {
         "name": "Under 45%",
-        "probability": 0.027048216385731086,
+        "probability": 0.027804642166344297,
         "type": "PROBABILITY"
       },
       {
         "name": "45–49.9%",
-        "probability": 0.15680125441003526,
+        "probability": 0.11855254674403612,
         "type": "PROBABILITY"
       },
       {
         "name": "50–54.9%",
-        "probability": 0.5226969815758525,
+        "probability": 0.5519825918762089,
         "type": "PROBABILITY"
       },
       {
         "name": "55–59.9%",
-        "probability": 0.1782046256370051,
+        "probability": 0.18318826563507415,
         "type": "PROBABILITY"
       },
       {
         "name": "60–64.9%",
-        "probability": 0.10317522540180321,
+        "probability": 0.10606060606060606,
         "type": "PROBABILITY"
       },
       {
         "name": "65% or over",
-        "probability": 0.012073696589572715,
+        "probability": 0.012411347517730497,
         "type": "PROBABILITY"
       }
     ],
@@ -3398,12 +3398,12 @@
     "options": [
       {
         "name": "Less than 2.0%",
-        "probability": 0.47222969941677884,
+        "probability": 0.4934036939313984,
         "type": "PROBABILITY"
       },
       {
         "name": "2.0% or more",
-        "probability": 0.5277703005832212,
+        "probability": 0.5065963060686015,
         "type": "PROBABILITY"
       }
     ],
