@@ -628,32 +628,32 @@
     "options": [
       {
         "name": "Markus Soder",
-        "probability": 0.454031939816873,
+        "probability": 0.4561030955356818,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet",
-        "probability": 0.38234268616157724,
+        "probability": 0.3869965659090633,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.05341552233139683,
+        "probability": 0.05122013372325838,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.05341552233139683,
+        "probability": 0.05122013372325838,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock",
-        "probability": 0.043241137125416475,
+        "probability": 0.04146391777597107,
         "type": "PROBABILITY"
       },
       {
         "name": "Alice Weidel",
-        "probability": 0.013553192233339492,
+        "probability": 0.012996153332767052,
         "type": "PROBABILITY"
       }
     ],

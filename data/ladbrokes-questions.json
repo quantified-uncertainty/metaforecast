@@ -861,37 +861,37 @@
     "options": [
       {
         "name": "Markus Söder",
-        "probability": 0.452482924641184,
+        "probability": 0.470841460109662,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.04115439933641245,
+        "probability": 0.04035783943797102,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock",
-        "probability": 0.04115439933641245,
+        "probability": 0.04035783943797102,
         "type": "PROBABILITY"
       },
       {
         "name": "Alice Weidel",
-        "probability": 0.008556855307570905,
+        "probability": 0.008391233942548431,
         "type": "PROBABILITY"
       },
       {
         "name": "Jens Spahn",
-        "probability": 0.04115439933641245,
+        "probability": 0.03259671646913045,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet",
-        "probability": 0.3646592346264394,
+        "probability": 0.357601108944047,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.05083778741556832,
+        "probability": 0.04985380165867009,
         "type": "PROBABILITY"
       }
     ],
@@ -904,82 +904,82 @@
     "options": [
       {
         "name": "Xavier Bertrand",
-        "probability": 0.03628080539252678,
+        "probability": 0.023053988786678126,
         "type": "PROBABILITY"
       },
       {
         "name": "Francois Baroin",
-        "probability": 0.03628080539252678,
+        "probability": 0.023053988786678126,
         "type": "PROBABILITY"
       },
       {
         "name": "Bernard Cazeneuve",
-        "probability": 0.022408732742443014,
+        "probability": 0.015369325857785419,
         "type": "PROBABILITY"
       },
       {
         "name": "Nicolas Sarkozy",
-        "probability": 0.029303727432425482,
+        "probability": 0.015369325857785419,
         "type": "PROBABILITY"
       },
       {
         "name": "Michel Barnier",
-        "probability": 0.03628080539252678,
+        "probability": 0.03732550565462173,
         "type": "PROBABILITY"
       },
       {
         "name": "David Lisnard",
-        "probability": 0.014939155161628677,
+        "probability": 0.015369325857785419,
         "type": "PROBABILITY"
       },
       {
         "name": "Marion Marechal",
-        "probability": 0.014939155161628677,
+        "probability": 0.015369325857785419,
         "type": "PROBABILITY"
       },
       {
         "name": "Ségolène Royal",
-        "probability": 0.029303727432425482,
+        "probability": 0.030147523797963708,
         "type": "PROBABILITY"
       },
       {
         "name": "Valerie Pecresse",
-        "probability": 0.022408732742443014,
+        "probability": 0.023053988786678126,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmanuel Macron",
-        "probability": 0.4562256965527321,
+        "probability": 0.4992583558898448,
         "type": "PROBABILITY"
       },
       {
         "name": "Marine Le Pen",
-        "probability": 0.16931042516512498,
+        "probability": 0.1741856930549014,
         "type": "PROBABILITY"
       },
       {
         "name": "Jean-Luc Melenchon",
-        "probability": 0.03628080539252678,
+        "probability": 0.03732550565462173,
         "type": "PROBABILITY"
       },
       {
         "name": "Anne Hidalgo",
-        "probability": 0.03628080539252678,
+        "probability": 0.03732550565462173,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurent Wauquiez",
-        "probability": 0.022408732742443014,
+        "probability": 0.015369325857785419,
         "type": "PROBABILITY"
       },
       {
         "name": "Nicolas Dupont-Aignan",
-        "probability": 0.022408732742443014,
+        "probability": 0.023053988786678126,
         "type": "PROBABILITY"
       },
       {
         "name": "Benoit Hamon",
-        "probability": 0.014939155161628677,
+        "probability": 0.015369325857785419,
         "type": "PROBABILITY"
       }
     ],
@@ -1786,87 +1786,92 @@
     "options": [
       {
         "name": "Sadiq Khan (Lab)",
-        "probability": 0.877670711241192,
+        "probability": 0.87607458110003,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Bailey (Cons)",
-        "probability": 0.05369279645240234,
+        "probability": 0.053595150843766544,
         "type": "PROBABILITY"
       },
       {
         "name": "Sian Berry (Green)",
-        "probability": 0.009037401383077622,
+        "probability": 0.00902096598360427,
         "type": "PROBABILITY"
       },
       {
         "name": "David Kurten (Heritage)",
-        "probability": 0.003636563903150756,
+        "probability": 0.003629950455553909,
         "type": "PROBABILITY"
       },
       {
         "name": "Farah London (Ind)",
-        "probability": 0.0018219112568679434,
+        "probability": 0.0018185979328224175,
         "type": "PROBABILITY"
       },
       {
         "name": "Luisa Porritt (Lib Dem)",
-        "probability": 0.004541181789506666,
+        "probability": 0.0045329232056916975,
         "type": "PROBABILITY"
       },
       {
         "name": "Brian Rose (Ind)",
-        "probability": 0.02684639822620117,
+        "probability": 0.026797575421883272,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid (WEP)",
-        "probability": 0.0018219112568679434,
+        "probability": 0.0018185979328224175,
         "type": "PROBABILITY"
       },
       {
         "name": "Peter Gammons (UKIP)",
-        "probability": 0.003636563903150756,
+        "probability": 0.003629950455553909,
         "type": "PROBABILITY"
       },
       {
         "name": "Piers Corbyn",
-        "probability": 0.0018219112568679434,
+        "probability": 0.0018185979328224175,
         "type": "PROBABILITY"
       },
       {
         "name": "Nims Obunge (Ind)",
-        "probability": 0.0018219112568679434,
+        "probability": 0.0018185979328224175,
         "type": "PROBABILITY"
       },
       {
         "name": "Count Binface",
-        "probability": 0.0018219112568679434,
+        "probability": 0.0018185979328224175,
         "type": "PROBABILITY"
       },
       {
         "name": "DrillMinister",
-        "probability": 0.0018219112568679434,
+        "probability": 0.0018185979328224175,
         "type": "PROBABILITY"
       },
       {
         "name": "Winston McKenzie",
-        "probability": 0.0018219112568679434,
+        "probability": 0.0018185979328224175,
         "type": "PROBABILITY"
       },
       {
         "name": "Kam Balayev (Renew)",
-        "probability": 0.0018219112568679434,
+        "probability": 0.0018185979328224175,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox (Reclaim)",
-        "probability": 0.004541181789506666,
+        "probability": 0.0045329232056916975,
         "type": "PROBABILITY"
       },
       {
         "name": "Max Fosh (Ind)",
-        "probability": 0.0018219112568679434,
+        "probability": 0.0018185979328224175,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Valerie Brown (Burning Pink)",
+        "probability": 0.0018185979328224175,
         "type": "PROBABILITY"
       }
     ],
@@ -2549,6 +2554,34 @@
       {
         "name": "Scottish Greens",
         "probability": 0.033696562438392315,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Next Scottish Parliamentary Election: Glasgow Southside",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "Ladbrokes",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": 0.8406168766829473,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 0.13209693776446316,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Conservatives",
+        "probability": 0.01813095224218122,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrats",
+        "probability": 0.009155233310408337,
         "type": "PROBABILITY"
       }
     ],

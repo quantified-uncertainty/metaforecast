@@ -122,6 +122,13 @@ function calculateStarsPolymarket(data) {
   let eli = (data) => data.liquidity > 10000 ? 5 : 4
   let misha = (data) => 4
   let starsDecimal = average([nuno(data), eli(data), misha(data)])
+  // Substract 1 star if probability is above 90% or below 10%
+  if(data.option &&
+    (data.option.probability < 0.1 || data.option.probability > 0.9)
+  ){
+    starsDecimal = starsDecimal - 1
+  }
+  
   let starsInteger = Math.round(starsDecimal)
   return starsInteger
 }
