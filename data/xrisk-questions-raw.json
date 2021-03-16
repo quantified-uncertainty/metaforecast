@@ -224,16 +224,6 @@
     "description": "Stated verbally during an interview. Not totally clear precisely what was being estimated (e.g. just extinction, or existential catastrophe more broadly?). He noted \"This number fluctuates a lot\". He indicated he thought we had a 2/3 chance of surviving, then said he'd adjust to 50%, which is his number for an \"actually superintelligent\" AI, whereas for \"AI in general\" it'd be 60%. This is notably higher than his 2020 estimate, implying either that he updated towards somewhat more \"optimism\" between 2014 and 2020, or that one or both of these estimates don't reflect stable beliefs."
   },
   {
-    "title": "Amount by which risk of failure to align AI (using only a narrow conception of alignment) reduces the expected value of the future",
-    "url": "https://aiimpacts.org/conversation-with-paul-christiano/",
-    "probability": 0.01,
-    "actualEstimate": "~10%",
-    "platform": "Paul Christiano",
-    "date_approx": 2019,
-    "category": "AI",
-    "description": "He also says \"I made up 10%, it’s kind of a random number.\" And \"All of the numbers I’m going to give are very made up though. If you asked me a second time you’ll get all different numbers."
-  },
-  {
     "title": "Existential catastrophe happening this century (maybe just from AI?)",
     "url": "https://youtu.be/aFAI8itZCGk?t=854",
     "probability": 0.415,

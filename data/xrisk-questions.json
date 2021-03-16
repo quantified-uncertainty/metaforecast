@@ -460,26 +460,6 @@
     "stars": 2
   },
   {
-    "title": "Amount by which risk of failure to align AI (using only a narrow conception of alignment) reduces the expected value of the future",
-    "url": "https://aiimpacts.org/conversation-with-paul-christiano/",
-    "platform": "X-risk estimates",
-    "author": "Paul Christiano (~2019)",
-    "description": "Actual estimate: ~10%\n\nHe also says \"I made up 10%, it’s kind of a random number.\" And \"All of the numbers I’m going to give are very made up though. If you asked me a second time you’ll get all different numbers.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.99,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 2
-  },
-  {
     "title": "Existential catastrophe happening this century (maybe just from AI?)",
     "url": "https://youtu.be/aFAI8itZCGk?t=854",
     "platform": "X-risk estimates",
