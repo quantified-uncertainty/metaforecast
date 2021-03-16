@@ -24,7 +24,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 19%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -44,7 +44,7 @@
     "url": "https://80000hours.org/podcast/episodes/will-macaskill-paralysis-and-hinge-of-history/#transcript",
     "platform": "X-risk estimates",
     "author": "Will MacAskill (~2019)",
-    "description": "Actual estimate: 1%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -164,7 +164,7 @@
     "url": "https://docs.google.com/spreadsheets/d/1W10B6NJjicD8O0STPiT3tNV3oFnT8YsfjmtYR8RO_RI/edit#gid=0",
     "platform": "X-risk estimates",
     "author": "Gott III (~1993)",
-    "description": "Actual estimate: 5%.\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -284,7 +284,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "Global Catastrophic Risk Conference (~2008)",
-    "description": "Actual estimate: 5%\n\nThis is the median. Beard et al.'s appendix says \"Note that for these predictions no time frame was given.\" I think that that's incorrect, based on phrasings in the original source, but I'm not certain.",
+    "description": "This is the median. Beard et al.'s appendix says \"Note that for these predictions no time frame was given.\" I think that that's incorrect, based on phrasings in the original source, but I'm not certain.",
     "options": [
       {
         "name": "Yes",
@@ -304,7 +304,7 @@
     "url": "https://arxiv.org/abs/1705.08807",
     "platform": "X-risk estimates",
     "author": "Survey of AI experts (~2017)",
-    "description": "Actual estimate: 5%\n\nThe report's authors discuss potential concerns around non-response bias and the fact that “NIPS and ICML authors are representative of machine learning but not of the field of artificial intelligence as a whole”. There was also evidence of apparent inconsistencies in estimates of AI timelines as a result of small changes to how questions were asked, providing further reason to wonder how meaningful these experts’ predictions were. https://web.archive.org/web/20171030220008/https://aiimpacts.org/some-survey-results/",
+    "description": "The report's authors discuss potential concerns around non-response bias and the fact that “NIPS and ICML authors are representative of machine learning but not of the field of artificial intelligence as a whole”. There was also evidence of apparent inconsistencies in estimates of AI timelines as a result of small changes to how questions were asked, providing further reason to wonder how meaningful these experts’ predictions were. https://web.archive.org/web/20171030220008/https://aiimpacts.org/some-survey-results/",
     "options": [
       {
         "name": "Yes",
@@ -384,7 +384,7 @@
     "url": "https://futureoflife.org/2020/04/15/an-overview-of-technical-ai-alignment-in-2018-and-2019-with-buck-shlegeris-and-rohin-shah/",
     "platform": "X-risk estimates",
     "author": "Buck Schlegris (~2020)",
-    "description": "Actual estimate: 50%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -564,7 +564,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 2%\n\nThis is the median. Beard et al.'s appendix says \"Note that for these predictions no time frame was given.\" I think that that's incorrect, based on phrasings in the original source, but I'm not certain.",
+    "description": "This is the median. Beard et al.'s appendix says \"Note that for these predictions no time frame was given.\" I think that that's incorrect, based on phrasings in the original source, but I'm not certain.",
     "options": [
       {
         "name": "Yes",
@@ -684,7 +684,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 5%\n\nThis is the median. Beard et al.'s appendix says \"Note that for these predictions no time frame was given.\" I think that that's incorrect, based on phrasings in the original source, but I'm not certain.",
+    "description": "This is the median. Beard et al.'s appendix says \"Note that for these predictions no time frame was given.\" I think that that's incorrect, based on phrasings in the original source, but I'm not certain.",
     "options": [
       {
         "name": "Yes",
@@ -784,7 +784,7 @@
     "url": "https://docs.google.com/spreadsheets/d/1W10B6NJjicD8O0STPiT3tNV3oFnT8YsfjmtYR8RO_RI/edit#gid=511918904",
     "platform": "X-risk estimates",
     "author": "Survey of experts in the AI field (~2016)",
-    "description": "Actual estimate: 18%\n\nThis is the mean. According to Beard et al., the question was \"4. Assume for the purpose of this question that such Human Level Machine Intelligence (HLMI) will at some point exist. How positive or negative would be overall impact on humanity, in the long run?",
+    "description": "This is the mean. According to Beard et al., the question was \"4. Assume for the purpose of this question that such Human Level Machine Intelligence (HLMI) will at some point exist. How positive or negative would be overall impact on humanity, in the long run?",
     "options": [
       {
         "name": "Yes",
@@ -904,7 +904,7 @@
     "url": "https://80000hours.org/podcast/episodes/mark-lynas-climate-change-nuclear-energy/",
     "platform": "X-risk estimates",
     "author": "Mark Lynas (~2020)",
-    "description": "Actual estimate: 10%\n\nArden Koehler: \"...do you have a guess at what degree of warming we would need to reach for the full-scale collapse of society, perhaps due to very, very widespread famine to have say a 10% chance of happening?\nMark Lynas: \"Oh, I think… You want to put me on the spot. I would say it has a 30 to 40% chance of happening at three degrees, and a 60% chance of happening at four degrees, and 90% at five degrees, and 97% at six degrees. [...] Maybe 10% at two degrees.",
+    "description": "Arden Koehler: \"...do you have a guess at what degree of warming we would need to reach for the full-scale collapse of society, perhaps due to very, very widespread famine to have say a 10% chance of happening?\nMark Lynas: \"Oh, I think… You want to put me on the spot. I would say it has a 30 to 40% chance of happening at three degrees, and a 60% chance of happening at four degrees, and 90% at five degrees, and 97% at six degrees. [...] Maybe 10% at two degrees.",
     "options": [
       {
         "name": "Yes",
@@ -944,7 +944,7 @@
     "url": "https://80000hours.org/podcast/episodes/mark-lynas-climate-change-nuclear-energy/",
     "platform": "X-risk estimates",
     "author": "Mark Lynas (~2020)",
-    "description": "Actual estimate: 60%\n\nArden Koehler: \"...do you have a guess at what degree of warming we would need to reach for the full-scale collapse of society, perhaps due to very, very widespread famine to have say a 10% chance of happening?\nMark Lynas: \"Oh, I think… You want to put me on the spot. I would say it has a 30 to 40% chance of happening at three degrees, and a 60% chance of happening at four degrees, and 90% at five degrees, and 97% at six degrees. [...] Maybe 10% at two degrees.",
+    "description": "Arden Koehler: \"...do you have a guess at what degree of warming we would need to reach for the full-scale collapse of society, perhaps due to very, very widespread famine to have say a 10% chance of happening?\nMark Lynas: \"Oh, I think… You want to put me on the spot. I would say it has a 30 to 40% chance of happening at three degrees, and a 60% chance of happening at four degrees, and 90% at five degrees, and 97% at six degrees. [...] Maybe 10% at two degrees.",
     "options": [
       {
         "name": "Yes",
@@ -964,7 +964,7 @@
     "url": "https://80000hours.org/podcast/episodes/mark-lynas-climate-change-nuclear-energy/",
     "platform": "X-risk estimates",
     "author": "Mark Lynas (~2020)",
-    "description": "Actual estimate: 90%\n\nArden Koehler: \"...do you have a guess at what degree of warming we would need to reach for the full-scale collapse of society, perhaps due to very, very widespread famine to have say a 10% chance of happening?\nMark Lynas: \"Oh, I think… You want to put me on the spot. I would say it has a 30 to 40% chance of happening at three degrees, and a 60% chance of happening at four degrees, and 90% at five degrees, and 97% at six degrees. [...] Maybe 10% at two degrees.",
+    "description": "Arden Koehler: \"...do you have a guess at what degree of warming we would need to reach for the full-scale collapse of society, perhaps due to very, very widespread famine to have say a 10% chance of happening?\nMark Lynas: \"Oh, I think… You want to put me on the spot. I would say it has a 30 to 40% chance of happening at three degrees, and a 60% chance of happening at four degrees, and 90% at five degrees, and 97% at six degrees. [...] Maybe 10% at two degrees.",
     "options": [
       {
         "name": "Yes",
@@ -984,7 +984,7 @@
     "url": "https://80000hours.org/podcast/episodes/mark-lynas-climate-change-nuclear-energy/",
     "platform": "X-risk estimates",
     "author": "Mark Lynas (~2020)",
-    "description": "Actual estimate: 97%\n\nArden Koehler: \"...do you have a guess at what degree of warming we would need to reach for the full-scale collapse of society, perhaps due to very, very widespread famine to have say a 10% chance of happening?\nMark Lynas: \"Oh, I think… You want to put me on the spot. I would say it has a 30 to 40% chance of happening at three degrees, and a 60% chance of happening at four degrees, and 90% at five degrees, and 97% at six degrees. [...] Maybe 10% at two degrees.",
+    "description": "Arden Koehler: \"...do you have a guess at what degree of warming we would need to reach for the full-scale collapse of society, perhaps due to very, very widespread famine to have say a 10% chance of happening?\nMark Lynas: \"Oh, I think… You want to put me on the spot. I would say it has a 30 to 40% chance of happening at three degrees, and a 60% chance of happening at four degrees, and 90% at five degrees, and 97% at six degrees. [...] Maybe 10% at two degrees.",
     "options": [
       {
         "name": "Yes",
@@ -1004,7 +1004,7 @@
     "url": "https://docs.google.com/spreadsheets/d/1W10B6NJjicD8O0STPiT3tNV3oFnT8YsfjmtYR8RO_RI/edit#gid=511918904",
     "platform": "X-risk estimates",
     "author": "Bryan Caplan (~2006)",
-    "description": "Actual estimate: 3%\n\nReduced from his 5% unconditional probability",
+    "description": "Reduced from his 5% unconditional probability",
     "options": [
       {
         "name": "Yes",
@@ -1024,7 +1024,7 @@
     "url": "https://docs.google.com/spreadsheets/d/1W10B6NJjicD8O0STPiT3tNV3oFnT8YsfjmtYR8RO_RI/edit#gid=511918905",
     "platform": "X-risk estimates",
     "author": "Bryan Caplan (~2006)",
-    "description": "Actual estimate: 10%\n\nIncreased from his 5% unconditional probability",
+    "description": "Increased from his 5% unconditional probability",
     "options": [
       {
         "name": "Yes",
@@ -1064,7 +1064,7 @@
     "url": "https://docs.google.com/spreadsheets/d/1W10B6NJjicD8O0STPiT3tNV3oFnT8YsfjmtYR8RO_RI/edit#gid=511918907",
     "platform": "X-risk estimates",
     "author": "Bryan Caplan (~2006)",
-    "description": "Actual estimate: 25%\n\nIncreased from his 5% unconditional probability",
+    "description": "Increased from his 5% unconditional probability",
     "options": [
       {
         "name": "Yes",
@@ -1084,7 +1084,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 10%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1104,7 +1104,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 5%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A. Interestingly, this is the same as the estimate from this source of the chance of human as a result of superintelligent AI by 2100.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A. Interestingly, this is the same as the estimate from this source of the chance of human as a result of superintelligent AI by 2100.",
     "options": [
       {
         "name": "Yes",
@@ -1224,7 +1224,7 @@
     "url": "https://reducing-suffering.org/summary-beliefs-values-big-questions/",
     "platform": "X-risk estimates",
     "author": "Brian Tomasik (~2015)",
-    "description": "Actual estimate: 70%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1244,7 +1244,7 @@
     "url": "https://reducing-suffering.org/summary-beliefs-values-big-questions/",
     "platform": "X-risk estimates",
     "author": "Brian Tomasik (~2015)",
-    "description": "Actual estimate: 67%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1264,7 +1264,7 @@
     "url": "https://reducing-suffering.org/summary-beliefs-values-big-questions/",
     "platform": "X-risk estimates",
     "author": "Brian Tomasik (~2015)",
-    "description": "Actual estimate: 62%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1284,7 +1284,7 @@
     "url": "http://www.stafforini.com/blog/what_i_believe/",
     "platform": "X-risk estimates",
     "author": "Pablo Stafforini (~2015)",
-    "description": "Actual estimate: 60%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1304,7 +1304,7 @@
     "url": "https://reducing-suffering.org/summary-beliefs-values-big-questions/",
     "platform": "X-risk estimates",
     "author": "Brian Tomasik (~2015)",
-    "description": "Actual estimate: 52%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1344,7 +1344,7 @@
     "url": "http://www.stafforini.com/blog/what_i_believe/",
     "platform": "X-risk estimates",
     "author": "Pablo Stafforini (~2015)",
-    "description": "Actual estimate: 10%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1364,7 +1364,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 30%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1384,7 +1384,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 10%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1404,7 +1404,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 60%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1424,7 +1424,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 5%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1444,7 +1444,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 25%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1464,7 +1464,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 10%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1484,7 +1484,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 5%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1504,7 +1504,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 1%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1524,7 +1524,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 30%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1544,7 +1544,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 10%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1564,7 +1564,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 30%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1584,7 +1584,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 10%\n\nThis is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
+    "description": "This is the median. The report about these estimates also plots the results for each question “with individual response distributions visible” in Appendix A.",
     "options": [
       {
         "name": "Yes",
@@ -1664,7 +1664,7 @@
     "url": "https://reducing-suffering.org/summary-beliefs-values-big-questions/",
     "platform": "X-risk estimates",
     "author": "Brian Tomasik (~2015)",
-    "description": "Actual estimate: 50%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1684,7 +1684,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 98%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1704,7 +1704,7 @@
     "url": "https://www.fhi.ox.ac.uk/reports/2008-1.pdf",
     "platform": "X-risk estimates",
     "author": "GCR Conference (~2008)",
-    "description": "Actual estimate: 30%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1724,7 +1724,7 @@
     "url": "https://reducing-suffering.org/summary-beliefs-values-big-questions/",
     "platform": "X-risk estimates",
     "author": "Brian Tomasik (~2015)",
-    "description": "Actual estimate: 72%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1744,7 +1744,7 @@
     "url": "https://reducing-suffering.org/summary-beliefs-values-big-questions/",
     "platform": "X-risk estimates",
     "author": "Brian Tomasik (~2015)",
-    "description": "Actual estimate: 72%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1764,7 +1764,7 @@
     "url": "http://www.stafforini.com/blog/what_i_believe/",
     "platform": "X-risk estimates",
     "author": "Pablo Stafforini (~2015)",
-    "description": "Actual estimate: 70%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1784,7 +1784,7 @@
     "url": "https://reducing-suffering.org/summary-beliefs-values-big-questions/",
     "platform": "X-risk estimates",
     "author": "Brian Tomasik (~2015)",
-    "description": "Actual estimate: 50%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -1804,7 +1804,7 @@
     "url": "http://www.stafforini.com/blog/what_i_believe/",
     "platform": "X-risk estimates",
     "author": "Pablo Stafforini (~2015)",
-    "description": "Actual estimate: 10%\n\n",
+    "description": "",
     "options": [
       {
         "name": "Yes",

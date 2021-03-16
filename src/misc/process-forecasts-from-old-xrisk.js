@@ -11,9 +11,9 @@ let data = JSON.parse(rawdata)
 let results = []
 for(let datum of data){
   let probability = datum["probability"]
-  let description = `Actual estimate: ${datum["actualEstimate"]}
+  let description = datum["actualEstimate"] ? `Actual estimate: ${datum["actualEstimate"]}
 
-${datum["description"]}`
+${datum["description"]}` : datum["description"]
   let author = `${datum["platform"]} (~${datum["date_approx"]})`
     let result = ({
     "title": datum["title"],
