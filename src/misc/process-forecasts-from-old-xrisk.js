@@ -12,6 +12,7 @@ let results = []
 for(let datum of data){
   let probability = datum["probability"]
   let description = `Actual estimate: ${datum["actualEstimate"]}
+
 ${datum["description"]}`
   let author = `${datum["platform"]} (~${datum["date_approx"]})`
     let result = ({
