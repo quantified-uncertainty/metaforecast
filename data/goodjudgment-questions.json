@@ -3,16 +3,16 @@
     "title": "When will the number of COVID-19 vaccine doses administered reach 1.5 billion worldwide?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "With several COVID-19 vaccines now approved in different jurisdictions to fight the pandemic, the focus has shifted to <a href=\"https://www.france24.com/en/health/20210204-more-people-now-vaccinated-against-covid-19-than-infected-worldwide-data-shows\" target=\"_blank\">vaccination</a>. The outcome will be determined using data as reported by <a href=\"https://ourworldindata.org/grapher/cumulative-covid-vaccinations\" target=\"_blank\">Our World in Data</a> for World. Click on the \"TABLE\" tab, scroll to the bottom to reach the entry for \"World,\" and see the relevant number in the column titled \"End.\" The date slider must be located all the way to the right to see the latest figure.",
+    "description": "With several COVID-19 vaccines now approved in different jurisdictions to fight the pandemic, the focus has shifted to <a href=\"https://www.france24.com/en/health/20210204-more-people-now-vaccinated-against-covid-19-than-infected-worldwide-data-shows\" target=\"_blank\">vaccination</a>. The outcome will be determined using data as reported by <a href=\"https://ourworldindata.org/grapher/cumulative-covid-vaccinations\" target=\"_blank\">Our   World in Data</a> for World. Click on the \"TABLE\" tab, scroll to the bottom to reach the entry for \"World,\" and see the relevant number in the column titled \"End.\" The date slider must be located all the way to the right to see the latest figure.",
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.22,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.74,
+        "probability": 0.71,
         "type": "PROBABILITY"
       },
       {
@@ -119,12 +119,12 @@
       },
       {
         "name": "More than 500 million but fewer than 960 million",
-        "probability": 0.16,
+        "probability": 0.19,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 960 million and 1.6 billion, inclusive",
-        "probability": 0.79,
+        "probability": 0.76,
         "type": "PROBABILITY"
       },
       {
@@ -186,12 +186,12 @@
       },
       {
         "name": "Between 1 April 2021 and 31 May 2021",
-        "probability": 0.14,
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 June 2021 and 31 July 2021",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -215,22 +215,22 @@
       },
       {
         "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.12,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.69,
+        "probability": 0.76,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.16,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 November 2021",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       }
     ],
@@ -249,12 +249,12 @@
       },
       {
         "name": "Between 1 March 2021 and 30 April 2021",
-        "probability": 0.97,
+        "probability": 0.96,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.03,
+        "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
@@ -278,12 +278,12 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.42,
+        "probability": 0.51,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.47,
+        "probability": 0.41,
         "type": "PROBABILITY"
       },
       {
@@ -293,12 +293,12 @@
       },
       {
         "name": "Between 1 November 2021 and 31 December 2021",
-        "probability": 0.05,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 January 2022",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       }
     ],
@@ -312,7 +312,7 @@
     "options": [
       {
         "name": "The Games will begin",
-        "probability": 0.98,
+        "probability": 0.97,
         "type": "PROBABILITY"
       },
       {
@@ -322,7 +322,7 @@
       },
       {
         "name": "The Games will be cancelled",
-        "probability": 0.01,
+        "probability": 0.02,
         "type": "PROBABILITY"
       }
     ],
@@ -399,12 +399,12 @@
       },
       {
         "name": "Higher by between 0% and 100%",
-        "probability": 0.42,
+        "probability": 0.43,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 100%",
-        "probability": 0.57,
+        "probability": 0.56,
         "type": "PROBABILITY"
       }
     ],
@@ -457,12 +457,12 @@
       },
       {
         "name": "More than 10% but less than 20%",
-        "probability": 0.81,
+        "probability": 0.8,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 30%, inclusive",
-        "probability": 0.16,
+        "probability": 0.17,
         "type": "PROBABILITY"
       },
       {

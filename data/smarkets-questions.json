@@ -1249,17 +1249,17 @@
     "options": [
       {
         "name": "2023 or earlier",
-        "probability": 0.3862793572311496,
+        "probability": 0.4574565416285453,
         "type": "PROBABILITY"
       },
       {
         "name": "2024",
-        "probability": 0.2971260815822003,
+        "probability": 0.23760292772186642,
         "type": "PROBABILITY"
       },
       {
         "name": "2025 or later",
-        "probability": 0.3165945611866502,
+        "probability": 0.30494053064958826,
         "type": "PROBABILITY"
       }
     ],
@@ -1273,41 +1273,41 @@
     "options": [
       {
         "name": "Sadiq Khan",
-        "probability": 0.9483313228789705,
+        "probability": 0.9424575424575425,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Bailey",
-        "probability": 0.025130679533574583,
+        "probability": 0.024975024975024976,
         "type": "PROBABILITY"
       },
       {
         "name": "Siân Berry",
-        "probability": 0.00010052271813429834,
+        "probability": 0.0009990009990009992,
         "type": "PROBABILITY"
       },
       {
-        "probability": 0.00010052271813429834,
+        "probability": 0.00009990009990009991,
         "type": "PROBABILITY"
       },
       {
         "name": "Brian Rose",
-        "probability": 0.025130679533574583,
+        "probability": 0.029370629370629373,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid",
-        "probability": 0.00010052271813429834,
+        "probability": 0.00009990009990009991,
         "type": "PROBABILITY"
       },
       {
         "name": "Luisa Porritt",
-        "probability": 0.00010052271813429834,
+        "probability": 0.0009990009990009992,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox",
-        "probability": 0.0010052271813429834,
+        "probability": 0.0009990009990009992,
         "type": "PROBABILITY"
       }
     ],
@@ -2317,17 +2317,17 @@
     "options": [
       {
         "name": "Shaun Bailey",
-        "probability": 0.8455299539170507,
+        "probability": 0.8493275172664486,
         "type": "PROBABILITY"
       },
       {
         "name": "Sadiq Khan",
-        "probability": 0.018433179723502304,
+        "probability": 0.016539440203562343,
         "type": "PROBABILITY"
       },
       {
         "name": "Siân Berry",
-        "probability": 0.004608294930875576,
+        "probability": 0.004543802253725918,
         "type": "PROBABILITY"
       },
       {
@@ -2337,12 +2337,12 @@
       },
       {
         "name": "Brian Rose",
-        "probability": 0.08018433179723501,
+        "probability": 0.07906215921483097,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid",
-        "probability": 0.051244239631336404,
+        "probability": 0.05052708106143221,
         "type": "PROBABILITY"
       }
     ],
@@ -2548,17 +2548,17 @@
     "options": [
       {
         "name": "GroenLinks",
-        "probability": 0.32843910130074894,
+        "probability": 0.3164641093809343,
         "type": "PROBABILITY"
       },
       {
         "name": "Socialist Party (Socialistische Partij)",
-        "probability": 0.13312968072526607,
+        "probability": 0.12827573110520318,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour Party (Partij van de Arbeid)",
-        "probability": 0.5384312179739851,
+        "probability": 0.5552601595138625,
         "type": "PROBABILITY"
       }
     ],
@@ -3398,12 +3398,12 @@
     "options": [
       {
         "name": "Less than 2.0%",
-        "probability": 0.4217184495496407,
+        "probability": 0.4299680766161213,
         "type": "PROBABILITY"
       },
       {
         "name": "2.0% or more",
-        "probability": 0.5782815504503592,
+        "probability": 0.5700319233838786,
         "type": "PROBABILITY"
       }
     ],
@@ -4299,6 +4299,40 @@
       }
     ],
     "description": "Which party will win Ynys Môn at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Hartlepool by-election",
+    "url": "https://smarkets.com/event/42118665/politics/uk/by-elections/hartlepool-by-election",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Labour",
+        "probability": 0.4359478731251537,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Conservative",
+        "probability": 0.4820916318334563,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Reform UK",
+        "probability": 0.08196049504139005,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrats",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Northern Independence Party",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win the 2021 Hartlepool by-election? Other parties/candidates added on request.",
     "stars": 2
   }
 ]

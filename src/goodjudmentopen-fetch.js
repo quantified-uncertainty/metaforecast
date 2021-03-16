@@ -61,7 +61,7 @@ async function fetchStats(questionUrl, cookie) {
     // Crowd percentage
     let htmlElements = response.split("\n")
     let h3Element = htmlElements.filter(str => str.includes("<h3>"))[0]
-    console.log(h3Element)
+    // console.log(h3Element)
     let crowdpercentage = h3Element.split(">")[1].split("<")[0]
     let probability = Number(crowdpercentage.replace("%", "")) / 100
     options.push(({

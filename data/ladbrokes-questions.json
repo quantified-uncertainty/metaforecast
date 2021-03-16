@@ -1407,22 +1407,22 @@
     "options": [
       {
         "name": "2021",
-        "probability": 0.1569111315319408,
+        "probability": 0.22909090909090907,
         "type": "PROBABILITY"
       },
       {
         "name": "2022",
-        "probability": 0.1448410444910223,
+        "probability": 0.1309090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "2023",
-        "probability": 0.1344952555988064,
+        "probability": 0.1309090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "2024 or later",
-        "probability": 0.5637525683782305,
+        "probability": 0.509090909090909,
         "type": "PROBABILITY"
       }
     ],
@@ -1774,6 +1774,39 @@
       {
         "name": "Matthew Robinson (Cons)",
         "probability": 0.13207322872087493,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Hartlepool By-election: To Win",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "Ladbrokes",
+    "options": [
+      {
+        "name": "Conservatives",
+        "probability": 0.5261973798876447,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 0.4334864129550597,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrats",
+        "probability": 0.0045289625234110715,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Reform UK",
+        "probability": 0.02677416080016545,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Northern Independence Party",
+        "probability": 0.009013083833719062,
         "type": "PROBABILITY"
       }
     ],
@@ -2408,12 +2441,12 @@
     "options": [
       {
         "name": "SNP Majority",
-        "probability": 0.625,
+        "probability": 0.6076923076923076,
         "type": "PROBABILITY"
       },
       {
         "name": "No SNP Majority",
-        "probability": 0.375,
+        "probability": 0.39230769230769225,
         "type": "PROBABILITY"
       }
     ],
