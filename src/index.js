@@ -8,12 +8,12 @@ import {elicit} from "./elicit-fetch.js"
 import {foretold} from "./foretold-fetch.js"
 import {goodjudgment} from "./goodjudgment-fetch.js"
 import {goodjudgmentopen} from "./goodjudmentopen-fetch.js"
+import {hypermind} from "./hypermind-fetch.js"
 import {ladbrokes} from "./ladbrokes-fetch.js"
 import {metaculus} from "./metaculus-fetch.js"
 import {polymarket} from "./polymarket-fetch.js"
 import {predictit} from "./predictit-fetch.js"
 import {omen} from "./omen-fetch.js"
-import {hypermind} from "./hypermind-fetch.js"
 import {smarkets} from "./smarkets-fetch.js"
 import {williamhill} from "./williamhill-fetch.js"
 
@@ -21,7 +21,8 @@ import {williamhill} from "./williamhill-fetch.js"
 let opts = {}
 let json2csvParser = new Parser({ transforms:  [transforms.flatten()]});
 //let parse = csv => json2csvParser.parse(csv);
-let sets = ["template", "elicit", "foretold", "metaculus", "predictit", "polymarket", "csetforetell", "givewellopenphil", "goodjudgment","goodjudmentopen", "omen", "hypermind", "smarkets", "williamhill", "ladbrokes"]
+// let sets = ["template", "elicit", "foretold", "metaculus", "predictit", "polymarket", "csetforetell", "givewellopenphil", "goodjudgment","goodjudmentopen", "omen", "hypermind", "smarkets", "williamhill", "ladbrokes", "xrisk"]
+let sets = ["csetforetell", "elicit", "foretold", "givewellopenphil", "goodjudgment","goodjudmentopen", "hypermind", "ladbrokes", "metaculus", "polymarket", "predictit", "omen", "smarkets", "williamhill", "xrisk"]
 let suffix = "-questions"
 let locationData = "./data/"
 let sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
