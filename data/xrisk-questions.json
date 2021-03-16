@@ -123,8 +123,8 @@
     "title": "There be zero living humans on planet earth on January 1, 2100",
     "url": "https://www.metaculus.com/questions/578/human-extinction-by-2100/",
     "platform": "X-risk estimates",
-    "author": "Metaculus responders (~)",
-    "description": "Actual estimate: Median: 1%. Mean: 8%.\n\nThat median and mean is as of 3rd July 2019.",
+    "author": "Metaculus responders (~2021)",
+    "description": "Actual estimate: Median: 1%. Mean: 7%.\n\nWhile the general feeling of most people, especially now that the cold war is (mostly) over, is that the risk of human extinction is extremely small, experts have assigned a significantly higher probability to the event.\n\nIn 2008 an informal poll at the Global Catastrophic Risk Conference at the University of Oxford yielded a median probability of human extinction by 2100 of 19%. Yet, one might want to be cautious when using this result as a good estimate of the true probability of human extinction, as there may be a powerful selection effect at play. Only those who assign a high probability to human extinction are likely to attend the Global Catastrophic Risk Conference in the first place, meaning that the survey was effectively sampling opinions from one extreme tail of the opinion distribution on the subject. Indeed, the conference report itself stated that the findings should be taken 'with a grain of salt'..\n\nTherefore, it is asked: will there be zero living humans on planet earth on January 1, 2100?.\n\nFor these purposes we'll define humans as biological creatures who have as their ancestors – via a chain of live births from mothers – circa 2000 humans OR who could mate with circa 2000 humans to produce viable offspring. (So AIs, ems, genetically engineered beings of a different species brought up in artificial wombs, etc. would not count.).\n\nN.B. Even though it is obviously the case that if human extinction occurs Metaculus points won't be very valuable anymore and that it will be practically impossible to check for true human extinction (zero humans left), I would like to ask people not to let this fact influence their prediction and to predict in good faith.",
     "options": [
       {
         "name": "Yes",
@@ -300,7 +300,7 @@
     "stars": 2
   },
   {
-    "title": "Extremely bad (e.g. extinction)” long-run impact on humanity from “high-level machine intelligence",
+    "title": "Extremely bad (e.g. extinction) long-run impact on humanity from “high-level machine intelligence",
     "url": "https://arxiv.org/abs/1705.08807",
     "platform": "X-risk estimates",
     "author": "Survey of AI experts (~2017)",
@@ -488,12 +488,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 41.5,
+        "probability": 0.415,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": -40.5,
+        "probability": 0.585,
         "type": "PROBABILITY"
       }
     ],
@@ -764,7 +764,7 @@
     "url": "https://80000hours.org/podcast/episodes/toby-ord-the-precipice-existential-risk-future-humanity/#estimates-for-specific-x-risks-000810",
     "platform": "X-risk estimates",
     "author": "Toby Ord (~2020)",
-    "description": "Actual estimate: ~33% (\"about one in three\")\n\nOrd: \"\"one in six is my best guess as to the chance [an existential catastrophe] happens [by 2120]. That’s not a business as usual estimate. Whereas I think often people are assuming that estimates like this are, if we just carry on as we are, what’s the chance that something will happen?\n\nMy best guess for that is actually about one in three this century. If we carry on mostly ignoring these risks with humanity’s escalating power during the century and some of these threats being very serious. But I think that there’s a good chance that we will rise to these challenges and do something about them. So you could think of my overall estimate as being something like Russian roulette, but my initial business as usual estimate being there’s something like two bullets in the chamber of the gun, but then we’ll probably remove one and that if we really got our act together, we could basically remove both of them. And so, in some sense, maybe the headline figure should be one in three being the difference between the business as usual risk and how much of that we could eliminate if we really got our act together.\"\"\n\nArden Koehler replies \"\"Okay. So business as usual means doing what we are approximately doing now extrapolated into the future but we don’t put much more effort into it as opposed to doing nothing at all?\"\"\n\nOrd replies: \"\"That’s right, and it turns out to be quite hard to define business as usual. That’s the reason why, for my key estimate, that I make it… In some sense, it’s difficult to define estimates where they take into account whether or not people follow the advice that you’re giving; that introduces its own challenges. But at least that’s just what a probability normally means. It means that your best guess of the chance something happens, whereas a best guess that something happens conditional upon certain trends either staying at the same level or continuing on the same trajectory or something is just quite a bit more unclear as to what you’re even talking about.\"\"",
+    "description": "Actual estimate: ~33% (\"about one in three\")\n\nOrd: \"one in six is my best guess as to the chance [an existential catastrophe] happens [by 2120]. That’s not a business as usual estimate. Whereas I think often people are assuming that estimates like this are, if we just carry on as we are, what’s the chance that something will happen?\n\nMy best guess for that is actually about one in three this century. If we carry on mostly ignoring these risks with humanity’s escalating power during the century and some of these threats being very serious. But I think that there’s a good chance that we will rise to these challenges and do something about them. So you could think of my overall estimate as being something like Russian roulette, but my initial business as usual estimate being there’s something like two bullets in the chamber of the gun, but then we’ll probably remove one and that if we really got our act together, we could basically remove both of them. And so, in some sense, maybe the headline figure should be one in three being the difference between the business as usual risk and how much of that we could eliminate if we really got our act together.\"\"\n\nArden Koehler replies \"\"Okay. So business as usual means doing what we are approximately doing now extrapolated into the future but we don’t put much more effort into it as opposed to doing nothing at all?\"\"\n\nOrd replies: \"\"That’s right, and it turns out to be quite hard to define business as usual. That’s the reason why, for my key estimate, that I make it… In some sense, it’s difficult to define estimates where they take into account whether or not people follow the advice that you’re giving; that introduces its own challenges. But at least that’s just what a probability normally means. It means that your best guess of the chance something happens, whereas a best guess that something happens conditional upon certain trends either staying at the same level or continuing on the same trajectory or something is just quite a bit more unclear as to what you’re even talking about.\"\"",
     "options": [
       {
         "name": "Yes",
@@ -780,7 +780,7 @@
     "stars": 2
   },
   {
-    "title": "The probability that the long-run overall impact on humanity of human level machine intelligence will be Extremely bad (existential catastrophe)”, assuming Human Level Machine Intelligence will at some point exist.",
+    "title": "The probability that the long-run overall impact on humanity of human level machine intelligence will be Extremely bad (existential catastrophe), assuming Human Level Machine Intelligence will at some point exist.",
     "url": "https://docs.google.com/spreadsheets/d/1W10B6NJjicD8O0STPiT3tNV3oFnT8YsfjmtYR8RO_RI/edit#gid=511918904",
     "platform": "X-risk estimates",
     "author": "Survey of experts in the AI field (~2016)",
