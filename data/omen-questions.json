@@ -1,24 +1,5 @@
 [
   {
-    "title": "Will the Ethereum block gas limit be >= 25,000,000 gas in any block on April 1st 2021?",
-    "url": "https://omen.eth.link/#/0x06c942fd737bc53571a34667b2ae3b669f1f502d",
-    "platform": "Omen",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.988630113034544,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.011369886965456032,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "",
-    "stars": 1
-  },
-  {
     "title": "Will EIP1559 be live on Mainnet before September? ",
     "url": "https://omen.eth.link/#/0x36cb6942bc9e2b07d7ad4fe33b3fef11be05a28c",
     "platform": "Omen",

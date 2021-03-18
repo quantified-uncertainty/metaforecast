@@ -1786,27 +1786,37 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.5007033585370143,
+        "probability": 0.4695981722440792,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.45063302268331284,
+        "probability": 0.4695981722440792,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.004483910673465799,
+        "probability": 0.004462350790976076,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.026507824863724286,
+        "probability": 0.026380367911358563,
         "type": "PROBABILITY"
       },
       {
         "name": "Northern Independence Party (bets void if not registered as a party in time)",
-        "probability": 0.017671883242482856,
+        "probability": 0.026380367911358563,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "SDP",
+        "probability": 0.0017902844490742338,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Heritage Party",
+        "probability": 0.0017902844490742338,
         "type": "PROBABILITY"
       }
     ],
@@ -2141,27 +2151,27 @@
     "options": [
       {
         "name": "Reform UK",
-        "probability": 0.009226975008890151,
+        "probability": 0.009469915492155196,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservatives",
-        "probability": 0.5580386083220991,
+        "probability": 0.5727314159926197,
         "type": "PROBABILITY"
       },
       {
         "name": "Greens",
-        "probability": 0.004636440178596543,
+        "probability": 0.004758514749789426,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.41418865595462456,
+        "probability": 0.4035702382732804,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.01390932053578963,
+        "probability": 0.009469915492155196,
         "type": "PROBABILITY"
       }
     ],
@@ -2174,22 +2184,22 @@
     "options": [
       {
         "name": "2021",
-        "probability": 0.04429530201342282,
+        "probability": 0.043734230445752725,
         "type": "PROBABILITY"
       },
       {
         "name": "2022",
-        "probability": 0.08456375838926175,
+        "probability": 0.07064760302775441,
         "type": "PROBABILITY"
       },
       {
         "name": "2023",
-        "probability": 0.20671140939597316,
+        "probability": 0.22960470984020181,
         "type": "PROBABILITY"
       },
       {
         "name": "2024 or later",
-        "probability": 0.6644295302013423,
+        "probability": 0.656013456686291,
         "type": "PROBABILITY"
       }
     ],
@@ -2202,17 +2212,17 @@
     "options": [
       {
         "name": "Conservative Majoirity",
-        "probability": 0.31460674157303375,
+        "probability": 0.34239130434782616,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour Majority",
-        "probability": 0.23595505617977533,
+        "probability": 0.20923913043478262,
         "type": "PROBABILITY"
       },
       {
         "name": "No Overall Majority",
-        "probability": 0.44943820224719105,
+        "probability": 0.44836956521739135,
         "type": "PROBABILITY"
       }
     ],
@@ -2492,32 +2502,32 @@
     "options": [
       {
         "name": "Under 40%",
-        "probability": 0.04190017710836724,
+        "probability": 0.041931742060984066,
         "type": "PROBABILITY"
       },
       {
         "name": "40-45%",
-        "probability": 0.14665061987928535,
+        "probability": 0.19568146295125896,
         "type": "PROBABILITY"
       },
       {
         "name": "45-50%",
-        "probability": 0.35196148771028485,
+        "probability": 0.37154708155302335,
         "type": "PROBABILITY"
       },
       {
         "name": "50-55%",
-        "probability": 0.335841114227371,
+        "probability": 0.2935221944268885,
         "type": "PROBABILITY"
       },
       {
         "name": "55-60%",
-        "probability": 0.09776707991952356,
+        "probability": 0.08005150757096959,
         "type": "PROBABILITY"
       },
       {
         "name": "Over 60%",
-        "probability": 0.025879521155168003,
+        "probability": 0.017266011436875794,
         "type": "PROBABILITY"
       }
     ],
@@ -3193,12 +3203,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5,
+        "probability": 0.47619047619047616,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5,
+        "probability": 0.5238095238095238,
         "type": "PROBABILITY"
       }
     ],
@@ -3211,12 +3221,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.7518796992481203,
+        "probability": 0.7142857142857143,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.24812030075187974,
+        "probability": 0.2857142857142857,
         "type": "PROBABILITY"
       }
     ],
