@@ -1101,12 +1101,12 @@
     "options": [
       {
         "name": "Ben Houchen (Cons)",
-        "probability": 0.75,
+        "probability": 0.7936507936507936,
         "type": "PROBABILITY"
       },
       {
         "name": "Jessie Joe Jacobs (Lab)",
-        "probability": 0.25,
+        "probability": 0.2063492063492063,
         "type": "PROBABILITY"
       }
     ],
@@ -1780,33 +1780,33 @@
     "stars": 2
   },
   {
-    "title": "Hartlepool By-election: To Win",
+    "title": "Hartlepool By-election: Winner",
     "url": "https://sports.ladbrokes.com/sport/politics/outrights",
     "platform": "Ladbrokes",
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.5261973798876447,
+        "probability": 0.5007033585370143,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.4334864129550597,
+        "probability": 0.45063302268331284,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.0045289625234110715,
+        "probability": 0.004483910673465799,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.02677416080016545,
+        "probability": 0.026507824863724286,
         "type": "PROBABILITY"
       },
       {
-        "name": "Northern Independence Party",
-        "probability": 0.009013083833719062,
+        "name": "Northern Independence Party (bets void if not registered as a party in time)",
+        "probability": 0.017671883242482856,
         "type": "PROBABILITY"
       }
     ],
@@ -2062,22 +2062,22 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.08506316571711667,
+        "probability": 0.11503967380380371,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.8506316571711666,
+        "probability": 0.8217119557414551,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.009264305177111716,
+        "probability": 0.009112053370598314,
         "type": "PROBABILITY"
       },
       {
         "name": "Plaid Cymru",
-        "probability": 0.055040871934604906,
+        "probability": 0.054136317084142925,
         "type": "PROBABILITY"
       }
     ],
@@ -2441,12 +2441,12 @@
     "options": [
       {
         "name": "SNP Majority",
-        "probability": 0.6076923076923076,
+        "probability": 0.5890052356020942,
         "type": "PROBABILITY"
       },
       {
         "name": "No SNP Majority",
-        "probability": 0.39230769230769225,
+        "probability": 0.4109947643979057,
         "type": "PROBABILITY"
       }
     ],
@@ -2492,32 +2492,32 @@
     "options": [
       {
         "name": "Under 40%",
-        "probability": 0.04193230874539787,
+        "probability": 0.04190017710836724,
         "type": "PROBABILITY"
       },
       {
         "name": "40-45%",
-        "probability": 0.12579692623619362,
+        "probability": 0.14665061987928535,
         "type": "PROBABILITY"
       },
       {
         "name": "45-50%",
-        "probability": 0.35223139346134213,
+        "probability": 0.35196148771028485,
         "type": "PROBABILITY"
       },
       {
         "name": "50-55%",
-        "probability": 0.33609865788296,
+        "probability": 0.335841114227371,
         "type": "PROBABILITY"
       },
       {
         "name": "55-60%",
-        "probability": 0.11007231045666942,
+        "probability": 0.09776707991952356,
         "type": "PROBABILITY"
       },
       {
         "name": "Over 60%",
-        "probability": 0.03386840321743675,
+        "probability": 0.025879521155168003,
         "type": "PROBABILITY"
       }
     ],

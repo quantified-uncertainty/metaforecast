@@ -5,6 +5,7 @@ import readline from "readline"
 
 import {csetforetell} from "./csetforetell-fetch.js"
 import {elicit} from "./elicit-fetch.js"
+import {estimize} from "./estimize-fetch.js"
 import {foretold} from "./foretold-fetch.js"
 import {goodjudgment} from "./goodjudgment-fetch.js"
 import {goodjudgmentopen} from "./goodjudmentopen-fetch.js"
@@ -22,7 +23,7 @@ let opts = {}
 let json2csvParser = new Parser({ transforms:  [transforms.flatten()]});
 //let parse = csv => json2csvParser.parse(csv);
 // let sets = ["template", "elicit", "foretold", "metaculus", "predictit", "polymarket", "csetforetell", "givewellopenphil", "goodjudgment","goodjudmentopen", "omen", "hypermind", "smarkets", "williamhill", "ladbrokes", "xrisk"]
-let sets = ["csetforetell", "elicit", "foretold", "givewellopenphil", "goodjudgment","goodjudmentopen", "hypermind", "ladbrokes", "metaculus", "polymarket", "predictit", "omen", "smarkets", "williamhill", "xrisk"]
+let sets = ["csetforetell", "elicit", "estimize", "foretold", "givewellopenphil", "goodjudgment","goodjudmentopen", "hypermind", "ladbrokes", "metaculus", "polymarket", "predictit", "omen", "smarkets", "williamhill", "xrisk"]
 let suffix = "-questions"
 let locationData = "./data/"
 let sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -79,42 +80,45 @@ let executeoption = async (option) => {
       elicit()
       break;
     case 3:
-      foretold()
+      estimize()
       break;
     case 4:
-      goodjudgment()
+      foretold()
       break;
     case 5:
-      goodjudgmentopen()
+      goodjudgment()
       break;
     case 6:
-      hypermind()
+      goodjudgmentopen()
       break;
     case 7:
-      ladbrokes()
+      hypermind()
       break;
     case 8:
-      metaculus()
+      ladbrokes()
       break;
     case 9:
-      omen()
+      metaculus()
       break;
     case 10:
+      omen()
+      break;
+    case 11:
       polymarket()
       break;
-    case 11:    
+    case 12:    
       predictit()
       break;
-    case 12:
+    case 13:
       smarkets()
       break;
-    case 13:
+    case 14:
       williamhill()
     break;
-    case 14:
+    case 15:
       coverttocsvandmerge()
       break;
-    case 15:
+    case 16:
       await csetforetell()
       await elicit()
       //await foretold()
@@ -139,19 +143,20 @@ let executeoption = async (option) => {
 let whattodoMessage = `What do you want to do?
 [1]: Download predictions from csetforetell
 [2]: Download predictions from elicit
-[3]: Download predictions from foretold
-[4]: Download predictions from goodjudgment
-[5]: Download predictions from goodjudgmentopen
-[6]: Download predictions from hypermind
-[7]: Download predictions from ladbrokes
-[8]: Download predictions from metaculus
-[9]: Download predictions from omen
-[10]: Download predictions from polymarket
-[11]: Download predictions from predictit
-[12]: Download predictions from smarkets
-[13]: Download predictions from William Hill
-[14]: Merge jsons them into one big json (requires previous steps)
-[15]: All of the above
+[3]: Download predictions from estimize
+[4]: Download predictions from foretold
+[5]: Download predictions from goodjudgment
+[6]: Download predictions from goodjudgmentopen
+[7]: Download predictions from hypermind
+[8]: Download predictions from ladbrokes
+[9]: Download predictions from metaculus
+[10]: Download predictions from omen
+[11]: Download predictions from polymarket
+[12]: Download predictions from predictit
+[13]: Download predictions from smarkets
+[14]: Download predictions from William Hill
+[15]: Merge jsons them into one big json (requires previous steps)
+[16]: All of the above
 Choose one option, wisely: #`
 
 whattodo(whattodoMessage, executeoption)

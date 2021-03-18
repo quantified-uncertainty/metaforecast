@@ -7,12 +7,12 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.25,
+        "probability": 0.37,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.71,
+        "probability": 0.59,
         "type": "PROBABILITY"
       },
       {
@@ -119,12 +119,12 @@
       },
       {
         "name": "More than 500 million but fewer than 960 million",
-        "probability": 0.19,
+        "probability": 0.18,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 960 million and 1.6 billion, inclusive",
-        "probability": 0.76,
+        "probability": 0.77,
         "type": "PROBABILITY"
       },
       {
@@ -142,7 +142,7 @@
     "options": [
       {
         "name": "Before 1 April 2021",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -162,7 +162,7 @@
       },
       {
         "name": "Not before 1 January 2022",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       }
     ],
@@ -181,12 +181,12 @@
       },
       {
         "name": "Between 1 February 2021 and 31 March 2021",
-        "probability": 0.85,
+        "probability": 0.87,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 April 2021 and 31 May 2021",
-        "probability": 0.15,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
@@ -220,12 +220,12 @@
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.76,
+        "probability": 0.77,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.13,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
@@ -249,12 +249,12 @@
       },
       {
         "name": "Between 1 March 2021 and 30 April 2021",
-        "probability": 0.96,
+        "probability": 0.97,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.04,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
@@ -278,22 +278,22 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.51,
+        "probability": 0.64,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.41,
+        "probability": 0.31,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.04,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 November 2021 and 31 December 2021",
-        "probability": 0.03,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -336,17 +336,17 @@
     "options": [
       {
         "name": "Less than 23%",
-        "probability": 0.24,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 23% and 27%, inclusive",
-        "probability": 0.72,
+        "probability": 0.71,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 27%",
-        "probability": 0.04,
+        "probability": 0.03,
         "type": "PROBABILITY"
       }
     ],
@@ -360,7 +360,7 @@
     "options": [
       {
         "name": "Lower by more than 8%",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -370,17 +370,17 @@
       },
       {
         "name": "Lower by more than 0% but less than 4% ",
-        "probability": 0.09,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by between 0% and 4%, inclusive",
-        "probability": 0.77,
+        "probability": 0.78,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 4%",
-        "probability": 0.12,
+        "probability": 0.13,
         "type": "PROBABILITY"
       }
     ],
@@ -418,7 +418,7 @@
     "options": [
       {
         "name": "Before 1 April 2021",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -438,7 +438,7 @@
       },
       {
         "name": "Not before 1 January 2022",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       }
     ],
@@ -452,17 +452,17 @@
     "options": [
       {
         "name": "10% or less",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 10% but less than 20%",
-        "probability": 0.8,
+        "probability": 0.76,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 30%, inclusive",
-        "probability": 0.17,
+        "probability": 0.22,
         "type": "PROBABILITY"
       },
       {
