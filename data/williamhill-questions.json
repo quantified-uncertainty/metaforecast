@@ -6,12 +6,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5238095238095238,
+        "probability": 0.5555555555555556,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.47619047619047616,
+        "probability": 0.4444444444444444,
         "type": "PROBABILITY"
       }
     ],
@@ -24,12 +24,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5238095238095238,
+        "probability": 0.5,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.47619047619047616,
+        "probability": 0.5,
         "type": "PROBABILITY"
       }
     ],
@@ -78,12 +78,48 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.0033222591362126247,
+        "probability": 0.00398406374501992,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.9966777408637874,
+        "probability": 0.9960159362549801,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Heritage Party",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "SDP",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
         "type": "PROBABILITY"
       }
     ],
@@ -937,32 +973,32 @@
     "options": [
       {
         "name": "Conservative",
-        "probability": 0.5538598097114033,
+        "probability": 0.5625094928679308,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.4195907649328812,
+        "probability": 0.4166736984206895,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.009139600820320185,
+        "probability": 0.00620871404931491,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrat",
-        "probability": 0.009139600820320185,
+        "probability": 0.00620871404931491,
         "type": "PROBABILITY"
       },
       {
         "name": "UKIP",
-        "probability": 0.0045925357355837745,
+        "probability": 0.004664257818142047,
         "type": "PROBABILITY"
       },
       {
         "name": "Greens",
-        "probability": 0.0036776879794913893,
+        "probability": 0.0037351227946077746,
         "type": "PROBABILITY"
       }
     ],
@@ -1126,6 +1162,24 @@
       {
         "name": "Michelle Ballantyne",
         "probability": 0.003023375940437605,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "French 2022 Presidential Election - Candidate With The Most Votes: 1st Round",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Emmanuel Macron",
+        "probability": 0.5365853658536586,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Marine Le Pen",
+        "probability": 0.46341463414634143,
         "type": "PROBABILITY"
       }
     ],
@@ -1338,32 +1392,37 @@
     "options": [
       {
         "name": "Markus Soder",
-        "probability": 0.43037293626838957,
+        "probability": 0.38324741732256423,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet",
-        "probability": 0.3825537211274574,
+        "probability": 0.3406643709533904,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Annalena Baerbock or Robert Habeck",
+        "probability": 0.10949926209216121,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.06621122096436763,
+        "probability": 0.05896114112654835,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock",
-        "probability": 0.05738305816911861,
+        "probability": 0.051099655643008564,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.0506321101492223,
+        "probability": 0.04508793144971344,
         "type": "PROBABILITY"
       },
       {
         "name": "Alice Weidel",
-        "probability": 0.012846953321444466,
+        "probability": 0.011440221412613857,
         "type": "PROBABILITY"
       }
     ],
@@ -1376,47 +1435,47 @@
     "options": [
       {
         "name": "Conservatives (H)",
-        "probability": 0.6248260227461028,
+        "probability": 0.6307419721034784,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour (AP)",
-        "probability": 0.22216036364305877,
+        "probability": 0.21865721699587248,
         "type": "PROBABILITY"
       },
       {
         "name": "Centre Party (SP)",
-        "probability": 0.12816944056330315,
+        "probability": 0.12614839442069567,
         "type": "PROBABILITY"
       },
       {
         "name": "Progress Party (FRP)",
-        "probability": 0.008248528353083866,
+        "probability": 0.008118461027074473,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Party (V)",
-        "probability": 0.0033191289388903203,
+        "probability": 0.003266791090575784,
         "type": "PROBABILITY"
       },
       {
         "name": "Socialist Left Party (SV)",
-        "probability": 0.0033191289388903203,
+        "probability": 0.003266791090575784,
         "type": "PROBABILITY"
       },
       {
         "name": "Christian Democratic Party (KRF)",
-        "probability": 0.0033191289388903203,
+        "probability": 0.003266791090575784,
         "type": "PROBABILITY"
       },
       {
         "name": "Green Party (MDG)",
-        "probability": 0.0033191289388903203,
+        "probability": 0.003266791090575784,
         "type": "PROBABILITY"
       },
       {
         "name": "Red Party (R)",
-        "probability": 0.0033191289388903203,
+        "probability": 0.003266791090575784,
         "type": "PROBABILITY"
       }
     ],

@@ -1048,47 +1048,47 @@
     "options": [
       {
         "name": "Andrew Yang",
-        "probability": 0.5017152370016653,
+        "probability": 0.5563445041300947,
         "type": "PROBABILITY"
       },
       {
         "name": "Curtis Silwa",
-        "probability": 0.008593736237751295,
+        "probability": 0.008427792983356882,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Adams",
-        "probability": 0.21699184000322022,
+        "probability": 0.1891571314042322,
         "type": "PROBABILITY"
       },
       {
         "name": "Maya Wiley",
-        "probability": 0.09644081777920897,
+        "probability": 0.0851207091319045,
         "type": "PROBABILITY"
       },
       {
         "name": "Ray McGuire",
-        "probability": 0.05105690353016946,
+        "probability": 0.05007100537170853,
         "type": "PROBABILITY"
       },
       {
         "name": "Scott Stringer",
-        "probability": 0.07890612363753463,
+        "probability": 0.06547746856300346,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Donovan",
-        "probability": 0.03338336000049542,
+        "probability": 0.03273873428150173,
         "type": "PROBABILITY"
       },
       {
         "name": "Donald Trump",
-        "probability": 0.004318245572203387,
+        "probability": 0.00423486115084102,
         "type": "PROBABILITY"
       },
       {
         "name": "Andrew Giuliani",
-        "probability": 0.008593736237751295,
+        "probability": 0.008427792983356882,
         "type": "PROBABILITY"
       }
     ],
@@ -1786,37 +1786,37 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.4695981722440792,
+        "probability": 0.44509874937307453,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.4695981722440792,
+        "probability": 0.49455416597008284,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.004462350790976076,
+        "probability": 0.004428843277344025,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.026380367911358563,
+        "probability": 0.026182279374886736,
         "type": "PROBABILITY"
       },
       {
         "name": "Northern Independence Party (bets void if not registered as a party in time)",
-        "probability": 0.026380367911358563,
+        "probability": 0.026182279374886736,
         "type": "PROBABILITY"
       },
       {
         "name": "SDP",
-        "probability": 0.0017902844490742338,
+        "probability": 0.0017768413148625728,
         "type": "PROBABILITY"
       },
       {
         "name": "Heritage Party",
-        "probability": 0.0017902844490742338,
+        "probability": 0.0017768413148625728,
         "type": "PROBABILITY"
       }
     ],
@@ -2451,12 +2451,12 @@
     "options": [
       {
         "name": "SNP Majority",
-        "probability": 0.5890052356020942,
+        "probability": 0.5361930294906166,
         "type": "PROBABILITY"
       },
       {
         "name": "No SNP Majority",
-        "probability": 0.4109947643979057,
+        "probability": 0.4638069705093834,
         "type": "PROBABILITY"
       }
     ],
@@ -2502,32 +2502,32 @@
     "options": [
       {
         "name": "Under 40%",
-        "probability": 0.041931742060984066,
+        "probability": 0.05189297347917039,
         "type": "PROBABILITY"
       },
       {
         "name": "40-45%",
-        "probability": 0.19568146295125896,
+        "probability": 0.27144016896796824,
         "type": "PROBABILITY"
       },
       {
         "name": "45-50%",
-        "probability": 0.37154708155302335,
+        "probability": 0.3722280798083952,
         "type": "PROBABILITY"
       },
       {
         "name": "50-55%",
-        "probability": 0.2935221944268885,
+        "probability": 0.23524814643890576,
         "type": "PROBABILITY"
       },
       {
         "name": "55-60%",
-        "probability": 0.08005150757096959,
+        "probability": 0.05189297347917039,
         "type": "PROBABILITY"
       },
       {
         "name": "Over 60%",
-        "probability": 0.017266011436875794,
+        "probability": 0.01729765782639013,
         "type": "PROBABILITY"
       }
     ],
@@ -2540,12 +2540,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.75,
+        "probability": 0.7096069868995633,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.25,
+        "probability": 0.2903930131004367,
         "type": "PROBABILITY"
       }
     ],
