@@ -6,12 +6,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5555555555555556,
+        "probability": 0.5238095238095238,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.4444444444444444,
+        "probability": 0.47619047619047616,
         "type": "PROBABILITY"
       }
     ],
@@ -24,12 +24,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5,
+        "probability": 0.5238095238095238,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5,
+        "probability": 0.47619047619047616,
         "type": "PROBABILITY"
       }
     ],
@@ -42,12 +42,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.0196078431372549,
+        "probability": 0.038461538461538464,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.9803921568627451,
+        "probability": 0.9615384615384616,
         "type": "PROBABILITY"
       }
     ],

@@ -1,42 +1,82 @@
 [
   {
-    "title": "Will Joe Biden be President of the USA on April 30, 2021?",
-    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-april-30-2021",
+    "title": "Will Andrew Yang win the Democratic primary for Mayor of New York City in 2021?",
+    "url": "https://polymarket.com/market/will-andrew-yang-win-the-democratic-primary-for-mayor-of-new-york-city-in-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on if Joe Biden will be President of the United States on April 30, 2021, 11:59 PM EST. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, https://www.whitehouse.gov/",
+    "description": "This is a market on if Andrew Yang will win the Democratic primary for New York City Mayor in 2021. This market will resolve to \"Yes\" if Yang is the winner of the Democratic primary for Mayor of New York City, and \"No\" otherwise. The primary is currently scheduled for June 22, 2021. In the event that the primary is not held on that date, the resolution of this market will be delayed until the primary takes place. If no primary is held in 2021, this market will resolve to \"No\". The resolution source for this market will be any official CNN publication that declares Andrew Yang the primary winner. In the event of conflicting sources between CNN and WSJ (https://www.wsj.com) or Associated Press (https://apnews.com/), the market will only be resolved once there is a definitive winner. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n\n \n\n\n\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9384848009899550913372178405384028",
+        "probability": "0.6209662322177548798868978177965463",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.06151519901004490866278215946159717",
+        "probability": "0.3790337677822451201131021822034537",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1388",
-    "stars": 3
+    "numforecasts": "272",
+    "stars": 4
   },
   {
-    "title": "Will Bitcoin ($BTC) be above $55k on April 1, 2021?",
-    "url": "https://polymarket.com/market/will-bitcoin-btc-be-above-55k-on-april-1-2021",
+    "title": "Will 150 million people have received a dose of an approved COVID-19 vaccine in the US by May 1, 2021?",
+    "url": "https://polymarket.com/market/will-150-million-people-have-received-a-dose-of-an-approved-covid-19-vaccine-in-the-us-by-may-1-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on if the USD price of Bitcoin $BTC will be above $55000 on April 1, 2021, 12:00 PM ET, according to coinmarketcap.com/currencies/bitcoin/. This market will resolve to “Yes“ if BTC is trading above $55000 according to Coinmarketcap on the resolution date, and “No“ otherwise. If price data is temporarily unavailable on Coinmarketcap at the time of resolution, coingecko.com/en/coins/bitcoin will instead be referenced. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
+    "description": "This is a market on whether 150 million people in The United States of America will have initiated vaccination, according to the CDC COVID tracker, by the resolution date, May 1, 2021, 12 PM ET. This market will resolve to \"Yes\" if 150 million people or more are listed as having received their initial dose of vaccination by the resolution source. This only concerns the first dose of vaccination. For vaccines requiring two doses for inoculation, this market considers only the first dose to be considered having initiated vaccination. This market will resolve to \"No\" if, for any reason, fewer than 150 million people have initiated vaccination by the resolution date. The resolution source for this market will be the official data published by the CDC available at https://covid.cdc.gov/covid-data-tracker/#vaccinations\n\nThis market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.6597001613185609718884312218633493",
+        "probability": "0.6343578474013309830514747024785778",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.3402998386814390281115687781366507",
+        "probability": "0.3656421525986690169485252975214222",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "713",
+    "numforecasts": "349",
+    "stars": 4
+  },
+  {
+    "title": "Will inflation be 0.5% or more from February to March?",
+    "url": "https://polymarket.com/market/will-inflation-be-0-5-or-more-from-february-to-march",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether month-to-month inflation, as measured by the Bureau of Labor Statistics (CPI-U) will be 0.5% or more from February to March, when the BLS releases month-to-month inflation information for the preceding month of March on April 13, 2021, 8:30 am ET. This market will resolve to “Yes” if the Bureau of Labor Statistics reports that, on a seasonally adjusted basis, the Consumer Price Index for All Urban Consumers (CPI-U) increased by exactly 0.5 percent (i.e. fifty hundredths of 1%) or more from February 2021 to March 2021. This market will resolve to “No” if the Bureau of Labor Statistics reports that, on a seasonally adjusted basis, the Consumer Price Index for All Urban Consumers (CPI-U) increased by less than 0.5 percent (i.e. fifty hundredths of 1%) from February 2021 to March 2021. The resolution source for this market will be the BLS March 2021 Consumer Price Index report (https://www.bls.gov/bls/news-release/cpi.htm), currently scheduled for release on April 13, 2021, 8:30 am ET. Resolution of this market will take place upon release of the aforementioned data. Note that the resolution source for this market will be the official monthly BLS CPI news release which reports seasonally-adjusted month-to-month inflation to only one decimal point (e.g. 0.4%, 0.1%, etc). Thus, this is the level of precision that will be used when resolving the market (i.e. if seasonally adjusted month-to-month CPI-U is 0.4%, the market will resolve to “No”, if it is 0.5%, this market will resolve to “Yes”).\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.4274520446753933157534018024233871",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.5725479553246066842465981975766129",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "124",
+    "stars": 4
+  },
+  {
+    "title": "Will 225M COVID-19 vaccine doses have been administered in the US by Biden's 100th day in office? ",
+    "url": "https://polymarket.com/market/will-225-m-covid-19-vaccine-doses-have-been-administered-in-the-us-by-biden-s-100th-day-in-office",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether 225 million COVID-19 vaccine doses will be administered in the United States by April 29, 2021, 12:00 PM ET (Biden’s 100th day in office). This market will resolve to \"Yes\" if 225 million or more total COVID-19 vaccine doses are administered by the resolution date. This market will resolve to \"No\" if, for any reason, fewer than 225 million COVID-19 vaccines doses are administered by the resolution date. The resolution source for this market will be the number of total COVID-19 vaccine doses administered, as indicated by the CDC’s Covid Data tracker (https://covid.cdc.gov/covid-data-tracker/#vaccinations). This market will resolve according to the data as available immediately at the time of resolution, April 29, 2021, 12:00 PM ET, and resolution will not be delayed for the purpose of waiting for updated data from a specific date. ",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.6408576475783245598979095142669649",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.3591423524216754401020904857330351",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "62",
     "stars": 4
   },
   {
@@ -51,26 +91,6 @@
     "options": []
   },
   {
-    "title": "Will Donald Trump be President of the USA on May 31, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-may-31-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Donald Trump will be President of the United States on May 31, 2021, 12 pm ET. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.05326016474466037456012927193575621",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9467398352553396254398707280642438",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "615",
-    "stars": 3
-  },
-  {
     "title": "Will any of SuperRare, Zora, Foundation, OpenSea, or NiftyGateway have a live token by April 30th, 2021?",
     "url": "https://polymarket.com/market/will-any-of-super-rare-zora-foundation-open-sea-or-nifty-gateway-have-a-live-token-by-april-30th-2021",
     "platform": "PolyMarket",
@@ -78,67 +98,61 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.3908255482088409898840672506435951",
+        "probability": "0.3884104739346580968187703188170513",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.6091744517911590101159327493564049",
+        "probability": "0.6115895260653419031812296811829487",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "49",
+    "numforecasts": "52",
     "stars": 4
   },
   {
     "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
     "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1-1",
-    "address": "0x36BB6f09327d1A7D0930668345655d6A6e3c6b20",
+    "platform": "PolyMarket",
     "description": "This is a market on if the federal minimum wage will be $9.50 per hour or higher by April 1, 12:00pm EST. This market will resolve to \"Yes\" if the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point prior to the resolution date, and \"No\" otherwise. The primary resolution source for this market will be the U.S. Department of Labor's website, https://www.dol.gov/.",
-    "outcomes": [
-      "Yes",
-      "No"
-    ],
-    "options": []
-  },
-  {
-    "title": "Will Andrew Yang win the Democratic primary for Mayor of New York City in 2021?",
-    "url": "https://polymarket.com/market/will-andrew-yang-win-the-democratic-primary-for-mayor-of-new-york-city-in-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Andrew Yang will win the Democratic primary for New York City Mayor in 2021. This market will resolve to \"Yes\" if Yang is the winner of the Democratic primary for Mayor of New York City, and \"No\" otherwise. The primary is currently scheduled for June 22, 2021. In the event that the primary is not held on that date, the resolution of this market will be delayed until the primary takes place. If no primary is held in 2021, this market will resolve to \"No\". The resolution source for this market will be any official CNN publication that declares Andrew Yang the primary winner. In the event of conflicting sources between CNN and WSJ (https://www.wsj.com) or Associated Press (https://apnews.com/), the market will only be resolved once there is a definitive winner. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n\n \n\n\n\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.5737368105932406376129994481466282",
+        "probability": "0.004613849185140135230186082059163485",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.4262631894067593623870005518533718",
+        "probability": "0.9953861508148598647698139179408365",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "226",
-    "stars": 4
+    "numforecasts": "171",
+    "stars": 3
   },
   {
-    "title": "Will 150 million people have received a dose of an approved COVID-19 vaccine in the US by May 1, 2021?",
-    "url": "https://polymarket.com/market/will-150-million-people-have-received-a-dose-of-an-approved-covid-19-vaccine-in-the-us-by-may-1-2021",
+    "title": "Will Texas, Florida, or California have the highest 7-day daily average of COVID-19 cases on April 15, 2021?",
+    "url": "https://polymarket.com/market/will-texas-florida-or-california-have-the-highest-7-day-daily-average-of-covid-19-cases-on-april-15-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on whether 150 million people in The United States of America will have initiated vaccination, according to the CDC COVID tracker, by the resolution date, May 1, 2021, 12 PM ET. This market will resolve to \"Yes\" if 150 million people or more are listed as having received their initial dose of vaccination by the resolution source. This only concerns the first dose of vaccination. For vaccines requiring two doses for inoculation, this market considers only the first dose to be considered having initiated vaccination. This market will resolve to \"No\" if, for any reason, fewer than 150 million people have initiated vaccination by the resolution date. The resolution source for this market will be the official data published by the CDC available at https://covid.cdc.gov/covid-data-tracker/#vaccinations\n\nThis market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.\n",
+    "description": "This is a market on which of the following states will have the highest 7-day daily average of COVID-19 cases on April 15, 2021, 12:00 PM ET: Texas, Florida, or California. The resolution source for this Market will be the New York Times’ U.S. state-by-state COVID-19 case count dashboard (https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html#states). This market will resolve to whichever state out of Texas, Florida, or California has the highest 7-day daily average of COVID-19 cases on the resolution date. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). \n",
     "options": [
       {
-        "name": "Yes",
-        "probability": "0.7048920190196941024466746714456119",
+        "name": "Texas",
+        "probability": "0.2269508927291177382607228994104159",
         "type": "PROBABILITY"
       },
       {
-        "name": "No",
-        "probability": "0.2951079809803058975533253285543881",
+        "name": "Florida",
+        "probability": "0.6775688181127502971288448653496796",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "California",
+        "probability": "0.09548028915813196461043223523990453",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "285",
+    "numforecasts": "202",
     "stars": 4
   },
   {
@@ -149,161 +163,36 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.006455953036528953801406869581990141",
+        "probability": "0.002655512989767870225374552671731775",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9935440469634710461985931304180099",
+        "probability": "0.9973444870102321297746254473282682",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "4019",
+    "numforecasts": "4171",
     "stars": 3
   },
   {
-    "title": "Will daily atmospheric CO2 be above 418 ppm on March 22, 2021?",
-    "url": "https://polymarket.com/market/will-daily-atmospheric-co-2-be-above-418-ppm-on-march-22-2021",
+    "title": "Will the US have fewer than 35,000 new COVID-19 cases on any day before April 7, 2021?",
+    "url": "https://polymarket.com/market/will-the-us-have-fewer-than-35000-new-covid-19-cases-on-any-day-before-april-7-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on whether atmospheric CO2 will be above 418.00 parts per million (ppm) for the date of March 22, 2021 as measured by the National Oceanic and Atmospheric Administration’s Mauna Loa observatory (https://www.esrl.noaa.gov/gmd/ccgg/trends/monthly.html). This market will resolve to “Yes” if the daily average atmospheric CO2 is greater than 418.00 ppm for March 22, and “No” otherwise. This market will resolve when data is first available for the date of March 22, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n",
+    "description": " This is a market on whether there will be a single day after the creation of this market and prior to the resolution date, April 7, 2021, 8 PM ET, with fewer than 35,000 recorded COVID-19 cases in the United States. This market will resolve to “Yes\" if on any single day prior to the resolution date there are fewer than 35,000 COVID-19 cases recorded. This market will resolve to “No\" if there is no single day the United States records fewer than 35,000 COVID-19 cases according to the resolution source. The resolution source for this market will be https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases, the CDC's official count of Coronavirus cases. The resolution source will be reviewed once daily at 8 PM ET, and only data as listed on 8 PM ET each day prior to and including the resolution date will be considered. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.5728869441747132536662142894135398",
+        "probability": "0.6675653797469302941827323192200593",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.4271130558252867463337857105864602",
+        "probability": "0.3324346202530697058172676807799407",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "385",
-    "stars": 4
-  },
-  {
-    "title": "Will Texas, Florida, or California have the highest 7-day daily average of COVID-19 cases on April 15, 2021?",
-    "url": "https://polymarket.com/market/will-texas-florida-or-california-have-the-highest-7-day-daily-average-of-covid-19-cases-on-april-15-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on which of the following states will have the highest 7-day daily average of COVID-19 cases on April 15, 2021, 12:00 PM ET: Texas, Florida, or California. The resolution source for this Market will be the New York Times’ U.S. state-by-state COVID-19 case count dashboard (https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html#states). This market will resolve to whichever state out of Texas, Florida, or California has the highest 7-day daily average of COVID-19 cases on the resolution date. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). \n",
-    "options": [
-      {
-        "name": "Texas",
-        "probability": "0.3850733832059928289333855292423997",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Florida",
-        "probability": "0.4708359277137123046738459687628416",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "California",
-        "probability": "0.1440906890802948663927685019947587",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "177",
-    "stars": 4
-  },
-  {
-    "title": "Will Clubhouse officially announce they’ve been acquired before June 1st, 2021? ",
-    "url": "https://polymarket.com/market/will-clubhouse-officially-announce-theyve-been-acquired-before-june-1st-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Clubhouse will announce they've been acquired before June 1st, 2021, with the term acquired meaning the official announcement and public reporting of an acquisition, with a for-profit company purchasing majority ownership of Clubhouse and/or the respective entity. Note, this is not in reference to the final close date of the acquisition. This market will resolve immediately upon the resolution conditions being met, and thus, if, for whatever reason, the acquisition is not successfully completed, the market will have already resolved to “Yes”.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.1260545953657379788087132718307385",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.8739454046342620211912867281692615",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "54",
-    "stars": 4
-  },
-  {
-    "title": "Will 100 million people have received a dose of an approved COVID-19 vaccine in the US by April 1, 2021?",
-    "url": "https://polymarket.com/market/will-100-million-people-have-received-a-dose-of-an-approved-covid-19-vaccine-in-the-us-by-april-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether 100 million people in The United States of America will have initiated vaccination, according to the CDC COVID tracker, by the resolution date, April 1, 2021, 12pm EST. This market will resolve to \"Yes\" if 100 million people or more are listed as having received their initial dose of vaccination by the resolution source. This only concerns the first dose of vaccination. For vaccines requiring two doses for inoculation, this market considers only the first dose to be considered having initiated vaccination. This market will resolve to \"No\" if, for any reason, fewer than 100 million people have initiated vaccination by the resolution date. The resolution source for this market will be the official data published by the CDC available at https://covid.cdc.gov/covid-data-tracker/#vaccinations\n\nThis market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.4021495169091695517915726379179654",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.5978504830908304482084273620820346",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "5575",
-    "stars": 4
-  },
-  {
-    "title": "Will the Tokyo Summer Olympics be cancelled or postponed by May 1, 2021?",
-    "url": "https://polymarket.com/market/will-the-tokyo-summer-olympics-be-cancelled-or-postponed",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether the Tokyo Summer Olympics will be canceled or postponed prior to May 1, 2021, 12:00pm EST. The opening ceremony is currently scheduled to take place on July 23, 2021. If an official statement is published by the International Olympic Committee on https://www.olympic.org/ which announces that the ceremony will take place on a date later than July 23, 2021, this market will resolve to “Yes\". If no such announcement is made prior to the resolution date, this market will resolve to “No\". The resolution source for this market will be an official statement published to olympic.org, the official website of the International Olympic Committee. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.0905541037097459017881388858657408",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9094458962902540982118611141342592",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "307",
-    "stars": 3
-  },
-  {
-    "title": "Will Donald Trump be federally charged by June 1st? ",
-    "url": "https://polymarket.com/market/will-donald-trump-be-federally-charged-by-june-1st-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether President Donald J. Trump shall be indicted or otherwise formally charged with a federal crime, as publicly confirmed before June 1st, 2021 12:00 PM ET by an authorized representative of the charging agency(ies) or judicial venue(s). If he is charged with a federal crime on or before June 1st, 2021 12:00 PM ET, this market will resolve to “Yes”. If he is charged with any crime that is not a federal crime or is not charged with any crimes, this market will resolve “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). \n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.07374342770777088668847147075920592",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9262565722922291133115285292407941",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "66",
-    "stars": 3
-  },
-  {
-    "title": "Will inflation be 0.5% or more from February to March?",
-    "url": "https://polymarket.com/market/will-inflation-be-0-5-or-more-from-february-to-march",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether month-to-month inflation, as measured by the Bureau of Labor Statistics (CPI-U) will be 0.5% or more from February to March, when the BLS releases month-to-month inflation information for the preceding month of March on April 13, 2021, 8:30 am ET. This market will resolve to “Yes” if the Bureau of Labor Statistics reports that, on a seasonally adjusted basis, the Consumer Price Index for All Urban Consumers (CPI-U) increased by exactly 0.5 percent (i.e. fifty hundredths of 1%) or more from February 2021 to March 2021. This market will resolve to “No” if the Bureau of Labor Statistics reports that, on a seasonally adjusted basis, the Consumer Price Index for All Urban Consumers (CPI-U) increased by less than 0.5 percent (i.e. fifty hundredths of 1%) from February 2021 to March 2021. The resolution source for this market will be the BLS March 2021 Consumer Price Index report (https://www.bls.gov/bls/news-release/cpi.htm), currently scheduled for release on April 13, 2021, 8:30 am ET. Resolution of this market will take place upon release of the aforementioned data. Note that the resolution source for this market will be the official monthly BLS CPI news release which reports seasonally-adjusted month-to-month inflation to only one decimal point (e.g. 0.4%, 0.1%, etc). Thus, this is the level of precision that will be used when resolving the market (i.e. if seasonally adjusted month-to-month CPI-U is 0.4%, the market will resolve to “No”, if it is 0.5%, this market will resolve to “Yes”).\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.3160222901318408190249307241424349",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.6839777098681591809750692758575651",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "84",
+    "numforecasts": "264",
     "stars": 4
   },
   {
@@ -314,37 +203,157 @@
     "options": [
       {
         "name": "Less than 80",
-        "probability": "0.2665897626185363307436593869085798",
+        "probability": "0.0224410957506125224037986274334382",
         "type": "PROBABILITY"
       },
       {
         "name": "80-95",
-        "probability": "0.3241551772079657716713385877842248",
+        "probability": "0.811201733830862149709234943409378",
         "type": "PROBABILITY"
       },
       {
         "name": "96-110",
-        "probability": "0.2787001495956022571114477355060016",
+        "probability": "0.1219250493584613374146817538055856",
         "type": "PROBABILITY"
       },
       {
         "name": "111-125",
-        "probability": "0.05633445724337731070605949886438065",
+        "probability": "0.01994973617923558281379052088762561",
         "type": "PROBABILITY"
       },
       {
         "name": "126-140",
-        "probability": "0.03542192933078144977703002435743993",
+        "probability": "0.01166371888382242400264757481577946",
         "type": "PROBABILITY"
       },
       {
         "name": "More than 140",
-        "probability": "0.03879852400373687999046476657937326",
+        "probability": "0.0128186659970059836558465796481929",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "714",
+    "numforecasts": "1227",
+    "stars": 3
+  },
+  {
+    "title": "Will Joe Biden's approval rating be 54% or higher on April 1, 2021?",
+    "url": "https://polymarket.com/market/will-joe-bidens-approval-rating-be-54-or-higher-on-april-1-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Joe Biden's approval rating will be 54% or higher on April 1, 2021. The resolution source will be FiveThirtyEight's approval rating poll aggregator, https://projects.fivethirtyeight.com/biden-approval-rating/. Changes in the methodology by which FiveThirtyEight calculates the approval rating will have no bearing on the resolution of this market. If for any reason the resolution source is unavailable on the resolution date, resolution will be delayed up to 48 hours. If still unavailable following that delay, this market will resolve to 50/50. If Joe Biden is not President on the resolution date, this market will resolve according to the most recent available approval rating. The resolution date for this market will be on April 2, 2021 at 12:00 PM ET according to data published for the day of April 1, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). \n\nClarifying note: This market will resolve according to the green 'approve' percentage displayed on FiveThirtyEight.  ",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.6886963778171039115359548437488566",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.3113036221828960884640451562511434",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "180",
     "stars": 4
+  },
+  {
+    "title": "Will Kygo's Nifty Gateway drop generate over $5M in total sales?",
+    "url": "https://polymarket.com/market/will-kygo-s-nifty-gateway-drop-generate-over-5-m-in-total-sales",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the Kygo’s NFT drop on March 24, 2021 will, on aggregate, generate over $5 million in total sales. The release is currently scheduled for 2 PM ET on March 24 via Nifty Gateway. This market will resolve to \"Yes” if the sum of every official Kygo NFT sold on March 24 is greater than $5 million USD (not including secondary sales) and “No” otherwise. This market will resolve on March 25 according to data collected for the date of March 24, 2021. If the release is delayed, resolution of this market will be delayed up to 30 days. If canceled, this market will resolve to 50:50. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.487535480767679784486575566496502",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.512464519232320215513424433503498",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "19",
+    "stars": 4
+  },
+  {
+    "title": "Will 100 million people have received a dose of an approved COVID-19 vaccine in the US by April 1, 2021?",
+    "url": "https://polymarket.com/market/will-100-million-people-have-received-a-dose-of-an-approved-covid-19-vaccine-in-the-us-by-april-1-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether 100 million people in The United States of America will have initiated vaccination, according to the CDC COVID tracker, by the resolution date, April 1, 2021, 12 PM EST / 1 PM EDT. This market will resolve to \"Yes\" if 100 million people or more are listed as having received their initial dose of vaccination by the resolution source. This only concerns the first dose of vaccination. For vaccines requiring two doses for inoculation, this market considers only the first dose to be considered having initiated vaccination. This market will resolve to \"No\" if, for any reason, fewer than 100 million people have initiated vaccination by the resolution date. The resolution source for this market will be the official data published by the CDC available at https://covid.cdc.gov/covid-data-tracker/#vaccinations\n\nThis market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.3670407822030190119352228728261131",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.6329592177969809880647771271738869",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "6092",
+    "stars": 4
+  },
+  {
+    "title": "Will Clubhouse officially announce they’ve been acquired before June 1st, 2021? ",
+    "url": "https://polymarket.com/market/will-clubhouse-officially-announce-theyve-been-acquired-before-june-1st-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Clubhouse will announce they've been acquired before June 1st, 2021, with the term acquired meaning the official announcement and public reporting of an acquisition, with a for-profit company purchasing majority ownership of Clubhouse and/or the respective entity. Note, this is not in reference to the final close date of the acquisition. This market will resolve immediately upon the resolution conditions being met, and thus, if, for whatever reason, the acquisition is not successfully completed, the market will have already resolved to “Yes”.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.1743606148802618483027291603939588",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.8256393851197381516972708396060412",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "62",
+    "stars": 4
+  },
+  {
+    "title": "Will the Tokyo Summer Olympics be cancelled or postponed by May 1, 2021?",
+    "url": "https://polymarket.com/market/will-the-tokyo-summer-olympics-be-cancelled-or-postponed",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the Tokyo Summer Olympics will be canceled or postponed prior to May 1, 2021, 12:00pm EST. The opening ceremony is currently scheduled to take place on July 23, 2021. If an official statement is published by the International Olympic Committee on https://www.olympic.org/ which announces that the ceremony will take place on a date later than July 23, 2021, this market will resolve to “Yes\". If no such announcement is made prior to the resolution date, this market will resolve to “No\". The resolution source for this market will be an official statement published to olympic.org, the official website of the International Olympic Committee. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.09130529090074177040477014627702856",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9086947090992582295952298537229714",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "331",
+    "stars": 3
+  },
+  {
+    "title": "Will Donald Trump be federally charged by June 1st? ",
+    "url": "https://polymarket.com/market/will-donald-trump-be-federally-charged-by-june-1st-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether President Donald J. Trump shall be indicted or otherwise formally charged with a federal crime, as publicly confirmed before June 1st, 2021 12:00 PM ET by an authorized representative of the charging agency(ies) or judicial venue(s). If he is charged with a federal crime on or before June 1st, 2021 12:00 PM ET, this market will resolve to “Yes”. If he is charged with any crime that is not a federal crime or is not charged with any crimes, this market will resolve “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). \n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.06342146212108901287281161364007265",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9365785378789109871271883863599274",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "69",
+    "stars": 3
   },
   {
     "title": "Will Uniswap v3 launch before April 30, 2021?",
@@ -354,37 +363,68 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.3698511805478125497466727860253377",
+        "probability": "0.3979717012003353479633388955823013",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.6301488194521874502533272139746623",
+        "probability": "0.6020282987996646520366611044176987",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "484",
+    "numforecasts": "541",
     "stars": 4
+  },
+  {
+    "title": "Will any NBA Topshot sell for more than $300,000 by March 20, 2021?",
+    "url": "https://polymarket.com/market/will-any-nba-topshot-sell-for-more-than-300000-by-march-20-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on the highest price that will be paid for an NBA Top Shot moment before March 20, 2021, 12:00 pm ET. This market will resolve to “Yes” if an NBA Top Shot moment is sold for over $300,000 USD before March 20, 2021, 12:00 pm ET. This market will resolve to “No” if no single NBA Top Shot moment is sold for more than $300,000 before March 20, 2021, 12:00 pm ET. The official resolution source will be the NBA Top Shot website, https://www.nbatopshot.com, and the corresponding Flowscan transaction record (https://flowscan.org/).\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.0003742063171031979195542178119683313",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9996257936828968020804457821880317",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "204",
+    "stars": 3
+  },
+  {
+    "title": "Will ETH be above $1750 on March 22nd, 2021?",
+    "url": "https://polymarket.com/market/will-eth-be-above-1750-on-march-22nd-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on if the USD price of Ether $ETH will be above $1750 on March 22nd, 2021, 12:00pm ET, according to coinmarketcap.com/currencies/ethereum/. This market will resolve to “Yes“ if ETH is trading above $1750 according to Coinmarketcap on the resolution date, and “No“ otherwise. If price data is temporarily unavailable on Coinmarketcap at the time of resolution, coingecko.com/en/coins/ethereum will instead be referenced. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9719810815879614547145510201800734",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.02801891841203854528544897981992662",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "2896",
+    "stars": 3
   },
   {
     "title": "Will Donald Trump file to run for president before June 1, 2021?",
     "url": "https://polymarket.com/market/will-donald-trump-file-to-run-for-president-before-june-1-2021-1",
-    "platform": "PolyMarket",
+    "address": "0x6b56111517Dc033B9481B087baBb7458776f3683",
     "description": "This is a market on whether Donald Trump will file to run for president prior to June 1, 2021. The linked PredictIt question is the basis for the creation of this market and will be referenced as the leading resolution source: https://www.predictit.org/markets/detail/6994/Will-Donald-Trump-file-to-run-for-president-before-the-end-of-2021. If the PredictIt question resolves to \"Yes\" prior to June 1, 2021, this market will resolve to “Yes”, and “No” otherwise.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.06400527550147748729364637410106849",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9359947244985225127063536258989315",
-        "type": "PROBABILITY"
-      }
+    "outcomes": [
+      "Yes",
+      "No"
     ],
-    "numforecasts": "80",
-    "stars": 3
+    "options": []
   },
   {
     "title": "Will any Knicks game have greater than 20% attendance before the NBA season ends?",
@@ -405,16 +445,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9124736877981445211454808638094631",
+        "probability": "0.9787955944409096980688574713546472",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.08752631220185547885451913619053689",
+        "probability": "0.02120440555909030193114252864535278",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1138",
+    "numforecasts": "1313",
     "stars": 3
   }
 ]
