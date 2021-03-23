@@ -7,22 +7,22 @@
     "options": [
       {
         "name": "Eric Adams",
-        "probability": 0.12,
+        "probability": 0.14,
         "type": "PROBABILITY"
       },
       {
         "name": "Scott Stringer",
-        "probability": 0.02,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Maya Wiley",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "Andrew Yang",
-        "probability": 0.84,
+        "probability": 0.85,
         "type": "PROBABILITY"
       },
       {
@@ -31,8 +31,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "44",
-    "numforecasters": "32",
+    "numforecasts": "56",
+    "numforecasters": "36",
     "stars": 3
   },
   {
@@ -62,8 +62,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "14",
-    "numforecasters": "13",
+    "numforecasts": "15",
+    "numforecasters": "14",
     "stars": 3
   },
   {
@@ -88,8 +88,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "35",
-    "numforecasters": "32",
+    "numforecasts": "42",
+    "numforecasters": "39",
     "stars": 3
   },
   {
@@ -105,17 +105,17 @@
       },
       {
         "name": "Between 100.0 and 110.0, inclusive",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 110.0 but less than 120.0",
-        "probability": 0.2,
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 120.0 and 130.0, inclusive",
-        "probability": 0.68,
+        "probability": 0.74,
         "type": "PROBABILITY"
       },
       {
@@ -124,8 +124,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "31",
-    "numforecasters": "22",
+    "numforecasts": "34",
+    "numforecasters": "24",
     "stars": 3
   },
   {
@@ -136,32 +136,32 @@
     "options": [
       {
         "name": "Lower than 1.7%",
-        "probability": 0.02,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1.7% and 2.1%, inclusive",
-        "probability": 0.22,
+        "probability": 0.21,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher than 2.1% but lower than 2.7%",
-        "probability": 0.49,
+        "probability": 0.42,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 2.7% and 3.1%, inclusive",
-        "probability": 0.22,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher than 3.1%",
-        "probability": 0.05,
+        "probability": 0.07,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "73",
-    "numforecasters": "54",
+    "numforecasts": "75",
+    "numforecasters": "56",
     "stars": 3
   },
   {
@@ -177,12 +177,12 @@
       },
       {
         "name": "Judas and the Black Messiah",
-        "probability": 0.06,
+        "probability": 0.07,
         "type": "PROBABILITY"
       },
       {
         "name": "Mank",
-        "probability": 0.12,
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {
@@ -192,12 +192,12 @@
       },
       {
         "name": "Nomadland",
-        "probability": 0.78,
+        "probability": 0.76,
         "type": "PROBABILITY"
       },
       {
         "name": "Promising Young Woman",
-        "probability": 0,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
@@ -207,7 +207,7 @@
       },
       {
         "name": "The Trial of the Chicago 7",
-        "probability": 0.04,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -216,8 +216,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "58",
-    "numforecasters": "44",
+    "numforecasts": "60",
+    "numforecasters": "45",
     "stars": 3
   },
   {
@@ -238,12 +238,12 @@
       },
       {
         "name": "Minari (Lee Isaac Chung)",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Nomadland (Chloé Zhao)",
-        "probability": 0.83,
+        "probability": 0.84,
         "type": "PROBABILITY"
       },
       {
@@ -257,7 +257,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "41",
+    "numforecasts": "43",
     "numforecasters": "31",
     "stars": 3
   },
@@ -278,7 +278,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "92",
+    "numforecasts": "95",
     "numforecasters": "65",
     "stars": 3
   },
@@ -300,7 +300,7 @@
       },
       {
         "name": "More than 16.0 million but fewer than 17.5 million",
-        "probability": 0.22,
+        "probability": 0.19,
         "type": "PROBABILITY"
       },
       {
@@ -310,12 +310,12 @@
       },
       {
         "name": "More than 19.0 million",
-        "probability": 0.29,
+        "probability": 0.32,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "132",
-    "numforecasters": "96",
+    "numforecasts": "145",
+    "numforecasters": "102",
     "stars": 3
   },
   {
@@ -326,22 +326,22 @@
     "options": [
       {
         "name": "Less than $25 billion",
-        "probability": 0.06,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $25 billion and $35 billion, inclusive",
-        "probability": 0.22,
+        "probability": 0.23,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $35 billion but less than $45 billion",
-        "probability": 0.31,
+        "probability": 0.29,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $45 billion and $55 billion, inclusive",
-        "probability": 0.13,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
@@ -355,8 +355,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "68",
-    "numforecasters": "60",
+    "numforecasts": "73",
+    "numforecasters": "63",
     "stars": 3
   },
   {
@@ -367,17 +367,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.15,
+        "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.85,
+        "probability": 0.89,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "83",
-    "numforecasters": "65",
+    "numforecasts": "88",
+    "numforecasters": "67",
     "stars": 3
   },
   {
@@ -448,8 +448,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "129",
-    "numforecasters": "83",
+    "numforecasts": "133",
+    "numforecasters": "84",
     "stars": 3
   },
   {
@@ -469,7 +469,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "55",
+    "numforecasts": "56",
     "numforecasters": "37",
     "stars": 3
   },
@@ -481,17 +481,17 @@
     "options": [
       {
         "name": "Fewer than 150,000",
-        "probability": 0.74,
+        "probability": 0.79,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 150,000 and 250,000, inclusive",
-        "probability": 0.21,
+        "probability": 0.19,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 250,000 but fewer than 350,000",
-        "probability": 0.05,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
@@ -510,8 +510,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "139",
-    "numforecasters": "58",
+    "numforecasts": "153",
+    "numforecasters": "59",
     "stars": 3
   },
   {
@@ -527,17 +527,17 @@
       },
       {
         "name": "Between 15,000 and 25,000, inclusive",
-        "probability": 0.1,
+        "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 25,000 but fewer than 35,000",
-        "probability": 0.78,
+        "probability": 0.81,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 35,000 and 45,000, inclusive",
-        "probability": 0.12,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
@@ -571,7 +571,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "116",
+    "numforecasts": "126",
     "numforecasters": "42",
     "stars": 3
   },
@@ -593,17 +593,17 @@
       },
       {
         "name": "More than 200,000 but fewer than 300,000",
-        "probability": 0.03,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 300,000 and 400,000, inclusive",
-        "probability": 0.82,
+        "probability": 0.87,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 400,000 but fewer than 500,000",
-        "probability": 0.15,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
@@ -632,8 +632,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "330",
-    "numforecasters": "91",
+    "numforecasts": "358",
+    "numforecasters": "95",
     "stars": 3
   },
   {
@@ -674,12 +674,12 @@
       },
       {
         "name": "More than 95,000,000 but fewer than 100,000,000",
-        "probability": 0.43,
+        "probability": 0.29,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 100,000,000 and 105,000,000, inclusive",
-        "probability": 0.57,
+        "probability": 0.71,
         "type": "PROBABILITY"
       },
       {
@@ -698,8 +698,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "465",
-    "numforecasters": "137",
+    "numforecasts": "504",
+    "numforecasters": "144",
     "stars": 3
   },
   {
@@ -720,12 +720,12 @@
       },
       {
         "name": "More than 6,000 but fewer than 8,000",
-        "probability": 0.76,
+        "probability": 0.88,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 8,000 and 10,000, inclusive",
-        "probability": 0.13,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -759,8 +759,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "297",
-    "numforecasters": "82",
+    "numforecasts": "327",
+    "numforecasters": "86",
     "stars": 3
   },
   {
@@ -780,8 +780,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "135",
-    "numforecasters": "79",
+    "numforecasts": "137",
+    "numforecasters": "80",
     "stars": 3
   },
   {
@@ -827,8 +827,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "484",
-    "numforecasters": "362",
+    "numforecasts": "487",
+    "numforecasters": "363",
     "stars": 3
   },
   {
@@ -849,12 +849,12 @@
       },
       {
         "name": "Between 9 and 13",
-        "probability": 0.42,
+        "probability": 0.43,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 14 and 18",
-        "probability": 0.28,
+        "probability": 0.27,
         "type": "PROBABILITY"
       },
       {
@@ -863,8 +863,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "366",
-    "numforecasters": "258",
+    "numforecasts": "374",
+    "numforecasters": "259",
     "stars": 3
   },
   {
@@ -875,17 +875,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.7,
+        "probability": 0.69,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.3,
+        "probability": 0.31,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "387",
-    "numforecasters": "324",
+    "numforecasts": "393",
+    "numforecasters": "328",
     "stars": 3
   },
   {
@@ -896,16 +896,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.25,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.75,
+        "probability": 0.7,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "221",
+    "numforecasts": "223",
     "numforecasters": "186",
     "stars": 3
   },
@@ -941,8 +941,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "269",
-    "numforecasters": "190",
+    "numforecasts": "274",
+    "numforecasters": "191",
     "stars": 3
   },
   {
@@ -977,7 +977,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "72",
+    "numforecasts": "73",
     "numforecasters": "25",
     "stars": 3
   },
@@ -994,12 +994,12 @@
       },
       {
         "name": "Between 5.4% and 5.9%, inclusive",
-        "probability": 0.68,
+        "probability": 0.67,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 5.9% but less than 6.6%",
-        "probability": 0.1,
+        "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
@@ -1013,7 +1013,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "165",
+    "numforecasts": "168",
     "numforecasters": "91",
     "stars": 3
   },
@@ -1035,12 +1035,12 @@
       },
       {
         "name": "More than 1.500 but less than 2.000",
-        "probability": 0.61,
+        "probability": 0.62,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 2.000 and 2.500, inclusive",
-        "probability": 0.3,
+        "probability": 0.29,
         "type": "PROBABILITY"
       },
       {
@@ -1049,7 +1049,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "143",
+    "numforecasts": "147",
     "numforecasters": "52",
     "stars": 3
   },
@@ -1075,7 +1075,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "130",
+    "numforecasts": "132",
     "numforecasters": "57",
     "stars": 3
   },
@@ -1101,8 +1101,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "506",
-    "numforecasters": "338",
+    "numforecasts": "513",
+    "numforecasters": "340",
     "stars": 3
   },
   {
@@ -1122,7 +1122,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "77",
+    "numforecasts": "78",
     "numforecasters": "48",
     "stars": 3
   },
@@ -1134,16 +1134,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.19,
+        "probability": 0.17,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.81,
+        "probability": 0.83,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "174",
+    "numforecasts": "180",
     "numforecasters": "80",
     "stars": 3
   },
@@ -1164,7 +1164,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "199",
+    "numforecasts": "201",
     "numforecasters": "74",
     "stars": 3
   },
@@ -1185,8 +1185,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "89",
-    "numforecasters": "51",
+    "numforecasts": "91",
+    "numforecasters": "53",
     "stars": 3
   },
   {
@@ -1197,17 +1197,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.22,
+        "probability": 0.28,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.78,
+        "probability": 0.72,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "218",
-    "numforecasters": "116",
+    "numforecasts": "238",
+    "numforecasters": "117",
     "stars": 3
   },
   {
@@ -1239,7 +1239,7 @@
     "options": [
       {
         "name": "Yes, only SpaceX",
-        "probability": 0.25,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
@@ -1254,12 +1254,12 @@
       },
       {
         "name": "No",
-        "probability": 0.73,
+        "probability": 0.72,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "176",
-    "numforecasters": "121",
+    "numforecasts": "178",
+    "numforecasters": "122",
     "stars": 3
   },
   {
@@ -1279,8 +1279,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "159",
-    "numforecasters": "86",
+    "numforecasts": "162",
+    "numforecasters": "87",
     "stars": 3
   },
   {
@@ -1296,22 +1296,22 @@
       },
       {
         "name": "Los Angeles Clippers",
-        "probability": 0.15,
+        "probability": 0.16,
         "type": "PROBABILITY"
       },
       {
         "name": "Los Angeles Lakers",
-        "probability": 0.22,
+        "probability": 0.21,
         "type": "PROBABILITY"
       },
       {
         "name": "Milwaukee Bucks",
-        "probability": 0.08,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
         "name": "Another team",
-        "probability": 0.33,
+        "probability": 0.32,
         "type": "PROBABILITY"
       },
       {
@@ -1320,7 +1320,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "139",
+    "numforecasts": "144",
     "numforecasters": "53",
     "stars": 3
   },
@@ -1341,7 +1341,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "151",
+    "numforecasts": "152",
     "numforecasters": "86",
     "stars": 3
   },
@@ -1383,7 +1383,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "280",
+    "numforecasts": "283",
     "numforecasters": "109",
     "stars": 3
   },
@@ -1400,12 +1400,12 @@
       },
       {
         "name": "1",
-        "probability": 0.39,
+        "probability": 0.4,
         "type": "PROBABILITY"
       },
       {
         "name": "2",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -1414,7 +1414,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "245",
+    "numforecasts": "249",
     "numforecasters": "142",
     "stars": 3
   },
@@ -1426,22 +1426,22 @@
     "options": [
       {
         "name": "Less than $200 million",
-        "probability": 0.01,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $200 million and $500 million, inclusive",
-        "probability": 0.47,
+        "probability": 0.48,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $500 million but less than $1 billion",
-        "probability": 0.46,
+        "probability": 0.47,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $1 billion and $1.75 billion, inclusive",
-        "probability": 0.06,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
@@ -1450,7 +1450,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "147",
+    "numforecasts": "150",
     "numforecasters": "74",
     "stars": 3
   },
@@ -1471,7 +1471,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "97",
+    "numforecasts": "98",
     "numforecasters": "56",
     "stars": 3
   },
@@ -1497,7 +1497,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "91",
+    "numforecasts": "92",
     "numforecasters": "64",
     "stars": 3
   },
@@ -1509,17 +1509,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.38,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.62,
+        "probability": 0.7,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "208",
-    "numforecasters": "85",
+    "numforecasts": "217",
+    "numforecasters": "86",
     "stars": 3
   },
   {
@@ -1539,8 +1539,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "147",
-    "numforecasters": "90",
+    "numforecasts": "149",
+    "numforecasters": "91",
     "stars": 3
   },
   {
@@ -1560,15 +1560,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "259",
-    "numforecasters": "147",
+    "numforecasts": "262",
+    "numforecasters": "148",
     "stars": 3
   },
   {
     "title": "Will U.S. President Joe Biden and Russian President Vladimir Putin hold a bilateral meeting in 2021?",
     "url": "https://www.gjopen.com/questions/1911-will-u-s-president-joe-biden-and-russian-president-vladimir-putin-hold-a-bilateral-meeting-in-2021",
     "platform": "Good Judgment Open",
-    "description": "The world is watching how U.S.-Russia relations will evolve under President Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). For the purposes of this question, a bilateral meeting would be a pre-planned summit or event, rather than, e.g., a one-on-one on the sidelines of a multilateral meeting. A virtual meeting would not count.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\nVersión en Español:\nPregunta: ¿Celebrarán el presidente de los Estados Unidos, Joe Biden, y el presidente ruso, Vladimir Putin, una reunión bilateral en 2021?\nInformación adicional: El mundo está observando cómo evolucionarán las relaciones entre Estados Unidos y Rusia bajo el presidente Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). A los efectos de esta pregunta, una reunión bilateral sería una cumbre o evento planificado previamente, en lugar de, por ejemplo, un \"uno a uno\" al margen de una reunión multilateral. Una reunión virtual no contaría a efectos de esta pregunta.\nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#6f0c030e1d0609060c0e1b0600011c2f0800000b051a0b08020a011b410c0002501c1a0d050a0c1b523e1a0a1c1b0600014a5d5f2c030e1d0609060c0e1b060001). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor [clique aquí](https://goodjudgment.com/).\n",
+    "description": "The world is watching how U.S.-Russia relations will evolve under President Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). For the purposes of this question, a bilateral meeting would be a pre-planned summit or event, rather than, e.g., a one-on-one on the sidelines of a multilateral meeting. A virtual meeting would not count.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\nVersión en Español:\nPregunta: ¿Celebrarán el presidente de los Estados Unidos, Joe Biden, y el presidente ruso, Vladimir Putin, una reunión bilateral en 2021?\nInformación adicional: El mundo está observando cómo evolucionarán las relaciones entre Estados Unidos y Rusia bajo el presidente Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). A los efectos de esta pregunta, una reunión bilateral sería una cumbre o evento planificado previamente, en lugar de, por ejemplo, un \"uno a uno\" al margen de una reunión multilateral. Una reunión virtual no contaría a efectos de esta pregunta.\nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#51323d3023383738323025383e3f2211363e3e353b2435363c343f257f323e3c6e2224333b3432256c0024342225383e3f746361123d3023383738323025383e3f). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor [clique aquí](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
@@ -1581,7 +1581,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "397",
+    "numforecasts": "402",
     "numforecasters": "197",
     "stars": 3
   },
@@ -1603,7 +1603,7 @@
       },
       {
         "name": "Between 1 April 2021 and 30 April 2021",
-        "probability": 0.11,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
@@ -1613,11 +1613,11 @@
       },
       {
         "name": "Not before 1 June 2021",
-        "probability": 0.05,
+        "probability": 0.04,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "385",
+    "numforecasts": "393",
     "numforecasters": "72",
     "stars": 3
   },
@@ -1629,22 +1629,22 @@
     "options": [
       {
         "name": "7 or fewer",
-        "probability": 0.03,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 8 and 14",
-        "probability": 0.56,
+        "probability": 0.2,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 15 and 21",
-        "probability": 0.38,
+        "probability": 0.41,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 22 and 28",
-        "probability": 0.03,
+        "probability": 0.39,
         "type": "PROBABILITY"
       },
       {
@@ -1653,8 +1653,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "486",
-    "numforecasters": "110",
+    "numforecasts": "515",
+    "numforecasters": "111",
     "stars": 3
   },
   {
@@ -1674,8 +1674,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "159",
-    "numforecasters": "116",
+    "numforecasts": "161",
+    "numforecasters": "117",
     "stars": 3
   },
   {
@@ -1686,16 +1686,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.84,
+        "probability": 0.85,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.16,
+        "probability": 0.15,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "275",
+    "numforecasts": "282",
     "numforecasters": "145",
     "stars": 3
   },
@@ -1716,7 +1716,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "86",
+    "numforecasts": "87",
     "numforecasters": "50",
     "stars": 3
   },
@@ -1733,12 +1733,12 @@
       },
       {
         "name": "Between 226 seats and 299 seats",
-        "probability": 0.35,
+        "probability": 0.34,
         "type": "PROBABILITY"
       },
       {
         "name": "300 seats or more",
-        "probability": 0.62,
+        "probability": 0.63,
         "type": "PROBABILITY"
       },
       {
@@ -1747,7 +1747,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "173",
+    "numforecasts": "175",
     "numforecasters": "89",
     "stars": 3
   },
@@ -1773,7 +1773,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "77",
+    "numforecasts": "78",
     "numforecasters": "36",
     "stars": 3
   },
@@ -1799,7 +1799,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "202",
+    "numforecasts": "208",
     "numforecasters": "81",
     "stars": 3
   },
@@ -1820,7 +1820,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "106",
+    "numforecasts": "108",
     "numforecasters": "44",
     "stars": 3
   },
@@ -1842,12 +1842,12 @@
       },
       {
         "name": "More than $100 billion but less than $125 billion",
-        "probability": 0.45,
+        "probability": 0.46,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $125 billion and $150 billion, inclusive",
-        "probability": 0.15,
+        "probability": 0.14,
         "type": "PROBABILITY"
       },
       {
@@ -1856,7 +1856,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "237",
+    "numforecasts": "240",
     "numforecasters": "68",
     "stars": 3
   },
@@ -1877,7 +1877,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "165",
+    "numforecasts": "166",
     "numforecasters": "64",
     "stars": 3
   },
@@ -1889,7 +1889,7 @@
     "options": [
       {
         "name": "Yes, and a majority of the vote will be in support of President López Obrador",
-        "probability": 0.09,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
@@ -1899,11 +1899,11 @@
       },
       {
         "name": "No",
-        "probability": 0.91,
+        "probability": 0.92,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "118",
+    "numforecasts": "119",
     "numforecasters": "67",
     "stars": 3
   },
@@ -1924,7 +1924,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "272",
+    "numforecasts": "274",
     "numforecasters": "137",
     "stars": 3
   },
@@ -1945,8 +1945,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "252",
-    "numforecasters": "90",
+    "numforecasts": "255",
+    "numforecasters": "91",
     "stars": 3
   },
   {
@@ -1966,7 +1966,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "108",
+    "numforecasts": "109",
     "numforecasters": "37",
     "stars": 3
   },
@@ -1992,7 +1992,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "189",
+    "numforecasts": "190",
     "numforecasters": "67",
     "stars": 3
   },
@@ -2026,11 +2026,11 @@
     "title": "Which team will win the World Cup qualifying match between Nicaragua and St. Lucia?",
     "url": "https://www.gjopen.com/questions/1885-which-team-will-win-the-world-cup-qualifying-match-between-nicaragua-and-st-lucia",
     "platform": "Good Judgment Open",
-    "description": "Nicaragua is scheduled to face St. Lucia in a first round World Cup qualifying match on 24 March 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)).\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\nVersión en Español: \nPregunta: ¿Qué equipo ganará el partido de clasificación entre Nicaragua y Santa Lúcia para el Mundial de Fútbol?\nInformación adicional: Nicaragua va a enfrentarse con Santa Lúcia en la primera rueda de clasificación para el Mundial de Fútbol el 24 de marzo de 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)). La versión en español de esta pregunta ha sido incluida sólo a efectos informativos, y en situaciones donde existe una diferencia de interpretación entre las versiones en inglés y español, prevalecerá la versión original en inglés. \nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#fc9f909d8e959a959f9d889593928fbc9b9393989689989b91999288d29f9391c38f899e96999f88c1ad89998f88959392d9ceccbf909d8e959a959f9d88959392). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor clique [aquí](https://goodjudgment.com/). \n",
+    "description": "Nicaragua is scheduled to face St. Lucia in a first round World Cup qualifying match on 24 March 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)).\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\nVersión en Español: \nPregunta: ¿Qué equipo ganará el partido de clasificación entre Nicaragua y Santa Lúcia para el Mundial de Fútbol?\nInformación adicional: Nicaragua va a enfrentarse con Santa Lúcia en la primera rueda de clasificación para el Mundial de Fútbol el 24 de marzo de 2021 ([CONCACAF](https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men#tab_team=rounds)). La versión en español de esta pregunta ha sido incluida sólo a efectos informativos, y en situaciones donde existe una diferencia de interpretación entre las versiones en inglés y español, prevalecerá la versión original en inglés. \nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#d5b6b9b4a7bcb3bcb6b4a1bcbabba695b2babab1bfa0b1b2b8b0bba1fbb6bab8eaa6a0b7bfb0b6a1e884a0b0a6a1bcbabbf0e7e596b9b4a7bcb3bcb6b4a1bcbabb). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor clique [aquí](https://goodjudgment.com/). \n",
     "options": [
       {
         "name": "Nicaragua",
-        "probability": 0.68,
+        "probability": 0.69,
         "type": "PROBABILITY"
       },
       {
@@ -2040,12 +2040,12 @@
       },
       {
         "name": "There will be a draw",
-        "probability": 0.16,
+        "probability": 0.15,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "212",
-    "numforecasters": "130",
+    "numforecasts": "216",
+    "numforecasters": "131",
     "stars": 3
   },
   {
@@ -2080,7 +2080,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "280",
+    "numforecasts": "281",
     "numforecasters": "74",
     "stars": 3
   },
@@ -2101,7 +2101,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "220",
+    "numforecasts": "222",
     "numforecasters": "86",
     "stars": 3
   },
@@ -2127,7 +2127,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "353",
+    "numforecasts": "358",
     "numforecasters": "144",
     "stars": 3
   },
@@ -2153,7 +2153,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "110",
+    "numforecasts": "111",
     "numforecasters": "76",
     "stars": 3
   },
@@ -2186,16 +2186,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.02,
+        "probability": 0.07,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.98,
+        "probability": 0.93,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "195",
+    "numforecasts": "202",
     "numforecasters": "63",
     "stars": 3
   },
@@ -2221,8 +2221,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "467",
-    "numforecasters": "196",
+    "numforecasts": "478",
+    "numforecasters": "197",
     "stars": 3
   },
   {
@@ -2252,8 +2252,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "441",
-    "numforecasters": "213",
+    "numforecasts": "446",
+    "numforecasters": "215",
     "stars": 3
   },
   {
@@ -2273,7 +2273,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "278",
+    "numforecasts": "279",
     "numforecasters": "147",
     "stars": 3
   },
@@ -2294,7 +2294,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "370",
+    "numforecasts": "372",
     "numforecasters": "228",
     "stars": 3
   },
@@ -2315,29 +2315,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "291",
+    "numforecasts": "293",
     "numforecasters": "103",
-    "stars": 3
-  },
-  {
-    "title": "Will the monthly occupancy level of European hotels next reach 50.0% or higher before June 2021, according to Smith Travel Research?",
-    "url": "https://www.gjopen.com/questions/1874-will-the-monthly-occupancy-level-of-european-hotels-next-reach-50-0-or-higher-before-june-2021-according-to-smith-travel-research",
-    "platform": "Good Judgment Open",
-    "description": "Travel demand in Europe has taken a major hit due to the COVID-19 pandemic ([Fodor's Travel Guide](https://www.fodors.com/news/news/coronavirus-outbreak-should-you-cancel-a-trip-to-europe-right-now)). The outcome will be determined using data as reported by Smith Travel Research and its monthly European hotel performance reports, which are generally released the third week of the following month. The reports can be found at https://str.com/data-insights/news/press-releases by setting \"Region\" to \"Europe,\" and \"Type\" to \"Monthly.\" After selecting a particular monthly report, see \"Occupancy\" under the \"Euro Constant currency\" section. In October 2020, the occupancy level was 32.3% ([Smith Travel Research](https://str.com/press-release/str-europe-hotel-performance-october-2020)).\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.04,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.96,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "440",
-    "numforecasters": "110",
     "stars": 3
   },
   {
@@ -2367,7 +2346,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "338",
+    "numforecasts": "339",
     "numforecasters": "104",
     "stars": 3
   },
@@ -2388,7 +2367,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "249",
+    "numforecasts": "251",
     "numforecasters": "126",
     "stars": 3
   },
@@ -2415,17 +2394,17 @@
       },
       {
         "name": "Between 1 October 2021 and 31 December 2021",
-        "probability": 0.35,
+        "probability": 0.34,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 January 2022",
-        "probability": 0.02,
+        "probability": 0.03,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "265",
-    "numforecasters": "98",
+    "numforecasts": "270",
+    "numforecasters": "99",
     "stars": 3
   },
   {
@@ -2466,7 +2445,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "406",
+    "numforecasts": "408",
     "numforecasters": "206",
     "stars": 3
   },
@@ -2487,7 +2466,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "112",
+    "numforecasts": "113",
     "numforecasters": "61",
     "stars": 3
   },
@@ -2499,16 +2478,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.81,
+        "probability": 0.83,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.19,
+        "probability": 0.17,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "84",
+    "numforecasts": "88",
     "numforecasters": "32",
     "stars": 3
   },
@@ -2544,7 +2523,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "265",
+    "numforecasts": "270",
     "numforecasters": "43",
     "stars": 3
   },
@@ -2596,7 +2575,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "448",
+    "numforecasts": "453",
     "numforecasters": "204",
     "stars": 3
   },
@@ -2637,7 +2616,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "211",
+    "numforecasts": "213",
     "numforecasters": "81",
     "stars": 3
   },
@@ -2649,16 +2628,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.28,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.72,
+        "probability": 0.7,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "586",
+    "numforecasts": "591",
     "numforecasters": "200",
     "stars": 3
   },
@@ -2680,12 +2659,12 @@
       },
       {
         "name": "More than 6.0% but less than 7.0%",
-        "probability": 0.41,
+        "probability": 0.4,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 7.0% and 8.0%, inclusive",
-        "probability": 0.35,
+        "probability": 0.36,
         "type": "PROBABILITY"
       },
       {
@@ -2694,8 +2673,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "554",
-    "numforecasters": "250",
+    "numforecasts": "559",
+    "numforecasters": "251",
     "stars": 3
   },
   {
@@ -2730,8 +2709,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1756",
-    "numforecasters": "594",
+    "numforecasts": "1775",
+    "numforecasters": "597",
     "stars": 3
   },
   {
@@ -2782,7 +2761,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "335",
+    "numforecasts": "337",
     "numforecasters": "205",
     "stars": 3
   },
@@ -2803,7 +2782,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "554",
+    "numforecasts": "557",
     "numforecasters": "248",
     "stars": 3
   },
@@ -2824,7 +2803,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "231",
+    "numforecasts": "232",
     "numforecasters": "126",
     "stars": 3
   },
@@ -2845,7 +2824,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "324",
+    "numforecasts": "326",
     "numforecasters": "185",
     "stars": 3
   },
@@ -2902,7 +2881,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "303",
+    "numforecasts": "306",
     "numforecasters": "88",
     "stars": 3
   },
@@ -2923,7 +2902,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "236",
+    "numforecasts": "239",
     "numforecasters": "60",
     "stars": 3
   },
@@ -2935,17 +2914,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.04,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.96,
+        "probability": 0.97,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "321",
-    "numforecasters": "170",
+    "numforecasts": "326",
+    "numforecasters": "171",
     "stars": 3
   },
   {
@@ -3001,7 +2980,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1450",
+    "numforecasts": "1464",
     "numforecasters": "208",
     "stars": 3
   },
@@ -3022,7 +3001,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "294",
+    "numforecasts": "299",
     "numforecasters": "64",
     "stars": 3
   },
@@ -3043,7 +3022,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "205",
+    "numforecasts": "206",
     "numforecasters": "63",
     "stars": 3
   },
@@ -3070,16 +3049,16 @@
       },
       {
         "name": "3",
-        "probability": 0.92,
+        "probability": 0.9,
         "type": "PROBABILITY"
       },
       {
         "name": "4 or more",
-        "probability": 0.08,
+        "probability": 0.1,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "156",
+    "numforecasts": "157",
     "numforecasters": "44",
     "stars": 3
   },
@@ -3100,7 +3079,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "131",
+    "numforecasts": "133",
     "numforecasters": "54",
     "stars": 3
   },
@@ -3127,17 +3106,17 @@
       },
       {
         "name": "Between 1 April 2021 and 31 May 2021",
-        "probability": 0.09,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 June 2021",
-        "probability": 0.91,
+        "probability": 0.92,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "557",
-    "numforecasters": "153",
+    "numforecasts": "560",
+    "numforecasters": "154",
     "stars": 3
   },
   {
@@ -3157,7 +3136,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "756",
+    "numforecasts": "761",
     "numforecasters": "156",
     "stars": 3
   },
@@ -3169,17 +3148,17 @@
     "options": [
       {
         "name": "Less than 2.00%",
-        "probability": 0.26,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 2.00% and 4.00%, inclusive",
-        "probability": 0.51,
+        "probability": 0.5,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 4.00% but less than 6.00%",
-        "probability": 0.21,
+        "probability": 0.23,
         "type": "PROBABILITY"
       },
       {
@@ -3193,7 +3172,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "495",
+    "numforecasts": "501",
     "numforecasters": "224",
     "stars": 3
   },
@@ -3215,21 +3194,21 @@
       },
       {
         "name": "More than 1.2 million but less than 1.4 million",
-        "probability": 0.01,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1.4 million and 1.6 million, inclusive",
-        "probability": 0.43,
+        "probability": 0.44,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 1.6 million",
-        "probability": 0.56,
+        "probability": 0.53,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "489",
+    "numforecasts": "496",
     "numforecasters": "93",
     "stars": 3
   },
@@ -3251,17 +3230,17 @@
       },
       {
         "name": "Between 1 February 2021 and 31 March 2021",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 April 2021",
-        "probability": 0.99,
+        "probability": 1,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "472",
-    "numforecasters": "70",
+    "numforecasts": "477",
+    "numforecasters": "72",
     "stars": 3
   },
   {
@@ -3281,7 +3260,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "213",
+    "numforecasts": "214",
     "numforecasters": "65",
     "stars": 3
   },
@@ -3302,7 +3281,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "418",
+    "numforecasts": "420",
     "numforecasters": "160",
     "stars": 3
   },
@@ -3348,7 +3327,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "378",
+    "numforecasts": "384",
     "numforecasters": "115",
     "stars": 3
   },
@@ -3384,15 +3363,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "693",
-    "numforecasters": "202",
+    "numforecasts": "699",
+    "numforecasters": "203",
     "stars": 3
   },
   {
     "title": "Before 18 September 2021, will Boris Johnson cease to be prime minister of the United Kingdom?",
     "url": "https://www.gjopen.com/questions/1789-before-18-september-2021-will-boris-johnson-cease-to-be-prime-minister-of-the-united-kingdom",
     "platform": "Good Judgment Open",
-    "description": "Prime Minister Boris Johnson's premiership began in July 2019 after Theresa May stepped down ([Britannica](https://www.britannica.com/biography/Boris-Johnson)). He continues to lead the UK through final Brexit negotiations with the EU ([Economist](https://www.economist.com/the-world-ahead/2020/11/17/brexit-and-covid-19-show-up-the-disunited-kingdom), [BBC](https://www.bbc.com/news/uk-politics-54156419), [Independent](https://www.independent.co.uk/news/uk/politics/keir-starmer-coronavirus-self-isolating-labour-covid-19-symptoms-b435681.html)).\n",
+    "description": "Prime Minister Boris Johnson's premiership began in July 2019 after Theresa May stepped down ([Britannica](https://www.britannica.com/biography/Boris-Johnson)). He continues to lead the UK through final Brexit negotiations with the EU ([Economist](https://www.economist.com/the-world-ahead/2020/11/17/brexit-and-covid-19-show-up-the-disunited-kingdom), [BBC](https://www.bbc.com/news/uk-politics-54156419), [Independent](https://www.independent.co.uk/news/uk/politics/keir-starmer-coronavirus-self-isolating-labour-covid-19-symptoms-b435681.html)).\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3405,7 +3384,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1167",
+    "numforecasts": "1171",
     "numforecasters": "454",
     "stars": 3
   },
@@ -3413,7 +3392,7 @@
     "title": "Will there be a complex coordinated terrorist attack (CCTA) in the United States either directed or inspired by a foreign terrorist organization before 1 September 2021?",
     "url": "https://www.gjopen.com/questions/1780-will-there-be-a-complex-coordinated-terrorist-attack-ccta-in-the-united-states-either-directed-or-inspired-by-a-foreign-terrorist-organization-before-1-september-2021",
     "platform": "Good Judgment Open",
-    "description": "CCTAs are a major concern for law enforcement and emergency planners ([FEMA](https://www.fema.gov/media-library-data/1532550673102-c4846f270150682decbda99b37524ca6/Planning_Considerations-Complex_Coordinated_Terrorist_Attacks.pdf)). For the purposes of this question, a CCTA is an [1] act of terrorism [2] involving multiple perpetrators working in concert [3] initiated with little or no warning [4] and employing one or more weapon systems (e.g., firearms, explosives, fire as a weapon, poison gas) [5] that is intended to result in large numbers of casualties. For the purposes of this question, \"terrorism\" is as defined by federal law in 18 U.S.C. § 2331(5) ([Cornell](https://www.law.cornell.edu/uscode/text/18/2331)). A foreign terrorist organization (FTO) is an organization designated as an FTO by the US Department of State ([State.gov](https://www.state.gov/foreign-terrorist-organizations/)). Examples of CCTAs include the 2004 Madrid train bombings, the 2008 Mumbai attacks, 2013 Boston Marathon bombings, and the 2015 San Bernardino, CA, office attack.\n",
+    "description": "CCTAs are a major concern for law enforcement and emergency planners ([FEMA](https://www.fema.gov/media-library-data/1532550673102-c4846f270150682decbda99b37524ca6/Planning_Considerations-Complex_Coordinated_Terrorist_Attacks.pdf)). For the purposes of this question, a CCTA is an [1] act of terrorism [2] involving multiple perpetrators working in concert [3] initiated with little or no warning [4] and employing one or more weapon systems (e.g., firearms, explosives, fire as a weapon, poison gas) [5] that is intended to result in large numbers of casualties. For the purposes of this question, \"terrorism\" is as defined by federal law in 18 U.S.C. § 2331(5) ([Cornell](https://www.law.cornell.edu/uscode/text/18/2331)). A foreign terrorist organization (FTO) is an organization designated as an FTO by the US Department of State ([State.gov](https://www.state.gov/foreign-terrorist-organizations/)). Examples of CCTAs include the 2004 Madrid train bombings, the 2008 Mumbai attacks, 2013 Boston Marathon bombings, and the 2015 San Bernardino, CA, office attack.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3426,15 +3405,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "388",
-    "numforecasters": "160",
+    "numforecasts": "389",
+    "numforecasters": "161",
     "stars": 3
   },
   {
     "title": "Will any 2020 California election results be altered by a cyberattack against a voting system?",
     "url": "https://www.gjopen.com/questions/1782-will-any-2020-california-election-results-be-altered-by-a-cyberattack-against-a-voting-system",
     "platform": "Good Judgment Open",
-    "description": "Cyberattacks against voting systems in the 2020 elections are an object of continuing concern, including in California ([Washington Post](https://www.washingtonpost.com/national-security/russian-hackers-who-disrupted-2016-election-targeting-political-parties-again-microsoft-says/2020/09/10/301dd5fe-f36c-11ea-bc45-e5d48ab44b9f_story.html), [CBS SF BayArea](https://sanfrancisco.cbslocal.com/2020/09/08/san-mateo-co-voter-registrar-working-with-state-feds-to-repel-hackers-foreign-cyberattacks/), [California AB 2125](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2125), [National Conference of State Legislatures](https://www.ncsl.org/research/elections-and-campaigns/post-election-audits635926066.aspx)). A relevant cyberattack against a federal, state, or local election system that changes vote totals and/or an election outcome for California would count. For purposes of this question, \"voting system\" is a system as defined by the U.S. Election Assistance Commission ([U.S. Election Assistance Commission](https://www.eac.gov/voting-system)). This question will resolve based on available evidence no later than 1 May 2021.\n",
+    "description": "Cyberattacks against voting systems in the 2020 elections are an object of continuing concern, including in California ([Washington Post](https://www.washingtonpost.com/national-security/russian-hackers-who-disrupted-2016-election-targeting-political-parties-again-microsoft-says/2020/09/10/301dd5fe-f36c-11ea-bc45-e5d48ab44b9f_story.html), [CBS SF BayArea](https://sanfrancisco.cbslocal.com/2020/09/08/san-mateo-co-voter-registrar-working-with-state-feds-to-repel-hackers-foreign-cyberattacks/), [California AB 2125](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2125), [National Conference of State Legislatures](https://www.ncsl.org/research/elections-and-campaigns/post-election-audits635926066.aspx)). A relevant cyberattack against a federal, state, or local election system that changes vote totals and/or an election outcome for California would count. For purposes of this question, \"voting system\" is a system as defined by the U.S. Election Assistance Commission ([U.S. Election Assistance Commission](https://www.eac.gov/voting-system)). This question will resolve based on available evidence no later than 1 May 2021.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3447,15 +3426,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "336",
-    "numforecasters": "153",
+    "numforecasts": "338",
+    "numforecasters": "154",
     "stars": 3
   },
   {
     "title": "Will there be a complex coordinated terrorist attack (CCTA) in the United States before 1 September 2021?",
     "url": "https://www.gjopen.com/questions/1781-will-there-be-a-complex-coordinated-terrorist-attack-ccta-in-the-united-states-before-1-september-2021",
     "platform": "Good Judgment Open",
-    "description": "CCTAs are a major concern for law enforcement and emergency planners ([FEMA](https://www.fema.gov/media-library-data/1532550673102-c4846f270150682decbda99b37524ca6/Planning_Considerations-Complex_Coordinated_Terrorist_Attacks.pdf)). For the purposes of this question, a CCTA is an [1] act of terrorism [2] involving multiple perpetrators working in concert [3] initiated with little or no warning [4] and employing one or more weapon systems (e.g., firearms, explosives, fire as a weapon, poison gas) [5] that is intended to result in large numbers of casualties. For the purposes of this question, \"terrorism\" is as defined by federal law in 18 U.S.C. § 2331(5) ([Cornell](https://www.law.cornell.edu/uscode/text/18/2331)). Examples of CCTAs include the 2004 Madrid train bombings, the 2008 Mumbai attacks, 2013 Boston Marathon bombings, and the 2015 San Bernardino, CA, office attack.\n",
+    "description": "CCTAs are a major concern for law enforcement and emergency planners ([FEMA](https://www.fema.gov/media-library-data/1532550673102-c4846f270150682decbda99b37524ca6/Planning_Considerations-Complex_Coordinated_Terrorist_Attacks.pdf)). For the purposes of this question, a CCTA is an [1] act of terrorism [2] involving multiple perpetrators working in concert [3] initiated with little or no warning [4] and employing one or more weapon systems (e.g., firearms, explosives, fire as a weapon, poison gas) [5] that is intended to result in large numbers of casualties. For the purposes of this question, \"terrorism\" is as defined by federal law in 18 U.S.C. § 2331(5) ([Cornell](https://www.law.cornell.edu/uscode/text/18/2331)). Examples of CCTAs include the 2004 Madrid train bombings, the 2008 Mumbai attacks, 2013 Boston Marathon bombings, and the 2015 San Bernardino, CA, office attack.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3468,15 +3447,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "729",
-    "numforecasters": "166",
+    "numforecasts": "737",
+    "numforecasters": "167",
     "stars": 3
   },
   {
     "title": "When will the Transportation Security Administration (TSA) next screen two million or more travelers in a single day?",
     "url": "https://www.gjopen.com/questions/1776-when-will-the-transportation-security-administration-tsa-next-screen-two-million-or-more-travelers-in-a-single-day",
     "platform": "Good Judgment Open",
-    "description": "Commercial air travel in the U.S. is increasing, but still remains much lower than before the COVID-19 pandemic ([CNN](https://edition.cnn.com/travel/article/tsa-checkpoint-numbers-new-pandemic-high/index.html)). The outcome will be determined using Total Traveler Throughput data reported by the TSA ([TSA](https://www.tsa.gov/coronavirus/passenger-throughput)). The TSA last screened two million or more travelers in a single day on 8 March 2020.\n",
+    "description": "Commercial air travel in the U.S. is increasing, but still remains much lower than before the COVID-19 pandemic ([CNN](https://edition.cnn.com/travel/article/tsa-checkpoint-numbers-new-pandemic-high/index.html)). The outcome will be determined using Total Traveler Throughput data reported by the TSA ([TSA](https://www.tsa.gov/coronavirus/passenger-throughput)). The TSA last screened two million or more travelers in a single day on 8 March 2020.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Before 1 January 2021",
@@ -3490,12 +3469,12 @@
       },
       {
         "name": "Between 1 April 2021 and 30 June 2021",
-        "probability": 0.29,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 30 September 2021",
-        "probability": 0.55,
+        "probability": 0.54,
         "type": "PROBABILITY"
       },
       {
@@ -3504,7 +3483,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "860",
+    "numforecasts": "869",
     "numforecasters": "167",
     "stars": 3
   },
@@ -3512,7 +3491,7 @@
     "title": "In Google v. Oracle America, will the Supreme Court rule that the Copyright Act protects the Oracle computer source code that Google copied for its Android operating system?",
     "url": "https://www.gjopen.com/questions/1775-in-google-v-oracle-america-will-the-supreme-court-rule-that-the-copyright-act-protects-the-oracle-computer-source-code-that-google-copied-for-its-android-operating-system",
     "platform": "Good Judgment Open",
-    "description": "To implement its Android operating system, “Google copied 11,500 lines of Oracle’s original, human-readable computer source code, as well as the intricate structure and organization of 37 large packages of computer programs” ([Supremecourt.gov](https://www.supremecourt.gov/DocketPDF/18/18-956/93436/20190327160337558_190311%20for%20E-Filing.pdf)). Oracle sued Google for copyright infringement and the issue has reached the Supreme Court ([Oyez](https://www.oyez.org/cases/2020/18-956), [SCOTUSblog](https://www.scotusblog.com/case-files/cases/google-llc-v-oracle-america-inc/), [Lexology](https://www.lexology.com/library/detail.aspx?g=ecf5cd6d-2b66-4240-b5d9-efab3c581830), [ZDNet](https://www.zdnet.com/article/google-vs-oracle-the-next-chapter/)). Whether the Supreme Court rules on Google’s copying of Oracle’s code being fair use or not is immaterial to the resolution of this question. The Supreme Court is expected to hand down its decision in its 2020 term, but if it does not, the question will resolve as \"No.\" If the Court decides this case without addressing this question's particular issue of law, the question will close as \"No.\"\n",
+    "description": "To implement its Android operating system, “Google copied 11,500 lines of Oracle’s original, human-readable computer source code, as well as the intricate structure and organization of 37 large packages of computer programs” ([Supremecourt.gov](https://www.supremecourt.gov/DocketPDF/18/18-956/93436/20190327160337558_190311%20for%20E-Filing.pdf)). Oracle sued Google for copyright infringement and the issue has reached the Supreme Court ([Oyez](https://www.oyez.org/cases/2020/18-956), [SCOTUSblog](https://www.scotusblog.com/case-files/cases/google-llc-v-oracle-america-inc/), [Lexology](https://www.lexology.com/library/detail.aspx?g=ecf5cd6d-2b66-4240-b5d9-efab3c581830), [ZDNet](https://www.zdnet.com/article/google-vs-oracle-the-next-chapter/)). Whether the Supreme Court rules on Google’s copying of Oracle’s code being fair use or not is immaterial to the resolution of this question. The Supreme Court is expected to hand down its decision in its 2020 term, but if it does not, the question will resolve as \"No.\" If the Court decides this case without addressing this question's particular issue of law, the question will close as \"No.\"\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3533,7 +3512,7 @@
     "title": "In California v. Texas, will the Supreme Court rule that reducing the penalty amount for the individual mandate of the Affordable Care Act (ACA) to zero rendered the individual mandate provision unconstitutional?",
     "url": "https://www.gjopen.com/questions/1774-in-california-v-texas-will-the-supreme-court-rule-that-reducing-the-penalty-amount-for-the-individual-mandate-of-the-affordable-care-act-aca-to-zero-rendered-the-individual-mandate-provision-unconstitutional",
     "platform": "Good Judgment Open",
-    "description": "After the Supreme Court upheld the constitutionality of the ACA in NFIB v. Sibelius, Congress subsequently reduced the penalty for failing to acquire health insurance to $0 ([Kaiser Family Foundation](https://www.kff.org/health-reform/issue-brief/explaining-texas-v-u-s-a-guide-to-the-case-challenging-the-aca/), [Law.cornell.edu](https://www.law.cornell.edu/uscode/text/26/5000A) (see §(3)(A)), [The Hill](https://thehill.com/policy/healthcare/365785-congress-repeals-obamacare-mandate-fulfilling-longtime-gop-goal)). Texas sued to have the ACA declared unconstitutional and prevailed in both District Court and the 5th Circuit Court of Appeals ([Politico](https://static.politico.com/17/86/6721f2eb435fb2512430e54c2904/220.pdf), [Casetext](https://casetext.com/case/texas-v-united-states-31)). The Supreme Court is expected to hand down its decision in its 2020 term, but if it does not, the question will close as no. If the Court decides this case without addressing this question's particular issue of law, the question will close as \"No.\"\n",
+    "description": "After the Supreme Court upheld the constitutionality of the ACA in NFIB v. Sibelius, Congress subsequently reduced the penalty for failing to acquire health insurance to $0 ([Kaiser Family Foundation](https://www.kff.org/health-reform/issue-brief/explaining-texas-v-u-s-a-guide-to-the-case-challenging-the-aca/), [Law.cornell.edu](https://www.law.cornell.edu/uscode/text/26/5000A) (see §(3)(A)), [The Hill](https://thehill.com/policy/healthcare/365785-congress-repeals-obamacare-mandate-fulfilling-longtime-gop-goal)). Texas sued to have the ACA declared unconstitutional and prevailed in both District Court and the 5th Circuit Court of Appeals ([Politico](https://static.politico.com/17/86/6721f2eb435fb2512430e54c2904/220.pdf), [Casetext](https://casetext.com/case/texas-v-united-states-31)). The Supreme Court is expected to hand down its decision in its 2020 term, but if it does not, the question will close as no. If the Court decides this case without addressing this question's particular issue of law, the question will close as \"No.\"\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3546,7 +3525,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "326",
+    "numforecasts": "327",
     "numforecasters": "76",
     "stars": 3
   },
@@ -3554,7 +3533,7 @@
     "title": "Before 1 January 2022, will the United States Olympic Committee announce that it is boycotting the 2022 Winter Olympics?",
     "url": "https://www.gjopen.com/questions/1764-before-1-january-2022-will-the-united-states-olympic-committee-announce-that-it-is-boycotting-the-2022-winter-olympics",
     "platform": "Good Judgment Open",
-    "description": "Countries have boycotted the Olympics for various reasons throughout history ([Montreal Gazette](https://montrealgazette.com/sports/montreal-olympics-african-boycott-of-1976-games-changed-the-world), [Dept. of State](https://2001-2009.state.gov/r/pa/ho/time/qfp/104481.htm), [History.com](https://www.history.com/this-day-in-history/soviets-announce-boycott-of-1984-olympics)). Some groups are calling on nations to boycott the 2022 Beijing Winter Olympics due to China's treatment of its Uighur population ([Daily Sabah](https://www.dailysabah.com/world/asia-pacific/rights-group-criticizes-ioc-over-uighurs-issue-in-china), [Politico](https://www.politico.com/news/2020/08/25/trump-administration-china-genocide-uighurs-401581), [Olympic.org](https://www.olympic.org/beijing-2022)).\n",
+    "description": "Countries have boycotted the Olympics for various reasons throughout history ([Montreal Gazette](https://montrealgazette.com/sports/montreal-olympics-african-boycott-of-1976-games-changed-the-world), [Dept. of State](https://2001-2009.state.gov/r/pa/ho/time/qfp/104481.htm), [History.com](https://www.history.com/this-day-in-history/soviets-announce-boycott-of-1984-olympics)). Some groups are calling on nations to boycott the 2022 Beijing Winter Olympics due to China's treatment of its Uighur population ([Daily Sabah](https://www.dailysabah.com/world/asia-pacific/rights-group-criticizes-ioc-over-uighurs-issue-in-china), [Politico](https://www.politico.com/news/2020/08/25/trump-administration-china-genocide-uighurs-401581), [Olympic.org](https://www.olympic.org/beijing-2022)).\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3567,7 +3546,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "648",
+    "numforecasts": "651",
     "numforecasters": "186",
     "stars": 3
   },
@@ -3575,7 +3554,7 @@
     "title": "How many Arab League member states other than Palestine will diplomatically recognize the State of Israel as of 28 August 2021?",
     "url": "https://www.gjopen.com/questions/1763-how-many-arab-league-member-states-other-than-palestine-will-diplomatically-recognize-the-state-of-israel-as-of-28-august-2021",
     "platform": "Good Judgment Open",
-    "description": "The Arab League consists of 22 member states ([BBC](https://www.bbc.com/news/world-middle-east-15747941), [CNN](https://www.cnn.com/2013/07/30/world/meast/arab-league-fast-facts/index.html), [Arab League](http://www.lasportal.org/Pages/Welcome.aspx)). As of 28 August 2020, three members other than Palestine--Egypt, Jordan, and recently the United Arab Emirates--diplomatically recognize Israel, though others could follow ([France24](https://www.france24.com/en/20200824-after-uae-israel-deal-which-arab-nation-will-next-forge-ties), [Economist](https://www.economist.com/middle-east-and-africa/2020/08/22/the-arab-countries-most-likely-to-recognise-israel), [Whitehouse.gov](https://www.whitehouse.gov/briefings-statements/joint-statement-united-states-state-israel-united-arab-emirates/)). A suspended Arab League member diplomatically recognizing Israel would count ([Guardian](https://www.theguardian.com/world/2011/nov/12/syria-suspended-arab-league)).\nNOTE 2 September 2020: The question is framed \"as of,\" so Egypt, Jordan, and the UAE would count toward resolution so long as they diplomatically recognize Israel as of 28 August 2021.\nNOTE 14 December 2020: As of the date of this clarification (14 December 2020), for the purposes of this question, the October announcement on the normalization of relations between Sudan and Israel constitutes Sudan diplomatically recognizing the State of Israel.\n",
+    "description": "The Arab League consists of 22 member states ([BBC](https://www.bbc.com/news/world-middle-east-15747941), [CNN](https://www.cnn.com/2013/07/30/world/meast/arab-league-fast-facts/index.html), [Arab League](http://www.lasportal.org/Pages/Welcome.aspx)). As of 28 August 2020, three members other than Palestine--Egypt, Jordan, and recently the United Arab Emirates--diplomatically recognize Israel, though others could follow ([France24](https://www.france24.com/en/20200824-after-uae-israel-deal-which-arab-nation-will-next-forge-ties), [Economist](https://www.economist.com/middle-east-and-africa/2020/08/22/the-arab-countries-most-likely-to-recognise-israel), [Whitehouse.gov](https://www.whitehouse.gov/briefings-statements/joint-statement-united-states-state-israel-united-arab-emirates/)). A suspended Arab League member diplomatically recognizing Israel would count ([Guardian](https://www.theguardian.com/world/2011/nov/12/syria-suspended-arab-league)).\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\nNOTE 2 September 2020: The question is framed \"as of,\" so Egypt, Jordan, and the UAE would count toward resolution so long as they diplomatically recognize Israel as of 28 August 2021.\nNOTE 14 December 2020: As of the date of this clarification (14 December 2020), for the purposes of this question, the October announcement on the normalization of relations between Sudan and Israel constitutes Sudan diplomatically recognizing the State of Israel.\n",
     "options": [
       {
         "name": "2 or fewer",
@@ -3611,7 +3590,7 @@
     "title": "When will the EU amend its Own Resources Decision to help finance the EU's proposed COVID-19 recovery package?",
     "url": "https://www.gjopen.com/questions/1762-when-will-the-eu-amend-its-own-resources-decision-to-help-finance-the-eu-s-proposed-covid-19-recovery-package",
     "platform": "Good Judgment Open",
-    "description": "As part of the COVID-19 recovery plan called the \"Next Generation EU\" (NGEU), an amendment of the Own Resources Decision has been proposed ([European Council](https://www.consilium.europa.eu/media/45109/210720-euco-final-conclusions-en.pdf), [European Parliament](https://www.europarl.europa.eu/legislative-train/theme-new-boost-for-jobs-growth-and-investment/file-mff-post-2020-own-resources), [European Commission](https://ec.europa.eu/commission/presscorner/detail/en/qanda_20_935)). An amendment of the Own Resources Decision requires approval by all Member States in accordance with their constitutional requirements ([Ernst &amp; Young](https://taxnews.ey.com/news/2020-1869-european-council-adopts-conclusions-on-recovery-plan-and-eu-budget-for-2021-2027-including-agreement-on-introduction-of-new-taxes), [European Commission](https://ec.europa.eu/commission/presscorner/detail/en/QANDA_20_1024)). The question would resolve upon the last Member State approving the amendment. When the amended Own Resources Decision would take effect is immaterial.\n",
+    "description": "As part of the COVID-19 recovery plan called the \"Next Generation EU\" (NGEU), an amendment of the Own Resources Decision has been proposed ([European Council](https://www.consilium.europa.eu/media/45109/210720-euco-final-conclusions-en.pdf), [European Parliament](https://www.europarl.europa.eu/legislative-train/theme-new-boost-for-jobs-growth-and-investment/file-mff-post-2020-own-resources), [European Commission](https://ec.europa.eu/commission/presscorner/detail/en/qanda_20_935)). An amendment of the Own Resources Decision requires approval by all Member States in accordance with their constitutional requirements ([Ernst &amp; Young](https://taxnews.ey.com/news/2020-1869-european-council-adopts-conclusions-on-recovery-plan-and-eu-budget-for-2021-2027-including-agreement-on-introduction-of-new-taxes), [European Commission](https://ec.europa.eu/commission/presscorner/detail/en/QANDA_20_1024)). The question would resolve upon the last Member State approving the amendment. When the amended Own Resources Decision would take effect is immaterial.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Before 1 October 2020",
@@ -3625,24 +3604,24 @@
       },
       {
         "name": "Between 1 January 2021 and 31 March 2021",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 April 2021",
-        "probability": 0.99,
+        "probability": 1,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "308",
-    "numforecasters": "63",
+    "numforecasts": "314",
+    "numforecasters": "65",
     "stars": 3
   },
   {
     "title": "How many Cybertrucks will Tesla deliver to customers in 2022?",
     "url": "https://www.gjopen.com/questions/1760-how-many-cybertrucks-will-tesla-deliver-to-customers-in-2022",
     "platform": "Good Judgment Open",
-    "description": "Tesla recently announced it will manufacture the Cybertruck at its new factory location in Austin, TX ([Digital Trends](https://www.digitaltrends.com/cars/tesla-cybertruck-price-interior-release-date-specs-news/), [The Verge](https://www.theverge.com/2020/7/22/21334860/tesla-cybertruck-factory-austin-texas-location-model-y), [Teslarati](https://www.teslarati.com/tesla-cybertruck-gigafactory-austin-texas-video/), [Inverse](https://www.inverse.com/innovation/61141-tesla-cybertruck-pics-price)). The outcome will be determined using Tesla's official quarterly updates once available, typically found here: https://ir.tesla.com/financial-information/quarterly-results.\n",
+    "description": "Tesla recently announced it will manufacture the Cybertruck at its new factory location in Austin, TX ([Digital Trends](https://www.digitaltrends.com/cars/tesla-cybertruck-price-interior-release-date-specs-news/), [The Verge](https://www.theverge.com/2020/7/22/21334860/tesla-cybertruck-factory-austin-texas-location-model-y), [Teslarati](https://www.teslarati.com/tesla-cybertruck-gigafactory-austin-texas-video/), [Inverse](https://www.inverse.com/innovation/61141-tesla-cybertruck-pics-price)). The outcome will be determined using Tesla's official quarterly updates once available, typically found here: https://ir.tesla.com/financial-information/quarterly-results.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Fewer than 25,000",
@@ -3678,7 +3657,7 @@
     "title": "Before 1 January 2023, will Amazon or a subsidiary use a Zoox autonomous vehicle to deliver a package and/or for a public ride-hailing service?",
     "url": "https://www.gjopen.com/questions/1745-before-1-january-2023-will-amazon-or-a-subsidiary-use-a-zoox-autonomous-vehicle-to-deliver-a-package-and-or-for-a-public-ride-hailing-service",
     "platform": "Good Judgment Open",
-    "description": "In late June 2020, Amazon acquired self-driving technology company Zoox for approximately $1.3 billion ([CNBC](https://www.cnbc.com/2020/06/26/amazon-spending-1-billion-on-zoox-will-have-to-invest-billions-more.html), [Forbes](https://www.forbes.com/sites/bradtempleton/2020/07/16/amazon-zoox-deal-details-leak-and-hint-at-expensive-acquihire/#50676c1d4ec2)). While Amazon has framed the acquisition as a move into ride-hailing, there is speculation that the move could lead to greater automation of package deliveries ([Amazon](https://blog.aboutamazon.com/company-news/were-acquiring-zoox-to-help-bring-their-vision-of-autonomous-ride-hailing-to-reality), [India Times](https://www.indiatimes.com/auto/alternative/amazon-zoox-robo-delivery-518186.html), [Forbes](https://www.forbes.com/sites/davidsilver/2020/07/03/autonomous-delivery-will-reduce-the-cost-of-residential-package-delivery/#77928f2f4844)). An autonomous vehicle with a backup driver would count for resolution. A public ride-hailing service does not need to involve payment to count for resolution.\n",
+    "description": "In late June 2020, Amazon acquired self-driving technology company Zoox for approximately $1.3 billion ([CNBC](https://www.cnbc.com/2020/06/26/amazon-spending-1-billion-on-zoox-will-have-to-invest-billions-more.html), [Forbes](https://www.forbes.com/sites/bradtempleton/2020/07/16/amazon-zoox-deal-details-leak-and-hint-at-expensive-acquihire/#50676c1d4ec2)). While Amazon has framed the acquisition as a move into ride-hailing, there is speculation that the move could lead to greater automation of package deliveries ([Amazon](https://blog.aboutamazon.com/company-news/were-acquiring-zoox-to-help-bring-their-vision-of-autonomous-ride-hailing-to-reality), [India Times](https://www.indiatimes.com/auto/alternative/amazon-zoox-robo-delivery-518186.html), [Forbes](https://www.forbes.com/sites/davidsilver/2020/07/03/autonomous-delivery-will-reduce-the-cost-of-residential-package-delivery/#77928f2f4844)). An autonomous vehicle with a backup driver would count for resolution. A public ride-hailing service does not need to involve payment to count for resolution.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes, only to deliver a package but not for a public ride-hailing service",
@@ -3687,7 +3666,7 @@
       },
       {
         "name": "Yes, only a for public ride-hailing service but not to deliver a package",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
@@ -3697,11 +3676,11 @@
       },
       {
         "name": "No",
-        "probability": 0.29,
+        "probability": 0.3,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "305",
+    "numforecasts": "310",
     "numforecasters": "109",
     "stars": 3
   },
@@ -3709,7 +3688,7 @@
     "title": "Before 1 January 2023, how many major automakers will debut a passenger vehicle powered by a solid-state battery?",
     "url": "https://www.gjopen.com/questions/1744-before-1-january-2023-how-many-major-automakers-will-debut-a-passenger-vehicle-powered-by-a-solid-state-battery",
     "platform": "Good Judgment Open",
-    "description": "Recent advances in battery technology, particularly solid-state batteries, could give rise to a new generation of electric vehicles ([Car and Driver](https://www.caranddriver.com/news/a31409442/samsung-solid-state-battery-revealed/), [Electrek](https://electrek.co/2020/04/23/work-on-goodenoughs-breakthrough-solid-state-ev-battery-moves-forward/)). Some companies have announced plans to debut such vehicles, even if not necessarily for mass production yet ([Road/Show](https://www.cnet.com/roadshow/news/toyota-solid-state-battery-electric-olympics/), [Digital Trends](https://www.digitaltrends.com/cars/toyota-may-introduce-solid-state-batteries-for-electric-cars-by-2020/)). For examples of vehicle debuts, see: [CNBC](https://www.cnbc.com/2020/08/06/gms-push-to-compete-with-tesla-begins-with-cadillac-lyriq-crossover-debut-thursday.html), [Axios](https://www.axios.com/tesla-debuts-first-electric-pickup-truck-cee48fef-fccc-4390-bdc5-1dfede8a8a3e.html). For the purposes of this question, \"major automakers\" refers to any of the 50 motor vehicle manufacturers included by the International Organization of Motor Vehicle Manufacturers in its 2017 list ([OICA](http://www.oica.net/wp-content/uploads/World-Ranking-of-Manufacturers-1.pdf)). A vehicle would not need to be solely powered by solid-state batteries to count.\nNOTE 20 August 2020: For purposes of this question, for a vehicle to be considered \"powered\" by a solid-state battery it must be propelled, at least in part, by the use of a solid-state battery\nNOTE 2 October 2020:  For purposes of this question, a \"passenger vehicle\" is a motor vehicle with at least four wheels, used for the transport of passengers, and comprising no more than eight seats in addition to the driver's seat (http://www.oica.net/wp-content/uploads/stats-definition1.pdf). \n",
+    "description": "Recent advances in battery technology, particularly solid-state batteries, could give rise to a new generation of electric vehicles ([Car and Driver](https://www.caranddriver.com/news/a31409442/samsung-solid-state-battery-revealed/), [Electrek](https://electrek.co/2020/04/23/work-on-goodenoughs-breakthrough-solid-state-ev-battery-moves-forward/)). Some companies have announced plans to debut such vehicles, even if not necessarily for mass production yet ([Road/Show](https://www.cnet.com/roadshow/news/toyota-solid-state-battery-electric-olympics/), [Digital Trends](https://www.digitaltrends.com/cars/toyota-may-introduce-solid-state-batteries-for-electric-cars-by-2020/)). For examples of vehicle debuts, see: [CNBC](https://www.cnbc.com/2020/08/06/gms-push-to-compete-with-tesla-begins-with-cadillac-lyriq-crossover-debut-thursday.html), [Axios](https://www.axios.com/tesla-debuts-first-electric-pickup-truck-cee48fef-fccc-4390-bdc5-1dfede8a8a3e.html). For the purposes of this question, \"major automakers\" refers to any of the 50 motor vehicle manufacturers included by the International Organization of Motor Vehicle Manufacturers in its 2017 list ([OICA](http://www.oica.net/wp-content/uploads/World-Ranking-of-Manufacturers-1.pdf)). A vehicle would not need to be solely powered by solid-state batteries to count.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\nNOTE 20 August 2020: For purposes of this question, for a vehicle to be considered \"powered\" by a solid-state battery it must be propelled, at least in part, by the use of a solid-state battery\nNOTE 2 October 2020:  For purposes of this question, a \"passenger vehicle\" is a motor vehicle with at least four wheels, used for the transport of passengers, and comprising no more than eight seats in addition to the driver's seat (http://www.oica.net/wp-content/uploads/stats-definition1.pdf). \n",
     "options": [
       {
         "name": "0",
@@ -3768,15 +3747,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "879",
-    "numforecasters": "304",
+    "numforecasts": "881",
+    "numforecasters": "305",
     "stars": 3
   },
   {
     "title": "Between August 2020 and July 2021, will global land and ocean surface temperatures rise 1.5°C or more above the 20th century average for any single month?",
     "url": "https://www.gjopen.com/questions/1715-between-august-2020-and-july-2021-will-global-land-and-ocean-surface-temperatures-rise-1-5-c-or-more-above-the-20th-century-average-for-any-single-month",
     "platform": "Good Judgment Open",
-    "description": "Some expect the 1.5°C temperature threshold to be breached within the next five years, and recent predictions indicate any climate warming reprieve due to the global shutdown in the wake of COVID-19 may be temporary ([BBC](https://www.bbc.com/news/science-environment-53342806), [World Meteorological Organization](https://public.wmo.int/en/our-mandate/climate/wmo-statement-state-of-global-climate), [BBC](https://www.bbc.com/news/science-environment-45678338)). The outcome will be determined using data provided by the National Oceanic and Atmospheric Administration's Global Climate Reports ([NOAA](https://www.ncdc.noaa.gov/sotc/)). For June 2020, the global land and ocean surface temperature was 0.92°C above the 20th century average for June ([NOAA - June 2020 Report](https://www.ncdc.noaa.gov/sotc/global/202006)).\nConfused? Check our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#f89b94998a919e919b998c9197968bb89f97979c928d9c9f959d968cd69b9795c78b8d9a929d9b8cc5a98d9d8b8c919796ddcac8bb94998a919e919b998c919796). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Some expect the 1.5°C temperature threshold to be breached within the next five years, and recent predictions indicate any climate warming reprieve due to the global shutdown in the wake of COVID-19 may be temporary ([BBC](https://www.bbc.com/news/science-environment-53342806), [World Meteorological Organization](https://public.wmo.int/en/our-mandate/climate/wmo-statement-state-of-global-climate), [BBC](https://www.bbc.com/news/science-environment-45678338)). The outcome will be determined using data provided by the National Oceanic and Atmospheric Administration's Global Climate Reports ([NOAA](https://www.ncdc.noaa.gov/sotc/)). For June 2020, the global land and ocean surface temperature was 0.92°C above the 20th century average for June ([NOAA - June 2020 Report](https://www.ncdc.noaa.gov/sotc/global/202006)).\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3789,7 +3768,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "295",
+    "numforecasts": "296",
     "numforecasters": "138",
     "stars": 3
   },
@@ -3797,7 +3776,7 @@
     "title": "Before 1 January 2022, will the U.S. Senate expand the scope of matters for which a filibuster cannot be used?",
     "url": "https://www.gjopen.com/questions/1718-before-1-january-2022-will-the-u-s-senate-expand-the-scope-of-matters-for-which-a-filibuster-cannot-be-used",
     "platform": "Good Judgment Open",
-    "description": "In April 2017, Senate Republicans eliminated the filibuster for the confirmation of Supreme Court Justices by changing the rules so that debate on nominees could be ended with a simple majority vote rather than a three-fifths majority ([Reuters](https://www.reuters.com/article/us-usa-court-gorsuch-idUSKBN17814Y)). Whether the filibuster will be further eroded remains to be seen ([The Atlantic](https://www.theatlantic.com/politics/archive/2020/07/why-senate-filibuster-could-be-gone-2021/614278/), [Brookings Institute](https://www.brookings.edu/policy2020/votervital/what-is-the-senate-filibuster-and-what-would-it-take-to-eliminate-it/)).\nConfused? Check our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#395a55584b505f505a584d5056574a795e56565d534c5d5e545c574d175a5654064a4c5b535c5a4d04684c5c4a4d5056571c0b097a55584b505f505a584d505657). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "In April 2017, Senate Republicans eliminated the filibuster for the confirmation of Supreme Court Justices by changing the rules so that debate on nominees could be ended with a simple majority vote rather than a three-fifths majority ([Reuters](https://www.reuters.com/article/us-usa-court-gorsuch-idUSKBN17814Y)). Whether the filibuster will be further eroded remains to be seen ([The Atlantic](https://www.theatlantic.com/politics/archive/2020/07/why-senate-filibuster-could-be-gone-2021/614278/), [Brookings Institute](https://www.brookings.edu/policy2020/votervital/what-is-the-senate-filibuster-and-what-would-it-take-to-eliminate-it/)).\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
@@ -3810,15 +3789,15 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "656",
-    "numforecasters": "142",
+    "numforecasts": "663",
+    "numforecasters": "143",
     "stars": 3
   },
   {
     "title": "Between 1 January 2021 and 31 December 2022, will a firm or paid backup driver operating a self-driving vehicle face criminal charges in relation to an accident involving a self-driving vehicle in the U.S.?",
     "url": "https://www.gjopen.com/questions/1696-between-1-january-2021-and-31-december-2022-will-a-firm-or-paid-backup-driver-operating-a-self-driving-vehicle-face-criminal-charges-in-relation-to-an-accident-involving-a-self-driving-vehicle-in-the-u-s",
     "platform": "Good Judgment Open",
-    "description": "Legal liability for accidents involving self-driving vehicles and features allowing autonomous driving continue to evolve ([Ars Technica](https://arstechnica.com/cars/2020/06/tesla-driver-blames-autopilot-for-crash-into-police-car/), [ABC News](https://abcnews.go.com/Technology/wireStory/us-agency-eyes-fatal-crash-involving-driving-car-66374234), [NY Times](https://www.nytimes.com/2019/03/05/technology/uber-self-driving-car-arizona.html), [Centre for International Governance Innovation](https://www.cigionline.org/articles/who-responsible-when-autonomous-systems-fail)). The charges for a firm or backup driver are not required to be related to the same accident for resolving this question.\nThis question is the longer-term companion of question [#1695](https://www.gjopen.com/questions/1695-between-10-july-and-31-december-2020-will-a-firm-or-paid-backup-driver-operating-a-self-driving-vehicle-face-criminal-charges-in-relation-to-an-accident-involving-a-self-driving-vehicle-in-the-u-s). The questions are substantively the same, save for the relevant time period. While they are companions, they are independent questions and the resolution of one will not necessarily impact the other.\nNOTE 13 November 2020: For the purposes of this question, to \"face criminal charges\" is to be criminally charged, irrespective of any future scheduled trial. Charges filed in 2020 or earlier against a person or firm who/that continues to be criminally charged in 2021 or beyond would not count toward the resolution of this question (2021-2022) unless they/it were criminally charged in relation to a different criminal offense.\n",
+    "description": "Legal liability for accidents involving self-driving vehicles and features allowing autonomous driving continue to evolve ([Ars Technica](https://arstechnica.com/cars/2020/06/tesla-driver-blames-autopilot-for-crash-into-police-car/), [ABC News](https://abcnews.go.com/Technology/wireStory/us-agency-eyes-fatal-crash-involving-driving-car-66374234), [NY Times](https://www.nytimes.com/2019/03/05/technology/uber-self-driving-car-arizona.html), [Centre for International Governance Innovation](https://www.cigionline.org/articles/who-responsible-when-autonomous-systems-fail)). The charges for a firm or backup driver are not required to be related to the same accident for resolving this question.\nThis question is the longer-term companion of question [#1695](https://www.gjopen.com/questions/1695-between-10-july-and-31-december-2020-will-a-firm-or-paid-backup-driver-operating-a-self-driving-vehicle-face-criminal-charges-in-relation-to-an-accident-involving-a-self-driving-vehicle-in-the-u-s). The questions are substantively the same, save for the relevant time period. While they are companions, they are independent questions and the resolution of one will not necessarily impact the other.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\nNOTE 13 November 2020: For the purposes of this question, to \"face criminal charges\" is to be criminally charged, irrespective of any future scheduled trial. Charges filed in 2020 or earlier against a person or firm who/that continues to be criminally charged in 2021 or beyond would not count toward the resolution of this question (2021-2022) unless they/it were criminally charged in relation to a different criminal offense.\n",
     "options": [
       {
         "name": "Yes, a firm",
@@ -3849,7 +3828,7 @@
     "title": "How many new energy vehicles (NEVs) will be sold in China in 2021 and 2022 combined?",
     "url": "https://www.gjopen.com/questions/1698-how-many-new-energy-vehicles-nevs-will-be-sold-in-china-in-2021-and-2022-combined",
     "platform": "Good Judgment Open",
-    "description": "Amid the ongoing COVID-19 pandemic, the Chinese government announced in March 2020 that it would extend subsidies on NEVs through 2022, though at lower levels than in the past ([Reuters](https://www.reuters.com/article/us-china-autos-electric-subsidies/china-to-cut-new-energy-vehicle-subsidies-by-10-this-year-idUSKCN225177), [Shine.cn](https://www.shine.cn/biz/auto/2006089801/), [CNBC](https://www.cnbc.com/2020/05/04/electric-cars-take-the-spotlight-in-chinas-post-coronavirus-stimulus-plans.html), [Inside EVs](https://insideevs.com/news/428471/china-market-sales-may-2020-nev/)). In 2019, NEV sales were 1.206 million ([Caam.org](http://www.caam.org.cn/chn/4/cate_154/con_5228367.html) [in Chinese]). The outcome will be determined using data from the China Association of Automobile Manufacturers (CAAM) for 2020 (e.g., [Caam.org.cn - Automotive Statistics](http://www.caam.org.cn/chn/21/cate_463/list_1.html), [Caam.org.cn](http://www.caam.org.cn/) [in Chinese], [Caam.org.cn](http://www.caam.org.cn/english) [in English], [China Daily](https://www.chinadaily.com.cn/a/202001/14/WS5e1cfea2a310128217270a2c.html)).\nThis question is the longer-term companion of question [#1697](https://www.gjopen.com/questions/1697-how-many-new-energy-vehicles-nevs-will-be-sold-in-china-in-2020). The questions are substantively the same, save for the relevant time period. While they are companions, they are independent questions and the resolution of one will not necessarily impact the other.\n",
+    "description": "Amid the ongoing COVID-19 pandemic, the Chinese government announced in March 2020 that it would extend subsidies on NEVs through 2022, though at lower levels than in the past ([Reuters](https://www.reuters.com/article/us-china-autos-electric-subsidies/china-to-cut-new-energy-vehicle-subsidies-by-10-this-year-idUSKCN225177), [Shine.cn](https://www.shine.cn/biz/auto/2006089801/), [CNBC](https://www.cnbc.com/2020/05/04/electric-cars-take-the-spotlight-in-chinas-post-coronavirus-stimulus-plans.html), [Inside EVs](https://insideevs.com/news/428471/china-market-sales-may-2020-nev/)). In 2019, NEV sales were 1.206 million ([Caam.org](http://www.caam.org.cn/chn/4/cate_154/con_5228367.html) [in Chinese]). The outcome will be determined using data from the China Association of Automobile Manufacturers (CAAM) for 2020 (e.g., [Caam.org.cn - Automotive Statistics](http://www.caam.org.cn/chn/21/cate_463/list_1.html), [Caam.org.cn](http://www.caam.org.cn/) [in Chinese], [Caam.org.cn](http://www.caam.org.cn/english) [in English], [China Daily](https://www.chinadaily.com.cn/a/202001/14/WS5e1cfea2a310128217270a2c.html)).\nThis question is the longer-term companion of question [#1697](https://www.gjopen.com/questions/1697-how-many-new-energy-vehicles-nevs-will-be-sold-in-china-in-2020). The questions are substantively the same, save for the relevant time period. While they are companions, they are independent questions and the resolution of one will not necessarily impact the other.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Fewer than 2.2 million",
@@ -3877,7 +3856,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "259",
+    "numforecasts": "260",
     "numforecasters": "57",
     "stars": 3
   },
@@ -3921,7 +3900,7 @@
     "title": "How many cases of COVID-19 will be reported by the Africa CDC as of 1 April 2021?",
     "url": "https://www.gjopen.com/questions/1674-how-many-cases-of-covid-19-will-be-reported-by-the-africa-cdc-as-of-1-april-2021",
     "platform": "Good Judgment Open",
-    "description": "The full impact of the COVID-19 pandemic on the African continent, home to over 1.2 billion people, remains a topic of intense speculation ([CNN](https://www.cnn.com/2020/06/16/africa/africa-coronavirus-cases-prevention-intl/index.html), [Scientific American](https://www.scientificamerican.com/article/african-countries-scramble-to-ramp-up-testing-for-covid-19/), [Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31237-X/fulltext)). The outcome will be determined using cases data from the Africa Centres for Disease Control and Prevention (Africa CDC) Dashboard at 5:00PM ET on 1 April 2021 ([Africa CDC](https://africacdc.org/covid-19/)).\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#2b48474a59424d42484a5f424445586b4c44444f415e4f4c464e455f0548444614585e49414e485f167a5e4e585f4244450e191b68474a59424d42484a5f424445). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "The full impact of the COVID-19 pandemic on the African continent, home to over 1.2 billion people, remains a topic of intense speculation ([CNN](https://www.cnn.com/2020/06/16/africa/africa-coronavirus-cases-prevention-intl/index.html), [Scientific American](https://www.scientificamerican.com/article/african-countries-scramble-to-ramp-up-testing-for-covid-19/), [Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31237-X/fulltext)). The outcome will be determined using cases data from the Africa Centres for Disease Control and Prevention (Africa CDC) Dashboard at 5:00PM ET on 1 April 2021 ([Africa CDC](https://africacdc.org/covid-19/)).\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Fewer than 2.5 million",
@@ -3949,7 +3928,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1194",
+    "numforecasts": "1198",
     "numforecasters": "184",
     "stars": 3
   },
@@ -3957,7 +3936,7 @@
     "title": "Before 1 May 2021, will it be officially announced that the Tokyo 2020 Summer Olympics and/or Paralympics will be canceled?",
     "url": "https://www.gjopen.com/questions/1668-before-1-may-2021-will-it-be-officially-announced-that-the-tokyo-2020-summer-olympics-and-or-paralympics-will-be-canceled",
     "platform": "Good Judgment Open",
-    "description": "Coronavirus concerns already forced the postponement of the 2020 Olympics and Paralympics to summer 2021 ([ESPN](https://www.espn.com/olympics/story/_/id/28946033/tokyo-olympics-officially-postponed-2021), [Olympic Games](https://tokyo2020.org/en/), [Paralympic Games](https://tokyo2020.org/en/paralympics/)). Various concerns such as cost, vaccine availability, and international travel safety have some concerned about the rescheduled games taking place at all ([BBC](https://www.bbc.com/sport/olympics/52747797)). Postponement(s) alone would not count.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
+    "description": "Coronavirus concerns already forced the postponement of the 2020 Olympics and Paralympics to summer 2021 ([ESPN](https://www.espn.com/olympics/story/_/id/28946033/tokyo-olympics-officially-postponed-2021), [Olympic Games](https://tokyo2020.org/en/), [Paralympic Games](https://tokyo2020.org/en/paralympics/)). Various concerns such as cost, vaccine availability, and international travel safety have some concerned about the rescheduled games taking place at all ([BBC](https://www.bbc.com/sport/olympics/52747797)). Postponement(s) alone would not count.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\nNOTE 22 March 2021: Cancellations of particular events alone without a cancellation of the Games themselves would not count.\n",
     "options": [
       {
         "name": "Yes, the Olympics only",
@@ -3980,28 +3959,28 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "2127",
-    "numforecasters": "861",
+    "numforecasts": "2160",
+    "numforecasters": "872",
     "stars": 3
   },
   {
     "title": "Between 1 January 2021 and 31 December 2022, will legislation enabling the creation of federal safety standards for autonomous vehicles (AVs) become law?",
     "url": "https://www.gjopen.com/questions/1659-between-1-january-2021-and-31-december-2022-will-legislation-enabling-the-creation-of-federal-safety-standards-for-autonomous-vehicles-avs-become-law",
     "platform": "Good Judgment Open",
-    "description": "Congress has yet to adopt legislation to create federal safety standards for the testing and/or use of AVs ([The Hill](https://thehill.com/policy/transportation/automobiles/472341-wheels-begin-to-turn-on-self-driving-car-legislation), [Federation of American Scientists](https://fas.org/sgp/crs/misc/R45985.pdf), [Congress.gov (House Bill)](https://www.congress.gov/bill/115th-congress/house-bill/3388), [Congress.gov (Senate Bill)](https://www.congress.gov/bill/115th-congress/senate-bill/1885)). Legislators are renewing efforts the 116th Congress, though the COVID-19 pandemic has acted as a \"bump in the road\" ([The Hill](https://thehill.com/policy/technology/498863-action-on-driverless-cars-hits-speed-bump-as-congress-focuses-on-pandemic), [Legal Reader](https://www.legalreader.com/self-driving-cars-and-the-law/)). The date the law and/or standards would take effect is immaterial.\nThis question is the longer-term companion of question #1658. The questions are substantively the same, save for the relevant time period. If the shorter-term question closes Yes, then this longer-term question will be voided.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#6a09060b18030c03090b1e030504192a0d05050e001f0e0d070f041e4409050755191f08000f091e573b1f0f191e0305044f585a29060b18030c03090b1e030504). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Congress has yet to adopt legislation to create federal safety standards for the testing and/or use of AVs ([The Hill](https://thehill.com/policy/transportation/automobiles/472341-wheels-begin-to-turn-on-self-driving-car-legislation), [Federation of American Scientists](https://fas.org/sgp/crs/misc/R45985.pdf), [Congress.gov (House Bill)](https://www.congress.gov/bill/115th-congress/house-bill/3388), [Congress.gov (Senate Bill)](https://www.congress.gov/bill/115th-congress/senate-bill/1885)). Legislators are renewing efforts the 116th Congress, though the COVID-19 pandemic has acted as a \"bump in the road\" ([The Hill](https://thehill.com/policy/technology/498863-action-on-driverless-cars-hits-speed-bump-as-congress-focuses-on-pandemic), [Legal Reader](https://www.legalreader.com/self-driving-cars-and-the-law/)). The date the law and/or standards would take effect is immaterial.\nThis question is the longer-term companion of question #1658. The questions are substantively the same, save for the relevant time period. If the shorter-term question closes Yes, then this longer-term question will be voided.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.76,
+        "probability": 0.78,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.24,
+        "probability": 0.22,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "244",
+    "numforecasts": "245",
     "numforecasters": "110",
     "stars": 3
   },
@@ -4009,7 +3988,7 @@
     "title": "Will there be a lethal confrontation between the national military forces, militia, and/or law enforcement personnel of the People's Republic of China and those of Brunei, Indonesia, Malaysia, the Philippines, Singapore, and/or Vietnam before 1 April 2021?",
     "url": "https://www.gjopen.com/questions/1652-will-there-be-a-lethal-confrontation-between-the-national-military-forces-militia-and-or-law-enforcement-personnel-of-the-people-s-republic-of-china-and-those-of-brunei-indonesia-malaysia-the-philippines-singapore-and-or-vietnam-before-1-april-2021",
     "platform": "Good Judgment Open",
-    "description": "Over the years, China has used various forces to project power toward its neighbors in and around the South China Sea ([CNN](https://www.cnn.com/2020/06/07/asia/china-malaysia-indonesia-south-china-sea-intl-hnk/index.html), [Center for Strategic and International Studies](https://amti.csis.org/maritime-claims-map/), [Council on Foreign Relations](https://www.cfr.org/global-conflict-tracker/conflict/territorial-disputes-south-china-sea), [Diplomat](https://thediplomat.com/2015/11/little-blue-men-doing-chinas-dirty-work-in-the-south-china-sea/)). A lethal confrontation is one that results in one fatality for the military forces, militia, and/or law enforcement of either side.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#84e7e8e5f6ede2ede7e5f0edebeaf7c4e3ebebe0eef1e0e3e9e1eaf0aae7ebe9bbf7f1e6eee1e7f0b9d5f1e1f7f0edebeaa1b6b4c7e8e5f6ede2ede7e5f0edebea). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Over the years, China has used various forces to project power toward its neighbors in and around the South China Sea ([CNN](https://www.cnn.com/2020/06/07/asia/china-malaysia-indonesia-south-china-sea-intl-hnk/index.html), [Center for Strategic and International Studies](https://amti.csis.org/maritime-claims-map/), [Council on Foreign Relations](https://www.cfr.org/global-conflict-tracker/conflict/territorial-disputes-south-china-sea), [Diplomat](https://thediplomat.com/2015/11/little-blue-men-doing-chinas-dirty-work-in-the-south-china-sea/)). A lethal confrontation is one that results in one fatality for the military forces, militia, and/or law enforcement of either side.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
@@ -4022,7 +4001,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1083",
+    "numforecasts": "1088",
     "numforecasters": "466",
     "stars": 3
   },
@@ -4058,7 +4037,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "297",
+    "numforecasts": "298",
     "numforecasters": "82",
     "stars": 3
   },
@@ -4102,7 +4081,7 @@
     "title": "Before 1 January 2023, how many major automakers will sell a self-driving passenger vehicle manufactured without a steering wheel?",
     "url": "https://www.gjopen.com/questions/1633-before-1-january-2023-how-many-major-automakers-will-sell-a-self-driving-passenger-vehicle-manufactured-without-a-steering-wheel",
     "platform": "Good Judgment Open",
-    "description": "Many automakers are planning to unveil more autonomous vehicles in the coming years ([NHTSA](https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety), [U.S. News](https://cars.usnews.com/cars-trucks/cars-that-are-almost-self-driving,%20https://www.mobileye.com/future-of-mobility/history-autonomous-driving/)). For the purposes of this question, \"major automakers\" refers to any of the 50 motor vehicle manufacturers included by the International Organization of Motor Vehicle Manufacturers in its 2017 list ([OICA](http://www.oica.net/wp-content/uploads/World-Ranking-of-Manufacturers-1.pdf)). This question will be suspended on 30 June 2021. Vehicles on sale solely for fixed routes (e.g., shuttles) would not count. Presales would not count.\nCheck our [FAQ](https://www.gjopen.com/faq#question) or [ask us for help](/cdn-cgi/l/email-protection#4a29262b38232c23292b3e232524390a2d25252e203f2e2d272f243e6429252775393f28202f293e771b3f2f393e2325246f787a09262b38232c23292b3e232524). To learn more about Good Judgment and Superforecasting, [click here](https://goodjudgment.com/).\n",
+    "description": "Many automakers are planning to unveil more autonomous vehicles in the coming years ([NHTSA](https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety), [U.S. News](https://cars.usnews.com/cars-trucks/cars-that-are-almost-self-driving,%20https://www.mobileye.com/future-of-mobility/history-autonomous-driving/)). For the purposes of this question, \"major automakers\" refers to any of the 50 motor vehicle manufacturers included by the International Organization of Motor Vehicle Manufacturers in its 2017 list ([OICA](http://www.oica.net/wp-content/uploads/World-Ranking-of-Manufacturers-1.pdf)). This question will be suspended on 30 June 2021. Vehicles on sale solely for fixed routes (e.g., shuttles) would not count. Presales would not count.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "0",
@@ -4154,7 +4133,7 @@
     "title": "What will be the 2022 industry-wide average cost of Li-ion batteries used in battery-powered electric vehicles?",
     "url": "https://www.gjopen.com/questions/1583-what-will-be-the-2022-industry-wide-average-cost-of-li-ion-batteries-used-in-battery-powered-electric-vehicles",
     "platform": "Good Judgment Open",
-    "description": "Lowering the cost of battery packs through R&amp;D investments, manufacturing improvements, and economies of scale is a major consideration for bringing down the price of battery-powered electric vehicles (BEVs) and making them more competitive with gasoline-fueled internal combustion engines ([Clean Technica](https://cleantechnica.com/2020/02/12/teslas-advantage-with-its-battery-technology-low-cost/), [Financial Times](https://www.ft.com/content/8441929c-5e43-11ea-b0ab-339c2307bcd4)). This question will be suspended on 30 June 2021 and resolved using the Mack Institute's analysis for 2022, which will replicate an approach for calculating the industry-wide average cost of Li-ion batteries published in a [2015 Nature Climate Change study](https://mediamanager.sei.org/documents/Publications/SEI-Nature-pre-pub-2015-falling-costs-battery-packs-BEVs.pdf). The Mack Institute found that there was \"a 16% annual decline in the cost of battery packs between 2007 and 2019, and the industry-wide average cost of battery packs in 2019 was US$ 161 per kWh\" ([The Mack Institute](https://mackinstitute.wharton.upenn.edu/2020/electric-vehicle-battery-costs-decline/)).\n",
+    "description": "Lowering the cost of battery packs through R&amp;D investments, manufacturing improvements, and economies of scale is a major consideration for bringing down the price of battery-powered electric vehicles (BEVs) and making them more competitive with gasoline-fueled internal combustion engines ([Clean Technica](https://cleantechnica.com/2020/02/12/teslas-advantage-with-its-battery-technology-low-cost/), [Financial Times](https://www.ft.com/content/8441929c-5e43-11ea-b0ab-339c2307bcd4)). This question will be suspended on 30 June 2021 and resolved using the Mack Institute's analysis for 2022, which will replicate an approach for calculating the industry-wide average cost of Li-ion batteries published in a [2015 Nature Climate Change study](https://mediamanager.sei.org/documents/Publications/SEI-Nature-pre-pub-2015-falling-costs-battery-packs-BEVs.pdf). The Mack Institute found that there was \"a 16% annual decline in the cost of battery packs between 2007 and 2019, and the industry-wide average cost of battery packs in 2019 was US$ 161 per kWh\" ([The Mack Institute](https://mackinstitute.wharton.upenn.edu/2020/electric-vehicle-battery-costs-decline/)).\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Less than $80 per kWh",
@@ -4182,7 +4161,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "286",
+    "numforecasts": "287",
     "numforecasters": "97",
     "stars": 3
   },
@@ -4190,7 +4169,7 @@
     "title": "What total percentage of global vehicle sales in 2022 will be battery electric vehicles (BEVs) and plug-in hybrid electric vehicles (PHEVs)? ",
     "url": "https://www.gjopen.com/questions/1582-what-total-percentage-of-global-vehicle-sales-in-2022-will-be-battery-electric-vehicles-bevs-and-plug-in-hybrid-electric-vehicles-phevs",
     "platform": "Good Judgment Open",
-    "description": "Climate change and other environmental concerns continue to drive a greater focus on electric vehicles ([Reuters](https://www.reuters.com/article/us-autoshow-geneva-carbon-explainer/explainer-why-automakers-are-on-a-drive-to-sell-electric-cars-in-europe-idUSKBN20Q1MM), [NASDAQ](https://www.nasdaq.com/articles/oil-prices-are-tumbling-but-global-electric-vehicles-will-be-just-fine-says-ubs-2020-03-11), [CSP](https://www.cspdailynews.com/fuels/what-global-economic-slump-means-evs), [IEA](https://www.iea.org/reports/global-ev-outlook-2019)). This question will be suspended on 30 June 2021 and the outcome will be determined using open source data provided by [EV-volumes.com](http://www.ev-volumes.com/) for 2022, expected to be released in early 2023. The global BEV &amp; PHEV share for 2019 was 2.5% ([EV-volumes.com](http://www.ev-volumes.com/country/total-world-plug-in-vehicle-volumes/)). In the event that the relevant data for 2022 are not available from EV-volumes.com in 2023, this question will be resolved using data from other credible automotive industry sources.\n",
+    "description": "Climate change and other environmental concerns continue to drive a greater focus on electric vehicles ([Reuters](https://www.reuters.com/article/us-autoshow-geneva-carbon-explainer/explainer-why-automakers-are-on-a-drive-to-sell-electric-cars-in-europe-idUSKBN20Q1MM), [NASDAQ](https://www.nasdaq.com/articles/oil-prices-are-tumbling-but-global-electric-vehicles-will-be-just-fine-says-ubs-2020-03-11), [CSP](https://www.cspdailynews.com/fuels/what-global-economic-slump-means-evs), [IEA](https://www.iea.org/reports/global-ev-outlook-2019)). This question will be suspended on 30 June 2021 and the outcome will be determined using open source data provided by [EV-volumes.com](http://www.ev-volumes.com/) for 2022, expected to be released in early 2023. The global BEV &amp; PHEV share for 2019 was 2.5% ([EV-volumes.com](http://www.ev-volumes.com/country/total-world-plug-in-vehicle-volumes/)). In the event that the relevant data for 2022 are not available from EV-volumes.com in 2023, this question will be resolved using data from other credible automotive industry sources.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Less than 2.5%",
@@ -4204,29 +4183,29 @@
       },
       {
         "name": "More than 4.5% but less than 6.5%",
-        "probability": 0.44,
+        "probability": 0.43,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 6.5% and 8.5%, inclusive",
-        "probability": 0.37,
+        "probability": 0.39,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 8.5%",
-        "probability": 0.19,
+        "probability": 0.18,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "436",
-    "numforecasters": "148",
+    "numforecasts": "437",
+    "numforecasters": "149",
     "stars": 3
   },
   {
     "title": "Before 1 July 2021, will the Chilean government pass legislation that caps administrative fees and/or operating profits of the country's pension fund managers?",
     "url": "https://www.gjopen.com/questions/1411-before-1-july-2021-will-the-chilean-government-pass-legislation-that-caps-administrative-fees-and-or-operating-profits-of-the-country-s-pension-fund-managers",
     "platform": "Good Judgment Open",
-    "description": "Amid large-scale economic protests, calls for reform of Chile’s pension system have grown ([Financial Times](https://www.ft.com/content/4f8107f8-0fd4-11ea-a7e6-62bf4f9e548a), [AP](https://apnews.com/31ab8e9f5b9a467abdda53616edc72c2), [IPE](https://www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/10018671.fullarticle), [El Universal](https://www.eluniversal.com.mx/mundo/diez-puntos-para-entender-el-sistema-de-pensiones-que-no-quieren-los-chilenos) [in Spanish]). A constitutional amendment to the same effect would count. Legislation enabling or delegating new regulatory authority to cap administrative fees and/or operating profits would count.\nPlease note that this question is a companion to Question #1417, which closes in 2020 ([Question #1417](https://www.gjopen.com/questions/1417)). We will be analyzing the differences between forecasts with the different closing dates.\n",
+    "description": "Amid large-scale economic protests, calls for reform of Chile’s pension system have grown ([Financial Times](https://www.ft.com/content/4f8107f8-0fd4-11ea-a7e6-62bf4f9e548a), [AP](https://apnews.com/31ab8e9f5b9a467abdda53616edc72c2), [IPE](https://www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/10018671.fullarticle), [El Universal](https://www.eluniversal.com.mx/mundo/diez-puntos-para-entender-el-sistema-de-pensiones-que-no-quieren-los-chilenos) [in Spanish]). A constitutional amendment to the same effect would count. Legislation enabling or delegating new regulatory authority to cap administrative fees and/or operating profits would count.\nPlease note that this question is a companion to Question #1417, which closes in 2020 ([Question #1417](https://www.gjopen.com/questions/1417)). We will be analyzing the differences between forecasts with the different closing dates.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
@@ -4247,7 +4226,7 @@
     "title": "Before 1 July 2021, will the Chilean government pass legislation nationalizing private pension fund assets?",
     "url": "https://www.gjopen.com/questions/1412-before-1-july-2021-will-the-chilean-government-pass-legislation-nationalizing-private-pension-fund-assets",
     "platform": "Good Judgment Open",
-    "description": "Amid large-scale economic protests, calls for the reform of Chile’s pension system have grown ([Reuters](https://www.reuters.com/article/us-chile-protests-pensions/chiles-fiery-anger-fueled-by-fears-of-poverty-in-old-age-idUSKBN1XB3U8), [IPE](https://www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/10018671.fullarticle), [Economist](https://www.economist.com/the-americas/2019/06/08/chile-tinkers-with-its-ground-breaking-pensions-system), [Economist Intelligence Unit](https://www.eiu.com/industry/article/1898259973/chiles-pension-reform-makes-progress/2019-07-23), [Financial Times](https://www.ft.com/content/4f8107f8-0fd4-11ea-a7e6-62bf4f9e548a)). Examples of nationalization include, but are not limited to, the enactment of legislation compelling the divestiture or transfer of privately held pension funds to a public entity or the state, or a constitutional amendment to the same effect. The date or dates of actual asset nationalization would be immaterial.\nPlease note that this question is a companion to Question #1418, which closes in 2020 ([Question #1418](https://www.gjopen.com/questions/1418)). We will be analyzing the differences between forecasts with the different closing dates.\n",
+    "description": "Amid large-scale economic protests, calls for the reform of Chile’s pension system have grown ([Reuters](https://www.reuters.com/article/us-chile-protests-pensions/chiles-fiery-anger-fueled-by-fears-of-poverty-in-old-age-idUSKBN1XB3U8), [IPE](https://www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/www.ipe.com/reports/special-reports/global-defined-contribution/chile-chilean-pensions-under-pressure/10018671.fullarticle), [Economist](https://www.economist.com/the-americas/2019/06/08/chile-tinkers-with-its-ground-breaking-pensions-system), [Economist Intelligence Unit](https://www.eiu.com/industry/article/1898259973/chiles-pension-reform-makes-progress/2019-07-23), [Financial Times](https://www.ft.com/content/4f8107f8-0fd4-11ea-a7e6-62bf4f9e548a)). Examples of nationalization include, but are not limited to, the enactment of legislation compelling the divestiture or transfer of privately held pension funds to a public entity or the state, or a constitutional amendment to the same effect. The date or dates of actual asset nationalization would be immaterial.\nPlease note that this question is a companion to Question #1418, which closes in 2020 ([Question #1418](https://www.gjopen.com/questions/1418)). We will be analyzing the differences between forecasts with the different closing dates.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\n",
     "options": [
       {
         "name": "Yes",
