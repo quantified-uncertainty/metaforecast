@@ -871,37 +871,37 @@
     "options": [
       {
         "name": "Markus Söder",
-        "probability": 0.39258101850034316,
+        "probability": 0.39833716101653427,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.042062251982179624,
+        "probability": 0.04267898153748581,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock",
-        "probability": 0.042062251982179624,
+        "probability": 0.05272109484042366,
         "type": "PROBABILITY"
       },
       {
         "name": "Alice Weidel",
-        "probability": 0.008745616748770021,
+        "probability": 0.008873847646407942,
         "type": "PROBABILITY"
       },
       {
         "name": "Jens Spahn",
-        "probability": 0.025979626224287417,
+        "probability": 0.017573698280141218,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet",
-        "probability": 0.42062251982179627,
+        "probability": 0.39833716101653427,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.06794671474044402,
+        "probability": 0.08147805566247292,
         "type": "PROBABILITY"
       }
     ],
@@ -1030,22 +1030,22 @@
     "options": [
       {
         "name": "AfD",
-        "probability": 0.017844886753603295,
+        "probability": 0.00895400101439663,
         "type": "PROBABILITY"
       },
       {
         "name": "CDU + CSU",
-        "probability": 0.8750857927247769,
+        "probability": 0.8373649096796847,
         "type": "PROBABILITY"
       },
       {
         "name": "Greens",
-        "probability": 0.05353466026080989,
+        "probability": 0.10048378916156217,
         "type": "PROBABILITY"
       },
       {
         "name": "SPD",
-        "probability": 0.05353466026080989,
+        "probability": 0.053197300144356446,
         "type": "PROBABILITY"
       }
     ],
@@ -2039,22 +2039,22 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.20053447354355955,
+        "probability": 0.1806203362047116,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.7520042757883484,
+        "probability": 0.7718817786526136,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.0044895777659005875,
+        "probability": 0.004493043189171929,
         "type": "PROBABILITY"
       },
       {
         "name": "Plaid Cymru",
-        "probability": 0.04297167290219133,
+        "probability": 0.04300484195350275,
         "type": "PROBABILITY"
       }
     ],
