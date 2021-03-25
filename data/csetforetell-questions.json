@@ -1,5 +1,41 @@
 [
   {
+    "title": "What percentage of software engineer job postings between July 1 and September 30, 2021, inclusive, will allow for remote work?",
+    "url": "https://www.cset-foretell.com/questions/123-what-percentage-of-software-engineer-job-postings-between-july-1-and-september-30-2021-inclusive-will-allow-for-remote-work",
+    "platform": "CSET-foretell",
+    "description": "Related question. This question was previously issued for 2020 Q3. You can view those forecasts here. A version of the question issued for 2021 Q1 was voided due to an error in the reported historical data. You can view the voided question here.Context. COVID-19 is reshaping the global economy by leading to an increase in jobs that can be performed remotely. A remote tech industry would have different properties than a non-remote tech industry. Most significantly, location would be a less of a constraint on where people work and who companies hire. For more on this metric, see the related metric analysis: \"Tech Jobs Are Going Remote; UK Leads the Way.\"Data and resolution details. This question resolves based on Burning Glass data available as of October 1, 2021. It includes all countries for which Burning Glass has data: the United States, United Kingdom, Canada, Australia, New Zealand, and Singapore.The data for 2021 Q1 includes data only through March 9. We will update the graph to reflect the final three weeks of 2021 Q1 in early April. The data underlying the graph is here.This question is a metric for the following scenarios:Three Possible 2025 Worlds that Should Inform Policy Today\n",
+    "options": [
+      {
+        "name": "Less than 5.5%",
+        "probability": 0.0507,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 5.5% but less than or equal to 7%",
+        "probability": 0.1164,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 7% and 9.5%, inclusive",
+        "probability": 0.2914,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 9.5% and 12%, inclusive",
+        "probability": 0.2207,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 12%",
+        "probability": 0.3207,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "14",
+    "numforecasters": "14",
+    "stars": 2
+  },
+  {
     "title": "Will Hu Chunhua be a member of the Standing Committee of the Politburo of the Chinese Communist Party's Central Committee on December 31, 2022?",
     "url": "https://www.cset-foretell.com/questions/122-will-hu-chunhua-be-a-member-of-the-standing-committee-of-the-politburo-of-the-chinese-communist-party-s-central-committee-on-december-31-2022",
     "platform": "CSET-foretell",
@@ -7,17 +43,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.68,
+        "probability": 0.72,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.32,
+        "probability": 0.28,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "10",
-    "numforecasters": "9",
+    "numforecasts": "11",
+    "numforecasters": "10",
     "stars": 2
   },
   {
@@ -28,17 +64,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.58,
+        "probability": 0.62,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.42,
+        "probability": 0.38,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "10",
-    "numforecasters": "9",
+    "numforecasts": "11",
+    "numforecasters": "10",
     "stars": 2
   },
   {
@@ -49,17 +85,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.88,
+        "probability": 0.84,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.12,
+        "probability": 0.16,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "10",
-    "numforecasters": "9",
+    "numforecasts": "11",
+    "numforecasters": "10",
     "stars": 2
   },
   {
@@ -70,68 +106,68 @@
     "options": [
       {
         "name": "Less than 7,500",
-        "probability": 0.035,
+        "probability": 0.0327,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 7,500 and 9,500, inclusive",
-        "probability": 0.1193,
+        "probability": 0.114,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 9,500 but less than or equal to 11,500",
-        "probability": 0.2514,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 11,500 but less than or equal to 13,500",
-        "probability": 0.285,
+        "probability": 0.3093,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 13,500",
-        "probability": 0.3093,
+        "probability": 0.294,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "22",
-    "numforecasters": "20",
+    "numforecasts": "24",
+    "numforecasters": "21",
     "stars": 2
   },
   {
     "title": "How many U.S. job postings requiring machine learning skills will be published between July 1 and December 31, 2021, inclusive?",
     "url": "https://www.cset-foretell.com/questions/116-how-many-postings-for-u-s-jobs-requiring-machine-learning-skills-will-be-published-between-july-1-and-december-31-2021-inclusive",
     "platform": "CSET-foretell",
-    "description": "Related questions. This question was previously issued for 2020 Q3 and 2021 Q1. You can view those forecasts here and here. For 2020 Q3, the answer was 39,364 and the median crowd forecast was 37,271. We will add the resolution for the 2021 Q1 question as soon as the data is available. Context. Job postings reflect the priorities and expectations of employers. They provide hints about future research and development. Data and resolution details. This question is based on data from Burning Glass Technologies. The date of a job posting is the date Burning Glass retrieves the data. The question resolves when CSET receives Burning Glass data through December 31, 2021. The data underlying the graph is here.This question is a metric for the following scenarios: The Impact of COVID-19 on the ML Research Field Three Possible 2025 Worlds that Should Inform Policy Today To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
+    "description": "Related questions. This question was previously issued for 2020 Q3 and 2021 Q1. You can view those forecasts here and here. For 2020 Q3, the answer was 39,364 and the median crowd forecast was 37,271. We will add the resolution for the 2021 Q1 question as soon as the data is available. Context. Job postings reflect the priorities and expectations of employers. They provide hints about future research and development. Data and resolution details. This question is based on data from Burning Glass Technologies. The date of a job posting is the date Burning Glass retrieves the data. The question resolves when CSET receives Burning Glass data through December 31, 2021. Through February 2021, 34,663 U.S. job postings requiring machine learning skills were posted, which puts the first half of 2021 on pace for 106,328 job postings. The data underlying the graph is here.This question is a metric for the following scenarios: The Impact of COVID-19 on the ML Research Field Three Possible 2025 Worlds that Should Inform Policy Today To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
     "options": [
       {
         "name": "Less than 70,000",
-        "probability": 0.1563,
+        "probability": 0.15789999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 70,000 and 90,000, inclusive",
-        "probability": 0.3044,
+        "probability": 0.3221,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 90,000 but less than or equal to 110,000",
-        "probability": 0.29,
+        "probability": 0.2916,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 110,000 but less than or equal to 130,000",
-        "probability": 0.15439999999999998,
+        "probability": 0.1405,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 130,000",
-        "probability": 0.095,
+        "probability": 0.08789999999999999,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "23",
-    "numforecasters": "23",
+    "numforecasts": "27",
+    "numforecasters": "27",
     "stars": 2
   },
   {
@@ -142,32 +178,32 @@
     "options": [
       {
         "name": "Less than $400 billion",
-        "probability": 0.1,
+        "probability": 0.1533,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $400 billion and $525 billion, inclusive",
-        "probability": 0.14400000000000002,
+        "probability": 0.1592,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $525 billion but less than or equal to $650 billion",
-        "probability": 0.504,
+        "probability": 0.4592,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $650 billion but less than or equal to $775 billion",
-        "probability": 0.239,
+        "probability": 0.2158,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $775 billion",
-        "probability": 0.013000000000000001,
+        "probability": 0.0125,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "16",
-    "numforecasters": "14",
+    "numforecasts": "19",
+    "numforecasters": "17",
     "stars": 2
   },
   {
@@ -178,7 +214,7 @@
     "options": [
       {
         "name": "Less than 3%",
-        "probability": 0.242,
+        "probability": 0.228,
         "type": "PROBABILITY"
       },
       {
@@ -188,22 +224,22 @@
       },
       {
         "name": "More than 4.5% but less than or equal to 6%",
-        "probability": 0.32899999999999996,
+        "probability": 0.307,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 6% but less than or equal to 7.5%",
-        "probability": 0.07,
+        "probability": 0.096,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 7.5%",
-        "probability": 0.036000000000000004,
+        "probability": 0.046,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "11",
-    "numforecasters": "10",
+    "numforecasts": "13",
+    "numforecasters": "12",
     "stars": 2
   },
   {
@@ -259,8 +295,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "105",
-    "numforecasters": "92",
+    "numforecasts": "106",
+    "numforecasters": "93",
     "stars": 3
   },
   {
@@ -280,8 +316,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "158",
-    "numforecasters": "127",
+    "numforecasts": "160",
+    "numforecasters": "129",
     "stars": 3
   },
   {
@@ -328,32 +364,32 @@
     "options": [
       {
         "name": "Less than $13 billion",
-        "probability": 0.0341,
+        "probability": 0.0345,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $13 billion and $17 billion, inclusive",
-        "probability": 0.1348,
+        "probability": 0.1317,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $17 billion but less than or equal to $21 billion",
-        "probability": 0.42369999999999997,
+        "probability": 0.42590000000000006,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $21 billion but less than or equal to $25 billion",
-        "probability": 0.32439999999999997,
+        "probability": 0.32549999999999996,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $25 billion",
-        "probability": 0.083,
+        "probability": 0.0824,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "43",
-    "numforecasters": "39",
+    "numforecasts": "45",
+    "numforecasters": "41",
     "stars": 2
   },
   {
@@ -400,32 +436,32 @@
     "options": [
       {
         "name": "Less than $200 million",
-        "probability": 0.053200000000000004,
+        "probability": 0.0533,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $200 million and $350 million, inclusive",
-        "probability": 0.1973,
+        "probability": 0.19899999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $350 million but less than or equal to $500 million",
-        "probability": 0.3546,
+        "probability": 0.35369999999999996,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $500 million but less than or equal to $650 million",
-        "probability": 0.2427,
+        "probability": 0.24230000000000002,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $650 million",
-        "probability": 0.1522,
+        "probability": 0.1517,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "98",
-    "numforecasters": "86",
+    "numforecasts": "99",
+    "numforecasters": "87",
     "stars": 2
   },
   {
@@ -580,17 +616,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.45,
+        "probability": 0.44,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.55,
+        "probability": 0.56,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "123",
-    "numforecasters": "82",
+    "numforecasts": "124",
+    "numforecasters": "83",
     "stars": 3
   },
   {
@@ -601,22 +637,22 @@
     "options": [
       {
         "name": "Zero",
-        "probability": 0.3738,
+        "probability": 0.3785,
         "type": "PROBABILITY"
       },
       {
         "name": "One",
-        "probability": 0.3555,
+        "probability": 0.3503,
         "type": "PROBABILITY"
       },
       {
         "name": "Two or more",
-        "probability": 0.2707,
+        "probability": 0.2712,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "98",
-    "numforecasters": "84",
+    "numforecasts": "99",
+    "numforecasters": "85",
     "stars": 2
   },
   {
@@ -627,32 +663,32 @@
     "options": [
       {
         "name": "Less than 20%",
-        "probability": 0.0965,
+        "probability": 0.0959,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 25%, inclusive",
-        "probability": 0.17800000000000002,
+        "probability": 0.1766,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 25% but less than or equal to 30%",
-        "probability": 0.36229999999999996,
+        "probability": 0.361,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 30% but less than or equal to 35%",
-        "probability": 0.2463,
+        "probability": 0.24760000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 35%",
-        "probability": 0.11699999999999999,
+        "probability": 0.11900000000000001,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "63",
-    "numforecasters": "58",
+    "numforecasts": "64",
+    "numforecasters": "59",
     "stars": 2
   },
   {
@@ -672,8 +708,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "283",
-    "numforecasters": "182",
+    "numforecasts": "284",
+    "numforecasters": "183",
     "stars": 3
   },
   {
@@ -684,27 +720,27 @@
     "options": [
       {
         "name": "Before February 17, 2021",
-        "probability": 0.037200000000000004,
+        "probability": 0.036699999999999997,
         "type": "PROBABILITY"
       },
       {
         "name": "Between February 17 and May 19, 2021, inclusive",
-        "probability": 0.105,
+        "probability": 0.1043,
         "type": "PROBABILITY"
       },
       {
         "name": "After May 19, but before or equal to November 17, 2021",
-        "probability": 0.23800000000000002,
+        "probability": 0.2349,
         "type": "PROBABILITY"
       },
       {
         "name": "After November 17, 2021",
-        "probability": 0.6198,
+        "probability": 0.6241,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "207",
-    "numforecasters": "128",
+    "numforecasts": "210",
+    "numforecasters": "129",
     "stars": 3
   },
   {
@@ -715,32 +751,32 @@
     "options": [
       {
         "name": "Less than 59%",
-        "probability": 0.131,
+        "probability": 0.12990000000000002,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 59% and 66%, inclusive",
-        "probability": 0.188,
+        "probability": 0.18719999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 66% but less than or equal to 73%",
-        "probability": 0.2586,
+        "probability": 0.2601,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 73% but less than or equal to 80%",
-        "probability": 0.2828,
+        "probability": 0.2841,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 80%",
-        "probability": 0.13949999999999999,
+        "probability": 0.1387,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "197",
-    "numforecasters": "160",
+    "numforecasts": "198",
+    "numforecasters": "161",
     "stars": 3
   },
   {
@@ -844,32 +880,32 @@
     "options": [
       {
         "name": "Less than 675",
-        "probability": 0.5096,
+        "probability": 0.5332,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 675 and 750, inclusive",
-        "probability": 0.2525,
+        "probability": 0.23620000000000002,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 750 but less than or equal to 825",
-        "probability": 0.1329,
+        "probability": 0.1277,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 825 but less than or equal to 900",
-        "probability": 0.0692,
+        "probability": 0.0674,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 900",
-        "probability": 0.0358,
+        "probability": 0.0355,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "126",
-    "numforecasters": "75",
+    "numforecasts": "129",
+    "numforecasters": "77",
     "stars": 3
   }
 ]

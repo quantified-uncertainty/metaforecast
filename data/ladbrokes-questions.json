@@ -1801,42 +1801,80 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.45830645184422397,
+        "probability": 0.4553965453928366,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.45830645184422397,
+        "probability": 0.4553965453928366,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.004560263202430089,
+        "probability": 0.0045313089093814585,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.026959203049660235,
+        "probability": 0.026788032081931566,
         "type": "PROBABILITY"
       },
       {
         "name": "Northern Independence Party (bets void if not registered as a party in time)",
-        "probability": 0.04364823350897371,
+        "probability": 0.04337109956122253,
         "type": "PROBABILITY"
       },
       {
         "name": "SDP",
-        "probability": 0.004560263202430089,
+        "probability": 0.0045313089093814585,
         "type": "PROBABILITY"
       },
       {
         "name": "Heritage Party",
-        "probability": 0.001829566674028838,
+        "probability": 0.0018179502810093276,
         "type": "PROBABILITY"
       },
       {
         "name": "UKIP",
-        "probability": 0.001829566674028838,
+        "probability": 0.0018179502810093276,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Womens Equality Party",
+        "probability": 0.0018179502810093276,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "North East Party",
+        "probability": 0.0045313089093814585,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Airdrie And Shotts By-election: To Win",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "Ladbrokes",
+    "options": [
+      {
+        "name": "Conservatives",
+        "probability": 0.02695209479152588,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 0.1309101747016971,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrats",
+        "probability": 0.009072982405068118,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "SNP",
+        "probability": 0.8330647481017089,
         "type": "PROBABILITY"
       }
     ],

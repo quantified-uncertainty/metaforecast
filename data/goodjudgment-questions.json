@@ -51,7 +51,7 @@
       },
       {
         "name": "More than 24 million but less than 27 million barrels per day",
-        "probability": 0.47,
+        "probability": 0.46,
         "type": "PROBABILITY"
       },
       {
@@ -61,7 +61,7 @@
       },
       {
         "name": "More than 30 million barrels per day",
-        "probability": 0.01,
+        "probability": 0.02,
         "type": "PROBABILITY"
       }
     ],
@@ -94,12 +94,12 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.83,
+        "probability": 0.88,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.16,
+        "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
@@ -133,7 +133,7 @@
       },
       {
         "name": "Between 200 million and 500 million, inclusive",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -143,7 +143,7 @@
       },
       {
         "name": "Between 960 million and 1.6 billion, inclusive",
-        "probability": 0.75,
+        "probability": 0.76,
         "type": "PROBABILITY"
       },
       {
@@ -191,7 +191,7 @@
     "title": "When will enough doses of FDA-approved COVID-19 vaccine(s) to inoculate 100 million people be distributed in the United States?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "This question was commissioned by <a href=\"https://www.openphilanthropy.org/blog/forecasting-covid-19-pandemic\" target=\"_blank\">Open Philanthropy</a>.Dozens of <a href=\"https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines\" target=\"_blank\">companies</a> are trying to <a href=\"https://www.economist.com/leaders/2020/08/06/the-world-is-spending-nowhere-near-enough-on-a-coronavirus-vaccine\" target=\"_blank\">develop</a> a <a href=\"https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html\" target=\"_blank\">viable</a> vaccine for COVID-19. The <a href=\"https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19\" target=\"_blank\">FDA</a> has authorized <a href=\"https://www.cnbc.com/2020/12/12/how-fedex-ups-plan-to-distribute-fda-approved-covid-vaccine-when-will-you-get-the-coronavirus-vaccine.html\" target=\"_blank\">Pfizer</a>'s COVID-19 vaccine for emergency use and is executing its plan for distribution. Information on FDA approval processes and circumstances when those processes can be waived can be found <a href=\"https://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/vaccine-development-101\" target=\"_blank\">here</a> and <a href=\"https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization\" target=\"_blank\">here</a>. \"<a href=\"https://www.fda.gov/news-events/public-health-focus/expanded-access\" target=\"_blank\">Compassionate use</a>\" and \"<a href=\"https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization\" target=\"_blank\">emergency use</a>\" authorizations would count as approval, and any vaccine doses distributed in the United States prior to its approval would also count. Reporting from credible public health sources, such as the CDC and FDA, will be used to determine the number of doses distributed. Approximately <a href=\"https://www.cdc.gov/flu/prevent/vaccinesupply-2018.htm\" target=\"_blank\">169.1</a> million vaccine doses for the 2018-2019 flu season were distributed in the United States. If an approved COVID-19 vaccine requires the administration of more than one dose, then the threshold would be the total number of doses needed to inoculate 100 million people (e.g., if two doses are required, then 200 million doses would need to be distributed to resolve the question).",
+    "description": "This question was commissioned by <a href=\"https://www.openphilanthropy.org/blog/forecasting-covid-19-pandemic\" target=\"_blank\">Open   Philanthropy</a>.Dozens of <a href=\"https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines\" target=\"_blank\">companies</a> are trying to <a href=\"https://www.economist.com/leaders/2020/08/06/the-world-is-spending-nowhere-near-enough-on-a-coronavirus-vaccine\" target=\"_blank\">develop</a> a <a href=\"https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html\" target=\"_blank\">viable</a> vaccine for COVID-19. The <a href=\"https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19\" target=\"_blank\">FDA</a> has authorized <a href=\"https://www.cnbc.com/2020/12/12/how-fedex-ups-plan-to-distribute-fda-approved-covid-vaccine-when-will-you-get-the-coronavirus-vaccine.html\" target=\"_blank\">Pfizer</a>'s COVID-19 vaccine for emergency use and is executing its plan for distribution. Information on FDA approval processes and circumstances when those processes can be waived can be found <a href=\"https://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/vaccine-development-101\" target=\"_blank\">here</a> and <a href=\"https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization\" target=\"_blank\">here</a>. \"<a href=\"https://www.fda.gov/news-events/public-health-focus/expanded-access\" target=\"_blank\">Compassionate   use</a>\" and \"<a href=\"https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization\" target=\"_blank\">emergency   use</a>\" authorizations would count as approval, and any vaccine doses distributed in the United States prior to its approval would also count. Reporting from credible public health sources, such as the CDC and FDA, will be used to determine the number of doses distributed. Approximately <a href=\"https://www.cdc.gov/flu/prevent/vaccinesupply-2018.htm\" target=\"_blank\">169.1</a> million vaccine doses for the 2018-2019 flu season were distributed in the United States. If an approved COVID-19 vaccine requires the administration of more than one dose, then the threshold would be the total number of doses needed to inoculate 100 million people (e.g., if two doses are required, then 200 million doses would need to be distributed to resolve the question).",
     "options": [
       {
         "name": "Before 1 February 2021",
@@ -200,12 +200,12 @@
       },
       {
         "name": "Between 1 February 2021 and 31 March 2021",
-        "probability": 0.71,
+        "probability": 0.74,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 April 2021 and 31 May 2021",
-        "probability": 0.29,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
@@ -302,12 +302,12 @@
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.04,
+        "probability": 0.05,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -383,12 +383,12 @@
     "options": [
       {
         "name": "Less than 23%",
-        "probability": 0.29,
+        "probability": 0.28,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 23% and 27%, inclusive",
-        "probability": 0.69,
+        "probability": 0.7,
         "type": "PROBABILITY"
       },
       {
