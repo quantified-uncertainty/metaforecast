@@ -7,16 +7,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.6352367777225026700749571570612815",
+        "probability": "0.632638237361654930744949974442138",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.3647632222774973299250428429387185",
+        "probability": "0.367361762638345069255050025557862",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "305",
+    "numforecasts": "308",
     "stars": 4
   },
   {
@@ -27,28 +27,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.4934673987490112410882497658828175",
+        "probability": "0.4904149760276465371688331535796428",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.5065326012509887589117502341171825",
+        "probability": "0.5095850239723534628311668464203572",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "144",
+    "numforecasts": "145",
     "stars": 4
-  },
-  {
-    "title": "Will Kygo's Nifty Gateway drop generate over $5M in total sales?",
-    "url": "https://polymarket.com/market/will-kygo-s-nifty-gateway-drop-generate-over-5-m-in-total-sales",
-    "address": "0x3e7B280f19DD16205d71Fe4A723eE6AD8C6FCAc8",
-    "description": "This is a market on whether the Kygo’s NFT drop on March 24, 2021 will, on aggregate, generate over $5 million in total sales. The release is currently scheduled for 2 PM ET on March 24 via Nifty Gateway. This market will resolve to \"Yes” if the sum of every official Kygo NFT sold is greater than $5 million USD (not including secondary sales) and “No” otherwise. This market will resolve on March 25 according to data collected for the entirety of the Kygo drop. If the release is delayed, resolution of this market will be delayed up to 30 days. If canceled, this market will resolve to 50:50. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "outcomes": [
-      "Yes",
-      "No"
-    ],
-    "options": []
   },
   {
     "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
@@ -71,6 +60,46 @@
     "stars": 4
   },
   {
+    "title": "How many more tweets will be on the @mtgreenee account on March 30, 2021?",
+    "url": "https://polymarket.com/market/how-many-more-tweets-will-be-on-the-mtgreenee-account-on-march-30-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on the number of tweets that will be posted to Marjorie Taylor Greene’s Twitter account prior to the resolution date, March 30, 2021 at 3:00 PM ET. \n\nAt 3:00 PM ET on the resolution date, the number of total tweets posted by the Twitter account @mtgreenee, shall exceed 11,464  (the \"Baseline\") by the number or range identified in the contract, as indicated by the number under the label \"TWEETS\" on the account detail viewable on the desktop version of https://tweetdeck.twitter.com/. This account detail can be viewed by using a Twitter account to log into the website https://tweetdeck.twitter.com/, searching for @mtgreenee, then clicking the verified account labeled “@mtgreenee” from the search results. Should the total tweets reported by that source at that time appear not to include one or more tweets posted by @mtgreenee just before 3:00pm, and still available on that account's timeline at 3:00pm, Polymarket may use additional sources in determining whether any such tweet(s) should be included in the market's resolution. The number by which the total tweets on the resolution date exceeds the Baseline may not equal the number of tweets actually posted over that time period, in light of numerous factors, including but not limited to the fact that the account's total tweets upon launch of the market may differ from the Baseline, tweets may be deleted prior to the resolution date of this market, and specialized tweets such as quotes, retweets, replies, promoted tweets, may or may not be included in that total.\n\nNeither Marjorie Taylor Greene, nor any authorized user of the account in question, need be the author of any such tweets, nor must any authorized user maintain control of the account. Should the resolution source be unavailable at that date and time, for any reason other than deletion, deactivation, or a change in the privacy settings of the account, Polymarket may postpone settlement of this market until the source becomes available. In such a case, the account's total tweets will be measured once Polymarket becomes aware that the source has again become available. If Polymarket deems the source to be permanently unavailable, this market will resolve to the lowest bracket. Should an updated count of total tweets not be available from twitter.com at the date and time of expiration, due to apparent deletion, deactivation, suspension, or a change in privacy settings by a user of the account or by Twitter, this market will resolve to the lowest bracket. The blocking of one or more Twitter accounts by @mtgreenee will not be considered to render the settlement source unavailable.\n\nShould the navigation, layout, URL, or labeling of the elements of the settlement source be altered by Twitter or Tweetdeck prior to expiration (other than via deletion or deactivation of the account), this market will still be resolved according to the aforementioned formula, so long as Polymarket can reasonably determine the relevant number of total tweets from twitter.com. The merging, migration, or other combination of one or more Twitter accounts will not in and of itself cause the settlement source to be considered unavailable, so long as an updated count of total tweets can be determined according to the aforementioned formula, even if such combination causes an increase or decrease in that count that does not represent the number of tweets posted to the account during the time period in question.\n\nIn the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
+    "options": [
+      {
+        "name": "Less than 70",
+        "probability": "0.1925806659328219287092287968871445",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "70-80",
+        "probability": "0.2290186254410298016556926647905388",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "81-90",
+        "probability": "0.2436853968287872885728572749438313",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "91-100",
+        "probability": "0.1145709748766955799705387814839873",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "101-110",
+        "probability": "0.09892070700247320647702834135175433",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 110",
+        "probability": "0.1212236299181921946146541405427435",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "236",
+    "stars": 4
+  },
+  {
     "title": "Will the US have fewer than 35,000 new COVID-19 cases on any day before April 7, 2021?",
     "url": "https://polymarket.com/market/will-the-us-have-fewer-than-35000-new-covid-19-cases-on-any-day-before-april-7-2021",
     "platform": "PolyMarket",
@@ -78,16 +107,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.2250027741956663616037131001744237",
+        "probability": "0.2242273527492839511189916586005524",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.7749972258043336383962868998255763",
+        "probability": "0.7757726472507160488810083413994476",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "392",
+    "numforecasts": "403",
     "stars": 4
   },
   {
@@ -98,33 +127,42 @@
     "options": [
       {
         "name": "Texas",
-        "probability": "0.1893501096239316465683727880520586",
+        "probability": "0.1841513365764560725353508902079281",
         "type": "PROBABILITY"
       },
       {
         "name": "Florida",
-        "probability": "0.7220494964451650249984403972764872",
+        "probability": "0.7292888892908292455463694859164885",
         "type": "PROBABILITY"
       },
       {
         "name": "California",
-        "probability": "0.08860039393090332843318681467145425",
+        "probability": "0.08655977413271468191827962387558335",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "225",
+    "numforecasts": "229",
     "stars": 4
   },
   {
     "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
     "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1-1",
-    "address": "0x36BB6f09327d1A7D0930668345655d6A6e3c6b20",
+    "platform": "PolyMarket",
     "description": "This is a market on if the federal minimum wage will be $9.50 per hour or higher by April 1, 12:00pm EST. This market will resolve to \"Yes\" if the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point prior to the resolution date, and \"No\" otherwise. The primary resolution source for this market will be the U.S. Department of Labor's website, https://www.dol.gov/.",
-    "outcomes": [
-      "Yes",
-      "No"
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.00309456559676238734189039658378795",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9969054344032376126581096034162121",
+        "type": "PROBABILITY"
+      }
     ],
-    "options": []
+    "numforecasts": "185",
+    "stars": 3
   },
   {
     "title": "Will weekly jobless claims exceed 650K for the week ending on April 3?",
@@ -134,16 +172,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.4566924166870046860106226526705108",
+        "probability": "0.5094639873352057272485228888769691",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.5433075833129953139893773473294892",
+        "probability": "0.4905360126647942727514771111230309",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "73",
+    "numforecasts": "76",
     "stars": 4
   },
   {
@@ -167,46 +205,6 @@
     "stars": 3
   },
   {
-    "title": "How many more tweets will be on the @mtgreenee account on March 30, 2021?",
-    "url": "https://polymarket.com/market/how-many-more-tweets-will-be-on-the-mtgreenee-account-on-march-30-2021-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on the number of tweets that will be posted to Marjorie Taylor Greene’s Twitter account prior to the resolution date, March 30, 2021 at 3:00 PM ET. \n\nAt 3:00 PM ET on the resolution date, the number of total tweets posted by the Twitter account @mtgreenee, shall exceed 11,464  (the \"Baseline\") by the number or range identified in the contract, as indicated by the number under the label \"TWEETS\" on the account detail viewable on the desktop version of https://tweetdeck.twitter.com/. This account detail can be viewed by using a Twitter account to log into the website https://tweetdeck.twitter.com/, searching for @mtgreenee, then clicking the verified account labeled “@mtgreenee” from the search results. Should the total tweets reported by that source at that time appear not to include one or more tweets posted by @mtgreenee just before 3:00pm, and still available on that account's timeline at 3:00pm, Polymarket may use additional sources in determining whether any such tweet(s) should be included in the market's resolution. The number by which the total tweets on the resolution date exceeds the Baseline may not equal the number of tweets actually posted over that time period, in light of numerous factors, including but not limited to the fact that the account's total tweets upon launch of the market may differ from the Baseline, tweets may be deleted prior to the resolution date of this market, and specialized tweets such as quotes, retweets, replies, promoted tweets, may or may not be included in that total.\n\nNeither Marjorie Taylor Greene, nor any authorized user of the account in question, need be the author of any such tweets, nor must any authorized user maintain control of the account. Should the resolution source be unavailable at that date and time, for any reason other than deletion, deactivation, or a change in the privacy settings of the account, Polymarket may postpone settlement of this market until the source becomes available. In such a case, the account's total tweets will be measured once Polymarket becomes aware that the source has again become available. If Polymarket deems the source to be permanently unavailable, this market will resolve to the lowest bracket. Should an updated count of total tweets not be available from twitter.com at the date and time of expiration, due to apparent deletion, deactivation, suspension, or a change in privacy settings by a user of the account or by Twitter, this market will resolve to the lowest bracket. The blocking of one or more Twitter accounts by @mtgreenee will not be considered to render the settlement source unavailable.\n\nShould the navigation, layout, URL, or labeling of the elements of the settlement source be altered by Twitter or Tweetdeck prior to expiration (other than via deletion or deactivation of the account), this market will still be resolved according to the aforementioned formula, so long as Polymarket can reasonably determine the relevant number of total tweets from twitter.com. The merging, migration, or other combination of one or more Twitter accounts will not in and of itself cause the settlement source to be considered unavailable, so long as an updated count of total tweets can be determined according to the aforementioned formula, even if such combination causes an increase or decrease in that count that does not represent the number of tweets posted to the account during the time period in question.\n\nIn the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
-    "options": [
-      {
-        "name": "Less than 70",
-        "probability": "0.1659067357295232762815727317227981",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "70-80",
-        "probability": "0.2281908249115604565012079476027038",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "81-90",
-        "probability": "0.2113887982645977022523220577451319",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "91-100",
-        "probability": "0.1681856204909272683047156653624878",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "101-110",
-        "probability": "0.09551803656817304150491049924470857",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 110",
-        "probability": "0.1308099840352182551552710983221696",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "186",
-    "stars": 4
-  },
-  {
     "title": "Will Donald Trump be President of the USA on March 31, 2021?",
     "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-march-31-2021",
     "platform": "PolyMarket",
@@ -214,16 +212,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.001350535220533159165944515575157176",
+        "probability": "0.001960969181035111127905723783502262",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9986494647794668408340554844248428",
+        "probability": "0.9980390308189648888720942762164977",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "4246",
+    "numforecasts": "4255",
     "stars": 3
   },
   {
@@ -234,16 +232,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.3717093232843742962435223993686275",
+        "probability": "0.2949590380041326626799494454650625",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.6282906767156257037564776006313725",
+        "probability": "0.7050409619958673373200505545349375",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "6721",
+    "numforecasts": "6873",
     "stars": 4
   },
   {
@@ -254,16 +252,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.09503434264637755008380164872473426",
+        "probability": "0.09261473045924926386223637883930387",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9049656573536224499161983512752657",
+        "probability": "0.9073852695407507361377636211606961",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "386",
+    "numforecasts": "387",
     "stars": 3
   },
   {
@@ -274,16 +272,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.03930005440862140608560862618307552",
+        "probability": "0.03015408132905653413744356708336372",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9606999455913785939143913738169245",
+        "probability": "0.9698459186709434658625564329166363",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "701",
+    "numforecasts": "704",
     "stars": 3
   },
   {
@@ -309,13 +307,22 @@
   {
     "title": "Will Donald Trump be federally charged by June 1st? ",
     "url": "https://polymarket.com/market/will-donald-trump-be-federally-charged-by-june-1st-1",
-    "address": "0xDF35eC97FEC070D7c565dF86C1bb9d2f15D6470A",
+    "platform": "PolyMarket",
     "description": "This is a market on whether President Donald J. Trump shall be indicted or otherwise formally charged with a federal crime, as publicly confirmed before June 1st, 2021 12:00 PM ET by an authorized representative of the charging agency(ies) or judicial venue(s). If he is charged with a federal crime on or before June 1st, 2021 12:00 PM ET, this market will resolve to “Yes”. If he is charged with any crime that is not a federal crime or is not charged with any crimes, this market will resolve “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). \n",
-    "outcomes": [
-      "Yes",
-      "No"
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.05638763263889912282576966254427022",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9436123673611008771742303374557298",
+        "type": "PROBABILITY"
+      }
     ],
-    "options": []
+    "numforecasts": "80",
+    "stars": 3
   },
   {
     "title": "Will DeFi Dominance on CoinGecko be 5.5% or higher on March 30?",
@@ -325,17 +332,37 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.03310473569021722475727672094680598",
+        "probability": "0.03516907366006281209881429690242127",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.966895264309782775242723279053194",
+        "probability": "0.9648309263399371879011857030975787",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "64",
+    "numforecasts": "65",
     "stars": 2
+  },
+  {
+    "title": "Will Bitcoin ($BTC) be above $55k on April 1, 2021?",
+    "url": "https://polymarket.com/market/will-bitcoin-btc-be-above-55k-on-april-1-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if the USD price of Bitcoin $BTC will be above $55000 on April 1, 2021, 12:00 PM ET, according to coinmarketcap.com/currencies/bitcoin/. This market will resolve to “Yes“ if BTC is trading above $55000 according to Coinmarketcap on the resolution date, and “No“ otherwise. If price data is temporarily unavailable on Coinmarketcap at the time of resolution, coingecko.com/en/coins/bitcoin will instead be referenced. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.3487474591840245498233588391771221",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.6512525408159754501766411608228779",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "2102",
+    "stars": 4
   },
   {
     "title": "Will American mask usage be 75% or higher on April 14th, 2021?",
@@ -365,37 +392,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.07105258596577837608798404930567936",
+        "probability": "0.05862215903273275371239771245583309",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9289474140342216239120159506943206",
+        "probability": "0.9413778409672672462876022875441669",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "91",
+    "numforecasts": "92",
     "stars": 3
-  },
-  {
-    "title": "Will Bitcoin ($BTC) be above $55k on April 1, 2021?",
-    "url": "https://polymarket.com/market/will-bitcoin-btc-be-above-55k-on-april-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the USD price of Bitcoin $BTC will be above $55000 on April 1, 2021, 12:00 PM ET, according to coinmarketcap.com/currencies/bitcoin/. This market will resolve to “Yes“ if BTC is trading above $55000 according to Coinmarketcap on the resolution date, and “No“ otherwise. If price data is temporarily unavailable on Coinmarketcap at the time of resolution, coingecko.com/en/coins/bitcoin will instead be referenced. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.3387749311564403192047464722029106",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.6612250688435596807952535277970894",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "1927",
-    "stars": 4
   },
   {
     "title": "Will AstraZeneca's COVID-19 vaccine receive FDA approval or Emergency Use Authorization (EUA) by May 1, 2021?",
@@ -436,5 +443,25 @@
     ],
     "numforecasts": "48",
     "stars": 4
+  },
+  {
+    "title": "Will there be enough signatures for a vote on the recall of Gov. Newsom by March 17?",
+    "url": "https://polymarket.com/market/will-there-be-enough-signatures-for-a-vote-on-recall-of-gov-newsom-by-march-17",
+    "platform": "PolyMarket",
+    "description": "This is a market on if there will be enough petition signatures for a vote on the recall of California Governor Gavin Newson prior to March 17, 2021. This market will resolve to \"Yes\" if a recall election is triggered and \"No\" otherwise. The linked PredictIt question will be referenced as the leading resolution source, https://www.predictit.org/markets/detail/7039/Will-there-be-enough-signatures-by-Mar-17-for-a-vote-on-recall-of-Gov-Newsom. This market will resolve when the PredictIt market is resolved, to the same outcome.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9877873861210342019740293853830034",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.01221261387896579802597061461699665",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "1340",
+    "stars": 3
   }
 ]
