@@ -62,7 +62,7 @@ let coverttocsvandmerge = () => {
         "optionsstringforsearch": element.optionsstringforsearch
     })
   } )
-  console.log(preparedforcsv)
+  //console.log(preparedforcsv)
   
   let mergedcsv = csvfromjson(preparedforcsv)
   writefile(mergedcsv, "metaforecasts", "")
