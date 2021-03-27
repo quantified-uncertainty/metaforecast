@@ -1801,52 +1801,52 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.4553965453928366,
+        "probability": 0.45349705670653817,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.4553965453928366,
+        "probability": 0.4748660279649614,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.0045313089093814585,
+        "probability": 0.004512408524443166,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.026788032081931566,
+        "probability": 0.017784198302217183,
         "type": "PROBABILITY"
       },
       {
         "name": "Northern Independence Party (bets void if not registered as a party in time)",
-        "probability": 0.04337109956122253,
+        "probability": 0.03488438897742602,
         "type": "PROBABILITY"
       },
       {
         "name": "SDP",
-        "probability": 0.0045313089093814585,
+        "probability": 0.004512408524443166,
         "type": "PROBABILITY"
       },
       {
         "name": "Heritage Party",
-        "probability": 0.0018179502810093276,
+        "probability": 0.0018103674918424676,
         "type": "PROBABILITY"
       },
       {
         "name": "UKIP",
-        "probability": 0.0018179502810093276,
+        "probability": 0.0018103674918424676,
         "type": "PROBABILITY"
       },
       {
         "name": "Womens Equality Party",
-        "probability": 0.0018179502810093276,
+        "probability": 0.0018103674918424676,
         "type": "PROBABILITY"
       },
       {
         "name": "North East Party",
-        "probability": 0.0045313089093814585,
+        "probability": 0.004512408524443166,
         "type": "PROBABILITY"
       }
     ],
@@ -1859,22 +1859,22 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.02695209479152588,
+        "probability": 0.02655188790966505,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.1309101747016971,
+        "probability": 0.11284552361607647,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.009072982405068118,
+        "probability": 0.008938259296322889,
         "type": "PROBABILITY"
       },
       {
         "name": "SNP",
-        "probability": 0.8330647481017089,
+        "probability": 0.8516643291779356,
         "type": "PROBABILITY"
       }
     ],
@@ -2456,12 +2456,12 @@
     "options": [
       {
         "name": "SNP Majority",
-        "probability": 0.5361930294906166,
+        "probability": 0.5,
         "type": "PROBABILITY"
       },
       {
         "name": "No SNP Majority",
-        "probability": 0.4638069705093834,
+        "probability": 0.5,
         "type": "PROBABILITY"
       }
     ],
@@ -2507,32 +2507,32 @@
     "options": [
       {
         "name": "Under 40%",
-        "probability": 0.06692313852743231,
+        "probability": 0.09893163695794975,
         "type": "PROBABILITY"
       },
       {
         "name": "40-45%",
-        "probability": 0.29000026695220665,
+        "probability": 0.3237762664078356,
         "type": "PROBABILITY"
       },
       {
         "name": "45-50%",
-        "probability": 0.3670889455091223,
+        "probability": 0.35615389304861916,
         "type": "PROBABILITY"
       },
       {
         "name": "50-55%",
-        "probability": 0.21750020021415498,
+        "probability": 0.17807694652430958,
         "type": "PROBABILITY"
       },
       {
         "name": "55-60%",
-        "probability": 0.04142860956460095,
+        "probability": 0.034245566639290306,
         "type": "PROBABILITY"
       },
       {
         "name": "Over 60%",
-        "probability": 0.017058839232482744,
+        "probability": 0.008815690421995523,
         "type": "PROBABILITY"
       }
     ],
@@ -2551,24 +2551,6 @@
       {
         "name": "No",
         "probability": 0.23809523809523808,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 2
-  },
-  {
-    "title": "Next Scottish Parliamentary Election: SNP Total Seats Over/Under",
-    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
-    "platform": "Ladbrokes",
-    "options": [
-      {
-        "name": "Over",
-        "probability": 0.5,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Under",
-        "probability": 0.5,
         "type": "PROBABILITY"
       }
     ],

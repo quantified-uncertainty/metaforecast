@@ -46,15 +46,26 @@ let coverttocsvandmerge = () => {
   let merged = []
   for(let set of sets){
     let json = getJSON(set)
-    let csv = csvfromjson(json)
-    writefile(csv, set, suffix)
+    //let csv = csvfromjson(json)
+    //writefile(csv, set, suffix)
     merged = merged.concat(json)
     //console.log(merged)
   }
-  merged = merged.map(element => ({...element, optionsstringforsearch: element.options.map(option => option.name).join(", ")}))
-  writefile(JSON.stringify(merged, null, 2), "metaforecasts", "", ".json")
-  //let mergedcsv = csvfromjson(merged)
-  //writefile(mergedcsv, "metaforecasts", "")
+  let mergedprocessed = merged.map(element => ({...element, optionsstringforsearch: element.options.map(option => option.name).join(", ")}))
+  writefile(JSON.stringify(mergedprocessed, null, 2), "metaforecasts", "", ".json")
+  
+  let preparedforcsv = []
+  mergedprocessed.forEach(element => {
+    preparedforcsv.push({
+        "title": element.title,
+        "description": element.description,
+        "optionsstringforsearch": element.optionsstringforsearch
+    })
+  } )
+  console.log(preparedforcsv)
+  
+  let mergedcsv = csvfromjson(preparedforcsv)
+  writefile(mergedcsv, "metaforecasts", "")
   console.log("Done")
 
 }

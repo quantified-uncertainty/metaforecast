@@ -7,16 +7,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.632638237361654930744949974442138",
+        "probability": "0.5871432055669133105154549423449486",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.367361762638345069255050025557862",
+        "probability": "0.4128567944330866894845450576550514",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "308",
+    "numforecasts": "317",
     "stars": 4
   },
   {
@@ -27,36 +27,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.4904149760276465371688331535796428",
+        "probability": "0.4391425697965956603305816025607775",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.5095850239723534628311668464203572",
+        "probability": "0.5608574302034043396694183974392225",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "145",
-    "stars": 4
-  },
-  {
-    "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
-    "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Floyd Mayweather will win his boxing exhibition match against Logan Paul set to take place on February 20th, 2021. If Floyd Mayweather is declared the winner of this bout, either by knockout or by judgement, this market will resolve “Yes.” If Logan Paul is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed to a date earlier than May 1st, 2021, the same market resolution conditions will apply for whenever the fight is rescheduled. In the event the boxing match does not take place before then, the market will resolve to .90 for \"Yes\" and .10 for \"No\", which is in line with existing market odds at time of deployment. More info can be found about this fight on the Fanmio website here: https://fanmio.com/products/floyd-mayweather-vs-logan-paul-special-exhibition-fight. In the event of ambiguity in regards to the outcome, this market will be resolved in good faith by the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.897865272633556215468582834952382",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.102134727366443784531417165047618",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "779",
+    "numforecasts": "148",
     "stars": 4
   },
   {
@@ -67,37 +47,57 @@
     "options": [
       {
         "name": "Less than 70",
-        "probability": "0.1925806659328219287092287968871445",
+        "probability": "0.1672746246072319080776838488635544",
         "type": "PROBABILITY"
       },
       {
         "name": "70-80",
-        "probability": "0.2290186254410298016556926647905388",
+        "probability": "0.2476901256544144696879613915347041",
         "type": "PROBABILITY"
       },
       {
         "name": "81-90",
-        "probability": "0.2436853968287872885728572749438313",
+        "probability": "0.1952432196242796903539219437959104",
         "type": "PROBABILITY"
       },
       {
         "name": "91-100",
-        "probability": "0.1145709748766955799705387814839873",
+        "probability": "0.1164785241546611526816670444449205",
         "type": "PROBABILITY"
       },
       {
         "name": "101-110",
-        "probability": "0.09892070700247320647702834135175433",
+        "probability": "0.1216864057709885832664494211185656",
         "type": "PROBABILITY"
       },
       {
         "name": "More than 110",
-        "probability": "0.1212236299181921946146541405427435",
+        "probability": "0.1516271001884241959323163502423449",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "236",
+    "numforecasts": "299",
     "stars": 4
+  },
+  {
+    "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
+    "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Floyd Mayweather will win his boxing exhibition match against Logan Paul set to take place on February 20th, 2021. If Floyd Mayweather is declared the winner of this bout, either by knockout or by judgement, this market will resolve “Yes.” If Logan Paul is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed to a date earlier than May 1st, 2021, the same market resolution conditions will apply for whenever the fight is rescheduled. In the event the boxing match does not take place before then, the market will resolve to .90 for \"Yes\" and .10 for \"No\", which is in line with existing market odds at time of deployment. More info can be found about this fight on the Fanmio website here: https://fanmio.com/products/floyd-mayweather-vs-logan-paul-special-exhibition-fight. In the event of ambiguity in regards to the outcome, this market will be resolved in good faith by the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9020409953503909000562711280753918",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.09795900464960909994372887192460815",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "791",
+    "stars": 3
   },
   {
     "title": "Will the US have fewer than 35,000 new COVID-19 cases on any day before April 7, 2021?",
@@ -107,16 +107,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.2242273527492839511189916586005524",
+        "probability": "0.2633073732555388130695659666251378",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.7757726472507160488810083413994476",
+        "probability": "0.7366926267444611869304340333748622",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "403",
+    "numforecasts": "421",
     "stars": 4
   },
   {
@@ -127,61 +127,41 @@
     "options": [
       {
         "name": "Texas",
-        "probability": "0.1841513365764560725353508902079281",
+        "probability": "0.1883710726564277022850745484333587",
         "type": "PROBABILITY"
       },
       {
         "name": "Florida",
-        "probability": "0.7292888892908292455463694859164885",
+        "probability": "0.7262394404243919097345492332829238",
         "type": "PROBABILITY"
       },
       {
         "name": "California",
-        "probability": "0.08655977413271468191827962387558335",
+        "probability": "0.08538948691918038798037621828371755",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "229",
+    "numforecasts": "233",
     "stars": 4
   },
   {
-    "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
-    "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1-1",
+    "title": "Will AstraZeneca's COVID-19 vaccine receive FDA approval or Emergency Use Authorization (EUA) by May 1, 2021?",
+    "url": "https://polymarket.com/market/will-astrazenecas-covid-19-vaccine-receive-fda-approval-or-emergency-use-authorization-eua-by-may-1-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on if the federal minimum wage will be $9.50 per hour or higher by April 1, 12:00pm EST. This market will resolve to \"Yes\" if the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point prior to the resolution date, and \"No\" otherwise. The primary resolution source for this market will be the U.S. Department of Labor's website, https://www.dol.gov/.",
+    "description": "This is a market on whether AstraZeneca’s COVID-19 vaccine will receive regulatory approval in the USA in the form of either FDA approval OR Emergency Use Authorization, whichever comes first. This market will resolve to “Yes” if AstraZeneca’s COVID-19 vaccine receives FDA approval or EUA prior to the resolution date, May 1, 2021, 12:00 PM ET, and \"No\" otherwise.\n\nThis market will be resolved in good faith, according to the FDA list of licensed vaccines (https://www.fda.gov/vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states), the FDA EUA list (https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization), as well as any other resolution source deemed appropriate by the Markets Integrity Committee (MIC).",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.00309456559676238734189039658378795",
+        "probability": "0.4530636632783070484902652045781653",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9969054344032376126581096034162121",
+        "probability": "0.5469363367216929515097347954218347",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "185",
-    "stars": 3
-  },
-  {
-    "title": "Will weekly jobless claims exceed 650K for the week ending on April 3?",
-    "url": "https://polymarket.com/market/will-weekly-jobless-claims-exceed-650k-for-the-week-ending-on-april-3",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether the number of Americans that file weekly jobless claims will exceed 650,000 for the week ending on Saturday, April 3, 2021. This market will resolve to “Yes” if the United States Department of Labor reports that there were more than 650,000 seasonally adjusted initial claims for unemployment insurance for the week ending on April 3, 2021. This market will resolve to “No” if the United States Department of Labor reports that there were 650,000 or less seasonally adjusted initial claims for unemployment insurance for the week ending on April 3, 2021.  The resolution source for this market will be the United States Department of Labor’s Weekly Uninsurance Claims report for the week ending on Saturday, April 3, 2021, expected to be released on Thursday, April 8. Resolution of this market will take place upon release of the aforementioned data. .\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.5094639873352057272485228888769691",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.4905360126647942727514771111230309",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "76",
+    "numforecasts": "80",
     "stars": 4
   },
   {
@@ -192,17 +172,48 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.4128864215080620917977480432273247",
+        "probability": "0.3751565387443145112653164613151741",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.5871135784919379082022519567726753",
+        "probability": "0.6248434612556854887346835386848259",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "23",
+    "numforecasts": "24",
     "stars": 3
+  },
+  {
+    "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
+    "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1-1",
+    "address": "0x36BB6f09327d1A7D0930668345655d6A6e3c6b20",
+    "description": "This is a market on if the federal minimum wage will be $9.50 per hour or higher by April 1, 12:00pm EST. This market will resolve to \"Yes\" if the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point prior to the resolution date, and \"No\" otherwise. The primary resolution source for this market will be the U.S. Department of Labor's website, https://www.dol.gov/.",
+    "outcomes": [
+      "Yes",
+      "No"
+    ],
+    "options": []
+  },
+  {
+    "title": "Will weekly jobless claims exceed 650K for the week ending on April 3?",
+    "url": "https://polymarket.com/market/will-weekly-jobless-claims-exceed-650k-for-the-week-ending-on-april-3",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the number of Americans that file weekly jobless claims will exceed 650,000 for the week ending on Saturday, April 3, 2021. This market will resolve to “Yes” if the United States Department of Labor reports that there were more than 650,000 seasonally adjusted initial claims for unemployment insurance for the week ending on April 3, 2021. This market will resolve to “No” if the United States Department of Labor reports that there were 650,000 or less seasonally adjusted initial claims for unemployment insurance for the week ending on April 3, 2021.  The resolution source for this market will be the United States Department of Labor’s Weekly Uninsurance Claims report for the week ending on Saturday, April 3, 2021, expected to be released on Thursday, April 8. Resolution of this market will take place upon release of the aforementioned data. .\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.5063624076489165994445641010569313",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.4936375923510834005554358989430687",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "79",
+    "stars": 4
   },
   {
     "title": "Will Donald Trump be President of the USA on March 31, 2021?",
@@ -212,16 +223,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.001960969181035111127905723783502262",
+        "probability": "0.001003847031198783653878237328185352",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9980390308189648888720942762164977",
+        "probability": "0.9989961529688012163461217626718146",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "4255",
+    "numforecasts": "4270",
     "stars": 3
   },
   {
@@ -232,16 +243,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.2949590380041326626799494454650625",
+        "probability": "0.2401966918615018843983652361027869",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.7050409619958673373200505545349375",
+        "probability": "0.7598033081384981156016347638972131",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "6873",
+    "numforecasts": "7240",
     "stars": 4
   },
   {
@@ -252,16 +263,36 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.09261473045924926386223637883930387",
+        "probability": "0.07809788734415578259133846771486672",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9073852695407507361377636211606961",
+        "probability": "0.9219021126558442174086615322851333",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "387",
+    "numforecasts": "390",
+    "stars": 3
+  },
+  {
+    "title": "Will Donald Trump be federally charged by June 1st? ",
+    "url": "https://polymarket.com/market/will-donald-trump-be-federally-charged-by-june-1st-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether President Donald J. Trump shall be indicted or otherwise formally charged with a federal crime, as publicly confirmed before June 1st, 2021 12:00 PM ET by an authorized representative of the charging agency(ies) or judicial venue(s). If he is charged with a federal crime on or before June 1st, 2021 12:00 PM ET, this market will resolve to “Yes”. If he is charged with any crime that is not a federal crime or is not charged with any crimes, this market will resolve “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). \n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.05203301629799111589572981466929816",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9479669837020088841042701853307018",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "83",
     "stars": 3
   },
   {
@@ -272,16 +303,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.03015408132905653413744356708336372",
+        "probability": "0.02583516387131374839338592849894705",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9698459186709434658625564329166363",
+        "probability": "0.974164836128686251606614071501053",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "704",
+    "numforecasts": "712",
     "stars": 3
   },
   {
@@ -292,57 +323,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.118043409650728971552473796723341",
+        "probability": "0.1239743371249700020666953031210272",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.881956590349271028447526203276659",
+        "probability": "0.8760256628750299979333046968789728",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "68",
+    "numforecasts": "70",
     "stars": 4
-  },
-  {
-    "title": "Will Donald Trump be federally charged by June 1st? ",
-    "url": "https://polymarket.com/market/will-donald-trump-be-federally-charged-by-june-1st-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether President Donald J. Trump shall be indicted or otherwise formally charged with a federal crime, as publicly confirmed before June 1st, 2021 12:00 PM ET by an authorized representative of the charging agency(ies) or judicial venue(s). If he is charged with a federal crime on or before June 1st, 2021 12:00 PM ET, this market will resolve to “Yes”. If he is charged with any crime that is not a federal crime or is not charged with any crimes, this market will resolve “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). \n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.05638763263889912282576966254427022",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9436123673611008771742303374557298",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "80",
-    "stars": 3
-  },
-  {
-    "title": "Will DeFi Dominance on CoinGecko be 5.5% or higher on March 30?",
-    "url": "https://polymarket.com/market/will-de-fi-dominance-on-coin-gecko-be-5-5-or-higher-on-march-30",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the DeFi Dominance metric, according to CoinGecko, will be 5.5% or higher on March 30 2021, 12:00 PM ET. This market will resolve to “Yes“ if DeFi Dominance is listed as being 5.5% or higher on the resolution date. The market will resolve to “No“ if DeFi dominance is less than 5.5% at that time of resolution. The resolution source for this market will be the metric currently listed on https://www.coingecko.com/en/defi as “Defi Dominance (vs. Global)”. Any rounding done is at CoinGecko’s discretion, and only the metric Defi Dominance (vs. Global) will be considered without observation of the underlying data. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).  \n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.03516907366006281209881429690242127",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9648309263399371879011857030975787",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "65",
-    "stars": 2
   },
   {
     "title": "Will Bitcoin ($BTC) be above $55k on April 1, 2021?",
@@ -352,17 +343,37 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.3487474591840245498233588391771221",
+        "probability": "0.4464472380436790440847039771157174",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.6512525408159754501766411608228779",
+        "probability": "0.5535527619563209559152960228842826",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "2102",
+    "numforecasts": "2303",
     "stars": 4
+  },
+  {
+    "title": "Will DeFi Dominance on CoinGecko be 5.5% or higher on March 30?",
+    "url": "https://polymarket.com/market/will-de-fi-dominance-on-coin-gecko-be-5-5-or-higher-on-march-30",
+    "platform": "PolyMarket",
+    "description": "This is a market on if the DeFi Dominance metric, according to CoinGecko, will be 5.5% or higher on March 30 2021, 12:00 PM ET. This market will resolve to “Yes“ if DeFi Dominance is listed as being 5.5% or higher on the resolution date. The market will resolve to “No“ if DeFi dominance is less than 5.5% at that time of resolution. The resolution source for this market will be the metric currently listed on https://www.coingecko.com/en/defi as “Defi Dominance (vs. Global)”. Any rounding done is at CoinGecko’s discretion, and only the metric Defi Dominance (vs. Global) will be considered without observation of the underlying data. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).  \n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.05082943790130478653184589035805252",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9491705620986952134681541096419475",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "71",
+    "stars": 2
   },
   {
     "title": "Will American mask usage be 75% or higher on April 14th, 2021?",
@@ -372,16 +383,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.2195340864298087991219769515517244",
+        "probability": "0.1961684427606103841153688323774687",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.7804659135701912008780230484482756",
+        "probability": "0.8038315572393896158846311676225313",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "65",
+    "numforecasts": "70",
     "stars": 4
   },
   {
@@ -392,37 +403,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.05862215903273275371239771245583309",
+        "probability": "0.05860162608821927934180182205734666",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9413778409672672462876022875441669",
+        "probability": "0.9413983739117807206581981779426533",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "92",
+    "numforecasts": "93",
     "stars": 3
-  },
-  {
-    "title": "Will AstraZeneca's COVID-19 vaccine receive FDA approval or Emergency Use Authorization (EUA) by May 1, 2021?",
-    "url": "https://polymarket.com/market/will-astrazenecas-covid-19-vaccine-receive-fda-approval-or-emergency-use-authorization-eua-by-may-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether AstraZeneca’s COVID-19 vaccine will receive regulatory approval in the USA in the form of either FDA approval OR Emergency Use Authorization, whichever comes first. This market will resolve to “Yes” if AstraZeneca’s COVID-19 vaccine receives FDA approval or EUA prior to the resolution date, May 1, 2021, 12:00 PM ET, and \"No\" otherwise.\n\nThis market will be resolved in good faith, according to the FDA list of licensed vaccines (https://www.fda.gov/vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states), the FDA EUA list (https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization), as well as any other resolution source deemed appropriate by the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.5993340969240034537281806084488767",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.4006659030759965462718193915511233",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "58",
-    "stars": 4
   },
   {
     "title": "Will any Knicks game have greater than 20% attendance before the NBA season ends?",
@@ -432,36 +423,56 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.7126251830004892165196110230809552",
+        "probability": "0.696874352742622330981106127626817",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.2873748169995107834803889769190448",
+        "probability": "0.303125647257377669018893872373183",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "51",
+    "stars": 4
+  },
+  {
+    "title": "Will Joe Biden's disapproval rating be 40% or higher on April 7?",
+    "url": "https://polymarket.com/market/will-joe-bidens-disapproval-rating-be-40-or-higher-on-april-7",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Joe Biden's disapproval rating will be 40% or higher on April 7, 2021. The resolution source will be FiveThirtyEight's approval rating poll aggregator, indicated by the orange trend line here, https://projects.fivethirtyeight.com/biden-approval-rating/. Changes in the methodology by which FiveThirtyEight calculates the disapproval rating will have no bearing on the resolution of this market. If for any reason the resolution source is unavailable on the resolution date, resolution will be delayed up to 48 hours. If still unavailable following that delay, this market will resolve to 50/50. If Joe Biden is not President on the resolution date, this market will resolve according to the most recent available disapproval rating. The resolution date for this market will be on April 8, 2021 at 12:00 PM ET according to data published for the day of April 7, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.5084922355951987486962057308046653",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.4915077644048012513037942691953347",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "49",
+    "stars": 4
+  },
+  {
+    "title": "Will more than 1.75 million people travel through a TSA checkpoint on any day on or before April 10?",
+    "url": "https://polymarket.com/market/will-more-than-175-million-people-travel-through-a-tsa-checkpoint-on-any-day-on-or-before-april-10",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether more than 1,750,000 million people will travel through a TSA checkpoint on any single day after March 22, 2021 and on or before April 10, 2021. The resolution source for this market will be daily checkpoint throughput as measured by the US Transportation Security Administration (TSA), https://www.tsa.gov/coronavirus/passenger-throughput. This market will resolve to “Yes” if the TSA reports a daily checkpoint throughput of more than 1.75 million for any day after March 22, 2021 and on or before April 10, 2021. This market will resolve to “No” otherwise. This market will resolve as soon as throughput data becomes available for the date of April 10, 2021 or on any date before that if the target is reached. Any revisions published prior to the release of data for April 10, 2021 will be considered. Market resolution will occur immediately upon satisfaction of market conditions, regardless of any later revisions.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.7517224139225624292201826311776367",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.2482775860774375707798173688223633",
         "type": "PROBABILITY"
       }
     ],
     "numforecasts": "48",
     "stars": 4
-  },
-  {
-    "title": "Will there be enough signatures for a vote on the recall of Gov. Newsom by March 17?",
-    "url": "https://polymarket.com/market/will-there-be-enough-signatures-for-a-vote-on-recall-of-gov-newsom-by-march-17",
-    "platform": "PolyMarket",
-    "description": "This is a market on if there will be enough petition signatures for a vote on the recall of California Governor Gavin Newson prior to March 17, 2021. This market will resolve to \"Yes\" if a recall election is triggered and \"No\" otherwise. The linked PredictIt question will be referenced as the leading resolution source, https://www.predictit.org/markets/detail/7039/Will-there-be-enough-signatures-by-Mar-17-for-a-vote-on-recall-of-Gov-Newsom. This market will resolve when the PredictIt market is resolved, to the same outcome.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9877873861210342019740293853830034",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.01221261387896579802597061461699665",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "1340",
-    "stars": 3
   }
 ]
