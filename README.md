@@ -23,24 +23,14 @@ From the top level directory, enter: `npm run start`
 
 ## What are "stars" and how are they computed
 
-Star ratings—e.g. ★★★☆☆—are an indicator of the quality of an aggregate forecast for a question. These ratings currently try to reflect my own best judgment based on my experience forecasting on these platforms. Thus, stars have a strong subjective component which could be formalized and refined in the future. 
+Star ratings—e.g. ★★★☆☆—are an indicator of the quality of an aggregate forecast for a question. These ratings currently try to reflect my own best judgment and the best judgment of forecasting experts I've asked, based on our collective experience forecasting on these platforms. Thus, stars have a strong subjective component which could be formalized and refined in the future. You can see the code used to decide how many stars to assign [here](https://github.com/QURIresearch/metaforecasts/blob/master/src/stars.js)
 
-Currently, stars are computed using a simple rule dependent on both the platform and the number of forecasts:
-- CSET-foretell: ★★☆☆☆, but ★☆☆☆☆ if a question has less than 100 forecasts
-- Elicit: ★☆☆☆☆
-- Good Judgment (various superforecaster dashboards): ★★★★☆
-- Good Judgment Open: ★★★☆☆, ★★☆☆☆ if a question has less than 100 forecasts
-- Hypermind: ★★★☆☆
-- Metaculus: ★★★★☆ if a question has more than 300 forecasts, ★★★☆☆ if it has more than 100, ★★☆☆☆ otherwise.
-- Omen: ★☆☆☆☆
-- Polymarket: ★★☆☆☆
-- PredictIt: ★★☆☆☆
+With regards the quality, I am most uncertain about Smarkets, Hypermind, Ladbrokes and WilliamHill, as I haven't used them as much. Also note that, whatever other redeeming features they might have, prediction markets rarely go above 95% or below 5%.
 
 ## Various notes
 
 - Right now, I'm fetching only a couple of common properties, such as the title, url, platform, whether a question is binary (yes/no), its percentage, and the number of forecasts. However, the code contains more fields commented out, such as trade volume, liquidity, etc. 
 - A note as to quality: Tentatively, Good Judgment >> Good Judgment Open ~ Metaculus > CSET > PredictIt ~> Polymarket >> Elicit > Omen. 
 - I'm not really sure where Hypermind falls in that spectrum.
-- Prediction markets rarely go above 95% or below 5%. 
 - For elicit and metaculus, this library currently filters questions with <10 predictions.
 - Omen *does* have very few active predictions at the moment; this is not a mistake. 

@@ -1,50 +1,5 @@
 [
   {
-    "title": "Will Texas, Florida, or California have the highest 7-day daily average of COVID-19 cases on April 15, 2021?",
-    "url": "https://polymarket.com/market/will-texas-florida-or-california-have-the-highest-7-day-daily-average-of-covid-19-cases-on-april-15-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on which of the following states will have the highest 7-day daily average of COVID-19 cases on April 15, 2021, 12:00 PM ET: Texas, Florida, or California. The resolution source for this Market will be the New York Times’ U.S. state-by-state COVID-19 case count dashboard (https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html#states). This market will resolve to whichever state out of Texas, Florida, or California has the highest 7-day daily average of COVID-19 cases on the resolution date. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). \n",
-    "options": [
-      {
-        "name": "Texas",
-        "probability": "0.09471882941566854900783987701471025",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Florida",
-        "probability": "0.8862514475368737605999119046633115",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "California",
-        "probability": "0.01902972304745769039224821832197825",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "276",
-    "stars": 3
-  },
-  {
-    "title": "Will AstraZeneca's COVID-19 vaccine receive FDA approval or Emergency Use Authorization (EUA) by May 1, 2021?",
-    "url": "https://polymarket.com/market/will-astrazenecas-covid-19-vaccine-receive-fda-approval-or-emergency-use-authorization-eua-by-may-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether AstraZeneca’s COVID-19 vaccine will receive regulatory approval in the USA in the form of either FDA approval OR Emergency Use Authorization, whichever comes first. This market will resolve to “Yes” if AstraZeneca’s COVID-19 vaccine receives FDA approval or EUA prior to the resolution date, May 1, 2021, 12:00 PM ET, and \"No\" otherwise.\n\nThis market will be resolved in good faith, according to the FDA list of licensed vaccines (https://www.fda.gov/vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states), the FDA EUA list (https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization), as well as any other resolution source deemed appropriate by the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.3325426078486210391403659153611369",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.6674573921513789608596340846388631",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "98",
-    "stars": 4
-  },
-  {
     "title": "Will the US have fewer than 35,000 new COVID-19 cases on any day before April 7, 2021?",
     "url": "https://polymarket.com/market/will-the-us-have-fewer-than-35000-new-covid-19-cases-on-any-day-before-april-7-2021",
     "platform": "PolyMarket",
@@ -52,16 +7,36 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1718025008310863946779364090448349",
+        "probability": "0.07753824631498304305713109847982703",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8281974991689136053220635909551651",
+        "probability": "0.922461753685016956942868901520173",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "451",
+    "numforecasts": "504",
+    "stars": 3
+  },
+  {
+    "title": "Will Joe Biden's disapproval rating be 40% or higher on April 7?",
+    "url": "https://polymarket.com/market/will-joe-bidens-disapproval-rating-be-40-or-higher-on-april-7",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Joe Biden's disapproval rating will be 40% or higher on April 7, 2021. The resolution source will be FiveThirtyEight's approval rating poll aggregator, indicated by the orange trend line here, https://projects.fivethirtyeight.com/biden-approval-rating/. Changes in the methodology by which FiveThirtyEight calculates the disapproval rating will have no bearing on the resolution of this market. If for any reason the resolution source is unavailable on the resolution date, resolution will be delayed up to 48 hours. If still unavailable following that delay, this market will resolve to 50/50. If Joe Biden is not President on the resolution date, this market will resolve according to the most recent available disapproval rating. The resolution date for this market will be on April 8, 2021 at 12:00 PM ET according to data published for the day of April 7, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.4599317644432323598775687301012367",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.5400682355567676401224312698987633",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "70",
     "stars": 4
   },
   {
@@ -72,57 +47,72 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.8978542963687510509806282313940195",
+        "probability": "0.8974107967751541143208149317438613",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.1021457036312489490193717686059805",
+        "probability": "0.1025892032248458856791850682561387",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "797",
+    "numforecasts": "798",
     "stars": 4
   },
   {
-    "title": "Will the Ever Given be dislodged from the Suez Canal by March 30?",
-    "url": "https://polymarket.com/market/will-the-ever-given-be-dislodged-from-the-suez-canal-by-march-30",
+    "title": "Will Donald Trump be President of the USA on July 31, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-july-31-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on whether the Ever Given container ship (IMO: 9811000, MMSI 353136000) will be dislodged from the Suez Canal by March 30, 2021, 12:00 PM ET. For the purpose of this market, dislodged from the Suez Canal will mean that the Ever Given has a latitude higher than 30.03000 N (i.e. be at least half a mile above where it got stuck) or lower than 30.01000 N degrees (i.e. be at least half a mile below where it got stuck), by the resolution date, March 30, 2021, 12:00 PM ET. The resolution source for this for this market will be the Ever Green’s latitude and longitude coordinates, as tracked by Vessel Finder and displayed in their “Position & Voyage Data” table (https://www.vesselfinder.com/vessels/EVER-GIVEN-IMO-9811000-MMSI-353136000).",
+    "description": "This is a market on if Donald Trump will be President of the United States on July 31, 2021, 11:59 PM ET. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by official US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n\n\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.4698896746217403382421058389612625",
+        "probability": "0.01394232389372196757070549823602875",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.5301103253782596617578941610387375",
+        "probability": "0.9860576761062780324292945017639713",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "383",
-    "stars": 4
+    "numforecasts": "15",
+    "stars": 3
   },
   {
-    "title": "Will Joe Biden's disapproval rating be 40% or higher on April 7?",
-    "url": "https://polymarket.com/market/will-joe-bidens-disapproval-rating-be-40-or-higher-on-april-7",
+    "title": "What will monthly NFT trading volume be on April 13, 2021?",
+    "url": "https://polymarket.com/market/what-will-monthly-nft-trading-volume-be-on-april-13-2021-1",
     "platform": "PolyMarket",
-    "description": "This is a market on whether Joe Biden's disapproval rating will be 40% or higher on April 7, 2021. The resolution source will be FiveThirtyEight's approval rating poll aggregator, indicated by the orange trend line here, https://projects.fivethirtyeight.com/biden-approval-rating/. Changes in the methodology by which FiveThirtyEight calculates the disapproval rating will have no bearing on the resolution of this market. If for any reason the resolution source is unavailable on the resolution date, resolution will be delayed up to 48 hours. If still unavailable following that delay, this market will resolve to 50/50. If Joe Biden is not President on the resolution date, this market will resolve according to the most recent available disapproval rating. The resolution date for this market will be on April 8, 2021 at 12:00 PM ET according to data published for the day of April 7, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
+    "description": "This is a market on what the monthly trading volume will be for non-fungible-tokens (NFTs) on April 13, 2021. The resolution source for this market will be Coinranking’s aggregation of 30-day NFT trading volume, as displayed in USD by the resolution source, https://coinranking.com/nfts. The total trading volume (in the last 30 days) as listed by Coinranking will be checked at 12:00 PM ET on April 13, 2021. Whichever bracket the total trading volume falls into at that time will be the bracket that this market resolves to. Data will be rounded down to the nearest million dollars for the resolution of this market (e.g. 50.3, 50.5, 50.7 million dollars are all rounded down to 50 million dollars). In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
     "options": [
       {
-        "name": "Yes",
-        "probability": "0.4526971438909513404307955024326983",
+        "name": "$80M or Less",
+        "probability": "0.05744360602032953362501417765827628",
         "type": "PROBABILITY"
       },
       {
-        "name": "No",
-        "probability": "0.5473028561090486595692044975673017",
+        "name": "$81-105M",
+        "probability": "0.6714313199989959113997850001650252",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "$106-120M",
+        "probability": "0.1558340346479539708610918819061469",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "$121-135M",
+        "probability": "0.06367479538279264655713628485976061",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "$136M or More",
+        "probability": "0.05161624394992793755697265541079074",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "57",
-    "stars": 4
+    "numforecasts": "203",
+    "stars": 3
   },
   {
     "title": "Will weekly jobless claims exceed 650K for the week ending on April 3?",
@@ -132,37 +122,48 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.4426875615958327161228189497385512",
+        "probability": "0.4061604608970735746980251586486453",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.5573124384041672838771810502614488",
+        "probability": "0.5938395391029264253019748413513547",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "91",
+    "numforecasts": "94",
     "stars": 4
   },
   {
     "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
     "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1-1",
-    "platform": "PolyMarket",
+    "address": "0x36BB6f09327d1A7D0930668345655d6A6e3c6b20",
     "description": "This is a market on if the federal minimum wage will be $9.50 per hour or higher by April 1, 12:00pm EST. This market will resolve to \"Yes\" if the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point prior to the resolution date, and \"No\" otherwise. The primary resolution source for this market will be the U.S. Department of Labor's website, https://www.dol.gov/.",
+    "outcomes": [
+      "Yes",
+      "No"
+    ],
+    "options": []
+  },
+  {
+    "title": "Will Bitcoin ($BTC) be above $55k on April 1, 2021?",
+    "url": "https://polymarket.com/market/will-bitcoin-btc-be-above-55k-on-april-1-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if the USD price of Bitcoin $BTC will be above $55000 on April 1, 2021, 12:00 PM ET, according to coinmarketcap.com/currencies/bitcoin/. This market will resolve to “Yes“ if BTC is trading above $55000 according to Coinmarketcap on the resolution date, and “No“ otherwise. If price data is temporarily unavailable on Coinmarketcap at the time of resolution, coingecko.com/en/coins/bitcoin will instead be referenced. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.0007833069340194859579063580919656911",
+        "probability": "0.811137805040424106412252281387405",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9992166930659805140420936419080343",
+        "probability": "0.188862194959575893587747718612595",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "187",
-    "stars": 3
+    "numforecasts": "3177",
+    "stars": 4
   },
   {
     "title": "Will 100 million people have received a dose of an approved COVID-19 vaccine in the US by April 1, 2021?",
@@ -172,17 +173,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.11325563039183722103275617002183",
+        "probability": "0.07304455174120395584463620390808104",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.88674436960816277896724382997817",
+        "probability": "0.926955448258796044155363796091919",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "7773",
-    "stars": 4
+    "numforecasts": "8243",
+    "stars": 3
   },
   {
     "title": "Will Donald Trump be President of the USA on March 31, 2021?",
@@ -192,16 +193,36 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.0005773167438572659616369798800062558",
+        "probability": "0.0002594014467534253739238797362305842",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9994226832561427340383630201199937",
+        "probability": "0.9997405985532465746260761202637694",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "4284",
+    "numforecasts": "4314",
+    "stars": 3
+  },
+  {
+    "title": "Will Joe Biden be President of the USA on June 30, 2021?",
+    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-june-30-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Joe Biden will be President of the United States on June 30, 2021, 11:59 PM ET. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, https://www.whitehouse.gov/\n\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9514096993620200431360981712878928",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.04859030063797995686390182871210717",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "4",
     "stars": 3
   },
   {
@@ -212,16 +233,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.0785186989419276422486486868372132",
+        "probability": "0.07590406992189588515175078805599503",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9214813010580723577513513131627868",
+        "probability": "0.924095930078104114848249211944005",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "399",
+    "numforecasts": "411",
     "stars": 3
   },
   {
@@ -232,16 +253,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.0463958172809963982245937485905163",
+        "probability": "0.04200290899238056378530487686460393",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9536041827190036017754062514094837",
+        "probability": "0.9579970910076194362146951231353961",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "85",
+    "numforecasts": "89",
     "stars": 3
   },
   {
@@ -252,16 +273,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.01556978274231434901849274397707455",
+        "probability": "0.02304787940068400388231862024485495",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9844302172576856509815072560229254",
+        "probability": "0.9769521205993159961176813797551451",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "720",
+    "numforecasts": "726",
     "stars": 3
   },
   {
@@ -272,36 +293,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1199447741739855272384936981505642",
+        "probability": "0.1283821729293469028524210423415517",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8800552258260144727615063018494358",
+        "probability": "0.8716178270706530971475789576584483",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "73",
-    "stars": 4
-  },
-  {
-    "title": "Will Bitcoin ($BTC) be above $55k on April 1, 2021?",
-    "url": "https://polymarket.com/market/will-bitcoin-btc-be-above-55k-on-april-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the USD price of Bitcoin $BTC will be above $55000 on April 1, 2021, 12:00 PM ET, according to coinmarketcap.com/currencies/bitcoin/. This market will resolve to “Yes“ if BTC is trading above $55000 according to Coinmarketcap on the resolution date, and “No“ otherwise. If price data is temporarily unavailable on Coinmarketcap at the time of resolution, coingecko.com/en/coins/bitcoin will instead be referenced. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.6720667278394123702971286257476096",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.3279332721605876297028713742523904",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "2618",
+    "numforecasts": "75",
     "stars": 4
   },
   {
@@ -312,52 +313,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.01019374154946546974525356766539572",
+        "probability": "0.001584751006425928853977388179070808",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9898062584505345302547464323346043",
+        "probability": "0.9984152489935740711460226118209292",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "87",
+    "numforecasts": "102",
     "stars": 2
-  },
-  {
-    "title": "What will monthly NFT trading volume be on April 13, 2021?",
-    "url": "https://polymarket.com/market/what-will-monthly-nft-trading-volume-be-on-april-13-2021-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on what the monthly trading volume will be for non-fungible-tokens (NFTs) on April 13, 2021. The resolution source for this market will be Coinranking’s aggregation of 30-day NFT trading volume, as displayed in USD by the resolution source, https://coinranking.com/nfts. The total trading volume (in the last 30 days) as listed by Coinranking will be checked at 12:00 PM ET on April 13, 2021. Whichever bracket the total trading volume falls into at that time will be the bracket that this market resolves to. Data will be rounded down to the nearest million dollars for the resolution of this market (e.g. 50.3, 50.5, 50.7 million dollars are all rounded down to 50 million dollars). In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
-    "options": [
-      {
-        "name": "$80M or Less",
-        "probability": "0.09311545717991747005375998978049056",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "$81-105M",
-        "probability": "0.4546994257057043229946384853760889",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "$106-120M",
-        "probability": "0.2157457711612491388147202046582125",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "$121-135M",
-        "probability": "0.1199694628723149212877599749935941",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "$136M or More",
-        "probability": "0.1164698830808141468491213451916138",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "144",
-    "stars": 3
   },
   {
     "title": "Will American mask usage be 75% or higher on April 14th, 2021?",
@@ -367,76 +333,36 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1645269193840114258022893873779148",
+        "probability": "0.1661397634672417208420309135621839",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8354730806159885741977106126220852",
+        "probability": "0.8338602365327582791579690864378161",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "78",
+    "numforecasts": "87",
     "stars": 4
   },
   {
-    "title": "Will Donald Trump file to run for president before June 1, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-file-to-run-for-president-before-june-1-2021-1",
+    "title": "Will 225M COVID-19 vaccine doses have been administered in the US by Biden's 100th day in office? ",
+    "url": "https://polymarket.com/market/will-225-m-covid-19-vaccine-doses-have-been-administered-in-the-us-by-biden-s-100th-day-in-office",
     "platform": "PolyMarket",
-    "description": "This is a market on whether Donald Trump will file to run for president prior to June 1, 2021. The linked PredictIt question is the basis for the creation of this market and will be referenced as the leading resolution source: https://www.predictit.org/markets/detail/6994/Will-Donald-Trump-file-to-run-for-president-before-the-end-of-2021. If the PredictIt question resolves to \"Yes\" prior to June 1, 2021, this market will resolve to “Yes”, and “No” otherwise.",
+    "description": "This is a market on whether 225 million COVID-19 vaccine doses will be administered in the United States by April 29, 2021, 12:00 PM ET (Biden’s 100th day in office). This market will resolve to \"Yes\" if 225 million or more total COVID-19 vaccine doses are administered by the resolution date. This market will resolve to \"No\" if, for any reason, fewer than 225 million COVID-19 vaccines doses are administered by the resolution date. The resolution source for this market will be the number of total COVID-19 vaccine doses administered, as indicated by the CDC’s Covid Data tracker (https://covid.cdc.gov/covid-data-tracker/#vaccinations). This market will resolve according to the data as available immediately at the time of resolution, April 29, 2021, 12:00 PM ET, and resolution will not be delayed for the purpose of waiting for updated data from a specific date. ",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.05850935819533382463369476425064051",
+        "probability": "0.8625280409263922776450772413925053",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9414906418046661753663052357493595",
+        "probability": "0.1374719590736077223549227586074947",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "96",
-    "stars": 3
-  },
-  {
-    "title": "Will any Knicks game have greater than 20% attendance before the NBA season ends?",
-    "url": "https://polymarket.com/market/will-any-knicks-game-have-greater-than-20-attendance-before-the-nba-season-ends",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether there will be a New York Knicks game at Madison Square Garden where more than 20% of the seats are filled by the end of the NBA season, including the playoffs. This market will resolve to “Yes” if there is any New York Knicks home game at Madison Square Garden, where official attendance is 3,963 or higher (3,963 is the lowest number that puts attendance over 20% of the 19,812 seating capacity at MSG for NBA games), before the end of the NBA  season. This market will resolve to “No” if there is not a single New York Knicks home game at Madison Square Garden, where official attendance is higher than 3,963. The resolution source for this market will be the official attendance data provided in the NBA gamebooks (https://www.nba.com/stats/gamebooks/). The resolution date for this market will be the day the Knicks are eliminated from this NBA season. Resolution may be delayed in the event of a change or postponement in the NBA’s schedule.\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.7288981168376345387653725396207922",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.2711018831623654612346274603792078",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "54",
-    "stars": 4
-  },
-  {
-    "title": "Will more than 1.75 million people travel through a TSA checkpoint on any day on or before April 10?",
-    "url": "https://polymarket.com/market/will-more-than-175-million-people-travel-through-a-tsa-checkpoint-on-any-day-on-or-before-april-10",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether more than 1,750,000 million people will travel through a TSA checkpoint on any single day after March 22, 2021 and on or before April 10, 2021. The resolution source for this market will be daily checkpoint throughput as measured by the US Transportation Security Administration (TSA), https://www.tsa.gov/coronavirus/passenger-throughput. This market will resolve to “Yes” if the TSA reports a daily checkpoint throughput of more than 1.75 million for any day after March 22, 2021 and on or before April 10, 2021. This market will resolve to “No” otherwise. This market will resolve as soon as throughput data becomes available for the date of April 10, 2021 or on any date before that if the target is reached. Any revisions published prior to the release of data for April 10, 2021 will be considered. Market resolution will occur immediately upon satisfaction of market conditions, regardless of any later revisions.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.7158133605584465880501470012740285",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.2841866394415534119498529987259715",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "56",
+    "numforecasts": "273",
     "stars": 4
   },
   {
@@ -447,16 +373,76 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.2791105028801385312747041678913065",
+        "probability": "0.3074187289292383718296906672878704",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.7208894971198614687252958321086935",
+        "probability": "0.6925812710707616281703093327121296",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "30",
+    "numforecasts": "39",
     "stars": 4
+  },
+  {
+    "title": "Will Donald Trump file to run for president before June 1, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-file-to-run-for-president-before-june-1-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Donald Trump will file to run for president prior to June 1, 2021. The linked PredictIt question is the basis for the creation of this market and will be referenced as the leading resolution source: https://www.predictit.org/markets/detail/6994/Will-Donald-Trump-file-to-run-for-president-before-the-end-of-2021. If the PredictIt question resolves to \"Yes\" prior to June 1, 2021, this market will resolve to “Yes”, and “No” otherwise.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.05473473251674721078257169228566964",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9452652674832527892174283077143304",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "98",
+    "stars": 3
+  },
+  {
+    "title": "Will any Knicks game have greater than 20% attendance before the NBA season ends?",
+    "url": "https://polymarket.com/market/will-any-knicks-game-have-greater-than-20-attendance-before-the-nba-season-ends",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether there will be a New York Knicks game at Madison Square Garden where more than 20% of the seats are filled by the end of the NBA season, including the playoffs. This market will resolve to “Yes” if there is any New York Knicks home game at Madison Square Garden, where official attendance is 3,963 or higher (3,963 is the lowest number that puts attendance over 20% of the 19,812 seating capacity at MSG for NBA games), before the end of the NBA  season. This market will resolve to “No” if there is not a single New York Knicks home game at Madison Square Garden, where official attendance is higher than 3,963. The resolution source for this market will be the official attendance data provided in the NBA gamebooks (https://www.nba.com/stats/gamebooks/). The resolution date for this market will be the day the Knicks are eliminated from this NBA season. Resolution may be delayed in the event of a change or postponement in the NBA’s schedule.\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.722552112790316904876933165751827",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.277447887209683095123066834248173",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "55",
+    "stars": 4
+  },
+  {
+    "title": "Will there be enough signatures for a vote on the recall of Gov. Newsom by March 17?",
+    "url": "https://polymarket.com/market/will-there-be-enough-signatures-for-a-vote-on-recall-of-gov-newsom-by-march-17",
+    "platform": "PolyMarket",
+    "description": "This is a market on if there will be enough petition signatures for a vote on the recall of California Governor Gavin Newson prior to March 17, 2021. This market will resolve to \"Yes\" if a recall election is triggered and \"No\" otherwise. The linked PredictIt question will be referenced as the leading resolution source, https://www.predictit.org/markets/detail/7039/Will-there-be-enough-signatures-by-Mar-17-for-a-vote-on-recall-of-Gov-Newsom. This market will resolve when the PredictIt market is resolved, to the same outcome.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9887645696991241916193178356973243",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.01123543030087580838068216430267569",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "1368",
+    "stars": 3
   }
 ]

@@ -17,17 +17,17 @@
       },
       {
         "name": "More than 5.0% but less than 6.0%",
-        "probability": 0.27,
+        "probability": 0.22,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 6.0% and 7.0%, inclusive",
-        "probability": 0.52,
+        "probability": 0.56,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 7.0%",
-        "probability": 0.2,
+        "probability": 0.21,
         "type": "PROBABILITY"
       }
     ],
@@ -51,12 +51,12 @@
       },
       {
         "name": "More than 24 million but less than 27 million barrels per day",
-        "probability": 0.47,
+        "probability": 0.48,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 27 million and 30 million barrels per day, inclusive",
-        "probability": 0.5,
+        "probability": 0.49,
         "type": "PROBABILITY"
       },
       {
@@ -75,12 +75,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.98,
+        "probability": 0.99,
         "type": "PROBABILITY"
       }
     ],
@@ -94,17 +94,17 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.96,
+        "probability": 0.99,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.03,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -133,22 +133,22 @@
       },
       {
         "name": "Between 200 million and 500 million, inclusive",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 500 million but fewer than 960 million",
-        "probability": 0.16,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 960 million and 1.6 billion, inclusive",
-        "probability": 0.78,
+        "probability": 0.77,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 1.6 billion",
-        "probability": 0.06,
+        "probability": 0.1,
         "type": "PROBABILITY"
       }
     ],
@@ -166,12 +166,12 @@
       },
       {
         "name": "Between 1 April 2021 and 30 June 2021",
-        "probability": 0.98,
+        "probability": 0.99,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 30 September 2021",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -200,17 +200,17 @@
       },
       {
         "name": "Between 1 February 2021 and 31 March 2021",
-        "probability": 0.85,
+        "probability": 0.91,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 April 2021 and 31 May 2021",
-        "probability": 0.14,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 June 2021 and 31 July 2021",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -234,12 +234,12 @@
       },
       {
         "name": "Between 1 March 2021 and 30 April 2021",
-        "probability": 0.97,
+        "probability": 0.98,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
@@ -259,7 +259,7 @@
     "title": "As of 31 March 2021, what will be the highest seven-day median of COVID-19 confirmed new cases in WHO's Europe Region?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "The status of the COVID-19 outbreak through spring 2021 is an open question, as \"<a href=\"https://apnews.com/article/virus-outbreak-pandemics-italy-madrid-eastern-europe-159a68a460337948d25281c153994c70\" target=\"_blank\">next waves</a>\" are experienced in the fall and winter. The outcome will be determined using the World Health Organization's Coronavirus Disease (COVID-19) <a href=\"https://covid19.who.int/\" target=\"_blank\">Dashboard</a>. The value for a given day will come from the data available on the WHO dashboard at close of business of the day in question. If a data point is not available at that time, the first posting on the WHO dashboard thereafter will be used. Any subsequent revisions to the data are immaterial. To simplify the process, the data will be captured and posted <a href=\"https://docs.google.com/spreadsheets/d/1szi8i948AJRAqlYG82NhcW0qDMuLm6UlAyW_AbFsQ_0/\" target=\"_blank\">here</a> each day.",
+    "description": "Closed 28 March 2021; resolved as \"B: Between 275,000 and 300,000, inclusive\" The status of the COVID-19 outbreak through spring 2021 is an open question, as \"<a href=\"https://apnews.com/article/virus-outbreak-pandemics-italy-madrid-eastern-europe-159a68a460337948d25281c153994c70\" target=\"_blank\">next   waves</a>\" are experienced in the fall and winter. The outcome will be determined using the World Health Organization's Coronavirus Disease (COVID-19) <a href=\"https://covid19.who.int/\" target=\"_blank\">Dashboard</a>. The value for a given day will come from the data available on the WHO dashboard at close of business of the day in question. If a data point is not available at that time, the first posting on the WHO dashboard thereafter will be used. Any subsequent revisions to the data are immaterial. To simplify the process, the data will be captured and posted <a href=\"https://docs.google.com/spreadsheets/d/1szi8i948AJRAqlYG82NhcW0qDMuLm6UlAyW_AbFsQ_0/\" target=\"_blank\">here</a> each day.",
     "options": [
       {
         "name": "Less than 275,000",
@@ -335,12 +335,12 @@
       },
       {
         "name": "More than 10% but less than 20%",
-        "probability": 0.76,
+        "probability": 0.78,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 30%, inclusive",
-        "probability": 0.22,
+        "probability": 0.2,
         "type": "PROBABILITY"
       },
       {
@@ -383,12 +383,12 @@
     "options": [
       {
         "name": "Less than 23%",
-        "probability": 0.27,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 23% and 27%, inclusive",
-        "probability": 0.72,
+        "probability": 0.73,
         "type": "PROBABILITY"
       },
       {
@@ -412,7 +412,7 @@
       },
       {
         "name": "Lower by between 4% and 8%, inclusive ",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -422,12 +422,12 @@
       },
       {
         "name": "Higher by between 0% and 4%, inclusive",
-        "probability": 0.85,
+        "probability": 0.81,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 4%",
-        "probability": 0.1,
+        "probability": 0.13,
         "type": "PROBABILITY"
       }
     ],
@@ -446,12 +446,12 @@
       },
       {
         "name": "Higher by between 0% and 100%",
-        "probability": 0.41,
+        "probability": 0.4,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 100%",
-        "probability": 0.58,
+        "probability": 0.59,
         "type": "PROBABILITY"
       }
     ],
@@ -470,12 +470,12 @@
       },
       {
         "name": "Between 1 April 2021 and 30 June 2021",
-        "probability": 0.98,
+        "probability": 0.99,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 30 September 2021",
-        "probability": 0.02,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -504,12 +504,12 @@
       },
       {
         "name": "More than 10% but less than 20%",
-        "probability": 0.76,
+        "probability": 0.78,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 30%, inclusive",
-        "probability": 0.22,
+        "probability": 0.2,
         "type": "PROBABILITY"
       },
       {

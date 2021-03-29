@@ -6,12 +6,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5238095238095238,
+        "probability": 0.5454545454545454,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.47619047619047616,
+        "probability": 0.4545454545454546,
         "type": "PROBABILITY"
       }
     ],
@@ -24,30 +24,30 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5238095238095238,
+        "probability": 0.5,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.47619047619047616,
+        "probability": 0.5,
         "type": "PROBABILITY"
       }
     ],
     "stars": 2
   },
   {
-    "title": "Northern Independence Party",
+    "title": "Northern Independence Party / Thelma Walker",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.038461538461538464,
+        "probability": 0.029411764705882353,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.9615384615384616,
+        "probability": 0.9705882352941176,
         "type": "PROBABILITY"
       }
     ],
@@ -66,6 +66,24 @@
       {
         "name": "No",
         "probability": 0.9803921568627451,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "SDP",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.00398406374501992,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.9960159362549801,
         "type": "PROBABILITY"
       }
     ],
@@ -108,7 +126,61 @@
     "stars": 2
   },
   {
-    "title": "SDP",
+    "title": "Women's Equality Party",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "UKIP",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "North East Party",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Samantha Lee (Ind)",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
     "options": [
@@ -935,32 +1007,32 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.936717595487423,
+        "probability": 0.9396320653181106,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.02782602268947933,
+        "probability": 0.02791259958739093,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.018550681792986218,
+        "probability": 0.018608399724927286,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrat",
-        "probability": 0.00936717595487423,
+        "probability": 0.006284956198485375,
         "type": "PROBABILITY"
       },
       {
         "name": "Greens",
-        "probability": 0.003769262037618714,
+        "probability": 0.0037809895855429945,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.003769262037618714,
+        "probability": 0.0037809895855429945,
         "type": "PROBABILITY"
       }
     ],
@@ -1192,22 +1264,22 @@
     "options": [
       {
         "name": "Andy Street (Conservative)",
-        "probability": 0.6801053583651119,
+        "probability": 0.6807310358790816,
         "type": "PROBABILITY"
       },
       {
         "name": "Liam Byrne (Labour)",
-        "probability": 0.30913879925686905,
+        "probability": 0.30942319812685526,
         "type": "PROBABILITY"
       },
       {
         "name": "Jenny Wilkinson (Lib Dem)",
-        "probability": 0.006141830448811968,
+        "probability": 0.0061474807574871905,
         "type": "PROBABILITY"
       },
       {
         "name": "Ashvir Sangha (Independent)",
-        "probability": 0.004614011929207001,
+        "probability": 0.0036982852365759593,
         "type": "PROBABILITY"
       }
     ],
@@ -1253,27 +1325,27 @@
     "options": [
       {
         "name": "Tracy Brabin (Labour)",
-        "probability": 0.8450310681917125,
+        "probability": 0.8488589000966289,
         "type": "PROBABILITY"
       },
       {
         "name": "Matthew Robinson (Conservatives)",
-        "probability": 0.13077861769633645,
+        "probability": 0.1313710202530497,
         "type": "PROBABILITY"
       },
       {
         "name": "Andrew Cooper (Green)",
-        "probability": 0.009063864592815399,
+        "probability": 0.00910492219575592,
         "type": "PROBABILITY"
       },
       {
         "name": "Stewart Golton (Lib Dem)",
-        "probability": 0.009063864592815399,
+        "probability": 0.006090047296498993,
         "type": "PROBABILITY"
       },
       {
         "name": "Bob Buxton (Yorkshire Party)",
-        "probability": 0.006062584926320233,
+        "probability": 0.0045751101580664075,
         "type": "PROBABILITY"
       }
     ],
@@ -1364,22 +1436,22 @@
     "options": [
       {
         "name": "Labour",
-        "probability": 0.8444759244837123,
+        "probability": 0.7894110347590826,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.10644654510298895,
+        "probability": 0.16403346176812106,
         "type": "PROBABILITY"
       },
       {
         "name": "Plaid Cymru",
-        "probability": 0.043085506351209814,
+        "probability": 0.04296114474879361,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrat",
-        "probability": 0.005992024062088782,
+        "probability": 0.0035943587240026527,
         "type": "PROBABILITY"
       }
     ],
@@ -1391,38 +1463,38 @@
     "platform": "WilliamHill",
     "options": [
       {
-        "name": "Markus Soder",
-        "probability": 0.38324741732256423,
+        "name": "Armin Laschet",
+        "probability": 0.35288419571610885,
         "type": "PROBABILITY"
       },
       {
-        "name": "Armin Laschet",
-        "probability": 0.3406643709533904,
+        "name": "Markus Soder",
+        "probability": 0.35288419571610885,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock or Robert Habeck",
-        "probability": 0.10949926209216121,
+        "probability": 0.1235094685006381,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.05896114112654835,
+        "probability": 0.06736880100034806,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock",
-        "probability": 0.051099655643008564,
+        "probability": 0.05700437007721759,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.04508793144971344,
+        "probability": 0.035288419571610885,
         "type": "PROBABILITY"
       },
       {
         "name": "Alice Weidel",
-        "probability": 0.011440221412613857,
+        "probability": 0.011060549417967592,
         "type": "PROBABILITY"
       }
     ],
@@ -1488,12 +1560,12 @@
     "options": [
       {
         "name": "2021",
-        "probability": 0.3373493975903614,
+        "probability": 0.2765957446808511,
         "type": "PROBABILITY"
       },
       {
         "name": "2022",
-        "probability": 0.6626506024096386,
+        "probability": 0.723404255319149,
         "type": "PROBABILITY"
       }
     ],

@@ -149,27 +149,27 @@
     "options": [
       {
         "name": "Friedrich Merz",
-        "probability": 0.0054093331180364934,
+        "probability": 0.0052495494789626266,
         "type": "PROBABILITY"
       },
       {
         "name": "Annegret Kramp-Karrenbauer",
-        "probability": 0.01751978039722267,
+        "probability": 0.017002272193058058,
         "type": "PROBABILITY"
       },
       {
         "name": "Jens Spahn",
-        "probability": 0.052074923300500564,
+        "probability": 0.05053670767061036,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet",
-        "probability": 0.3703374777975133,
+        "probability": 0.3593982605970383,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.07024059421927982,
+        "probability": 0.0681657917417535,
         "type": "PROBABILITY"
       },
       {
@@ -189,7 +189,7 @@
       },
       {
         "name": "Ralph Brinkhaus",
-        "probability": 0.03229452607782981,
+        "probability": 0.031340593904254484,
         "type": "PROBABILITY"
       },
       {
@@ -224,7 +224,7 @@
       },
       {
         "name": "Ursula Von der Leyen",
-        "probability": 0.02518973034070725,
+        "probability": 0.024445663245318498,
         "type": "PROBABILITY"
       },
       {
@@ -239,22 +239,22 @@
       },
       {
         "name": "Markus Söder",
-        "probability": 0.3229452607782981,
+        "probability": 0.3237483350309488,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.0538511222347812,
+        "probability": 0.05226044033534435,
         "type": "PROBABILITY"
       },
       {
         "name": "Norbert Röttgen",
-        "probability": 0.0026642984014209592,
+        "probability": 0.002585598997100995,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock",
-        "probability": 0.04747295333440982,
+        "probability": 0.06526678680560996,
         "type": "PROBABILITY"
       }
     ],
@@ -652,12 +652,12 @@
     "options": [
       {
         "name": "Boris Johnson",
-        "probability": 0.04372298723489799,
+        "probability": 0.04157904798317722,
         "type": "PROBABILITY"
       },
       {
         "name": "Rishi Sunak",
-        "probability": 0.05025630716654941,
+        "probability": 0.04779200917606577,
         "type": "PROBABILITY"
       },
       {
@@ -667,37 +667,37 @@
       },
       {
         "name": "Priti Patel",
-        "probability": 0.10051261433309883,
+        "probability": 0.09558401835213154,
         "type": "PROBABILITY"
       },
       {
         "name": "Michael Gove",
-        "probability": 0.09568800884511007,
+        "probability": 0.09099598547122922,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Buckland",
-        "probability": 0.08041009146647905,
+        "probability": 0.07646721468170524,
         "type": "PROBABILITY"
       },
       {
         "name": "Ben Wallace",
-        "probability": 0.1196100110563876,
+        "probability": 0.11374498183903654,
         "type": "PROBABILITY"
       },
       {
         "name": "Matt Hancock",
-        "probability": 0.10925721178007841,
+        "probability": 0.10389982794876698,
         "type": "PROBABILITY"
       },
       {
         "name": "Alok Sharma",
-        "probability": 0.077294200422153,
+        "probability": 0.07350411011278916,
         "type": "PROBABILITY"
       },
       {
         "name": "Elizabeth Truss",
-        "probability": 0.05437732435420647,
+        "probability": 0.05171095392850317,
         "type": "PROBABILITY"
       },
       {
@@ -707,7 +707,7 @@
       },
       {
         "name": "Gavin Williamson",
-        "probability": 0.14785405568398838,
+        "probability": 0.1406040909959855,
         "type": "PROBABILITY"
       },
       {
@@ -717,7 +717,7 @@
       },
       {
         "name": "Robert Jenrick",
-        "probability": 0.077294200422153,
+        "probability": 0.07350411011278916,
         "type": "PROBABILITY"
       },
       {
@@ -727,7 +727,7 @@
       },
       {
         "name": "Brandon Lewis",
-        "probability": 0,
+        "probability": 0.04903460141464348,
         "type": "PROBABILITY"
       },
       {
@@ -752,7 +752,7 @@
       },
       {
         "name": "Amanda Milling",
-        "probability": 0.04372298723489799,
+        "probability": 0.04157904798317722,
         "type": "PROBABILITY"
       }
     ],
@@ -1248,61 +1248,61 @@
     "options": [
       {
         "name": "Sadiq Khan",
-        "probability": 0.9542787780699976,
+        "probability": 0.9522559806197634,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Bailey",
-        "probability": 0.021950232652235474,
+        "probability": 0.014434238417280703,
         "type": "PROBABILITY"
       },
       {
         "name": "Siân Berry",
-        "probability": 0.0001011531458628363,
+        "probability": 0.00010093873019077415,
         "type": "PROBABILITY"
       },
       {
-        "probability": 0.0001011531458628363,
+        "probability": 0.00010093873019077415,
         "type": "PROBABILITY"
       },
       {
         "name": "Brian Rose",
-        "probability": 0.021950232652235474,
+        "probability": 0.03149288381952153,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid",
-        "probability": 0.0001011531458628363,
+        "probability": 0.00010093873019077415,
         "type": "PROBABILITY"
       },
       {
         "name": "Luisa Porritt",
-        "probability": 0.0001011531458628363,
+        "probability": 0.00010093873019077415,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox",
-        "probability": 0.001011531458628363,
+        "probability": 0.0010093873019077415,
         "type": "PROBABILITY"
       },
       {
         "name": "David Kurten",
-        "probability": 0.0001011531458628363,
+        "probability": 0.00010093873019077415,
         "type": "PROBABILITY"
       },
       {
         "name": "Piers Corbyn",
-        "probability": 0.0001011531458628363,
+        "probability": 0.00010093873019077415,
         "type": "PROBABILITY"
       },
       {
         "name": "Farah London",
-        "probability": 0.0001011531458628363,
+        "probability": 0.00010093873019077415,
         "type": "PROBABILITY"
       },
       {
         "name": "Peter Gammons",
-        "probability": 0.0001011531458628363,
+        "probability": 0.00010093873019077415,
         "type": "PROBABILITY"
       }
     ],
@@ -1316,12 +1316,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.44574557708508844,
+        "probability": 0.4108006448146158,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5542544229149116,
+        "probability": 0.5891993551853842,
         "type": "PROBABILITY"
       }
     ],
@@ -1412,22 +1412,22 @@
     "options": [
       {
         "name": "Conservative",
-        "probability": 0.5074626865671642,
+        "probability": 0.5163281049112882,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.36370777690494893,
+        "probability": 0.3571612239650296,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.08728288382648162,
+        "probability": 0.08571183680466272,
         "type": "PROBABILITY"
       },
       {
         "name": "Green",
-        "probability": 0.04154665270140525,
+        "probability": 0.040798834319019456,
         "type": "PROBABILITY"
       }
     ],
@@ -1860,12 +1860,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5094983400959056,
+        "probability": 0.4813294624086495,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.49050165990409444,
+        "probability": 0.5186705375913505,
         "type": "PROBABILITY"
       }
     ],
@@ -1965,32 +1965,32 @@
     "options": [
       {
         "name": "Joe Biden",
-        "probability": 0.36488833746898264,
+        "probability": 0.36833662388943733,
         "type": "PROBABILITY"
       },
       {
         "name": "Kamala Harris",
-        "probability": 0.36488833746898264,
+        "probability": 0.3629072063178677,
         "type": "PROBABILITY"
       },
       {
         "name": "Elizabeth Warren",
-        "probability": 0.05173697270471464,
+        "probability": 0.05145607107601184,
         "type": "PROBABILITY"
       },
       {
         "name": "Alexandria Ocasio-Cortez",
-        "probability": 0.08858560794044665,
+        "probability": 0.0881046396841066,
         "type": "PROBABILITY"
       },
       {
         "name": "Michelle Obama",
-        "probability": 0.04590570719602978,
+        "probability": 0.04565646594274432,
         "type": "PROBABILITY"
       },
       {
         "name": "Pete Buttigieg",
-        "probability": 0.062034739454094295,
+        "probability": 0.06169792694965449,
         "type": "PROBABILITY"
       },
       {
@@ -2010,7 +2010,7 @@
       },
       {
         "name": "Bernie Sanders",
-        "probability": 0.020719602977667496,
+        "probability": 0.020607107601184598,
         "type": "PROBABILITY"
       },
       {
@@ -2050,7 +2050,7 @@
       },
       {
         "name": "Michael Bloomberg",
-        "probability": 0.001240694789081886,
+        "probability": 0.0012339585389930898,
         "type": "PROBABILITY"
       }
     ],
@@ -2163,47 +2163,47 @@
     "options": [
       {
         "name": "Joe Biden",
-        "probability": 0.1802162162162162,
+        "probability": 0.1821658835099989,
         "type": "PROBABILITY"
       },
       {
         "name": "Kamala Harris",
-        "probability": 0.21199999999999997,
+        "probability": 0.2142935198338979,
         "type": "PROBABILITY"
       },
       {
         "name": "Donald Trump",
-        "probability": 0.1257297297297297,
+        "probability": 0.11627144574363457,
         "type": "PROBABILITY"
       },
       {
         "name": "Tucker Carlson",
-        "probability": 0.024540540540540536,
+        "probability": 0.024806032127636324,
         "type": "PROBABILITY"
       },
       {
         "name": "Tom Cotton",
-        "probability": 0.01081081081081081,
+        "probability": 0.010927767457108512,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Pence",
-        "probability": 0.03729729729729729,
+        "probability": 0.037700797727024365,
         "type": "PROBABILITY"
       },
       {
         "name": "Donald Trump Jr.",
-        "probability": 0.06356756756756755,
+        "probability": 0.06425527264779805,
         "type": "PROBABILITY"
       },
       {
         "name": "Ted Cruz",
-        "probability": 0.019675675675675672,
+        "probability": 0.01988853677193749,
         "type": "PROBABILITY"
       },
       {
         "name": "Alexandria Ocasio-Cortez",
-        "probability": 0.0721081081081081,
+        "probability": 0.07288820893891378,
         "type": "PROBABILITY"
       },
       {
@@ -2213,7 +2213,7 @@
       },
       {
         "name": "Nikki Haley",
-        "probability": 0.06972972972972973,
+        "probability": 0.0704841000983499,
         "type": "PROBABILITY"
       },
       {
@@ -2243,7 +2243,7 @@
       },
       {
         "name": "Pete Buttigieg",
-        "probability": 0.05405405405405404,
+        "probability": 0.05463883728554256,
         "type": "PROBABILITY"
       },
       {
@@ -2263,7 +2263,7 @@
       },
       {
         "name": "Mike Pompeo",
-        "probability": 0.02702702702702702,
+        "probability": 0.02731941864277128,
         "type": "PROBABILITY"
       },
       {
@@ -2283,7 +2283,7 @@
       },
       {
         "name": "Ivanka Trump",
-        "probability": 0.05405405405405404,
+        "probability": 0.05463883728554256,
         "type": "PROBABILITY"
       },
       {
@@ -2298,7 +2298,7 @@
       },
       {
         "name": "Ron DeSantis",
-        "probability": 0.04918918918918918,
+        "probability": 0.049721341929843725,
         "type": "PROBABILITY"
       }
     ],
@@ -2312,17 +2312,17 @@
     "options": [
       {
         "name": "Shaun Bailey",
-        "probability": 0.8999332252217878,
+        "probability": 0.9088631984585742,
         "type": "PROBABILITY"
       },
       {
         "name": "Sadiq Khan",
-        "probability": 0.028045406849184395,
+        "probability": 0.028323699421965318,
         "type": "PROBABILITY"
       },
       {
         "name": "Siân Berry",
-        "probability": 0.006391300200324335,
+        "probability": 0.012813102119460502,
         "type": "PROBABILITY"
       },
       {
@@ -2332,17 +2332,17 @@
       },
       {
         "name": "Brian Rose",
-        "probability": 0.06152818849565964,
+        "probability": 0.045857418111753374,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid",
-        "probability": 0.0009539254030334829,
+        "probability": 0.0009633911368015415,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox",
-        "probability": 0.0031479538300104933,
+        "probability": 0.003179190751445087,
         "type": "PROBABILITY"
       }
     ],
@@ -2413,17 +2413,17 @@
     "options": [
       {
         "name": "Fewer than 3",
-        "probability": 0.1290172766115549,
+        "probability": 0.123071168053867,
         "type": "PROBABILITY"
       },
       {
         "name": "Exactly 3",
-        "probability": 0.31813115363180383,
+        "probability": 0.3203030019639016,
         "type": "PROBABILITY"
       },
       {
         "name": "Exactly 4",
-        "probability": 0.5528515697566413,
+        "probability": 0.5566258299822313,
         "type": "PROBABILITY"
       }
     ],
@@ -2630,12 +2630,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.7920825016633399,
+        "probability": 0.763369616658779,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.20791749833666,
+        "probability": 0.236630383341221,
         "type": "PROBABILITY"
       }
     ],
@@ -2649,12 +2649,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.3994252873563218,
+        "probability": 0.40614775271224385,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.6005747126436781,
+        "probability": 0.5938522472877561,
         "type": "PROBABILITY"
       }
     ],
@@ -2783,12 +2783,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.7037808871688002,
+        "probability": 0.7189000847537433,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.2962191128311997,
+        "probability": 0.2810999152462567,
         "type": "PROBABILITY"
       }
     ],
@@ -2802,12 +2802,12 @@
     "options": [
       {
         "name": "In-person and postal voting",
-        "probability": 0.947219512195122,
+        "probability": 0.948190001915342,
         "type": "PROBABILITY"
       },
       {
         "name": "Postal voting only",
-        "probability": 0.05278048780487805,
+        "probability": 0.05180999808465811,
         "type": "PROBABILITY"
       }
     ],
@@ -2859,27 +2859,27 @@
     "options": [
       {
         "name": "Andrew Yang",
-        "probability": 0.5962437395659432,
+        "probability": 0.5754450978812535,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Adams",
-        "probability": 0.14148580968280466,
+        "probability": 0.1714331748972851,
         "type": "PROBABILITY"
       },
       {
         "name": "Scott Stringer",
-        "probability": 0.07587646076794657,
+        "probability": 0.07322967856279707,
         "type": "PROBABILITY"
       },
       {
         "name": "Raymond McGuire",
-        "probability": 0.03797996661101836,
+        "probability": 0.036655119632643195,
         "type": "PROBABILITY"
       },
       {
         "name": "Maya Wiley",
-        "probability": 0.09933222036727879,
+        "probability": 0.09586723596229758,
         "type": "PROBABILITY"
       },
       {
@@ -2889,7 +2889,7 @@
       },
       {
         "name": "Dianne Morales",
-        "probability": 0.04908180300500834,
+        "probability": 0.04736969306372351,
         "type": "PROBABILITY"
       },
       {
@@ -3283,12 +3283,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.11546469808820746,
+        "probability": 0.13262180974477958,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.8845353019117925,
+        "probability": 0.8673781902552203,
         "type": "PROBABILITY"
       }
     ],
@@ -3302,12 +3302,12 @@
     "options": [
       {
         "name": "Less than 2.0%",
-        "probability": 0.5194617972128784,
+        "probability": 0.47011367803447013,
         "type": "PROBABILITY"
       },
       {
         "name": "2.0% or more",
-        "probability": 0.4805382027871216,
+        "probability": 0.5298863219655299,
         "type": "PROBABILITY"
       }
     ],
@@ -4212,27 +4212,27 @@
     "options": [
       {
         "name": "Labour",
-        "probability": 0.5319148936170212,
+        "probability": 0.514421177400237,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.4375661885048618,
+        "probability": 0.4489332279731331,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.013767209011264077,
+        "probability": 0.014124851837218488,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.0019254837777991718,
+        "probability": 0.0019755037534571313,
         "type": "PROBABILITY"
       },
       {
-        "name": "Northern Independence Party",
-        "probability": 0.014826225089053622,
+        "name": "Northern Independence Party (Thelma Walker)",
+        "probability": 0.020545239035954167,
         "type": "PROBABILITY"
       }
     ],
@@ -4280,27 +4280,27 @@
     "options": [
       {
         "name": "60 or fewer",
-        "probability": 0.27236315086782376,
+        "probability": 0.28265149857799166,
         "type": "PROBABILITY"
       },
       {
         "name": "61–64",
-        "probability": 0.19253741831213547,
+        "probability": 0.16203602421060306,
         "type": "PROBABILITY"
       },
       {
         "name": "65–68",
-        "probability": 0.24228796289789892,
+        "probability": 0.25144023918909064,
         "type": "PROBABILITY"
       },
       {
         "name": "69–72",
-        "probability": 0.19520764528142787,
+        "probability": 0.2025814920148764,
         "type": "PROBABILITY"
       },
       {
         "name": "73 or more",
-        "probability": 0.09760382264071393,
+        "probability": 0.1012907460074382,
         "type": "PROBABILITY"
       }
     ],
@@ -4414,17 +4414,17 @@
     "options": [
       {
         "name": "Siân Berry",
-        "probability": 0.5638074435016383,
+        "probability": 0.5179040119985002,
         "type": "PROBABILITY"
       },
       {
         "name": "Luisa Porritt",
-        "probability": 0.30437704780307484,
+        "probability": 0.32320959880015,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Bailey",
-        "probability": 0.02335545660757792,
+        "probability": 0.026059242594675666,
         "type": "PROBABILITY"
       },
       {
@@ -4444,12 +4444,12 @@
       },
       {
         "name": "Brian Rose",
-        "probability": 0.0893892296059817,
+        "probability": 0.1115485564304462,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox",
-        "probability": 0.019070822481727295,
+        "probability": 0.021278590176227973,
         "type": "PROBABILITY"
       }
     ],
@@ -4618,12 +4618,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.6044042127252154,
+        "probability": 0.6267722694827418,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.3955957872747846,
+        "probability": 0.37322773051725827,
         "type": "PROBABILITY"
       }
     ],

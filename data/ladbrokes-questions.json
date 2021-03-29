@@ -871,37 +871,37 @@
     "options": [
       {
         "name": "Markus Söder",
-        "probability": 0.39833716101653427,
+        "probability": 0.35524640286087616,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.04267898153748581,
+        "probability": 0.034158307967391936,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock",
-        "probability": 0.05272109484042366,
+        "probability": 0.0807378188320173,
         "type": "PROBABILITY"
       },
       {
         "name": "Alice Weidel",
-        "probability": 0.008873847646407942,
+        "probability": 0.008793227793586043,
         "type": "PROBABILITY"
       },
       {
         "name": "Jens Spahn",
-        "probability": 0.017573698280141218,
+        "probability": 0.017414039355925302,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet",
-        "probability": 0.39833716101653427,
+        "probability": 0.42291238435818584,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.08147805566247292,
+        "probability": 0.0807378188320173,
         "type": "PROBABILITY"
       }
     ],
@@ -1825,11 +1825,6 @@
         "type": "PROBABILITY"
       },
       {
-        "name": "Northern Independence Party (bets void if not registered as a party in time)",
-        "probability": 0.026017434349906464,
-        "type": "PROBABILITY"
-      },
-      {
         "name": "SDP",
         "probability": 0.004400959044262785,
         "type": "PROBABILITY"
@@ -1857,6 +1852,39 @@
       {
         "name": "Sam Lee (Ind)",
         "probability": 0.004400959044262785,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Thelma Walker (either as Ind or NIP)",
+        "probability": 0.026017434349906464,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Hartlepool By-election: Thelma Walker Vote Share",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "Ladbrokes",
+    "options": [
+      {
+        "name": "Under 5%",
+        "probability": 0.5433431584928442,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "5-10%",
+        "probability": 0.3024610248943499,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "10-20%",
+        "probability": 0.10082034163144997,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Over 20%",
+        "probability": 0.05337547498135587,
         "type": "PROBABILITY"
       }
     ],
@@ -2046,17 +2074,17 @@
     "options": [
       {
         "name": "2021",
-        "probability": 0.15682281059063136,
+        "probability": 0.15909090909090906,
         "type": "PROBABILITY"
       },
       {
         "name": "2022",
-        "probability": 0.1710794297352342,
+        "probability": 0.15909090909090906,
         "type": "PROBABILITY"
       },
       {
         "name": "2023 or later",
-        "probability": 0.6720977596741344,
+        "probability": 0.6818181818181818,
         "type": "PROBABILITY"
       }
     ],
@@ -3404,6 +3432,24 @@
       {
         "name": "No",
         "probability": 0.9705882352941176,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Boris Johnson to be replaced as PM before end 2022",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "LadBrokes",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.2857142857142857,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.7142857142857143,
         "type": "PROBABILITY"
       }
     ],
