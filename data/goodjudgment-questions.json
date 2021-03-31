@@ -22,12 +22,12 @@
       },
       {
         "name": "Between 6.0% and 7.0%, inclusive",
-        "probability": 0.56,
+        "probability": 0.55,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 7.0%",
-        "probability": 0.21,
+        "probability": 0.22,
         "type": "PROBABILITY"
       }
     ],
@@ -37,7 +37,7 @@
     "title": "What will be OPEC's crude oil production for June 2021?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "It remains to be seen how the COVID-19 pandemic will affect <a href=\"https://www.economist.com/finance-and-economics/2020/04/13/a-historic-opec-deal-to-curb-oil-output-faces-many-obstacles\" target=\"_blank\">OPEC</a> <a href=\"https://foreignpolicy.com/2020/04/23/the-coronavirus-oil-shock-is-just-getting-started/\" target=\"_blank\">production</a> after 2020. The outcome will be determined using monthly data for \"Total OPEC\" reported in the \"OPEC crude oil production based on secondary sources, tb/d table of the \"World Oil Supply\" section of OPEC's <a href=\"https://www.opec.org/opec_web/en/publications/5844.htm\" target=\"_blank\">Monthly   Oil Market Report</a>. The April 2020 report shows \"Total OPEC\" produced 28.612 million barrels per day in <a href=\"https://www.opec.org/opec_web/static_files_project/media/downloads/publications/OPEC_MOMR_Apr_2020.pdf\" target=\"_blank\">March   2020</a> (see Table 5.8 on page 45 in the document). The question will be suspended on 30 June 2021 and closed when the June 2021 data are released, scheduled for July 2021.",
+    "description": "It remains to be seen how the COVID-19 pandemic will affect <a href=\"https://www.economist.com/finance-and-economics/2020/04/13/a-historic-opec-deal-to-curb-oil-output-faces-many-obstacles\" target=\"_blank\">OPEC</a> <a href=\"https://foreignpolicy.com/2020/04/23/the-coronavirus-oil-shock-is-just-getting-started/\" target=\"_blank\">production</a> after 2020. The outcome will be determined using monthly data for \"Total OPEC\" reported in the \"OPEC crude oil production based on secondary sources, tb/d table of the \"World Oil Supply\" section of OPEC's <a href=\"https://www.opec.org/opec_web/en/publications/5844.htm\" target=\"_blank\">Monthly Oil Market Report</a>. The April 2020 report shows \"Total OPEC\" produced 28.612 million barrels per day in <a href=\"https://www.opec.org/opec_web/static_files_project/media/downloads/publications/OPEC_MOMR_Apr_2020.pdf\" target=\"_blank\">March 2020</a> (see Table 5.8 on page 45 in the document). The question will be suspended on 30 June 2021 and closed when the June 2021 data are released, scheduled for July 2021.",
     "options": [
       {
         "name": "Less than 21 million barrels per day",
@@ -75,12 +75,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.01,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.99,
+        "probability": 0.98,
         "type": "PROBABILITY"
       }
     ],
@@ -138,17 +138,17 @@
       },
       {
         "name": "More than 500 million but fewer than 960 million",
-        "probability": 0.12,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 960 million and 1.6 billion, inclusive",
-        "probability": 0.77,
+        "probability": 0.75,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 1.6 billion",
-        "probability": 0.1,
+        "probability": 0.15,
         "type": "PROBABILITY"
       }
     ],
@@ -200,12 +200,12 @@
       },
       {
         "name": "Between 1 February 2021 and 31 March 2021",
-        "probability": 0.91,
+        "probability": 0.93,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 April 2021 and 31 May 2021",
-        "probability": 0.09,
+        "probability": 0.07,
         "type": "PROBABILITY"
       },
       {
@@ -234,12 +234,12 @@
       },
       {
         "name": "Between 1 March 2021 and 30 April 2021",
-        "probability": 0.98,
+        "probability": 0.97,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.02,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
@@ -256,40 +256,6 @@
     "stars": 4
   },
   {
-    "title": "As of 31 March 2021, what will be the highest seven-day median of COVID-19 confirmed new cases in WHO's Europe Region?</a>",
-    "url": "https://goodjudgment.io/superforecasts/",
-    "platform": "Good Judgment",
-    "description": "Closed 28 March 2021; resolved as \"B: Between 275,000 and 300,000, inclusive\" The status of the COVID-19 outbreak through spring 2021 is an open question, as \"<a href=\"https://apnews.com/article/virus-outbreak-pandemics-italy-madrid-eastern-europe-159a68a460337948d25281c153994c70\" target=\"_blank\">next   waves</a>\" are experienced in the fall and winter. The outcome will be determined using the World Health Organization's Coronavirus Disease (COVID-19) <a href=\"https://covid19.who.int/\" target=\"_blank\">Dashboard</a>. The value for a given day will come from the data available on the WHO dashboard at close of business of the day in question. If a data point is not available at that time, the first posting on the WHO dashboard thereafter will be used. Any subsequent revisions to the data are immaterial. To simplify the process, the data will be captured and posted <a href=\"https://docs.google.com/spreadsheets/d/1szi8i948AJRAqlYG82NhcW0qDMuLm6UlAyW_AbFsQ_0/\" target=\"_blank\">here</a> each day.",
-    "options": [
-      {
-        "name": "Less than 275,000",
-        "probability": 0,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 275,000 and 300,000, inclusive",
-        "probability": 0.99,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 300,000 but less than 350,000",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 350,000 and 500,000, inclusive",
-        "probability": 0,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 500,000",
-        "probability": 0,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 4
-  },
-  {
     "title": "When will the U.S. Transportation Security Administration (TSA) next screen 1.4 million or more travelers per day for seven consecutive days?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
@@ -297,12 +263,12 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.93,
+        "probability": 0.97,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0.05,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -335,12 +301,12 @@
       },
       {
         "name": "More than 10% but less than 20%",
-        "probability": 0.78,
+        "probability": 0.79,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 30%, inclusive",
-        "probability": 0.2,
+        "probability": 0.19,
         "type": "PROBABILITY"
       },
       {
@@ -504,12 +470,12 @@
       },
       {
         "name": "More than 10% but less than 20%",
-        "probability": 0.78,
+        "probability": 0.79,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 30%, inclusive",
-        "probability": 0.2,
+        "probability": 0.19,
         "type": "PROBABILITY"
       },
       {
