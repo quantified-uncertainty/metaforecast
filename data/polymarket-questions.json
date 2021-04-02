@@ -1,242 +1,22 @@
 [
   {
-    "title": "Will Donald Trump be President of the USA on July 31, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-july-31-2021",
+    "title": "Will Apple, Amazon, or Twitter announce a Bitcoin purchase before July 1, 2021?",
+    "url": "https://polymarket.com/market/will-apple-amazon-or-twitter-announce-a-bitcoin-purchase-before-july-1-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on if Donald Trump will be President of the United States on July 31, 2021, 11:59 PM ET. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by official US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n\n\n",
+    "description": "This is a market on if Apple ($AAPL), Amazon ($AMZN), or Twitter ($TWTR) will announce either their intention to purchase Bitcoin ($BTC) off their balance sheet, the completion of such a purchase, or, in any other way, ownership of BTC on their balance sheet. This announcement may come from any official channel. This market will resolve to “Yes” if Apple, Amazon, or Twitter satisfies any of the aforementioned resolution conditions before the resolution date, July 1, 2021, 12:00 AM ET. If for any reason the market conditions are not met by the resolution date, this market will resolve to “No”. In the event of ambiguity in regards to the outcome of this market, it will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.0399522190901281473183703149667169",
+        "probability": "0.2117064115863988157330368666145412",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9600477809098718526816296850332831",
+        "probability": "0.7882935884136011842669631333854588",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "27",
-    "stars": 3
-  },
-  {
-    "title": "Will the US have fewer than 35,000 new COVID-19 cases on any day before April 7, 2021?",
-    "url": "https://polymarket.com/market/will-the-us-have-fewer-than-35000-new-covid-19-cases-on-any-day-before-april-7-2021",
-    "platform": "PolyMarket",
-    "description": " This is a market on whether there will be a single day after the creation of this market and prior to the resolution date, April 7, 2021, 8 PM ET, with fewer than 35,000 recorded COVID-19 cases in the United States. This market will resolve to “Yes\" if on any single day prior to the resolution date there are fewer than 35,000 COVID-19 cases recorded. This market will resolve to “No\" if there is no single day the United States records fewer than 35,000 COVID-19 cases according to the resolution source. The resolution source for this market will be https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases, the CDC's official count of Coronavirus cases. The resolution source will be reviewed once daily at 8 PM ET, and only data as listed on 8 PM ET each day prior to and including the resolution date will be considered. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.07465307001144303222259539896004477",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9253469299885569677774046010399552",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "522",
-    "stars": 3
-  },
-  {
-    "title": "Will Joe Biden be President of the USA on June 30, 2021?",
-    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-june-30-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Joe Biden will be President of the United States on June 30, 2021, 11:59 PM ET. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, https://www.whitehouse.gov/\n\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.937185702542547745508723154303628",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.062814297457452254491276845696372",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "53",
-    "stars": 3
-  },
-  {
-    "title": "Will weekly jobless claims exceed 650K for the week ending on April 3?",
-    "url": "https://polymarket.com/market/will-weekly-jobless-claims-exceed-650k-for-the-week-ending-on-april-3",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether the number of Americans that file weekly jobless claims will exceed 650,000 for the week ending on Saturday, April 3, 2021. This market will resolve to “Yes” if the United States Department of Labor reports that there were more than 650,000 seasonally adjusted initial claims for unemployment insurance for the week ending on April 3, 2021. This market will resolve to “No” if the United States Department of Labor reports that there were 650,000 or less seasonally adjusted initial claims for unemployment insurance for the week ending on April 3, 2021.  The resolution source for this market will be the United States Department of Labor’s Weekly Uninsurance Claims report for the week ending on Saturday, April 3, 2021, expected to be released on Thursday, April 8. Resolution of this market will take place upon release of the aforementioned data. .\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.4654295355935182330616479112119514",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.5345704644064817669383520887880486",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "110",
-    "stars": 4
-  },
-  {
-    "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
-    "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Floyd Mayweather will win his boxing exhibition match against Logan Paul set to take place on February 20th, 2021. If Floyd Mayweather is declared the winner of this bout, either by knockout or by judgement, this market will resolve “Yes.” If Logan Paul is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed to a date earlier than May 1st, 2021, the same market resolution conditions will apply for whenever the fight is rescheduled. In the event the boxing match does not take place before then, the market will resolve to .90 for \"Yes\" and .10 for \"No\", which is in line with existing market odds at time of deployment. More info can be found about this fight on the Fanmio website here: https://fanmio.com/products/floyd-mayweather-vs-logan-paul-special-exhibition-fight. In the event of ambiguity in regards to the outcome, this market will be resolved in good faith by the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.898486201143934842646828594587153",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.101513798856065157353171405412847",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "807",
-    "stars": 4
-  },
-  {
-    "title": "Will 1 billion doses of a COVID-19 vaccine have been administered globally by April 26, 2021?",
-    "url": "https://polymarket.com/market/will-1-billion-doses-of-a-covid-19-vaccine-have-been-administered-globally-by-april-26-2021-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether 1 billion doses of a COVID-19 will have been administered globally prior to April 26, 2021, 12 PM ET. This market will resolve to “Yes” if at least 1 billion doses of a COVID-19 vaccine are administered globally prior to the resolution date, April 26, 2021, 12 PM ET, and “No” otherwise. The resolution source for this market will be the data published to Our World in Data’s coronavirus (COVID-19) vaccinations dashboard, available at https://ourworldindata.org/covid-vaccinations, specifically the cumulative COVID-19 vaccination doses administered. This market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.66316561303638583639322299764386",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.33683438696361416360677700235614",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "16",
-    "stars": 4
-  },
-  {
-    "title": "Will Bitcoin ($BTC) be above $55k on April 1, 2021?",
-    "url": "https://polymarket.com/market/will-bitcoin-btc-be-above-55k-on-april-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the USD price of Bitcoin $BTC will be above $55000 on April 1, 2021, 12:00 PM ET, according to coinmarketcap.com/currencies/bitcoin/. This market will resolve to “Yes“ if BTC is trading above $55000 according to Coinmarketcap on the resolution date, and “No“ otherwise. If price data is temporarily unavailable on Coinmarketcap at the time of resolution, coingecko.com/en/coins/bitcoin will instead be referenced. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9235015831361897357511964892828881",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.07649841686381026424880351071711195",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "3457",
-    "stars": 3
-  },
-  {
-    "title": "Will the federal minimum wage be $9.50 per hour or higher by April 1?",
-    "url": "https://polymarket.com/market/will-the-federal-minimum-wage-be-9-50-per-hour-or-higher-by-april-1-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on if the federal minimum wage will be $9.50 per hour or higher by April 1, 12:00pm EST. This market will resolve to \"Yes\" if the federal minimum wage in effect for covered non-exempt employees is $9.50 or more per hour at any point prior to the resolution date, and \"No\" otherwise. The primary resolution source for this market will be the U.S. Department of Labor's website, https://www.dol.gov/.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.0007799905818548978341181015069580178",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.999220009418145102165881898493042",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "188",
-    "stars": 3
-  },
-  {
-    "title": "Will 100 million people have received a dose of an approved COVID-19 vaccine in the US by April 1, 2021?",
-    "url": "https://polymarket.com/market/will-100-million-people-have-received-a-dose-of-an-approved-covid-19-vaccine-in-the-us-by-april-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether 100 million people in The United States of America will have initiated vaccination, according to the CDC COVID tracker, by the resolution date, April 1, 2021, 12 PM EST / 1 PM EDT. This market will resolve to \"Yes\" if 100 million people or more are listed as having received their initial dose of vaccination by the resolution source. This only concerns the first dose of vaccination. For vaccines requiring two doses for inoculation, this market considers only the first dose to be considered having initiated vaccination. This market will resolve to \"No\" if, for any reason, fewer than 100 million people have initiated vaccination by the resolution date. The resolution source for this market will be the official data published by the CDC available at https://covid.cdc.gov/covid-data-tracker/#vaccinations\n\nThis market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.02261135370733015122541638960314871",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9773886462926698487745836103968513",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "8474",
-    "stars": 3
-  },
-  {
-    "title": "Will Donald Trump be President of the USA on March 31, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-march-31-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Donald Trump will be President of the United States on March 31, 2021, 12pm EST. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by official US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.0003722103355381477775719659336543291",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9996277896644618522224280340663457",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "4416",
-    "stars": 3
-  },
-  {
-    "title": "Will American mask usage be 75% or higher on April 14th, 2021?",
-    "url": "https://polymarket.com/market/will-american-mask-usage-be-75-or-higher-on-april-14th-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether the American \"observed mask usage\" metric will be above 75% on April 14th, 2021. This market will resolve when data is first made available for the date of April 14th, 2021. This market will resolve to \"Yes\" if the metric is 75% or higher on the resolution date, and “No” otherwise. There will be no delay in resolutions for any incoming data updates or revisions past the initial publication of data for April 14th. The resolution source for this market will be the Institute for Health Metrics and Evaluation’s website, https://covid19.healthdata.org/united-states-of-america?view=mask-use&tab=trend. Specific, non-rounded data is available for download at http://www.healthdata.org/covid/data-downloads. This data will be prioritized for resolution in the event that the headline number displayed on Health Data's graph does not accurately reflect the specific, non-rounded datapoint. Observed mask use represents the percentage of the population who say they always wear a mask in public. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.1099230898121289621386529149208585",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.8900769101878710378613470850791415",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "94",
-    "stars": 4
-  },
-  {
-    "title": "Will the Tokyo Summer Olympics be cancelled or postponed by May 1, 2021?",
-    "url": "https://polymarket.com/market/will-the-tokyo-summer-olympics-be-cancelled-or-postponed",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether the Tokyo Summer Olympics will be canceled or postponed prior to May 1, 2021, 12:00pm EST. The opening ceremony is currently scheduled to take place on July 23, 2021. If an official statement is published by the International Olympic Committee on https://www.olympic.org/ which announces that the ceremony will take place on a date later than July 23, 2021, this market will resolve to “Yes\". If no such announcement is made prior to the resolution date, this market will resolve to “No\". The resolution source for this market will be an official statement published to olympic.org, the official website of the International Olympic Committee. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.0643262684347852793581318329432571",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9356737315652147206418681670567429",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "419",
+    "numforecasts": "34",
     "stars": 3
   },
   {
@@ -247,226 +27,77 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.2084574486646862799550090404443954",
+        "probability": "0.1556798952930100723990816072040847",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.7915425513353137200449909595556046",
+        "probability": "0.8443201047069899276009183927959153",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "47",
+    "numforecasts": "72",
     "stars": 4
   },
   {
-    "title": "Will Donald Trump be federally charged by June 1st? ",
-    "url": "https://polymarket.com/market/will-donald-trump-be-federally-charged-by-june-1st-1",
+    "title": "What will the 7-day average COVID-19 case count be in the US on May 15?",
+    "url": "https://polymarket.com/market/what-will-the-7-day-average-covid-19-case-count-be-in-the-us-on-may-15",
     "platform": "PolyMarket",
-    "description": "This is a market on whether President Donald J. Trump shall be indicted or otherwise formally charged with a federal crime, as publicly confirmed before June 1st, 2021 12:00 PM ET by an authorized representative of the charging agency(ies) or judicial venue(s). If he is charged with a federal crime on or before June 1st, 2021 12:00 PM ET, this market will resolve to “Yes”. If he is charged with any crime that is not a federal crime or is not charged with any crimes, this market will resolve “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). \n",
+    "description": "This is a market on what the 7-day average COVID-19 case count will be in the US on May 15, 2021 12:00 PM ET. The resolution source for this market will be the 7-day moving average of daily cases, as displayed on the CDC’s Covid Data Tracker (https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases). The 7-day moving average will be checked at 12:00 PM ET on May 15, 2021. The bracket into which the 7-day moving average falls at that time will be the bracket this market resolves to. If the website is down at that time or for any reason data is not accessible on the website at the resolution date, the Markets Integrity Committee (MIC) will wait 24 hours (until 12:00 PM ET on May 16, 2021) and resolve as soon as data is available again. If data is still unavailable at that time, all brackets will resolve to 0.25 USDC. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
     "options": [
       {
-        "name": "Yes",
-        "probability": "0.02570884192511618168598180798571647",
+        "name": "40,999 or fewer",
+        "probability": "0.3893819219523332660392126401900704",
         "type": "PROBABILITY"
       },
       {
-        "name": "No",
-        "probability": "0.9742911580748838183140181920142835",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "95",
-    "stars": 3
-  },
-  {
-    "title": "Will Clubhouse officially announce they’ve been acquired before June 1st, 2021? ",
-    "url": "https://polymarket.com/market/will-clubhouse-officially-announce-theyve-been-acquired-before-june-1st-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Clubhouse will announce they've been acquired before June 1st, 2021, with the term acquired meaning the official announcement and public reporting of an acquisition, with a for-profit company purchasing majority ownership of Clubhouse and/or the respective entity. Note, this is not in reference to the final close date of the acquisition. This market will resolve immediately upon the resolution conditions being met, and thus, if, for whatever reason, the acquisition is not successfully completed, the market will have already resolved to “Yes”.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.1531273744175666186166761496243497",
+        "name": "41,000-65,999",
+        "probability": "0.3786476496952500287295906513328242",
         "type": "PROBABILITY"
       },
       {
-        "name": "No",
-        "probability": "0.8468726255824333813833238503756503",
+        "name": "66,000-99,999",
+        "probability": "0.1868055692073516015344164753748345",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "100,000 or more",
+        "probability": "0.04516485914506510369678023310227084",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "78",
+    "numforecasts": "98",
     "stars": 4
   },
   {
-    "title": "Will Uniswap v3 launch before April 30, 2021?",
-    "url": "https://polymarket.com/market/will-uniswap-v3-launch-before-april-30-2021",
+    "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
+    "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
+    "address": "0xB0E171C4e2490b97b3CEbAF36FA4006318A09b25",
+    "description": "This is a market on whether Floyd Mayweather will win his boxing exhibition match against Logan Paul set to take place on February 20th, 2021. If Floyd Mayweather is declared the winner of this bout, either by knockout or by judgement, this market will resolve “Yes.” If Logan Paul is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed to a date earlier than May 1st, 2021, the same market resolution conditions will apply for whenever the fight is rescheduled. In the event the boxing match does not take place before then, the market will resolve to .90 for \"Yes\" and .10 for \"No\", which is in line with existing market odds at time of deployment. More info can be found about this fight on the Fanmio website here: https://fanmio.com/products/floyd-mayweather-vs-logan-paul-special-exhibition-fight. In the event of ambiguity in regards to the outcome, this market will be resolved in good faith by the Markets Integrity Committee (MIC).",
+    "outcomes": [
+      "Yes",
+      "No"
+    ],
+    "options": []
+  },
+  {
+    "title": "Will American mask usage be 75% or higher on April 14th, 2021?",
+    "url": "https://polymarket.com/market/will-american-mask-usage-be-75-or-higher-on-april-14th-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on if Uniswap v3 will launch before April 30th, 2021, 12:00 am ET. “Launch” in this context can be defined as being deployed and usable on the Ethereum mainnet and publicly announced via the official Uniswap Twitter and/or Blog. V3 can be defined as Uniswap v3.0.0 or greater. If Uniswap v3 is officially announced and is deployed on the mainnet of a given L2 scaling solution, with or without some bridging mechanism from Ethereum mainnet, the market will still resolve to \"Yes\".",
+    "description": "This is a market on whether the American \"observed mask usage\" metric will be above 75% on April 14th, 2021. This market will resolve when data is first made available for the date of April 14th, 2021. This market will resolve to \"Yes\" if the metric is 75% or higher on the resolution date, and “No” otherwise. There will be no delay in resolutions for any incoming data updates or revisions past the initial publication of data for April 14th. The resolution source for this market will be the Institute for Health Metrics and Evaluation’s website, https://covid19.healthdata.org/united-states-of-america?view=mask-use&tab=trend. Specific, non-rounded data is available for download at http://www.healthdata.org/covid/data-downloads. This data will be prioritized for resolution in the event that the headline number displayed on Health Data's graph does not accurately reflect the specific, non-rounded datapoint. Observed mask use represents the percentage of the population who say they always wear a mask in public. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.0183925492363933636702412378864124",
+        "probability": "0.08241287527435891459397162776882275",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9816074507636066363297587621135876",
+        "probability": "0.9175871247256410854060283722311772",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "731",
-    "stars": 3
-  },
-  {
-    "title": "How many charges will Derek Chauvin be convicted of?",
-    "url": "https://polymarket.com/market/how-many-charges-will-derek-chauvin-be-convicted-of",
-    "platform": "PolyMarket",
-    "description": "This market is on how many charges the jury will find Derek Chauvin guilty of. Chauvin is charged criminally in Minnesota on three counts, each of which he has pleaded not guilty to. The maximum number of charges that Chauvin can be convicted of is two. This market will resolve to the number of counts Derek Chauvin is convicted on: zero (not guilty on all counts), one (guilty on one count), or two (guilty on two counts). In the event of a \"hung jury\" or mistrial, this market will resolve to the lowest bracket, \"0\". If the trial is delayed, the market resolution will be postponed until the start of the new trial date. In the event of a judgement of acquittal, this market will still resolve to the number of charges Chauvin is convicted of. The resolution source for this market will be the official website of the Minnesota Judicial Branch, specifically the page for this specific case (27-CR-20-12646: State vs. Derek Chauvin) available at https://www.mncourts.gov/media/StateofMinnesotavDerekChauvin.",
-    "options": [
-      {
-        "name": "0",
-        "probability": "0.4049934414491418985976385396658718",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "1",
-        "probability": "0.4567329434327637514445193511115605",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "2",
-        "probability": "0.1382736151180943499578421092225677",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "92",
-    "stars": 4
-  },
-  {
-    "title": "Will Donald Trump launch a new social media platform by June 15, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-launch-a-new-social-media-platform-by-june-15-2021-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether former US President Donald Trump will launch a social media platform by June 15, 2021, 12:00 PM ET. This market will resolve to “Yes” if Donald Trump launches a social media platform by the resolution date, and “No” otherwise. On the resolution date, it must be possible for an individual in the United States to create an account and post. Creating an account and posting requires that user-generated content is not restricted to responses (ie comments) to another user’s content. Such content generally must be standalone image, text, or video posts. The platform must not be restricted to only a small portion of the general public or subject to a waitlist. If there is a fee or subscription required to join, this market will still resolve to “Yes”. Donald Trump’s involvement must be public and verified via an official channel, and the platform must be substantially backed by or affiliated with Donald Trump--e.g. the platform uses his name explicitly, is heavily marketed as being affiliated with him, or he is an executive for the platform. Partnership with an existing platform such as Twitter or Parler will not be sufficient for this market to resolve to “Yes”. If such a platform is temporarily inaccessible due to maintenance, system overload, or DDOS attack, resolution of this market will be delayed up to 72 hours. If the platform is inaccessible on the resolution date due to a lack of a web-hosting service provider, this market will resolve to “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.3200857701022042815449929261271158",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.6799142298977957184550070738728842",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "54",
-    "stars": 4
-  },
-  {
-    "title": "Will Matt Gaetz continue to hold Congressional office through June 1, 2021?",
-    "url": "https://polymarket.com/market/will-matt-gaetz-continue-to-hold-congressional-office-through-june-1-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Matt Gaetz will hold the office of U.S. representative for Florida's 1st Congressional District from the date of the creation of this market through June 1, 2021, 12:00 PM ET, the resolution date. This market will resolve to \"Yes\" in the event that Matt Gaetz continues to hold the office of U.S. representative for Florida's 1st congressional district on the resolution date, and “No” otherwise. In the event that Matt Gaetz resigns, is removed from office, or is no longer in office for any reason prior to the resolution date, this market will resolve to \"No\" immediately. The resolution source for this market will be https://www.house.gov/representatives. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). ",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.7461002333060828063125709223827312",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.2538997666939171936874290776172688",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "47",
-    "stars": 4
-  },
-  {
-    "title": "Will 225M COVID-19 vaccine doses have been administered in the US by Biden's 100th day in office? ",
-    "url": "https://polymarket.com/market/will-225-m-covid-19-vaccine-doses-have-been-administered-in-the-us-by-biden-s-100th-day-in-office",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether 225 million COVID-19 vaccine doses will be administered in the United States by April 29, 2021, 12:00 PM ET (Biden’s 100th day in office). This market will resolve to \"Yes\" if 225 million or more total COVID-19 vaccine doses are administered by the resolution date. This market will resolve to \"No\" if, for any reason, fewer than 225 million COVID-19 vaccines doses are administered by the resolution date. The resolution source for this market will be the number of total COVID-19 vaccine doses administered, as indicated by the CDC’s Covid Data tracker (https://covid.cdc.gov/covid-data-tracker/#vaccinations). This market will resolve according to the data as available immediately at the time of resolution, April 29, 2021, 12:00 PM ET, and resolution will not be delayed for the purpose of waiting for updated data from a specific date. ",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.8512879891880845638587947660033713",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.1487120108119154361412052339966287",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "319",
-    "stars": 4
-  },
-  {
-    "title": "Will Donald Trump file to run for president before June 1, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-file-to-run-for-president-before-june-1-2021-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Donald Trump will file to run for president prior to June 1, 2021. The linked PredictIt question is the basis for the creation of this market and will be referenced as the leading resolution source: https://www.predictit.org/markets/detail/6994/Will-Donald-Trump-file-to-run-for-president-before-the-end-of-2021. If the PredictIt question resolves to \"Yes\" prior to June 1, 2021, this market will resolve to “Yes”, and “No” otherwise.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.0693152321242313510064873701903833",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9306847678757686489935126298096167",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "102",
-    "stars": 3
-  },
-  {
-    "title": "How many more tweets will be on the @laurenboebert account on April 6, 2021?",
-    "url": "https://polymarket.com/market/how-many-more-tweets-will-be-on-the-laurenboebert-account-on-april-6-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on the number of tweets that will be posted to Lauren Boebert’s Twitter account prior to the resolution date, April 6, 2021 at 3:00 PM ET. \n\nAt 3:00 PM ET on the resolution date, the number of total tweets posted by the Twitter account @laurenboebert, shall exceed 3593  (the \"Baseline\") by the number or range identified in the contract, as indicated by the number under the label \"TWEETS\" on the account detail viewable on the desktop version of https://tweetdeck.twitter.com/. This account detail can be viewed by using a Twitter account to log into the website https://tweetdeck.twitter.com/, searching for @laurenboebert, then clicking the verified account labeled “@laurenboebert” from the search results. Should the total tweets reported by that source at that time appear not to include one or more tweets posted by @laurenboebert just before 3:00pm, and still available on that account's timeline at 3:00pm, Polymarket may use additional sources in determining whether any such tweet(s) should be included in the market's resolution. The number by which the total tweets on the resolution date exceeds the Baseline may not equal the number of tweets actually posted over that time period, in light of numerous factors, including but not limited to the fact that the account's total tweets upon launch of the market may differ from the Baseline, tweets may be deleted prior to the resolution date of this market, and specialized tweets such as quotes, retweets, replies, promoted tweets, may or may not be included in that total.\n\nNeither Lauren Boebert, nor any authorized user of the account in question, need be the author of any such tweets, nor must any authorized user maintain control of the account. Should the resolution source be unavailable at that date and time, for any reason other than deletion, deactivation, or a change in the privacy settings of the account, Polymarket may postpone settlement of this market until the source becomes available. In such a case, the account's total tweets will be measured once Polymarket becomes aware that the source has again become available. If Polymarket deems the source to be permanently unavailable, this market will resolve to the lowest bracket. Should an updated count of total tweets not be available from twitter.com at the date and time of expiration, due to apparent deletion, deactivation, suspension, or a change in privacy settings by a user of the account or by Twitter, this market will resolve to the lowest bracket. The blocking of one or more Twitter accounts by @mtgreenee will not be considered to render the settlement source unavailable.\n\nShould the navigation, layout, URL, or labeling of the elements of the settlement source be altered by Twitter or Tweetdeck prior to expiration (other than via deletion or deactivation of the account), this market will still be resolved according to the aforementioned formula, so long as Polymarket can reasonably determine the relevant number of total tweets from twitter.com. The merging, migration, or other combination of one or more Twitter accounts will not in and of itself cause the settlement source to be considered unavailable, so long as an updated count of total tweets can be determined according to the aforementioned formula, even if such combination causes an increase or decrease in that count that does not represent the number of tweets posted to the account during the time period in question.\n\nIn the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Less than 30",
-        "probability": "0.05977087814512342460231132918776212",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "30-40",
-        "probability": "0.1439788098513407830412705763776042",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "41-50",
-        "probability": "0.3000648938131921379652501864987328",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "51-60",
-        "probability": "0.3073822916839418221307989757808803",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "61-70",
-        "probability": "0.1254828656686028461677836649370425",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "71-80",
-        "probability": "0.03350564206579270952716467730458544",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 80",
-        "probability": "0.02981461877200627656542058991339278",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "208",
+    "numforecasts": "115",
     "stars": 3
   },
   {
@@ -477,17 +108,258 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.7107874922024220164632925171348451",
+        "probability": "0.7236509933639097806015585509693699",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.2892125077975779835367074828651549",
+        "probability": "0.2763490066360902193984414490306301",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "54",
+    "numforecasts": "115",
     "stars": 4
+  },
+  {
+    "title": "How many more tweets will be on the @laurenboebert account on April 6, 2021?",
+    "url": "https://polymarket.com/market/how-many-more-tweets-will-be-on-the-laurenboebert-account-on-april-6-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on the number of tweets that will be posted to Lauren Boebert’s Twitter account prior to the resolution date, April 6, 2021 at 3:00 PM ET. \n\nAt 3:00 PM ET on the resolution date, the number of total tweets posted by the Twitter account @laurenboebert, shall exceed 3593  (the \"Baseline\") by the number or range identified in the contract, as indicated by the number under the label \"TWEETS\" on the account detail viewable on the desktop version of https://tweetdeck.twitter.com/. This account detail can be viewed by using a Twitter account to log into the website https://tweetdeck.twitter.com/, searching for @laurenboebert, then clicking the verified account labeled “@laurenboebert” from the search results. Should the total tweets reported by that source at that time appear not to include one or more tweets posted by @laurenboebert just before 3:00pm, and still available on that account's timeline at 3:00pm, Polymarket may use additional sources in determining whether any such tweet(s) should be included in the market's resolution. The number by which the total tweets on the resolution date exceeds the Baseline may not equal the number of tweets actually posted over that time period, in light of numerous factors, including but not limited to the fact that the account's total tweets upon launch of the market may differ from the Baseline, tweets may be deleted prior to the resolution date of this market, and specialized tweets such as quotes, retweets, replies, promoted tweets, may or may not be included in that total.\n\nNeither Lauren Boebert, nor any authorized user of the account in question, need be the author of any such tweets, nor must any authorized user maintain control of the account. Should the resolution source be unavailable at that date and time, for any reason other than deletion, deactivation, or a change in the privacy settings of the account, Polymarket may postpone settlement of this market until the source becomes available. In such a case, the account's total tweets will be measured once Polymarket becomes aware that the source has again become available. If Polymarket deems the source to be permanently unavailable, this market will resolve to the lowest bracket. Should an updated count of total tweets not be available from twitter.com at the date and time of expiration, due to apparent deletion, deactivation, suspension, or a change in privacy settings by a user of the account or by Twitter, this market will resolve to the lowest bracket. The blocking of one or more Twitter accounts by @laurenboebert will not be considered to render the settlement source unavailable.\n\nShould the navigation, layout, URL, or labeling of the elements of the settlement source be altered by Twitter or Tweetdeck prior to expiration (other than via deletion or deactivation of the account), this market will still be resolved according to the aforementioned formula, so long as Polymarket can reasonably determine the relevant number of total tweets from twitter.com. The merging, migration, or other combination of one or more Twitter accounts will not in and of itself cause the settlement source to be considered unavailable, so long as an updated count of total tweets can be determined according to the aforementioned formula, even if such combination causes an increase or decrease in that count that does not represent the number of tweets posted to the account during the time period in question.\n\nIn the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Less than 30",
+        "probability": "0.03112669674172169975854699207831242",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "30-40",
+        "probability": "0.2369669578907565780215803691380716",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "41-50",
+        "probability": "0.4355222425745799237685512394899696",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "51-60",
+        "probability": "0.2413820930176487064459564076841891",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "61-70",
+        "probability": "0.02485928026732967511602314196075242",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "71-80",
+        "probability": "0.01615990278262899873913944428297371",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 80",
+        "probability": "0.01398282672533441815020240536573119",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "830",
+    "stars": 3
+  },
+  {
+    "title": "Will the average Ethereum gas price be below 150 Gwei on April 5?",
+    "url": "https://polymarket.com/market/will-the-average-ethereum-gas-price-be-below-150-gwei-on-april-5",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the average Ethereum gas price will be below 150 Gwei on April 5, 2021. This market will resolve to \"Yes\" if Avg Gas Price is listed as being below 150 Gwei for that date, on Etherscan. If Avg Gas Price is 150 Gwei or higher, this market will resolve to \"No\". The resolution source for this market is https://etherscan.io/chart/gasprice. This market will resolve when data is available for the date of April 5, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). \n\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.2228977553704771088996701822450644",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.7771022446295228911003298177549356",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "118",
+    "stars": 4
+  },
+  {
+    "title": "How many charges will Derek Chauvin be convicted of?",
+    "url": "https://polymarket.com/market/how-many-charges-will-derek-chauvin-be-convicted-of",
+    "platform": "PolyMarket",
+    "description": "This market is on how many charges the jury will find Derek Chauvin guilty of. Chauvin is charged criminally in Minnesota on three counts, each of which he has pleaded not guilty to. The maximum number of charges that Chauvin can be convicted of is two. This market will resolve to the number of counts Derek Chauvin is convicted on: zero (not guilty on all counts), one (guilty on one count), or two (guilty on two counts). In the event of a \"hung jury\" or mistrial, this market will resolve to the lowest bracket, \"0\". If the trial is delayed, the market resolution will be postponed until the start of the new trial date. In the event of a judgement of acquittal, this market will still resolve to the number of charges Chauvin is convicted of. The resolution source for this market will be the official website of the Minnesota Judicial Branch, specifically the page for this specific case (27-CR-20-12646: State vs. Derek Chauvin) available at https://www.mncourts.gov/media/StateofMinnesotavDerekChauvin.",
+    "options": [
+      {
+        "name": "0",
+        "probability": "0.3717640542832050731028758609269638",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1",
+        "probability": "0.3907780961853577695055023696544902",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "2",
+        "probability": "0.237457849531437157391621769418546",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "126",
+    "stars": 4
+  },
+  {
+    "title": "Will 225M COVID-19 vaccine doses have been administered in the US by Biden's 100th day in office? ",
+    "url": "https://polymarket.com/market/will-225-m-covid-19-vaccine-doses-have-been-administered-in-the-us-by-biden-s-100th-day-in-office",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether 225 million COVID-19 vaccine doses will be administered in the United States by April 29, 2021, 12:00 PM ET (Biden’s 100th day in office). This market will resolve to \"Yes\" if 225 million or more total COVID-19 vaccine doses are administered by the resolution date. This market will resolve to \"No\" if, for any reason, fewer than 225 million COVID-19 vaccines doses are administered by the resolution date. The resolution source for this market will be the number of total COVID-19 vaccine doses administered, as indicated by the CDC’s Covid Data tracker (https://covid.cdc.gov/covid-data-tracker/#vaccinations). This market will resolve according to the data as available immediately at the time of resolution, April 29, 2021, 12:00 PM ET, and resolution will not be delayed for the purpose of waiting for updated data from a specific date. ",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9457820520616409899400220766349915",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.05421794793835901005997792336500853",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "424",
+    "stars": 3
+  },
+  {
+    "title": "Will Donald Trump launch a new social media platform by June 15, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-launch-a-new-social-media-platform-by-june-15-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether former US President Donald Trump will launch a social media platform by June 15, 2021, 12:00 PM ET. This market will resolve to “Yes” if Donald Trump launches a social media platform by the resolution date, and “No” otherwise. On the resolution date, it must be possible for an individual in the United States to create an account and post. Creating an account and posting requires that user-generated content is not restricted to responses (ie comments) to another user’s content. Such content generally must be standalone image, text, or video posts. The platform must not be restricted to only a small portion of the general public or subject to a waitlist. If there is a fee or subscription required to join, this market will still resolve to “Yes”. Donald Trump’s involvement must be public and verified via an official channel, and the platform must be substantially backed by or affiliated with Donald Trump--e.g. the platform uses his name explicitly, is heavily marketed as being affiliated with him, or he is an executive for the platform. Partnership with an existing platform such as Twitter or Parler will not be sufficient for this market to resolve to “Yes”. If such a platform is temporarily inaccessible due to maintenance, system overload, or DDOS attack, resolution of this market will be delayed up to 72 hours. If the platform is inaccessible on the resolution date due to a lack of a web-hosting service provider, this market will resolve to “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.1373078541889945773790856755301614",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.8626921458110054226209143244698386",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "88",
+    "stars": 4
+  },
+  {
+    "title": "Will the US have fewer than 40,000 new COVID-19 cases on any day before April 16, 2021?",
+    "url": "https://polymarket.com/market/will-the-us-have-fewer-than-40-000-new-covid-19-cases-on-any-day-before-april-16-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether there will be a single day after the creation of this market and prior to the resolution date, April 16, 2021, 8 PM ET, with fewer than 40,000 recorded COVID-19 cases in the United States. This market will resolve to “Yes\" if on any single day prior to the resolution date there are fewer than 40,000 COVID-19 cases recorded. This market will resolve to “No\" if there is no single day the United States records fewer than 40,000 COVID-19 cases according to the resolution source. The resolution source for this market will be https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases, the CDC's official count of Coronavirus cases. The resolution source will be reviewed once daily at 8 PM ET, and only data as listed on 8 PM ET each day prior to and including the resolution date will be considered. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.4035526375018205811828604689416271",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.5964473624981794188171395310583729",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "102",
+    "stars": 4
+  },
+  {
+    "title": "Will Donald Trump file to run for president before June 1, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-file-to-run-for-president-before-june-1-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Donald Trump will file to run for president prior to June 1, 2021. The linked PredictIt question is the basis for the creation of this market and will be referenced as the leading resolution source: https://www.predictit.org/markets/detail/6994/Will-Donald-Trump-file-to-run-for-president-before-the-end-of-2021. If the PredictIt question resolves to \"Yes\" prior to June 1, 2021, this market will resolve to “Yes”, and “No” otherwise.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.03995898922616585608566171160074021",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9600410107738341439143382883992598",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "119",
+    "stars": 3
+  },
+  {
+    "title": "Will the Tokyo Summer Olympics be cancelled or postponed by May 1, 2021?",
+    "url": "https://polymarket.com/market/will-the-tokyo-summer-olympics-be-cancelled-or-postponed",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the Tokyo Summer Olympics will be canceled or postponed prior to May 1, 2021, 12:00pm EST. The opening ceremony is currently scheduled to take place on July 23, 2021. If an official statement is published by the International Olympic Committee on https://www.olympic.org/ which announces that the ceremony will take place on a date later than July 23, 2021, this market will resolve to “Yes\". If no such announcement is made prior to the resolution date, this market will resolve to “No\". The resolution source for this market will be an official statement published to olympic.org, the official website of the International Olympic Committee. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.06638158251927267137860811718542585",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9336184174807273286213918828145741",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "433",
+    "stars": 3
+  },
+  {
+    "title": "Will Clubhouse officially announce they’ve been acquired before June 1st, 2021? ",
+    "url": "https://polymarket.com/market/will-clubhouse-officially-announce-theyve-been-acquired-before-june-1st-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Clubhouse will announce they've been acquired before June 1st, 2021, with the term acquired meaning the official announcement and public reporting of an acquisition, with a for-profit company purchasing majority ownership of Clubhouse and/or the respective entity. Note, this is not in reference to the final close date of the acquisition. This market will resolve immediately upon the resolution conditions being met, and thus, if, for whatever reason, the acquisition is not successfully completed, the market will have already resolved to “Yes”.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.1320425754648959457722038710480652",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.8679574245351040542277961289519348",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "82",
+    "stars": 4
+  },
+  {
+    "title": "Will Donald Trump be federally charged by June 1st? ",
+    "url": "https://polymarket.com/market/will-donald-trump-be-federally-charged-by-june-1st-1",
+    "address": "0xDF35eC97FEC070D7c565dF86C1bb9d2f15D6470A",
+    "description": "This is a market on whether President Donald J. Trump shall be indicted or otherwise formally charged with a federal crime, as publicly confirmed before June 1st, 2021 12:00 PM ET by an authorized representative of the charging agency(ies) or judicial venue(s). If he is charged with a federal crime on or before June 1st, 2021 12:00 PM ET, this market will resolve to “Yes”. If he is charged with any crime that is not a federal crime or is not charged with any crimes, this market will resolve “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). \n",
+    "outcomes": [
+      "Yes",
+      "No"
+    ],
+    "options": []
+  },
+  {
+    "title": "Will Uniswap v3 launch before April 30, 2021?",
+    "url": "https://polymarket.com/market/will-uniswap-v3-launch-before-april-30-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Uniswap v3 will launch before April 30th, 2021, 12:00 am ET. “Launch” in this context can be defined as being deployed and usable on the Ethereum mainnet and publicly announced via the official Uniswap Twitter and/or Blog. V3 can be defined as Uniswap v3.0.0 or greater. If Uniswap v3 is officially announced and is deployed on the mainnet of a given L2 scaling solution, with or without some bridging mechanism from Ethereum mainnet, the market will still resolve to \"Yes\".",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.01718495616912493410540516360815251",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9828150438308750658945948363918475",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "750",
+    "stars": 3
   },
   {
     "title": "Will the US have 200M total COVID-19 vaccines administered by Biden’s 100th day in office?",
@@ -497,27 +369,116 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9843173166697513955671473084202553",
+        "probability": "0.9880576213802719573347331675004054",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.01568268333024860443285269157974465",
+        "probability": "0.01194237861972804266526683249959458",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "19",
+    "numforecasts": "25",
     "stars": 3
+  },
+  {
+    "title": "Will Joe Biden be President of the USA on June 30, 2021?",
+    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-june-30-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Joe Biden will be President of the United States on June 30, 2021, 11:59 PM ET. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, https://www.whitehouse.gov/\n\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9546381312033776158711755660140642",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.04536186879662238412882443398593583",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "124",
+    "stars": 3
+  },
+  {
+    "title": "Will 1 billion doses of a COVID-19 vaccine have been administered globally by April 26, 2021?",
+    "url": "https://polymarket.com/market/will-1-billion-doses-of-a-covid-19-vaccine-have-been-administered-globally-by-april-26-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether 1 billion doses of a COVID-19 will have been administered globally prior to April 26, 2021, 12 PM ET. This market will resolve to “Yes” if at least 1 billion doses of a COVID-19 vaccine are administered globally prior to the resolution date, April 26, 2021, 12 PM ET, and “No” otherwise. The resolution source for this market will be the data published to Our World in Data’s coronavirus (COVID-19) vaccinations dashboard, available at https://ourworldindata.org/covid-vaccinations, specifically the cumulative COVID-19 vaccination doses administered. This market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.8742524648547909122488441889403087",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.1257475351452090877511558110596913",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "61",
+    "stars": 4
+  },
+  {
+    "title": "Will North Dakota have the most COVID-19 cases per 100k residents on May 15, 2021?",
+    "url": "https://polymarket.com/market/will-north-dakota-have-the-most-covid-19-cases-per-100k-residents-on-may-15-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on the state with the most COVID-19 cases per 100k residents on the resolution date, May 15, 12 PM ET. This market will resolve to “Yes” if North Dakota has the most COVID-19 cases per 100k residents on May 15, 2021, and “No” otherwise. The resolution source for this market will be https://www.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/. There will be no resolution delay for any anticipated data revisions. If, for any reason, data is not published prior to the resolution date, that data will not be considered for the resolution of this market. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.5187019365027776529339474649958998",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.4812980634972223470660525350041002",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "401",
+    "stars": 4
   },
   {
     "title": "Will any Knicks game have greater than 20% attendance before the NBA season ends?",
     "url": "https://polymarket.com/market/will-any-knicks-game-have-greater-than-20-attendance-before-the-nba-season-ends",
-    "address": "0xa8B8c6cd59ECDe225D62185Cd3cAdE606e51b545",
+    "platform": "PolyMarket",
     "description": "This is a market on whether there will be a New York Knicks game at Madison Square Garden where more than 20% of the seats are filled by the end of the NBA season, including the playoffs. This market will resolve to “Yes” if there is any New York Knicks home game at Madison Square Garden, where official attendance is 3,963 or higher (3,963 is the lowest number that puts attendance over 20% of the 19,812 seating capacity at MSG for NBA games), before the end of the NBA  season. This market will resolve to “No” if there is not a single New York Knicks home game at Madison Square Garden, where official attendance is higher than 3,963. The resolution source for this market will be the official attendance data provided in the NBA gamebooks (https://www.nba.com/stats/gamebooks/). The resolution date for this market will be the day the Knicks are eliminated from this NBA season. Resolution may be delayed in the event of a change or postponement in the NBA’s schedule.\n",
-    "outcomes": [
-      "Yes",
-      "No"
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.7353318909948184095280323350815145",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.2646681090051815904719676649184855",
+        "type": "PROBABILITY"
+      }
     ],
-    "options": []
+    "numforecasts": "60",
+    "stars": 4
+  },
+  {
+    "title": "Will 150 million people have received a dose of an approved COVID-19 vaccine in the US by May 1, 2021?",
+    "url": "https://polymarket.com/market/will-150-million-people-have-received-a-dose-of-an-approved-covid-19-vaccine-in-the-us-by-may-1-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether 150 million people in The United States of America will have initiated vaccination, according to the CDC COVID tracker, by the resolution date, May 1, 2021, 12 PM ET. This market will resolve to \"Yes\" if 150 million people or more are listed as having received their initial dose of vaccination by the resolution source. This only concerns the first dose of vaccination. For vaccines requiring two doses for inoculation, this market considers only the first dose to be considered having initiated vaccination. This market will resolve to \"No\" if, for any reason, fewer than 150 million people have initiated vaccination by the resolution date. The resolution source for this market will be the official data published by the CDC available at https://covid.cdc.gov/covid-data-tracker/#vaccinations\n\nThis market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.7200855687515994577853984618365658",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.2799144312484005422146015381634342",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "852",
+    "stars": 4
   }
 ]

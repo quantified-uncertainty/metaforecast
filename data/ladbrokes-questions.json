@@ -1111,12 +1111,12 @@
     "options": [
       {
         "name": "Ben Houchen (Cons)",
-        "probability": 0.7936507936507936,
+        "probability": 0.8143322475570033,
         "type": "PROBABILITY"
       },
       {
         "name": "Jessie Joe Jacobs (Lab)",
-        "probability": 0.2063492063492063,
+        "probability": 0.18566775244299674,
         "type": "PROBABILITY"
       }
     ],
@@ -1806,57 +1806,62 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.4403774895962038,
+        "probability": 0.440264008555029,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.4893083217735598,
+        "probability": 0.48918223172781006,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.004381865568121431,
+        "probability": 0.004380736403532627,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.017269705474360936,
+        "probability": 0.013142209210597881,
         "type": "PROBABILITY"
       },
       {
         "name": "SDP",
-        "probability": 0.004381865568121431,
+        "probability": 0.004380736403532627,
         "type": "PROBABILITY"
       },
       {
         "name": "Heritage Party",
-        "probability": 0.0017579939704439273,
+        "probability": 0.001757540952315485,
         "type": "PROBABILITY"
       },
       {
         "name": "UKIP",
-        "probability": 0.0017579939704439273,
+        "probability": 0.001757540952315485,
         "type": "PROBABILITY"
       },
       {
         "name": "Womens Equality Party",
-        "probability": 0.0017579939704439273,
+        "probability": 0.001757540952315485,
         "type": "PROBABILITY"
       },
       {
         "name": "North East Party",
-        "probability": 0.004381865568121431,
+        "probability": 0.004380736403532627,
         "type": "PROBABILITY"
       },
       {
         "name": "Sam Lee (Ind)",
-        "probability": 0.008720346328637699,
+        "probability": 0.008718099179307506,
         "type": "PROBABILITY"
       },
       {
         "name": "Thelma Walker (either as Ind or NIP)",
-        "probability": 0.0259045582115414,
+        "probability": 0.025897882856178178,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Greens",
+        "probability": 0.004380736403532627,
         "type": "PROBABILITY"
       }
     ],
@@ -1919,98 +1924,108 @@
     "stars": 2
   },
   {
-    "title": "London Mayoral Election: 2021 Election Winner (Void if no 2021 election)",
+    "title": "London Mayoral Election: 2021 Election Winner",
     "url": "https://sports.ladbrokes.com/sport/politics/outrights",
     "platform": "Ladbrokes",
     "options": [
       {
         "name": "Sadiq Khan (Lab)",
-        "probability": 0.8759566247820383,
+        "probability": 0.8727825710411133,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Bailey (Cons)",
-        "probability": 0.035038264991281536,
+        "probability": 0.03491130284164454,
         "type": "PROBABILITY"
       },
       {
         "name": "Sian Berry (Green)",
-        "probability": 0.004532312884444377,
+        "probability": 0.004515889919814716,
         "type": "PROBABILITY"
       },
       {
         "name": "David Kurten (Heritage)",
-        "probability": 0.00181835307339984,
+        "probability": 0.0018117642193268622,
         "type": "PROBABILITY"
       },
       {
         "name": "Farah London (Ind)",
-        "probability": 0.00181835307339984,
+        "probability": 0.0018117642193268622,
         "type": "PROBABILITY"
       },
       {
         "name": "Luisa Porritt (Lib Dem)",
-        "probability": 0.004532312884444377,
+        "probability": 0.004515889919814716,
         "type": "PROBABILITY"
       },
       {
-        "name": "Brian Rose (Ind)",
-        "probability": 0.05358793469254823,
+        "name": "Brian Rose (London Real)",
+        "probability": 0.05339375728722106,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid (WEP)",
-        "probability": 0.00181835307339984,
+        "probability": 0.0018117642193268622,
         "type": "PROBABILITY"
       },
       {
         "name": "Peter Gammons (UKIP)",
-        "probability": 0.00181835307339984,
+        "probability": 0.0018117642193268622,
         "type": "PROBABILITY"
       },
       {
-        "name": "Piers Corbyn",
-        "probability": 0.00181835307339984,
+        "name": "Piers Corbyn (Let London Live)",
+        "probability": 0.0018117642193268622,
         "type": "PROBABILITY"
       },
       {
         "name": "Nims Obunge (Ind)",
-        "probability": 0.00181835307339984,
+        "probability": 0.0018117642193268622,
         "type": "PROBABILITY"
       },
       {
         "name": "Count Binface",
-        "probability": 0.00181835307339984,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "DrillMinister",
-        "probability": 0.00181835307339984,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Winston McKenzie",
-        "probability": 0.00181835307339984,
+        "probability": 0.0018117642193268622,
         "type": "PROBABILITY"
       },
       {
         "name": "Kam Balayev (Renew)",
-        "probability": 0.00181835307339984,
+        "probability": 0.0018117642193268622,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox (Reclaim)",
-        "probability": 0.004532312884444377,
+        "probability": 0.004515889919814716,
         "type": "PROBABILITY"
       },
       {
         "name": "Max Fosh (Ind)",
-        "probability": 0.00181835307339984,
+        "probability": 0.0018117642193268622,
         "type": "PROBABILITY"
       },
       {
         "name": "Valerie Brown (Burning Pink)",
-        "probability": 0.00181835307339984,
+        "probability": 0.0018117642193268622,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Richard Hewison (Rejoin EU)",
+        "probability": 0.0018117642193268622,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Vanessa Hudson (Animal Welfare)",
+        "probability": 0.0018117642193268622,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Steve Kelleher(SDP)",
+        "probability": 0.0018117642193268622,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Niko Omilana (Ind)",
+        "probability": 0.0018117642193268622,
         "type": "PROBABILITY"
       }
     ],
@@ -2050,18 +2065,140 @@
     "stars": 2
   },
   {
-    "title": "London Mayoral Election: Most votes match bet",
+    "title": "London Mayoral Election: Most Votes Match Bet 1",
     "url": "https://sports.ladbrokes.com/sport/politics/outrights",
     "platform": "Ladbrokes",
     "options": [
       {
         "name": "Max Fosh",
-        "probability": 0.1691842900302115,
+        "probability": 0.14473684210526316,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox",
+        "probability": 0.8552631578947368,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "London Mayoral Election: Brian Rose 1st Round Vote Share",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "Ladbrokes",
+    "options": [
+      {
+        "name": "Under 1%",
+        "probability": 0.24951531601395888,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1-2%",
+        "probability": 0.3175649476541295,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "2-5%",
+        "probability": 0.2687088018611865,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "5-10%",
+        "probability": 0.09703373400542846,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Over 10%",
+        "probability": 0.06717720046529663,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "London Mayoral Election: Laurence Fox 1st Round Vote Share",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "Ladbrokes",
+    "options": [
+      {
+        "name": "Under 1%",
+        "probability": 0.3558014642902244,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1-2%",
+        "probability": 0.33950521401738964,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "2-5%",
+        "probability": 0.19766748016123575,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "5-10%",
+        "probability": 0.08086396915686918,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Over 10%",
+        "probability": 0.026161872374281202,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "London Mayoral Election: Most Votes Match Bet 2",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "Ladbrokes",
+    "options": [
+      {
+        "name": "Laurence Fox",
         "probability": 0.8308157099697885,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Count Binface",
+        "probability": 0.1691842900302115,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "London Mayoral Election: Which of these will get the most votes?",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "Ladbrokes",
+    "options": [
+      {
+        "name": "Piers Corbyn",
+        "probability": 0.05137182005083978,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Count Binface",
+        "probability": 0.017123940016946594,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Peter Gammons",
+        "probability": 0.3684898484659393,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Brian Rose",
+        "probability": 0.3175712512233732,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Laurence Fox",
+        "probability": 0.1940713201920614,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "David Kurten",
+        "probability": 0.05137182005083978,
         "type": "PROBABILITY"
       }
     ],
@@ -2115,22 +2252,22 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.1806203362047116,
+        "probability": 0.15358630823753128,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.7718817786526136,
+        "probability": 0.7876220935258016,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.004493043189171929,
+        "probability": 0.0045846659175382476,
         "type": "PROBABILITY"
       },
       {
         "name": "Plaid Cymru",
-        "probability": 0.04300484195350275,
+        "probability": 0.054206932319128695,
         "type": "PROBABILITY"
       }
     ],
@@ -2499,12 +2636,12 @@
     "options": [
       {
         "name": "SNP Majority",
-        "probability": 0.4638069705093834,
+        "probability": 0.5263157894736842,
         "type": "PROBABILITY"
       },
       {
         "name": "No SNP Majority",
-        "probability": 0.5361930294906166,
+        "probability": 0.47368421052631576,
         "type": "PROBABILITY"
       }
     ],
@@ -2517,32 +2654,32 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.026276647470071912,
+        "probability": 0.0264933998764867,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.3970693395477533,
+        "probability": 0.4003447092446879,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservatives",
-        "probability": 0.5164196612615289,
+        "probability": 0.5206795351448253,
         "type": "PROBABILITY"
       },
       {
         "name": "Greens",
-        "probability": 0.008845604098836089,
+        "probability": 0.008918570255450968,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.008845604098836089,
+        "probability": 0.008918570255450968,
         "type": "PROBABILITY"
       },
       {
         "name": "Alba",
-        "probability": 0.04254314352297357,
+        "probability": 0.034645215223098,
         "type": "PROBABILITY"
       }
     ],
@@ -2610,28 +2747,43 @@
     "platform": "Ladbrokes",
     "options": [
       {
-        "name": "SNP",
-        "probability": 0.608410155137639,
+        "name": "Angus Robertson (SNP)",
+        "probability": 0.6242654624441708,
         "type": "PROBABILITY"
       },
       {
-        "name": "Labour",
-        "probability": 0.07964642030892728,
+        "name": "Maddy Kirkman (Lab)",
+        "probability": 0.0672285882632184,
         "type": "PROBABILITY"
       },
       {
-        "name": "Conservatives",
-        "probability": 0.2695724995071385,
+        "name": "Scott Douglas (Cons)",
+        "probability": 0.2689143530528736,
         "type": "PROBABILITY"
       },
       {
-        "name": "Liberal Democrats",
-        "probability": 0.00867436260790297,
+        "name": "Bruce Wilson (LD)",
+        "probability": 0.008653184627939,
         "type": "PROBABILITY"
       },
       {
-        "name": "Scottish Greens",
-        "probability": 0.033696562438392315,
+        "name": "Alison Johnstone (Green)",
+        "probability": 0.025705048453583502,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Bonnie Price Bob (Ind)",
+        "probability": 0.001744454386071535,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Tam Laird (Libertarian)",
+        "probability": 0.001744454386071535,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Donald Mackay (UKIP)",
+        "probability": 0.001744454386071535,
         "type": "PROBABILITY"
       }
     ],
@@ -2643,23 +2795,38 @@
     "platform": "Ladbrokes",
     "options": [
       {
-        "name": "SNP",
-        "probability": 0.8702787392475269,
+        "name": "Nicola Sturgeon (SNP)",
+        "probability": 0.8631387294085772,
         "type": "PROBABILITY"
       },
       {
-        "name": "Labour",
-        "probability": 0.10249949595581984,
+        "name": "Anas Sarwar (Lab)",
+        "probability": 0.10165856146367687,
         "type": "PROBABILITY"
       },
       {
-        "name": "Conservatives",
-        "probability": 0.01808814634514468,
+        "name": "Kyle Thornton (Cons)",
+        "probability": 0.01793974614064886,
         "type": "PROBABILITY"
       },
       {
-        "name": "Liberal Democrats",
-        "probability": 0.0091336184515087,
+        "name": "Carole Ford (Lib Dem)",
+        "probability": 0.009058683694783088,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Greg Energy Adviser",
+        "probability": 0.0018262017029403031,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Jayda Fransen (Ind)",
+        "probability": 0.0018262017029403031,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Derek Jackson (Liberal)",
+        "probability": 0.0045518758864332935,
         "type": "PROBABILITY"
       }
     ],
@@ -3160,24 +3327,6 @@
     "stars": 2
   },
   {
-    "title": "London Mayoral Election: Brian Rose to get over 5% of vote",
-    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
-    "platform": "LadBrokes",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.09090909090909091,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.9090909090909091,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 2
-  },
-  {
     "title": "London Mayoral Election: Shaun Bailey to get under 25% of R1 Vote",
     "url": "https://sports.ladbrokes.com/sport/politics/outrights",
     "platform": "LadBrokes",
@@ -3190,24 +3339,6 @@
       {
         "name": "No",
         "probability": 0.5,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 2
-  },
-  {
-    "title": "London Mayoral Election: Laurence Fox to get over 5% of vote",
-    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
-    "platform": "LadBrokes",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.09090909090909091,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.9090909090909091,
         "type": "PROBABILITY"
       }
     ],

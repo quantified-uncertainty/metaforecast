@@ -7,17 +7,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.12,
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.88,
+        "probability": 0.94,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "10",
-    "numforecasters": "9",
+    "numforecasts": "44",
+    "numforecasters": "39",
     "stars": 2
   },
   {
@@ -28,17 +28,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.23,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.77,
+        "probability": 0.74,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "7",
-    "numforecasters": "7",
+    "numforecasts": "25",
+    "numforecasters": "24",
     "stars": 2
   },
   {
@@ -49,32 +49,32 @@
     "options": [
       {
         "name": "Less than 5.5%",
-        "probability": 0.12390000000000001,
+        "probability": 0.10279999999999999,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 5.5% but less than or equal to 7%",
-        "probability": 0.2161,
+        "probability": 0.1936,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 7% and 9.5%, inclusive",
-        "probability": 0.282,
+        "probability": 0.2872,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 9.5% and 12%, inclusive",
-        "probability": 0.1866,
+        "probability": 0.19699999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 12%",
-        "probability": 0.19140000000000001,
+        "probability": 0.2194,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "77",
-    "numforecasters": "63",
+    "numforecasts": "92",
+    "numforecasters": "77",
     "stars": 2
   },
   {
@@ -85,17 +85,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.73,
+        "probability": 0.7,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.27,
+        "probability": 0.3,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "14",
-    "numforecasters": "13",
+    "numforecasts": "19",
+    "numforecasters": "18",
     "stars": 2
   },
   {
@@ -106,17 +106,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.64,
+        "probability": 0.57,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.36,
+        "probability": 0.43,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "12",
-    "numforecasters": "11",
+    "numforecasts": "17",
+    "numforecasters": "14",
     "stars": 2
   },
   {
@@ -136,8 +136,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "13",
-    "numforecasters": "12",
+    "numforecasts": "16",
+    "numforecasters": "15",
     "stars": 2
   },
   {
@@ -148,32 +148,32 @@
     "options": [
       {
         "name": "Less than 7,500",
-        "probability": 0.042,
+        "probability": 0.0431,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 7,500 and 9,500, inclusive",
-        "probability": 0.1348,
+        "probability": 0.1358,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 9,500 but less than or equal to 11,500",
-        "probability": 0.3064,
+        "probability": 0.3012,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 11,500 but less than or equal to 13,500",
-        "probability": 0.29600000000000004,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 13,500",
-        "probability": 0.2208,
+        "probability": 0.22,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "44",
-    "numforecasters": "36",
+    "numforecasts": "45",
+    "numforecasters": "37",
     "stars": 2
   },
   {
@@ -184,32 +184,32 @@
     "options": [
       {
         "name": "Less than 70,000",
-        "probability": 0.1234,
+        "probability": 0.128,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 70,000 and 90,000, inclusive",
-        "probability": 0.33340000000000003,
+        "probability": 0.34159999999999996,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 90,000 but less than or equal to 110,000",
-        "probability": 0.3059,
+        "probability": 0.3156,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 110,000 but less than or equal to 130,000",
-        "probability": 0.165,
+        "probability": 0.1567,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 130,000",
-        "probability": 0.0723,
+        "probability": 0.0582,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "74",
-    "numforecasters": "63",
+    "numforecasts": "77",
+    "numforecasters": "65",
     "stars": 2
   },
   {
@@ -220,32 +220,32 @@
     "options": [
       {
         "name": "Less than $400 billion",
-        "probability": 0.1294,
+        "probability": 0.1306,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $400 billion and $525 billion, inclusive",
-        "probability": 0.1863,
+        "probability": 0.185,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $525 billion but less than or equal to $650 billion",
-        "probability": 0.5024000000000001,
+        "probability": 0.5056,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $650 billion but less than or equal to $775 billion",
-        "probability": 0.1675,
+        "probability": 0.1638,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $775 billion",
-        "probability": 0.0144,
+        "probability": 0.015,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "24",
-    "numforecasters": "22",
+    "numforecasts": "25",
+    "numforecasters": "23",
     "stars": 2
   },
   {
@@ -256,32 +256,32 @@
     "options": [
       {
         "name": "Less than 3%",
-        "probability": 0.243,
+        "probability": 0.2373,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 3% and 4.5%, inclusive",
-        "probability": 0.313,
+        "probability": 0.3245,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 4.5% but less than or equal to 6%",
-        "probability": 0.297,
+        "probability": 0.3055,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 6% but less than or equal to 7.5%",
-        "probability": 0.1,
+        "probability": 0.0955,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 7.5%",
-        "probability": 0.047,
+        "probability": 0.0373,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "14",
-    "numforecasters": "13",
+    "numforecasts": "16",
+    "numforecasters": "15",
     "stars": 2
   },
   {
@@ -292,32 +292,32 @@
     "options": [
       {
         "name": "Less than $470 billion",
-        "probability": 0.047,
+        "probability": 0.0507,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $470 billion and $540 billion, inclusive",
-        "probability": 0.102,
+        "probability": 0.1267,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $540 billion but less than or equal to $610 billion",
-        "probability": 0.2225,
+        "probability": 0.23149999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $610 billion but less than or equal to $680 billion",
-        "probability": 0.3239,
+        "probability": 0.3165,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $680 billion",
-        "probability": 0.3045,
+        "probability": 0.2746,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "70",
-    "numforecasters": "64",
+    "numforecasts": "76",
+    "numforecasters": "67",
     "stars": 2
   },
   {
@@ -328,17 +328,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.21,
+        "probability": 0.19,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.79,
+        "probability": 0.81,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "126",
-    "numforecasters": "106",
+    "numforecasts": "134",
+    "numforecasters": "108",
     "stars": 3
   },
   {
@@ -349,17 +349,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.87,
+        "probability": 0.88,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.13,
+        "probability": 0.12,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "169",
-    "numforecasters": "131",
+    "numforecasts": "179",
+    "numforecasters": "132",
     "stars": 3
   },
   {
@@ -370,31 +370,31 @@
     "options": [
       {
         "name": "Less than $40 billion",
-        "probability": 0.056299999999999996,
+        "probability": 0.055999999999999994,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $40 billion and $60 billion, inclusive",
-        "probability": 0.259,
+        "probability": 0.2643,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $60 billion but less than or equal to $80 billion",
-        "probability": 0.40630000000000005,
+        "probability": 0.4053,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $80 billion but less than or equal to $100 billion",
-        "probability": 0.205,
+        "probability": 0.2023,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $100 billion",
-        "probability": 0.0733,
+        "probability": 0.07200000000000001,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "49",
+    "numforecasts": "52",
     "numforecasters": "43",
     "stars": 2
   },
@@ -406,31 +406,31 @@
     "options": [
       {
         "name": "Less than $13 billion",
-        "probability": 0.0345,
+        "probability": 0.0348,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $13 billion and $17 billion, inclusive",
-        "probability": 0.121,
+        "probability": 0.12480000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $17 billion but less than or equal to $21 billion",
-        "probability": 0.4255,
+        "probability": 0.41969999999999996,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $21 billion but less than or equal to $25 billion",
-        "probability": 0.3159,
+        "probability": 0.3148,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $25 billion",
-        "probability": 0.10310000000000001,
+        "probability": 0.1059,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "51",
+    "numforecasts": "53",
     "numforecasters": "41",
     "stars": 2
   },
@@ -442,32 +442,32 @@
     "options": [
       {
         "name": "Less than -0.25",
-        "probability": 0.19030000000000002,
+        "probability": 0.1943,
         "type": "PROBABILITY"
       },
       {
         "name": "Between -0.25 and 0, inclusive",
-        "probability": 0.31489999999999996,
+        "probability": 0.3184,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0 but less than or equal to 0.25",
-        "probability": 0.29719999999999996,
+        "probability": 0.3016,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.25 but less than or equal to 0.5",
-        "probability": 0.1542,
+        "probability": 0.1447,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.5",
-        "probability": 0.0435,
+        "probability": 0.0409,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "134",
-    "numforecasters": "108",
+    "numforecasts": "145",
+    "numforecasters": "110",
     "stars": 3
   },
   {
@@ -502,7 +502,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "109",
+    "numforecasts": "112",
     "numforecasters": "90",
     "stars": 3
   },
@@ -514,31 +514,31 @@
     "options": [
       {
         "name": "Less than $30 million",
-        "probability": 0.0482,
+        "probability": 0.0471,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $30 million and $70 million, inclusive",
-        "probability": 0.3013,
+        "probability": 0.2965,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $70 million but less than or equal to $110 million",
-        "probability": 0.33409999999999995,
+        "probability": 0.33590000000000003,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $110 million but less than or equal to $150 million",
-        "probability": 0.19329999999999997,
+        "probability": 0.20579999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $150 million",
-        "probability": 0.1231,
+        "probability": 0.11470000000000001,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "130",
+    "numforecasts": "138",
     "numforecasters": "114",
     "stars": 3
   },
@@ -550,32 +550,32 @@
     "options": [
       {
         "name": "Less than 26,000",
-        "probability": 0.04,
+        "probability": 0.042699999999999995,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 26,000 and 28,000, inclusive",
-        "probability": 0.0855,
+        "probability": 0.09630000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 28,000 but less than or equal to 30,000",
-        "probability": 0.2028,
+        "probability": 0.2127,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 30,000 but less than or equal to 32,000",
-        "probability": 0.3348,
+        "probability": 0.33299999999999996,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 32,000",
-        "probability": 0.3369,
+        "probability": 0.3153,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "63",
-    "numforecasters": "42",
+    "numforecasts": "68",
+    "numforecasters": "43",
     "stars": 2
   },
   {
@@ -586,31 +586,31 @@
     "options": [
       {
         "name": "Less than 800",
-        "probability": 0.12960000000000002,
+        "probability": 0.12119999999999999,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 800 and 4,000",
-        "probability": 0.44380000000000003,
+        "probability": 0.4581,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 4,000 but less than or equal to 20,000",
-        "probability": 0.30010000000000003,
+        "probability": 0.2958,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 20,000 but less than or equal to 100,000",
-        "probability": 0.09960000000000001,
+        "probability": 0.0984,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 100,000",
-        "probability": 0.027000000000000003,
+        "probability": 0.0265,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "135",
+    "numforecasts": "143",
     "numforecasters": "100",
     "stars": 3
   },
@@ -622,32 +622,32 @@
     "options": [
       {
         "name": "Less than 0.45%",
-        "probability": 0.049699999999999994,
+        "probability": 0.047,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 0.45% and 0.7%, inclusive",
-        "probability": 0.1891,
+        "probability": 0.1832,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.7% but less than or equal to 0.95%",
-        "probability": 0.29460000000000003,
+        "probability": 0.2816,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0.95% but less than or equal to 1.2%",
-        "probability": 0.22,
+        "probability": 0.2303,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 1.2%",
-        "probability": 0.2466,
+        "probability": 0.25780000000000003,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "58",
-    "numforecasters": "50",
+    "numforecasts": "63",
+    "numforecasters": "53",
     "stars": 2
   },
   {
@@ -658,43 +658,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.43,
+        "probability": 0.44,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.57,
+        "probability": 0.56,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "142",
-    "numforecasters": "88",
-    "stars": 3
-  },
-  {
-    "title": "How many of the top chipmakers in China will be subject to new export controls in 2021?",
-    "url": "https://www.cset-foretell.com/questions/101-on-how-many-of-china-s-top-chipmakers-will-the-united-states-impose-new-export-controls-in-2021",
-    "platform": "CSET-foretell",
-    "description": "Related questions. This question is part of a cluster that includes U.S. exports of semiconductor chips to China, U.S. exports of semiconductor manufacturing equipment to China, Chinese imports of semiconductor chips, Chinese imports of semiconductor manufacturing equipment, and the percentage of top SME producers' revenue that comes from China.Context. The semiconductor manufacturing process has many components manufactured through complicated, highly globalized supply chains. China's ability to produce advanced semiconductor chips is particularly dependent on imports of advanced semiconductor manufacturing equipment (SME). Chinese chipmakers can then use imported or domestically produced SME to produce chips domestically.For chip foundries, the top Chinese companies are Semiconductor Manufacturing International Corporation (SMIC), Hua Hong Semiconductor, Hua Li Microelectronics, and XMC. In September 2020, the Commerce Department notified the chip industry that SMIC was subject to military end-use end-user controls.For memory chips, China had three national champion companies: ChangXin Memory Technologies (CXMT), Yangtze Memory Technology Co. (YMTC), and Fujian Jinhua Semiconductor. In October 2018, the Trump Administration placed Fujian Jinhua on the Entity List, effectively ending its ability to operate.The United States can impose export controls on technologies or companies. For the latter, the two primary mechanisms are (i) the Commerce Department's Entity List, and (ii) \"military end-use or end-user controls,\" which apply to exports to any Chinese end-user if the goods will be used for military purposes. Although the latter applies automatically to exports that satisfy the regulatory standard, the Commerce Department often notifies the chip industry when it determines that military end-use or end-user controls apply to a company, as it recently did for SMIC.For additional background, see Khan, U.S. Semiconductor Exports to China: Current Policies and Trends (2020).Data and resolution details. For this question, top chipmakers include: ChangXin Memory Technologies (CXMT) Yangtze Memory Technology Co. (YMTC) Hua Hong Semiconductor Hua Li Microelectronics XMC SMIC and Fujian Jinhua are excluded because they were recently subjected to new export controls.New export controls will be considered imposed on a company if either (i) the Federal Register includes the addition to the Entity List, or (ii) popular media reports that the Commerce Department has notified the chip industry that the company is subject to military end-use or end-user controls.***This question is a metric for the following scenario:Four Possible Scenarios for U.S.-China [De]Coupling in the Semiconductor Industry\n",
-    "options": [
-      {
-        "name": "Zero",
-        "probability": 0.4311,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "One",
-        "probability": 0.321,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Two or more",
-        "probability": 0.24789999999999998,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "116",
-    "numforecasters": "88",
+    "numforecasts": "147",
+    "numforecasters": "89",
     "stars": 3
   },
   {
@@ -705,31 +679,31 @@
     "options": [
       {
         "name": "Less than 20%",
-        "probability": 0.0941,
+        "probability": 0.0934,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 25%, inclusive",
-        "probability": 0.1827,
+        "probability": 0.1841,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 25% but less than or equal to 30%",
-        "probability": 0.3671,
+        "probability": 0.369,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 30% but less than or equal to 35%",
-        "probability": 0.2427,
+        "probability": 0.24239999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 35%",
-        "probability": 0.1134,
+        "probability": 0.111,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "68",
+    "numforecasts": "73",
     "numforecasters": "59",
     "stars": 2
   },
@@ -750,8 +724,8 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "305",
-    "numforecasters": "187",
+    "numforecasts": "332",
+    "numforecasters": "192",
     "stars": 3
   },
   {
@@ -762,27 +736,27 @@
     "options": [
       {
         "name": "Before February 17, 2021",
-        "probability": 0.0342,
+        "probability": 0.0245,
         "type": "PROBABILITY"
       },
       {
         "name": "Between February 17 and May 19, 2021, inclusive",
-        "probability": 0.09359999999999999,
+        "probability": 0.0834,
         "type": "PROBABILITY"
       },
       {
         "name": "After May 19, but before or equal to November 17, 2021",
-        "probability": 0.2275,
+        "probability": 0.21969999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "After November 17, 2021",
-        "probability": 0.6446999999999999,
+        "probability": 0.6724,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "228",
-    "numforecasters": "132",
+    "numforecasts": "239",
+    "numforecasters": "135",
     "stars": 3
   },
   {
@@ -793,68 +767,32 @@
     "options": [
       {
         "name": "Less than 59%",
-        "probability": 0.1266,
+        "probability": 0.1223,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 59% and 66%, inclusive",
-        "probability": 0.18030000000000002,
+        "probability": 0.18170000000000003,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 66% but less than or equal to 73%",
-        "probability": 0.26539999999999997,
+        "probability": 0.26899999999999996,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 73% but less than or equal to 80%",
-        "probability": 0.2919,
+        "probability": 0.29,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 80%",
-        "probability": 0.1358,
+        "probability": 0.13699999999999998,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "219",
-    "numforecasters": "166",
-    "stars": 3
-  },
-  {
-    "title": "What percentage of U.S. AI publications will have a Chinese co-author in 2021?",
-    "url": "https://www.cset-foretell.com/questions/86-what-percentage-of-u-s-ai-publications-will-be-u-s-china-collaborations-in-2021",
-    "platform": "CSET-foretell",
-    "description": "Context. As U.S.-China tensions increase, policymakers are paying greater attention to areas in which the two countries are entangled. One such area relevant to tech-security policy is AI research collaborations. To date, the U.S.-China decoupling trends apparent in economic and immigration data do not appear to be impacting research collaborations. Whether potential conflicts between academic and security interests will begin to affect research collaborations is unclear.Data and resolution details. This question resolves based on Dimensions data. We classified publications as AI/ML-relevant or not using a predictive model trained on arXiv publication data, where a publication is relevant if it’s categorized on arXiv under any of artificial intelligence, machine learning, computer vision, computation and language, multiagent systems, or robotics. To read more about this method, see “Identifying the Development and Application of Artificial Intelligence in Scientific Text.” A publication is a U.S. publication if any author is affiliated with a U.S.-based organization. A publication is a U.S.-China collaboration if at least one author is affiliated with a U.S.-based organization and at least one author is affiliated with a China-based organization. The data underlying the graph is here.This question is a metric for the following scenarios: Three Possible 2025 Worlds that Should Inform Policy Today An Isolated China in a Globalized World To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
-    "options": [
-      {
-        "name": "Less than 15%",
-        "probability": 0.0799,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 15% and 17%, inclusive",
-        "probability": 0.1935,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 17% but less than or equal to 19%",
-        "probability": 0.3193,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 19% but less than or equal to 21%",
-        "probability": 0.2656,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 21%",
-        "probability": 0.1418,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "145",
-    "numforecasters": "105",
+    "numforecasts": "226",
+    "numforecasters": "167",
     "stars": 3
   },
   {
@@ -865,17 +803,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.74,
+        "probability": 0.73,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.26,
+        "probability": 0.27,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "180",
-    "numforecasters": "129",
+    "numforecasts": "192",
+    "numforecasters": "132",
     "stars": 3
   },
   {
@@ -886,68 +824,32 @@
     "options": [
       {
         "name": "Less than 1.5%",
-        "probability": 0.0658,
+        "probability": 0.0682,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1.5% and 3%, inclusive",
-        "probability": 0.1349,
+        "probability": 0.1378,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 3% but less than or equal to 4.5%",
-        "probability": 0.2091,
+        "probability": 0.2109,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 4.5% but less than or equal to 6%",
-        "probability": 0.2852,
+        "probability": 0.2903,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 6%",
-        "probability": 0.305,
+        "probability": 0.2927,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "203",
+    "numforecasts": "215",
     "numforecasters": "139",
-    "stars": 3
-  },
-  {
-    "title": "How many times will the Japanese Air Force respond to threats to Japan's territorial airspace by Chinese military aircraft between April 1, 2020 and March 31, 2021, inclusive?",
-    "url": "https://www.cset-foretell.com/questions/32-how-many-sorties-against-chinese-aircraft-will-the-japanese-air-self-defense-force-conduct-by-april-30th-2020",
-    "platform": "CSET-foretell",
-    "description": "Context. Japan is a U.S. treaty ally and a major U.S. strategic partner in the Indo-Pacific. When Chinese military aircraft enter Japanese airspace without authorization, the Japanese air force sends fighter jets in response. The frequency of Chinese incursions into Japanese air space reflects tensions between China and Japan and the aggressiveness of China's foreign policy. For example, the spike in 2016 coincided with Japan's announced intention to revise its constitution in a manner China found threatening (Gui Yongtao).Data and resolution details. This question resolves in April 2021 based on official figures released by the Japanese government (Japan Air Self-Defense Force). The data underlying the graph is here.This question is a metric for the following scenarios:Three Possible 2025 Worlds that Should Inform Policy TodayTo suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.\n",
-    "options": [
-      {
-        "name": "Less than 675",
-        "probability": 0.6114,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 675 and 750, inclusive",
-        "probability": 0.2072,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 750 but less than or equal to 825",
-        "probability": 0.09880000000000001,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 825 but less than or equal to 900",
-        "probability": 0.0519,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 900",
-        "probability": 0.030699999999999998,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "151",
-    "numforecasters": "84",
     "stars": 3
   }
 ]

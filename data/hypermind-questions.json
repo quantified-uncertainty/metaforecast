@@ -6,12 +6,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.05,
+        "probability": 0.04901960784313725,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.95,
+        "probability": 0.9509803921568627,
         "type": "PROBABILITY"
       }
     ],
@@ -25,12 +25,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.65,
+        "probability": 0.69,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.35,
+        "probability": 0.31,
         "type": "PROBABILITY"
       }
     ],
@@ -82,57 +82,57 @@
     "options": [
       {
         "name": "Xavier Bertrand",
-        "probability": 0.03883495145631068,
+        "probability": 0.04901960784313725,
         "type": "PROBABILITY"
       },
       {
         "name": "Pierre de Villiers",
-        "probability": 0.00970873786407767,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Anne Hidalgo",
-        "probability": 0.02912621359223301,
+        "probability": 0.02941176470588235,
         "type": "PROBABILITY"
       },
       {
         "name": "Yannick Jadot",
-        "probability": 0.00970873786407767,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Marine Le Pen",
-        "probability": 0.1262135922330097,
+        "probability": 0.12745098039215685,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmanuel Macron",
-        "probability": 0.5728155339805825,
+        "probability": 0.5588235294117647,
         "type": "PROBABILITY"
       },
       {
         "name": "Jean-Luc Mélenchon",
-        "probability": 0.01941747572815534,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Valérie Pécresse",
-        "probability": 0.00970873786407767,
+        "probability": 0.0196078431372549,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Piolle",
-        "probability": 0.00970873786407767,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Another woman",
-        "probability": 0.02912621359223301,
+        "probability": 0.02941176470588235,
         "type": "PROBABILITY"
       },
       {
         "name": "Another man",
-        "probability": 0.14563106796116507,
+        "probability": 0.14705882352941177,
         "type": "PROBABILITY"
       }
     ],
@@ -146,22 +146,22 @@
     "options": [
       {
         "name": "Macron and Le Pen",
-        "probability": 0.7474747474747475,
+        "probability": 0.6981132075471699,
         "type": "PROBABILITY"
       },
       {
         "name": "Macron, but not Le Pen",
-        "probability": 0.08080808080808081,
+        "probability": 0.10377358490566038,
         "type": "PROBABILITY"
       },
       {
         "name": "Le Pen, but not Macron",
-        "probability": 0.1414141414141414,
+        "probability": 0.169811320754717,
         "type": "PROBABILITY"
       },
       {
         "name": "Neither of them",
-        "probability": 0.030303030303030304,
+        "probability": 0.028301886792452827,
         "type": "PROBABILITY"
       }
     ],
@@ -175,12 +175,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.99,
+        "probability": 1,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       }
     ],
@@ -194,12 +194,12 @@
     "options": [
       {
         "name": "In June, 2021 (as planned)",
-        "probability": 0.82,
+        "probability": 0.89,
         "type": "PROBABILITY"
       },
       {
         "name": "Later in 2021",
-        "probability": 0.17,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
@@ -218,17 +218,17 @@
     "options": [
       {
         "name": "France",
-        "probability": 0.12745098039215685,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "Japan",
-        "probability": 0.8627450980392156,
+        "probability": 0.87,
         "type": "PROBABILITY"
       },
       {
         "name": "Same medals count",
-        "probability": 0.00980392156862745,
+        "probability": 0.01,
         "type": "PROBABILITY"
       }
     ],
@@ -257,32 +257,32 @@
       },
       {
         "name": "March 2021",
-        "probability": 0.010416666666666668,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.14,
+        "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
         "name": "April 2021",
-        "probability": 0.04166666666666667,
+        "probability": 0.010204081632653062,
         "type": "PROBABILITY"
       },
       {
         "name": "May 2021",
-        "probability": 0.14583333333333334,
+        "probability": 0.0816326530612245,
         "type": "PROBABILITY"
       },
       {
         "name": "June 2021",
-        "probability": 0.31250000000000006,
+        "probability": 0.2448979591836735,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe after June 2021",
-        "probability": 0.48958333333333337,
+        "probability": 0.6632653061224489,
         "type": "PROBABILITY"
       }
     ],
@@ -296,27 +296,27 @@
     "options": [
       {
         "name": "In May or earlier",
-        "probability": 0.009900990099009901,
+        "probability": 0.0297029702970297,
         "type": "PROBABILITY"
       },
       {
         "name": "in June (government goal)",
-        "probability": 0.49504950495049505,
+        "probability": 0.5445544554455446,
         "type": "PROBABILITY"
       },
       {
         "name": "in July",
-        "probability": 0.297029702970297,
+        "probability": 0.27722772277227725,
         "type": "PROBABILITY"
       },
       {
         "name": "in August",
-        "probability": 0.12871287128712872,
+        "probability": 0.08910891089108912,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.06930693069306931,
+        "probability": 0.0594059405940594,
         "type": "PROBABILITY"
       }
     ],
@@ -330,12 +330,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.08,
+        "probability": 0.07,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.92,
+        "probability": 0.93,
         "type": "PROBABILITY"
       }
     ],
@@ -513,27 +513,27 @@
     "options": [
       {
         "name": "Mohamed Abdullahi Mohamed",
-        "probability": 0.8137254901960784,
+        "probability": 0.9021739130434783,
         "type": "PROBABILITY"
       },
       {
         "name": "Abshir Aden Ferro",
-        "probability": 0.00980392156862745,
+        "probability": 0.010869565217391304,
         "type": "PROBABILITY"
       },
       {
         "name": "Sharif Sheikh Ahmed",
-        "probability": 0.00980392156862745,
+        "probability": 0.010869565217391304,
         "type": "PROBABILITY"
       },
       {
         "name": "Someone else",
-        "probability": 0.00980392156862745,
+        "probability": 0.010869565217391304,
         "type": "PROBABILITY"
       },
       {
         "name": "No election in 2021",
-        "probability": 0.1568627450980392,
+        "probability": 0.06521739130434782,
         "type": "PROBABILITY"
       }
     ],
@@ -547,27 +547,27 @@
     "options": [
       {
         "name": "Q1, 2021 (or before)",
-        "probability": 0.01,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Q2, 2021",
-        "probability": 0.26,
+        "probability": 0.2745098039215686,
         "type": "PROBABILITY"
       },
       {
         "name": "Q3, 2021",
-        "probability": 0.42,
+        "probability": 0.4117647058823529,
         "type": "PROBABILITY"
       },
       {
         "name": "Q4, 2021",
-        "probability": 0.18,
+        "probability": 0.1764705882352941,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.13,
+        "probability": 0.12745098039215685,
         "type": "PROBABILITY"
       }
     ],
@@ -581,17 +581,17 @@
     "options": [
       {
         "name": "Benjamin Netanyahu",
-        "probability": 0.8365384615384616,
+        "probability": 0.8316831683168318,
         "type": "PROBABILITY"
       },
       {
         "name": "Another Likud politician",
-        "probability": 0.009615384615384616,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "Another politician not from Likud",
-        "probability": 0.15384615384615385,
+        "probability": 0.15841584158415842,
         "type": "PROBABILITY"
       }
     ],
@@ -605,17 +605,17 @@
     "options": [
       {
         "name": "Worse than the 2012 record",
-        "probability": 0.2604166666666667,
+        "probability": 0.2233009708737864,
         "type": "PROBABILITY"
       },
       {
         "name": "Worse than 2020, but not worse than 2012",
-        "probability": 0.23958333333333337,
+        "probability": 0.31067961165048547,
         "type": "PROBABILITY"
       },
       {
         "name": "Not worse than 2020",
-        "probability": 0.5,
+        "probability": 0.46601941747572817,
         "type": "PROBABILITY"
       }
     ],
@@ -668,27 +668,27 @@
     "options": [
       {
         "name": "in Q1, 2021",
-        "probability": 0.0707070707070707,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q2, 2021",
-        "probability": 0.33333333333333337,
+        "probability": 0.4095238095238095,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q3, 2021",
-        "probability": 0.17171717171717174,
+        "probability": 0.17142857142857143,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q4, 2021",
-        "probability": 0.19191919191919193,
+        "probability": 0.18095238095238095,
         "type": "PROBABILITY"
       },
       {
         "name": "Perhaps later",
-        "probability": 0.23232323232323235,
+        "probability": 0.23809523809523805,
         "type": "PROBABILITY"
       }
     ],
@@ -702,22 +702,22 @@
     "options": [
       {
         "name": "USA",
-        "probability": 0.01,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "France",
-        "probability": 0.54,
+        "probability": 0.712871287128713,
         "type": "PROBABILITY"
       },
       {
         "name": "Germany",
-        "probability": 0.38,
+        "probability": 0.2376237623762376,
         "type": "PROBABILITY"
       },
       {
         "name": "United Kingdom",
-        "probability": 0.07,
+        "probability": 0.039603960396039604,
         "type": "PROBABILITY"
       }
     ],
@@ -736,17 +736,17 @@
       },
       {
         "name": "France",
-        "probability": 0.04,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "Germany",
-        "probability": 0.03,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "United Kingdom",
-        "probability": 0.05,
+        "probability": 0.1,
         "type": "PROBABILITY"
       }
     ],
@@ -817,12 +817,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.92,
+        "probability": 0.9090909090909092,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.08,
+        "probability": 0.09090909090909091,
         "type": "PROBABILITY"
       }
     ],
@@ -857,14 +857,6 @@
     "stars": 3
   },
   {
-    "title": "As of April 1, 2021, how many million individuals in the United-States will have received at least one dose of an FDA-approved Covid-19 vaccine?",
-    "url": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
-    "platform": "Hypermind",
-    "description": "This question will be preferably* settled according to the data published on April 1, 2021 by the CDC here: [https://covid.cdc.gov/covid-data-tracker/#vaccinations](https://covid.cdc.gov/covid-data-tracker/#vaccinations).\nFor the purposes of this question, FDA “Emergency Use Authorization” or “compassionate use” counts as approval.\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on the source for this statistic used by Our World in Data. If Our World in Data does not track this statistic (as of Dec 26 2020 it does not), Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the FDA or credible reporting by major news publications.\n",
-    "options": [],
-    "stars": 3
-  },
-  {
     "title": "As of July 1, 2021, how many million individuals in the United-States will have received at least one dose of an FDA-approved Covid-19 vaccine?",
     "url": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
     "platform": "Hypermind",
@@ -877,14 +869,6 @@
     "url": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
     "platform": "Hypermind",
     "description": "This question will be preferably* settled according to the data published on October 1, 2021 by the CDC here: [https://covid.cdc.gov/covid-data-tracker/#vaccinations](https://covid.cdc.gov/covid-data-tracker/#vaccinations).\nFor the purposes of this question, FDA “Emergency Use Authorization” or “compassionate use” counts as approval.\n* Should this data source not be available in a timely manner to settle the question, Hypermind will rely on the source for this statistic used by Our World in Data. If Our World in Data does not track this statistic (as of Dec 26 2020 it does not), Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the FDA or credible reporting by major news publications.\n",
-    "options": [],
-    "stars": 3
-  },
-  {
-    "title": "When will new confirmed COVID-19 deaths in the USA (7-day rolling average) first drop below 3 per million people?",
-    "url": "https://prod.hypermind.com/ngdp/en/showcase2/showcase.html?sc=Covid19",
-    "platform": "Hypermind",
-    "description": "This question will be preferably settled according to [the data published by Our World in Data](https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;country=USA&amp;region=World&amp;deathsMetric=true&amp;interval=smoothed&amp;perCapita=true&amp;smoothing=7&amp;pickerMetric=total_cases&amp;pickerSort=desc). \nShould this data source not be available in a timely manner to settle the question, Hypermind will rely on other sources it deems most reliable and relevant to settle the question, such as public health sources like the CDC or WHO.\n",
     "options": [],
     "stars": 3
   },

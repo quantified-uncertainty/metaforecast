@@ -42,7 +42,7 @@ let writefile = (data, set, suffix, filetype = ".csv") => {
   fs.writeFileSync(locationData + set + suffix + filetype, data)
 }
 
-let coverttocsvandmerge = () => {
+let coverttocsvandmerge = async () => {
   let merged = []
   for(let set of sets){
     let json = getJSON(set)
@@ -91,14 +91,15 @@ Choose one option, wisely: #`)
   
 let executeoption = async (option) => {
   option = Number(option)
-  console.log(functionNames[option])
+  //console.log(functionNames[option])
   if(option < 0){
     console.log("Error, ${option} < 0")
   }else if(option < functions.length){
     functions[option]()
   } else if(option == functions.length){
     for(let fun of functions){
-      fun()
+      console.log(fun.name)
+      await fun()
     }
   }
 }
