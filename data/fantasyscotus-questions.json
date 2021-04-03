@@ -383,27 +383,27 @@
     "title": "In Cedar Point Nursery v. Hassid, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/cedar-point-nursery-v-hassid/",
     "platform": "FantasySCOTUS",
-    "description": "50.00% (3 out of 6) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 5-4. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
+    "description": "37.50% (3 out of 8) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 5-4. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5,
+        "probability": 0.375,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5,
+        "probability": 0.625,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 6,
+    "numforecasts": 8,
     "stars": 2
   },
   {
     "title": "In United States v. Cooley, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/united-states-v-cooley/",
     "platform": "FantasySCOTUS",
-    "description": "0.00% (0 out of 10) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 9-0. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
+    "description": "0.00% (0 out of 12) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 9-0. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
     "options": [
       {
         "name": "Yes",
@@ -416,74 +416,34 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 10,
+    "numforecasts": 12,
     "stars": 2
   },
   {
     "title": "In Caniglia v. Strom, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/caniglia-v-strom/",
     "platform": "FantasySCOTUS",
-    "description": "20.00% (2 out of 10) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 6-3. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
+    "description": "27.27% (3 out of 11) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 6-3. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.2,
+        "probability": 0.2727272727272727,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.8,
+        "probability": 0.7272727272727273,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 10,
+    "numforecasts": 11,
     "stars": 2
   },
   {
     "title": "In Goldman Sachs Group Inc. v. Arkansas Teacher Retirement System, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/goldman-sachs-group-inc-v-arkansas-teacher-retirement-system/",
     "platform": "FantasySCOTUS",
-    "description": "75.00% (6 out of 8) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 6-3. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.75,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.25,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": 8,
-    "stars": 2
-  },
-  {
-    "title": "In TransUnion LLC v. Ramirez, the SCOTUS will affirm the lower court's decision",
-    "url": "https://fantasyscotus.net/user-predictions/case/transunion-llc-v-ramirez/",
-    "platform": "FantasySCOTUS",
-    "description": "12.50% (1 out of 8) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 5-4. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.125,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.875,
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": 8,
-    "stars": 2
-  },
-  {
-    "title": "In National Collegiate Athletic Association v. Alston, the SCOTUS will affirm the lower court's decision",
-    "url": "https://fantasyscotus.net/user-predictions/case/national-collegiate-athletic-association-v-alston/",
-    "platform": "FantasySCOTUS",
-    "description": "77.78% (7 out of 9) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 9-0. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
+    "description": "77.78% (7 out of 9) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 6-3. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
     "options": [
       {
         "name": "Yes",
@@ -500,23 +460,63 @@
     "stars": 2
   },
   {
-    "title": "In American Athletic Conference v. Alston, the SCOTUS will affirm the lower court's decision",
-    "url": "https://fantasyscotus.net/user-predictions/case/american-athletic-conference-v-alston/",
+    "title": "In TransUnion LLC v. Ramirez, the SCOTUS will affirm the lower court's decision",
+    "url": "https://fantasyscotus.net/user-predictions/case/transunion-llc-v-ramirez/",
     "platform": "FantasySCOTUS",
-    "description": "33.33% (2 out of 6) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 5-4. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
+    "description": "11.11% (1 out of 9) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 6-3. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.3333333333333333,
+        "probability": 0.1111111111111111,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.6666666666666667,
+        "probability": 0.8888888888888888,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 6,
+    "numforecasts": 9,
+    "stars": 2
+  },
+  {
+    "title": "In National Collegiate Athletic Association v. Alston, the SCOTUS will affirm the lower court's decision",
+    "url": "https://fantasyscotus.net/user-predictions/case/national-collegiate-athletic-association-v-alston/",
+    "platform": "FantasySCOTUS",
+    "description": "80.00% (8 out of 10) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 9-0. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.8,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.19999999999999996,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 10,
+    "stars": 2
+  },
+  {
+    "title": "In American Athletic Conference v. Alston, the SCOTUS will affirm the lower court's decision",
+    "url": "https://fantasyscotus.net/user-predictions/case/american-athletic-conference-v-alston/",
+    "platform": "FantasySCOTUS",
+    "description": "42.86% (3 out of 7) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 5-4. Historically, FantasySCOTUS has chosen the correct side 63.16% of the time.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.42857142857142855,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.5714285714285714,
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": 7,
     "stars": 2
   },
   {

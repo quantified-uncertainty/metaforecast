@@ -51,12 +51,12 @@
       },
       {
         "name": "More than 24 million but less than 27 million barrels per day",
-        "probability": 0.57,
+        "probability": 0.51,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 27 million and 30 million barrels per day, inclusive",
-        "probability": 0.41,
+        "probability": 0.47,
         "type": "PROBABILITY"
       },
       {
@@ -257,7 +257,7 @@
     "options": [
       {
         "name": "The Games will begin",
-        "probability": 0.98,
+        "probability": 0.99,
         "type": "PROBABILITY"
       },
       {
@@ -267,7 +267,7 @@
       },
       {
         "name": "The Games will be cancelled",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       }
     ],

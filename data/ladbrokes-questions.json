@@ -871,37 +871,37 @@
     "options": [
       {
         "name": "Markus Söder",
-        "probability": 0.403238358456856,
+        "probability": 0.3994348909132481,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.034895627174151005,
+        "probability": 0.0345664809444157,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock",
-        "probability": 0.08248057332072055,
+        "probability": 0.09985872272831202,
         "type": "PROBABILITY"
       },
       {
         "name": "Alice Weidel",
-        "probability": 0.008983032737900258,
+        "probability": 0.008898302025295131,
         "type": "PROBABILITY"
       },
       {
         "name": "Jens Spahn",
-        "probability": 0.01778992757897894,
+        "probability": 0.008898302025295131,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet",
-        "probability": 0.38282122638309113,
+        "probability": 0.3792103394746026,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.06979125434830201,
+        "probability": 0.0691329618888314,
         "type": "PROBABILITY"
       }
     ],
@@ -1806,62 +1806,62 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.440264008555029,
+        "probability": 0.4383248113601272,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.48918223172781006,
+        "probability": 0.48702756817791915,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.004380736403532627,
+        "probability": 0.004361440909055992,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.013142209210597881,
+        "probability": 0.013084322727167976,
         "type": "PROBABILITY"
       },
       {
         "name": "SDP",
-        "probability": 0.004380736403532627,
+        "probability": 0.004361440909055992,
         "type": "PROBABILITY"
       },
       {
         "name": "Heritage Party",
-        "probability": 0.001757540952315485,
+        "probability": 0.0017497996461482122,
         "type": "PROBABILITY"
       },
       {
         "name": "UKIP",
-        "probability": 0.001757540952315485,
+        "probability": 0.0017497996461482122,
         "type": "PROBABILITY"
       },
       {
         "name": "Womens Equality Party",
-        "probability": 0.001757540952315485,
+        "probability": 0.0017497996461482122,
         "type": "PROBABILITY"
       },
       {
         "name": "North East Party",
-        "probability": 0.004380736403532627,
+        "probability": 0.004361440909055992,
         "type": "PROBABILITY"
       },
       {
         "name": "Sam Lee (Ind)",
-        "probability": 0.008718099179307506,
+        "probability": 0.013084322727167976,
         "type": "PROBABILITY"
       },
       {
         "name": "Thelma Walker (either as Ind or NIP)",
-        "probability": 0.025897882856178178,
+        "probability": 0.02578381243294866,
         "type": "PROBABILITY"
       },
       {
         "name": "Greens",
-        "probability": 0.004380736403532627,
+        "probability": 0.004361440909055992,
         "type": "PROBABILITY"
       }
     ],
@@ -2038,27 +2038,27 @@
     "options": [
       {
         "name": "Under 35%",
-        "probability": 0.0264861683343143,
+        "probability": 0.026492879340025487,
         "type": "PROBABILITY"
       },
       {
         "name": "35-40%",
-        "probability": 0.0529723366686286,
+        "probability": 0.052985758680050975,
         "type": "PROBABILITY"
       },
       {
         "name": "40-45%",
-        "probability": 0.20011771630370803,
+        "probability": 0.18015157951217334,
         "type": "PROBABILITY"
       },
       {
         "name": "45-50%",
-        "probability": 0.36021188934667453,
+        "probability": 0.3800666234434036,
         "type": "PROBABILITY"
       },
       {
         "name": "Over 50%",
-        "probability": 0.36021188934667453,
+        "probability": 0.3603031590243467,
         "type": "PROBABILITY"
       }
     ],
@@ -2122,27 +2122,27 @@
     "options": [
       {
         "name": "Under 1%",
-        "probability": 0.3558014642902244,
+        "probability": 0.37724769639924755,
         "type": "PROBABILITY"
       },
       {
         "name": "1-2%",
-        "probability": 0.33950521401738964,
+        "probability": 0.35763081618648673,
         "type": "PROBABILITY"
       },
       {
         "name": "2-5%",
-        "probability": 0.19766748016123575,
+        "probability": 0.17881540809324337,
         "type": "PROBABILITY"
       },
       {
         "name": "5-10%",
-        "probability": 0.08086396915686918,
+        "probability": 0.06877515695893975,
         "type": "PROBABILITY"
       },
       {
         "name": "Over 10%",
-        "probability": 0.026161872374281202,
+        "probability": 0.01753092236208268,
         "type": "PROBABILITY"
       }
     ],
@@ -2199,6 +2199,24 @@
       {
         "name": "David Kurten",
         "probability": 0.05137182005083978,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "London Mayoral Election: Most Votes Match Bet 3",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "Ladbrokes",
+    "options": [
+      {
+        "name": "Peter Gammons (UKIP)",
+        "probability": 0.8426966292134831,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Niko Omilana (Ind)",
+        "probability": 0.15730337078651685,
         "type": "PROBABILITY"
       }
     ],
@@ -2636,12 +2654,12 @@
     "options": [
       {
         "name": "SNP Majority",
-        "probability": 0.5263157894736842,
+        "probability": 0.5684754521963824,
         "type": "PROBABILITY"
       },
       {
         "name": "No SNP Majority",
-        "probability": 0.47368421052631576,
+        "probability": 0.43152454780361754,
         "type": "PROBABILITY"
       }
     ],

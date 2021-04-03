@@ -149,27 +149,27 @@
     "options": [
       {
         "name": "Friedrich Merz",
-        "probability": 0.0052495494789626266,
+        "probability": 0.005571725571725572,
         "type": "PROBABILITY"
       },
       {
         "name": "Annegret Kramp-Karrenbauer",
-        "probability": 0.017002272193058058,
+        "probability": 0.018045738045738044,
         "type": "PROBABILITY"
       },
       {
         "name": "Jens Spahn",
-        "probability": 0.05053670767061036,
+        "probability": 0.05363825363825364,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet",
-        "probability": 0.3593982605970383,
+        "probability": 0.33264033264033266,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.0681657917417535,
+        "probability": 0.07234927234927234,
         "type": "PROBABILITY"
       },
       {
@@ -189,7 +189,7 @@
       },
       {
         "name": "Ralph Brinkhaus",
-        "probability": 0.031340593904254484,
+        "probability": 0.033264033264033266,
         "type": "PROBABILITY"
       },
       {
@@ -224,7 +224,7 @@
       },
       {
         "name": "Ursula Von der Leyen",
-        "probability": 0.024445663245318498,
+        "probability": 0.025945945945945948,
         "type": "PROBABILITY"
       },
       {
@@ -239,22 +239,22 @@
       },
       {
         "name": "Markus Söder",
-        "probability": 0.3237483350309488,
+        "probability": 0.3746361746361746,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.05226044033534435,
+        "probability": 0.011891891891891892,
         "type": "PROBABILITY"
       },
       {
         "name": "Norbert Röttgen",
-        "probability": 0.002585598997100995,
+        "probability": 0.0027442827442827446,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock",
-        "probability": 0.06526678680560996,
+        "probability": 0.06927234927234928,
         "type": "PROBABILITY"
       }
     ],
@@ -555,25 +555,6 @@
     "stars": 2
   },
   {
-    "title": "NY-22 Congressional District Winner",
-    "url": "https://smarkets.com/event/32279294/politics/us/2020-house-representatives-results/new-york-22-congressional-district-race",
-    "platform": "Smarkets",
-    "options": [
-      {
-        "name": "Democratic",
-        "probability": 0.6297324817180413,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Republican",
-        "probability": 0.3702675182819587,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "Which party will win in New York's 22nd Congressional District in the 2020 House of Representatives Election? Contracts to be added on request.",
-    "stars": 2
-  },
-  {
     "title": "Year of next General Election",
     "url": "https://smarkets.com/event/34757345/politics/uk/year-next-general-election-2020/year-next-ge-2020",
     "platform": "Smarkets",
@@ -652,12 +633,12 @@
     "options": [
       {
         "name": "Boris Johnson",
-        "probability": 0.04157904798317722,
+        "probability": 0.03896452884270871,
         "type": "PROBABILITY"
       },
       {
         "name": "Rishi Sunak",
-        "probability": 0.04779200917606577,
+        "probability": 0.04478681476173415,
         "type": "PROBABILITY"
       },
       {
@@ -667,37 +648,37 @@
       },
       {
         "name": "Priti Patel",
-        "probability": 0.09558401835213154,
+        "probability": 0.0895736295234683,
         "type": "PROBABILITY"
       },
       {
         "name": "Michael Gove",
-        "probability": 0.09099598547122922,
+        "probability": 0.08527409530634182,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Buckland",
-        "probability": 0.07646721468170524,
+        "probability": 0.07165890361877464,
         "type": "PROBABILITY"
       },
       {
         "name": "Ben Wallace",
-        "probability": 0.11374498183903654,
+        "probability": 0.10659261913292728,
         "type": "PROBABILITY"
       },
       {
         "name": "Matt Hancock",
-        "probability": 0.10389982794876698,
+        "probability": 0.09736653529201003,
         "type": "PROBABILITY"
       },
       {
         "name": "Alok Sharma",
-        "probability": 0.07350411011278916,
+        "probability": 0.13176280902902188,
         "type": "PROBABILITY"
       },
       {
         "name": "Elizabeth Truss",
-        "probability": 0.05171095392850317,
+        "probability": 0.04845933357219635,
         "type": "PROBABILITY"
       },
       {
@@ -707,7 +688,7 @@
       },
       {
         "name": "Gavin Williamson",
-        "probability": 0.1406040909959855,
+        "probability": 0.13176280902902188,
         "type": "PROBABILITY"
       },
       {
@@ -717,7 +698,7 @@
       },
       {
         "name": "Robert Jenrick",
-        "probability": 0.07350411011278916,
+        "probability": 0.06888212110354713,
         "type": "PROBABILITY"
       },
       {
@@ -727,7 +708,7 @@
       },
       {
         "name": "Brandon Lewis",
-        "probability": 0.04903460141464348,
+        "probability": 0.04595127194553924,
         "type": "PROBABILITY"
       },
       {
@@ -752,7 +733,7 @@
       },
       {
         "name": "Amanda Milling",
-        "probability": 0.04157904798317722,
+        "probability": 0.03896452884270871,
         "type": "PROBABILITY"
       }
     ],
@@ -833,27 +814,27 @@
   },
   {
     "title": "Most seats in the Welsh Assembly Elections 2021",
-    "url": "https://smarkets.com/event/41618654/politics/uk/scotland/welsh-assembly-elections-2021",
+    "url": "https://smarkets.com/event/41618654/politics/uk/2021-welsh-senedd-election/welsh-assembly-elections-2021",
     "platform": "Smarkets",
     "options": [
       {
         "name": "Labour",
-        "probability": 0.7264988558352402,
+        "probability": 0.7727187028657616,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservatives",
-        "probability": 0.22883295194508005,
+        "probability": 0.18127828054298642,
         "type": "PROBABILITY"
       },
       {
         "name": "Plaid Cymru",
-        "probability": 0.03157894736842105,
+        "probability": 0.032522624434389136,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.013089244851258579,
+        "probability": 0.013480392156862742,
         "type": "PROBABILITY"
       }
     ],
@@ -1169,7 +1150,8 @@
       },
       {
         "name": "Bridget Phillipson",
-        "probability": null
+        "probability": null,
+        "type": "PROBABILITY"
       }
     ],
     "description": "Keir Starmer was elected Labour Party leader on 4 April 2020. Who will be his successor?\r\n\r\nOther candidates available on request.",
@@ -1244,61 +1226,61 @@
     "options": [
       {
         "name": "Sadiq Khan",
-        "probability": 0.9507205482213036,
+        "probability": 0.9364798426745325,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Bailey",
-        "probability": 0.01682958782626221,
+        "probability": 0.015142576204523103,
         "type": "PROBABILITY"
       },
       {
         "name": "Siân Berry",
-        "probability": 0.00010077597500755815,
+        "probability": 0.00009832841691248768,
         "type": "PROBABILITY"
       },
       {
-        "probability": 0.00010077597500755815,
+        "probability": 0.00009832841691248768,
         "type": "PROBABILITY"
       },
       {
         "name": "Brian Rose",
-        "probability": 0.029628136652222095,
+        "probability": 0.044739429695181895,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid",
-        "probability": 0.00010077597500755815,
+        "probability": 0.00009832841691248768,
         "type": "PROBABILITY"
       },
       {
         "name": "Luisa Porritt",
-        "probability": 0.00010077597500755815,
+        "probability": 0.00009832841691248768,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox",
-        "probability": 0.002015519500151163,
+        "probability": 0.001966568338249754,
         "type": "PROBABILITY"
       },
       {
         "name": "David Kurten",
-        "probability": 0.00010077597500755815,
+        "probability": 0.000983284169124877,
         "type": "PROBABILITY"
       },
       {
         "name": "Piers Corbyn",
-        "probability": 0.00010077597500755815,
+        "probability": 0.00009832841691248768,
         "type": "PROBABILITY"
       },
       {
         "name": "Farah London",
-        "probability": 0.00010077597500755815,
+        "probability": 0.00009832841691248768,
         "type": "PROBABILITY"
       },
       {
         "name": "Peter Gammons",
-        "probability": 0.00010077597500755815,
+        "probability": 0.00009832841691248768,
         "type": "PROBABILITY"
       }
     ],
@@ -1312,12 +1294,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.4108006448146158,
+        "probability": 0.4269662921348315,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5891993551853842,
+        "probability": 0.5730337078651686,
         "type": "PROBABILITY"
       }
     ],
@@ -1374,7 +1356,7 @@
   },
   {
     "title": "Scottish Parliament election 2021 winner",
-    "url": "https://smarkets.com/event/41664419/politics/uk/scotland/scottish-parliament-election-2021",
+    "url": "https://smarkets.com/event/41664419/politics/uk/2021-scottish-parliament-election/scottish-parliament-election-2021",
     "platform": "Smarkets",
     "options": [
       {
@@ -1403,7 +1385,7 @@
   },
   {
     "title": "Scottish Parliament election 2021 most seats (w/o SNP)",
-    "url": "https://smarkets.com/event/41664420/politics/uk/scotland/scottish-parliament-election-2021-winner-w-o-snp",
+    "url": "https://smarkets.com/event/41664420/politics/uk/2021-scottish-parliament-election/scottish-parliament-election-2021-winner-w-o-snp",
     "platform": "Smarkets",
     "options": [
       {
@@ -1851,17 +1833,17 @@
   },
   {
     "title": "Will the SNP have an overall majority following the 2021 Scottish Election?",
-    "url": "https://smarkets.com/event/41793318/politics/uk/scotland/2021-scottish-parliament-election-snp-majority",
+    "url": "https://smarkets.com/event/41793318/politics/uk/2021-scottish-parliament-election/2021-scottish-parliament-election-snp-majority",
     "platform": "Smarkets",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.4825855665964067,
+        "probability": 0.5340639269406392,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5174144334035933,
+        "probability": 0.46593607305936074,
         "type": "PROBABILITY"
       }
     ],
@@ -1875,22 +1857,22 @@
     "options": [
       {
         "name": "No overall majority",
-        "probability": 0.4154490460679386,
+        "probability": 0.4122264290331517,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative majority",
-        "probability": 0.3447184737087017,
+        "probability": 0.3498014590451565,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour majority",
-        "probability": 0.23564448580735226,
+        "probability": 0.2338166035645027,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrat majority",
-        "probability": 0.004187994416007445,
+        "probability": 0.00415550835718903,
         "type": "PROBABILITY"
       }
     ],
@@ -1904,12 +1886,12 @@
     "options": [
       {
         "name": "Before 22 October 2021",
-        "probability": 0.5904173106646059,
+        "probability": 0.6065158529129182,
         "type": "PROBABILITY"
       },
       {
         "name": "22 October 2021 or later",
-        "probability": 0.4095826893353941,
+        "probability": 0.39348414708708185,
         "type": "PROBABILITY"
       }
     ],
@@ -2060,57 +2042,57 @@
     "options": [
       {
         "name": "Donald Trump",
-        "probability": 0.3082258288250797,
+        "probability": 0.29248387521390024,
         "type": "PROBABILITY"
       },
       {
         "name": "Donald Trump Jr.",
-        "probability": 0.02316548758496324,
+        "probability": 0.021982361458470448,
         "type": "PROBABILITY"
       },
       {
         "name": "Tom Cotton",
-        "probability": 0.03301428769593563,
+        "probability": 0.031328155850993814,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Pence",
-        "probability": 0.05548619780829518,
+        "probability": 0.05265236277477952,
         "type": "PROBABILITY"
       },
       {
         "name": "Tucker Carlson",
-        "probability": 0.03856290747676515,
+        "probability": 0.03659339212847176,
         "type": "PROBABILITY"
       },
       {
         "name": "Ted Cruz",
-        "probability": 0.03856290747676515,
+        "probability": 0.03659339212847176,
         "type": "PROBABILITY"
       },
       {
         "name": "Nikki Haley",
-        "probability": 0.16507143847967817,
+        "probability": 0.15664077925496908,
         "type": "PROBABILITY"
       },
       {
         "name": "Marco Rubio",
-        "probability": 0.02774309890414759,
+        "probability": 0.02632618138738976,
         "type": "PROBABILITY"
       },
       {
         "name": "Josh Hawley",
-        "probability": 0.03648217505895408,
+        "probability": 0.03461892852441753,
         "type": "PROBABILITY"
       },
       {
         "name": "Ivanka Trump",
-        "probability": 0.08669718407546123,
+        "probability": 0.08226931683559299,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Pompeo",
-        "probability": 0.03856290747676515,
+        "probability": 0.05265236277477952,
         "type": "PROBABILITY"
       },
       {
@@ -2135,17 +2117,17 @@
       },
       {
         "name": "Rick Scott",
-        "probability": 0.013871549452073795,
+        "probability": 0.01316309069369488,
         "type": "PROBABILITY"
       },
       {
         "name": "Tim Scott",
-        "probability": 0.013871549452073795,
+        "probability": 0.01316309069369488,
         "type": "PROBABILITY"
       },
       {
         "name": "Ron DeSantis",
-        "probability": 0.12068248023304201,
+        "probability": 0.14953271028037382,
         "type": "PROBABILITY"
       }
     ],
@@ -2159,47 +2141,47 @@
     "options": [
       {
         "name": "Joe Biden",
-        "probability": 0.1821658835099989,
+        "probability": 0.18174880069777583,
         "type": "PROBABILITY"
       },
       {
         "name": "Kamala Harris",
-        "probability": 0.2142935198338979,
+        "probability": 0.21380287832533795,
         "type": "PROBABILITY"
       },
       {
         "name": "Donald Trump",
-        "probability": 0.11627144574363457,
+        "probability": 0.11600523331879632,
         "type": "PROBABILITY"
       },
       {
         "name": "Tucker Carlson",
-        "probability": 0.024806032127636324,
+        "probability": 0.02474923680767553,
         "type": "PROBABILITY"
       },
       {
         "name": "Tom Cotton",
-        "probability": 0.010927767457108512,
+        "probability": 0.010902747492368076,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Pence",
-        "probability": 0.037700797727024365,
+        "probability": 0.03761447884866986,
         "type": "PROBABILITY"
       },
       {
         "name": "Donald Trump Jr.",
-        "probability": 0.06425527264779805,
+        "probability": 0.06410815525512428,
         "type": "PROBABILITY"
       },
       {
         "name": "Ted Cruz",
-        "probability": 0.01988853677193749,
+        "probability": 0.019843000436109898,
         "type": "PROBABILITY"
       },
       {
         "name": "Alexandria Ocasio-Cortez",
-        "probability": 0.07288820893891378,
+        "probability": 0.07272132577409506,
         "type": "PROBABILITY"
       },
       {
@@ -2209,7 +2191,7 @@
       },
       {
         "name": "Nikki Haley",
-        "probability": 0.0704841000983499,
+        "probability": 0.07032272132577409,
         "type": "PROBABILITY"
       },
       {
@@ -2239,7 +2221,7 @@
       },
       {
         "name": "Pete Buttigieg",
-        "probability": 0.05463883728554256,
+        "probability": 0.05451373746184038,
         "type": "PROBABILITY"
       },
       {
@@ -2259,7 +2241,7 @@
       },
       {
         "name": "Mike Pompeo",
-        "probability": 0.02731941864277128,
+        "probability": 0.02725686873092019,
         "type": "PROBABILITY"
       },
       {
@@ -2279,7 +2261,7 @@
       },
       {
         "name": "Ivanka Trump",
-        "probability": 0.05463883728554256,
+        "probability": 0.05451373746184038,
         "type": "PROBABILITY"
       },
       {
@@ -2294,7 +2276,7 @@
       },
       {
         "name": "Ron DeSantis",
-        "probability": 0.049721341929843725,
+        "probability": 0.05189707806367203,
         "type": "PROBABILITY"
       }
     ],
@@ -2352,12 +2334,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.13724069209167497,
+        "probability": 0.17355085039916696,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.862759307908325,
+        "probability": 0.826449149600833,
         "type": "PROBABILITY"
       }
     ],
@@ -2409,17 +2391,17 @@
     "options": [
       {
         "name": "Fewer than 3",
-        "probability": 0.123071168053867,
+        "probability": 0.12265821604995807,
         "type": "PROBABILITY"
       },
       {
         "name": "Exactly 3",
-        "probability": 0.3203030019639016,
+        "probability": 0.3192282598564638,
         "type": "PROBABILITY"
       },
       {
         "name": "Exactly 4",
-        "probability": 0.5566258299822313,
+        "probability": 0.5581135240935782,
         "type": "PROBABILITY"
       }
     ],
@@ -2587,32 +2569,32 @@
     "options": [
       {
         "name": "Under 45%",
-        "probability": 0.030273780273780273,
+        "probability": 0.03227617176536626,
         "type": "PROBABILITY"
       },
       {
         "name": "45–49.9%",
-        "probability": 0.09749034749034748,
+        "probability": 0.10393862849658525,
         "type": "PROBABILITY"
       },
       {
         "name": "50–54.9%",
-        "probability": 0.6052123552123552,
+        "probability": 0.6452427729441481,
         "type": "PROBABILITY"
       },
       {
         "name": "55–59.9%",
-        "probability": 0.19498069498069495,
+        "probability": 0.14173449340443445,
         "type": "PROBABILITY"
       },
       {
         "name": "60–64.9%",
-        "probability": 0.05852930852930852,
+        "probability": 0.06240059874637477,
         "type": "PROBABILITY"
       },
       {
         "name": "65% or over",
-        "probability": 0.013513513513513513,
+        "probability": 0.014407334643091026,
         "type": "PROBABILITY"
       }
     ],
@@ -2655,35 +2637,6 @@
       }
     ],
     "description": "Will Gavin Williamson be in position as Education Secretary on 1 July 2021?",
-    "stars": 2
-  },
-  {
-    "title": "Party to provide the Premier following the 2021 Western Australia state election",
-    "url": "https://smarkets.com/event/42020442/politics/world/australian-politics/western-australia-general-election",
-    "platform": "Smarkets",
-    "options": [
-      {
-        "name": "Labor",
-        "probability": 0.8232995177116248,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Coalition",
-        "probability": 0.010394146016963247,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Greens",
-        "probability": 0.08315316813570597,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Any other party",
-        "probability": 0.08315316813570597,
-        "type": "PROBABILITY"
-      }
-    ],
-    "description": "",
     "stars": 2
   },
   {
@@ -2731,17 +2684,17 @@
     "options": [
       {
         "name": "GERB",
-        "probability": 0.7299990509632722,
+        "probability": 0.7587180187562597,
         "type": "PROBABILITY"
       },
       {
         "name": "BSP",
-        "probability": 0.2372591819303407,
+        "probability": 0.19794227442410997,
         "type": "PROBABILITY"
       },
       {
         "name": "ITN",
-        "probability": 0.032741767106387015,
+        "probability": 0.043339706819630335,
         "type": "PROBABILITY"
       }
     ],
@@ -2779,12 +2732,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.7189000847537433,
+        "probability": 0.733053121087462,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.2810999152462567,
+        "probability": 0.26694687891253804,
         "type": "PROBABILITY"
       }
     ],
@@ -2817,12 +2770,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.9114912606917069,
+        "probability": 0.949080348499516,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.08850873930829305,
+        "probability": 0.05091965150048402,
         "type": "PROBABILITY"
       }
     ],
@@ -2990,12 +2943,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.4731455307534847,
+        "probability": 0.4690308242342255,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5268544692465152,
+        "probability": 0.5309691757657744,
         "type": "PROBABILITY"
       }
     ],
@@ -3090,7 +3043,7 @@
   },
   {
     "title": "Turnout of the Scottish Parliament Election in 2021 (FPTP figure)",
-    "url": "https://smarkets.com/event/42058821/politics/uk/scotland/scottish-parliament-election-2021-turnout",
+    "url": "https://smarkets.com/event/42058821/politics/uk/2021-scottish-parliament-election/scottish-parliament-election-2021-turnout",
     "platform": "Smarkets",
     "options": [
       {
@@ -3143,12 +3096,12 @@
     "options": [
       {
         "name": "Yoshihide Suga (Japan)",
-        "probability": 0.5845854201446856,
+        "probability": 0.453241290044224,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmanuel Macron (France)",
-        "probability": 0.2107679465776294,
+        "probability": 0.16341279257900984,
         "type": "PROBABILITY"
       },
       {
@@ -3158,12 +3111,12 @@
       },
       {
         "name": "Boris Johnson (United Kingdom)",
-        "probability": 0.20464663327768506,
+        "probability": 0.15866681048430592,
         "type": "PROBABILITY"
       },
       {
         "name": "Jair Bolsonaro (Brazil)",
-        "probability": 0,
+        "probability": 0.22467910689246035,
         "type": "PROBABILITY"
       },
       {
@@ -3221,17 +3174,17 @@
   },
   {
     "title": "Alliance 4 Unity to win a seat in the Scottish Parliament",
-    "url": "https://smarkets.com/event/42093783/politics/uk/scotland/alliance-4-unity-to-win-a-seat-in-the-scottish-parliament",
+    "url": "https://smarkets.com/event/42093783/politics/uk/2021-scottish-parliament-election/alliance-4-unity-to-win-a-seat-in-the-scottish-parliament",
     "platform": "Smarkets",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.13262180974477958,
+        "probability": 0.1347731774026219,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.8673781902552203,
+        "probability": 0.865226822597378,
         "type": "PROBABILITY"
       }
     ],
@@ -3245,12 +3198,12 @@
     "options": [
       {
         "name": "Less than 2.0%",
-        "probability": 0.52042498626122,
+        "probability": 0.5773527740958151,
         "type": "PROBABILITY"
       },
       {
         "name": "2.0% or more",
-        "probability": 0.47957501373878,
+        "probability": 0.4226472259041848,
         "type": "PROBABILITY"
       }
     ],
@@ -3302,12 +3255,12 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.6122465597264066,
+        "probability": 0.5894943159545276,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.3877534402735933,
+        "probability": 0.4105056840454724,
         "type": "PROBABILITY"
       }
     ],
@@ -3321,12 +3274,12 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.5792525198465792,
+        "probability": 0.5562312633832976,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.4207474801534208,
+        "probability": 0.44376873661670235,
         "type": "PROBABILITY"
       }
     ],
@@ -3340,17 +3293,17 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.6236568930977964,
+        "probability": 0.6047682119205298,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.3034966308504826,
+        "probability": 0.3245916114790287,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.072846476051721,
+        "probability": 0.0706401766004415,
         "type": "PROBABILITY"
       }
     ],
@@ -3364,17 +3317,17 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.4389185278958314,
+        "probability": 0.4403120464441219,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.4389185278958314,
+        "probability": 0.4403120464441219,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.1221629442083371,
+        "probability": 0.11937590711175618,
         "type": "PROBABILITY"
       }
     ],
@@ -3388,22 +3341,22 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.6560448967944449,
+        "probability": 0.6483971044467425,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.22124988109959098,
+        "probability": 0.21867067782269436,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.061352611052982016,
+        "probability": 0.0722948199680361,
         "type": "PROBABILITY"
       },
       {
         "name": "Scottish Green",
-        "probability": 0.061352611052982016,
+        "probability": 0.06063739776252703,
         "type": "PROBABILITY"
       }
     ],
@@ -3417,17 +3370,17 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.5199015903699148,
+        "probability": 0.5078098180569859,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.3755381776645286,
+        "probability": 0.39006179196704427,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.10456023196555662,
+        "probability": 0.10212838997596979,
         "type": "PROBABILITY"
       }
     ],
@@ -3517,17 +3470,17 @@
   },
   {
     "title": "2021 Senedd election: Most seats (w/o Labour)",
-    "url": "https://smarkets.com/event/42101855/politics/uk/scotland/2021-senedd-election-most-seats-w-o-labour",
+    "url": "https://smarkets.com/event/42101855/politics/uk/2021-welsh-senedd-election/2021-senedd-election-most-seats-w-o-labour",
     "platform": "Smarkets",
     "options": [
       {
         "name": "Conservative",
-        "probability": 0.8,
+        "probability": 0.7903770128242215,
         "type": "PROBABILITY"
       },
       {
         "name": "Plaid Cymru",
-        "probability": 0.2,
+        "probability": 0.20962298717577862,
         "type": "PROBABILITY"
       }
     ],
@@ -3536,7 +3489,7 @@
   },
   {
     "title": "2021 Senedd election: Labour majority",
-    "url": "https://smarkets.com/event/42101863/politics/uk/scotland/2021-senedd-election-labour-majority",
+    "url": "https://smarkets.com/event/42101863/politics/uk/2021-welsh-senedd-election/2021-senedd-election-labour-majority",
     "platform": "Smarkets",
     "options": [
       {
@@ -3636,12 +3589,12 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0,
+        "probability": 0.8013541865344269,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 1,
+        "probability": 0.19864581346557314,
         "type": "PROBABILITY"
       }
     ],
@@ -3655,12 +3608,12 @@
     "options": [
       {
         "name": "SNP",
-        "probability": null,
+        "probability": 0.7736942156241513,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": null,
+        "probability": 0.22630578437584864,
         "type": "PROBABILITY"
       }
     ],
@@ -3674,12 +3627,12 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.6165456089048204,
+        "probability": 0.6086794561370833,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.3834543910951797,
+        "probability": 0.3913205438629168,
         "type": "PROBABILITY"
       }
     ],
@@ -3712,12 +3665,12 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.6635258645057949,
+        "probability": 0.6484943364950732,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.33647413549420524,
+        "probability": 0.3515056635049268,
         "type": "PROBABILITY"
       }
     ],
@@ -3774,12 +3727,12 @@
     "options": [
       {
         "name": "Labour",
-        "probability": 0.5337113493399486,
+        "probability": 0.5555649383550075,
         "type": "PROBABILITY"
       },
       {
         "name": "Plaid Cymru",
-        "probability": 0.4662886506600514,
+        "probability": 0.44443506164499236,
         "type": "PROBABILITY"
       }
     ],
@@ -4155,27 +4108,27 @@
     "options": [
       {
         "name": "Labour",
-        "probability": 0.514421177400237,
+        "probability": 0.5079984393289114,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.4489332279731331,
+        "probability": 0.44742489270386265,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.014124851837218488,
+        "probability": 0.013948497854077252,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.0019755037534571313,
+        "probability": 0.0019508388607101055,
         "type": "PROBABILITY"
       },
       {
         "name": "Northern Independence Party (Thelma Walker)",
-        "probability": 0.020545239035954167,
+        "probability": 0.02867733125243855,
         "type": "PROBABILITY"
       }
     ],
@@ -4189,7 +4142,7 @@
     "options": [
       {
         "name": "2021",
-        "probability": 1,
+        "probability": 0.156128024980484,
         "type": "PROBABILITY"
       },
       {
@@ -4209,7 +4162,7 @@
       },
       {
         "name": "2025 or later",
-        "probability": 0,
+        "probability": 0.8438719750195159,
         "type": "PROBABILITY"
       }
     ],
@@ -4218,32 +4171,32 @@
   },
   {
     "title": "2021 Scottish Parliament election: SNP seats",
-    "url": "https://smarkets.com/event/42120331/politics/uk/scotland/2021-scottish-parliament-election-snp-seats",
+    "url": "https://smarkets.com/event/42120331/politics/uk/2021-scottish-parliament-election/2021-scottish-parliament-election-snp-seats",
     "platform": "Smarkets",
     "options": [
       {
         "name": "60 or fewer",
-        "probability": 0.28265149857799166,
+        "probability": 0.23647809895371522,
         "type": "PROBABILITY"
       },
       {
         "name": "61–64",
-        "probability": 0.16203602421060306,
+        "probability": 0.19702074835963823,
         "type": "PROBABILITY"
       },
       {
         "name": "65–68",
-        "probability": 0.25144023918909064,
+        "probability": 0.19702074835963823,
         "type": "PROBABILITY"
       },
       {
         "name": "69–72",
-        "probability": 0.2025814920148764,
+        "probability": 0.2463202695513389,
         "type": "PROBABILITY"
       },
       {
         "name": "73 or more",
-        "probability": 0.1012907460074382,
+        "probability": 0.12316013477566945,
         "type": "PROBABILITY"
       }
     ],
@@ -4276,12 +4229,12 @@
     "options": [
       {
         "name": "Conservative",
-        "probability": 0.2747053490480508,
+        "probability": 0.30711934869218777,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.7252946509519492,
+        "probability": 0.6928806513078122,
         "type": "PROBABILITY"
       }
     ],
@@ -4357,17 +4310,17 @@
     "options": [
       {
         "name": "Siân Berry",
-        "probability": 0.537460876369327,
+        "probability": 0.5462053776268698,
         "type": "PROBABILITY"
       },
       {
         "name": "Luisa Porritt",
-        "probability": 0.3372456964006259,
+        "probability": 0.30090850692851245,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Bailey",
-        "probability": 0.027190923317683878,
+        "probability": 0.01670184454437001,
         "type": "PROBABILITY"
       },
       {
@@ -4387,12 +4340,12 @@
       },
       {
         "name": "Brian Rose",
-        "probability": 0.085093896713615,
+        "probability": 0.12397907681013123,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox",
-        "probability": 0.013008607198748044,
+        "probability": 0.012205194090116547,
         "type": "PROBABILITY"
       }
     ],
@@ -4406,22 +4359,22 @@
     "options": [
       {
         "name": "2021",
-        "probability": 0.41130265535937716,
+        "probability": 0.4308085220780966,
         "type": "PROBABILITY"
       },
       {
         "name": "2022",
-        "probability": 0.2500347560127902,
+        "probability": 0.24175011761543114,
         "type": "PROBABILITY"
       },
       {
         "name": "2023",
-        "probability": 0.13116919227026275,
+        "probability": 0.1268230391827408,
         "type": "PROBABILITY"
       },
       {
         "name": "2024 or later",
-        "probability": 0.20749339635756986,
+        "probability": 0.20061832112373146,
         "type": "PROBABILITY"
       }
     ],
@@ -4556,21 +4509,412 @@
   },
   {
     "title": "Alba Party to win a Scottish Parliament seat",
-    "url": "https://smarkets.com/event/42133028/politics/uk/scotland/alba-party-to-win-a-scottish-parliament-seat",
+    "url": "https://smarkets.com/event/42133028/politics/uk/2021-scottish-parliament-election/alba-party-to-win-a-scottish-parliament-seat",
     "platform": "Smarkets",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.6359214040442579,
+        "probability": 0.4697731802220746,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.3640785959557421,
+        "probability": 0.5302268197779254,
         "type": "PROBABILITY"
       }
     ],
     "description": "Will the Alba Party win any seats in the Scottish Parliament in the May 2021 Scottish Parliament election?",
+    "stars": 2
+  },
+  {
+    "title": "Rhondda",
+    "url": "https://smarkets.com/event/42140941/politics/uk/welsh-senedd-constituencies/rhondda",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Plaid Cymru",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Rhondda at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Monmouth",
+    "url": "https://smarkets.com/event/42140942/politics/uk/welsh-senedd-constituencies/monmouth",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Conservative",
+        "probability": 1,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Nick Ramsay (Independent)",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Monmouth at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Bridgend",
+    "url": "https://smarkets.com/event/42140946/politics/uk/welsh-senedd-constituencies/bridgend",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Conservative",
+        "probability": 1,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Bridgend at the 2021 Welsh Senedd election?",
+    "stars": 2
+  },
+  {
+    "title": "Hartlepool by-election: Thelma Walker vote share",
+    "url": "https://smarkets.com/event/42140991/politics/uk/by-elections/hartlepool-by-election-thelma-walker-vote-share",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Under 5.0%",
+        "probability": 0.548325541455968,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "5.0–9.9%",
+        "probability": 0.2890945520465605,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "10.0–19.9%",
+        "probability": 0.1109626943993894,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "20.0% or over",
+        "probability": 0.05161721209808225,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "What share of the vote will Thelma Walker receive in the Hartlepool by-election?",
+    "stars": 2
+  },
+  {
+    "title": "Head-to-head: Berry vs Porritt",
+    "url": "https://smarkets.com/event/42141008/politics/uk/2021-elections/2021-london-mayoral-election-head-to-heads",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Siân Berry",
+        "probability": 0.6379892345588906,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Luisa Porritt",
+        "probability": 0.36201076544110933,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which London mayoral candidate will receive more votes: Siân Berry or Luisa Porritt?",
+    "stars": 2
+  },
+  {
+    "title": "Head-to-head: Fox vs Fosh",
+    "url": "https://smarkets.com/event/42141008/politics/uk/2021-elections/2021-london-mayoral-election-head-to-heads",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Laurence Fox",
+        "probability": 0.8183304568989009,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Max Fosh",
+        "probability": 0.1816695431010991,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which London mayoral candidate will receive more votes: Laurence Fox or Max Fosh?",
+    "stars": 2
+  },
+  {
+    "title": "Head-to-head: Gammons vs Kurten",
+    "url": "https://smarkets.com/event/42141008/politics/uk/2021-elections/2021-london-mayoral-election-head-to-heads",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Peter Gammons",
+        "probability": 0.8183304568989009,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "David Kurten",
+        "probability": 0.1816695431010991,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which London mayoral candidate will receive more votes: Peter Gammons or David Kurten?",
+    "stars": 2
+  },
+  {
+    "title": "Head-to-head: Binface vs P. Corbyn",
+    "url": "https://smarkets.com/event/42141008/politics/uk/2021-elections/2021-london-mayoral-election-head-to-heads",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "Count Binface",
+        "probability": 0.2570613409415121,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Piers Corbyn",
+        "probability": 0.7429386590584879,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which London mayoral candidate will receive more votes: Count Binface or Piers Corbyn?",
+    "stars": 2
+  },
+  {
+    "title": "Dunfermline",
+    "url": "https://smarkets.com/event/42142033/politics/uk/scottish-parliament-constituencies/dunfermline",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win the Scottish Parliament constituency of Dunfermline at the 2021 Scottish Parliament election?",
+    "stars": 2
+  },
+  {
+    "title": "Aberdeen Central",
+    "url": "https://smarkets.com/event/42142039/politics/uk/scottish-parliament-constituencies/aberdeen-central",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": 0.7823550212164073,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 0.11943069306930693,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Conservative",
+        "probability": 0.0982142857142857,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win the Scottish Parliament constituency of Aberdeen Central at the 2021 Scottish Parliament election?",
+    "stars": 2
+  },
+  {
+    "title": "Cowdenbeath",
+    "url": "https://smarkets.com/event/42142080/politics/uk/scottish-parliament-constituencies/cowdenbeath",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": null,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": null,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win Cowdenbeath at the 2021 Scottish Parliament election?",
+    "stars": 2
+  },
+  {
+    "title": "Rutherglen",
+    "url": "https://smarkets.com/event/42142100/politics/uk/scottish-parliament-constituencies/rutherglen",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win the Scottish Parliament constituency of Rutherglen at the 2021 Scottish Parliament election?",
+    "stars": 2
+  },
+  {
+    "title": "Coatbridge and Chryston",
+    "url": "https://smarkets.com/event/42142104/politics/uk/scottish-parliament-constituencies/coatbridge-and-chryston",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win the Scottish Parliament constituency of Coatbridge and Chryston at the 2021 Scottish Parliament election?",
+    "stars": 2
+  },
+  {
+    "title": "Edinburgh Eastern",
+    "url": "https://smarkets.com/event/42142127/politics/uk/scottish-parliament-constituencies/edinburgh-eastern",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win the Scottish Parliament constituency of Edinburgh Eastern at the 2021 Scottish Parliament election?",
+    "stars": 2
+  },
+  {
+    "title": "Edinburgh Northern and Leith",
+    "url": "https://smarkets.com/event/42142137/politics/uk/scottish-parliament-constituencies/edinburgh-northern",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 1,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Scottish Green",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win the Scottish Parliament constituency of Edinburgh Northern and Leith at the 2021 Scottish Parliament election?",
+    "stars": 2
+  },
+  {
+    "title": "Glasgow Southside",
+    "url": "https://smarkets.com/event/42142148/politics/uk/scottish-parliament-constituencies/glasgow-southside",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": null,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": null,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win the Scottish Parliament constituency of Glasgow Southside at the 2021 Scottish Parliament election?",
+    "stars": 2
+  },
+  {
+    "title": "Caithness, Sutherland and Ross",
+    "url": "https://smarkets.com/event/42142152/politics/uk/scottish-parliament-constituencies/caithness-sutherland-and-ross",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": 0,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrats",
+        "probability": 1,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win the Scottish Parliament constituency of Caithness, Sutherland and Ross at the 2021 Scottish Parliament election?",
+    "stars": 2
+  },
+  {
+    "title": "Argyll and Bute",
+    "url": "https://smarkets.com/event/42142156/politics/uk/scottish-parliament-constituencies/argyll-and-bute",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": 0.8695945945945945,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrats",
+        "probability": 0.1304054054054054,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Conservative",
+        "probability": 0,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win the Scottish Parliament constituency of Argyll and Bute at the 2021 Scottish Parliament election?",
+    "stars": 2
+  },
+  {
+    "title": "Skye, Lochaber and Badenoch",
+    "url": "https://smarkets.com/event/42142158/politics/uk/scottish-parliament-constituencies/skye-lochaber-and-badenoch",
+    "platform": "Smarkets",
+    "options": [
+      {
+        "name": "SNP",
+        "probability": null,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrats",
+        "probability": null,
+        "type": "PROBABILITY"
+      }
+    ],
+    "description": "Which party will win the Scottish Parliament constituency of Skye, Lochaber and Badenoch at the 2021 Scottish Parliament election?",
     "stars": 2
   }
 ]
