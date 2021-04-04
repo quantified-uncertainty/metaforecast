@@ -17,17 +17,17 @@
       },
       {
         "name": "More than 5.0% but less than 6.0%",
-        "probability": 0.23,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 6.0% and 7.0%, inclusive",
-        "probability": 0.53,
+        "probability": 0.52,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 7.0%",
-        "probability": 0.22,
+        "probability": 0.21,
         "type": "PROBABILITY"
       }
     ],
@@ -51,12 +51,12 @@
       },
       {
         "name": "More than 24 million but less than 27 million barrels per day",
-        "probability": 0.51,
+        "probability": 0.5,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 27 million and 30 million barrels per day, inclusive",
-        "probability": 0.47,
+        "probability": 0.48,
         "type": "PROBABILITY"
       },
       {
@@ -94,7 +94,7 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.98,
+        "probability": 0.99,
         "type": "PROBABILITY"
       },
       {
@@ -104,7 +104,7 @@
       },
       {
         "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -166,12 +166,12 @@
       },
       {
         "name": "Between 1 March 2021 and 30 April 2021",
-        "probability": 0.98,
+        "probability": 0.96,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.02,
+        "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
@@ -195,7 +195,7 @@
     "options": [
       {
         "name": "Before 1 July 2021",
-        "probability": 0.98,
+        "probability": 0.97,
         "type": "PROBABILITY"
       },
       {
@@ -215,7 +215,7 @@
       },
       {
         "name": "Not before 1 January 2022",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       }
     ],

@@ -1,22 +1,32 @@
 [
   {
-    "title": "Will the average Ethereum gas price be below 150 Gwei on April 5?",
-    "url": "https://polymarket.com/market/will-the-average-ethereum-gas-price-be-below-150-gwei-on-april-5",
+    "title": "What will the 7-day average COVID-19 case count be in the US on May 15?",
+    "url": "https://polymarket.com/market/what-will-the-7-day-average-covid-19-case-count-be-in-the-us-on-may-15",
     "platform": "PolyMarket",
-    "description": "This is a market on whether the average Ethereum gas price will be below 150 Gwei on April 5, 2021. This market will resolve to \"Yes\" if Avg Gas Price is listed as being below 150 Gwei for that date, on Etherscan. If Avg Gas Price is 150 Gwei or higher, this market will resolve to \"No\". The resolution source for this market is https://etherscan.io/chart/gasprice. This market will resolve when data is available for the date of April 5, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). \n\n",
+    "description": "This is a market on what the 7-day average COVID-19 case count will be in the US on May 15, 2021 12:00 PM ET. The resolution source for this market will be the 7-day moving average of daily cases, as displayed on the CDC’s Covid Data Tracker (https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases). The 7-day moving average will be checked at 12:00 PM ET on May 15, 2021. The bracket into which the 7-day moving average falls at that time will be the bracket this market resolves to. If the website is down at that time or for any reason data is not accessible on the website at the resolution date, the Markets Integrity Committee (MIC) will wait 24 hours (until 12:00 PM ET on May 16, 2021) and resolve as soon as data is available again. If data is still unavailable at that time, all brackets will resolve to 0.25 USDC. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
     "options": [
       {
-        "name": "Yes",
-        "probability": "0.1875556173796472937039538996244787",
+        "name": "40,999 or fewer",
+        "probability": "0.3961864143518504219114260435905492",
         "type": "PROBABILITY"
       },
       {
-        "name": "No",
-        "probability": "0.8124443826203527062960461003755213",
+        "name": "41,000-65,999",
+        "probability": "0.3364618915617005132876606909239056",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "66,000-99,999",
+        "probability": "0.2067616005303659582265278770145715",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "100,000 or more",
+        "probability": "0.06059009355608310657438538847097376",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "145",
+    "numforecasts": "125",
     "stars": 4
   },
   {
@@ -27,87 +37,17 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9019909877497780310790581928359879",
+        "probability": "0.9014972108532288672823780605910441",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.0980090122502219689209418071640121",
+        "probability": "0.09850278914677113271762193940895586",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "848",
+    "numforecasts": "849",
     "stars": 3
-  },
-  {
-    "title": "Will there be more than 140 million confirmed COVID-19 cases globally by April 20, 2021?",
-    "url": "https://polymarket.com/market/will-there-be-more-than-140-million-confirmed-covid-19-cases-globally-by-april-20-2021-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on the cumulative number of COVID-19 cases there will be globally by April 20, 2021, 12:00 PM ET. This market will resolve to “Yes” if there are more than 140 million confirmed cases of COVID-19 globally on or before the resolution date. This market will resolve to “No” if there are not more than 140 million confirmed cases of COVID-19 globally by the resolution date. The resolution source for this market will be the cumulative number of confirmed cases of COVID-19, globally, as indicated by the World Health Organization’s Coronavirus Disease Dashboard (https://covid19.who.int/).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.7532534932096189942859631459322613",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.2467465067903810057140368540677387",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "127",
-    "stars": 4
-  },
-  {
-    "title": "Will the US have fewer than 40,000 new COVID-19 cases on any day before April 16, 2021?",
-    "url": "https://polymarket.com/market/will-the-us-have-fewer-than-40-000-new-covid-19-cases-on-any-day-before-april-16-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether there will be a single day after the creation of this market and prior to the resolution date, April 16, 2021, 8 PM ET, with fewer than 40,000 recorded COVID-19 cases in the United States. This market will resolve to “Yes\" if on any single day prior to the resolution date there are fewer than 40,000 COVID-19 cases recorded. This market will resolve to “No\" if there is no single day the United States records fewer than 40,000 COVID-19 cases according to the resolution source. The resolution source for this market will be https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases, the CDC's official count of Coronavirus cases. The resolution source will be reviewed once daily at 8 PM ET, and only data as listed on 8 PM ET each day prior to and including the resolution date will be considered. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.357235053436970495591079642839507",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.642764946563029504408920357160493",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "144",
-    "stars": 4
-  },
-  {
-    "title": "What will the 7-day average COVID-19 case count be in the US on May 15?",
-    "url": "https://polymarket.com/market/what-will-the-7-day-average-covid-19-case-count-be-in-the-us-on-may-15",
-    "platform": "PolyMarket",
-    "description": "This is a market on what the 7-day average COVID-19 case count will be in the US on May 15, 2021 12:00 PM ET. The resolution source for this market will be the 7-day moving average of daily cases, as displayed on the CDC’s Covid Data Tracker (https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases). The 7-day moving average will be checked at 12:00 PM ET on May 15, 2021. The bracket into which the 7-day moving average falls at that time will be the bracket this market resolves to. If the website is down at that time or for any reason data is not accessible on the website at the resolution date, the Markets Integrity Committee (MIC) will wait 24 hours (until 12:00 PM ET on May 16, 2021) and resolve as soon as data is available again. If data is still unavailable at that time, all brackets will resolve to 0.25 USDC. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "40,999 or fewer",
-        "probability": "0.3796663334204023250532864969576951",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "41,000-65,999",
-        "probability": "0.3759608776749518515503261782766788",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "66,000-99,999",
-        "probability": "0.1979529515227384396358297622475222",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "100,000 or more",
-        "probability": "0.04641983738190738376055756251810374",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "111",
-    "stars": 4
   },
   {
     "title": "Will the workers at Amazon's Bessemer facility unionize by May 5?",
@@ -117,17 +57,37 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1451050264453567041549024304395068",
+        "probability": "0.1482113605803978010036612832836613",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8548949735546432958450975695604932",
+        "probability": "0.8517886394196021989963387167163387",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "77",
+    "numforecasts": "79",
     "stars": 4
+  },
+  {
+    "title": "Will 1 billion doses of a COVID-19 vaccine have been administered globally by April 26, 2021?",
+    "url": "https://polymarket.com/market/will-1-billion-doses-of-a-covid-19-vaccine-have-been-administered-globally-by-april-26-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether 1 billion doses of a COVID-19 will have been administered globally prior to April 26, 2021, 12 PM ET. This market will resolve to “Yes” if at least 1 billion doses of a COVID-19 vaccine are administered globally prior to the resolution date, April 26, 2021, 12 PM ET, and “No” otherwise. The resolution source for this market will be the data published to Our World in Data’s coronavirus (COVID-19) vaccinations dashboard, available at https://ourworldindata.org/covid-vaccinations, specifically the cumulative COVID-19 vaccination doses administered. This market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9230852082616393987183334402560699",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.07691479173836060128166655974393007",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "86",
+    "stars": 3
   },
   {
     "title": "Will American mask usage be 75% or higher on April 14th, 2021?",
@@ -137,16 +97,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.06444913479904965044908340271228263",
+        "probability": "0.07348452961559826127262444793994684",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9355508652009503495509165972877174",
+        "probability": "0.9265154703844017387273755520600532",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "121",
+    "numforecasts": "124",
     "stars": 3
   },
   {
@@ -157,41 +117,41 @@
     "options": [
       {
         "name": "0",
-        "probability": "0.4562382782949109287736629584532174",
+        "probability": "0.4465545279192221197664100099424811",
         "type": "PROBABILITY"
       },
       {
         "name": "1",
-        "probability": "0.3132845231566674564517817095843784",
+        "probability": "0.3198643866510044452723282388726578",
         "type": "PROBABILITY"
       },
       {
         "name": "2",
-        "probability": "0.2304771985484216147745553319624041",
+        "probability": "0.2335810854297734349612617511848611",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "148",
+    "numforecasts": "151",
     "stars": 4
   },
   {
-    "title": "Will Joe Biden be President of the USA on June 30, 2021?",
-    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-june-30-2021",
+    "title": "Will Donald Trump be President of the USA on July 31, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-july-31-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on if Joe Biden will be President of the United States on June 30, 2021, 11:59 PM ET. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, https://www.whitehouse.gov/\n\n",
+    "description": "This is a market on if Donald Trump will be President of the United States on July 31, 2021, 11:59 PM ET. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by official US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n\n\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9461095947795572004797324226079245",
+        "probability": "0.03881312225814321129584611911410917",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.05389040522044279952026757739207555",
+        "probability": "0.9611868777418567887041538808858908",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "165",
+    "numforecasts": "147",
     "stars": 3
   },
   {
@@ -202,76 +162,73 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9524637358879000665078222726552635",
+        "probability": "0.9655485016618752035954097966410012",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.04753626411209993349217772734473652",
+        "probability": "0.0344514983381247964045902033589988",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "450",
+    "numforecasts": "472",
     "stars": 3
   },
   {
     "title": "Will Donald Trump launch a new social media platform by June 15, 2021?",
     "url": "https://polymarket.com/market/will-donald-trump-launch-a-new-social-media-platform-by-june-15-2021-1",
-    "platform": "PolyMarket",
+    "address": "0x03d4Ce9c5A6aB40683fe5E2BE1558a315DdeEaBc",
     "description": "This is a market on whether former US President Donald Trump will launch a social media platform by June 15, 2021, 12:00 PM ET. This market will resolve to “Yes” if Donald Trump launches a social media platform by the resolution date, and “No” otherwise. On the resolution date, it must be possible for an individual in the United States to create an account and post. Creating an account and posting requires that user-generated content is not restricted to responses (ie comments) to another user’s content. Such content generally must be standalone image, text, or video posts. The platform must not be restricted to only a small portion of the general public or subject to a waitlist. If there is a fee or subscription required to join, this market will still resolve to “Yes”. Donald Trump’s involvement must be public and verified via an official channel, and the platform must be substantially backed by or affiliated with Donald Trump--e.g. the platform uses his name explicitly, is heavily marketed as being affiliated with him, or he is an executive for the platform. Partnership with an existing platform such as Twitter or Parler will not be sufficient for this market to resolve to “Yes”. If such a platform is temporarily inaccessible due to maintenance, system overload, or DDOS attack, resolution of this market will be delayed up to 72 hours. If the platform is inaccessible on the resolution date due to a lack of a web-hosting service provider, this market will resolve to “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.1422182369098826705416806228109673",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.8577817630901173294583193771890327",
-        "type": "PROBABILITY"
-      }
+    "outcomes": [
+      "Yes",
+      "No"
     ],
-    "numforecasts": "94",
-    "stars": 4
+    "options": []
   },
   {
     "title": "Will the US have 200M total COVID-19 vaccines administered by Biden’s 100th day in office?",
     "url": "https://polymarket.com/market/will-the-us-have-200m-total-covid-19-vaccines-administered-by-bidens-100th-day-in-office",
-    "platform": "PolyMarket",
+    "address": "0xDB3b1c991c09B5a46911B9f991924A5A3639D676",
     "description": "This is a market on whether 200 million COVID-19 vaccine doses will be administered in the United States by April 29, 2021, 12:00 PM ET (Biden’s 100th day in office). This market will resolve to \"Yes\" if 200 million or more total COVID-19 vaccine doses are administered by the resolution date. This market will resolve to \"No\" if, for any reason, fewer than 200 million COVID-19 vaccines doses are administered by the resolution date. The resolution source for this market will be the number of total COVID-19 vaccine doses administered, as indicated by the CDC’s Covid Data tracker (https://covid.cdc.gov/covid-data-tracker/#vaccinations). This market will resolve according to the data as available immediately at the time of resolution, April 29, 2021, 12:00 PM ET, and resolution will not be delayed for the purpose of waiting for updated data from a specific date. \n\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.995964443351308290480860810354855",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.004035556648691709519139189645145044",
-        "type": "PROBABILITY"
-      }
+    "outcomes": [
+      "Yes",
+      "No"
     ],
-    "numforecasts": "32",
-    "stars": 3
+    "options": []
   },
   {
-    "title": "Will Donald Trump be President of the USA on July 31, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-be-president-of-the-usa-on-july-31-2021",
+    "title": "What will The Weeknd’s Nifty Gateway drop generate in total sales?",
+    "url": "https://polymarket.com/market/what-will-the-weeknds-nifty-gateway-drop-generate-in-total-sales",
     "platform": "PolyMarket",
-    "description": "This is a market on if Donald Trump will be President of the United States on July 31, 2021, 11:59 PM ET. This market will resolve to “Yes“ if, on the resolution date, Donald Trump is the current President of the United States, officially substantiated by official US government sources, like the links provided as the resolution source. If, for any reason, Donald Trump is not the sitting President of the United States on that date, this market will resolve to “No\". The resolution sources are: 1. https://www.loc.gov/rr/print/list/057_chron.html , 2. https://history.house.gov/Institution/Presidents-Coinciding/Presidents-Coinciding/ and 3. https://www.whitehouse.gov/. \n\nIf any of these 3 sources list Donald Trump officially as the current sitting president on the resolution date, this market will resolve to \"Yes\". In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n\n\n",
+    "description": "This is a market on what The Weeknd’s NFT drop on April 3, 2021 will, on aggregate, generate in total sales. The release is currently scheduled for 2:00 PM ET on April 3, 2021, via Nifty Gateway. This market will resolve 48 hours later, on April 5, 2:00 PM ET, according to data published for the entirety of The Weeknd’s drop. The bracket which resolves to “Yes” will be the one which corresponds to the total sales of The Weeknd’s NFT drop. If the release is delayed, resolution of this market will be delayed up to 30 days. If canceled, each bracket will resolve equally to 20:20:20:20:20. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
     "options": [
       {
-        "name": "Yes",
-        "probability": "0.04331593733771125635572155466790263",
+        "name": "Less than $5M",
+        "probability": "0.9648695220437758369339288058703896",
         "type": "PROBABILITY"
       },
       {
-        "name": "No",
-        "probability": "0.9566840626622887436442784453320974",
+        "name": "$5M to less than $10M",
+        "probability": "0.01981098643657904751787071344356773",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "$10M to less than $20M",
+        "probability": "0.006604445813134939699814851165313733",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "$20M to less than $30M",
+        "probability": "0.004658365008534205617391366178721065",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "$30M or more",
+        "probability": "0.004056680697975970230994263342007744",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "114",
+    "numforecasts": "128",
     "stars": 3
   },
   {
@@ -282,36 +239,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.03936452320427030038135646839641276",
+        "probability": "0.03926197442201138866648693519831301",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9606354767957296996186435316035872",
+        "probability": "0.960738025577988611333513064801687",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "122",
-    "stars": 3
-  },
-  {
-    "title": "Will 1 billion doses of a COVID-19 vaccine have been administered globally by April 26, 2021?",
-    "url": "https://polymarket.com/market/will-1-billion-doses-of-a-covid-19-vaccine-have-been-administered-globally-by-april-26-2021-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether 1 billion doses of a COVID-19 will have been administered globally prior to April 26, 2021, 12 PM ET. This market will resolve to “Yes” if at least 1 billion doses of a COVID-19 vaccine are administered globally prior to the resolution date, April 26, 2021, 12 PM ET, and “No” otherwise. The resolution source for this market will be the data published to Our World in Data’s coronavirus (COVID-19) vaccinations dashboard, available at https://ourworldindata.org/covid-vaccinations, specifically the cumulative COVID-19 vaccination doses administered. This market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9385758141927808286746168348429574",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.06142418580721917132538316515704261",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "78",
+    "numforecasts": "125",
     "stars": 3
   },
   {
@@ -322,36 +259,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.06799707629116675628740357978263509",
+        "probability": "0.05935375323792726206670826664613947",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9320029237088332437125964202173649",
+        "probability": "0.9406462467620727379332917333538605",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "441",
-    "stars": 3
-  },
-  {
-    "title": "Will Donald Trump be federally charged by June 1st? ",
-    "url": "https://polymarket.com/market/will-donald-trump-be-federally-charged-by-june-1st-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether President Donald J. Trump shall be indicted or otherwise formally charged with a federal crime, as publicly confirmed before June 1st, 2021 12:00 PM ET by an authorized representative of the charging agency(ies) or judicial venue(s). If he is charged with a federal crime on or before June 1st, 2021 12:00 PM ET, this market will resolve to “Yes”. If he is charged with any crime that is not a federal crime or is not charged with any crimes, this market will resolve “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). \n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.04746803069442792736843713096048072",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9525319693055720726315628690395193",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "101",
+    "numforecasts": "449",
     "stars": 3
   },
   {
@@ -362,36 +279,36 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1312155506777987590598609754195224",
+        "probability": "0.1272135716023695101901625708147504",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8687844493222012409401390245804776",
+        "probability": "0.8727864283976304898098374291852496",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "84",
+    "numforecasts": "86",
     "stars": 4
   },
   {
-    "title": "Will Uniswap v3 launch before April 30, 2021?",
-    "url": "https://polymarket.com/market/will-uniswap-v3-launch-before-april-30-2021",
+    "title": "Will Donald Trump be federally charged by June 1st? ",
+    "url": "https://polymarket.com/market/will-donald-trump-be-federally-charged-by-june-1st-1",
     "platform": "PolyMarket",
-    "description": "This is a market on if Uniswap v3 will launch before April 30th, 2021, 12:00 am ET. “Launch” in this context can be defined as being deployed and usable on the Ethereum mainnet and publicly announced via the official Uniswap Twitter and/or Blog. V3 can be defined as Uniswap v3.0.0 or greater. If Uniswap v3 is officially announced and is deployed on the mainnet of a given L2 scaling solution, with or without some bridging mechanism from Ethereum mainnet, the market will still resolve to \"Yes\".",
+    "description": "This is a market on whether President Donald J. Trump shall be indicted or otherwise formally charged with a federal crime, as publicly confirmed before June 1st, 2021 12:00 PM ET by an authorized representative of the charging agency(ies) or judicial venue(s). If he is charged with a federal crime on or before June 1st, 2021 12:00 PM ET, this market will resolve to “Yes”. If he is charged with any crime that is not a federal crime or is not charged with any crimes, this market will resolve “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). \n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.02015269087431611037433411289830372",
+        "probability": "0.04741168991441198451184485063042794",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9798473091256838896256658871016963",
+        "probability": "0.9525883100855880154881551493695721",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "757",
+    "numforecasts": "102",
     "stars": 3
   },
   {
@@ -402,17 +319,28 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.4959768219483150357773285466165463",
+        "probability": "0.5288355988019106646420997234402747",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.5040231780516849642226714533834537",
+        "probability": "0.4711644011980893353579002765597253",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "437",
+    "numforecasts": "456",
     "stars": 4
+  },
+  {
+    "title": "Will Uniswap v3 launch before April 30, 2021?",
+    "url": "https://polymarket.com/market/will-uniswap-v3-launch-before-april-30-2021",
+    "address": "0x537eA26A3FF9A58267695f3e09fE1dC1a6b3aeC1",
+    "description": "This is a market on if Uniswap v3 will launch before April 30th, 2021, 12:00 am ET. “Launch” in this context can be defined as being deployed and usable on the Ethereum mainnet and publicly announced via the official Uniswap Twitter and/or Blog. V3 can be defined as Uniswap v3.0.0 or greater. If Uniswap v3 is officially announced and is deployed on the mainnet of a given L2 scaling solution, with or without some bridging mechanism from Ethereum mainnet, the market will still resolve to \"Yes\".",
+    "outcomes": [
+      "Yes",
+      "No"
+    ],
+    "options": []
   },
   {
     "title": "Will 150 million people have received a dose of an approved COVID-19 vaccine in the US by May 1, 2021?",
@@ -422,16 +350,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.7306068489937343718995501933059662",
+        "probability": "0.7605826310093956560617125645801354",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.2693931510062656281004498066940338",
+        "probability": "0.2394173689906043439382874354198646",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "925",
+    "numforecasts": "972",
     "stars": 4
   },
   {
@@ -442,51 +370,76 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.7325763174545269850967695716172844",
+        "probability": "0.7275447608140439745295886589148996",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.2674236825454730149032304283827156",
+        "probability": "0.2724552391859560254704113410851004",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "62",
+    "numforecasts": "66",
     "stars": 4
   },
   {
-    "title": "What will The Weeknd’s Nifty Gateway drop generate in total sales?",
-    "url": "https://polymarket.com/market/what-will-the-weeknds-nifty-gateway-drop-generate-in-total-sales",
+    "title": "Will Joe Biden's disapproval rating be 40% or higher on April 7?",
+    "url": "https://polymarket.com/market/will-joe-bidens-disapproval-rating-be-40-or-higher-on-april-7",
     "platform": "PolyMarket",
-    "description": "This is a market on what The Weeknd’s NFT drop on April 3, 2021 will, on aggregate, generate in total sales. The release is currently scheduled for 2:00 PM ET on April 3, 2021, via Nifty Gateway. This market will resolve 48 hours later, on April 5, 2:00 PM ET, according to data published for the entirety of The Weeknd’s drop. The bracket which resolves to “Yes” will be the one which corresponds to the total sales of The Weeknd’s NFT drop. If the release is delayed, resolution of this market will be delayed up to 30 days. If canceled, each bracket will resolve equally to 20:20:20:20:20. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "description": "This is a market on whether Joe Biden's disapproval rating will be 40% or higher on April 7, 2021. The resolution source will be FiveThirtyEight's approval rating poll aggregator, indicated by the orange trend line here, https://projects.fivethirtyeight.com/biden-approval-rating/. Changes in the methodology by which FiveThirtyEight calculates the disapproval rating will have no bearing on the resolution of this market. If for any reason the resolution source is unavailable on the resolution date, resolution will be delayed up to 48 hours. If still unavailable following that delay, this market will resolve to 50/50. If Joe Biden is not President on the resolution date, this market will resolve according to the most recent available disapproval rating. The resolution date for this market will be on April 8, 2021 at 12:00 PM ET according to data published for the day of April 7, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
     "options": [
       {
-        "name": "Less than $5M",
-        "probability": "0.7987007288026382823750393057017378",
+        "name": "Yes",
+        "probability": "0.4499480889304655682060520276677153",
         "type": "PROBABILITY"
       },
       {
-        "name": "$5M to less than $10M",
-        "probability": "0.1200498229918377331612785019231653",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "$10M to less than $20M",
-        "probability": "0.03365231368675466267016378974861133",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "$20M to less than $30M",
-        "probability": "0.0262247284224959504723605429631664",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "$30M or more",
-        "probability": "0.02137240609627337132115785966331922",
+        "name": "No",
+        "probability": "0.5500519110695344317939479723322847",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "72",
+    "numforecasts": "297",
+    "stars": 4
+  },
+  {
+    "title": "Will more than 1.75 million people travel through a TSA checkpoint on any day on or before April 10?",
+    "url": "https://polymarket.com/market/will-more-than-175-million-people-travel-through-a-tsa-checkpoint-on-any-day-on-or-before-april-10",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether more than 1,750,000 million people will travel through a TSA checkpoint on any single day after March 22, 2021 and on or before April 10, 2021. The resolution source for this market will be daily checkpoint throughput as measured by the US Transportation Security Administration (TSA), https://www.tsa.gov/coronavirus/passenger-throughput. This market will resolve to “Yes” if the TSA reports a daily checkpoint throughput of more than 1.75 million for any day after March 22, 2021 and on or before April 10, 2021. This market will resolve to “No” otherwise. This market will resolve as soon as throughput data becomes available for the date of April 10, 2021 or on any date before that if the target is reached. Any revisions published prior to the release of data for April 10, 2021 will be considered. Market resolution will occur immediately upon satisfaction of market conditions, regardless of any later revisions.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.2009229864217507943369751328346774",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.7990770135782492056630248671653226",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "382",
+    "stars": 4
+  },
+  {
+    "title": "Will Jeff Bezos or Elon Musk have a higher net worth on April 25, 2021?",
+    "url": "https://polymarket.com/market/will-jeff-bezos-or-elon-musk-have-a-higher-net-worth-on-april-25-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on who will have a higher net worth on April 25, 2021, 12:00 PM EST, Jeff Bezos or Elon Musk. The resolution options for this market are Jeff Bezos, the founder and longtime CEO of Amazon, and Elon Musk, current CEO of Tesla. The resolution source for this market will be Forbes’ World’s Real Time Billionaires list (http://forbes.com/real-time-billionaires). This market will resolve to Jeff Bezos if, according to the resolution source, he has a higher net worth, in USD, than Elon Musk on the resolution date. This market will resolve to Elon Musk if, according to the resolution source, he has a higher net worth, in USD, than Jeff Bezos on the resolution date. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n",
+    "options": [
+      {
+        "name": "Bezos",
+        "probability": "0.8852729097685785062210024257054678",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Musk",
+        "probability": "0.1147270902314214937789975742945322",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "288",
     "stars": 4
   }
 ]

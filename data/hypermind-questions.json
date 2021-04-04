@@ -146,22 +146,22 @@
     "options": [
       {
         "name": "Macron and Le Pen",
-        "probability": 0.6981132075471699,
+        "probability": 0.68,
         "type": "PROBABILITY"
       },
       {
         "name": "Macron, but not Le Pen",
-        "probability": 0.10377358490566038,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
         "name": "Le Pen, but not Macron",
-        "probability": 0.169811320754717,
+        "probability": 0.2,
         "type": "PROBABILITY"
       },
       {
         "name": "Neither of them",
-        "probability": 0.028301886792452827,
+        "probability": 0.03,
         "type": "PROBABILITY"
       }
     ],
@@ -262,7 +262,7 @@
       },
       {
         "name": "Maybe later",
-        "probability": 0.09,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
@@ -296,27 +296,27 @@
     "options": [
       {
         "name": "In May or earlier",
-        "probability": 0.01,
+        "probability": 0.010204081632653062,
         "type": "PROBABILITY"
       },
       {
         "name": "in June (government goal)",
-        "probability": 0.52,
+        "probability": 0.5204081632653061,
         "type": "PROBABILITY"
       },
       {
         "name": "in July",
-        "probability": 0.28,
+        "probability": 0.28571428571428575,
         "type": "PROBABILITY"
       },
       {
         "name": "in August",
-        "probability": 0.09,
+        "probability": 0.09183673469387756,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.1,
+        "probability": 0.09183673469387756,
         "type": "PROBABILITY"
       }
     ],
@@ -552,22 +552,22 @@
       },
       {
         "name": "Q2, 2021",
-        "probability": 0.25510204081632654,
+        "probability": 0.26262626262626265,
         "type": "PROBABILITY"
       },
       {
         "name": "Q3, 2021",
-        "probability": 0.4285714285714286,
+        "probability": 0.4242424242424243,
         "type": "PROBABILITY"
       },
       {
         "name": "Q4, 2021",
-        "probability": 0.1836734693877551,
+        "probability": 0.18181818181818182,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.1326530612244898,
+        "probability": 0.13131313131313133,
         "type": "PROBABILITY"
       }
     ],
@@ -605,17 +605,17 @@
     "options": [
       {
         "name": "Worse than the 2012 record",
-        "probability": 0.2277227722772277,
+        "probability": 0.23,
         "type": "PROBABILITY"
       },
       {
         "name": "Worse than 2020, but not worse than 2012",
-        "probability": 0.297029702970297,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
         "name": "Not worse than 2020",
-        "probability": 0.4752475247524752,
+        "probability": 0.47,
         "type": "PROBABILITY"
       }
     ],
@@ -702,22 +702,22 @@
     "options": [
       {
         "name": "USA",
-        "probability": 0.00970873786407767,
+        "probability": 0.010869565217391304,
         "type": "PROBABILITY"
       },
       {
         "name": "France",
-        "probability": 0.6990291262135923,
+        "probability": 0.6739130434782608,
         "type": "PROBABILITY"
       },
       {
         "name": "Germany",
-        "probability": 0.2524271844660194,
+        "probability": 0.2717391304347826,
         "type": "PROBABILITY"
       },
       {
         "name": "United Kingdom",
-        "probability": 0.03883495145631068,
+        "probability": 0.043478260869565216,
         "type": "PROBABILITY"
       }
     ],
@@ -731,7 +731,7 @@
     "options": [
       {
         "name": "USA",
-        "probability": 0.91,
+        "probability": 0.9,
         "type": "PROBABILITY"
       },
       {
@@ -746,7 +746,7 @@
       },
       {
         "name": "United Kingdom",
-        "probability": 0.07,
+        "probability": 0.08,
         "type": "PROBABILITY"
       }
     ],

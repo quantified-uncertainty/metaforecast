@@ -1806,62 +1806,62 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.4383248113601272,
+        "probability": 0.4140444216766442,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.48702756817791915,
+        "probability": 0.5206546619885946,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.004361440909055992,
+        "probability": 0.004325837241397775,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.013084322727167976,
+        "probability": 0.008608844411098543,
         "type": "PROBABILITY"
       },
       {
         "name": "SDP",
-        "probability": 0.004361440909055992,
+        "probability": 0.004325837241397775,
         "type": "PROBABILITY"
       },
       {
         "name": "Heritage Party",
-        "probability": 0.0017497996461482122,
+        "probability": 0.0017355155399619816,
         "type": "PROBABILITY"
       },
       {
         "name": "UKIP",
-        "probability": 0.0017497996461482122,
+        "probability": 0.0017355155399619816,
         "type": "PROBABILITY"
       },
       {
         "name": "Womens Equality Party",
-        "probability": 0.0017497996461482122,
+        "probability": 0.0017355155399619816,
         "type": "PROBABILITY"
       },
       {
         "name": "North East Party",
-        "probability": 0.004361440909055992,
+        "probability": 0.004325837241397775,
         "type": "PROBABILITY"
       },
       {
         "name": "Sam Lee (Ind)",
-        "probability": 0.013084322727167976,
+        "probability": 0.008608844411098543,
         "type": "PROBABILITY"
       },
       {
         "name": "Thelma Walker (either as Ind or NIP)",
-        "probability": 0.02578381243294866,
+        "probability": 0.02557333192708685,
         "type": "PROBABILITY"
       },
       {
         "name": "Greens",
-        "probability": 0.004361440909055992,
+        "probability": 0.004325837241397775,
         "type": "PROBABILITY"
       }
     ],
@@ -2270,22 +2270,22 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.15358630823753128,
+        "probability": 0.13126530612244897,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.7876220935258016,
+        "probability": 0.8204081632653061,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.0045846659175382476,
+        "probability": 0.004571428571428571,
         "type": "PROBABILITY"
       },
       {
         "name": "Plaid Cymru",
-        "probability": 0.054206932319128695,
+        "probability": 0.04375510204081633,
         "type": "PROBABILITY"
       }
     ],
@@ -2298,12 +2298,12 @@
     "options": [
       {
         "name": "Labour Majority",
-        "probability": 0.2063492063492063,
+        "probability": 0.21699819168173598,
         "type": "PROBABILITY"
       },
       {
         "name": "NO Labour Majority",
-        "probability": 0.7936507936507936,
+        "probability": 0.783001808318264,
         "type": "PROBABILITY"
       }
     ],
@@ -2349,27 +2349,27 @@
     "options": [
       {
         "name": "Reform UK",
-        "probability": 0.009469915492155196,
+        "probability": 0.009489168088987789,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservatives",
-        "probability": 0.5727314159926197,
+        "probability": 0.6104496668711888,
         "type": "PROBABILITY"
       },
       {
         "name": "Greens",
-        "probability": 0.004758514749789426,
+        "probability": 0.004768188940237644,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.4035702382732804,
+        "probability": 0.3658038080105979,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.009469915492155196,
+        "probability": 0.009489168088987789,
         "type": "PROBABILITY"
       }
     ],
