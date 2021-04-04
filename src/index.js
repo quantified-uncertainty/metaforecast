@@ -105,4 +105,20 @@ let executeoption = async (option) => {
 }
 
 /* BODY */
-whattodo(whattodoMessage, executeoption)
+let commandLineUtility  = () => {
+  console.log(process.argv)
+  if(process.argv.length==3){
+      const option = process.argv[2] // e.g., npm start 15 <-
+      const optionNum = Number(option)
+      if(!isNaN(optionNum)){
+        executeoption(optionNum)
+      }else if(option == "all"){
+        executeoption(15) // 15 = execute all fetchers
+      }else{
+        whattodo(whattodoMessage, executeoption)
+      }
+  }else(
+    whattodo(whattodoMessage, executeoption)
+  )
+}
+commandLineUtility()
