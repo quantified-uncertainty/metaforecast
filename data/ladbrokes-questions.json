@@ -1111,12 +1111,12 @@
     "options": [
       {
         "name": "Ben Houchen (Cons)",
-        "probability": 0.8143322475570033,
+        "probability": 0.8426966292134831,
         "type": "PROBABILITY"
       },
       {
         "name": "Jessie Joe Jacobs (Lab)",
-        "probability": 0.18566775244299674,
+        "probability": 0.15730337078651685,
         "type": "PROBABILITY"
       }
     ],
@@ -1806,62 +1806,62 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.4140444216766442,
+        "probability": 0.4216584719372611,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.5206546619885946,
+        "probability": 0.511839763623265,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.004325837241397775,
+        "probability": 0.004405387020240042,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.008608844411098543,
+        "probability": 0.00876715634721038,
         "type": "PROBABILITY"
       },
       {
         "name": "SDP",
-        "probability": 0.004325837241397775,
+        "probability": 0.004405387020240042,
         "type": "PROBABILITY"
       },
       {
         "name": "Heritage Party",
-        "probability": 0.0017355155399619816,
+        "probability": 0.0017674307206951064,
         "type": "PROBABILITY"
       },
       {
         "name": "UKIP",
-        "probability": 0.0017355155399619816,
+        "probability": 0.0017674307206951064,
         "type": "PROBABILITY"
       },
       {
         "name": "Womens Equality Party",
-        "probability": 0.0017355155399619816,
+        "probability": 0.0017674307206951064,
         "type": "PROBABILITY"
       },
       {
         "name": "North East Party",
-        "probability": 0.004325837241397775,
+        "probability": 0.004405387020240042,
         "type": "PROBABILITY"
       },
       {
         "name": "Sam Lee (Ind)",
-        "probability": 0.008608844411098543,
+        "probability": 0.00876715634721038,
         "type": "PROBABILITY"
       },
       {
         "name": "Thelma Walker (either as Ind or NIP)",
-        "probability": 0.02557333192708685,
+        "probability": 0.026043611502007305,
         "type": "PROBABILITY"
       },
       {
         "name": "Greens",
-        "probability": 0.004325837241397775,
+        "probability": 0.004405387020240042,
         "type": "PROBABILITY"
       }
     ],
@@ -2065,7 +2065,7 @@
     "stars": 2
   },
   {
-    "title": "London Mayoral Election: Most Votes Match Bet 1",
+    "title": "London Mayoral Election: Most Votes Match Bet: Fox v Fosh",
     "url": "https://sports.ladbrokes.com/sport/politics/outrights",
     "platform": "Ladbrokes",
     "options": [
@@ -2089,27 +2089,27 @@
     "options": [
       {
         "name": "Under 1%",
-        "probability": 0.24951531601395888,
+        "probability": 0.2682926829268293,
         "type": "PROBABILITY"
       },
       {
         "name": "1-2%",
-        "probability": 0.3175649476541295,
+        "probability": 0.3170731707317073,
         "type": "PROBABILITY"
       },
       {
         "name": "2-5%",
-        "probability": 0.2687088018611865,
+        "probability": 0.2682926829268293,
         "type": "PROBABILITY"
       },
       {
         "name": "5-10%",
-        "probability": 0.09703373400542846,
+        "probability": 0.07926829268292683,
         "type": "PROBABILITY"
       },
       {
         "name": "Over 10%",
-        "probability": 0.06717720046529663,
+        "probability": 0.06707317073170732,
         "type": "PROBABILITY"
       }
     ],
@@ -2149,7 +2149,7 @@
     "stars": 2
   },
   {
-    "title": "London Mayoral Election: Most Votes Match Bet 2",
+    "title": "London Mayoral Election: Most Votes Match Bet: Fox v Binface",
     "url": "https://sports.ladbrokes.com/sport/politics/outrights",
     "platform": "Ladbrokes",
     "options": [
@@ -2205,18 +2205,54 @@
     "stars": 2
   },
   {
-    "title": "London Mayoral Election: Most Votes Match Bet 3",
+    "title": "London Mayoral Election: Most Votes Match Bet: Gammons v Omilana",
     "url": "https://sports.ladbrokes.com/sport/politics/outrights",
     "platform": "Ladbrokes",
     "options": [
       {
         "name": "Peter Gammons (UKIP)",
-        "probability": 0.8426966292134831,
+        "probability": 0.8143322475570033,
         "type": "PROBABILITY"
       },
       {
         "name": "Niko Omilana (Ind)",
-        "probability": 0.15730337078651685,
+        "probability": 0.18566775244299674,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "London Mayoral Election: Most Votes Match Bet: Bailey v Rose",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "Ladbrokes",
+    "options": [
+      {
+        "name": "Brian Rose",
+        "probability": 0.085619285120532,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Shaun Bailey",
+        "probability": 0.914380714879468,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "London Mayoral Election: Most Votes Match Bet: Gammons v Fox",
+    "url": "https://sports.ladbrokes.com/sport/politics/outrights",
+    "platform": "Ladbrokes",
+    "options": [
+      {
+        "name": "Peter Gammons (IUKIP)",
+        "probability": 0.6626506024096386,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Laurence Fox (Reclaim)",
+        "probability": 0.3373493975903614,
         "type": "PROBABILITY"
       }
     ],
@@ -2270,22 +2306,22 @@
     "options": [
       {
         "name": "Conservatives",
-        "probability": 0.13126530612244897,
+        "probability": 0.15358630823753128,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.8204081632653061,
+        "probability": 0.7876220935258016,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.004571428571428571,
+        "probability": 0.0045846659175382476,
         "type": "PROBABILITY"
       },
       {
         "name": "Plaid Cymru",
-        "probability": 0.04375510204081633,
+        "probability": 0.054206932319128695,
         "type": "PROBABILITY"
       }
     ],
@@ -2654,12 +2690,12 @@
     "options": [
       {
         "name": "SNP Majority",
-        "probability": 0.5684754521963824,
+        "probability": 0.5483028720626633,
         "type": "PROBABILITY"
       },
       {
         "name": "No SNP Majority",
-        "probability": 0.43152454780361754,
+        "probability": 0.4516971279373368,
         "type": "PROBABILITY"
       }
     ],
@@ -2672,32 +2708,32 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.0264933998764867,
+        "probability": 0.02671114419163361,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.4003447092446879,
+        "probability": 0.40363506778468566,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservatives",
-        "probability": 0.5206795351448253,
+        "probability": 0.5249589031881751,
         "type": "PROBABILITY"
       },
       {
         "name": "Greens",
-        "probability": 0.008918570255450968,
+        "probability": 0.008991870321936067,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.008918570255450968,
+        "probability": 0.008991870321936067,
         "type": "PROBABILITY"
       },
       {
         "name": "Alba",
-        "probability": 0.034645215223098,
+        "probability": 0.02671114419163361,
         "type": "PROBABILITY"
       }
     ],

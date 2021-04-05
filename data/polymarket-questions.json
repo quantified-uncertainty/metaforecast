@@ -1,35 +1,5 @@
 [
   {
-    "title": "What will the 7-day average COVID-19 case count be in the US on May 15?",
-    "url": "https://polymarket.com/market/what-will-the-7-day-average-covid-19-case-count-be-in-the-us-on-may-15",
-    "platform": "PolyMarket",
-    "description": "This is a market on what the 7-day average COVID-19 case count will be in the US on May 15, 2021 12:00 PM ET. The resolution source for this market will be the 7-day moving average of daily cases, as displayed on the CDC’s Covid Data Tracker (https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases). The 7-day moving average will be checked at 12:00 PM ET on May 15, 2021. The bracket into which the 7-day moving average falls at that time will be the bracket this market resolves to. If the website is down at that time or for any reason data is not accessible on the website at the resolution date, the Markets Integrity Committee (MIC) will wait 24 hours (until 12:00 PM ET on May 16, 2021) and resolve as soon as data is available again. If data is still unavailable at that time, all brackets will resolve to 0.25 USDC. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "40,999 or fewer",
-        "probability": "0.3961864143518504219114260435905492",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "41,000-65,999",
-        "probability": "0.3364618915617005132876606909239056",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "66,000-99,999",
-        "probability": "0.2067616005303659582265278770145715",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "100,000 or more",
-        "probability": "0.06059009355608310657438538847097376",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "125",
-    "stars": 4
-  },
-  {
     "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
     "url": "https://polymarket.com/market/will-floyd-mayweather-beat-logan-paul-in-their-boxing-exhibition-match",
     "platform": "PolyMarket",
@@ -37,101 +7,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9014972108532288672823780605910441",
+        "probability": "0.8999860766695875619471546064478487",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.09850278914677113271762193940895586",
+        "probability": "0.1000139233304124380528453935521513",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "849",
-    "stars": 3
-  },
-  {
-    "title": "Will the workers at Amazon's Bessemer facility unionize by May 5?",
-    "url": "https://polymarket.com/market/will-the-workers-at-amazons-bessemer-facility-unionize-by-may-5",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether the workers at the Amazon fulfillment center in Bessemer, Alabama, will win their effort to unionize by May 5, 2021, 12:00 PM ET. This market will resolve to “Yes” if the National Labor Relations Board certifies the RETAIL, WHOLESALE AND DEPARTMENT STORE UNION as the representative of the workers at the Amazon Bessemer facility for the purposes of collective bargaining (Case Number: 10-RC-269250, https://www.nlrb.gov/case/10-RC-269250). This market will resolve to “No” otherwise. The resolution source for this market will be an official “Certification of Representative” decision from the National Labor Relations Board.   \n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.1482113605803978010036612832836613",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.8517886394196021989963387167163387",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "79",
-    "stars": 4
-  },
-  {
-    "title": "Will 1 billion doses of a COVID-19 vaccine have been administered globally by April 26, 2021?",
-    "url": "https://polymarket.com/market/will-1-billion-doses-of-a-covid-19-vaccine-have-been-administered-globally-by-april-26-2021-1",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether 1 billion doses of a COVID-19 will have been administered globally prior to April 26, 2021, 12 PM ET. This market will resolve to “Yes” if at least 1 billion doses of a COVID-19 vaccine are administered globally prior to the resolution date, April 26, 2021, 12 PM ET, and “No” otherwise. The resolution source for this market will be the data published to Our World in Data’s coronavirus (COVID-19) vaccinations dashboard, available at https://ourworldindata.org/covid-vaccinations, specifically the cumulative COVID-19 vaccination doses administered. This market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9230852082616393987183334402560699",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.07691479173836060128166655974393007",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "86",
-    "stars": 3
-  },
-  {
-    "title": "Will American mask usage be 75% or higher on April 14th, 2021?",
-    "url": "https://polymarket.com/market/will-american-mask-usage-be-75-or-higher-on-april-14th-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether the American \"observed mask usage\" metric will be above 75% on April 14th, 2021. This market will resolve when data is first made available for the date of April 14th, 2021. This market will resolve to \"Yes\" if the metric is 75% or higher on the resolution date, and “No” otherwise. There will be no delay in resolutions for any incoming data updates or revisions past the initial publication of data for April 14th. The resolution source for this market will be the Institute for Health Metrics and Evaluation’s website, https://covid19.healthdata.org/united-states-of-america?view=mask-use&tab=trend. Specific, non-rounded data is available for download at http://www.healthdata.org/covid/data-downloads. This data will be prioritized for resolution in the event that the headline number displayed on Health Data's graph does not accurately reflect the specific, non-rounded datapoint. Observed mask use represents the percentage of the population who say they always wear a mask in public. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.07348452961559826127262444793994684",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9265154703844017387273755520600532",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "124",
-    "stars": 3
-  },
-  {
-    "title": "How many charges will Derek Chauvin be convicted of?",
-    "url": "https://polymarket.com/market/how-many-charges-will-derek-chauvin-be-convicted-of",
-    "platform": "PolyMarket",
-    "description": "This market is on how many charges the jury will find Derek Chauvin guilty of. Chauvin is charged criminally in Minnesota on three counts, each of which he has pleaded not guilty to. The maximum number of charges that Chauvin can be convicted of is two. This market will resolve to the number of counts Derek Chauvin is convicted on: zero (not guilty on all counts), one (guilty on one count), or two (guilty on two counts). In the event of a \"hung jury\" or mistrial, this market will resolve to the lowest bracket, \"0\". If the trial is delayed, the market resolution will be postponed until the start of the new trial date. In the event of a judgement of acquittal, this market will still resolve to the number of charges Chauvin is convicted of. The resolution source for this market will be the official website of the Minnesota Judicial Branch, specifically the page for this specific case (27-CR-20-12646: State vs. Derek Chauvin) available at https://www.mncourts.gov/media/StateofMinnesotavDerekChauvin.",
-    "options": [
-      {
-        "name": "0",
-        "probability": "0.4465545279192221197664100099424811",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "1",
-        "probability": "0.3198643866510044452723282388726578",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "2",
-        "probability": "0.2335810854297734349612617511848611",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "151",
+    "numforecasts": "850",
     "stars": 4
   },
   {
@@ -142,16 +27,101 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.03881312225814321129584611911410917",
+        "probability": "0.03761913118139671975368716980885902",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9611868777418567887041538808858908",
+        "probability": "0.962380868818603280246312830191141",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "147",
+    "numforecasts": "152",
+    "stars": 3
+  },
+  {
+    "title": "Will the workers at Amazon's Bessemer facility unionize by May 5?",
+    "url": "https://polymarket.com/market/will-the-workers-at-amazons-bessemer-facility-unionize-by-may-5",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the workers at the Amazon fulfillment center in Bessemer, Alabama, will win their effort to unionize by May 5, 2021, 12:00 PM ET. This market will resolve to “Yes” if the National Labor Relations Board certifies the RETAIL, WHOLESALE AND DEPARTMENT STORE UNION as the representative of the workers at the Amazon Bessemer facility for the purposes of collective bargaining (Case Number: 10-RC-269250, https://www.nlrb.gov/case/10-RC-269250). This market will resolve to “No” otherwise. The resolution source for this market will be an official “Certification of Representative” decision from the National Labor Relations Board.   \n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.1400736035928692911440260279913681",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.8599263964071307088559739720086319",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "87",
+    "stars": 4
+  },
+  {
+    "title": "Will 1 billion doses of a COVID-19 vaccine have been administered globally by April 26, 2021?",
+    "url": "https://polymarket.com/market/will-1-billion-doses-of-a-covid-19-vaccine-have-been-administered-globally-by-april-26-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether 1 billion doses of a COVID-19 will have been administered globally prior to April 26, 2021, 12 PM ET. This market will resolve to “Yes” if at least 1 billion doses of a COVID-19 vaccine are administered globally prior to the resolution date, April 26, 2021, 12 PM ET, and “No” otherwise. The resolution source for this market will be the data published to Our World in Data’s coronavirus (COVID-19) vaccinations dashboard, available at https://ourworldindata.org/covid-vaccinations, specifically the cumulative COVID-19 vaccination doses administered. This market will resolve according to the data as available immediately at the time of resolution, and resolution will not be delayed for the purpose of waiting for updated data from a specific date.\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9371314398573680504652377356106168",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.06286856014263194953476226438938325",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "91",
+    "stars": 3
+  },
+  {
+    "title": "How many charges will Derek Chauvin be convicted of?",
+    "url": "https://polymarket.com/market/how-many-charges-will-derek-chauvin-be-convicted-of",
+    "platform": "PolyMarket",
+    "description": "This market is on how many charges the jury will find Derek Chauvin guilty of. Chauvin is charged criminally in Minnesota on three counts, each of which he has pleaded not guilty to. The maximum number of charges that Chauvin can be convicted of is two. This market will resolve to the number of counts Derek Chauvin is convicted on: zero (not guilty on all counts), one (guilty on one count), or two (guilty on two counts). In the event of a \"hung jury\" or mistrial, this market will resolve to the lowest bracket, \"0\". If the trial is delayed, the market resolution will be postponed until the start of the new trial date. In the event of a judgement of acquittal, this market will still resolve to the number of charges Chauvin is convicted of. The resolution source for this market will be the official website of the Minnesota Judicial Branch, specifically the page for this specific case (27-CR-20-12646: State vs. Derek Chauvin) available at https://www.mncourts.gov/media/StateofMinnesotavDerekChauvin.",
+    "options": [
+      {
+        "name": "0",
+        "probability": "0.4340876940115133782146219093820505",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "1",
+        "probability": "0.3329396760476596955599754174467932",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "2",
+        "probability": "0.2329726299408269262254026731711563",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "158",
+    "stars": 4
+  },
+  {
+    "title": "Will American mask usage be 75% or higher on April 14th, 2021?",
+    "url": "https://polymarket.com/market/will-american-mask-usage-be-75-or-higher-on-april-14th-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the American \"observed mask usage\" metric will be above 75% on April 14th, 2021. This market will resolve when data is first made available for the date of April 14th, 2021. This market will resolve to \"Yes\" if the metric is 75% or higher on the resolution date, and “No” otherwise. There will be no delay in resolutions for any incoming data updates or revisions past the initial publication of data for April 14th. The resolution source for this market will be the Institute for Health Metrics and Evaluation’s website, https://covid19.healthdata.org/united-states-of-america?view=mask-use&tab=trend. Specific, non-rounded data is available for download at http://www.healthdata.org/covid/data-downloads. This data will be prioritized for resolution in the event that the headline number displayed on Health Data's graph does not accurately reflect the specific, non-rounded datapoint. Observed mask use represents the percentage of the population who say they always wear a mask in public. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.07278348450671392133713530102707062",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9272165154932860786628646989729294",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "127",
     "stars": 3
   },
   {
@@ -162,28 +132,72 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9655485016618752035954097966410012",
+        "probability": "0.9607928070787265821137549067928738",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.0344514983381247964045902033589988",
+        "probability": "0.03920719292127341788624509320712615",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "472",
+    "numforecasts": "480",
     "stars": 3
   },
   {
     "title": "Will Donald Trump launch a new social media platform by June 15, 2021?",
     "url": "https://polymarket.com/market/will-donald-trump-launch-a-new-social-media-platform-by-june-15-2021-1",
-    "address": "0x03d4Ce9c5A6aB40683fe5E2BE1558a315DdeEaBc",
+    "platform": "PolyMarket",
     "description": "This is a market on whether former US President Donald Trump will launch a social media platform by June 15, 2021, 12:00 PM ET. This market will resolve to “Yes” if Donald Trump launches a social media platform by the resolution date, and “No” otherwise. On the resolution date, it must be possible for an individual in the United States to create an account and post. Creating an account and posting requires that user-generated content is not restricted to responses (ie comments) to another user’s content. Such content generally must be standalone image, text, or video posts. The platform must not be restricted to only a small portion of the general public or subject to a waitlist. If there is a fee or subscription required to join, this market will still resolve to “Yes”. Donald Trump’s involvement must be public and verified via an official channel, and the platform must be substantially backed by or affiliated with Donald Trump--e.g. the platform uses his name explicitly, is heavily marketed as being affiliated with him, or he is an executive for the platform. Partnership with an existing platform such as Twitter or Parler will not be sufficient for this market to resolve to “Yes”. If such a platform is temporarily inaccessible due to maintenance, system overload, or DDOS attack, resolution of this market will be delayed up to 72 hours. If the platform is inaccessible on the resolution date due to a lack of a web-hosting service provider, this market will resolve to “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
-    "outcomes": [
-      "Yes",
-      "No"
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.137768459510460088156237908371624",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.862231540489539911843762091628376",
+        "type": "PROBABILITY"
+      }
     ],
-    "options": []
+    "numforecasts": "96",
+    "stars": 4
+  },
+  {
+    "title": "What will The Weeknd’s Nifty Gateway drop generate in total sales?",
+    "url": "https://polymarket.com/market/what-will-the-weeknds-nifty-gateway-drop-generate-in-total-sales",
+    "platform": "PolyMarket",
+    "description": "This is a market on what The Weeknd’s NFT drop on April 3, 2021 will, on aggregate, generate in total sales. The release is currently scheduled for 2:00 PM ET on April 3, 2021, via Nifty Gateway. This market will resolve 48 hours later, on April 5, 2:00 PM ET, according to data published for the entirety of The Weeknd’s drop. The bracket which resolves to “Yes” will be the one which corresponds to the total sales of The Weeknd’s NFT drop. If the release is delayed, resolution of this market will be delayed up to 30 days. If canceled, each bracket will resolve equally to 20:20:20:20:20. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Less than $5M",
+        "probability": "0.9970844774081486673702853220465268",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "$5M to less than $10M",
+        "probability": "0.002252133247187208361756349059784681",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "$10M to less than $20M",
+        "probability": "0.0002224270844625515253444555684127745",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "$20M to less than $30M",
+        "probability": "0.0002204809271256202801753957153618757",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "$30M or more",
+        "probability": "0.0002204813330759524624384776099138952",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "164",
+    "stars": 3
   },
   {
     "title": "Will the US have 200M total COVID-19 vaccines administered by Biden’s 100th day in office?",
@@ -197,41 +211,6 @@
     "options": []
   },
   {
-    "title": "What will The Weeknd’s Nifty Gateway drop generate in total sales?",
-    "url": "https://polymarket.com/market/what-will-the-weeknds-nifty-gateway-drop-generate-in-total-sales",
-    "platform": "PolyMarket",
-    "description": "This is a market on what The Weeknd’s NFT drop on April 3, 2021 will, on aggregate, generate in total sales. The release is currently scheduled for 2:00 PM ET on April 3, 2021, via Nifty Gateway. This market will resolve 48 hours later, on April 5, 2:00 PM ET, according to data published for the entirety of The Weeknd’s drop. The bracket which resolves to “Yes” will be the one which corresponds to the total sales of The Weeknd’s NFT drop. If the release is delayed, resolution of this market will be delayed up to 30 days. If canceled, each bracket will resolve equally to 20:20:20:20:20. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
-    "options": [
-      {
-        "name": "Less than $5M",
-        "probability": "0.9648695220437758369339288058703896",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "$5M to less than $10M",
-        "probability": "0.01981098643657904751787071344356773",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "$10M to less than $20M",
-        "probability": "0.006604445813134939699814851165313733",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "$20M to less than $30M",
-        "probability": "0.004658365008534205617391366178721065",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "$30M or more",
-        "probability": "0.004056680697975970230994263342007744",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "128",
-    "stars": 3
-  },
-  {
     "title": "Will Donald Trump file to run for president before June 1, 2021?",
     "url": "https://polymarket.com/market/will-donald-trump-file-to-run-for-president-before-june-1-2021-1",
     "platform": "PolyMarket",
@@ -239,16 +218,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.03926197442201138866648693519831301",
+        "probability": "0.03420631250384755319461498321788003",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.960738025577988611333513064801687",
+        "probability": "0.96579368749615244680538501678212",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "125",
+    "numforecasts": "127",
     "stars": 3
   },
   {
@@ -259,17 +238,37 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.05935375323792726206670826664613947",
+        "probability": "0.05944227492041401588695338806455382",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9406462467620727379332917333538605",
+        "probability": "0.9405577250795859841130466119354462",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "449",
+    "numforecasts": "450",
     "stars": 3
+  },
+  {
+    "title": "Will North Dakota have the most COVID-19 cases per 100k residents on May 15, 2021?",
+    "url": "https://polymarket.com/market/will-north-dakota-have-the-most-covid-19-cases-per-100k-residents-on-may-15-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on the state with the most COVID-19 cases per 100k residents on the resolution date, May 15, 12 PM ET. This market will resolve to “Yes” if North Dakota has the most COVID-19 cases per 100k residents on May 15, 2021, and “No” otherwise. The resolution source for this market will be https://www.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/. There will be no resolution delay for any anticipated data revisions. If, for any reason, data is not published prior to the resolution date, that data will not be considered for the resolution of this market. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.5576042441166223717836837081986532",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.4423957558833776282163162918013468",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "484",
+    "stars": 4
   },
   {
     "title": "Will Clubhouse officially announce they’ve been acquired before June 1st, 2021? ",
@@ -299,48 +298,37 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.04741168991441198451184485063042794",
+        "probability": "0.03925864458252690418984879310071039",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9525883100855880154881551493695721",
+        "probability": "0.9607413554174730958101512068992896",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "102",
+    "numforecasts": "105",
     "stars": 3
-  },
-  {
-    "title": "Will North Dakota have the most COVID-19 cases per 100k residents on May 15, 2021?",
-    "url": "https://polymarket.com/market/will-north-dakota-have-the-most-covid-19-cases-per-100k-residents-on-may-15-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on the state with the most COVID-19 cases per 100k residents on the resolution date, May 15, 12 PM ET. This market will resolve to “Yes” if North Dakota has the most COVID-19 cases per 100k residents on May 15, 2021, and “No” otherwise. The resolution source for this market will be https://www.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/. There will be no resolution delay for any anticipated data revisions. If, for any reason, data is not published prior to the resolution date, that data will not be considered for the resolution of this market. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.5288355988019106646420997234402747",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.4711644011980893353579002765597253",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "456",
-    "stars": 4
   },
   {
     "title": "Will Uniswap v3 launch before April 30, 2021?",
     "url": "https://polymarket.com/market/will-uniswap-v3-launch-before-april-30-2021",
-    "address": "0x537eA26A3FF9A58267695f3e09fE1dC1a6b3aeC1",
+    "platform": "PolyMarket",
     "description": "This is a market on if Uniswap v3 will launch before April 30th, 2021, 12:00 am ET. “Launch” in this context can be defined as being deployed and usable on the Ethereum mainnet and publicly announced via the official Uniswap Twitter and/or Blog. V3 can be defined as Uniswap v3.0.0 or greater. If Uniswap v3 is officially announced and is deployed on the mainnet of a given L2 scaling solution, with or without some bridging mechanism from Ethereum mainnet, the market will still resolve to \"Yes\".",
-    "outcomes": [
-      "Yes",
-      "No"
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.02133163057367735072211258195805924",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9786683694263226492778874180419408",
+        "type": "PROBABILITY"
+      }
     ],
-    "options": []
+    "numforecasts": "760",
+    "stars": 3
   },
   {
     "title": "Will 150 million people have received a dose of an approved COVID-19 vaccine in the US by May 1, 2021?",
@@ -350,36 +338,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.7605826310093956560617125645801354",
+        "probability": "0.7576761787844405298841269979213791",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.2394173689906043439382874354198646",
+        "probability": "0.2423238212155594701158730020786209",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "972",
-    "stars": 4
-  },
-  {
-    "title": "Will any Knicks game have greater than 20% attendance before the NBA season ends?",
-    "url": "https://polymarket.com/market/will-any-knicks-game-have-greater-than-20-attendance-before-the-nba-season-ends",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether there will be a New York Knicks game at Madison Square Garden where more than 20% of the seats are filled by the end of the NBA season, including the playoffs. This market will resolve to “Yes” if there is any New York Knicks home game at Madison Square Garden, where official attendance is 3,963 or higher (3,963 is the lowest number that puts attendance over 20% of the 19,812 seating capacity at MSG for NBA games), before the end of the NBA  season. This market will resolve to “No” if there is not a single New York Knicks home game at Madison Square Garden, where official attendance is higher than 3,963. The resolution source for this market will be the official attendance data provided in the NBA gamebooks (https://www.nba.com/stats/gamebooks/). The resolution date for this market will be the day the Knicks are eliminated from this NBA season. Resolution may be delayed in the event of a change or postponement in the NBA’s schedule.\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.7275447608140439745295886589148996",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.2724552391859560254704113410851004",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "66",
+    "numforecasts": "1037",
     "stars": 4
   },
   {
@@ -390,16 +358,66 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.4499480889304655682060520276677153",
+        "probability": "0.4390479478378078263686834451491899",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.5500519110695344317939479723322847",
+        "probability": "0.5609520521621921736313165548508101",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "297",
+    "numforecasts": "319",
+    "stars": 4
+  },
+  {
+    "title": "What will the 7-day average COVID-19 case count in the US be on April  9?",
+    "url": "https://polymarket.com/market/what-will-the-7-day-average-covid-19-case-count-in-the-us-be-on-april-9",
+    "platform": "PolyMarket",
+    "description": "This is a market on what the 7-day average COVID-19 case count will be in the US on April 9, 2021, 12:00 PM ET. The resolution source for this market will be the 7-day moving average of daily cases, as displayed on the CDC’s COVID Data Tracker (https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendscases). Note the CDC always presents this average as a whole number, which is the figure that will be used to resolve the market. The 7-day moving average will be checked at 12:00 PM ET on April 9, 2021. The bracket into which the 7-day moving average falls at that time will be the bracket this market resolves to. If the website is down at that time or for any reason data is not accessible on the website at the resolution date, the Markets Integrity Committee (MIC) will wait 24 hours (until 12:00 PM ET on April 10, 2021) and resolve as soon as data is available again. If data is still unavailable at that time, all brackets will resolve to 0.25 USDC. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
+    "options": [
+      {
+        "name": "49,999 or fewer",
+        "probability": "0.01245159215307202152905888614012675",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "50,000-62,499",
+        "probability": "0.3852702140466881649880817103981702",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "62,500-74,999",
+        "probability": "0.5850094210925269969320208739163795",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "75,000 or more",
+        "probability": "0.01726877270771281655083852954532348",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "146",
+    "stars": 3
+  },
+  {
+    "title": "Will any Knicks game have greater than 20% attendance before the NBA season ends?",
+    "url": "https://polymarket.com/market/will-any-knicks-game-have-greater-than-20-attendance-before-the-nba-season-ends",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether there will be a New York Knicks game at Madison Square Garden where more than 20% of the seats are filled by the end of the NBA season, including the playoffs. This market will resolve to “Yes” if there is any New York Knicks home game at Madison Square Garden, where official attendance is 3,963 or higher (3,963 is the lowest number that puts attendance over 20% of the 19,812 seating capacity at MSG for NBA games), before the end of the NBA  season. This market will resolve to “No” if there is not a single New York Knicks home game at Madison Square Garden, where official attendance is higher than 3,963. The resolution source for this market will be the official attendance data provided in the NBA gamebooks (https://www.nba.com/stats/gamebooks/). The resolution date for this market will be the day the Knicks are eliminated from this NBA season. Resolution may be delayed in the event of a change or postponement in the NBA’s schedule.\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.7322458281307298454159110622578949",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.2677541718692701545840889377421051",
+        "type": "PROBABILITY"
+      }
+    ],
+    "numforecasts": "67",
     "stars": 4
   },
   {
@@ -410,16 +428,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.2009229864217507943369751328346774",
+        "probability": "0.1976957257819044650117159330637653",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.7990770135782492056630248671653226",
+        "probability": "0.8023042742180955349882840669362347",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "382",
+    "numforecasts": "406",
     "stars": 4
   },
   {
@@ -430,16 +448,16 @@
     "options": [
       {
         "name": "Bezos",
-        "probability": "0.8852729097685785062210024257054678",
+        "probability": "0.8905974567101949679276675804783593",
         "type": "PROBABILITY"
       },
       {
         "name": "Musk",
-        "probability": "0.1147270902314214937789975742945322",
+        "probability": "0.1094025432898050320723324195216407",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "288",
+    "numforecasts": "293",
     "stars": 4
   }
 ]

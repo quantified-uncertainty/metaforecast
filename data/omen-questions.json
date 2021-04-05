@@ -6,12 +6,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.32447474726652153,
+        "probability": 0.3032935619590304,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.6755252527334784,
+        "probability": 0.6967064380409697,
         "type": "PROBABILITY"
       }
     ],
