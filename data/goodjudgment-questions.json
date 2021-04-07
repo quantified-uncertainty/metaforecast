@@ -1,5 +1,34 @@
 [
   {
+    "title": "Will legislation raising the US federal minimum wage become law before 3 January 2023?</a>",
+    "url": "https://goodjudgment.io/superforecasts/",
+    "platform": "Good Judgment",
+    "description": "After the US Senate voted <a href=\"https://thehill.com/homenews/senate/541826-senate-rejects-sanders-15-minimum-wage-hike\" target=\"_blank\">against</a> a $15.00 an hour federal minimum wage, proponents have shifted to new <a href=\"https://www.wsj.com/articles/democrats-minimum-wage-setback-could-kick-start-talks-with-republicans-11615057218\" target=\"_blank\">strategies</a>. The current federal minimum <a href=\"https://www.law.cornell.edu/uscode/text/29/206\" target=\"_blank\">wage</a> is <a href=\"https://www.dol.gov/agencies/whd/minimum-wage\" target=\"_blank\">$7.25</a> per hour. In the case of phased increases, the question would resolve based on the final hourly rate to be implemented and irrespective of any indexing. The effective date of an increase would be immaterial.",
+    "options": [
+      {
+        "name": "Yes, to less than $10.00",
+        "probability": 0.01,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Yes, to $10.00 or more, but less than $15.00",
+        "probability": 0.48,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Yes, to $15.00 or more",
+        "probability": 0.05,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.46,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 4
+  },
+  {
     "title": "What percentage of global light vehicle sales in 2021 will be battery electric vehicles (BEVs) and plug-in hybrid electric vehicles (PHEVs)?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
@@ -17,7 +46,7 @@
       },
       {
         "name": "More than 5.0% but less than 6.0%",
-        "probability": 0.25,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
@@ -27,60 +56,7 @@
       },
       {
         "name": "More than 7.0%",
-        "probability": 0.21,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 4
-  },
-  {
-    "title": "What will be OPEC's crude oil production for June 2021?</a>",
-    "url": "https://goodjudgment.io/superforecasts/",
-    "platform": "Good Judgment",
-    "description": "It remains to be seen how the COVID-19 pandemic will affect <a href=\"https://www.economist.com/finance-and-economics/2020/04/13/a-historic-opec-deal-to-curb-oil-output-faces-many-obstacles\" target=\"_blank\">OPEC</a> <a href=\"https://foreignpolicy.com/2020/04/23/the-coronavirus-oil-shock-is-just-getting-started/\" target=\"_blank\">production</a> after 2020. The outcome will be determined using monthly data for \"Total OPEC\" reported in the \"OPEC crude oil production based on secondary sources, tb/d table of the \"World Oil Supply\" section of OPEC's <a href=\"https://www.opec.org/opec_web/en/publications/5844.htm\" target=\"_blank\">Monthly Oil Market Report</a>. The April 2020 report shows \"Total OPEC\" produced 28.612 million barrels per day in <a href=\"https://www.opec.org/opec_web/static_files_project/media/downloads/publications/OPEC_MOMR_Apr_2020.pdf\" target=\"_blank\">March 2020</a> (see Table 5.8 on page 45 in the document). The question will be suspended on 30 June 2021 and closed when the June 2021 data are released, scheduled for July 2021.",
-    "options": [
-      {
-        "name": "Less than 21 million barrels per day",
-        "probability": 0,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 21 million and 24 million barrels per day, inclusive",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 24 million but less than 27 million barrels per day",
-        "probability": 0.5,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 27 million and 30 million barrels per day, inclusive",
-        "probability": 0.48,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 30 million barrels per day",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 4
-  },
-  {
-    "title": "Will US federal legislation implementing or authorizing a mandatory \"carbon pricing mechanism\" become law before 1 January 2023?</a>",
-    "url": "https://goodjudgment.io/superforecasts/",
-    "platform": "Good Judgment",
-    "description": "President Biden and Democrats in Congress are exploring <a href=\"https://eelp.law.harvard.edu/2020/11/president-elect-biden-supports-a-carbon-enforcement-mechanism-could-that-mean-a-price-on-carbon/\" target=\"_blank\">policy</a> <a href=\"https://thehill.com/opinion/energy-environment/534985-carbon-pricing-could-be-the-biden-administrations-climate-tool\" target=\"_blank\">options</a> to impose <a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2020/649352/EPRS_BRI%282020%29649352_EN.pdf\" target=\"_blank\">mandatory</a> carbon pricing in the United States. For the purposes of this question, a \"carbon <a href=\"https://carbonpricingdashboard.worldbank.org/what-carbon-pricing\" target=\"_blank\">pricing</a> mechanism\" would be a legal framework that captures the external costs of carbon dioxide (CO2) emissions and ties them to their sources through a price, usually in the form of a price on the CO2 emitted, and could include taxes and/or a cap-and-trade system. Examples of existing mandatory carbon pricing mechanisms include the <a href=\"https://ec.europa.eu/clima/policies/ets_en\" target=\"_blank\">EU</a> Emissions Trading System, the <a href=\"https://ww2.arb.ca.gov/our-work/programs/cap-and-trade-program\" target=\"_blank\">California</a> Cap-and-Trade Program, and the Regional Greenhouse Gas <a href=\"https://www.rggi.org\" target=\"_blank\">Initiative</a>.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.02,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.98,
+        "probability": 0.2,
         "type": "PROBABILITY"
       }
     ],
@@ -90,7 +66,7 @@
     "title": "When will the number of COVID-19 vaccine doses administered reach 1.5 billion worldwide?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "With several COVID-19 vaccines now approved in different jurisdictions to fight the pandemic, the focus has shifted to <a href=\"https://www.france24.com/en/health/20210204-more-people-now-vaccinated-against-covid-19-than-infected-worldwide-data-shows\" target=\"_blank\">vaccination</a>. The outcome will be determined using data as reported by <a href=\"https://ourworldindata.org/grapher/cumulative-covid-vaccinations\" target=\"_blank\">Our   World in Data</a> for World. Click on the \"TABLE\" tab, scroll to the bottom to reach the entry for \"World,\" and see the relevant number in the column titled \"End.\" The date slider must be located all the way to the right to see the latest figure.",
+    "description": "With several COVID-19 vaccines now approved in different jurisdictions to fight the pandemic, the focus has shifted to <a href=\"https://www.france24.com/en/health/20210204-more-people-now-vaccinated-against-covid-19-than-infected-worldwide-data-shows\" target=\"_blank\">vaccination</a>. The outcome will be determined using data as reported by <a href=\"https://ourworldindata.org/grapher/cumulative-covid-vaccinations\" target=\"_blank\">Our World in Data</a> for World. Click on the \"TABLE\" tab, scroll to the bottom to reach the entry for \"World,\" and see the relevant number in the column titled \"End.\" The date slider must be located all the way to the right to see the latest figure.",
     "options": [
       {
         "name": "Before 1 July 2021",
@@ -109,39 +85,6 @@
       },
       {
         "name": "Between 1 November 2021 and 31 December 2021",
-        "probability": 0,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Not before 1 January 2022",
-        "probability": 0,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 4
-  },
-  {
-    "title": "When will enough doses of FDA-approved COVID-19 vaccine(s) to inoculate 200 million people be distributed in the United States?</a>",
-    "url": "https://goodjudgment.io/superforecasts/",
-    "platform": "Good Judgment",
-    "options": [
-      {
-        "name": "Before 1 April 2021",
-        "probability": 0,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 April 2021 and 30 June 2021",
-        "probability": 0.99,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 July 2021 and 30 September 2021",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 October 2021 and 31 December 2021",
         "probability": 0,
         "type": "PROBABILITY"
       },
@@ -166,12 +109,12 @@
       },
       {
         "name": "Between 1 March 2021 and 30 April 2021",
-        "probability": 0.96,
+        "probability": 0.91,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.04,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
@@ -188,85 +131,33 @@
     "stars": 4
   },
   {
-    "title": "When will the U.S. Transportation Security Administration (TSA) next screen 1.4 million or more travelers per day for seven consecutive days?</a>",
+    "title": "When will enough doses of FDA-approved COVID-19 vaccine(s) to inoculate 200 million people be distributed in the United States?</a>",
     "url": "https://goodjudgment.io/superforecasts/",
     "platform": "Good Judgment",
-    "description": "With COVID-19 vaccine approvals, airlines are looking to <a href=\"https://www.bloomberg.com/professional/blog/north-american-post-pandemic-travel-recovery-report/\" target=\"_blank\">recover</a> from the drop in travel caused by the pandemic. The outcome will be determined using the \"TSA checkpoint travel numbers\" reported by the TSA (<a href=\"https://www.tsa.gov/coronavirus/passenger-throughput\" target=\"_blank\">www.tsa.gov/coronavirus/passenger-throughput</a>). The question will resolve when data in the column \"2021 Traveler Throughput\" first shows seven consecutive days of 1.4 million or more travelers.",
+    "description": "Dozens of companies are trying to <a href=\"https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines\" target=\"_blank\">develop</a> a <a href=\"https://www.economist.com/leaders/2020/08/06/the-world-is-spending-nowhere-near-enough-on-a-coronavirus-vaccine\" target=\"_blank\">viable</a> <a href=\"https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html\" target=\"_blank\">vaccine</a> for COVID-19. Information on FDA approval processes and circumstances when those processes can be waived <a href=\"https://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/vaccine-development-101\" target=\"_blank\">can</a> be <a href=\"https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization\" target=\"_blank\">   found</a> <a href=\"https://www.fda.gov/news-events/public-health-focus/expanded-access\" target=\"_blank\">here</a>. \"Compassionate use\" and \"emergency use\" authorizations would count as approval, and any vaccine doses distributed in the United States prior to its approval would also <a href=\"https://www.fda.gov/news-events/public-health-focus/expanded-access\" target=\"_blank\">count</a>. Reporting from credible public health sources, such as the CDC and FDA, will be used to determine the number of doses distributed. Approximately 169.1 million vaccine doses for the <a href=\"https://www.cdc.gov/flu/prevent/vaccinesupply-2018.htm\" target=\"_blank\">2018-2019</a> flu season were distributed in the United States. If an approved COVID-19 vaccine requires the administration of more than one dose, then the threshold would be the total number of doses needed to inoculate 200 million people (e.g., if two doses are required, then 400 million doses would need to be distributed to resolve the question). ",
     "options": [
       {
-        "name": "Before 1 July 2021",
-        "probability": 0.97,
+        "name": "Before 1 April 2021",
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
-        "name": "Between 1 July 2021 and 31 August 2021",
+        "name": "Between 1 April 2021 and 30 June 2021",
+        "probability": 0.99,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Between 1 July 2021 and 30 September 2021",
         "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
-        "name": "Between 1 September 2021 and 31 October 2021",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 1 November 2021 and 31 December 2021",
+        "name": "Between 1 October 2021 and 31 December 2021",
         "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 January 2022",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 4
-  },
-  {
-    "title": "As of 1 July 2021, what will be the United Kingdom's Office for National Statistics (ONS) latest report of the percentage of working adults who \"worked from home exclusively\"?</a>",
-    "url": "https://goodjudgment.io/superforecasts/",
-    "platform": "Good Judgment",
-    "options": [
-      {
-        "name": "10% or less",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 10% but less than 20%",
-        "probability": 0.77,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Between 20% and 30%, inclusive",
-        "probability": 0.21,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "More than 30%",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 4
-  },
-  {
-    "title": "What will happen next with regard to the Tokyo Olympics?</a>",
-    "url": "https://goodjudgment.io/superforecasts/",
-    "platform": "Good Judgment",
-    "description": "The <a href=\"https://www.olympic.org/tokyo-2020\" target=\"_blank\">Games</a> of the XXXII Olympiad were scheduled to begin on 24 July 2020 in <a href=\"https://tokyo2020.org/en/\" target=\"_blank\">Tokyo</a>. Due to the COVID-19 pandemic, they have been <a href=\"https://japantoday.com/category/sports/postponed-tokyo-olympics-hit-1-year-to-go-mark-again\" target=\"_blank\">postponed</a> to 23 July 2021. Public <a href=\"https://english.kyodonews.net/news/2020/07/342812540942-urgent-59-discontent-with-japan-govt-response-to-pandemic-poll.html\" target=\"_blank\">opinion</a> in Japan is divided between holding, postponing, and cancelling the Games.",
-    "options": [
-      {
-        "name": "The Games will begin",
-        "probability": 0.99,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "The Games will be postponed again by more than a day",
-        "probability": 0.01,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "The Games will be cancelled",
         "probability": 0,
         "type": "PROBABILITY"
       }
@@ -301,7 +192,7 @@
     "title": "What will be the world's GDP in 2021 relative to the world's GDP in 2019, according to the IMF?</a>",
     "url": "https://goodjudgment.io/economist/",
     "platform": "Good Judgment",
-    "description": "The International Monetary Fund (<a href=\"https://www.imf.org/en/Publications/WEO/Issues/2020/06/24/WEOUpdateJune2020\" target=\"_blank\">IMF</a>) and <a href=\"https://www.economist.com/finance-and-economics/2020/09/16/is-the-world-economy-recovering\" target=\"_blank\">others</a> are projecting a significant <a href=\"https://www.weforum.org/agenda/2020/09/oecd-global-gdp-pre-pandemic-level-2021-sustainable-resilient/\" target=\"_blank\">contraction</a> in the global economy in the coming years. The outcome will be determined using IMF purchasing power parity GDP data from the first release of the World Economic Outlook Database in 2022, which is expected in April 2022. At the IMF <a href=\"https://www.imf.org/en/Publications/SPROLLS/world-economic-outlook-databases#sort=%40imfdate%20descending\" target=\"_blank\">website</a>, choose the appropriate \"World Economic Outlook Database\"; then choose \"Entire Dataset\"; then download the \"By Country Groups\" file in the \"Tab Delimited Values\" section. On the spreadsheet, refer to the line of data, usually near the top, that has the Subject Descriptor as \"Gross domestic product, current prices\" and Units as \"Purchasing power parity; international dollars.\" Scroll over to the appropriate year. World GDP for 2019 in current prices, purchasing power parity, was $142,005.65 billion according to the <a href=\"https://www.imf.org/external/pubs/ft/weo/2020/01/weodata/WEOApr2020alla.xls\" target=\"_blank\">April 2020</a> report.",
+    "description": "The International Monetary Fund (<a href=\"https://www.imf.org/en/Publications/WEO/Issues/2020/06/24/WEOUpdateJune2020\" target=\"_blank\">IMF</a>) and <a href=\"https://www.economist.com/finance-and-economics/2020/09/16/is-the-world-economy-recovering\" target=\"_blank\">others</a> are projecting a significant <a href=\"https://www.weforum.org/agenda/2020/09/oecd-global-gdp-pre-pandemic-level-2021-sustainable-resilient/\" target=\"_blank\">contraction</a> in the global economy in the coming years. The outcome will be determined using IMF purchasing power parity GDP data from the first release of the World Economic Outlook Database in 2022, which is expected in April 2022. At the IMF <a href=\"https://www.imf.org/en/Publications/SPROLLS/world-economic-outlook-databases#sort=%40imfdate%20descending\" target=\"_blank\">website</a>, choose the appropriate \"World Economic Outlook Database\"; then choose \"Entire Dataset\"; then download the \"By Country Groups\" file in the \"Tab Delimited Values\" section. On the spreadsheet, refer to the line of data, usually near the top, that has the Subject Descriptor as \"Gross domestic product, current prices\" and Units as \"Purchasing power parity; international dollars.\" Scroll over to the appropriate year. World GDP for 2019 in current prices, purchasing power parity, was $142,005.65 billion according to the <a href=\"https://www.imf.org/external/pubs/ft/weo/2020/01/weodata/WEOApr2020alla.xls\" target=\"_blank\">April   2020</a> report.",
     "options": [
       {
         "name": "Lower by more than 8%",
@@ -315,12 +206,12 @@
       },
       {
         "name": "Lower by more than 0% but less than 4% ",
-        "probability": 0.06,
+        "probability": 0.07,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by between 0% and 4%, inclusive",
-        "probability": 0.8,
+        "probability": 0.79,
         "type": "PROBABILITY"
       },
       {
@@ -402,12 +293,12 @@
       },
       {
         "name": "More than 10% but less than 20%",
-        "probability": 0.77,
+        "probability": 0.74,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 30%, inclusive",
-        "probability": 0.21,
+        "probability": 0.24,
         "type": "PROBABILITY"
       },
       {

@@ -82,57 +82,57 @@
     "options": [
       {
         "name": "Xavier Bertrand",
-        "probability": 0.02941176470588235,
+        "probability": 0.038461538461538464,
         "type": "PROBABILITY"
       },
       {
         "name": "Pierre de Villiers",
-        "probability": 0.00980392156862745,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Anne Hidalgo",
-        "probability": 0.02941176470588235,
+        "probability": 0.028846153846153844,
         "type": "PROBABILITY"
       },
       {
         "name": "Yannick Jadot",
-        "probability": 0.00980392156862745,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Marine Le Pen",
-        "probability": 0.12745098039215685,
+        "probability": 0.1346153846153846,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmanuel Macron",
-        "probability": 0.5490196078431372,
+        "probability": 0.548076923076923,
         "type": "PROBABILITY"
       },
       {
         "name": "Jean-Luc Mélenchon",
-        "probability": 0.00980392156862745,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Valérie Pécresse",
-        "probability": 0.0196078431372549,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Piolle",
-        "probability": 0.00980392156862745,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "Another woman",
-        "probability": 0.02941176470588235,
+        "probability": 0.05769230769230769,
         "type": "PROBABILITY"
       },
       {
         "name": "Another man",
-        "probability": 0.1764705882352941,
+        "probability": 0.14423076923076925,
         "type": "PROBABILITY"
       }
     ],
@@ -218,12 +218,12 @@
     "options": [
       {
         "name": "France",
-        "probability": 0.12,
+        "probability": 0.14,
         "type": "PROBABILITY"
       },
       {
         "name": "Japan",
-        "probability": 0.87,
+        "probability": 0.85,
         "type": "PROBABILITY"
       },
       {
@@ -262,27 +262,27 @@
       },
       {
         "name": "Maybe later",
-        "probability": 0.09,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
         "name": "April 2021",
-        "probability": 0.010101010101010102,
+        "probability": 0.019801980198019802,
         "type": "PROBABILITY"
       },
       {
         "name": "May 2021",
-        "probability": 0.0707070707070707,
+        "probability": 0.15841584158415842,
         "type": "PROBABILITY"
       },
       {
         "name": "June 2021",
-        "probability": 0.2727272727272727,
+        "probability": 0.2178217821782178,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe after June 2021",
-        "probability": 0.6464646464646465,
+        "probability": 0.6039603960396039,
         "type": "PROBABILITY"
       }
     ],
@@ -296,27 +296,27 @@
     "options": [
       {
         "name": "In May or earlier",
-        "probability": 0.01,
+        "probability": 0.010204081632653062,
         "type": "PROBABILITY"
       },
       {
         "name": "in June (government goal)",
-        "probability": 0.54,
+        "probability": 0.653061224489796,
         "type": "PROBABILITY"
       },
       {
         "name": "in July",
-        "probability": 0.28,
+        "probability": 0.20408163265306123,
         "type": "PROBABILITY"
       },
       {
         "name": "in August",
-        "probability": 0.09,
+        "probability": 0.06122448979591837,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.08,
+        "probability": 0.07142857142857144,
         "type": "PROBABILITY"
       }
     ],
@@ -552,17 +552,17 @@
       },
       {
         "name": "Q2, 2021",
-        "probability": 0.26262626262626265,
+        "probability": 0.29292929292929293,
         "type": "PROBABILITY"
       },
       {
         "name": "Q3, 2021",
-        "probability": 0.4242424242424243,
+        "probability": 0.4141414141414142,
         "type": "PROBABILITY"
       },
       {
         "name": "Q4, 2021",
-        "probability": 0.18181818181818182,
+        "probability": 0.16161616161616163,
         "type": "PROBABILITY"
       },
       {
@@ -581,17 +581,17 @@
     "options": [
       {
         "name": "Benjamin Netanyahu",
-        "probability": 0.79,
+        "probability": 0.7920792079207921,
         "type": "PROBABILITY"
       },
       {
         "name": "Another Likud politician",
-        "probability": 0.01,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "Another politician not from Likud",
-        "probability": 0.2,
+        "probability": 0.19801980198019803,
         "type": "PROBABILITY"
       }
     ],
@@ -605,17 +605,17 @@
     "options": [
       {
         "name": "Worse than the 2012 record",
-        "probability": 0.23,
+        "probability": 0.2277227722772277,
         "type": "PROBABILITY"
       },
       {
         "name": "Worse than 2020, but not worse than 2012",
-        "probability": 0.3,
+        "probability": 0.297029702970297,
         "type": "PROBABILITY"
       },
       {
         "name": "Not worse than 2020",
-        "probability": 0.47,
+        "probability": 0.4752475247524752,
         "type": "PROBABILITY"
       }
     ],
@@ -673,22 +673,22 @@
       },
       {
         "name": "in Q2, 2021",
-        "probability": 0.4095238095238095,
+        "probability": 0.3092783505154639,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q3, 2021",
-        "probability": 0.17142857142857143,
+        "probability": 0.18556701030927833,
         "type": "PROBABILITY"
       },
       {
         "name": "in Q4, 2021",
-        "probability": 0.18095238095238095,
+        "probability": 0.19587628865979378,
         "type": "PROBABILITY"
       },
       {
         "name": "Perhaps later",
-        "probability": 0.23809523809523805,
+        "probability": 0.3092783505154639,
         "type": "PROBABILITY"
       }
     ],
@@ -702,22 +702,22 @@
     "options": [
       {
         "name": "USA",
-        "probability": 0.01,
+        "probability": 0.00970873786407767,
         "type": "PROBABILITY"
       },
       {
         "name": "France",
-        "probability": 0.7,
+        "probability": 0.6990291262135923,
         "type": "PROBABILITY"
       },
       {
         "name": "Germany",
-        "probability": 0.25,
+        "probability": 0.2621359223300971,
         "type": "PROBABILITY"
       },
       {
         "name": "United Kingdom",
-        "probability": 0.04,
+        "probability": 0.02912621359223301,
         "type": "PROBABILITY"
       }
     ],
@@ -731,22 +731,22 @@
     "options": [
       {
         "name": "USA",
-        "probability": 0.9,
+        "probability": 0.9207920792079207,
         "type": "PROBABILITY"
       },
       {
         "name": "France",
-        "probability": 0.01,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "Germany",
-        "probability": 0.01,
+        "probability": 0.009900990099009901,
         "type": "PROBABILITY"
       },
       {
         "name": "United Kingdom",
-        "probability": 0.08,
+        "probability": 0.0594059405940594,
         "type": "PROBABILITY"
       }
     ],
@@ -817,12 +817,12 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.92,
+        "probability": 0.9313725490196079,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.08,
+        "probability": 0.06862745098039215,
         "type": "PROBABILITY"
       }
     ],

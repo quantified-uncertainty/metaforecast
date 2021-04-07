@@ -89,17 +89,28 @@ let whattodoMessage = "What do you want to do?\n" +
 Choose one option, wisely: #`)
   .join("\n")
   
+let tryCatchTryAgain = async (fun) => {
+  try{
+    console.log("Initial try")
+    await fun()
+  }catch (error) {
+    console.log("Second try")
+    console.log(error)
+    await fun()
+  }
+}
+  
 let executeoption = async (option) => {
   option = Number(option)
   //console.log(functionNames[option])
   if(option < 0){
     console.log("Error, ${option} < 0")
   }else if(option < functions.length){
-    functions[option]()
+    await tryCatchTryAgain(functions[option])
   } else if(option == functions.length){
     for(let fun of functions){
       console.log(fun.name)
-      await fun()
+      await tryCatchTryAgain(fun)
     }
   }
 }

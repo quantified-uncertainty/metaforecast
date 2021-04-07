@@ -1,78 +1,96 @@
 [
   {
-    "title": "Labour",
+    "title": "Sadiq Khan",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5555555555555556,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.4444444444444444,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 2
-  },
-  {
-    "title": "Conservatives",
-    "url": "https://sports.williamhill.com/betting/en-gb/politics",
-    "platform": "WilliamHill",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.47619047619047616,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.5238095238095238,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 2
-  },
-  {
-    "title": "Northern Independence Party / Thelma Walker",
-    "url": "https://sports.williamhill.com/betting/en-gb/politics",
-    "platform": "WilliamHill",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.029411764705882353,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
         "probability": 0.9705882352941176,
         "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.02941176470588236,
+        "type": "PROBABILITY"
       }
     ],
     "stars": 2
   },
   {
-    "title": "Reform UK",
+    "title": "Brian Rose",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.0196078431372549,
+        "probability": 0.047619047619047616,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.9803921568627451,
+        "probability": 0.9523809523809523,
         "type": "PROBABILITY"
       }
     ],
     "stars": 2
   },
   {
-    "title": "SDP",
+    "title": "Shaun Bailey",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.038461538461538464,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.9615384615384616,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Sian Berry",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.004975124378109453,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.9950248756218906,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Luisa Porritt",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.004975124378109453,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.9950248756218906,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Laurence Fox",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
     "options": [
@@ -90,25 +108,7 @@
     "stars": 2
   },
   {
-    "title": "Liberal Democrats",
-    "url": "https://sports.williamhill.com/betting/en-gb/politics",
-    "platform": "WilliamHill",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": 0.00398406374501992,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": 0.9960159362549801,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 2
-  },
-  {
-    "title": "Heritage Party",
+    "title": "Kam Balayev",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
     "options": [
@@ -126,7 +126,7 @@
     "stars": 2
   },
   {
-    "title": "Women's Equality Party",
+    "title": "David Kurten",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
     "options": [
@@ -144,7 +144,7 @@
     "stars": 2
   },
   {
-    "title": "UKIP",
+    "title": "Count Binface",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
     "options": [
@@ -162,7 +162,7 @@
     "stars": 2
   },
   {
-    "title": "North East Party",
+    "title": "Richard Hewison",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
     "options": [
@@ -180,7 +180,7 @@
     "stars": 2
   },
   {
-    "title": "Samantha Lee (Ind)",
+    "title": "Piers Corbyn",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
     "options": [
@@ -198,18 +198,293 @@
     "stars": 2
   },
   {
-    "title": "US Politics - Kamala Harris Specials",
+    "title": "Farah London",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
     "options": [
       {
-        "name": "Kamala Harris to become President of the United States before the end of 2040",
-        "probability": 0.6086956521739131,
+        "name": "Yes",
+        "probability": 0.001996007984031936,
         "type": "PROBABILITY"
       },
       {
-        "name": "Kamala Harris to become a two-term President of the United States before the end of 2040",
-        "probability": 0.391304347826087,
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Peter Gammons",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Nims Obunge",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Max Fosh",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Mandu Reid",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Drillminister",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Valerie Brown",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Niko Omilana",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Steve Kelleher",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Vanessa Hudson",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": 0.001996007984031936,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": 0.998003992015968,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Next Cabinet Member to leave?",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Gavin Williamson",
+        "probability": 0.16408642733713108,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Matt Hancock",
+        "probability": 0.08790344321632022,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Alok Sharma",
+        "probability": 0.08204321366856554,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Priti Patel",
+        "probability": 0.08204321366856554,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Ben Wallace",
+        "probability": 0.06836934472380461,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Robert Buckland",
+        "probability": 0.04733262327032628,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Boris Johnson",
+        "probability": 0.04733262327032628,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Therese Coffey",
+        "probability": 0.03619553544201421,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Robert Jenrick",
+        "probability": 0.03619553544201421,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liz Truss",
+        "probability": 0.03619553544201421,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Brandon Lewis",
+        "probability": 0.03619553544201421,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Alister Jack",
+        "probability": 0.029301147738773407,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Grant Shapps",
+        "probability": 0.029301147738773407,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Amanda Milling",
+        "probability": 0.029301147738773407,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Oliver Dowden",
+        "probability": 0.029301147738773407,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Simon Hart",
+        "probability": 0.029301147738773407,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "George Eustice",
+        "probability": 0.029301147738773407,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Baroness Evans",
+        "probability": 0.029301147738773407,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Rishi Sunak",
+        "probability": 0.02366631163516314,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Dominic Raab",
+        "probability": 0.02366631163516314,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Michael Gove",
+        "probability": 0.02366631163516314,
         "type": "PROBABILITY"
       }
     ],
@@ -533,6 +808,130 @@
       {
         "name": "Piers Morgan",
         "probability": 0.0013387799872970282,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Most Seats in General Election",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Conservative",
+        "probability": 0.5894327152386443,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 0.39000059354135863,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Reform UK",
+        "probability": 0.006134115295766403,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrat",
+        "probability": 0.006134115295766403,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "UKIP",
+        "probability": 0.004608215968461327,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Greens",
+        "probability": 0.0036902446600028953,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "Hartlepool By-Election Winner",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Conservatives",
+        "probability": 0.5513240186053462,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Labour",
+        "probability": 0.3958223723320434,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Northern Independence Party / Thelma Walker",
+        "probability": 0.017462751720531328,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Reform UK",
+        "probability": 0.008817825126208888,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Samantha Lee (Ind)",
+        "probability": 0.008817825126208888,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "SDP",
+        "probability": 0.0035482085169207082,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Greens",
+        "probability": 0.0035482085169207082,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Liberal Democrats",
+        "probability": 0.0035482085169207082,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Heritage Party",
+        "probability": 0.0017776453847247458,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Women's Equality Party",
+        "probability": 0.0017776453847247458,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "UKIP",
+        "probability": 0.0017776453847247458,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "North East Party",
+        "probability": 0.0017776453847247458,
+        "type": "PROBABILITY"
+      }
+    ],
+    "stars": 2
+  },
+  {
+    "title": "US Politics - Kamala Harris Specials",
+    "url": "https://sports.williamhill.com/betting/en-gb/politics",
+    "platform": "WilliamHill",
+    "options": [
+      {
+        "name": "Kamala Harris to become President of the United States before the end of 2040",
+        "probability": 0.6086956521739131,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Kamala Harris to become a two-term President of the United States before the end of 2040",
+        "probability": 0.391304347826087,
         "type": "PROBABILITY"
       }
     ],
@@ -908,119 +1307,6 @@
     "stars": 2
   },
   {
-    "title": "Next London Mayoral Election",
-    "url": "https://sports.williamhill.com/betting/en-gb/politics",
-    "platform": "WilliamHill",
-    "options": [
-      {
-        "name": "Sadiq Khan",
-        "probability": 0.8736088652213292,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Shaun Bailey",
-        "probability": 0.04326443903953249,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Brian Rose",
-        "probability": 0.04326443903953249,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Sian Berry",
-        "probability": 0.004520165272786977,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Luisa Porritt",
-        "probability": 0.004520165272786977,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Laurence Fox",
-        "probability": 0.003619733943546543,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Kam Balayev",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "David Kurten",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Count Binface",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Richard Hewison",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Piers Corbyn",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Farah London",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Peter Gammons",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Nims Obunge",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Max Fosh",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Mandu Reid",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Drillminister",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Valerie Brown",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Niko Omilana",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Steve Kelleher",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Vanessa Hudson",
-        "probability": 0.0018134794806989665,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 2
-  },
-  {
     "title": "Scottish Election 2021 - Most Seats",
     "url": "https://sports.williamhill.com/betting/en-gb/politics",
     "platform": "WilliamHill",
@@ -1053,44 +1339,6 @@
       {
         "name": "Reform UK",
         "probability": 0.0037639065908187884,
-        "type": "PROBABILITY"
-      }
-    ],
-    "stars": 2
-  },
-  {
-    "title": "Most Seats in General Election",
-    "url": "https://sports.williamhill.com/betting/en-gb/politics",
-    "platform": "WilliamHill",
-    "options": [
-      {
-        "name": "Conservative",
-        "probability": 0.5894327152386443,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Labour",
-        "probability": 0.39000059354135863,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Reform UK",
-        "probability": 0.006134115295766403,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Liberal Democrat",
-        "probability": 0.006134115295766403,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "UKIP",
-        "probability": 0.004608215968461327,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Greens",
-        "probability": 0.0036902446600028953,
         "type": "PROBABILITY"
       }
     ],
@@ -1378,72 +1626,72 @@
     "options": [
       {
         "name": "Andrew Yang",
-        "probability": 0.4946254386960333,
+        "probability": 0.5392435227058505,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Adams",
-        "probability": 0.12365635967400833,
+        "probability": 0.1258234886313651,
         "type": "PROBABILITY"
       },
       {
         "name": "Scott Stringer",
-        "probability": 0.09892508773920666,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Raymond McGuire",
-        "probability": 0.06744892345855,
+        "probability": 0.06863099379892643,
         "type": "PROBABILITY"
       },
       {
         "name": "Maya Wiley",
-        "probability": 0.06744892345855,
+        "probability": 0.06863099379892643,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Raymond McGuire",
+        "probability": 0.047183808236761916,
         "type": "PROBABILITY"
       },
       {
         "name": "Kathryn Garcia",
-        "probability": 0.035330388478288094,
+        "probability": 0.03594956818039003,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Donovan",
-        "probability": 0.028536083001694232,
+        "probability": 0.02903618968416118,
         "type": "PROBABILITY"
       },
       {
         "name": "Dianne Morales",
-        "probability": 0.021821710530707354,
+        "probability": 0.02220414505259384,
         "type": "PROBABILITY"
       },
       {
         "name": "Carlos Menchaca",
-        "probability": 0.014547807020471568,
+        "probability": 0.014802763368395895,
         "type": "PROBABILITY"
       },
       {
         "name": "Loree Sutton",
-        "probability": 0.014547807020471568,
+        "probability": 0.014802763368395895,
         "type": "PROBABILITY"
       },
       {
         "name": "Curtis Sliwa",
-        "probability": 0.011073703851403731,
+        "probability": 0.011267775101316277,
         "type": "PROBABILITY"
       },
       {
         "name": "Cleopatra Fitzgerald",
-        "probability": 0.0073459223568717825,
+        "probability": 0.007474662690972185,
         "type": "PROBABILITY"
       },
       {
         "name": "Bill Pepitone",
-        "probability": 0.0073459223568717825,
+        "probability": 0.007474662690972185,
         "type": "PROBABILITY"
       },
       {
         "name": "Abbey Laurel-Smith",
-        "probability": 0.0073459223568717825,
+        "probability": 0.007474662690972185,
         "type": "PROBABILITY"
       }
     ],
@@ -1456,22 +1704,22 @@
     "options": [
       {
         "name": "Labour",
-        "probability": 0.7894110347590826,
+        "probability": 0.8040294964941207,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.16403346176812106,
+        "probability": 0.13915895131629014,
         "type": "PROBABILITY"
       },
       {
         "name": "Plaid Cymru",
-        "probability": 0.04296114474879361,
+        "probability": 0.05320783432681681,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrat",
-        "probability": 0.0035943587240026527,
+        "probability": 0.0036037178627724535,
         "type": "PROBABILITY"
       }
     ],
