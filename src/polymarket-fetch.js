@@ -107,11 +107,16 @@ async function fetch_all() {
         "platform": "PolyMarket",
         "description": obj.description,
         "options": options,
-        "numforecasts": Number(data.tradesQuantity).toFixed(0),
-        "stars": calculateStars("Polymarket", ({ liquidity, option: options[0] }))
-        /*liquidity: liquidity.toFixed(2),
-        tradevolume: tradevolume.toFixed(2),
-        address: obj.address*/
+        "timestamp": new Date().toISOString(),
+        "qualityindicators": {
+          "numforecasts": Number(data.tradesQuantity).toFixed(0),
+          "liquidity": liquidity.toFixed(2),
+          "tradevolume": tradevolume.toFixed(2),
+          "stars": calculateStars("Polymarket", ({ liquidity, option: options[0] }))  
+        }
+        /*
+        address: obj.address
+        */
       }
     }
   }

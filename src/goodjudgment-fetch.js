@@ -56,7 +56,10 @@ export async function goodjudgment() {
         "platform": "Good Judgment",
         "description": description,
         "options": options,
-        "stars": calculateStars("Good Judgment", ({})),
+        "timestamp": new Date().toISOString(),
+        "qualityindicators": {
+          "stars": calculateStars("Good Judgment", ({})),
+        }
       })
       results.push(standardObj)
     }

@@ -138,11 +138,13 @@ export async function hypermind() {
         "title": res.props.title.split("%%fr")[0].replace("%%en:", ""),
         "url": "https://predict.hypermind.com/dash/dash/dash.html?list=" + slug,
         "platform": "Hypermind",
-        "options": options,
         "description": description,
-        "stars": calculateStars("Hypermind", ({})),
+        "options": options,
+        "timestamp": new Date().toISOString(),
+        "qualityindicators": {
+          "stars": calculateStars("Hypermind", ({})),
+        }
       })
-
     })
     results1.push(...objs)
   }
@@ -163,8 +165,9 @@ export async function hypermind() {
       "platform": "Hypermind",
       "description": description,
       "options": [],
-      "Percentage": "none",
-      "stars": 3
+      "qualityindicators": {
+        "stars": calculateStars("Hypermind", ({})),
+      }
     })
   })
 
@@ -184,7 +187,9 @@ export async function hypermind() {
       "platform": "Hypermind",
       "description": description,
       "options": [],
-      "stars": 3
+      "qualityindicators": {
+        "stars": calculateStars("Hypermind", ({})),
+      }
     })
   })
 
@@ -200,7 +205,9 @@ export async function hypermind() {
       "platform": "Hypermind",
       "description": description,
       "options": [],
-      "stars": 3
+      "qualityindicators": {
+        "stars": calculateStars("Hypermind", ({})),
+      }
     })
   })
 

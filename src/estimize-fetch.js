@@ -17,7 +17,12 @@ export function estimize(){
           "platform": "Estimize",
           "description": `A link to Estimize's forecasts for *${companyName}* (sticker symbol ${companyStickerSymbol}). Viewing them requires making a prediction, Wall Street estimates are provided for free`,
           "options": [],
-          "stars": 2//calculateStars("Estimize", ({})),
+          "timestamp": new Date().toISOString(),
+          "qualityindicators": {
+            "numforecasts": numforecasts,
+            "numforecasters": numforecasters,
+            "stars": calculateStars("Estimize", ({})),
+          }
         })
         results.push(standardObj)
       }

@@ -137,9 +137,13 @@ export async function smarkets() {
       "title": name,
       "url": "https://smarkets.com/event/" + market.event_id + market.slug,
       "platform": "Smarkets",
-      "options": options,
       "description": market.description,
-      "stars": calculateStars("Smarkets", ({}))
+      "options": options,
+      "timestamp": new Date().toISOString(),
+      "qualityindicators": {
+        "stars": calculateStars("Smarkets", ({}))
+      }
+      
     }
     //console.log(result)
     results.push(result)

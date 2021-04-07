@@ -75,9 +75,13 @@ export async function predictit() {
       "title": market["name"],
       "url": market.url,
       "platform": "PredictIt",
-      "options": options,
       "description": description,
-      "stars": calculateStars("PredictIt", ({}))
+      "options": options,
+      "timestamp": new Date().toISOString(),
+      "qualityindicators": {
+        "stars": calculateStars("PredictIt", ({}))
+      }
+      
     })
     console.log(obj)
     result.push(obj)

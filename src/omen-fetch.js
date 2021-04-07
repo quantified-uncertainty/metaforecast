@@ -69,9 +69,12 @@ async function fetch_all() {
         "title": data.question.title,
         "url": "https://omen.eth.link/#/" + data.id,
         "platform": "Omen",
-        "options": options,
         "description": "",
-        "stars": calculateStars("Omen", ({}))
+        "options": options,
+        "timestamp": new Date().toISOString(),
+        "qualityindicators": {
+          "stars": calculateStars("Omen", ({}))
+        }
       }
       console.log(obj)
       results.push(obj)

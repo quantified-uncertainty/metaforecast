@@ -77,8 +77,11 @@ export async function foretold(){
           "platform": "Foretold",
           "description": "",
           "options": options,
-          "numforecasts": question.measurementCount / 2,
-          "stars": calculateStars("Foretold", ({  }))
+          "timestamp": new Date().toISOString(),
+          "qualityindicators": {
+            "numforecasts": question.measurementCount / 2,
+            "stars": calculateStars("Foretold", ({  }))
+            }
           /*liquidity: liquidity.toFixed(2),
           tradevolume: tradevolume.toFixed(2),
           address: obj.address*/

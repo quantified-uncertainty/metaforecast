@@ -56,7 +56,6 @@ let processResults = async (json) => {
         "name":name,
         "probability": probability,
         "type": "PROBABILITY"
-
       })
       return option
     })
@@ -76,8 +75,12 @@ let processResults = async (json) => {
       "title": title,
       "url": "https://sports.ladbrokes.com/sport/politics/outrights",
       "platform": "Ladbrokes",
+      "description": "",
       "options": options,
-      "stars": calculateStars("Ladbrokes", ({}))
+      "timestamp": new Date().toISOString(),
+      "qualityindicators": {
+        "stars": calculateStars("Ladbrokes", ({}))
+      }
     })
     results.push(obj)
   }
@@ -109,12 +112,14 @@ let processResults = async (json) => {
             "type": "PROBABILITY"
           }
         ],
-        "stars": calculateStars("Ladbrokes", ({}))
+        "qualityindicators": {
+          "stars": calculateStars("Ladbrokes", ({}))
+        }
       })
       results.push(obj)
     })
   }
-  return results
+  return results 
 }
 
 /* Body */

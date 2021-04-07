@@ -54,19 +54,28 @@ let coverttocsvandmerge = async () => {
   let mergedprocessed = merged.map(element => ({...element, optionsstringforsearch: element.options.map(option => option.name).join(", ")}))
   writefile(JSON.stringify(mergedprocessed, null, 2), "metaforecasts", "", ".json")
   
+  /* Transform into a csv 
   let preparedforcsv = []
   mergedprocessed.forEach(element => {
     preparedforcsv.push({
         "title": element.title,
-        "description": element.description,
+        "description": element.description?element.description.replaceAll("\n", " "):"",
         "optionsstringforsearch": element.optionsstringforsearch
     })
-  } )
+  } ) 
   //console.log(preparedforcsv)
   
   let mergedcsv = csvfromjson(preparedforcsv)
   writefile(mergedcsv, "metaforecasts", "")
+  */
+
   console.log("Done")
+
+}
+
+let addtohistory = () => {
+  let currentJSON = fs.readFileSync(locationData + "metaforecasts.json")
+  let historyJSON = fs.readFileSync(locationData + "metaforecasts_history_bootstrap.json")
 
 }
 

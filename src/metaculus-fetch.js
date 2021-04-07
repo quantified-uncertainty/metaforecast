@@ -104,16 +104,18 @@ export async function metaculus() {
           "title": result.title,
           "url": "https://www.metaculus.com" + result.page_url,
           "platform": "Metaculus",
-          "options": options,
           "description": description,
-          "numforecasts": result.number_of_predictions,
-          "stars": calculateStars("Metaculus", ({ numforecasts: result.number_of_predictions })),
-          "resolution_data": {
-	    	"publish_time": result.publish_time,
-          	"resolution": result.resolution,
-          	"close_time": result.close_time,
-	  	"resolve_time": result.resolve_time
-          	
+          "options": options,
+          "timestamp": new Date().toISOString(),
+          "qualityindicators": {
+            "numforecasts": result.number_of_predictions,
+            "resolution_data": {
+              "publish_time": result.publish_time,
+              "resolution": result.resolution,
+              "close_time": result.close_time,
+              "resolve_time": result.resolve_time                  
+            },
+            "stars": calculateStars("Metaculus", ({ numforecasts: result.number_of_predictions }))
           }
           //"status": result.status,
           //"publish_time": result.publish_time,

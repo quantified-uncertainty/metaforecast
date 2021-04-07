@@ -27,11 +27,14 @@ for(let datum of data){
         "probability": 1-Math.round(probability*100)/100,
         "type": "PROBABILITY"
       }
-    ],
-    "stars": datum["Stars"]
+    ],            
+    "timestamp": "2021-02-23T15∶21∶37.005Z",//new Date().toISOString(),
+    "qualityindicators": {
+      "stars": datum["Stars"]
+    }
   })
   results.push(result)
 }
 
 let string = JSON.stringify(results,null,  2)
-fs.writeFileSync("../data/givewellopenphil-questions.json", string)
+fs.writeFileSync("../data/givewellopenphil-questions-new.json", string)

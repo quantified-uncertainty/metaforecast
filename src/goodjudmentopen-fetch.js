@@ -106,14 +106,16 @@ async function fetchStats(questionUrl, cookie) {
   // Calculate the stars
   let minProbability = Math.min(...options.map(option => option.probability))
   let maxProbability = Math.max(...options.map(option => option.probability))
-  let stars = calculateStars("Good Judgment Open", ({ numforecasts, minProbability, maxProbability }))
-
+  
   let result = {
     "description": description,
     "options": options,
-    "numforecasts": numforecasts,
-    "numforecasters": numforecasters,
-    "stars": stars,
+    "timestamp": new Date().toISOString(),
+    "qualityindicators": {
+      "numforecasts": numforecasts,
+      "numforecasters": numforecasters,
+      "stars": calculateStars("Good Judgment Open", ({ numforecasts, minProbability, maxProbability }))
+    }
   }
   return result
 }

@@ -17,7 +17,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Overall risk of extinction prior to 2100",
@@ -37,7 +40,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Existential risk in the 21st century",
@@ -57,7 +63,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Extinction risk in the next century",
@@ -77,14 +86,17 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Risk of extinction over the next five centuries",
     "url": "https://docs.google.com/spreadsheets/d/1W10B6NJjicD8O0STPiT3tNV3oFnT8YsfjmtYR8RO_RI/edit#gid=0",
     "platform": "X-risk estimates",
     "author": "John Leslie (~1996)",
-    "description": "Actual estimate: At or above 30%\n\nThe probability of the human race avoiding extinction for the next five centuries is encouragingly high, perhaps as high as 70 percent”",
+    "description": "Actual estimate: At or above 30%\n\nThe probability of the human race avoiding extinction for the next five centuries is encouragingly high, perhaps as high as 70 percent",
     "options": [
       {
         "name": "Yes",
@@ -97,7 +109,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Our present civilization on earth will survive to the end of the present century",
@@ -117,7 +132,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "There be zero living humans on planet earth on January 1, 2100",
@@ -137,7 +155,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Existential disaster will do us in",
@@ -157,7 +178,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Humanity will cease to exist before 5,100 years or thrive beyond 7.8 million years",
@@ -177,7 +201,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Annual probability as of 2009 of extinction",
@@ -197,7 +224,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Global catastrophic risk per year.",
@@ -217,7 +247,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Humanity avoids every existential catastrophe and eventually fulfils its potential: achieving something close to the best future open to us",
@@ -237,14 +270,17 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Sentient life will survive for at least billions of years",
     "url": "https://forum.effectivealtruism.org/posts/MSYhEatxkEfg46j3D/the-case-of-the-missing-cause-prioritisation-research?commentId=iWkoScDxocaAJE4Jg",
     "platform": "X-risk estimates",
     "author": "Ozzie Gooen (~2020)",
-    "description": "Actual estimate: >20%\n\nI think it's fairly likely(>20%) that sentient life will survive for at least billions of years; and that there may be a fair amount of lock-in, so changing the trajectory of things could be great.",
+    "description": "Actual estimate: >20%\n\nI think it's fairly likely (>20%) that sentient life will survive for at least billions of years; and that there may be a fair amount of lock-in, so changing the trajectory of things could be great.",
     "options": [
       {
         "name": "Yes",
@@ -257,7 +293,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Existential catastrophe by 2120 as a result of unaligned AI",
@@ -277,7 +316,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Human extinction by 2100 as a result of superintelligent AI",
@@ -297,7 +339,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Extremely bad (e.g. extinction) long-run impact on humanity from “high-level machine intelligence",
@@ -317,7 +362,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "A state where civilization collapses and does not recover, or a situation where all human life ends, due to AI",
@@ -337,7 +385,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "AI causing an existential catastrophe in the next century",
@@ -357,7 +408,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Chance that AI, through adversarial optimization against humans only, will cause existential catastrophe",
@@ -377,7 +431,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "AI-induced existential catastrophe",
@@ -397,7 +454,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Existential risk from unaligned AI over the coming 100 years",
@@ -417,7 +477,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Existential risk from AI",
@@ -437,7 +500,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Chance of humanity not surviving AI",
@@ -457,7 +523,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Existential catastrophe happening this century (maybe just from AI?)",
@@ -477,7 +546,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Existential catastrophe from engineered pandemics by 2120",
@@ -497,7 +569,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Human extinction by 2100 as a result of the single biggest natural pandemic",
@@ -517,7 +592,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Existential catastrophe from naturally arising pandemics by 2120",
@@ -537,7 +615,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Human extinction by 2100 as a result of single biggest engineered pandemic",
@@ -557,7 +638,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Annual probability of an existential catastrophe arising from a global pandemic",
@@ -577,7 +661,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Annual probability of an existential catastrophe arising from biowarfare or bioterrorism",
@@ -597,7 +684,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Civilization collapses and does not recover, or a situation where all human life ends due to a global pandemic",
@@ -617,7 +707,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Civilization collapses and does not recover, or a situation where all human life ends, due to synthetic biology",
@@ -637,7 +730,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Extinction risk from engineered pandemics over the coming 100 years",
@@ -657,7 +753,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Human extinction by 2100 as a result of molecular nanotech weapons",
@@ -677,7 +776,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Human extinction by 2100 as a result of the single biggest nanotech accident",
@@ -697,7 +799,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Civilization collapses and does not recover, or a situation where all human life ends due to nanotechnology",
@@ -717,7 +822,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Existential catastrophe from other anthropogenic risks (which includes but is not limited to nanotechnology) by 2120",
@@ -737,7 +845,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Total existential risk by 2120 if we just carry on as we are, with business as usual (which Ord doesn't expect us to do)",
@@ -757,7 +868,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "The probability that the long-run overall impact on humanity of human level machine intelligence will be Extremely bad (existential catastrophe), assuming Human Level Machine Intelligence will at some point exist.",
@@ -777,7 +891,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Chance that AI, through “adversarial optimization against humans only”, will cause existential catastrophe, conditional on there not being “additional intervention by longtermists” (or perhaps “no intervention from longtermists”)",
@@ -797,7 +914,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Chance that AI, through “adversarial optimization against humans only”, will cause existential catastrophe, conditional on “discontinuous takeoff”",
@@ -817,7 +937,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Chance that we don't manage to survive that transition [to there being something that's more intelligent than humanity], being in charge of our future.",
@@ -837,7 +960,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Chance that a full-scale nuclear war in the next century would be the end of human potential",
@@ -857,7 +983,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Global human population of zero resulting from the 150 Tg of black carbon scenario in our 2007 paper",
@@ -877,7 +1006,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Full-scale collapse of society, perhaps due to very, very widespread famine, if there's 2 degrees of warming",
@@ -897,7 +1029,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Full-scale collapse of society, perhaps due to very, very widespread famine, if there's 3 degrees of warming",
@@ -917,7 +1052,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Full-scale collapse of society, perhaps due to very, very widespread famine, if there's 4 degrees of warming",
@@ -937,7 +1075,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Full-scale collapse of society, perhaps due to very, very widespread famine, if there's 5 degrees of warming",
@@ -957,7 +1098,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Full-scale collapse of society, perhaps due to very, very widespread famine, if there's 6 degrees of warming",
@@ -977,7 +1121,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "A world totalitarian government will emerge during the next one thousand years and last for a thousand years or more, conditional on genetic screening for personality traits becom[ing] cheap and accurate, but the principle of reproductive freedom prevail[ing]",
@@ -997,7 +1144,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "A world totalitarian government will emerge during the next one thousand years and last for a thousand years or more, conditional on genetic screening for personality traits becom[ing] cheap and accurate and extensive government regulation",
@@ -1017,7 +1167,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "A world totalitarian government will emerge during the next one thousand years and last for a thousand years or more, conditional on the number of independent countries on earth [not decreasing] during the next thousand years",
@@ -1037,7 +1190,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "A world totalitarian government will emerge during the next one thousand years and last for a thousand years or more, conditional on the number of independent countries on earth [falling to 1] during the next thousand years",
@@ -1057,7 +1213,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 million dead as a result of superintelligent AI before 2100",
@@ -1077,7 +1236,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 billion dead as a result of superintelligent AI before 2100",
@@ -1097,7 +1259,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "AI safety is as hard as a (caricature of) MIRI suggests",
@@ -1117,7 +1282,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "AI safety basically [doesn't need] to be solved, we’ll just solve it by default unless we’re completely completely careless",
@@ -1137,7 +1305,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "The first thing we try just works and we don’t even need to solve any sort of alignment problem",
@@ -1157,7 +1328,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "We have good competitive alignment techniques by the time that it’s important",
@@ -1177,7 +1351,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "We create something that’s more intelligent than humanity in the next 100 years",
@@ -1197,7 +1374,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Soft AGI takeoff",
@@ -1217,7 +1397,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "By at least 10 years before human-level AGI is built, debate about AGI risk will be as mainstream as global warming is in 2015",
@@ -1237,7 +1420,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "A government will build the first human-level AGI, assuming humans build one at all",
@@ -1257,7 +1443,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "A government will build the first human-level AGI, assuming humans build one at all",
@@ -1277,7 +1466,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Human-controlled AGI in expectation would result in less suffering than uncontrolled",
@@ -1297,7 +1489,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "A design very close to CEV will be implemented in humanity's AGI, conditional on AGI being built (excluding other value-learning approaches and other machine-ethics proposals)",
@@ -1317,7 +1512,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "A design very close to CEV will be implemented in humanity's AGI, conditional on AGI being built (excluding other value-learning approaches and other machine-ethics proposals)",
@@ -1337,7 +1535,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 million dead as a result of the single biggest engineered pandemic before 2100",
@@ -1357,7 +1558,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 billion dead as a result of the single biggest engineered pandemic before 2100",
@@ -1377,7 +1581,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 million dead as a result of the single biggest natural pandemic before 2100",
@@ -1397,7 +1604,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 billion dead as a result of the single biggest natural pandemic before 2100",
@@ -1417,7 +1627,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 million dead as a result of molecular nanotech weapons before 2100",
@@ -1437,7 +1650,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 billion dead as a result of molecular nanotech weapons before 2100",
@@ -1457,7 +1673,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 million dead as a result of the single biggest nanotech accident before 2100",
@@ -1477,7 +1696,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 billion dead as a result of the single biggest nanotech accident before 2100",
@@ -1497,7 +1719,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 million dead as a result of all nuclear wars before 2100",
@@ -1517,7 +1742,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 billion dead as a result of all nuclear wars before 2100",
@@ -1537,7 +1765,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 million dead as a result of all acts of nuclear terrorism before 2100",
@@ -1557,7 +1788,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 billion dead as a result of all acts of nuclear terrorism before 2100",
@@ -1577,7 +1811,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "chance of a full-scale nuclear war in the next century",
@@ -1597,7 +1834,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Per year chance of nuclear war",
@@ -1617,7 +1857,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Per year chance of nuclear war between the US and Russia",
@@ -1637,7 +1880,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Climate change will cause more suffering than it prevents",
@@ -1657,7 +1903,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 million dead as a result of all wars (including civil wars) before 2100",
@@ -1677,7 +1926,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "At least 1 billion dead as a result of all wars (including civil wars) before 2100",
@@ -1697,7 +1949,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Human-inspired colonization of space will cause more suffering than it prevents if it happens",
@@ -1717,7 +1972,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Earth will eventually be controlled by a singleton of some sort",
@@ -1737,7 +1995,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Earth will eventually be controlled by a singleton of some sort",
@@ -1757,7 +2018,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Earth-originating intelligence will colonize the entire galaxy (ignoring anthropic arguments)",
@@ -1777,7 +2041,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   },
   {
     "title": "Earth-originating intelligence will colonize the entire galaxy (ignoring anthropic arguments)",
@@ -1797,6 +2064,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": "2021-04-07T18:39:34.560Z",
+    "qualityindicators": {
+      "stars": 2
+    }
   }
 ]

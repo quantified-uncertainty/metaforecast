@@ -45,7 +45,10 @@ async function main() {
       "url": url,
       "platform": "GiveWell",
       "description": description,
-      "stars": calculateStars("GiveWell/OpenPhilanthropy", ({})),
+      "timestamp": new Date().toISOString(),
+      "qualityindicators": {
+        "stars": calculateStars("GiveWell/OpenPhilanthropy", ({})),
+      }
     } // Note: This requires some processing afterwards
     console.log(result)
     results.push(result)

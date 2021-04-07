@@ -16,7 +16,9 @@
       }
     ],
     "description": "",
-    "stars": 1
+    "qualityindicators": {
+      "stars": 1
+    }
   },
   {
     "title": "Will Joe Biden be the US President at the end of 2021?",
@@ -35,6 +37,8 @@
       }
     ],
     "description": "",
-    "stars": 1
+    "qualityindicators": {
+      "stars": 1
+    }
   }
 ]

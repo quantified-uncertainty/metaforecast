@@ -84,8 +84,11 @@ async function processData(data) {
                   "type": "PROBABILITY"
                 }
               ],
-        "numforecasts": predictionData.numForecasts,
-        "stars": calculateStars("FantasySCOTUS", ({}))
+        "timestamp": new Date().toISOString(),
+        "qualityindicators": {
+          "numforecasts": predictionData.numForecasts,
+          "stars": calculateStars("FantasySCOTUS", ({}))
+        }
       })
       console.log(eventObject)
       results.push(eventObject)

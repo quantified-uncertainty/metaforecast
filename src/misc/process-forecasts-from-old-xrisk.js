@@ -33,10 +33,13 @@ ${datum["description"]}` : datum["description"]
         "type": "PROBABILITY"
       }
     ],
-    "stars": 2
+    "timestamp": new Date().toISOString(),
+    "qualityindicators": {
+      "stars": 2//datum["stars"]
+    }
   })
   results.push(result)
 }
 
 let string = JSON.stringify(results,null,  2)
-fs.writeFileSync("/home/nuno/Documents/core/software/fresh/js/metaforecasts/metaforecasts-current/data/xrisk-questions.json", string)
+fs.writeFileSync("/home/nuno/Documents/core/software/fresh/js/metaforecasts/metaforecasts-current/data/xrisk-questions-new.json", string)

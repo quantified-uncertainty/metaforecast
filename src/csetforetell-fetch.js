@@ -105,9 +105,12 @@ async function fetchStats(questionUrl, cookie){
   let result = {
     "description": description, 
     "options": options,
-    "numforecasts": numforecasts,
-    "numforecasters": numforecasters,
-    "stars": calculateStars("CSET-foretell", {numforecasts})
+    "timestamp": new Date().toISOString(),
+    "qualityindicators": {
+      "numforecasts": numforecasts,
+      "numforecasters": numforecasters,
+      "stars": calculateStars("CSET-foretell", {numforecasts})
+    }
   }
   
   return result

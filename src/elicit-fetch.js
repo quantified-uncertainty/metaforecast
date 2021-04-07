@@ -70,9 +70,12 @@ function processArray(arrayQuestions) {
             "type": "PROBABILITY"
           }
         ],
-        "numforecasts": numforecasts,
-        "numforecasters": numforecasters,
-        "stars": calculateStars("Elicit", ({}))
+        "timestamp": new Date().toISOString(),
+        "qualityindicators": {
+          "numforecasts": numforecasts,
+          "numforecasters": numforecasters,
+          "stars": calculateStars("Elicit", ({}))
+        }
       })
       results.push(standardObj)
     }

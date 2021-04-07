@@ -46,6 +46,8 @@ let processResults = (html) => {
       "title": title,
       "url": "https://sports.williamhill.com/betting/en-gb/politics",
       "platform": "WilliamHill",
+      "description": "",
+      "timestamp": new Date().toISOString(),
       "options": [
         {
           "name": "Yes",
@@ -101,7 +103,9 @@ let processResults = (html) => {
       "url": "https://sports.williamhill.com/betting/en-gb/politics",
       "platform": "WilliamHill",
       "options": options,
-      "stars": calculateStars("WilliamHill", ({}))
+      "qualityindicators": {
+        "stars": calculateStars("WilliamHill", ({}))
+      }
     })
     results.push(obj)
   }
