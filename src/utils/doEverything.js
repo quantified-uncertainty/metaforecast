@@ -35,8 +35,25 @@ export async function tryCatchTryAgain (fun) {
 export async function doEverything(){
     let functions = [csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything]
 
+    console.log("")
+    console.log("")
+    console.log("")
+    console.log("")
+    console.log("================================")
+    console.log("STARTING UP")
+    console.log("================================")
+    console.log("")
+    console.log("")
+    console.log("")
+    console.log("")
+
     for(let fun of functions){
+        console.log("")
+        console.log("")
+        console.log("****************************")
         console.log(fun.name)
+        console.log("****************************")
         await tryCatchTryAgain(fun)
+        console.log("****************************")
     }
 }

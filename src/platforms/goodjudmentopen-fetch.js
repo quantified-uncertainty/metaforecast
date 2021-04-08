@@ -8,6 +8,7 @@ import { upsert } from "../utils/mongo-wrapper.js"
 
 /* Definitions */
 let htmlEndPoint = 'https://www.gjopen.com/questions?page='
+let annoyingPromptUrls = ["https://www.gjopen.com/questions/1933-what-forecasting-questions-should-we-ask-what-questions-would-you-like-to-forecast-on-gjopen", "https://www.gjopen.com/questions/1779-are-there-any-forecasting-tips-tricks-and-experiences-you-would-like-to-share-and-or-discuss-with-your-fellow-forecasters"]
 
 /* Support functions */
 
@@ -27,9 +28,7 @@ function getcookie() {
     process.exit()
   }
   */
-  
 }
-
 
 async function fetchPage(page, cookie) {
   let response = await axios({
@@ -147,34 +146,38 @@ export async function goodjudgmentopen() {
     // console.log(`Page #${i}`)
     let htmlLines = response.split("\n")
     let h5elements = htmlLines.filter(str => str.includes("<h5><a href="))
+    let j = 0
     for (let h5element of h5elements) {
       let h5elementSplit = h5element.split('"><span>')
       let url = h5elementSplit[0].split('<a href="')[1]
-      let title = h5elementSplit[1].replace('</span></a></h5>', "")
-      await sleep(1000 + Math.random() * 1000) // don't be as noticeable
-      try {
-        let moreinfo = await fetchStats(url, cookie)
-        if (moreinfo.isbinary) {
-          if (!moreinfo.crowdpercentage) { // then request again.
-            moreinfo = await fetchStats(url, cookie)
+      if(!annoyingPromptUrls.includes(url)){
+        let title = h5elementSplit[1].replace('</span></a></h5>', "")
+        await sleep(1000 + Math.random() * 1000) // don't be as noticeable
+        try {
+          let moreinfo = await fetchStats(url, cookie)
+          if (moreinfo.isbinary) {
+            if (!moreinfo.crowdpercentage) { // then request again.
+              moreinfo = await fetchStats(url, cookie)
+            }
           }
+          let question = ({
+            "title": title,
+            "url": url,
+            "platform": "Good Judgment Open",
+            ...moreinfo
+          })
+          if(j % 10 == 0){
+            console.log(`Page #${i}`)
+            console.log(question)
+          }
+          // console.log(question)
+          results.push(question)
+        } catch (error) {
+          console.log(error)
+          console.log(`We encountered some error when fetching the URL: ${url}, so it won't appear on the final json`)
         }
-        let question = ({
-          "title": title,
-          "url": url,
-          "platform": "Good Judgment Open",
-          ...moreinfo
-        })
-        if(i % 10 == 0){
-          console.log(`Page #${i}`)
-          console.log(question)
-        }
-        // console.log(question)
-        results.push(question)
-      } catch (error) {
-        console.log(error)
-        console.log(`We encountered some error when fetching the URL: ${url}, so it won't appear on the final json`)
       }
+      j = j+1
     }
     i = i + 1
     // console.log("Sleeping for 5secs so as to not be as noticeable to the gjopen servers")

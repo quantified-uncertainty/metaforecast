@@ -84,7 +84,7 @@ export async function predictit() {
       }
       
     })
-    console.log(obj)
+    // console.log(obj)
     results.push(obj)
   }
   //console.log(results)

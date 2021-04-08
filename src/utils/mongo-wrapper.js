@@ -30,7 +30,7 @@ export async function upsert (contents, documentName, collectionName="metaforeca
         const myDocument = await collection.findOne(filter);
     
         // Print to the console
-        console.log(myDocument.contentsArray.slice(0,10));
+        console.log(myDocument.contentsArray.slice(0,3));
       } catch (err) {
         console.log(err.stack);
       }
