@@ -1,1 +1,1 @@
-web: node src/index.js
+worker: node src/utils/doEverythingForScheduler.js
