@@ -12,6 +12,8 @@ let htmlEndPoint = 'https://www.gjopen.com/questions?page='
 /* Support functions */
 
 function getcookie() {
+  return process.env.GOODJUDGMENTOPENCOOKIE
+  /*
   try {
     let rawcookie = fs.readFileSync("./src/input/privatekeys.json")
     let cookie = JSON.parse(rawcookie).goodjudmentopencookie
@@ -24,6 +26,7 @@ function getcookie() {
     console.log("Error: No cookies for Good Judgment Open on src/privatekeys.json! See the README.md")
     process.exit()
   }
+  */
 }
 
 

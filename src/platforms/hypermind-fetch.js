@@ -14,6 +14,8 @@ function sleep(ms) {
 }
 
 function getcookie() {
+  return process.env.HYPERMINDCOOKIE
+  /*
   try {
     let rawcookie = fs.readFileSync("./src/input/privatekeys.json")
     let cookie = JSON.parse(rawcookie).hypermindcookie
@@ -25,6 +27,7 @@ function getcookie() {
     console.log("Error: No cookies for Hypermind on src/privatekeys.json! See the README.md")
     process.exit()
   }
+  */
 }
 
 async function fetchHypermindData1(slug) {

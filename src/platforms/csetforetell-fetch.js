@@ -12,6 +12,8 @@ let htmlEndPoint = 'https://www.cset-foretell.com/questions?page='
 /* Support functions */
 
 function getcookie(){
+  return process.env.CSETFORETELL_COOKIE
+  /*
   try {
     let rawcookie = fs.readFileSync("./src/input/privatekeys.json")
     let cookie = JSON.parse(rawcookie).csetforetellcookie
@@ -23,7 +25,7 @@ function getcookie(){
   } catch(error) {
     console.log("Error: No cookies for CSET-foretell on src/privatekeys.json! See the README.md")
     process.exit()
-  }
+  }*/
 }
 
 
