@@ -8,6 +8,7 @@ import {upsert} from "../utils/mongo-wrapper.js"
 
 /* Definitions */
 let htmlEndPoint = 'https://www.cset-foretell.com/questions?page='
+String.prototype.replaceAll = function replaceAll(search, replace) { return this.split(search).join(replace); }
 
 /* Support functions */
 

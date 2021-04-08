@@ -7,6 +7,7 @@ import { upsert } from "../utils/mongo-wrapper.js"
 
 /* Definitions */
 let hypermindEnpoint1 = 'https://predict.hypermind.com/dash/jsx.json'
+String.prototype.replaceAll = function replaceAll(search, replace) { return this.split(search).join(replace); }
 
 /* Support Functions */
 function sleep(ms) {

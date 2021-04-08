@@ -8,6 +8,7 @@ import { upsert } from "../utils/mongo-wrapper.js"
 
 /* Definitions */
 let endpoints = ["https://goodjudgment.io/superforecasts/", "https://goodjudgment.io/economist/"]
+String.prototype.replaceAll = function replaceAll(search, replace) { return this.split(search).join(replace); }
 
 /* Support functions */
 
