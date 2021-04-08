@@ -91,6 +91,7 @@ async function fetchStats(questionUrl, cookie){
   let descriptionprocessed1 = descriptionraw.split(`">`)[0]
   let descriptionprocessed2 = descriptionprocessed1.replace(">", "")
   let descriptionprocessed3 = descriptionprocessed2.replace("To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.", ``)
+  console.log(descriptionprocessed3)
   let descriptionprocessed4=descriptionprocessed3.replaceAll("\r\n\r\n", "\n")
   let descriptionprocessed5=descriptionprocessed4.replaceAll("\n\n", "\n")  
   let descriptionprocessed6=descriptionprocessed5.replaceAll("&quot;", `"`)
