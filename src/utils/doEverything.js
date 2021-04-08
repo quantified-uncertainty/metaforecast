@@ -13,8 +13,8 @@ import {predictit} from "../platforms/predictit-fetch.js"
 import {omen} from "../platforms/omen-fetch.js"
 import {smarkets} from "../platforms/smarkets-fetch.js"
 import {williamhill} from "../platforms/williamhill-fetch.js"
-import {rebuildNetlifySiteWithNewData} from "./rebuildNetliftySiteWithNewData.js"
 import {mergeEverything} from "./mergeEverything.js"
+import {rebuildNetlifySiteWithNewData} from "./rebuildNetliftySiteWithNewData.js"
 
 /* Do everything */
 

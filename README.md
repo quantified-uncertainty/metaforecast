@@ -14,8 +14,17 @@ I also created a search engine using Elicit's IDE, which uses GPT-3 to deliver v
 
 ``git clone https://github.com/QURIresearch/metaforecasts``
 
-### 2. Enter your own cookies
-Private session cookies are necessary to query CSET-foretell, Good Judgment Open and Hypermind. You can get these cookies by creating an account in said platforms and then making and inspecting a request (e.g., by making a prediction, or browsing questions). After doing this, you should create a `src/privatekeys.json`, in the same format as `src/privatekeys_example.json`
+### 2. Enter your own process.env variables
+The following environment variables are currently needed to run the `master` branch:
+- `MONGODB_URL`, a string in the format `"mongodb+srv://<username>:<password>@<mongodburl>/?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true"`
+- `REBUIDNETLIFYHOOKURL`, a string in the format `"https://api.netlify.com/build_hooks/someprivatestring"`
+- `CSETFORETELL_COOKIE`
+- `GOODJUDGMENTOPENCOOKIE`
+- `HYPERMINDCOOKIE`
+
+The cookie formats can be found in `src/input/privatekeys_example.json`; these session cookies are necessary to query CSET-foretell, Good Judgment Open and Hypermind. You can get these cookies by creating an account in said platforms and then making and inspecting a request (e.g., by making a prediction, or browsing questions). After doing this, you should create the environment variables.
+
+Alternatively, for fewer complications, have a look at the `commandlineinterface` branch, which instead of requiring environment variables only requires a `src/privatekeys.json`, in the same format as its `src/privatekeys_example.json`. Its disadvantages are that the command line tool in the  `commandlineinterface` is more difficult to integrate with other services. 
 
 ### 3. Actually run
 
