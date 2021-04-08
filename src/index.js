@@ -18,20 +18,19 @@ import {smarkets} from "./platforms/smarkets-fetch.js"
 import {williamhill} from "./platforms/williamhill-fetch.js"
 
 import {mergeEverything} from "./utils/mergeEverything.js"
+import {rebuildNetlifySiteWithNewData} from "./utils/rebuildNetliftySiteWithNewData.js"
 import {doEverything, tryCatchTryAgain} from "./utils/doEverything.js"
 
-/* Definitions */
-
-
 /* Support functions */
-let functions = [csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything, doEverything]
+let functions = [csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything, rebuildNetlifySiteWithNewData, doEverything]
 let functionNames =  functions.map(fun => fun.name)
 
 let whattodoMessage = functionNames
     .slice(0,functionNames.length-2)
     .map((functionName,i) => `[${i}]: Download predictions from ${functionName}`)
     .join('\n') +
-  `\n[${functionNames.length-2}]: Merge jsons them into one big json` + 
+  `\n[${functionNames.length-3}]: Merge jsons them into one big json (and push it to mongodb database)` + 
+  `\n[${functionNames.length-2}]: Rebuild netlify site with new data` + 
   // `\n[${functionNames.length-1}]: Add to history` + 
   `\n[${functionNames.length-1}]: All of the above` + 
   `\nChoose one option, wisely: #`

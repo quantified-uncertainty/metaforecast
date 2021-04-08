@@ -13,7 +13,7 @@ import {predictit} from "../platforms/predictit-fetch.js"
 import {omen} from "../platforms/omen-fetch.js"
 import {smarkets} from "../platforms/smarkets-fetch.js"
 import {williamhill} from "../platforms/williamhill-fetch.js"
-
+import {rebuildNetlifySiteWithNewData} from "./rebuildNetliftySiteWithNewData.js"
 import {mergeEverything} from "./mergeEverything.js"
 
 /* Do everything */
@@ -33,7 +33,7 @@ export async function tryCatchTryAgain (fun) {
     }
 }
 export async function doEverything(){
-    let functions = [csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything]
+    let functions = [csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything, rebuildNetlifySiteWithNewData]
 
     console.log("")
     console.log("")
