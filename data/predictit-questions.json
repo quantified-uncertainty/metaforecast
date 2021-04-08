@@ -26,7 +26,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:23:04.236Z",
+    "timestamp": "2021-04-08T11:10:45.198Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -39,16 +39,16 @@
     "options": [
       {
         "name": "Democratic",
-        "probability": 0.5445544554455446,
+        "probability": 0.54,
         "type": "PROBABILITY"
       },
       {
         "name": "Republican",
-        "probability": 0.45544554455445546,
+        "probability": 0.46,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:23:09.187Z",
+    "timestamp": "2021-04-08T11:10:49.341Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -61,16 +61,16 @@
     "options": [
       {
         "name": "Republican",
-        "probability": 0.6039603960396039,
+        "probability": 0.594059405940594,
         "type": "PROBABILITY"
       },
       {
         "name": "Democratic",
-        "probability": 0.39603960396039606,
+        "probability": 0.4059405940594059,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:23:15.231Z",
+    "timestamp": "2021-04-08T11:10:55.362Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -92,7 +92,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:23:20.103Z",
+    "timestamp": "2021-04-08T11:10:59.578Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -105,16 +105,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.22,
+        "probability": 0.21,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.78,
+        "probability": 0.79,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:23:26.519Z",
+    "timestamp": "2021-04-08T11:11:03.041Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -136,7 +136,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:23:30.850Z",
+    "timestamp": "2021-04-08T11:11:06.637Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -149,16 +149,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.43,
+        "probability": 0.41,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5700000000000001,
+        "probability": 0.5900000000000001,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:23:35.081Z",
+    "timestamp": "2021-04-08T11:11:11.426Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -171,16 +171,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.16,
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.84,
+        "probability": 0.85,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:23:41.420Z",
+    "timestamp": "2021-04-08T11:11:16.136Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -202,7 +202,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:23:45.429Z",
+    "timestamp": "2021-04-08T11:11:20.011Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -224,7 +224,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:23:51.134Z",
+    "timestamp": "2021-04-08T11:11:24.200Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -237,86 +237,86 @@
     "options": [
       {
         "name": "Andrew Yang",
-        "probability": 0.5304347826086956,
+        "probability": 0.5169491525423728,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Adams",
-        "probability": 0.17391304347826086,
+        "probability": 0.20338983050847453,
         "type": "PROBABILITY"
       },
       {
         "name": "Scott Stringer",
-        "probability": 0.07826086956521738,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Maya Wiley",
-        "probability": 0.0608695652173913,
+        "probability": 0.06779661016949151,
         "type": "PROBABILITY"
       },
       {
         "name": "Raymond McGuire",
-        "probability": 0.05217391304347825,
+        "probability": 0.050847457627118633,
         "type": "PROBABILITY"
       },
       {
-        "name": "Curtis Sliwa",
-        "probability": 0.017391304347826084,
+        "name": "Maya Wiley",
+        "probability": 0.050847457627118633,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Donovan",
-        "probability": 0.008695652173913042,
+        "probability": 0.016949152542372878,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Curtis Sliwa",
+        "probability": 0.016949152542372878,
         "type": "PROBABILITY"
       },
       {
         "name": "Carlos Menchaca",
-        "probability": 0.008695652173913042,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Loree Sutton",
-        "probability": 0.008695652173913042,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Dianne Morales",
-        "probability": 0.008695652173913042,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Kathryn Garcia",
-        "probability": 0.008695652173913042,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Max Rose",
-        "probability": 0.008695652173913042,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Zach Iscol",
-        "probability": 0.008695652173913042,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "John Catsimatidis",
-        "probability": 0.008695652173913042,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Paperboy Prince",
-        "probability": 0.008695652173913042,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Fernando Mateo",
-        "probability": 0.008695652173913042,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:23:56.744Z",
+    "timestamp": "2021-04-08T11:11:29.576Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -338,7 +338,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:02.357Z",
+    "timestamp": "2021-04-08T11:11:34.152Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -351,16 +351,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.39,
+        "probability": 0.4,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.61,
+        "probability": 0.6,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:08.424Z",
+    "timestamp": "2021-04-08T11:11:39.986Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -373,16 +373,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.16,
+        "probability": 0.17,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.84,
+        "probability": 0.83,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:12.014Z",
+    "timestamp": "2021-04-08T11:11:44.853Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -395,16 +395,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.15,
+        "probability": 0.17,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.85,
+        "probability": 0.83,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:17.733Z",
+    "timestamp": "2021-04-08T11:11:50.102Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -426,7 +426,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:21.524Z",
+    "timestamp": "2021-04-08T11:11:56.100Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -448,7 +448,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:25.344Z",
+    "timestamp": "2021-04-08T11:12:02.248Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -461,16 +461,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.12,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.88,
+        "probability": 0.87,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:31.226Z",
+    "timestamp": "2021-04-08T11:12:08.196Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -483,16 +483,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.43,
+        "probability": 0.45,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5700000000000001,
+        "probability": 0.55,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:35.365Z",
+    "timestamp": "2021-04-08T11:12:12.819Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -505,16 +505,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.05,
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.95,
+        "probability": 0.94,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:40.118Z",
+    "timestamp": "2021-04-08T11:12:18.748Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -527,16 +527,16 @@
     "options": [
       {
         "name": "Republican",
-        "probability": 0.8,
+        "probability": 0.7920792079207921,
         "type": "PROBABILITY"
       },
       {
         "name": "Democratic",
-        "probability": 0.2,
+        "probability": 0.2079207920792079,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:44.314Z",
+    "timestamp": "2021-04-08T11:12:23.626Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -549,31 +549,31 @@
     "options": [
       {
         "name": "Terry McAuliffe",
-        "probability": 0.8557692307692307,
+        "probability": 0.8737864077669902,
         "type": "PROBABILITY"
       },
       {
         "name": "Jennifer Carroll Foy",
-        "probability": 0.08653846153846154,
+        "probability": 0.07766990291262135,
         "type": "PROBABILITY"
       },
       {
         "name": "Jennifer McClellan",
-        "probability": 0.038461538461538464,
+        "probability": 0.029126213592233007,
         "type": "PROBABILITY"
       },
       {
         "name": "Justin Fairfax",
-        "probability": 0.009615384615384616,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "Lee Carter",
-        "probability": 0.009615384615384616,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:49.819Z",
+    "timestamp": "2021-04-08T11:12:28.626Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -586,16 +586,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.82,
+        "probability": 0.79,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.18000000000000005,
+        "probability": 0.20999999999999996,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:24:56.098Z",
+    "timestamp": "2021-04-08T11:12:32.549Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -617,7 +617,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:00.929Z",
+    "timestamp": "2021-04-08T11:12:38.860Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -630,86 +630,86 @@
     "options": [
       {
         "name": "Markus Söder",
-        "probability": 0.36666666666666664,
+        "probability": 0.3813559322033898,
         "type": "PROBABILITY"
       },
       {
         "name": "Armin Laschet",
-        "probability": 0.29166666666666663,
+        "probability": 0.288135593220339,
         "type": "PROBABILITY"
       },
       {
         "name": "Annalena Baerbock",
-        "probability": 0.1333333333333333,
+        "probability": 0.13559322033898302,
         "type": "PROBABILITY"
       },
       {
         "name": "Angela Merkel",
-        "probability": 0.05833333333333333,
+        "probability": 0.050847457627118633,
         "type": "PROBABILITY"
       },
       {
         "name": "Robert Habeck",
-        "probability": 0.04999999999999999,
+        "probability": 0.0423728813559322,
         "type": "PROBABILITY"
       },
       {
         "name": "Olaf Scholz",
-        "probability": 0.016666666666666663,
+        "probability": 0.016949152542372878,
         "type": "PROBABILITY"
       },
       {
         "name": "Christian Lindner",
-        "probability": 0.008333333333333331,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Katja Kipping",
-        "probability": 0.008333333333333331,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Alice Weidel",
-        "probability": 0.008333333333333331,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Alexander Gauland",
-        "probability": 0.008333333333333331,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Bernd Riexinger",
-        "probability": 0.008333333333333331,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Friedrich Merz",
-        "probability": 0.008333333333333331,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Norbert Röttgen",
-        "probability": 0.008333333333333331,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "A. Kramp-Karrenbauer",
-        "probability": 0.008333333333333331,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Jens Spahn",
-        "probability": 0.008333333333333331,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       },
       {
         "name": "Ralph Brinkhaus",
-        "probability": 0.008333333333333331,
+        "probability": 0.008474576271186439,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:04.421Z",
+    "timestamp": "2021-04-08T11:12:43.503Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -722,41 +722,41 @@
     "options": [
       {
         "name": "Kirk Cox",
-        "probability": 0.4622641509433962,
+        "probability": 0.4727272727272727,
         "type": "PROBABILITY"
       },
       {
         "name": "Pete Snyder",
-        "probability": 0.22641509433962262,
+        "probability": 0.21818181818181814,
         "type": "PROBABILITY"
       },
       {
         "name": "Glenn Youngkin",
-        "probability": 0.1981132075471698,
+        "probability": 0.1909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "Amanda Chase",
-        "probability": 0.08490566037735849,
+        "probability": 0.09090909090909091,
         "type": "PROBABILITY"
       },
       {
         "name": "Neil Chatterjee",
-        "probability": 0.009433962264150943,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmett Hanger",
-        "probability": 0.009433962264150943,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "Bill Stanley",
-        "probability": 0.009433962264150943,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:09.764Z",
+    "timestamp": "2021-04-08T11:12:48.038Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -768,87 +768,87 @@
     "description": "The contract that resolves to Yes shall be that which identifies the person who wins the 2024 nomination of the Republican Party for U.S. president. Replacement of the nominee for any reason prior to election day will have no impact on the resolution of this market.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\n",
     "options": [
       {
-        "name": "Ron DeSantis",
-        "probability": 0.21428571428571422,
+        "name": "Donald Trump",
+        "probability": 0.20720720720720714,
         "type": "PROBABILITY"
       },
       {
-        "name": "Donald Trump",
-        "probability": 0.2053571428571428,
+        "name": "Ron DeSantis",
+        "probability": 0.20720720720720714,
         "type": "PROBABILITY"
       },
       {
         "name": "Nikki Haley",
-        "probability": 0.08928571428571426,
+        "probability": 0.09009009009009007,
         "type": "PROBABILITY"
       },
       {
         "name": "Kristi Noem",
-        "probability": 0.08035714285714284,
+        "probability": 0.08108108108108106,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Pence",
-        "probability": 0.062499999999999986,
+        "probability": 0.06306306306306306,
         "type": "PROBABILITY"
       },
       {
         "name": "Ted Cruz",
-        "probability": 0.053571428571428555,
+        "probability": 0.054054054054054036,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Pompeo",
-        "probability": 0.04464285714285713,
+        "probability": 0.045045045045045036,
         "type": "PROBABILITY"
       },
       {
         "name": "Tom Cotton",
-        "probability": 0.04464285714285713,
+        "probability": 0.045045045045045036,
         "type": "PROBABILITY"
       },
       {
         "name": "Marco Rubio",
-        "probability": 0.035714285714285705,
+        "probability": 0.03603603603603603,
         "type": "PROBABILITY"
       },
       {
         "name": "Josh Hawley",
-        "probability": 0.035714285714285705,
+        "probability": 0.03603603603603603,
         "type": "PROBABILITY"
       },
       {
         "name": "Tucker Carlson",
-        "probability": 0.026785714285714277,
+        "probability": 0.027027027027027018,
         "type": "PROBABILITY"
       },
       {
         "name": "Donald Trump Jr.",
-        "probability": 0.026785714285714277,
+        "probability": 0.027027027027027018,
         "type": "PROBABILITY"
       },
       {
         "name": "Tim Scott",
-        "probability": 0.026785714285714277,
+        "probability": 0.027027027027027018,
         "type": "PROBABILITY"
       },
       {
         "name": "Mitt Romney",
-        "probability": 0.017857142857142853,
+        "probability": 0.018018018018018014,
         "type": "PROBABILITY"
       },
       {
         "name": "Rick Scott",
-        "probability": 0.017857142857142853,
+        "probability": 0.018018018018018014,
         "type": "PROBABILITY"
       },
       {
         "name": "Larry Hogan",
-        "probability": 0.017857142857142853,
+        "probability": 0.018018018018018014,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:13.776Z",
+    "timestamp": "2021-04-08T11:12:52.663Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -861,7 +861,7 @@
     "options": [
       {
         "name": "Kamala Harris",
-        "probability": 0.4,
+        "probability": 0.39,
         "type": "PROBABILITY"
       },
       {
@@ -880,13 +880,13 @@
         "type": "PROBABILITY"
       },
       {
-        "name": "Bernie Sanders",
+        "name": "Elizabeth Warren",
         "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
-        "name": "Elizabeth Warren",
-        "probability": 0.04,
+        "name": "Bernie Sanders",
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
@@ -895,7 +895,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:19.555Z",
+    "timestamp": "2021-04-08T11:12:57.459Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -913,7 +913,7 @@
       },
       {
         "name": "Kim Janey",
-        "probability": 0.37962962962962965,
+        "probability": 0.38888888888888895,
         "type": "PROBABILITY"
       },
       {
@@ -933,7 +933,7 @@
       },
       {
         "name": "Jon Santiago",
-        "probability": 0.02777777777777778,
+        "probability": 0.01851851851851852,
         "type": "PROBABILITY"
       },
       {
@@ -942,7 +942,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:25.192Z",
+    "timestamp": "2021-04-08T11:13:02.456Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -964,7 +964,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:30.304Z",
+    "timestamp": "2021-04-08T11:13:07.684Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -986,7 +986,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:34.387Z",
+    "timestamp": "2021-04-08T11:13:13.640Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1008,7 +1008,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:40.533Z",
+    "timestamp": "2021-04-08T11:13:18.254Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1030,7 +1030,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:45.877Z",
+    "timestamp": "2021-04-08T11:13:23.024Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1043,16 +1043,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.85,
+        "probability": 0.84,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.15000000000000002,
+        "probability": 0.16000000000000003,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:51.434Z",
+    "timestamp": "2021-04-08T11:13:26.573Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1065,16 +1065,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.06,
+        "probability": 0.05,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.94,
+        "probability": 0.95,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:25:56.490Z",
+    "timestamp": "2021-04-08T11:13:32.834Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1087,16 +1087,16 @@
     "options": [
       {
         "name": "Republican",
-        "probability": 0.82,
+        "probability": 0.8118811881188118,
         "type": "PROBABILITY"
       },
       {
         "name": "Democratic",
-        "probability": 0.18,
+        "probability": 0.18811881188118812,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:00.780Z",
+    "timestamp": "2021-04-08T11:13:37.160Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1108,82 +1108,82 @@
     "description": "The contract that resolves to Yes shall be that which identifies the winner of the 2022 Ohio Republican primary election for U.S. Senate. Should no such primary election be held, due to a single candidate running unopposed, that candidate will be considered the winner of the primary election for purposes of this market.\nPredictIt reserves the right to wait for further official, party, judicial or other relevant announcements, reports or decisions to resolve any ambiguity or uncertainty before the market is settled. Markets may stay open or incur a delay in settlement well past the date of the contest in certain circumstances. If there is any change to an event, or any situation arises, that is not in PredictIt’s view addressed adequately by the market rules, PredictIt will decide the fairest and most appropriate course of action.\nPredictIt’s decisions and determinations under this rule shall be at PredictIt’s sole discretion and shall be final.\n",
     "options": [
       {
-        "name": "J. D. Vance",
-        "probability": 0.2982456140350877,
+        "name": "Jane Timken",
+        "probability": 0.32075471698113206,
         "type": "PROBABILITY"
       },
       {
-        "name": "Jane Timken",
-        "probability": 0.2982456140350877,
+        "name": "J. D. Vance",
+        "probability": 0.2830188679245283,
         "type": "PROBABILITY"
       },
       {
         "name": "Josh Mandel",
-        "probability": 0.18421052631578944,
+        "probability": 0.1981132075471698,
         "type": "PROBABILITY"
       },
       {
         "name": "Steve Stivers",
-        "probability": 0.07017543859649122,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Mike Gibbons",
-        "probability": 0.043859649122807015,
+        "probability": 0.0660377358490566,
         "type": "PROBABILITY"
       },
       {
         "name": "Jim Jordan",
-        "probability": 0.017543859649122806,
+        "probability": 0.018867924528301886,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Turner",
-        "probability": 0.017543859649122806,
+        "probability": 0.018867924528301886,
         "type": "PROBABILITY"
       },
       {
-        "name": "Warren Davidson",
-        "probability": 0.017543859649122806,
+        "name": "Mike Gibbons",
+        "probability": 0.018867924528301886,
         "type": "PROBABILITY"
       },
       {
         "name": "Rob Portman",
-        "probability": 0.008771929824561403,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "Jon Husted",
-        "probability": 0.008771929824561403,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "Mary Taylor",
-        "probability": 0.008771929824561403,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "Jim Renacci",
-        "probability": 0.008771929824561403,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "Frank LaRose",
-        "probability": 0.008771929824561403,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "Brad Wenstrup",
-        "probability": 0.008771929824561403,
+        "probability": 0.009433962264150943,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Warren Davidson",
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "Bill Johnson",
-        "probability": 0,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:06.978Z",
+    "timestamp": "2021-04-08T11:13:43.438Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1205,7 +1205,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:12.993Z",
+    "timestamp": "2021-04-08T11:13:46.986Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1227,7 +1227,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:18.667Z",
+    "timestamp": "2021-04-08T11:13:52.683Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1240,16 +1240,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.49,
+        "probability": 0.5,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.51,
+        "probability": 0.5,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:22.830Z",
+    "timestamp": "2021-04-08T11:13:56.181Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1262,81 +1262,81 @@
     "options": [
       {
         "name": "Troy Carter",
-        "probability": 0.5652173913043478,
+        "probability": 0.584070796460177,
         "type": "PROBABILITY"
       },
       {
         "name": "Karen Peterson",
-        "probability": 0.3217391304347826,
+        "probability": 0.30088495575221236,
         "type": "PROBABILITY"
       },
       {
         "name": "Chelsea Ardoin",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Belden Batiste",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Claston Bernard",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Gary Chambers",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Harold John",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Christopher Johnson",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Brandon Jolicoeur",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Lloyd Kelly",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Greg Lirette",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Mindy McConnell",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Desiree Ontiveros",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Jenette Porter",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Sheldon Vincent Sr.",
-        "probability": 0.008695652173913042,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:28.735Z",
+    "timestamp": "2021-04-08T11:14:00.918Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1398,7 +1398,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:32.749Z",
+    "timestamp": "2021-04-08T11:14:05.527Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1411,16 +1411,16 @@
     "options": [
       {
         "name": "Democratic",
-        "probability": 0.53,
+        "probability": 0.5346534653465347,
         "type": "PROBABILITY"
       },
       {
         "name": "Republican",
-        "probability": 0.47,
+        "probability": 0.4653465346534653,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:36.890Z",
+    "timestamp": "2021-04-08T11:14:11.565Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1433,56 +1433,56 @@
     "options": [
       {
         "name": "Hassan Rouhani",
-        "probability": 0.5242718446601942,
+        "probability": 0.5267857142857142,
         "type": "PROBABILITY"
       },
       {
         "name": "Benjamin Netanyahu",
-        "probability": 0.2524271844660194,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "Scott Morrison",
-        "probability": 0.0970873786407767,
+        "probability": 0.09821428571428571,
         "type": "PROBABILITY"
       },
       {
         "name": "Suga Yoshihide",
-        "probability": 0.04854368932038835,
+        "probability": 0.05357142857142856,
         "type": "PROBABILITY"
       },
       {
         "name": "Moon Jae-in",
-        "probability": 0.019417475728155338,
+        "probability": 0.017857142857142856,
         "type": "PROBABILITY"
       },
       {
         "name": "Kim Jong-un",
-        "probability": 0.019417475728155338,
+        "probability": 0.017857142857142856,
         "type": "PROBABILITY"
       },
       {
         "name": "Xi Jinping",
-        "probability": 0.009708737864077669,
+        "probability": 0.008928571428571428,
         "type": "PROBABILITY"
       },
       {
         "name": "Narendra Modi",
-        "probability": 0.009708737864077669,
+        "probability": 0.008928571428571428,
         "type": "PROBABILITY"
       },
       {
         "name": "Joko Widodo",
-        "probability": 0.009708737864077669,
+        "probability": 0.008928571428571428,
         "type": "PROBABILITY"
       },
       {
         "name": "Recep Tayyip Erdoğan",
-        "probability": 0.009708737864077669,
+        "probability": 0.008928571428571428,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:41.201Z",
+    "timestamp": "2021-04-08T11:14:16.922Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1504,7 +1504,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:45.036Z",
+    "timestamp": "2021-04-08T11:14:21.512Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1526,7 +1526,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:48.821Z",
+    "timestamp": "2021-04-08T11:14:24.939Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1539,51 +1539,51 @@
     "options": [
       {
         "name": "Alvin Bragg",
-        "probability": 0.40196078431372545,
+        "probability": 0.4077669902912621,
         "type": "PROBABILITY"
       },
       {
         "name": "Tali Weinstein",
-        "probability": 0.34313725490196073,
+        "probability": 0.3398058252427184,
         "type": "PROBABILITY"
       },
       {
         "name": "Tahanie Aboushi",
-        "probability": 0.11764705882352941,
+        "probability": 0.11650485436893203,
         "type": "PROBABILITY"
       },
       {
         "name": "Eliza Orlins",
-        "probability": 0.049019607843137254,
+        "probability": 0.04854368932038835,
         "type": "PROBABILITY"
       },
       {
         "name": "Dan Quart",
-        "probability": 0.0392156862745098,
+        "probability": 0.038834951456310676,
         "type": "PROBABILITY"
       },
       {
         "name": "Lucy Lang",
-        "probability": 0.0196078431372549,
+        "probability": 0.019417475728155338,
         "type": "PROBABILITY"
       },
       {
         "name": "Cyrus Vance",
-        "probability": 0.00980392156862745,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "Diana Florence",
-        "probability": 0.00980392156862745,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "Liz Crotty",
-        "probability": 0.00980392156862745,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:52.654Z",
+    "timestamp": "2021-04-08T11:14:30.496Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1645,7 +1645,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:26:56.276Z",
+    "timestamp": "2021-04-08T11:14:36.661Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1658,16 +1658,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.7,
+        "probability": 0.69,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.30000000000000004,
+        "probability": 0.31000000000000005,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:00.726Z",
+    "timestamp": "2021-04-08T11:14:40.355Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1680,66 +1680,66 @@
     "options": [
       {
         "name": "12 or fewer",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "13",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "14",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "15",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "16",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "17",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "18",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "19",
-        "probability": 0.03809523809523809,
+        "probability": 0.038461538461538464,
         "type": "PROBABILITY"
       },
       {
         "name": "20",
-        "probability": 0.5619047619047619,
+        "probability": 0.5769230769230769,
         "type": "PROBABILITY"
       },
       {
         "name": "21",
-        "probability": 0.27619047619047615,
+        "probability": 0.2788461538461538,
         "type": "PROBABILITY"
       },
       {
         "name": "22",
-        "probability": 0.047619047619047616,
+        "probability": 0.028846153846153844,
         "type": "PROBABILITY"
       },
       {
         "name": "23 or more",
-        "probability": 0.009523809523809523,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:05.737Z",
+    "timestamp": "2021-04-08T11:14:44.554Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1752,86 +1752,86 @@
     "options": [
       {
         "name": "Jon Sallet",
-        "probability": 0.6403508771929823,
+        "probability": 0.6371681415929202,
         "type": "PROBABILITY"
       },
       {
         "name": "Jonathan Kanter",
-        "probability": 0.23684210526315788,
+        "probability": 0.23893805309734512,
         "type": "PROBABILITY"
       },
       {
         "name": "Renata Hesse",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Deborah Feinstein",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Susan Davies",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Rebecca Slaughter",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Sonia Pfaffenroth",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Dave Gelfand",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Steven Sunshine",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Terrell McSweeny",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Jon Leibowitz",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Juan Arteaga",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Gigi Sohn",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Edward Smith",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Einer Elhauge",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       },
       {
         "name": "Douglas Melamed",
-        "probability": 0.008771929824561403,
+        "probability": 0.008849557522123894,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:11.751Z",
+    "timestamp": "2021-04-08T11:14:50.565Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1844,21 +1844,21 @@
     "options": [
       {
         "name": "Andrés Arauz",
-        "probability": 0.7403846153846154,
+        "probability": 0.7378640776699029,
         "type": "PROBABILITY"
       },
       {
         "name": "Guillermo Lasso",
-        "probability": 0.25,
+        "probability": 0.2524271844660194,
         "type": "PROBABILITY"
       },
       {
         "name": "Yaku Pérez",
-        "probability": 0.009615384615384616,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:15.767Z",
+    "timestamp": "2021-04-08T11:14:54.927Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1871,7 +1871,7 @@
     "options": [
       {
         "name": "Suga Yoshihide",
-        "probability": 0.4,
+        "probability": 0.41,
         "type": "PROBABILITY"
       },
       {
@@ -1890,18 +1890,13 @@
         "type": "PROBABILITY"
       },
       {
-        "name": "Vladimir Putin",
-        "probability": 0.05,
-        "type": "PROBABILITY"
-      },
-      {
         "name": "Cyril Ramaphosa",
         "probability": 0.05,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmanuel Macron",
-        "probability": 0.05,
+        "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
@@ -1915,12 +1910,17 @@
         "type": "PROBABILITY"
       },
       {
+        "name": "Vladimir Putin",
+        "probability": 0.03,
+        "type": "PROBABILITY"
+      },
+      {
         "name": "Xi Jinping",
         "probability": 0.01,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:20.453Z",
+    "timestamp": "2021-04-08T11:14:59.257Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1957,7 +1957,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:24.329Z",
+    "timestamp": "2021-04-08T11:15:04.712Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -1970,36 +1970,36 @@
     "options": [
       {
         "name": "John Fetterman",
-        "probability": 0.6862745098039215,
+        "probability": 0.6796116504854368,
         "type": "PROBABILITY"
       },
       {
         "name": "Conor Lamb",
-        "probability": 0.13725490196078433,
+        "probability": 0.1359223300970874,
         "type": "PROBABILITY"
       },
       {
         "name": "Malcolm Kenyatta",
-        "probability": 0.10784313725490197,
+        "probability": 0.11650485436893203,
         "type": "PROBABILITY"
       },
       {
         "name": "Madeleine Dean",
-        "probability": 0.049019607843137254,
+        "probability": 0.04854368932038835,
         "type": "PROBABILITY"
       },
       {
         "name": "Joe Sestak",
-        "probability": 0.00980392156862745,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       },
       {
         "name": "Jim Kenney",
-        "probability": 0.00980392156862745,
+        "probability": 0.009708737864077669,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:28.898Z",
+    "timestamp": "2021-04-08T11:15:08.249Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2012,56 +2012,56 @@
     "options": [
       {
         "name": "62 or fewer",
-        "probability": 0.11214953271028036,
+        "probability": 0.10784313725490198,
         "type": "PROBABILITY"
       },
       {
         "name": "63 or 64",
-        "probability": 0.1588785046728972,
+        "probability": 0.12745098039215688,
         "type": "PROBABILITY"
       },
       {
         "name": "65 or 66",
-        "probability": 0.308411214953271,
+        "probability": 0.19607843137254907,
         "type": "PROBABILITY"
       },
       {
         "name": "67 or 68",
-        "probability": 0.2336448598130841,
+        "probability": 0.24509803921568632,
         "type": "PROBABILITY"
       },
       {
         "name": "69 or 70",
-        "probability": 0.102803738317757,
+        "probability": 0.19607843137254907,
         "type": "PROBABILITY"
       },
       {
         "name": "71 or 72",
-        "probability": 0.04672897196261682,
+        "probability": 0.08823529411764708,
         "type": "PROBABILITY"
       },
       {
         "name": "73 or 74",
-        "probability": 0.009345794392523364,
+        "probability": 0.009803921568627453,
         "type": "PROBABILITY"
       },
       {
         "name": "75 or 76",
-        "probability": 0.009345794392523364,
+        "probability": 0.009803921568627453,
         "type": "PROBABILITY"
       },
       {
         "name": "77 or 78",
-        "probability": 0.009345794392523364,
+        "probability": 0.009803921568627453,
         "type": "PROBABILITY"
       },
       {
         "name": "79 or more",
-        "probability": 0.009345794392523364,
+        "probability": 0.009803921568627453,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:33.491Z",
+    "timestamp": "2021-04-08T11:15:13.387Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2074,12 +2074,17 @@
     "options": [
       {
         "name": "Guy Reschenthaler",
-        "probability": 0.1,
+        "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
         "name": "Ryan Costello",
-        "probability": 0.07,
+        "probability": 0.08,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Everett Stern",
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
@@ -2088,17 +2093,12 @@
         "type": "PROBABILITY"
       },
       {
-        "name": "Everett Stern",
-        "probability": 0.04,
-        "type": "PROBABILITY"
-      },
-      {
         "name": "Charlie Dent",
-        "probability": 0.02,
+        "probability": 0.03,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:39.761Z",
+    "timestamp": "2021-04-08T11:15:17.529Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2120,7 +2120,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:45.942Z",
+    "timestamp": "2021-04-08T11:15:23.610Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2133,16 +2133,16 @@
     "options": [
       {
         "name": "Democratic",
-        "probability": 0.67,
+        "probability": 0.6633663366336634,
         "type": "PROBABILITY"
       },
       {
         "name": "Republican",
-        "probability": 0.33,
+        "probability": 0.33663366336633666,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:51.574Z",
+    "timestamp": "2021-04-08T11:15:27.929Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2155,16 +2155,16 @@
     "options": [
       {
         "name": "Republican",
-        "probability": 0.5346534653465347,
+        "probability": 0.5294117647058824,
         "type": "PROBABILITY"
       },
       {
         "name": "Democratic",
-        "probability": 0.4653465346534653,
+        "probability": 0.47058823529411764,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:27:56.741Z",
+    "timestamp": "2021-04-08T11:15:32.575Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2177,7 +2177,7 @@
     "options": [
       {
         "name": "Shalanda Young",
-        "probability": 0.40999999999999986,
+        "probability": 0.4299999999999999,
         "type": "PROBABILITY"
       },
       {
@@ -2187,7 +2187,7 @@
       },
       {
         "name": "Martha Coven",
-        "probability": 0.09999999999999998,
+        "probability": 0.08999999999999998,
         "type": "PROBABILITY"
       },
       {
@@ -2202,22 +2202,17 @@
       },
       {
         "name": "Chris Lu",
-        "probability": 0.04999999999999999,
+        "probability": 0.039999999999999994,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Heather Boushey",
+        "probability": 0.029999999999999992,
         "type": "PROBABILITY"
       },
       {
         "name": "Thea Lee",
         "probability": 0.029999999999999992,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Sarah Bianchi",
-        "probability": 0.019999999999999997,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Heather Boushey",
-        "probability": 0.019999999999999997,
         "type": "PROBABILITY"
       },
       {
@@ -2236,12 +2231,17 @@
         "type": "PROBABILITY"
       },
       {
+        "name": "Sarah Bianchi",
+        "probability": 0.009999999999999998,
+        "type": "PROBABILITY"
+      },
+      {
         "name": "John Jones",
         "probability": 0.009999999999999998,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:02.953Z",
+    "timestamp": "2021-04-08T11:15:36.057Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2254,16 +2254,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.23,
+        "probability": 0.24,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.77,
+        "probability": 0.76,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:06.604Z",
+    "timestamp": "2021-04-08T11:15:40.437Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2276,7 +2276,7 @@
     "options": [
       {
         "name": "Rob Bonta",
-        "probability": 0.73,
+        "probability": 0.74,
         "type": "PROBABILITY"
       },
       {
@@ -2320,7 +2320,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:12.700Z",
+    "timestamp": "2021-04-08T11:15:46.472Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2342,7 +2342,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:16.579Z",
+    "timestamp": "2021-04-08T11:15:49.936Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2355,16 +2355,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.61,
+        "probability": 0.63,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.39,
+        "probability": 0.37,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:20.129Z",
+    "timestamp": "2021-04-08T11:15:56.133Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2377,56 +2377,56 @@
     "options": [
       {
         "name": "Angela Merkel",
-        "probability": 0.5428571428571428,
+        "probability": 0.5267857142857142,
         "type": "PROBABILITY"
       },
       {
         "name": "Andrej Babiš",
-        "probability": 0.18095238095238095,
+        "probability": 0.1607142857142857,
         "type": "PROBABILITY"
       },
       {
         "name": "Mark Rutte",
-        "probability": 0.13333333333333333,
+        "probability": 0.15178571428571427,
         "type": "PROBABILITY"
       },
       {
         "name": "Mario Draghi",
-        "probability": 0.047619047619047616,
+        "probability": 0.0625,
         "type": "PROBABILITY"
       },
       {
         "name": "Alexander Lukashenko",
-        "probability": 0.047619047619047616,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Vladimir Putin",
-        "probability": 0.009523809523809523,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Pedro Sánchez",
-        "probability": 0.009523809523809523,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Viktor Orbán",
-        "probability": 0.009523809523809523,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "Boris Johnson",
-        "probability": 0.009523809523809523,
+        "probability": 0.044642857142857144,
         "type": "PROBABILITY"
       },
       {
         "name": "Emmanuel Macron",
-        "probability": 0.009523809523809523,
+        "probability": 0.017857142857142856,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Vladimir Putin",
+        "probability": 0.008928571428571428,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Pedro Sánchez",
+        "probability": 0.008928571428571428,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Viktor Orbán",
+        "probability": 0.008928571428571428,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "Boris Johnson",
+        "probability": 0.008928571428571428,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:26.366Z",
+    "timestamp": "2021-04-08T11:16:00.095Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2439,71 +2439,71 @@
     "options": [
       {
         "name": "Yonhy Lescano",
-        "probability": 0.37068965517241376,
+        "probability": 0.38260869565217387,
         "type": "PROBABILITY"
       },
       {
         "name": "Hernando de Soto",
-        "probability": 0.3017241379310344,
+        "probability": 0.27826086956521734,
         "type": "PROBABILITY"
       },
       {
         "name": "Rafael López Aliaga",
-        "probability": 0.12068965517241378,
+        "probability": 0.1043478260869565,
         "type": "PROBABILITY"
       },
       {
         "name": "Keiko Fujimori",
-        "probability": 0.06896551724137931,
+        "probability": 0.0608695652173913,
         "type": "PROBABILITY"
       },
       {
         "name": "Verónika Mendoza",
-        "probability": 0.043103448275862065,
+        "probability": 0.0608695652173913,
         "type": "PROBABILITY"
       },
       {
         "name": "George Forsyth",
-        "probability": 0.025862068965517238,
+        "probability": 0.043478260869565216,
         "type": "PROBABILITY"
       },
       {
         "name": "Pedro Castillo",
-        "probability": 0.017241379310344827,
+        "probability": 0.017391304347826084,
         "type": "PROBABILITY"
       },
       {
         "name": "Daniel Urresti",
-        "probability": 0.008620689655172414,
+        "probability": 0.008695652173913042,
         "type": "PROBABILITY"
       },
       {
         "name": "César Acuña",
-        "probability": 0.008620689655172414,
+        "probability": 0.008695652173913042,
         "type": "PROBABILITY"
       },
       {
         "name": "Alberto Beingolea",
-        "probability": 0.008620689655172414,
+        "probability": 0.008695652173913042,
         "type": "PROBABILITY"
       },
       {
         "name": "Julio Guzmán",
-        "probability": 0.008620689655172414,
+        "probability": 0.008695652173913042,
         "type": "PROBABILITY"
       },
       {
         "name": "Ollanta Humala",
-        "probability": 0.008620689655172414,
+        "probability": 0.008695652173913042,
         "type": "PROBABILITY"
       },
       {
         "name": "Daniel Salaverry",
-        "probability": 0.008620689655172414,
+        "probability": 0.008695652173913042,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:29.799Z",
+    "timestamp": "2021-04-08T11:16:04.989Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2516,51 +2516,51 @@
     "options": [
       {
         "name": "Susan Wright",
-        "probability": 0.798076923076923,
+        "probability": 0.7941176470588236,
         "type": "PROBABILITY"
       },
       {
         "name": "Jana Sanchez",
-        "probability": 0.125,
+        "probability": 0.12745098039215685,
         "type": "PROBABILITY"
       },
       {
         "name": "Dan Rodimer",
-        "probability": 0.019230769230769232,
+        "probability": 0.0196078431372549,
         "type": "PROBABILITY"
       },
       {
         "name": "Katrina Pierson",
-        "probability": 0.009615384615384616,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Sery Kim",
-        "probability": 0.009615384615384616,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Jake Ellzey",
-        "probability": 0.009615384615384616,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Brian Harrison",
-        "probability": 0.009615384615384616,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Lydia Bean",
-        "probability": 0.009615384615384616,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       },
       {
         "name": "Shawn Lassiter",
-        "probability": 0.009615384615384616,
+        "probability": 0.00980392156862745,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:34.582Z",
+    "timestamp": "2021-04-08T11:16:11.204Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2573,46 +2573,46 @@
     "options": [
       {
         "name": "Lorena González",
-        "probability": 0.49019607843137253,
+        "probability": 0.5,
         "type": "PROBABILITY"
       },
       {
         "name": "Jessyn Farrell",
-        "probability": 0.21568627450980393,
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {
         "name": "Colleen Echohawk",
-        "probability": 0.13725490196078433,
+        "probability": 0.14,
         "type": "PROBABILITY"
       },
       {
         "name": "Bruce Harrell",
-        "probability": 0.06862745098039216,
+        "probability": 0.07,
         "type": "PROBABILITY"
       },
       {
         "name": "Andrew Grant Houston",
-        "probability": 0.049019607843137254,
+        "probability": 0.05,
         "type": "PROBABILITY"
       },
       {
         "name": "Lance Randall",
-        "probability": 0.0196078431372549,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
         "name": "Jenny Durkan",
-        "probability": 0.00980392156862745,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
         "name": "James Donaldson",
-        "probability": 0.00980392156862745,
+        "probability": 0.01,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:38.744Z",
+    "timestamp": "2021-04-08T11:16:17.248Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2625,7 +2625,7 @@
     "options": [
       {
         "name": "Nicholas Burns",
-        "probability": 0.71,
+        "probability": 0.72,
         "type": "PROBABILITY"
       },
       {
@@ -2654,7 +2654,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:44.797Z",
+    "timestamp": "2021-04-08T11:16:22.064Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2667,7 +2667,7 @@
     "options": [
       {
         "name": "Doug Collins",
-        "probability": 0.49,
+        "probability": 0.52,
         "type": "PROBABILITY"
       },
       {
@@ -2676,7 +2676,7 @@
         "type": "PROBABILITY"
       },
       {
-        "name": "Vernon Jones",
+        "name": "Chris Carr",
         "probability": 0.06,
         "type": "PROBABILITY"
       },
@@ -2686,7 +2686,7 @@
         "type": "PROBABILITY"
       },
       {
-        "name": "Chris Carr",
+        "name": "Vernon Jones",
         "probability": 0.05,
         "type": "PROBABILITY"
       },
@@ -2706,7 +2706,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:50.995Z",
+    "timestamp": "2021-04-08T11:16:26.229Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2719,7 +2719,7 @@
     "options": [
       {
         "name": "New Hampshire",
-        "probability": 0.6138613861386139,
+        "probability": 0.6237623762376238,
         "type": "PROBABILITY"
       },
       {
@@ -2729,7 +2729,7 @@
       },
       {
         "name": "Iowa",
-        "probability": 0.1188118811881188,
+        "probability": 0.10891089108910891,
         "type": "PROBABILITY"
       },
       {
@@ -2738,7 +2738,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:54.987Z",
+    "timestamp": "2021-04-08T11:16:30.463Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2751,16 +2751,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.69,
+        "probability": 0.71,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.31000000000000005,
+        "probability": 0.29000000000000004,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:28:59.246Z",
+    "timestamp": "2021-04-08T11:16:36.161Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2782,7 +2782,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:03.591Z",
+    "timestamp": "2021-04-08T11:16:40.755Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2795,61 +2795,61 @@
     "options": [
       {
         "name": "Eric Schmitt",
-        "probability": 0.3925233644859813,
+        "probability": 0.39999999999999997,
         "type": "PROBABILITY"
       },
       {
         "name": "Eric Greitens",
-        "probability": 0.3644859813084112,
+        "probability": 0.37142857142857144,
         "type": "PROBABILITY"
       },
       {
         "name": "Jason Smith",
-        "probability": 0.102803738317757,
+        "probability": 0.10476190476190476,
         "type": "PROBABILITY"
       },
       {
         "name": "Ann Wagner",
-        "probability": 0.05607476635514018,
+        "probability": 0.03809523809523809,
         "type": "PROBABILITY"
       },
       {
         "name": "Vicky Hartzler",
-        "probability": 0.02803738317757009,
+        "probability": 0.02857142857142857,
         "type": "PROBABILITY"
       },
       {
         "name": "Roy Blunt",
-        "probability": 0.009345794392523364,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "Mike Kehoe",
-        "probability": 0.009345794392523364,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "Jay Ashcroft",
-        "probability": 0.009345794392523364,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "Billy Long",
-        "probability": 0.009345794392523364,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "Carl Edwards",
-        "probability": 0.009345794392523364,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       },
       {
         "name": "John Brunner",
-        "probability": 0.009345794392523364,
+        "probability": 0.009523809523809523,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:07.565Z",
+    "timestamp": "2021-04-08T11:16:44.631Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2896,7 +2896,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:13.214Z",
+    "timestamp": "2021-04-08T11:16:50.598Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2909,16 +2909,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.18,
+        "probability": 0.14,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.8200000000000001,
+        "probability": 0.86,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:16.987Z",
+    "timestamp": "2021-04-08T11:16:54.986Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2931,16 +2931,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.46,
+        "probability": 0.5,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.54,
+        "probability": 0.5,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:21.064Z",
+    "timestamp": "2021-04-08T11:16:59.799Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -2963,7 +2963,7 @@
       },
       {
         "name": "6 or 7 votes",
-        "probability": 0.06,
+        "probability": 0.07,
         "type": "PROBABILITY"
       },
       {
@@ -2993,16 +2993,16 @@
       },
       {
         "name": "18 or 19 votes",
-        "probability": 0.06,
+        "probability": 0.07,
         "type": "PROBABILITY"
       },
       {
         "name": "20 or more",
-        "probability": 0.3,
+        "probability": 0.26,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:26.349Z",
+    "timestamp": "2021-04-08T11:17:03.764Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3024,7 +3024,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:32.234Z",
+    "timestamp": "2021-04-08T11:17:07.296Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3037,16 +3037,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.25,
+        "probability": 0.21,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.75,
+        "probability": 0.79,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:35.836Z",
+    "timestamp": "2021-04-08T11:17:13.018Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3068,7 +3068,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:41.378Z",
+    "timestamp": "2021-04-08T11:17:17.946Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3081,26 +3081,26 @@
     "options": [
       {
         "name": "Rep. House & Senate",
-        "probability": 0.2980769230769231,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "R House, D Senate",
-        "probability": 0.2980769230769231,
+        "probability": 0.3113207547169811,
         "type": "PROBABILITY"
       },
       {
         "name": "Dem. House & Senate",
-        "probability": 0.2788461538461538,
+        "probability": 0.2830188679245283,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "R House, D Senate",
+        "probability": 0.2830188679245283,
         "type": "PROBABILITY"
       },
       {
         "name": "D House, R Senate",
-        "probability": 0.125,
+        "probability": 0.12264150943396226,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:47.279Z",
+    "timestamp": "2021-04-08T11:17:23.407Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3118,17 +3118,22 @@
       },
       {
         "name": "Andrew Cuomo",
-        "probability": 0.21,
+        "probability": 0.24,
         "type": "PROBABILITY"
       },
       {
         "name": "Kathy Hochul",
-        "probability": 0.11,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "Alessandra Biaggi",
         "probability": 0.04,
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "A. Ocasio-Cortez",
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
@@ -3139,11 +3144,6 @@
       {
         "name": "Kirsten Gillibrand",
         "probability": 0.03,
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "A. Ocasio-Cortez",
-        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
@@ -3172,7 +3172,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:51.945Z",
+    "timestamp": "2021-04-08T11:17:27.721Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3185,16 +3185,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.16,
+        "probability": 0.15,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.84,
+        "probability": 0.85,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:29:55.822Z",
+    "timestamp": "2021-04-08T11:17:31.991Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3231,7 +3231,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:01.659Z",
+    "timestamp": "2021-04-08T11:17:37.408Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3244,21 +3244,21 @@
     "options": [
       {
         "name": "Republican",
-        "probability": 0.8285714285714285,
+        "probability": 0.8269230769230769,
         "type": "PROBABILITY"
       },
       {
         "name": "Independent",
-        "probability": 0.13333333333333333,
+        "probability": 0.13461538461538464,
         "type": "PROBABILITY"
       },
       {
         "name": "Democratic",
-        "probability": 0.03809523809523809,
+        "probability": 0.038461538461538464,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:06.263Z",
+    "timestamp": "2021-04-08T11:17:43.500Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3271,46 +3271,46 @@
     "options": [
       {
         "name": "Nina Turner",
-        "probability": 0.7064220183486238,
+        "probability": 0.7,
         "type": "PROBABILITY"
       },
       {
         "name": "Shontel Brown",
-        "probability": 0.2385321100917431,
+        "probability": 0.24545454545454545,
         "type": "PROBABILITY"
       },
       {
         "name": "John Barnes Jr.",
-        "probability": 0.009174311926605503,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "Bryan Flannery",
-        "probability": 0.009174311926605503,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "Jeff Johnson",
-        "probability": 0.009174311926605503,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "Tariq Shabazz",
-        "probability": 0.009174311926605503,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "Shirley Smith",
-        "probability": 0.009174311926605503,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       },
       {
         "name": "Dennis Kucinich",
-        "probability": 0.009174311926605503,
+        "probability": 0.00909090909090909,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:10.004Z",
+    "timestamp": "2021-04-08T11:17:47.406Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3342,7 +3342,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:14.329Z",
+    "timestamp": "2021-04-08T11:17:53.645Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3355,16 +3355,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.89,
+        "probability": 0.9,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.10999999999999999,
+        "probability": 0.09999999999999998,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:20.593Z",
+    "timestamp": "2021-04-08T11:17:58.577Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3377,12 +3377,12 @@
     "options": [
       {
         "name": "Mo Brooks",
-        "probability": 0.82,
+        "probability": 0.83,
         "type": "PROBABILITY"
       },
       {
         "name": "Katie Britt",
-        "probability": 0.07,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
@@ -3411,7 +3411,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:25.336Z",
+    "timestamp": "2021-04-08T11:18:02.024Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3433,7 +3433,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:31.729Z",
+    "timestamp": "2021-04-08T11:18:05.544Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3495,7 +3495,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:37.892Z",
+    "timestamp": "2021-04-08T11:18:10.311Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3508,56 +3508,56 @@
     "options": [
       {
         "name": "Fewer than 1.6M",
-        "probability": 0.07142857142857144,
+        "probability": 0.06896551724137932,
         "type": "PROBABILITY"
       },
       {
         "name": "1.6M to 1.625M",
-        "probability": 0.03571428571428572,
+        "probability": 0.03448275862068966,
         "type": "PROBABILITY"
       },
       {
         "name": "1.625M to 1.65M",
-        "probability": 0.07142857142857144,
+        "probability": 0.07758620689655173,
         "type": "PROBABILITY"
       },
       {
         "name": "1.65M to 1.675M",
-        "probability": 0.14285714285714288,
+        "probability": 0.13793103448275865,
         "type": "PROBABILITY"
       },
       {
         "name": "1.675M to 1.7M",
-        "probability": 0.25892857142857145,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "1.7M to 1.725M",
-        "probability": 0.25892857142857145,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "1.725M to 1.75M",
-        "probability": 0.11607142857142859,
+        "probability": 0.12068965517241381,
         "type": "PROBABILITY"
       },
       {
         "name": "1.75M to 1.775M",
-        "probability": 0.026785714285714288,
+        "probability": 0.02586206896551724,
         "type": "PROBABILITY"
       },
       {
         "name": "1.775M to 1.8M",
-        "probability": 0.00892857142857143,
+        "probability": 0.01724137931034483,
         "type": "PROBABILITY"
       },
       {
         "name": "1.8M or more",
-        "probability": 0.00892857142857143,
+        "probability": 0.01724137931034483,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:43.629Z",
+    "timestamp": "2021-04-08T11:18:15.533Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3579,7 +3579,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:47.269Z",
+    "timestamp": "2021-04-08T11:18:21.565Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3607,16 +3607,16 @@
       },
       {
         "name": "Jim Carlin",
-        "probability": 0.04,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
         "name": "Matthew Whitaker",
-        "probability": 0.04,
+        "probability": 0.02,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:52.324Z",
+    "timestamp": "2021-04-08T11:18:26.440Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3629,41 +3629,41 @@
     "options": [
       {
         "name": "3 or fewer",
-        "probability": 0.018691588785046728,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       },
       {
         "name": "4 or 5",
-        "probability": 0.2897196261682243,
+        "probability": 0.27777777777777773,
         "type": "PROBABILITY"
       },
       {
         "name": "6 or 7",
-        "probability": 0.6355140186915887,
+        "probability": 0.6666666666666666,
         "type": "PROBABILITY"
       },
       {
         "name": "8 or 9",
-        "probability": 0.02803738317757009,
+        "probability": 0.018518518518518517,
         "type": "PROBABILITY"
       },
       {
         "name": "10 or 11",
-        "probability": 0.009345794392523364,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       },
       {
         "name": "12 or 13",
-        "probability": 0.009345794392523364,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       },
       {
         "name": "14 or more",
-        "probability": 0.009345794392523364,
+        "probability": 0.009259259259259259,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:30:57.384Z",
+    "timestamp": "2021-04-08T11:18:32.157Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3676,7 +3676,7 @@
     "options": [
       {
         "name": "Ron Johnson",
-        "probability": 0.52,
+        "probability": 0.53,
         "type": "PROBABILITY"
       },
       {
@@ -3700,7 +3700,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:02.512Z",
+    "timestamp": "2021-04-08T11:18:35.678Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3713,56 +3713,56 @@
     "options": [
       {
         "name": "59 or fewer",
-        "probability": 0.5636363636363636,
+        "probability": 0.5999999999999998,
         "type": "PROBABILITY"
       },
       {
         "name": "60 to 62",
-        "probability": 0.027272727272727268,
+        "probability": 0.026086956521739122,
         "type": "PROBABILITY"
       },
       {
         "name": "63 to 65",
-        "probability": 0.01818181818181818,
+        "probability": 0.026086956521739122,
         "type": "PROBABILITY"
       },
       {
         "name": "66 to 68",
-        "probability": 0.027272727272727268,
+        "probability": 0.03478260869565216,
         "type": "PROBABILITY"
       },
       {
         "name": "69 to 71",
-        "probability": 0.045454545454545456,
+        "probability": 0.03478260869565216,
         "type": "PROBABILITY"
       },
       {
         "name": "72 to 74",
-        "probability": 0.06363636363636364,
+        "probability": 0.052173913043478244,
         "type": "PROBABILITY"
       },
       {
         "name": "75 to 77",
-        "probability": 0.06363636363636364,
+        "probability": 0.052173913043478244,
         "type": "PROBABILITY"
       },
       {
         "name": "78 to 80",
-        "probability": 0.07272727272727272,
+        "probability": 0.06086956521739129,
         "type": "PROBABILITY"
       },
       {
         "name": "81 to 83",
-        "probability": 0.054545454545454536,
+        "probability": 0.052173913043478244,
         "type": "PROBABILITY"
       },
       {
         "name": "84 or more",
-        "probability": 0.06363636363636364,
+        "probability": 0.06086956521739129,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:06.071Z",
+    "timestamp": "2021-04-08T11:18:39.582Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3775,16 +3775,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.67,
+        "probability": 0.68,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.32999999999999996,
+        "probability": 0.31999999999999995,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:11.248Z",
+    "timestamp": "2021-04-08T11:18:45.849Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3797,7 +3797,7 @@
     "options": [
       {
         "name": "Brian Kemp",
-        "probability": 0.56,
+        "probability": 0.55,
         "type": "PROBABILITY"
       },
       {
@@ -3812,7 +3812,7 @@
       },
       {
         "name": "Herschel Walker",
-        "probability": 0.03,
+        "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
@@ -3821,7 +3821,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:17.157Z",
+    "timestamp": "2021-04-08T11:18:51.448Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3834,56 +3834,56 @@
     "options": [
       {
         "name": "Under 2%",
-        "probability": 0.09803921568627451,
+        "probability": 0.11320754716981131,
         "type": "PROBABILITY"
       },
       {
         "name": "2% to 4%",
-        "probability": 0.10784313725490197,
+        "probability": 0.11320754716981131,
         "type": "PROBABILITY"
       },
       {
         "name": "4% to 6%",
-        "probability": 0.11764705882352941,
+        "probability": 0.12264150943396226,
         "type": "PROBABILITY"
       },
       {
         "name": "6% to 8%",
-        "probability": 0.11764705882352941,
+        "probability": 0.12264150943396226,
         "type": "PROBABILITY"
       },
       {
         "name": "8% to 10%",
-        "probability": 0.11764705882352941,
+        "probability": 0.12264150943396226,
         "type": "PROBABILITY"
       },
       {
         "name": "10% to 12%",
-        "probability": 0.11764705882352941,
+        "probability": 0.10377358490566037,
         "type": "PROBABILITY"
       },
       {
         "name": "12% to 14%",
-        "probability": 0.08823529411764705,
+        "probability": 0.08490566037735849,
         "type": "PROBABILITY"
       },
       {
         "name": "14% to 16%",
-        "probability": 0.058823529411764705,
+        "probability": 0.056603773584905655,
         "type": "PROBABILITY"
       },
       {
         "name": "16% to 18%",
-        "probability": 0.058823529411764705,
+        "probability": 0.056603773584905655,
         "type": "PROBABILITY"
       },
       {
         "name": "18% or more",
-        "probability": 0.11764705882352941,
+        "probability": 0.10377358490566037,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:23.303Z",
+    "timestamp": "2021-04-08T11:18:57.798Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3896,16 +3896,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.48,
+        "probability": 0.47,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.52,
+        "probability": 0.53,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:26.812Z",
+    "timestamp": "2021-04-08T11:19:03.868Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3918,7 +3918,7 @@
     "options": [
       {
         "name": "49 or fewer",
-        "probability": 0.01,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
@@ -3928,7 +3928,7 @@
       },
       {
         "name": "53 to 55",
-        "probability": 0.07,
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
@@ -3938,36 +3938,36 @@
       },
       {
         "name": "59 to 61",
-        "probability": 0.25,
+        "probability": 0.23,
         "type": "PROBABILITY"
       },
       {
         "name": "62 to 64",
-        "probability": 0.22,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "65 to 67",
-        "probability": 0.09,
+        "probability": 0.11,
         "type": "PROBABILITY"
       },
       {
         "name": "68 to 70",
-        "probability": 0.04,
+        "probability": 0.05,
         "type": "PROBABILITY"
       },
       {
         "name": "71 to 73",
-        "probability": 0.01,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
         "name": "74 or more",
-        "probability": 0.04,
+        "probability": 0.03,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:31.907Z",
+    "timestamp": "2021-04-08T11:19:09.943Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -3980,56 +3980,56 @@
     "options": [
       {
         "name": "49 or fewer",
-        "probability": 0.038834951456310676,
+        "probability": 0.03773584905660377,
         "type": "PROBABILITY"
       },
       {
         "name": "50",
-        "probability": 0.3786407766990291,
+        "probability": 0.36792452830188677,
         "type": "PROBABILITY"
       },
       {
         "name": "51",
-        "probability": 0.2912621359223301,
+        "probability": 0.3113207547169811,
         "type": "PROBABILITY"
       },
       {
         "name": "52",
-        "probability": 0.20388349514563106,
+        "probability": 0.1981132075471698,
         "type": "PROBABILITY"
       },
       {
         "name": "53",
-        "probability": 0.029126213592233007,
+        "probability": 0.028301886792452827,
         "type": "PROBABILITY"
       },
       {
         "name": "54",
-        "probability": 0.019417475728155338,
+        "probability": 0.018867924528301886,
         "type": "PROBABILITY"
       },
       {
         "name": "55",
-        "probability": 0.009708737864077669,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "56",
-        "probability": 0.009708737864077669,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "57",
-        "probability": 0.009708737864077669,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       },
       {
         "name": "58 or more",
-        "probability": 0.009708737864077669,
+        "probability": 0.009433962264150943,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:35.867Z",
+    "timestamp": "2021-04-08T11:19:16.255Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -4047,12 +4047,12 @@
       },
       {
         "name": "50",
-        "probability": 0.66,
+        "probability": 0.67,
         "type": "PROBABILITY"
       },
       {
         "name": "51",
-        "probability": 0.07,
+        "probability": 0.08,
         "type": "PROBABILITY"
       },
       {
@@ -4091,7 +4091,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:40.354Z",
+    "timestamp": "2021-04-08T11:19:20.671Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -4113,7 +4113,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:45.140Z",
+    "timestamp": "2021-04-08T11:19:25.180Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -4140,7 +4140,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:49.883Z",
+    "timestamp": "2021-04-08T11:19:29.043Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -4177,7 +4177,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:31:54.705Z",
+    "timestamp": "2021-04-08T11:19:34.961Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -4199,7 +4199,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:32:01.001Z",
+    "timestamp": "2021-04-08T11:19:39.458Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -4221,7 +4221,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:32:05.114Z",
+    "timestamp": "2021-04-08T11:19:43.155Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -4234,16 +4234,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.85,
+        "probability": 0.87,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.15000000000000002,
+        "probability": 0.13,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:32:09.909Z",
+    "timestamp": "2021-04-08T11:19:48.937Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -4256,16 +4256,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.77,
+        "probability": 0.78,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.22999999999999998,
+        "probability": 0.21999999999999997,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:32:14.988Z",
+    "timestamp": "2021-04-08T11:19:53.435Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -4278,26 +4278,26 @@
     "options": [
       {
         "name": "Ron DeSantis",
-        "probability": 0.7596153846153846,
+        "probability": 0.77,
         "type": "PROBABILITY"
       },
       {
         "name": "Nikki Fried",
-        "probability": 0.16346153846153846,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "Val Demings",
-        "probability": 0.038461538461538464,
+        "probability": 0.04,
         "type": "PROBABILITY"
       },
       {
         "name": "Charlie Crist",
-        "probability": 0.038461538461538464,
+        "probability": 0.04,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:32:19.447Z",
+    "timestamp": "2021-04-08T11:19:59.135Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -4310,56 +4310,56 @@
     "options": [
       {
         "name": "Under 1%",
-        "probability": 0.28571428571428564,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "1% to 2%",
-        "probability": 0.20952380952380947,
+        "probability": 0.25,
         "type": "PROBABILITY"
       },
       {
         "name": "2% to 3%",
-        "probability": 0.17142857142857137,
+        "probability": 0.2,
         "type": "PROBABILITY"
       },
       {
         "name": "3% to 4%",
-        "probability": 0.06666666666666665,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
         "name": "4% to 5%",
-        "probability": 0.05714285714285713,
+        "probability": 0.05,
         "type": "PROBABILITY"
       },
       {
         "name": "5% to 6%",
-        "probability": 0.05714285714285713,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "6% to 7%",
-        "probability": 0.028571428571428564,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "7% to 8%",
-        "probability": 0.038095238095238085,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "8% to 9%",
-        "probability": 0.038095238095238085,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "9% or more",
-        "probability": 0.04761904761904761,
+        "probability": 0.03,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:32:23.856Z",
+    "timestamp": "2021-04-08T11:20:02.967Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -4372,56 +4372,56 @@
     "options": [
       {
         "name": "Arauz by 5% or more",
-        "probability": 0.2644628099173554,
+        "probability": 0.16814159292035397,
         "type": "PROBABILITY"
       },
       {
         "name": "Arauz by 4% - 5%",
-        "probability": 0.15702479338842976,
+        "probability": 0.10619469026548671,
         "type": "PROBABILITY"
       },
       {
         "name": "Arauz by 3% - 4%",
-        "probability": 0.17355371900826447,
+        "probability": 0.07964601769911503,
         "type": "PROBABILITY"
       },
       {
         "name": "Arauz by 2% - 3%",
-        "probability": 0,
+        "probability": 0.04424778761061947,
         "type": "PROBABILITY"
       },
       {
         "name": "Arauz by 1% - 2%",
-        "probability": 0,
+        "probability": 0.16814159292035397,
         "type": "PROBABILITY"
       },
       {
         "name": "Arauz, less than 1%",
-        "probability": 0.049586776859504134,
+        "probability": 0.15044247787610618,
         "type": "PROBABILITY"
       },
       {
         "name": "Lasso, less than 1%",
-        "probability": 0,
+        "probability": 0.15044247787610618,
         "type": "PROBABILITY"
       },
       {
         "name": "Lasso by 1% - 2%",
-        "probability": 0.09917355371900827,
+        "probability": 0.035398230088495575,
         "type": "PROBABILITY"
       },
       {
         "name": "Lasso by 2% - 3%",
-        "probability": 0.1322314049586777,
+        "probability": 0.053097345132743355,
         "type": "PROBABILITY"
       },
       {
         "name": "Lasso by 3% or more",
-        "probability": 0.12396694214876033,
+        "probability": 0.04424778761061947,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:32:28.824Z",
+    "timestamp": "2021-04-08T11:20:06.594Z",
     "qualityindicators": {
       "stars": 3
     }

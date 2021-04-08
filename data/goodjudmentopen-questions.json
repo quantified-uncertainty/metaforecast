@@ -7,54 +7,54 @@
     "options": [
       {
         "name": "Fewer than 1,500",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1,500 and 3,000, inclusive",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 3,000 but fewer than 4,500",
-        "probability": 0.11109999999999999,
+        "probability": 0.52,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 4,500 and 6,000, inclusive",
-        "probability": 0.11109999999999999,
+        "probability": 0.48,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 6,000 but fewer than 7,500",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 7,500 and 9,000 inclusive",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 9,000 but fewer than 10,500",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 10,500 and 12,000 inclusive",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 12,000",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:12:43.319Z",
+    "timestamp": "2021-04-08T09:51:45.150Z",
     "qualityindicators": {
-      "numforecasts": "15",
-      "numforecasters": "9",
+      "numforecasts": "19",
+      "numforecasters": "12",
       "stars": 3
     }
   },
@@ -66,54 +66,54 @@
     "options": [
       {
         "name": "Fewer than 150,000",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 150,000 and 250,000, inclusive",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 250,000 but fewer than 350,000",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 350,000 and 450,000, inclusive",
-        "probability": 0.11109999999999999,
+        "probability": 0.54,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 450,000 but fewer than 550,000",
-        "probability": 0.11109999999999999,
+        "probability": 0.46,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 550,000 and 650,000, inclusive",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 650,000 but fewer than 750,000",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 750,000 and 850,000, inclusive",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 850,000",
-        "probability": 0.11109999999999999,
+        "probability": 0,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:12:47.531Z",
+    "timestamp": "2021-04-08T09:51:48.783Z",
     "qualityindicators": {
-      "numforecasts": "8",
-      "numforecasters": "6",
+      "numforecasts": "13",
+      "numforecasters": "10",
       "stars": 3
     }
   },
@@ -135,12 +135,12 @@
       },
       {
         "name": "More than 95,000,000 but fewer than 105,000,000",
-        "probability": 0.07,
+        "probability": 0.14,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 105,000,000 and 115,000,000, inclusive",
-        "probability": 0.93,
+        "probability": 0.86,
         "type": "PROBABILITY"
       },
       {
@@ -159,10 +159,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:12:50.939Z",
+    "timestamp": "2021-04-08T09:51:52.477Z",
     "qualityindicators": {
-      "numforecasts": "5",
-      "numforecasters": "5",
+      "numforecasts": "8",
+      "numforecasters": "8",
       "stars": 3
     }
   },
@@ -189,12 +189,12 @@
       },
       {
         "name": "Between 35,000 and 45,000, inclusive",
-        "probability": 0.92,
+        "probability": 1,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 45,000 but fewer than 55,000",
-        "probability": 0.08,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -218,10 +218,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:12:54.789Z",
+    "timestamp": "2021-04-08T09:51:56.732Z",
     "qualityindicators": {
-      "numforecasts": "6",
-      "numforecasters": "4",
+      "numforecasts": "9",
+      "numforecasters": "7",
       "stars": 3
     }
   },
@@ -248,7 +248,7 @@
       },
       {
         "name": "Between 150,000,000 and 160,000,000, inclusive",
-        "probability": 0,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
@@ -258,7 +258,7 @@
       },
       {
         "name": "Between 170,000,000 and 180,000,000, inclusive",
-        "probability": 1,
+        "probability": 0.7,
         "type": "PROBABILITY"
       },
       {
@@ -267,10 +267,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:12:58.525Z",
+    "timestamp": "2021-04-08T09:52:00.152Z",
     "qualityindicators": {
-      "numforecasts": "6",
-      "numforecasters": "5",
+      "numforecasts": "11",
+      "numforecasters": "10",
       "stars": 3
     }
   },
@@ -291,10 +291,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:01.555Z",
+    "timestamp": "2021-04-08T09:52:03.206Z",
     "qualityindicators": {
-      "numforecasts": "91",
-      "numforecasters": "78",
+      "numforecasts": "94",
+      "numforecasters": "80",
       "stars": 3
     }
   },
@@ -315,10 +315,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:04.221Z",
+    "timestamp": "2021-04-08T09:52:06.446Z",
     "qualityindicators": {
-      "numforecasts": "111",
-      "numforecasters": "98",
+      "numforecasts": "114",
+      "numforecasters": "100",
       "stars": 3
     }
   },
@@ -330,18 +330,18 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.88,
+        "probability": 0.86,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.12,
+        "probability": 0.14,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:06.389Z",
+    "timestamp": "2021-04-08T09:52:08.814Z",
     "qualityindicators": {
-      "numforecasts": "51",
+      "numforecasts": "52",
       "numforecasters": "41",
       "stars": 3
     }
@@ -354,18 +354,18 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.24,
+        "probability": 0.22,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.76,
+        "probability": 0.78,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:08.969Z",
+    "timestamp": "2021-04-08T09:52:11.333Z",
     "qualityindicators": {
-      "numforecasts": "178",
+      "numforecasts": "179",
       "numforecasters": "144",
       "stars": 3
     }
@@ -378,18 +378,18 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.4,
+        "probability": 0.35,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.6,
+        "probability": 0.65,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:12.054Z",
+    "timestamp": "2021-04-08T09:52:14.465Z",
     "qualityindicators": {
-      "numforecasts": "108",
+      "numforecasts": "110",
       "numforecasters": "81",
       "stars": 3
     }
@@ -426,7 +426,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:15.684Z",
+    "timestamp": "2021-04-08T09:52:17.769Z",
     "qualityindicators": {
       "numforecasts": "148",
       "numforecasters": "84",
@@ -451,18 +451,18 @@
       },
       {
         "name": "More than $140 billion but less than $180 billion",
-        "probability": 0.1,
+        "probability": 0.13,
         "type": "PROBABILITY"
       },
       {
         "name": "$180 billion or more",
-        "probability": 0.9,
+        "probability": 0.87,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:18.506Z",
+    "timestamp": "2021-04-08T09:52:21.161Z",
     "qualityindicators": {
-      "numforecasts": "56",
+      "numforecasts": "57",
       "numforecasters": "41",
       "stars": 3
     }
@@ -489,9 +489,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:21.744Z",
+    "timestamp": "2021-04-08T09:52:23.915Z",
     "qualityindicators": {
-      "numforecasts": "88",
+      "numforecasts": "89",
       "numforecasters": "74",
       "stars": 3
     }
@@ -528,9 +528,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:24.666Z",
+    "timestamp": "2021-04-08T09:52:27.328Z",
     "qualityindicators": {
-      "numforecasts": "63",
+      "numforecasts": "64",
       "numforecasters": "43",
       "stars": 3
     }
@@ -567,7 +567,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:28.137Z",
+    "timestamp": "2021-04-08T09:52:30.433Z",
     "qualityindicators": {
       "numforecasts": "141",
       "numforecasters": "86",
@@ -626,7 +626,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:31.750Z",
+    "timestamp": "2021-04-08T09:52:34.368Z",
     "qualityindicators": {
       "numforecasts": "126",
       "numforecasters": "79",
@@ -670,9 +670,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:34.514Z",
+    "timestamp": "2021-04-08T09:52:37.553Z",
     "qualityindicators": {
-      "numforecasts": "91",
+      "numforecasts": "92",
       "numforecasters": "54",
       "stars": 3
     }
@@ -694,7 +694,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:37.077Z",
+    "timestamp": "2021-04-08T09:52:40.618Z",
     "qualityindicators": {
       "numforecasts": "149",
       "numforecasters": "99",
@@ -724,19 +724,19 @@
       },
       {
         "name": "Between 17.5 million and 19.0 million, inclusive",
-        "probability": 0.37,
+        "probability": 0.39,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 19.0 million",
-        "probability": 0.46,
+        "probability": 0.44,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:40.534Z",
+    "timestamp": "2021-04-08T09:52:43.717Z",
     "qualityindicators": {
-      "numforecasts": "337",
-      "numforecasters": "174",
+      "numforecasts": "342",
+      "numforecasters": "176",
       "stars": 3
     }
   },
@@ -758,7 +758,7 @@
       },
       {
         "name": "More than $35 billion but less than $45 billion",
-        "probability": 0.36,
+        "probability": 0.37,
         "type": "PROBABILITY"
       },
       {
@@ -768,7 +768,7 @@
       },
       {
         "name": "More than $55 billion",
-        "probability": 0.1,
+        "probability": 0.09,
         "type": "PROBABILITY"
       },
       {
@@ -777,10 +777,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:44.532Z",
+    "timestamp": "2021-04-08T09:52:46.957Z",
     "qualityindicators": {
-      "numforecasts": "153",
-      "numforecasters": "97",
+      "numforecasts": "154",
+      "numforecasters": "98",
       "stars": 3
     }
   },
@@ -801,9 +801,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:54.378Z",
+    "timestamp": "2021-04-08T09:52:55.833Z",
     "qualityindicators": {
-      "numforecasts": "140",
+      "numforecasts": "141",
       "numforecasters": "92",
       "stars": 3
     }
@@ -821,22 +821,22 @@
       },
       {
         "name": "Between $75 billion and $100 billion, inclusive",
-        "probability": 0.11,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $100 billion but less than $125 billion",
-        "probability": 0.4,
+        "probability": 0.41,
         "type": "PROBABILITY"
       },
       {
         "name": "Between $125 billion and $150 billion, inclusive",
-        "probability": 0.4,
+        "probability": 0.41,
         "type": "PROBABILITY"
       },
       {
         "name": "More than $150 billion",
-        "probability": 0.06,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
@@ -845,9 +845,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:13:58.492Z",
+    "timestamp": "2021-04-08T09:53:00.606Z",
     "qualityindicators": {
-      "numforecasts": "88",
+      "numforecasts": "90",
       "numforecasters": "49",
       "stars": 3
     }
@@ -879,9 +879,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:01.462Z",
+    "timestamp": "2021-04-08T09:53:04.066Z",
     "qualityindicators": {
-      "numforecasts": "211",
+      "numforecasts": "212",
       "numforecasters": "117",
       "stars": 3
     }
@@ -903,7 +903,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:03.688Z",
+    "timestamp": "2021-04-08T09:53:05.858Z",
     "qualityindicators": {
       "numforecasts": "82",
       "numforecasters": "48",
@@ -947,9 +947,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:07.382Z",
+    "timestamp": "2021-04-08T09:53:08.856Z",
     "qualityindicators": {
-      "numforecasts": "258",
+      "numforecasts": "261",
       "numforecasters": "86",
       "stars": 3
     }
@@ -971,7 +971,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:09.947Z",
+    "timestamp": "2021-04-08T09:53:11.563Z",
     "qualityindicators": {
       "numforecasts": "171",
       "numforecasters": "97",
@@ -1000,9 +1000,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:13.261Z",
+    "timestamp": "2021-04-08T09:53:14.853Z",
     "qualityindicators": {
-      "numforecasts": "92",
+      "numforecasts": "93",
       "numforecasters": "47",
       "stars": 3
     }
@@ -1024,9 +1024,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:16.310Z",
+    "timestamp": "2021-04-08T09:53:17.339Z",
     "qualityindicators": {
-      "numforecasts": "631",
+      "numforecasts": "635",
       "numforecasters": "414",
       "stars": 3
     }
@@ -1049,12 +1049,12 @@
       },
       {
         "name": "Between 9 and 13",
-        "probability": 0.55,
+        "probability": 0.54,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 14 and 18",
-        "probability": 0.33,
+        "probability": 0.34,
         "type": "PROBABILITY"
       },
       {
@@ -1063,9 +1063,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:19.365Z",
+    "timestamp": "2021-04-08T09:53:21.085Z",
     "qualityindicators": {
-      "numforecasts": "477",
+      "numforecasts": "482",
       "numforecasters": "290",
       "stars": 3
     }
@@ -1087,9 +1087,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:21.662Z",
+    "timestamp": "2021-04-08T09:53:23.994Z",
     "qualityindicators": {
-      "numforecasts": "494",
+      "numforecasts": "495",
       "numforecasters": "384",
       "stars": 3
     }
@@ -1111,9 +1111,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:24.641Z",
+    "timestamp": "2021-04-08T09:53:26.268Z",
     "qualityindicators": {
-      "numforecasts": "288",
+      "numforecasts": "290",
       "numforecasters": "218",
       "stars": 3
     }
@@ -1136,12 +1136,12 @@
       },
       {
         "name": "More than 10,000,000 but fewer than 12,000,000",
-        "probability": 0.49,
+        "probability": 0.48,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 12,000,000 and 14,000,000, inclusive",
-        "probability": 0.29,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
@@ -1150,9 +1150,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:28.198Z",
+    "timestamp": "2021-04-08T09:53:29.706Z",
     "qualityindicators": {
-      "numforecasts": "370",
+      "numforecasts": "373",
       "numforecasters": "224",
       "stars": 3
     }
@@ -1189,9 +1189,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:32.433Z",
+    "timestamp": "2021-04-08T09:53:32.328Z",
     "qualityindicators": {
-      "numforecasts": "97",
+      "numforecasts": "98",
       "numforecasters": "34",
       "stars": 3
     }
@@ -1228,9 +1228,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:35.730Z",
+    "timestamp": "2021-04-08T09:53:35.441Z",
     "qualityindicators": {
-      "numforecasts": "241",
+      "numforecasts": "242",
       "numforecasters": "106",
       "stars": 3
     }
@@ -1267,9 +1267,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:38.716Z",
+    "timestamp": "2021-04-08T09:53:39.121Z",
     "qualityindicators": {
-      "numforecasts": "197",
+      "numforecasts": "199",
       "numforecasters": "63",
       "stars": 3
     }
@@ -1296,7 +1296,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:41.312Z",
+    "timestamp": "2021-04-08T09:53:42.144Z",
     "qualityindicators": {
       "numforecasts": "157",
       "numforecasters": "65",
@@ -1325,10 +1325,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:43.821Z",
+    "timestamp": "2021-04-08T09:53:45.072Z",
     "qualityindicators": {
-      "numforecasts": "665",
-      "numforecasters": "395",
+      "numforecasts": "669",
+      "numforecasters": "396",
       "stars": 3
     }
   },
@@ -1349,7 +1349,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:46.685Z",
+    "timestamp": "2021-04-08T09:53:47.972Z",
     "qualityindicators": {
       "numforecasts": "99",
       "numforecasters": "54",
@@ -1373,7 +1373,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:49.556Z",
+    "timestamp": "2021-04-08T09:53:50.192Z",
     "qualityindicators": {
       "numforecasts": "233",
       "numforecasters": "87",
@@ -1397,7 +1397,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:14:51.962Z",
+    "timestamp": "2021-04-08T09:53:52.470Z",
     "qualityindicators": {
       "numforecasts": "268",
       "numforecasters": "84",
@@ -1412,19 +1412,19 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.02,
+        "probability": 0.03,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.98,
+        "probability": 0.97,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:01.448Z",
+    "timestamp": "2021-04-08T09:54:01.617Z",
     "qualityindicators": {
-      "numforecasts": "104",
-      "numforecasters": "57",
+      "numforecasts": "106",
+      "numforecasters": "58",
       "stars": 3
     }
   },
@@ -1445,9 +1445,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:06.925Z",
+    "timestamp": "2021-04-08T09:54:07.652Z",
     "qualityindicators": {
-      "numforecasts": "301",
+      "numforecasts": "302",
       "numforecasters": "132",
       "stars": 3
     }
@@ -1469,9 +1469,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:09.768Z",
+    "timestamp": "2021-04-08T09:54:10.638Z",
     "qualityindicators": {
-      "numforecasts": "214",
+      "numforecasts": "215",
       "numforecasters": "154",
       "stars": 3
     }
@@ -1503,7 +1503,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:12.833Z",
+    "timestamp": "2021-04-08T09:54:13.899Z",
     "qualityindicators": {
       "numforecasts": "202",
       "numforecasters": "129",
@@ -1527,7 +1527,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:15.184Z",
+    "timestamp": "2021-04-08T09:54:16.837Z",
     "qualityindicators": {
       "numforecasts": "190",
       "numforecasters": "95",
@@ -1571,9 +1571,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:18.232Z",
+    "timestamp": "2021-04-08T09:54:20.179Z",
     "qualityindicators": {
-      "numforecasts": "171",
+      "numforecasts": "172",
       "numforecasters": "57",
       "stars": 3
     }
@@ -1595,7 +1595,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:21.434Z",
+    "timestamp": "2021-04-08T09:54:22.688Z",
     "qualityindicators": {
       "numforecasts": "179",
       "numforecasters": "93",
@@ -1619,7 +1619,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:24.295Z",
+    "timestamp": "2021-04-08T09:54:24.873Z",
     "qualityindicators": {
       "numforecasts": "136",
       "numforecasters": "83",
@@ -1643,9 +1643,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:27.327Z",
+    "timestamp": "2021-04-08T09:54:28.160Z",
     "qualityindicators": {
-      "numforecasts": "339",
+      "numforecasts": "340",
       "numforecasters": "128",
       "stars": 3
     }
@@ -1677,10 +1677,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:30.683Z",
+    "timestamp": "2021-04-08T09:54:31.407Z",
     "qualityindicators": {
-      "numforecasts": "280",
-      "numforecasters": "152",
+      "numforecasts": "284",
+      "numforecasters": "153",
       "stars": 3
     }
   },
@@ -1716,10 +1716,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:34.761Z",
+    "timestamp": "2021-04-08T09:54:34.153Z",
     "qualityindicators": {
-      "numforecasts": "189",
-      "numforecasters": "85",
+      "numforecasts": "193",
+      "numforecasters": "87",
       "stars": 3
     }
   },
@@ -1740,9 +1740,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:37.822Z",
+    "timestamp": "2021-04-08T09:54:37.091Z",
     "qualityindicators": {
-      "numforecasts": "115",
+      "numforecasts": "116",
       "numforecasters": "64",
       "stars": 3
     }
@@ -1769,7 +1769,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:40.651Z",
+    "timestamp": "2021-04-08T09:54:39.952Z",
     "qualityindicators": {
       "numforecasts": "108",
       "numforecasters": "71",
@@ -1793,9 +1793,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:43.207Z",
+    "timestamp": "2021-04-08T09:54:42.739Z",
     "qualityindicators": {
-      "numforecasts": "258",
+      "numforecasts": "259",
       "numforecasters": "91",
       "stars": 3
     }
@@ -1817,9 +1817,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:45.864Z",
+    "timestamp": "2021-04-08T09:54:45.761Z",
     "qualityindicators": {
-      "numforecasts": "176",
+      "numforecasts": "177",
       "numforecasters": "102",
       "stars": 3
     }
@@ -1828,7 +1828,7 @@
     "title": "Will U.S. President Joe Biden and Russian President Vladimir Putin hold a bilateral meeting in 2021?",
     "url": "https://www.gjopen.com/questions/1911-will-u-s-president-joe-biden-and-russian-president-vladimir-putin-hold-a-bilateral-meeting-in-2021",
     "platform": "Good Judgment Open",
-    "description": "The world is watching how U.S.-Russia relations will evolve under President Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). For the purposes of this question, a bilateral meeting would be a pre-planned summit or event, rather than, e.g., a one-on-one on the sidelines of a multilateral meeting. A virtual meeting would not count.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\nVersión en Español:\nPregunta: ¿Celebrarán el presidente de los Estados Unidos, Joe Biden, y el presidente ruso, Vladimir Putin, una reunión bilateral en 2021?\nInformación adicional: El mundo está observando cómo evolucionarán las relaciones entre Estados Unidos y Rusia bajo el presidente Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). A los efectos de esta pregunta, una reunión bilateral sería una cumbre o evento planificado previamente, en lugar de, por ejemplo, un \"uno a uno\" al margen de una reunión multilateral. Una reunión virtual no contaría a efectos de esta pregunta.\nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#3e5d525f4c5758575d5f4a5751504d7e5951515a544b5a59535b504a105d5153014d4b5c545b5d4a036f4b5b4d4a5751501b0c0e7d525f4c5758575d5f4a575150). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor [clique aquí](https://goodjudgment.com/).\n",
+    "description": "The world is watching how U.S.-Russia relations will evolve under President Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). For the purposes of this question, a bilateral meeting would be a pre-planned summit or event, rather than, e.g., a one-on-one on the sidelines of a multilateral meeting. A virtual meeting would not count.\nTo learn more about how you can become a Superforecaster, [see here](https://goodjudgment.com/how-to-become-a-superforecaster/). For other posts from our Insights blog, [click here](https://goodjudgment.com/insights/).\nVersión en Español:\nPregunta: ¿Celebrarán el presidente de los Estados Unidos, Joe Biden, y el presidente ruso, Vladimir Putin, una reunión bilateral en 2021?\nInformación adicional: El mundo está observando cómo evolucionarán las relaciones entre Estados Unidos y Rusia bajo el presidente Biden ([NPR](https://www.npr.org/2020/12/21/948736756/putin-and-biden-signal-chilly-relations-to-come), [CNBC](https://www.cnbc.com/2021/01/17/biden-national-security-advisor-calls-for-russia-to-release-navalny.html), [New Statesman](https://www.newstatesman.com/international/places/2020/12/what-will-joe-biden-bring-us-russia-relationship)). A los efectos de esta pregunta, una reunión bilateral sería una cumbre o evento planificado previamente, en lugar de, por ejemplo, un \"uno a uno\" al margen de una reunión multilateral. Una reunión virtual no contaría a efectos de esta pregunta.\nSi tiene alguna duda o pregunta, por favor lea nuestras Preguntas Frecuentes ([FAQs](https://www.gjopen.com/faq#question)) o envíenos un [correo electrónico](/cdn-cgi/l/email-protection#9bf8f7fae9f2fdf2f8faeff2f4f5e8dbfcf4f4fff1eefffcf6fef5efb5f8f4f6a4e8eef9f1fef8efa6caeefee8eff2f4f5bea9abd8f7fae9f2fdf2f8faeff2f4f5). Para aprender más sobre Good Judgment y Superpronósticos (Superforecasting), por favor [clique aquí](https://goodjudgment.com/).\n",
     "options": [
       {
         "name": "Yes",
@@ -1841,9 +1841,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:48.330Z",
+    "timestamp": "2021-04-08T09:54:48.713Z",
     "qualityindicators": {
-      "numforecasts": "430",
+      "numforecasts": "431",
       "numforecasters": "204",
       "stars": 3
     }
@@ -1880,9 +1880,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:51.891Z",
+    "timestamp": "2021-04-08T09:54:52.356Z",
     "qualityindicators": {
-      "numforecasts": "505",
+      "numforecasts": "507",
       "numforecasters": "78",
       "stars": 3
     }
@@ -1904,9 +1904,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:55.083Z",
+    "timestamp": "2021-04-08T09:54:54.536Z",
     "qualityindicators": {
-      "numforecasts": "179",
+      "numforecasts": "181",
       "numforecasters": "120",
       "stars": 3
     }
@@ -1928,9 +1928,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:15:58.088Z",
+    "timestamp": "2021-04-08T09:54:56.862Z",
     "qualityindicators": {
-      "numforecasts": "353",
+      "numforecasts": "355",
       "numforecasters": "153",
       "stars": 3
     }
@@ -1952,7 +1952,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:07.481Z",
+    "timestamp": "2021-04-08T09:55:06.383Z",
     "qualityindicators": {
       "numforecasts": "96",
       "numforecasters": "52",
@@ -1986,9 +1986,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:11.999Z",
+    "timestamp": "2021-04-08T09:55:09.481Z",
     "qualityindicators": {
-      "numforecasts": "210",
+      "numforecasts": "211",
       "numforecasters": "99",
       "stars": 3
     }
@@ -2015,9 +2015,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:15.136Z",
+    "timestamp": "2021-04-08T09:55:12.894Z",
     "qualityindicators": {
-      "numforecasts": "86",
+      "numforecasts": "87",
       "numforecasters": "40",
       "stars": 3
     }
@@ -2030,12 +2030,12 @@
     "options": [
       {
         "name": "Between 18 March 2021 and 17 June 2021",
-        "probability": 0.63,
+        "probability": 0.61,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 18 June 2021 and 17 September 2021",
-        "probability": 0.35,
+        "probability": 0.37,
         "type": "PROBABILITY"
       },
       {
@@ -2044,9 +2044,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:18.208Z",
+    "timestamp": "2021-04-08T09:55:16.128Z",
     "qualityindicators": {
-      "numforecasts": "276",
+      "numforecasts": "277",
       "numforecasters": "88",
       "stars": 3
     }
@@ -2068,7 +2068,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:20.445Z",
+    "timestamp": "2021-04-08T09:55:18.730Z",
     "qualityindicators": {
       "numforecasts": "123",
       "numforecasters": "47",
@@ -2107,9 +2107,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:24.061Z",
+    "timestamp": "2021-04-08T09:55:21.738Z",
     "qualityindicators": {
-      "numforecasts": "266",
+      "numforecasts": "267",
       "numforecasters": "71",
       "stars": 3
     }
@@ -2131,9 +2131,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:26.564Z",
+    "timestamp": "2021-04-08T09:55:24.418Z",
     "qualityindicators": {
-      "numforecasts": "203",
+      "numforecasts": "205",
       "numforecasters": "69",
       "stars": 3
     }
@@ -2160,7 +2160,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:29.253Z",
+    "timestamp": "2021-04-08T09:55:27.207Z",
     "qualityindicators": {
       "numforecasts": "142",
       "numforecasters": "75",
@@ -2184,9 +2184,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:31.757Z",
+    "timestamp": "2021-04-08T09:55:29.952Z",
     "qualityindicators": {
-      "numforecasts": "309",
+      "numforecasts": "310",
       "numforecasters": "147",
       "stars": 3
     }
@@ -2208,9 +2208,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:34.372Z",
+    "timestamp": "2021-04-08T09:55:32.907Z",
     "qualityindicators": {
-      "numforecasts": "283",
+      "numforecasts": "284",
       "numforecasters": "96",
       "stars": 3
     }
@@ -2232,7 +2232,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:36.792Z",
+    "timestamp": "2021-04-08T09:55:35.868Z",
     "qualityindicators": {
       "numforecasts": "116",
       "numforecasters": "37",
@@ -2261,9 +2261,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:39.775Z",
+    "timestamp": "2021-04-08T09:55:38.903Z",
     "qualityindicators": {
-      "numforecasts": "201",
+      "numforecasts": "202",
       "numforecasters": "71",
       "stars": 3
     }
@@ -2290,10 +2290,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:43.223Z",
+    "timestamp": "2021-04-08T09:55:42.102Z",
     "qualityindicators": {
-      "numforecasts": "218",
-      "numforecasters": "108",
+      "numforecasts": "219",
+      "numforecasters": "109",
       "stars": 3
     }
   },
@@ -2315,23 +2315,23 @@
       },
       {
         "name": "More than 2.000 but less than 2.500",
-        "probability": 0.53,
+        "probability": 0.57,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 2.500 and 3.000, inclusive",
-        "probability": 0.35,
+        "probability": 0.32,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 3.000",
-        "probability": 0.06,
+        "probability": 0.05,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:46.664Z",
+    "timestamp": "2021-04-08T09:55:45.708Z",
     "qualityindicators": {
-      "numforecasts": "312",
+      "numforecasts": "314",
       "numforecasters": "77",
       "stars": 3
     }
@@ -2344,19 +2344,19 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.13,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.87,
+        "probability": 0.88,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:48.804Z",
+    "timestamp": "2021-04-08T09:55:48.084Z",
     "qualityindicators": {
-      "numforecasts": "241",
-      "numforecasters": "88",
+      "numforecasts": "242",
+      "numforecasters": "89",
       "stars": 3
     }
   },
@@ -2382,7 +2382,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:51.750Z",
+    "timestamp": "2021-04-08T09:55:51.032Z",
     "qualityindicators": {
       "numforecasts": "130",
       "numforecasters": "87",
@@ -2406,7 +2406,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:53.971Z",
+    "timestamp": "2021-04-08T09:55:55.043Z",
     "qualityindicators": {
       "numforecasts": "184",
       "numforecasters": "83",
@@ -2430,7 +2430,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:56.619Z",
+    "timestamp": "2021-04-08T09:55:58.001Z",
     "qualityindicators": {
       "numforecasts": "288",
       "numforecasters": "68",
@@ -2445,24 +2445,24 @@
     "options": [
       {
         "name": "Yes, and the EU will ratify it before 1 January 2022",
-        "probability": 0.11,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Yes, and the EU will not ratify it before 1 January 2022",
-        "probability": 0.87,
+        "probability": 0.86,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.02,
+        "probability": 0.04,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:16:59.908Z",
+    "timestamp": "2021-04-08T09:56:00.663Z",
     "qualityindicators": {
-      "numforecasts": "522",
-      "numforecasters": "198",
+      "numforecasts": "523",
+      "numforecasters": "199",
       "stars": 3
     }
   },
@@ -2493,7 +2493,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:02.647Z",
+    "timestamp": "2021-04-08T09:56:03.704Z",
     "qualityindicators": {
       "numforecasts": "482",
       "numforecasters": "220",
@@ -2517,9 +2517,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:11.074Z",
+    "timestamp": "2021-04-08T09:56:12.625Z",
     "qualityindicators": {
-      "numforecasts": "292",
+      "numforecasts": "293",
       "numforecasters": "148",
       "stars": 3
     }
@@ -2541,10 +2541,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:14.065Z",
+    "timestamp": "2021-04-08T09:56:15.614Z",
     "qualityindicators": {
-      "numforecasts": "394",
-      "numforecasters": "231",
+      "numforecasts": "396",
+      "numforecasters": "233",
       "stars": 3
     }
   },
@@ -2565,10 +2565,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:16.693Z",
+    "timestamp": "2021-04-08T09:56:17.809Z",
     "qualityindicators": {
-      "numforecasts": "322",
-      "numforecasters": "106",
+      "numforecasts": "323",
+      "numforecasters": "107",
       "stars": 3
     }
   },
@@ -2599,7 +2599,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:20.408Z",
+    "timestamp": "2021-04-08T09:56:20.490Z",
     "qualityindicators": {
       "numforecasts": "376",
       "numforecasters": "106",
@@ -2623,7 +2623,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:23.039Z",
+    "timestamp": "2021-04-08T09:56:22.907Z",
     "qualityindicators": {
       "numforecasts": "265",
       "numforecasters": "128",
@@ -2648,12 +2648,12 @@
       },
       {
         "name": "Between 1 July and 30 September 2021",
-        "probability": 0.65,
+        "probability": 0.69,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 October 2021 and 31 December 2021",
-        "probability": 0.33,
+        "probability": 0.29,
         "type": "PROBABILITY"
       },
       {
@@ -2662,9 +2662,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:26.183Z",
+    "timestamp": "2021-04-08T09:56:25.943Z",
     "qualityindicators": {
-      "numforecasts": "302",
+      "numforecasts": "304",
       "numforecasters": "102",
       "stars": 3
     }
@@ -2686,9 +2686,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:28.635Z",
+    "timestamp": "2021-04-08T09:56:28.317Z",
     "qualityindicators": {
-      "numforecasts": "91",
+      "numforecasts": "92",
       "numforecasters": "45",
       "stars": 3
     }
@@ -2710,9 +2710,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:34.056Z",
+    "timestamp": "2021-04-08T09:56:31.313Z",
     "qualityindicators": {
-      "numforecasts": "434",
+      "numforecasts": "436",
       "numforecasters": "218",
       "stars": 3
     }
@@ -2734,10 +2734,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:37.038Z",
+    "timestamp": "2021-04-08T09:56:33.990Z",
     "qualityindicators": {
-      "numforecasts": "124",
-      "numforecasters": "62",
+      "numforecasts": "125",
+      "numforecasters": "63",
       "stars": 3
     }
   },
@@ -2758,10 +2758,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:39.408Z",
+    "timestamp": "2021-04-08T09:56:36.896Z",
     "qualityindicators": {
-      "numforecasts": "97",
-      "numforecasters": "33",
+      "numforecasts": "98",
+      "numforecasters": "34",
       "stars": 3
     }
   },
@@ -2797,7 +2797,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:43.179Z",
+    "timestamp": "2021-04-08T09:56:40.494Z",
     "qualityindicators": {
       "numforecasts": "308",
       "numforecasters": "45",
@@ -2831,7 +2831,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:45.822Z",
+    "timestamp": "2021-04-08T09:56:43.240Z",
     "qualityindicators": {
       "numforecasts": "150",
       "numforecasters": "31",
@@ -2846,7 +2846,7 @@
     "options": [
       {
         "name": "A candidate from Acción Popular (Popular Action)",
-        "probability": 0.33,
+        "probability": 0.34,
         "type": "PROBABILITY"
       },
       {
@@ -2861,7 +2861,7 @@
       },
       {
         "name": "A candidate from Partido Morado (Purple Party)",
-        "probability": 0.03,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
@@ -2875,9 +2875,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:48.723Z",
+    "timestamp": "2021-04-08T09:56:46.731Z",
     "qualityindicators": {
-      "numforecasts": "246",
+      "numforecasts": "247",
       "numforecasters": "88",
       "stars": 3
     }
@@ -2899,9 +2899,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:52.023Z",
+    "timestamp": "2021-04-08T09:56:49.727Z",
     "qualityindicators": {
-      "numforecasts": "674",
+      "numforecasts": "676",
       "numforecasters": "216",
       "stars": 3
     }
@@ -2938,9 +2938,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:54.678Z",
+    "timestamp": "2021-04-08T09:56:52.498Z",
     "qualityindicators": {
-      "numforecasts": "606",
+      "numforecasts": "608",
       "numforecasters": "260",
       "stars": 3
     }
@@ -2972,7 +2972,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:17:57.825Z",
+    "timestamp": "2021-04-08T09:56:55.704Z",
     "qualityindicators": {
       "numforecasts": "569",
       "numforecasters": "223",
@@ -2996,9 +2996,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:00.776Z",
+    "timestamp": "2021-04-08T09:56:58.679Z",
     "qualityindicators": {
-      "numforecasts": "379",
+      "numforecasts": "380",
       "numforecasters": "213",
       "stars": 3
     }
@@ -3011,19 +3011,19 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.63,
+        "probability": 0.6,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.37,
+        "probability": 0.4,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:04.346Z",
+    "timestamp": "2021-04-08T09:57:00.879Z",
     "qualityindicators": {
-      "numforecasts": "250",
-      "numforecasters": "128",
+      "numforecasts": "251",
+      "numforecasters": "129",
       "stars": 3
     }
   },
@@ -3044,10 +3044,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:06.813Z",
+    "timestamp": "2021-04-08T09:57:03.039Z",
     "qualityindicators": {
-      "numforecasts": "354",
-      "numforecasters": "189",
+      "numforecasts": "355",
+      "numforecasters": "190",
       "stars": 3
     }
   },
@@ -3068,9 +3068,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:09.622Z",
+    "timestamp": "2021-04-08T09:57:06.058Z",
     "qualityindicators": {
-      "numforecasts": "364",
+      "numforecasts": "365",
       "numforecasters": "172",
       "stars": 3
     }
@@ -3098,19 +3098,19 @@
       },
       {
         "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.15,
+        "probability": 0.19,
         "type": "PROBABILITY"
       },
       {
         "name": "Not before 1 July 2021",
-        "probability": 0.85,
+        "probability": 0.81,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:19.310Z",
+    "timestamp": "2021-04-08T09:57:16.004Z",
     "qualityindicators": {
-      "numforecasts": "390",
-      "numforecasters": "92",
+      "numforecasts": "393",
+      "numforecasters": "93",
       "stars": 3
     }
   },
@@ -3131,7 +3131,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:21.832Z",
+    "timestamp": "2021-04-08T09:57:18.645Z",
     "qualityindicators": {
       "numforecasts": "265",
       "numforecasters": "67",
@@ -3155,7 +3155,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:24.966Z",
+    "timestamp": "2021-04-08T09:57:21.432Z",
     "qualityindicators": {
       "numforecasts": "347",
       "numforecasters": "179",
@@ -3179,7 +3179,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:27.461Z",
+    "timestamp": "2021-04-08T09:57:23.981Z",
     "qualityindicators": {
       "numforecasts": "284",
       "numforecasters": "111",
@@ -3218,10 +3218,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:30.308Z",
+    "timestamp": "2021-04-08T09:57:27.292Z",
     "qualityindicators": {
-      "numforecasts": "1566",
-      "numforecasters": "240",
+      "numforecasts": "1570",
+      "numforecasters": "242",
       "stars": 3
     }
   },
@@ -3242,7 +3242,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:33.994Z",
+    "timestamp": "2021-04-08T09:57:30.405Z",
     "qualityindicators": {
       "numforecasts": "331",
       "numforecasters": "75",
@@ -3266,7 +3266,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:36.522Z",
+    "timestamp": "2021-04-08T09:57:32.241Z",
     "qualityindicators": {
       "numforecasts": "217",
       "numforecasters": "65",
@@ -3296,18 +3296,18 @@
       },
       {
         "name": "3",
-        "probability": 0.92,
+        "probability": 0.95,
         "type": "PROBABILITY"
       },
       {
         "name": "4 or more",
-        "probability": 0.08,
+        "probability": 0.05,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:39.864Z",
+    "timestamp": "2021-04-08T09:57:35.611Z",
     "qualityindicators": {
-      "numforecasts": "164",
+      "numforecasts": "165",
       "numforecasters": "45",
       "stars": 3
     }
@@ -3320,19 +3320,19 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.96,
+        "probability": 0.95,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.04,
+        "probability": 0.05,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:42.712Z",
+    "timestamp": "2021-04-08T09:57:38.005Z",
     "qualityindicators": {
-      "numforecasts": "143",
-      "numforecasters": "55",
+      "numforecasts": "144",
+      "numforecasters": "56",
       "stars": 3
     }
   },
@@ -3368,9 +3368,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:46.098Z",
+    "timestamp": "2021-04-08T09:57:40.888Z",
     "qualityindicators": {
-      "numforecasts": "613",
+      "numforecasts": "614",
       "numforecasters": "165",
       "stars": 3
     }
@@ -3392,9 +3392,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:49.274Z",
+    "timestamp": "2021-04-08T09:57:43.775Z",
     "qualityindicators": {
-      "numforecasts": "814",
+      "numforecasts": "815",
       "numforecasters": "159",
       "stars": 3
     }
@@ -3407,12 +3407,12 @@
     "options": [
       {
         "name": "Less than 2.00%",
-        "probability": 0.45,
+        "probability": 0.44,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 2.00% and 4.00%, inclusive",
-        "probability": 0.48,
+        "probability": 0.49,
         "type": "PROBABILITY"
       },
       {
@@ -3431,9 +3431,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:52.284Z",
+    "timestamp": "2021-04-08T09:57:47.020Z",
     "qualityindicators": {
-      "numforecasts": "576",
+      "numforecasts": "580",
       "numforecasters": "249",
       "stars": 3
     }
@@ -3470,7 +3470,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:55.451Z",
+    "timestamp": "2021-04-08T09:57:51.103Z",
     "qualityindicators": {
       "numforecasts": "537",
       "numforecasters": "96",
@@ -3494,7 +3494,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:18:58.375Z",
+    "timestamp": "2021-04-08T09:57:54.209Z",
     "qualityindicators": {
       "numforecasts": "223",
       "numforecasters": "66",
@@ -3518,7 +3518,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:00.963Z",
+    "timestamp": "2021-04-08T09:57:56.974Z",
     "qualityindicators": {
       "numforecasts": "438",
       "numforecasters": "165",
@@ -3533,7 +3533,7 @@
     "options": [
       {
         "name": "England",
-        "probability": 0.45,
+        "probability": 0.47,
         "type": "PROBABILITY"
       },
       {
@@ -3543,7 +3543,7 @@
       },
       {
         "name": "Germany",
-        "probability": 0.32,
+        "probability": 0.3,
         "type": "PROBABILITY"
       },
       {
@@ -3567,9 +3567,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:04.076Z",
+    "timestamp": "2021-04-08T09:58:00.566Z",
     "qualityindicators": {
-      "numforecasts": "428",
+      "numforecasts": "432",
       "numforecasters": "117",
       "stars": 3
     }
@@ -3606,7 +3606,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:07.068Z",
+    "timestamp": "2021-04-08T09:58:03.492Z",
     "qualityindicators": {
       "numforecasts": "731",
       "numforecasters": "210",
@@ -3630,9 +3630,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:10.074Z",
+    "timestamp": "2021-04-08T09:58:05.702Z",
     "qualityindicators": {
-      "numforecasts": "1240",
+      "numforecasts": "1241",
       "numforecasters": "467",
       "stars": 3
     }
@@ -3654,7 +3654,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:12.816Z",
+    "timestamp": "2021-04-08T09:58:08.774Z",
     "qualityindicators": {
       "numforecasts": "401",
       "numforecasters": "164",
@@ -3678,7 +3678,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:15.138Z",
+    "timestamp": "2021-04-08T09:58:11.511Z",
     "qualityindicators": {
       "numforecasts": "358",
       "numforecasters": "162",
@@ -3702,7 +3702,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:24.285Z",
+    "timestamp": "2021-04-08T09:58:20.352Z",
     "qualityindicators": {
       "numforecasts": "770",
       "numforecasters": "170",
@@ -3741,9 +3741,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:29.655Z",
+    "timestamp": "2021-04-08T09:58:25.629Z",
     "qualityindicators": {
-      "numforecasts": "938",
+      "numforecasts": "939",
       "numforecasters": "171",
       "stars": 3
     }
@@ -3765,7 +3765,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:32.680Z",
+    "timestamp": "2021-04-08T09:58:28.049Z",
     "qualityindicators": {
       "numforecasts": "338",
       "numforecasters": "77",
@@ -3789,10 +3789,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:35.058Z",
+    "timestamp": "2021-04-08T09:58:30.975Z",
     "qualityindicators": {
-      "numforecasts": "690",
-      "numforecasters": "194",
+      "numforecasts": "693",
+      "numforecasters": "195",
       "stars": 3
     }
   },
@@ -3828,7 +3828,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:38.551Z",
+    "timestamp": "2021-04-08T09:58:33.982Z",
     "qualityindicators": {
       "numforecasts": "487",
       "numforecasters": "100",
@@ -3867,7 +3867,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:41.196Z",
+    "timestamp": "2021-04-08T09:58:37.641Z",
     "qualityindicators": {
       "numforecasts": "392",
       "numforecasters": "127",
@@ -3901,9 +3901,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:44.088Z",
+    "timestamp": "2021-04-08T09:58:41.338Z",
     "qualityindicators": {
-      "numforecasts": "331",
+      "numforecasts": "332",
       "numforecasters": "114",
       "stars": 3
     }
@@ -3940,9 +3940,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:47.862Z",
+    "timestamp": "2021-04-08T09:58:44.811Z",
     "qualityindicators": {
-      "numforecasts": "296",
+      "numforecasts": "297",
       "numforecasters": "84",
       "stars": 3
     }
@@ -3974,9 +3974,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:50.424Z",
+    "timestamp": "2021-04-08T09:58:47.860Z",
     "qualityindicators": {
-      "numforecasts": "962",
+      "numforecasts": "963",
       "numforecasters": "336",
       "stars": 3
     }
@@ -3998,7 +3998,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:53.091Z",
+    "timestamp": "2021-04-08T09:58:51.348Z",
     "qualityindicators": {
       "numforecasts": "306",
       "numforecasters": "140",
@@ -4022,9 +4022,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:55.363Z",
+    "timestamp": "2021-04-08T09:58:54.405Z",
     "qualityindicators": {
-      "numforecasts": "694",
+      "numforecasts": "695",
       "numforecasters": "147",
       "stars": 3
     }
@@ -4056,9 +4056,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:19:58.614Z",
+    "timestamp": "2021-04-08T09:58:56.974Z",
     "qualityindicators": {
-      "numforecasts": "261",
+      "numforecasts": "262",
       "numforecasters": "100",
       "stars": 3
     }
@@ -4095,9 +4095,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:01.633Z",
+    "timestamp": "2021-04-08T09:59:00.684Z",
     "qualityindicators": {
-      "numforecasts": "277",
+      "numforecasts": "278",
       "numforecasters": "61",
       "stars": 3
     }
@@ -4134,7 +4134,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:05.304Z",
+    "timestamp": "2021-04-08T09:59:04.194Z",
     "qualityindicators": {
       "numforecasts": "248",
       "numforecasters": "49",
@@ -4168,10 +4168,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:07.927Z",
+    "timestamp": "2021-04-08T09:59:07.243Z",
     "qualityindicators": {
-      "numforecasts": "2408",
-      "numforecasters": "975",
+      "numforecasts": "2413",
+      "numforecasters": "976",
       "stars": 3
     }
   },
@@ -4192,7 +4192,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:10.787Z",
+    "timestamp": "2021-04-08T09:59:10.005Z",
     "qualityindicators": {
       "numforecasts": "252",
       "numforecasters": "114",
@@ -4231,7 +4231,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:14.119Z",
+    "timestamp": "2021-04-08T09:59:13.379Z",
     "qualityindicators": {
       "numforecasts": "315",
       "numforecasters": "85",
@@ -4270,7 +4270,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:19.068Z",
+    "timestamp": "2021-04-08T09:59:15.799Z",
     "qualityindicators": {
       "numforecasts": "292",
       "numforecasters": "78",
@@ -4304,7 +4304,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:21.869Z",
+    "timestamp": "2021-04-08T09:59:18.894Z",
     "qualityindicators": {
       "numforecasts": "407",
       "numforecasters": "224",
@@ -4328,7 +4328,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:30.271Z",
+    "timestamp": "2021-04-08T09:59:28.273Z",
     "qualityindicators": {
       "numforecasts": "196",
       "numforecasters": "90",
@@ -4367,7 +4367,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:33.357Z",
+    "timestamp": "2021-04-08T09:59:31.612Z",
     "qualityindicators": {
       "numforecasts": "297",
       "numforecasters": "98",
@@ -4406,7 +4406,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:36.114Z",
+    "timestamp": "2021-04-08T09:59:34.320Z",
     "qualityindicators": {
       "numforecasts": "456",
       "numforecasters": "153",
@@ -4430,9 +4430,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:38.749Z",
+    "timestamp": "2021-04-08T09:59:36.922Z",
     "qualityindicators": {
-      "numforecasts": "272",
+      "numforecasts": "273",
       "numforecasters": "98",
       "stars": 3
     }
@@ -4454,9 +4454,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:41.535Z",
+    "timestamp": "2021-04-08T09:59:39.978Z",
     "qualityindicators": {
-      "numforecasts": "314",
+      "numforecasts": "315",
       "numforecasters": "136",
       "stars": 3
     }

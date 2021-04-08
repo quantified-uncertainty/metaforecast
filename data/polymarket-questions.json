@@ -16,7 +16,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.304Z",
+    "timestamp": "2021-04-08T11:00:47.313Z",
     "qualityindicators": {
       "numforecasts": "137",
       "liquidity": "1585.76",
@@ -41,7 +41,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.307Z",
+    "timestamp": "2021-04-08T11:00:47.314Z",
     "qualityindicators": {
       "numforecasts": "853",
       "liquidity": "9826.84",
@@ -50,27 +50,27 @@
     }
   },
   {
-    "title": "Will Donald Trump launch a new social media platform by June 15, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-launch-a-new-social-media-platform-by-june-15-2021-1",
+    "title": "Will North Dakota have the most COVID-19 cases per 100k residents on May 15, 2021?",
+    "url": "https://polymarket.com/market/will-north-dakota-have-the-most-covid-19-cases-per-100k-residents-on-may-15-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on whether former US President Donald Trump will launch a social media platform by June 15, 2021, 12:00 PM ET. This market will resolve to “Yes” if Donald Trump launches a social media platform by the resolution date, and “No” otherwise. On the resolution date, it must be possible for an individual in the United States to create an account and post. Creating an account and posting requires that user-generated content is not restricted to responses (ie comments) to another user’s content. Such content generally must be standalone image, text, or video posts. The platform must not be restricted to only a small portion of the general public or subject to a waitlist. If there is a fee or subscription required to join, this market will still resolve to “Yes”. Donald Trump’s involvement must be public and verified via an official channel, and the platform must be substantially backed by or affiliated with Donald Trump--e.g. the platform uses his name explicitly, is heavily marketed as being affiliated with him, or he is an executive for the platform. Partnership with an existing platform such as Twitter or Parler will not be sufficient for this market to resolve to “Yes”. If such a platform is temporarily inaccessible due to maintenance, system overload, or DDOS attack, resolution of this market will be delayed up to 72 hours. If the platform is inaccessible on the resolution date due to a lack of a web-hosting service provider, this market will resolve to “No”. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n",
+    "description": "This is a market on the state with the most COVID-19 cases per 100k residents on the resolution date, May 15, 12 PM ET. This market will resolve to “Yes” if North Dakota has the most COVID-19 cases per 100k residents on May 15, 2021, and “No” otherwise. The resolution source for this market will be https://www.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/. There will be no resolution delay for any anticipated data revisions. If, for any reason, data is not published prior to the resolution date, that data will not be considered for the resolution of this market. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.170996995977371772589269286804194",
+        "probability": "0.5206285472686400507444749347907407",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.829003004022628227410730713195806",
+        "probability": "0.4793714527313599492555250652092593",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.300Z",
+    "timestamp": "2021-04-08T11:00:47.313Z",
     "qualityindicators": {
-      "numforecasts": "122",
-      "liquidity": "2593.78",
-      "tradevolume": "9519.49",
+      "numforecasts": "590",
+      "liquidity": "27288.56",
+      "tradevolume": "95335.81",
       "stars": 4
     }
   },
@@ -82,70 +82,20 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.3323729247731281816387191020342297",
+        "probability": "0.3535197095680785170642305476130527",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.6676270752268718183612808979657703",
+        "probability": "0.6464802904319214829357694523869473",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.309Z",
+    "timestamp": "2021-04-08T11:00:47.315Z",
     "qualityindicators": {
-      "numforecasts": "62",
-      "liquidity": "5650.83",
-      "tradevolume": "9005.29",
-      "stars": 4
-    }
-  },
-  {
-    "title": "Will North Dakota have the most COVID-19 cases per 100k residents on May 15, 2021?",
-    "url": "https://polymarket.com/market/will-north-dakota-have-the-most-covid-19-cases-per-100k-residents-on-may-15-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on the state with the most COVID-19 cases per 100k residents on the resolution date, May 15, 12 PM ET. This market will resolve to “Yes” if North Dakota has the most COVID-19 cases per 100k residents on May 15, 2021, and “No” otherwise. The resolution source for this market will be https://www.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/. There will be no resolution delay for any anticipated data revisions. If, for any reason, data is not published prior to the resolution date, that data will not be considered for the resolution of this market. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).\n\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.5172991875020085726736527423312362",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.4827008124979914273263472576687638",
-        "type": "PROBABILITY"
-      }
-    ],
-    "timestamp": "2021-04-07T23:22:59.304Z",
-    "qualityindicators": {
-      "numforecasts": "562",
-      "liquidity": "26144.23",
-      "tradevolume": "88537.93",
-      "stars": 4
-    }
-  },
-  {
-    "title": "Will Clubhouse officially announce they’ve been acquired before June 1st, 2021? ",
-    "url": "https://polymarket.com/market/will-clubhouse-officially-announce-theyve-been-acquired-before-june-1st-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Clubhouse will announce they've been acquired before June 1st, 2021, with the term acquired meaning the official announcement and public reporting of an acquisition, with a for-profit company purchasing majority ownership of Clubhouse and/or the respective entity. Note, this is not in reference to the final close date of the acquisition. This market will resolve immediately upon the resolution conditions being met, and thus, if, for whatever reason, the acquisition is not successfully completed, the market will have already resolved to “Yes”.",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.1338693193154870843938621081569645",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.8661306806845129156061378918430355",
-        "type": "PROBABILITY"
-      }
-    ],
-    "timestamp": "2021-04-07T23:22:59.307Z",
-    "qualityindicators": {
-      "numforecasts": "103",
-      "liquidity": "2108.08",
-      "tradevolume": "8747.18",
+      "numforecasts": "70",
+      "liquidity": "6012.10",
+      "tradevolume": "9506.53",
       "stars": 4
     }
   },
@@ -157,21 +107,46 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9298924736229371364678481019391842",
+        "probability": "0.9339458073173414421656340245752705",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.07010752637706286353215189806081583",
+        "probability": "0.06605419268265855783436597542472948",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.307Z",
+    "timestamp": "2021-04-08T11:00:47.314Z",
     "qualityindicators": {
-      "numforecasts": "63",
-      "liquidity": "12467.97",
-      "tradevolume": "8436.43",
+      "numforecasts": "74",
+      "liquidity": "11563.47",
+      "tradevolume": "8977.70",
       "stars": 3
+    }
+  },
+  {
+    "title": "Will Clubhouse officially announce they’ve been acquired before June 1st, 2021? ",
+    "url": "https://polymarket.com/market/will-clubhouse-officially-announce-theyve-been-acquired-before-june-1st-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Clubhouse will announce they've been acquired before June 1st, 2021, with the term acquired meaning the official announcement and public reporting of an acquisition, with a for-profit company purchasing majority ownership of Clubhouse and/or the respective entity. Note, this is not in reference to the final close date of the acquisition. This market will resolve immediately upon the resolution conditions being met, and thus, if, for whatever reason, the acquisition is not successfully completed, the market will have already resolved to “Yes”.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.1665007233546323391526042792748865",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.8334992766453676608473957207251135",
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-04-08T11:00:47.314Z",
+    "qualityindicators": {
+      "numforecasts": "107",
+      "liquidity": "2136.64",
+      "tradevolume": "8932.72",
+      "stars": 4
     }
   },
   {
@@ -182,20 +157,20 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9732867990029642437725352176699527",
+        "probability": "0.9632262890311635630827874617597747",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.02671320099703575622746478233004727",
+        "probability": "0.03677371096883643691721253824022533",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.305Z",
+    "timestamp": "2021-04-08T11:00:47.314Z",
     "qualityindicators": {
-      "numforecasts": "517",
+      "numforecasts": "528",
       "liquidity": "4057.43",
-      "tradevolume": "79832.84",
+      "tradevolume": "80146.73",
       "stars": 3
     }
   },
@@ -207,30 +182,30 @@
     "options": [
       {
         "name": "49,999 or fewer",
-        "probability": "0.00284995242076918734124340809943596",
+        "probability": "0.002230462986002085580952958875012663",
         "type": "PROBABILITY"
       },
       {
         "name": "50,000-62,499",
-        "probability": "0.03762650549352014965374488933017359",
+        "probability": "0.01943734896497328170661380961001092",
         "type": "PROBABILITY"
       },
       {
         "name": "62,500-74,999",
-        "probability": "0.9564042087259252283190549533367421",
+        "probability": "0.9761999336157880496144669916833917",
         "type": "PROBABILITY"
       },
       {
         "name": "75,000 or more",
-        "probability": "0.003119333359785434685956749233648686",
+        "probability": "0.002132254433236583097966239831584897",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.308Z",
+    "timestamp": "2021-04-08T11:00:47.315Z",
     "qualityindicators": {
-      "numforecasts": "293",
+      "numforecasts": "348",
       "liquidity": "2000.00",
-      "tradevolume": "7528.95",
+      "tradevolume": "7745.24",
       "stars": 3
     }
   },
@@ -242,20 +217,20 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9947414308982089285866490227040758",
+        "probability": "0.9950022276106855881319902372862853",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.005258569101791071413350977295924238",
+        "probability": "0.004997772389314411868009762713714693",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.309Z",
+    "timestamp": "2021-04-08T11:00:47.316Z",
     "qualityindicators": {
-      "numforecasts": "43",
+      "numforecasts": "44",
       "liquidity": "1184.32",
-      "tradevolume": "7439.83",
+      "tradevolume": "7441.96",
       "stars": 3
     }
   },
@@ -267,20 +242,20 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.741583872446752233683024374365151",
+        "probability": "0.732235446884398698530675700296491",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.258416127553247766316975625634849",
+        "probability": "0.267764553115601301469324299703509",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.310Z",
+    "timestamp": "2021-04-08T11:00:47.316Z",
     "qualityindicators": {
-      "numforecasts": "1281",
-      "liquidity": "209430.29",
-      "tradevolume": "674272.26",
+      "numforecasts": "1338",
+      "liquidity": "206602.57",
+      "tradevolume": "701564.43",
       "stars": 4
     }
   },
@@ -301,7 +276,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.304Z",
+    "timestamp": "2021-04-08T11:00:47.313Z",
     "qualityindicators": {
       "numforecasts": "133",
       "liquidity": "2628.43",
@@ -317,20 +292,20 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.0698474380887523603937269756869531",
+        "probability": "0.06698999379989905965353372642409035",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9301525619112476396062730243130469",
+        "probability": "0.9330100062001009403464662735759097",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.302Z",
+    "timestamp": "2021-04-08T11:00:47.312Z",
     "qualityindicators": {
-      "numforecasts": "468",
+      "numforecasts": "476",
       "liquidity": "4039.72",
-      "tradevolume": "65532.56",
+      "tradevolume": "65732.40",
       "stars": 3
     }
   },
@@ -342,20 +317,20 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.03895052073921588772001682171912906",
+        "probability": "0.03921719512341878664778748620392095",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9610494792607841122799831782808709",
+        "probability": "0.960782804876581213352212513796079",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.309Z",
+    "timestamp": "2021-04-08T11:00:47.316Z",
     "qualityindicators": {
-      "numforecasts": "109",
+      "numforecasts": "110",
       "liquidity": "1368.68",
-      "tradevolume": "6122.61",
+      "tradevolume": "6123.61",
       "stars": 3
     }
   },
@@ -376,7 +351,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.303Z",
+    "timestamp": "2021-04-08T11:00:47.313Z",
     "qualityindicators": {
       "numforecasts": "768",
       "liquidity": "1597.05",
@@ -392,20 +367,45 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.09748821039260846564101130159528613",
+        "probability": "0.04444621728750495279667043356264725",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9025117896073915343589886984047139",
+        "probability": "0.9555537827124950472033295664373527",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.304Z",
+    "timestamp": "2021-04-08T11:00:47.313Z",
     "qualityindicators": {
-      "numforecasts": "712",
-      "liquidity": "1781.14",
-      "tradevolume": "52868.40",
+      "numforecasts": "750",
+      "liquidity": "1831.75",
+      "tradevolume": "55256.23",
+      "stars": 3
+    }
+  },
+  {
+    "title": "Will the average Ethereum gas price be below 170 Gwei on April 19?",
+    "url": "https://polymarket.com/market/will-the-average-ethereum-gas-price-be-below-170-gwei-on-april-19",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the average Ethereum gas price will be below 170 Gwei on April 19, 2021. This market will resolve to \"Yes\" if the daily average Ethereum gas price is listed as being below 170 Gwei for that date, on Etherscan. If the daily average Ethereum gas price is 170 Gwei or higher for that date, this market will resolve to \"No\". The resolution source for this market is https://etherscan.io/chart/gasprice. This market will resolve when data is available for the date of April 19, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). ",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.6755572443640393018752364739146016",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.3244427556359606981247635260853984",
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-04-08T11:00:47.314Z",
+    "qualityindicators": {
+      "numforecasts": "14",
+      "liquidity": "804.76",
+      "tradevolume": "533.17",
       "stars": 3
     }
   },
@@ -417,20 +417,95 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.07669954432982294017531795533955721",
+        "probability": "0.08446095208233418986080353647514015",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9233004556701770598246820446604428",
+        "probability": "0.9155390479176658101391964635248599",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.306Z",
+    "timestamp": "2021-04-08T11:00:47.314Z",
     "qualityindicators": {
-      "numforecasts": "506",
-      "liquidity": "3872.64",
-      "tradevolume": "51707.68",
+      "numforecasts": "516",
+      "liquidity": "7988.71",
+      "tradevolume": "53145.52",
+      "stars": 3
+    }
+  },
+  {
+    "title": "Will Jake Paul win his boxing match against Ben Askren?",
+    "url": "https://polymarket.com/market/will-jake-paul-win-his-boxing-match-against-ben-askren",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Jake Paul will win his boxing match against Ben Askren, set to take place on April 17th, 2021. If Jake Paul is declared the winner of this bout, either by knockout or judgement, this market will resolve to “Yes”. If  Ben Askren is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed, the same market resolution conditions will apply for whenever the fight is rescheduled.\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.5050241461157637610495418110858291",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.4949758538842362389504581889141709",
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-04-08T11:00:47.312Z",
+    "qualityindicators": {
+      "numforecasts": "42",
+      "liquidity": "54242.49",
+      "tradevolume": "4559.50",
+      "stars": 4
+    }
+  },
+  {
+    "title": "How many more tweets will be on the @ElonMusk account on April 14, 2021?",
+    "url": "https://polymarket.com/market/how-many-more-tweets-will-be-on-the-elonmusk-account-on-april-14-2021",
+    "platform": "PolyMarket",
+    "description": "At 3:00 PM ET on the resolution date, the number of total tweets posted by the Twitter account @ElonMusk, shall exceed 13,963 (the \"Baseline\") by the number or range identified in the contract, as indicated by the number under the label \"TWEETS\" on the account detail viewable on the desktop version of https://tweetdeck.twitter.com/. This account detail can be viewed by using a Twitter account to log into the website https://tweetdeck.twitter.com/, searching for @ElonMusk, then clicking the verified account labeled \"@ElonMusk\" from the search results. Should the total tweets reported by that source at that time appear not to include one or more tweets posted by @ElonMusk just before 3:00 pm, and still available on that account's timeline at 3:00 pm, Polymarket may use additional sources in determining whether any such tweet(s) should be included in the market's resolution. The number by which the total tweets at expiration exceeds the Baseline may not equal the number of tweets actually posted over that time period, in light of numerous factors, including but not limited to the fact that the account's total tweets upon launch of the market may differ from the Baseline, tweets may be deleted prior to expiration of this market, and specialized tweets such as quotes, retweets, replies, promoted tweets, may or may not be included in that total.\n\nNeither Elon Musk, nor any authorized user of the account in question, need be the author of any such tweets, nor must any authorized user maintain control of the account. Should the settlement source be unavailable at that date and time, for any reason other than deletion, deactivation, or a change in the privacy settings of the account, Polymarket may postpone settlement of this market until the source becomes available. In such a case, the account's total tweets will be measured once Polymarket becomes aware that the source has again become available. If Polymarket deems the source to be permanently unavailable, the lowest bracket will resolve to \"Yes\". Should an updated count of total tweets not be available from twitter.com at the date and time of expiration, due to apparent deletion, deactivation, or a change in privacy settings by a user of the account or by Twitter, all contracts in this market will resolve as No. The blocking of one or more Twitter accounts by @ElonMusk will not be considered to render the settlement source unavailable.\n\nShould the navigation, layout, URL, or labeling of the elements of the settlement source be altered by Twitter or Tweetdeck prior to expiration (other than via deletion or deactivation of the account), this market will still be resolved according to the aforementioned formula, so long as Polymarket can reasonably determine the relevant number of total tweets from twitter.com. The merging, migration, or other combination of one or more Twitter accounts will not in and of itself cause the settlement source to be considered unavailable, so long as an updated count of total tweets can be determined according to the aforementioned formula, even if such combination causes an increase or decrease in that count that does not represent the number of tweets posted to the account during the time period in question.\n\nIn the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC).",
+    "options": [
+      {
+        "name": "Less than 30",
+        "probability": "0.02712575215606869253252600966220513",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "30-40",
+        "probability": "0.1115263745913060475253404147763908",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "41-50",
+        "probability": "0.2219636014313589647902402720571277",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "51-60",
+        "probability": "0.2547160184188490839953676900262511",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "61-70",
+        "probability": "0.1907413972112541594210074122414898",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "71-80",
+        "probability": "0.1255456580166040091498031486191968",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "More than 80",
+        "probability": "0.06838119817455904258571505261733859",
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-04-08T11:00:47.311Z",
+    "qualityindicators": {
+      "numforecasts": "152",
+      "liquidity": "2555.00",
+      "tradevolume": "4495.18",
       "stars": 3
     }
   },
@@ -451,36 +526,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.306Z",
+    "timestamp": "2021-04-08T11:00:47.314Z",
     "qualityindicators": {
       "numforecasts": "68",
       "liquidity": "1000.00",
       "tradevolume": "4268.68",
-      "stars": 4
-    }
-  },
-  {
-    "title": "Will Jake Paul win his boxing match against Ben Askren?",
-    "url": "https://polymarket.com/market/will-jake-paul-win-his-boxing-match-against-ben-askren",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether Jake Paul will win his boxing match against Ben Askren, set to take place on April 17th, 2021. If Jake Paul is declared the winner of this bout, either by knockout or judgement, this market will resolve to “Yes”. If  Ben Askren is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed, the same market resolution conditions will apply for whenever the fight is rescheduled.\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.5050163620487289039984542838001509",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.4949836379512710960015457161998491",
-        "type": "PROBABILITY"
-      }
-    ],
-    "timestamp": "2021-04-07T23:22:59.302Z",
-    "qualityindicators": {
-      "numforecasts": "37",
-      "liquidity": "42362.29",
-      "tradevolume": "4262.43",
       "stars": 4
     }
   },
@@ -492,20 +542,20 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1989107792732988906353258792935972",
+        "probability": "0.1958944749463810152808445623177045",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8010892207267011093646741207064028",
+        "probability": "0.8041055250536189847191554376822955",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.301Z",
+    "timestamp": "2021-04-08T11:00:47.311Z",
     "qualityindicators": {
-      "numforecasts": "99",
+      "numforecasts": "101",
       "liquidity": "1131.33",
-      "tradevolume": "4132.10",
+      "tradevolume": "4252.10",
       "stars": 4
     }
   },
@@ -517,20 +567,20 @@
     "options": [
       {
         "name": "Bezos",
-        "probability": "0.9440014648971449386397855584569847",
+        "probability": "0.9524984652600312046436200271105158",
         "type": "PROBABILITY"
       },
       {
         "name": "Musk",
-        "probability": "0.05599853510285506136021444154301529",
+        "probability": "0.04750153473996879535637997288948422",
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:22:59.308Z",
+    "timestamp": "2021-04-08T11:00:47.315Z",
     "qualityindicators": {
-      "numforecasts": "327",
-      "liquidity": "2073.26",
-      "tradevolume": "36737.47",
+      "numforecasts": "330",
+      "liquidity": "1800.31",
+      "tradevolume": "36782.54",
       "stars": 3
     }
   }

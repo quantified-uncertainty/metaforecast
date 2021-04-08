@@ -1,4 +1,9 @@
-/src/privatekeys.json
 node_modules/
+
+**/betfaircertificates/
+**/privatekeys.json
+
 possiblenewsources.md
-/src/betfaircertificates/
+herokulocation.md
+
+

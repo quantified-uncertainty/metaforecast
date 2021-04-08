@@ -16,7 +16,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:50.676Z",
+    "timestamp": "2021-04-08T09:59:50.562Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -38,7 +38,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:50.677Z",
+    "timestamp": "2021-04-08T09:59:50.562Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -51,16 +51,16 @@
     "options": [
       {
         "name": "Yes, more than 121",
-        "probability": 0.24742268041237112,
+        "probability": 0.24,
         "type": "PROBABILITY"
       },
       {
         "name": "No, not more than 121",
-        "probability": 0.7525773195876287,
+        "probability": 0.76,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:50.677Z",
+    "timestamp": "2021-04-08T09:59:50.562Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -82,7 +82,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:50.677Z",
+    "timestamp": "2021-04-08T09:59:50.562Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -149,7 +149,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:53.505Z",
+    "timestamp": "2021-04-08T09:59:54.796Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -181,7 +181,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:53.505Z",
+    "timestamp": "2021-04-08T09:59:54.796Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -203,7 +203,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:53.506Z",
+    "timestamp": "2021-04-08T09:59:54.796Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -216,21 +216,21 @@
     "options": [
       {
         "name": "In June, 2021 (as planned)",
-        "probability": 0.89,
+        "probability": 0.8640776699029127,
         "type": "PROBABILITY"
       },
       {
         "name": "Later in 2021",
-        "probability": 0.1,
+        "probability": 0.1262135922330097,
         "type": "PROBABILITY"
       },
       {
         "name": "Not in 2021",
-        "probability": 0.01,
+        "probability": 0.00970873786407767,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:53.506Z",
+    "timestamp": "2021-04-08T09:59:54.796Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -257,7 +257,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:53.506Z",
+    "timestamp": "2021-04-08T09:59:54.796Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -314,7 +314,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:53.506Z",
+    "timestamp": "2021-04-08T09:59:54.797Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -327,31 +327,31 @@
     "options": [
       {
         "name": "In May or earlier",
-        "probability": 0.010101010101010102,
+        "probability": 0.02,
         "type": "PROBABILITY"
       },
       {
         "name": "in June (government goal)",
-        "probability": 0.6565656565656566,
+        "probability": 0.65,
         "type": "PROBABILITY"
       },
       {
         "name": "in July",
-        "probability": 0.21212121212121215,
+        "probability": 0.21,
         "type": "PROBABILITY"
       },
       {
         "name": "in August",
-        "probability": 0.06060606060606061,
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
         "name": "Maybe later",
-        "probability": 0.06060606060606061,
+        "probability": 0.06,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:53.506Z",
+    "timestamp": "2021-04-08T09:59:54.797Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -373,7 +373,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:57.366Z",
+    "timestamp": "2021-04-08T09:59:59.166Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -405,7 +405,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:57.366Z",
+    "timestamp": "2021-04-08T09:59:59.167Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -432,7 +432,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:57.366Z",
+    "timestamp": "2021-04-08T09:59:59.167Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -454,7 +454,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:57.366Z",
+    "timestamp": "2021-04-08T09:59:59.167Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -476,7 +476,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:57.367Z",
+    "timestamp": "2021-04-08T09:59:59.167Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -513,7 +513,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:57.367Z",
+    "timestamp": "2021-04-08T09:59:59.167Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -555,7 +555,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:57.367Z",
+    "timestamp": "2021-04-08T09:59:59.167Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -592,7 +592,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:20:57.370Z",
+    "timestamp": "2021-04-08T09:59:59.167Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -629,7 +629,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:21:00.320Z",
+    "timestamp": "2021-04-08T10:00:02.393Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -656,7 +656,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:21:00.320Z",
+    "timestamp": "2021-04-08T10:00:02.393Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -683,7 +683,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:21:00.321Z",
+    "timestamp": "2021-04-08T10:00:02.393Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -725,7 +725,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:21:00.321Z",
+    "timestamp": "2021-04-08T10:00:02.393Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -762,7 +762,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:21:00.321Z",
+    "timestamp": "2021-04-08T10:00:02.394Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -775,26 +775,26 @@
     "options": [
       {
         "name": "USA",
-        "probability": 0.00980392156862745,
+        "probability": 0.009615384615384616,
         "type": "PROBABILITY"
       },
       {
         "name": "France",
-        "probability": 0.6176470588235294,
+        "probability": 0.6057692307692308,
         "type": "PROBABILITY"
       },
       {
         "name": "Germany",
-        "probability": 0.3431372549019608,
+        "probability": 0.3365384615384615,
         "type": "PROBABILITY"
       },
       {
         "name": "United Kingdom",
-        "probability": 0.02941176470588235,
+        "probability": 0.04807692307692307,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:21:03.434Z",
+    "timestamp": "2021-04-08T10:00:06.153Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -826,7 +826,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:21:03.434Z",
+    "timestamp": "2021-04-08T10:00:06.153Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -848,7 +848,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:21:10.166Z",
+    "timestamp": "2021-04-08T10:00:15.108Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -870,7 +870,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:21:10.166Z",
+    "timestamp": "2021-04-08T10:00:15.108Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -892,7 +892,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:21:10.166Z",
+    "timestamp": "2021-04-08T10:00:15.108Z",
     "qualityindicators": {
       "stars": 3
     }
@@ -914,7 +914,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T22:21:10.166Z",
+    "timestamp": "2021-04-08T10:00:15.109Z",
     "qualityindicators": {
       "stars": 3
     }

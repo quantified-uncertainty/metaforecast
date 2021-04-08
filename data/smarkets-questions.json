@@ -121,7 +121,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:32:59.314Z",
+    "timestamp": "2021-04-08T11:24:11.915Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -143,7 +143,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:32:59.665Z",
+    "timestamp": "2021-04-08T11:24:12.285Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -265,7 +265,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:00.021Z",
+    "timestamp": "2021-04-08T11:24:12.637Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -341,7 +341,7 @@
         "probability": null
       }
     ],
-    "timestamp": "2021-04-07T23:33:00.412Z",
+    "timestamp": "2021-04-08T11:24:12.995Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -371,7 +371,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:00.764Z",
+    "timestamp": "2021-04-08T11:24:13.244Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -393,7 +393,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:01.128Z",
+    "timestamp": "2021-04-08T11:24:13.580Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -570,7 +570,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:01.477Z",
+    "timestamp": "2021-04-08T11:24:13.957Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -607,7 +607,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:01.713Z",
+    "timestamp": "2021-04-08T11:24:14.318Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -648,7 +648,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:02.070Z",
+    "timestamp": "2021-04-08T11:24:14.674Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -765,7 +765,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:02.412Z",
+    "timestamp": "2021-04-08T11:24:15.060Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -792,7 +792,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:02.761Z",
+    "timestamp": "2021-04-08T11:24:15.306Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -814,7 +814,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:02.996Z",
+    "timestamp": "2021-04-08T11:24:15.675Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -846,7 +846,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:03.338Z",
+    "timestamp": "2021-04-08T11:24:16.032Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -878,7 +878,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:03.685Z",
+    "timestamp": "2021-04-08T11:24:16.387Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -891,91 +891,90 @@
     "options": [
       {
         "name": "Emmanuel Macron",
-        "probability": 0.5228430934286992,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Marine Le Pen",
-        "probability": 0.20321859633437642,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Jean-Luc Mélenchon",
-        "probability": 0.045864997764863656,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "François Baroin",
-        "probability": 0.06383549396513187,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Xavier Bertrand",
-        "probability": 0.03442109968708092,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Yannick Jadot",
-        "probability": 0.044702726866338846,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Olivier Faure",
-        "probability": 0.04255699597675458,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Jean-Marie Bigard",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Jean Lassalle",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Joachim Son-Forget",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Anne Hidalgo",
-        "probability": 0.04255699597675458,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Bernard Cazeneuve",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Nicolas Dupont-Aignan",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Arnaud Montebourg",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Ségolène Royal",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Florian Philippot",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Edouard Philippe",
-        "probability": 0,
-        "type": "PROBABILITY"
+        "probability": null
       }
     ],
-    "timestamp": "2021-04-07T23:33:03.933Z",
+    "timestamp": "2021-04-08T11:24:16.737Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1005,7 +1004,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:04.292Z",
+    "timestamp": "2021-04-08T11:24:17.115Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1018,196 +1017,192 @@
     "options": [
       {
         "name": "Angela Rayner",
-        "probability": 0.22904211505247773,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Lisa Nandy",
-        "probability": 0.11066826092732829,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Sadiq Khan",
-        "probability": 0.10216553739869803,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Rebecca Long-Bailey",
-        "probability": 0.03693370532748771,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Anneliese Dodds",
-        "probability": 0.06815464328417696,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Rosena Allin-Khan",
-        "probability": 0.06642752756742394,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Andy Burnham",
-        "probability": 0.147601966254816,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Yvette Cooper",
-        "probability": 0.057791948983658824,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Clive Lewis",
-        "probability": 0.06988175900092998,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "John McDonnell",
-        "probability": 0.03693370532748771,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Ian Lavery",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Dan Jarvis",
-        "probability": 0.03015809751561047,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Emily Thornberry",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Nick Thomas-Symonds",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Sam Tarry",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Louise Haigh",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Richard Burgon",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Dawn Butler",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Dan Carden",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Jess Phillips",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "David Lammy",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Jon Trickett",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Barry Gardiner",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Seema Malhotra",
-        "probability": 0.04424073335990435,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Jonathan Ashworth",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Ed Miliband",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Hilary Benn",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Stella Creasy",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Rachel Reeves",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Laura Pidcock",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Charlotte Nichols",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Kate Osborne",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Margaret Greenwood",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Zarah Sultana",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Wes Streeting",
-        "probability": 0,
-        "type": "PROBABILITY"
+        "probability": null
       },
       {
         "name": "Jim McMahon",
-        "probability": 0,
-        "type": "PROBABILITY"
+        "probability": null
       },
       {
         "name": "Alison McGovern",
-        "probability": 0,
-        "type": "PROBABILITY"
+        "probability": null
       },
       {
         "name": "Bridget Phillipson",
-        "probability": 0,
-        "type": "PROBABILITY"
+        "probability": null
       }
     ],
-    "timestamp": "2021-04-07T23:33:04.545Z",
+    "timestamp": "2021-04-08T11:24:17.503Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1229,7 +1224,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:04.896Z",
+    "timestamp": "2021-04-08T11:24:17.656Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1251,7 +1246,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:05.146Z",
+    "timestamp": "2021-04-08T11:24:18.026Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1278,7 +1273,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:05.526Z",
+    "timestamp": "2021-04-08T11:24:18.394Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1291,65 +1286,65 @@
     "options": [
       {
         "name": "Sadiq Khan",
-        "probability": 0.9521143656902924,
+        "probability": 0.9543086172344687,
         "type": "PROBABILITY"
       },
       {
         "name": "Shaun Bailey",
-        "probability": 0.01179646106168149,
+        "probability": 0.010521042084168335,
         "type": "PROBABILITY"
       },
       {
         "name": "Siân Berry",
-        "probability": 0.00009997000899730077,
+        "probability": 0.00010020040080160318,
         "type": "PROBABILITY"
       },
       {
-        "probability": 0.00009997000899730077,
+        "probability": 0.00010020040080160318,
         "type": "PROBABILITY"
       },
       {
         "name": "Brian Rose",
-        "probability": 0.033290012996101154,
+        "probability": 0.03336673346693386,
         "type": "PROBABILITY"
       },
       {
         "name": "Mandu Reid",
-        "probability": 0.00009997000899730077,
+        "probability": 0.00010020040080160318,
         "type": "PROBABILITY"
       },
       {
         "name": "Luisa Porritt",
-        "probability": 0.00009997000899730077,
+        "probability": 0.00010020040080160318,
         "type": "PROBABILITY"
       },
       {
         "name": "Laurence Fox",
-        "probability": 0.0019994001799460153,
+        "probability": 0.0010020040080160318,
         "type": "PROBABILITY"
       },
       {
         "name": "David Kurten",
-        "probability": 0.00009997000899730077,
+        "probability": 0.00010020040080160318,
         "type": "PROBABILITY"
       },
       {
         "name": "Piers Corbyn",
-        "probability": 0.00009997000899730077,
+        "probability": 0.00010020040080160318,
         "type": "PROBABILITY"
       },
       {
         "name": "Farah London",
-        "probability": 0.00009997000899730077,
+        "probability": 0.00010020040080160318,
         "type": "PROBABILITY"
       },
       {
         "name": "Peter Gammons",
-        "probability": 0.00009997000899730077,
+        "probability": 0.00010020040080160318,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:05.879Z",
+    "timestamp": "2021-04-08T11:24:18.746Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1371,7 +1366,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:06.130Z",
+    "timestamp": "2021-04-08T11:24:19.168Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1403,7 +1398,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:06.501Z",
+    "timestamp": "2021-04-08T11:24:19.530Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1425,7 +1420,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:06.847Z",
+    "timestamp": "2021-04-08T11:24:19.876Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1457,7 +1452,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:07.215Z",
+    "timestamp": "2021-04-08T11:24:20.294Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1470,26 +1465,26 @@
     "options": [
       {
         "name": "Conservative",
-        "probability": 0.543215174663119,
+        "probability": 0.5149700598802395,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0.33010042056475836,
+        "probability": 0.355054596688975,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.08582954252853832,
+        "probability": 0.08805917576611483,
         "type": "PROBABILITY"
       },
       {
         "name": "Green",
-        "probability": 0.040854862243584235,
+        "probability": 0.041916167664670656,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:07.560Z",
+    "timestamp": "2021-04-08T11:24:20.657Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1511,7 +1506,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:07.915Z",
+    "timestamp": "2021-04-08T11:24:21.064Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1603,7 +1598,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:08.264Z",
+    "timestamp": "2021-04-08T11:24:21.223Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1625,7 +1620,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:08.601Z",
+    "timestamp": "2021-04-08T11:24:21.473Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1712,7 +1707,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:08.960Z",
+    "timestamp": "2021-04-08T11:24:21.862Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1734,7 +1729,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:09.304Z",
+    "timestamp": "2021-04-08T11:24:22.209Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1756,7 +1751,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:09.652Z",
+    "timestamp": "2021-04-08T11:24:22.569Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1778,7 +1773,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:09.893Z",
+    "timestamp": "2021-04-08T11:24:22.838Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1800,7 +1795,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:10.252Z",
+    "timestamp": "2021-04-08T11:24:23.095Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1822,7 +1817,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:10.622Z",
+    "timestamp": "2021-04-08T11:24:23.484Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1919,7 +1914,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:10.879Z",
+    "timestamp": "2021-04-08T11:24:23.844Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1941,7 +1936,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:11.108Z",
+    "timestamp": "2021-04-08T11:24:24.197Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1954,16 +1949,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5,
+        "probability": 0.5141385676804975,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5,
+        "probability": 0.4858614323195025,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:11.493Z",
+    "timestamp": "2021-04-08T11:24:24.558Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -1995,7 +1990,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:11.825Z",
+    "timestamp": "2021-04-08T11:24:24.967Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2017,7 +2012,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:12.072Z",
+    "timestamp": "2021-04-08T11:24:25.300Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2039,7 +2034,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:12.405Z",
+    "timestamp": "2021-04-08T11:24:25.657Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2061,7 +2056,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:12.757Z",
+    "timestamp": "2021-04-08T11:24:26.016Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2163,7 +2158,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:13.125Z",
+    "timestamp": "2021-04-08T11:24:26.425Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2265,7 +2260,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:13.465Z",
+    "timestamp": "2021-04-08T11:24:26.777Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2417,7 +2412,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:13.828Z",
+    "timestamp": "2021-04-08T11:24:27.157Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2464,7 +2459,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:14.174Z",
+    "timestamp": "2021-04-08T11:24:27.418Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2486,7 +2481,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:14.511Z",
+    "timestamp": "2021-04-08T11:24:27.771Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2508,7 +2503,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:14.869Z",
+    "timestamp": "2021-04-08T11:24:28.138Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2530,7 +2525,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:15.206Z",
+    "timestamp": "2021-04-08T11:24:28.481Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2557,7 +2552,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:15.563Z",
+    "timestamp": "2021-04-08T11:24:28.829Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2594,7 +2589,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:15.911Z",
+    "timestamp": "2021-04-08T11:24:29.191Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2621,7 +2616,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:16.274Z",
+    "timestamp": "2021-04-08T11:24:29.549Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2643,7 +2638,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:16.631Z",
+    "timestamp": "2021-04-08T11:24:29.882Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2665,7 +2660,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:16.979Z",
+    "timestamp": "2021-04-08T11:24:30.139Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2687,7 +2682,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:17.323Z",
+    "timestamp": "2021-04-08T11:24:30.486Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2729,7 +2724,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:17.679Z",
+    "timestamp": "2021-04-08T11:24:30.855Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2771,7 +2766,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:17.919Z",
+    "timestamp": "2021-04-08T11:24:31.218Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2793,7 +2788,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:18.264Z",
+    "timestamp": "2021-04-08T11:24:31.577Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2815,7 +2810,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:18.605Z",
+    "timestamp": "2021-04-08T11:24:31.957Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2837,7 +2832,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:18.967Z",
+    "timestamp": "2021-04-08T11:24:32.300Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2859,7 +2854,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:19.318Z",
+    "timestamp": "2021-04-08T11:24:32.659Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2886,7 +2881,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:19.679Z",
+    "timestamp": "2021-04-08T11:24:33.015Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2908,7 +2903,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:20.023Z",
+    "timestamp": "2021-04-08T11:24:33.372Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2930,7 +2925,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:20.271Z",
+    "timestamp": "2021-04-08T11:24:33.669Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2952,7 +2947,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:20.511Z",
+    "timestamp": "2021-04-08T11:24:34.159Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -2974,7 +2969,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:20.746Z",
+    "timestamp": "2021-04-08T11:24:34.401Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3026,7 +3021,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:21.101Z",
+    "timestamp": "2021-04-08T11:24:34.652Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3048,7 +3043,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:21.433Z",
+    "timestamp": "2021-04-08T11:24:35.008Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3080,7 +3075,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:21.782Z",
+    "timestamp": "2021-04-08T11:24:35.384Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3102,7 +3097,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:22.142Z",
+    "timestamp": "2021-04-08T11:24:35.639Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3124,7 +3119,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:22.492Z",
+    "timestamp": "2021-04-08T11:24:35.990Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3146,7 +3141,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:22.758Z",
+    "timestamp": "2021-04-08T11:24:36.335Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3168,7 +3163,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:23.102Z",
+    "timestamp": "2021-04-08T11:24:36.725Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3190,7 +3185,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:23.455Z",
+    "timestamp": "2021-04-08T11:24:37.082Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3222,7 +3217,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:23.820Z",
+    "timestamp": "2021-04-08T11:24:37.327Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3244,7 +3239,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:24.166Z",
+    "timestamp": "2021-04-08T11:24:37.697Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3276,7 +3271,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:24.518Z",
+    "timestamp": "2021-04-08T11:24:37.983Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3298,7 +3293,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:24.870Z",
+    "timestamp": "2021-04-08T11:24:38.346Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3360,7 +3355,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:25.115Z",
+    "timestamp": "2021-04-08T11:24:38.723Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3387,7 +3382,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:25.457Z",
+    "timestamp": "2021-04-08T11:24:39.108Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3409,7 +3404,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:25.689Z",
+    "timestamp": "2021-04-08T11:24:39.501Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3422,16 +3417,16 @@
     "options": [
       {
         "name": "Less than 2.0%",
-        "probability": 0.3499863499863499,
+        "probability": 0.4313450760608487,
         "type": "PROBABILITY"
       },
       {
         "name": "2.0% or more",
-        "probability": 0.65001365001365,
+        "probability": 0.5686549239391513,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:26.029Z",
+    "timestamp": "2021-04-08T11:24:39.871Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3453,7 +3448,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:26.384Z",
+    "timestamp": "2021-04-08T11:24:40.218Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3475,7 +3470,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:26.744Z",
+    "timestamp": "2021-04-08T11:24:40.566Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3497,7 +3492,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:27.078Z",
+    "timestamp": "2021-04-08T11:24:40.942Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3519,7 +3514,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:27.415Z",
+    "timestamp": "2021-04-08T11:24:41.301Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3546,7 +3541,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:27.642Z",
+    "timestamp": "2021-04-08T11:24:41.670Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3573,7 +3568,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:27.983Z",
+    "timestamp": "2021-04-08T11:24:41.923Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3605,7 +3600,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:28.360Z",
+    "timestamp": "2021-04-08T11:24:42.270Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3632,7 +3627,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:28.705Z",
+    "timestamp": "2021-04-08T11:24:42.629Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3654,7 +3649,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:28.945Z",
+    "timestamp": "2021-04-08T11:24:43.016Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3676,7 +3671,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:29.285Z",
+    "timestamp": "2021-04-08T11:24:43.259Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3703,7 +3698,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:29.635Z",
+    "timestamp": "2021-04-08T11:24:43.646Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3725,7 +3720,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:30.001Z",
+    "timestamp": "2021-04-08T11:24:43.912Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3747,7 +3742,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:30.351Z",
+    "timestamp": "2021-04-08T11:24:44.275Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3769,7 +3764,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:30.706Z",
+    "timestamp": "2021-04-08T11:24:44.514Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3791,7 +3786,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:30.942Z",
+    "timestamp": "2021-04-08T11:24:45.017Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3813,7 +3808,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:31.301Z",
+    "timestamp": "2021-04-08T11:24:45.162Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3835,7 +3830,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:31.663Z",
+    "timestamp": "2021-04-08T11:24:45.525Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3857,7 +3852,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:32.013Z",
+    "timestamp": "2021-04-08T11:24:45.894Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3879,7 +3874,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:32.364Z",
+    "timestamp": "2021-04-08T11:24:46.246Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3901,7 +3896,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:32.594Z",
+    "timestamp": "2021-04-08T11:24:46.616Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3923,7 +3918,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:32.935Z",
+    "timestamp": "2021-04-08T11:24:46.988Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3945,7 +3940,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:33.290Z",
+    "timestamp": "2021-04-08T11:24:47.368Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3967,7 +3962,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:33.526Z",
+    "timestamp": "2021-04-08T11:24:47.726Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -3989,7 +3984,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:33.867Z",
+    "timestamp": "2021-04-08T11:24:48.082Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4016,7 +4011,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:34.024Z",
+    "timestamp": "2021-04-08T11:24:48.423Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4038,7 +4033,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:34.380Z",
+    "timestamp": "2021-04-08T11:24:48.771Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4060,7 +4055,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:34.732Z",
+    "timestamp": "2021-04-08T11:24:49.138Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4087,7 +4082,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:34.980Z",
+    "timestamp": "2021-04-08T11:24:49.490Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4109,7 +4104,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:35.211Z",
+    "timestamp": "2021-04-08T11:24:49.845Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4131,7 +4126,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:35.556Z",
+    "timestamp": "2021-04-08T11:24:50.199Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4158,7 +4153,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:35.917Z",
+    "timestamp": "2021-04-08T11:24:50.546Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4180,7 +4175,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:36.159Z",
+    "timestamp": "2021-04-08T11:24:50.904Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4207,7 +4202,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:36.498Z",
+    "timestamp": "2021-04-08T11:24:51.148Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4229,7 +4224,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:36.843Z",
+    "timestamp": "2021-04-08T11:24:51.387Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4251,7 +4246,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:37.101Z",
+    "timestamp": "2021-04-08T11:24:51.774Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4273,7 +4268,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:37.441Z",
+    "timestamp": "2021-04-08T11:24:52.037Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4295,7 +4290,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:37.686Z",
+    "timestamp": "2021-04-08T11:24:52.274Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4317,7 +4312,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:38.023Z",
+    "timestamp": "2021-04-08T11:24:52.547Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4339,7 +4334,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:38.275Z",
+    "timestamp": "2021-04-08T11:24:52.898Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4361,7 +4356,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:38.613Z",
+    "timestamp": "2021-04-08T11:24:53.163Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4383,7 +4378,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:38.943Z",
+    "timestamp": "2021-04-08T11:24:53.512Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4405,7 +4400,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:39.296Z",
+    "timestamp": "2021-04-08T11:24:53.896Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4427,7 +4422,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:39.646Z",
+    "timestamp": "2021-04-08T11:24:54.371Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4454,7 +4449,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:39.784Z",
+    "timestamp": "2021-04-08T11:24:54.621Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4467,31 +4462,31 @@
     "options": [
       {
         "name": "Labour",
-        "probability": 0.424506387921022,
+        "probability": 0.4231956773446546,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0.5499419279907084,
+        "probability": 0.5513315322269394,
         "type": "PROBABILITY"
       },
       {
         "name": "Reform UK",
-        "probability": 0.01384049554781262,
+        "probability": 0.01379776148205326,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.0009678668215253581,
+        "probability": 0.0009648784253184099,
         "type": "PROBABILITY"
       },
       {
         "name": "Northern Independence Party (Thelma Walker)",
-        "probability": 0.010743321718931475,
+        "probability": 0.010710150521034351,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:40.153Z",
+    "timestamp": "2021-04-08T11:24:54.888Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4528,7 +4523,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:40.502Z",
+    "timestamp": "2021-04-08T11:24:55.028Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4565,7 +4560,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:40.860Z",
+    "timestamp": "2021-04-08T11:24:55.370Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4587,7 +4582,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:41.215Z",
+    "timestamp": "2021-04-08T11:24:55.636Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4609,7 +4604,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:41.443Z",
+    "timestamp": "2021-04-08T11:24:55.985Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4631,7 +4626,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:41.787Z",
+    "timestamp": "2021-04-08T11:24:56.370Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4658,7 +4653,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:42.131Z",
+    "timestamp": "2021-04-08T11:24:56.717Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4680,7 +4675,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:42.491Z",
+    "timestamp": "2021-04-08T11:24:56.963Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4732,7 +4727,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:42.729Z",
+    "timestamp": "2021-04-08T11:24:57.313Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4764,7 +4759,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:42.988Z",
+    "timestamp": "2021-04-08T11:24:57.685Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4801,7 +4796,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:43.404Z",
+    "timestamp": "2021-04-08T11:24:58.113Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4828,7 +4823,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:43.754Z",
+    "timestamp": "2021-04-08T11:24:58.488Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4865,7 +4860,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:44.089Z",
+    "timestamp": "2021-04-08T11:24:58.837Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4902,7 +4897,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:44.348Z",
+    "timestamp": "2021-04-08T11:24:59.207Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4915,16 +4910,16 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.6593765968318855,
+        "probability": 0.5263105540634636,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.34062340316811446,
+        "probability": 0.47368944593653634,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:44.688Z",
+    "timestamp": "2021-04-08T11:24:59.536Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4937,16 +4932,16 @@
     "options": [
       {
         "name": "Plaid Cymru",
-        "probability": 0,
+        "probability": 0.7235343150875244,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 1,
+        "probability": 0.2764656849124757,
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:45.027Z",
+    "timestamp": "2021-04-08T11:24:59.891Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4959,21 +4954,20 @@
     "options": [
       {
         "name": "Conservative",
-        "probability": 1,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Labour",
-        "probability": 0,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Nick Ramsay (Independent)",
-        "probability": 0,
-        "type": "PROBABILITY"
+        "probability": null
       }
     ],
-    "timestamp": "2021-04-07T23:33:45.371Z",
+    "timestamp": "2021-04-08T11:25:00.245Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -4995,7 +4989,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:45.724Z",
+    "timestamp": "2021-04-08T11:25:00.609Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5027,7 +5021,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:46.078Z",
+    "timestamp": "2021-04-08T11:25:00.959Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5049,7 +5043,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:46.328Z",
+    "timestamp": "2021-04-08T11:25:01.144Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5071,7 +5065,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:46.684Z",
+    "timestamp": "2021-04-08T11:25:01.519Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5093,7 +5087,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:47.011Z",
+    "timestamp": "2021-04-08T11:25:01.876Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5115,7 +5109,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:47.346Z",
+    "timestamp": "2021-04-08T11:25:02.232Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5137,7 +5131,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:47.692Z",
+    "timestamp": "2021-04-08T11:25:02.584Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5164,7 +5158,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:47.929Z",
+    "timestamp": "2021-04-08T11:25:02.969Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5186,7 +5180,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:48.278Z",
+    "timestamp": "2021-04-08T11:25:03.315Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5208,7 +5202,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:48.635Z",
+    "timestamp": "2021-04-08T11:25:03.685Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5230,7 +5224,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:48.982Z",
+    "timestamp": "2021-04-08T11:25:04.058Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5252,7 +5246,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:49.329Z",
+    "timestamp": "2021-04-08T11:25:04.416Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5279,7 +5273,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:49.694Z",
+    "timestamp": "2021-04-08T11:25:04.649Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5301,7 +5295,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:50.031Z",
+    "timestamp": "2021-04-08T11:25:05.004Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5323,7 +5317,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:50.386Z",
+    "timestamp": "2021-04-08T11:25:05.381Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5336,21 +5330,20 @@
     "options": [
       {
         "name": "SNP",
-        "probability": 0.8695945945945945,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Liberal Democrats",
-        "probability": 0.1304054054054054,
+        "probability": null,
         "type": "PROBABILITY"
       },
       {
         "name": "Conservative",
-        "probability": 0,
-        "type": "PROBABILITY"
+        "probability": null
       }
     ],
-    "timestamp": "2021-04-07T23:33:50.716Z",
+    "timestamp": "2021-04-08T11:25:05.628Z",
     "qualityindicators": {
       "stars": 2
     }
@@ -5372,7 +5365,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "timestamp": "2021-04-07T23:33:51.069Z",
+    "timestamp": "2021-04-08T11:25:05.990Z",
     "qualityindicators": {
       "stars": 2
     }
