@@ -3,6 +3,7 @@
     "title": "Will EIP1559 be live on Mainnet before September? ",
     "url": "https://omen.eth.link/#/0x36cb6942bc9e2b07d7ad4fe33b3fef11be05a28c",
     "platform": "Omen",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -15,7 +16,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "description": "",
+    "timestamp": "2021-04-07T23:32:29.989Z",
     "qualityindicators": {
       "stars": 1
     }
@@ -24,6 +25,7 @@
     "title": "Will Joe Biden be the US President at the end of 2021?",
     "url": "https://omen.eth.link/#/0xd450b6c4db569f600cb42acc0a6cd3a140c4894b",
     "platform": "Omen",
+    "description": "",
     "options": [
       {
         "name": "Yes",
@@ -36,7 +38,7 @@
         "type": "PROBABILITY"
       }
     ],
-    "description": "",
+    "timestamp": "2021-04-07T23:32:29.990Z",
     "qualityindicators": {
       "stars": 1
     }

@@ -16,9 +16,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "80",
-    "numforecasters": "70",
-    "stars": 2
+    "timestamp": "2021-04-07T22:10:19.356Z",
+    "qualityindicators": {
+      "numforecasts": "84",
+      "numforecasters": "73",
+      "stars": 2
+    }
   },
   {
     "title": "Will China sign an official agreement on establishing a future military base in the Pacific Ocean before December 31, 2021?",
@@ -37,9 +40,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "46",
-    "numforecasters": "42",
-    "stars": 2
+    "timestamp": "2021-04-07T22:10:22.002Z",
+    "qualityindicators": {
+      "numforecasts": "52",
+      "numforecasters": "46",
+      "stars": 2
+    }
   },
   {
     "title": "What percentage of software engineer job postings between July 1 and September 30, 2021, inclusive, will allow for remote work?",
@@ -73,9 +79,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "96",
-    "numforecasters": "81",
-    "stars": 2
+    "timestamp": "2021-04-07T22:10:25.031Z",
+    "qualityindicators": {
+      "numforecasts": "96",
+      "numforecasters": "81",
+      "stars": 2
+    }
   },
   {
     "title": "Will Hu Chunhua be a member of the Standing Committee of the Politburo of the Chinese Communist Party's Central Committee on December 31, 2022?",
@@ -94,9 +103,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "26",
-    "numforecasters": "23",
-    "stars": 2
+    "timestamp": "2021-04-07T22:10:31.242Z",
+    "qualityindicators": {
+      "numforecasts": "26",
+      "numforecasters": "23",
+      "stars": 2
+    }
   },
   {
     "title": "Will Li Keqiang be a member of the Standing Committee of the Politburo of the Chinese Communist Party's Central Committee on December 31, 2022?",
@@ -115,9 +127,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "22",
-    "numforecasters": "18",
-    "stars": 2
+    "timestamp": "2021-04-07T22:10:33.658Z",
+    "qualityindicators": {
+      "numforecasts": "22",
+      "numforecasters": "18",
+      "stars": 2
+    }
   },
   {
     "title": "Will Chen Min'er be a member of the Standing Committee of the Politburo of the Chinese Communist Party's Central Committee on December 31, 2022?",
@@ -136,9 +151,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "19",
-    "numforecasters": "17",
-    "stars": 2
+    "timestamp": "2021-04-07T22:10:35.988Z",
+    "qualityindicators": {
+      "numforecasts": "19",
+      "numforecasters": "17",
+      "stars": 2
+    }
   },
   {
     "title": "How many new H-1B visa applications submitted by the \"Big 5\" tech companies will the U.S. grant in FY 2022 (September 2021 through October 2022)?",
@@ -148,33 +166,36 @@
     "options": [
       {
         "name": "Less than 7,500",
-        "probability": 0.04190000000000001,
+        "probability": 0.0418,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 7,500 and 9,500, inclusive",
-        "probability": 0.12890000000000001,
+        "probability": 0.1286,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 9,500 but less than or equal to 11,500",
-        "probability": 0.3059,
+        "probability": 0.3054,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 11,500 but less than or equal to 13,500",
-        "probability": 0.3056,
+        "probability": 0.30820000000000003,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 13,500",
-        "probability": 0.21780000000000002,
+        "probability": 0.2161,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "48",
-    "numforecasters": "39",
-    "stars": 2
+    "timestamp": "2021-04-07T22:10:39.586Z",
+    "qualityindicators": {
+      "numforecasts": "49",
+      "numforecasters": "40",
+      "stars": 2
+    }
   },
   {
     "title": "How many U.S. job postings requiring machine learning skills will be published between July 1 and December 31, 2021, inclusive?",
@@ -208,9 +229,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "88",
-    "numforecasters": "72",
-    "stars": 2
+    "timestamp": "2021-04-07T22:10:42.927Z",
+    "qualityindicators": {
+      "numforecasts": "88",
+      "numforecasters": "72",
+      "stars": 2
+    }
   },
   {
     "title": "What will total U.S. trade volume with China (imports and exports of goods) be in 2022?",
@@ -244,9 +268,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "35",
-    "numforecasters": "29",
-    "stars": 2
+    "timestamp": "2021-04-07T22:10:45.859Z",
+    "qualityindicators": {
+      "numforecasts": "35",
+      "numforecasters": "29",
+      "stars": 2
+    }
   },
   {
     "title": "What percentage of O visas will go to Chinese nationals in FY 2022 (September 2021 through October 2022)?",
@@ -280,9 +307,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "20",
-    "numforecasters": "18",
-    "stars": 2
+    "timestamp": "2021-04-07T22:10:49.440Z",
+    "qualityindicators": {
+      "numforecasts": "20",
+      "numforecasters": "18",
+      "stars": 2
+    }
   },
   {
     "title": "What will the combined revenue of Alphabet, Amazon, Apple, Facebook, and Microsoft be in the second half of 2021?",
@@ -316,9 +346,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "83",
-    "numforecasters": "71",
-    "stars": 2
+    "timestamp": "2021-04-07T22:10:59.224Z",
+    "qualityindicators": {
+      "numforecasts": "83",
+      "numforecasters": "71",
+      "stars": 2
+    }
   },
   {
     "title": "Will the Chinese military or other maritime security forces fire upon another country's civil or military vessel in the South China Sea between July 1 and December 31, 2021, inclusive?",
@@ -337,9 +370,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "142",
-    "numforecasters": "109",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:02.004Z",
+    "qualityindicators": {
+      "numforecasts": "144",
+      "numforecasters": "109",
+      "stars": 3
+    }
   },
   {
     "title": "Will Xi Jinping be General Secretary of the Chinese Communist Party's Central Committee on December 31, 2022?",
@@ -358,9 +394,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "193",
-    "numforecasters": "135",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:04.871Z",
+    "qualityindicators": {
+      "numforecasts": "194",
+      "numforecasters": "135",
+      "stars": 3
+    }
   },
   {
     "title": "How much funding will private U.S. tech companies raise between July 1 and December 31, 2021, inclusive?",
@@ -394,9 +433,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "57",
-    "numforecasters": "46",
-    "stars": 2
+    "timestamp": "2021-04-07T22:11:07.783Z",
+    "qualityindicators": {
+      "numforecasts": "57",
+      "numforecasters": "46",
+      "stars": 2
+    }
   },
   {
     "title": "How much funding will U.S. tech startups raise between July 1 and December 31, 2021, inclusive?",
@@ -430,9 +472,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "58",
-    "numforecasters": "44",
-    "stars": 2
+    "timestamp": "2021-04-07T22:11:11.361Z",
+    "qualityindicators": {
+      "numforecasts": "58",
+      "numforecasters": "44",
+      "stars": 2
+    }
   },
   {
     "title": "What will the Senate's average Bipartisan Index score be from 2021-2022?",
@@ -442,17 +487,17 @@
     "options": [
       {
         "name": "Less than -0.25",
-        "probability": 0.1937,
+        "probability": 0.19329999999999997,
         "type": "PROBABILITY"
       },
       {
         "name": "Between -0.25 and 0, inclusive",
-        "probability": 0.3191,
+        "probability": 0.3189,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 0 but less than or equal to 0.25",
-        "probability": 0.2991,
+        "probability": 0.29960000000000003,
         "type": "PROBABILITY"
       },
       {
@@ -466,9 +511,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "149",
-    "numforecasters": "111",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:14.661Z",
+    "qualityindicators": {
+      "numforecasts": "150",
+      "numforecasters": "111",
+      "stars": 3
+    }
   },
   {
     "title": "How much will the U.S. Department of Defense spend on AI research contracts between July 1 and December 31, 2021, inclusive?",
@@ -502,9 +550,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "115",
-    "numforecasters": "92",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:18.309Z",
+    "qualityindicators": {
+      "numforecasts": "115",
+      "numforecasters": "92",
+      "stars": 3
+    }
   },
   {
     "title": "How much will the U.S. Department of Defense spend on AI grants between July 1 and December 31, 2021, inclusive?",
@@ -538,9 +589,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "143",
-    "numforecasters": "114",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:21.887Z",
+    "qualityindicators": {
+      "numforecasts": "144",
+      "numforecasters": "114",
+      "stars": 3
+    }
   },
   {
     "title": "How many AI papers will be posted on arXiv between July 1 and December 31, 2021, inclusive?",
@@ -574,9 +628,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "72",
-    "numforecasters": "44",
-    "stars": 2
+    "timestamp": "2021-04-07T22:11:24.649Z",
+    "qualityindicators": {
+      "numforecasts": "72",
+      "numforecasters": "44",
+      "stars": 2
+    }
   },
   {
     "title": "How many members will the Alphabet Workers Union have by December 31, 2021?",
@@ -586,22 +643,22 @@
     "options": [
       {
         "name": "Less than 800",
-        "probability": 0.12869999999999998,
+        "probability": 0.1282,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 800 and 4,000",
-        "probability": 0.45649999999999996,
+        "probability": 0.4506,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 4,000 but less than or equal to 20,000",
-        "probability": 0.2862,
+        "probability": 0.2904,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 20,000 but less than or equal to 100,000",
-        "probability": 0.099,
+        "probability": 0.1013,
         "type": "PROBABILITY"
       },
       {
@@ -610,9 +667,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "156",
-    "numforecasters": "103",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:27.621Z",
+    "qualityindicators": {
+      "numforecasts": "157",
+      "numforecasters": "103",
+      "stars": 3
+    }
   },
   {
     "title": "What percentage of U.S. news articles about AI will be about privacy and security between July 1 and December 31, 2021, inclusive?",
@@ -646,9 +706,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "67",
-    "numforecasters": "55",
-    "stars": 2
+    "timestamp": "2021-04-07T22:11:38.064Z",
+    "qualityindicators": {
+      "numforecasts": "67",
+      "numforecasters": "55",
+      "stars": 2
+    }
   },
   {
     "title": "Will NVIDIA acquire Arm by March 31, 2022?",
@@ -658,18 +721,21 @@
     "options": [
       {
         "name": "Yes",
-        "probability": 0.44,
+        "probability": 0.43,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.56,
+        "probability": 0.57,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "152",
-    "numforecasters": "90",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:41.560Z",
+    "qualityindicators": {
+      "numforecasts": "153",
+      "numforecasters": "90",
+      "stars": 3
+    }
   },
   {
     "title": "What percentage of the combined revenue of the top five semiconductor manufacturing equipment producers will come from China in 2021?",
@@ -679,33 +745,36 @@
     "options": [
       {
         "name": "Less than 20%",
-        "probability": 0.0929,
+        "probability": 0.08800000000000001,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 25%, inclusive",
-        "probability": 0.18170000000000003,
+        "probability": 0.1698,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 25% but less than or equal to 30%",
-        "probability": 0.3617,
+        "probability": 0.3705,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 30% but less than or equal to 35%",
-        "probability": 0.24850000000000003,
+        "probability": 0.25780000000000003,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 35%",
-        "probability": 0.1151,
+        "probability": 0.1139,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "74",
-    "numforecasters": "59",
-    "stars": 2
+    "timestamp": "2021-04-07T22:11:44.617Z",
+    "qualityindicators": {
+      "numforecasts": "75",
+      "numforecasters": "59",
+      "stars": 2
+    }
   },
   {
     "title": "Will the United States return to compliance with the 2015 Iran nuclear deal by December 31, 2021?",
@@ -724,9 +793,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "357",
-    "numforecasters": "196",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:47.308Z",
+    "qualityindicators": {
+      "numforecasts": "362",
+      "numforecasters": "198",
+      "stars": 3
+    }
   },
   {
     "title": "When will Ant Financial have an IPO in China or Hong Kong?",
@@ -755,9 +827,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "249",
-    "numforecasters": "137",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:49.981Z",
+    "qualityindicators": {
+      "numforecasts": "249",
+      "numforecasters": "137",
+      "stars": 3
+    }
   },
   {
     "title": "What percentage of U.S. residents will have an unfavorable view of China, as reflected in the 2022 Pew Global Attitudes Survey?",
@@ -767,33 +842,36 @@
     "options": [
       {
         "name": "Less than 59%",
-        "probability": 0.11810000000000001,
+        "probability": 0.12369999999999999,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 59% and 66%, inclusive",
-        "probability": 0.1775,
+        "probability": 0.1791,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 66% but less than or equal to 73%",
-        "probability": 0.2675,
+        "probability": 0.2658,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 73% but less than or equal to 80%",
-        "probability": 0.29600000000000004,
+        "probability": 0.2939,
         "type": "PROBABILITY"
       },
       {
         "name": "More than 80%",
-        "probability": 0.1409,
+        "probability": 0.1376,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "237",
-    "numforecasters": "169",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:53.304Z",
+    "qualityindicators": {
+      "numforecasts": "239",
+      "numforecasters": "169",
+      "stars": 3
+    }
   },
   {
     "title": "Will the U.S. government file an antitrust lawsuit against Apple, Amazon, or Facebook between January 20, 2021 and January 19, 2025?",
@@ -812,9 +890,12 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "201",
-    "numforecasters": "133",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:56.342Z",
+    "qualityindicators": {
+      "numforecasts": "201",
+      "numforecasters": "133",
+      "stars": 3
+    }
   },
   {
     "title": "What percentage of U.S. corporate press releases about AI will reference AI ethics in 2021?",
@@ -848,8 +929,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "221",
-    "numforecasters": "140",
-    "stars": 3
+    "timestamp": "2021-04-07T22:11:59.367Z",
+    "qualityindicators": {
+      "numforecasts": "221",
+      "numforecasters": "140",
+      "stars": 3
+    }
   }
 ]

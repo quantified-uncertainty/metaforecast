@@ -76,7 +76,9 @@ let coverttocsvandmerge = async () => {
 let addtohistory = () => {
   let currentJSON = fs.readFileSync(locationData + "metaforecasts.json")
   let historyJSON = fs.readFileSync(locationData + "metaforecasts_history_bootstrap.json")
-
+  for(let forecast of currentJSON){
+    
+  }
 }
 
 async function whattodo(message,callback){

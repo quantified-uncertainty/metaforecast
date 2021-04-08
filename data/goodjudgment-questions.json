@@ -12,12 +12,12 @@
       },
       {
         "name": "Yes, to $10.00 or more, but less than $15.00",
-        "probability": 0.48,
+        "probability": 0.47,
         "type": "PROBABILITY"
       },
       {
         "name": "Yes, to $15.00 or more",
-        "probability": 0.05,
+        "probability": 0.06,
         "type": "PROBABILITY"
       },
       {
@@ -26,7 +26,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 4
+    "timestamp": "2021-04-07T22:12:36.212Z",
+    "qualityindicators": {
+      "stars": 4
+    }
   },
   {
     "title": "What percentage of global light vehicle sales in 2021 will be battery electric vehicles (BEVs) and plug-in hybrid electric vehicles (PHEVs)?</a>",
@@ -36,7 +39,7 @@
     "options": [
       {
         "name": "Less than 4.0%",
-        "probability": 0.01,
+        "probability": 0,
         "type": "PROBABILITY"
       },
       {
@@ -46,12 +49,12 @@
       },
       {
         "name": "More than 5.0% but less than 6.0%",
-        "probability": 0.26,
+        "probability": 0.24,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 6.0% and 7.0%, inclusive",
-        "probability": 0.52,
+        "probability": 0.55,
         "type": "PROBABILITY"
       },
       {
@@ -60,7 +63,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 4
+    "timestamp": "2021-04-07T22:12:36.212Z",
+    "qualityindicators": {
+      "stars": 4
+    }
   },
   {
     "title": "When will the number of COVID-19 vaccine doses administered reach 1.5 billion worldwide?</a>",
@@ -94,7 +100,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 4
+    "timestamp": "2021-04-07T22:12:36.212Z",
+    "qualityindicators": {
+      "stars": 4
+    }
   },
   {
     "title": "When will the UK report that 35 million people in the UK have been vaccinated for COVID-19?</a>",
@@ -109,17 +118,17 @@
       },
       {
         "name": "Between 1 March 2021 and 30 April 2021",
-        "probability": 0.91,
+        "probability": 0.87,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 May 2021 and 30 June 2021",
-        "probability": 0.09,
+        "probability": 0.12,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 1 July 2021 and 31 August 2021",
-        "probability": 0,
+        "probability": 0.01,
         "type": "PROBABILITY"
       },
       {
@@ -128,7 +137,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 4
+    "timestamp": "2021-04-07T22:12:36.212Z",
+    "qualityindicators": {
+      "stars": 4
+    }
   },
   {
     "title": "When will enough doses of FDA-approved COVID-19 vaccine(s) to inoculate 200 million people be distributed in the United States?</a>",
@@ -162,7 +174,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 4
+    "timestamp": "2021-04-07T22:12:36.212Z",
+    "qualityindicators": {
+      "stars": 4
+    }
   },
   {
     "title": "In 2021, what percentage of corporate board seats at S&amp;P 500 firms will be held by racial minorities, according to The Conference Board?</a>",
@@ -172,12 +187,12 @@
     "options": [
       {
         "name": "Less than 23%",
-        "probability": 0.27,
+        "probability": 0.32,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 23% and 27%, inclusive",
-        "probability": 0.71,
+        "probability": 0.66,
         "type": "PROBABILITY"
       },
       {
@@ -186,7 +201,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 4
+    "timestamp": "2021-04-07T22:12:37.840Z",
+    "qualityindicators": {
+      "stars": 4
+    }
   },
   {
     "title": "What will be the world's GDP in 2021 relative to the world's GDP in 2019, according to the IMF?</a>",
@@ -206,21 +224,24 @@
       },
       {
         "name": "Lower by more than 0% but less than 4% ",
-        "probability": 0.07,
+        "probability": 0.1,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by between 0% and 4%, inclusive",
-        "probability": 0.79,
+        "probability": 0.77,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 4%",
-        "probability": 0.13,
+        "probability": 0.12,
         "type": "PROBABILITY"
       }
     ],
-    "stars": 4
+    "timestamp": "2021-04-07T22:12:37.840Z",
+    "qualityindicators": {
+      "stars": 4
+    }
   },
   {
     "title": "What will be the value of sustainable funds' estimated annual flows in the U.S. in 2021 relative to 2020, according to Morningstar?</a>",
@@ -235,16 +256,19 @@
       },
       {
         "name": "Higher by between 0% and 100%",
-        "probability": 0.38,
+        "probability": 0.39,
         "type": "PROBABILITY"
       },
       {
         "name": "Higher by more than 100%",
-        "probability": 0.61,
+        "probability": 0.6,
         "type": "PROBABILITY"
       }
     ],
-    "stars": 4
+    "timestamp": "2021-04-07T22:12:37.840Z",
+    "qualityindicators": {
+      "stars": 4
+    }
   },
   {
     "title": "When will enough doses of FDA-approved COVID-19 vaccine(s) to inoculate 200 million people be distributed in the United States?</a>",
@@ -278,7 +302,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 4
+    "timestamp": "2021-04-07T22:12:37.840Z",
+    "qualityindicators": {
+      "stars": 4
+    }
   },
   {
     "title": "As of 1 July 2021, what will be the United Kingdom's Office for National Statistics (ONS) latest report of the percentage of working adults who \"worked from home exclusively\"?</a>",
@@ -293,12 +320,12 @@
       },
       {
         "name": "More than 10% but less than 20%",
-        "probability": 0.74,
+        "probability": 0.72,
         "type": "PROBABILITY"
       },
       {
         "name": "Between 20% and 30%, inclusive",
-        "probability": 0.24,
+        "probability": 0.26,
         "type": "PROBABILITY"
       },
       {
@@ -307,6 +334,9 @@
         "type": "PROBABILITY"
       }
     ],
-    "stars": 4
+    "timestamp": "2021-04-07T22:12:37.840Z",
+    "qualityindicators": {
+      "stars": 4
+    }
   }
 ]

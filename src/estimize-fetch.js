@@ -1,3 +1,4 @@
+import { calculateStars } from "./stars.js"
 import fs from "fs"
 
 export function estimize(){
@@ -19,8 +20,6 @@ export function estimize(){
           "options": [],
           "timestamp": new Date().toISOString(),
           "qualityindicators": {
-            "numforecasts": numforecasts,
-            "numforecasters": numforecasters,
             "stars": calculateStars("Estimize", ({})),
           }
         })

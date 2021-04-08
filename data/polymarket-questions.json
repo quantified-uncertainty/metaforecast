@@ -7,17 +7,22 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.04289521231937485216720053165480434",
+        "probability": "0.04796853499144450688949206400915807",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9571047876806251478327994683451957",
+        "probability": "0.9520314650085554931105079359908419",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "134",
-    "stars": 3
+    "timestamp": "2021-04-07T23:22:59.304Z",
+    "qualityindicators": {
+      "numforecasts": "137",
+      "liquidity": "1585.76",
+      "tradevolume": "9977.68",
+      "stars": 3
+    }
   },
   {
     "title": "Will Floyd Mayweather beat Logan Paul in their boxing exhibition match?",
@@ -27,17 +32,22 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9002039693649043537392718015929172",
+        "probability": "0.9007428867327054129165036606952368",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.09979603063509564626072819840708283",
+        "probability": "0.09925711326729458708349633930476325",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "852",
-    "stars": 3
+    "timestamp": "2021-04-07T23:22:59.307Z",
+    "qualityindicators": {
+      "numforecasts": "853",
+      "liquidity": "9826.84",
+      "tradevolume": "96927.10",
+      "stars": 3
+    }
   },
   {
     "title": "Will Donald Trump launch a new social media platform by June 15, 2021?",
@@ -47,77 +57,47 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1626438948240446428508480347025264",
+        "probability": "0.170996995977371772589269286804194",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8373561051759553571491519652974736",
+        "probability": "0.829003004022628227410730713195806",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "112",
-    "stars": 4
+    "timestamp": "2021-04-07T23:22:59.300Z",
+    "qualityindicators": {
+      "numforecasts": "122",
+      "liquidity": "2593.78",
+      "tradevolume": "9519.49",
+      "stars": 4
+    }
   },
   {
-    "title": "Will Clubhouse officially announce they’ve been acquired before June 1st, 2021? ",
-    "url": "https://polymarket.com/market/will-clubhouse-officially-announce-theyve-been-acquired-before-june-1st-2021",
+    "title": "Will Joe Biden's approval rating be 54% or higher on April 14, 2021?",
+    "url": "https://polymarket.com/market/will-joe-bidens-approval-rating-be-54-or-higher-on-april-14-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on whether Clubhouse will announce they've been acquired before June 1st, 2021, with the term acquired meaning the official announcement and public reporting of an acquisition, with a for-profit company purchasing majority ownership of Clubhouse and/or the respective entity. Note, this is not in reference to the final close date of the acquisition. This market will resolve immediately upon the resolution conditions being met, and thus, if, for whatever reason, the acquisition is not successfully completed, the market will have already resolved to “Yes”.",
+    "description": "This is a market on whether Joe Biden's approval rating will be 54% or higher on April 14, 2021. The resolution source will be FiveThirtyEight's approval rating poll aggregator, https://projects.fivethirtyeight.com/biden-approval-rating/. Changes in the methodology by which FiveThirtyEight calculates the approval rating will have no bearing on the resolution of this market. If for any reason the resolution source is unavailable on the resolution date, resolution will be delayed up to 48 hours. If still unavailable following that delay, this market will resolve to 50/50. If Joe Biden is not President on the resolution date, this market will resolve according to the most recent available approval rating. The resolution date for this market will be on April 15, 2021 at 12:00 PM ET according to data published for the day of April 14, 2021. In the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC). \n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.08230492310864397199453546569564446",
+        "probability": "0.3323729247731281816387191020342297",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9176950768913560280054645343043555",
+        "probability": "0.6676270752268718183612808979657703",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "94",
-    "stars": 3
-  },
-  {
-    "title": "Will 225M COVID-19 vaccine doses have been administered in the US by Biden's 100th day in office? ",
-    "url": "https://polymarket.com/market/will-225-m-covid-19-vaccine-doses-have-been-administered-in-the-us-by-biden-s-100th-day-in-office",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether 225 million COVID-19 vaccine doses will be administered in the United States by April 29, 2021, 12:00 PM ET (Biden’s 100th day in office). This market will resolve to \"Yes\" if 225 million or more total COVID-19 vaccine doses are administered by the resolution date. This market will resolve to \"No\" if, for any reason, fewer than 225 million COVID-19 vaccines doses are administered by the resolution date. The resolution source for this market will be the number of total COVID-19 vaccine doses administered, as indicated by the CDC’s Covid Data tracker (https://covid.cdc.gov/covid-data-tracker/#vaccinations). This market will resolve according to the data as available immediately at the time of resolution, April 29, 2021, 12:00 PM ET, and resolution will not be delayed for the purpose of waiting for updated data from a specific date. ",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9653019566630247126092061354150159",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.0346980433369752873907938645849841",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "509",
-    "stars": 3
-  },
-  {
-    "title": "Will Joe Biden be President of the USA on July 31, 2021?",
-    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-july-31-2021",
-    "platform": "PolyMarket",
-    "description": "This is a market on if Joe Biden will be President of the United States on July 31, 2021, 11:59 PM ET. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, https://www.whitehouse.gov/.\n\n",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.9251997333475857063590461609885448",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.07480026665241429364095383901145517",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "43",
-    "stars": 3
+    "timestamp": "2021-04-07T23:22:59.309Z",
+    "qualityindicators": {
+      "numforecasts": "62",
+      "liquidity": "5650.83",
+      "tradevolume": "9005.29",
+      "stars": 4
+    }
   },
   {
     "title": "Will North Dakota have the most COVID-19 cases per 100k residents on May 15, 2021?",
@@ -127,37 +107,97 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.5453758226938825658224889273909583",
+        "probability": "0.5172991875020085726736527423312362",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.4546241773061174341775110726090417",
+        "probability": "0.4827008124979914273263472576687638",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "527",
-    "stars": 4
+    "timestamp": "2021-04-07T23:22:59.304Z",
+    "qualityindicators": {
+      "numforecasts": "562",
+      "liquidity": "26144.23",
+      "tradevolume": "88537.93",
+      "stars": 4
+    }
   },
   {
-    "title": "Will the US have 200M total COVID-19 vaccines administered by Biden’s 100th day in office?",
-    "url": "https://polymarket.com/market/will-the-us-have-200m-total-covid-19-vaccines-administered-by-bidens-100th-day-in-office",
+    "title": "Will Clubhouse officially announce they’ve been acquired before June 1st, 2021? ",
+    "url": "https://polymarket.com/market/will-clubhouse-officially-announce-theyve-been-acquired-before-june-1st-2021",
     "platform": "PolyMarket",
-    "description": "This is a market on whether 200 million COVID-19 vaccine doses will be administered in the United States by April 29, 2021, 12:00 PM ET (Biden’s 100th day in office). This market will resolve to \"Yes\" if 200 million or more total COVID-19 vaccine doses are administered by the resolution date. This market will resolve to \"No\" if, for any reason, fewer than 200 million COVID-19 vaccines doses are administered by the resolution date. The resolution source for this market will be the number of total COVID-19 vaccine doses administered, as indicated by the CDC’s Covid Data tracker (https://covid.cdc.gov/covid-data-tracker/#vaccinations). This market will resolve according to the data as available immediately at the time of resolution, April 29, 2021, 12:00 PM ET, and resolution will not be delayed for the purpose of waiting for updated data from a specific date. \n\n",
+    "description": "This is a market on whether Clubhouse will announce they've been acquired before June 1st, 2021, with the term acquired meaning the official announcement and public reporting of an acquisition, with a for-profit company purchasing majority ownership of Clubhouse and/or the respective entity. Note, this is not in reference to the final close date of the acquisition. This market will resolve immediately upon the resolution conditions being met, and thus, if, for whatever reason, the acquisition is not successfully completed, the market will have already resolved to “Yes”.",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.9952637804609687466398227552779004",
+        "probability": "0.1338693193154870843938621081569645",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.004736219539031253360177244722099615",
+        "probability": "0.8661306806845129156061378918430355",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "40",
-    "stars": 3
+    "timestamp": "2021-04-07T23:22:59.307Z",
+    "qualityindicators": {
+      "numforecasts": "103",
+      "liquidity": "2108.08",
+      "tradevolume": "8747.18",
+      "stars": 4
+    }
+  },
+  {
+    "title": "Will Joe Biden be President of the USA on July 31, 2021?",
+    "url": "https://polymarket.com/market/will-joe-biden-be-president-of-the-usa-on-july-31-2021",
+    "platform": "PolyMarket",
+    "description": "This is a market on if Joe Biden will be President of the United States on July 31, 2021, 11:59 PM ET. This market will resolve to “Yes“ if, on the resolution date, Joe Biden is listed as being the current President of the United States according to official US government sources, like the link provided as the resolution source. If, for any reason, Joe Biden is not the sitting President of the United States on that date, this market will resolve to “No“. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). The resolution source for this market will be the official website of the United States President, https://www.whitehouse.gov/.\n\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9298924736229371364678481019391842",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.07010752637706286353215189806081583",
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-04-07T23:22:59.307Z",
+    "qualityindicators": {
+      "numforecasts": "63",
+      "liquidity": "12467.97",
+      "tradevolume": "8436.43",
+      "stars": 3
+    }
+  },
+  {
+    "title": "Will 225M COVID-19 vaccine doses have been administered in the US by Biden's 100th day in office? ",
+    "url": "https://polymarket.com/market/will-225-m-covid-19-vaccine-doses-have-been-administered-in-the-us-by-biden-s-100th-day-in-office",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether 225 million COVID-19 vaccine doses will be administered in the United States by April 29, 2021, 12:00 PM ET (Biden’s 100th day in office). This market will resolve to \"Yes\" if 225 million or more total COVID-19 vaccine doses are administered by the resolution date. This market will resolve to \"No\" if, for any reason, fewer than 225 million COVID-19 vaccines doses are administered by the resolution date. The resolution source for this market will be the number of total COVID-19 vaccine doses administered, as indicated by the CDC’s Covid Data tracker (https://covid.cdc.gov/covid-data-tracker/#vaccinations). This market will resolve according to the data as available immediately at the time of resolution, April 29, 2021, 12:00 PM ET, and resolution will not be delayed for the purpose of waiting for updated data from a specific date. ",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.9732867990029642437725352176699527",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.02671320099703575622746478233004727",
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-04-07T23:22:59.305Z",
+    "qualityindicators": {
+      "numforecasts": "517",
+      "liquidity": "4057.43",
+      "tradevolume": "79832.84",
+      "stars": 3
+    }
   },
   {
     "title": "What will the 7-day average COVID-19 case count in the US be on April  9?",
@@ -167,67 +207,57 @@
     "options": [
       {
         "name": "49,999 or fewer",
-        "probability": "0.005461995014925152009066173070714966",
+        "probability": "0.00284995242076918734124340809943596",
         "type": "PROBABILITY"
       },
       {
         "name": "50,000-62,499",
-        "probability": "0.1402457285384641398727795776003874",
+        "probability": "0.03762650549352014965374488933017359",
         "type": "PROBABILITY"
       },
       {
         "name": "62,500-74,999",
-        "probability": "0.8477845321483973198663299988905947",
+        "probability": "0.9564042087259252283190549533367421",
         "type": "PROBABILITY"
       },
       {
         "name": "75,000 or more",
-        "probability": "0.006507744298213388251824250438302919",
+        "probability": "0.003119333359785434685956749233648686",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "266",
-    "stars": 3
+    "timestamp": "2021-04-07T23:22:59.308Z",
+    "qualityindicators": {
+      "numforecasts": "293",
+      "liquidity": "2000.00",
+      "tradevolume": "7528.95",
+      "stars": 3
+    }
   },
   {
-    "title": "Will Donald Trump file to run for president before June 1, 2021?",
-    "url": "https://polymarket.com/market/will-donald-trump-file-to-run-for-president-before-june-1-2021-1",
+    "title": "Will the US have 200M total COVID-19 vaccines administered by Biden’s 100th day in office?",
+    "url": "https://polymarket.com/market/will-the-us-have-200m-total-covid-19-vaccines-administered-by-bidens-100th-day-in-office",
     "platform": "PolyMarket",
-    "description": "This is a market on whether Donald Trump will file to run for president prior to June 1, 2021. The linked PredictIt question is the basis for the creation of this market and will be referenced as the leading resolution source: https://www.predictit.org/markets/detail/6994/Will-Donald-Trump-file-to-run-for-president-before-the-end-of-2021. If the PredictIt question resolves to \"Yes\" prior to June 1, 2021, this market will resolve to “Yes”, and “No” otherwise.",
+    "description": "This is a market on whether 200 million COVID-19 vaccine doses will be administered in the United States by April 29, 2021, 12:00 PM ET (Biden’s 100th day in office). This market will resolve to \"Yes\" if 200 million or more total COVID-19 vaccine doses are administered by the resolution date. This market will resolve to \"No\" if, for any reason, fewer than 200 million COVID-19 vaccines doses are administered by the resolution date. The resolution source for this market will be the number of total COVID-19 vaccine doses administered, as indicated by the CDC’s Covid Data tracker (https://covid.cdc.gov/covid-data-tracker/#vaccinations). This market will resolve according to the data as available immediately at the time of resolution, April 29, 2021, 12:00 PM ET, and resolution will not be delayed for the purpose of waiting for updated data from a specific date. \n\n",
     "options": [
       {
         "name": "Yes",
-        "probability": "0.03415979679579444134958508639239318",
+        "probability": "0.9947414308982089285866490227040758",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9658402032042055586504149136076068",
+        "probability": "0.005258569101791071413350977295924238",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "132",
-    "stars": 3
-  },
-  {
-    "title": "Will the Tokyo Summer Olympics be cancelled or postponed by May 1, 2021?",
-    "url": "https://polymarket.com/market/will-the-tokyo-summer-olympics-be-cancelled-or-postponed",
-    "platform": "PolyMarket",
-    "description": "This is a market on whether the Tokyo Summer Olympics will be canceled or postponed prior to May 1, 2021, 12:00pm EST. The opening ceremony is currently scheduled to take place on July 23, 2021. If an official statement is published by the International Olympic Committee on https://www.olympic.org/ which announces that the ceremony will take place on a date later than July 23, 2021, this market will resolve to “Yes\". If no such announcement is made prior to the resolution date, this market will resolve to “No\". The resolution source for this market will be an official statement published to olympic.org, the official website of the International Olympic Committee. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
-    "options": [
-      {
-        "name": "Yes",
-        "probability": "0.07287449903319681253427004395658991",
-        "type": "PROBABILITY"
-      },
-      {
-        "name": "No",
-        "probability": "0.9271255009668031874657299560434101",
-        "type": "PROBABILITY"
-      }
-    ],
-    "numforecasts": "462",
-    "stars": 3
+    "timestamp": "2021-04-07T23:22:59.309Z",
+    "qualityindicators": {
+      "numforecasts": "43",
+      "liquidity": "1184.32",
+      "tradevolume": "7439.83",
+      "stars": 3
+    }
   },
   {
     "title": "Will 150 million people have received a dose of an approved COVID-19 vaccine in the US by May 1, 2021?",
@@ -237,17 +267,72 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.7550145080311792637230679442582792",
+        "probability": "0.741583872446752233683024374365151",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.2449854919688207362769320557417208",
+        "probability": "0.258416127553247766316975625634849",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "1213",
-    "stars": 4
+    "timestamp": "2021-04-07T23:22:59.310Z",
+    "qualityindicators": {
+      "numforecasts": "1281",
+      "liquidity": "209430.29",
+      "tradevolume": "674272.26",
+      "stars": 4
+    }
+  },
+  {
+    "title": "Will Donald Trump file to run for president before June 1, 2021?",
+    "url": "https://polymarket.com/market/will-donald-trump-file-to-run-for-president-before-june-1-2021-1",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Donald Trump will file to run for president prior to June 1, 2021. The linked PredictIt question is the basis for the creation of this market and will be referenced as the leading resolution source: https://www.predictit.org/markets/detail/6994/Will-Donald-Trump-file-to-run-for-president-before-the-end-of-2021. If the PredictIt question resolves to \"Yes\" prior to June 1, 2021, this market will resolve to “Yes”, and “No” otherwise.",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.03413667417694183066424578230798366",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9658633258230581693357542176920163",
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-04-07T23:22:59.304Z",
+    "qualityindicators": {
+      "numforecasts": "133",
+      "liquidity": "2628.43",
+      "tradevolume": "6625.39",
+      "stars": 3
+    }
+  },
+  {
+    "title": "Will the Tokyo Summer Olympics be cancelled or postponed by May 1, 2021?",
+    "url": "https://polymarket.com/market/will-the-tokyo-summer-olympics-be-cancelled-or-postponed",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether the Tokyo Summer Olympics will be canceled or postponed prior to May 1, 2021, 12:00pm EST. The opening ceremony is currently scheduled to take place on July 23, 2021. If an official statement is published by the International Olympic Committee on https://www.olympic.org/ which announces that the ceremony will take place on a date later than July 23, 2021, this market will resolve to “Yes\". If no such announcement is made prior to the resolution date, this market will resolve to “No\". The resolution source for this market will be an official statement published to olympic.org, the official website of the International Olympic Committee. In the event of ambiguity in terms of the market outcome, the market will be resolved in good faith at the sole discretion of the Markets Integrity Committee (MIC). ",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.0698474380887523603937269756869531",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.9301525619112476396062730243130469",
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-04-07T23:22:59.302Z",
+    "qualityindicators": {
+      "numforecasts": "468",
+      "liquidity": "4039.72",
+      "tradevolume": "65532.56",
+      "stars": 3
+    }
   },
   {
     "title": "Will Donald Trump be federally charged by June 1st? ",
@@ -257,17 +342,22 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.03896671346054959704613527283522096",
+        "probability": "0.03895052073921588772001682171912906",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.961033286539450402953864727164779",
+        "probability": "0.9610494792607841122799831782808709",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "108",
-    "stars": 3
+    "timestamp": "2021-04-07T23:22:59.309Z",
+    "qualityindicators": {
+      "numforecasts": "109",
+      "liquidity": "1368.68",
+      "tradevolume": "6122.61",
+      "stars": 3
+    }
   },
   {
     "title": "Will Uniswap v3 launch before April 30, 2021?",
@@ -277,17 +367,22 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.01581076221947057694031304319276671",
+        "probability": "0.01594316631423604659920151808627175",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9841892377805294230596869568072333",
+        "probability": "0.9840568336857639534007984819137282",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "765",
-    "stars": 3
+    "timestamp": "2021-04-07T23:22:59.303Z",
+    "qualityindicators": {
+      "numforecasts": "768",
+      "liquidity": "1597.05",
+      "tradevolume": "57034.77",
+      "stars": 3
+    }
   },
   {
     "title": "Will the US have fewer than 40,000 new COVID-19 cases on any day before April 16, 2021?",
@@ -297,17 +392,22 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.0866927470574085197706746528854292",
+        "probability": "0.09748821039260846564101130159528613",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.9133072529425914802293253471145708",
+        "probability": "0.9025117896073915343589886984047139",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "679",
-    "stars": 3
+    "timestamp": "2021-04-07T23:22:59.304Z",
+    "qualityindicators": {
+      "numforecasts": "712",
+      "liquidity": "1781.14",
+      "tradevolume": "52868.40",
+      "stars": 3
+    }
   },
   {
     "title": "Will more than 1.75 million people travel through a TSA checkpoint on any day on or before April 10?",
@@ -317,28 +417,72 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.1139484754054179756559525019638854",
+        "probability": "0.07669954432982294017531795533955721",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.8860515245945820243440474980361146",
+        "probability": "0.9233004556701770598246820446604428",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "485",
-    "stars": 4
+    "timestamp": "2021-04-07T23:22:59.306Z",
+    "qualityindicators": {
+      "numforecasts": "506",
+      "liquidity": "3872.64",
+      "tradevolume": "51707.68",
+      "stars": 3
+    }
   },
   {
     "title": "Will any Knicks game have greater than 20% attendance before the NBA season ends?",
     "url": "https://polymarket.com/market/will-any-knicks-game-have-greater-than-20-attendance-before-the-nba-season-ends",
-    "address": "0xa8B8c6cd59ECDe225D62185Cd3cAdE606e51b545",
+    "platform": "PolyMarket",
     "description": "This is a market on whether there will be a New York Knicks game at Madison Square Garden where more than 20% of the seats are filled by the end of the NBA season, including the playoffs. This market will resolve to “Yes” if there is any New York Knicks home game at Madison Square Garden, where official attendance is 3,963 or higher (3,963 is the lowest number that puts attendance over 20% of the 19,812 seating capacity at MSG for NBA games), before the end of the NBA  season. This market will resolve to “No” if there is not a single New York Knicks home game at Madison Square Garden, where official attendance is higher than 3,963. The resolution source for this market will be the official attendance data provided in the NBA gamebooks (https://www.nba.com/stats/gamebooks/). The resolution date for this market will be the day the Knicks are eliminated from this NBA season. Resolution may be delayed in the event of a change or postponement in the NBA’s schedule.\n",
-    "outcomes": [
-      "Yes",
-      "No"
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.7373184535851954646769817275173767",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.2626815464148045353230182724826233",
+        "type": "PROBABILITY"
+      }
     ],
-    "options": []
+    "timestamp": "2021-04-07T23:22:59.306Z",
+    "qualityindicators": {
+      "numforecasts": "68",
+      "liquidity": "1000.00",
+      "tradevolume": "4268.68",
+      "stars": 4
+    }
+  },
+  {
+    "title": "Will Jake Paul win his boxing match against Ben Askren?",
+    "url": "https://polymarket.com/market/will-jake-paul-win-his-boxing-match-against-ben-askren",
+    "platform": "PolyMarket",
+    "description": "This is a market on whether Jake Paul will win his boxing match against Ben Askren, set to take place on April 17th, 2021. If Jake Paul is declared the winner of this bout, either by knockout or judgement, this market will resolve to “Yes”. If  Ben Askren is declared the winner, or this fight is declared a draw, this market will resolve to “No”. If this match is, for any reason, postponed, the same market resolution conditions will apply for whenever the fight is rescheduled.\n",
+    "options": [
+      {
+        "name": "Yes",
+        "probability": "0.5050163620487289039984542838001509",
+        "type": "PROBABILITY"
+      },
+      {
+        "name": "No",
+        "probability": "0.4949836379512710960015457161998491",
+        "type": "PROBABILITY"
+      }
+    ],
+    "timestamp": "2021-04-07T23:22:59.302Z",
+    "qualityindicators": {
+      "numforecasts": "37",
+      "liquidity": "42362.29",
+      "tradevolume": "4262.43",
+      "stars": 4
+    }
   },
   {
     "title": "Will Apple, Amazon, or Twitter announce a Bitcoin purchase before July 1, 2021?",
@@ -348,17 +492,22 @@
     "options": [
       {
         "name": "Yes",
-        "probability": "0.2066787539519710416558416842894747",
+        "probability": "0.1989107792732988906353258792935972",
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": "0.7933212460480289583441583157105253",
+        "probability": "0.8010892207267011093646741207064028",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "95",
-    "stars": 4
+    "timestamp": "2021-04-07T23:22:59.301Z",
+    "qualityindicators": {
+      "numforecasts": "99",
+      "liquidity": "1131.33",
+      "tradevolume": "4132.10",
+      "stars": 4
+    }
   },
   {
     "title": "Will Jeff Bezos or Elon Musk have a higher net worth on April 25, 2021?",
@@ -368,16 +517,21 @@
     "options": [
       {
         "name": "Bezos",
-        "probability": "0.9300703642912710245949175378339916",
+        "probability": "0.9440014648971449386397855584569847",
         "type": "PROBABILITY"
       },
       {
         "name": "Musk",
-        "probability": "0.06992963570872897540508246216600837",
+        "probability": "0.05599853510285506136021444154301529",
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": "321",
-    "stars": 3
+    "timestamp": "2021-04-07T23:22:59.308Z",
+    "qualityindicators": {
+      "numforecasts": "327",
+      "liquidity": "2073.26",
+      "tradevolume": "36737.47",
+      "stars": 3
+    }
   }
 ]

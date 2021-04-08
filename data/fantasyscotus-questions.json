@@ -3,21 +3,24 @@
     "title": "In United States v. Collins, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/united-states-v-collins/",
     "platform": "FantasySCOTUS",
-    "description": "73.96% (71 out of 96) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 9-0. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
+    "description": "74.23% (72 out of 97) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 9-0. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.7395833333333334,
+        "probability": 0.7422680412371134,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.26041666666666663,
+        "probability": 0.25773195876288657,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 96,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:11.775Z",
+    "qualityindicators": {
+      "numforecasts": 97,
+      "stars": 2
+    }
   },
   {
     "title": "In Jones v. Mississippi, the SCOTUS will affirm the lower court's decision",
@@ -36,8 +39,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 66,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:12.367Z",
+    "qualityindicators": {
+      "numforecasts": 66,
+      "stars": 2
+    }
   },
   {
     "title": "In Borden v. United States, the SCOTUS will affirm the lower court's decision",
@@ -56,8 +62,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 52,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:12.893Z",
+    "qualityindicators": {
+      "numforecasts": 52,
+      "stars": 2
+    }
   },
   {
     "title": "In Fulton v. City of Philadelphia, Pennsylvania, the SCOTUS will affirm the lower court's decision",
@@ -76,8 +85,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 87,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:13.443Z",
+    "qualityindicators": {
+      "numforecasts": 87,
+      "stars": 2
+    }
   },
   {
     "title": "In Niz-Chavez v. Barr, the SCOTUS will affirm the lower court's decision",
@@ -96,8 +108,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 50,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:14.003Z",
+    "qualityindicators": {
+      "numforecasts": 50,
+      "stars": 2
+    }
   },
   {
     "title": "In California v. Texas (Standing), the SCOTUS will affirm the lower court's decision",
@@ -116,8 +131,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 61,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:14.536Z",
+    "qualityindicators": {
+      "numforecasts": 61,
+      "stars": 2
+    }
   },
   {
     "title": "In Texas v. California (Severability), the SCOTUS will affirm the lower court's decision",
@@ -136,8 +154,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 63,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:15.091Z",
+    "qualityindicators": {
+      "numforecasts": 63,
+      "stars": 2
+    }
   },
   {
     "title": "In Van Buren v. United States, the SCOTUS will affirm the lower court's decision",
@@ -156,8 +177,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 57,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:15.624Z",
+    "qualityindicators": {
+      "numforecasts": 57,
+      "stars": 2
+    }
   },
   {
     "title": "In Nestle USA, Inc. v. Doe I, the SCOTUS will affirm the lower court's decision",
@@ -176,8 +200,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 41,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:16.053Z",
+    "qualityindicators": {
+      "numforecasts": 41,
+      "stars": 2
+    }
   },
   {
     "title": "In Cargill, Inc. v. Doe I, the SCOTUS will affirm the lower court's decision",
@@ -196,8 +223,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 38,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:16.481Z",
+    "qualityindicators": {
+      "numforecasts": 38,
+      "stars": 2
+    }
   },
   {
     "title": "In CIC Services, LLC v. Internal Revenue Service, the SCOTUS will affirm the lower court's decision",
@@ -216,8 +246,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 42,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:16.910Z",
+    "qualityindicators": {
+      "numforecasts": 42,
+      "stars": 2
+    }
   },
   {
     "title": "In Edwards v. Vannoy, the SCOTUS will affirm the lower court's decision",
@@ -236,8 +269,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 50,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:17.453Z",
+    "qualityindicators": {
+      "numforecasts": 50,
+      "stars": 2
+    }
   },
   {
     "title": "In Henry Schein Inc. v. Archer, the SCOTUS will affirm the lower court's decision",
@@ -256,8 +292,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 32,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:17.878Z",
+    "qualityindicators": {
+      "numforecasts": 32,
+      "stars": 2
+    }
   },
   {
     "title": "In Collins v. Mnuchin, the SCOTUS will affirm the lower court's decision",
@@ -276,8 +315,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 33,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:18.304Z",
+    "qualityindicators": {
+      "numforecasts": 33,
+      "stars": 2
+    }
   },
   {
     "title": "In Mnuchin v. Collins, the SCOTUS will affirm the lower court's decision",
@@ -296,8 +338,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 33,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:18.732Z",
+    "qualityindicators": {
+      "numforecasts": 33,
+      "stars": 2
+    }
   },
   {
     "title": "In Pham v. Guzman Chavez, the SCOTUS will affirm the lower court's decision",
@@ -316,8 +361,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 32,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:19.158Z",
+    "qualityindicators": {
+      "numforecasts": 32,
+      "stars": 2
+    }
   },
   {
     "title": "In AMG Capital Management, LLC v. FTC, the SCOTUS will affirm the lower court's decision",
@@ -336,8 +384,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 31,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:19.581Z",
+    "qualityindicators": {
+      "numforecasts": 31,
+      "stars": 2
+    }
   },
   {
     "title": "In BP P.L.C. v. Mayor and City Council of Baltimore, the SCOTUS will affirm the lower court's decision",
@@ -356,8 +407,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 36,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:20.009Z",
+    "qualityindicators": {
+      "numforecasts": 36,
+      "stars": 2
+    }
   },
   {
     "title": "In Cedar Point Nursery v. Hassid, the SCOTUS will affirm the lower court's decision",
@@ -376,14 +430,17 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 10,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:20.425Z",
+    "qualityindicators": {
+      "numforecasts": 10,
+      "stars": 2
+    }
   },
   {
     "title": "In United States v. Cooley, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/united-states-v-cooley/",
     "platform": "FantasySCOTUS",
-    "description": "0.00% (0 out of 14) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 9-0. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
+    "description": "0.00% (0 out of 15) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 9-0. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
     "options": [
       {
         "name": "Yes",
@@ -396,8 +453,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 14,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:20.842Z",
+    "qualityindicators": {
+      "numforecasts": 15,
+      "stars": 2
+    }
   },
   {
     "title": "In Caniglia v. Strom, the SCOTUS will affirm the lower court's decision",
@@ -416,28 +476,34 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 13,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:21.276Z",
+    "qualityindicators": {
+      "numforecasts": 13,
+      "stars": 2
+    }
   },
   {
     "title": "In Goldman Sachs Group Inc. v. Arkansas Teacher Retirement System, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/goldman-sachs-group-inc-v-arkansas-teacher-retirement-system/",
     "platform": "FantasySCOTUS",
-    "description": "77.78% (7 out of 9) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 6-3. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
+    "description": "70.00% (7 out of 10) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 6-3. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.7777777777777778,
+        "probability": 0.7,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.2222222222222222,
+        "probability": 0.30000000000000004,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 9,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:21.692Z",
+    "qualityindicators": {
+      "numforecasts": 10,
+      "stars": 2
+    }
   },
   {
     "title": "In TransUnion LLC v. Ramirez, the SCOTUS will affirm the lower court's decision",
@@ -456,48 +522,57 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 9,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:22.103Z",
+    "qualityindicators": {
+      "numforecasts": 9,
+      "stars": 2
+    }
   },
   {
     "title": "In National Collegiate Athletic Association v. Alston, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/national-collegiate-athletic-association-v-alston/",
     "platform": "FantasySCOTUS",
-    "description": "81.82% (9 out of 11) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 9-0. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
+    "description": "84.62% (11 out of 13) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 9-0. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.8181818181818182,
+        "probability": 0.8461538461538461,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.18181818181818177,
+        "probability": 0.15384615384615385,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 11,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:22.521Z",
+    "qualityindicators": {
+      "numforecasts": 13,
+      "stars": 2
+    }
   },
   {
     "title": "In American Athletic Conference v. Alston, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/american-athletic-conference-v-alston/",
     "platform": "FantasySCOTUS",
-    "description": "50.00% (4 out of 8) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 6-3. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
+    "description": "55.56% (5 out of 9) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 6-3. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.5,
+        "probability": 0.5555555555555556,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.5,
+        "probability": 0.4444444444444444,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 8,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:22.934Z",
+    "qualityindicators": {
+      "numforecasts": 9,
+      "stars": 2
+    }
   },
   {
     "title": "In Yellen v. Confederated Tribes of the Chehalis Reservation, the SCOTUS will affirm the lower court's decision",
@@ -516,8 +591,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:23.342Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "In Sanchez v. Mayorkas, the SCOTUS will affirm the lower court's decision",
@@ -536,8 +614,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:23.755Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "In Alaska Native Village Corporation Association v. Confederated Tribes of the Chehalis Reservation, the SCOTUS will affirm the lower court's decision",
@@ -556,8 +637,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:24.167Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "In United States v. Gary, the SCOTUS will affirm the lower court's decision",
@@ -576,8 +660,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:24.576Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "In Greer v. United States, the SCOTUS will affirm the lower court's decision",
@@ -596,8 +683,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:24.988Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "In Minerva Surgical Inc. v. Hologic Inc., the SCOTUS will affirm the lower court's decision",
@@ -616,8 +706,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:25.399Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "In City of San Antonio, Texas v. Hotels.com, L.P., the SCOTUS will affirm the lower court's decision",
@@ -636,8 +729,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:25.807Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "In Guam v. United States, the SCOTUS will affirm the lower court's decision",
@@ -656,8 +752,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:26.216Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "In Thomas More Law Center v. Becerra, the SCOTUS will affirm the lower court's decision",
@@ -676,8 +775,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:26.624Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "In Americans for Prosperity Foundation v. Becerra, the SCOTUS will affirm the lower court's decision",
@@ -696,8 +798,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:27.034Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "In HollyFrontier Cheyenne Refining, LLC v. Renewable Fuels Association, the SCOTUS will affirm the lower court's decision",
@@ -716,8 +821,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:27.446Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "In United States v. Palomar-Santiago, the SCOTUS will affirm the lower court's decision",
@@ -736,14 +844,17 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:27.858Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "In PennEast Pipeline Co. v. New Jersey, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/penneast-pipeline-co-v-new-jersey/",
     "platform": "FantasySCOTUS",
-    "description": "0.00% (0 out of 2) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 6-3. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
+    "description": "0.00% (0 out of 3) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 6-3. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
     "options": [
       {
         "name": "Yes",
@@ -756,8 +867,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:28.270Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "In Mahanoy Area School District v. B.L., the SCOTUS will affirm the lower court's decision",
@@ -776,14 +890,17 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:28.678Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "In Department of Justice v. House Committee on the Judiciary, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/department-of-justice-v-house-committee-on-the-judiciary/",
     "platform": "FantasySCOTUS",
-    "description": "0.00% (0 out of 8) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 9-0. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
+    "description": "0.00% (0 out of 9) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 9-0. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
     "options": [
       {
         "name": "Yes",
@@ -796,8 +913,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 8,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:29.095Z",
+    "qualityindicators": {
+      "numforecasts": 9,
+      "stars": 2
+    }
   },
   {
     "title": "In United States v. Arthrex Inc., the SCOTUS will affirm the lower court's decision",
@@ -816,8 +936,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 17,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:29.510Z",
+    "qualityindicators": {
+      "numforecasts": 17,
+      "stars": 2
+    }
   },
   {
     "title": "In Carr v. Saul, the SCOTUS will affirm the lower court's decision",
@@ -836,8 +959,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 18,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:29.927Z",
+    "qualityindicators": {
+      "numforecasts": 18,
+      "stars": 2
+    }
   },
   {
     "title": "In Smith & Nephew Inc. v. Arthrex Inc., the SCOTUS will affirm the lower court's decision",
@@ -856,8 +982,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 16,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:30.339Z",
+    "qualityindicators": {
+      "numforecasts": 16,
+      "stars": 2
+    }
   },
   {
     "title": "In Arthrex Inc. v. Smith & Nephew Inc., the SCOTUS will affirm the lower court's decision",
@@ -876,8 +1005,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 14,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:30.756Z",
+    "qualityindicators": {
+      "numforecasts": 14,
+      "stars": 2
+    }
   },
   {
     "title": "In Davis v. Saul, the SCOTUS will affirm the lower court's decision",
@@ -896,28 +1028,34 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 14,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:31.173Z",
+    "qualityindicators": {
+      "numforecasts": 14,
+      "stars": 2
+    }
   },
   {
     "title": "In Lange v. California, the SCOTUS will affirm the lower court's decision",
     "url": "https://fantasyscotus.net/user-predictions/case/lange-v-california/",
     "platform": "FantasySCOTUS",
-    "description": "36.11% (13 out of 36) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 5-4. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
+    "description": "35.14% (13 out of 37) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Reverse 5-4. Historically, FantasySCOTUS has chosen the correct side 65.00% of the time.",
     "options": [
       {
         "name": "Yes",
-        "probability": 0.3611111111111111,
+        "probability": 0.35135135135135137,
         "type": "PROBABILITY"
       },
       {
         "name": "No",
-        "probability": 0.6388888888888888,
+        "probability": 0.6486486486486487,
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 36,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:31.598Z",
+    "qualityindicators": {
+      "numforecasts": 37,
+      "stars": 2
+    }
   },
   {
     "title": "In Trump v. Sierra Club, the SCOTUS will affirm the lower court's decision",
@@ -936,8 +1074,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 15,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:32.013Z",
+    "qualityindicators": {
+      "numforecasts": 15,
+      "stars": 2
+    }
   },
   {
     "title": "In Barr v. Dai, the SCOTUS will affirm the lower court's decision",
@@ -956,8 +1097,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 17,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:32.431Z",
+    "qualityindicators": {
+      "numforecasts": 17,
+      "stars": 2
+    }
   },
   {
     "title": "In National Association of Broadcasters v. Prometheus Radio Project, the SCOTUS will affirm the lower court's decision",
@@ -976,8 +1120,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 12,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:32.848Z",
+    "qualityindicators": {
+      "numforecasts": 12,
+      "stars": 2
+    }
   },
   {
     "title": "In Barr v. Alcaraz-Enriquez, the SCOTUS will affirm the lower court's decision",
@@ -996,8 +1143,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 15,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:33.261Z",
+    "qualityindicators": {
+      "numforecasts": 15,
+      "stars": 2
+    }
   },
   {
     "title": "In Wolf v. Innovation Law Lab, the SCOTUS will affirm the lower court's decision",
@@ -1016,8 +1166,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 4,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:33.669Z",
+    "qualityindicators": {
+      "numforecasts": 4,
+      "stars": 2
+    }
   },
   {
     "title": "In Brnovich v. Democratic National Committee, the SCOTUS will affirm the lower court's decision",
@@ -1036,8 +1189,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 22,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:34.086Z",
+    "qualityindicators": {
+      "numforecasts": 22,
+      "stars": 2
+    }
   },
   {
     "title": "In Arizona Republican Party v. Democratic National Committee, the SCOTUS will affirm the lower court's decision",
@@ -1056,7 +1212,10 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 28,
-    "stars": 2
+    "timestamp": "2021-04-07T22:12:34.509Z",
+    "qualityindicators": {
+      "numforecasts": 28,
+      "stars": 2
+    }
   }
 ]
