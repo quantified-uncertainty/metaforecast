@@ -40,7 +40,7 @@ export async function upsert (contents, documentName, collectionName="metaforeca
 }
 
 export async function mongoRead (documentName, collectionName="metaforecastCollection", databaseName="metaforecastDatabase"){
-  const url = "mongodb+srv://heroku:MxHTRQsqFasdlpoD@metaforecastdatabaseclu.wgk8a.mongodb.net?writeConcern=majority";
+  const url = process.env.MONGODB_URL;
 
   const client = new MongoClient(url, {
     useNewUrlParser: true,
