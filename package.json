@@ -4,7 +4,7 @@
   "description": "Get forecasts from various platforms",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node src/utils/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
