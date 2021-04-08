@@ -5,8 +5,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 2.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.092Z",
+    "qualityindicators": {
+      "numforecasts": 2.5,
+      "stars": 2
+    }
   },
   {
     "title": "% global rate of \"$1.90 a day\" poverty in 2030",
@@ -14,8 +17,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 5.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.092Z",
+    "qualityindicators": {
+      "numforecasts": 5.5,
+      "stars": 2
+    }
   },
   {
     "title": "A bioengineering project kills at least five thousand people by 2023-02-15",
@@ -34,8 +40,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 4,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.093Z",
+    "qualityindicators": {
+      "numforecasts": 4,
+      "stars": 2
+    }
   },
   {
     "title": "A bioengineering project kills at least five people by 2023-02-15",
@@ -54,8 +63,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.093Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "How many papers will cite \"Logical Induction\" by Garrabrant, S. et al. at the end of 2020?",
@@ -63,8 +75,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.093Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "How many papers will cite \"Risks from Learned Optimization in Advanced Machine Learning Systems\" by Hubinger, E. et al. at the end of 2020?",
@@ -72,8 +87,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.094Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "Will GiveWell renew the grant to the Centre for Pesticide Suicide Prevention?",
@@ -92,8 +110,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 1.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.094Z",
+    "qualityindicators": {
+      "numforecasts": 1.5,
+      "stars": 2
+    }
   },
   {
     "title": "By the end of 2020, what % of US hens will live in cage-free housing?",
@@ -101,8 +122,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 4.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.094Z",
+    "qualityindicators": {
+      "numforecasts": 4.5,
+      "stars": 2
+    }
   },
   {
     "title": "Will SB 592 clear the California state Assembly?",
@@ -121,8 +145,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.094Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "5 cities with at least 50k population implement approval voting by 2022",
@@ -141,8 +168,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 7.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.095Z",
+    "qualityindicators": {
+      "numforecasts": 7.5,
+      "stars": 2
+    }
   },
   {
     "title": "How many preregistrations on OSF will there be at the end of 2023?",
@@ -150,8 +180,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.095Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "How many preregistrations on OSF will there be at the end of 2022?",
@@ -159,8 +192,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 4,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.095Z",
+    "qualityindicators": {
+      "numforecasts": 4,
+      "stars": 2
+    }
   },
   {
     "title": "How many preregistrations on OSF will there be at the end of 2021?",
@@ -168,8 +204,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 7,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.095Z",
+    "qualityindicators": {
+      "numforecasts": 7,
+      "stars": 2
+    }
   },
   {
     "title": "What % of grant dollars made to AI Safety by OpenPhil in 2020 will go to the University of Oxford?",
@@ -177,8 +216,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.095Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "What % of grant dollars made to AI Safety by OpenPhil in 2020 will go to UC Berkeley?",
@@ -186,8 +228,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.096Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "How much in grants will OpenPhil recommend to Global Health and Development between 2020 and 2030?",
@@ -195,8 +240,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.096Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "How much in grants will OpenPhil recommend to U.S. policy between 2020 and 2030?",
@@ -204,8 +252,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.096Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "How many preregistrations on OSF will there be at the end of 2020?",
@@ -213,8 +264,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 15,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.096Z",
+    "qualityindicators": {
+      "numforecasts": 15,
+      "stars": 2
+    }
   },
   {
     "title": "How much in grants will OpenPhil recommend to scientific research between 2020 and 2030?",
@@ -222,8 +276,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.096Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "How much in grants will OpenPhil recommend to AI safety between 2020 and 2030?",
@@ -231,8 +288,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.096Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "What will the Metaculus community median probability for AI catastrophe by 2100 be in 2030?",
@@ -240,8 +300,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.096Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "What % of grant dollars made to AI Safety by OpenPhil in 2020 will go to MIRI?",
@@ -249,8 +312,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 6,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.097Z",
+    "qualityindicators": {
+      "numforecasts": 6,
+      "stars": 2
+    }
   },
   {
     "title": "How many of Eliezer Yudkowsky, Paul Christiano, Nate Soares, and Dario Amodei will still be working on AI safety by the end of 2029?",
@@ -258,8 +324,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 6.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.097Z",
+    "qualityindicators": {
+      "numforecasts": 6.5,
+      "stars": 2
+    }
   },
   {
     "title": "Will MIRI still exist in 2023?",
@@ -278,8 +347,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 7,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.097Z",
+    "qualityindicators": {
+      "numforecasts": 7,
+      "stars": 2
+    }
   },
   {
     "title": "How many nuclear warheads will the US have in 2029?",
@@ -287,8 +359,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.097Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "Will Good Policies still be running at the end of 2022?",
@@ -307,8 +382,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.098Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "How much will GiveWell guess it will cost to get an outcome as good as saving a life, at the end of 2020?",
@@ -316,8 +394,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 8,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.098Z",
+    "qualityindicators": {
+      "numforecasts": 8,
+      "stars": 2
+    }
   },
   {
     "title": "How many papers will cite \"Embedded Agency\" by Demski, A. and Garrabrant, S. at the end of 2020?",
@@ -325,8 +406,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 7,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.098Z",
+    "qualityindicators": {
+      "numforecasts": 7,
+      "stars": 2
+    }
   },
   {
     "title": "What percentage of grant dollars from the Global Health and Development EA Fund distributed in 2020 will go towards deworming organisations?",
@@ -334,8 +418,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.098Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "When will more than half of the main broad types of conventional whole pieces of farmed animal muscle tissue have at least one cost-competitive cultured alternative, in years after 2020?",
@@ -343,8 +430,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 2.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.098Z",
+    "qualityindicators": {
+      "numforecasts": 2.5,
+      "stars": 2
+    }
   },
   {
     "title": "When will more than half of the main broad types of conventional ground meats will have at least one cost-competitive cultured alternative, in years after 2020?",
@@ -352,8 +442,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 4,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.099Z",
+    "qualityindicators": {
+      "numforecasts": 4,
+      "stars": 2
+    }
   },
   {
     "title": "When will more than half of the main broad types of conventional acellular animal products have at least one cost-competitive cultured alternative, in years after 2020?",
@@ -361,8 +454,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.099Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "What will the balance + payouts be for the Long Term Future Fund at the end of 2021?",
@@ -370,8 +466,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 4,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.099Z",
+    "qualityindicators": {
+      "numforecasts": 4,
+      "stars": 2
+    }
   },
   {
     "title": "What will the balance + payouts be for the EA Meta Fund at the end of 2021?",
@@ -379,8 +478,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.099Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "What will the balance + payouts be for the Animal Welfare EA Fund at the end of 2021?",
@@ -388,8 +490,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 4,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.099Z",
+    "qualityindicators": {
+      "numforecasts": 4,
+      "stars": 2
+    }
   },
   {
     "title": "Will the Albert Schweitzer Foundation remain an ACE top charity in 2022?",
@@ -408,8 +513,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.099Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "Will the Albert Schweitzer Foundation remain an ACE top charity in 2021?",
@@ -428,8 +536,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 5.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.100Z",
+    "qualityindicators": {
+      "numforecasts": 5.5,
+      "stars": 2
+    }
   },
   {
     "title": "Will Animal Equality remain an ACE top charity in 2022?",
@@ -448,8 +559,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.100Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "Will Animal Equality remain an ACE top charity in 2021?",
@@ -468,8 +582,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.100Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "Will the Good Food Institute remain an ACE top charity in 2022?",
@@ -488,8 +605,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.101Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "Will the Good Food Institute remain an ACE top charity in 2021?",
@@ -508,8 +628,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 5.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.101Z",
+    "qualityindicators": {
+      "numforecasts": 5.5,
+      "stars": 2
+    }
   },
   {
     "title": "Will the Humane League remain an ACE top charity in 2022?",
@@ -528,8 +651,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.101Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "Will the Humane League remain an ACE top charity in 2021?",
@@ -548,8 +674,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 5.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.102Z",
+    "qualityindicators": {
+      "numforecasts": 5.5,
+      "stars": 2
+    }
   },
   {
     "title": "What will the balance + payouts be for the Animal Welfare EA Fund at the end of 2020?",
@@ -557,8 +686,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 6,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.102Z",
+    "qualityindicators": {
+      "numforecasts": 6,
+      "stars": 2
+    }
   },
   {
     "title": "What will the balance + payouts be for the EA Meta Fund at the end of 2020?",
@@ -566,8 +698,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 4,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.102Z",
+    "qualityindicators": {
+      "numforecasts": 4,
+      "stars": 2
+    }
   },
   {
     "title": "What will the balance + payouts be for the Long Term Future Fund at the end of 2020?",
@@ -575,8 +710,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.102Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "At the end of 2021, will the most cost-effective charity recommended by Givewell be a deworming charity?",
@@ -595,8 +733,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.102Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "How much will GiveWell guess it will cost to get an outcome as good as saving a life, at the end of 2021?",
@@ -604,8 +745,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.103Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "At the end of 2022, will Animal Charity Evaluators recommend a charity working on reducing wild animal suffering as a top charity?",
@@ -624,8 +768,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 6,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.103Z",
+    "qualityindicators": {
+      "numforecasts": 6,
+      "stars": 2
+    }
   },
   {
     "title": "At the end of 2021, will Animal Charity Evaluators recommend a charity working on reducing wild animal suffering as a top charity?",
@@ -644,8 +791,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.103Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "At the end of 2023, will Animal Charity Evaluators recommend a charity working on reducing wild animal suffering as a top charity?",
@@ -664,8 +814,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.103Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "Will there be more new COVID-19 cases this year than new HIV infections?",
@@ -684,8 +837,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 8,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.680Z",
+    "qualityindicators": {
+      "numforecasts": 8,
+      "stars": 2
+    }
   },
   {
     "title": "At the end of the outbreak, what will the ratio (deaths)/(confirmed cases) be?",
@@ -693,8 +849,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 15,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.682Z",
+    "qualityindicators": {
+      "numforecasts": 15,
+      "stars": 2
+    }
   },
   {
     "title": "Will the current outbreak result in a global disaster (>50 million deaths resulting from the pathogen within 1 year)?",
@@ -713,8 +872,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 9.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.683Z",
+    "qualityindicators": {
+      "numforecasts": 9.5,
+      "stars": 2
+    }
   },
   {
     "title": "At the end of the outbreak, how many confirmed cases?",
@@ -722,8 +884,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 27,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.683Z",
+    "qualityindicators": {
+      "numforecasts": 27,
+      "stars": 2
+    }
   },
   {
     "title": "At the end of the outbreak, how many deaths?",
@@ -731,8 +896,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 49.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.683Z",
+    "qualityindicators": {
+      "numforecasts": 49.5,
+      "stars": 2
+    }
   },
   {
     "title": "When will the outbreak end?",
@@ -740,8 +908,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 25.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:07.684Z",
+    "qualityindicators": {
+      "numforecasts": 25.5,
+      "stars": 2
+    }
   },
   {
     "title": "By mid-2023, what will be the maximum compute (measured in petaflop/s-days), used in training by a published AI system?",
@@ -749,8 +920,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.410Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "By mid-2022, what will be the maximum compute (measured in petaflop/s-days), used in training by a published AI system?",
@@ -758,8 +932,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.410Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "By mid-2021, what will be the maximum compute (measured in petaflop/s-days), used in training by a published AI system?",
@@ -767,8 +944,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 3.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.411Z",
+    "qualityindicators": {
+      "numforecasts": 3.5,
+      "stars": 2
+    }
   },
   {
     "title": "How well do these two questions capture something significant about algorithmic progress?",
@@ -776,8 +956,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.411Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "By 2023, what will be the smallest number of frames required for the Atari performance of a basic DQN?",
@@ -785,8 +968,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.412Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "By 2022, what will be the smallest number of frames required for the Atari performance of a basic DQN?",
@@ -794,8 +980,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.413Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "By 2021, what will be the smallest number of frames required for the Atari performance of a basic DQN?",
@@ -803,8 +992,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.414Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "By mid-2023, what will be the smallest number of years of gameplay required for OpenAI Five-level dota performance?",
@@ -812,8 +1004,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.414Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "By mid-2022, what will be the smallest number of years of gameplay required for OpenAI Five-level dota performance?",
@@ -821,8 +1016,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.415Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "By mid-2021, what will be the smallest number of years of gameplay required for OpenAI Five-level dota performance?",
@@ -830,8 +1028,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.417Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "How many years from now (Sep 2019) will it take to Physically assemble any LEGO set given the pieces and instructions, using specialized robotics hardware?",
@@ -839,8 +1040,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 4.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.418Z",
+    "qualityindicators": {
+      "numforecasts": 4.5,
+      "stars": 2
+    }
   },
   {
     "title": "By mid-2020, what will be the maximum compute (measured in petaflop/s-days), used in training by a published AI system?",
@@ -848,8 +1052,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 3.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.418Z",
+    "qualityindicators": {
+      "numforecasts": 3.5,
+      "stars": 2
+    }
   },
   {
     "title": "By mid-2020, what will be the smallest number of years of gameplay required for OpenAI Five-level dota performance?",
@@ -857,8 +1064,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:08.418Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "What will be the rate of homelessness per 100,000 people in England in 2021?",
@@ -866,8 +1076,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 6.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.116Z",
+    "qualityindicators": {
+      "numforecasts": 6.5,
+      "stars": 2
+    }
   },
   {
     "title": "What will be the rate of homelessness per 100,000 people in England in 2022?",
@@ -875,8 +1088,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.116Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "What will be the rate of homelessness per 100,000 people in England in 2023?",
@@ -884,8 +1100,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.117Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "If Conservatives win the next election, will they form a minority government?",
@@ -904,8 +1123,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.117Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "If Conservatives win the next election, will they form a majority government?",
@@ -924,8 +1146,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.118Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "How many seats will Labour win the in the next general election?",
@@ -933,8 +1158,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.118Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "Will Labour win the next election?",
@@ -953,8 +1181,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 7,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.119Z",
+    "qualityindicators": {
+      "numforecasts": 7,
+      "stars": 2
+    }
   },
   {
     "title": "Will Conservatives win the next election?",
@@ -973,8 +1204,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 9.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.119Z",
+    "qualityindicators": {
+      "numforecasts": 9.5,
+      "stars": 2
+    }
   },
   {
     "title": "If Boris Johnson is leader of the Conservatives in the election after the 2019 UK general election, will they win that general election?",
@@ -993,8 +1227,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 2,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.120Z",
+    "qualityindicators": {
+      "numforecasts": 2,
+      "stars": 2
+    }
   },
   {
     "title": "If Sajid Javid is leader of the Conservatives in the election after the 2019 UK general election, will they win that general election?",
@@ -1013,8 +1250,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.120Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "What will be the rate of homelessness per 100,000 people in England in 2024?",
@@ -1022,8 +1262,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.121Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "Will Scotland leave the United Kingdom by 2030?",
@@ -1042,8 +1285,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.121Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "Will Brexit be a hard Brexit?",
@@ -1062,8 +1308,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 3.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.121Z",
+    "qualityindicators": {
+      "numforecasts": 3.5,
+      "stars": 2
+    }
   },
   {
     "title": "If Brexit occurs under a Conservative majority government elected in the 2019 election, will it be a hard Brexit?",
@@ -1082,8 +1331,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 3.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.122Z",
+    "qualityindicators": {
+      "numforecasts": 3.5,
+      "stars": 2
+    }
   },
   {
     "title": "When will the next UK general election be?",
@@ -1091,8 +1343,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 4,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.122Z",
+    "qualityindicators": {
+      "numforecasts": 4,
+      "stars": 2
+    }
   },
   {
     "title": "Will Scotland leave the United Kingdom by 2025?",
@@ -1111,8 +1366,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.123Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "If Keir Starmer is leader of Labour in the election after the 2019 UK general election, will they win that general election?",
@@ -1131,8 +1389,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 11.5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.123Z",
+    "qualityindicators": {
+      "numforecasts": 11.5,
+      "stars": 2
+    }
   },
   {
     "title": "Will there be a second Brexit referendum announced before 2022?",
@@ -1151,8 +1412,11 @@
         "type": "PROBABILITY"
       }
     ],
-    "numforecasts": 5,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.123Z",
+    "qualityindicators": {
+      "numforecasts": 5,
+      "stars": 2
+    }
   },
   {
     "title": "What will be the tuition fee cap for UK students in 2024?",
@@ -1160,8 +1424,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.124Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "If there is a soft Brexit, what will be the average yearly GDP growth of the UK in the following five years?",
@@ -1169,8 +1436,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 1,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.124Z",
+    "qualityindicators": {
+      "numforecasts": 1,
+      "stars": 2
+    }
   },
   {
     "title": "If there is a hard Brexit, what will be the average yearly GDP growth of the UK in the following five years?",
@@ -1178,8 +1448,11 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.124Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   },
   {
     "title": "What will be mean UK broadband download speeds in 2024?",
@@ -1187,7 +1460,10 @@
     "platform": "Foretold",
     "description": "",
     "options": [],
-    "numforecasts": 3,
-    "stars": 2
+    "timestamp": "2021-04-08T08:20:09.124Z",
+    "qualityindicators": {
+      "numforecasts": 3,
+      "stars": 2
+    }
   }
 ]

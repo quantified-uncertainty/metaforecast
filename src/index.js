@@ -77,7 +77,7 @@ let addtohistory = () => {
   let currentJSON = fs.readFileSync(locationData + "metaforecasts.json")
   let historyJSON = fs.readFileSync(locationData + "metaforecasts_history_bootstrap.json")
   for(let forecast of currentJSON){
-    
+
   }
 }
 
@@ -92,7 +92,7 @@ async function whattodo(message,callback){
   });
 }
 
-let functions = [csetforetell, elicit, estimize, fantasyscotus, /* foretold, */ goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, coverttocsvandmerge]
+let functions = [csetforetell, elicit, estimize, fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, coverttocsvandmerge]
 let functionNames =  functions.map(fun => fun.name)// ["csetforetell", "elicit", "estimize", "fantasyscotus", /* "foretold", */ "goodjudgment", "goodjudgmentopen", "hypermind", "ladbrokes", "metaculus", "polymarket", "predictit", "omen", "smarkets", "williamhill", "coverttocsvandmerge"]
 let whattodoMessage = "What do you want to do?\n" + 
   functionNames.map((functionName,i) => i != (functionNames.length -1) ? `[${i}]: Download predictions from ${functionName}` : `[${i}]: Merge jsons them into one big json
@@ -135,7 +135,7 @@ let commandLineUtility  = () => {
       if(!isNaN(optionNum)){
         executeoption(optionNum)
       }else if(option == "all"){
-        executeoption(15) // 15 = execute all fetchers
+        executeoption(functions.length) // 15 = execute all fetchers
       }else{
         whattodo(whattodoMessage, executeoption)
       }

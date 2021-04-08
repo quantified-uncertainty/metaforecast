@@ -60,7 +60,9 @@ let processResults = (html) => {
           "type": "PROBABILITY"
         }
       ],
-      "stars": calculateStars("WilliamHill", ({}))
+      "qualityindicators": {
+        "stars": calculateStars("WilliamHill", ({}))
+      }
     })
     results.push(obj)
   }
