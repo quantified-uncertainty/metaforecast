@@ -31,7 +31,7 @@ function sleep(ms) {
 /* Body */
 export async function predictit() {
   let response = await fetchmarkets()
-  console.log(response)
+  // console.log(response)
   let results = []
   for (let market of response) {
     let isbinary = market.contracts.length == 1;

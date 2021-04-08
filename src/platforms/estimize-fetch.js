@@ -28,7 +28,7 @@ export async function estimize(){
         results.push(standardObj)
       }
   }
-  console.log(results)
+  // console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/estimize-questions.json', string);
   await upsert(results, "estimize-questions")

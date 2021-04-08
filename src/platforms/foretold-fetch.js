@@ -87,7 +87,7 @@ export async function foretold(){
           tradevolume: tradevolume.toFixed(2),
           address: obj.address*/
       }
-      console.log(result)
+      // console.log(result)
       results.push(result)
     })
   }

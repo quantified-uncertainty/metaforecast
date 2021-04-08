@@ -19,7 +19,7 @@ async function fetchMetaculusQuestions(next) {
     headers: ({ 'Content-Type': 'application/json' })
   }))
     .then(res => res.data)
-  console.log(response)
+  // console.log(response)
   return response
 }
 
@@ -36,6 +36,7 @@ async function fetchMetaculusQuestionDescription(slug) {
     }).then(response => response.data)
     return response
   } catch (error) {
+    console.log(error)
     console.log(`We encountered some error when attempting to fetch a metaculus page. Trying again`)
     await sleep(10000)
     try {
@@ -76,7 +77,7 @@ export async function metaculus() {
         (result.publish_time < now) &&
         (now < result.resolve_time)
       ) {
-        //console.log(result)
+        // console.log(result)
         await sleep(1000)
         let questionPage = await fetchMetaculusQuestionDescription(result.page_url)
         let descriptionraw = questionPage.split(`<div class="question__content">`)[1]
@@ -125,7 +126,7 @@ export async function metaculus() {
           //"last_activity_time": result.last_activity_time,
         })
         if (Number(result.number_of_predictions) >= 10) {
-          console.log(interestingInfo)
+          // console.log(interestingInfo)
           all_questions.push(interestingInfo)
         }
 

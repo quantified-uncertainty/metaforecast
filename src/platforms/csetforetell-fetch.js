@@ -41,7 +41,7 @@ async function fetchPage(page, cookie){
     }),
   })
   .then(res => res.data)
-  //console.log(response)
+  // console.log(response)
   return response
 }
 
@@ -92,7 +92,7 @@ async function fetchStats(questionUrl, cookie){
   let descriptionprocessed1 = descriptionraw.split(`">`)[0]
   let descriptionprocessed2 = descriptionprocessed1.replace(">", "")
   let descriptionprocessed3 = descriptionprocessed2.replace("To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.", ``)
-  console.log(descriptionprocessed3)
+  // console.log(descriptionprocessed3)
   let descriptionprocessed4=descriptionprocessed3.replaceAll("\r\n\r\n", "\n")
   let descriptionprocessed5=descriptionprocessed4.replaceAll("\n\n", "\n")  
   let descriptionprocessed6=descriptionprocessed5.replaceAll("&quot;", `"`)
@@ -101,11 +101,11 @@ async function fetchStats(questionUrl, cookie){
   let description = descriptionprocessed8
   // Number of forecasts
   let numforecasts = response.split("prediction_sets_count&quot;:")[1].split(",")[0]
-  //console.log(numforecasts)
+  // console.log(numforecasts)
   
   // Number of predictors
   let numforecasters = response.split("predictors_count&quot;:")[1].split(",")[0]
-  //console.log(numpredictors)
+  // console.log(numpredictors)
   
   let result = {
     "description": description, 
@@ -137,9 +137,9 @@ export async function csetforetell(){
   let response = await fetchPage(i, cookie)
   let results = []
   let init = Date.now()
-  console.log("Downloading... This might take a couple of minutes. Results will be shown.")
+  // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
   while(!isEnd(response)){
-    console.log(`Page #${i}`)
+    // console.log(`Page #${i}`)
     let htmlLines = response.split("\n")
     let h4elements = htmlLines.filter(str => str.includes("<h4><a href=")) 
     for(let h4element of h4elements){
@@ -160,7 +160,10 @@ export async function csetforetell(){
             "platform": "CSET-foretell",
             ...moreinfo
           })
-          console.log(question)
+          if(i % 10 == 0){
+            console.log(`Page #${i}`)
+            console.log(question)
+          }
           results.push(question)
       } catch(error){
         console.log(error)
@@ -168,12 +171,13 @@ export async function csetforetell(){
       }
     }
     i=i+1
-    console.log("Sleeping for ~5secs so as to not be as noticeable to the cset-foretell servers")
+    // console.log("Sleeping for ~5secs so as to not be as noticeable to the cset-foretell servers")
     await sleep(5000 + Math.random()*1000) // don't be as noticeable
     
     try{
       response = await fetchPage(i, cookie)
     }catch(error){
+      console.log(error)
       console.log(`The program encountered some error when fetching page #${i}, so it won't appear on the final json. It is possible that this page wasn't actually a prediction question pages`)
     }
   }

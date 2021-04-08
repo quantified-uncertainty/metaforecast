@@ -91,7 +91,7 @@ async function processData(data) {
           "stars": calculateStars("FantasySCOTUS", ({}))
         }
       })
-      console.log(eventObject)
+      // console.log(eventObject)
       results.push(eventObject)
     }
 

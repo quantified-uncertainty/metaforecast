@@ -27,6 +27,7 @@ function getcookie() {
     process.exit()
   }
   */
+  
 }
 
 
@@ -141,9 +142,9 @@ export async function goodjudgmentopen() {
   let response = await fetchPage(i, cookie)
   let results = []
   let init = Date.now()
-  console.log("Downloading... This might take a couple of minutes. Results will be shown.")
+  // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
   while (!isEnd(response)) {
-    console.log(`Page #${i}`)
+    // console.log(`Page #${i}`)
     let htmlLines = response.split("\n")
     let h5elements = htmlLines.filter(str => str.includes("<h5><a href="))
     for (let h5element of h5elements) {
@@ -164,7 +165,11 @@ export async function goodjudgmentopen() {
           "platform": "Good Judgment Open",
           ...moreinfo
         })
-        console.log(question)
+        if(i % 10 == 0){
+          console.log(`Page #${i}`)
+          console.log(question)
+        }
+        // console.log(question)
         results.push(question)
       } catch (error) {
         console.log(error)
@@ -172,7 +177,7 @@ export async function goodjudgmentopen() {
       }
     }
     i = i + 1
-    console.log("Sleeping for 5secs so as to not be as noticeable to the gjopen servers")
+    // console.log("Sleeping for 5secs so as to not be as noticeable to the gjopen servers")
     await sleep(5000 + Math.random() * 1000) // don't be a dick to gjopen server
 
     try {

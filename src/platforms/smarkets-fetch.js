@@ -19,7 +19,7 @@ async function fetchEvents(url) {
     }),
   })
     .then(res => res.data)
-  //console.log(response)
+  // console.log(response)
   return response
 }
 
@@ -45,7 +45,7 @@ async function fetchContracts(marketid) {
     }),
   })
     .then(res => res.data)
-  //console.log(response)
+  // console.log(response)
   return response
 
 }
@@ -59,7 +59,7 @@ async function fetchPrices(marketid) {
     }),
   })
     .then(res => res.data)
-  //console.log(response)
+  // console.log(response)
   return response
 
 }
@@ -75,32 +75,32 @@ export async function smarkets() {
     events.push(...data.events)
     htmlPath = data.pagination.next_page
   }
-  //console.log(events)
+  // console.log(events)
 
   let markets = []
   for (let event of events) {
-    //console.log(Date.now())
-    //console.log(event.name)
+    // console.log(Date.now())
+    // console.log(event.name)
     let eventMarkets = await fetchMarkets(event.id)
     eventMarkets = eventMarkets.map(market => ({ ...market, slug: event.full_slug }))
-    //console.log("Markets fetched")
-    //console.log(event.id)
-    //console.log(market)
+    // console.log("Markets fetched")
+    // console.log(event.id)
+    // console.log(market)
     markets.push(...eventMarkets)
     //let lastPrices = await fetchPrices(market.id)
   }
-  //console.log(markets)
+  // console.log(markets)
 
   let results = []
   for (let market of markets) {
-    //console.log("================")
-    //console.log("Market: ", market)
+    // console.log("================")
+    // console.log("Market: ", market)
     let name = market.name
 
     let contracts = await fetchContracts(market.id)
-    //console.log("Contracts: ", contracts)
+    // console.log("Contracts: ", contracts)
     let prices = await fetchPrices(market.id)
-    //console.log("Prices: ", prices["last_executed_prices"][market.id])
+    // console.log("Prices: ", prices["last_executed_prices"][market.id])
 
     let options = {}
     for (let contract of contracts["contracts"]) {
@@ -123,7 +123,7 @@ export async function smarkets() {
       probability: Number(element.probability) / totalValue
     }))
 
-    //console.log(options)
+    // console.log(options)
 
     /*
     if(contracts["contracts"].length == 2){
@@ -146,10 +146,10 @@ export async function smarkets() {
       }
       
     }
-    //console.log(result)
+    // console.log(result)
     results.push(result)
   }
-  //console.log(results)
+  // console.log(results)
 
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/smarkets-questions.json', string);

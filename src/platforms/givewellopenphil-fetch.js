@@ -27,10 +27,10 @@ async function fetchPage(url) {
 async function main() {
   let rawdata = fs.readFileSync("./src/input/givewellopenphil-urls.txt")
   let data = rawdata.toString().split("\n").filter(url => url != "");
-  console.log(data)
+  // console.log(data)
   let results = []
   for (let url of data) {
-    console.log(url)
+    // console.log(url)
     let page = await fetchPage(url)
 
     // Title
@@ -51,7 +51,7 @@ async function main() {
         "stars": calculateStars("GiveWell/OpenPhilanthropy", ({})),
       }
     } // Note: This requires some processing afterwards
-    console.log(result)
+    // console.log(result)
     results.push(result)
   }
   // let string = JSON.stringify(results, null, 2)

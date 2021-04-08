@@ -40,7 +40,7 @@ async function fetchAllContractData() {
   })
     .then(res => res.data)
     .then(res => res.data.fixedProductMarketMakers)
-  //console.log(response)
+  // console.log(response)
   return response
 }
 
@@ -53,8 +53,8 @@ async function fetch_all() {
       data.usdLiquidityMeasure != '0' &
       data.resolutionTimestamp == null &
       data.question.title != "ssdds") {
-      console.log(data)
-      //console.log(data.usdLiquidityMeasure)
+      // console.log(data)
+      // console.log(data.usdLiquidityMeasure)
       let options = data.outcomeTokenMarginalPrices.map((price, slotnum) => {
         let name = `Option ${slotnum}`
         if (data.outcomeTokenMarginalPrices.length == 2 && slotnum == 0) name = "Yes"
@@ -77,7 +77,7 @@ async function fetch_all() {
           "stars": calculateStars("Omen", ({}))
         }
       }
-      console.log(obj)
+      // console.log(obj)
       results.push(obj)
     }
 

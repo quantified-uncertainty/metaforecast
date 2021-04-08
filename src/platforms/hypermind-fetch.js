@@ -201,7 +201,7 @@ export async function hypermind() {
   console.log("AI in 2023")
   await sleep(1000 + Math.random() * 1000)
   let results4 = await fetchHypermindData4()
-  console.log(results4)
+  // console.log(results4)
   let results4processed = results2.map(res => {
     let description = res.props.details
     return ({

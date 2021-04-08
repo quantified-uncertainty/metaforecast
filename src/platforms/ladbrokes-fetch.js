@@ -127,7 +127,7 @@ let processResults = async (json) => {
 export async function ladbrokes() {
   let response = await fetchUrl(endpointPolitics)
   let results = await processResults(response)
-  console.log(results)
+  // console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/ladbrokes-questions.json', string);
   await upsert(results, "ladbrokes-questions")

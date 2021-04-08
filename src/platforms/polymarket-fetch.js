@@ -58,7 +58,7 @@ async function fetchAllContractData() {
   })
     .then(res => res.data)
     .then(res => res.data.fixedProductMarketMakers)
-  //console.log(response)
+  // console.log(response)
   return response
 }
 
@@ -83,9 +83,9 @@ async function fetch_all() {
   }
   for (let data of allData) {
     let addressLowerCase = data.id
-    console.log(data)
+    // console.log(data)
     if (combinedObj[addressLowerCase] != undefined) {
-      //console.log(addressLowerCase)
+      // console.log(addressLowerCase)
       let obj = combinedObj[addressLowerCase]
       let numforecasts = data.tradesQuantity
       let isbinary = Number(data.conditions[0].outcomeSlotCount) == 2
@@ -122,14 +122,14 @@ async function fetch_all() {
     }
   }
   let result = Object.values(combinedObj)
-  //console.log(result)
+  // console.log(result)
   return result
 }
 
 /* Body */
 export async function polymarket() {
   let results = await fetch_all()
-  console.log(results)
+  // console.log(results)
   // console.log(result)
   // let string = JSON.stringify(result, null, 2)
   // fs.writeFileSync('./data/polymarket-questions.json', string);

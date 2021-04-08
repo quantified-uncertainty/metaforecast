@@ -22,7 +22,6 @@ export async function goodjudgment() {
     jsonTable.shift() // deletes first element
     jsonTable.pop() // deletes last element
     if (endpoint == endpoints[1]) jsonTable.pop() // pop again
-    console.log(jsonTable)
     //console.log(jsonTable)
     for (let table of jsonTable) {
       let title = table[0]['0']
@@ -66,7 +65,7 @@ export async function goodjudgment() {
       results.push(standardObj)
     }
   }
-  console.log(results)
+  // console.log(results.slice(0,10))
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/goodjudgment-questions.json', string);
   await upsert(results, "goodjudgment-questions")
