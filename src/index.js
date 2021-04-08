@@ -74,5 +74,5 @@ let commandLineUtility  = async () => {
   )
 }
 
-console.log(process.argv)
-commandLineUtility()
+// console.log(process.argv)
+// commandLineUtility()
