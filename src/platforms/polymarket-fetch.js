@@ -58,7 +58,7 @@ async function fetchAllContractData() {
   })
     .then(res => res.data)
     .then(res => res.data.fixedProductMarketMakers)
-  // console.log(response)
+  console.log(response)
   return response
 }
 
@@ -67,6 +67,7 @@ async function fetch_all() {
   let allInfo = await fetchAllContractInfo()
 
   let combinedObj = ({})
+  let results = []
   for (let info of allInfo) {
     let address = info.marketMakerAddress
     let addressLowerCase = address.toLowerCase()
@@ -119,11 +120,12 @@ async function fetch_all() {
         address: obj.address
         */
       }
+      results.push(combinedObj[addressLowerCase])
     }
   }
-  let result = Object.values(combinedObj)
+  // let resultsProcessed = Object.values(combinedObj)
   // console.log(result)
-  return result
+  return results //resultsProcessed
 }
 
 /* Body */
@@ -131,8 +133,9 @@ export async function polymarket() {
   let results = await fetch_all()
   // console.log(results)
   // console.log(result)
-  // let string = JSON.stringify(result, null, 2)
-  // fs.writeFileSync('./data/polymarket-questions.json', string);
+  // let string = JSON.stringify(results, null, 2)
+  // fs.writeFileSync('polymarket-questions.json', string);
   await upsert(results, "polymarket-questions")
   console.log("Done")
 }
+polymarket()
