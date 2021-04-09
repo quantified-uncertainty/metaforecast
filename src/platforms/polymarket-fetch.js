@@ -58,7 +58,7 @@ async function fetchAllContractData() {
   })
     .then(res => res.data)
     .then(res => res.data.fixedProductMarketMakers)
-  console.log(response)
+  // console.log(response)
   return response
 }
 
