@@ -138,4 +138,4 @@ export async function polymarket() {
   await upsert(results, "polymarket-questions")
   console.log("Done")
 }
-polymarket()
+// polymarket()
