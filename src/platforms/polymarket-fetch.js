@@ -23,7 +23,7 @@ async function fetchAllContractInfo() { // for info which the polymarket graphql
 }
 
 async function fetchAllContractData() {
-  let daysSinceEra = Math.round(Date.now() / (1000 * 24 * 60 * 60)) - 2
+  let daysSinceEra = Math.round(Date.now() / (1000 * 24 * 60 * 60)) - 7 // last week
   let response = await axios({
     url: graphQLendpoint,
     method: 'POST',
@@ -31,9 +31,9 @@ async function fetchAllContractData() {
     data: JSON.stringify(({
       query: `
       {
-          fixedProductMarketMakers(first: 300
+          fixedProductMarketMakers(first: 1000
           where: {
-          lastActiveDay_gt: ${daysSinceEra}
+            lastActiveDay_gt: ${daysSinceEra}
           }){
             id
             creator
@@ -72,7 +72,7 @@ async function fetch_all() {
     let address = info.marketMakerAddress
     let addressLowerCase = address.toLowerCase()
     //delete info.history
-    if (info.outcomes[0] != "Long" || info.outcomes[1] != "Short")
+    if (info.outcomes[0] != "Long" || info.outcomes[1] != "Long")
       combinedObj[addressLowerCase] = {
         title: info.question,
         url: "https://polymarket.com/market/" + info.slug,
