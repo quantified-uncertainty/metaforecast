@@ -76,3 +76,41 @@ export async function mongoRead (documentName, collectionName="metaforecastColle
     console.log(documentContents.slice(0,10));
     return documentContents
 }
+
+export async function mongoReadWithReadCredentials (documentName, collectionName="metaforecastCollection", databaseName="metaforecastDatabase"){
+  const url = "mongodb+srv://metaforecast-frontend:hJr5c9kDhbutBtF1@metaforecastdatabaseclu.wgk8a.mongodb.net/?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true"; // This user only has read permissions, so I'm not excessively worried, and would even be pleased, if someone read this and decided to do something cool with the database.
+
+  const client = new MongoClient(url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+
+  let documentContents
+  try {
+      await client.connect();
+      // console.log(`Connected correctly to server to read ${documentName}`);
+      const db = client.db(databaseName);
+  
+      // Use the collection "data"
+      const collection = db.collection(collectionName);
+  
+      // Search options
+      const query = { "name": documentName };
+      const options = {
+        // sort matched documents in descending order by rating
+        sort: { rating: -1 },
+      };
+  
+      // Insert a single document, wait for promise so we can read it back
+      // const p = await collection.insertOne(metaforecastDocument);
+      const document = await collection.findOne(query, options);
+      documentContents = document.contentsArray
+    } catch (err) {
+      console.log(err.stack);
+    }
+    finally {
+      await client.close();
+    }
+    // console.log(documentContents.slice(0,10));
+    return documentContents
+}
