@@ -16,7 +16,7 @@ async function fetchAllContractInfo(){ // for info which the polymarket graphql 
 }
  */
 async function fetchAllContractInfo() { // for info which the polymarket graphql API
-  let response = await axios.get('https://strapi-matic.poly.market/markets?active=true&_sort=volume:desc')
+  let response = await axios.get('https://strapi-matic.poly.market/markets?active=true&_sort=volume:desc&_limit=-1')
     .then(query => query.data);
   response = response.filter(res => res.closed != true)
   return response
