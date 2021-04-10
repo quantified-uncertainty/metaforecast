@@ -2,7 +2,9 @@ import { writeFileSync } from "fs"
 import { mongoReadWithReadCredentials, upsert } from "./mongo-wrapper.js"
 let mongoRead = mongoReadWithReadCredentials
 let isEmptyArray = arr => arr.length == 0
+
 export async function addToHistory(){
+  // throw new Error("Not today")
   let currentJSON = await mongoRead("metaforecasts")
   // console.log(currentJSON)
   let historyJSON = await mongoRead("metaforecast_history")

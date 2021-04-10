@@ -220,5 +220,5 @@ async function hypermind_inner(cookie) {
 
 export async function hypermind() {
   let cookie = process.env.HYPERMINDCOOKIE || getCookie("hypermind") 
-  await applyIfCookieExists(hypermind_inner, cookie)
+  await applyIfCookieExists(cookie, hypermind_inner)
 }

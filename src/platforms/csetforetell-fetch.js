@@ -176,5 +176,5 @@ async function csetforetell_inner(cookie){
 
 export async function csetforetell(){
   let cookie = process.env.CSETFORETELL_COOKIE || getCookie("csetforetell") 
-  await applyIfCookieExists(csetforetell_inner, cookie)
+  await applyIfCookieExists(cookie, csetforetell_inner)
 }

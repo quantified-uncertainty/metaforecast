@@ -10,5 +10,5 @@ export async function rebuildNetlifySiteWithNewData_inner(cookie){
 
 export async function rebuildNetlifySiteWithNewData(){
     let cookie = process.env.REBUIDNETLIFYHOOKURL || getCookie("netlify");
-    await applyIfCookieExists(rebuildNetlifySiteWithNewData_inner, cookie)
+    await applyIfCookieExists(cookie, rebuildNetlifySiteWithNewData_inner)
 }

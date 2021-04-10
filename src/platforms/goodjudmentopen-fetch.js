@@ -180,7 +180,7 @@ async function goodjudgmentopen_inner(cookie) {
   console.log(`Took ${difference / 1000} seconds, or ${difference / (1000 * 60)} minutes.`)
 }
 
-export async function goodjudmentopen(){
-  let cookie = process.env.GOODJUDGMENTOPENCOOKIE || getCookie("goodjudgmentopen")
-  await applyIfCookieExists(goodjudgmentopen_inner, cookie)
+export async function goodjudgmentopen(){
+  let cookie = process.env.GOODJUDGMENTOPENCOOKIE || getCookie("goodjudmentopen")
+  await applyIfCookieExists(cookie, goodjudgmentopen_inner)
 }
