@@ -1,8 +1,10 @@
 import pkg from 'mongodb';
 const {MongoClient} = pkg;
+import {getCookie} from "./getCookies.js"
+
 
 export async function upsert (contents, documentName, collectionName="metaforecastCollection", databaseName="metaforecastDatabase"){
-    const url = process.env.MONGODB_URL;
+    const url = process.env.MONGODB_URL || getCookie("mongodb");
     const client = new MongoClient(url);
 
     try {
@@ -40,7 +42,7 @@ export async function upsert (contents, documentName, collectionName="metaforeca
 }
 
 export async function mongoRead (documentName, collectionName="metaforecastCollection", databaseName="metaforecastDatabase"){
-  const url = process.env.MONGODB_URL;
+  const url = process.env.MONGODB_URL || getCookie("mongodb");
 
   const client = new MongoClient(url, {
     useNewUrlParser: true,

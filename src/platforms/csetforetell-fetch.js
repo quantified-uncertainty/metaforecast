@@ -1,6 +1,6 @@
 /* Imports */
-import fs from 'fs'
 import axios from "axios"
+import {getCookie, applyIfCookieExists} from "../utils/getCookies.js"
 import {Tabletojson} from "tabletojson"
 import toMarkdown from "../utils/toMarkdown.js"
 import {calculateStars} from "../utils/stars.js"
@@ -11,24 +11,6 @@ let htmlEndPoint = 'https://www.cset-foretell.com/questions?page='
 String.prototype.replaceAll = function replaceAll(search, replace) { return this.split(search).join(replace); }
 
 /* Support functions */
-
-function getcookie(){
-  return process.env.CSETFORETELL_COOKIE
-  /*
-  try {
-    let rawcookie = fs.readFileSync("./src/input/privatekeys.json")
-    let cookie = JSON.parse(rawcookie).csetforetellcookie
-    if(cookie == undefined){
-      throw new Error('No cookie for CSET-foretell!');
-    }
-    
-    return cookie
-  } catch(error) {
-    console.log("Error: No cookies for CSET-foretell on src/privatekeys.json! See the README.md")
-    process.exit()
-  }*/
-}
-
 
 async function fetchPage(page, cookie){
   
@@ -131,8 +113,7 @@ function sleep(ms) {
 
 /* Body */
 
-export async function csetforetell(){
-  let cookie = getcookie()
+async function csetforetell_inner(cookie){
   let i=1
   let response = await fetchPage(i, cookie)
   let results = []
@@ -183,10 +164,17 @@ export async function csetforetell(){
   }
   // let string = JSON.stringify(results,null,  2)
   // fs.writeFileSync('./data/csetforetell-questions.json', string);
+  console.log(results)
   await upsert(results, "csetforetell-questions")
-
+  
   
   let end = Date.now()
   let difference = end-init
   console.log(`Took ${difference/1000} seconds, or ${difference/(1000*60)} minutes.`)
+}
+
+
+export async function csetforetell(){
+  let cookie = process.env.CSETFORETELL_COOKIE || getCookie("csetforetell") 
+  await applyIfCookieExists(csetforetell_inner, cookie)
 }

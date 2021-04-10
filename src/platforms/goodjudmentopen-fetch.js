@@ -1,6 +1,7 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
+import {getCookie, applyIfCookieExists} from "../utils/getCookies.js"
 import { Tabletojson } from "tabletojson"
 import { calculateStars } from "../utils/stars.js"
 import toMarkdown from "../utils/toMarkdown.js"
@@ -11,24 +12,6 @@ let htmlEndPoint = 'https://www.gjopen.com/questions?page='
 let annoyingPromptUrls = ["https://www.gjopen.com/questions/1933-what-forecasting-questions-should-we-ask-what-questions-would-you-like-to-forecast-on-gjopen", "https://www.gjopen.com/questions/1779-are-there-any-forecasting-tips-tricks-and-experiences-you-would-like-to-share-and-or-discuss-with-your-fellow-forecasters"]
 
 /* Support functions */
-
-function getcookie() {
-  return process.env.GOODJUDGMENTOPENCOOKIE
-  /*
-  try {
-    let rawcookie = fs.readFileSync("./src/input/privatekeys.json")
-    let cookie = JSON.parse(rawcookie).goodjudmentopencookie
-    if (cookie == undefined) {
-      throw new Error('No cookie for Good Judgment Open!');
-    }
-
-    return cookie
-  } catch (error) {
-    console.log("Error: No cookies for Good Judgment Open on src/privatekeys.json! See the README.md")
-    process.exit()
-  }
-  */
-}
 
 async function fetchPage(page, cookie) {
   let response = await axios({
@@ -134,9 +117,7 @@ function sleep(ms) {
 
 /* Body */
 
-export async function goodjudgmentopen() {
-  let cookie = getcookie()
-
+async function goodjudgmentopen_inner(cookie) {
   let i = 1
   let response = await fetchPage(i, cookie)
   let results = []
@@ -166,7 +147,7 @@ export async function goodjudgmentopen() {
             "platform": "Good Judgment Open",
             ...moreinfo
           })
-          if(j % 10 == 0){
+          if(j % 30 == 0){
             console.log(`Page #${i}`)
             console.log(question)
           }
@@ -197,4 +178,9 @@ export async function goodjudgmentopen() {
   let end = Date.now()
   let difference = end - init
   console.log(`Took ${difference / 1000} seconds, or ${difference / (1000 * 60)} minutes.`)
+}
+
+export async function goodjudmentopen(){
+  let cookie = process.env.GOODJUDGMENTOPENCOOKIE || getCookie("goodjudgmentopen")
+  await applyIfCookieExists(goodjudgmentopen_inner, cookie)
 }

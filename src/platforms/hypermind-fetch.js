@@ -1,6 +1,7 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
+import {getCookie, applyIfCookieExists} from "../utils/getCookies.js"
 import toMarkdown from "../utils/toMarkdown.js"
 import { calculateStars } from "../utils/stars.js"
 import { upsert } from "../utils/mongo-wrapper.js"
@@ -12,23 +13,6 @@ String.prototype.replaceAll = function replaceAll(search, replace) { return this
 /* Support Functions */
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-function getcookie() {
-  return process.env.HYPERMINDCOOKIE
-  /*
-  try {
-    let rawcookie = fs.readFileSync("./src/input/privatekeys.json")
-    let cookie = JSON.parse(rawcookie).hypermindcookie
-    if (cookie == undefined) {
-      throw new Error('No cookie for Hypermind!');
-    }
-    return cookie
-  } catch (error) {
-    console.log("Error: No cookies for Hypermind on src/privatekeys.json! See the README.md")
-    process.exit()
-  }
-  */
 }
 
 async function fetchHypermindData1(slug) {
@@ -48,7 +32,7 @@ async function fetchHypermindData1(slug) {
   return response
 }
 
-async function fetchHypermindData2() {
+async function fetchHypermindData2(cookie) {
   let response = await axios("https://prod.hypermind.com/ngdp-jsx/jsx.json", {
     "credentials": "include",
     "headers": {
@@ -56,7 +40,7 @@ async function fetchHypermindData2() {
       "Accept": "*/*",
       "Accept-Language": "en-US,en;q=0.5",
       "Content-Type": "application/json; charset=UTF-8",
-      "Cookie": getcookie()
+      "Cookie": cookie
     },
     "referrer": "https://prod.hypermind.com/ngdp/en/showcase/showcase.html?inFrame=true",
     "data": `[["showcase","queryIFPs",{"query":{"showcaseOnly":true},"fmt":{"stats":true,"crowdFcstHist":true}}]]`,
@@ -66,7 +50,7 @@ async function fetchHypermindData2() {
   return response
 }
 
-async function fetchHypermindData3() {
+async function fetchHypermindData3(cookie) {
   let response = await axios("https://prod.hypermind.com/ngdp-jsx/jsx.json", {
     "credentials": "include",
     "headers": {
@@ -74,7 +58,7 @@ async function fetchHypermindData3() {
       "Accept": "*/*",
       "Accept-Language": "en-US,en;q=0.5",
       "Content-Type": "application/json; charset=UTF-8",
-      "Cookie": getcookie()
+      "Cookie": cookie
     },
     "referrer": "https://prod.hypermind.com/ngdp/en/showcase/showcase.html?inFrame=true",
     "data": `[["showcase","getShowcase",{"showcase":"Covid19","fmt":{"fcsterCnt":true,"crowdFcst":true,"crowdFcstHist":true}}]]`,
@@ -88,7 +72,7 @@ async function fetchHypermindData3() {
   return response
 }
 
-async function fetchHypermindData4() {
+async function fetchHypermindData4(cookie) {
   let response = await axios("https://prod.hypermind.com/ngdp-jsx/jsx.json", {
     "credentials": "include",
     "headers": {
@@ -96,7 +80,7 @@ async function fetchHypermindData4() {
       "Accept": "*/*",
       "Accept-Language": "en-US,en;q=0.5",
       "Content-Type": "application/json; charset=UTF-8",
-      "Cookie": getcookie()
+      "Cookie": cookie
     },
     "referrer": "https://prod.hypermind.com/ngdp/en/showcase/showcase.html?inFrame=true",
     "data": `[["showcase","getShowcase",{"showcase":"AI2023","fmt":{"fcsterCnt":true,"crowdFcst":true,"crowdFcstHist":true}}]]`,
@@ -111,7 +95,7 @@ async function fetchHypermindData4() {
 }
 
 /* Body */
-export async function hypermind() {
+async function hypermind_inner(cookie) {
   let slugs = ["USA", "FRA", "AFR", "INT", "COV", "POL", "ECO"]
 
   let results1 = []
@@ -156,7 +140,7 @@ export async function hypermind() {
 
   console.log("GDP")
   await sleep(1000 + Math.random() * 1000)
-  let results2 = await fetchHypermindData2()
+  let results2 = await fetchHypermindData2(cookie)
   let results2processed = results2.map(res => {
     //console.log(res.props.details)
     let descriptionraw = res.props.details.split("<hr size=1>")[0]
@@ -179,7 +163,7 @@ export async function hypermind() {
 
   console.log("COVID-19 OpenPhil")
   await sleep(1000 + Math.random() * 1000)
-  let results3 = await fetchHypermindData3()
+  let results3 = await fetchHypermindData3(cookie)
   //  console.log(results3)
   let results3processed = results3.map(res => {
     let descriptionraw = res.props.details.split("<hr size=1>")[0]
@@ -200,7 +184,7 @@ export async function hypermind() {
 
   console.log("AI in 2023")
   await sleep(1000 + Math.random() * 1000)
-  let results4 = await fetchHypermindData4()
+  let results4 = await fetchHypermindData4(cookie)
   // console.log(results4)
   let results4processed = results2.map(res => {
     let description = res.props.details
@@ -233,3 +217,8 @@ export async function hypermind() {
 
 }
 //hypermind()
+
+export async function hypermind() {
+  let cookie = process.env.HYPERMINDCOOKIE || getCookie("hypermind") 
+  await applyIfCookieExists(hypermind_inner, cookie)
+}
