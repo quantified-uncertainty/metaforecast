@@ -2,6 +2,11 @@
   "title": "Some title",
   "url": "someurl.com",
   "platform": "some platform",
+  "description": "Some long description which may contain html",
+  "moreoriginsdata": {
+    "author": "Field may not exist",
+    "contractAddress": "Field may not exist"
+  },
   "options": [
     {
       "name": "Option 1",
@@ -19,8 +24,11 @@
       "type": "PROBABILITY"
     }
   ],
-  "description": "Some long description which may contain html",
-  "numforecasts": 15,
-  "stars": 2
+  "qualityindicators": {
+    "numforecasts": "137",
+    "liquidity": "1585.76",
+    "tradevolume": "9977.68",
+    "stars": 3
+  }
 }
 ]
