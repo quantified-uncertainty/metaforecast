@@ -50,7 +50,8 @@ export async function goodjudgment() {
           probability: Number(row['3'].split("%")[0]) / 100,
           type: "PROBABILITY"
         }))
-
+      let analysis = table.filter(row => row[0].includes("Examples of Superforecaster commentary"))[0][0]
+      // console.log(analysis)
       let standardObj = ({
         "title": title,
         "url": endpoint,
@@ -60,15 +61,20 @@ export async function goodjudgment() {
         "timestamp": new Date().toISOString(),
         "qualityindicators": {
           "stars": calculateStars("Good Judgment", ({})),
+        },
+        "extra": {
+          "superforecastercommentary": analysis
         }
       })
       results.push(standardObj)
     }
   }
   // console.log(results.slice(0,10))
-  // let string = JSON.stringify(results, null, 2)
+  let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/goodjudgment-questions.json', string);
+  // fs.writeFileSync('./goodjudgment-questions-test.json', string);
+  // console.log(results)
   await upsert(results, "goodjudgment-questions")
   console.log("Done")
 }
-//goodjudgment()
+goodjudgment()

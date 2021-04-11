@@ -31,7 +31,8 @@ export async function addToHistory(){
               "options": correspondingNewElement.options,
               "qualityindicators": correspondingNewElement.qualityindicators
             })
-          let newHistoryElement = {...historyElement, "history": historyWithNewElement}
+          let newHistoryElement = {...correspondingNewElement, "history": historyWithNewElement}
+            // If some element (like the description) changes, we keep the new one.
           newHistoryJSON.push(newHistoryElement)
       }else{
           newHistoryJSON.push(historyElement)
