@@ -119,5 +119,6 @@ export async function elicit() {
       await processArray(results.data)
     }
   });
+  await sleep(5000) // needed to wait for Papaparse's callback to be executed. 
 }
 //elicit()

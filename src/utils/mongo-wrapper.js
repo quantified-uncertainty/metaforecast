@@ -32,7 +32,8 @@ export async function upsert (contents, documentName, collectionName="metaforeca
         const myDocument = await collection.findOne(filter);
     
         // Print to the console
-        console.log(myDocument.contentsArray.slice(0,3));
+        console.log(myDocument.contentsArray.slice(0,1
+        ));
       } catch (err) {
         console.log(err.stack);
       }
@@ -75,7 +76,7 @@ export async function mongoRead (documentName, collectionName="metaforecastColle
     finally {
       await client.close();
     }
-    console.log(documentContents.slice(0,10));
+    console.log(documentContents.slice(0,1));
     return documentContents
 }
 
@@ -113,6 +114,6 @@ export async function mongoReadWithReadCredentials (documentName, collectionName
     finally {
       await client.close();
     }
-    // console.log(documentContents.slice(0,10));
+    // console.log(documentContents.slice(0,1));
     return documentContents
 }

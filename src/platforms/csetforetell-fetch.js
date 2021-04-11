@@ -141,7 +141,7 @@ async function csetforetell_inner(cookie){
             "platform": "CSET-foretell",
             ...moreinfo
           })
-          if(i % 10 == 0){
+          if(i % 30 == 0){
             console.log(`Page #${i}`)
             console.log(question)
           }
@@ -164,7 +164,7 @@ async function csetforetell_inner(cookie){
   }
   // let string = JSON.stringify(results,null,  2)
   // fs.writeFileSync('./data/csetforetell-questions.json', string);
-  console.log(results)
+  // console.log(results)
   await upsert(results, "csetforetell-questions")
   
   

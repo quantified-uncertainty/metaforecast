@@ -72,6 +72,7 @@ export async function metaculus() {
     console.log(`Query #${i}`)
     let metaculusQuestions = await fetchMetaculusQuestions(next)
     let results = metaculusQuestions.results;
+    let j=false
     for (let result of results) {
       if (
         (result.publish_time < now) &&
@@ -128,6 +129,10 @@ export async function metaculus() {
         if (Number(result.number_of_predictions) >= 10) {
           // console.log(interestingInfo)
           all_questions.push(interestingInfo)
+          if(!j && (i %% 20 == 0)){
+            console.log(interestingInfo)
+            j = true
+          }
         }
 
       }
