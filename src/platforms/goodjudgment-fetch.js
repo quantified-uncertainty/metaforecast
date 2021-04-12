@@ -77,4 +77,4 @@ export async function goodjudgment() {
   await upsert(results, "goodjudgment-questions")
   console.log("Done")
 }
-goodjudgment()
+// goodjudgment()
