@@ -2,9 +2,9 @@
 
 This is a set of libraries and a command line interface that fetches probabilities/forecasts from prediction markets and forecasting platforms. 
 
-These forecasts are then used to power a search engine for probabilities, which can be found [here](https://metaforecast.org/) (try searching "Trump", "China" or "Semiconductors") (source code [here](https://github.com/QURIresearch/metaforecast-website-nextjs)). A json endpoint can be found [here](https://metaforecast.org/data/metaforecasts.json).
+These forecasts are then used to power a search engine for probabilities, which can be found [here](https://metaforecast.org/) (try searching "Trump", "China" or "Semiconductors") (source code [here](https://github.com/QURIresearch/metaforecast-website-nextjs)). I also provide a datatabase, which can be accessed with a script similar to [this one](https://github.com/QURIresearch/metaforecasts/blob/master/src/utils/manualDownloadFromMongo.js).
 
-I also created a search engine using Elicit's IDE, which uses GPT-3 to deliver vastly superior semantic search (as opposed to fuzzy word matching). If you have access to the Elicit IDE, you can use the action "Search Metaforecast database".
+I also created a search engine using Elicit's IDE, which uses GPT-3 to deliver vastly superior semantic search (as opposed to fuzzy word matching). If you have access to the Elicit IDE, you can use the action "Search Metaforecast database". However, I'm not currently updating it regularly.
 
 ![](./metaforecasts.png)
 
@@ -15,16 +15,14 @@ I also created a search engine using Elicit's IDE, which uses GPT-3 to deliver v
 ``git clone https://github.com/QURIresearch/metaforecasts``
 
 ### 2. Enter your own process.env variables
-The following environment variables are currently needed to run the `master` branch:
+The following variables are currently needed to run the `master` branch:
 - `MONGODB_URL`, a string in the format `"mongodb+srv://<username>:<password>@<mongodburl>/?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true"`
 - `REBUIDNETLIFYHOOKURL`, a string in the format `"https://api.netlify.com/build_hooks/someprivatestring"`
 - `CSETFORETELL_COOKIE`
 - `GOODJUDGMENTOPENCOOKIE`
 - `HYPERMINDCOOKIE`
 
-The cookie formats can be found in `src/input/privatekeys_example.json`; these session cookies are necessary to query CSET-foretell, Good Judgment Open and Hypermind. You can get these cookies by creating an account in said platforms and then making and inspecting a request (e.g., by making a prediction, or browsing questions). After doing this, you should create the environment variables.
-
-Alternatively, for fewer complications, have a look at the `commandlineinterface` branch, which instead of requiring environment variables only requires a `src/privatekeys.json`, in the same format as its `src/privatekeys_example.json`. Its disadvantages are that the command line tool in the  `commandlineinterface` is more difficult to integrate with other services. 
+They can either be stored as process variables (e.g., something that can be accessed as `process.env.<variable name>`), or as text in `src/input/privatekeys.json`, in the same format as `src/input/privatekeys_example.json`. These session cookies are necessary to query CSET-foretell, Good Judgment Open and Hypermind, and to access the MongoDB database I'm using to save data and history. You can get these cookies by creating an account in said platforms and then making and inspecting a request (e.g., by making a prediction, or browsing questions). After doing this, you should create the environment variables.
 
 ### 3. Actually run
 
