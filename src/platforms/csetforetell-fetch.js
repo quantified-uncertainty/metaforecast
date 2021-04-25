@@ -13,7 +13,9 @@ String.prototype.replaceAll = function replaceAll(search, replace) { return this
 /* Support functions */
 
 async function fetchPage(page, cookie){
-  
+  if(page==1){
+    cookie=cookie.split(";")[0] // Interesting that it otherwise doesn't work :(
+  }
   let response  = await axios({
     url: htmlEndPoint+page,
     method: 'GET',
@@ -46,6 +48,7 @@ async function fetchStats(questionUrl, cookie){
   if(isbinary){
     // Crowd percentage
     let htmlElements = response.split("\n")
+    // console.log(htmlElements)
     let h3Element = htmlElements.filter(str => str.includes("<h3>"))[0]
     let crowdpercentage = h3Element.split(">")[1].split("<")[0]
     let probability = Number(crowdpercentage.replace("%", ""))/100
@@ -59,7 +62,9 @@ async function fetchStats(questionUrl, cookie){
       type: "PROBABILITY"
     }))
   }else{
-    let optionsHtmlElement = "<table" + response.split("tbody")[1] + "table>"
+    let optionsBody = response.split("tbody")[1] 
+    // console.log(optionsBody)
+    let optionsHtmlElement = "<table" + optionsBody + "table>"
     let tablesAsJson = Tabletojson.convert(optionsHtmlElement)
     let firstTable = tablesAsJson[0]
     options = firstTable.map(element => ({
@@ -68,23 +73,23 @@ async function fetchStats(questionUrl, cookie){
       type: "PROBABILITY"
     }))
   }
-  
-  // Description
-  let descriptionraw = response.split(`  <meta name="description" content="`)[1]
+  // Description  
+  let descriptionraw = response.split(`<meta name="description" content="`)[1]
   let descriptionprocessed1 = descriptionraw.split(`">`)[0]
   let descriptionprocessed2 = descriptionprocessed1.replace(">", "")
   let descriptionprocessed3 = descriptionprocessed2.replace("To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.", ``)
   // console.log(descriptionprocessed3)
   let descriptionprocessed4=descriptionprocessed3.replaceAll("\r\n\r\n", "\n")
-  let descriptionprocessed5=descriptionprocessed4.replaceAll("\n\n", "\n")  
+  let descriptionprocessed5=  descriptionprocessed4.replaceAll("\n\n", "\n")  
   let descriptionprocessed6=descriptionprocessed5.replaceAll("&quot;", `"`)
   let descriptionprocessed7=descriptionprocessed6.replaceAll("&#39;", "'")
   let descriptionprocessed8=toMarkdown(descriptionprocessed7)
   let description = descriptionprocessed8
+
   // Number of forecasts
   let numforecasts = response.split("prediction_sets_count&quot;:")[1].split(",")[0]
   // console.log(numforecasts)
-  
+
   // Number of predictors
   let numforecasters = response.split("predictors_count&quot;:")[1].split(",")[0]
   // console.log(numpredictors)
@@ -120,12 +125,23 @@ async function csetforetell_inner(cookie){
   let init = Date.now()
   // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
   while(!isEnd(response)){
-    // console.log(`Page #${i}`)
+    
     let htmlLines = response.split("\n")
-    let h4elements = htmlLines.filter(str => str.includes("<h4><a href=")) 
+    let h4elements = htmlLines.filter(str => str.includes("<h5><a href=") || str.includes("<h4><a href=")) 
+
+    if(process.env.DEBUG_MODE == "on"){
+      console.log(`Page #${i}`)
+      console.log(response)
+    }
+
+    //console.log("")
+    //console.log("")
+    //console.log(h4elements)
+    
     for(let h4element of h4elements){
       let h4elementSplit = h4element.split('"><span>')
       let url = h4elementSplit[0].split('<a href="')[1]
+      //console.log(url)
       let title = h4elementSplit[1].replace('</span></a></h4>', "")
       await sleep(1000 + Math.random()*1000) // don't be as noticeable
       try{
@@ -146,7 +162,10 @@ async function csetforetell_inner(cookie){
             console.log(question)
           }
           results.push(question)
-          console.log(question)
+          if(process.env.DEBUG_MODE == "on"){
+            console.log(question)
+          }
+
       } catch(error){
         console.log(error)
         console.log(`We encountered some error when fetching the URL: ${url}, so it won't appear on the final json`)
