@@ -146,6 +146,7 @@ async function csetforetell_inner(cookie){
             console.log(question)
           }
           results.push(question)
+          console.log(question)
       } catch(error){
         console.log(error)
         console.log(`We encountered some error when fetching the URL: ${url}, so it won't appear on the final json`)
