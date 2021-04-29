@@ -1,3 +1,5 @@
+import {astralcodexten} from "../platforms/astralcodexten-fetch.js"
+import {coupcast} from "../platforms/coupcast-fetch.js"
 import {csetforetell} from "../platforms/csetforetell-fetch.js"
 import {elicit} from "../platforms/elicit-fetch.js"
 import {estimize} from "../platforms/estimize-fetch.js"
@@ -34,7 +36,7 @@ export async function tryCatchTryAgain (fun) {
     }
 }
 export async function doEverything(){
-    let functions = [csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything, addToHistory, rebuildNetlifySiteWithNewData]
+    let functions = [coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything, /*addToHistory,*/ rebuildNetlifySiteWithNewData]
 
     console.log("")
     console.log("")

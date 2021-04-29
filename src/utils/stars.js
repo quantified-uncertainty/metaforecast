@@ -27,6 +27,22 @@ export function getStarSymbols(numstars) {
 
 let average = array => array.reduce((a, b) => a + b, 0) / (array.length)
 
+function calculateStarsAstralCodexTen(data) {
+  let nuno = data => 3
+  let eli = (data) => null
+  let misha = (data) => null
+  let starsDecimal = average([nuno(data)]) //, eli(data), misha(data)])
+  let starsInteger = Math.round(starsDecimal)
+  return starsInteger
+}
+
+function calculateStarsCoupCast(data) {
+  let nuno = (data) => 3
+  let starsDecimal = average([nuno(data)]) //, eli(data), misha(data)])
+  let starsInteger = Math.round(starsDecimal)
+  return starsInteger
+}
+
 function calculateStarsCSETForetell(data) {
   let nuno = (data) => data.numforecasts > 100 ? 3 : 2
   let eli = (data) => 3
@@ -172,6 +188,12 @@ function calculateStarsWilliamHill(data) {
 export function calculateStars(platform, data) {
   let stars = 2;
   switch (platform) {
+    case "AstralCodexTen":
+      stars = calculateStarsAstralCodexTen(data)
+      break;
+    case "CoupCast":
+      stars = calculateStarsCoupCast(data)
+      break;
     case "CSET-foretell":
       stars = calculateStarsCSETForetell(data)
       break;
