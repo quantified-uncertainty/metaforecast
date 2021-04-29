@@ -1,6 +1,9 @@
 /* Imports */
 import fs from 'fs'
 import readline from "readline"
+
+import {astralcodexten} from "./platforms/astralcodexten-fetch.js"
+import {coupcast} from "./platforms/coupcast-fetch.js"
 import {csetforetell} from "./platforms/csetforetell-fetch.js"
 import {elicit} from "./platforms/elicit-fetch.js"
 import {estimize} from "./platforms/estimize-fetch.js"
@@ -16,17 +19,18 @@ import {predictit} from "./platforms/predictit-fetch.js"
 import {omen} from "./platforms/omen-fetch.js"
 import {smarkets} from "./platforms/smarkets-fetch.js"
 import {williamhill} from "./platforms/williamhill-fetch.js"
+
 import {mergeEverything} from "./utils/mergeEverything.js"
 import {addToHistory} from "./utils/addToHistory.js"
 import {rebuildNetlifySiteWithNewData} from "./utils/rebuildNetliftySiteWithNewData.js"
 import {doEverything, tryCatchTryAgain} from "./utils/doEverything.js"
 
 /* Support functions */
-let functions = [csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything, addToHistory, rebuildNetlifySiteWithNewData, doEverything]
+let functions = [astralcodexten, coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything, addToHistory, rebuildNetlifySiteWithNewData, doEverything]
 let functionNames =  functions.map(fun => fun.name)
 
 let whattodoMessage = functionNames
-    .slice(0,functionNames.length-2)
+    .slice(0,functionNames.length-4)
     .map((functionName,i) => `[${i}]: Download predictions from ${functionName}`)
     .join('\n') +
   `\n[${functionNames.length-4}]: Merge jsons them into one big json (and push it to mongodb database)` + 

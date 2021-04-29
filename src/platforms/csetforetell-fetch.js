@@ -128,7 +128,7 @@ async function csetforetell_inner(cookie){
     
     let htmlLines = response.split("\n")
     let h4elements = htmlLines.filter(str => str.includes("<h5><a href=") || str.includes("<h4><a href=")) 
-
+  
     if(process.env.DEBUG_MODE == "on"){
       console.log(`Page #${i}`)
       console.log(response)
@@ -142,7 +142,7 @@ async function csetforetell_inner(cookie){
       let h4elementSplit = h4element.split('"><span>')
       let url = h4elementSplit[0].split('<a href="')[1]
       //console.log(url)
-      let title = h4elementSplit[1].replace('</span></a></h4>', "")
+      let title = h4elementSplit[1].replace('</span></a></h4>', "").replace('</span></a></h5>', "")
       await sleep(1000 + Math.random()*1000) // don't be as noticeable
       try{
         let moreinfo = await fetchStats(url, cookie)
