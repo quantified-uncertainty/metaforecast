@@ -44,6 +44,7 @@ async function fetchStats(questionUrl, cookie){
   
   // Is binary?
   let isbinary = response.includes("binary?&quot;:true")
+  // console.log(`is binary? ${isbinary}`)
   let options = []
   if(isbinary){
     // Crowd percentage
@@ -62,7 +63,7 @@ async function fetchStats(questionUrl, cookie){
       type: "PROBABILITY"
     }))
   }else{
-    let optionsBody = response.split("tbody")[1] 
+    let optionsBody = response.split("tbody")[3] // Previously [1], but they added a new table.
     // console.log(optionsBody)
     let optionsHtmlElement = "<table" + optionsBody + "table>"
     let tablesAsJson = Tabletojson.convert(optionsHtmlElement)
