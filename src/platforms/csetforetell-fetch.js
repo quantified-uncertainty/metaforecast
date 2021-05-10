@@ -120,7 +120,7 @@ function sleep(ms) {
 /* Body */
 
 async function csetforetell_inner(cookie){
-  let i=1
+  let i=0
   let response = await fetchPage(i, cookie)
   let results = []
   let init = Date.now()
@@ -129,9 +129,8 @@ async function csetforetell_inner(cookie){
     
     let htmlLines = response.split("\n")
     let h4elements = htmlLines.filter(str => str.includes("<h5><a href=") || str.includes("<h4><a href=")) 
-  
+
     if(process.env.DEBUG_MODE == "on"){
-      console.log(`Page #${i}`)
       console.log(response)
     }
 
@@ -171,8 +170,9 @@ async function csetforetell_inner(cookie){
         console.log(error)
         console.log(`We encountered some error when fetching the URL: ${url}, so it won't appear on the final json`)
       }
+      i=i+1
     }
-    i=i+1
+    
     // console.log("Sleeping for ~5secs so as to not be as noticeable to the cset-foretell servers")
     await sleep(5000 + Math.random()*1000) // don't be as noticeable
     

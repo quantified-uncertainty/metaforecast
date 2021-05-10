@@ -8,7 +8,7 @@ import {calculateStars} from "../utils/stars.js"
 import {upsert} from "../utils/mongo-wrapper.js"
 
 /* Definitions */
-let coupCastEndpoint = "https://www.oneearthfuture.org/sites/all/themes/stability/stability_sub/data/dashboard_2021_code_02.csv"
+let coupCastEndpoint = "https://www.oneearthfuture.org/sites/all/themes/stability/stability_sub/data/dashboard_2021_code_05.csv"
 var datenow = new Date();
 var currentmonth = datenow.getMonth() + 1; 
 
