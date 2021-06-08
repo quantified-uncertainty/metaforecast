@@ -79,7 +79,7 @@ export async function metaculus() {
         (now < result.resolve_time)
       ) {
         // console.log(result)
-        await sleep(1000)
+        await sleep(5000)
         let questionPage = await fetchMetaculusQuestionDescription(result.page_url)
         let descriptionraw = questionPage.split(`<div class="question__content">`)[1]
         let descriptionprocessed1 = descriptionraw.split("</div>")[0]

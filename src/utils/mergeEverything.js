@@ -5,14 +5,12 @@ let sets = ["astralcodexten","coupcast", "csetforetell", "elicit", "estimize", "
 let suffix = "-questions"
 
 export async function mergeEverything(){
-    let merged = []
-    for(let set of sets){
-      let json = await mongoRead(set+suffix)
-      merged = merged.concat(json)
-    }
-    let mergedprocessed = merged.map(element => ({...element, optionsstringforsearch: element.options.map(option => option.name).join(", ")}))
-    await upsert( mergedprocessed,"metaforecasts")
-    console.log("Done")
+  let merged = []
+  for(let set of sets){
+    let json = await mongoRead(set+suffix)
+    merged = merged.concat(json)
   }
-  
-
+  let mergedprocessed = merged.map(element => ({...element, optionsstringforsearch: element.options.map(option => option.name).join(", ")}))
+  await upsert( mergedprocessed,"metaforecasts")
+  console.log("Done")
+}
