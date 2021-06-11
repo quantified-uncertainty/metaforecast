@@ -63,29 +63,16 @@ async function fetchStats(questionUrl, cookie){
       type: "PROBABILITY"
     }))
   }else{
-    try{
-      let optionsBody = response.split("tbody")[1] // Previously [1], then previously [3] but they added a new table. 
-      // console.log(optionsBody)
-      let optionsHtmlElement = "<table" + optionsBody + "table>"
-      let tablesAsJson = Tabletojson.convert(optionsHtmlElement)
-      let firstTable = tablesAsJson[0]
-      options = firstTable.map(element => ({
-        name: element['0'],
-        probability: Number(element['1'].replace("%",""))/100,
-        type: "PROBABILITY"
-      }))
-    }catch(error){
-      let optionsBody = response.split("tbody")[3] // Catch if the error is related to table position
-      let optionsHtmlElement = "<table" + optionsBody + "table>"
-      let tablesAsJson = Tabletojson.convert(optionsHtmlElement)
-      let firstTable = tablesAsJson[0]
-      options = firstTable.map(element => ({
-        name: element['0'],
-        probability: Number(element['1'].replace("%",""))/100,
-        type: "PROBABILITY"
-      }))
-    }
-    
+    let optionsBody = response.split("tbody")[3] // Previously [1], but they added a new table.
+    // console.log(optionsBody)
+    let optionsHtmlElement = "<table" + optionsBody + "table>"
+    let tablesAsJson = Tabletojson.convert(optionsHtmlElement)
+    let firstTable = tablesAsJson[0]
+    options = firstTable.map(element => ({
+      name: element['0'],
+      probability: Number(element['1'].replace("%",""))/100,
+      type: "PROBABILITY"
+    }))
   }
   // Description  
   let descriptionraw = response.split(`<meta name="description" content="`)[1]
@@ -152,14 +139,18 @@ async function csetforetell_inner(cookie){
     //console.log(h4elements)
     
     for(let h4element of h4elements){
-
       let h4elementSplit = h4element.split('"><span>')
       let url = h4elementSplit[0].split('<a href="')[1]
+      //console.log(url)
       let title = h4elementSplit[1].replace('</span></a></h4>', "").replace('</span></a></h5>', "")
       await sleep(1000 + Math.random()*1000) // don't be as noticeable
-
       try{
         let moreinfo = await fetchStats(url, cookie)
+        if(moreinfo.isbinary){
+          if(!moreinfo.crowdpercentage){ // then request again.
+            moreinfo = await fetchStats(url, cookie)
+          }
+        }
         let question = ({
             "title": title,
             "url": url,
@@ -179,7 +170,6 @@ async function csetforetell_inner(cookie){
         console.log(error)
         console.log(`We encountered some error when fetching the URL: ${url}, so it won't appear on the final json`)
       }
-
       i=i+1
     }
     
