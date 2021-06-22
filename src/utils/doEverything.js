@@ -36,7 +36,8 @@ export async function tryCatchTryAgain (fun) {
     }
 }
 export async function doEverything(){
-    let functions = [coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything, /*addToHistory,*/ rebuildNetlifySiteWithNewData]
+    let functions = [coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, /* goodjudgment, */ goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything, /*addToHistory,*/rebuildNetlifySiteWithNewData] 
+    // Removed Good Judgment from the fetcher, doing it using cron instead because cloudflare blocks the utility on heroku.
 
     console.log("")
     console.log("")
