@@ -40,7 +40,7 @@ async function fetchAndProcessData() {
             "type": "PROBABILITY"
         })
     }
-    let claimUrlPath = claim.created_at < "2020" ? "claim" : "analysis"
+    let claimUrlPath = claim.created_at < "2020" ? "claims" : "analysis"
     let obj = ({
       "title": toMarkdown(claim.question).replace("\n",""),
       "url": `https://www.rootclaim.com/${claimUrlPath}/${claim.slug}`,
