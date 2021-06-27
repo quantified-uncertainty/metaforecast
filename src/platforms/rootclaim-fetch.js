@@ -1,6 +1,7 @@
 /* Imports */
 import fs from 'fs'
 import axios from "axios"
+import toMarkdown from "../utils/toMarkdown.js"
 import { calculateStars } from "../utils/stars.js"
 import {upsert} from "../utils/mongo-wrapper.js"
 
@@ -38,11 +39,12 @@ async function fetchAndProcessData() {
             "type": "PROBABILITY"
         })
     }
+    let claimUrlPath = claim.created_at < "2020" ? "claim" : "analysis"
     let obj = ({
       "title": claim.question,
-      "url": "https://www.rootclaim.com/analysis/"+claim.slug,
+      "url": `https://www.rootclaim.com/${claimUrlPath}/${claim.slug}`,
       "platform": "Rootclaim",
-      "description": claim.background,
+      "description": toMarkdown(claim.background),
       "options": options,
       "timestamp": new Date().toISOString(),
       "qualityindicators": {
