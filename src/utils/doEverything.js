@@ -10,9 +10,10 @@ import {goodjudgmentopen} from "../platforms/goodjudmentopen-fetch.js"
 import {hypermind} from "../platforms/hypermind-fetch.js"
 import {ladbrokes} from "../platforms/ladbrokes-fetch.js"
 import {metaculus} from "../platforms/metaculus-fetch.js"
+import {omen} from "../platforms/omen-fetch.js"
 import {polymarket} from "../platforms/polymarket-fetch.js"
 import {predictit} from "../platforms/predictit-fetch.js"
-import {omen} from "../platforms/omen-fetch.js"
+import {rootclaim} from "../platforms/rootclaim-fetch.js"
 import {smarkets} from "../platforms/smarkets-fetch.js"
 import {williamhill} from "../platforms/williamhill-fetch.js"
 import {mergeEverything} from "./mergeEverything.js"
@@ -36,7 +37,7 @@ export async function tryCatchTryAgain (fun) {
     }
 }
 export async function doEverything(){
-    let functions = [coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, /* goodjudgment, */ goodjudgmentopen, hypermind, ladbrokes, metaculus, polymarket, predictit, omen, smarkets, williamhill, mergeEverything, /*addToHistory,*/rebuildNetlifySiteWithNewData] 
+    let functions = [coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, /* goodjudgment, */ goodjudgmentopen, hypermind, ladbrokes, metaculus, omen, polymarket, predictit, rootclaim, smarkets, williamhill, mergeEverything, /*addToHistory,*/rebuildNetlifySiteWithNewData] 
     // Removed Good Judgment from the fetcher, doing it using cron instead because cloudflare blocks the utility on heroku.
 
     console.log("")

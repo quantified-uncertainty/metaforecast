@@ -167,6 +167,15 @@ function calculateStarsPredictIt(data) {
   return starsInteger
 }
 
+function calculateStarsRootclaim(data) {
+  let nuno = data => 4
+  let eli = (data) => null
+  let misha = (data) => null
+  let starsDecimal = average([nuno(data)/*, eli(data), misha(data)*/])
+  let starsInteger = Math.round(starsDecimal)
+  return starsInteger
+}
+
 function calculateStarsSmarkets(data) {
   let nuno = data => 2
   let eli = (data) => null
@@ -233,6 +242,9 @@ export function calculateStars(platform, data) {
     case "PredictIt":
       stars = calculateStarsPredictIt(data)
       break;
+    case "Rootclaim":
+        stars = calculateStarsRootclaim(data)
+        break;
     case "Smarkets":
       stars = calculateStarsSmarkets(data)
       break;
