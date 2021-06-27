@@ -32,19 +32,20 @@ async function fetchAndProcessData() {
   let results  = []
   for (let claim of claims) {
     let options = []
-    for (let scenario in claim.scenarios) {
+    for (let scenario of claim.scenarios) {
+        //console.log(scenario)
         options.push({
-            "name": scenario.name,
+            "name": toMarkdown(scenario.text).replace("\n","").replace("&#39;","'"),
             "probability": scenario.net_prob / 100,
             "type": "PROBABILITY"
         })
     }
     let claimUrlPath = claim.created_at < "2020" ? "claim" : "analysis"
     let obj = ({
-      "title": claim.question,
+      "title": toMarkdown(claim.question).replace("\n",""),
       "url": `https://www.rootclaim.com/${claimUrlPath}/${claim.slug}`,
       "platform": "Rootclaim",
-      "description": toMarkdown(claim.background),
+      "description": toMarkdown(claim.background).replace("&#39;","'"),
       "options": options,
       "timestamp": new Date().toISOString(),
       "qualityindicators": {
@@ -60,7 +61,7 @@ async function fetchAndProcessData() {
 /* Body */
 export async function rootclaim() {
   let results = await fetchAndProcessData()
-  // console.log(results)
+  //console.log(JSON.stringify(results, null, 4))
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('rootclaim-questions.json', string);
   await upsert(results, "rootclaim-questions")
