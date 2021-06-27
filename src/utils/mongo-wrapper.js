@@ -2,6 +2,39 @@ import pkg from 'mongodb';
 const {MongoClient} = pkg;
 import {getCookie} from "./getCookies.js"
 
+function roughSizeOfObject( object ) {
+  var objectList = [];
+  var stack = [ object ];
+  var bytes = 0;
+
+  while ( stack.length ) {
+    var value = stack.pop();
+    if ( typeof value === 'boolean' ) {
+      bytes += 4;
+    }
+    else if ( typeof value === 'string' ) {
+      bytes += value.length * 2;
+    }
+    else if ( typeof value === 'number' ) {
+      bytes += 8;
+    }
+    else if
+    (
+      typeof value === 'object'
+      && objectList.indexOf( value ) === -1
+    )
+    {
+      objectList.push( value );
+
+      for( var i in value ) {
+          stack.push( value[ i ] );
+      }
+    }
+  }
+  let megaBytes = bytes / (1024)**2
+  let megaBytesRounded = Math.round(megaBytes*10)/10
+  return megaBytesRounded;
+}
 
 export async function upsert (contents, documentName, collectionName="metaforecastCollection", databaseName="metaforecastDatabase"){
     const url = process.env.MONGODB_URL || getCookie("mongodb");
@@ -32,8 +65,9 @@ export async function upsert (contents, documentName, collectionName="metaforeca
         const myDocument = await collection.findOne(filter);
     
         // Print to the console
-        console.log(myDocument.contentsArray.slice(0,1
-        ));
+        console.log(`Updating document ${documentName} in collection ${collectionName} in database ${databaseName} with approximate size ${roughSizeOfObject(contents)} MB`)
+        console.log("Sample: ")
+        console.log(JSON.stringify(myDocument.contentsArray.slice(0,1), null, 4));
       } catch (err) {
         console.log(err.stack);
       }
@@ -117,3 +151,38 @@ export async function mongoReadWithReadCredentials (documentName, collectionName
     // console.log(documentContents.slice(0,1));
     return documentContents
 }
+
+export async function mongoGetAllElements(databaseName = "metaforecastDatabase", collectionName="metaforecastCollection"){
+  const url = process.env.MONGODB_URL || getCookie("mongodb");
+  const client = new MongoClient(url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+
+  try {
+      await client.connect();
+      console.log(`Connected correctly to server`);
+      const db = client.db(databaseName);
+  
+      // Use the collection "data"
+      const collection = db.collection(collectionName);
+  
+      // Search options
+      const query = ({});
+      const options = ({});
+  
+      // Insert a single document, wait for promise so we can read it back
+      // const p = await collection.insertOne(metaforecastDocument);
+      const documents = await collection.find().toArray()
+      let documentNames = documents.map(document => ({name: document.name, roughSizeMBs: roughSizeOfObject(document)}));
+      console.log(documentNames)
+    }catch(error){
+      console.log(error)
+    }
+    finally {
+      await client.close();
+    }
+
+}
+//mongoGetAllElements()
+//mongoGetAllElements("metaforecastDatabase", "metaforecastHistory")

@@ -1,4 +1,4 @@
-import { mongoRead, upsert } from "./mongo-wrapper.js"
+import { mongoRead, upsert } from "../mongo-wrapper.js"
 
 let createInitialHistory = async () => {
     let metaforecasts = await mongoRead("metaforecasts")
