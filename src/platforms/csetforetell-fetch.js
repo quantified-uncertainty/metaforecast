@@ -45,6 +45,10 @@ async function fetchStats(questionUrl, cookie){
   .then(res => res.data)
   //console.log(response)
   
+  if(response.includes("Sign up or sign in to forecast")){
+    throw Error("Not logged in")
+  }
+
   // Is binary?
   let isbinary = response.includes("binary?&quot;:true")
   // console.log(`is binary? ${isbinary}`)
@@ -104,6 +108,8 @@ async function fetchStats(questionUrl, cookie){
   let description = descriptionprocessed8
 
   // Number of forecasts
+  console.log(response)
+  console.log(response.split("prediction_sets_count&quot;:")[1])
   let numforecasts = response.split("prediction_sets_count&quot;:")[1].split(",")[0]
   // console.log(numforecasts)
 

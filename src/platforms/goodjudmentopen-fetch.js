@@ -108,6 +108,9 @@ async function fetchStats(questionUrl, cookie) {
 }
 
 function isEnd(html) {
+  if(html.includes("You need to sign in or sign up before continuing")){
+    throw Error("You need to sign in or sign up before continuing")
+  }
   return html.includes("No questions match your filter")
 }
 
