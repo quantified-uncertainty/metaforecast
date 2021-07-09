@@ -108,8 +108,8 @@ async function fetchStats(questionUrl, cookie){
   let description = descriptionprocessed8
 
   // Number of forecasts
-  console.log(response)
-  console.log(response.split("prediction_sets_count&quot;:")[1])
+  //console.log(response)
+  //console.log(response.split("prediction_sets_count&quot;:")[1])
   let numforecasts = response.split("prediction_sets_count&quot;:")[1].split(",")[0]
   // console.log(numforecasts)
 
@@ -224,7 +224,11 @@ async function csetforetell_inner(cookie){
   // let string = JSON.stringify(results,null,  2)
   // fs.writeFileSync('./data/csetforetell-questions.json', string);
   // console.log(results)
-  await upsert(results, "csetforetell-questions")
+  if(results.length > 0){
+    await upsert(results, "csetforetell-questions")
+  }else{
+    console.log("Not updating results, as process was not signed in")
+  }
   
   let end = Date.now()
   let difference = end-init

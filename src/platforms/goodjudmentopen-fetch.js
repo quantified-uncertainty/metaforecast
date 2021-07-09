@@ -188,7 +188,12 @@ async function goodjudgmentopen_inner(cookie) {
   }
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/goodjudmentopen-questions.json', string);
-  await upsert(results, "goodjudmentopen-questions")
+
+  if(results.length > 0){
+    await upsert(results, "goodjudmentopen-questions")
+  }else{
+    console.log("Not updating results, as process was not signed in")
+  }
 
   let end = Date.now()
   let difference = end - init
