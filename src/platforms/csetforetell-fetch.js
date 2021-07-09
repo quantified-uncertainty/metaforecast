@@ -131,11 +131,17 @@ async function fetchStats(questionUrl, cookie){
   return result
 }
 
-function isEnd(html){
-  if(html.includes("You need to sign in or sign up before continuing")){
-    throw Error("You need to sign in or sign up before continuing")
+function isNotSignedIn(html){
+  
+  let isNotSignedInBool = html.includes("You need to sign in or sign up before continuing") || html.includes("Sign up")
+  if(isNotSignedInBool){
+    console.log("Error: Not signed in.")
   }
+  console.log(`isNotSignedIn? ${isNotSignedInBool}`)
+  return isNotSignedInBool
+}
 
+function isEnd(html){
   let isEndBool = html.includes("No questions match your filter")
   if(isEndBool){
     //console.log(html)
@@ -156,7 +162,7 @@ async function csetforetell_inner(cookie){
   let results = []
   let init = Date.now()
   // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
-  while(!isEnd(response)){
+  while(!isEnd(response) && !isNotSignedIn(response)){
     
     let htmlLines = response.split("\n")
     let h4elements = htmlLines.filter(str => str.includes("<h5><a href=") || str.includes("<h4><a href=")) 
