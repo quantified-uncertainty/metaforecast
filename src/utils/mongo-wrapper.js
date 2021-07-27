@@ -39,7 +39,6 @@ function roughSizeOfObject( object ) {
 export async function upsert (contents, documentName, collectionName="metaforecastCollection", databaseName="metaforecastDatabase"){
     const url = process.env.MONGODB_URL || getCookie("mongodb");
     const client = new MongoClient(url);
-
     try {
         await client.connect();
         console.log("Connected correctly to server");
@@ -63,7 +62,6 @@ export async function upsert (contents, documentName, collectionName="metaforeca
         
         // Find one document
         const myDocument = await collection.findOne(filter);
-    
         // Print to the console
         console.log(`Updating document ${documentName} in collection ${collectionName} in database ${databaseName} with approximate size ${roughSizeOfObject(contents)} MB`)
         console.log("Sample: ")
@@ -184,5 +182,5 @@ export async function mongoGetAllElements(databaseName = "metaforecastDatabase",
     }
 
 }
-//mongoGetAllElements()
+// mongoGetAllElements()
 //mongoGetAllElements("metaforecastDatabase", "metaforecastHistory")

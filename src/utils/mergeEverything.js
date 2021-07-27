@@ -1,7 +1,7 @@
 import { mongoRead, upsert } from "./mongo-wrapper.js"
 
 /* Merge everything */
-let sets = ["astralcodexten","coupcast", "csetforetell", "elicit", "estimize", "fantasyscotus", "foretold", "givewellopenphil", "goodjudgment","goodjudmentopen", "hypermind", "ladbrokes", "metaculus", "omen", "polymarket", "predictit", "rootclaim", "smarkets", "williamhill", "xrisk"]
+let sets = ["astralcodexten","coupcast", "csetforetell", "elicit", "estimize", "fantasyscotus", "foretold", "givewellopenphil", "goodjudgment","goodjudmentopen", "hypermind", "kalshi", "ladbrokes", "metaculus", "omen", "polymarket", "predictit", "rootclaim", "smarkets", "williamhill", "xrisk"]
 let suffix = "-questions"
 
 export async function mergeEverything(){

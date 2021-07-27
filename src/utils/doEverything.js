@@ -8,6 +8,7 @@ import {foretold} from "../platforms/foretold-fetch.js"
 import {goodjudgment} from "../platforms/goodjudgment-fetch.js"
 import {goodjudgmentopen} from "../platforms/goodjudmentopen-fetch.js"
 import {hypermind} from "../platforms/hypermind-fetch.js"
+import {kalshi} from "../platforms/kalshi-fetch.js"
 import {ladbrokes} from "../platforms/ladbrokes-fetch.js"
 import {metaculus} from "../platforms/metaculus-fetch.js"
 import {omen} from "../platforms/omen-fetch.js"
@@ -37,7 +38,7 @@ export async function tryCatchTryAgain (fun) {
     }
 }
 export async function doEverything(){
-    let functions = [coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, /* goodjudgment, */ goodjudgmentopen, hypermind, ladbrokes, metaculus, omen, polymarket, predictit, rootclaim, smarkets, williamhill, mergeEverything, updateHistory, rebuildNetlifySiteWithNewData] 
+    let functions = [coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, /* goodjudgment, */ goodjudgmentopen, hypermind, ladbrokes, kalshi, metaculus, omen, polymarket, predictit, rootclaim, smarkets, williamhill, mergeEverything, updateHistory, rebuildNetlifySiteWithNewData] 
     // Removed Good Judgment from the fetcher, doing it using cron instead because cloudflare blocks the utility on heroku.
 
     console.log("")

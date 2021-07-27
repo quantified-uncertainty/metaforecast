@@ -115,6 +115,22 @@ function calculateStarsHypermind(data) {
   return starsInteger
 }
 
+function calculateStarsKalshi(data) {
+  let nuno = data => data.interest > 1000 && data.volume > 1000 ? 4 : 3
+  let eli = (data) => data.interest > 10000 ? 5 : 4
+  let misha = (data) => 4
+  let starsDecimal = average([nuno(data), eli(data), misha(data)])
+  // Substract 1 star if probability is above 90% or below 10%
+  if(data.option &&
+    (data.option.probability < 0.1 || data.option.probability > 0.9)
+  ){
+    starsDecimal = starsDecimal - 1
+  }
+  
+  let starsInteger = Math.round(starsDecimal)
+  return starsInteger
+}
+
 function calculateStarsLadbrokes(data) {
   let nuno = data => 2
   let eli = (data) => null
@@ -227,7 +243,10 @@ export function calculateStars(platform, data) {
     case "Hypermind":
       stars = calculateStarsHypermind(data)
       break;
-    case "Hypermind":
+    case "Kalshi":
+      stars = calculateStarsKalshi(data)
+      break;
+    case "Ladbrokes":
       stars = calculateStarsLadbrokes(data)
       break;
     case "Metaculus":

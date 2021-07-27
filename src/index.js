@@ -12,6 +12,7 @@ import {foretold} from "./platforms/foretold-fetch.js"
 import {goodjudgment} from "./platforms/goodjudgment-fetch.js"
 import {goodjudgmentopen} from "./platforms/goodjudmentopen-fetch.js"
 import {hypermind} from "./platforms/hypermind-fetch.js"
+import {kalshi} from "./platforms/kalshi-fetch.js"
 import {ladbrokes} from "./platforms/ladbrokes-fetch.js"
 import {metaculus} from "./platforms/metaculus-fetch.js"
 import {omen} from "./platforms/omen-fetch.js"
@@ -26,7 +27,7 @@ import {rebuildNetlifySiteWithNewData} from "./utils/rebuildNetliftySiteWithNewD
 import {doEverything, tryCatchTryAgain} from "./utils/doEverything.js"
 
 /* Support functions */
-let functions = [astralcodexten, coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, ladbrokes, metaculus, omen, polymarket, predictit, rootclaim, smarkets, williamhill, mergeEverything, updateHistory, rebuildNetlifySiteWithNewData, doEverything]
+let functions = [astralcodexten, coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, kalshi, ladbrokes, metaculus, omen, polymarket, predictit, rootclaim, smarkets, williamhill, mergeEverything, updateHistory, rebuildNetlifySiteWithNewData, doEverything]
 let functionNames =  functions.map(fun => fun.name)
 
 let whattodoMessage = functionNames
