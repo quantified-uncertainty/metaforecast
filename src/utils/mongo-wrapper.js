@@ -182,5 +182,5 @@ export async function mongoGetAllElements(databaseName = "metaforecastDatabase",
     }
 
 }
-// mongoGetAllElements()
+//mongoGetAllElements()
 //mongoGetAllElements("metaforecastDatabase", "metaforecastHistory")

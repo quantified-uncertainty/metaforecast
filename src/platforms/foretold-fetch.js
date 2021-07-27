@@ -6,7 +6,7 @@ import { upsert } from "../utils/mongo-wrapper.js"
 
 /* Definitions */
 let graphQLendpoint = "https://api.foretold.io/graphql"
-let highQualityCommunities = ["0104d8e8-07e4-464b-8b32-74ef22b49f21", "c47c6bc8-2c9b-4a83-9583-d1ed80a40fa2", "cf663021-f87f-4632-ad82-962d889a2d39", "47ff5c49-9c20-4f3d-bd57-1897c35cd42d"]
+let highQualityCommunities = ["0104d8e8-07e4-464b-8b32-74ef22b49f21", "c47c6bc8-2c9b-4a83-9583-d1ed80a40fa2", "cf663021-f87f-4632-ad82-962d889a2d39", "47ff5c49-9c20-4f3d-bd57-1897c35cd42d", "b2412a1d-0aa4-4e37-a12a-0aca9e440a96"]
 
 /* Support functions */
 async function fetchAllCommunityQuestions(communityId) {

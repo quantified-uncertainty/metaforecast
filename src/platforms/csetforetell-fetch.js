@@ -45,6 +45,10 @@ async function fetchStats(questionUrl, cookie){
   .then(res => res.data)
   //console.log(response)
   
+  if(response.includes("Sign up or sign in to forecast")){
+    throw Error("Not logged in")
+  }
+
   // Is binary?
   let isbinary = response.includes("binary?&quot;:true")
   // console.log(`is binary? ${isbinary}`)
@@ -104,6 +108,8 @@ async function fetchStats(questionUrl, cookie){
   let description = descriptionprocessed8
 
   // Number of forecasts
+  //console.log(response)
+  //console.log(response.split("prediction_sets_count&quot;:")[1])
   let numforecasts = response.split("prediction_sets_count&quot;:")[1].split(",")[0]
   // console.log(numforecasts)
 
@@ -123,6 +129,16 @@ async function fetchStats(questionUrl, cookie){
   }
   
   return result
+}
+
+function isNotSignedIn(html){
+  
+  let isNotSignedInBool = html.includes("You need to sign in or sign up before continuing") || html.includes("Sign up")
+  if(isNotSignedInBool){
+    console.log("Error: Not signed in.")
+  }
+  console.log(`isNotSignedIn? ${isNotSignedInBool}`)
+  return isNotSignedInBool
 }
 
 function isEnd(html){
@@ -146,7 +162,7 @@ async function csetforetell_inner(cookie){
   let results = []
   let init = Date.now()
   // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
-  while(!isEnd(response)){
+  while(!isEnd(response) && !isNotSignedIn(response)){
     
     let htmlLines = response.split("\n")
     let h4elements = htmlLines.filter(str => str.includes("<h5><a href=") || str.includes("<h4><a href=")) 
@@ -208,7 +224,11 @@ async function csetforetell_inner(cookie){
   // let string = JSON.stringify(results,null,  2)
   // fs.writeFileSync('./data/csetforetell-questions.json', string);
   // console.log(results)
-  await upsert(results, "csetforetell-questions")
+  if(results.length > 0){
+    await upsert(results, "csetforetell-questions")
+  }else{
+    console.log("Not updating results, as process was not signed in")
+  }
   
   let end = Date.now()
   let difference = end-init
