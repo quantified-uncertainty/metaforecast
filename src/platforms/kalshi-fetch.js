@@ -15,7 +15,7 @@ async function fetchAllContractInfo(){ // for info which the polymarket graphql 
 }
  */
 async function fetchAllMarkets() { // for info which the polymarket graphql API
-  let response = await axios.get('https://trading-api.kalshi.com/v1/cached/markets/').then(response => response.data.markets)
+  let response = await axios.get(jsonEndpoint).then(response => response.data.markets)
   // console.log(response)
   return response
 }
