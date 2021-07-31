@@ -1,4 +1,5 @@
 import {astralcodexten} from "../platforms/astralcodexten-fetch.js"
+import {betfair} from "../platforms/betfair-fetch.js"
 import {coupcast} from "../platforms/coupcast-fetch.js"
 import {csetforetell} from "../platforms/csetforetell-fetch.js"
 import {elicit} from "../platforms/elicit-fetch.js"
@@ -38,7 +39,7 @@ export async function tryCatchTryAgain (fun) {
     }
 }
 export async function doEverything(){
-    let functions = [coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, /* goodjudgment, */ goodjudgmentopen, hypermind, ladbrokes, kalshi, metaculus, omen, polymarket, predictit, rootclaim, smarkets, williamhill, mergeEverything, updateHistory, rebuildNetlifySiteWithNewData] 
+    let functions = [betfair, coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, /* goodjudgment, */ goodjudgmentopen, hypermind, ladbrokes, kalshi, metaculus, omen, polymarket, predictit, rootclaim, smarkets, williamhill, mergeEverything, updateHistory, rebuildNetlifySiteWithNewData] 
     // Removed Good Judgment from the fetcher, doing it using cron instead because cloudflare blocks the utility on heroku.
 
     console.log("")

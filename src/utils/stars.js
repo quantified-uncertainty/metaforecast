@@ -36,6 +36,22 @@ function calculateStarsAstralCodexTen(data) {
   return starsInteger
 }
 
+function calculateStarsBetfair(data) {
+  let nuno = data => data.volume > 1000 ? 3 : 2
+  let eli = (data) => data.volume > 10000 ? 5 : 4
+  let misha = (data) => 3.5
+  let starsDecimal = average([nuno(data), eli(data), misha(data)])
+  // Substract 1 star if probability is above 90% or below 10%
+  if(data.option &&
+    (data.option.probability < 0.1 || data.option.probability > 0.9)
+  ){
+    starsDecimal = starsDecimal - 1
+  }
+  
+  let starsInteger = Math.round(starsDecimal)
+  return starsInteger
+}
+
 function calculateStarsCoupCast(data) {
   let nuno = (data) => 3
   let starsDecimal = average([nuno(data)]) //, eli(data), misha(data)])
@@ -215,6 +231,9 @@ export function calculateStars(platform, data) {
   switch (platform) {
     case "AstralCodexTen":
       stars = calculateStarsAstralCodexTen(data)
+      break;
+    case "Betfair":
+      stars = calculateStarsBetfair(data)
       break;
     case "CoupCast":
       stars = calculateStarsCoupCast(data)

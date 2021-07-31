@@ -3,6 +3,7 @@ import fs from 'fs'
 import readline from "readline"
 
 import {astralcodexten} from "./platforms/astralcodexten-fetch.js"
+import {betfair} from "./platforms/betfair-fetch.js"
 import {coupcast} from "./platforms/coupcast-fetch.js"
 import {csetforetell} from "./platforms/csetforetell-fetch.js"
 import {elicit} from "./platforms/elicit-fetch.js"
@@ -27,7 +28,7 @@ import {rebuildNetlifySiteWithNewData} from "./utils/rebuildNetliftySiteWithNewD
 import {doEverything, tryCatchTryAgain} from "./utils/doEverything.js"
 
 /* Support functions */
-let functions = [astralcodexten, coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, kalshi, ladbrokes, metaculus, omen, polymarket, predictit, rootclaim, smarkets, williamhill, mergeEverything, updateHistory, rebuildNetlifySiteWithNewData, doEverything]
+let functions = [astralcodexten, betfair, coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, kalshi, ladbrokes, metaculus, omen, polymarket, predictit, rootclaim, smarkets, williamhill, mergeEverything, updateHistory, rebuildNetlifySiteWithNewData, doEverything]
 let functionNames =  functions.map(fun => fun.name)
 
 let whattodoMessage = functionNames

@@ -10,7 +10,7 @@ let endpoint = 'https://example.com/'
 
 /* Support functions */
 
-async function fetchPredictions() {
+async function fetchData() {
   let response = await axios({
     url: endpoint,
     method: 'GET',
@@ -59,8 +59,8 @@ async function processPredictions(predictions) {
 /* Body */
 
 export async function example() {
-  let predictions = await fetchPredictions()
-  let results = await processPredictions(predictions) // somehow needed
+  let data = await fetchData()
+  let results = await processPredictions(data) // somehow needed
   // console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polyprediction-questions.json', string);
