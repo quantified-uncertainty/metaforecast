@@ -74,8 +74,12 @@ async function whipIntoShape(data){
 
 async function processPredictions(data) {
   let predictions = await whipIntoShape(data)
-  console.log(JSON.stringify(predictions, null, 4))
+  // console.log(JSON.stringify(predictions, null, 4))
   let results = predictions.map(prediction => {
+    /* if(Math.floor(Math.random() * 10) % 20 ==0){
+       console.log(JSON.stringify(prediction, null, 4))
+    } */
+    
     let normalizationFactor =  (prediction.options
       .filter(option => option.status == "ACTIVE" && option.totalMatched > 0)
       .map(option => option.lastPriceTraded))
@@ -100,7 +104,7 @@ async function processPredictions(data) {
       .replace(/\n/g, " ")
       .trim()
     if(rules == undefined){
-      console.log(prediction.description)
+      // console.log(prediction.description)
     }
     let title = rules.split("? ")[0] + "?"
     let description = rules.split("? ")[1].trim()
@@ -109,7 +113,7 @@ async function processPredictions(data) {
     }
     let result = ({
       "title": title,
-      "url": `https://betfair.com`,
+      "url": `https://www.betfair.com/exchange/plus/politics/market/${prediction.marketId}`,
       "platform": "Betfair",
       "description": description,
       "options": options,

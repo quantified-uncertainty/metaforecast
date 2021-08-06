@@ -123,7 +123,7 @@ async function fetchStats(questionUrl, cookie){
     "timestamp": new Date().toISOString(),
     "qualityindicators": {
       "numforecasts": numforecasts,
-      "numforecasters": numforecasters,
+      "num_forecasters": numforecasters,
       "stars": calculateStars("CSET-foretell", {numforecasts})
     }
   }
