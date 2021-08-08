@@ -107,14 +107,15 @@ async function fetchStats(questionUrl, cookie) {
   return result
 }
 
-function isNotSignedIn(html){
+function isSignedIn(html){
 
-  let isNotSignedInBool = html.includes("You need to sign in or sign up before continuing") || html.includes("Sign up")
-  if(isNotSignedIn){
+  let isSignedInBool = !( html.includes("You need to sign in or sign up before continuing") || html.includes("Sign up") )
+  // console.log(html)
+  if(!isSignedInBool){
     console.log("Error: Not signed in.")
   }
-  console.log(`isNotSignedIn? ${isNotSignedInBool}`)
-  return isNotSignedInBool
+  console.log(`is signed in? ${isSignedInBool}`)
+  return isSignedInBool
 }
 
 function isEnd(html){
@@ -138,7 +139,7 @@ async function goodjudgmentopen_inner(cookie) {
   let results = []
   let init = Date.now()
   // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
-  while(!isEnd(response) && !isNotSignedIn(response)){
+  while(!isEnd(response) && isSignedIn(response)){
     // console.log(`Page #${i}`)
     let htmlLines = response.split("\n")
     let h5elements = htmlLines.filter(str => str.includes("<h5><a href="))
