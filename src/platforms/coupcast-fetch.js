@@ -8,7 +8,7 @@ import {calculateStars} from "../utils/stars.js"
 import {upsert} from "../utils/mongo-wrapper.js"
 
 /* Definitions */
-let coupCastEndpoint = "https://www.oneearthfuture.org/sites/all/themes/stability/stability_sub/data/dashboard_2021_code_05.csv"
+let coupCastEndpoint = "https://www.oneearthfuture.org/sites/all/themes/stability/stability_sub/data/dashboard_2021_code_06.csv"
 var datenow = new Date();
 var currentmonth = datenow.getMonth() + 1; 
 
@@ -64,7 +64,7 @@ async function processArray(countryArray) {
         "title": `Will there be a coup in ${country.country_name} in the next month (as of ${country.month}/${country.year})?`,
         "url": url,
         "platform": "CoupCast",
-        "description": `. The current leader of ${country.country_name} is ${country.leader_name}, who has been in power for ${Number(country.leader_years).toFixed(1)} years.  ${country.country_name} has a ${(country.regime_type).toLowerCase()} regime type which has lasted for ${country.regime_years} years`,
+        "description": `The current leader of ${country.country_name} is ${country.leader_name}, who has been in power for ${Number(country.leader_years).toFixed(1)} years.  ${country.country_name} has a ${(country.regime_type).toLowerCase()} regime type which has lasted for ${country.regime_years} years.`,
         "options": [
           {
             "name": "Yes",
@@ -102,7 +102,7 @@ async function processArray(countryArray) {
         "title": `Will there be a coup in ${country.country_name} in the next year (as of ${country.month}/${country.year})?`,
         "url": url,
         "platform": "CoupCast",
-        "description": `. The current leader of ${country.country_name} is ${country.leader_name}, who has been in power for ${Number(country.leader_years).toFixed(1)} years. ${country.country_name} has a ${(country.regime_type).toLowerCase()} regime type which has lasted for ${country.regime_years} years`,
+        "description": `The current leader of ${country.country_name} is ${country.leader_name}, who has been in power for ${Number(country.leader_years).toFixed(1)} years. ${country.country_name} has a ${(country.regime_type).toLowerCase()} regime type which has lasted for ${country.regime_years} years`,
         "options": [
           {
             "name": "Yes",

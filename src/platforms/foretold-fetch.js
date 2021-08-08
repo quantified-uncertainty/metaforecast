@@ -80,7 +80,7 @@ export async function foretold(){
           "options": options,
           "timestamp": new Date().toISOString(),
           "qualityindicators": {
-            "numforecasts": question.measurementCount / 2,
+            "numforecasts": Math.floor(Number(question.measurementCount) / 2),
             "stars": calculateStars("Foretold", ({  }))
             }
           /*liquidity: liquidity.toFixed(2),

@@ -71,7 +71,7 @@ export async function astralcodexten(){
             "type": "PROBABILITY"
           }
         ]
-      }
+      } 
       let result = {
           "title": question.name.split(". ")[1],
           "url": `https://www.foretold.io/c/${community}/m/${question.id}`,
@@ -80,7 +80,7 @@ export async function astralcodexten(){
           "options": options,
           "timestamp": new Date().toISOString(),
           "qualityindicators": {
-            "numforecasts": (question.measurementCount +1) / 2,
+            "numforecasts": Number((question.measurementCount +1) / 2),
             "stars": calculateStars("AstralCodexTen", ({  }))
             }
           /*liquidity: liquidity.toFixed(2),

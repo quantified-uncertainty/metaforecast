@@ -111,7 +111,7 @@ export async function metaculus() {
           "options": options,
           "timestamp": new Date().toISOString(),
           "qualityindicators": {
-            "numforecasts": result.number_of_predictions,
+            "numforecasts": Number(result.number_of_predictions),
             "resolution_data": {
               "publish_time": result.publish_time,
               "resolution": result.resolution,

@@ -99,8 +99,8 @@ async function fetchStats(questionUrl, cookie) {
     "options": options,
     "timestamp": new Date().toISOString(),
     "qualityindicators": {
-      "numforecasts": numforecasts,
-      "numforecasters": numforecasters,
+      "numforecasts": Number(numforecasts),
+      "numforecasters": Number(numforecasters),
       "stars": calculateStars("Good Judgment Open", ({ numforecasts, minProbability, maxProbability }))
     }
   }

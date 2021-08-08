@@ -73,8 +73,8 @@ async function processArray(arrayQuestions) {
         ],
         "timestamp": new Date().toISOString(),
         "qualityindicators": {
-          "numforecasts": numforecasts,
-          "numforecasters": numforecasters,
+          "numforecasts": Number(numforecasts),
+          "numforecasters": Number(numforecasters),
           "stars": calculateStars("Elicit", ({}))
         }
       })

@@ -1,7 +1,14 @@
+## Node modules
 node_modules/
 
+## Security
 **/betfaircertificates/
 **/privatekeys.json
 
+## Personal notes
 possiblenewsources.md
 NotesHeroku.md
+AlgoliaNotes.md
+
+## Build artifacts
+done.txt

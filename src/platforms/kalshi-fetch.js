@@ -22,6 +22,9 @@ async function fetchAllMarkets() { // for info which the polymarket graphql API
 
 
 async function processMarkets(markets) {
+  let dateNow = new Date().toISOString()
+  // console.log(markets)
+  markets = markets.filter(market => market.close_date > dateNow)
   let results = await markets.map(market => {
     let probability = market.last_price/100
     let options = [
@@ -54,6 +57,12 @@ async function processMarkets(markets) {
     })
     return result
   })
+  //console.log(results.length)
+  console.log(results.map(result => result.title))
+  console.log(results.map(result => result.title).length)
+  console.log([...new Set(results.map(result => result.title))])
+  console.log([...new Set(results.map(result => result.title))].length)
+  // console.log([...new Set(results.map(result => result.title))].length)
   return results //resultsProcessed
 }
 

@@ -24,19 +24,21 @@ import {smarkets} from "./platforms/smarkets-fetch.js"
 import {williamhill} from "./platforms/williamhill-fetch.js"
 import {mergeEverything} from "./utils/mergeEverything.js"
 import {updateHistory} from "./utils/history/updateHistory.js"
+import {rebuildAlgoliaDatabase} from "./utils/algolia.js"
 import {rebuildNetlifySiteWithNewData} from "./utils/rebuildNetliftySiteWithNewData.js"
 import {doEverything, tryCatchTryAgain} from "./utils/doEverything.js"
 
 /* Support functions */
-let functions = [astralcodexten, betfair, coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, kalshi, ladbrokes, metaculus, omen, polymarket, predictit, rootclaim, smarkets, williamhill, mergeEverything, updateHistory, rebuildNetlifySiteWithNewData, doEverything]
+let functions = [astralcodexten, betfair, coupcast, csetforetell, elicit, /* estimize, */ fantasyscotus,  foretold, goodjudgment, goodjudgmentopen, hypermind, kalshi, ladbrokes, metaculus, omen, polymarket, predictit, rootclaim, smarkets, williamhill, mergeEverything, updateHistory, rebuildAlgoliaDatabase, rebuildNetlifySiteWithNewData, doEverything]
 let functionNames =  functions.map(fun => fun.name)
 
 let whattodoMessage = functionNames
-    .slice(0,functionNames.length-4)
+    .slice(0,functionNames.length-5)
     .map((functionName,i) => `[${i}]: Download predictions from ${functionName}`)
     .join('\n') +
-  `\n[${functionNames.length-4}]: Merge jsons them into one big json (and push it to mongodb database)` + 
-  `\n[${functionNames.length-3}]: Update history` + 
+  `\n[${functionNames.length-5}]: Merge jsons them into one big json (and push it to mongodb database)` + 
+  `\n[${functionNames.length-4}]: Update history` + 
+  `\n[${functionNames.length-3}]: Rebuild algolia database ("index")` + 
   `\n[${functionNames.length-2}]: Rebuild netlify site with new data` + 
   // `\n[${functionNames.length-1}]: Add to history` + 
   `\n[${functionNames.length-1}]: All of the above` + 

@@ -7,7 +7,7 @@ let main = async () => {
   let string = JSON.stringify(json, null, 2)
   fs.writeFileSync('metaforecasts.json', string);
 }
-// main()
+main()
 
 let extractQualityIndicators = async () => {
   let json = await mongoReadWithReadCredentials("metaforecasts")
@@ -18,4 +18,4 @@ let extractQualityIndicators = async () => {
   // let string = JSON.stringify(json, null, 2)
   // fs.writeFileSync('metaforecasts.json', string);
 }
-extractQualityIndicators()
+// extractQualityIndicators()

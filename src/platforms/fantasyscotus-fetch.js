@@ -87,7 +87,7 @@ async function processData(data) {
               ],
         "timestamp": new Date().toISOString(),
         "qualityindicators": {
-          "numforecasts": predictionData.numForecasts,
+          "numforecasts": Number(predictionData.numForecasts),
           "stars": calculateStars("FantasySCOTUS", ({}))
         }
       })

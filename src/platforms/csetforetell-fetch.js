@@ -122,8 +122,8 @@ async function fetchStats(questionUrl, cookie){
     "options": options,
     "timestamp": new Date().toISOString(),
     "qualityindicators": {
-      "numforecasts": numforecasts,
-      "num_forecasters": numforecasters,
+      "numforecasts":Number(numforecasts),
+      "numforecasters":Number(numforecasters),
       "stars": calculateStars("CSET-foretell", {numforecasts})
     }
   }
