@@ -4,7 +4,9 @@ import textVersion from "textversionjs"
 /* Definitions */
 var styleConfig = {
     linkProcess: function(href, linkText){
-        return `[${linkText}](${href})`;
+      let newHref = href ? href.replace(/\(/g, "%28").replace(/\)/g, "%29") : "" 
+        // Deal corretly in markdown with links that contain parenthesis
+      return `[${linkText}](${newHref})`;
     },
 }
 
