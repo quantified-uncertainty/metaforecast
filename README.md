@@ -21,12 +21,33 @@ The following variables are currently needed to run the `master` branch:
 - `CSETFORETELL_COOKIE`
 - `GOODJUDGMENTOPENCOOKIE`
 - `HYPERMINDCOOKIE`
+- `ALGOLIA_MASTER_API_KEY`, a string of 32 alphanumeric characters, like `6ofolyptm956j9uuev3q4v81vjbqrkp2` (not an actual key)
 
-They can either be stored as process variables (e.g., something that can be accessed as `process.env.<variable name>`), or as text in `src/input/privatekeys.json`, in the same format as `src/input/privatekeys_example.json`. These session cookies are necessary to query CSET-foretell, Good Judgment Open and Hypermind, and to access the MongoDB database I'm using to save data and history. You can get these cookies by creating an account in said platforms and then making and inspecting a request (e.g., by making a prediction, or browsing questions). After doing this, you should create the environment variables.
+They can either be stored as process variables (e.g., something that can be accessed as `process.env.<variable name>`), or as text in `src/input/privatekeys.json`, in the same format as `src/input/privatekeys_example.json`.  
+- Some of these are just session cookies, necessary to query CSET-foretell, Good Judgment Open and Hypermind. You can get these cookies by creating an account in said platforms and then making and inspecting a request (e.g., by making a prediction, or browsing questions).
+- Others interface with services, e.g., to access the MongoDB database I'm using to save data and history, or to renew the algolia database. You can get these keys by creating an account with those services.
+
+Note that not all of these cookies are needed to use all parts of the source code. For instance, to download Polymarket data, one could just interface with the polymarket code. In particular, the code in this repository contains code to with the mongo database using read permissions, which are freely available.
 
 ### 3. Actually run
 
-From the top level directory, enter: `npm run start`
+```
+$ git clone https://github.com/QURIresearch/metaforecasts
+$ cd metaforecasts
+$ npm install
+$ npm run start
+```
+
+`npm run start` presents the user with choices; if you would like to skip each step, use the option number instead, e.g., `npm run start 14`
+
+### 4. Example: download the metaforecasts database
+
+```
+$ git clone https://github.com/QURIresearch/metaforecasts
+$ cd metaforecasts
+$ npm install
+$ node src/utils/manualDownloadFromMongo.js
+```
 
 ## What are "stars" and how are they computed
 
@@ -36,8 +57,7 @@ With regards the quality, I am most uncertain about Smarkets, Hypermind, Ladbrok
 
 ## Various notes
 
-- Right now, I'm fetching only a couple of common properties, such as the title, url, platform, whether a question is binary (yes/no), its percentage, and the number of forecasts. However, the code contains more fields commented out, such as trade volume, liquidity, etc. 
-- A note as to quality: Tentatively, Good Judgment >> Good Judgment Open ~ Metaculus > CSET > PredictIt ~> Polymarket >> Elicit > Omen. 
-- I'm not really sure where Hypermind falls in that spectrum.
+- Right now, I'm fetching only a couple of common properties, such as the title, url, platform, whether a question is binary (yes/no), its percentage, and the number of forecasts. 
 - For elicit and metaculus, this library currently filters questions with <10 predictions.
-- Omen *does* have very few active predictions at the moment; this is not a mistake. 
+- Omen *does* have very few active predictions at the moment; this is not a mistake.
+- Hypermind fetching is currently incomplete.

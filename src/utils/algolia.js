@@ -1,9 +1,11 @@
 import algoliasearch from 'algoliasearch';
+import {getCookie} from "./getCookies.js"
 import fs from "fs"
 
 import { mongoReadWithReadCredentials } from "./mongo-wrapper.js"
 
-const client = algoliasearch('96UD3NTQ7L', process.env.ALGOLIA_MASTER_API_KEY); // delete this when committing
+let cookie = process.env.ALGOLIA_MASTER_API_KEY || getCookie("algolia")
+const client = algoliasearch('96UD3NTQ7L', cookie); // delete this when committing
 const index = client.initIndex('metaforecast');
 
 export async function rebuildAlgoliaDatabase(){
