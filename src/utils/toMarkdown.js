@@ -18,4 +18,4 @@ export default function toMarkdown(htmlText){
   return textVersion(htmlText, styleConfig);
 }
 
-toMarkdown()
+// toMarkdown()

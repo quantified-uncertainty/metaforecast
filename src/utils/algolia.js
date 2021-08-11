@@ -10,7 +10,7 @@ const client = algoliasearch('96UD3NTQ7L', cookie); // delete this when committi
 const index = client.initIndex('metaforecast');
 
 
-export async function rebuildAlgoliaDatabase(){
+export async function rebuildAlgoliaDatabaseTheHardWay(){
   console.log("Doing this the hard way")
   let records = await mergeEverythingInner()
   records = records.map((record, index) => ({...record, has_numforecasts: record.numforecasts ? true : false, objectID: index}) )
@@ -34,3 +34,5 @@ export async function rebuildAlgoliaDatabaseTheEasyWay(){
     console.log(`Pushed ${records.length} records. Algolia will update asynchronously`)
   }
 }
+
+export const rebuildAlgoliaDatabase = rebuildAlgoliaDatabaseTheHardWay

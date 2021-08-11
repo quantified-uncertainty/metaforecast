@@ -110,6 +110,7 @@ async function hypermind_inner(cookie) {
         "timestamp": new Date().toISOString(),
         "qualityindicators": {
           "stars": calculateStars("Hypermind", ({})),
+          // "numforecasters": res.fcsterCnt
         }
       })
     })
@@ -120,7 +121,7 @@ async function hypermind_inner(cookie) {
   // Hypermind panelists and competitors; dashboard type two: "showcase"
   // https://prod.hypermind.com/ngdp/fr/showcase2/showcase.html?sc=SLUG
   // E.g., https://prod.hypermind.com/ngdp/fr/showcase2/showcase.html?sc=AI2023
-  let slugs2 = [ "Covid19", "DOSES", "H5N8", "NGDP", "JSAI", "AI2023", "AI2030"]
+  let slugs2 = [ "Covid19" , "DOSES", "H5N8", "NGDP", "JSAI", "AI2023", "AI2030" ]
   let results2 = []
   for(let slug of slugs2){
     console.log(slug)
@@ -129,16 +130,20 @@ async function hypermind_inner(cookie) {
     let objs = response.map(result => {
       let descriptionraw = result.props.details.split("<hr size=1>")[0]
       let descriptionprocessed1 = toMarkdown(descriptionraw)
-      let descriptionprocessed2 = descriptionprocessed1.split("![image]")[0]
-      let description = descriptionprocessed2
+      let descriptionprocessed2 = descriptionprocessed1.replaceAll("![image] ()", "")
+      let descriptionprocessed3 = descriptionprocessed2.replaceAll(" Forecasting Schedule ", "")
+      let descriptionprocessed4 = descriptionprocessed3.replaceAll("\n", "")
+      let descriptionprocessed5 = descriptionprocessed4.replaceAll("Context: ", "")
+      let description = descriptionprocessed5 || toMarkdown(result.props.details)
       return ({
         "title": result.props.title,
-        "url": "https://prod.hypermind.com/ngdp/en/showcase/showcase.html",
+        "url": "https://prod.hypermind.com/ngdp/fr/showcase2/showcase.html?sc="+slug,
         "platform": "Hypermind",
         "description": description,
         "options": [],
         "qualityindicators": {
           "stars": calculateStars("Hypermind", ({})),
+          "numforecasters": Number(result.fcsterCnt)
         }
       })
     })
