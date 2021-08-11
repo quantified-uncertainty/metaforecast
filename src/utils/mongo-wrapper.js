@@ -53,17 +53,19 @@ export async function upsert (contents, documentName, collectionName="metaforeca
           "timestamp": new Date().toISOString(),
           "contentsArray": contents
         })
+
         // Create a filter
         const filter = { "name": documentName };
     
         // Insert a single document, wait for promise so we can read it back
         // const p = await collection.insertOne(metaforecastDocument);
         await collection.replaceOne(filter, document, { upsert: true });
-        
+        console.log(`Pushed document ${documentName} in collection ${collectionName} in database ${databaseName} with approximate size ${roughSizeOfObject(document)} MB`)
+
         // Find one document
         const myDocument = await collection.findOne(filter);
         // Print to the console
-        console.log(`Updating document ${documentName} in collection ${collectionName} in database ${databaseName} with approximate size ${roughSizeOfObject(contents)} MB`)
+        console.log(`Received document ${documentName} in collection ${collectionName} in database ${databaseName} with approximate size ${roughSizeOfObject(contents)} MB`)
         console.log("Sample: ")
         console.log(JSON.stringify(myDocument.contentsArray.slice(0,1), null, 4));
       } catch (err) {

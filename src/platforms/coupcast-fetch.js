@@ -135,9 +135,10 @@ async function processArray(countryArray) {
         }
       })
 
-      results.push(processedPrediction1)
+      // results.push(processedPrediction1)
+      // Not pushing monthly 
       results.push(processedPrediction2)
-      }
+    }
   }
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/elicit-questions.json', string);

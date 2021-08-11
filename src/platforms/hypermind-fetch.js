@@ -158,6 +158,7 @@ async function hypermind_inner(cookie) {
   }
   // console.log(resultsTotal)
   console.log(resultsTotalUnique)
+  console.log(resultsTotalUnique.length, "results")
   // let string = JSON.stringify(resultsTotalUnique, null, 2)
   // fs.writeFileSync('./data/hypermind-questions.json', string);
   await upsert(resultsTotalUnique, "hypermind-questions")
