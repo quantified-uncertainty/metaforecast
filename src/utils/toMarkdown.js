@@ -2,6 +2,8 @@
 import textVersion from "textversionjs"
 
 /* Definitions */
+String.prototype.replaceAll = function replaceAll(search, replace) { return this.split(search).join(replace); }
+
 var styleConfig = {
     linkProcess: function(href, linkText){
       let newHref = href ? href.replace(/\(/g, "%28").replace(/\)/g, "%29") : "" 
@@ -15,7 +17,9 @@ var styleConfig = {
 /* Body */
 
 export default function toMarkdown(htmlText){
-  return textVersion(htmlText, styleConfig);
+  let html2 = htmlText.replaceAll(`='`, `="`).replaceAll(`'>`, `">`)
+  return textVersion(html2, styleConfig);
 }
 
-// toMarkdown()
+// toMarkdown() 
+// console.log(toMarkdown("Context:Many intellectual endeavors require mathematical problem solving, but this skill remains beyond the capabilities of computers. To help advance the art, the <a target=_new href='https://github.com/hendrycks/math/'>MATH</a> dataset offers..."))

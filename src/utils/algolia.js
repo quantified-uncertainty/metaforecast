@@ -35,4 +35,4 @@ export async function rebuildAlgoliaDatabaseTheEasyWay(){
   }
 }
 
-export const rebuildAlgoliaDatabase = rebuildAlgoliaDatabaseTheHardWay
+export const rebuildAlgoliaDatabase = rebuildAlgoliaDatabaseTheEasyWay//rebuildAlgoliaDatabaseTheHardWay

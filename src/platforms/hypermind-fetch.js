@@ -133,7 +133,7 @@ async function hypermind_inner(cookie) {
       let descriptionprocessed2 = descriptionprocessed1.replaceAll("![image] ()", "")
       let descriptionprocessed3 = descriptionprocessed2.replaceAll(" Forecasting Schedule ", "")
       let descriptionprocessed4 = descriptionprocessed3.replaceAll("\n", "")
-      let descriptionprocessed5 = descriptionprocessed4.replaceAll("Context: ", "")
+      let descriptionprocessed5 = descriptionprocessed4.replaceAll("Context:", "")
       let description = descriptionprocessed5 || toMarkdown(result.props.details)
       return ({
         "title": result.props.title,
