@@ -61,7 +61,7 @@ async function fetchHypermindDataShowcases(slug, cookie) {
       //"Cookie": cookie
     },
     "referrer": "https://prod.hypermind.com/ngdp/en/showcase/showcase.html?inFrame=true",
-    "data": `[["showcase","getShowcase",{"showcase":"${slug}","fmt":{"fcsterCnt":true,"crowdFcst":true,"crowdFcstHist":true}}]]`,
+    "data": `[["showcase","getShowcase",{"showcase":"${slug}","fmt":{"fcsterCnt":true,"crowdFcst":true,"crowdFcstHist":false}}]]`,
     "method": "POST",
     "mode": "cors",
     httpsAgent: insecureHttpsAgent
@@ -70,7 +70,7 @@ async function fetchHypermindDataShowcases(slug, cookie) {
     .then(items => items.map(item => item.IFP))
   
   // console.log(response)
-  response.forEach(item => delete item.crowdFcstHist)
+  // response.forEach(item => delete item.crowdFcstHist)
   return response
 }
 
@@ -167,7 +167,7 @@ async function hypermind_inner(cookie) {
     }
   }
   // console.log(resultsTotal)
-  console.log(resultsTotalUnique)
+  // console.log(resultsTotalUnique)
   console.log(resultsTotalUnique.length, "results")
   // let string = JSON.stringify(resultsTotalUnique, null, 2)
   // fs.writeFileSync('./data/hypermind-questions.json', string);
