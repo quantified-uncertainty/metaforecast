@@ -68,16 +68,52 @@ async function fetchHypermindDataShowcases(slug, cookie) {
     }).then(resp => resp.data[0].items)
     .then(items => items.filter(item => item.type == "IFP"))
     .then(items => items.map(item => item.IFP))
+  
+  // console.log(response)
+  response.forEach(item => delete item.crowdFcstHist)
   return response
 }
 
 /* Body */
 async function hypermind_inner(cookie) {
 
+  // Hypermind panelists and competitors; dashboard type two: "showcase"
+  // https://prod.hypermind.com/ngdp/fr/showcase2/showcase.html?sc=SLUG
+  // E.g., https://prod.hypermind.com/ngdp/fr/showcase2/showcase.html?sc=AI2023
+  let slugs2 = [ "AI2030", "Covid19" , "DOSES", "H5N8", "NGDP", "JSAI", "AI2023" ] // []
+  let results2 = []
+  for(let slug of slugs2){
+    console.log(slug)
+    await sleep(1000 + Math.random() * 1000)
+    let response = await fetchHypermindDataShowcases(slug)
+    let objs = response.map(result => {
+      let descriptionraw = result.props.details.split("<hr size=1>")[0]
+      let descriptionprocessed1 = toMarkdown(descriptionraw)
+      let descriptionprocessed2 = descriptionprocessed1.replaceAll("![image] ()", "")
+      let descriptionprocessed3 = descriptionprocessed2.replaceAll(" Forecasting Schedule ", "")
+      let descriptionprocessed4 = descriptionprocessed3.replaceAll("\n", " ").replaceAll("  ", " ")
+      let descriptionprocessed5 = descriptionprocessed4.replaceAll("Context:", "")
+      let description = descriptionprocessed5 || toMarkdown(result.props.details)
+      return ({
+        "title": result.props.title,
+        "url": "https://prod.hypermind.com/ngdp/fr/showcase2/showcase.html?sc="+slug,
+        "platform": "Hypermind",
+        "description": description,
+        "options": [],
+        "qualityindicators": {
+          "stars": calculateStars("Hypermind", ({})),
+          "numforecasters": Number(result.fcsterCnt)
+        }
+      })
+    })
+    // console.log(objs)
+    results2.push(...objs)
+  }
+
   // Prediction markets; dashboard type one.
   // https://predict.hypermind.com/dash/dash/dash.html?list=SLUG
   // e.g., https://predict.hypermind.com/dash/dash/dash.html?list=POL
-  let slugs1 = ["USA", "FRA", "AFR", "INT", "COV", "POL", "ECO"]
+  let slugs1 = ["USA", "FRA", "AFR", "INT", "COV", "POL", "ECO"] // []
   let results1 = []
 
   for (let slug of slugs1) {
@@ -91,7 +127,7 @@ async function hypermind_inner(cookie) {
       let descriptionprocessed3 = descriptionprocessed2.replace("%%en:", "")
       let descriptionprocessed4 = descriptionprocessed3.replace(`Shares of the correct outcome will be worth 100<sup>ℍ</sup>, while the others will be worthless (0<sup>ℍ</sup>).<p>`, "")
       let descriptionprocessed5 = toMarkdown(descriptionprocessed4)
-      let description = descriptionprocessed5.replaceAll("\n", "")
+      let description = descriptionprocessed5.replaceAll("\n", " ").replaceAll("  ", " ")
       //console.log(res.otcms)
       //let percentage = (res.otcms.length==2) ? Number(res.otcms[0].price).toFixed(0) +"%" : "none"
       let options = res.otcms.map(option => ({
@@ -118,38 +154,7 @@ async function hypermind_inner(cookie) {
     results1.push(...objs)
   }
 
-  // Hypermind panelists and competitors; dashboard type two: "showcase"
-  // https://prod.hypermind.com/ngdp/fr/showcase2/showcase.html?sc=SLUG
-  // E.g., https://prod.hypermind.com/ngdp/fr/showcase2/showcase.html?sc=AI2023
-  let slugs2 = [ "Covid19" , "DOSES", "H5N8", "NGDP", "JSAI", "AI2023", "AI2030" ]
-  let results2 = []
-  for(let slug of slugs2){
-    console.log(slug)
-    await sleep(1000 + Math.random() * 1000)
-    let response = await fetchHypermindDataShowcases(slug)
-    let objs = response.map(result => {
-      let descriptionraw = result.props.details.split("<hr size=1>")[0]
-      let descriptionprocessed1 = toMarkdown(descriptionraw)
-      let descriptionprocessed2 = descriptionprocessed1.replaceAll("![image] ()", "")
-      let descriptionprocessed3 = descriptionprocessed2.replaceAll(" Forecasting Schedule ", "")
-      let descriptionprocessed4 = descriptionprocessed3.replaceAll("\n", "")
-      let descriptionprocessed5 = descriptionprocessed4.replaceAll("Context:", "")
-      let description = descriptionprocessed5 || toMarkdown(result.props.details)
-      return ({
-        "title": result.props.title,
-        "url": "https://prod.hypermind.com/ngdp/fr/showcase2/showcase.html?sc="+slug,
-        "platform": "Hypermind",
-        "description": description,
-        "options": [],
-        "qualityindicators": {
-          "stars": calculateStars("Hypermind", ({})),
-          "numforecasters": Number(result.fcsterCnt)
-        }
-      })
-    })
-    // console.log(objs)
-    results2.push(...objs)
-  }
+  
 
   let resultsTotal = [...results1, ...results2]
 
