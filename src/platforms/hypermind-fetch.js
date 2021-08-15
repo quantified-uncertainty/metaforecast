@@ -100,6 +100,7 @@ async function hypermind_inner(cookie) {
         "platform": "Hypermind",
         "description": description,
         "options": [],
+        "timestamp": new Date().toISOString(),
         "qualityindicators": {
           "stars": calculateStars("Hypermind", ({})),
           "numforecasters": Number(result.fcsterCnt)
