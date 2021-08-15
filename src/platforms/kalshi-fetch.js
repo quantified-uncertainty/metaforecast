@@ -58,10 +58,10 @@ async function processMarkets(markets) {
     return result
   })
   //console.log(results.length)
-  console.log(results.map(result => result.title))
-  console.log(results.map(result => result.title).length)
+  // console.log(results.map(result => result.title))
+  // console.log(results.map(result => result.title).length)
   console.log([...new Set(results.map(result => result.title))])
-  console.log([...new Set(results.map(result => result.title))].length)
+  console.log("Number of unique questions: ", [...new Set(results.map(result => result.title))].length)
   // console.log([...new Set(results.map(result => result.title))].length)
   return results //resultsProcessed
 }

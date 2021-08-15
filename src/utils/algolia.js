@@ -6,7 +6,7 @@ import { mongoReadWithReadCredentials } from "./mongo-wrapper.js"
 import { mergeEverythingInner } from './mergeEverything.js';
 
 let cookie = process.env.ALGOLIA_MASTER_API_KEY || getCookie("algolia")
-const client = algoliasearch('96UD3NTQ7L', cookie); // delete this when committing
+const client = algoliasearch('96UD3NTQ7L', cookie); 
 const index = client.initIndex('metaforecast');
 
 
