@@ -46,7 +46,7 @@ $ npm run start
 $ git clone https://github.com/QURIresearch/metaforecasts
 $ cd metaforecasts
 $ npm install
-$ node src/utils/manualDownloadFromMongo.js
+$ node src/utils/manualDownload.js
 ```
 
 ## What are "stars" and how are they computed
