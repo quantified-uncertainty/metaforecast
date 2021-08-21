@@ -37,7 +37,7 @@ function calculateStarsAstralCodexTen(data) {
 }
 
 function calculateStarsBetfair(data) {
-  let nuno = data => data.volume > 1000 ? 3 : 2
+  let nuno = data => data.volume > 10000 ? 4 : (data.volume > 1000 ? 3 : 2)
   let eli = (data) => data.volume > 10000 ? null : null
   let misha = (data) => null
   let starsDecimal = average([nuno(data)]) //, eli(data), misha(data)])
@@ -132,9 +132,9 @@ function calculateStarsHypermind(data) {
 }
 
 function calculateStarsKalshi(data) {
-  let nuno = data => data.interest > 1000 && data.volume > 1000 ? 3 : 2
+  let nuno = data => data.interest > 500 && data.volume > 10000 ? 4 : (data.volume > 1000 ? 3 : 2)
   let eli = (data) => data.interest > 10000 ? 5 : 4
-  let misha = (data) => 4
+  // let misha = (data) => 4
   let starsDecimal = average([nuno(data)]) //, eli(data), misha(data)])
   // Substract 1 star if probability is above 90% or below 10%
   if(data.option &&
@@ -175,10 +175,10 @@ function calculateStarsOmen(data) {
 }
 
 function calculateStarsPolymarket(data) {
-  let nuno = data => data.liquidity > 1000 ? 3 : 2
-  let eli = (data) => data.liquidity > 10000 ? 5 : 4
-  let misha = (data) => 4
-  let starsDecimal = average([nuno(data), eli(data), misha(data)])
+  let nuno = data => data.volume > 10000 ? 4 : (data.volume > 1000 ? 3 : 2)
+  // let eli = (data) => data.liquidity > 10000 ? 5 : 4
+  // let misha = (data) => 4
+  let starsDecimal = average([nuno(data)]) //, eli(data), misha(data)])
   // Substract 1 star if probability is above 90% or below 10%
   if(data.option &&
     (data.option.probability < 0.1 || data.option.probability > 0.9)
@@ -191,7 +191,7 @@ function calculateStarsPolymarket(data) {
 }
 
 function calculateStarsPredictIt(data) {
-  let nuno = data => 2
+  let nuno = data => 3
   let eli = (data) => 3.5
   let misha = (data) => 2.5
   let starsDecimal = average([nuno(data), eli(data), misha(data)])

@@ -114,7 +114,7 @@ async function fetch_all() {
           "numforecasts": Number(data.tradesQuantity).toFixed(0),
           "liquidity": liquidity.toFixed(2),
           "tradevolume": tradevolume.toFixed(2),
-          "stars": calculateStars("Polymarket", ({ liquidity, option: options[0] }))  
+          "stars": calculateStars("Polymarket", ({ liquidity, option: options[0], volume: tradevolume}))  
         }
         /*
         address: obj.address
