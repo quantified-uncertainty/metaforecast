@@ -43,7 +43,6 @@ async function fetchStats(questionUrl, cookie){
     }),
   })
   .then(res => res.data)
-  //console.log(response)
   
   if(response.includes("Sign up or sign in to forecast")){
     throw Error("Not logged in")
@@ -131,14 +130,14 @@ async function fetchStats(questionUrl, cookie){
   return result
 }
 
-function isNotSignedIn(html){
+function isSignedIn(html){
   
-  let isNotSignedInBool = html.includes("You need to sign in or sign up before continuing") || html.includes("Sign up")
-  if(isNotSignedInBool){
+  let isSignedInBool = ! ( html.includes("You need to sign in or sign up before continuing") || html.includes("Sign up") )
+  if(!isSignedInBool){
     console.log("Error: Not signed in.")
   }
-  console.log(`isNotSignedIn? ${isNotSignedInBool}`)
-  return isNotSignedInBool
+  console.log(`Signed in? ${isSignedInBool}`)
+  return isSignedInBool
 }
 
 function isEnd(html){
@@ -162,7 +161,7 @@ async function csetforetell_inner(cookie){
   let results = []
   let init = Date.now()
   // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
-  while(!isEnd(response) && !isNotSignedIn(response)){
+  while(!isEnd(response) && isSignedIn(response)){
     
     let htmlLines = response.split("\n")
     let h4elements = htmlLines.filter(str => str.includes("<h5><a href=") || str.includes("<h4><a href=")) 
