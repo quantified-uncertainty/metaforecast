@@ -44,6 +44,7 @@ async function fetchMetaculusQuestionDescription(slug) {
         method: 'get',
         url: "https://www.metaculus.com" + slug
       }).then(response => response.data)
+      // console.log(response)
       return response
     } catch (error) {
       console.log(`We encountered some error when attempting to fetch a metaculus page.`)
@@ -78,10 +79,9 @@ export async function metaculus() {
         (result.publish_time < now) &&
         (now < result.resolve_time)
       ) {
-        // console.log(result)
-        await sleep(5000)
+        await sleep(2000)
         let questionPage = await fetchMetaculusQuestionDescription(result.page_url)
-        let descriptionraw = questionPage.split(`<div class="question__content">`)[1]
+        let descriptionraw = questionPage.split(`<div  class="content" ng-bind-html-compile="qctrl.question.description_html">`)[1] //.split(`<div class="question__content">`)[1]
         let descriptionprocessed1 = descriptionraw.split("</div>")[0]
         let descriptionprocessed2 = toMarkdown(descriptionprocessed1)
         let description = descriptionprocessed2
@@ -127,7 +127,7 @@ export async function metaculus() {
           //"last_activity_time": result.last_activity_time,
         })
         if (Number(result.number_of_predictions) >= 10) {
-          // console.log(interestingInfo)
+          console.log(` ${interestingInfo.title}`)
           all_questions.push(interestingInfo)
           if(!j && (i % 20 == 0)){
             console.log(interestingInfo)
