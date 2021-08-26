@@ -79,7 +79,7 @@ export async function metaculus() {
         (result.publish_time < now) &&
         (now < result.resolve_time)
       ) {
-        await sleep(2000)
+        await sleep(5000)
         let questionPage = await fetchMetaculusQuestionDescription(result.page_url)
         let descriptionraw = questionPage.split(`<div  class="content" ng-bind-html-compile="qctrl.question.description_html">`)[1] //.split(`<div class="question__content">`)[1]
         let descriptionprocessed1 = descriptionraw.split("</div>")[0]
