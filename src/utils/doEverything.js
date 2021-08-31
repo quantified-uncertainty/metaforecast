@@ -24,12 +24,16 @@ import {rebuildAlgoliaDatabase} from "./algolia.js"
 import {rebuildNetlifySiteWithNewData} from "./rebuildNetliftySiteWithNewData.js"
 
 /* Do everything */
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}  
 
 export async function tryCatchTryAgain (fun) {
     try{
         console.log("Initial try")
         await fun()
     }catch (error) {
+        sleep(10000)
         console.log("Second try")
         console.log(error)
         try{
