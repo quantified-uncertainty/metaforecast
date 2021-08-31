@@ -85,11 +85,17 @@ async function fetchStats(questionUrl, cookie){
       let optionsHtmlElement = "<table" + optionsBody + "table>"
       let tablesAsJson = Tabletojson.convert(optionsHtmlElement)
       let firstTable = tablesAsJson[0]
-      options = firstTable.map(element => ({
-        name: element['0'],
-        probability: Number(element['1'].replace("%",""))/100,
-        type: "PROBABILITY"
-      }))
+      if(firstTable){
+        options = firstTable.map(element => ({
+          name: element['0'],
+          probability: Number(element['1'].replace("%",""))/100,
+          type: "PROBABILITY"
+        }))
+      }else{
+        // New type of question, tricky to parse the options
+        // Just leave options = [] for now.
+        // https://www.cset-foretell.com/blog/rolling-question-formats
+      }      
     }
     
   }
