@@ -66,65 +66,68 @@ async function fetch_all() {
   let allData = await fetchAllContractData()
   let allInfo = await fetchAllContractInfo()
 
-  let combinedObj = ({})
-  let results = []
+  let infos = ({})
   for (let info of allInfo) {
     let address = info.marketMakerAddress
     let addressLowerCase = address.toLowerCase()
     //delete info.history
     if (info.outcomes[0] != "Long" || info.outcomes[1] != "Long")
-      combinedObj[addressLowerCase] = {
+      infos[addressLowerCase] = {
         title: info.question,
         url: "https://polymarket.com/market/" + info.slug,
         address: address,
         description: info.description,
         outcomes: info.outcomes,
-        options: []
+        options: [],
+        category: info.category
       }
   }
+
+  let results = []
   for (let data of allData) {
     let addressLowerCase = data.id
     // console.log(data)
-    if (combinedObj[addressLowerCase] != undefined) {
+    if (infos[addressLowerCase] != undefined) {
       // console.log(addressLowerCase)
-      let obj = combinedObj[addressLowerCase]
-      let numforecasts = data.tradesQuantity
-      let isbinary = Number(data.conditions[0].outcomeSlotCount) == 2
+      let info = infos[addressLowerCase]
+      let numforecasts = Number(data.tradesQuantity)
       let tradevolume = (Number(data.collateralBuyVolume) + Number(data.collateralSellVolume)) / units
       let liquidity = Number(data.liquidityParameter) / units
-      let percentage = Number(data.outcomeTokenPrices[0]) * 100
-      let percentageFormatted = isbinary ? (percentage.toFixed(0) + "%") : "none"
+      // let isbinary = Number(data.conditions[0].outcomeSlotCount) == 2
+      // let percentage = Number(data.outcomeTokenPrices[0]) * 100
+      // let percentageFormatted = isbinary ? (percentage.toFixed(0) + "%") : "none"
       let options = []
       for (let outcome in data.outcomeTokenPrices) {
         options.push({
-          "name": obj.outcomes[outcome],
+          "name": info.outcomes[outcome],
           "probability": data.outcomeTokenPrices[outcome],
           "type": "PROBABILITY"
         })
       }
 
-      combinedObj[addressLowerCase] = {
-        "title": obj.title,
-        "url": obj.url,
+      let result = ({
+        "title": info.title,
+        "url": info.url,
         "platform": "PolyMarket",
-        "description": obj.description,
+        "description": info.description,
         "options": options,
         "timestamp": new Date().toISOString(),
         "qualityindicators": {
-          "numforecasts": Number(data.tradesQuantity).toFixed(0),
+          "numforecasts": numforecasts.toFixed(0),
           "liquidity": liquidity.toFixed(2),
           "tradevolume": tradevolume.toFixed(2),
           "stars": calculateStars("Polymarket", ({ liquidity, option: options[0], volume: tradevolume}))  
         }
         /*
-        address: obj.address
+        address: info.address
         */
+      })
+      if(info.category != "Sports"){
+        // console.log(result)
+        results.push(result)
       }
-      results.push(combinedObj[addressLowerCase])
     }
   }
-  // let resultsProcessed = Object.values(combinedObj)
-  // console.log(result)
   return results //resultsProcessed
 }
 
@@ -132,7 +135,6 @@ async function fetch_all() {
 export async function polymarket() {
   let results = await fetch_all()
   // console.log(results)
-  // console.log(result)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polymarket-questions.json', string);
   await upsert(results, "polymarket-questions")
