@@ -47,12 +47,12 @@ async function processMarkets(markets) {
       "options": options,
       "timestamp": new Date().toISOString(),
       "qualityindicators": {
-          "stars": calculateStars("Kalshi", ({volume: market.volume, interest: market.open_interest})),
+          "stars": calculateStars("Kalshi", ({shares_volume: market.volume, interest: market.open_interest})),
           "yes_bid": market.yes_bid,
           "yes_ask": market.yes_ask,
           "spread": Math.abs(market.yes_bid-market.yes_ask),
-          "volume": market.volume,
-          "open_interest": market.open_interest
+          "shares_volume": market.volume, // Assuming that half of all buys are for yes and half for no, which is a big if.
+          // "open_interest": market.open_interest, also in shares
       }
     })
     return result

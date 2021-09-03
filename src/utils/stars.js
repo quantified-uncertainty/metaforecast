@@ -132,8 +132,8 @@ function calculateStarsHypermind(data) {
 }
 
 function calculateStarsKalshi(data) {
-  let nuno = data => data.interest > 500 && data.volume > 10000 ? 4 : (data.volume > 1000 ? 3 : 2)
-  let eli = (data) => data.interest > 10000 ? 5 : 4
+  let nuno = data => data.interest > 500 && data.shares_volume > 10000 ? 4 : (data.shares_volume > 2000 ? 3 : 2)
+  // let eli = (data) => data.interest > 10000 ? 5 : 4
   // let misha = (data) => 4
   let starsDecimal = average([nuno(data)]) //, eli(data), misha(data)])
   // Substract 1 star if probability is above 90% or below 10%

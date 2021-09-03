@@ -21,9 +21,10 @@ export async function goodjudgment() {
     let jsonTable = Tabletojson.convert(content, { stripHtmlFromCells: false })
     jsonTable.shift() // deletes first element
     jsonTable.pop() // deletes last element
-    if (endpoint == endpoints[1]) jsonTable.pop() // pop again
-    //console.log(jsonTable)
+    if (endpoint == endpoints[1]) jsonTable.pop() // pop again\
+    // console.log(jsonTable)
     for (let table of jsonTable) {
+      // console.log(table)
       let title = table[0]['0']
         .split("\t\t\t")
         .splice(3)[0]
@@ -50,7 +51,11 @@ export async function goodjudgment() {
           probability: Number(row['3'].split("%")[0]) / 100,
           type: "PROBABILITY"
         }))
-      let analysis = table.filter(row => row[0].includes("Examples of Superforecaster commentary"))[0][0]
+      let analysis = table.filter(row => row[0]? row[0].toLowerCase().includes("commentary") : false)
+        // "Examples of Superforecaster Commentary" / Analysis
+      // The following is necessary twite, because we want to check if there is an empty list, and then get the first element of the first element of the list.
+      analysis = analysis ? analysis[0] : ""
+      analysis = analysis ? analysis[0] : "" 
       // console.log(analysis)
       let standardObj = ({
         "title": title,
@@ -63,7 +68,7 @@ export async function goodjudgment() {
           "stars": calculateStars("Good Judgment", ({})),
         },
         "extra": {
-          "superforecastercommentary": analysis
+          "superforecastercommentary": analysis || ""
         }
       })
       results.push(standardObj)
@@ -73,7 +78,7 @@ export async function goodjudgment() {
   let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/goodjudgment-questions.json', string);
   // fs.writeFileSync('./goodjudgment-questions-test.json', string);
-  // console.log(results)
+  console.log(results)
   await upsert(results, "goodjudgment-questions")
   console.log("Done")
 }
