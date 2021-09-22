@@ -13,7 +13,7 @@ const DEBUG_MODE = "off" // "on"
 /* Support functions */
 
 async function fetchPage(page, cookie){
-  console.log(page)
+  console.log(`Page #${page}`)
   if(page==1){
     cookie=cookie.split(";")[0] // Interesting that it otherwise doesn't work :(
   }

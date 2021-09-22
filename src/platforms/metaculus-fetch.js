@@ -70,7 +70,7 @@ export async function metaculus() {
       console.log("Sleeping for 5secs")
       await sleep(5000)
     }
-    console.log(`Query #${i}`)
+    console.log(`\nQuery #${i}`)
     let metaculusQuestions = await fetchMetaculusQuestions(next)
     let results = metaculusQuestions.results;
     let j=false
@@ -127,7 +127,7 @@ export async function metaculus() {
           //"last_activity_time": result.last_activity_time,
         })
         if (Number(result.number_of_predictions) >= 10) {
-          console.log(` ${interestingInfo.title}`)
+          console.log(`- ${interestingInfo.title}`)
           all_questions.push(interestingInfo)
           if(!j && (i % 20 == 0)){
             console.log(interestingInfo)
