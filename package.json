@@ -26,6 +26,7 @@
     "algoliasearch": "^4.10.3",
     "axios": "^0.21.1",
     "fs": "^0.0.1-security",
+    "google-spreadsheet": "^3.1.15",
     "https": "^1.0.0",
     "isomorphic-fetch": "^3.0.0",
     "json2csv": "^5.0.5",
