@@ -8,7 +8,6 @@ import { calculateStars } from "../utils/stars.js"
 import {upsert} from "../utils/mongo-wrapper.js"
 
 /* Definitions */
-const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || getCookie("google-api") // See: https://developers.google.com/sheets/api/guides/authorizing#APIKey
 const SHEET_ID = "1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0" // spreadsheet key is the long id in the sheets URL
 const endpoint = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit#gid=0`
 // https://docs.google.com/spreadsheets/d/1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0/edit#gid=0&range=C4
@@ -44,7 +43,8 @@ async function fetchGoogleDoc(google_api_key){
 		let data = rows[i]._rawData
 		if(data.length == 0) isEnd = true;
 		if(!isEnd){
-			let result = ({...formatRow(data), "url": endpoint + `&range=A${i}`})
+			let result = ({...formatRow(data), "url": endpoint + `&range=A${i + 2}`})
+			// +2: +1 for the header row, +1 for starting at 1 and not at 0.
 			// console.log(result)
 			results.push(result)
 
@@ -115,6 +115,7 @@ export async function wildeford_inner(google_api_key) {
 //example()
 
 export async function wildeford(){
+	const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || getCookie("google-api") // See: https://developers.google.com/sheets/api/guides/authorizing#APIKey
 	await applyIfCookieExists(GOOGLE_API_KEY, wildeford_inner)
 }
 
