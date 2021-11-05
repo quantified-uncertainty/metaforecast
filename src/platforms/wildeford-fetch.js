@@ -43,7 +43,7 @@ async function fetchGoogleDoc(google_api_key){
 		let data = rows[i]._rawData
 		if(data.length == 0) isEnd = true;
 		if(!isEnd){
-			let result = ({...formatRow(data), "url": endpoint + `&range=A${i + 2}`})
+			let result = ({...formatRow(data), "url": endpoint + `&range=A${(Number(i) + 2)}`})
 			// +2: +1 for the header row, +1 for starting at 1 and not at 0.
 			// console.log(result)
 			results.push(result)

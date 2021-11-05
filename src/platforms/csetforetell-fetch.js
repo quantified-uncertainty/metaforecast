@@ -55,8 +55,9 @@ async function fetchStats(questionUrl, cookie) {
   if (isbinary) {
     // Crowd percentage
     let htmlElements = response.split("\n")
-    // console.log(htmlElements)
+    // DEBUG_MODE == "on" ? htmlLines.forEach(line => console.log(line)) : id()
     let h3Element = htmlElements.filter(str => str.includes("<h3>"))[0]
+    // DEBUG_MODE == "on" ? console.log(h5elements) : id()
     let crowdpercentage = h3Element.split(">")[1].split("<")[0]
     let probability = Number(crowdpercentage.replace("%", "")) / 100
     options.push(({
@@ -170,7 +171,10 @@ async function csetforetell_inner(cookie) {
   while (!isEnd(response) && isSignedIn(response)) {
 
     let htmlLines = response.split("\n")
-    let h4elements = htmlLines.filter(str => str.includes("<h5><a href=") || str.includes("<h4><a href="))
+    let h4elements = htmlLines.filter(str => str.includes("<h5> <a href=") || str.includes("<h4> <a href="))
+    //let questionHrefs = htmlLines.filter(str => str.includes("https://www.cset-foretell.com/questions/"))
+    // console.log(questionHrefs)
+
 
     if (process.env.DEBUG_MODE == "on" || DEBUG_MODE == "on") {
       //console.log(response)

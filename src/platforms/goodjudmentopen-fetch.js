@@ -10,6 +10,8 @@ import { upsert } from "../utils/mongo-wrapper.js"
 /* Definitions */
 let htmlEndPoint = 'https://www.gjopen.com/questions?page='
 let annoyingPromptUrls = ["https://www.gjopen.com/questions/1933-what-forecasting-questions-should-we-ask-what-questions-would-you-like-to-forecast-on-gjopen", "https://www.gjopen.com/questions/1779-are-there-any-forecasting-tips-tricks-and-experiences-you-would-like-to-share-and-or-discuss-with-your-fellow-forecasters"]
+const DEBUG_MODE = "off" // "on"
+const id = x => x
 
 /* Support functions */
 
@@ -136,13 +138,15 @@ function sleep(ms) {
 async function goodjudgmentopen_inner(cookie) {
   let i = 1
   let response = await fetchPage(i, cookie)
+  
   let results = []
   let init = Date.now()
   // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
   while(!isEnd(response) && isSignedIn(response)){
-    // console.log(`Page #${i}`)
     let htmlLines = response.split("\n")
-    let h5elements = htmlLines.filter(str => str.includes("<h5><a href="))
+    DEBUG_MODE == "on" ? htmlLines.forEach(line => console.log(line)) : id()
+    let h5elements = htmlLines.filter(str => str.includes("<h5> <a href="))
+    DEBUG_MODE == "on" ? console.log(h5elements) : id()
     let j = 0
     for (let h5element of h5elements) {
       let h5elementSplit = h5element.split('"><span>')
@@ -163,7 +167,7 @@ async function goodjudgmentopen_inner(cookie) {
             "platform": "Good Judgment Open",
             ...moreinfo
           })
-          if(j % 30 == 0){
+          if(j % 30 == 0 || DEBUG_MODE == "on"){
             console.log(`Page #${i}`)
             console.log(question)
           }
@@ -189,7 +193,7 @@ async function goodjudgmentopen_inner(cookie) {
   }
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/goodjudmentopen-questions.json', string);
-
+  console.log(results)
   if(results.length > 0){
     await upsert(results, "goodjudmentopen-questions")
   }else{
