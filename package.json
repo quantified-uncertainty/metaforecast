@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reload": "heroku run:detached node src/utils/doEverythingForScheduler.js"
+
   },
   "repository": {
     "type": "git",

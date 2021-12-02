@@ -79,61 +79,66 @@ export async function metaculus() {
         (result.publish_time < now) &&
         (now < result.resolve_time)
       ) {
-        await sleep(5000)
+        await sleep(5000) 
         let questionPage = await fetchMetaculusQuestionDescription(result.page_url)
-        let descriptionraw = questionPage.split(`<div  class="content" ng-bind-html-compile="qctrl.question.description_html">`)[1] //.split(`<div class="question__content">`)[1]
-        let descriptionprocessed1 = descriptionraw.split("</div>")[0]
-        let descriptionprocessed2 = toMarkdown(descriptionprocessed1)
-        let description = descriptionprocessed2
-
-        let isbinary = result.possibilities.type == "binary"
-        let options = []
-        if (isbinary) {
-          let probability = Number(result.community_prediction.full.q2)
-          options = [
-            {
-              "name": "Yes",
-              "probability": probability,
-              "type": "PROBABILITY"
-            },
-            {
-              "name": "No",
-              "probability": 1 - probability,
-              "type": "PROBABILITY"
+        if(!questionPage.includes("A public prediction by")){
+          let descriptionraw = questionPage.split(`<div  class="content" ng-bind-html-compile="qctrl.question.description_html">`)[1] //.split(`<div class="question__content">`)[1]
+          let descriptionprocessed1 = descriptionraw.split("</div>")[0]
+          let descriptionprocessed2 = toMarkdown(descriptionprocessed1)
+          let description = descriptionprocessed2
+  
+          let isbinary = result.possibilities.type == "binary"
+          let options = []
+          if (isbinary) {
+            let probability = Number(result.community_prediction.full.q2)
+            options = [
+              {
+                "name": "Yes",
+                "probability": probability,
+                "type": "PROBABILITY"
+              },
+              {
+                "name": "No",
+                "probability": 1 - probability,
+                "type": "PROBABILITY"
+              }
+            ]
+          }
+          let interestingInfo = ({
+            "title": result.title,
+            "url": "https://www.metaculus.com" + result.page_url,
+            "platform": "Metaculus",
+            "description": description,
+            "options": options,
+            "timestamp": new Date().toISOString(),
+            "qualityindicators": {
+              "numforecasts": Number(result.number_of_predictions),
+              "resolution_data": {
+                "publish_time": result.publish_time,
+                "resolution": result.resolution,
+                "close_time": result.close_time,
+                "resolve_time": result.resolve_time                  
+              },
+              "stars": calculateStars("Metaculus", ({ numforecasts: result.number_of_predictions }))
             }
-          ]
-        }
-        let interestingInfo = ({
-          "title": result.title,
-          "url": "https://www.metaculus.com" + result.page_url,
-          "platform": "Metaculus",
-          "description": description,
-          "options": options,
-          "timestamp": new Date().toISOString(),
-          "qualityindicators": {
-            "numforecasts": Number(result.number_of_predictions),
-            "resolution_data": {
-              "publish_time": result.publish_time,
-              "resolution": result.resolution,
-              "close_time": result.close_time,
-              "resolve_time": result.resolve_time                  
-            },
-            "stars": calculateStars("Metaculus", ({ numforecasts: result.number_of_predictions }))
+            //"status": result.status,
+            //"publish_time": result.publish_time,
+            //"close_time": result.close_time,
+            //"type": result.possibilities.type, // We want binary ones here.
+            //"last_activity_time": result.last_activity_time,
+          })
+          if (Number(result.number_of_predictions) >= 10) {
+            console.log(`- ${interestingInfo.title}`)
+            all_questions.push(interestingInfo)
+            if(!j && (i % 20 == 0)){
+              console.log(interestingInfo)
+              j = true
+            }
           }
-          //"status": result.status,
-          //"publish_time": result.publish_time,
-          //"close_time": result.close_time,
-          //"type": result.possibilities.type, // We want binary ones here.
-          //"last_activity_time": result.last_activity_time,
-        })
-        if (Number(result.number_of_predictions) >= 10) {
-          console.log(`- ${interestingInfo.title}`)
-          all_questions.push(interestingInfo)
-          if(!j && (i % 20 == 0)){
-            console.log(interestingInfo)
-            j = true
-          }
+        }else{
+          console.log("- [Skipping public prediction]")
         }
+        
 
       }
     }
@@ -142,7 +147,7 @@ export async function metaculus() {
   }
 
   // let string = JSON.stringify(all_questions, null, 2)
-  // fs.writeFileSync('./data/metaculus-questions.json', string);
+  fs.writeFileSync('./metaculus-questions.json', string);
   await upsert(all_questions, "metaculus-questions")
 
   console.log("Done")

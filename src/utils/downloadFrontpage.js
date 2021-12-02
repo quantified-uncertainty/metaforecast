@@ -2,9 +2,9 @@ import fs from "fs"
 
 import { mongoReadWithReadCredentials } from "./mongo-wrapper.js"
 
-let filename = 'frontpage.json'
+let filename = '/home/loki/Documents/core/software/fresh/js/metaforecasts/metaforecasts-mongo/data/frontpage.json'
 let shuffle = (array) => {
-  // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+  // https://stackoverflow.com/questions/2450954/how-to-randomi ze-shuffle-a-javascript-array
   let currentIndex = array.length,  randomIndex;
 
   // While there remain elements to shuffle...
@@ -32,7 +32,7 @@ let main = async () => {
   
   let string = JSON.stringify(json, null, 2)
   fs.writeFileSync(filename, string);
-  console.log(`File downloaded to ./${filename}`)
+  console.log(`File downloaded to ${filename}`)
 
   let end = Date.now()
   let difference = end - init
