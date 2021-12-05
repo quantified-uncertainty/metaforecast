@@ -91,9 +91,11 @@ export async function astralcodexten(){
       results.push(result)
     })
   }
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('./data/foretold-questions.json', string);
-  // console.log(JSON.stringify(results, null, 2))
+  /*
+  let string = JSON.stringify(results, null, 2)
+  console.log(JSON.stringify(results, null, 2))
+  fs.writeFileSync('./data/astralcodexten-questions.json', string);
+  */
   await upsert(results, "astralcodexten-questions")
   // console.log(results)
   console.log("Done")
