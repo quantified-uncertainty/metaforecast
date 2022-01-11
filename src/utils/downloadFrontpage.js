@@ -2,7 +2,7 @@ import fs from "fs"
 
 import { mongoReadWithReadCredentials } from "./mongo-wrapper.js"
 
-let filename = '/home/loki/Documents/core/software/fresh/js/metaforecasts/metaforecasts-mongo/data/frontpage.json'
+let filename = '/home/loki/Documents/core/software/fresh/js/metaforecasts/metaforecasts-backend/data/frontpage.json'
 let shuffle = (array) => {
   // https://stackoverflow.com/questions/2450954/how-to-randomi ze-shuffle-a-javascript-array
   let currentIndex = array.length,  randomIndex;

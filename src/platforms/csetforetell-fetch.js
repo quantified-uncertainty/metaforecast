@@ -10,6 +10,8 @@ import { upsert } from "../utils/mongo-wrapper.js"
 let htmlEndPoint = 'https://www.cset-foretell.com/questions?page='
 String.prototype.replaceAll = function replaceAll(search, replace) { return this.split(search).join(replace); }
 const DEBUG_MODE = "on"// "off"
+const SLEEP_TIME_RANDOM=100//5000 // miliseconds
+const SLEEP_TIME_EXTRA=0//1000
 /* Support functions */
 
 async function fetchPage(page, cookie) {
@@ -171,27 +173,28 @@ async function csetforetell_inner(cookie) {
   while (!isEnd(response) && isSignedIn(response)) {
 
     let htmlLines = response.split("\n")
-    let h4elements = htmlLines.filter(str => str.includes("<h5> <a href=") || str.includes("<h4> <a href="))
-    //let questionHrefs = htmlLines.filter(str => str.includes("https://www.cset-foretell.com/questions/"))
+    // let h4elements = htmlLines.filter(str => str.includes("<h5> <a href=") || str.includes("<h4> <a href="))
+    let questionHrefs = htmlLines.filter(str => str.includes("https://www.cset-foretell.com/questions/"))
     // console.log(questionHrefs)
-
+    
 
     if (process.env.DEBUG_MODE == "on" || DEBUG_MODE == "on") {
       //console.log(response)
-      console.log(h4elements)
+      console.log("questionHrefs: ")
+      console.log(questionHrefs)
     }
 
     //console.log("")
     //console.log("")
     //console.log(h4elements)
 
-    for (let h4element of h4elements) {
+    for (let questionHref of questionHrefs) {
       //console.log(h4element)
 
-      let h4elementSplit = h4element.split('"><span>')
-      let url = h4elementSplit[0].split('<a href="')[1]
-      let title = h4elementSplit[1].replace('</span></a></h4>', "").replace('</span></a></h5>', "")
-      await sleep(1000 + Math.random() * 1000) // don't be as noticeable
+      let elementSplit = questionHref.split('"><span>')
+      let url = elementSplit[0].split('<a href="')[1]
+      let title = elementSplit[1].replace('</h4>', "").replace('</h5>', "").replace("</span></a>", "")
+      await sleep(Math.random() * SLEEP_TIME_RANDOM + SLEEP_TIME_EXTRA) // don't be as noticeable
 
       try {
         let moreinfo = await fetchStats(url, cookie)
@@ -221,7 +224,7 @@ async function csetforetell_inner(cookie) {
     //i=Number(i)+1
 
     console.log("Sleeping for ~5secs so as to not be as noticeable to the cset-foretell servers")
-    await sleep(5000 + Math.random() * 1000) // don't be as noticeable
+    await sleep(Math.random() * SLEEP_TIME_RANDOM + SLEEP_TIME_EXTRA) // don't be as noticeable
 
     try {
       response = await fetchPage(i, cookie)

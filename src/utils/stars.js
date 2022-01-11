@@ -156,6 +156,15 @@ function calculateStarsLadbrokes(data) {
 	return starsInteger
 }
 
+function calculateStarsManifoldMarkets(data) {
+	let nuno = data => 2
+	let eli = (data) => null
+	let misha = (data) => null
+	let starsDecimal = average([nuno(data)]) //, eli(data), misha(data)])
+	let starsInteger = Math.round(starsDecimal)
+	return starsInteger
+}
+
 function calculateStarsMetaculus(data) {
 	let nuno = data => data.numforecasts > 300 ? 4 : (data.numforecasts > 100 ? 3 : 2)
 	let eli = (data) => 3
@@ -277,6 +286,9 @@ export function calculateStars(platform, data) {
 			break;
 		case "Ladbrokes":
 			stars = calculateStarsLadbrokes(data)
+			break;
+		case "Manifold Markets":
+			stars = calculateStarsManifoldMarkets(data)
 			break;
 		case "Metaculus":
 			stars = calculateStarsMetaculus(data)
