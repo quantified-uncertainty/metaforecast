@@ -48,7 +48,7 @@ async function processPredictions(predictions) {
                 "stars": calculateStars("Manifold Markets", ({
                     volume7days: prediction.volume7days,
                     volume24Hours: prediction.volume24Hours,
-                    liquidity: prediction.pool
+                    pool: prediction.pool // normally liquidity, but I don't actually want to show it.
                 })),
                 "createdTime": prediction.createdTime,
                 "volume7Days": prediction.volume7Days,
