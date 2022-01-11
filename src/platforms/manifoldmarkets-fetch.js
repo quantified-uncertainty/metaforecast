@@ -48,17 +48,18 @@ async function processPredictions(predictions) {
                 "stars": calculateStars("Manifold Markets", ({
                     volume7days: prediction.volume7days,
                     volume24Hours: prediction.volume24Hours,
-                    pool: prediction.pool // normally liquidity, but I don't actually want to show it.
+                    pool: prediction.pool 
                 })),
                 "createdTime": prediction.createdTime,
                 "volume7Days": prediction.volume7Days,
                 "volume24Hours": prediction.volume24Hours,
-                "liquidity": prediction.pool
+                "pool": prediction.pool // normally liquidity, but I don't actually want to show it.
             }
         })
         return result
     })
     let unresolvedResults = results.filter(result => !result.isResolved)
+	  console.log(unresolvedResults)
     return unresolvedResults //resultsProcessed
 }
 
@@ -73,4 +74,4 @@ export async function manifoldmarkets() {
     await upsert(results, "manifoldmarkets-questions")
     console.log("Done")
 }
-//manifoldmarkets()
+manifoldmarkets()
