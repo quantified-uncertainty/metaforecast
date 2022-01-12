@@ -53,13 +53,14 @@ async function processPredictions(predictions) {
                 "createdTime": prediction.createdTime,
                 "volume7Days": prediction.volume7Days,
                 "volume24Hours": prediction.volume24Hours,
-                "pool": prediction.pool // normally liquidity, but I don't actually want to show it.
+                "pool": prediction.pool, // normally liquidity, but I don't actually want to show it.
+							  "isResolved": prediction.isResolved
             }
         })
         return result
     })
     let unresolvedResults = results.filter(result => !result.isResolved)
-	  console.log(unresolvedResults)
+    console.log(unresolvedResults)
     return unresolvedResults //resultsProcessed
 }
 
@@ -74,4 +75,4 @@ export async function manifoldmarkets() {
     await upsert(results, "manifoldmarkets-questions")
     console.log("Done")
 }
-manifoldmarkets()
+// manifoldmarkets()

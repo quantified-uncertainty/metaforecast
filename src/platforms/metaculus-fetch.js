@@ -82,7 +82,8 @@ export async function metaculus() {
         await sleep(5000) 
         let questionPage = await fetchMetaculusQuestionDescription(result.page_url)
         if(!questionPage.includes("A public prediction by")){
-          let descriptionraw = questionPage.split(`<div  class="content" ng-bind-html-compile="qctrl.question.description_html">`)[1] //.split(`<div class="question__content">`)[1]
+					console.log(questionPage)
+          let descriptionraw = questionPage.split(`<div class="content" ng-bind-html-compile="qctrl.question.description_html">`)[1] //.split(`<div class="question__content">`)[1]
           let descriptionprocessed1 = descriptionraw.split("</div>")[0]
           let descriptionprocessed2 = toMarkdown(descriptionprocessed1)
           let description = descriptionprocessed2
