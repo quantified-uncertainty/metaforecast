@@ -54,7 +54,9 @@ async function processPredictions(predictions) {
                 "volume7Days": prediction.volume7Days,
                 "volume24Hours": prediction.volume24Hours,
                 "pool": prediction.pool, // normally liquidity, but I don't actually want to show it.
-							  "isResolved": prediction.isResolved
+            },
+            "extra": {
+                "isResolved": prediction.isResolved
             }
         })
         return result

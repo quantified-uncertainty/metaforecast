@@ -117,9 +117,11 @@ async function fetch_all() {
           "liquidity": liquidity.toFixed(2),
           "tradevolume": tradevolume.toFixed(2),
           "stars": calculateStars("Polymarket", ({ liquidity, option: options[0], volume: tradevolume}))  
+        }, 
+        "extra":  {
+          "address": info.address
         }
         /*
-        address: info.address
         */
       })
       if(info.category != "Sports"){

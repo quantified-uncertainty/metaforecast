@@ -22,7 +22,7 @@ async function fetchAllCommunityQuestions(communityId) {
           states: OPEN,
           first: 500
         ){
-		      total
+          total
           edges{
             node{
               id

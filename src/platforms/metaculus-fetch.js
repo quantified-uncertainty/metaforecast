@@ -82,7 +82,7 @@ export async function metaculus() {
         await sleep(5000) 
         let questionPage = await fetchMetaculusQuestionDescription(result.page_url)
         if(!questionPage.includes("A public prediction by")){
-					// console.log(questionPage)
+          // console.log(questionPage)
           let descriptionraw = questionPage.split(`<div class="content" ng-bind-html-compile="qctrl.question.description_html">`)[1] //.split(`<div class="question__content">`)[1]
           let descriptionprocessed1 = descriptionraw.split("</div>")[0]
           let descriptionprocessed2 = toMarkdown(descriptionprocessed1)
@@ -114,13 +114,15 @@ export async function metaculus() {
             "timestamp": new Date().toISOString(),
             "qualityindicators": {
               "numforecasts": Number(result.number_of_predictions),
+              "stars": calculateStars("Metaculus", ({ numforecasts: result.number_of_predictions }))
+            }, 
+            "extra": {
               "resolution_data": {
                 "publish_time": result.publish_time,
                 "resolution": result.resolution,
                 "close_time": result.close_time,
                 "resolve_time": result.resolve_time                  
-              },
-              "stars": calculateStars("Metaculus", ({ numforecasts: result.number_of_predictions }))
+              }
             }
             //"status": result.status,
             //"publish_time": result.publish_time,
