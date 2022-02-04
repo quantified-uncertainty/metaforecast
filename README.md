@@ -21,6 +21,7 @@ The following variables are currently needed to run the `master` branch:
 - `CSETFORETELL_COOKIE`
 - `GOODJUDGMENTOPENCOOKIE`
 - `HYPERMINDCOOKIE`
+- `SECRET_BETFAIR_ENDPOINT`
 - `ALGOLIA_MASTER_API_KEY`, a string of 32 alphanumeric characters, like `6ofolyptm956j9uuev3q4v81vjbqrkp2` (not an actual key)
 
 They can either be stored as process variables (e.g., something that can be accessed as `process.env.<variable name>`), or as text in `src/input/privatekeys.json`, in the same format as `src/input/privatekeys_example.json`.  

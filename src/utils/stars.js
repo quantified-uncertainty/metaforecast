@@ -166,13 +166,15 @@ function calculateStarsLadbrokes(data) {
 
 function calculateStarsManifoldMarkets(data) {
   let nuno = (data) =>
-    data.volume7Days > 500 || (data.pool > 500 && data.volume7Days > 200)
+    data.volume7Days > 250 || (data.pool > 500 && data.volume7Days > 100)
       ? 2
       : 1;
   let eli = (data) => null;
   let misha = (data) => null;
   let starsDecimal = average([nuno(data)]); //, eli(data), misha(data)])
   let starsInteger = Math.round(starsDecimal);
+  // console.log(data);
+  // console.log(starsInteger);
   return starsInteger;
 }
 

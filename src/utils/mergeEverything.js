@@ -1,5 +1,5 @@
 import { mongoRead, upsert } from "./mongo-wrapper.js";
-
+import { platformNames } from "./platforms.js"
 /* Merge everything */
 // let sets = ["astralcodexten", "betfair", "coupcast", "csetforetell", "elicit", /* "estimize" ,*/ "fantasyscotus", "foretold", "givewellopenphil", "goodjudgment","goodjudmentopen", "hypermind", "kalshi", "ladbrokes", "manifoldmarkets", "metaculus", "omen", "polymarket", "predictit", "rootclaim", "smarkets", "wildeford", "williamhill", "xrisk"]
 let sets = [

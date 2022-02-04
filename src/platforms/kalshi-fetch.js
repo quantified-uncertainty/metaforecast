@@ -40,7 +40,7 @@ async function processMarkets(markets) {
       }
     ]
     let result = ({
-      "title": market.title,
+      "title": market.title.replaceAll("*", ""),
       "url": `https://kalshi.com/markets/${market.ticker_name}`,
       "platform": "Kalshi",
       "description": `${market.settle_details}. The resolution source is: ${market.ranged_group_name} (${market.settle_source_url})`,
