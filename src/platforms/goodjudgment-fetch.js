@@ -20,11 +20,19 @@ String.prototype.replaceAll = function replaceAll(search, replace) {
 /* Body */
 export async function goodjudgment() {
   let results = [];
+  let proxy = await axios
+    .get("http://pubproxy.com/api/proxy?cookies=true")
+    .then((query) => query.data);
+  console.log(proxy);
   for (let endpoint of endpoints) {
     let content = await axios
       .get(endpoint, {
         headers: {
           "User-Agent": "Axios",
+        },
+        proxy: {
+          host: proxy.ip,
+          port: proxy.port,
         },
       })
       .then((query) => query.data);
