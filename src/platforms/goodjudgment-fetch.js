@@ -24,8 +24,7 @@ export async function goodjudgment() {
     let content = await axios
       .get(endpoint, {
         headers: {
-          "User-Agent":
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+          "User-Agent": "Axios",
         },
       })
       .then((query) => query.data);
@@ -94,6 +93,9 @@ export async function goodjudgment() {
   // fs.writeFileSync('./goodjudgment-questions-test.json', string);
   console.log(results);
   await upsert(results, "goodjudgment-questions");
+  console.log(
+    "Failing is not unexpected; see utils/pullSuperforecastsManually.sh/js"
+  );
   console.log("Done");
 }
 // goodjudgment()
