@@ -9,7 +9,7 @@ import { upsert } from "../utils/mongo-wrapper.js";
 /* Definitions */
 let endpoints = [
   "https://goodjudgment.io/superforecasts/",
-  "https://goodjudgment.io/economist/",
+  // "https://goodjudgment.io/economist/",
 ];
 String.prototype.replaceAll = function replaceAll(search, replace) {
   return this.split(search).join(replace);
@@ -21,7 +21,14 @@ String.prototype.replaceAll = function replaceAll(search, replace) {
 export async function goodjudgment() {
   let results = [];
   for (let endpoint of endpoints) {
-    let content = await axios.get(endpoint).then((query) => query.data);
+    let content = await axios
+      .get(endpoint, {
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+        },
+      })
+      .then((query) => query.data);
     let jsonTable = Tabletojson.convert(content, { stripHtmlFromCells: false });
     jsonTable.shift(); // deletes first element
     jsonTable.pop(); // deletes last element
