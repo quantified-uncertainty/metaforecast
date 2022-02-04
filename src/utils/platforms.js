@@ -32,6 +32,7 @@ export const platformNames = [
   "givewellopenphil",
   "goodjudgment",
   "goodjudmentopen",
+  "infer",
   "kalshi",
   "ladbrokes",
   "manifoldmarkets",

@@ -110,6 +110,8 @@ let processResults = (html) => {
         "stars": calculateStars("WilliamHill", ({}))
       }
     })
+    results = results.filter(result => result.title.length > 4 && result.title != "2024 or later") 
+      // removes some predictions because hard to parse.
     results.push(obj)
   }
   
@@ -128,7 +130,7 @@ export async function williamhill() {
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/williamhill-questions.json', string);
   await upsert(results, "williamhill-questions")
-
+  console.log(results.sort((a,b) => (a.title > b.title)))
   console.log("Done")
 }
 //williamhill()

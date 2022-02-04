@@ -10,8 +10,7 @@ import {upsert} from "../utils/mongo-wrapper.js"
 /* Definitions */
 const SHEET_ID = "1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0" // spreadsheet key is the long id in the sheets URL
 const endpoint = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit#gid=0`
-// https://docs.google.com/spreadsheets/d/1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0/edit#gid=0&range=C4
-
+// https://docs.google.com/spreadsheets/d/1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0/edit#gid=0
 /* Support functions */
 
 const formatRow = row => {
@@ -106,7 +105,7 @@ async function processPredictions(predictions){
 export async function wildeford_inner(google_api_key) {
   let predictions = await fetchGoogleDoc(google_api_key)
   let results = await processPredictions(predictions) // somehow needed
-  // console.log(results)
+  // console.log(results.sort((a,b) => (a.title > b.title)))
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polyprediction-questions.json', string);
   await upsert(results, "wildeford-questions")

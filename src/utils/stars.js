@@ -133,6 +133,15 @@ function calculateStarsHypermind(data) {
   return starsInteger;
 }
 
+function calculateStarsInfer(data) {
+  let nuno = (data) => 2;
+  let eli = (data) => null;
+  let misha = (data) => null;
+  let starsDecimal = average([nuno(data)]); //, eli(data), misha(data)])
+  let starsInteger = Math.round(starsDecimal);
+  return starsInteger;
+}
+
 function calculateStarsKalshi(data) {
   let nuno = (data) =>
     data.interest > 500 && data.shares_volume > 10000
@@ -294,6 +303,9 @@ export function calculateStars(platform, data) {
       break;
     case "Hypermind":
       stars = calculateStarsHypermind(data);
+      break;
+    case "Infer":
+      stars = calculateStarsInfer(data);  
       break;
     case "Kalshi":
       stars = calculateStarsKalshi(data);
