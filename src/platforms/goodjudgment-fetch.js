@@ -20,7 +20,8 @@ String.prototype.replaceAll = function replaceAll(search, replace) {
 export async function goodjudgment() {
   // Proxy fuckery
   let proxy;
-  try {
+  /*
+	 * try {
     proxy = await axios
       .get("http://pubproxy.com/api/proxy")
       .then((query) => query.data);
@@ -28,11 +29,12 @@ export async function goodjudgment() {
   } catch (error) {
     console.log("Proxy generation failed; using backup proxy instead");
     // hard-coded backup proxy
-    proxy = {
-      ip: process.env.BACKUP_PROXY_IP,
-      port: process.env.BACKUP_PROXY_PORT,
-    };
-  }
+		*/
+  proxy = {
+    ip: process.env.BACKUP_PROXY_IP,
+    port: process.env.BACKUP_PROXY_PORT,
+  };
+  // }
   let agent = tunnel.httpsOverHttp({
     proxy: {
       host: proxy.ip,
