@@ -43,6 +43,7 @@ function showStatistics(results) {
 
 async function processPredictions(predictions) {
   let results = await predictions.map((prediction) => {
+    let id = `manifold-${prediction.id}`;
     let probability = prediction.probability;
     let options = [
       {
@@ -57,6 +58,7 @@ async function processPredictions(predictions) {
       },
     ];
     let result = {
+      id: id,
       title: prediction.question,
       url: prediction.url,
       platform: "Manifold Markets",

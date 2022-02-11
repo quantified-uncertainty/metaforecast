@@ -6,6 +6,7 @@ import { Tabletojson } from "tabletojson";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
 import { upsert } from "../utils/mongo-wrapper.js";
+import { hash } from "../utils/hash.js";
 
 /* Definitions */
 let endpoint = "https://goodjudgment.io/superforecasts/";
@@ -63,51 +64,56 @@ export async function goodjudgment() {
   for (let table of jsonTable) {
     // console.log(table)
     let title = table[0]["0"].split("\t\t\t").splice(3)[0];
-    let description = table
-      .filter((row) => row["0"].includes("BACKGROUND:"))
-      .map((row) => row["0"])
-      .map((text) =>
-        text
-          .split("BACKGROUND:")[1]
-          .split("Examples of Superforecaster")[0]
-          .split("AT A GLANCE")[0]
-          .replaceAll("\n\n", "\n")
-          .split("\n")
-          .slice(3)
-          .join(" ")
-          .replaceAll("      ", "")
-          .replaceAll("<br> ", "")
-      )[0];
-    let options = table
-      .filter((row) => "4" in row)
-      .map((row) => ({
-        name: row["2"].split('<span class="qTitle">')[1].replace("</span>", ""),
-        probability: Number(row["3"].split("%")[0]) / 100,
-        type: "PROBABILITY",
-      }));
-    let analysis = table.filter((row) =>
-      row[0] ? row[0].toLowerCase().includes("commentary") : false
-    );
-    // "Examples of Superforecaster Commentary" / Analysis
-    // The following is necessary twite, because we want to check if there is an empty list, and then get the first element of the first element of the list.
-    analysis = analysis ? analysis[0] : "";
-    analysis = analysis ? analysis[0] : "";
-    // console.log(analysis)
-    let standardObj = {
-      title: title,
-      url: endpoint,
-      platform: "Good Judgment",
-      description: description,
-      options: options,
-      timestamp: new Date().toISOString(),
-      qualityindicators: {
-        stars: calculateStars("Good Judgment", {}),
-      },
-      extra: {
-        superforecastercommentary: analysis || "",
-      },
-    };
-    if (standardObj.title != undefined) {
+    if (title != undefined) {
+      title = title.replaceAll("</a>", "");
+      let id = `goodjudgment-${hash(title)}`;
+      let description = table
+        .filter((row) => row["0"].includes("BACKGROUND:"))
+        .map((row) => row["0"])
+        .map((text) =>
+          text
+            .split("BACKGROUND:")[1]
+            .split("Examples of Superforecaster")[0]
+            .split("AT A GLANCE")[0]
+            .replaceAll("\n\n", "\n")
+            .split("\n")
+            .slice(3)
+            .join(" ")
+            .replaceAll("      ", "")
+            .replaceAll("<br> ", "")
+        )[0];
+      let options = table
+        .filter((row) => "4" in row)
+        .map((row) => ({
+          name: row["2"]
+            .split('<span class="qTitle">')[1]
+            .replace("</span>", ""),
+          probability: Number(row["3"].split("%")[0]) / 100,
+          type: "PROBABILITY",
+        }));
+      let analysis = table.filter((row) =>
+        row[0] ? row[0].toLowerCase().includes("commentary") : false
+      );
+      // "Examples of Superforecaster Commentary" / Analysis
+      // The following is necessary twice, because we want to check if there is an empty list, and then get the first element of the first element of the list.
+      analysis = analysis ? analysis[0] : "";
+      analysis = analysis ? analysis[0] : ""; // not a duplicate
+      // console.log(analysis)
+      let standardObj = {
+        id: id,
+        title: title,
+        url: endpoint,
+        platform: "Good Judgment",
+        description: description,
+        options: options,
+        timestamp: new Date().toISOString(),
+        qualityindicators: {
+          stars: calculateStars("Good Judgment", {}),
+        },
+        extra: {
+          superforecastercommentary: analysis || "",
+        },
+      };
       results.push(standardObj);
     }
   }
