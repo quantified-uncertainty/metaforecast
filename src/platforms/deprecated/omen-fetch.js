@@ -2,7 +2,7 @@
 import fs from 'fs'
 import axios from "axios"
 import { calculateStars } from "../../utils/stars.js"
-import {upsert} from "../../utils/mongo-wrapper.js"
+import {databaseUpsert} from "../../utils/database-wrapper.js"
 
 /* Definitions */
 let graphQLendpoint = "https://api.thegraph.com/subgraphs/name/protofire/omen"
@@ -93,7 +93,7 @@ export async function omen() {
   // console.log(result)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/omen-questions.json', string);
-  await upsert(results, "omen-questions")
+  await databaseUpsert(results, "omen-questions")
   console.log("Done")  
 }
 //omen()

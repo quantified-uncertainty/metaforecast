@@ -1,5 +1,5 @@
 import fs from "fs";
-import { mongoReadWithReadCredentials } from "../database/mongo-wrapper.js";
+import { databaseReadWithReadCredentials } from "../database/database-wrapper.js";
 
 let filename =
   "/home/loki/Documents/core/software/fresh/js/metaforecast/metaforecast-backend/data/frontpage.json";
@@ -27,7 +27,7 @@ let shuffle = (array) => {
 let main = async () => {
   let init = Date.now();
 
-  let json = await mongoReadWithReadCredentials("metaforecasts");
+  let json = await databaseReadWithReadCredentials("metaforecasts");
 
   json = json.filter(
     (forecast) =>

@@ -2,7 +2,7 @@
 import fs from "fs";
 import axios from "axios";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let jsonEndpoint = "https://trading-api.kalshi.com/v1/cached/markets/"; //"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
@@ -83,7 +83,7 @@ export async function kalshi() {
   // console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polymarket-questions.json', string);
-  await upsert(results, "kalshi-questions");
+  await databaseUpsert(results, "kalshi-questions");
   console.log("Done");
 }
 // kalshi()

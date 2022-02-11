@@ -1,9 +1,9 @@
-import { mongoRead, upsert } from "../../database/mongo-wrapper.js"
+import { databaseRead, databaseUpsert } from "../../database/database-wrapper.js"
 
 export async function createHistoryForMonth(){
     let currentDate = new Date()
     let dateUpToMonth = currentDate.toISOString().slice(0,7).replace("-", "_")
-    let metaforecasts = await mongoRead("metaforecasts")
+    let metaforecasts = await databaseRead("metaforecasts")
     let metaforecastsHistorySeed = metaforecasts.map(element => {
         // let moreoriginsdata = element.author ? ({author: element.author}) : ({})
         return ({
@@ -21,7 +21,7 @@ export async function createHistoryForMonth(){
          })
     }).filter(element => element.platform != "Metaculus" && element.platform != "Estimize")
     //console.log(metaforecastsHistorySeed)
-    await upsert(metaforecastsHistorySeed, `metaforecast_history_${dateUpToMonth}`, "metaforecastHistory")
+    await databaseUpsert(metaforecastsHistorySeed, `metaforecast_history_${dateUpToMonth}`, "metaforecastHistory")
 
 }
 ////createInitialHistory()

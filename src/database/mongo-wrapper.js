@@ -35,7 +35,7 @@ function roughSizeOfObject(object) {
   return megaBytesRounded;
 }
 
-export async function upsert(contents, documentName, collectionName = "metaforecastCollection", databaseName = "metaforecastDatabase") {
+export async function mongoUpsert(contents, documentName, collectionName = "metaforecastCollection", databaseName = "metaforecastDatabase") {
   const url = process.env.MONGODB_URL || getCookie("mongodb");
   const client = new MongoClient(url);
   try {
@@ -58,7 +58,7 @@ export async function upsert(contents, documentName, collectionName = "metaforec
 
     // Insert a single document, wait for promise so we can read it back
     // const p = await collection.insertOne(metaforecastDocument);
-    await collection.replaceOne(filter, document, { upsert: true });
+    await collection.replaceOne(filter, document, { databaseUpsert: true });
     console.log(`Pushed document ${documentName} in collection ${collectionName} in database ${databaseName} with approximate size ${roughSizeOfObject(document)} MB`)
 
     // Find one document

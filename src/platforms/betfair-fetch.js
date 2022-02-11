@@ -3,7 +3,7 @@ import fs from "fs";
 import axios from "axios";
 import https from "https";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let endpoint = process.env.SECRET_BETFAIR_ENDPOINT;
@@ -143,7 +143,7 @@ export async function betfair() {
   // console.log(results.map(result => ({title: result.title, description: result.description})))
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polyprediction-questions.json', string);
-  await upsert(results, "betfair-questions");
+  await databaseUpsert(results, "betfair-questions");
   console.log("Done");
 }
 // betfair()

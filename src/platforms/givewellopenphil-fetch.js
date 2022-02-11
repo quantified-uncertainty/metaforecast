@@ -3,7 +3,7 @@ import fs from "fs";
 import axios from "axios";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let locationData = "./data/";
@@ -64,6 +64,6 @@ async function main() {
   }
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/givewell-questions-unprocessed.json', string);
-  await upsert(results, "givewell-questions-unprocessed");
+  await databaseUpsert(results, "givewell-questions-unprocessed");
 }
 main();

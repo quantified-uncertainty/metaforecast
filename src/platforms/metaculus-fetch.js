@@ -3,7 +3,7 @@ import axios from "axios";
 import fs from "fs";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let jsonEndPoint = "https://www.metaculus.com/api2/questions/?page=";
@@ -154,7 +154,7 @@ export async function metaculus() {
 
   // let string = JSON.stringify(all_questions, null, 2)
   // fs.writeFileSync('./metaculus-questions.json', string);
-  await upsert(all_questions, "metaculus-questions");
+  await databaseUpsert(all_questions, "metaculus-questions");
 
   console.log("Done");
 }

@@ -1,6 +1,6 @@
 /* Imports */
 import fs from "fs"
-import { mongoReadWithReadCredentials } from "../mongo-wrapper.js"
+import { databaseReadWithReadCredentials } from "../database-wrapper.js"
 
 /* Definitions */
 let locationData = "./data/"
@@ -8,7 +8,7 @@ let locationData = "./data/"
 /* Body */
 // let rawdata =  fs.readFileSync("./data/merged-questions.json") // run from topmost folder, not from src
 async function main(){
-  let data = await mongoReadWithReadCredentials("metaforecasts") //JSON.parse(rawdata)
+  let data = await databaseReadWithReadCredentials("metaforecasts") //JSON.parse(rawdata)
   let processDescription = (description) => {
     if(description == null || description == undefined || description == ""){
       return ""

@@ -2,7 +2,7 @@
 import fs from 'fs'
 import axios from "axios"
 import { calculateStars } from "../utils/stars.js"
-import { upsert } from "../utils/mongo-wrapper.js"
+import { databaseUpsert } from "../utils/database-wrapper.js"
 
 /* Definitions */
 let graphQLendpoint = "https://api.foretold.io/graphql"
@@ -96,7 +96,7 @@ export async function astralcodexten(){
   console.log(JSON.stringify(results, null, 2))
   fs.writeFileSync('./data/astralcodexten-questions.json', string);
   */
-  await upsert(results, "astralcodexten-questions")
+  await databaseUpsert(results, "astralcodexten-questions")
   // console.log(results)
   console.log("Done")
 }

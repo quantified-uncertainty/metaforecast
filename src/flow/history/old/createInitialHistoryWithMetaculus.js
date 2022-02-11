@@ -1,7 +1,7 @@
-import { mongoRead, upsert } from "../mongo-wrapper.js"
+import { databaseRead, databaseUpsert } from "../database-wrapper.js"
 
 let createInitialHistory = async () => {
-    let metaforecasts = await mongoRead("metaforecasts")
+    let metaforecasts = await databaseRead("metaforecasts")
     let metaforecastsHistorySeed = metaforecasts.map(element => {
         // let moreoriginsdata = element.author ? ({author: element.author}) : ({})
         return ({
@@ -19,7 +19,7 @@ let createInitialHistory = async () => {
          })
     })
     console.log(metaforecastsHistorySeed)
-    await upsert(metaforecastsHistorySeed, "metaforecast_history")
+    await databaseUpsert(metaforecastsHistorySeed, "metaforecast_history")
 
 }
 createInitialHistory()

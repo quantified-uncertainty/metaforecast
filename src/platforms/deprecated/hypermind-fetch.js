@@ -6,7 +6,7 @@ import fetch from "isomorphic-fetch"
 import {getCookie, applyIfCookieExists} from "../utils/getCookies.js"
 import toMarkdown from "../utils/toMarkdown.js"
 import { calculateStars } from "../utils/stars.js"
-import { upsert } from "../utils/mongo-wrapper.js"
+import { databaseUpsert } from "../utils/database-wrapper.js"
 
 /* Definitions */
 let hypermindEnpoint1 = 'https://predict.hypermind.com/dash/jsx.json'
@@ -172,7 +172,7 @@ async function hypermind_inner(cookie) {
   console.log(resultsTotalUnique.length, "results")
   // let string = JSON.stringify(resultsTotalUnique, null, 2)
   // fs.writeFileSync('./data/hypermind-questions.json', string);
-  await upsert(resultsTotalUnique, "hypermind-questions")
+  await databaseUpsert(resultsTotalUnique, "hypermind-questions")
 
 }
 //hypermind()

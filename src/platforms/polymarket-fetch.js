@@ -2,7 +2,7 @@
 import fs from "fs";
 import axios from "axios";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let graphQLendpoint =
@@ -152,7 +152,7 @@ export async function polymarket() {
   // console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polymarket-questions.json', string);
-  await upsert(results, "polymarket-questions");
+  await databaseUpsert(results, "polymarket-questions");
   console.log("Done");
 }
 // polymarket()

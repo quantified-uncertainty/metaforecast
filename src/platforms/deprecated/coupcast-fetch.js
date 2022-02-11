@@ -5,7 +5,7 @@ import Papa from "papaparse"
 import open from "open"
 import readline from "readline"
 import {calculateStars} from "../utils/stars.js"
-import {upsert} from "../utils/mongo-wrapper.js"
+import {databaseUpsert} from "../utils/database-wrapper.js"
 
 /* Definitions */
 let coupCastEndpoint = "https://www.oneearthfuture.org/sites/all/themes/stability/stability_sub/data/dashboard_2021_code_06.csv"
@@ -142,7 +142,7 @@ async function processArray(countryArray) {
   }
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/elicit-questions.json', string);
-  await upsert(results, "coupcast-questions")
+  await databaseUpsert(results, "coupcast-questions")
   // console.log(results)
   console.log("Done")
 }

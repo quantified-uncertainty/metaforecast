@@ -4,7 +4,7 @@ import { getCookie, applyIfCookieExists } from "../utils/getCookies.js";
 import { Tabletojson } from "tabletojson";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let htmlEndPoint = "https://www.infer-pub.com/questions";
@@ -269,7 +269,7 @@ async function infer_inner(cookie) {
   // fs.writeFileSync('./data/infer-questions.json', string);
   // console.log(results)
   if (results.length > 0) {
-    await upsert(results, "infer-questions");
+    await databaseUpsert(results, "infer-questions");
   } else {
     console.log("Not updating results, as process was not signed in");
   }

@@ -1,6 +1,6 @@
 import fs from "fs"
 import {calculateStars} from "../utils/stars.js"
-import {upsert} from "../utils/mongo-wrapper.js"
+import {databaseUpsert} from "../utils/database-wrapper.js"
 
 
 export async function estimize(){
@@ -31,6 +31,6 @@ export async function estimize(){
   // console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/estimize-questions.json', string);
-  await upsert(results, "estimize-questions")
+  await databaseUpsert(results, "estimize-questions")
 }
 //estimize()

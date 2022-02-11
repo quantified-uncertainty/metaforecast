@@ -1,6 +1,6 @@
 /* Imports */
 import fs from "fs"
-import { mongoReadWithReadCredentials } from "../mongo-wrapper.js"
+import { databaseReadWithReadCredentials } from "../database-wrapper.js"
 
 /* Definitions */
 
@@ -13,7 +13,7 @@ let getQualityIndicators = forecast => Object.entries(forecast.qualityindicators
 
 let main = async () => {
   let highQualityPlatforms = ['CSET-foretell', 'Foretold', 'Good Judgment Open', 'Metaculus', 'PredictIt', 'Rootclaim']
-  let json = await mongoReadWithReadCredentials("metaforecasts")
+  let json = await databaseReadWithReadCredentials("metaforecasts")
   console.log(json.length)
   //let uniquePlatforms = [...new Set(json.map(forecast => forecast.platform))]
   //console.log(uniquePlatforms)

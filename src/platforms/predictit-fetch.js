@@ -3,7 +3,7 @@ import fs from "fs";
 import axios from "axios";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Support functions */
 async function fetchmarkets() {
@@ -110,7 +110,7 @@ export async function predictit() {
   //console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/predictit-questions.json', string);
-  await upsert(results, "predictit-questions");
+  await databaseUpsert(results, "predictit-questions");
 
   console.log("Done");
 }

@@ -2,7 +2,7 @@
 import fs from "fs";
 import axios from "axios";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let unixtime = new Date().getTime();
@@ -118,7 +118,7 @@ export async function fantasyscotus() {
   //console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/fantasyscotus-questions.json', string);
-  await upsert(results, "fantasyscotus-questions");
+  await databaseUpsert(results, "fantasyscotus-questions");
   console.log("Done");
 }
 //fantasyscotus()

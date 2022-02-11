@@ -1,7 +1,7 @@
 import algoliasearch from 'algoliasearch';
 import fs from "fs"
 import {getCookie} from "./getCookies.js"
-import { mongoReadWithReadCredentials } from "../database/mongo-wrapper.js"
+import { databaseReadWithReadCredentials } from "../database/database-wrapper.js"
 import { mergeEverythingInner } from '../flow/mergeEverything.js';
 
 let cookie = process.env.ALGOLIA_MASTER_API_KEY || getCookie("algolia")
@@ -23,7 +23,7 @@ export async function rebuildAlgoliaDatabaseTheHardWay(){
 }
 
 export async function rebuildAlgoliaDatabaseTheEasyWay(){
-  let records = await mongoReadWithReadCredentials("metaforecasts")
+  let records = await databaseReadWithReadCredentials("metaforecasts")
   records = records.map((record, index) => ({...record, has_numforecasts: record.numforecasts ? true : false, objectID: index}) )
   // this is necessary to filter by missing attributes https://www.algolia.com/doc/guides/managing-results/refine-results/filtering/how-to/filter-by-null-or-missing-attributes/  
   

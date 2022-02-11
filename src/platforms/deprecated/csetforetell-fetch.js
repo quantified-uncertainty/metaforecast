@@ -4,7 +4,7 @@ import { getCookie, applyIfCookieExists } from "../utils/getCookies.js"
 import { Tabletojson } from "tabletojson"
 import toMarkdown from "../utils/toMarkdown.js"
 import { calculateStars } from "../utils/stars.js"
-import { upsert } from "../utils/mongo-wrapper.js"
+import { databaseUpsert } from "../utils/database-wrapper.js"
 
 /* Definitions */
 let htmlEndPoint = 'https://www.cset-foretell.com/questions?page='
@@ -237,7 +237,7 @@ async function csetforetell_inner(cookie) {
   // fs.writeFileSync('./data/csetforetell-questions.json', string);
   // console.log(results)
   if (results.length > 0) {
-    await upsert(results, "csetforetell-questions")
+    await databaseUpsert(results, "csetforetell-questions")
   } else {
     console.log("Not updating results, as process was not signed in")
   }

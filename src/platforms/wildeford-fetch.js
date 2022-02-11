@@ -6,7 +6,7 @@ import { getCookie, applyIfCookieExists } from "../utils/getCookies.js";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
 import { hash } from "../utils/hash.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 const SHEET_ID = "1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0"; // spreadsheet key is the long id in the sheets URL
@@ -125,7 +125,7 @@ export async function wildeford_inner(google_api_key) {
   // console.log(results.sort((a,b) => (a.title > b.title)))
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polyprediction-questions.json', string);
-  await upsert(results, "wildeford-questions");
+  await databaseUpsert(results, "wildeford-questions");
   console.log("Done");
 }
 //example()

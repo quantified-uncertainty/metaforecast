@@ -2,7 +2,7 @@
 import fs from "fs";
 import axios from "axios";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let endpoint = "https://us-central1-mantic-markets.cloudfunctions.net/markets";
@@ -96,7 +96,7 @@ export async function manifoldmarkets() {
   // console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polyprediction-questions.json', string);
-  await upsert(results, "manifoldmarkets-questions");
+  await databaseUpsert(results, "manifoldmarkets-questions");
   console.log("Done");
 }
 // manifoldmarkets()

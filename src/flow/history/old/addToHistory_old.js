@@ -1,13 +1,13 @@
 import { writeFileSync } from "fs"
-import { mongoReadWithReadCredentials, upsert } from "../mongo-wrapper.js"
-let mongoRead = mongoReadWithReadCredentials
+import { databaseReadWithReadCredentials, databaseUpsert } from "../database-wrapper.js"
+let databaseRead = databaseReadWithReadCredentials
 let isEmptyArray = arr => arr.length == 0
 
 export async function addToHistory(){
   // throw new Error("Not today")
-  let currentJSON = await mongoRead("metaforecasts")
+  let currentJSON = await databaseRead("metaforecasts")
   // console.log(currentJSON)
-  let historyJSON = await mongoRead("metaforecast_history")
+  let historyJSON = await databaseRead("metaforecast_history")
   // console.log(historyJSON)
 
   let currentForecastsWithAHistory = currentJSON.filter(element => !isEmptyArray(historyJSON.filter(historyElement => historyElement.title == element.title && historyElement.url == element.url )))
@@ -55,7 +55,7 @@ export async function addToHistory(){
     newHistoryJSON.push(newHistoryElement)
   }
 
-  upsert(newHistoryJSON, "metaforecast_history")
+  databaseUpsert(newHistoryJSON, "metaforecast_history")
   // console.log(newHistoryJSON.slice(0,5))
   // writeFileSync("metaforecast_history.json", JSON.stringify(newHistoryJSON, null, 2))
   // writefile(JSON.stringify(newHistoryJSON, null, 2), "metaforecasts_history", "", ".json")

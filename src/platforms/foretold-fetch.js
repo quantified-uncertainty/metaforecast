@@ -2,7 +2,7 @@
 import fs from "fs";
 import axios from "axios";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let graphQLendpoint = "https://api.foretold.io/graphql";
@@ -101,7 +101,7 @@ export async function foretold() {
   }
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/foretold-questions.json', string);
-  await upsert(results, "foretold-questions");
+  await databaseUpsert(results, "foretold-questions");
   console.log("Done");
 }
 // foretold()

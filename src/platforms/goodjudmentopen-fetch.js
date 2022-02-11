@@ -5,7 +5,7 @@ import { getCookie, applyIfCookieExists } from "../utils/getCookies.js";
 import { Tabletojson } from "tabletojson";
 import { calculateStars } from "../utils/stars.js";
 import toMarkdown from "../utils/toMarkdown.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let htmlEndPoint = "https://www.gjopen.com/questions?page=";
@@ -223,7 +223,7 @@ async function goodjudgmentopen_inner(cookie) {
   // fs.writeFileSync('./data/goodjudmentopen-questions.json', string);
   console.log(results);
   if (results.length > 0) {
-    await upsert(results, "goodjudmentopen-questions");
+    await databaseUpsert(results, "goodjudmentopen-questions");
   } else {
     console.log("Not updating results, as process was not signed in");
   }

@@ -1,4 +1,4 @@
-import { mongoRead, upsert } from "../database/mongo-wrapper.js";
+import { databaseRead, databaseUpsert } from "../database/database-wrapper.js";
 import { platformNames } from "../platforms/all-platforms.js"
 /* Merge everything */
 let suffix = "-questions";
@@ -6,7 +6,7 @@ let suffix = "-questions";
 export async function mergeEverythingInner() {
   let merged = [];
   for (let platformName of platformNames) {
-    let json = await mongoRead(platformName + suffix);
+    let json = await databaseRead(platformName + suffix);
     console.log(`${platformName} has ${json.length} questions\n`);
     merged = merged.concat(json);
   }
@@ -22,6 +22,6 @@ export async function mergeEverythingInner() {
 
 export async function mergeEverything() {
   let merged = await mergeEverythingInner();
-  await upsert(merged, "metaforecasts");
+  await databaseUpsert(merged, "metaforecasts");
   console.log("Done");
 }

@@ -6,7 +6,7 @@ import { Tabletojson } from "tabletojson";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
 import { hash } from "../utils/hash.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let endpoint = "https://goodjudgment.io/superforecasts/";
@@ -122,7 +122,7 @@ export async function goodjudgment() {
   // fs.writeFileSync('./data/goodjudgment-questions.json', string);
   // fs.writeFileSync('./goodjudgment-questions-test.json', string);
   console.log(results);
-  await upsert(results, "goodjudgment-questions");
+  await databaseUpsert(results, "goodjudgment-questions");
   console.log(
     "Failing is not unexpected; see utils/pullSuperforecastsManually.sh/js"
   );

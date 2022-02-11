@@ -1,17 +1,17 @@
 import { writeFileSync } from "fs"
-import { mongoReadWithReadCredentials, upsert } from "../../database/mongo-wrapper.js"
-let mongoRead = mongoReadWithReadCredentials
+import { databaseReadWithReadCredentials, databaseUpsert } from "../../database/database-wrapper.js"
+let databaseRead = databaseReadWithReadCredentials
 let isEmptyArray = arr => arr.length == 0
 
 export async function addToHistory(){
   let currentDate = new Date()
   let dateUpToMonth = currentDate.toISOString().slice(0,7).replace("-", "_")
 
-  let currentJSONwithMetaculus = await mongoRead("metaforecasts")
+  let currentJSONwithMetaculus = await databaseRead("metaforecasts")
   let currentJSON = currentJSONwithMetaculus.filter(element => element.platform != "Metaculus" && element.platform != "Estimize") // without Metaculus
   // console.log(currentJSON.slice(0,20))
   // console.log(currentJSON)
-  let historyJSON = await mongoRead(`metaforecast_history_${dateUpToMonth}`,"metaforecastHistory")
+  let historyJSON = await databaseRead(`metaforecast_history_${dateUpToMonth}`,"metaforecastHistory")
   // console.log(historyJSON)
 
   let currentForecastsWithAHistory = currentJSON.filter(element => !isEmptyArray(historyJSON.filter(historyElement => historyElement.title == element.title && historyElement.url == element.url )))
@@ -59,7 +59,7 @@ export async function addToHistory(){
     newHistoryJSON.push(newHistoryElement)
   }
 
-  await upsert(newHistoryJSON, `metaforecast_history_${dateUpToMonth}`, "metaforecastHistory")
+  await databaseUpsert(newHistoryJSON, `metaforecast_history_${dateUpToMonth}`, "metaforecastHistory")
 
   // console.log(newHistoryJSON.slice(0,5))
   // writeFileSync("metaforecast_history.json", JSON.stringify(newHistoryJSON, null, 2))

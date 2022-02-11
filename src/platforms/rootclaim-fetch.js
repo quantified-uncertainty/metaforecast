@@ -3,7 +3,7 @@ import fs from "fs";
 import axios from "axios";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../database/mongo-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let jsonEndpoint =
@@ -69,7 +69,7 @@ export async function rootclaim() {
   //console.log(JSON.stringify(results, null, 4))
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('rootclaim-questions.json', string);
-  await upsert(results, "rootclaim-questions");
+  await databaseUpsert(results, "rootclaim-questions");
   console.log("Done");
 }
 //rootclaim()
