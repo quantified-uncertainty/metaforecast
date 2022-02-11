@@ -7,9 +7,7 @@ node_modules/*
 **/privatekeys.json
 
 ## Personal notes
-possiblenewsources.md
-NotesHeroku.md
-AlgoliaNotes.md
+notes/*
 
 ## Build artifacts
 done.txt
