@@ -1,9 +1,9 @@
 
 import { mergeEverything } from "./mergeEverything.js"
 import { updateHistory } from "./history/updateHistory.js"
-import { rebuildAlgoliaDatabase } from "./algolia.js"
+import { rebuildAlgoliaDatabase } from "../utils/algolia.js"
 import { rebuildNetlifySiteWithNewData } from "./rebuildNetliftySiteWithNewData.js"
-import { platformFetchers } from "./platforms.js"
+import { platformFetchers } from "../platforms/all-platforms.js"
 
 /* Do everything */
 function sleep(ms) {

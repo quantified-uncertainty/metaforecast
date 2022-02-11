@@ -2,7 +2,7 @@
 import fs from "fs";
 import axios from "axios";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../utils/mongo-wrapper.js";
+import { upsert } from "../database/mongo-wrapper.js";
 
 /* Definitions */
 let jsonEndpoint = "https://trading-api.kalshi.com/v1/cached/markets/"; //"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'

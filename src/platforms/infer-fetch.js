@@ -4,7 +4,7 @@ import { getCookie, applyIfCookieExists } from "../utils/getCookies.js";
 import { Tabletojson } from "tabletojson";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../utils/mongo-wrapper.js";
+import { upsert } from "../database/mongo-wrapper.js";
 
 /* Definitions */
 let htmlEndPoint = "https://www.infer-pub.com/questions";

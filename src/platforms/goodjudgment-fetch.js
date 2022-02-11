@@ -5,8 +5,8 @@ import fs from "fs";
 import { Tabletojson } from "tabletojson";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../utils/mongo-wrapper.js";
 import { hash } from "../utils/hash.js";
+import { upsert } from "../database/mongo-wrapper.js";
 
 /* Definitions */
 let endpoint = "https://goodjudgment.io/superforecasts/";

@@ -1,9 +1,8 @@
 import algoliasearch from 'algoliasearch';
-import {getCookie} from "./getCookies.js"
 import fs from "fs"
-
-import { mongoReadWithReadCredentials } from "./mongo-wrapper.js"
-import { mergeEverythingInner } from './mergeEverything.js';
+import {getCookie} from "./getCookies.js"
+import { mongoReadWithReadCredentials } from "../database/mongo-wrapper.js"
+import { mergeEverythingInner } from '../flow/mergeEverything.js';
 
 let cookie = process.env.ALGOLIA_MASTER_API_KEY || getCookie("algolia")
 const client = algoliasearch('96UD3NTQ7L', cookie); 

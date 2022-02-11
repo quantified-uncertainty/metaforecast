@@ -1,6 +1,6 @@
 import pkg from 'mongodb';
 const { MongoClient } = pkg;
-import { getCookie } from "./getCookies.js"
+import { getCookie } from "../utils/getCookies.js"
 
 function roughSizeOfObject(object) {
   var objectList = [];

@@ -2,9 +2,8 @@
 import fs from "fs";
 import axios from "axios";
 import https from "https";
-import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../utils/mongo-wrapper.js";
+import { upsert } from "../database/mongo-wrapper.js";
 
 /* Definitions */
 let endpoint = process.env.SECRET_BETFAIR_ENDPOINT;

@@ -5,8 +5,9 @@ import { GoogleSpreadsheet } from "google-spreadsheet";
 import { getCookie, applyIfCookieExists } from "../utils/getCookies.js";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../utils/mongo-wrapper.js";
 import { hash } from "../utils/hash.js";
+import { upsert } from "../database/mongo-wrapper.js";
+
 /* Definitions */
 const SHEET_ID = "1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0"; // spreadsheet key is the long id in the sheets URL
 const endpoint = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit#gid=0`;

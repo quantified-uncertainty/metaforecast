@@ -3,7 +3,7 @@ import fs from "fs";
 import axios from "axios";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../utils/mongo-wrapper.js";
+import { upsert } from "../database/mongo-wrapper.js";
 
 /* Definitions */
 let jsonEndpoint =

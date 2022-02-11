@@ -2,16 +2,16 @@
 clear
 echo "
 Platforms:
-[0]: CSET-Foretell
+[0]: IFER
 [1]: Good Judgment Open
 "
 read -p "Choose a platform [0/1]: " platform
 echo ""
 case $platform in
     "0" )
-        echo "Platform: CSET-Foretell"
-        echo "Copy request headers from https://www.cset-foretell.com/questions"
-        firefox "https://www.cset-foretell.com/questions"
+        echo "Platform: INFER"
+        echo "Copy request headers from https://www.infer-pub.com/"
+        firefox "https://www.infer-pub.com/"
         echo "Copy the request headers to clipboard"
         read -p "Press any key when copied: " copied
         cookie=$(xclip -selection c -o | {
@@ -30,8 +30,8 @@ case $platform in
         echo ""
         echo "Cookie found:"
         echo "$cookie"
-        echo "Running: heroku config:set CSETFORETELL_COOKIE='\$cookie'"
-        heroku config:set CSETFORETELL_COOKIE="$cookie"
+        echo "Running: heroku config:set INFER_COOKIE='\$cookie'"
+        heroku config:set INFER_COOKIE="$cookie"
     ;;
     "1" )
         echo "Platform: Good Judgment Open"

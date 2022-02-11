@@ -5,7 +5,7 @@ import { getCookie, applyIfCookieExists } from "../utils/getCookies.js";
 import { Tabletojson } from "tabletojson";
 import { calculateStars } from "../utils/stars.js";
 import toMarkdown from "../utils/toMarkdown.js";
-import { upsert } from "../utils/mongo-wrapper.js";
+import { upsert } from "../database/mongo-wrapper.js";
 
 /* Definitions */
 let htmlEndPoint = "https://www.gjopen.com/questions?page=";

@@ -3,7 +3,7 @@ import axios from "axios";
 import fs from "fs";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../utils/mongo-wrapper.js";
+import { upsert } from "../database/mongo-wrapper.js";
 
 /* Definitions */
 let jsonEndPoint = "https://www.metaculus.com/api2/questions/?page=";

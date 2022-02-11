@@ -1,5 +1,5 @@
-import { mongoRead, upsert } from "./mongo-wrapper.js";
-import { platformNames } from "./platforms.js"
+import { mongoRead, upsert } from "../database/mongo-wrapper.js";
+import { platformNames } from "../platforms/all-platforms.js"
 /* Merge everything */
 let suffix = "-questions";
 

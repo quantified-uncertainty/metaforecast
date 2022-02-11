@@ -1,6 +1,6 @@
 import fs from "fs"
 
-import { mongoReadWithReadCredentials } from "./mongo-wrapper.js"
+import { mongoReadWithReadCredentials } from "../database/mongo-wrapper.js"
 
 let main = async () => {
   let json = await mongoReadWithReadCredentials("metaforecasts")

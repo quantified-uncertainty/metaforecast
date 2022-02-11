@@ -2,7 +2,7 @@
 import fs from "fs";
 import axios from "axios";
 import { calculateStars } from "../utils/stars.js";
-import { upsert } from "../utils/mongo-wrapper.js";
+import { upsert } from "../database/mongo-wrapper.js";
 
 /* Definitions */
 let graphQLendpoint = "https://api.foretold.io/graphql";

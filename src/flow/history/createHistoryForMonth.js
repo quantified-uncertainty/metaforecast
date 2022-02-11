@@ -1,4 +1,4 @@
-import { mongoRead, upsert } from "../mongo-wrapper.js"
+import { mongoRead, upsert } from "../../database/mongo-wrapper.js"
 
 export async function createHistoryForMonth(){
     let currentDate = new Date()

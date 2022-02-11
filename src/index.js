@@ -2,12 +2,12 @@
 import fs from 'fs'
 import readline from "readline"
 
-import { platformFetchers } from "./utils/platforms.js"
-import { mergeEverything } from "./utils/mergeEverything.js"
-import { updateHistory } from "./utils/history/updateHistory.js"
+import { platformFetchers } from "./platforms/all-platforms.js"
+import { mergeEverything } from "./flow/mergeEverything.js"
+import { updateHistory } from "./flow/history/updateHistory.js"
 import { rebuildAlgoliaDatabase } from "./utils/algolia.js"
-import { rebuildNetlifySiteWithNewData } from "./utils/rebuildNetliftySiteWithNewData.js"
-import { doEverything, tryCatchTryAgain } from "./utils/doEverything.js"
+import { rebuildNetlifySiteWithNewData } from "./flow/rebuildNetliftySiteWithNewData.js"
+import { doEverything, tryCatchTryAgain } from "./flow/doEverything.js"
 
 /* Support functions */
 let functions = [...platformFetchers, mergeEverything, updateHistory, rebuildAlgoliaDatabase, rebuildNetlifySiteWithNewData, doEverything]

@@ -1,5 +1,5 @@
 import { writeFileSync } from "fs"
-import { mongoReadWithReadCredentials, upsert } from "../mongo-wrapper.js"
+import { mongoReadWithReadCredentials, upsert } from "../../database/mongo-wrapper.js"
 let mongoRead = mongoReadWithReadCredentials
 let isEmptyArray = arr => arr.length == 0
 

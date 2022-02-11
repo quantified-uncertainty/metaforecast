@@ -1,40 +1,47 @@
 /* Imports */
-import fs from "fs"
+import fs from "fs";
 
 /* Definitions */
-let locationData = "./data/"
-
+let locationData = "../../input";
 /* Body */
-let rawdata = fs.readFileSync("../data/givewellopenphil-questions-processed-old-format.json")
-let data = JSON.parse(rawdata)
+let rawdata = fs.readFileSync(
+  `${locationData}/givewellopenphil-questions.json`
+);
+let data = JSON.parse(rawdata);
 
-let results = []
-for(let datum of data){
-  let probability = Math.round(Number(datum["Percentage"].replace("%","")))/100
-    let result = ({
-    "title": datum["Title"],
-    "url": datum["URL"],
-    "platform": datum["Platform"],
-    "description": datum["Description"],
-    "options": [
+let results = [];
+let counter = 0;
+for (let datum of data) {
+  let id = `givewellopenphil-2021-${counter}`;
+  counter = counter + 1;
+  // let probability = Math.round(Number(datum["Percentage"].replace("%", ""))) / 100;
+  let result = {
+    id: id,
+    title: datum["title"],
+    url: datum["url"],
+    platform: datum["platform"],
+    description: datum["description"],
+    options: datum["options"],
+    /*[
       {
-        "name": "Yes",
-        "probability": probability,
-        "type": "PROBABILITY"
+        name: "Yes",
+        probability: probability,
+        type: "PROBABILITY",
       },
       {
-        "name": "No",
-        "probability": 1-Math.round(probability*100)/100,
-        "type": "PROBABILITY"
-      }
-    ],            
-    "timestamp": "2021-02-23T15∶21∶37.005Z",//new Date().toISOString(),
-    "qualityindicators": {
-      "stars": datum["Stars"]
-    }
-  })
-  results.push(result)
+        name: "No",
+        probability: 1 - Math.round(probability * 100) / 100,
+        type: "PROBABILITY",
+      },
+    ],
+		*/
+    timestamp: "2021-02-23T15∶21∶37.005Z", //new Date().toISOString(),
+    qualityindicators: {
+      stars: datum.qualityindicators.stars, //datum["stars"],
+    },
+  };
+  results.push(result);
 }
 
-let string = JSON.stringify(results,null,  2)
-fs.writeFileSync("../data/givewellopenphil-questions-new.json", string)
+let string = JSON.stringify(results, null, 2);
+fs.writeFileSync(`${locationData}/givewellopenphil-questions-new.json`, string);
