@@ -195,15 +195,14 @@ pgInsert({
 */
 
 export async function pgUpsert({ contents, schema, tableName }) {
-
-
 	if (tableWhiteList.includes(`${schema}.${tableName}`)) {
 		if (schema == "latest") {
-			await dropTable(schema, tableName);
-			await buildMetaforecastTable(schema, tableName);
-			await createUniqueIndex(schema, tableName)
+			await runPgCommand({ command: dropTable(schema, tableName), pool: readWritePool })
+			await runPgCommand({ command: buildMetaforecastTable(schema, tableName), pool: readWritePool })
+			await runPgCommand({ command: createUniqueIndex(schema, tableName), pool: readWritePool })
 		}
-		console.log(`Inserting into postgres table ${schema}.${tableName}`)
+		console.log(`Upserting into postgres table ${schema}.${tableName}`)
+		console.log({ contents, schema, tableName })
 		let i = 0
 		for (let datum of contents) {
 			await pgInsert({ datum, schema, tableName })
