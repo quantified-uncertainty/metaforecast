@@ -12,7 +12,7 @@ const tableWhiteList = [...createFullName("latest", tableNamesWhitelist), ...cre
 
 
 /* Postgres database connection code */
-const databaseURL = getSecret("digitalocean-postgres")
+const databaseURL = process.env.DIGITALOCEAN_POSTGRES ||  getSecret("digitalocean-postgres")
 // process.env.DATABASE_URL || getSecret("heroku-postgres")
 const readWritePool = new Pool({
 	connectionString: databaseURL,
