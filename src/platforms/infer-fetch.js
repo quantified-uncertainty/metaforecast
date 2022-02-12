@@ -11,7 +11,7 @@ let htmlEndPoint = "https://www.infer-pub.com/questions";
 String.prototype.replaceAll = function replaceAll(search, replace) {
   return this.split(search).join(replace);
 };
-const DEBUG_MODE = "on"; // "off"
+const DEBUG_MODE = "off"; // "off"
 const SLEEP_TIME_RANDOM = 7000; // miliseconds
 const SLEEP_TIME_EXTRA = 2000;
 /* Support functions */
