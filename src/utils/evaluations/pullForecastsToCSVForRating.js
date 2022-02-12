@@ -13,13 +13,13 @@ let getQualityIndicators = forecast => Object.entries(forecast.qualityindicators
 
 let main = async () => {
   let highQualityPlatforms = ['CSET-foretell', 'Foretold', 'Good Judgment Open', 'Metaculus', 'PredictIt', 'Rootclaim']
-  let json = await databaseReadWithReadCredentials("metaforecasts")
+  let json = await databaseReadWithReadCredentials({ group: "combined" })
   console.log(json.length)
   //let uniquePlatforms = [...new Set(json.map(forecast => forecast.platform))]
   //console.log(uniquePlatforms)
-  
+
   let forecastsFromGoodPlatforms = json.filter(forecast => highQualityPlatforms.includes(forecast.platform))
-  let tsv = "index\ttitle\turl\tqualityindicators\n"+forecastsFromGoodPlatforms
+  let tsv = "index\ttitle\turl\tqualityindicators\n" + forecastsFromGoodPlatforms
     .map((forecast, index) => {
       let row = `${index}\t${forecast.title}\t${forecast.url}\t${getQualityIndicators(forecast)}`
       console.log(row)

@@ -12,21 +12,35 @@ const tableWhiteList = [...createFullName("latest", tableNamesWhitelist), ...cre
 
 
 /* Postgres database connection code */
-const pool = new Pool({
-	connectionString: process.env.DATABASE_URL || getSecret("heroku-postgres"),
+const databaseURL = getSecret("digitalocean-postgres")
+// process.env.DATABASE_URL || getSecret("heroku-postgres")
+const readWritePool = new Pool({
+	connectionString: databaseURL,
 	ssl: {
 		rejectUnauthorized: false
 	}
 });
 
+const readOnlyDatabaseURL = "postgresql://public_read_only_user:ffKhp52FJNNa8cKK@postgres-red-do-user-10290909-0.b.db.ondigitalocean.com:25060/metaforecastpg?sslmode=require"
+const readOnlyPool = new Pool({
+	connectionString: readOnlyDatabaseURL,
+	ssl: {
+		rejectUnauthorized: false
+	}
+});
 
 // Helpers
-const runPgCommand = async (query) => {
-	console.log(query)
-	const client = await pool.connect();
-	const result = await client.query(query);
-	const results = { 'results': (result) ? result.rows : null };
-	client.release();
+const runPgCommand = async ({ command, pool }) => {
+	console.log(command)
+	try{
+		const client = await pool.connect();
+		const result = await client.query(command);
+		const results = { 'results': (result) ? result.rows : null };
+	}catch(error){
+		console.log(error)
+	}finally{
+		client.release();
+	}
 	// console.log(results)
 	return results
 }
@@ -48,38 +62,74 @@ let buildMetaforecastTable = (schema, table) => `CREATE TABLE ${schema}.${table}
 let createIndex = (schema, table) => `CREATE INDEX ${schema}_${table}_id_index ON ${schema}.${table} (id);`
 let createUniqueIndex = (schema, table) => `CREATE UNIQUE INDEX ${schema}_${table}_id_index ON ${schema}.${table} (id);`
 
-export async function pgInitialize() {
+async function setPermissionsForPublicUser() {
 
-	for (let schema of schemas) {
-		runPgCommand(`CREATE SCHEMA IF NOT EXISTS ${schema}`)
+	let initCommands = ["REVOKE ALL ON DATABASE metaforecastpg FROM public_read_only_user;",
+		"GRANT CONNECT ON DATABASE metaforecastpg TO public_read_only_user;"]
+	for (let command of initCommands) {
+		await runPgCommand({ command, pool: readWritePool })
 	}
-	runPgCommand(`SET search_path TO ${schemas.join(",")},public;`)
 
+	let buildGrantSelectForSchema = (schema) => `GRANT SELECT ON ALL TABLES IN SCHEMA ${schema} TO public_read_only_user`
+	for (let schema of schemas) {
+		await runPgCommand({ command: buildGrantSelectForSchema(schema), pool: readWritePool })
+	}
+
+	let alterDefaultPrivilegesForSchema = (schema) => `ALTER DEFAULT PRIVILEGES IN SCHEMA ${schema} GRANT SELECT ON TABLES TO public_read_only_user`
+	for (let schema of schemas) {
+		await runPgCommand({ command: alterDefaultPrivilegesForSchema(schema), pool: readWritePool })
+	}
+
+}
+export async function pgInitialize() {
+	console.log("Create schemas")
+	for (let schema of schemas) {
+		await runPgCommand({ command: `CREATE SCHEMA IF NOT EXISTS ${schema}`, pool: readWritePool })
+	}
+	console.log("")
+
+	console.log("Set search path")
+	await runPgCommand({ command: `SET search_path TO ${schemas.join(",")},public;`, pool: readWritePool })
+	console.log("")
+
+	console.log("Set public user permissions")
+	await setPermissionsForPublicUser()
+	console.log("")
+
+	console.log("Create tables & their indexes")
 	for (let schema of schemas) {
 		for (let table of tableNamesWhitelist) {
-			await runPgCommand(dropTable(schema, table))
-			await runPgCommand(buildMetaforecastTable(schema, table))
+			await runPgCommand({ command: dropTable(schema, table), pool: readWritePool })
+			await runPgCommand({ command: buildMetaforecastTable(schema, table), pool: readWritePool })
 			if (schema == "history") {
-				await runPgCommand(createIndex(schema, table))
+				await runPgCommand({ command: createIndex(schema, table), pool: readWritePool })
 			} else {
-				await runPgCommand(createUniqueIndex(schema, table))
+				await runPgCommand({ command: createUniqueIndex(schema, table), pool: readWritePool })
 			}
 		}
 	}
-
+	console.log("")
 }
 // pgInitialize()
 
 // Read
-export async function pgRead({schema, tableName}) {
+async function pgReadWithPool({ schema, tableName, pool }) {
 	if (tableWhiteList.includes(`${schema}.${tableName}`)) {
 		let command = `SELECT * from ${schema}.${tableName}`
-		let response = await runPgCommand(command)
-		let results = response. results
+		let response = await runPgCommand({ command, pool })
+		let results = response.results
 		return results
 	} else {
 		throw Error(`Table ${schema}.${tableName} not in whitelist; stopping to avoid tricky sql injections`)
 	}
+}
+
+export async function pgRead({ schema, tableName }) {
+	return await pgReadWithPool({ schema, tableName, pool: readWritePool })
+}
+
+export async function pgReadWithReadCredentials({ schema, tableName }) {
+	return await pgReadWithPool({ schema, tableName, readOnlyPool: readOnlyPool })
 }
 
 export async function pgInsert({ datum, schema, tableName }) {
@@ -99,10 +149,14 @@ export async function pgInsert({ datum, schema, tableName }) {
 			JSON.stringify(datum.qualityindicators || []),
 			JSON.stringify(datum.extra || [])
 		]
-
-		const client = await pool.connect();
-		const result = await client.query(text, values);
-		client.release();
+		try{
+			const client = await readWritePool.connect();
+			const result = await client.query(text, values);	
+		}catch(error){
+			console.log(error)
+		}finally{
+			client.release();
+		}
 		// console.log(result)
 		return result
 	} else {
@@ -160,10 +214,10 @@ export async function pgUpsert({ contents, schema, tableName }) {
 			}
 		}
 		console.log(`Inserted rows with approximate cummulative size ${roughSizeOfObject(contents)} MB into ${schema}.${tableName}.`)
-		let check = await pgRead({schema, tableName})
+		let check = await pgRead({ schema, tableName })
 		console.log(`Received rows with approximate cummulative size ${roughSizeOfObject(check)} MB from ${schema}.${tableName}.`)
 		console.log("Sample: ")
-		console.log(JSON.stringify(check.slice(0,1), null, 4));
+		console.log(JSON.stringify(check.slice(0, 1), null, 4));
 
 		//console.log(JSON.stringify(check.slice(0, 1), null, 4));
 

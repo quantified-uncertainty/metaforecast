@@ -27,7 +27,7 @@ let shuffle = (array) => {
 let main = async () => {
   let init = Date.now();
 
-  let json = await databaseReadWithReadCredentials("metaforecasts");
+  let json = await databaseReadWithReadCredentials({ group: "combined" });
 
   json = json.filter(
     (forecast) =>

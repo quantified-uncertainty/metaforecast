@@ -1,9 +1,9 @@
 import { databaseRead, databaseUpsert } from "../../database/database-wrapper.js"
 
-export async function createHistoryForMonth(){
+export async function createHistoryForMonth() {
     let currentDate = new Date()
-    let dateUpToMonth = currentDate.toISOString().slice(0,7).replace("-", "_")
-    let metaforecasts = await databaseRead("metaforecasts")
+    let dateUpToMonth = currentDate.toISOString().slice(0, 7).replace("-", "_")
+    let metaforecasts = await databaseRead({ group: "combined" })
     let metaforecastsHistorySeed = metaforecasts.map(element => {
         // let moreoriginsdata = element.author ? ({author: element.author}) : ({})
         return ({
@@ -18,10 +18,10 @@ export async function createHistoryForMonth(){
                 qualityindicators: element.qualityindicators
             }],
             extra: element.extra || {}
-         })
+        })
     }).filter(element => element.platform != "Metaculus" && element.platform != "Estimize")
     //console.log(metaforecastsHistorySeed)
-    await databaseUpsert({contents: metaforecastsHistorySeed, group: "history"})
+    await databaseUpsert({ contents: metaforecastsHistorySeed, group: "history" })
 
 }
 ////createInitialHistory()

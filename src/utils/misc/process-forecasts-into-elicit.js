@@ -8,7 +8,7 @@ let locationData = "./data/"
 /* Body */
 // let rawdata =  fs.readFileSync("./data/merged-questions.json") // run from topmost folder, not from src
 async function main(){
-  let data = await databaseReadWithReadCredentials("metaforecasts") //JSON.parse(rawdata)
+  let data = await databaseReadWithReadCredentials({ group: "combined" }) //JSON.parse(rawdata)
   let processDescription = (description) => {
     if(description == null || description == undefined || description == ""){
       return ""

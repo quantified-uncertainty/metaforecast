@@ -1,7 +1,7 @@
 import { databaseRead, databaseUpsert } from "../database-wrapper.js"
 
 let createInitialHistory = async () => {
-    let metaforecasts = await databaseRead("metaforecasts")
+    let metaforecasts = await databaseRead({ group: "combined" })
     let metaforecastsHistorySeed = metaforecasts.map(element => {
         // let moreoriginsdata = element.author ? ({author: element.author}) : ({})
         return ({
@@ -16,10 +16,10 @@ let createInitialHistory = async () => {
                 qualityindicators: element.qualityindicators
             }],
             extra: element.extra || {}
-         })
+        })
     })
     console.log(metaforecastsHistorySeed)
-    await databaseUpsert(metaforecastsHistorySeed, "metaforecast_history")
+    await databaseUpsert({ contents: metaforecastsHistorySeed, group: "history" })
 
 }
 createInitialHistory()

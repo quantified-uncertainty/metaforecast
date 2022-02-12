@@ -3,7 +3,7 @@ import fs from "fs"
 import { databaseReadWithReadCredentials } from "../database/database-wrapper.js"
 
 let main = async () => {
-  let json = await databaseReadWithReadCredentials("metaforecasts")
+  let json = await databaseReadWithReadCredentials({ group: "combined" })
   let string = JSON.stringify(json, null, 2)
   let filename = 'metaforecasts.json'
   fs.writeFileSync(filename, string);

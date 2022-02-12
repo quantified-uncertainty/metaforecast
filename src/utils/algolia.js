@@ -1,35 +1,35 @@
 import algoliasearch from 'algoliasearch';
 import fs from "fs"
-import {getSecret} from "./getSecrets.js"
+import { getSecret } from "./getSecrets.js"
 import { databaseReadWithReadCredentials } from "../database/database-wrapper.js"
 import { mergeEverythingInner } from '../flow/mergeEverything.js';
 
 let cookie = process.env.ALGOLIA_MASTER_API_KEY || getSecret("algolia")
-const client = algoliasearch('96UD3NTQ7L', cookie); 
+const client = algoliasearch('96UD3NTQ7L', cookie);
 const index = client.initIndex('metaforecast');
 
 
-export async function rebuildAlgoliaDatabaseTheHardWay(){
+export async function rebuildAlgoliaDatabaseTheHardWay() {
   console.log("Doing this the hard way")
   let records = await mergeEverythingInner()
-  records = records.map((record, index) => ({...record, has_numforecasts: record.numforecasts ? true : false, objectID: index}) )
+  records = records.map((record, index) => ({ ...record, has_numforecasts: record.numforecasts ? true : false, objectID: index }))
   // this is necessary to filter by missing attributes https://www.algolia.com/doc/guides/managing-results/refine-results/filtering/how-to/filter-by-null-or-missing-attributes/  
-  
-  if(index.exists()){
+
+  if (index.exists()) {
     console.log("Index exists")
-    index.replaceAllObjects(records, { safe:true }).catch(error => console.log(error))
+    index.replaceAllObjects(records, { safe: true }).catch(error => console.log(error))
     console.log(`Pushed ${records.length} records. Algolia will update asynchronously`)
   }
 }
 
-export async function rebuildAlgoliaDatabaseTheEasyWay(){
-  let records = await databaseReadWithReadCredentials("metaforecasts")
-  records = records.map((record, index) => ({...record, has_numforecasts: record.numforecasts ? true : false, objectID: index}) )
+export async function rebuildAlgoliaDatabaseTheEasyWay() {
+  let records = await databaseReadWithReadCredentials({ group: "combined" })
+  records = records.map((record, index) => ({ ...record, has_numforecasts: record.numforecasts ? true : false, objectID: index }))
   // this is necessary to filter by missing attributes https://www.algolia.com/doc/guides/managing-results/refine-results/filtering/how-to/filter-by-null-or-missing-attributes/  
-  
-  if(index.exists()){
+
+  if (index.exists()) {
     console.log("Index exists")
-    index.replaceAllObjects(records, { safe:true }).catch(error => console.log(error))
+    index.replaceAllObjects(records, { safe: true }).catch(error => console.log(error))
     console.log(`Pushed ${records.length} records. Algolia will update asynchronously`)
   }
 }

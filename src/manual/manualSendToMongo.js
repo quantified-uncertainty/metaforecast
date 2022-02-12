@@ -1,5 +1,5 @@
 import fs from "fs";
-import { databaseRead, databaseUpsert } from "../database/database-wrapper.js";
+import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* This is necessary for estimize, the database of x-risk estimates, and for the OpenPhil/GiveWell predictions. Unlike the others, I'm not fetching them constantly, but only once. */
 

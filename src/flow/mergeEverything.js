@@ -1,12 +1,11 @@
 import { databaseRead, databaseUpsert } from "../database/database-wrapper.js";
 import { platformNames } from "../platforms/all-platforms.js"
 /* Merge everything */
-let suffix = "-questions";
 
 export async function mergeEverythingInner() {
   let merged = [];
   for (let platformName of platformNames) {
-    let json = await databaseRead(platformName + suffix);
+    let json = await databaseRead({ group: platformName });
     console.log(`${platformName} has ${json.length} questions\n`);
     merged = merged.concat(json);
   }
