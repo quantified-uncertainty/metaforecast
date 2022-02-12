@@ -110,7 +110,7 @@ export async function predictit() {
   //console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/predictit-questions.json', string);
-  await databaseUpsert(results, "predictit-questions");
+  await databaseUpsert({ contents: results, group: "predictit" });
 
   console.log("Done");
 }

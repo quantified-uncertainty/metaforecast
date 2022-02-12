@@ -1,9 +1,9 @@
 import fs from 'fs'
 
-export function getCookie(property){
+export function getSecret(property){
     let answer = 0
     try {
-        let rawcookie = fs.readFileSync("./src/input/privatekeys.json")
+        let rawcookie = fs.readFileSync("./src/input/secrets.json")
         let cookie = JSON.parse(rawcookie)
         if (cookie[property]){
             answer = cookie[property]
@@ -15,7 +15,7 @@ export function getCookie(property){
     return answer
 }
 
-export async function applyIfCookieExists(cookie, fun){
+export async function applyIfSecretExists(cookie, fun){
     if(cookie){
         await fun(cookie)
     }else if(!cookie){

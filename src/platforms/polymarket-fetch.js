@@ -152,7 +152,8 @@ export async function polymarket() {
   // console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polymarket-questions.json', string);
-  await databaseUpsert(results, "polymarket-questions");
+  await databaseUpsert({ contents: results, group: "polymarket" });
+
   console.log("Done");
 }
 // polymarket()

@@ -1,42 +1,10 @@
 import pkg from 'mongodb';
 const { MongoClient } = pkg;
-import { getCookie } from "../utils/getCookies.js"
-
-function roughSizeOfObject(object) {
-  var objectList = [];
-  var stack = [object];
-  var bytes = 0;
-
-  while (stack.length) {
-    var value = stack.pop();
-    if (typeof value === 'boolean') {
-      bytes += 4;
-    }
-    else if (typeof value === 'string') {
-      bytes += value.length * 2;
-    }
-    else if (typeof value === 'number') {
-      bytes += 8;
-    }
-    else if
-      (
-      typeof value === 'object'
-      && objectList.indexOf(value) === -1
-    ) {
-      objectList.push(value);
-
-      for (var i in value) {
-        stack.push(value[i]);
-      }
-    }
-  }
-  let megaBytes = bytes / (1024) ** 2
-  let megaBytesRounded = Math.round(megaBytes * 10) / 10
-  return megaBytesRounded;
-}
+import { getSecret } from "../utils/getSecrets.js"
+import { roughSizeOfObject } from "../utils/roughSize.js"
 
 export async function mongoUpsert(contents, documentName, collectionName = "metaforecastCollection", databaseName = "metaforecastDatabase") {
-  const url = process.env.MONGODB_URL || getCookie("mongodb");
+  const url = process.env.MONGODB_URL || getSecret("mongodb");
   const client = new MongoClient(url);
   try {
     await client.connect();
@@ -58,7 +26,7 @@ export async function mongoUpsert(contents, documentName, collectionName = "meta
 
     // Insert a single document, wait for promise so we can read it back
     // const p = await collection.insertOne(metaforecastDocument);
-    await collection.replaceOne(filter, document, { databaseUpsert: true });
+    await collection.replaceOne(filter, document, { upsert: true });
     console.log(`Pushed document ${documentName} in collection ${collectionName} in database ${databaseName} with approximate size ${roughSizeOfObject(document)} MB`)
 
     // Find one document
@@ -76,7 +44,7 @@ export async function mongoUpsert(contents, documentName, collectionName = "meta
 }
 
 export async function mongoRead(documentName, collectionName = "metaforecastCollection", databaseName = "metaforecastDatabase") {
-  const url = process.env.MONGODB_URL || getCookie("mongodb");
+  const url = process.env.MONGODB_URL || getSecret("mongodb");
 
   const client = new MongoClient(url, {
     useNewUrlParser: true,
@@ -152,7 +120,7 @@ export async function mongoReadWithReadCredentials(documentName, collectionName 
 }
 
 export async function mongoGetAllElements(databaseName = "metaforecastDatabase", collectionName = "metaforecastCollection") {
-  const url = process.env.MONGODB_URL || getCookie("mongodb");
+  const url = process.env.MONGODB_URL || getSecret("mongodb");
   const client = new MongoClient(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,

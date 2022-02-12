@@ -154,7 +154,7 @@ export async function metaculus() {
 
   // let string = JSON.stringify(all_questions, null, 2)
   // fs.writeFileSync('./metaculus-questions.json', string);
-  await databaseUpsert(all_questions, "metaculus-questions");
+  await databaseUpsert({ contents: all_questions, group: "metaculus" });
 
   console.log("Done");
 }

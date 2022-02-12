@@ -1,7 +1,7 @@
 /* Imports */
 import fs from "fs";
 import axios from "axios";
-import { getCookie, applyIfCookieExists } from "../utils/getCookies.js";
+import { getSecret, applyIfSecretExists } from "../utils/getSecrets.js";
 import { Tabletojson } from "tabletojson";
 import { calculateStars } from "../utils/stars.js";
 import toMarkdown from "../utils/toMarkdown.js";
@@ -223,7 +223,8 @@ async function goodjudgmentopen_inner(cookie) {
   // fs.writeFileSync('./data/goodjudmentopen-questions.json', string);
   console.log(results);
   if (results.length > 0) {
-    await databaseUpsert(results, "goodjudmentopen-questions");
+    await databaseUpsert({ contents: results, group: "goodjudmentopen" });
+
   } else {
     console.log("Not updating results, as process was not signed in");
   }
@@ -237,6 +238,6 @@ async function goodjudgmentopen_inner(cookie) {
 
 export async function goodjudgmentopen() {
   let cookie =
-    process.env.GOODJUDGMENTOPENCOOKIE || getCookie("goodjudmentopen");
-  await applyIfCookieExists(cookie, goodjudgmentopen_inner);
+    process.env.GOODJUDGMENTOPENCOOKIE || getSecret("goodjudmentopen");
+  await applyIfSecretExists(cookie, goodjudgmentopen_inner);
 }

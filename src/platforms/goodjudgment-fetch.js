@@ -122,7 +122,8 @@ export async function goodjudgment() {
   // fs.writeFileSync('./data/goodjudgment-questions.json', string);
   // fs.writeFileSync('./goodjudgment-questions-test.json', string);
   console.log(results);
-  await databaseUpsert(results, "goodjudgment-questions");
+  await databaseUpsert({ contents: results, group: "goodjudgment" });
+
   console.log(
     "Failing is not unexpected; see utils/pullSuperforecastsManually.sh/js"
   );

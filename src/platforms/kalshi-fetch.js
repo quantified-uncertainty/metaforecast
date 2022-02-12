@@ -83,7 +83,8 @@ export async function kalshi() {
   // console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polymarket-questions.json', string);
-  await databaseUpsert(results, "kalshi-questions");
+  await databaseUpsert({ contents: results, group: "kalshi" });
+
   console.log("Done");
 }
 // kalshi()

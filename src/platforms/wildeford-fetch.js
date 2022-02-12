@@ -2,7 +2,7 @@
 import fs from "fs";
 // import axios from "axios"
 import { GoogleSpreadsheet } from "google-spreadsheet";
-import { getCookie, applyIfCookieExists } from "../utils/getCookies.js";
+import { getSecret, applyIfSecretExists } from "../utils/getSecrets.js";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
 import { hash } from "../utils/hash.js";
@@ -125,12 +125,13 @@ export async function wildeford_inner(google_api_key) {
   // console.log(results.sort((a,b) => (a.title > b.title)))
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polyprediction-questions.json', string);
-  await databaseUpsert(results, "wildeford-questions");
+  await databaseUpsert({ contents: results, group: "wildeford" });
+
   console.log("Done");
 }
 //example()
 
 export async function wildeford() {
-  const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || getCookie("google-api"); // See: https://developers.google.com/sheets/api/guides/authorizing#APIKey
-  await applyIfCookieExists(GOOGLE_API_KEY, wildeford_inner);
+  const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || getSecret("google-api"); // See: https://developers.google.com/sheets/api/guides/authorizing#APIKey
+  await applyIfSecretExists(GOOGLE_API_KEY, wildeford_inner);
 }

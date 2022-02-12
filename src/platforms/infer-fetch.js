@@ -1,6 +1,6 @@
 /* Imports */
 import axios from "axios";
-import { getCookie, applyIfCookieExists } from "../utils/getCookies.js";
+import { getSecret, applyIfSecretExists } from "../utils/getSecrets.js";
 import { Tabletojson } from "tabletojson";
 import toMarkdown from "../utils/toMarkdown.js";
 import { calculateStars } from "../utils/stars.js";
@@ -269,7 +269,7 @@ async function infer_inner(cookie) {
   // fs.writeFileSync('./data/infer-questions.json', string);
   // console.log(results)
   if (results.length > 0) {
-    await databaseUpsert(results, "infer-questions");
+    await databaseUpsert({ contents: results, group: "infer" });
   } else {
     console.log("Not updating results, as process was not signed in");
   }
@@ -282,6 +282,6 @@ async function infer_inner(cookie) {
 }
 
 export async function infer() {
-  let cookie = process.env.INFER_COOKIE || getCookie("infer");
-  await applyIfCookieExists(cookie, infer_inner);
+  let cookie = process.env.INFER_COOKIE || getSecret("infer");
+  await applyIfSecretExists(cookie, infer_inner);
 }

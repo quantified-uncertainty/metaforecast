@@ -1,6 +1,6 @@
 /* Imports */
 import axios from "axios"
-import { getCookie, applyIfCookieExists } from "../utils/getCookies.js"
+import { getSecret, applyIfSecretExists } from "../utils/getSecrets.js"
 import { Tabletojson } from "tabletojson"
 import toMarkdown from "../utils/toMarkdown.js"
 import { calculateStars } from "../utils/stars.js"
@@ -249,6 +249,6 @@ async function csetforetell_inner(cookie) {
 
 
 export async function csetforetell() {
-  let cookie = process.env.CSETFORETELL_COOKIE || getCookie("csetforetell")
-  await applyIfCookieExists(cookie, csetforetell_inner)
+  let cookie = process.env.CSETFORETELL_COOKIE || getSecret("csetforetell")
+  await applyIfSecretExists(cookie, csetforetell_inner)
 }

@@ -22,6 +22,6 @@ export async function mergeEverythingInner() {
 
 export async function mergeEverything() {
   let merged = await mergeEverythingInner();
-  await databaseUpsert(merged, "metaforecasts");
+  await databaseUpsert({ contents: merged, group: "combined" });
   console.log("Done");
 }

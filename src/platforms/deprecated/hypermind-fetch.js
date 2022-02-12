@@ -3,7 +3,7 @@ import fs from 'fs'
 import axios from "axios"
 import https from "https"
 import fetch from "isomorphic-fetch"
-import {getCookie, applyIfCookieExists} from "../utils/getCookies.js"
+import {getSecret, applyIfSecretExists} from "../utils/getSecrets.js"
 import toMarkdown from "../utils/toMarkdown.js"
 import { calculateStars } from "../utils/stars.js"
 import { databaseUpsert } from "../utils/database-wrapper.js"
@@ -178,6 +178,6 @@ async function hypermind_inner(cookie) {
 //hypermind()
 
 export async function hypermind() {
-  let cookie = process.env.HYPERMINDCOOKIE || getCookie("hypermind") 
-  await applyIfCookieExists(cookie, hypermind_inner)
+  let cookie = process.env.HYPERMINDCOOKIE || getSecret("hypermind") 
+  await applyIfSecretExists(cookie, hypermind_inner)
 }

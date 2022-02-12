@@ -153,6 +153,7 @@ export async function smarkets() {
 
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/smarkets-questions.json', string);
-  await databaseUpsert(results, "smarkets-questions");
+  await databaseUpsert({ contents: results, group: "smarkets" });
+
 }
 //smarkets()

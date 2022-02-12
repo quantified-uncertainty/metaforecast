@@ -101,7 +101,8 @@ export async function foretold() {
   }
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/foretold-questions.json', string);
-  await databaseUpsert(results, "foretold-questions");
+  await databaseUpsert({ contents: results, group: "foretold" });
+
   console.log("Done");
 }
 // foretold()

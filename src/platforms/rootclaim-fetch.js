@@ -69,7 +69,8 @@ export async function rootclaim() {
   //console.log(JSON.stringify(results, null, 4))
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('rootclaim-questions.json', string);
-  await databaseUpsert(results, "rootclaim-questions");
+  await databaseUpsert({ contents: results, group: "rootclaim" });
+
   console.log("Done");
 }
 //rootclaim()

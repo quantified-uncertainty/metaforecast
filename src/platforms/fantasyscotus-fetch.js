@@ -118,7 +118,7 @@ export async function fantasyscotus() {
   //console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/fantasyscotus-questions.json', string);
-  await databaseUpsert(results, "fantasyscotus-questions");
+  await databaseUpsert({ contents: results, group: "fantasyscotus" });
   console.log("Done");
 }
 //fantasyscotus()

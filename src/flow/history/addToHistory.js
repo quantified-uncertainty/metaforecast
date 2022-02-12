@@ -59,7 +59,7 @@ export async function addToHistory(){
     newHistoryJSON.push(newHistoryElement)
   }
 
-  await databaseUpsert(newHistoryJSON, `metaforecast_history_${dateUpToMonth}`, "metaforecastHistory")
+  await databaseUpsert({contents: newHistoryJSON, group: "history"})
 
   // console.log(newHistoryJSON.slice(0,5))
   // writeFileSync("metaforecast_history.json", JSON.stringify(newHistoryJSON, null, 2))

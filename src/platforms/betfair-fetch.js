@@ -143,7 +143,7 @@ export async function betfair() {
   // console.log(results.map(result => ({title: result.title, description: result.description})))
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polyprediction-questions.json', string);
-  await databaseUpsert(results, "betfair-questions");
+  await databaseUpsert({ contents: results, group: "betfair" });
   console.log("Done");
 }
 // betfair()

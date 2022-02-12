@@ -12,7 +12,7 @@ let main = async () => {
     let fileRaw = fs.readFileSync(`./src/input/${file + suffixFiles}`);
     let fileContents = JSON.parse(fileRaw);
     console.log(fileContents);
-    await databaseUpsert(fileContents, file + suffixMongo);
+    await databaseUpsert({contents: fileContents, group: file });
   }
 };
 main();

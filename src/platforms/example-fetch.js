@@ -64,7 +64,7 @@ export async function example() {
   // console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polyprediction-questions.json', string);
-  await databaseUpsert(results, "example-questions");
+  await databaseUpsert({ contents: results, group: "example" });
   console.log("Done");
 }
 //example()

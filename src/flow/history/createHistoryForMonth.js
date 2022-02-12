@@ -21,7 +21,7 @@ export async function createHistoryForMonth(){
          })
     }).filter(element => element.platform != "Metaculus" && element.platform != "Estimize")
     //console.log(metaforecastsHistorySeed)
-    await databaseUpsert(metaforecastsHistorySeed, `metaforecast_history_${dateUpToMonth}`, "metaforecastHistory")
+    await databaseUpsert({contents: metaforecastsHistorySeed, group: "history"})
 
 }
 ////createInitialHistory()

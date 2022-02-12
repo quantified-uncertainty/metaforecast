@@ -4,7 +4,7 @@ node_modules/*
 
 ## Security
 **/betfaircertificates/
-**/privatekeys.json
+**/secrets.json
 
 ## Personal notes
 notes/*

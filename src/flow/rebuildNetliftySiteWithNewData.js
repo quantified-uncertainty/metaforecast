@@ -1,5 +1,5 @@
 import axios from "axios"
-import { getCookie, applyIfCookieExists } from "../utils/getCookies.js"
+import { getSecret, applyIfSecretExists } from "../utils/getSecrets.js"
 
 export async function rebuildNetlifySiteWithNewData_inner(cookie) {
     let payload = ({});
@@ -9,6 +9,6 @@ export async function rebuildNetlifySiteWithNewData_inner(cookie) {
 }
 
 export async function rebuildNetlifySiteWithNewData() {
-    let cookie = process.env.REBUIDNETLIFYHOOKURL || getCookie("netlify");
-    await applyIfCookieExists(cookie, rebuildNetlifySiteWithNewData_inner)
+    let cookie = process.env.REBUIDNETLIFYHOOKURL || getSecret("netlify");
+    await applyIfSecretExists(cookie, rebuildNetlifySiteWithNewData_inner)
 }

@@ -96,7 +96,8 @@ export async function manifoldmarkets() {
   // console.log(results)
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('polyprediction-questions.json', string);
-  await databaseUpsert(results, "manifoldmarkets-questions");
+  await databaseUpsert({ contents: results, group: "manifoldmarkets" });
+
   console.log("Done");
 }
 // manifoldmarkets()

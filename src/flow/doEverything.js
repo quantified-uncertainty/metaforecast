@@ -4,11 +4,10 @@ import { updateHistory } from "./history/updateHistory.js"
 import { rebuildAlgoliaDatabase } from "../utils/algolia.js"
 import { rebuildNetlifySiteWithNewData } from "./rebuildNetliftySiteWithNewData.js"
 import { platformFetchers } from "../platforms/all-platforms.js"
-
 /* Do everything */
 function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
 
 export async function tryCatchTryAgain(fun) {
     try {
