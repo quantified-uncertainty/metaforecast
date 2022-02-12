@@ -12,7 +12,7 @@ const tableWhiteList = [...createFullName("latest", tableNamesWhitelist), ...cre
 
 
 /* Postgres database connection code */
-const databaseURL = process.env.DIGITALOCEAN_POSTGRES ||  getSecret("digitalocean-postgres")
+const databaseURL = process.env.DIGITALOCEAN_POSTGRES || getSecret("digitalocean-postgres")
 // process.env.DATABASE_URL || getSecret("heroku-postgres")
 const readWritePool = new Pool({
 	connectionString: databaseURL,
@@ -32,17 +32,18 @@ const readOnlyPool = new Pool({
 // Helpers
 const runPgCommand = async ({ command, pool }) => {
 	console.log(command)
-	try{
-		const client = await pool.connect();
-		const result = await client.query(command);
-		const results = { 'results': (result) ? result.rows : null };
-	}catch(error){
+	const client = await pool.connect();
+	let result
+	try {
+		let response = await client.query(command);
+		result = { 'results': (response) ? response.rows : null };
+	} catch (error) {
 		console.log(error)
-	}finally{
+	} finally {
 		client.release();
 	}
 	// console.log(results)
-	return results
+	return result
 }
 
 // Initialize
@@ -149,12 +150,13 @@ export async function pgInsert({ datum, schema, tableName }) {
 			JSON.stringify(datum.qualityindicators || []),
 			JSON.stringify(datum.extra || [])
 		]
-		try{
-			const client = await readWritePool.connect();
-			const result = await client.query(text, values);	
-		}catch(error){
+		const client = await readWritePool.connect();
+		let result
+		try {
+			result = await client.query(text, values);
+		} catch (error) {
 			console.log(error)
-		}finally{
+		} finally {
 			client.release();
 		}
 		// console.log(result)
