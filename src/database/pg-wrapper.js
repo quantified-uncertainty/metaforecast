@@ -202,7 +202,6 @@ export async function pgUpsert({ contents, schema, tableName }) {
 			await runPgCommand({ command: createUniqueIndex(schema, tableName), pool: readWritePool })
 		}
 		console.log(`Upserting into postgres table ${schema}.${tableName}`)
-		console.log({ contents, schema, tableName })
 		let i = 0
 		for (let datum of contents) {
 			await pgInsert({ datum, schema, tableName })
