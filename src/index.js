@@ -11,7 +11,7 @@ import { pgInitialize } from "./database/pg-wrapper.js"
 import { doEverything, tryCatchTryAgain } from "./flow/doEverything.js"
 
 /* Support functions */
-let functions = [...platformFetchers, mergeEverything, updateHistory, rebuildAlgoliaDatabase, pgInitialize, rebuildNetlifySiteWithNewData, doEverything]
+let functions = [...platformFetchers, mergeEverything, updateHistory, rebuildAlgoliaDatabase, rebuildNetlifySiteWithNewData, doEverything, pgInitialize]
 let functionNames = functions.map(fun => fun.name)
 
 let whattodoMessage = functionNames
@@ -21,10 +21,10 @@ let whattodoMessage = functionNames
 	`\n[${functionNames.length - 6}]: Merge jsons them into one big json (and push it to mongodb database)` +
 	`\n[${functionNames.length - 5}]: Update history` +
 	`\n[${functionNames.length - 4}]: Rebuild algolia database ("index")` +
-	`\n[${functionNames.length - 3}]: Rebuild postgres database` +
-	`\n[${functionNames.length - 2}]: Rebuild netlify site with new data` +
+	`\n[${functionNames.length - 3}]: Rebuild netlify site with new data` +
 	// `\n[${functionNames.length-1}]: Add to history` +
-	`\n[${functionNames.length - 1}]: All of the above` +
+	`\n[${functionNames.length - 2}]: All of the above` +
+	`\n[${functionNames.length - 1}]: Rebuild postgres database` +
 	`\nChoose one option, wisely: #`
 
 /* BODY */
