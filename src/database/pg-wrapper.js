@@ -324,7 +324,7 @@ export async function pgInsertIntoDashboard({ datum, schema, tableName }) {
 		creator text,
 		extra json
  */
-
+/*
 pgInsertIntoDashboard({
   datum: {
     title: "Test dashboard",
@@ -341,7 +341,7 @@ pgInsertIntoDashboard({
   schema: "latest",
   tableName: "dashboards",
 });
-
+*/
 export async function pgUpsert({ contents, schema, tableName }) {
   if (tableWhiteList.includes(`${schema}.${tableName}`)) {
     if (schema == "latest") {

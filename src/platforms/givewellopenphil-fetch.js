@@ -23,7 +23,7 @@ async function fetchPage(url) {
 
 /* Body */
 
-async function main() {
+async function main1() {
   let rawdata = fs.readFileSync("./src/input/givewellopenphil-urls.txt");
   let data = rawdata
     .toString()
@@ -64,7 +64,18 @@ async function main() {
   }
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/givewell-questions-unprocessed.json', string);
-  await databaseUpsert({ contents: results, group: "givewell-questions-unprocessed" });
-
+  await databaseUpsert({
+    contents: results,
+    group: "givewell-questions-unprocessed",
+  });
 }
-main();
+// main1()
+
+async function main2() {
+  let rawdata = fs.readFileSync("./src/input/givewellopenphil-questions.json");
+  let data = JSON.parse(rawdata);
+  let dataWithDate = data.map(datum => ({...datum, timestamp: '2021-02-23'}))
+  await databaseUpsert({ group: "givewellopenphil", contents: dataWithDate });
+}
+main2();
+
