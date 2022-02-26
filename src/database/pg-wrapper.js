@@ -28,8 +28,8 @@ const readWritePool = new Pool({
 });
 
 const readOnlyDatabaseURL =
-  getSecret("digitalocean-postgres-public") ||
-  "postgresql://public_read_only_user:gOcihnLhqRIQUQYt@postgres-red-do-user-10290909-0.b.db.ondigitalocean.com:25060/metaforecastpg?sslmode=require";
+  "postgresql://public_read_only_user:gOcihnLhqRIQUQYt@postgres-red-do-user-10290909-0.b.db.ondigitalocean.com:25060/metaforecastpg?sslmode=require" ||
+  getSecret("digitalocean-postgres-public");
 const readOnlyPool = new Pool({
   connectionString: readOnlyDatabaseURL,
   ssl: {
@@ -168,6 +168,11 @@ export async function pgInitialize() {
       "This command is dangerous, set YOLO to true in the code to invoke it"
     );
     console.log("Create dashboard table and its index");
+
+    await runPgCommand({
+      command: dropTable("latest", "dashboards"),
+      pool: readWritePool,
+    });
 
     await runPgCommand({
       command: buildDashboard(),
