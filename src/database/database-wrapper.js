@@ -29,7 +29,7 @@ export async function databaseUpsert({ contents, group }) {
         .replace("-", "_");
       mongoDocName = `metaforecast_history_${dateUpToMonth}`;
       await mongoUpsert(
-        data,
+        contents,
         mongoDocName,
         "metaforecastHistory",
         "metaforecastDatabase"
@@ -154,4 +154,3 @@ export async function databaseReadWithReadCredentials({ group }) {
 }
 //= ;
 // databaseReadWithReadCredentials(documentName, collectionName = "metaforecastCollection", databaseName = "metaforecastDatabase")
-
