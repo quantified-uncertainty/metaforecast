@@ -5,7 +5,8 @@ import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
-let endpoint = "https://us-central1-mantic-markets.cloudfunctions.net/markets";
+let endpoint = "https://manifold.markets/api/v0/markets";
+// See https://manifoldmarkets.notion.site/Manifold-Markets-API-5e7d0aef4dcf452bb04b319e178fabc5
 
 /* Support functions */
 
