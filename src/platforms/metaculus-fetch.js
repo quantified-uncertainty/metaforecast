@@ -7,7 +7,6 @@ import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let jsonEndPoint = "https://www.metaculus.com/api2/questions/?page=";
-let all_questions = [];
 let now = new Date().toISOString();
 let DEBUG_MODE = "off";
 /* Support functions */
@@ -63,6 +62,7 @@ export async function metaculus() {
   // let numQueries = Math.round(Number(metaculusQuestionsInit.count) / 20)
   // console.log(`Downloading... This might take a while. Total number of queries: ${numQueries}`)
   // for (let i = 4; i <= numQueries; i++) { // change numQueries to 10 if one want to just test
+  let all_questions = [];
   let next = "https://www.metaculus.com/api2/questions/";
   let i = 1;
   while (next) {

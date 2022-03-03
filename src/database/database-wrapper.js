@@ -81,7 +81,7 @@ export async function databaseRead({ group }) {
         "metaforecastHistory",
         "metaforecastDatabase"
       );
-      // responsePg = await pgReadWithReadCredentials({ schema: "history", tableName: "combined" }) // fix, make dependent on month.
+      responsePg = responseMongo; // await pgReadWithReadCredentials({ schema: "history", tableName: "combined" }) // fix, make dependent on month.
       break;
     default:
       mongoDocName = `${group}-questions`;
@@ -93,7 +93,7 @@ export async function databaseRead({ group }) {
       responsePg = await pgRead({ schema: "latest", tableName: group });
   }
 
-  response = responseMongo; // responsePg
+  response = responsePg; // responseMongo;
   return response;
 }
 // databaseRead(documentName, collectionName = "metaforecastCollection", databaseName = "metaforecastDatabase")
@@ -133,7 +133,7 @@ export async function databaseReadWithReadCredentials({ group }) {
         "metaforecastHistory",
         "metaforecastDatabase"
       );
-      // responsePg = await pgReadWithReadCredentials({ schema: "history", tableName: "combined" }) // fix, make dependent on month.
+      responsePg = responseMongo; // await pgReadWithReadCredentials({ schema: "history", tableName: "combined" }) // fix, make dependent on month.
       break;
     default:
       mongoDocName = `${group}-questions`;
@@ -149,7 +149,7 @@ export async function databaseReadWithReadCredentials({ group }) {
       displayPossibleResponses(responseMongo, responsePg);
   }
 
-  response = responseMongo; // responsePg
+  response = responsePg; // responseMongo;
   return response;
 }
 //= ;
