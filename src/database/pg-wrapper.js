@@ -230,7 +230,12 @@ export async function pgGetByIds({ ids, schema, table }) {
 export async function pgInsert({ datum, schema, tableName }) {
   if (tableWhiteList.includes(`${schema}.${tableName}`)) {
     let text = `INSERT INTO ${schema}.${tableName} VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)`;
-    let timestamp = datum.timestamp || new Date().toISOString();
+    let timestamp =
+      datum.timestamp &&
+      !!datum.timestamp.slice &&
+      !isNaN(Date.parse(datum.timestamp))
+        ? datum.timestamp
+        : new Date().toISOString();
     timestamp = timestamp.slice(0, 19).replace("T", " ");
     let values = [
       datum.id,

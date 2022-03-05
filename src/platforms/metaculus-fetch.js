@@ -9,6 +9,7 @@ import { databaseUpsert } from "../database/database-wrapper.js";
 let jsonEndPoint = "https://www.metaculus.com/api2/questions/?page=";
 let now = new Date().toISOString();
 let DEBUG_MODE = "off";
+let SLEEP_TIME = 500;
 /* Support functions */
 async function fetchMetaculusQuestions(next) {
   // Numbers about a given address: how many, how much, at what price, etc.
@@ -37,7 +38,7 @@ async function fetchMetaculusQuestionDescription(slug) {
     console.log(
       `We encountered some error when attempting to fetch a metaculus page. Trying again`
     );
-    await sleep(10000);
+    await sleep(SLEEP_TIME);
     try {
       let response = await axios({
         method: "get",
@@ -67,8 +68,8 @@ export async function metaculus() {
   let i = 1;
   while (next) {
     if (i % 20 == 0) {
-      console.log("Sleeping for 5secs");
-      await sleep(5000);
+      console.log("Sleeping for 500ms");
+      await sleep(SLEEP_TIME);
     }
     console.log(`\nQuery #${i}`);
     let metaculusQuestions = await fetchMetaculusQuestions(next);
@@ -76,7 +77,7 @@ export async function metaculus() {
     let j = false;
     for (let result of results) {
       if (result.publish_time < now && now < result.resolve_time) {
-        await sleep(5000);
+        await sleep(SLEEP_TIME);
         let questionPage = await fetchMetaculusQuestionDescription(
           result.page_url
         );
