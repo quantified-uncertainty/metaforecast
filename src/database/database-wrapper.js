@@ -23,6 +23,9 @@ export async function databaseUpsert({ contents, group }) {
       break;
     case "history":
       let currentDate = new Date();
+      let dateUpToYear = currentDate.
+        toISOString()
+        .slice(0,4)
       let dateUpToMonth = currentDate
         .toISOString()
         .slice(0, 7)
@@ -33,8 +36,9 @@ export async function databaseUpsert({ contents, group }) {
         mongoDocName,
         "metaforecastHistory",
         "metaforecastDatabase"
-      );
-      // await pgUpsert({ contents, schema: "history", tableName: "combined" })
+      );  
+      // await pgUpsert({ contents, schema: "history", tableName: `h${dateUpToYear}` });
+      await pgUpsert({ contents, schema: "history", tableName: `h${dateUpToMonth}` });
       break;
     default:
       mongoDocName = `${group}-questions`;

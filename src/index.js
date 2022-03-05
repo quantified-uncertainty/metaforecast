@@ -9,7 +9,6 @@ import { rebuildAlgoliaDatabase } from "./utils/algolia.js";
 import { rebuildNetlifySiteWithNewData } from "./flow/rebuildNetliftySiteWithNewData.js";
 import {
   pgInitialize,
-  setPermissionsForPublicUser,
 } from "./database/pg-wrapper.js";
 import { doEverything, tryCatchTryAgain } from "./flow/doEverything.js";
 
@@ -17,11 +16,10 @@ import { doEverything, tryCatchTryAgain } from "./flow/doEverything.js";
 let functions = [
   ...platformFetchers,
   mergeEverything,
-  updateHistory,
   rebuildAlgoliaDatabase,
+  updateHistory,
   rebuildNetlifySiteWithNewData,
   doEverything,
-  setPermissionsForPublicUser,
   pgInitialize,
 ];
 let functionNames = functions.map((fun) => fun.name);
@@ -32,14 +30,13 @@ let generateWhatToDoMessage = () => {
     (fun, i) => `[${i}]: Download predictions from ${fun.name}`
   );
   let otherMessages = [
-    "Merge jsons them into one big json (and push it to mongodb database)",
-    `Update history`,
+    "Merge jsons/tables into one big json/table (and push the result to a mongodb/pg database)",
     `Rebuild algolia database ("index")`,
+    `Update history`,
     `Rebuild netlify site with new data`,
     // `\n[${functionNames.length-1}]: Add to history` +
     `All of the above`,
-    `Initialize permissions for postgres public user`,
-    `Rebuild postgres database`,
+    `Initialize postgres database`,
   ];
   let otherMessagesWithNums = otherMessages.map(
     (message, i) => `[${i + l}]: ${message}`

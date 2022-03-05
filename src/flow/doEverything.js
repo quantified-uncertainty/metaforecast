@@ -26,7 +26,7 @@ export async function tryCatchTryAgain(fun) {
 }
 
 export async function doEverything() {
-    let functions = [...platformFetchers, mergeEverything, updateHistory, rebuildAlgoliaDatabase, rebuildNetlifySiteWithNewData]
+    let functions = [...platformFetchers, mergeEverything, rebuildAlgoliaDatabase, updateHistory, rebuildNetlifySiteWithNewData]
     // Removed Good Judgment from the fetcher, doing it using cron instead because cloudflare blocks the utility on heroku.
 
     console.log("")
