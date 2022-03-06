@@ -37,7 +37,7 @@ export async function databaseUpsert({ contents, group }) {
         "metaforecastHistory",
         "metaforecastDatabase"
       );  
-      // await pgUpsert({ contents, schema: "history", tableName: `h${dateUpToYear}` });
+      await pgUpsert({ contents, schema: "history", tableName: `h${dateUpToYear}` });
       await pgUpsert({ contents, schema: "history", tableName: `h${dateUpToMonth}` });
       break;
     default:
