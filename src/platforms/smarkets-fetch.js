@@ -7,7 +7,8 @@ import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let htmlEndPointEntrance = "https://api.smarkets.com/v3/events/";
-
+let VERBOSE = false;
+let empty = (x) => x;
 /* Support functions */
 
 async function fetchEvents(url) {
@@ -18,7 +19,7 @@ async function fetchEvents(url) {
       "Content-Type": "text/html",
     },
   }).then((res) => res.data);
-  // console.log(response)
+  VERBOSE ? console.log(response) : empty();
   return response;
 }
 
@@ -43,7 +44,7 @@ async function fetchContracts(marketid) {
       "Content-Type": "text/html",
     },
   }).then((res) => res.data);
-  // console.log(response)
+  VERBOSE ? console.log(response) : empty();
   return response;
 }
 
@@ -55,7 +56,7 @@ async function fetchPrices(marketid) {
       "Content-Type": "text/html",
     },
   }).then((res) => res.data);
-  // console.log(response)
+  VERBOSE ? console.log(response) : empty();
   return response;
 }
 
@@ -71,36 +72,37 @@ export async function smarkets() {
     events.push(...data.events);
     htmlPath = data.pagination.next_page;
   }
-  // console.log(events)
-
+  VERBOSE ? console.log(events) : empty();
   let markets = [];
   for (let event of events) {
-    // console.log(Date.now())
-    // console.log(event.name)
+    VERBOSE ? console.log(Date.now()) : empty();
+    VERBOSE ? console.log(event.name) : empty();
     let eventMarkets = await fetchMarkets(event.id);
     eventMarkets = eventMarkets.map((market) => ({
       ...market,
       slug: event.full_slug,
     }));
-    // console.log("Markets fetched")
-    // console.log(event.id)
-    // console.log(market)
+    VERBOSE ? console.log("Markets fetched") : empty();
+    VERBOSE ? console.log(event.id) : empty();
+    VERBOSE ? console.log(market) : empty();
     markets.push(...eventMarkets);
     //let lastPrices = await fetchPrices(market.id)
   }
-  // console.log(markets)
+  VERBOSE ? console.log(markets) : empty();
 
   let results = [];
   for (let market of markets) {
-    // console.log("================")
-    // console.log("Market: ", market)
+    VERBOSE ? console.log("================") : empty();
+    VERBOSE ? console.log("Market: ", market) : empty();
     let id = `smarkets-${market.id}`;
     let name = market.name;
 
     let contracts = await fetchContracts(market.id);
-    // console.log("Contracts: ", contracts)
+    VERBOSE ? console.log("Contracts: ", contracts) : empty();
     let prices = await fetchPrices(market.id);
-    // console.log("Prices: ", prices["last_executed_prices"][market.id])
+    VERBOSE
+      ? console.log("Prices: ", prices["last_executed_prices"][market.id])
+      : empty();
 
     let options = {};
     for (let contract of contracts["contracts"]) {
@@ -109,11 +111,33 @@ export async function smarkets() {
     for (let price of prices["last_executed_prices"][market.id]) {
       options[price.contract_id] = {
         ...options[price.contract_id],
-        probability: Number(price.last_executed_price),
+        probability: price.last_executed_price
+          ? Number(price.last_executed_price)
+          : null,
         type: "PROBABILITY",
       };
     }
     options = Object.values(options);
+    // monkey patch the case where there are only two options and only one has traded.
+    if (
+      options.length == 2 &&
+      options.map((option) => option.probability).includes(null)
+    ) {
+      let nonNullPrice =
+        option[0].probability == null
+          ? option[1].probability
+          : option[0].probability;
+      options = options.map((option) => {
+        let probability = option.probability;
+        return {
+          ...option,
+          probability: probability == null ? 100 - nonNullPrice : probability,
+          // yes, 100, because prices are not yet normalized.
+        };
+      });
+    }
+
+    // Normalize normally
     let totalValue = options
       .map((element) => Number(element.probability))
       .reduce((a, b) => a + b, 0);
@@ -122,8 +146,7 @@ export async function smarkets() {
       ...element,
       probability: Number(element.probability) / totalValue,
     }));
-
-    // console.log(options)
+    VERBOSE ? console.log(options) : empty();
 
     /*
     if(contracts["contracts"].length == 2){
@@ -146,14 +169,15 @@ export async function smarkets() {
         stars: calculateStars("Smarkets", {}),
       },
     };
-    // console.log(result)
+    VERBOSE ? console.log(result) : empty();
     results.push(result);
   }
-  // console.log(results)
+  VERBOSE ? console.log(results) : empty();
 
   // let string = JSON.stringify(results, null, 2)
   // fs.writeFileSync('./data/smarkets-questions.json', string);
   await databaseUpsert({ contents: results, group: "smarkets" });
-
+  VERBOSE ? console.log(JSON.stringify(results, null, 4)) : empty();
+  VERBOSE ? console.dir(results, { depth: null }) : empty();
 }
 //smarkets()
