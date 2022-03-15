@@ -1,5 +1,5 @@
-Metaforecast: To do
-===================
+Metaforecast: Roadmap
+=====================
 
 Note: Applies to both frontend and backend. Pull requests welcome.
 
