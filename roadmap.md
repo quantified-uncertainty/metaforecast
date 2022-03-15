@@ -37,7 +37,7 @@ If I was doing this on my own, I would deploy 1. into a Njal.la server using Alp
 - A Digital Ocean droplet using Ubuntu/Debian
 - A Heroku instance.
 
-The biggest difference between Digital Ocean and Heroku is that I'm using [pm2](https://pm2.keymetrics.io/) on Digital Ocean, whereas Heroku has its own load balancer, logs, etc. 
+The biggest difference between Digital Ocean and Heroku is that I'm using [pm2](https://pm2.keymetrics.io/) on Digital Ocean, whereas Heroku has its own load balancer, logs, etc.
 
 ## General code review
 Importance: 3/5, but good first issue. Would also allow you to incorporate 

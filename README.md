@@ -65,5 +65,6 @@ With regards the quality, I am most uncertain about Smarkets, Hypermind, Ladbrok
 
 ## Various notes
 
+- Commits follow [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary)
 - Right now, I'm fetching only a couple of common properties, such as the title, url, platform, whether a question is binary (yes/no), its percentage, and the number of forecasts. 
 - For elicit and metaculus, this library currently filters questions with <10 predictions.
