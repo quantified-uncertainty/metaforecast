@@ -27,6 +27,15 @@ Right now, I'm using various services to host various parts of metaforecast:
 
 This could all be simplified. But this would require making an executive decision as to whether to go for scalability and greater expense, or to go for a cheaper but less scalable digitalocean server
 
+I think that a simplication would be to:
+1. Use one server for both external API and fetching probabilities each day
+2. Use a Heroku server for the twitter bot.
+
+If I was doing this on my own, I would deploy 1. into a Njal.la server using Alpine Linux. However, more convenient options would be:
+
+- A Digital Ocean droplet using Ubuntu/Debian
+- A Heroku instance.
+
 ## General code review
 Importance: 3/5, but good first issue. Would also allow you to incorporate 
 

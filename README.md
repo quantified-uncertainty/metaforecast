@@ -16,19 +16,26 @@ I also created a search engine using Elicit's IDE, which uses GPT-3 to deliver v
 
 ### 2. Enter your own process.env variables
 The following variables are currently needed to run the `master` branch:
-- `MONGODB_URL`, a string in the format `"mongodb+srv://<username>:<password>@<mongodburl>/?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true"`
-- `REBUIDNETLIFYHOOKURL`, a string in the format `"https://api.netlify.com/build_hooks/someprivatestring"`
-- `CSETFORETELL_COOKIE`
-- `GOODJUDGMENTOPENCOOKIE`
-- `HYPERMINDCOOKIE`
-- `SECRET_BETFAIR_ENDPOINT`
 - `ALGOLIA_MASTER_API_KEY`, a string of 32 alphanumeric characters, like `6ofolyptm956j9uuev3q4v81vjbqrkp2` (not an actual key)
+- `INFER_COOKIE`
+- `DEBUG_MODE`, usually `off`, which controls log verbosity.
+- `DIGITALOCEAN_POSTGRES`, of the form `postgres://username:password@domain.com:port/configvars`
+- `GOODJUDGMENTOPENCOOKIE`
+- `GOOGLE_API_KEY`, necessary to fetch Peter Wildeford's predictions.
+- `MONGODB_URL`, a string in the format `"mongodb+srv://<username>:<password>@<mongodburl>/?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true"` (no longer really needed)
+- `SECRET_BETFAIR_ENDPOINT`
 
-They can either be stored as process variables (e.g., something that can be accessed as `process.env.<variable name>`), or as text in `src/input/privatekeys.json`, in the same format as `src/input/privatekeys_example.json`.  
-- Some of these are just session cookies, necessary to query CSET-foretell, Good Judgment Open and Hypermind. You can get these cookies by creating an account in said platforms and then making and inspecting a request (e.g., by making a prediction, or browsing questions).
+They can either be stored as process variables (e.g., something that can be accessed as `process.env.<variable name>`), or as text in `src/input/privatekeys.json`, in the same format as `src/input/privatekeys_example.json`.
+- Some of these are just session cookies, necessary to query INFER (previously CSET-foretell), Good Judgment Open and Hypermind (Hypermind iis now deprecated). You can get these cookies by creating an account in said platforms and then making and inspecting a request (e.g., by making a prediction, or browsing questions).
 - Others interface with services, e.g., to access the MongoDB database I'm using to save data and history, or to renew the algolia database. You can get these keys by creating an account with those services.
 
 Note that not all of these cookies are needed to use all parts of the source code. For instance, to download Polymarket data, one could just interface with the polymarket code. In particular, the code in this repository contains code to with the mongo database using read permissions, which are freely available.
+
+Overall, the services which we use are:
+- Algolia for search
+- Netlify for frontend deployment
+- Heroku and DigitalOcean for backend deployment
+- Postgres and Mongo for databases
 
 ### 3. Actually run
 
@@ -60,5 +67,3 @@ With regards the quality, I am most uncertain about Smarkets, Hypermind, Ladbrok
 
 - Right now, I'm fetching only a couple of common properties, such as the title, url, platform, whether a question is binary (yes/no), its percentage, and the number of forecasts. 
 - For elicit and metaculus, this library currently filters questions with <10 predictions.
-- Omen *does* have very few active predictions at the moment; this is not a mistake.
-- Hypermind fetching is currently incomplete.
