@@ -1,1 +1,1 @@
-// worker: node src/utils/doEverythingForScheduler.js
+// worker: node src/backend/utils/doEverythingForScheduler.js
