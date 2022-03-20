@@ -9,17 +9,44 @@ import { databaseUpsert } from "../database/database-wrapper.js";
 let jsonEndPoint = "https://www.metaculus.com/api2/questions/?page=";
 let now = new Date().toISOString();
 let DEBUG_MODE = "off";
-let SLEEP_TIME = 500;
+let SLEEP_TIME = 5000;
 /* Support functions */
 async function fetchMetaculusQuestions(next) {
   // Numbers about a given address: how many, how much, at what price, etc.
-  let response = await axios({
-    url: next,
-    method: "GET",
-    headers: { "Content-Type": "application/json" },
-  }).then((res) => res.data);
+  let response;
+  let data;
+  try {
+    response = await axios({
+      url: next,
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+    });
+    data = response.data;
+  } catch (error) {
+    console.log(`Error in  async function fetchMetaculusQuestions(next)`);
+    if (!!error.response.headers["retry-after"]) {
+      let timeout = error.response.headers["retry-after"];
+      console.log(`Timeout: ${timeout}`);
+      await sleep(Number(timeout) * 1000 + SLEEP_TIME);
+    } else {
+      await sleep(SLEEP_TIME);
+    }
+    console.log(error);
+  } finally {
+    try {
+      response = await axios({
+        url: next,
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+      });
+      data = response.data;
+    } catch (error) {
+      console.log(error);
+      return { results: [] };
+    }
+  }
   // console.log(response)
-  return response;
+  return data;
 }
 
 function sleep(ms) {
@@ -34,11 +61,21 @@ async function fetchMetaculusQuestionDescription(slug) {
     }).then((response) => response.data);
     return response;
   } catch (error) {
-    console.log(error);
+    console.log(`Error in: fetchMetaculusQuestionDescription`);
     console.log(
       `We encountered some error when attempting to fetch a metaculus page. Trying again`
     );
-    await sleep(SLEEP_TIME);
+    if (
+      typeof error.response != "undefined" &&
+      typeof error.response.headers != "undefined" &&
+      typeof error.response.headers["retry-after"] != "undefined"
+    ) {
+      let timeout = error.response.headers["retry-after"];
+      console.log(`Timeout: ${timeout}`);
+      await sleep(Number(timeout) * 1000 + SLEEP_TIME);
+    } else {
+      await sleep(SLEEP_TIME);
+    }
     try {
       let response = await axios({
         method: "get",
@@ -77,7 +114,7 @@ export async function metaculus() {
     let j = false;
     for (let result of results) {
       if (result.publish_time < now && now < result.resolve_time) {
-        await sleep(SLEEP_TIME);
+        await sleep(SLEEP_TIME / 2);
         let questionPage = await fetchMetaculusQuestionDescription(
           result.page_url
         );
