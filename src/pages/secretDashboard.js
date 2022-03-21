@@ -5,7 +5,7 @@ import { useRouter } from "next/router"; // https://nextjs.org/docs/api-referenc
 import React, { useState } from "react";
 // Data
 import displayForecasts from "../web/display/displayForecasts.js";
-import { getDashboardForecastsByDashboardId } from "../web/worker/getDashboardForecasts.js";
+import { getDashboardForecastsByDashboardId } from "../web/worker/getDashboardForecasts";
 
 /* get Props */
 
