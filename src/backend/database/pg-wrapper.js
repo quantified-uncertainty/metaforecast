@@ -38,7 +38,7 @@ const tableWhiteList = [
 const databaseURL =
   process.env.DIGITALOCEAN_POSTGRES || getSecret("digitalocean-postgres");
 // process.env.DATABASE_URL || getSecret("heroku-postgres")
-const readWritePool = new Pool({
+export const readWritePool = new Pool({
   connectionString: databaseURL,
   ssl: process.env.POSTGRES_NO_SSL
     ? false
@@ -61,7 +61,7 @@ const readOnlyPool = new Pool({
 });
 
 // Helpers
-const runPgCommand = async ({ command, pool }) => {
+export const runPgCommand = async ({ command, pool }) => {
   console.log(command);
   const client = await pool.connect();
   let result;
@@ -113,7 +113,7 @@ async function pgInitializeScaffolding() {
       });
     }
   }
-  let YOLO = true;
+  let YOLO = false;
   if (YOLO) {
     console.log("Create schemas");
     for (let schema of schemas) {
@@ -158,7 +158,7 @@ let buildMetaforecastTable = (
   );`;
 
 async function pgInitializeLatest() {
-  let YOLO = true;
+  let YOLO = false;
   if (YOLO) {
     console.log("Create tables & their indexes");
     let schema = "latest";
@@ -204,7 +204,7 @@ async function pgInitializeDashboards() {
 		creator text,
 		extra json
 	);`;
-  let YOLO = true;
+  let YOLO = false;
   if (YOLO) {
     await runPgCommand({
       command: `CREATE SCHEMA IF NOT EXISTS history;`,
@@ -256,7 +256,7 @@ let buildHistoryTable = (schema, table) => `CREATE TABLE ${schema}.${table} (
     extra json
   );`;
 export async function pgInitializeHistories() {
-  let YOLO = true;
+  let YOLO = false;
   if (YOLO) {
     console.log("Drop all previous history tables (Danger!)");
     await runPgCommand({
@@ -305,11 +305,41 @@ export async function pgInitializeHistories() {
   }
 }
 
+async function pgInitializeFrontpage() {
+  let buildFrontpage = () =>
+    `CREATE TABLE latest.frontpage (
+	  id serial primary key,
+    frontpage_sliced jsonb,
+    frontpage_full jsonb
+	);`;
+  let YOLO = false;
+  if (YOLO) {
+    console.log("Create frontpage table and its index");
+
+    await runPgCommand({
+      command: dropTable("latest", "frontpage"),
+      pool: readWritePool,
+    });
+
+    await runPgCommand({
+      command: buildFrontpage(),
+      pool: readWritePool,
+    });
+
+    console.log("");
+  } else {
+    console.log(
+      "pgInitializeFrontpage: This command is dangerous, set YOLO to true in the code to invoke it"
+    );
+  }
+}
+
 export async function pgInitialize() {
   await pgInitializeScaffolding();
   await pgInitializeLatest();
   await pgInitializeHistories();
   await pgInitializeDashboards();
+  await pgInitializeFrontpage();
 }
 
 // Read

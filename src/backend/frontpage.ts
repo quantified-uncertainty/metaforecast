@@ -1,22 +1,24 @@
-import fs from 'fs';
-
-import { pgRead } from './database/pg-wrapper';
+import { pgRead, readWritePool } from './database/pg-wrapper';
 
 // TODO - move to global `constants.ts` config
 const location = "/Users/berekuk/coding/quri/metaforecast-backend/data";
 
 export async function getFrontpageRaw() {
-  let frontpageSlicedLocation = `${location}/frontpage_sliced.json`;
-  return JSON.parse(
-    fs.readFileSync(frontpageSlicedLocation, { encoding: "utf-8" })
-  ); // TODO - async, no reason to lock
+  const client = await readWritePool.connect();
+  const res = await client.query(
+    "SELECT frontpage_sliced FROM latest.frontpage ORDER BY id DESC LIMIT 1"
+  );
+  if (!res.rows.length) return [];
+  return res.rows[0].frontpage_sliced;
 }
 
 export async function getFrontpageFullRaw() {
-  let frontpageSlicedLocation = `${location}/frontpage_full.json`;
-  return JSON.parse(
-    fs.readFileSync(frontpageSlicedLocation, { encoding: "utf-8" })
-  ); // TODO - async, no reason to lock
+  const client = await readWritePool.connect();
+  const res = await client.query(
+    "SELECT frontpage_full FROM latest.frontpage ORDER BY id DESC LIMIT 1"
+  );
+  if (!res.rows.length) return [];
+  return res.rows[0].frontpage_full;
 }
 
 export async function getFrontpage() {
@@ -61,14 +63,12 @@ let shuffle = (array) => {
 export async function downloadFrontpage() {
   let init = Date.now();
 
-  let response = await pgRead({ schema: "latest", tableName: "combined" });
-  fs.writeFileSync(
-    `${location}/frontpage_full.json`,
-    JSON.stringify(response, null, 4)
-  );
-  console.log(`frontpage_full.json written to ${location}`);
+  const frontpageFull = await pgRead({
+    schema: "latest",
+    tableName: "combined",
+  });
 
-  let responseFiltered = response.filter(
+  let frontpageFiltered = frontpageFull.filter(
     (forecast) =>
       forecast.qualityindicators &&
       forecast.qualityindicators.stars >= 3 &&
@@ -76,26 +76,17 @@ export async function downloadFrontpage() {
       forecast.options.length > 0 &&
       forecast.description != ""
   );
-  let responseFilteredAndRandomized = shuffle(responseFiltered).slice(0, 50);
-  fs.writeFileSync(
-    `${location}/frontpage_sliced.json`,
-    JSON.stringify(responseFilteredAndRandomized, null, 4)
+  let frontpageSliced = shuffle(frontpageFiltered).slice(0, 50);
+
+  const client = await readWritePool.connect();
+  await client.query(
+    "INSERT INTO latest.frontpage(frontpage_full, frontpage_sliced) VALUES($1, $2)",
+    [JSON.stringify(frontpageFull), JSON.stringify(frontpageSliced)]
   );
-  console.log(`frontpage_sliced.json written to ${location}`);
 
   let end = Date.now();
   let difference = end - init;
   console.log(
     `Took ${difference / 1000} seconds, or ${difference / (1000 * 60)} minutes.`
   );
-
-  /*
-    # (run code)
-    sleep 10
-    cp /home/azrael/server/data/frontpage_freshly_sliced.json /home/azrael/server/data/frontpage_sliced.json
-    date > /home/azrael/server/data/frontpage_slicetime.txt
-    cat /home/azrael/server/data/frontpage_freshly_sliced.json >> /home/azrael/server/data/frontpage_slicetime.txt
-  */
 }
-// TODO: call /api/cron/update-frontpage from github actions every 6 hours
-// TODO: store frontpage_sliced copy somewhere
