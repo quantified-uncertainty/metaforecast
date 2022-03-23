@@ -78,6 +78,7 @@
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.2.4",
     "@svgr/cli": "^6.2.1",
+    "netlify-cli": "^9.13.4",
     "netlify-plugin-cache-nextjs": "^1.6.1",
     "ts-node": "^10.7.0"
   }
