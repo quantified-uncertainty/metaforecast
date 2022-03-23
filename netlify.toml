@@ -1,5 +1,0 @@
-[[plugins]]
-package = "netlify-plugin-cache-nextjs"
-
-[build]
-publish = ".next"
