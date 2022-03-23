@@ -6,8 +6,6 @@ This repository includes a source code for the website, as well as a set of libr
 
 We also provide a public database, which can be accessed with a script similar to [this one](./src/backend/manual/manualDownload.js).
 
-(source code in `src/pages/` and `/src/web/`).
-
 I also created a search engine using Elicit's IDE, which uses GPT-3 to deliver vastly superior semantic search (as opposed to fuzzy word matching). If you have access to the Elicit IDE, you can use the action "Search Metaforecast database". However, I'm not currently updating it regularly.
 
 [![](./public/screenshot.png)](https://metaforecast.org)
@@ -44,6 +42,13 @@ $ cd metaforecasts
 $ npm install
 $ node src/backend/manual/manualDownload.js
 ```
+
+## Code layout
+
+- frontend code is in [src/pages/](./src/pages/), [src/web/](./src/web/) and in a few other places which are required by Next.js (e.g. root-level configs in postcss.config.js and tailwind.config.js)
+- various backend code is in [src/backend/](./src/backend/)
+- fetching libraries for various platforms is in [src/backend/platforms/](./src/backend/platforms/)
+- rudimentary documentation is in [docs/](./docs)
 
 ## What are "stars" and how are they computed
 
