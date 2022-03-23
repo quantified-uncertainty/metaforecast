@@ -1,10 +1,10 @@
 /* Imports */
 import axios from "axios";
-import { getSecret, applyIfSecretExists } from "../utils/getSecrets.js";
 import { Tabletojson } from "tabletojson";
-import toMarkdown from "../utils/toMarkdown.js";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../database/database-wrapper.js";
+import { applyIfSecretExists } from "../utils/getSecrets.js";
+import { calculateStars } from "../utils/stars.js";
+import toMarkdown from "../utils/toMarkdown.js";
 
 /* Definitions */
 let htmlEndPoint = "https://www.infer-pub.com/questions";
@@ -282,6 +282,6 @@ async function infer_inner(cookie) {
 }
 
 export async function infer() {
-  let cookie = process.env.INFER_COOKIE || getSecret("infer");
+  let cookie = process.env.INFER_COOKIE;
   await applyIfSecretExists(cookie, infer_inner);
 }

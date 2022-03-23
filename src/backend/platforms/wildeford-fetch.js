@@ -1,12 +1,10 @@
 /* Imports */
-import fs from "fs";
 // import axios from "axios"
 import { GoogleSpreadsheet } from "google-spreadsheet";
-import { getSecret, applyIfSecretExists } from "../utils/getSecrets.js";
-import toMarkdown from "../utils/toMarkdown.js";
-import { calculateStars } from "../utils/stars.js";
-import { hash } from "../utils/hash.js";
 import { databaseUpsert } from "../database/database-wrapper.js";
+import { applyIfSecretExists } from "../utils/getSecrets.js";
+import { hash } from "../utils/hash.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 const SHEET_ID = "1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0"; // spreadsheet key is the long id in the sheets URL
@@ -132,6 +130,6 @@ export async function wildeford_inner(google_api_key) {
 //example()
 
 export async function wildeford() {
-  const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || getSecret("google-api"); // See: https://developers.google.com/sheets/api/guides/authorizing#APIKey
+  const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY; // See: https://developers.google.com/sheets/api/guides/authorizing#APIKey
   await applyIfSecretExists(GOOGLE_API_KEY, wildeford_inner);
 }

@@ -1,11 +1,10 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
-import { getSecret, applyIfSecretExists } from "../utils/getSecrets.js";
 import { Tabletojson } from "tabletojson";
+import { databaseUpsert } from "../database/database-wrapper.js";
+import { applyIfSecretExists } from "../utils/getSecrets.js";
 import { calculateStars } from "../utils/stars.js";
 import toMarkdown from "../utils/toMarkdown.js";
-import { databaseUpsert } from "../database/database-wrapper.js";
 
 /* Definitions */
 let htmlEndPoint = "https://www.gjopen.com/questions?page=";
@@ -236,7 +235,6 @@ async function goodjudgmentopen_inner(cookie) {
 }
 
 export async function goodjudgmentopen() {
-  let cookie =
-    process.env.GOODJUDGMENTOPENCOOKIE || getSecret("goodjudmentopen");
+  let cookie = process.env.GOODJUDGMENTOPENCOOKIE;
   await applyIfSecretExists(cookie, goodjudgmentopen_inner);
 }

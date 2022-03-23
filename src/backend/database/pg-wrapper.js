@@ -1,6 +1,5 @@
 import pkg from "pg";
 import { platformNames } from "../platforms/all/platformNames.js";
-import { getSecret } from "../utils/getSecrets.js";
 import { hash } from "../utils/hash.js";
 import { roughSizeOfObject } from "../utils/roughSize.js";
 const { Pool } = pkg;
@@ -35,9 +34,7 @@ const tableWhiteList = [
 ];
 
 /* Postgres database connection code */
-const databaseURL =
-  process.env.DIGITALOCEAN_POSTGRES || getSecret("digitalocean-postgres");
-// process.env.DATABASE_URL || getSecret("heroku-postgres")
+const databaseURL = process.env.DIGITALOCEAN_POSTGRES;
 export const readWritePool = new Pool({
   connectionString: databaseURL,
   ssl: process.env.POSTGRES_NO_SSL
@@ -49,7 +46,7 @@ export const readWritePool = new Pool({
 
 const readOnlyDatabaseURL =
   "postgresql://public_read_only_user:gOcihnLhqRIQUQYt@postgres-red-do-user-10290909-0.b.db.ondigitalocean.com:25060/metaforecastpg?sslmode=require" ||
-  getSecret("digitalocean-postgres-public");
+  process.env.DIGITALOCEAN_POSTGRES_PUBLIC;
 const readOnlyPool = new Pool({
   // never used
   connectionString: readOnlyDatabaseURL,

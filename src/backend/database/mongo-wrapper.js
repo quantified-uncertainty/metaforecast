@@ -1,5 +1,4 @@
 import pkg from "mongodb";
-import { getSecret } from "../utils/getSecrets.js";
 import { roughSizeOfObject } from "../utils/roughSize.js";
 const { MongoClient } = pkg;
 
@@ -9,7 +8,7 @@ export async function mongoUpsert(
   collectionName = "metaforecastCollection",
   databaseName = "metaforecastDatabase"
 ) {
-  const url = process.env.MONGODB_URL || getSecret("mongodb");
+  const url = process.env.MONGODB_URL;
   const client = new MongoClient(url);
   try {
     await client.connect();
@@ -60,7 +59,7 @@ export async function mongoRead(
   collectionName = "metaforecastCollection",
   databaseName = "metaforecastDatabase"
 ) {
-  const url = process.env.MONGODB_URL || getSecret("mongodb");
+  const url = process.env.MONGODB_URL;
 
   const client = new MongoClient(url, {
     useNewUrlParser: true,
@@ -142,7 +141,7 @@ export async function mongoGetAllElements(
   databaseName = "metaforecastDatabase",
   collectionName = "metaforecastCollection"
 ) {
-  const url = process.env.MONGODB_URL || getSecret("mongodb");
+  const url = process.env.MONGODB_URL;
   const client = new MongoClient(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,

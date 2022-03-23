@@ -1,10 +1,8 @@
 import algoliasearch from "algoliasearch";
-import fs from "fs";
-import { getSecret } from "./getSecrets.js";
 import { databaseReadWithReadCredentials } from "../database/database-wrapper.js";
 import { mergeEverythingInner } from "../flow/mergeEverything.js";
 
-let cookie = process.env.ALGOLIA_MASTER_API_KEY || getSecret("algolia");
+let cookie = process.env.ALGOLIA_MASTER_API_KEY;
 const client = algoliasearch("96UD3NTQ7L", cookie);
 const index = client.initIndex("metaforecast");
 

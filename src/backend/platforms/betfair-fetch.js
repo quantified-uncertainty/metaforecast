@@ -1,9 +1,8 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
 import https from "https";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../database/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let endpoint = process.env.SECRET_BETFAIR_ENDPOINT;
@@ -142,7 +141,6 @@ export async function betfair() {
   let results = await processPredictions(data); // somehow needed
   // console.log(results.map(result => ({title: result.title, description: result.description})))
   // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('polyprediction-questions.json', string);
   await databaseUpsert({ contents: results, group: "betfair" });
   console.log("Done");
 }

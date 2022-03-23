@@ -1,10 +1,10 @@
 /* Imports */
 import axios from "axios";
-import { getSecret, applyIfSecretExists } from "../utils/getSecrets.js";
 import { Tabletojson } from "tabletojson";
-import toMarkdown from "../utils/toMarkdown.js";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../utils/database-wrapper.js";
+import { applyIfSecretExists } from "../utils/getSecrets.js";
+import { calculateStars } from "../utils/stars.js";
+import toMarkdown from "../utils/toMarkdown.js";
 
 /* Definitions */
 let htmlEndPoint = "https://www.cset-foretell.com/questions?page=";
@@ -278,6 +278,6 @@ async function csetforetell_inner(cookie) {
 }
 
 export async function csetforetell() {
-  let cookie = process.env.CSETFORETELL_COOKIE || getSecret("csetforetell");
+  let cookie = process.env.CSETFORETELL_COOKIE;
   await applyIfSecretExists(cookie, csetforetell_inner);
 }

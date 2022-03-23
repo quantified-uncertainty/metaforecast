@@ -1,12 +1,10 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
 import https from "https";
-import fetch from "isomorphic-fetch";
-import { getSecret, applyIfSecretExists } from "../utils/getSecrets.js";
-import toMarkdown from "../utils/toMarkdown.js";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../utils/database-wrapper.js";
+import { applyIfSecretExists } from "../utils/getSecrets.js";
+import { calculateStars } from "../utils/stars.js";
+import toMarkdown from "../utils/toMarkdown.js";
 
 /* Definitions */
 let hypermindEnpoint1 = "https://predict.hypermind.com/dash/jsx.json";
@@ -200,6 +198,6 @@ async function hypermind_inner(cookie) {
 //hypermind()
 
 export async function hypermind() {
-  let cookie = process.env.HYPERMINDCOOKIE || getSecret("hypermind");
+  let cookie = process.env.HYPERMINDCOOKIE;
   await applyIfSecretExists(cookie, hypermind_inner);
 }
