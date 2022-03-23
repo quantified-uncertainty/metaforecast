@@ -218,8 +218,6 @@ async function goodjudgmentopen_inner(cookie) {
       );
     }
   }
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('./data/goodjudmentopen-questions.json', string);
   console.log(results);
   if (results.length > 0) {
     await databaseUpsert({ contents: results, group: "goodjudmentopen" });

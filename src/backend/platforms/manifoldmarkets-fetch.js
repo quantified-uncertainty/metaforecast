@@ -1,8 +1,7 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../database/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let endpoint = "https://manifold.markets/api/v0/markets";
@@ -94,9 +93,6 @@ export async function manifoldmarkets() {
   let data = await fetchData();
   let results = await processPredictions(data); // somehow needed
   showStatistics(results);
-  // console.log(results)
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('polyprediction-questions.json', string);
   await databaseUpsert({ contents: results, group: "manifoldmarkets" });
 
   console.log("Done");

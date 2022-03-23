@@ -1,11 +1,9 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
 import Papa from "papaparse";
-import open from "open";
 import readline from "readline";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../utils/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let elicitEndpoint =
@@ -87,8 +85,6 @@ async function processArray(arrayQuestions) {
       results.push(standardObj);
     }
   }
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('./data/elicit-questions.json', string);
   await databaseUpsert(results, "elicit-questions");
 
   console.log("Done");

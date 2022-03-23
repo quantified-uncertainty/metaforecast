@@ -61,8 +61,6 @@ async function main1() {
     // console.log(result)
     results.push(result);
   }
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('./data/givewell-questions-unprocessed.json', string);
   await databaseUpsert({
     contents: results,
     group: "givewell-questions-unprocessed",

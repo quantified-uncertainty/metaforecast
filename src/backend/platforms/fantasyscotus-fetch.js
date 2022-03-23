@@ -1,8 +1,7 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../database/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let unixtime = new Date().getTime();
@@ -115,9 +114,6 @@ async function processData(data) {
 export async function fantasyscotus() {
   let rawData = await fetchData();
   let results = await processData(rawData);
-  //console.log(results)
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('./data/fantasyscotus-questions.json', string);
   await databaseUpsert({ contents: results, group: "fantasyscotus" });
   console.log("Done");
 }

@@ -121,8 +121,6 @@ export async function wildeford_inner(google_api_key) {
   let predictions = await fetchGoogleDoc(google_api_key);
   let results = await processPredictions(predictions); // somehow needed
   // console.log(results.sort((a,b) => (a.title > b.title)))
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('polyprediction-questions.json', string);
   await databaseUpsert({ contents: results, group: "wildeford" });
 
   console.log("Done");

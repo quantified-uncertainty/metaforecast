@@ -1,8 +1,7 @@
 /* Imports */
 import axios from "axios";
-import fs from "fs";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../utils/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let endpointPolitics = `https://ss-aka-ori.ladbrokes.com/openbet-ssviewer/Drilldown/2.31/EventToOutcomeForClass/302,301,300?simpleFilter=event.siteChannels:contains:M&simpleFilter=event.eventSortCode:intersects:TNMT,TR01,TR02,TR03,TR04,TR05,TR06,TR07,TR08,TR09,TR10,TR11,TR12,TR13,TR14,TR15,TR16,TR17,TR18,TR19,TR20&simpleFilter=event.suspendAtTime:greaterThan:${new Date().toISOString()}.000Z&limitRecords=outcome:1&limitRecords=market:1&translationLang=en&responseFormat=json&prune=event&prune=market`;
@@ -137,9 +136,6 @@ let processResults = async (json) => {
 export async function ladbrokes() {
   let response = await fetchUrl(endpointPolitics);
   let results = await processResults(response);
-  // console.log(results)
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('./data/ladbrokes-questions.json', string);
   await databaseUpsert(results, "ladbrokes-questions");
   console.log("Done");
 }

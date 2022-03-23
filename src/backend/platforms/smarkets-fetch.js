@@ -1,9 +1,7 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
-import toMarkdown from "../utils/toMarkdown.js";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../database/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let htmlEndPointEntrance = "https://api.smarkets.com/v3/events/";
@@ -174,8 +172,6 @@ export async function smarkets() {
   }
   VERBOSE ? console.log(results) : empty();
 
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('./data/smarkets-questions.json', string);
   await databaseUpsert({ contents: results, group: "smarkets" });
   VERBOSE ? console.log(JSON.stringify(results, null, 4)) : empty();
   VERBOSE ? console.dir(results, { depth: null }) : empty();

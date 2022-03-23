@@ -1,21 +1,13 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../database/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let graphQLendpoint =
   "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-5"; // "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-4"// "https://api.thegraph.com/subgraphs/name/tokenunion/polymarket-matic"//"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
 let units = 10 ** 6;
 
-/* Support functions
-async function fetchAllContractInfo(){ // for info which the polymarket graphql API
-  let data = fs.readFileSync("./data/polymarket-contract-list.json")
-  let response = JSON.parse(data)
-  return response
-}
- */
 async function fetchAllContractInfo() {
   // for info which the polymarket graphql API
   let response = await axios
@@ -149,9 +141,6 @@ async function fetch_all() {
 /* Body */
 export async function polymarket() {
   let results = await fetch_all();
-  // console.log(results)
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('polymarket-questions.json', string);
   await databaseUpsert({ contents: results, group: "polymarket" });
 
   console.log("Done");

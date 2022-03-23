@@ -1,9 +1,7 @@
 /* Imports */
 import axios from "axios";
-import fs from "fs";
-import toMarkdown from "../utils/toMarkdown.js";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../utils/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let endpoint = "https://sports.williamhill.com/betting/en-gb/politics";
@@ -142,8 +140,6 @@ export async function williamhill() {
     "https://sports.williamhill.com/betting/en-gb/politics"
   );
   let results = processResults(response);
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('./data/williamhill-questions.json', string);
   await databaseUpsert(results, "williamhill-questions");
   console.log(results.sort((a, b) => a.title > b.title));
   console.log("Done");

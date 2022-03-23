@@ -1,19 +1,11 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../database/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let jsonEndpoint = "https://trading-api.kalshi.com/v1/cached/markets/"; //"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
 
-/* Support functions
-async function fetchAllContractInfo(){ // for info which the polymarket graphql API
-  let data = fs.readFileSync("./data/polymarket-contract-list.json")
-  let response = JSON.parse(data)
-  return response
-}
- */
 async function fetchAllMarkets() {
   // for info which the polymarket graphql API
   let response = await axios
@@ -80,9 +72,6 @@ async function processMarkets(markets) {
 export async function kalshi() {
   let markets = await fetchAllMarkets();
   let results = await processMarkets(markets); // somehow needed
-  // console.log(results)
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('polymarket-questions.json', string);
   await databaseUpsert({ contents: results, group: "kalshi" });
 
   console.log("Done");

@@ -1,11 +1,8 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
 import Papa from "papaparse";
-import open from "open";
-import readline from "readline";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../utils/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let coupCastEndpoint =
@@ -156,8 +153,6 @@ async function processArray(countryArray) {
       results.push(processedPrediction2);
     }
   }
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('./data/elicit-questions.json', string);
   await databaseUpsert(results, "coupcast-questions");
   // console.log(results)
   console.log("Done");

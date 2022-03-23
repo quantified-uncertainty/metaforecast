@@ -1,12 +1,10 @@
 /* Imports */
 import axios from "axios";
-import tunnel from "tunnel";
-import fs from "fs";
 import { Tabletojson } from "tabletojson";
-import toMarkdown from "../utils/toMarkdown.js";
-import { calculateStars } from "../utils/stars.js";
-import { hash } from "../utils/hash.js";
+import tunnel from "tunnel";
 import { databaseUpsert } from "../database/database-wrapper.js";
+import { hash } from "../utils/hash.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let endpoint = "https://goodjudgment.io/superforecasts/";
@@ -119,8 +117,6 @@ export async function goodjudgment() {
   }
   // console.log(results.slice(0,10))
   let string = JSON.stringify(results, null, 2);
-  // fs.writeFileSync('./data/goodjudgment-questions.json', string);
-  // fs.writeFileSync('./goodjudgment-questions-test.json', string);
   console.log(results);
   await databaseUpsert({ contents: results, group: "goodjudgment" });
 

@@ -1,8 +1,7 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../utils/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
 
 /* Definitions */
 let graphQLendpoint = "https://api.foretold.io/graphql";
@@ -91,11 +90,6 @@ export async function astralcodexten() {
       results.push(result);
     });
   }
-  /*
-  let string = JSON.stringify(results, null, 2)
-  console.log(JSON.stringify(results, null, 2))
-  fs.writeFileSync('./data/astralcodexten-questions.json', string);
-  */
   await databaseUpsert(results, "astralcodexten-questions");
   // console.log(results)
   console.log("Done");

@@ -1,9 +1,8 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
-import toMarkdown from "../utils/toMarkdown.js";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../database/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
+import toMarkdown from "../utils/toMarkdown.js";
 
 /* Support functions */
 async function fetchmarkets() {
@@ -107,9 +106,6 @@ export async function predictit() {
     // console.log(obj)
     results.push(obj);
   }
-  //console.log(results)
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('./data/predictit-questions.json', string);
   await databaseUpsert({ contents: results, group: "predictit" });
 
   console.log("Done");

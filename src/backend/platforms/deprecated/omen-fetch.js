@@ -1,8 +1,7 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
-import { calculateStars } from "../../utils/stars.js";
 import { databaseUpsert } from "../../utils/database-wrapper.js";
+import { calculateStars } from "../../utils/stars.js";
 
 /* Definitions */
 let graphQLendpoint = "https://api.thegraph.com/subgraphs/name/protofire/omen";
@@ -92,9 +91,6 @@ async function fetch_all() {
 /* Body */
 export async function omen() {
   let results = await fetch_all();
-  // console.log(result)
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('./data/omen-questions.json', string);
   await databaseUpsert(results, "omen-questions");
   console.log("Done");
 }

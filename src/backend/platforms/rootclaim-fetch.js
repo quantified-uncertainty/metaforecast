@@ -1,21 +1,13 @@
 /* Imports */
-import fs from "fs";
 import axios from "axios";
-import toMarkdown from "../utils/toMarkdown.js";
-import { calculateStars } from "../utils/stars.js";
 import { databaseUpsert } from "../database/database-wrapper.js";
+import { calculateStars } from "../utils/stars.js";
+import toMarkdown from "../utils/toMarkdown.js";
 
 /* Definitions */
 let jsonEndpoint =
   "https://www.rootclaim.com/main_page_stories?number=100&offset=0"; //"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
 
-/* Support functions
-async function fetchAllContractInfo(){ // for info which the polymarket graphql API
-  let data = fs.readFileSync("./data/polymarket-contract-list.json")
-  let response = JSON.parse(data)
-  return response
-}
- */
 async function fetchAllRootclaims() {
   // for info which the polymarket graphql API
   let response = await axios
@@ -66,9 +58,6 @@ async function fetchAndProcessData() {
 /* Body */
 export async function rootclaim() {
   let results = await fetchAndProcessData();
-  //console.log(JSON.stringify(results, null, 4))
-  // let string = JSON.stringify(results, null, 2)
-  // fs.writeFileSync('rootclaim-questions.json', string);
   await databaseUpsert({ contents: results, group: "rootclaim" });
 
   console.log("Done");
