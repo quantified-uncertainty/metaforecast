@@ -1,52 +1,40 @@
-## What this is 
+## What this is
 
-This is a set of libraries and a command line interface that fetches probabilities/forecasts from prediction markets and forecasting platforms. 
+https://metaforecast.org is a search engine for probabilities from various prediction markes and forecasting platforms (try searching "Trump", "China" or "Semiconductors").
 
-These forecasts are then used to power a search engine for probabilities, which can be found [here](https://metaforecast.org/) (try searching "Trump", "China" or "Semiconductors") (source code [here](https://github.com/QURIresearch/metaforecast-website-nextjs)). I also provide a datatabase, which can be accessed with a script similar to [this one](https://github.com/QURIresearch/metaforecasts/blob/master/src/utils/manualDownloadFromMongo.js).
+This repository includes a source code for the website, as well as a set of libraries that fetches probabilities/forecasts.
+
+We also provide a public database, which can be accessed with a script similar to [this one](./src/backend/manual/manualDownload.js).
+
+(source code in `src/pages/` and `/src/web/`).
 
 I also created a search engine using Elicit's IDE, which uses GPT-3 to deliver vastly superior semantic search (as opposed to fuzzy word matching). If you have access to the Elicit IDE, you can use the action "Search Metaforecast database". However, I'm not currently updating it regularly.
 
-![](./metaforecasts.png)
+[![](./public/screenshot.png)](https://metaforecast.org)
 
 ## How to run
 
 ### 1. Download this repository
 
-``git clone https://github.com/QURIresearch/metaforecasts``
-
-### 2. Enter your own process.env variables
-The following variables are currently needed to run the `master` branch:
-- `ALGOLIA_MASTER_API_KEY`, a string of 32 alphanumeric characters, like `6ofolyptm956j9uuev3q4v81vjbqrkp2` (not an actual key)
-- `INFER_COOKIE`
-- `DEBUG_MODE`, usually `off`, which controls log verbosity.
-- `DIGITALOCEAN_POSTGRES`, of the form `postgres://username:password@domain.com:port/configvars`
-- `GOODJUDGMENTOPENCOOKIE`
-- `GOOGLE_API_KEY`, necessary to fetch Peter Wildeford's predictions.
-- `MONGODB_URL`, a string in the format `"mongodb+srv://<username>:<password>@<mongodburl>/?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true"` (no longer really needed)
-- `SECRET_BETFAIR_ENDPOINT`
-
-They can either be stored as process variables (e.g., something that can be accessed as `process.env.<variable name>`), or as text in `src/input/privatekeys.json`, in the same format as `src/input/privatekeys_example.json`.
-- Some of these are just session cookies, necessary to query INFER (previously CSET-foretell), Good Judgment Open and Hypermind (Hypermind iis now deprecated). You can get these cookies by creating an account in said platforms and then making and inspecting a request (e.g., by making a prediction, or browsing questions).
-- Others interface with services, e.g., to access the MongoDB database I'm using to save data and history, or to renew the algolia database. You can get these keys by creating an account with those services.
-
-Note that not all of these cookies are needed to use all parts of the source code. For instance, to download Polymarket data, one could just interface with the polymarket code. In particular, the code in this repository contains code to with the mongo database using read permissions, which are freely available.
-
-Overall, the services which we use are:
-- Algolia for search
-- Netlify for frontend deployment
-- Heroku and DigitalOcean for backend deployment
-- Postgres and Mongo for databases
-
-### 3. Actually run
-
 ```
 $ git clone https://github.com/QURIresearch/metaforecasts
 $ cd metaforecasts
 $ npm install
-$ npm run start
 ```
 
-`npm run start` presents the user with choices; if you would like to skip each step, use the option number instead, e.g., `npm run start 14`
+### 2. Set up a database and environment variables
+
+You'll need a PostgreSQL instance, either local (see https://www.postgresql.org/download/) or in the cloud (for example, you can spin one up on https://www.digitalocean.com/products/managed-databases-postgresql or https://supabase.com/).
+
+Environment can be set up with an `.env.local` file. You'll need to configure at least `DIGITALOCEAN_POSTGRES` for the fetching to work, and `NEXT_PUBLIC_SITE_URL` for the frontend.
+
+See [./docs/configuration.md](./docs/configuration.md) for details.
+
+### 3. Actually run
+
+`npm run cli` starts a local CLI which presents the user with choices; if you would like to skip each step, use the option number instead, e.g., `npm run start 14`.
+
+`npm run next-dev` starts a Next.js dev server with the website on `http://localhost:3000`.
 
 ### 4. Example: download the metaforecasts database
 
@@ -54,17 +42,17 @@ $ npm run start
 $ git clone https://github.com/QURIresearch/metaforecasts
 $ cd metaforecasts
 $ npm install
-$ node src/utils/manualDownload.js
+$ node src/backend/manual/manualDownload.js
 ```
 
 ## What are "stars" and how are they computed
 
-Star ratings—e.g. ★★★☆☆—are an indicator of the quality of an aggregate forecast for a question. These ratings currently try to reflect my own best judgment and the best judgment of forecasting experts I've asked, based on our collective experience forecasting on these platforms. Thus, stars have a strong subjective component which could be formalized and refined in the future. You can see the code used to decide how many stars to assign [here](https://github.com/QURIresearch/metaforecasts/blob/master/src/stars.js)
+Star ratings—e.g. ★★★☆☆—are an indicator of the quality of an aggregate forecast for a question. These ratings currently try to reflect my own best judgment and the best judgment of forecasting experts I've asked, based on our collective experience forecasting on these platforms. Thus, stars have a strong subjective component which could be formalized and refined in the future. You can see the code used to decide how many stars to assign [here](./src/backend/utils/stars.js).
 
 With regards the quality, I am most uncertain about Smarkets, Hypermind, Ladbrokes and WilliamHill, as I haven't used them as much. Also note that, whatever other redeeming features they might have, prediction markets rarely go above 95% or below 5%.
 
 ## Various notes
 
 - Commits follow [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary)
-- Right now, I'm fetching only a couple of common properties, such as the title, url, platform, whether a question is binary (yes/no), its percentage, and the number of forecasts. 
+- Right now, I'm fetching only a couple of common properties, such as the title, url, platform, whether a question is binary (yes/no), its percentage, and the number of forecasts.
 - For elicit and metaculus, this library currently filters questions with <10 predictions.
