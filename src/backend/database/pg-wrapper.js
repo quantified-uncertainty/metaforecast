@@ -302,41 +302,11 @@ export async function pgInitializeHistories() {
   }
 }
 
-async function pgInitializeFrontpage() {
-  let buildFrontpage = () =>
-    `CREATE TABLE latest.frontpage (
-	  id serial primary key,
-    frontpage_sliced jsonb,
-    frontpage_full jsonb
-	);`;
-  let YOLO = false;
-  if (YOLO) {
-    console.log("Create frontpage table and its index");
-
-    await runPgCommand({
-      command: dropTable("latest", "frontpage"),
-      pool: readWritePool,
-    });
-
-    await runPgCommand({
-      command: buildFrontpage(),
-      pool: readWritePool,
-    });
-
-    console.log("");
-  } else {
-    console.log(
-      "pgInitializeFrontpage: This command is dangerous, set YOLO to true in the code to invoke it"
-    );
-  }
-}
-
 export async function pgInitialize() {
   await pgInitializeScaffolding();
   await pgInitializeLatest();
   await pgInitializeHistories();
   await pgInitializeDashboards();
-  await pgInitializeFrontpage();
 }
 
 // Read
