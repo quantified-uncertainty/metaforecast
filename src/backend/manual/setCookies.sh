@@ -2,7 +2,7 @@
 clear
 echo "
 Platforms:
-[0]: IFER
+[0]: INFER
 [1]: Good Judgment Open
 "
 read -p "Choose a platform [0/1]: " platform
@@ -30,8 +30,8 @@ case $platform in
         echo ""
         echo "Cookie found:"
         echo "$cookie"
-        echo "Running: heroku config:set INFER_COOKIE='\$cookie'"
-        heroku config:set INFER_COOKIE="$cookie"
+        echo "Running: netlify env:set INFER_COOKIE '\$cookie'"
+        netlify env:set INFER_COOKIE "$cookie"
     ;;
     "1" )
         echo "Platform: Good Judgment Open"
@@ -54,8 +54,8 @@ case $platform in
         echo ""
         echo "Cookie found:"
         echo "$cookie"
-        echo "Running: heroku config:set GOODJUDGMENTOPENCOOKIE='\$cookie'"
-        heroku config:set GOODJUDGMENTOPENCOOKIE="$cookie"
+        echo "Running: netlify env:set GOODJUDGMENTOPENCOOKIE '\$cookie'"
+        netlify env:set GOODJUDGMENTOPENCOOKIE "$cookie"
     ;;
     * )
         echo "Option not in {0,1}, exiting."
