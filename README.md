@@ -56,6 +56,15 @@ Star ratings—e.g. ★★★☆☆—are an indicator of the quality of an aggr
 
 With regards the quality, I am most uncertain about Smarkets, Hypermind, Ladbrokes and WilliamHill, as I haven't used them as much. Also note that, whatever other redeeming features they might have, prediction markets rarely go above 95% or below 5%.
 
+## Tech stack
+
+Overall, the services which we use are:
+
+- Algolia for search
+- Netlify for website deployment
+- DigitalOcean for background jobs, e.g. fetching new forecasts
+- Postgres on DigitalOcean and Mongo for databases
+
 ## Various notes
 
 - Commits follow [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary)
