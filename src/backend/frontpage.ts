@@ -1,8 +1,5 @@
 import { pgRead, readWritePool } from './database/pg-wrapper';
 
-// TODO - move to global `constants.ts` config
-const location = "/Users/berekuk/coding/quri/metaforecast-backend/data";
-
 export async function getFrontpageRaw() {
   const client = await readWritePool.connect();
   const res = await client.query(

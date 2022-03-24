@@ -104,7 +104,6 @@ async function awaitdownloadconfirmation(message, callback) {
 }
 
 /* Body */
-let filePath = "./data/elicit-binary_export.csv";
 
 export async function elicit() {
   let csvContent = await axios.get(elicitEndpoint).then((query) => query.data);

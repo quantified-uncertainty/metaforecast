@@ -4,9 +4,6 @@ import fs from "fs";
 import { databaseUpsert } from "../database/database-wrapper.js";
 import { calculateStars } from "../utils/stars.js";
 
-/* Definitions */
-let locationData = "./data/";
-
 /* Support functions */
 async function fetchPage(url) {
   let response = await axios({

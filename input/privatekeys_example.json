@@ -1,8 +1,0 @@
-{
-  "csetforetell": "_cset_prod_fof_session=xxx; landing_url=https://www.cset-foretell.com/;  randomization_seed=xxx; remember_user_token=xxx; ",
-  "goodjudmentopen": "__cfduid=xxx; _gj_prod_flyover_forecasts_session=xxx; randomization_seed=xxx; referring_url=https://www.gjopen.com/; remember_user_token=xxx;",
-  "hypermind": "lumAuth=xxxx:yyyyyyyyyyyyyyyyy",
-  "mongodb": "mongodb+srv://<username>:<password>@<mongodbclusterurl>/?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true",
-  "netlify": "https://api.netlify.com/build_hooks/<netlifysecretnumber>?trigger_title=<some_title>",
-  "algolia": "6ofolyptm956j9uuev3q4v81vjbqrkp2--not an actual key"
-}

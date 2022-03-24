@@ -159,7 +159,6 @@ async function processArray(countryArray) {
 }
 
 /* Body */
-let filePath = "./data/coupcast-raw-download.csv"; // not used right now.
 
 export async function coupcast() {
   let csvContent = await axios
