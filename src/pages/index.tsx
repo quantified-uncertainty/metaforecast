@@ -24,6 +24,14 @@ export async function getServerSideProps(context) {
   };
 
   let frontPageForecasts = await getFrontpage();
+  frontPageForecasts = frontPageForecasts.map((forecast) => ({
+    ...forecast,
+    item: {
+      ...forecast.item,
+      timestamp: forecast.item.timestamp.toJSON(),
+    },
+  }));
+
   let initialResults;
   let props;
   switch (
@@ -55,27 +63,6 @@ export async function getServerSideProps(context) {
     props: props,
   };
 }
-
-/* Alternative: getStaticProps
-export async function getStaticProps() {
-  // get frontPageForecasts somehow.
-  let lastUpdated = calculateLastUpdate(); // metaforecasts.find(forecast => forecast.platform == "Good Judgment Open").timestamp
-  let initialQueryParameters = {
-    query: "",
-    processedUrlYet: false,
-    starsThreshold: 2,
-    numDisplay: 21, // 20
-    forecastsThreshold: 0,
-    forecastingPlatforms: platforms,
-  };
-  return {
-    props: {
-      frontPageForecasts,
-      lastUpdated,
-    },
-  };
-}
-*/
 
 /* Body */
 export default function Home({

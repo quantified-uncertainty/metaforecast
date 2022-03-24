@@ -10,8 +10,8 @@ export async function getFrontpageRaw() {
       AND JSON_ARRAY_LENGTH(options) > 0
     ORDER BY RANDOM() LIMIT 50
   `);
-  if (!res.rows.length) return [];
-  return res.rows[0].frontpage_sliced;
+
+  return res.rows;
 }
 
 export async function getFrontpageFullRaw() {

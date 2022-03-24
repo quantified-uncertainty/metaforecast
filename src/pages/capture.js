@@ -23,6 +23,14 @@ export async function getServerSideProps(context) {
   };
 
   let frontPageForecasts = await getFrontpage();
+  frontPageForecasts = frontPageForecasts.map((forecast) => ({
+    ...forecast,
+    item: {
+      ...forecast.item,
+      timestamp: forecast.item.timestamp.toJSON(),
+    },
+  }));
+
   let initialResults;
   switch (initialQueryParameters.query != "") {
     case true:
