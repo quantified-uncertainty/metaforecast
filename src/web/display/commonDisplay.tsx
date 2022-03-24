@@ -1,6 +1,7 @@
+import { useRouter } from 'next/router';
 import React, { Fragment, useEffect, useState } from 'react';
 
-import { platformNames, PlatformWithLabel } from '../platforms';
+import { platformsWithLabels, PlatformWithLabel } from '../platforms';
 import searchAccordingToQueryData from '../worker/searchAccordingToQueryData';
 import ButtonsForStars from './buttonsForStars';
 import Form from './form';
@@ -20,7 +21,6 @@ export interface QueryParameters extends QueryParametersWithoutNum {
 
 interface Props {
   defaultResults: any;
-  initialQueryParameters: QueryParameters;
   hasSearchbar: boolean;
   hasCapture: boolean;
   hasAdvancedOptions: boolean;
@@ -34,28 +34,17 @@ interface Props {
   }) => React.ReactNode;
 }
 
-/* Helper functions */
-
-// URL slugs
-let transformObjectIntoUrlSlug = (obj: QueryParameters) => {
-  let results = [];
-  for (let key in obj) {
-    if (typeof obj[key] === "number" || typeof obj[key] === "string") {
-      results.push(`${key}=${obj[key]}`);
-    } else if (key === "forecastingPlatforms") {
-      let arr = obj[key].map((x) => x.value);
-      let arrstring = arr.join("|");
-      results.push(`${key}=${arrstring}`);
-    }
-  }
-  let string = "?" + results.join("&");
-  return string;
+const defaultQueryParameters: QueryParametersWithoutNum = {
+  query: "",
+  starsThreshold: 2,
+  forecastsThreshold: 0,
+  forecastingPlatforms: platformsWithLabels, // weird key value format,
 };
+const defaultNumDisplay = 21;
 
 /* Body */
 const CommonDisplay: React.FC<Props> = ({
   defaultResults,
-  initialQueryParameters,
   hasSearchbar,
   hasCapture,
   hasAdvancedOptions,
@@ -63,14 +52,18 @@ const CommonDisplay: React.FC<Props> = ({
   displaySeeMoreHint,
   displayForecastsWrapper,
 }) => {
+  const router = useRouter();
   /* States */
 
   const [queryParameters, setQueryParameters] =
-    useState<QueryParametersWithoutNum>(initialQueryParameters);
+    useState<QueryParametersWithoutNum>(defaultQueryParameters);
 
-  const [numDisplay, setNumDisplay] = useState(
-    initialQueryParameters.numDisplay || 21
-  );
+  const [numDisplay, setNumDisplay] = useState(0);
+
+  const [ready, setReady] = useState(false);
+
+  // used to distinguish numDisplay updates which force search and don't force search, see effects below
+  const [forceSearch, setForceSearch] = useState(0);
 
   const [results, setResults] = useState([]);
   const [advancedOptions, showAdvancedOptions] = useState(false);
@@ -78,13 +71,29 @@ const CommonDisplay: React.FC<Props> = ({
     useState(0);
   const [showIdToggle, setShowIdToggle] = useState(false);
 
+  useEffect(() => {
+    if (!router.isReady) return;
+
+    setQueryParameters({
+      ...defaultQueryParameters,
+      ...router.query,
+    });
+    setNumDisplay(
+      typeof router.query.numDisplay === "string"
+        ? parseInt(router.query.numDisplay)
+        : defaultNumDisplay
+    );
+    setReady(true);
+  }, [router.isReady]);
+
   /* Functions which I want to have access to the Home namespace */
   // I don't want to create an "defaultResults" object for each search.
-  async function executeSearchOrAnswerWithDefaultResults(
-    queryData: QueryParameters
-  ) {
-    // the queryData object has the same contents as queryParameters.
-    // but I wanted to spare myself having to think about namespace conflicts.
+  async function executeSearchOrAnswerWithDefaultResults() {
+    const queryData = {
+      ...queryParameters,
+      numDisplay,
+    };
+
     let filterManually = (queryData: QueryParameters, results) => {
       if (
         queryData.forecastingPlatforms &&
@@ -136,43 +145,46 @@ const CommonDisplay: React.FC<Props> = ({
     });
   };
 
-  useEffect(() => {
-    setResults([]);
-    let newTimeoutId = setTimeout(async () => {
-      let urlSlug = transformObjectIntoUrlSlug({
-        ...queryParameters,
-        numDisplay,
-      });
-      let urlWithoutDefaultParameters = urlSlug
-        .replace("?query=&", "?")
-        .replace("&starsThreshold=2", "")
-        .replace("&numDisplay=21", "")
-        .replace("&forecastsThreshold=0", "")
-        .replace(`&forecastingPlatforms=${platformNames.join("|")}`, "");
-      console.log(urlWithoutDefaultParameters);
-      if (urlWithoutDefaultParameters != "?query=") {
-        if (typeof window !== "undefined") {
-          if (!window.location.href.includes(urlWithoutDefaultParameters)) {
-            window.history.replaceState(
-              null,
-              "Metaforecast",
-              urlWithoutDefaultParameters
-            );
-          }
-        }
+  const updateRoute = () => {
+    const stringify = (key: string, value: any) => {
+      if (key === "forecastingPlatforms") {
+        return value.map((x) => x.value).join("|");
+      } else {
+        return String(value);
       }
+    };
 
-      executeSearchOrAnswerWithDefaultResults({
-        ...queryParameters,
-        numDisplay,
-      });
+    const query = {};
+    for (const key of Object.keys(defaultQueryParameters)) {
+      const value = stringify(key, queryParameters[key]);
+      const defaultValue = stringify(key, defaultQueryParameters[key]);
+      if (value === defaultValue) continue;
+      query[key] = value;
+    }
+
+    if (numDisplay !== defaultNumDisplay) query["numDisplay"] = numDisplay;
+
+    router.replace({
+      pathname: router.pathname,
+      query,
+    });
+  };
+
+  useEffect(updateRoute, [numDisplay]);
+
+  useEffect(() => {
+    if (!ready) return;
+    setResults([]);
+    let newTimeoutId = setTimeout(() => {
+      updateRoute();
+      executeSearchOrAnswerWithDefaultResults();
     }, 500);
 
     // avoid sending results if user has not stopped typing.
     return () => {
       clearTimeout(newTimeoutId);
     };
-  }, [queryParameters]);
+  }, [ready, queryParameters, forceSearch]);
 
   /* State controllers */
 
@@ -195,7 +207,7 @@ const CommonDisplay: React.FC<Props> = ({
   };
   let onChangeSliderForNumDisplay = (event) => {
     setNumDisplay(Math.round(event[0]));
-    // FIXME - force new search if numDisplay is greater than last search limit
+    setForceSearch(forceSearch + 1); // FIXME - force new search iff numDisplay is greater than last search limit
   };
 
   /* Change the forecast threshold */
