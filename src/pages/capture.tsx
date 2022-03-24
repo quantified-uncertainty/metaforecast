@@ -1,16 +1,22 @@
-import { GetServerSideProps } from 'next';
+import { GetServerSideProps, NextPage } from 'next';
 import React from 'react';
 
 import { getFrontpage } from '../backend/frontpage';
 import CommonDisplay, { QueryParameters } from '../web/display/commonDisplay';
 import { displayForecastsWrapperForCapture } from '../web/display/displayForecastsWrappers';
 import { platformsWithLabels } from '../web/platforms';
-import searchAccordingToQueryData from '../web/worker/searchAccordingToQueryData';
 import Layout from './layout';
 
 /* get Props */
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+interface Props {
+  initialQueryParameters: QueryParameters;
+  defaultResults: any;
+}
+
+export const getServerSideProps: GetServerSideProps<Props> = async (
+  context
+) => {
   let urlQuery = context.query;
 
   let initialQueryParameters: QueryParameters = {
@@ -31,33 +37,19 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     },
   }));
 
-  let initialResults =
-    initialQueryParameters.query != ""
-      ? await searchAccordingToQueryData(initialQueryParameters)
-      : frontPageForecasts;
-
-  let props = {
-    initialQueryParameters: initialQueryParameters,
-    initialResults: initialResults,
-    defaultResults: frontPageForecasts,
-    urlQuery: urlQuery,
-  };
-
   return {
-    props: props,
+    props: {
+      initialQueryParameters: initialQueryParameters,
+      defaultResults: frontPageForecasts,
+    },
   };
 };
 
 /* Body */
-export default function Home({
-  initialResults,
-  defaultResults,
-  initialQueryParameters,
-}) {
+const Home: NextPage<Props> = ({ defaultResults, initialQueryParameters }) => {
   return (
     <Layout page={"capture"}>
       <CommonDisplay
-        initialResults={initialResults}
         defaultResults={defaultResults}
         initialQueryParameters={initialQueryParameters}
         hasSearchbar={true}
@@ -69,4 +61,6 @@ export default function Home({
       />
     </Layout>
   );
-}
+};
+
+export default Home;

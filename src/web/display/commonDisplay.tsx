@@ -19,7 +19,6 @@ export interface QueryParameters extends QueryParametersWithoutNum {
 }
 
 interface Props {
-  initialResults: any;
   defaultResults: any;
   initialQueryParameters: QueryParameters;
   hasSearchbar: boolean;
@@ -55,7 +54,6 @@ let transformObjectIntoUrlSlug = (obj: QueryParameters) => {
 
 /* Body */
 const CommonDisplay: React.FC<Props> = ({
-  initialResults,
   defaultResults,
   initialQueryParameters,
   hasSearchbar,
@@ -74,7 +72,7 @@ const CommonDisplay: React.FC<Props> = ({
     initialQueryParameters.numDisplay || 21
   );
 
-  const [results, setResults] = useState(initialResults);
+  const [results, setResults] = useState([]);
   const [advancedOptions, showAdvancedOptions] = useState(false);
   const [whichResultToDisplayAndCapture, setWhichResultToDisplayAndCapture] =
     useState(0);
@@ -114,7 +112,7 @@ const CommonDisplay: React.FC<Props> = ({
       !queryData || queryData.query == "" || queryData.query == undefined;
 
     let results = queryIsEmpty
-      ? filterManually(queryData, defaultResults || initialResults)
+      ? filterManually(queryData, defaultResults)
       : await searchAccordingToQueryData(queryData);
 
     setResults(results);
