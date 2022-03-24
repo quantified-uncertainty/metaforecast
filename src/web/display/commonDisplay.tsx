@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 
 import { platformNames, PlatformWithLabel } from '../platforms';
 import searchAccordingToQueryData from '../worker/searchAccordingToQueryData';
@@ -7,12 +7,15 @@ import Form from './form';
 import MultiSelectPlatform from './multiSelectPlatforms';
 import { SliderElement } from './slider';
 
-export interface QueryParameters {
+interface QueryParametersWithoutNum {
   query: string;
-  numDisplay: number;
   starsThreshold: number;
   forecastsThreshold: number;
   forecastingPlatforms: PlatformWithLabel[];
+}
+
+export interface QueryParameters extends QueryParametersWithoutNum {
+  numDisplay: number;
 }
 
 interface Props {
@@ -64,17 +67,13 @@ const CommonDisplay: React.FC<Props> = ({
 }) => {
   /* States */
 
-  const [queryParameters, setQueryParameters] = useState(
-    initialQueryParameters
+  const [queryParameters, setQueryParameters] =
+    useState<QueryParametersWithoutNum>(initialQueryParameters);
+
+  const [numDisplay, setNumDisplay] = useState(
+    initialQueryParameters.numDisplay || 21
   );
-  let initialSearchSpeedSettings = {
-    timeoutId: null,
-    awaitEndTyping: 500,
-    time: Date.now(),
-  };
-  const [searchSpeedSettings, setSearchSpeedSettings] = useState(
-    initialSearchSpeedSettings
-  );
+
   const [results, setResults] = useState(initialResults);
   const [advancedOptions, showAdvancedOptions] = useState(false);
   const [whichResultToDisplayAndCapture, setWhichResultToDisplayAndCapture] =
@@ -128,10 +127,9 @@ const CommonDisplay: React.FC<Props> = ({
     showIdToggle,
   }) => {
     let numDisplayRounded =
-      queryParameters.numDisplay % 3 != 0
-        ? queryParameters.numDisplay +
-          (3 - (Math.round(queryParameters.numDisplay) % 3))
-        : queryParameters.numDisplay;
+      numDisplay % 3 != 0
+        ? numDisplay + (3 - (Math.round(numDisplay) % 3))
+        : numDisplay;
     return displayForecastsWrapper({
       results,
       numDisplay: numDisplayRounded,
@@ -140,19 +138,20 @@ const CommonDisplay: React.FC<Props> = ({
     });
   };
 
-  /* State controllers */
-  let onChangeSearchInputs = (newQueryParameters: QueryParameters) => {
-    setQueryParameters(newQueryParameters); // ({ ...newQueryParameters, processedUrlYet: true });
+  useEffect(() => {
     setResults([]);
-    clearTimeout(searchSpeedSettings.timeoutId);
-    let newtimeoutId = setTimeout(async () => {
-      let urlSlug = transformObjectIntoUrlSlug(newQueryParameters);
+    let newTimeoutId = setTimeout(async () => {
+      let urlSlug = transformObjectIntoUrlSlug({
+        ...queryParameters,
+        numDisplay,
+      });
       let urlWithoutDefaultParameters = urlSlug
         .replace("?query=&", "?")
         .replace("&starsThreshold=2", "")
         .replace("&numDisplay=21", "")
         .replace("&forecastsThreshold=0", "")
         .replace(`&forecastingPlatforms=${platformNames.join("|")}`, "");
+      console.log(urlWithoutDefaultParameters);
       if (urlWithoutDefaultParameters != "?query=") {
         if (typeof window !== "undefined") {
           if (!window.location.href.includes(urlWithoutDefaultParameters)) {
@@ -165,34 +164,40 @@ const CommonDisplay: React.FC<Props> = ({
         }
       }
 
-      executeSearchOrAnswerWithDefaultResults(newQueryParameters);
-      setSearchSpeedSettings({ ...searchSpeedSettings, timeoutId: null });
-    }, searchSpeedSettings.awaitEndTyping);
-    setSearchSpeedSettings({ ...searchSpeedSettings, timeoutId: newtimeoutId });
+      executeSearchOrAnswerWithDefaultResults({
+        ...queryParameters,
+        numDisplay,
+      });
+    }, 500);
+
     // avoid sending results if user has not stopped typing.
-  };
+    return () => {
+      clearTimeout(newTimeoutId);
+    };
+  }, [queryParameters]);
+
+  /* State controllers */
 
   /* Change the stars threshold */
   let onChangeStars = (value: number) => {
-    let newQueryParameters: QueryParameters = {
+    setQueryParameters({
       ...queryParameters,
       starsThreshold: value,
-    };
-    onChangeSearchInputs(newQueryParameters);
+    });
   };
 
   /* Change the number of elements to display  */
   let displayFunctionNumDisplaySlider = (value) => {
-    return Math.round(value) != 1
-      ? "Show " + Math.round(value) + " results"
-      : "Show " + Math.round(value) + " result";
+    return (
+      "Show " +
+      Math.round(value) +
+      " result" +
+      (Math.round(value) === 1 ? "" : "s")
+    );
   };
   let onChangeSliderForNumDisplay = (event) => {
-    let newQueryParameters: QueryParameters = {
-      ...queryParameters,
-      numDisplay: Math.round(event[0]),
-    };
-    onChangeSearchInputs(newQueryParameters); // Slightly inefficient because it recomputes the search in time, but it makes my logic easier.
+    setNumDisplay(Math.round(event[0]));
+    // FIXME - force new search if numDisplay is greater than last search limit
   };
 
   /* Change the forecast threshold */
@@ -200,26 +205,26 @@ const CommonDisplay: React.FC<Props> = ({
     return "# Forecasts > " + Math.round(value);
   };
   let onChangeSliderForNumForecasts = (event) => {
-    let newQueryParameters = {
+    setQueryParameters({
       ...queryParameters,
       forecastsThreshold: Math.round(event[0]),
-    };
-    onChangeSearchInputs(newQueryParameters);
+    });
   };
 
   /* Change on the search bar */
   let onChangeSearchBar = (value: string) => {
-    let newQueryParameters = { ...queryParameters, query: value };
-    onChangeSearchInputs(newQueryParameters);
+    setQueryParameters({
+      ...queryParameters,
+      query: value,
+    });
   };
 
   /* Change selected platforms */
   let onChangeSelectedPlatforms = (value) => {
-    let newQueryParameters = {
+    setQueryParameters({
       ...queryParameters,
       forecastingPlatforms: value,
-    };
-    onChangeSearchInputs(newQueryParameters);
+    });
   };
 
   // Change show id
@@ -236,7 +241,6 @@ const CommonDisplay: React.FC<Props> = ({
   };
   let onClickForward = (whichResultToDisplayAndCapture: number) => {
     setWhichResultToDisplayAndCapture(whichResultToDisplayAndCapture + 1);
-    // setTimeout(()=> {onClickForward(whichResultToDisplayAndCapture+1)}, 5000)
   };
 
   /* Final return */
@@ -300,7 +304,7 @@ const CommonDisplay: React.FC<Props> = ({
             </div>
             <div className="flex row-start-3 row-end-3 col-start-1 col-end-4 md:col-start-3 md:col-end-3 md:row-start-1 md:row-end-1 lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-1 items-center justify-center mb-4">
               <SliderElement
-                value={queryParameters.numDisplay}
+                value={numDisplay}
                 onChange={onChangeSliderForNumDisplay}
                 displayFunction={displayFunctionNumDisplaySlider}
               />
@@ -329,31 +333,22 @@ const CommonDisplay: React.FC<Props> = ({
         })}
       </div>
 
-      {displaySeeMoreHint ? (
+      {displaySeeMoreHint &&
+      (!results || (results.length != 0 && numDisplay < results.length)) ? (
         <div>
-          <p
-            className={`mt-4 mb-4 ${
-              !results ||
-              (results.length != 0 &&
-                queryParameters.numDisplay < results.length)
-                ? ""
-                : "hidden"
-            }`}
-          >
+          <p className="mt-4 mb-4">
             {"Can't find what you were looking for?"}
             <span
               className={`cursor-pointer text-blue-800 ${
                 !results ? "hidden" : ""
               }`}
               onClick={() => {
-                setQueryParameters({
-                  ...queryParameters,
-                  numDisplay: queryParameters.numDisplay * 2,
-                });
+                setNumDisplay(numDisplay * 2);
               }}
             >
-              {" Show more, or"}
-            </span>{" "}
+              {" Show more,"}
+            </span>
+            {" or "}
             <a
               href="https://www.metaculus.com/questions/create/"
               className="cursor-pointer text-blue-800 no-underline"

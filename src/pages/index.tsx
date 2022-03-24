@@ -15,8 +15,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   let initialQueryParameters = {
     query: "",
+    numDisplay: 21,
     starsThreshold: 2,
-    numDisplay: 21, // 20
     forecastsThreshold: 0,
     forecastingPlatforms: platformsWithLabels, // weird key value format,
     ...urlQuery,
