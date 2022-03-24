@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { displayForecast } from '../web/display/displayForecasts.js';
-import { platformsWithLabels } from '../web/platforms.js';
+import { platformsWithLabels } from '../web/platforms';
 import searchAccordingToQueryData from '../web/worker/searchAccordingToQueryData';
 
 /* Helper functions */

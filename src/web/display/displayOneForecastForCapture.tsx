@@ -1,10 +1,11 @@
-import domtoimage from "dom-to-image"; // https://github.com/tsayen/dom-to-image
-import { useRef, useState } from "react";
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import { uploadToImgur } from "../worker/uploadToImgur";
-import { displayForecast } from "./displayForecasts.js";
+import domtoimage from 'dom-to-image'; // https://github.com/tsayen/dom-to-image
+import { useEffect, useRef, useState } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-function displayOneForecastInner(result, containerRef, onLoadCallback) {
+import { uploadToImgur } from '../worker/uploadToImgur';
+import { displayForecast } from './displayForecasts.js';
+
+function displayOneForecastInner(result, containerRef) {
   return (
     <div ref={containerRef}>
       {result
@@ -21,7 +22,6 @@ function displayOneForecastInner(result, containerRef, onLoadCallback) {
 
 let domToImageWrapper = (reactRef) => {
   let node = reactRef.current;
-  console.log(node);
   const scale = 3; // Increase for better quality
   const style = {
     transform: "scale(" + scale + ")",
@@ -36,7 +36,6 @@ let domToImageWrapper = (reactRef) => {
     style,
   };
   let image = domtoimage.toPng(node, param);
-  console.log(image);
   return image;
 };
 
@@ -103,18 +102,17 @@ let generateIframeURL = (result) => {
   let iframeURL = "";
   if (result) {
     // if check not strictly necessary today
-    iframeURL = result.item.url
+    let parts = result.item.url
       .replace("questions", "questions/embed")
       .split("/");
-    iframeURL.pop();
-    iframeURL.pop();
-    iframeURL = iframeURL.join("/");
+    parts.pop();
+    parts.pop();
+    iframeURL = parts.join("/");
   }
   return iframeURL;
 };
 
 let metaculusEmbed = (result) => {
-  //console.log(item.url)
   let platform = "";
   let iframeURL = "";
   if (result) {
@@ -171,20 +169,24 @@ let generateMetaculusSource = (result, hasDisplayBeenCaptured) => {
   }
 };
 
-export default function displayOneForecast({
-  result,
-  hasDisplayBeenCaptured,
-  setHasDisplayBeenCaptured,
-}) {
+interface Props {
+  result: any;
+}
+
+const DisplayOneForecast: React.FC<Props> = ({ result }) => {
+  const [hasDisplayBeenCaptured, setHasDisplayBeenCaptured] = useState(false);
+
+  useEffect(() => {
+    setHasDisplayBeenCaptured(false);
+  }, [result]);
+
   const containerRef = useRef(null);
   const [imgSrc, setImgSrc] = useState("");
   const [mainButtonStatus, setMainButtonStatus] = useState(
     "Capture image and generate code"
   );
-  const [clickedAlreadyBool, setClickAlreadyBool] = useState(false);
 
   let exportAsPictureAndCode = () => {
-    console.log(containerRef.current);
     let handleGettingImgurlImage = (imgurUrl) => {
       setImgSrc(imgurUrl);
       setMainButtonStatus("Done!");
@@ -215,7 +217,7 @@ export default function displayOneForecast({
       return (
         <button
           onClick={() => onCaptureButtonClick()}
-          className="bg-blue-500 cursor-pointer px-5 py-4 bg-white rounded-md shadow text-white hover:bg-blue-600 active:bg-gray-700"
+          className="bg-blue-500 cursor-pointer px-5 py-4 rounded-md shadow text-white hover:bg-blue-600 active:bg-gray-700"
         >
           {mainButtonStatus}
         </button>
@@ -232,10 +234,7 @@ export default function displayOneForecast({
         {generateCaptureButton(result, onCaptureButtonClick)}
       </div>
       <div className="flex col-span-1 items-center justify-center">
-        <img
-          src={imgSrc}
-          className={hasDisplayBeenCaptured ? "" : "hidden"}
-        ></img>
+        <img src={imgSrc} className={hasDisplayBeenCaptured ? "" : "hidden"} />
       </div>
       <div className="flex col-span-1 items-center justify-center">
         <div>{generateSource(result, imgSrc, hasDisplayBeenCaptured)}</div>
@@ -249,7 +248,9 @@ export default function displayOneForecast({
       <br></br>
     </div>
   );
-}
+};
+
+export default DisplayOneForecast;
 
 // https://stackoverflow.com/questions/39501289/in-reactjs-how-to-copy-text-to-clipboard
 // Note: https://stackoverflow.com/questions/66016033/can-no-longer-upload-images-to-imgur-from-localhost

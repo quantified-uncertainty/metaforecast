@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React from 'react';
 
-export default function ButtonsForStars({ onChange, value }) {
-  const onChangeInner = (buttonPressed) => {
+interface Props {
+  onChange: (x: number) => void;
+  value: number;
+}
+
+const ButtonsForStars: React.FC<Props> = ({ onChange, value }) => {
+  const onChangeInner = (buttonPressed: number) => {
     onChange(buttonPressed);
   };
-  let setStyle = (buttonNumber) =>
+  let setStyle = (buttonNumber: number) =>
     `flex row-span-1 col-start-${buttonNumber + 1} col-end-${
       buttonNumber + 2
     } items-center justify-center text-center${
@@ -31,4 +36,6 @@ export default function ButtonsForStars({ onChange, value }) {
       </div>
     </div>
   );
-}
+};
+
+export default ButtonsForStars;

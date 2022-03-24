@@ -15,22 +15,12 @@ export function displayForecastsWrapperForSearch({
 
 export function displayForecastsWrapperForCapture({
   results,
-  hasDisplayBeenCaptured,
-  setHasDisplayBeenCaptured,
   whichResultToDisplayAndCapture,
 }) {
-  console.log({
-    results,
-    hasDisplayBeenCaptured,
-    setHasDisplayBeenCaptured,
-    whichResultToDisplayAndCapture,
-  });
   return (
-    <div className="grid grid-cols-1  w-full justify-center">
+    <div className="grid grid-cols-1 w-full justify-center">
       {displayOneForecast({
         result: results[whichResultToDisplayAndCapture],
-        hasDisplayBeenCaptured,
-        setHasDisplayBeenCaptured,
       })}
     </div>
   );

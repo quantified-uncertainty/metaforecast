@@ -42,11 +42,19 @@ export const platformNames = [
   "X-risk estimates",
 ];
 
-export const platformsWithLabels = platformNames.map((name, i) => ({
-  value: name,
-  label: name,
-  color: distinctColors[i],
-}));
+export interface PlatformWithLabel {
+  value: string;
+  label: string;
+  color: string;
+}
+
+export const platformsWithLabels: PlatformWithLabel[] = platformNames.map(
+  (name, i) => ({
+    value: name,
+    label: name,
+    color: distinctColors[i],
+  })
+);
 
 export const platforms = platformsWithLabels;
 

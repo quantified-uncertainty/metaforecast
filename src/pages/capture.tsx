@@ -2,8 +2,8 @@ import { GetServerSideProps } from 'next';
 import React from 'react';
 
 import { getFrontpage } from '../backend/frontpage';
-import CommonDisplay from '../web/display/commonDisplay';
-import { displayForecastsWrapperForSearch } from '../web/display/displayForecastsWrappers';
+import CommonDisplay, { QueryParameters } from '../web/display/commonDisplay';
+import { displayForecastsWrapperForCapture } from '../web/display/displayForecastsWrappers';
 import { platformsWithLabels } from '../web/platforms';
 import searchAccordingToQueryData from '../web/worker/searchAccordingToQueryData';
 import Layout from './layout';
@@ -13,10 +13,10 @@ import Layout from './layout';
 export const getServerSideProps: GetServerSideProps = async (context) => {
   let urlQuery = context.query;
 
-  let initialQueryParameters = {
+  let initialQueryParameters: QueryParameters = {
     query: "",
+    numDisplay: 21,
     starsThreshold: 2,
-    numDisplay: 21, // 20
     forecastsThreshold: 0,
     forecastingPlatforms: platformsWithLabels, // weird key value format,
     ...urlQuery,
@@ -32,19 +32,19 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   }));
 
   let initialResults =
-    !!initialQueryParameters &&
-    initialQueryParameters.query != "" &&
-    initialQueryParameters.query != undefined
+    initialQueryParameters.query != ""
       ? await searchAccordingToQueryData(initialQueryParameters)
       : frontPageForecasts;
 
+  let props = {
+    initialQueryParameters: initialQueryParameters,
+    initialResults: initialResults,
+    defaultResults: frontPageForecasts,
+    urlQuery: urlQuery,
+  };
+
   return {
-    props: {
-      initialQueryParameters: initialQueryParameters,
-      initialResults: initialResults,
-      defaultResults: frontPageForecasts, // different from initialResults!
-      urlQuery: urlQuery,
-    },
+    props: props,
   };
 };
 
@@ -55,17 +55,17 @@ export default function Home({
   initialQueryParameters,
 }) {
   return (
-    <Layout page={"search"}>
+    <Layout page={"capture"}>
       <CommonDisplay
         initialResults={initialResults}
         defaultResults={defaultResults}
         initialQueryParameters={initialQueryParameters}
         hasSearchbar={true}
-        hasCapture={false}
-        hasAdvancedOptions={true}
-        placeholder={"Find forecasts about..."}
-        displaySeeMoreHint={true}
-        displayForecastsWrapper={displayForecastsWrapperForSearch}
+        hasCapture={true}
+        hasAdvancedOptions={false}
+        placeholder={"Get best title match..."}
+        displaySeeMoreHint={false}
+        displayForecastsWrapper={displayForecastsWrapperForCapture}
       />
     </Layout>
   );
