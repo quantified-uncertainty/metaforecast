@@ -302,11 +302,34 @@ export async function pgInitializeHistories() {
   }
 }
 
+async function pgInitializeFrontpage() {
+  let YOLO = false;
+  if (YOLO) {
+    await runPgCommand({
+      command: dropTable("latest", "frontpage"),
+      pool: readWritePool,
+    });
+    await runPgCommand({
+      command: `CREATE TABLE latest.frontpage (
+        id serial primary key,
+        frontpage_full jsonb,
+        frontpage_sliced jsonb
+      );`,
+      pool: readWritePool,
+    });
+  } else {
+    console.log(
+      "pgInitializeFrontpage: This command is dangerous, set YOLO to true in the code to invoke it"
+    );
+  }
+}
+
 export async function pgInitialize() {
   await pgInitializeScaffolding();
   await pgInitializeLatest();
   await pgInitializeHistories();
   await pgInitializeDashboards();
+  await pgInitializeFrontpage();
 }
 
 // Read

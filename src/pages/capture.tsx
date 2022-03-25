@@ -1,41 +1,24 @@
-import { GetStaticProps, NextPage } from 'next';
+import { NextPage } from 'next';
 import React from 'react';
 
-import { getFrontpage } from '../backend/frontpage';
-import CommonDisplay from '../web/display/commonDisplay';
 import { displayForecastsWrapperForCapture } from '../web/display/displayForecastsWrappers';
+import { Props } from '../web/search/anySearchPage';
+import CommonDisplay from '../web/search/commonDisplay';
 import Layout from './layout';
 
-/* get Props */
+export { getServerSideProps } from "../web/search/anySearchPage";
 
-interface Props {
-  defaultResults: any;
-}
-
-export const getStaticProps: GetStaticProps<Props> = async (context) => {
-  let frontPageForecasts = await getFrontpage();
-  frontPageForecasts = frontPageForecasts.map((forecast) => ({
-    ...forecast,
-    item: {
-      ...forecast.item,
-      timestamp: forecast.item.timestamp.toJSON(),
-    },
-  }));
-
-  return {
-    props: {
-      defaultResults: frontPageForecasts,
-    },
-    revalidate: 3600 * 6,
-  };
-};
-
-/* Body */
-const CapturePage: NextPage<Props> = ({ defaultResults }) => {
+const CapturePage: NextPage<Props> = ({
+  defaultResults,
+  initialResults,
+  initialQueryParameters,
+}) => {
   return (
     <Layout page={"capture"}>
       <CommonDisplay
         defaultResults={defaultResults}
+        initialResults={initialResults}
+        initialQueryParameters={initialQueryParameters}
         hasSearchbar={true}
         hasCapture={true}
         hasAdvancedOptions={false}

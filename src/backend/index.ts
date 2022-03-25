@@ -1,13 +1,16 @@
 /* Imports */
-import "dotenv/config";
-import readline from "readline";
-import { pgInitialize } from "./database/pg-wrapper.js";
-import { doEverything, tryCatchTryAgain } from "./flow/doEverything.js";
-import { updateHistory } from "./flow/history/updateHistory.js";
-import { mergeEverything } from "./flow/mergeEverything.js";
-import { rebuildNetlifySiteWithNewData } from "./flow/rebuildNetliftySiteWithNewData.js";
-import { platformFetchers } from "./platforms/all-platforms.js";
-import { rebuildAlgoliaDatabase } from "./utils/algolia.js";
+import 'dotenv/config';
+
+import readline from 'readline';
+
+import { pgInitialize } from './database/pg-wrapper.js';
+import { doEverything, tryCatchTryAgain } from './flow/doEverything.js';
+import { updateHistory } from './flow/history/updateHistory.js';
+import { mergeEverything } from './flow/mergeEverything.js';
+import { rebuildNetlifySiteWithNewData } from './flow/rebuildNetliftySiteWithNewData.js';
+import { rebuildFrontpage } from './frontpage';
+import { platformFetchers } from './platforms/all-platforms.js';
+import { rebuildAlgoliaDatabase } from './utils/algolia.js';
 
 /* Support functions */
 let functions = [
@@ -18,6 +21,7 @@ let functions = [
   rebuildNetlifySiteWithNewData,
   doEverything,
   pgInitialize,
+  rebuildFrontpage,
 ];
 let functionNames = functions.map((fun) => fun.name);
 
@@ -34,6 +38,7 @@ let generateWhatToDoMessage = () => {
     // `\n[${functionNames.length-1}]: Add to history` +
     `All of the above`,
     `Initialize postgres database`,
+    "Rebuild frontpage",
   ];
   let otherMessagesWithNums = otherMessages.map(
     (message, i) => `[${i + l}]: ${message}`
