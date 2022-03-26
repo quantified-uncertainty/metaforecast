@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/QURIresearch/metaforecast#readme",
   "scripts": {
-    "cli": "ts-node src/backend/index.ts",
-    "reload": "heroku run:detached node src/backend/utils/doEverythingForScheduler.js",
+    "cli": "ts-node -T src/backend/index.ts",
+    "reload": "heroku run:detached ts-node -T src/backend/utils/doEverythingForScheduler.js",
     "setCookies": "./src/backend/utils/setCookies.sh",
     "next-dev": "next dev",
     "next-build": "next build",
@@ -76,12 +76,12 @@
     "tabletojson": "^2.0.4",
     "tailwindcss": "^3.0.22",
     "textversionjs": "^1.1.3",
+    "ts-node": "^10.7.0",
     "tunnel": "^0.0.6"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.2.4",
     "@svgr/cli": "^6.2.1",
-    "netlify-cli": "^9.13.4",
-    "ts-node": "^10.7.0"
+    "netlify-cli": "^9.13.4"
   }
 }
