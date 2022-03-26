@@ -41,4 +41,5 @@ package-lock.json ## use yarn.lock instead
 # Local Netlify folder
 .netlify
 
-.env
+/.env
+/.env.production
