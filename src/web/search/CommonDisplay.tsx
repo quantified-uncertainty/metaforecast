@@ -164,10 +164,14 @@ const CommonDisplay: React.FC<Props> = ({
 
     if (numDisplay !== defaultNumDisplay) query["numDisplay"] = numDisplay;
 
-    router.replace({
-      pathname: router.pathname,
-      query,
-    });
+    router.replace(
+      {
+        pathname: router.pathname,
+        query,
+      },
+      undefined,
+      { shallow: true }
+    );
   };
 
   useNoInitialEffect(updateRoute, [numDisplay]);
