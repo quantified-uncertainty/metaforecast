@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { DependencyList, EffectCallback, Fragment, useEffect, useState } from 'react';
 
 import ButtonsForStars from '../display/buttonsForStars';
 import Form from '../display/form';
@@ -43,6 +43,17 @@ export const defaultQueryParameters: QueryParametersWithoutNum = {
   forecastingPlatforms: platformsWithLabels, // weird key value format,
 };
 export const defaultNumDisplay = 21;
+
+const useNoInitialEffect = (effect: EffectCallback, deps: DependencyList) => {
+  const initial = React.useRef(true);
+  useEffect(() => {
+    if (initial.current) {
+      initial.current = false;
+      return;
+    }
+    return effect();
+  }, deps);
+};
 
 /* Body */
 const CommonDisplay: React.FC<Props> = ({
@@ -159,9 +170,9 @@ const CommonDisplay: React.FC<Props> = ({
     });
   };
 
-  useEffect(updateRoute, [numDisplay]);
+  useNoInitialEffect(updateRoute, [numDisplay]);
 
-  useEffect(() => {
+  useNoInitialEffect(() => {
     setResults([]);
     let newTimeoutId = setTimeout(() => {
       updateRoute();
