@@ -1,3 +1,3 @@
-import { doEverything } from "./doEverything.js";
+import { doEverything } from "./doEverything";
 
 doEverything();

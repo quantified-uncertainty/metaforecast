@@ -1,5 +1,5 @@
-import { databaseRead, databaseUpsert } from "../database/database-wrapper.js";
-import { platformNames } from "../platforms/all-platforms.js";
+import { databaseRead, databaseUpsert } from "../database/database-wrapper";
+import { platformNames } from "../platforms/all-platforms";
 /* Merge everything */
 
 export async function mergeEverythingInner() {

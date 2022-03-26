@@ -1,7 +1,7 @@
 /* Imports */
 import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper.js";
-import { calculateStars } from "../utils/stars.js";
+import { databaseUpsert } from "../database/database-wrapper";
+import { calculateStars } from "../utils/stars";
 
 /* Definitions */
 let unixtime = new Date().getTime();

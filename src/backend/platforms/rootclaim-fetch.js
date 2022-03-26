@@ -1,8 +1,8 @@
 /* Imports */
 import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper.js";
-import { calculateStars } from "../utils/stars.js";
-import toMarkdown from "../utils/toMarkdown.js";
+import { databaseUpsert } from "../database/database-wrapper";
+import { calculateStars } from "../utils/stars";
+import toMarkdown from "../utils/toMarkdown";
 
 /* Definitions */
 let jsonEndpoint =

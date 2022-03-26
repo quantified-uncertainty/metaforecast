@@ -1,6 +1,6 @@
 import fs from "fs";
-import { databaseUpsert } from "../utils/database-wrapper.js";
-import { calculateStars } from "../utils/stars.js";
+import { databaseUpsert } from "../utils/database-wrapper";
+import { calculateStars } from "../utils/stars";
 
 export async function estimize() {
   let data = fs.readFileSync(

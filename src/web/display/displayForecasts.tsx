@@ -1,7 +1,7 @@
 /* Imports */
-import React, { useState } from "react";
-import ReactMarkdown from "react-markdown";
-import { FaRegClipboard } from "react-icons/fa";
+import React from 'react';
+import { FaRegClipboard } from 'react-icons/fa';
+import ReactMarkdown from 'react-markdown';
 
 /* Definitions */
 
@@ -603,8 +603,8 @@ export function displayForecast({
             onClick={(e) => {
               e.preventDefault();
               navigator.clipboard.writeText(`"${id}"`);
-              setIsJustCopiedSignalVisible(true);
-              setTimeout(() => setIsJustCopiedSignalVisible(false), 1000);
+              // setIsJustCopiedSignalVisible(true);
+              // setTimeout(() => setIsJustCopiedSignalVisible(false), 1000);
               // This is just personal preference.
               // I prefer to not show the whole text area selected.
             }}

@@ -1,8 +1,8 @@
-import { mergeEverything } from "./mergeEverything.js";
-import { updateHistory } from "./history/updateHistory.js";
-import { rebuildAlgoliaDatabase } from "../utils/algolia.js";
-import { rebuildNetlifySiteWithNewData } from "./rebuildNetliftySiteWithNewData.js";
-import { platformFetchers } from "../platforms/all-platforms.js";
+import { platformFetchers } from "../platforms/all-platforms";
+import { rebuildAlgoliaDatabase } from "../utils/algolia";
+import { updateHistory } from "./history/updateHistory";
+import { mergeEverything } from "./mergeEverything";
+import { rebuildNetlifySiteWithNewData } from "./rebuildNetliftySiteWithNewData";
 /* Do everything */
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));

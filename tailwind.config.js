@@ -1,9 +1,5 @@
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./src/web/display/**/*.{js,ts,jsx,tsx}",
-    "./src/web/icons/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/web/**/*.tsx", "./src/pages/**/*.tsx"],
   darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {

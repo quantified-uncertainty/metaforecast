@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import { uploadToImgur } from '../worker/uploadToImgur';
-import { displayForecast } from './displayForecasts.js';
+import { displayForecast } from './displayForecasts';
 
 function displayOneForecastInner(result, containerRef) {
   return (

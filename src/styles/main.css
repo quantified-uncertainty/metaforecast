@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-orange-400 {
+  color: #ffac75;
+}
+
 html,
 body {
   padding: 0;

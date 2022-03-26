@@ -1,8 +1,8 @@
 /* Imports */
 import axios from "axios";
 import https from "https";
-import { databaseUpsert } from "../database/database-wrapper.js";
-import { calculateStars } from "../utils/stars.js";
+import { databaseUpsert } from "../database/database-wrapper";
+import { calculateStars } from "../utils/stars";
 
 /* Definitions */
 let endpoint = process.env.SECRET_BETFAIR_ENDPOINT;

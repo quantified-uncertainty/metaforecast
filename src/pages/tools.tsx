@@ -1,34 +1,18 @@
-import React, { useState } from "react";
-import Link from "next/link";
-import Layout from "./layout.js";
+import Link from 'next/link';
+import React from 'react';
 
-/* Helper functions */
-
-let calculateLastUpdate = () => {
-  let today = new Date().toISOString();
-  let yesterdayObj = new Date();
-  yesterdayObj.setDate(yesterdayObj.getDate() - 1);
-  let yesterday = yesterdayObj.toISOString();
-  if (today.slice(11, 16) > "02:00") {
-    return today.slice(0, 10);
-  } else {
-    return yesterday.slice(0, 10);
-  }
-};
-
-/* get Props */
-export async function getStaticProps() {
-  //getServerSideProps
-  let lastUpdated = calculateLastUpdate(); // metaforecasts.find(forecast => forecast.platform == "Good Judgment Open").timestamp
-  return {
-    props: {
-      lastUpdated,
-    },
-  };
-}
+import Layout from './layout';
 
 /* Display one tool */
-function displayTool({ sameWebpage, title, description, link, url, img, i }) {
+function displayTool({
+  sameWebpage,
+  title,
+  description,
+  link,
+  url,
+  img,
+  i,
+}: any) {
   switch (sameWebpage) {
     case true:
       return (
@@ -50,7 +34,6 @@ function displayTool({ sameWebpage, title, description, link, url, img, i }) {
       return (
         <a
           href={url}
-          passHref
           key={`tool-${i}`}
           className="hover:bg-gray-100 hover:no-underline cursor-pointer flex flex-col px-4 py-3 bg-white rounded-md shadow place-content-stretch flex-grow no-underline b-6"
         >
@@ -111,12 +94,7 @@ export default function Tools({ lastUpdated }) {
     },
   ];
   return (
-    <Layout
-      key="tools"
-      page="tools"
-      lastUpdated={lastUpdated}
-      captureToggle={"search"}
-    >
+    <Layout page="tools">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-8">
         {tools.map((tool, i) => displayTool({ ...tool, i }))}
       </div>

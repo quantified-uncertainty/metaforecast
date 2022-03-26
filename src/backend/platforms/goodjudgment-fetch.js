@@ -2,9 +2,9 @@
 import axios from "axios";
 import { Tabletojson } from "tabletojson";
 import tunnel from "tunnel";
-import { databaseUpsert } from "../database/database-wrapper.js";
-import { hash } from "../utils/hash.js";
-import { calculateStars } from "../utils/stars.js";
+import { databaseUpsert } from "../database/database-wrapper";
+import { hash } from "../utils/hash";
+import { calculateStars } from "../utils/stars";
 
 /* Definitions */
 let endpoint = "https://goodjudgment.io/superforecasts/";

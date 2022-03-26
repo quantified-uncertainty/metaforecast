@@ -1,7 +1,7 @@
 /* Imports */
 import axios from "axios";
-import { databaseUpsert } from "../../utils/database-wrapper.js";
-import { calculateStars } from "../../utils/stars.js";
+import { databaseUpsert } from "../../utils/database-wrapper";
+import { calculateStars } from "../../utils/stars";
 
 /* Definitions */
 let graphQLendpoint = "https://api.thegraph.com/subgraphs/name/protofire/omen";

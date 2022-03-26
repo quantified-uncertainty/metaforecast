@@ -1,10 +1,10 @@
 /* Imports */
 import axios from "axios";
 import { Tabletojson } from "tabletojson";
-import { databaseUpsert } from "../database/database-wrapper.js";
-import { applyIfSecretExists } from "../utils/getSecrets.js";
-import { calculateStars } from "../utils/stars.js";
-import toMarkdown from "../utils/toMarkdown.js";
+import { databaseUpsert } from "../database/database-wrapper";
+import { applyIfSecretExists } from "../utils/getSecrets";
+import { calculateStars } from "../utils/stars";
+import toMarkdown from "../utils/toMarkdown";
 
 /* Definitions */
 let htmlEndPoint = "https://www.gjopen.com/questions?page=";

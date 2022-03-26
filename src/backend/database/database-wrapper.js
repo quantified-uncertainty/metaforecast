@@ -2,8 +2,8 @@ import {
   mongoRead,
   mongoReadWithReadCredentials,
   mongoUpsert,
-} from "./mongo-wrapper.js";
-import { pgRead, pgReadWithReadCredentials, pgUpsert } from "./pg-wrapper.js";
+} from "./mongo-wrapper";
+import { pgRead, pgReadWithReadCredentials, pgUpsert } from "./pg-wrapper";
 
 export async function databaseUpsert({ contents, group }) {
   // No, this should be more rational, ({contents, group, schema})? Or should this be managed by this layer? Unclear.

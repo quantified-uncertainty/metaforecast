@@ -1,5 +1,5 @@
-import { addToHistory } from "./addToHistory.js";
-import { createHistoryForMonth } from "./createHistoryForMonth.js";
+import { addToHistory } from "./addToHistory";
+import { createHistoryForMonth } from "./createHistoryForMonth";
 
 export async function updateHistoryOld() {
   let currentDate = new Date();

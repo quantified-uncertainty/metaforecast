@@ -1,27 +1,27 @@
-import { betfair } from "../betfair-fetch.js";
-import { fantasyscotus } from "../fantasyscotus-fetch.js";
-import { foretold } from "../foretold-fetch.js";
-import { goodjudgment } from "../goodjudgment-fetch.js";
-import { goodjudgmentopen } from "../goodjudmentopen-fetch.js";
-import { infer } from "../infer-fetch.js";
-import { kalshi } from "../kalshi-fetch.js";
-import { manifoldmarkets } from "../manifoldmarkets-fetch.js";
-import { metaculus } from "../metaculus-fetch.js";
-import { polymarket } from "../polymarket-fetch.js";
-import { predictit } from "../predictit-fetch.js";
-import { rootclaim } from "../rootclaim-fetch.js";
-import { smarkets } from "../smarkets-fetch.js";
-import { wildeford } from "../wildeford-fetch.js";
+import { betfair } from "../betfair-fetch";
+import { fantasyscotus } from "../fantasyscotus-fetch";
+import { foretold } from "../foretold-fetch";
+import { goodjudgment } from "../goodjudgment-fetch";
+import { goodjudgmentopen } from "../goodjudmentopen-fetch";
+import { infer } from "../infer-fetch";
+import { kalshi } from "../kalshi-fetch";
+import { manifoldmarkets } from "../manifoldmarkets-fetch";
+import { metaculus } from "../metaculus-fetch";
+import { polymarket } from "../polymarket-fetch";
+import { predictit } from "../predictit-fetch";
+import { rootclaim } from "../rootclaim-fetch";
+import { smarkets } from "../smarkets-fetch";
+import { wildeford } from "../wildeford-fetch";
 
 /* Deprecated
-import { astralcodexten } from "../platforms/astralcodexten-fetch.js"
-import { coupcast } from "../platforms/coupcast-fetch.js"
-import { csetforetell } from "../platforms/csetforetell-fetch.js"
-import { elicit } from "../platforms/elicit-fetch.js"
-import { estimize } from "../platforms/estimize-fetch.js"
-import { hypermind } from "../platforms/hypermind-fetch.js"
-import { ladbrokes } from "../platforms/ladbrokes-fetch.js";
-import { williamhill } from "../platforms/williamhill-fetch.js";
+import { astralcodexten } from "../platforms/astralcodexten-fetch"
+import { coupcast } from "../platforms/coupcast-fetch"
+import { csetforetell } from "../platforms/csetforetell-fetch"
+import { elicit } from "../platforms/elicit-fetch"
+import { estimize } from "../platforms/estimize-fetch"
+import { hypermind } from "../platforms/hypermind-fetch"
+import { ladbrokes } from "../platforms/ladbrokes-fetch";
+import { williamhill } from "../platforms/williamhill-fetch";
 */
 
 export const platformFetchers = [

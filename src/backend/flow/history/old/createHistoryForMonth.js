@@ -1,7 +1,4 @@
-import {
-  databaseRead,
-  databaseUpsert,
-} from "../../database/database-wrapper.js";
+import { databaseRead, databaseUpsert } from "../../database/database-wrapper";
 
 export async function createHistoryForMonth() {
   let currentDate = new Date();

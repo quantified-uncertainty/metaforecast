@@ -2,8 +2,8 @@
 import axios from "axios";
 import Papa from "papaparse";
 import readline from "readline";
-import { databaseUpsert } from "../utils/database-wrapper.js";
-import { calculateStars } from "../utils/stars.js";
+import { databaseUpsert } from "../utils/database-wrapper";
+import { calculateStars } from "../utils/stars";
 
 /* Definitions */
 let elicitEndpoint =

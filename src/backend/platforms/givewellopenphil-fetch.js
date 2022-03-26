@@ -1,8 +1,8 @@
 /* Imports */
 import axios from "axios";
 import fs from "fs";
-import { databaseUpsert } from "../database/database-wrapper.js";
-import { calculateStars } from "../utils/stars.js";
+import { databaseUpsert } from "../database/database-wrapper";
+import { calculateStars } from "../utils/stars";
 
 /* Support functions */
 async function fetchPage(url) {

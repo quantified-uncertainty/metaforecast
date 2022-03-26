@@ -1,7 +1,9 @@
-import React from "react";
-import ReactMarkdown from "react-markdown";
-import gfm from "remark-gfm";
-import Layout from "./layout.js";
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
+
+import Layout from './layout';
+
 let readmeMarkdownText = `# About
 
 This is a search engine for probabilities. Given a query, it searches for relevant questions in various prediction markets and forecasting platforms (namely Betfair, FantasySCOTUS, Foretold, Good Judgment, Good Judgment Open, Guesstimate, GiveWell & OpenPhilanthropy blogposts as of early 2021, Kalshi, Infer, Ladbrokes, Manifold Markets, Metaculus, Polymarket, PredictIt, Smarkets, William Hill, and Michael Aird's database of existential risk estimates). For example, try searching for "China", "North Korea", "Semiconductors", "COVID", "Trump", or "X-risk".
@@ -26,18 +28,11 @@ Also note that, whatever other redeeming features they might have, prediction ma
 
 export default function About() {
   return (
-    <Layout
-      key="index"
-      page="about"
-      lastUpdated={null}
-      captureToggle={null}
-      switchCaptureToggle={() => null}
-    >
+    <Layout page="about">
       <div className="px-2 py-2 bg-white rounded-md shadow place-content-stretch flex-grow place-self-center">
         <ReactMarkdown
-          plugins={[gfm]}
+          remarkPlugins={[gfm]}
           children={readmeMarkdownText}
-          allowDangerousHtml
           className="m-5"
         />
       </div>

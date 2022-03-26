@@ -1,10 +1,10 @@
 /* Imports */
 // import axios from "axios"
 import { GoogleSpreadsheet } from "google-spreadsheet";
-import { databaseUpsert } from "../database/database-wrapper.js";
-import { applyIfSecretExists } from "../utils/getSecrets.js";
-import { hash } from "../utils/hash.js";
-import { calculateStars } from "../utils/stars.js";
+import { databaseUpsert } from "../database/database-wrapper";
+import { applyIfSecretExists } from "../utils/getSecrets";
+import { hash } from "../utils/hash";
+import { calculateStars } from "../utils/stars";
 
 /* Definitions */
 const SHEET_ID = "1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0"; // spreadsheet key is the long id in the sheets URL

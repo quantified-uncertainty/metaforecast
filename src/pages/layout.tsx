@@ -1,8 +1,9 @@
-import Head from "next/head";
-import Link from "next/link";
-import React from "react";
+import Head from 'next/head';
+import Link from 'next/link';
+import React from 'react';
+
 // import { GiDiceEightFacesEight } from "react-icons/gi";
-import { Logo2 } from "../web/icons/index.js";
+import { Logo2 } from '../web/icons/index';
 
 /* Utilities */
 const classNameSelected = (isSelected) =>
@@ -25,7 +26,10 @@ let calculateLastUpdate = () => {
 };
 
 // Error catcher
-class ErrorBoundary extends React.Component {
+class ErrorBoundary extends React.Component<
+  any,
+  { error: any; errorInfo: any }
+> {
   // https://reactjs.org/docs/error-boundaries.html
   constructor(props) {
     super(props);
@@ -78,7 +82,7 @@ export default function Layout({ page, children }) {
     // https://developer.mozilla.org/en-US/docs/Web/API/Location/assign
     // window.location.hostname
     if (typeof window !== "undefined") {
-      if (window.location != window.location.pathname) {
+      if ((window.location as any) != window.location.pathname) {
         window.location.assign(window.location.pathname);
       }
     }

@@ -1,8 +1,7 @@
-import { writeFileSync } from "fs";
 import {
   databaseReadWithReadCredentials,
   databaseUpsert,
-} from "../../database/database-wrapper.js";
+} from "../../database/database-wrapper";
 let isEmptyArray = (arr) => arr.length == 0;
 
 export async function addToHistory() {

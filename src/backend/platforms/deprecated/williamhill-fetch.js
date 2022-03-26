@@ -1,7 +1,7 @@
 /* Imports */
 import axios from "axios";
-import { databaseUpsert } from "../utils/database-wrapper.js";
-import { calculateStars } from "../utils/stars.js";
+import { databaseUpsert } from "../utils/database-wrapper";
+import { calculateStars } from "../utils/stars";
 
 /* Definitions */
 let endpoint = "https://sports.williamhill.com/betting/en-gb/politics";

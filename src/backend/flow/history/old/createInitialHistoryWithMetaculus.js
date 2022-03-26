@@ -1,4 +1,4 @@
-import { databaseRead, databaseUpsert } from "../database-wrapper.js";
+import { databaseRead, databaseUpsert } from "../database-wrapper";
 
 let createInitialHistory = async () => {
   let metaforecasts = await databaseRead({ group: "combined" });

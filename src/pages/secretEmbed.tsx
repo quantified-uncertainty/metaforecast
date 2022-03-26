@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { displayForecast } from '../web/display/displayForecasts.js';
+import { displayForecast } from '../web/display/displayForecasts';
 import { platformsWithLabels } from '../web/platforms';
 import searchAccordingToQueryData from '../web/worker/searchAccordingToQueryData';
 

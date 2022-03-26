@@ -1,5 +1,5 @@
-import searchGuesstimate from './searchGuesstimate.js';
-import searchWithAlgolia from './searchWithAlgolia.js';
+import searchGuesstimate from './searchGuesstimate';
+import searchWithAlgolia from './searchWithAlgolia';
 
 export default async function searchAccordingToQueryData(queryData) {
   let results = [];

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from 'react';
 
 export default function Form({ value, onChange, placeholder }) {
   const handleInputChange = (event) => {
@@ -16,7 +16,6 @@ export default function Form({ value, onChange, placeholder }) {
         onChange={handleInputChange}
         name="query"
         id="query"
-        label="Query"
         placeholder={placeholder}
         onSubmit={(e) => e.preventDefault()}
       />

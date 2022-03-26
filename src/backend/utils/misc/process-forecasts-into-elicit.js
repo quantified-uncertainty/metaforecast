@@ -1,6 +1,6 @@
 /* Imports */
 import fs from "fs";
-import { databaseReadWithReadCredentials } from "../database-wrapper.js";
+import { databaseReadWithReadCredentials } from "../database-wrapper";
 
 /* Definitions */
 let locationData = "./data/";

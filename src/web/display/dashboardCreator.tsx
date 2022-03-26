@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 let exampleInput = `{
   "title": "Random example",
@@ -54,8 +54,8 @@ Your old input was: ${value}`;
       <textarea
         value={value}
         onChange={handleChange}
-        rows="8"
-        cols="50"
+        rows={8}
+        cols={50}
         className=""
       />
       <br />

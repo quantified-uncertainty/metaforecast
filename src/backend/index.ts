@@ -3,14 +3,14 @@ import 'dotenv/config';
 
 import readline from 'readline';
 
-import { pgInitialize } from './database/pg-wrapper.js';
-import { doEverything, tryCatchTryAgain } from './flow/doEverything.js';
-import { updateHistory } from './flow/history/updateHistory.js';
-import { mergeEverything } from './flow/mergeEverything.js';
-import { rebuildNetlifySiteWithNewData } from './flow/rebuildNetliftySiteWithNewData.js';
+import { pgInitialize } from './database/pg-wrapper';
+import { doEverything, tryCatchTryAgain } from './flow/doEverything';
+import { updateHistory } from './flow/history/updateHistory';
+import { mergeEverything } from './flow/mergeEverything';
+import { rebuildNetlifySiteWithNewData } from './flow/rebuildNetliftySiteWithNewData';
 import { rebuildFrontpage } from './frontpage';
-import { platformFetchers } from './platforms/all-platforms.js';
-import { rebuildAlgoliaDatabase } from './utils/algolia.js';
+import { platformFetchers } from './platforms/all-platforms';
+import { rebuildAlgoliaDatabase } from './utils/algolia';
 
 /* Support functions */
 let functions = [
