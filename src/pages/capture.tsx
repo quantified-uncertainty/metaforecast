@@ -3,7 +3,7 @@ import React from 'react';
 
 import { displayForecastsWrapperForCapture } from '../web/display/displayForecastsWrappers';
 import { Props } from '../web/search/anySearchPage';
-import CommonDisplay from '../web/search/commonDisplay';
+import CommonDisplay from '../web/search/CommonDisplay';
 import Layout from './layout';
 
 export { getServerSideProps } from "../web/search/anySearchPage";

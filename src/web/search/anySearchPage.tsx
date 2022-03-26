@@ -2,7 +2,7 @@ import { GetServerSideProps } from 'next';
 
 import { getFrontpage } from '../../backend/frontpage';
 import searchAccordingToQueryData from '../worker/searchAccordingToQueryData';
-import { defaultNumDisplay, defaultQueryParameters, QueryParameters } from './commonDisplay';
+import { defaultNumDisplay, defaultQueryParameters, QueryParameters } from './CommonDisplay';
 
 /* Common code for / and /capture */
 
