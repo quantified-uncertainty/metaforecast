@@ -82,7 +82,7 @@ export async function getForecasts0() {
 import axios from "axios"
 
 export async function getForecasts1() {
-  const { data } = await axios.get(`https://raw.githubusercontent.com/QURIresearch/metaforecasts/master/data/metaforecasts.json?ver=${Math.random().toFixed(10)}`) // this is, for now, a hack
+  const { data } = await axios.get(`https://raw.githubusercontent.com/QURIresearch/metaforecast/master/data/metaforecasts.json?ver=${Math.random().toFixed(10)}`) // this is, for now, a hack
   //console.log(data)
   return data
 }

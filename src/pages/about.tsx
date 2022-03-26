@@ -10,14 +10,14 @@ This is a search engine for probabilities. Given a query, it searches for releva
 
 You can also call the metaforecast database from within Twitter by mentioning @metaforecast, [like so](https://twitter.com/NunoSempere/status/1433160907308294144).
 
-You can read a longer writeup with thoughts and motivations [here](https://forum.effectivealtruism.org/posts/tEo5oXeSNcB3sYr8m/introducing-metaforecast-a-forecast-aggregator-and-search), and an update thereto [here](https://www.lesswrong.com/posts/5hugQzRhdGYc6ParJ/metaforecast-update-better-search-capture-functionality-more). You can read the code for the back-end used to fetch probabilities [here](https://github.com/QURIresearch/metaforecast-backend)— including instructions for how to download the underlying dataset, or view the source for the front-end [here](https://github.com/QURIresearch/metaforecast-frontend). 
+You can read a longer writeup with thoughts and motivations [here](https://forum.effectivealtruism.org/posts/tEo5oXeSNcB3sYr8m/introducing-metaforecast-a-forecast-aggregator-and-search), and an update thereto [here](https://www.lesswrong.com/posts/5hugQzRhdGYc6ParJ/metaforecast-update-better-search-capture-functionality-more). You can read the code for the back-end used to fetch probabilities [here](https://github.com/QURIresearch/metaforecast)— including instructions for how to download the underlying dataset, or view the source for the front-end [here](https://github.com/QURIresearch/metaforecast-frontend). 
 
 ## Advanced search
 If your initial search doesn't succeed, you might want to try tinkering with the advanced search. In particular, try increasing or decreasing the stars threshold, or changing the number of search results shown. 
 
 ## What are stars, and how are they computed?
 
-Star ratings—e.g. ★★★☆☆—are an indicator of the quality of an aggregate forecast for a question. These ratings currently try to reflect my own best judgment and the best judgment of forecasting experts I've asked, based on our collective experience forecasting on these platforms. Thus, stars have a strong subjective component which could be formalized and refined in the future. You can see the code used to decide how many stars to assign according to platform and various quality indicators [here](https://github.com/QURIresearch/metaforecasts/blob/master/src/utils/stars.js)
+Star ratings—e.g. ★★★☆☆—are an indicator of the quality of an aggregate forecast for a question. These ratings currently try to reflect my own best judgment and the best judgment of forecasting experts I've asked, based on our collective experience forecasting on these platforms. Thus, stars have a strong subjective component which could be formalized and refined in the future. You can see the code used to decide how many stars to assign according to platform and various quality indicators [here](https://github.com/QURIresearch/metaforecast/blob/master/src/utils/stars.js)
 
 Also note that, whatever other redeeming features they might have, prediction markets rarely go above 95% or below 5%.
 

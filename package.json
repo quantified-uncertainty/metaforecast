@@ -1,10 +1,10 @@
 {
-  "name": "metaforecasts",
+  "name": "metaforecast",
   "version": "1.0.0",
   "description": "Get forecasts from various platforms",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QURIresearch/metaforecasts.git"
+    "url": "git+https://github.com/QURIresearch/metaforecast.git"
   },
   "keywords": [
     "forecasts",
@@ -13,9 +13,9 @@
   "author": "Nuño Sempere",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/QURIresearch/metaforecasts/"
+    "url": "https://github.com/QURIresearch/metaforecast/"
   },
-  "homepage": "https://github.com/QURIresearch/metaforecasts#readme",
+  "homepage": "https://github.com/QURIresearch/metaforecast#readme",
   "scripts": {
     "cli": "ts-node src/backend/index.ts",
     "reload": "heroku run:detached node src/backend/utils/doEverythingForScheduler.js",

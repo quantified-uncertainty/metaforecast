@@ -15,7 +15,7 @@ I also created a search engine using Elicit's IDE, which uses GPT-3 to deliver v
 ### 1. Download this repository
 
 ```
-$ git clone https://github.com/QURIresearch/metaforecasts
+$ git clone https://github.com/QURIresearch/metaforecast
 $ cd metaforecasts
 $ npm install
 ```
@@ -37,7 +37,7 @@ See [./docs/configuration.md](./docs/configuration.md) for details.
 ### 4. Example: download the metaforecasts database
 
 ```
-$ git clone https://github.com/QURIresearch/metaforecasts
+$ git clone https://github.com/QURIresearch/metaforecast
 $ cd metaforecasts
 $ npm install
 $ node src/backend/manual/manualDownload.js
