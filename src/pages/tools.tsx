@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import Layout from './layout';
+import Layout from '../web/display/layout';
 
 /* Display one tool */
 function displayTool({

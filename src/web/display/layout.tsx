@@ -1,12 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import React from 'react';
+import React, { ErrorInfo } from 'react';
 
-// import { GiDiceEightFacesEight } from "react-icons/gi";
-import { Logo2 } from '../web/icons/index';
+import { Logo2 } from '../icons/index';
 
 /* Utilities */
-const classNameSelected = (isSelected) =>
+const classNameSelected = (isSelected: boolean) =>
   `no-underline py-4 px-2 ml-4 text-md font-medium cursor-pointer border-b-2 border-transparent ${
     isSelected
       ? "text-blue-700 border-blue-700"
@@ -27,16 +26,16 @@ let calculateLastUpdate = () => {
 
 // Error catcher
 class ErrorBoundary extends React.Component<
-  any,
+  {},
   { error: any; errorInfo: any }
 > {
   // https://reactjs.org/docs/error-boundaries.html
-  constructor(props) {
+  constructor(props: {}) {
     super(props);
     this.state = { error: null, errorInfo: null };
   }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     // Catch errors in any components below and re-render with error message
     this.setState({
       error: error,

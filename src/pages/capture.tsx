@@ -2,9 +2,9 @@ import { NextPage } from 'next';
 import React from 'react';
 
 import { displayForecastsWrapperForCapture } from '../web/display/displayForecastsWrappers';
+import Layout from '../web/display/layout';
 import { Props } from '../web/search/anySearchPage';
 import CommonDisplay from '../web/search/CommonDisplay';
-import Layout from './layout';
 
 export { getServerSideProps } from "../web/search/anySearchPage";
 

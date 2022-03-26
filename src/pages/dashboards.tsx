@@ -6,8 +6,8 @@ import { useState } from 'react';
 
 import { DashboardCreator } from '../web/display/dashboardCreator';
 import displayForecasts from '../web/display/displayForecasts';
+import Layout from '../web/display/layout';
 import { getDashboardForecastsByDashboardId } from '../web/worker/getDashboardForecasts';
-import Layout from './layout';
 
 /* get Props */
 

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 
-import Layout from './layout';
+import Layout from '../web/display/layout';
 
 let readmeMarkdownText = `# About
 
