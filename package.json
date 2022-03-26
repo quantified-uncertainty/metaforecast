@@ -18,8 +18,8 @@
   "homepage": "https://github.com/QURIresearch/metaforecast#readme",
   "scripts": {
     "cli": "ts-node -T src/backend/index.ts",
-    "reload": "heroku run:detached ts-node -T src/backend/utils/doEverythingForScheduler.js",
-    "setCookies": "./src/backend/utils/setCookies.sh",
+    "reload": "heroku run:detached ts-node -T src/backend/flow/doEverythingForScheduler.js",
+    "setCookies": "./src/backend/manual/setCookies.sh",
     "next-dev": "next dev",
     "next-build": "next build",
     "next-start": "next start",
