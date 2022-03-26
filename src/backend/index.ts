@@ -23,7 +23,6 @@ let functions = [
   pgInitialize,
   rebuildFrontpage,
 ];
-let functionNames = functions.map((fun) => fun.name);
 
 let generateWhatToDoMessage = () => {
   let l = platformFetchers.length;
@@ -68,13 +67,13 @@ let commandLineUtility = async () => {
 
   let executeoption = async (option) => {
     option = Number(option);
-    //console.log(functionNames[option])
     if (option < 0) {
-      console.log(`Error, ${option} < 0 or ${option} < 0`);
+      console.log(`Error, ${option} < 0`);
     } else if (option < functions.length) {
       console.log(`Running: ${functions[option].name}\n`);
       await tryCatchTryAgain(functions[option]);
     }
+    process.exit();
   };
 
   if (process.argv.length == 3) {
@@ -83,14 +82,11 @@ let commandLineUtility = async () => {
     if (!isNaN(optionNum)) {
       await executeoption(optionNum);
     } else if (option == "all") {
-      await executeoption(functions.length - 1); // 15 = execute all fetchers
+      await executeoption(functions.length - 3); // doEverything
     } else {
       await whattodo(whattodoMessage, executeoption);
     }
   } else await whattodo(whattodoMessage, executeoption);
 };
 
-// console.log("1")
-// console.log(process.argv)
 commandLineUtility();
-// doEverything()

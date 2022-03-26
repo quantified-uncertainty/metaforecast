@@ -64,7 +64,7 @@ export const runPgCommand = async ({ command, pool }) => {
   let result;
   try {
     let response = await client.query(command);
-    console.log(response);
+    // console.log(response);
     result = { results: response ? response.rows : null };
   } catch (error) {
     console.log(error);
