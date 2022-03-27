@@ -61,6 +61,7 @@
     "postcss": "^8.2.1",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.3.2",
+    "prisma": "^3.11.1",
     "query-string": "^7.1.1",
     "react": "^17.0.2",
     "react-component-export-image": "^1.0.6",
