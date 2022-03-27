@@ -1,12 +1,8 @@
 ## What this is
 
-https://metaforecast.org is a search engine for probabilities from various prediction markes and forecasting platforms (try searching "Trump", "China" or "Semiconductors").
+[Metaforecast](https://metaforecast.org) is a search engine for probabilities from various prediction markes and forecasting platforms. Try searching "Trump", "China" or "Semiconductors".
 
-This repository includes a source code for the website, as well as a set of libraries that fetches probabilities/forecasts.
-
-We also provide a public database, which can be accessed with a script similar to [this one](./src/backend/manual/manualDownload.js).
-
-I also created a search engine using Elicit's IDE, which uses GPT-3 to deliver vastly superior semantic search (as opposed to fuzzy word matching). If you have access to the Elicit IDE, you can use the action "Search Metaforecast database". However, I'm not currently updating it regularly.
+This repository includes the source code for both the website and the library that fetches forecasts needed to replace them. We also aim to provide tooling to integrate metaforecast with other services.
 
 [![](./public/screenshot.png)](https://metaforecast.org)
 
@@ -30,7 +26,7 @@ See [./docs/configuration.md](./docs/configuration.md) for details.
 
 ### 3. Actually run
 
-`npm run cli` starts a local CLI which presents the user with choices; if you would like to skip each step, use the option number instead, e.g., `npm run start 14`.
+`npm run cli` starts a local CLI which presents the user with choices; if you would like to skip each step, use the option number instead, e.g., `npm run cli 14`.
 
 `npm run next-dev` starts a Next.js dev server with the website on `http://localhost:3000`.
 
@@ -42,6 +38,17 @@ $ cd metaforecasts
 $ npm install
 $ node src/backend/manual/manualDownload.js
 ```
+
+## Integrations
+
+Metaforecast has been integrated into:
+
+- Twitter, using our [@metaforecast](https://twitter.com/metaforecast) bot
+- [Global Guessing](https://globalguessing.com/russia-ukraine-forecasts/), which integrates our dashboards
+- [Fletcher](https://fletcher.fun/), a popular Discord bot. You can invoke metaforecast with `!metaforecast search-term`
+- [Elicit](https://elicit.org/), which uses GPT-3 to deliver vastly superior semantic search (as opposed to fuzzy word matching). If you have access to the Elicit IDE, you can use the action "Search Metaforecast database. This is not being updated regularly.
+
+We also provide a public database, which can be accessed with a script similar to [this one](./src/backend/manual/manualDownload.js). We are also open to integrating our Algolia search instance with other trusted services (in addition to Fletcher.)
 
 ## Code layout
 
@@ -62,11 +69,10 @@ Overall, the services which we use are:
 
 - Algolia for search
 - Netlify for website deployment
-- DigitalOcean for background jobs, e.g. fetching new forecasts
+- Herokiu for background jobs, e.g. fetching new forecasts
 - Postgres on DigitalOcean and Mongo for databases
 
 ## Various notes
 
 - Commits follow [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary)
-- Right now, I'm fetching only a couple of common properties, such as the title, url, platform, whether a question is binary (yes/no), its percentage, and the number of forecasts.
-- For elicit and metaculus, this library currently filters questions with <10 predictions.
+- For elicit and metaculus, this library currently filters out questions with <10 predictions.
