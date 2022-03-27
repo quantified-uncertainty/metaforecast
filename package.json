@@ -52,6 +52,7 @@
     "mongodb": "^3.6.6",
     "multiselect-react-dropdown": "^2.0.17",
     "next": "12",
+    "next-plausible": "^3.1.6",
     "nprogress": "^0.2.0",
     "open": "^7.3.1",
     "papaparse": "^5.3.0",
