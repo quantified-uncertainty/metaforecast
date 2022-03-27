@@ -1,5 +1,6 @@
-import axios from "axios";
-import { applyIfSecretExists } from "../utils/getSecrets";
+import axios from 'axios';
+
+import { applyIfSecretExists } from '../utils/getSecrets';
 
 async function rebuildNetlifySiteWithNewData_inner(cookie) {
   let payload = {};

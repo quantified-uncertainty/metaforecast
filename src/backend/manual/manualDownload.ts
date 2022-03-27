@@ -1,6 +1,8 @@
-import "dotenv/config";
-import fs from "fs";
-import { databaseReadWithReadCredentials } from "../database/database-wrapper";
+import 'dotenv/config';
+
+import fs from 'fs';
+
+import { databaseReadWithReadCredentials } from '../database/database-wrapper';
 
 let main = async () => {
   let json = await databaseReadWithReadCredentials({ group: "combined" });

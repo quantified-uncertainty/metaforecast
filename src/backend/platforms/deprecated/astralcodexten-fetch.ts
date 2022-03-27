@@ -1,7 +1,8 @@
 /* Imports */
-import axios from "axios";
-import { databaseUpsert } from "../utils/database-wrapper";
-import { calculateStars } from "../utils/stars";
+import axios from 'axios';
+
+import { databaseUpsert } from '../utils/database-wrapper';
+import { calculateStars } from '../utils/stars';
 
 /* Definitions */
 let graphQLendpoint = "https://api.foretold.io/graphql";

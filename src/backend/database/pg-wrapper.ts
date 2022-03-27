@@ -1,7 +1,9 @@
-import pkg from "pg";
-import { platformNames } from "../platforms/all/platformNames";
-import { hash } from "../utils/hash";
-import { roughSizeOfObject } from "../utils/roughSize";
+import pkg from 'pg';
+
+import { platformNames } from '../platforms/all/platformNames';
+import { hash } from '../utils/hash';
+import { roughSizeOfObject } from '../utils/roughSize';
+
 const { Pool } = pkg;
 
 // Definitions

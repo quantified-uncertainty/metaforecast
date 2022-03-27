@@ -1,5 +1,7 @@
-import pkg from "mongodb";
-import { roughSizeOfObject } from "../utils/roughSize";
+import pkg from 'mongodb';
+
+import { roughSizeOfObject } from '../utils/roughSize';
+
 const { MongoClient } = pkg;
 
 export async function mongoUpsert(
