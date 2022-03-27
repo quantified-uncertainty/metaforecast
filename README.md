@@ -50,6 +50,8 @@ Metaforecast has been integrated into:
 
 We also provide a public database, which can be accessed with a script similar to [this one](./src/backend/manual/manualDownload.js). We are also open to integrating our Algolia search instance with other trusted services (in addition to Fletcher.)
 
+In general, if you want to integrate metaforecast into your service, we want to hear from you.
+
 ## Code layout
 
 - frontend code is in [src/pages/](./src/pages/), [src/web/](./src/web/) and in a few other places which are required by Next.js (e.g. root-level configs in postcss.config.js and tailwind.config.js)
