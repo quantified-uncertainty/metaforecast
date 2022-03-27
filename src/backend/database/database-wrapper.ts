@@ -142,11 +142,11 @@ export async function databaseReadWithReadCredentials({ group }) {
       break;
     default:
       mongoDocName = `${group}-questions`;
-      responseMongo = mongoRemongoReadWithReadCredentialsad(
-        mongoDocName,
-        "metaforecastCollection",
-        "metaforecastDatabase"
-      );
+      // responseMongo = mongoRemongoReadWithReadCredentialsad(
+      //   mongoDocName,
+      //   "metaforecastCollection",
+      //   "metaforecastDatabase"
+      // );
       responsePg = await pgReadWithReadCredentials({
         schema: "latest",
         tableName: group,

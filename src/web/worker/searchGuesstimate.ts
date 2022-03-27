@@ -1,5 +1,5 @@
 /* Imports */
-import axios from "axios";
+import axios from 'axios';
 
 /* Definitions */
 let urlEndPoint =
@@ -10,15 +10,15 @@ let urlEndPoint =
 export default function searchGuesstimate(query) {
   let response = axios({
     url: urlEndPoint,
-    credentials: "omit",
+    // credentials: "omit",
     headers: {
       // "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:85.0) Gecko/20100101 Firefox/85.0",
       Accept: "application/json",
       "Accept-Language": "en-US,en;q=0.5",
       "content-type": "application/x-www-form-urlencoded",
     },
-    referrer:
-      "https://m629r9ugsg-dsn.algolia.net/1/indexes/Space_production/query?x-algolia-agent=Algolia%20for%20vanilla%20JavaScript%203.32.1&x-algolia-application-id=M629R9UGSG&x-algolia-api-key=4e893740a2bd467a96c8bfcf95b2809c",
+    // referrer:
+    //   "https://m629r9ugsg-dsn.algolia.net/1/indexes/Space_production/query?x-algolia-agent=Algolia%20for%20vanilla%20JavaScript%203.32.1&x-algolia-application-id=M629R9UGSG&x-algolia-api-key=4e893740a2bd467a96c8bfcf95b2809c",
     data: `{\"params\":\"query=${query.replace(
       / /g,
       "%20"

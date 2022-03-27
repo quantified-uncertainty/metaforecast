@@ -1,19 +1,20 @@
 /* Imports */
-import axios from "axios";
-import { Tabletojson } from "tabletojson";
-import { databaseUpsert } from "../utils/database-wrapper";
-import { applyIfSecretExists } from "../utils/getSecrets";
-import { calculateStars } from "../utils/stars";
-import toMarkdown from "../utils/toMarkdown";
+import axios from 'axios';
+import { Tabletojson } from 'tabletojson';
+
+import { databaseUpsert } from '../database/database-wrapper';
+import { applyIfSecretExists } from '../utils/getSecrets';
+import { calculateStars } from '../utils/stars';
+import toMarkdown from '../utils/toMarkdown';
 
 /* Definitions */
-let htmlEndPoint = "https://www.cset-foretell.com/questions?page=";
+let htmlEndPoint = "https://www.infer-pub.com/questions";
 String.prototype.replaceAll = function replaceAll(search, replace) {
   return this.split(search).join(replace);
 };
-const DEBUG_MODE = "on"; // "off"
-const SLEEP_TIME_RANDOM = 100; //5000 // miliseconds
-const SLEEP_TIME_EXTRA = 0; //1000
+const DEBUG_MODE: "on" | "off" = "off"; // "off"
+const SLEEP_TIME_RANDOM = 7000; // miliseconds
+const SLEEP_TIME_EXTRA = 2000;
 /* Support functions */
 
 async function fetchPage(page, cookie) {
@@ -21,7 +22,7 @@ async function fetchPage(page, cookie) {
   if (page == 1) {
     cookie = cookie.split(";")[0]; // Interesting that it otherwise doesn't work :(
   }
-  let urlEndpoint = htmlEndPoint + page;
+  let urlEndpoint = `${htmlEndPoint}/?page=${page}`;
   console.log(urlEndpoint);
   let response = await axios({
     url: urlEndpoint,
@@ -144,7 +145,7 @@ async function fetchStats(questionUrl, cookie) {
     qualityindicators: {
       numforecasts: Number(numforecasts),
       numforecasters: Number(numforecasters),
-      stars: calculateStars("CSET-foretell", { numforecasts }),
+      stars: calculateStars("Infer", { numforecasts }),
     },
   };
 
@@ -178,7 +179,7 @@ function sleep(ms) {
 
 /* Body */
 
-async function csetforetell_inner(cookie) {
+async function infer_inner(cookie) {
   let i = 1;
   let response = await fetchPage(i, cookie);
   let results = [];
@@ -188,7 +189,7 @@ async function csetforetell_inner(cookie) {
     let htmlLines = response.split("\n");
     // let h4elements = htmlLines.filter(str => str.includes("<h5> <a href=") || str.includes("<h4> <a href="))
     let questionHrefs = htmlLines.filter((str) =>
-      str.includes("https://www.cset-foretell.com/questions/")
+      str.includes("https://www.infer-pub.com/questions/")
     );
     // console.log(questionHrefs)
 
@@ -215,20 +216,21 @@ async function csetforetell_inner(cookie) {
 
       try {
         let moreinfo = await fetchStats(url, cookie);
+        let questionNumRegex = new RegExp("questions/([0-9]+)");
+        let questionNum = url.match(questionNumRegex)[1]; //.split("questions/")[1].split("-")[0];
+        let id = `infer-${questionNum}`;
         let question = {
+          id: id,
           title: title,
           url: url,
-          platform: "CSET-foretell",
+          platform: "Infer",
           ...moreinfo,
         };
         if (
           i % 30 == 0 &&
           !(process.env.DEBUG_MODE == "on" || DEBUG_MODE == "on")
         ) {
-          console.log(
-            `Page #${i}` &&
-              !(process.env.DEBUG_MODE == "on" || DEBUG_MODE == "on")
-          );
+          console.log(`Page #${i}`);
           console.log(question);
         }
         results.push(question);
@@ -248,7 +250,7 @@ async function csetforetell_inner(cookie) {
     //i=Number(i)+1
 
     console.log(
-      "Sleeping for ~5secs so as to not be as noticeable to the cset-foretell servers"
+      "Sleeping for ~5secs so as to not be as noticeable to the infer servers"
     );
     await sleep(Math.random() * SLEEP_TIME_RANDOM + SLEEP_TIME_EXTRA); // don't be as noticeable
 
@@ -262,7 +264,7 @@ async function csetforetell_inner(cookie) {
     }
   }
   if (results.length > 0) {
-    await databaseUpsert(results, "csetforetell-questions");
+    await databaseUpsert({ contents: results, group: "infer" });
   } else {
     console.log("Not updating results, as process was not signed in");
   }
@@ -274,7 +276,7 @@ async function csetforetell_inner(cookie) {
   );
 }
 
-export async function csetforetell() {
-  let cookie = process.env.CSETFORETELL_COOKIE;
-  await applyIfSecretExists(cookie, csetforetell_inner);
+export async function infer() {
+  let cookie = process.env.INFER_COOKIE;
+  await applyIfSecretExists(cookie, infer_inner);
 }

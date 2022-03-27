@@ -1,11 +1,12 @@
 /* Imports */
-import fs from "fs";
+import fs from 'fs';
 
 /* Definitions */
 let locationData = "../../input";
 /* Body */
 let rawdata = fs.readFileSync(
-  `${locationData}/givewellopenphil-questions.json`
+  `${locationData}/givewellopenphil-questions.json`,
+  { encoding: "utf-8" }
 );
 let data = JSON.parse(rawdata);
 

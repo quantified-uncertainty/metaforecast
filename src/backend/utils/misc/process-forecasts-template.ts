@@ -1,11 +1,13 @@
 /* Imports */
-import fs from "fs";
+import fs from 'fs';
 
 /* Definitions */
 let locationData = "./data/";
 
 /* Body */
-let rawdata = fs.readFileSync("../data/merged-questions.json");
+let rawdata = fs.readFileSync("../data/merged-questions.json", {
+  encoding: "utf-8",
+});
 let data = JSON.parse(rawdata);
 
 let results = [];
@@ -13,5 +15,5 @@ for (let datum of data) {
   // do something
 }
 
-let string = JSON.stringify(result, null, 2);
+let string = JSON.stringify(results, null, 2);
 fs.writeFileSync("../data/output.txt", string);

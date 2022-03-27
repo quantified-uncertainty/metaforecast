@@ -1,8 +1,8 @@
 // import fetch from "fetch"
-import axios from "axios";
+import axios, { AxiosRequestConfig } from 'axios';
 
 export async function uploadToImgur(dataURL, handleGettingImgurlImage) {
-  let request = {
+  let request: AxiosRequestConfig = {
     method: "post",
     url: "https://api.imgur.com/3/image",
     headers: {
@@ -12,7 +12,7 @@ export async function uploadToImgur(dataURL, handleGettingImgurlImage) {
       type: "base64",
       image: dataURL.split(",")[1],
     },
-    redirect: "follow",
+    // redirect: "follow",
   };
   let url;
   try {

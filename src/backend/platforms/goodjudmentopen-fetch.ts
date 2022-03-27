@@ -1,10 +1,11 @@
 /* Imports */
-import axios from "axios";
-import { Tabletojson } from "tabletojson";
-import { databaseUpsert } from "../database/database-wrapper";
-import { applyIfSecretExists } from "../utils/getSecrets";
-import { calculateStars } from "../utils/stars";
-import toMarkdown from "../utils/toMarkdown";
+import axios from 'axios';
+import { Tabletojson } from 'tabletojson';
+
+import { databaseUpsert } from '../database/database-wrapper';
+import { applyIfSecretExists } from '../utils/getSecrets';
+import { calculateStars } from '../utils/stars';
+import toMarkdown from '../utils/toMarkdown';
 
 /* Definitions */
 let htmlEndPoint = "https://www.gjopen.com/questions?page=";
@@ -14,8 +15,8 @@ let annoyingPromptUrls = [
   "https://www.gjopen.com/questions/2246-are-there-any-forecasting-tips-tricks-and-experiences-you-would-like-to-share-and-or-discuss-with-your-fellow-forecasters-2022-thread",
   "https://www.gjopen.com/questions/2237-what-forecasting-questions-should-we-ask-what-questions-would-you-like-to-forecast-on-gjopen",
 ];
-const DEBUG_MODE = "off"; // "on"
-const id = (x) => x;
+const DEBUG_MODE: "on" | "off" = "off"; // "on"
+const id = () => 0;
 
 /* Support functions */
 
@@ -121,7 +122,9 @@ async function fetchStats(questionUrl, cookie) {
         maxProbability,
       }),
     },
-  };
+    // this mismatches the code below, and needs to be fixed, but I'm doing typescript conversion and don't want to touch any logic for now
+  } as any;
+
   return result;
 }
 

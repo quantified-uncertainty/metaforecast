@@ -1,6 +1,7 @@
 /* Imports */
-import fs from "fs";
-import { databaseReadWithReadCredentials } from "../database-wrapper";
+import fs from 'fs';
+
+import { databaseReadWithReadCredentials } from '../../database/database-wrapper';
 
 /* Definitions */
 

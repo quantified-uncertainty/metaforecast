@@ -1,5 +1,4 @@
-import fs from "fs";
-import axios from "axios";
+import axios from 'axios';
 
 let elicitEndpoint =
   "https://elicit.org/api/v1/binary-questions/csv?binaryQuestions.resolved=false&binaryQuestions.search=&binaryQuestions.sortBy=popularity&predictors=community";

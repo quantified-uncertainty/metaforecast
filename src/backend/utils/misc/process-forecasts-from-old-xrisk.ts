@@ -1,12 +1,13 @@
 /* Imports */
-import fs from "fs";
+import fs from 'fs';
 
 /* Definitions */
 let locationData = "../../data/";
 
 /* Body */
 let rawdata = fs.readFileSync(
-  "/home/nuno/Documents/core/software/fresh/js/metaforecasts/metaforecasts-current/data/xrisk-questions-raw.json"
+  "/home/nuno/Documents/core/software/fresh/js/metaforecasts/metaforecasts-current/data/xrisk-questions-raw.json",
+  { encoding: "utf-8" }
 );
 let data = JSON.parse(rawdata);
 

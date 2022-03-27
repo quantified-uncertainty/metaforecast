@@ -1,12 +1,13 @@
 /* Imports */
-import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper";
-import { calculateStars } from "../utils/stars";
+import axios from 'axios';
+
+import { databaseUpsert } from '../database/database-wrapper';
+import { calculateStars } from '../utils/stars';
 
 /* Definitions */
 let htmlEndPointEntrance = "https://api.smarkets.com/v3/events/";
 let VERBOSE = false;
-let empty = (x) => x;
+let empty = () => 0;
 /* Support functions */
 
 async function fetchEvents(url) {
@@ -82,7 +83,7 @@ export async function smarkets() {
     }));
     VERBOSE ? console.log("Markets fetched") : empty();
     VERBOSE ? console.log(event.id) : empty();
-    VERBOSE ? console.log(market) : empty();
+    VERBOSE ? console.log(eventMarkets) : empty();
     markets.push(...eventMarkets);
     //let lastPrices = await fetchPrices(market.id)
   }
@@ -102,29 +103,29 @@ export async function smarkets() {
       ? console.log("Prices: ", prices["last_executed_prices"][market.id])
       : empty();
 
-    let options = {};
+    let optionsObj = {};
     for (let contract of contracts["contracts"]) {
-      options[contract.id] = { name: contract.name };
+      optionsObj[contract.id] = { name: contract.name };
     }
     for (let price of prices["last_executed_prices"][market.id]) {
-      options[price.contract_id] = {
-        ...options[price.contract_id],
+      optionsObj[price.contract_id] = {
+        ...optionsObj[price.contract_id],
         probability: price.last_executed_price
           ? Number(price.last_executed_price)
           : null,
         type: "PROBABILITY",
       };
     }
-    options = Object.values(options);
+    let options: any[] = Object.values(optionsObj);
     // monkey patch the case where there are only two options and only one has traded.
     if (
       options.length == 2 &&
       options.map((option) => option.probability).includes(null)
     ) {
       let nonNullPrice =
-        option[0].probability == null
-          ? option[1].probability
-          : option[0].probability;
+        options[0].probability == null
+          ? options[1].probability
+          : options[0].probability;
       options = options.map((option) => {
         let probability = option.probability;
         return {

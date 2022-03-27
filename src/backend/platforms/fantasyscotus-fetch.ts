@@ -1,7 +1,8 @@
 /* Imports */
-import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper";
-import { calculateStars } from "../utils/stars";
+import axios from 'axios';
+
+import { databaseUpsert } from '../database/database-wrapper';
+import { calculateStars } from '../utils/stars';
 
 /* Definitions */
 let unixtime = new Date().getTime();
@@ -9,8 +10,8 @@ let endpoint = `https://fantasyscotus.net/case/list/?filterscount=0&groupscount=
 
 async function fetchData() {
   let response = await axios({
+    method: "GET",
     url: endpoint,
-    credentials: "omit",
     headers: {
       "User-Agent":
         "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:87.0) Gecko/20100101 Firefox/87.0",
@@ -19,11 +20,11 @@ async function fetchData() {
       "Content-Type": "application/x-www-form-urlencoded",
       "X-Requested-With": "XMLHttpRequest",
     },
-    referrer: "https://fantasyscotus.net/case/list/",
-    method: "GET",
-    mode: "cors",
+    // referrer: "https://fantasyscotus.net/case/list/",
+    // credentials: "omit",
+    // mode: "cors",
   }).then((res) => res.data);
-  //console.log(response)
+
   return response;
 }
 
@@ -31,8 +32,8 @@ async function getPredictionsData(caseUrl) {
   let newCaseUrl = `https://fantasyscotus.net/user-predictions${caseUrl}?filterscount=0&groupscount=0&sortdatafield=username&sortorder=asc&pagenum=0&pagesize=20&recordstartindex=0&recordendindex=20&_=${unixtime}`;
   //console.log(newCaseUrl)
   let predictions = await axios({
+    method: "GET",
     url: newCaseUrl,
-    credentials: "include",
     headers: {
       "User-Agent":
         "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:87.0) Gecko/20100101 Firefox/87.0",
@@ -41,9 +42,9 @@ async function getPredictionsData(caseUrl) {
       "Content-Type": "application/x-www-form-urlencoded",
       "X-Requested-With": "XMLHttpRequest",
     },
-    referrer: newCaseUrl,
-    method: "GET",
-    mode: "cors",
+    // referrer: newCaseUrl,
+    // credentials: "include",
+    // mode: "cors",
   }).then((res) => res.data);
 
   let predictionsAffirm = predictions.filter(
@@ -102,7 +103,6 @@ async function processData(data) {
           stars: calculateStars("FantasySCOTUS", {}),
         },
       };
-      // console.log(eventObject)
       results.push(eventObject);
     }
   }

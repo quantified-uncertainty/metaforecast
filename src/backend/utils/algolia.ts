@@ -1,6 +1,7 @@
-import algoliasearch from "algoliasearch";
-import { databaseReadWithReadCredentials } from "../database/database-wrapper";
-import { mergeEverythingInner } from "../flow/mergeEverything";
+import algoliasearch from 'algoliasearch';
+
+import { databaseReadWithReadCredentials } from '../database/database-wrapper';
+import { mergeEverythingInner } from '../flow/mergeEverything';
 
 let cookie = process.env.ALGOLIA_MASTER_API_KEY;
 const client = algoliasearch("96UD3NTQ7L", cookie);

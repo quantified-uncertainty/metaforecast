@@ -1,7 +1,8 @@
 /* Imports */
-import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper";
-import { calculateStars } from "../utils/stars";
+import axios from 'axios';
+
+import { databaseUpsert } from '../database/database-wrapper';
+import { calculateStars } from '../utils/stars';
 
 /* Definitions */
 let endpoint = "https://example.com/";
@@ -44,7 +45,9 @@ async function processPredictions(predictions) {
       options: options,
       timestamp: new Date().toISOString(),
       qualityindicators: {
-        stars: calculateStars("Example", { some: somex, factors: factors }),
+        stars: calculateStars("Example", {
+          /* some: somex, factors: factors */
+        }),
         other: prediction.otherx,
         indicators: prediction.indicatorx,
       },
