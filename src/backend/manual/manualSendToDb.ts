@@ -6,7 +6,6 @@ import { databaseUpsert } from '../database/database-wrapper';
 
 let pushManualFiles = ["givewellopenphil"]; // ["estimize", "givewellopenphil", "xrisk"]
 let suffixFiles = "-questions.json";
-let suffixMongo = "-questions";
 
 let main = async () => {
   for (let file of pushManualFiles) {

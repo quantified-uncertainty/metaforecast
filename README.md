@@ -63,7 +63,7 @@ Overall, the services which we use are:
 - Algolia for search
 - Netlify for website deployment
 - DigitalOcean for background jobs, e.g. fetching new forecasts
-- Postgres on DigitalOcean and Mongo for databases
+- Postgres on DigitalOcean for database
 
 ## Various notes
 
