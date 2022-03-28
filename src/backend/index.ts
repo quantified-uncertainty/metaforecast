@@ -30,7 +30,7 @@ let generateWhatToDoMessage = () => {
     (fun, i) => `[${i}]: Download predictions from ${fun.name}`
   );
   let otherMessages = [
-    "Merge jsons/tables into one big json/table (and push the result to a mongodb/pg database)",
+    "Merge tables into one big table (and push the result to a pg database)",
     `Rebuild algolia database ("index")`,
     `Update history`,
     `Rebuild netlify site with new data`,
