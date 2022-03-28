@@ -1,16 +1,16 @@
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import gfm from 'remark-gfm';
+import React from "react";
+import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
 
-import Layout from '../web/display/layout';
+import Layout from "../web/display/layout";
 
 let readmeMarkdownText = `# About
 
-This is a search engine for probabilities. Given a query, it searches for relevant questions in various prediction markets and forecasting platforms (namely Betfair, FantasySCOTUS, Foretold, Good Judgment, Good Judgment Open, Guesstimate, GiveWell & OpenPhilanthropy blogposts as of early 2021, Kalshi, Infer, Ladbrokes, Manifold Markets, Metaculus, Polymarket, PredictIt, Smarkets, William Hill, and Michael Aird's database of existential risk estimates). For example, try searching for "China", "North Korea", "Semiconductors", "COVID", "Trump", or "X-risk".
+This webpage is a search engine for probabilities. Given a query, it searches for relevant questions in various prediction markets and forecasting platforms. For example, try searching for "China", "North Korea", "Semiconductors", "COVID", "Trump", or "X-risk". In addition to search, we also provide various [tools](http://localhost:3000/tools).
 
-You can also call the metaforecast database from within Twitter by mentioning @metaforecast, [like so](https://twitter.com/NunoSempere/status/1433160907308294144).
+We are very interested in integrating Metaforecast with other services, and the whole thing is [open source](https://github.com/QURIresearch/metaforecast). So far, Metaforecast has been integrated with [Twitter](https://twitter.com/NunoSempere/status/1433160907308294144), [Fletcher](https://fletcher.fun/), [GlobalGuessing](https://globalguessing.com/russia-ukraine-forecasts/) and previously [Elicit](https://elicit.org/).
 
-You can read a longer writeup with thoughts and motivations [here](https://forum.effectivealtruism.org/posts/tEo5oXeSNcB3sYr8m/introducing-metaforecast-a-forecast-aggregator-and-search), and an update thereto [here](https://www.lesswrong.com/posts/5hugQzRhdGYc6ParJ/metaforecast-update-better-search-capture-functionality-more). You can read the code for the back-end used to fetch probabilities [here](https://github.com/QURIresearch/metaforecast)— including instructions for how to download the underlying dataset, or view the source for the front-end [here](https://github.com/QURIresearch/metaforecast-frontend). 
+You can read a longer writeup with thoughts and motivations [here](https://forum.effectivealtruism.org/posts/tEo5oXeSNcB3sYr8m/introducing-metaforecast-a-forecast-aggregator-and-search), and an update thereto [here](https://www.lesswrong.com/posts/5hugQzRhdGYc6ParJ/metaforecast-update-better-search-capture-functionality-more).
 
 ## Advanced search
 If your initial search doesn't succeed, you might want to try tinkering with the advanced search. In particular, try increasing or decreasing the stars threshold, or changing the number of search results shown. 

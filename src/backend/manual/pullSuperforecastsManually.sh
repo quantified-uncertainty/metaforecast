@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /home/loki/Documents/core/software/fresh/js/metaforecast/metaforecast-backend
-date > ./notes/last-superforecast-pull.txt
-/home/loki/.nvm/versions/node/v16.8.0/bin/node ./src/manual/pullSuperforecastsManually.js >> ./notes/last-superforecast-pull.txt
+
+cd /home/loki/Documents/core/software/fresh/js/metaforecast/metaforecast-monorepo
+/home/loki/.nvm/versions/node/v17.5.0/bin/npm run cli 3 > ../last-superforecast-fetch.txt
