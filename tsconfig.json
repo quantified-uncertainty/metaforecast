@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "allowJs": true,
     "target": "es6",
     "module": "CommonJS",
     "outDir": "out",
@@ -23,7 +22,6 @@
   "include": [
     "next-env.d.ts",
     "src/**/*.ts",
-    "src/**/*.js",
     "src/**/*.tsx"
   ],
   "exclude": [
