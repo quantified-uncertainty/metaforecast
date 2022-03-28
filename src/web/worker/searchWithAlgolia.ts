@@ -1,4 +1,4 @@
-import algoliasearch from 'algoliasearch';
+import algoliasearch from "algoliasearch";
 
 const client = algoliasearch("96UD3NTQ7L", "618dbd0092971388cfd43aac1ae5f1f5"); // Only search.
 const index = client.initIndex("metaforecast");

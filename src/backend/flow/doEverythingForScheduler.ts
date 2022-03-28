@@ -1,3 +1,3 @@
-import { doEverything } from './doEverything';
+import { doEverything } from "./doEverything";
 
 doEverything();

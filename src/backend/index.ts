@@ -1,16 +1,16 @@
 /* Imports */
-import 'dotenv/config';
+import "dotenv/config";
 
-import readline from 'readline';
+import readline from "readline";
 
-import { pgInitialize } from './database/pg-wrapper';
-import { doEverything, tryCatchTryAgain } from './flow/doEverything';
-import { updateHistory } from './flow/history/updateHistory';
-import { mergeEverything } from './flow/mergeEverything';
-import { rebuildNetlifySiteWithNewData } from './flow/rebuildNetliftySiteWithNewData';
-import { rebuildFrontpage } from './frontpage';
-import { platformFetchers } from './platforms/all-platforms';
-import { rebuildAlgoliaDatabase } from './utils/algolia';
+import { pgInitialize } from "./database/pg-wrapper";
+import { doEverything, tryCatchTryAgain } from "./flow/doEverything";
+import { updateHistory } from "./flow/history/updateHistory";
+import { mergeEverything } from "./flow/mergeEverything";
+import { rebuildNetlifySiteWithNewData } from "./flow/rebuildNetliftySiteWithNewData";
+import { rebuildFrontpage } from "./frontpage";
+import { platformFetchers } from "./platforms/all-platforms";
+import { rebuildAlgoliaDatabase } from "./utils/algolia";
 
 /* Support functions */
 let functions = [

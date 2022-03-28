@@ -1,5 +1,5 @@
 /* Imports */
-import fs from 'fs';
+import fs from "fs";
 
 /* Definitions */
 let locationData = "../../data/";

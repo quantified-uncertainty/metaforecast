@@ -1,11 +1,11 @@
 /* Imports */
-import axios from 'axios';
-import { Tabletojson } from 'tabletojson';
+import axios from "axios";
+import { Tabletojson } from "tabletojson";
 
-import { databaseUpsert } from '../database/database-wrapper';
-import { applyIfSecretExists } from '../utils/getSecrets';
-import { calculateStars } from '../utils/stars';
-import toMarkdown from '../utils/toMarkdown';
+import { databaseUpsert } from "../database/database-wrapper";
+import { applyIfSecretExists } from "../utils/getSecrets";
+import { calculateStars } from "../utils/stars";
+import toMarkdown from "../utils/toMarkdown";
 
 /* Definitions */
 let htmlEndPoint = "https://www.infer-pub.com/questions";

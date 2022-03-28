@@ -1,7 +1,7 @@
 /* Imports */
-import React from 'react';
-import { FaRegClipboard } from 'react-icons/fa';
-import ReactMarkdown from 'react-markdown';
+import React from "react";
+import { FaRegClipboard } from "react-icons/fa";
+import ReactMarkdown from "react-markdown";
 
 /* Definitions */
 

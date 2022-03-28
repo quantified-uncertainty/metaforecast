@@ -1,6 +1,6 @@
 /* Imports */
-import React from 'react';
-import { Handles, Rail, Slider, Tracks } from 'react-compound-slider';
+import React from "react";
+import { Handles, Rail, Slider, Tracks } from "react-compound-slider";
 
 // https://sghall.github.io/react-compound-slider/#/getting-started/tutorial
 

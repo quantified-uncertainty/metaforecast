@@ -1,6 +1,6 @@
-import { NextApiRequest, NextApiResponse } from 'next/types';
+import { NextApiRequest, NextApiResponse } from "next/types";
 
-import { getFrontpageFullRaw } from '../../backend/frontpage';
+import { getFrontpageFullRaw } from "../../backend/frontpage";
 
 export default async function handler(
   req: NextApiRequest,

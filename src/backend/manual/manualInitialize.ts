@@ -1,3 +1,3 @@
-import { pgInitialize } from '../database/pg-wrapper';
+import { pgInitialize } from "../database/pg-wrapper";
 
 pgInitialize();

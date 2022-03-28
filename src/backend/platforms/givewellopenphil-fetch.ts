@@ -1,9 +1,9 @@
 /* Imports */
-import axios from 'axios';
-import fs from 'fs';
+import axios from "axios";
+import fs from "fs";
 
-import { databaseUpsert } from '../database/database-wrapper';
-import { calculateStars } from '../utils/stars';
+import { databaseUpsert } from "../database/database-wrapper";
+import { calculateStars } from "../utils/stars";
 
 /* Support functions */
 async function fetchPage(url) {

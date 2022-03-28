@@ -1,4 +1,4 @@
-import { pgRead, pgReadWithReadCredentials, pgUpsert } from './pg-wrapper';
+import { pgRead, pgReadWithReadCredentials, pgUpsert } from "./pg-wrapper";
 
 const dateUpToYear = () => new Date().toISOString().slice(0, 4);
 const dateUpToMonth = () =>

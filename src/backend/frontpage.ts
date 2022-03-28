@@ -1,4 +1,4 @@
-import { pgRead, readWritePool } from './database/pg-wrapper';
+import { pgRead, readWritePool } from "./database/pg-wrapper";
 
 export async function getFrontpageRaw() {
   const client = await readWritePool.connect();

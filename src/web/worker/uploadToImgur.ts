@@ -1,5 +1,5 @@
 // import fetch from "fetch"
-import axios, { AxiosRequestConfig } from 'axios';
+import axios, { AxiosRequestConfig } from "axios";
 
 export async function uploadToImgur(dataURL, handleGettingImgurlImage) {
   let request: AxiosRequestConfig = {

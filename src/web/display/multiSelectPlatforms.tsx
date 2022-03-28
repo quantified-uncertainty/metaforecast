@@ -1,8 +1,8 @@
-import chroma from 'chroma-js';
-import React from 'react';
-import Select from 'react-select';
+import chroma from "chroma-js";
+import React from "react";
+import Select from "react-select";
 
-import { platformsWithLabels } from '../platforms';
+import { platformsWithLabels } from "../platforms";
 
 const colourStyles = {
   control: (styles) => ({ ...styles, backgroundColor: "white" }),

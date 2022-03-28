@@ -1,8 +1,8 @@
 /* Imports */
-import axios from 'axios';
+import axios from "axios";
 
-import { databaseUpsert } from '../database/database-wrapper';
-import { calculateStars } from '../utils/stars';
+import { databaseUpsert } from "../database/database-wrapper";
+import { calculateStars } from "../utils/stars";
 
 /* Definitions */
 let unixtime = new Date().getTime();

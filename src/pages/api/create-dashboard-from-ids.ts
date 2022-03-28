@@ -1,7 +1,7 @@
-import crypto from 'crypto';
-import { NextApiRequest, NextApiResponse } from 'next/types';
+import crypto from "crypto";
+import { NextApiRequest, NextApiResponse } from "next/types";
 
-import { pgInsertIntoDashboard } from '../../backend/database/pg-wrapper';
+import { pgInsertIntoDashboard } from "../../backend/database/pg-wrapper";
 
 export default async function handler(
   req: NextApiRequest,

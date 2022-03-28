@@ -1,11 +1,11 @@
 /* Imports */
 
 // React
-import { useRouter } from 'next/router'; // https://nextjs.org/docs/api-reference/next/router
-import { useState } from 'react';
+import { useRouter } from "next/router"; // https://nextjs.org/docs/api-reference/next/router
+import { useState } from "react";
 
-import displayForecasts from '../web/display/displayForecasts';
-import { getDashboardForecastsByDashboardId } from '../web/worker/getDashboardForecasts';
+import displayForecasts from "../web/display/displayForecasts";
+import { getDashboardForecastsByDashboardId } from "../web/worker/getDashboardForecasts";
 
 /* get Props */
 

@@ -1,13 +1,13 @@
 /* Imports */
-import axios from 'axios';
-import { GetServerSideProps } from 'next';
-import { useRouter } from 'next/router'; // https://nextjs.org/docs/api-reference/next/router
-import { useState } from 'react';
+import axios from "axios";
+import { GetServerSideProps } from "next";
+import { useRouter } from "next/router"; // https://nextjs.org/docs/api-reference/next/router
+import { useState } from "react";
 
-import { DashboardCreator } from '../web/display/dashboardCreator';
-import displayForecasts from '../web/display/displayForecasts';
-import Layout from '../web/display/layout';
-import { getDashboardForecastsByDashboardId } from '../web/worker/getDashboardForecasts';
+import { DashboardCreator } from "../web/display/dashboardCreator";
+import displayForecasts from "../web/display/displayForecasts";
+import Layout from "../web/display/layout";
+import { getDashboardForecastsByDashboardId } from "../web/worker/getDashboardForecasts";
 
 /* get Props */
 

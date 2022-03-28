@@ -1,10 +1,10 @@
 /* Imports */
 
-import React from 'react';
+import React from "react";
 
-import { displayForecast } from '../web/display/displayForecasts';
-import { platformsWithLabels } from '../web/platforms';
-import searchAccordingToQueryData from '../web/worker/searchAccordingToQueryData';
+import { displayForecast } from "../web/display/displayForecasts";
+import { platformsWithLabels } from "../web/platforms";
+import searchAccordingToQueryData from "../web/worker/searchAccordingToQueryData";
 
 /* Helper functions */
 

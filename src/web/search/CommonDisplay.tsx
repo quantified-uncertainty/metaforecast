@@ -1,12 +1,18 @@
-import { useRouter } from 'next/router';
-import React, { DependencyList, EffectCallback, Fragment, useEffect, useState } from 'react';
+import { useRouter } from "next/router";
+import React, {
+  DependencyList,
+  EffectCallback,
+  Fragment,
+  useEffect,
+  useState,
+} from "react";
 
-import ButtonsForStars from '../display/buttonsForStars';
-import Form from '../display/form';
-import MultiSelectPlatform from '../display/multiSelectPlatforms';
-import { SliderElement } from '../display/slider';
-import { platformsWithLabels, PlatformWithLabel } from '../platforms';
-import searchAccordingToQueryData from '../worker/searchAccordingToQueryData';
+import ButtonsForStars from "../display/buttonsForStars";
+import Form from "../display/form";
+import MultiSelectPlatform from "../display/multiSelectPlatforms";
+import { SliderElement } from "../display/slider";
+import { platformsWithLabels, PlatformWithLabel } from "../platforms";
+import searchAccordingToQueryData from "../worker/searchAccordingToQueryData";
 
 interface QueryParametersWithoutNum {
   query: string;

@@ -1,4 +1,7 @@
-import { databaseReadWithReadCredentials, databaseUpsert } from '../../database/database-wrapper';
+import {
+  databaseReadWithReadCredentials,
+  databaseUpsert,
+} from "../../database/database-wrapper";
 
 export async function updateHistory() {
   let latest = await databaseReadWithReadCredentials({ group: "combined" });

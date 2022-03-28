@@ -1,5 +1,5 @@
-import { NextApiRequest, NextApiResponse } from 'next/types';
-import { runMePlease } from 'squiggle-experimental/dist/index.js';
+import { NextApiRequest, NextApiResponse } from "next/types";
+import { runMePlease } from "squiggle-experimental/dist/index.js";
 
 export default async function handler(
   req: NextApiRequest,

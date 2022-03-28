@@ -1,5 +1,5 @@
-import { databaseRead, databaseUpsert } from '../database/database-wrapper';
-import { platformNames } from '../platforms/all-platforms';
+import { databaseRead, databaseUpsert } from "../database/database-wrapper";
+import { platformNames } from "../platforms/all-platforms";
 
 /* Merge everything */
 

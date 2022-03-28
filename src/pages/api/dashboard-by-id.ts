@@ -1,6 +1,6 @@
-import { NextApiRequest, NextApiResponse } from 'next/types';
+import { NextApiRequest, NextApiResponse } from "next/types";
 
-import { pgGetByIds } from '../../backend/database/pg-wrapper';
+import { pgGetByIds } from "../../backend/database/pg-wrapper";
 
 export default async function handler(
   req: NextApiRequest,

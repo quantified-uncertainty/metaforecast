@@ -1,5 +1,5 @@
 /* Imports */
-import { goodjudgment } from '../platforms/goodjudgment-fetch';
+import { goodjudgment } from "../platforms/goodjudgment-fetch";
 
 /* Definitions */
 

@@ -1,7 +1,7 @@
 /* Imports */
-import fs from 'fs';
+import fs from "fs";
 
-import { databaseReadWithReadCredentials } from '../../database/database-wrapper';
+import { databaseReadWithReadCredentials } from "../../database/database-wrapper";
 
 /* Definitions */
 let locationData = "./data/";

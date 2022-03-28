@@ -1,5 +1,5 @@
-import displayForecasts from './displayForecasts';
-import displayOneForecast from './displayOneForecastForCapture';
+import displayForecasts from "./displayForecasts";
+import displayOneForecast from "./displayOneForecastForCapture";
 
 export function displayForecastsWrapperForSearch({
   results,

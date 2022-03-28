@@ -1,8 +1,8 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import React, { ErrorInfo } from 'react';
+import Head from "next/head";
+import Link from "next/link";
+import React, { ErrorInfo } from "react";
 
-import { Logo2 } from '../icons/index';
+import { Logo2 } from "../icons/index";
 
 /* Utilities */
 const classNameSelected = (isSelected: boolean) =>
