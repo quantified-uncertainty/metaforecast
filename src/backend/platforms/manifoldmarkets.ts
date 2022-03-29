@@ -2,6 +2,7 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
+import { Platform } from "./";
 
 /* Definitions */
 let endpoint = "https://manifold.markets/api/v0/markets";
@@ -87,12 +88,12 @@ async function processPredictions(predictions) {
   return unresolvedResults; //resultsProcessed
 }
 
-/* Body */
-
-export const manifoldmarkets = async function () {
-  let data = await fetchData();
-  let results = await processPredictions(data); // somehow needed
-  showStatistics(results);
-  return results;
+export const manifoldmarkets: Platform = {
+  name: "manifoldmarkets",
+  async fetcher() {
+    let data = await fetchData();
+    let results = await processPredictions(data); // somehow needed
+    showStatistics(results);
+    return results;
+  },
 };
-// manifoldmarkets()

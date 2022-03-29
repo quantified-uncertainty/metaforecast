@@ -2,7 +2,7 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { PlatformFetcher } from "./";
+import { Platform } from "./";
 
 /* Definitions */
 let unixtime = new Date().getTime();
@@ -111,9 +111,11 @@ async function processData(data) {
 }
 
 /* Body */
-export const fantasyscotus: PlatformFetcher = async function () {
-  let rawData = await fetchData();
-  let results = await processData(rawData);
-  return results;
+export const fantasyscotus: Platform = {
+  name: "fantasyscotus",
+  async fetcher() {
+    let rawData = await fetchData();
+    let results = await processData(rawData);
+    return results;
+  },
 };
-//fantasyscotus()

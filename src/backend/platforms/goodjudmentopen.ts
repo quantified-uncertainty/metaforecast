@@ -5,7 +5,7 @@ import { Tabletojson } from "tabletojson";
 import { applyIfSecretExists } from "../utils/getSecrets";
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
-import { PlatformFetcher } from "./";
+import { Platform } from "./";
 
 /* Definitions */
 let htmlEndPoint = "https://www.gjopen.com/questions?page=";
@@ -236,7 +236,10 @@ async function goodjudgmentopen_inner(cookie) {
   return results;
 }
 
-export const goodjudmentopen: PlatformFetcher = async function () {
-  let cookie = process.env.GOODJUDGMENTOPENCOOKIE;
-  return await applyIfSecretExists(cookie, goodjudgmentopen_inner);
+export const goodjudmentopen: Platform = {
+  name: "goodjudmentopen", // note the typo! current table name is without `g`, `goodjudmentopen`
+  async fetcher() {
+    let cookie = process.env.GOODJUDGMENTOPENCOOKIE;
+    return await applyIfSecretExists(cookie, goodjudgmentopen_inner);
+  },
 };

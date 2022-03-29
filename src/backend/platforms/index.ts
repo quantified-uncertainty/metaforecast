@@ -1,18 +1,18 @@
 import { databaseUpsert } from "../database/database-wrapper";
-import { betfair } from "./betfair-fetch";
-import { fantasyscotus } from "./fantasyscotus-fetch";
-import { foretold } from "./foretold-fetch";
-import { goodjudgment } from "./goodjudgment-fetch";
-import { goodjudmentopen } from "./goodjudmentopen-fetch";
-import { infer } from "./infer-fetch";
-import { kalshi } from "./kalshi-fetch";
-import { manifoldmarkets } from "./manifoldmarkets-fetch";
-import { metaculus } from "./metaculus-fetch";
-import { polymarket } from "./polymarket-fetch";
-import { predictit } from "./predictit-fetch";
-import { rootclaim } from "./rootclaim-fetch";
-import { smarkets } from "./smarkets-fetch";
-import { wildeford } from "./wildeford-fetch";
+import { betfair } from "./betfair";
+import { fantasyscotus } from "./fantasyscotus";
+import { foretold } from "./foretold";
+import { goodjudgment } from "./goodjudgment";
+import { goodjudmentopen } from "./goodjudmentopen";
+import { infer } from "./infer";
+import { kalshi } from "./kalshi";
+import { manifoldmarkets } from "./manifoldmarkets";
+import { metaculus } from "./metaculus";
+import { polymarket } from "./polymarket";
+import { predictit } from "./predictit";
+import { rootclaim } from "./rootclaim";
+import { smarkets } from "./smarkets";
+import { wildeford } from "./wildeford";
 
 export interface Forecast {
   id: string;
@@ -26,9 +26,10 @@ export interface Forecast {
   extra?: any;
 }
 
+// fetcher should return null if platform failed to fetch forecasts for some reason
 export type PlatformFetcher = () => Promise<Forecast[] | null>;
 
-interface Platform {
+export interface Platform {
   name: string;
   fetcher: PlatformFetcher;
 }
@@ -53,7 +54,7 @@ export const platforms: Platform[] = [
   fantasyscotus,
   foretold,
   goodjudgment,
-  goodjudmentopen, // note the typo! current table name is without `g`, `goodjudmentopen`
+  goodjudmentopen,
   infer,
   kalshi,
   manifoldmarkets,
@@ -63,7 +64,7 @@ export const platforms: Platform[] = [
   rootclaim,
   smarkets,
   wildeford,
-].map((fun) => ({ name: fun.name, fetcher: fun }));
+];
 
 export const processPlatform = async (platform: Platform) => {
   let results = await platform.fetcher();

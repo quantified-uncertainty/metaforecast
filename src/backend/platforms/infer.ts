@@ -5,7 +5,7 @@ import { Tabletojson } from "tabletojson";
 import { applyIfSecretExists } from "../utils/getSecrets";
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
-import { Forecast, PlatformFetcher } from "./";
+import { Forecast, Platform } from "./";
 
 /* Definitions */
 let htmlEndPoint = "https://www.infer-pub.com/questions";
@@ -277,7 +277,10 @@ async function infer_inner(cookie) {
   return results;
 }
 
-export const infer: PlatformFetcher = async function () {
-  let cookie = process.env.INFER_COOKIE;
-  return await applyIfSecretExists(cookie, infer_inner);
+export const infer: Platform = {
+  name: "infer",
+  async fetcher() {
+    let cookie = process.env.INFER_COOKIE;
+    return await applyIfSecretExists(cookie, infer_inner);
+  },
 };

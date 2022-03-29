@@ -3,7 +3,7 @@ import axios from "axios";
 import https from "https";
 
 import { calculateStars } from "../utils/stars";
-import { Forecast, PlatformFetcher } from "./";
+import { Forecast, Platform } from "./";
 
 /* Definitions */
 let endpoint = process.env.SECRET_BETFAIR_ENDPOINT;
@@ -135,11 +135,11 @@ async function processPredictions(data) {
   return results; //resultsProcessed
 }
 
-/* Body */
-
-export const betfair: PlatformFetcher = async function () {
-  const data = await fetchPredictions();
-  const results = await processPredictions(data); // somehow needed
-  return results;
+export const betfair: Platform = {
+  name: "betfair",
+  async fetcher() {
+    const data = await fetchPredictions();
+    const results = await processPredictions(data); // somehow needed
+    return results;
+  },
 };
-// betfair()
