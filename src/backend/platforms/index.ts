@@ -33,6 +33,21 @@ interface Platform {
   fetcher: PlatformFetcher;
 }
 
+// draft for the future callback-based streaming/chunking API:
+// interface FetchOptions {
+//   since?: string; // some kind of cursor, Date object or opaque string?
+//   save: (forecasts: Forecast[]) => Promise<void>;
+// }
+
+// export type PlatformFetcher = (options: FetchOptions) => Promise<void>;
+
+// interface Platform {
+//   name: string;
+//   color?: string;
+//   longName: string;
+//   fetcher: PlatformFetcher;
+// }
+
 export const platforms: Platform[] = [
   betfair,
   fantasyscotus,
