@@ -31,7 +31,8 @@ case $platform in
         echo "Cookie found:"
         echo "$cookie"
         echo "Running: netlify env:set INFER_COOKIE '\$cookie'"
-        netlify env:set INFER_COOKIE "$cookie"
+        # netlify env:set INFER_COOKIE "$cookie"
+				heroku config:set INFER_COOKIE="$cookie" -a metaforecast-backend
     ;;
     "1" )
         echo "Platform: Good Judgment Open"
@@ -55,7 +56,8 @@ case $platform in
         echo "Cookie found:"
         echo "$cookie"
         echo "Running: netlify env:set GOODJUDGMENTOPENCOOKIE '\$cookie'"
-        netlify env:set GOODJUDGMENTOPENCOOKIE "$cookie"
+        # netlify env:set GOODJUDGMENTOPENCOOKIE "$cookie"
+				heroku config:set GOODJUDGMENTOPENCOOKIE="$cookie" -a metaforecast-backend
     ;;
     * )
         echo "Option not in {0,1}, exiting."
