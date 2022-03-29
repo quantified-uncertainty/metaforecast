@@ -236,7 +236,7 @@ async function goodjudgmentopen_inner(cookie) {
   return results;
 }
 
-export const goodjudgmentopen: PlatformFetcher = async function () {
+export const goodjudmentopen: PlatformFetcher = async function () {
   let cookie = process.env.GOODJUDGMENTOPENCOOKIE;
   return await applyIfSecretExists(cookie, goodjudgmentopen_inner);
 };

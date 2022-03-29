@@ -21,7 +21,7 @@ Most of these are just session cookies, necessary to query INFER (previously CSE
 
 Note that not all of these cookies are needed to use all parts of the source code. For instance, to download Polymarket data, one could just interface with the Polymarket code. In particular, the code in this repository contains code to connect with the postgres database using read permissions, which are freely available.
 
-- `GOODJUDGEMENTOPENCOOKIE`
+- `GOODJUDGMENTOPENCOOKIE`
 - `INFER_COOKIE`
 - `CSETFORETELL_COOKIE`, deprecated, superseded by `INFER_COOKIE`.
 - `HYPERMINDCOOKIE`

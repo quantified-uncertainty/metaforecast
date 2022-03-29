@@ -3,7 +3,7 @@ import { betfair } from "./betfair-fetch";
 import { fantasyscotus } from "./fantasyscotus-fetch";
 import { foretold } from "./foretold-fetch";
 import { goodjudgment } from "./goodjudgment-fetch";
-import { goodjudgmentopen } from "./goodjudmentopen-fetch";
+import { goodjudmentopen } from "./goodjudmentopen-fetch";
 import { infer } from "./infer-fetch";
 import { kalshi } from "./kalshi-fetch";
 import { manifoldmarkets } from "./manifoldmarkets-fetch";
@@ -38,7 +38,7 @@ export const platforms: Platform[] = [
   fantasyscotus,
   foretold,
   goodjudgment,
-  goodjudgmentopen,
+  goodjudmentopen, // note the typo! current table name is without `g`, `goodjudmentopen`
   infer,
   kalshi,
   manifoldmarkets,
