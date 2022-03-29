@@ -43,7 +43,7 @@ let commandLineUtility = async () => {
     return answer;
   };
 
-  executeJobByName(await pickOption());
+  await executeJobByName(await pickOption());
   process.exit();
 };
 
