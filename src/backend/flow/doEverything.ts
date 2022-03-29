@@ -1,11 +1,11 @@
-import { platformFetchers } from "../platforms/all-platforms";
+import { platforms, processPlatform } from "../platforms";
 import { rebuildAlgoliaDatabase } from "../utils/algolia";
 import { updateHistory } from "./history/updateHistory";
 import { mergeEverything } from "./mergeEverything";
 import { rebuildNetlifySiteWithNewData } from "./rebuildNetliftySiteWithNewData";
 
 /* Do everything */
-function sleep(ms) {
+function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
@@ -27,7 +27,7 @@ export async function tryCatchTryAgain(fun) {
 
 export async function doEverything() {
   let functions = [
-    ...platformFetchers,
+    ...platforms.map((platform) => () => processPlatform(platform)),
     mergeEverything,
     rebuildAlgoliaDatabase,
     updateHistory,

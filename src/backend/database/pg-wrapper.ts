@@ -1,6 +1,6 @@
 import pkg from "pg";
 
-import { platformNames } from "../platforms/all/platformNames";
+import { platforms } from "../platforms";
 import { hash } from "../utils/hash";
 import { roughSizeOfObject } from "../utils/roughSize";
 
@@ -18,7 +18,10 @@ const allowed_year_month_histories = [].concat(
     allowed_months.map((month) => `${year}_${month}`)
   )
 ); // h2022_01
-const tableNamesWhitelistLatest = ["combined", ...platformNames];
+const tableNamesWhitelistLatest = [
+  "combined",
+  ...platforms.map((platform) => platform.name),
+];
 const tableNamesWhiteListHistory = [
   ...allowed_years,
   ...allowed_year_month_histories,

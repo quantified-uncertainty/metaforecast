@@ -1,8 +1,8 @@
 /* Imports */
 import axios from "axios";
 
-import { databaseUpsert } from "../database/database-wrapper";
 import { calculateStars } from "../utils/stars";
+import { PlatformFetcher } from "./";
 
 /* Definitions */
 let htmlEndPointEntrance = "https://api.smarkets.com/v3/events/";
@@ -61,7 +61,7 @@ async function fetchPrices(marketid) {
 
 /* Body */
 
-export async function smarkets() {
+export const smarkets: PlatformFetcher = async function () {
   let htmlPath =
     "?state=new&state=upcoming&state=live&type_domain=politics&type_scope=single_event&with_new_type=true&sort=id&limit=50";
 
@@ -172,9 +172,6 @@ export async function smarkets() {
     results.push(result);
   }
   VERBOSE ? console.log(results) : empty();
-
-  await databaseUpsert({ contents: results, group: "smarkets" });
-  VERBOSE ? console.log(JSON.stringify(results, null, 4)) : empty();
-  VERBOSE ? console.dir(results, { depth: null }) : empty();
-}
+  return results;
+};
 //smarkets()

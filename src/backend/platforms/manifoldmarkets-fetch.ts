@@ -1,6 +1,6 @@
 /* Imports */
 import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper";
+
 import { calculateStars } from "../utils/stars";
 
 /* Definitions */
@@ -89,12 +89,10 @@ async function processPredictions(predictions) {
 
 /* Body */
 
-export async function manifoldmarkets() {
+export const manifoldmarkets = async function () {
   let data = await fetchData();
   let results = await processPredictions(data); // somehow needed
   showStatistics(results);
-  await databaseUpsert({ contents: results, group: "manifoldmarkets" });
-
-  console.log("Done");
-}
+  return results;
+};
 // manifoldmarkets()

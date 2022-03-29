@@ -2,10 +2,10 @@
 // import axios from "axios"
 import { GoogleSpreadsheet } from "google-spreadsheet";
 
-import { databaseUpsert } from "../database/database-wrapper";
 import { applyIfSecretExists } from "../utils/getSecrets";
 import { hash } from "../utils/hash";
 import { calculateStars } from "../utils/stars";
+import { PlatformFetcher } from "./";
 
 /* Definitions */
 const SHEET_ID = "1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0"; // spreadsheet key is the long id in the sheets URL
@@ -120,15 +120,11 @@ async function processPredictions(predictions) {
 /* Body */
 export async function wildeford_inner(google_api_key) {
   let predictions = await fetchGoogleDoc(google_api_key);
-  let results = await processPredictions(predictions); // somehow needed
-  // console.log(results.sort((a,b) => (a.title > b.title)))
-  await databaseUpsert({ contents: results, group: "wildeford" });
-
-  console.log("Done");
+  return await processPredictions(predictions);
 }
 //example()
 
-export async function wildeford() {
+export const wildeford: PlatformFetcher = async function () {
   const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY; // See: https://developers.google.com/sheets/api/guides/authorizing#APIKey
-  await applyIfSecretExists(GOOGLE_API_KEY, wildeford_inner);
-}
+  return await applyIfSecretExists(GOOGLE_API_KEY, wildeford_inner);
+};

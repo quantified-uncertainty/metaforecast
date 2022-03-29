@@ -3,9 +3,9 @@ import axios from "axios";
 import { Tabletojson } from "tabletojson";
 import tunnel from "tunnel";
 
-import { databaseUpsert } from "../database/database-wrapper";
 import { hash } from "../utils/hash";
 import { calculateStars } from "../utils/stars";
+import { PlatformFetcher } from "./";
 
 /* Definitions */
 let endpoint = "https://goodjudgment.io/superforecasts/";
@@ -17,7 +17,7 @@ String.prototype.replaceAll = function replaceAll(search, replace) {
 /* Support functions */
 
 /* Body */
-export async function goodjudgment() {
+export const goodjudgment: PlatformFetcher = async function () {
   // Proxy fuckery
   let proxy;
   /*
@@ -116,14 +116,11 @@ export async function goodjudgment() {
       results.push(standardObj);
     }
   }
-  // console.log(results.slice(0,10))
-  let string = JSON.stringify(results, null, 2);
-  console.log(results);
-  await databaseUpsert({ contents: results, group: "goodjudgment" });
 
   console.log(
     "Failing is not unexpected; see utils/pullSuperforecastsManually.sh/js"
   );
-  console.log("Done");
-}
+
+  return results;
+};
 // goodjudgment()

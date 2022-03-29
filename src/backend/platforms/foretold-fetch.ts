@@ -1,6 +1,6 @@
 /* Imports */
 import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper";
+
 import { calculateStars } from "../utils/stars";
 
 /* Definitions */
@@ -98,8 +98,6 @@ export async function foretold() {
       results.push(result);
     });
   }
-  await databaseUpsert({ contents: results, group: "foretold" });
-
-  console.log("Done");
+  return results;
 }
 // foretold()

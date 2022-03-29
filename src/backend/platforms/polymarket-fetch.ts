@@ -1,11 +1,12 @@
 /* Imports */
 import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper";
+
 import { calculateStars } from "../utils/stars";
+import { Forecast, PlatformFetcher } from "./";
 
 /* Definitions */
 let graphQLendpoint =
-  "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-5"; // "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-4"// "https://api.thegraph.com/subgraphs/name/tokenunion/polymarket-matic"//"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
+  "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-5";
 let units = 10 ** 6;
 
 async function fetchAllContractInfo() {
@@ -55,19 +56,24 @@ async function fetchAllContractData() {
   })
     .then((res) => res.data)
     .then((res) => res.data.fixedProductMarketMakers);
-  // console.log(response)
+
   return response;
 }
 
-async function fetch_all() {
+export const polymarket: PlatformFetcher = async function () {
   let allData = await fetchAllContractData();
   let allInfo = await fetchAllContractInfo();
+
+  let used = process.memoryUsage().heapUsed / 1024 / 1024;
+  console.log(
+    `The script uses approximately ${Math.round(used * 100) / 100} MB`
+  );
 
   let infos = {};
   for (let info of allInfo) {
     let address = info.marketMakerAddress;
     let addressLowerCase = address.toLowerCase();
-    //delete info.history
+
     if (info.outcomes[0] != "Long" || info.outcomes[1] != "Long")
       infos[addressLowerCase] = {
         title: info.question,
@@ -83,9 +89,8 @@ async function fetch_all() {
   let results = [];
   for (let data of allData) {
     let addressLowerCase = data.id;
-    // console.log(data)
+
     if (infos[addressLowerCase] != undefined) {
-      // console.log(addressLowerCase)
       let id = `polymarket-${addressLowerCase.slice(0, 10)}`;
       let info = infos[addressLowerCase];
       let numforecasts = Number(data.tradesQuantity);
@@ -105,7 +110,7 @@ async function fetch_all() {
         });
       }
 
-      let result = {
+      let result: Forecast = {
         id: id,
         title: info.title,
         url: info.url,
@@ -126,23 +131,12 @@ async function fetch_all() {
         extra: {
           address: info.address,
         },
-        /*
-         */
       };
       if (info.category != "Sports") {
-        // console.log(result)
         results.push(result);
       }
     }
   }
-  return results; //resultsProcessed
-}
 
-/* Body */
-export async function polymarket() {
-  let results = await fetch_all();
-  await databaseUpsert({ contents: results, group: "polymarket" });
-
-  console.log("Done");
-}
-// polymarket()
+  return results;
+};

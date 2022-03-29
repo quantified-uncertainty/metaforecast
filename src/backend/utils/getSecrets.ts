@@ -1,6 +1,9 @@
-export async function applyIfSecretExists(cookie, fun) {
+export async function applyIfSecretExists<T>(
+  cookie,
+  fun: (...args: any[]) => T
+) {
   if (cookie) {
-    await fun(cookie);
+    return await fun(cookie);
   } else if (!cookie) {
     console.log(
       `Cannot proceed with ${fun.name} because cookie does not exist`

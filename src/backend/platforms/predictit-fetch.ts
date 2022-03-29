@@ -1,8 +1,9 @@
 /* Imports */
 import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper";
+
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
+import { PlatformFetcher } from "./";
 
 /* Support functions */
 async function fetchmarkets() {
@@ -37,7 +38,7 @@ function sleep(ms) {
 }
 
 /* Body */
-export async function predictit() {
+export const predictit: PlatformFetcher = async function () {
   let markets = await fetchmarkets();
   let marketVolumes = await fetchmarketvolumes();
 
@@ -106,7 +107,6 @@ export async function predictit() {
     // console.log(obj)
     results.push(obj);
   }
-  await databaseUpsert({ contents: results, group: "predictit" });
 
-  console.log("Done");
-}
+  return results;
+};

@@ -1,8 +1,9 @@
 /* Imports */
 import axios from "axios";
 import https from "https";
-import { databaseUpsert } from "../database/database-wrapper";
+
 import { calculateStars } from "../utils/stars";
+import { Forecast, PlatformFetcher } from "./";
 
 /* Definitions */
 let endpoint = process.env.SECRET_BETFAIR_ENDPOINT;
@@ -77,7 +78,7 @@ async function whipIntoShape(data) {
 async function processPredictions(data) {
   let predictions = await whipIntoShape(data);
   // console.log(JSON.stringify(predictions, null, 4))
-  let results = predictions.map((prediction) => {
+  let results: Forecast[] = predictions.map((prediction) => {
     /* if(Math.floor(Math.random() * 10) % 20 ==0){
        console.log(JSON.stringify(prediction, null, 4))
     } */
@@ -136,12 +137,9 @@ async function processPredictions(data) {
 
 /* Body */
 
-export async function betfair() {
-  let data = await fetchPredictions();
-  let results = await processPredictions(data); // somehow needed
-  // console.log(results.map(result => ({title: result.title, description: result.description})))
-  // let string = JSON.stringify(results, null, 2)
-  await databaseUpsert({ contents: results, group: "betfair" });
-  console.log("Done");
-}
+export const betfair: PlatformFetcher = async function () {
+  const data = await fetchPredictions();
+  const results = await processPredictions(data); // somehow needed
+  return results;
+};
 // betfair()

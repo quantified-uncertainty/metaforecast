@@ -9,12 +9,12 @@ import { updateHistory } from "./flow/history/updateHistory";
 import { mergeEverything } from "./flow/mergeEverything";
 import { rebuildNetlifySiteWithNewData } from "./flow/rebuildNetliftySiteWithNewData";
 import { rebuildFrontpage } from "./frontpage";
-import { platformFetchers } from "./platforms/all-platforms";
+import { platforms, processPlatform } from "./platforms";
 import { rebuildAlgoliaDatabase } from "./utils/algolia";
 
 /* Support functions */
 let functions = [
-  ...platformFetchers,
+  ...platforms.map((platform) => () => processPlatform(platform)),
   mergeEverything,
   rebuildAlgoliaDatabase,
   updateHistory,
@@ -25,9 +25,9 @@ let functions = [
 ];
 
 let generateWhatToDoMessage = () => {
-  let l = platformFetchers.length;
-  let messagesForFetchers = platformFetchers.map(
-    (fun, i) => `[${i}]: Download predictions from ${fun.name}`
+  let l = platforms.length;
+  let messagesForFetchers = platforms.map(
+    (platform, i) => `[${i}]: Download predictions from ${platform.name}`
   );
   let otherMessages = [
     "Merge tables into one big table (and push the result to a pg database)",

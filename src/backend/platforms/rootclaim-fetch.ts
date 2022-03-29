@@ -1,8 +1,9 @@
 /* Imports */
 import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper";
+
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
+import { PlatformFetcher } from "./";
 
 /* Definitions */
 let jsonEndpoint =
@@ -22,7 +23,7 @@ async function fetchAllRootclaims() {
   return response;
 }
 
-async function fetchAndProcessData() {
+export const rootclaim: PlatformFetcher = async function () {
   let claims = await fetchAllRootclaims();
   let results = [];
   for (let claim of claims) {
@@ -53,13 +54,4 @@ async function fetchAndProcessData() {
     results.push(obj);
   }
   return results;
-}
-
-/* Body */
-export async function rootclaim() {
-  let results = await fetchAndProcessData();
-  await databaseUpsert({ contents: results, group: "rootclaim" });
-
-  console.log("Done");
-}
-//rootclaim()
+};

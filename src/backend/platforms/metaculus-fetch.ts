@@ -1,8 +1,9 @@
 /* Imports */
 import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper";
+
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
+import { PlatformFetcher } from "./";
 
 /* Definitions */
 let jsonEndPoint = "https://www.metaculus.com/api2/questions/?page=";
@@ -94,7 +95,7 @@ async function fetchMetaculusQuestionDescription(slug) {
 
 /* Body */
 
-export async function metaculus() {
+export const metaculus: PlatformFetcher = async function () {
   // let metaculusQuestionsInit = await fetchMetaculusQuestions(1)
   // let numQueries = Math.round(Number(metaculusQuestionsInit.count) / 20)
   // console.log(`Downloading... This might take a while. Total number of queries: ${numQueries}`)
@@ -189,8 +190,6 @@ export async function metaculus() {
     i = i + 1;
   }
 
-  await databaseUpsert({ contents: all_questions, group: "metaculus" });
-
-  console.log("Done");
-}
+  return all_questions;
+};
 //metaculus()
