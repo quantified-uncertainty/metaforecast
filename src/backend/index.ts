@@ -2,50 +2,23 @@
 import "dotenv/config";
 
 import readline from "readline";
+import util from "util";
 
-import { pgInitialize } from "./database/pg-wrapper";
-import { doEverything, tryCatchTryAgain } from "./flow/doEverything";
-import { updateHistory } from "./flow/history/updateHistory";
-import { mergeEverything } from "./flow/mergeEverything";
-import { rebuildNetlifySiteWithNewData } from "./flow/rebuildNetliftySiteWithNewData";
-import { rebuildFrontpage } from "./frontpage";
-import { platforms, processPlatform } from "./platforms";
-import { rebuildAlgoliaDatabase } from "./utils/algolia";
-
-/* Support functions */
-let functions = [
-  ...platforms.map((platform) => () => processPlatform(platform)),
-  mergeEverything,
-  rebuildAlgoliaDatabase,
-  updateHistory,
-  rebuildNetlifySiteWithNewData,
-  doEverything,
-  pgInitialize,
-  rebuildFrontpage,
-];
+import { executeJobByName, jobs } from "./flow/jobs";
 
 let generateWhatToDoMessage = () => {
-  let l = platforms.length;
-  let messagesForFetchers = platforms.map(
-    (platform, i) => `[${i}]: Download predictions from ${platform.name}`
-  );
-  let otherMessages = [
-    "Merge tables into one big table (and push the result to a pg database)",
-    `Rebuild algolia database ("index")`,
-    `Update history`,
-    `Rebuild netlify site with new data`,
-    // `\n[${functionNames.length-1}]: Add to history` +
-    `All of the above`,
-    `Initialize postgres database`,
-    "Rebuild frontpage",
-  ];
-  let otherMessagesWithNums = otherMessages.map(
-    (message, i) => `[${i + l}]: ${message}`
-  );
+  const color = "\x1b[36m";
+  const resetColor = "\x1b[0m";
   let completeMessages = [
-    ...messagesForFetchers,
-    ...otherMessagesWithNums,
-    `\nChoose one option, wisely: #`,
+    ...jobs.map((job) => {
+      return (
+        (job.separate ? "\n" : "") +
+        `[${color}${job.name}${resetColor}]:`.padStart(30) +
+        " " +
+        job.message
+      );
+    }),
+    `\nChoose one option, wisely: `,
   ].join("\n");
   return completeMessages;
 };
@@ -54,39 +27,24 @@ let whattodoMessage = generateWhatToDoMessage();
 
 /* BODY */
 let commandLineUtility = async () => {
-  let whattodo = async (message, callback) => {
+  const pickOption = async () => {
+    if (process.argv.length === 3) {
+      return process.argv[2]; // e.g., npm run cli polymarket
+    }
+
     const rl = readline.createInterface({
       input: process.stdin,
       output: process.stdout,
     });
-    rl.question(message, async (answer) => {
-      rl.close();
-      await callback(answer);
-    });
+
+    const question = util.promisify(rl.question).bind(rl);
+    const answer = await question(whattodoMessage);
+    rl.close();
+    return answer;
   };
 
-  let executeoption = async (option) => {
-    option = Number(option);
-    if (option < 0) {
-      console.log(`Error, ${option} < 0`);
-    } else if (option < functions.length) {
-      console.log(`Running: ${functions[option].name}\n`);
-      await tryCatchTryAgain(functions[option]);
-    }
-    process.exit();
-  };
-
-  if (process.argv.length == 3) {
-    const option = process.argv[2]; // e.g., npm start 15 <-
-    const optionNum = Number(option);
-    if (!isNaN(optionNum)) {
-      await executeoption(optionNum);
-    } else if (option == "all") {
-      await executeoption(functions.length - 3); // doEverything
-    } else {
-      await whattodo(whattodoMessage, executeoption);
-    }
-  } else await whattodo(whattodoMessage, executeoption);
+  executeJobByName(await pickOption());
+  process.exit();
 };
 
 commandLineUtility();

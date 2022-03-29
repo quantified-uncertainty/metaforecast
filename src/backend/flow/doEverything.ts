@@ -1,37 +1,14 @@
-import { platforms, processPlatform } from "../platforms";
-import { rebuildAlgoliaDatabase } from "../utils/algolia";
-import { updateHistory } from "./history/updateHistory";
-import { mergeEverything } from "./mergeEverything";
-import { rebuildNetlifySiteWithNewData } from "./rebuildNetliftySiteWithNewData";
+import { platforms } from "../platforms";
+import { executeJobByName } from "./jobs";
 
 /* Do everything */
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-export async function tryCatchTryAgain(fun) {
-  try {
-    console.log("Initial try");
-    await fun();
-  } catch (error) {
-    sleep(10000);
-    console.log("Second try");
-    console.log(error);
-    try {
-      await fun();
-    } catch (error) {
-      console.log(error);
-    }
-  }
-}
-
 export async function doEverything() {
-  let functions = [
-    ...platforms.map((platform) => () => processPlatform(platform)),
-    mergeEverything,
-    rebuildAlgoliaDatabase,
-    updateHistory,
-    rebuildNetlifySiteWithNewData,
+  let jobNames = [
+    ...platforms.map((platform) => platform.name),
+    "merge",
+    "algolia",
+    "history",
+    "netlify",
   ];
   // Removed Good Judgment from the fetcher, doing it using cron instead because cloudflare blocks the utility on heroku.
 
@@ -47,13 +24,13 @@ export async function doEverything() {
   console.log("");
   console.log("");
 
-  for (let fun of functions) {
+  for (let name of jobNames) {
     console.log("");
     console.log("");
     console.log("****************************");
-    console.log(fun.name);
+    console.log(name);
     console.log("****************************");
-    await tryCatchTryAgain(fun);
+    await executeJobByName(name);
     console.log("****************************");
   }
 }
