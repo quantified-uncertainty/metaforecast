@@ -73,7 +73,7 @@ async function fetchAll() {
       if (moreMarketAnswer.length > 0) {
         let moreMarketInfo = moreMarketAnswer[0];
         let id = `polymarket-${addressLowerCase.slice(0, 10)}`;
-        console.log(id);
+        // console.log(id);
         let numforecasts = Number(moreMarketInfo.tradesQuantity);
         let tradevolume =
           (Number(moreMarketInfo.collateralBuyVolume) +
@@ -94,8 +94,8 @@ async function fetchAll() {
 
         let result = {
           id: id,
-          title: marketInfo.title,
-          url: marketInfo.url,
+          title: marketInfo.question,
+          url: "https://polymarket.com/market/" + marketInfo.slug,
           platform: "PolyMarket",
           description: marketInfo.description,
           options: options,
