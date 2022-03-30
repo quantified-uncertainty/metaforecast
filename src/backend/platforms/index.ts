@@ -2,6 +2,7 @@ import { databaseUpsert } from "../database/database-wrapper";
 import { betfair } from "./betfair";
 import { fantasyscotus } from "./fantasyscotus";
 import { foretold } from "./foretold";
+import { givewellopenphil } from "./givewellopenphil";
 import { goodjudgment } from "./goodjudgment";
 import { goodjudmentopen } from "./goodjudmentopen";
 import { infer } from "./infer";
@@ -13,6 +14,7 @@ import { predictit } from "./predictit";
 import { rootclaim } from "./rootclaim";
 import { smarkets } from "./smarkets";
 import { wildeford } from "./wildeford";
+import { xrisk } from "./xrisk";
 
 export interface Forecast {
   id: string;
@@ -31,7 +33,7 @@ export type PlatformFetcher = () => Promise<Forecast[] | null>;
 
 export interface Platform {
   name: string;
-  fetcher: PlatformFetcher;
+  fetcher?: PlatformFetcher;
 }
 
 // draft for the future callback-based streaming/chunking API:
@@ -53,6 +55,7 @@ export const platforms: Platform[] = [
   betfair,
   fantasyscotus,
   foretold,
+  givewellopenphil,
   goodjudgment,
   goodjudmentopen,
   infer,
@@ -64,9 +67,14 @@ export const platforms: Platform[] = [
   rootclaim,
   smarkets,
   wildeford,
+  xrisk,
 ];
 
 export const processPlatform = async (platform: Platform) => {
+  if (!platform.fetcher) {
+    console.log(`Platform ${platform.name} doesn't have a fetcher, skipping`);
+    return;
+  }
   let results = await platform.fetcher();
   if (results && results.length) {
     await databaseUpsert({ contents: results, group: platform.name });
