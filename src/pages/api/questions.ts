@@ -6,7 +6,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  let allQuestions = await pgRead({ schema: "latest", tableName: "combined" });
+  let allQuestions = await pgRead({ tableName: "combined" });
   console.log(allQuestions.map((element) => element.title).slice(0, 5));
   console.log("...");
   res.status(200).json(allQuestions);

@@ -3,7 +3,7 @@ import { pgRead, readWritePool } from "./database/pg-wrapper";
 export async function getFrontpageRaw() {
   const client = await readWritePool.connect();
   const res = await client.query(
-    "SELECT frontpage_sliced FROM latest.frontpage ORDER BY id DESC LIMIT 1"
+    "SELECT frontpage_sliced FROM frontpage ORDER BY id DESC LIMIT 1"
   );
   if (!res.rows.length) return [];
   console.log(res.rows[0].frontpage_sliced);
@@ -13,7 +13,7 @@ export async function getFrontpageRaw() {
 export async function getFrontpageFullRaw() {
   const client = await readWritePool.connect();
   const res = await client.query(
-    "SELECT frontpage_full FROM latest.frontpage ORDER BY id DESC LIMIT 1"
+    "SELECT frontpage_full FROM frontpage ORDER BY id DESC LIMIT 1"
   );
   if (!res.rows.length) return [];
   console.log(res.rows[0]);
@@ -38,14 +38,13 @@ export async function getFrontpage() {
 
 export async function rebuildFrontpage() {
   const frontpageFull = await pgRead({
-    schema: "latest",
     tableName: "combined",
   });
 
   const client = await readWritePool.connect();
   const frontpageSliced = (
     await client.query(`
-    SELECT * FROM latest.combined
+    SELECT * FROM combined
     WHERE
       (qualityindicators->>'stars')::int >= 3
       AND description != ''
@@ -56,7 +55,7 @@ export async function rebuildFrontpage() {
 
   const start = Date.now();
   await client.query(
-    "INSERT INTO latest.frontpage(frontpage_full, frontpage_sliced) VALUES($1, $2)",
+    "INSERT INTO frontpage(frontpage_full, frontpage_sliced) VALUES($1, $2)",
     [JSON.stringify(frontpageFull), JSON.stringify(frontpageSliced)]
   );
 

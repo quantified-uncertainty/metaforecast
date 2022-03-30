@@ -27,7 +27,6 @@ export default async function handler(
         creator: body.creator || "",
         extra: [],
       },
-      schema: "latest",
       tableName: "dashboards",
     });
     res.status(200).send({
