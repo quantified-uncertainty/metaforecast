@@ -1,11 +1,4 @@
-/* Imports */
-import { goodjudgment } from "../platforms/goodjudgment-fetch";
+import { processPlatform } from "../platforms";
+import { goodjudgment } from "../platforms/goodjudgment";
 
-/* Definitions */
-
-/* Utilities */
-
-/* Support functions */
-
-/* Body */
-goodjudgment();
+processPlatform(goodjudgment);

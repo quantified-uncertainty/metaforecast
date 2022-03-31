@@ -2,10 +2,10 @@
 import axios from "axios";
 import { Tabletojson } from "tabletojson";
 
-import { databaseUpsert } from "../database/database-wrapper";
 import { applyIfSecretExists } from "../utils/getSecrets";
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
+import { Platform } from "./";
 
 /* Definitions */
 let htmlEndPoint = "https://www.gjopen.com/questions?page=";
@@ -150,7 +150,7 @@ function isEnd(html) {
   return isEndBool;
 }
 
-function sleep(ms) {
+function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
@@ -221,11 +221,10 @@ async function goodjudgmentopen_inner(cookie) {
       );
     }
   }
-  console.log(results);
-  if (results.length > 0) {
-    await databaseUpsert({ contents: results, group: "goodjudmentopen" });
-  } else {
+
+  if (results.length === 0) {
     console.log("Not updating results, as process was not signed in");
+    return;
   }
 
   let end = Date.now();
@@ -233,9 +232,14 @@ async function goodjudgmentopen_inner(cookie) {
   console.log(
     `Took ${difference / 1000} seconds, or ${difference / (1000 * 60)} minutes.`
   );
+
+  return results;
 }
 
-export async function goodjudgmentopen() {
-  let cookie = process.env.GOODJUDGMENTOPENCOOKIE;
-  await applyIfSecretExists(cookie, goodjudgmentopen_inner);
-}
+export const goodjudmentopen: Platform = {
+  name: "goodjudmentopen", // note the typo! current table name is without `g`, `goodjudmentopen`
+  async fetcher() {
+    let cookie = process.env.GOODJUDGMENTOPENCOOKIE;
+    return await applyIfSecretExists(cookie, goodjudgmentopen_inner);
+  },
+};

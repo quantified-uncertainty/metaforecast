@@ -2,10 +2,10 @@
 import axios from "axios";
 import { Tabletojson } from "tabletojson";
 
-import { databaseUpsert } from "../database/database-wrapper";
 import { applyIfSecretExists } from "../utils/getSecrets";
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
+import { Forecast, Platform } from "./";
 
 /* Definitions */
 let htmlEndPoint = "https://www.infer-pub.com/questions";
@@ -182,7 +182,7 @@ function sleep(ms) {
 async function infer_inner(cookie) {
   let i = 1;
   let response = await fetchPage(i, cookie);
-  let results = [];
+  let results: Forecast[] = [];
   let init = Date.now();
   // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
   while (!isEnd(response) && isSignedIn(response)) {
@@ -263,20 +263,24 @@ async function infer_inner(cookie) {
       );
     }
   }
-  if (results.length > 0) {
-    await databaseUpsert({ contents: results, group: "infer" });
-  } else {
-    console.log("Not updating results, as process was not signed in");
-  }
 
   let end = Date.now();
   let difference = end - init;
   console.log(
     `Took ${difference / 1000} seconds, or ${difference / (1000 * 60)} minutes.`
   );
+
+  if (results.length === 0) {
+    console.log("Not updating results, as process was not signed in");
+    return;
+  }
+  return results;
 }
 
-export async function infer() {
-  let cookie = process.env.INFER_COOKIE;
-  await applyIfSecretExists(cookie, infer_inner);
-}
+export const infer: Platform = {
+  name: "infer",
+  async fetcher() {
+    let cookie = process.env.INFER_COOKIE;
+    return await applyIfSecretExists(cookie, infer_inner);
+  },
+};

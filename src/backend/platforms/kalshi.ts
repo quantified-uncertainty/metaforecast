@@ -1,7 +1,8 @@
 /* Imports */
 import axios from "axios";
-import { databaseUpsert } from "../database/database-wrapper";
+
 import { calculateStars } from "../utils/stars";
+import { Platform } from "./";
 
 /* Definitions */
 let jsonEndpoint = "https://trading-api.kalshi.com/v1/cached/markets/"; //"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
@@ -68,12 +69,10 @@ async function processMarkets(markets) {
   return results; //resultsProcessed
 }
 
-/* Body */
-export async function kalshi() {
-  let markets = await fetchAllMarkets();
-  let results = await processMarkets(markets); // somehow needed
-  await databaseUpsert({ contents: results, group: "kalshi" });
-
-  console.log("Done");
-}
-// kalshi()
+export const kalshi: Platform = {
+  name: "kalshi",
+  fetcher: async function () {
+    let markets = await fetchAllMarkets();
+    return await processMarkets(markets);
+  },
+};

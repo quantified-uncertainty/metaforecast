@@ -14,6 +14,8 @@ There's also a template configuration file in `../env.example`.
 - `DIGITALOCEAN_POSTGRES`, of the form `postgres://username:password@domain.com:port/configvars`. (Disregard `DIGITALOCEAN_` prefix, you can use any endpoint you like).
 - `DIGITALOCEAN_POSTGRES_PUBLIC`
 - `ALGOLIA_MASTER_API_KEY`, a string of 32 hexidecimal characters, like `19b6c2234e50c98d30668659a39e3127` (not an actual key).
+- `NEXT_PUBLIC_ALGOLIA_APP_ID`,
+- `NEXT_PUBLIC_ALGOLIA_SEARCH_KEY`
 
 ## Platform cookies and keys
 
@@ -21,7 +23,7 @@ Most of these are just session cookies, necessary to query INFER (previously CSE
 
 Note that not all of these cookies are needed to use all parts of the source code. For instance, to download Polymarket data, one could just interface with the Polymarket code. In particular, the code in this repository contains code to connect with the postgres database using read permissions, which are freely available.
 
-- `GOODJUDGEMENTOPENCOOKIE`
+- `GOODJUDGMENTOPENCOOKIE`
 - `INFER_COOKIE`
 - `CSETFORETELL_COOKIE`, deprecated, superseded by `INFER_COOKIE`.
 - `HYPERMINDCOOKIE`

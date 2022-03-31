@@ -1,11 +1,12 @@
 import { databaseRead, databaseUpsert } from "../database/database-wrapper";
-import { platformNames } from "../platforms/all-platforms";
+import { platforms } from "../platforms";
 
 /* Merge everything */
 
 export async function mergeEverythingInner() {
   let merged = [];
-  for (let platformName of platformNames) {
+  for (let platform of platforms) {
+    const platformName = platform.name;
     let json = await databaseRead({ group: platformName });
     console.log(`${platformName} has ${json.length} questions\n`);
     merged = merged.concat(json);

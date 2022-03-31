@@ -4,9 +4,10 @@ import fs from "fs";
 
 import { databaseUpsert } from "../database/database-wrapper";
 import { calculateStars } from "../utils/stars";
+import { Platform } from "./";
 
 /* Support functions */
-async function fetchPage(url) {
+async function fetchPage(url: string) {
   let response = await axios({
     url: url,
     method: "GET",
@@ -14,7 +15,6 @@ async function fetchPage(url) {
       "Content-Type": "text/html",
     },
   }).then((res) => res.data);
-  //console.log(response)
   return response;
 }
 
@@ -64,17 +64,20 @@ async function main1() {
     group: "givewell-questions-unprocessed",
   });
 }
-// main1()
 
-async function main2() {
-  let rawdata = fs.readFileSync("./input/givewellopenphil-questions.json", {
-    encoding: "utf-8",
-  });
-  let data = JSON.parse(rawdata);
-  let dataWithDate = data.map((datum) => ({
-    ...datum,
-    timestamp: "2021-02-23",
-  }));
-  await databaseUpsert({ group: "givewellopenphil", contents: dataWithDate });
-}
-main2();
+export const givewellopenphil: Platform = {
+  name: "givewellopenphil",
+  async fetcher() {
+    // main1()
+    return; // not necessary to refill the DB every time
+    const rawdata = fs.readFileSync("./input/givewellopenphil-questions.json", {
+      encoding: "utf-8",
+    });
+    const data = JSON.parse(rawdata);
+    const dataWithDate = data.map((datum: any) => ({
+      ...datum,
+      timestamp: "2021-02-23",
+    }));
+    return dataWithDate;
+  },
+};

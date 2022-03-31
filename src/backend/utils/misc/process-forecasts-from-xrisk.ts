@@ -5,10 +5,9 @@ import fs from "fs";
 let locationData = "../../data/";
 
 /* Body */
-let rawdata = fs.readFileSync(
-  "/home/nuno/Documents/core/software/fresh/js/metaforecasts/metaforecasts-mongo/src/input/xrisk-questions.json",
-  { encoding: "utf-8" }
-);
+let rawdata = fs.readFileSync("./input/xrisk-questions.json", {
+  encoding: "utf-8",
+});
 let data = JSON.parse(rawdata);
 
 let results = [];

@@ -4,13 +4,15 @@ import { databaseReadWithReadCredentials } from "../database/database-wrapper";
 import { mergeEverythingInner } from "../flow/mergeEverything";
 
 let cookie = process.env.ALGOLIA_MASTER_API_KEY;
-const client = algoliasearch("96UD3NTQ7L", cookie);
+const algoliaAppId = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID;
+const client = algoliasearch(algoliaAppId, cookie);
+console.log(`Initializing algolia index for ${algoliaAppId}`);
 const index = client.initIndex("metaforecast");
 
 export async function rebuildAlgoliaDatabaseTheHardWay() {
   console.log("Doing this the hard way");
   let records = await mergeEverythingInner();
-  records = records.map((record, index) => ({
+  records = records.map((record, index: number) => ({
     ...record,
     has_numforecasts: record.numforecasts ? true : false,
     objectID: index,
@@ -28,21 +30,23 @@ export async function rebuildAlgoliaDatabaseTheHardWay() {
   }
 }
 
-let getoptionsstringforsearch = (record) => {
+let getoptionsstringforsearch = (record: any) => {
   let result = "";
   if (!!record.options && record.options.length > 0) {
     result = record.options
-      .map((option) => option.name || null)
-      .filter((x) => x != null)
+      .map((option: any) => option.name || null)
+      .filter((x: any) => x != null)
       .join(", ");
   }
   return result;
 };
 
 export async function rebuildAlgoliaDatabaseTheEasyWay() {
-  let records = await databaseReadWithReadCredentials({ group: "combined" });
+  let records: any[] = await databaseReadWithReadCredentials({
+    group: "combined",
+  });
 
-  records = records.map((record, index) => ({
+  records = records.map((record, index: number) => ({
     ...record,
     has_numforecasts: record.numforecasts ? true : false,
     objectID: index,
@@ -50,11 +54,11 @@ export async function rebuildAlgoliaDatabaseTheEasyWay() {
   }));
   // this is necessary to filter by missing attributes https://www.algolia.com/doc/guides/managing-results/refine-results/filtering/how-to/filter-by-null-or-missing-attributes/
 
+  console.log(index.appId, index.indexName);
+
   if (index.exists()) {
     console.log("Index exists");
-    index
-      .replaceAllObjects(records, { safe: true })
-      .catch((error) => console.log(error));
+    await index.replaceAllObjects(records, { safe: true });
     console.log(
       `Pushed ${records.length} records. Algolia will update asynchronously`
     );

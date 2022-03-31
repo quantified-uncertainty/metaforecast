@@ -1,8 +1,8 @@
 /* Imports */
 import axios from "axios";
 
-import { databaseUpsert } from "../database/database-wrapper";
 import { calculateStars } from "../utils/stars";
+import { Platform } from "./";
 
 /* Definitions */
 let unixtime = new Date().getTime();
@@ -111,10 +111,11 @@ async function processData(data) {
 }
 
 /* Body */
-export async function fantasyscotus() {
-  let rawData = await fetchData();
-  let results = await processData(rawData);
-  await databaseUpsert({ contents: results, group: "fantasyscotus" });
-  console.log("Done");
-}
-//fantasyscotus()
+export const fantasyscotus: Platform = {
+  name: "fantasyscotus",
+  async fetcher() {
+    let rawData = await fetchData();
+    let results = await processData(rawData);
+    return results;
+  },
+};
