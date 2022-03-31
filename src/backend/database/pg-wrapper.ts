@@ -573,7 +573,21 @@ export async function pgUpsert({ contents, schema, tableName }) {
       );
 
       console.log("Sample: ");
-      console.log(JSON.stringify(contents.slice(0, 1), null, 4));
+      console.log(
+        JSON.stringify(
+          // only show the first three options
+          contents.slice(0, 1).map((question) => ({
+            ...question,
+            options: question.options
+              ? question.options.length > 3
+                ? question.options.slice(0, 3).concat("...")
+                : question.options
+              : null,
+          })),
+          null,
+          4
+        )
+      );
       await client.query("COMMIT");
     } catch (e) {
       await client.query("ROLLBACK");
