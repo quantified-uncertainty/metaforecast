@@ -26,7 +26,7 @@ See [./docs/configuration.md](./docs/configuration.md) for details.
 
 ### 3. Actually run
 
-`npm run cli` starts a local CLI which presents the user with choices. If you would like to skip that step, use the option name instead, e.g., `npm run cli wildeford`. 
+`npm run cli` starts a local CLI which presents the user with choices. If you would like to skip that step, use the option name instead, e.g., `npm run cli wildeford`.
 
 ![](./public/screenshot-cli.png)
 
@@ -50,7 +50,7 @@ Metaforecast has been integrated into:
 - [Fletcher](https://fletcher.fun/), a popular Discord bot. You can invoke metaforecast with `!metaforecast search-term`
 - [Elicit](https://elicit.org/), which uses GPT-3 to deliver vastly superior semantic search (as opposed to fuzzy word matching). If you have access to the Elicit IDE, you can use the action "Search Metaforecast database. This is not being updated regularly.
 
-We also provide a public database, which can be accessed with a script similar to [this one](./src/backend/manual/manualDownload.js). We are also open to integrating our Algolia search instance with other trusted services (in addition to Fletcher.)
+We also provide a public database, which can be accessed with a script similar to [this one](src/backend/manual/manualDownload.ts). We are also open to integrating our Algolia search instance with other trusted services (in addition to Fletcher.)
 
 In general, if you want to integrate metaforecast into your service, we want to hear from you.
 
