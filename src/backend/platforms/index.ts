@@ -18,13 +18,48 @@ import { xrisk } from "./xrisk";
 
 export interface Forecast {
   id: string;
+  // "fantasyscotus-580"
+
   title: string;
+  // "In Wooden v. U.S., the SCOTUS will affirm the lower court's decision"
+
   url: string;
+  // "https://fantasyscotus.net/user-predictions/case/wooden-v-us/"
+
   description: string;
+  // "62.50% (75 out of 120) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 6-3. Historically, FantasySCOTUS has chosen the correct side 50.00% of the time."
   platform: string;
+  // "FantasySCOTUS"
+
   options: any[];
+  /*
+  [
+    {
+      "name": "Yes",
+      "probability": 0.625,
+      "type": "PROBABILITY"
+    },
+    {
+      "name": "No",
+      "probability": 0.375,
+      "type": "PROBABILITY"
+    }
+  ]
+  */
+
   timestamp: string;
+  // "2022-02-11T21:42:19.291Z"
+
+  stars?: number;
+  // 2
+
   qualityindicators: any;
+  /*
+  {
+    "numforecasts": 120,
+    "stars": 2
+  }
+  */
   extra?: any;
 }
 
