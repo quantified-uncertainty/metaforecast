@@ -1,6 +1,6 @@
 import algoliasearch from "algoliasearch";
 
-import { databaseReadWithReadCredentials } from "../database/database-wrapper";
+import { pgReadWithReadCredentials } from "../database/pg-wrapper";
 import { mergeEverythingInner } from "../flow/mergeEverything";
 
 let cookie = process.env.ALGOLIA_MASTER_API_KEY;
@@ -41,8 +41,8 @@ let getoptionsstringforsearch = (record: any) => {
 };
 
 export async function rebuildAlgoliaDatabaseTheEasyWay() {
-  let records: any[] = await databaseReadWithReadCredentials({
-    group: "combined",
+  let records: any[] = await pgReadWithReadCredentials({
+    tableName: "combined",
   });
 
   records = records.map((record, index: number) => ({

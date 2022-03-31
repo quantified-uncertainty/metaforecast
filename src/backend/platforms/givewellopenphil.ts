@@ -2,7 +2,6 @@
 import axios from "axios";
 import fs from "fs";
 
-import { databaseUpsert } from "../database/database-wrapper";
 import { calculateStars } from "../utils/stars";
 import { Platform } from "./";
 
@@ -59,10 +58,10 @@ async function main1() {
     // console.log(result)
     results.push(result);
   }
-  await databaseUpsert({
-    contents: results,
-    group: "givewell-questions-unprocessed",
-  });
+  // await databaseUpsert({
+  //   contents: results,
+  //   group: "givewell-questions-unprocessed",
+  // });
 }
 
 export const givewellopenphil: Platform = {

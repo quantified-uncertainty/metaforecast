@@ -1,8 +1,8 @@
 /* Imports */
 import axios from "axios";
 
-import { databaseUpsert } from "../database/database-wrapper";
 import { calculateStars } from "../utils/stars";
+import { Platform } from "./";
 
 /* Definitions */
 let endpoint = "https://example.com/";
@@ -59,12 +59,11 @@ async function processPredictions(predictions) {
 
 /* Body */
 
-export async function example() {
-  let data = await fetchData();
-  let results = await processPredictions(data); // somehow needed
-  // console.log(results)
-  // let string = JSON.stringify(results, null, 2)
-  await databaseUpsert({ contents: results, group: "example" });
-  console.log("Done");
-}
-//example()
+export const example: Platform = {
+  name: "example",
+  async fetcher() {
+    let data = await fetchData();
+    let results = await processPredictions(data); // somehow needed
+    return results;
+  },
+};

@@ -4,6 +4,7 @@ export async function updateHistory() {
   let latest = await pgReadWithReadCredentials({ tableName: "combined" });
   await pgUpsert({
     contents: latest,
-    tableName: "h2022",
+    tableName: "history",
+    replace: false,
   });
 }

@@ -23,6 +23,6 @@ export async function mergeEverythingInner() {
 
 export async function mergeEverything() {
   let merged = await mergeEverythingInner();
-  await pgUpsert({ contents: merged, tableName: "combined" });
+  await pgUpsert({ contents: merged, tableName: "combined", replace: true });
   console.log("Done");
 }

@@ -1,4 +1,4 @@
-import { databaseUpsert } from "../database/database-wrapper";
+import { pgUpsert } from "../database/pg-wrapper";
 import { betfair } from "./betfair";
 import { fantasyscotus } from "./fantasyscotus";
 import { foretold } from "./foretold";
@@ -112,7 +112,11 @@ export const processPlatform = async (platform: Platform) => {
   }
   let results = await platform.fetcher();
   if (results && results.length) {
-    await databaseUpsert({ contents: results, group: platform.name });
+    await pgUpsert({
+      contents: results,
+      tableName: platform.name,
+      replace: true,
+    });
     console.log("Done");
   } else {
     console.log(`Platform ${platform.name} didn't return any results`);

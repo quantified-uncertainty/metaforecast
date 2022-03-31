@@ -5,30 +5,11 @@ import { hash } from "../utils/hash";
 import { measureTime } from "../utils/measureTime";
 import { roughSizeOfObject } from "../utils/roughSize";
 
-// Definitions
-const year = Number(new Date().toISOString().slice(0, 4));
-const allowed_years = [year, year + 1].map((year) => `h${year}`); // tables can't begin with number
-const allowed_months = [...Array(12).keys()]
-  .map((x) => x + 1)
-  .map((x) => (String(x).length == 1 ? `0${x}` : x));
-const allowed_year_month_histories = [].concat(
-  ...allowed_years.map((year) =>
-    allowed_months.map((month) => `${year}_${month}`)
-  )
-); // h2022_01
-const tableNamesWhitelistLatest = [
-  "combined",
-  ...platforms.map((platform) => platform.name),
-];
-const tableNamesWhiteListHistory = [
-  ...allowed_years,
-  ...allowed_year_month_histories,
-];
-const tableWhiteList = [
-  ...tableNamesWhitelistLatest,
-  ...tableNamesWhiteListHistory,
-  "dashboards",
-];
+const platformTableNames = platforms.map((platform) => platform.name);
+
+const forecastTableNames = [...platformTableNames, "combined", "history"];
+
+const allTableNames = [...forecastTableNames, "dashboards", "frontpage"];
 
 /* Postgres database connection code */
 const databaseURL = process.env.DIGITALOCEAN_POSTGRES;
@@ -107,20 +88,6 @@ async function pgInitializeScaffolding() {
   }
   let YOLO = false;
   if (YOLO) {
-    console.log("Create schemas");
-    await runPgCommand({
-      command: `CREATE SCHEMA IF NOT EXISTS public`,
-      pool: readWritePool,
-    });
-    console.log("");
-
-    console.log("Set search path");
-    await runPgCommand({
-      command: `SET search_path TO public;`,
-      pool: readWritePool,
-    });
-    console.log("");
-
     console.log("Set public user permissions");
     await setPermissionsForPublicUser();
     console.log("");
@@ -148,21 +115,19 @@ async function pgInitializeLatest() {
   let YOLO = false;
   if (YOLO) {
     console.log("Create tables & their indexes");
-    let schema = "latest";
-    for (let table of tableNamesWhitelistLatest) {
+    for (const table of platformTableNames) {
       await runPgCommand({
-        command: dropTable(schema),
+        command: dropTable(table),
         pool: readWritePool,
       });
       await runPgCommand({
-        command: buildMetaforecastTable(schema),
+        command: buildMetaforecastTable(table),
         pool: readWritePool,
       });
       await runPgCommand({
-        command: createUniqueIndex(schema),
+        command: createUniqueIndex(table),
         pool: readWritePool,
       });
-      //}
     }
     console.log("");
   } else {
@@ -224,25 +189,19 @@ let buildHistoryTable = (table: string) => `CREATE TABLE ${table} (
 export async function pgInitializeHistories() {
   let YOLO = false;
   if (YOLO) {
-    console.log("Drop all previous history tables (Danger!)");
-    console.log("TODO - drop history tables"); // hope we won't need it until we get proper migrations
-    console.log("");
-
-    console.log("Create tables & their indexes");
-    for (let table of tableNamesWhiteListHistory) {
-      await runPgCommand({
-        command: dropTable(table),
-        pool: readWritePool,
-      });
-      await runPgCommand({
-        command: buildHistoryTable(table),
-        pool: readWritePool,
-      });
-      await runPgCommand({
-        command: createIndex(table), // Not unique!!
-        pool: readWritePool,
-      });
-    }
+    console.log("Create history table & index");
+    await runPgCommand({
+      command: dropTable("history"),
+      pool: readWritePool,
+    });
+    await runPgCommand({
+      command: buildHistoryTable("history"),
+      pool: readWritePool,
+    });
+    await runPgCommand({
+      command: createIndex("history"), // Not unique!!
+      pool: readWritePool,
+    });
     console.log("");
   } else {
     console.log(
@@ -289,16 +248,15 @@ async function pgReadWithPool({
   tableName: string;
   pool: Pool;
 }) {
-  if (tableWhiteList.includes(tableName)) {
-    let command = `SELECT * from ${tableName}`;
-    let response = await runPgCommand({ command, pool });
-    let results = response.results;
-    return results;
-  } else {
+  if (!allTableNames.includes(tableName)) {
     throw Error(
       `Table ${tableName} not in whitelist; stopping to avoid tricky sql injections`
     );
   }
+  let command = `SELECT * from ${tableName}`;
+  let response = await runPgCommand({ command, pool });
+  let results = response.results;
+  return results;
 }
 
 export async function pgRead({ tableName }: { tableName: string }) {
@@ -344,7 +302,7 @@ export async function pgBulkInsert({
   tableName: string;
   client: PoolClient;
 }) {
-  if (!tableWhiteList.includes(tableName)) {
+  if (!forecastTableNames.includes(tableName)) {
     throw Error(
       `Table ${tableName} not in whitelist; stopping to avoid tricky sql injections`
     );
@@ -404,36 +362,30 @@ export async function pgBulkInsert({
   }
 }
 
-export async function pgInsertIntoDashboard({ datum, tableName }) {
-  if (tableWhiteList.includes(tableName)) {
-    let text = `INSERT INTO ${tableName} VALUES($1, $2, $3, $4, $5, $6, $7)`;
-    let timestamp = datum.timestamp || new Date().toISOString();
-    timestamp = timestamp.slice(0, 19).replace("T", " ");
-    let values = [
-      hash(JSON.stringify(datum.contents)),
-      datum.title || "",
-      datum.description || "",
-      JSON.stringify(datum.contents || []),
-      timestamp, // fixed
-      datum.creator || "",
-      JSON.stringify(datum.extra || []),
-    ];
-    const client = await readWritePool.connect();
-    let result;
-    try {
-      result = await client.query(text, values);
-    } catch (error) {
-      console.log(error);
-    } finally {
-      client.release();
-    }
-    // console.log(result)
-    return result;
-  } else {
-    throw Error(
-      `Table ${tableName} not in whitelist; stopping to avoid tricky sql injections`
-    );
+export async function pgInsertIntoDashboard({ datum }) {
+  let text = `INSERT INTO dashboards VALUES($1, $2, $3, $4, $5, $6, $7)`;
+  let timestamp = datum.timestamp || new Date().toISOString();
+  timestamp = timestamp.slice(0, 19).replace("T", " ");
+  let values = [
+    hash(JSON.stringify(datum.contents)),
+    datum.title || "",
+    datum.description || "",
+    JSON.stringify(datum.contents || []),
+    timestamp, // fixed
+    datum.creator || "",
+    JSON.stringify(datum.extra || []),
+  ];
+  const client = await readWritePool.connect();
+  let result;
+  try {
+    result = await client.query(text, values);
+  } catch (error) {
+    console.log(error);
+  } finally {
+    client.release();
   }
+  // console.log(result)
+  return result;
 }
 /* For reference
 	  id text,
@@ -461,10 +413,16 @@ pgInsertIntoDashboard({
   tableName: "dashboards",
 });
 */
-export async function pgUpsert({ contents, tableName }) {
-  if (!tableWhiteList.includes(tableName)) {
-    console.log("tableWhiteList:");
-    console.log(tableWhiteList);
+export async function pgUpsert({
+  contents,
+  tableName,
+  replace,
+}: {
+  contents: Forecast[];
+  tableName: string;
+  replace: boolean;
+}) {
+  if (!forecastTableNames.includes(tableName)) {
     throw Error(
       `Table ${tableName} not in whitelist; stopping to avoid tricky sql injections`
     );
@@ -474,18 +432,11 @@ export async function pgUpsert({ contents, tableName }) {
     const client = await readWritePool.connect();
     try {
       await client.query("BEGIN");
-      if (schema === "latest") {
-        client.query(`DELETE FROM latest.${tableName}`);
+      if (replace) {
+        client.query(`DELETE FROM ${tableName}`);
       }
       console.log(
         `Upserting ${contents.length} rows into postgres table ${tableName}.`
-      );
-      console.log(
-        `Expected to take ${Number((contents.length * 831.183) / 4422).toFixed(
-          2
-        )} seconds or ${Number((contents.length * 13.85305) / 4422).toFixed(
-          2
-        )} minutes`
       );
 
       await pgBulkInsert({ data: contents, tableName, client });

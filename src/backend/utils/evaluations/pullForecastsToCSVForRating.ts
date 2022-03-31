@@ -1,7 +1,7 @@
 /* Imports */
 import fs from "fs";
 
-import { databaseReadWithReadCredentials } from "../../database/database-wrapper";
+import { pgReadWithReadCredentials } from "../../database/pg-wrapper";
 
 /* Definitions */
 
@@ -24,7 +24,7 @@ let main = async () => {
     "PredictIt",
     "Rootclaim",
   ];
-  let json = await databaseReadWithReadCredentials({ group: "combined" });
+  let json = await pgReadWithReadCredentials({ tableName: "combined" });
   console.log(json.length);
   //let uniquePlatforms = [...new Set(json.map(forecast => forecast.platform))]
   //console.log(uniquePlatforms)
