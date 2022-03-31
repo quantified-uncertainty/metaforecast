@@ -4,7 +4,7 @@
 
 This repository includes the source code for both the website and the library that fetches forecasts needed to replace them. We also aim to provide tooling to integrate metaforecast with other services.
 
-[![](./public/screenshot.png)](https://metaforecast.org)
+[![](./public/screenshot-frontpage.png)](https://metaforecast.org)
 
 ## How to run
 
@@ -26,7 +26,9 @@ See [./docs/configuration.md](./docs/configuration.md) for details.
 
 ### 3. Actually run
 
-`npm run cli` starts a local CLI which presents the user with choices; if you would like to skip each step, use the option number instead, e.g., `npm run cli 14`.
+`npm run cli` starts a local CLI which presents the user with choices. If you would like to skip that step, use the option name instead, e.g., `npm run cli wildeford`. 
+
+![](./public/screenshot-cli.png)
 
 `npm run next-dev` starts a Next.js dev server with the website on `http://localhost:3000`.
 
