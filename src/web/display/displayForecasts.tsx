@@ -581,7 +581,7 @@ interface SingleProps {
   showIdToggle?: boolean;
 }
 
-export const displayForecast: React.FC<SingleProps> = ({
+export const DisplayForecast: React.FC<SingleProps> = ({
   forecast: {
     id,
     title,
@@ -760,20 +760,19 @@ const DisplayForecasts: React.FC<Props> = ({
   }
   return (
     <>
-      {results.slice(0, numDisplay).map((result) => {
+      {results.slice(0, numDisplay).map((result) => (
         /*let displayWithMetaculusCapture =
           fuseSearchResult.item.platform == "Metaculus"
             ? metaculusEmbed(fuseSearchResult.item)
             : displayForecast({ ...fuseSearchResult.item });
         */
-        const display = displayForecast({
-          forecast: result,
-          showTimeStamp: false,
-          expandFooterToFullWidth: false,
-          showIdToggle,
-        });
-        return display;
-      })}
+        <DisplayForecast
+          forecast={result}
+          showTimeStamp={false}
+          expandFooterToFullWidth={false}
+          showIdToggle={showIdToggle}
+        />
+      ))}
     </>
   );
 };

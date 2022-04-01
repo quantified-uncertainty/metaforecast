@@ -1,20 +1,27 @@
 /* Imports */
 
+import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 
-import { displayForecast } from "../web/display/displayForecasts";
+import { platforms } from "../backend/platforms";
+import { DisplayForecast } from "../web/display/displayForecasts";
 import { FrontendForecast } from "../web/platforms";
 import searchAccordingToQueryData from "../web/worker/searchAccordingToQueryData";
 
-/* Helper functions */
+interface Props {
+  results: FrontendForecast[];
+}
 
-export async function getServerSideProps(context) {
+export const getServerSideProps: GetServerSideProps<Props> = async (
+  context
+) => {
   let urlQuery = context.query; // this is an object, not a string which I have to parse!!
 
   let initialQueryParameters = {
     query: "",
     starsThreshold: 2,
     forecastsThreshold: 0,
+    forecastingPlatforms: platforms.map((platform) => platform.name),
     ...urlQuery,
   };
 
@@ -28,34 +35,32 @@ export async function getServerSideProps(context) {
       results: results,
     },
   };
-}
+};
 
-/* Body */
-export default function Home({ results }) {
-  /* Final return */
-  let result = results ? results[0] : null;
+const SecretEmbedPage: NextPage<Props> = ({ results }) => {
+  let result = results.length ? results[0] : null;
 
   return (
-    <>
-      <div className="mb-4 mt-8 flex flex-row justify-center items-center ">
-        <div className="w-6/12 place-self-center">
-          <div>
-            <div id="secretEmbed">
-              {result
-                ? displayForecast({
-                    ...result,
-                    showTimeStamp: true,
-                    expandFooterToFullWidth: true,
-                  })
-                : null}
-            </div>
-            <br></br>
-            <div id="secretObject">
-              {result ? JSON.stringify(result.item, null, 4) : null}
-            </div>
+    <div className="mb-4 mt-8 flex flex-row justify-center items-center">
+      <div className="w-6/12 place-self-center">
+        <div>
+          <div id="secretEmbed">
+            {result ? (
+              <DisplayForecast
+                forecast={result}
+                showTimeStamp={true}
+                expandFooterToFullWidth={true}
+              />
+            ) : null}
+          </div>
+          <br></br>
+          <div id="secretObject">
+            {result ? JSON.stringify(result, null, 4) : null}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
-}
+};
+
+export default SecretEmbedPage;

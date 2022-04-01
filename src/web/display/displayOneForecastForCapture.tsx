@@ -4,18 +4,18 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { FrontendForecast } from "../platforms";
 import { uploadToImgur } from "../worker/uploadToImgur";
-import { displayForecast } from "./displayForecasts";
+import { DisplayForecast } from "./displayForecasts";
 
 function displayOneForecastInner(result: FrontendForecast, containerRef) {
   return (
     <div ref={containerRef}>
-      {result
-        ? displayForecast({
-            forecast: result,
-            showTimeStamp: true,
-            expandFooterToFullWidth: true,
-          })
-        : null}
+      {result ? (
+        <DisplayForecast
+          forecast={result}
+          showTimeStamp={true}
+          expandFooterToFullWidth={true}
+        />
+      ) : null}
     </div>
   );
 }
