@@ -79,6 +79,7 @@ export const givewellopenphil: Platform = {
     const data = JSON.parse(rawdata);
     const dataWithDate = data.map((datum: any) => ({
       ...datum,
+      platform: platformName,
       timestamp: "2021-02-23",
     }));
     return dataWithDate;

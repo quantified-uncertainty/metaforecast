@@ -93,7 +93,7 @@ export default function Home({
   let isGraubardEasterEgg = (name) => (name == "Clay Graubard" ? true : false);
 
   return (
-    <Layout key="index" page={"dashboard"}>
+    <Layout page="dashboard">
       {/* Display forecasts */}
       <div className="mt-7 mb-7">
         <h1

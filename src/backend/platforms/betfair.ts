@@ -84,7 +84,7 @@ async function processPredictions(data) {
     /* if(Math.floor(Math.random() * 10) % 20 ==0){
        console.log(JSON.stringify(prediction, null, 4))
     } */
-    let id = `betfair-${prediction.marketId}`;
+    let id = `${platformName}-${prediction.marketId}`;
     let normalizationFactor = prediction.options
       .filter((option) => option.status == "ACTIVE" && option.totalMatched > 0)
       .map((option) => option.lastPriceTraded)

@@ -2,7 +2,7 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { Platform } from "./";
+import { Forecast, Platform } from "./";
 
 /* Definitions */
 const platformName = "manifold";
@@ -23,7 +23,7 @@ async function fetchData() {
   return response;
 }
 
-function showStatistics(results) {
+function showStatistics(results: Forecast[]) {
   console.log(`Num unresolved markets: ${results.length}`);
   let sum = (arr) => arr.reduce((tally, a) => tally + a, 0);
   let num2StarsOrMore = results.filter(
@@ -44,8 +44,8 @@ function showStatistics(results) {
 }
 
 async function processPredictions(predictions) {
-  let results = await predictions.map((prediction) => {
-    let id = `manifold-${prediction.id}`; // oops, doesn't match platform name
+  let results: Forecast[] = await predictions.map((prediction) => {
+    let id = `${platformName}-${prediction.id}`; // oops, doesn't match platform name
     let probability = prediction.probability;
     let options = [
       {
@@ -59,11 +59,11 @@ async function processPredictions(predictions) {
         type: "PROBABILITY",
       },
     ];
-    let result = {
+    const result: Forecast = {
       id: id,
       title: prediction.question,
       url: prediction.url,
-      platform: "Manifold Markets",
+      platform: platformName,
       description: prediction.description,
       options: options,
       timestamp: new Date().toISOString(),
@@ -84,9 +84,11 @@ async function processPredictions(predictions) {
     };
     return result;
   });
-  let unresolvedResults = results.filter((result) => !result.extra.isResolved);
-  // console.log(unresolvedResults);
-  return unresolvedResults; //resultsProcessed
+
+  const unresolvedResults = results.filter(
+    (result) => !result.extra.isResolved
+  );
+  return unresolvedResults;
 }
 
 export const manifold: Platform = {

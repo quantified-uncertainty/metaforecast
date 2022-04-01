@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function getDashboardForecastsByDashboardId({ dashboardId }) {
   console.log("getDashboardForecastsByDashboardId: ");
-  let dashboardForecastCompatibleWithFuse = [];
+  let dashboardContents = [];
   let dashboardItem = null;
   try {
     let { data } = await axios({
@@ -13,22 +13,13 @@ export async function getDashboardForecastsByDashboardId({ dashboardId }) {
       },
     });
     console.log(data);
-    let dashboardContents = data.dashboardContents;
+    dashboardContents = data.dashboardContents;
     dashboardItem = data.dashboardItem;
-    // let { dashboardContents, dashboardItem } = data
-    if (!!dashboardContents && !!dashboardContents.map) {
-      dashboardForecastCompatibleWithFuse = dashboardContents.map((result) => ({
-        item: result,
-        score: 0,
-      }));
-    } else {
-      console.log("Error in getDashboardForecastsByDashboardId");
-    }
   } catch (error) {
     console.log(error);
   } finally {
     return {
-      dashboardForecasts: dashboardForecastCompatibleWithFuse,
+      dashboardForecasts: dashboardContents,
       dashboardItem,
     };
   }

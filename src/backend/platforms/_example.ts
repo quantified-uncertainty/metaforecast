@@ -5,7 +5,8 @@ import { calculateStars } from "../utils/stars";
 import { Platform } from "./";
 
 /* Definitions */
-let endpoint = "https://example.com/";
+const platformName = "example";
+const endpoint = "https://example.com/";
 
 /* Support functions */
 
@@ -23,7 +24,7 @@ async function fetchData() {
 
 async function processPredictions(predictions) {
   let results = await predictions.map((prediction) => {
-    let id = `example-${prediction.id}`;
+    let id = `${platformName}-${prediction.id}`;
     let probability = prediction.probability;
     let options = [
       {
@@ -40,12 +41,12 @@ async function processPredictions(predictions) {
     let result = {
       title: prediction.title,
       url: `https://example.com`,
-      platform: "Example",
+      platform: platformName,
       description: prediction.description,
       options: options,
       timestamp: new Date().toISOString(),
       qualityindicators: {
-        stars: calculateStars("Example", {
+        stars: calculateStars(platformName, {
           /* some: somex, factors: factors */
         }),
         other: prediction.otherx,
@@ -60,7 +61,7 @@ async function processPredictions(predictions) {
 /* Body */
 
 export const example: Platform = {
-  name: "example",
+  name: platformName,
   label: "Example platform",
   color: "#ff0000",
   async fetcher() {

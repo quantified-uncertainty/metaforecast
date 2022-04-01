@@ -1,7 +1,7 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { Platform } from "./";
+import { Forecast, Platform } from "./";
 
 /* Definitions */
 const platformName = "smarkets";
@@ -159,7 +159,7 @@ export const smarkets: Platform = {
       name = name+ (contractName=="Yes"?'':` (${contracts["contracts"][0].name})`)
     }
     */
-      let result = {
+      let result: Forecast = {
         id: id,
         title: name,
         url: "https://smarkets.com/event/" + market.event_id + market.slug,
