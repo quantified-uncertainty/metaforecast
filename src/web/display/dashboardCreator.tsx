@@ -3,7 +3,7 @@ import React, { useState } from "react";
 let exampleInput = `{
   "title": "Random example",
   "description": "Just a random description of a random example",
-  "ids": [ "metaculus-372", "goodjudmentopen-2244", "metaculus-7550", "kalshi-09d060ee-b184-4167-b86b-d773e56b4162", "wildeford-5d1a04e1a8", "metaculus-2817" ],
+  "ids": [ "metaculus-372", "goodjudgmentopen-2244", "metaculus-7550", "kalshi-09d060ee-b184-4167-b86b-d773e56b4162", "wildeford-5d1a04e1a8", "metaculus-2817" ],
   "creator": "Peter Parker"
 }`;
 

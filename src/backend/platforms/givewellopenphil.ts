@@ -5,6 +5,8 @@ import fs from "fs";
 import { calculateStars } from "../utils/stars";
 import { Platform } from "./";
 
+const platformName = "givewellopenphil";
+
 /* Support functions */
 async function fetchPage(url: string) {
   let response = await axios({
@@ -48,11 +50,11 @@ async function main1() {
     let result = {
       title: title,
       url: url,
-      platform: "GiveWell",
+      platform: platformName,
       description: description,
       timestamp: new Date().toISOString(),
       qualityindicators: {
-        stars: calculateStars("GiveWell/OpenPhilanthropy", {}),
+        stars: calculateStars(platformName, {}),
       },
     }; // Note: This requires some processing afterwards
     // console.log(result)
@@ -65,7 +67,9 @@ async function main1() {
 }
 
 export const givewellopenphil: Platform = {
-  name: "givewellopenphil",
+  name: platformName,
+  label: "GiveWell/OpenPhilanthropy",
+  color: "#32407e",
   async fetcher() {
     // main1()
     return; // not necessary to refill the DB every time

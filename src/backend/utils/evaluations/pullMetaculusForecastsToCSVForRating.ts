@@ -26,7 +26,7 @@ let shuffleArray = (array) => {
 
 let main = async () => {
   let highQualityPlatforms = ["Metaculus"]; // ['CSET-foretell', 'Foretold', 'Good Judgment Open', 'Metaculus', 'PredictIt', 'Rootclaim']
-  let json = await pgReadWithReadCredentials({ tableName: "combined" });
+  let json = await pgReadWithReadCredentials({ tableName: "questions" });
   console.log(json.length);
   //let uniquePlatforms = [...new Set(json.map(forecast => forecast.platform))]
   //console.log(uniquePlatforms)

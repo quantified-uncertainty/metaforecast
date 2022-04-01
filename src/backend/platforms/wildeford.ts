@@ -7,6 +7,7 @@ import { calculateStars } from "../utils/stars";
 import { Platform } from "./";
 
 /* Definitions */
+const platformName = "wildeford";
 const SHEET_ID = "1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0"; // spreadsheet key is the long id in the sheets URL
 const endpoint = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit#gid=0`;
 // https://docs.google.com/spreadsheets/d/1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0/edit#gid=0
@@ -73,7 +74,7 @@ async function processPredictions(predictions) {
   );
   let results = currentPredictions.map((prediction) => {
     let title = prediction["Prediction"].replace(" [update]", "");
-    let id = `wildeford-${hash(title)}`;
+    let id = `${platformName}-${hash(title)}`;
     let probability = Number(prediction["Odds"].replace("%", "")) / 100;
     let options = [
       {
@@ -91,14 +92,14 @@ async function processPredictions(predictions) {
       id: id,
       title: title,
       url: prediction["url"],
-      platform: "Peter Wildeford",
+      platform: platformName,
       description: prediction["Notes"] || "",
       options: options,
       timestamp: new Date(
         Date.parse(prediction["Prediction Date"] + "Z")
       ).toISOString(),
       qualityindicators: {
-        stars: calculateStars("Peter Wildeford", null),
+        stars: calculateStars(platformName, null),
       },
     };
     return result;
@@ -120,7 +121,9 @@ export async function wildeford_inner(google_api_key) {
 }
 
 export const wildeford: Platform = {
-  name: "wildeford",
+  name: platformName,
+  label: "Peter Wildeford",
+  color: "#984158",
   async fetcher() {
     const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY; // See: https://developers.google.com/sheets/api/guides/authorizing#APIKey
     return await applyIfSecretExists(GOOGLE_API_KEY, wildeford_inner);

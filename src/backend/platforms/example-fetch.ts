@@ -23,7 +23,7 @@ async function fetchData() {
 
 async function processPredictions(predictions) {
   let results = await predictions.map((prediction) => {
-    let id = `platform-${prediction.id}`;
+    let id = `example-${prediction.id}`;
     let probability = prediction.probability;
     let options = [
       {
@@ -61,6 +61,8 @@ async function processPredictions(predictions) {
 
 export const example: Platform = {
   name: "example",
+  label: "Example platform",
+  color: "#ff0000",
   async fetcher() {
     let data = await fetchData();
     let results = await processPredictions(data); // somehow needed

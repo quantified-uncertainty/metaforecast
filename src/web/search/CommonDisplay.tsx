@@ -1,54 +1,13 @@
 import { useRouter } from "next/router";
-import React, {
-  DependencyList,
-  EffectCallback,
-  Fragment,
-  useEffect,
-  useState,
-} from "react";
+import React, { DependencyList, EffectCallback, Fragment, useEffect, useState } from "react";
 
 import ButtonsForStars from "../display/buttonsForStars";
 import Form from "../display/form";
-import MultiSelectPlatform from "../display/multiSelectPlatforms";
+import { MultiSelectPlatform } from "../display/multiSelectPlatforms";
 import { SliderElement } from "../display/slider";
-import { platformsWithLabels, PlatformWithLabel } from "../platforms";
+import { FrontendForecast } from "../platforms";
 import searchAccordingToQueryData from "../worker/searchAccordingToQueryData";
-
-interface QueryParametersWithoutNum {
-  query: string;
-  starsThreshold: number;
-  forecastsThreshold: number;
-  forecastingPlatforms: PlatformWithLabel[];
-}
-
-export interface QueryParameters extends QueryParametersWithoutNum {
-  numDisplay: number;
-}
-
-interface Props {
-  defaultResults: any;
-  initialResults: any;
-  initialQueryParameters: QueryParameters;
-  hasSearchbar: boolean;
-  hasCapture: boolean;
-  hasAdvancedOptions: boolean;
-  placeholder: string;
-  displaySeeMoreHint: boolean;
-  displayForecastsWrapper: (opts: {
-    results: any;
-    numDisplay: number;
-    whichResultToDisplayAndCapture: number;
-    showIdToggle: boolean;
-  }) => React.ReactNode;
-}
-
-export const defaultQueryParameters: QueryParametersWithoutNum = {
-  query: "",
-  starsThreshold: 2,
-  forecastsThreshold: 0,
-  forecastingPlatforms: platformsWithLabels, // weird key value format,
-};
-export const defaultNumDisplay = 21;
+import { Props as AnySearchPageProps, QueryParameters } from "./anySearchPage";
 
 const useNoInitialEffect = (effect: EffectCallback, deps: DependencyList) => {
   const initial = React.useRef(true);
@@ -61,11 +20,29 @@ const useNoInitialEffect = (effect: EffectCallback, deps: DependencyList) => {
   }, deps);
 };
 
+interface Props extends AnySearchPageProps {
+  hasSearchbar: boolean;
+  hasCapture: boolean;
+  hasAdvancedOptions: boolean;
+  placeholder: string;
+  displaySeeMoreHint: boolean;
+  displayForecastsWrapper: (opts: {
+    results: FrontendForecast[];
+    numDisplay: number;
+    whichResultToDisplayAndCapture: number;
+    showIdToggle: boolean;
+  }) => React.ReactNode;
+}
+
 /* Body */
 const CommonDisplay: React.FC<Props> = ({
   defaultResults,
   initialResults,
   initialQueryParameters,
+  defaultQueryParameters,
+  initialNumDisplay,
+  defaultNumDisplay,
+  platformsConfig,
   hasSearchbar,
   hasCapture,
   hasAdvancedOptions,
@@ -76,12 +53,11 @@ const CommonDisplay: React.FC<Props> = ({
   const router = useRouter();
   /* States */
 
-  const [queryParameters, setQueryParameters] =
-    useState<QueryParametersWithoutNum>(initialQueryParameters);
-
-  const [numDisplay, setNumDisplay] = useState(
-    initialQueryParameters.numDisplay ?? defaultNumDisplay
+  const [queryParameters, setQueryParameters] = useState<QueryParameters>(
+    initialQueryParameters
   );
+
+  const [numDisplay, setNumDisplay] = useState(initialNumDisplay);
 
   // used to distinguish numDisplay updates which force search and don't force search, see effects below
   const [forceSearch, setForceSearch] = useState(0);
@@ -100,25 +76,25 @@ const CommonDisplay: React.FC<Props> = ({
       numDisplay,
     };
 
-    let filterManually = (queryData: QueryParameters, results) => {
+    let filterManually = (
+      queryData: QueryParameters,
+      results: FrontendForecast[]
+    ) => {
       if (
         queryData.forecastingPlatforms &&
         queryData.forecastingPlatforms.length > 0
       ) {
-        let forecastingPlatforms = queryData.forecastingPlatforms.map(
-          (platformObj) => platformObj.value
-        );
         results = results.filter((result) =>
-          forecastingPlatforms.includes(result.item.platform)
+          queryData.forecastingPlatforms.includes(result.platform)
         );
       }
       if (queryData.starsThreshold === 4) {
         results = results.filter(
-          (result) => result.item.qualityindicators.stars >= 4
+          (result) => result.qualityindicators.stars >= 4
         );
       }
       if (queryData.forecastsThreshold) {
-        // results = results.filter(result => (result.qualityindicators && result.item.qualityindicators.numforecasts > forecastsThreshold))
+        // results = results.filter(result => (result.qualityindicators && result.qualityindicators.numforecasts > forecastsThreshold))
       }
       return results;
     };
@@ -128,17 +104,13 @@ const CommonDisplay: React.FC<Props> = ({
 
     let results = queryIsEmpty
       ? filterManually(queryData, defaultResults)
-      : await searchAccordingToQueryData(queryData);
+      : await searchAccordingToQueryData(queryData, numDisplay);
 
     setResults(results);
   }
 
   // I don't want the function which display forecasts (displayForecasts) to change with a change in queryParameters. But I want it to have access to the queryParameters, and in particular access to queryParameters.numDisplay. Hence why this function lives inside Home.
-  let getInfoToDisplayForecastsFunction = ({
-    results,
-    whichResultToDisplayAndCapture,
-    showIdToggle,
-  }) => {
+  let getInfoToDisplayForecastsFunction = () => {
     let numDisplayRounded =
       numDisplay % 3 != 0
         ? numDisplay + (3 - (Math.round(numDisplay) % 3))
@@ -154,7 +126,7 @@ const CommonDisplay: React.FC<Props> = ({
   const updateRoute = () => {
     const stringify = (key: string, value: any) => {
       if (key === "forecastingPlatforms") {
-        return value.map((x) => x.value).join("|");
+        return value.join("|");
       } else {
         return String(value);
       }
@@ -330,6 +302,7 @@ const CommonDisplay: React.FC<Props> = ({
             </div>
             <div className="flex col-span-3 items-center justify-center">
               <MultiSelectPlatform
+                platformsConfig={platformsConfig}
                 value={queryParameters.forecastingPlatforms}
                 onChange={onChangeSelectedPlatforms}
               />
@@ -344,13 +317,7 @@ const CommonDisplay: React.FC<Props> = ({
         </div>
       ) : null}
 
-      <div>
-        {getInfoToDisplayForecastsFunction({
-          results,
-          whichResultToDisplayAndCapture,
-          showIdToggle,
-        })}
-      </div>
+      <div>{getInfoToDisplayForecastsFunction()}</div>
 
       {displaySeeMoreHint &&
       (!results || (results.length != 0 && numDisplay < results.length)) ? (

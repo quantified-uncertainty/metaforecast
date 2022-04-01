@@ -1,13 +1,11 @@
 import { Pool, PoolClient } from "pg";
 
-import { Forecast, platforms } from "../platforms";
+import { Forecast } from "../platforms";
 import { hash } from "../utils/hash";
 import { measureTime } from "../utils/measureTime";
 import { roughSizeOfObject } from "../utils/roughSize";
 
-const platformTableNames = platforms.map((platform) => platform.name);
-
-const forecastTableNames = [...platformTableNames, "combined", "history"];
+const forecastTableNames = ["questions", "history"];
 
 const allTableNames = [...forecastTableNames, "dashboards", "frontpage"];
 
@@ -111,28 +109,27 @@ let buildMetaforecastTable = (table: string) => `CREATE TABLE ${table} (
     extra json
   );`;
 
-async function pgInitializeLatest() {
+async function pgInitializeQuestions() {
   let YOLO = false;
   if (YOLO) {
     console.log("Create tables & their indexes");
-    for (const table of platformTableNames) {
-      await runPgCommand({
-        command: dropTable(table),
-        pool: readWritePool,
-      });
-      await runPgCommand({
-        command: buildMetaforecastTable(table),
-        pool: readWritePool,
-      });
-      await runPgCommand({
-        command: createUniqueIndex(table),
-        pool: readWritePool,
-      });
-    }
+    const table = "questions";
+    await runPgCommand({
+      command: dropTable(table),
+      pool: readWritePool,
+    });
+    await runPgCommand({
+      command: buildMetaforecastTable(table),
+      pool: readWritePool,
+    });
+    await runPgCommand({
+      command: createUniqueIndex(table),
+      pool: readWritePool,
+    });
     console.log("");
   } else {
     console.log(
-      "pgInitializeLatest: This command is dangerous, set YOLO to true in the code to invoke it"
+      "pgInitializeQuestions: This command is dangerous, set YOLO to true in the code to invoke it"
     );
   }
 }
@@ -234,7 +231,7 @@ async function pgInitializeFrontpage() {
 
 export async function pgInitialize() {
   await pgInitializeScaffolding();
-  await pgInitializeLatest();
+  await pgInitializeQuestions();
   await pgInitializeHistories();
   await pgInitializeDashboards();
   await pgInitializeFrontpage();
@@ -416,11 +413,11 @@ pgInsertIntoDashboard({
 export async function pgUpsert({
   contents,
   tableName,
-  replace,
+  replacePlatform,
 }: {
   contents: Forecast[];
   tableName: string;
-  replace: boolean;
+  replacePlatform?: string;
 }) {
   if (!forecastTableNames.includes(tableName)) {
     throw Error(
@@ -432,8 +429,10 @@ export async function pgUpsert({
     const client = await readWritePool.connect();
     try {
       await client.query("BEGIN");
-      if (replace) {
-        client.query(`DELETE FROM ${tableName}`);
+      if (replacePlatform) {
+        await client.query(`DELETE FROM ${tableName} WHERE platform = $1`, [
+          replacePlatform,
+        ]);
       }
       console.log(
         `Upserting ${contents.length} rows into postgres table ${tableName}.`

@@ -23,7 +23,7 @@ export default async function handler(
     console.log(dashboardItem);
     let dashboardContents = await pgGetByIds({
       ids: dashboardItem.contents,
-      table: "combined",
+      table: "questions",
     });
     res.status(200).send({
       dashboardContents,

@@ -8,17 +8,11 @@ import CommonDisplay from "../web/search/CommonDisplay";
 
 export { getServerSideProps } from "../web/search/anySearchPage";
 
-const IndexPage: NextPage<Props> = ({
-  defaultResults,
-  initialResults,
-  initialQueryParameters,
-}) => {
+const IndexPage: NextPage<Props> = (props) => {
   return (
     <Layout page={"search"}>
       <CommonDisplay
-        defaultResults={defaultResults}
-        initialResults={initialResults}
-        initialQueryParameters={initialQueryParameters}
+        {...props}
         hasSearchbar={true}
         hasCapture={false}
         hasAdvancedOptions={true}

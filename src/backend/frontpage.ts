@@ -1,6 +1,7 @@
 import { pgRead, readWritePool } from "./database/pg-wrapper";
+import { Forecast } from "./platforms";
 
-export async function getFrontpageRaw() {
+export async function getFrontpage(): Promise<Forecast[]> {
   const client = await readWritePool.connect();
   const res = await client.query(
     "SELECT frontpage_sliced FROM frontpage ORDER BY id DESC LIMIT 1"
@@ -10,7 +11,7 @@ export async function getFrontpageRaw() {
   return res.rows[0].frontpage_sliced;
 }
 
-export async function getFrontpageFullRaw() {
+export async function getFrontpageFull(): Promise<Forecast[]> {
   const client = await readWritePool.connect();
   const res = await client.query(
     "SELECT frontpage_full FROM frontpage ORDER BY id DESC LIMIT 1"
@@ -20,31 +21,15 @@ export async function getFrontpageFullRaw() {
   return res.rows[0].frontpage_full;
 }
 
-export async function getFrontpage() {
-  let frontPageForecastsCompatibleWithFuse = [];
-  try {
-    let data = await getFrontpageRaw();
-    frontPageForecastsCompatibleWithFuse = data.map((result) => ({
-      item: result,
-      score: 0,
-    }));
-    return frontPageForecastsCompatibleWithFuse;
-  } catch (error) {
-    console.log(error);
-  } finally {
-    return frontPageForecastsCompatibleWithFuse;
-  }
-}
-
 export async function rebuildFrontpage() {
   const frontpageFull = await pgRead({
-    tableName: "combined",
+    tableName: "questions",
   });
 
   const client = await readWritePool.connect();
   const frontpageSliced = (
     await client.query(`
-    SELECT * FROM combined
+    SELECT * FROM questions
     WHERE
       (qualityindicators->>'stars')::int >= 3
       AND description != ''

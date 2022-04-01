@@ -1,7 +1,6 @@
 import { pgInitialize } from "../database/pg-wrapper";
 import { doEverything } from "../flow/doEverything";
 import { updateHistory } from "../flow/history/updateHistory";
-import { mergeEverything } from "../flow/mergeEverything";
 import { rebuildNetlifySiteWithNewData } from "../flow/rebuildNetliftySiteWithNewData";
 import { rebuildFrontpage } from "../frontpage";
 import { platforms, processPlatform } from "../platforms";
@@ -20,13 +19,6 @@ export const jobs: Job[] = [
     message: `Download predictions from ${platform.name}`,
     run: () => processPlatform(platform),
   })),
-  {
-    name: "merge",
-    message:
-      "Merge tables into one big table (and push the result to a pg database)",
-    run: mergeEverything,
-    separate: true,
-  },
   {
     name: "algolia",
     message: 'Rebuild algolia database ("index")',

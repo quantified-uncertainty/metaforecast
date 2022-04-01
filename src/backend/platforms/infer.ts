@@ -8,6 +8,7 @@ import toMarkdown from "../utils/toMarkdown";
 import { Forecast, Platform } from "./";
 
 /* Definitions */
+const platformName = "infer";
 let htmlEndPoint = "https://www.infer-pub.com/questions";
 String.prototype.replaceAll = function replaceAll(search, replace) {
   return this.split(search).join(replace);
@@ -145,7 +146,7 @@ async function fetchStats(questionUrl, cookie) {
     qualityindicators: {
       numforecasts: Number(numforecasts),
       numforecasters: Number(numforecasters),
-      stars: calculateStars("Infer", { numforecasts }),
+      stars: calculateStars(platformName, { numforecasts }),
     },
   };
 
@@ -218,7 +219,7 @@ async function infer_inner(cookie) {
         let moreinfo = await fetchStats(url, cookie);
         let questionNumRegex = new RegExp("questions/([0-9]+)");
         let questionNum = url.match(questionNumRegex)[1]; //.split("questions/")[1].split("-")[0];
-        let id = `infer-${questionNum}`;
+        let id = `${platformName}-${questionNum}`;
         let question = {
           id: id,
           title: title,
@@ -278,7 +279,9 @@ async function infer_inner(cookie) {
 }
 
 export const infer: Platform = {
-  name: "infer",
+  name: platformName,
+  label: "Infer",
+  color: "#223900",
   async fetcher() {
     let cookie = process.env.INFER_COOKIE;
     return await applyIfSecretExists(cookie, infer_inner);

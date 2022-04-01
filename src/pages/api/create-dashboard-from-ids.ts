@@ -1,7 +1,7 @@
-import crypto from "crypto";
 import { NextApiRequest, NextApiResponse } from "next/types";
 
 import { pgInsertIntoDashboard } from "../../backend/database/pg-wrapper";
+import { hash } from "../../backend/utils/hash";
 
 export default async function handler(
   req: NextApiRequest,
@@ -14,8 +14,6 @@ export default async function handler(
 
   let body = req.body;
   console.log(body);
-  const hash = (s: string) =>
-    crypto.createHash("sha256").update(s).digest("hex").slice(0, 10);
   try {
     let id = hash(JSON.stringify(body.ids));
     let pgResponse = await pgInsertIntoDashboard({

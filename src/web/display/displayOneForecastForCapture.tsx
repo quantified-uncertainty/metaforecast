@@ -2,16 +2,16 @@ import domtoimage from "dom-to-image"; // https://github.com/tsayen/dom-to-image
 import { useEffect, useRef, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
+import { FrontendForecast } from "../platforms";
 import { uploadToImgur } from "../worker/uploadToImgur";
 import { displayForecast } from "./displayForecasts";
 
-function displayOneForecastInner(result, containerRef) {
+function displayOneForecastInner(result: FrontendForecast, containerRef) {
   return (
     <div ref={containerRef}>
       {result
         ? displayForecast({
-            ...result.item,
-            score: result.score,
+            forecast: result,
             showTimeStamp: true,
             expandFooterToFullWidth: true,
           })
@@ -170,7 +170,7 @@ let generateMetaculusSource = (result, hasDisplayBeenCaptured) => {
 };
 
 interface Props {
-  result: any;
+  result: FrontendForecast;
 }
 
 const DisplayOneForecast: React.FC<Props> = ({ result }) => {

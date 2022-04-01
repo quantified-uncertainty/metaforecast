@@ -105,7 +105,7 @@ function calculateStarsGiveWellOpenPhil(data) {
   return starsInteger;
 }
 
-function calculateStarsGoodJudment(data) {
+function calculateStarsGoodJudgment(data) {
   let nuno = (data) => 4;
   let eli = (data) => 4;
   let misha = (data) => 3.5;
@@ -114,7 +114,7 @@ function calculateStarsGoodJudment(data) {
   return starsInteger;
 }
 
-function calculateStarsGoodJudmentOpen(data) {
+function calculateStarsGoodJudgmentOpen(data) {
   let nuno = (data) => (data.numforecasts > 100 ? 3 : 2);
   let eli = (data) => 3;
   let misha = (data) =>
@@ -173,7 +173,7 @@ function calculateStarsLadbrokes(data) {
   return starsInteger;
 }
 
-function calculateStarsManifoldMarkets(data) {
+function calculateStarsManifold(data) {
   let nuno = (data) =>
     data.volume7Days > 250 || (data.pool > 500 && data.volume7Days > 100)
       ? 2
@@ -268,14 +268,55 @@ function calculateStarsWilliamHill(data) {
   return starsInteger;
 }
 
-export function calculateStars(platform, data) {
+export function calculateStars(platform: string, data) {
   let stars = 2;
   switch (platform) {
+    case "betfair":
+      stars = calculateStarsBetfair(data);
+      break;
+    case "infer":
+      stars = calculateStarsInfer(data);
+      break;
+    case "foretold":
+      stars = calculateStarsForetold(data);
+      break;
+    case "givewellopenphil":
+      stars = calculateStarsGiveWellOpenPhil(data);
+      break;
+    case "goodjudgment":
+      stars = calculateStarsGoodJudgment(data);
+      break;
+    case "goodjudgmentopen":
+      stars = calculateStarsGoodJudgmentOpen(data);
+      break;
+    case "kalshi":
+      stars = calculateStarsKalshi(data);
+      break;
+    case "manifold":
+      stars = calculateStarsManifold(data);
+      break;
+    case "metaculus":
+      stars = calculateStarsMetaculus(data);
+      break;
+    case "polymarket":
+      stars = calculateStarsPolymarket(data);
+      break;
+    case "predictit":
+      stars = calculateStarsPredictIt(data);
+      break;
+    case "rootclaim":
+      stars = calculateStarsRootclaim(data);
+      break;
+    case "smarkets":
+      stars = calculateStarsSmarkets(data);
+      break;
+    case "wildeford":
+      stars = calculateStarsWildeford(data);
+      break;
+
+    // deprecated
     case "AstralCodexTen":
       stars = calculateStarsAstralCodexTen(data);
-      break;
-    case "Betfair":
-      stars = calculateStarsBetfair(data);
       break;
     case "CoupCast":
       stars = calculateStarsCoupCast(data);
@@ -289,53 +330,14 @@ export function calculateStars(platform, data) {
     case "Estimize":
       stars = calculateStarsEstimize(data);
       break;
-    case "Foretold":
-      stars = calculateStarsForetold(data);
-      break;
-    case "GiveWell/OpenPhilanthropy":
-      stars = calculateStarsGiveWellOpenPhil(data);
-      break;
-    case "Good Judgment":
-      stars = calculateStarsGoodJudment(data);
-      break;
-    case "Good Judgment Open":
-      stars = calculateStarsGoodJudmentOpen(data);
-      break;
     case "Hypermind":
       stars = calculateStarsHypermind(data);
-      break;
-    case "Infer":
-      stars = calculateStarsInfer(data);
-      break;
-    case "Kalshi":
-      stars = calculateStarsKalshi(data);
       break;
     case "Ladbrokes":
       stars = calculateStarsLadbrokes(data);
       break;
-    case "Manifold Markets":
-      stars = calculateStarsManifoldMarkets(data);
-      break;
-    case "Metaculus":
-      stars = calculateStarsMetaculus(data);
-      break;
     case "Omen":
       stars = calculateStarsOmen(data);
-      break;
-    case "Polymarket":
-      stars = calculateStarsPolymarket(data);
-      break;
-    case "PredictIt":
-      stars = calculateStarsPredictIt(data);
-      break;
-    case "Rootclaim":
-      stars = calculateStarsRootclaim(data);
-      break;
-    case "Smarkets":
-      stars = calculateStarsSmarkets(data);
-      break;
-    case "Peter Wildeford":
-      stars = calculateStarsWildeford(data);
       break;
     case "WilliamHill":
       stars = calculateStarsWilliamHill(data);

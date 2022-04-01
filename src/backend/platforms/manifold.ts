@@ -5,6 +5,7 @@ import { calculateStars } from "../utils/stars";
 import { Platform } from "./";
 
 /* Definitions */
+const platformName = "manifold";
 let endpoint = "https://manifold.markets/api/v0/markets";
 // See https://manifoldmarkets.notion.site/Manifold-Markets-API-5e7d0aef4dcf452bb04b319e178fabc5
 
@@ -44,7 +45,7 @@ function showStatistics(results) {
 
 async function processPredictions(predictions) {
   let results = await predictions.map((prediction) => {
-    let id = `manifold-${prediction.id}`;
+    let id = `manifold-${prediction.id}`; // oops, doesn't match platform name
     let probability = prediction.probability;
     let options = [
       {
@@ -67,7 +68,7 @@ async function processPredictions(predictions) {
       options: options,
       timestamp: new Date().toISOString(),
       qualityindicators: {
-        stars: calculateStars("Manifold Markets", {
+        stars: calculateStars(platformName, {
           volume7Days: prediction.volume7Days,
           volume24Hours: prediction.volume24Hours,
           pool: prediction.pool,
@@ -88,8 +89,10 @@ async function processPredictions(predictions) {
   return unresolvedResults; //resultsProcessed
 }
 
-export const manifoldmarkets: Platform = {
-  name: "manifoldmarkets",
+export const manifold: Platform = {
+  name: platformName,
+  label: "Manifold Markets",
+  color: "#793466",
   async fetcher() {
     let data = await fetchData();
     let results = await processPredictions(data); // somehow needed

@@ -9,7 +9,7 @@ let locationData = "./data/";
 /* Body */
 // let rawdata =  fs.readFileSync("./data/merged-questions.json") // run from topmost folder, not from src
 async function main() {
-  let data = await pgReadWithReadCredentials({ tableName: "combined" }); //JSON.parse(rawdata)
+  let data = await pgReadWithReadCredentials({ tableName: "questions" }); //JSON.parse(rawdata)
   let processDescription = (description) => {
     if (description == null || description == undefined || description == "") {
       return "";

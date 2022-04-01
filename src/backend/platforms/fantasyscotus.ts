@@ -2,7 +2,9 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { Platform } from "./";
+import { Forecast, Platform } from "./";
+
+const platformName = "fantasyscotus";
 
 /* Definitions */
 let unixtime = new Date().getTime();
@@ -65,19 +67,19 @@ async function processData(data) {
   let historicalPercentageCorrect = data.stats.pcnt_correct;
   let historicalProbabilityCorrect =
     Number(historicalPercentageCorrect.replace("%", "")) / 100;
-  let results = [];
+  let results: Forecast[] = [];
   for (let event of events) {
     if (event.accuracy == "") {
-      let id = `fantasyscotus-${event.id}`;
+      let id = `${platformName}-${event.id}`;
       // if the thing hasn't already resolved
       let predictionData = await getPredictionsData(event.docket_url);
       let pAffirm = predictionData.proportionAffirm;
       //let trackRecord = event.prediction.includes("Affirm") ? historicalProbabilityCorrect : 1-historicalProbabilityCorrect
-      let eventObject = {
+      let eventObject: Forecast = {
         id: id,
         title: `In ${event.short_name}, the SCOTUS will affirm the lower court's decision`,
         url: `https://fantasyscotus.net/user-predictions${event.docket_url}`,
-        platform: "FantasySCOTUS",
+        platform: platformName,
         description: `${(pAffirm * 100).toFixed(2)}% (${
           predictionData.numAffirm
         } out of ${
@@ -100,7 +102,7 @@ async function processData(data) {
         timestamp: new Date().toISOString(),
         qualityindicators: {
           numforecasts: Number(predictionData.numForecasts),
-          stars: calculateStars("FantasySCOTUS", {}),
+          stars: calculateStars(platformName, {}),
         },
       };
       results.push(eventObject);
@@ -112,7 +114,9 @@ async function processData(data) {
 
 /* Body */
 export const fantasyscotus: Platform = {
-  name: "fantasyscotus",
+  name: platformName,
+  label: "FantasySCOTUS",
+  color: "#231149",
   async fetcher() {
     let rawData = await fetchData();
     let results = await processData(rawData);

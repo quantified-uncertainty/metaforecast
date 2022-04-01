@@ -5,6 +5,8 @@ import https from "https";
 import { calculateStars } from "../utils/stars";
 import { Forecast, Platform } from "./";
 
+const platformName = "betfair";
+
 /* Definitions */
 let endpoint = process.env.SECRET_BETFAIR_ENDPOINT;
 
@@ -121,12 +123,14 @@ async function processPredictions(data) {
       id: id,
       title: title,
       url: `https://www.betfair.com/exchange/plus/politics/market/${prediction.marketId}`,
-      platform: "Betfair",
+      platform: platformName,
       description: description,
       options: options,
       timestamp: new Date().toISOString(),
       qualityindicators: {
-        stars: calculateStars("Betfair", { volume: prediction.totalMatched }),
+        stars: calculateStars(platformName, {
+          volume: prediction.totalMatched,
+        }),
         volume: prediction.totalMatched,
       },
     };
@@ -136,7 +140,9 @@ async function processPredictions(data) {
 }
 
 export const betfair: Platform = {
-  name: "betfair",
+  name: platformName,
+  label: "Betfair",
+  color: "#3d674a",
   async fetcher() {
     const data = await fetchPredictions();
     const results = await processPredictions(data); // somehow needed

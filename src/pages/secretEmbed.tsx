@@ -3,7 +3,7 @@
 import React from "react";
 
 import { displayForecast } from "../web/display/displayForecasts";
-import { platformsWithLabels } from "../web/platforms";
+import { FrontendForecast } from "../web/platforms";
 import searchAccordingToQueryData from "../web/worker/searchAccordingToQueryData";
 
 /* Helper functions */
@@ -15,18 +15,12 @@ export async function getServerSideProps(context) {
     query: "",
     starsThreshold: 2,
     forecastsThreshold: 0,
-    forecastingPlatforms: platformsWithLabels, // weird key value format,
     ...urlQuery,
   };
 
-  let results;
-  switch (initialQueryParameters.query != "") {
-    case true:
-      results = await searchAccordingToQueryData(initialQueryParameters);
-      break;
-    default:
-      results = [];
-      break;
+  let results: FrontendForecast[] = [];
+  if (initialQueryParameters.query != "") {
+    results = await searchAccordingToQueryData(initialQueryParameters, 1);
   }
 
   return {
@@ -49,8 +43,7 @@ export default function Home({ results }) {
             <div id="secretEmbed">
               {result
                 ? displayForecast({
-                    ...result.item,
-                    score: result.score,
+                    ...result,
                     showTimeStamp: true,
                     expandFooterToFullWidth: true,
                   })

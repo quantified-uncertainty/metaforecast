@@ -4,10 +4,10 @@ import { fantasyscotus } from "./fantasyscotus";
 import { foretold } from "./foretold";
 import { givewellopenphil } from "./givewellopenphil";
 import { goodjudgment } from "./goodjudgment";
-import { goodjudmentopen } from "./goodjudmentopen";
+import { goodjudgmentopen } from "./goodjudgmentopen";
 import { infer } from "./infer";
 import { kalshi } from "./kalshi";
-import { manifoldmarkets } from "./manifoldmarkets";
+import { manifold } from "./manifold";
 import { metaculus } from "./metaculus";
 import { polymarket } from "./polymarket";
 import { predictit } from "./predictit";
@@ -67,7 +67,9 @@ export interface Forecast {
 export type PlatformFetcher = () => Promise<Forecast[] | null>;
 
 export interface Platform {
-  name: string;
+  name: string; // short name for ids and `platform` db column, e.g. "xrisk"
+  label: string; // longer name for displaying on frontend etc., e.g. "X-risk estimates"
+  color: string; // used on frontend
   fetcher?: PlatformFetcher;
 }
 
@@ -92,10 +94,10 @@ export const platforms: Platform[] = [
   foretold,
   givewellopenphil,
   goodjudgment,
-  goodjudmentopen,
+  goodjudgmentopen,
   infer,
   kalshi,
-  manifoldmarkets,
+  manifold,
   metaculus,
   polymarket,
   predictit,
@@ -114,8 +116,8 @@ export const processPlatform = async (platform: Platform) => {
   if (results && results.length) {
     await pgUpsert({
       contents: results,
-      tableName: platform.name,
-      replace: true,
+      tableName: "questions",
+      replacePlatform: platform.name,
     });
     console.log("Done");
   } else {

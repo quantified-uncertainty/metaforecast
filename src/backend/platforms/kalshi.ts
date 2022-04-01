@@ -5,6 +5,7 @@ import { calculateStars } from "../utils/stars";
 import { Platform } from "./";
 
 /* Definitions */
+const platformName = "kalshi";
 let jsonEndpoint = "https://trading-api.kalshi.com/v1/cached/markets/"; //"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
 
 async function fetchAllMarkets() {
@@ -34,17 +35,17 @@ async function processMarkets(markets) {
         type: "PROBABILITY",
       },
     ];
-    let id = `kalshi-${market.id}`;
+    let id = `${platformName}-${market.id}`;
     let result = {
       id: id,
       title: market.title.replaceAll("*", ""),
       url: `https://kalshi.com/markets/${market.ticker_name}`,
-      platform: "Kalshi",
+      platform: platformName,
       description: `${market.settle_details}. The resolution source is: ${market.ranged_group_name} (${market.settle_source_url})`,
       options: options,
       timestamp: new Date().toISOString(),
       qualityindicators: {
-        stars: calculateStars("Kalshi", {
+        stars: calculateStars(platformName, {
           shares_volume: market.volume,
           interest: market.open_interest,
         }),
@@ -70,7 +71,9 @@ async function processMarkets(markets) {
 }
 
 export const kalshi: Platform = {
-  name: "kalshi",
+  name: platformName,
+  label: "Kalshi",
+  color: "#615691",
   fetcher: async function () {
     let markets = await fetchAllMarkets();
     return await processMarkets(markets);

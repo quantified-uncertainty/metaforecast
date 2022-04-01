@@ -8,6 +8,7 @@ import { calculateStars } from "../utils/stars";
 import { Platform } from "./";
 
 /* Definitions */
+const platformName = "goodjudgment";
 let endpoint = "https://goodjudgment.io/superforecasts/";
 String.prototype.replaceAll = function replaceAll(search, replace) {
   return this.split(search).join(replace);
@@ -15,7 +16,9 @@ String.prototype.replaceAll = function replaceAll(search, replace) {
 
 /* Body */
 export const goodjudgment: Platform = {
-  name: "goodjudgment",
+  name: platformName,
+  label: "Good Judgment",
+  color: "#7d4f1b",
   async fetcher() {
     // Proxy fuckery
     let proxy;
@@ -64,7 +67,7 @@ export const goodjudgment: Platform = {
       let title = table[0]["0"].split("\t\t\t").splice(3)[0];
       if (title != undefined) {
         title = title.replaceAll("</a>", "");
-        let id = `goodjudgment-${hash(title)}`;
+        let id = `${platformName}-${hash(title)}`;
         let description = table
           .filter((row) => row["0"].includes("BACKGROUND:"))
           .map((row) => row["0"])
@@ -101,12 +104,12 @@ export const goodjudgment: Platform = {
           id: id,
           title: title,
           url: endpoint,
-          platform: "Good Judgment",
+          platform: platformName,
           description: description,
           options: options,
           timestamp: new Date().toISOString(),
           qualityindicators: {
-            stars: calculateStars("Good Judgment", {}),
+            stars: calculateStars(platformName, {}),
           },
           extra: {
             superforecastercommentary: analysis || "",
