@@ -5,6 +5,9 @@ import { calculateStars } from "../utils/stars";
 import { Platform } from "./";
 
 /* Definitions */
+
+const platformName = "foretold";
+
 let graphQLendpoint = "https://api.foretold.io/graphql";
 let highQualityCommunities = [
   "0104d8e8-07e4-464b-8b32-74ef22b49f21",
@@ -54,7 +57,9 @@ async function fetchAllCommunityQuestions(communityId) {
 }
 
 export const foretold: Platform = {
-  name: "foretold",
+  name: platformName,
+  label: "Foretold",
+  color: "#62520b",
   async fetcher() {
     let results = [];
     for (let community of highQualityCommunities) {
@@ -62,7 +67,7 @@ export const foretold: Platform = {
       questions = questions.map((question) => question.node);
       questions = questions.filter((question) => question.previousAggregate); // Questions without any predictions
       questions.forEach((question) => {
-        let id = `foretold-${question.id}`;
+        let id = `${platformName}-${question.id}`;
         let options = [];
         if (question.valueType == "PERCENTAGE") {
           let probability = question.previousAggregate.value.percentage;
@@ -83,13 +88,13 @@ export const foretold: Platform = {
           id: id,
           title: question.name,
           url: `https://www.foretold.io/c/${community}/m/${question.id}`,
-          platform: "Foretold",
+          platform: platformName,
           description: "",
           options: options,
           timestamp: new Date().toISOString(),
           qualityindicators: {
             numforecasts: Math.floor(Number(question.measurementCount) / 2),
-            stars: calculateStars("Foretold", {}),
+            stars: calculateStars(platformName, {}),
           },
           /*liquidity: liquidity.toFixed(2),
           tradevolume: tradevolume.toFixed(2),

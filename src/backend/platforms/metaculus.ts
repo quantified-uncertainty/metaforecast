@@ -6,6 +6,7 @@ import toMarkdown from "../utils/toMarkdown";
 import { Platform } from "./";
 
 /* Definitions */
+const platformName = "metaculus";
 let jsonEndPoint = "https://www.metaculus.com/api2/questions/?page=";
 let now = new Date().toISOString();
 let DEBUG_MODE = "off";
@@ -49,7 +50,7 @@ async function fetchMetaculusQuestions(next) {
   return data;
 }
 
-function sleep(ms) {
+function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
@@ -94,7 +95,9 @@ async function fetchMetaculusQuestionDescription(slug) {
 }
 
 export const metaculus: Platform = {
-  name: "metaculus",
+  name: platformName,
+  label: "Metaculus",
+  color: "#006669",
   async fetcher() {
     // let metaculusQuestionsInit = await fetchMetaculusQuestions(1)
     // let numQueries = Math.round(Number(metaculusQuestionsInit.count) / 20)
@@ -144,18 +147,18 @@ export const metaculus: Platform = {
                 },
               ];
             }
-            let id = `metaculus-${result.id}`;
+            let id = `${platformName}-${result.id}`;
             let interestingInfo = {
               id: id,
               title: result.title,
               url: "https://www.metaculus.com" + result.page_url,
-              platform: "Metaculus",
+              platform: platformName,
               description: description,
               options: options,
               timestamp: new Date().toISOString(),
               qualityindicators: {
                 numforecasts: Number(result.number_of_predictions),
-                stars: calculateStars("Metaculus", {
+                stars: calculateStars(platformName, {
                   numforecasts: result.number_of_predictions,
                 }),
               },

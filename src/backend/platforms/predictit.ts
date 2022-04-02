@@ -1,9 +1,10 @@
-/* Imports */
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
 import { Platform } from "./";
+
+const platformName = "predictit";
 
 /* Support functions */
 async function fetchmarkets() {
@@ -39,7 +40,9 @@ function sleep(ms: number) {
 
 /* Body */
 export const predictit: Platform = {
-  name: "predictit",
+  name: platformName,
+  label: "PredictIt",
+  color: "#460c00",
   async fetcher() {
     let markets = await fetchmarkets();
     let marketVolumes = await fetchmarketvolumes();
@@ -53,7 +56,7 @@ export const predictit: Platform = {
     let results = [];
     for (let market of markets) {
       // console.log(market.name)
-      let id = `predictit-${market.id}`;
+      let id = `${platformName}-${market.id}`;
       let isbinary = market.contracts.length == 1;
       await sleep(3000 * (1 + Math.random()));
       let descriptionraw = await fetchmarketrules(market.id);
@@ -97,12 +100,12 @@ export const predictit: Platform = {
         id: id,
         title: market["name"],
         url: market.url,
-        platform: "PredictIt",
+        platform: platformName,
         description: description,
         options: options,
         timestamp: new Date().toISOString(),
         qualityindicators: {
-          stars: calculateStars("PredictIt", {}),
+          stars: calculateStars(platformName, {}),
           shares_volume: shares_volume,
         },
       };

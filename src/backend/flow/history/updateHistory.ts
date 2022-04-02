@@ -1,12 +1,9 @@
-import {
-  databaseReadWithReadCredentials,
-  databaseUpsert,
-} from "../../database/database-wrapper";
+import { pgReadWithReadCredentials, pgUpsert } from "../../database/pg-wrapper";
 
 export async function updateHistory() {
-  let latest = await databaseReadWithReadCredentials({ group: "combined" });
-  await databaseUpsert({
+  let latest = await pgReadWithReadCredentials({ tableName: "questions" });
+  await pgUpsert({
     contents: latest,
-    group: "history",
+    tableName: "history",
   });
 }

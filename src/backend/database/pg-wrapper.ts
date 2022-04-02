@@ -1,37 +1,13 @@
 import { Pool, PoolClient } from "pg";
 
-import { Forecast, platforms } from "../platforms";
+import { Forecast } from "../platforms";
 import { hash } from "../utils/hash";
 import { measureTime } from "../utils/measureTime";
 import { roughSizeOfObject } from "../utils/roughSize";
 
-// Definitions
-const schemas = ["latest", "history"];
-const year = Number(new Date().toISOString().slice(0, 4));
-const allowed_years = [year, year + 1].map((year) => `h${year}`); // tables can't begin with number
-const allowed_months = [...Array(12).keys()]
-  .map((x) => x + 1)
-  .map((x) => (String(x).length == 1 ? `0${x}` : x));
-const allowed_year_month_histories = [].concat(
-  ...allowed_years.map((year) =>
-    allowed_months.map((month) => `${year}_${month}`)
-  )
-); // h2022_01
-const tableNamesWhitelistLatest = [
-  "combined",
-  ...platforms.map((platform) => platform.name),
-];
-const tableNamesWhiteListHistory = [
-  ...allowed_years,
-  ...allowed_year_month_histories,
-];
-const createFullName = (schemaName, namesArray) =>
-  namesArray.map((name) => `${schemaName}.${name}`);
-const tableWhiteList = [
-  ...createFullName("latest", tableNamesWhitelistLatest),
-  ...createFullName("history", tableNamesWhiteListHistory),
-  "latest.dashboards",
-];
+const forecastTableNames = ["questions", "history"];
+
+const allTableNames = [...forecastTableNames, "dashboards", "frontpage"];
 
 /* Postgres database connection code */
 const databaseURL = process.env.DIGITALOCEAN_POSTGRES;
@@ -80,12 +56,11 @@ export const runPgCommand = async ({
 };
 
 // Initialize
-let dropTable = (schema: string, table: string) =>
-  `DROP TABLE IF EXISTS ${schema}.${table}`;
-let createIndex = (schema: string, table: string) =>
-  `CREATE INDEX ${schema}_${table}_id_index ON ${schema}.${table} (id);`;
-let createUniqueIndex = (schema: string, table: string) =>
-  `CREATE UNIQUE INDEX ${schema}_${table}_id_index ON ${schema}.${table} (id);`;
+let dropTable = (table: string) => `DROP TABLE IF EXISTS ${table}`;
+let createIndex = (table: string) =>
+  `CREATE INDEX ${table}_id_index ON ${table} (id);`;
+let createUniqueIndex = (table: string) =>
+  `CREATE UNIQUE INDEX ${table}_id_index ON ${table} (id);`;
 
 async function pgInitializeScaffolding() {
   async function setPermissionsForPublicUser() {
@@ -97,42 +72,20 @@ async function pgInitializeScaffolding() {
       await runPgCommand({ command, pool: readWritePool });
     }
 
-    let buildGrantSelectForSchema = (schema: string) =>
-      `GRANT SELECT ON ALL TABLES IN SCHEMA ${schema} TO public_read_only_user`;
-    for (let schema of schemas) {
-      await runPgCommand({
-        command: buildGrantSelectForSchema(schema),
-        pool: readWritePool,
-      });
-    }
+    await runPgCommand({
+      command:
+        "GRANT SELECT ON ALL TABLES IN SCHEMA public TO public_read_only_user",
+      pool: readWritePool,
+    });
 
-    let alterDefaultPrivilegesForSchema = (schema: string) =>
-      `ALTER DEFAULT PRIVILEGES IN SCHEMA ${schema} GRANT SELECT ON TABLES TO public_read_only_user`;
-    for (let schema of schemas) {
-      await runPgCommand({
-        command: alterDefaultPrivilegesForSchema(schema),
-        pool: readWritePool,
-      });
-    }
+    await runPgCommand({
+      command:
+        "ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO public_read_only_user",
+      pool: readWritePool,
+    });
   }
   let YOLO = false;
   if (YOLO) {
-    console.log("Create schemas");
-    for (let schema of schemas) {
-      await runPgCommand({
-        command: `CREATE SCHEMA IF NOT EXISTS ${schema}`,
-        pool: readWritePool,
-      });
-    }
-    console.log("");
-
-    console.log("Set search path");
-    await runPgCommand({
-      command: `SET search_path TO ${schemas.join(",")},public;`,
-      pool: readWritePool,
-    });
-    console.log("");
-
     console.log("Set public user permissions");
     await setPermissionsForPublicUser();
     console.log("");
@@ -143,10 +96,7 @@ async function pgInitializeScaffolding() {
   }
 }
 
-let buildMetaforecastTable = (
-  schema: string,
-  table: string
-) => `CREATE TABLE ${schema}.${table} (
+let buildMetaforecastTable = (table: string) => `CREATE TABLE ${table} (
     id text, 
     title text, 
     url text, 
@@ -159,45 +109,34 @@ let buildMetaforecastTable = (
     extra json
   );`;
 
-async function pgInitializeLatest() {
+async function pgInitializeQuestions() {
   let YOLO = false;
   if (YOLO) {
     console.log("Create tables & their indexes");
-    let schema = "latest";
-    for (let table of tableNamesWhitelistLatest) {
-      await runPgCommand({
-        command: dropTable(schema, table),
-        pool: readWritePool,
-      });
-      await runPgCommand({
-        command: buildMetaforecastTable(schema, table),
-        pool: readWritePool,
-      });
-      /*
-      if (schema == "history") {
-        await runPgCommand({
-          command: createIndex(schema, table),
-          pool: readWritePool,
-        });
-      } else {
-        */
-      await runPgCommand({
-        command: createUniqueIndex(schema, table),
-        pool: readWritePool,
-      });
-      //}
-    }
+    const table = "questions";
+    await runPgCommand({
+      command: dropTable(table),
+      pool: readWritePool,
+    });
+    await runPgCommand({
+      command: buildMetaforecastTable(table),
+      pool: readWritePool,
+    });
+    await runPgCommand({
+      command: createUniqueIndex(table),
+      pool: readWritePool,
+    });
     console.log("");
   } else {
     console.log(
-      "pgInitializeLatest: This command is dangerous, set YOLO to true in the code to invoke it"
+      "pgInitializeQuestions: This command is dangerous, set YOLO to true in the code to invoke it"
     );
   }
 }
 
 async function pgInitializeDashboards() {
   let buildDashboard = () =>
-    `CREATE TABLE latest.dashboards (
+    `CREATE TABLE dashboards (
 	  id text,
 		title text,
 		description text,
@@ -208,23 +147,10 @@ async function pgInitializeDashboards() {
 	);`;
   let YOLO = false;
   if (YOLO) {
-    await runPgCommand({
-      command: `CREATE SCHEMA IF NOT EXISTS history;`,
-      pool: readWritePool,
-    });
-    console.log("");
-
-    console.log("Set search path");
-    await runPgCommand({
-      command: `SET search_path TO ${schemas.join(",")},public;`,
-      pool: readWritePool,
-    });
-    console.log("");
-
     console.log("Create dashboard table and its index");
 
     await runPgCommand({
-      command: dropTable("latest", "dashboards"),
+      command: dropTable("dashboards"),
       pool: readWritePool,
     });
 
@@ -234,7 +160,7 @@ async function pgInitializeDashboards() {
     });
 
     await runPgCommand({
-      command: createUniqueIndex("latest", "dashboards"),
+      command: createUniqueIndex("dashboards"),
       pool: readWritePool,
     });
     console.log("");
@@ -245,10 +171,7 @@ async function pgInitializeDashboards() {
   }
 }
 
-let buildHistoryTable = (
-  schema: string,
-  table: string
-) => `CREATE TABLE ${schema}.${table} (
+let buildHistoryTable = (table: string) => `CREATE TABLE ${table} (
     id text, 
     title text, 
     url text, 
@@ -263,45 +186,19 @@ let buildHistoryTable = (
 export async function pgInitializeHistories() {
   let YOLO = false;
   if (YOLO) {
-    console.log("Drop all previous history tables (Danger!)");
+    console.log("Create history table & index");
     await runPgCommand({
-      command: `DROP SCHEMA history CASCADE;`,
+      command: dropTable("history"),
       pool: readWritePool,
     });
-    console.log("");
-
-    console.log("Create schemas");
-    for (let schema of schemas) {
-      await runPgCommand({
-        command: `CREATE SCHEMA IF NOT EXISTS ${schema}`,
-        pool: readWritePool,
-      });
-    }
-    console.log("");
-
-    console.log("Set search path");
     await runPgCommand({
-      command: `SET search_path TO ${schemas.join(",")},public;`,
+      command: buildHistoryTable("history"),
       pool: readWritePool,
     });
-    console.log("");
-
-    console.log("Create tables & their indexes");
-    let schema = "history";
-    for (let table of tableNamesWhiteListHistory) {
-      await runPgCommand({
-        command: dropTable(schema, table),
-        pool: readWritePool,
-      });
-      await runPgCommand({
-        command: buildHistoryTable(schema, table),
-        pool: readWritePool,
-      });
-      await runPgCommand({
-        command: createIndex(schema, table), // Not unique!!
-        pool: readWritePool,
-      });
-    }
+    await runPgCommand({
+      command: createIndex("history"), // Not unique!!
+      pool: readWritePool,
+    });
     console.log("");
   } else {
     console.log(
@@ -314,11 +211,11 @@ async function pgInitializeFrontpage() {
   let YOLO = false;
   if (YOLO) {
     await runPgCommand({
-      command: dropTable("latest", "frontpage"),
+      command: dropTable("frontpage"),
       pool: readWritePool,
     });
     await runPgCommand({
-      command: `CREATE TABLE latest.frontpage (
+      command: `CREATE TABLE frontpage (
         id serial primary key,
         frontpage_full jsonb,
         frontpage_sliced jsonb
@@ -334,7 +231,7 @@ async function pgInitializeFrontpage() {
 
 export async function pgInitialize() {
   await pgInitializeScaffolding();
-  await pgInitializeLatest();
+  await pgInitializeQuestions();
   await pgInitializeHistories();
   await pgInitializeDashboards();
   await pgInitializeFrontpage();
@@ -342,64 +239,50 @@ export async function pgInitialize() {
 
 // Read
 async function pgReadWithPool({
-  schema,
   tableName,
   pool,
 }: {
-  schema: string;
   tableName: string;
   pool: Pool;
 }) {
-  if (tableWhiteList.includes(`${schema}.${tableName}`)) {
-    let command = `SELECT * from ${schema}.${tableName}`;
-    let response = await runPgCommand({ command, pool });
-    let results = response.results;
-    return results;
-  } else {
+  if (!allTableNames.includes(tableName)) {
     throw Error(
-      `Table ${schema}.${tableName} not in whitelist; stopping to avoid tricky sql injections`
+      `Table ${tableName} not in whitelist; stopping to avoid tricky sql injections`
     );
   }
+  let command = `SELECT * from ${tableName}`;
+  let response = await runPgCommand({ command, pool });
+  let results = response.results;
+  return results;
 }
 
-export async function pgRead({
-  schema,
-  tableName,
-}: {
-  schema: string;
-  tableName: string;
-}) {
-  return await pgReadWithPool({ schema, tableName, pool: readWritePool });
+export async function pgRead({ tableName }: { tableName: string }) {
+  return await pgReadWithPool({ tableName, pool: readWritePool });
 }
 
 export async function pgReadWithReadCredentials({
-  schema,
   tableName,
 }: {
-  schema: string;
   tableName: string;
 }) {
   // currently does not work.
   /* return await pgReadWithPool({
-    schema,
     tableName,
     pool: readOnlyPool,
   });
 	*/
-  return await pgReadWithPool({ schema, tableName, pool: readWritePool });
+  return await pgReadWithPool({ tableName, pool: readWritePool });
 }
 
 export async function pgGetByIds({
   ids,
-  schema,
   table,
 }: {
   ids: string[];
-  schema: string;
   table: string;
 }) {
   let idstring = `( ${ids.map((id: string) => `'${id}'`).join(", ")} )`; // (1, 2, 3)
-  let command = `SELECT * from ${schema}.${table} where id in ${idstring}`;
+  let command = `SELECT * from ${table} where id in ${idstring}`;
   // see: https://stackoverflow.com/questions/5803472/sql-where-id-in-id1-id2-idn
   let response = await runPgCommand({ command, pool: readWritePool });
   let results = response.results;
@@ -409,23 +292,21 @@ export async function pgGetByIds({
 
 export async function pgBulkInsert({
   data,
-  schema,
   tableName,
   client,
 }: {
   data: Forecast[];
-  schema: string;
   tableName: string;
   client: PoolClient;
 }) {
-  if (!tableWhiteList.includes(`${schema}.${tableName}`)) {
+  if (!forecastTableNames.includes(tableName)) {
     throw Error(
-      `Table ${schema}.${tableName} not in whitelist; stopping to avoid tricky sql injections`
+      `Table ${tableName} not in whitelist; stopping to avoid tricky sql injections`
     );
   }
 
   const generateQuery = (rows: number) => {
-    let text = `INSERT INTO ${schema}.${tableName} VALUES`;
+    let text = `INSERT INTO ${tableName} VALUES`;
     const cols = 10;
     const parts: string[] = [];
     for (let r = 0; r < rows; r++) {
@@ -478,36 +359,30 @@ export async function pgBulkInsert({
   }
 }
 
-export async function pgInsertIntoDashboard({ datum, schema, tableName }) {
-  if (tableWhiteList.includes(`${schema}.${tableName}`)) {
-    let text = `INSERT INTO ${schema}.${tableName} VALUES($1, $2, $3, $4, $5, $6, $7)`;
-    let timestamp = datum.timestamp || new Date().toISOString();
-    timestamp = timestamp.slice(0, 19).replace("T", " ");
-    let values = [
-      hash(JSON.stringify(datum.contents)),
-      datum.title || "",
-      datum.description || "",
-      JSON.stringify(datum.contents || []),
-      timestamp, // fixed
-      datum.creator || "",
-      JSON.stringify(datum.extra || []),
-    ];
-    const client = await readWritePool.connect();
-    let result;
-    try {
-      result = await client.query(text, values);
-    } catch (error) {
-      console.log(error);
-    } finally {
-      client.release();
-    }
-    // console.log(result)
-    return result;
-  } else {
-    throw Error(
-      `Table ${schema}.${tableName} not in whitelist; stopping to avoid tricky sql injections`
-    );
+export async function pgInsertIntoDashboard({ datum }) {
+  let text = `INSERT INTO dashboards VALUES($1, $2, $3, $4, $5, $6, $7)`;
+  let timestamp = datum.timestamp || new Date().toISOString();
+  timestamp = timestamp.slice(0, 19).replace("T", " ");
+  let values = [
+    hash(JSON.stringify(datum.contents)),
+    datum.title || "",
+    datum.description || "",
+    JSON.stringify(datum.contents || []),
+    timestamp, // fixed
+    datum.creator || "",
+    JSON.stringify(datum.extra || []),
+  ];
+  const client = await readWritePool.connect();
+  let result;
+  try {
+    result = await client.query(text, values);
+  } catch (error) {
+    console.log(error);
+  } finally {
+    client.release();
   }
+  // console.log(result)
+  return result;
 }
 /* For reference
 	  id text,
@@ -532,16 +407,21 @@ pgInsertIntoDashboard({
     ],
     creator: "Nuño Sempere",
   },
-  schema: "latest",
   tableName: "dashboards",
 });
 */
-export async function pgUpsert({ contents, schema, tableName }) {
-  if (!tableWhiteList.includes(`${schema}.${tableName}`)) {
-    console.log("tableWhiteList:");
-    console.log(tableWhiteList);
+export async function pgUpsert({
+  contents,
+  tableName,
+  replacePlatform,
+}: {
+  contents: Forecast[];
+  tableName: string;
+  replacePlatform?: string;
+}) {
+  if (!forecastTableNames.includes(tableName)) {
     throw Error(
-      `Table ${schema}.${tableName} not in whitelist; stopping to avoid tricky sql injections`
+      `Table ${tableName} not in whitelist; stopping to avoid tricky sql injections`
     );
   }
 
@@ -549,27 +429,22 @@ export async function pgUpsert({ contents, schema, tableName }) {
     const client = await readWritePool.connect();
     try {
       await client.query("BEGIN");
-      if (schema === "latest") {
-        client.query(`DELETE FROM latest.${tableName}`);
+      if (replacePlatform) {
+        await client.query(`DELETE FROM ${tableName} WHERE platform = $1`, [
+          replacePlatform,
+        ]);
       }
       console.log(
-        `Upserting ${contents.length} rows into postgres table ${schema}.${tableName}.`
-      );
-      console.log(
-        `Expected to take ${Number((contents.length * 831.183) / 4422).toFixed(
-          2
-        )} seconds or ${Number((contents.length * 13.85305) / 4422).toFixed(
-          2
-        )} minutes`
+        `Upserting ${contents.length} rows into postgres table ${tableName}.`
       );
 
-      await pgBulkInsert({ data: contents, schema, tableName, client });
+      await pgBulkInsert({ data: contents, tableName, client });
       console.log(
         `Inserted ${
           contents.length
         } rows with approximate cummulative size ${roughSizeOfObject(
           contents
-        )} MB into ${schema}.${tableName}.`
+        )} MB into ${tableName}.`
       );
 
       console.log("Sample: ");

@@ -1,51 +1,35 @@
 import { pgRead, readWritePool } from "./database/pg-wrapper";
+import { Forecast } from "./platforms";
 
-export async function getFrontpageRaw() {
+export async function getFrontpage(): Promise<Forecast[]> {
   const client = await readWritePool.connect();
   const res = await client.query(
-    "SELECT frontpage_sliced FROM latest.frontpage ORDER BY id DESC LIMIT 1"
+    "SELECT frontpage_sliced FROM frontpage ORDER BY id DESC LIMIT 1"
   );
   if (!res.rows.length) return [];
   console.log(res.rows[0].frontpage_sliced);
   return res.rows[0].frontpage_sliced;
 }
 
-export async function getFrontpageFullRaw() {
+export async function getFrontpageFull(): Promise<Forecast[]> {
   const client = await readWritePool.connect();
   const res = await client.query(
-    "SELECT frontpage_full FROM latest.frontpage ORDER BY id DESC LIMIT 1"
+    "SELECT frontpage_full FROM frontpage ORDER BY id DESC LIMIT 1"
   );
   if (!res.rows.length) return [];
   console.log(res.rows[0]);
   return res.rows[0].frontpage_full;
 }
 
-export async function getFrontpage() {
-  let frontPageForecastsCompatibleWithFuse = [];
-  try {
-    let data = await getFrontpageRaw();
-    frontPageForecastsCompatibleWithFuse = data.map((result) => ({
-      item: result,
-      score: 0,
-    }));
-    return frontPageForecastsCompatibleWithFuse;
-  } catch (error) {
-    console.log(error);
-  } finally {
-    return frontPageForecastsCompatibleWithFuse;
-  }
-}
-
 export async function rebuildFrontpage() {
   const frontpageFull = await pgRead({
-    schema: "latest",
-    tableName: "combined",
+    tableName: "questions",
   });
 
   const client = await readWritePool.connect();
   const frontpageSliced = (
     await client.query(`
-    SELECT * FROM latest.combined
+    SELECT * FROM questions
     WHERE
       (qualityindicators->>'stars')::int >= 3
       AND description != ''
@@ -56,7 +40,7 @@ export async function rebuildFrontpage() {
 
   const start = Date.now();
   await client.query(
-    "INSERT INTO latest.frontpage(frontpage_full, frontpage_sliced) VALUES($1, $2)",
+    "INSERT INTO frontpage(frontpage_full, frontpage_sliced) VALUES($1, $2)",
     [JSON.stringify(frontpageFull), JSON.stringify(frontpageSliced)]
   );
 

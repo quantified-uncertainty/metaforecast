@@ -16,7 +16,6 @@ export default async function handler(
   console.log(id);
   let dashboardItemArray = await pgGetByIds({
     ids: [id],
-    schema: "latest",
     table: "dashboards",
   });
   if (!!dashboardItemArray && dashboardItemArray.length > 0) {
@@ -24,8 +23,7 @@ export default async function handler(
     console.log(dashboardItem);
     let dashboardContents = await pgGetByIds({
       ids: dashboardItem.contents,
-      schema: "latest",
-      table: "combined",
+      table: "questions",
     });
     res.status(200).send({
       dashboardContents,

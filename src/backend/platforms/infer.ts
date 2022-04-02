@@ -3,11 +3,13 @@ import axios from "axios";
 import { Tabletojson } from "tabletojson";
 
 import { applyIfSecretExists } from "../utils/getSecrets";
+import { measureTime } from "../utils/measureTime";
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
 import { Forecast, Platform } from "./";
 
 /* Definitions */
+const platformName = "infer";
 let htmlEndPoint = "https://www.infer-pub.com/questions";
 String.prototype.replaceAll = function replaceAll(search, replace) {
   return this.split(search).join(replace);
@@ -145,7 +147,7 @@ async function fetchStats(questionUrl, cookie) {
     qualityindicators: {
       numforecasts: Number(numforecasts),
       numforecasters: Number(numforecasters),
-      stars: calculateStars("Infer", { numforecasts }),
+      stars: calculateStars(platformName, { numforecasts }),
     },
   };
 
@@ -179,96 +181,84 @@ function sleep(ms) {
 
 /* Body */
 
-async function infer_inner(cookie) {
+async function infer_inner(cookie: string) {
   let i = 1;
   let response = await fetchPage(i, cookie);
   let results: Forecast[] = [];
-  let init = Date.now();
-  // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
-  while (!isEnd(response) && isSignedIn(response)) {
-    let htmlLines = response.split("\n");
-    // let h4elements = htmlLines.filter(str => str.includes("<h5> <a href=") || str.includes("<h4> <a href="))
-    let questionHrefs = htmlLines.filter((str) =>
-      str.includes("https://www.infer-pub.com/questions/")
-    );
-    // console.log(questionHrefs)
 
-    if (process.env.DEBUG_MODE == "on" || DEBUG_MODE == "on") {
-      //console.log(response)
-      console.log("questionHrefs: ");
-      console.log(questionHrefs);
-    }
+  await measureTime(async () => {
+    // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
+    while (!isEnd(response) && isSignedIn(response)) {
+      let htmlLines = response.split("\n");
+      // let h4elements = htmlLines.filter(str => str.includes("<h5> <a href=") || str.includes("<h4> <a href="))
+      let questionHrefs = htmlLines.filter((str) =>
+        str.includes("https://www.infer-pub.com/questions/")
+      );
+      // console.log(questionHrefs)
 
-    //console.log("")
-    //console.log("")
-    //console.log(h4elements)
+      if (process.env.DEBUG_MODE == "on" || DEBUG_MODE == "on") {
+        console.log("questionHrefs: ");
+        console.log(questionHrefs);
+      }
 
-    for (let questionHref of questionHrefs) {
-      //console.log(h4element)
+      for (let questionHref of questionHrefs) {
+        let elementSplit = questionHref.split('"><span>');
+        let url = elementSplit[0].split('<a href="')[1];
+        let title = elementSplit[1]
+          .replace("</h4>", "")
+          .replace("</h5>", "")
+          .replace("</span></a>", "");
+        await sleep(Math.random() * SLEEP_TIME_RANDOM + SLEEP_TIME_EXTRA); // don't be as noticeable
 
-      let elementSplit = questionHref.split('"><span>');
-      let url = elementSplit[0].split('<a href="')[1];
-      let title = elementSplit[1]
-        .replace("</h4>", "")
-        .replace("</h5>", "")
-        .replace("</span></a>", "");
+        try {
+          let moreinfo = await fetchStats(url, cookie);
+          let questionNumRegex = new RegExp("questions/([0-9]+)");
+          let questionNum = url.match(questionNumRegex)[1]; //.split("questions/")[1].split("-")[0];
+          let id = `${platformName}-${questionNum}`;
+          let question: Forecast = {
+            id: id,
+            title: title,
+            url: url,
+            platform: platformName,
+            ...moreinfo,
+          };
+          if (
+            i % 30 == 0 &&
+            !(process.env.DEBUG_MODE == "on" || DEBUG_MODE == "on")
+          ) {
+            console.log(`Page #${i}`);
+            console.log(question);
+          }
+          results.push(question);
+          if (process.env.DEBUG_MODE == "on" || DEBUG_MODE == "on") {
+            console.log(url);
+            console.log(question);
+          }
+        } catch (error) {
+          console.log(error);
+          console.log(
+            `We encountered some error when fetching the URL: ${url}, so it won't appear on the final json`
+          );
+        }
+      }
+
+      i++;
+
+      console.log(
+        "Sleeping for ~5secs so as to not be as noticeable to the infer servers"
+      );
       await sleep(Math.random() * SLEEP_TIME_RANDOM + SLEEP_TIME_EXTRA); // don't be as noticeable
 
       try {
-        let moreinfo = await fetchStats(url, cookie);
-        let questionNumRegex = new RegExp("questions/([0-9]+)");
-        let questionNum = url.match(questionNumRegex)[1]; //.split("questions/")[1].split("-")[0];
-        let id = `infer-${questionNum}`;
-        let question = {
-          id: id,
-          title: title,
-          url: url,
-          platform: "Infer",
-          ...moreinfo,
-        };
-        if (
-          i % 30 == 0 &&
-          !(process.env.DEBUG_MODE == "on" || DEBUG_MODE == "on")
-        ) {
-          console.log(`Page #${i}`);
-          console.log(question);
-        }
-        results.push(question);
-        if (process.env.DEBUG_MODE == "on" || DEBUG_MODE == "on") {
-          console.log(url);
-          console.log(question);
-        }
+        response = await fetchPage(i, cookie);
       } catch (error) {
         console.log(error);
         console.log(
-          `We encountered some error when fetching the URL: ${url}, so it won't appear on the final json`
+          `The program encountered some error when fetching page #${i}, so it won't appear on the final json. It is possible that this page wasn't actually a prediction question pages`
         );
       }
     }
-
-    i++;
-    //i=Number(i)+1
-
-    console.log(
-      "Sleeping for ~5secs so as to not be as noticeable to the infer servers"
-    );
-    await sleep(Math.random() * SLEEP_TIME_RANDOM + SLEEP_TIME_EXTRA); // don't be as noticeable
-
-    try {
-      response = await fetchPage(i, cookie);
-    } catch (error) {
-      console.log(error);
-      console.log(
-        `The program encountered some error when fetching page #${i}, so it won't appear on the final json. It is possible that this page wasn't actually a prediction question pages`
-      );
-    }
-  }
-
-  let end = Date.now();
-  let difference = end - init;
-  console.log(
-    `Took ${difference / 1000} seconds, or ${difference / (1000 * 60)} minutes.`
-  );
+  });
 
   if (results.length === 0) {
     console.log("Not updating results, as process was not signed in");
@@ -278,7 +268,9 @@ async function infer_inner(cookie) {
 }
 
 export const infer: Platform = {
-  name: "infer",
+  name: platformName,
+  label: "Infer",
+  color: "#223900",
   async fetcher() {
     let cookie = process.env.INFER_COOKIE;
     return await applyIfSecretExists(cookie, infer_inner);

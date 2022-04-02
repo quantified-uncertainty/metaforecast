@@ -5,6 +5,7 @@ import { calculateStars } from "../utils/stars";
 import { Forecast, Platform } from "./";
 
 /* Definitions */
+const platformName = "polymarket";
 let graphQLendpoint =
   "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-5"; // "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-4"// "https://api.thegraph.com/subgraphs/name/tokenunion/polymarket-matic"//"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
 let units = 10 ** 6;
@@ -63,7 +64,9 @@ async function fetchIndividualContractData(marketMakerAddress) {
 }
 
 export const polymarket: Platform = {
-  name: "polymarket",
+  name: platformName,
+  label: "PolyMarket",
+  color: "#00314e",
   async fetcher() {
     let results: Forecast[] = [];
     let webpageEndpointData = await fetchAllContractInfo();
@@ -79,7 +82,7 @@ export const polymarket: Platform = {
         );
         if (moreMarketAnswer.length > 0) {
           let moreMarketInfo = moreMarketAnswer[0];
-          let id = `polymarket-${addressLowerCase.slice(0, 10)}`;
+          let id = `${platformName}-${addressLowerCase.slice(0, 10)}`;
           // console.log(id);
           let numforecasts = Number(moreMarketInfo.tradesQuantity);
           let tradevolume =
@@ -103,7 +106,7 @@ export const polymarket: Platform = {
             id: id,
             title: marketInfo.question,
             url: "https://polymarket.com/market/" + marketInfo.slug,
-            platform: "PolyMarket",
+            platform: platformName,
             description: marketInfo.description,
             options: options,
             timestamp: new Date().toISOString(),
@@ -111,7 +114,7 @@ export const polymarket: Platform = {
               numforecasts: numforecasts.toFixed(0),
               liquidity: liquidity.toFixed(2),
               tradevolume: tradevolume.toFixed(2),
-              stars: calculateStars("Polymarket", {
+              stars: calculateStars(platformName, {
                 liquidity,
                 option: options[0],
                 volume: tradevolume,

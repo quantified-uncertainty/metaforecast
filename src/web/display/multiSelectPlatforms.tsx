@@ -2,7 +2,7 @@ import chroma from "chroma-js";
 import React from "react";
 import Select from "react-select";
 
-import { platformsWithLabels } from "../platforms";
+import { PlatformConfig } from "../platforms";
 
 const colourStyles = {
   control: (styles) => ({ ...styles, backgroundColor: "white" }),
@@ -59,17 +59,48 @@ const colourStyles = {
   }),
 };
 
-export default function MultiSelectPlatform({ onChange, value }) {
+interface Props {
+  onChange: (platforms: string[]) => void;
+  value: string[];
+  platformsConfig: PlatformConfig[];
+}
+
+export const MultiSelectPlatform: React.FC<Props> = ({
+  onChange,
+  value,
+  platformsConfig,
+}) => {
+  type Option = {
+    value: string;
+    label: string;
+    color: string;
+  };
+
+  const options: Option[] = platformsConfig.map((platform) => ({
+    value: platform.name,
+    label: platform.label,
+    color: platform.color,
+  }));
+
+  const id2option: { [k: string]: Option } = {};
+  for (const option of options) id2option[option.value] = option;
+
+  const selectValue = value.map((v) => id2option[v]).filter((v) => v);
+
+  const onSelectChange = (newValue: Option[]) => {
+    onChange(newValue.map((o) => o.value));
+  };
+
   return (
     <Select
-      defaultValue={platformsWithLabels}
+      defaultValue={options}
       isMulti
       className="basic-multi-select w-full text-gray-700"
-      onChange={onChange}
+      onChange={onSelectChange}
       closeMenuOnSelect={false}
-      options={platformsWithLabels}
-      value={value}
+      options={options}
+      value={selectValue}
       styles={colourStyles}
     />
   );
-}
+};

@@ -8,6 +8,8 @@ import toMarkdown from "../utils/toMarkdown";
 import { Platform } from "./";
 
 /* Definitions */
+const platformName = "goodjudgmentopen";
+
 let htmlEndPoint = "https://www.gjopen.com/questions?page=";
 let annoyingPromptUrls = [
   "https://www.gjopen.com/questions/1933-what-forecasting-questions-should-we-ask-what-questions-would-you-like-to-forecast-on-gjopen",
@@ -185,12 +187,12 @@ async function goodjudgmentopen_inner(cookie) {
           }
           let questionNumRegex = new RegExp("questions/([0-9]+)");
           let questionNum = url.match(questionNumRegex)[1]; //.split("questions/")[1].split("-")[0];
-          let id = `goodjudmentopen-${questionNum}`;
+          let id = `${platformName}-${questionNum}`;
           let question = {
             id: id,
             title: title,
             url: url,
-            platform: "Good Judgment Open",
+            platform: platformName,
             ...moreinfo,
           };
           if (j % 30 == 0 || DEBUG_MODE == "on") {
@@ -236,8 +238,10 @@ async function goodjudgmentopen_inner(cookie) {
   return results;
 }
 
-export const goodjudmentopen: Platform = {
-  name: "goodjudmentopen", // note the typo! current table name is without `g`, `goodjudmentopen`
+export const goodjudgmentopen: Platform = {
+  name: platformName,
+  label: "Good Judgment Open",
+  color: "#002455",
   async fetcher() {
     let cookie = process.env.GOODJUDGMENTOPENCOOKIE;
     return await applyIfSecretExists(cookie, goodjudgmentopen_inner);

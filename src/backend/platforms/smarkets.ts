@@ -1,13 +1,14 @@
-/* Imports */
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { Platform } from "./";
+import { Forecast, Platform } from "./";
 
 /* Definitions */
+const platformName = "smarkets";
 let htmlEndPointEntrance = "https://api.smarkets.com/v3/events/";
 let VERBOSE = false;
 let empty = () => 0;
+
 /* Support functions */
 
 async function fetchEvents(url) {
@@ -60,7 +61,9 @@ async function fetchPrices(marketid) {
 }
 
 export const smarkets: Platform = {
-  name: "smarkets",
+  name: platformName,
+  label: "Smarkets",
+  color: "#6f5b41",
   async fetcher() {
     let htmlPath =
       "?state=new&state=upcoming&state=live&type_domain=politics&type_scope=single_event&with_new_type=true&sort=id&limit=50";
@@ -93,7 +96,7 @@ export const smarkets: Platform = {
     for (let market of markets) {
       VERBOSE ? console.log("================") : empty();
       VERBOSE ? console.log("Market: ", market) : empty();
-      let id = `smarkets-${market.id}`;
+      let id = `${platformName}-${market.id}`;
       let name = market.name;
 
       let contracts = await fetchContracts(market.id);
@@ -156,16 +159,16 @@ export const smarkets: Platform = {
       name = name+ (contractName=="Yes"?'':` (${contracts["contracts"][0].name})`)
     }
     */
-      let result = {
+      let result: Forecast = {
         id: id,
         title: name,
         url: "https://smarkets.com/event/" + market.event_id + market.slug,
-        platform: "Smarkets",
+        platform: platformName,
         description: market.description,
         options: options,
         timestamp: new Date().toISOString(),
         qualityindicators: {
-          stars: calculateStars("Smarkets", {}),
+          stars: calculateStars(platformName, {}),
         },
       };
       VERBOSE ? console.log(result) : empty();

@@ -3,6 +3,8 @@ import React from "react";
 import { FaRegClipboard } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
+import { FrontendForecast } from "../platforms";
+
 /* Definitions */
 
 /* Support functions */
@@ -350,9 +352,15 @@ let checkIfDisplayTimeStampAtBottom = (qualityIndicators) => {
   }
 };
 
-let getCurrencySymbolIfNeeded = ({ indicator, platform }) => {
+let getCurrencySymbolIfNeeded = ({
+  indicator,
+  platform,
+}: {
+  indicator: any;
+  platform: string;
+}) => {
   let indicatorsWhichNeedCurrencySymbol = ["Volume", "Interest", "Liquidity"];
-  let dollarPlatforms = ["PredictIt", "Kalshi", "PolyMarket"];
+  let dollarPlatforms = ["predictit", "kalshi", "polymarket"];
   if (indicatorsWhichNeedCurrencySymbol.includes(indicator)) {
     if (dollarPlatforms.includes(platform)) {
       return "$";
@@ -461,7 +469,13 @@ let showFirstQualityIndicator = ({
   }
 };
 
-let displayQualityIndicators = ({
+const displayQualityIndicators: React.FC<{
+  numforecasts: number;
+  timestamp: number;
+  showTimeStamp: boolean;
+  qualityindicators: any;
+  platform: string; // id string - e.g. "goodjudgment", not "Good Judgment"
+}> = ({
   numforecasts,
   timestamp,
   showTimeStamp,
@@ -504,6 +518,7 @@ let displayQualityIndicators = ({
 let forecastFooter = ({
   stars,
   platform,
+  platformLabel,
   numforecasts,
   qualityindicators,
   timestamp,
@@ -532,7 +547,7 @@ let forecastFooter = ({
           expandFooterToFullWidth ? "place-self-center" : "self-center"
         }  col-span-1 font-bold ${debuggingWithBackground ? "bg-red-100" : ""}`}
       >
-        {platform
+        {platformLabel
           .replace("Good Judgment Open", "GJOpen")
           .replace("OpenPhilanthropy", "OpenPhil")
           .replace("AstralCodexTen", "ACX")
@@ -559,22 +574,30 @@ let forecastFooter = ({
 
 /* Body */
 
-export function displayForecast({
-  id,
-  title,
-  url,
-  platform,
-  author,
-  description,
-  options,
-  qualityindicators,
-  timestamp,
-  visualization,
-  score,
+interface SingleProps {
+  forecast: FrontendForecast;
+  showTimeStamp: boolean;
+  expandFooterToFullWidth: boolean;
+  showIdToggle?: boolean;
+}
+
+export const DisplayForecast: React.FC<SingleProps> = ({
+  forecast: {
+    id,
+    title,
+    url,
+    platform,
+    platformLabel,
+    description,
+    options,
+    qualityindicators,
+    timestamp,
+    visualization,
+  },
   showTimeStamp,
   expandFooterToFullWidth,
   showIdToggle,
-}) {
+}) => {
   // const [isJustCopiedSignalVisible, setIsJustCopiedSignalVisible] = useState(false)
   const isJustCopiedSignalVisible = false;
 
@@ -588,7 +611,7 @@ export function displayForecast({
       <div className="flex-grow">
         <div
           className={`text-gray-800 ${opacityFromScore(
-            score
+            0
           )} text-lg mb-2 font-medium justify-self-start`}
         >
           <div
@@ -641,7 +664,7 @@ export function displayForecast({
                       ? "flex"
                       : "hidden"
                   } ${opacityFromScore(
-                    score
+                    0
                   )} row-end-2 col-start-2 col-end-2 row-start-1 row-end-1 col-span-1 items-center justify-center text-gray-600 ml-3 mr-2 `}
                 >
                   <svg className="mt-1" height="10" width="16">
@@ -657,7 +680,7 @@ export function displayForecast({
         {(options.length != 2 ||
           (options[0].name != "Yes" && options[0].name != "No")) && (
           <>
-            <div className={`mb-2 mt-2 ${opacityFromScore(score)}`}>
+            <div className={`mb-2 mt-2 ${opacityFromScore(0)}`}>
               {formatForecastOptions(options)}
             </div>
             <div
@@ -667,7 +690,7 @@ export function displayForecast({
                   ? "flex"
                   : "hidden"
               } ${opacityFromScore(
-                score
+                0
               )} col-start-2 col-end-2 row-start-1 row-end-1 text-gray-600 mt-3 mb-3`}
             >
               <svg className="ml-6 mr-1 mt-2" height="10" width="16">
@@ -680,13 +703,13 @@ export function displayForecast({
           </>
         )}
 
-        {platform !== "Guesstimate" && options.length < 3 && (
-          <div className={`text-gray-500 ${opacityFromScore(score)} mt-4`}>
+        {platform !== "guesstimate" && options.length < 3 && (
+          <div className={`text-gray-500 ${opacityFromScore(0)} mt-4`}>
             {displayMarkdown(description)}
           </div>
         )}
 
-        {platform === "Guesstimate" && (
+        {platform === "guesstimate" && (
           <img
             className="rounded-sm mb-1"
             src={visualization}
@@ -705,10 +728,11 @@ export function displayForecast({
         </svg>
         {`Last updated: ${timestamp ? timestamp.slice(0, 10) : "unknown"}`}
       </div>
-      <div className={`${opacityFromScore(score)} w-full`}>
+      <div className={`${opacityFromScore(0)} w-full`}>
         {forecastFooter({
           stars: qualityindicators.stars,
-          platform: author || platform,
+          platform: platform,
+          platformLabel: platformLabel || platform, // author || platformLabel,
           numforecasts: qualityindicators.numforecasts,
           qualityindicators,
           timestamp,
@@ -718,30 +742,39 @@ export function displayForecast({
       </div>
     </a>
   );
+};
+
+interface Props {
+  results: FrontendForecast[];
+  numDisplay: number;
+  showIdToggle: boolean;
 }
 
-export default function displayForecasts({
+const DisplayForecasts: React.FC<Props> = ({
   results,
   numDisplay,
   showIdToggle,
-}) {
-  return !!results && !!results.slice ? (
-    results.slice(0, numDisplay).map((fuseSearchResult) => {
-      /*let displayWithMetaculusCapture =
+}) => {
+  if (!results) {
+    return <></>;
+  }
+  return (
+    <>
+      {results.slice(0, numDisplay).map((result) => (
+        /*let displayWithMetaculusCapture =
           fuseSearchResult.item.platform == "Metaculus"
             ? metaculusEmbed(fuseSearchResult.item)
             : displayForecast({ ...fuseSearchResult.item });
         */
-      let display = displayForecast({
-        ...fuseSearchResult.item,
-        score: fuseSearchResult.score,
-        showTimeStamp: false,
-        expandFooterToFullWidth: false,
-        showIdToggle,
-      });
-      return display;
-    })
-  ) : (
-    <></>
+        <DisplayForecast
+          forecast={result}
+          showTimeStamp={false}
+          expandFooterToFullWidth={false}
+          showIdToggle={showIdToggle}
+        />
+      ))}
+    </>
   );
-}
+};
+
+export default DisplayForecasts;

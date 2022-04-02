@@ -1,11 +1,11 @@
-/* Imports */
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
-import { Platform } from "./";
+import { Forecast, Platform } from "./";
 
 /* Definitions */
+const platformName = "rootclaim";
 let jsonEndpoint =
   "https://www.rootclaim.com/main_page_stories?number=100&offset=0"; //"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
 
@@ -24,12 +24,14 @@ async function fetchAllRootclaims() {
 }
 
 export const rootclaim: Platform = {
-  name: "rootclaim",
+  name: platformName,
+  label: "Rootclaim",
+  color: "#0d1624",
   async fetcher() {
     let claims = await fetchAllRootclaims();
-    let results = [];
+    let results: Forecast[] = [];
     for (let claim of claims) {
-      let id = `rootclaim-${claim.slug.toLowerCase()}`;
+      let id = `${platformName}-${claim.slug.toLowerCase()}`;
       let options = [];
       for (let scenario of claim.scenarios) {
         //console.log(scenario)
@@ -42,17 +44,17 @@ export const rootclaim: Platform = {
         });
       }
       let claimUrlPath = claim.created_at < "2020" ? "claims" : "analysis";
-      let obj = {
+      let obj: Forecast = {
         id: id,
         title: toMarkdown(claim.question).replace("\n", ""),
         url: `https://www.rootclaim.com/${claimUrlPath}/${claim.slug}`,
-        platform: "Rootclaim",
+        platform: platformName,
         description: toMarkdown(claim.background).replace("&#39;", "'"),
         options: options,
         timestamp: new Date().toISOString(),
         qualityindicators: {
           numforecasts: 1,
-          stars: calculateStars("Rootclaim", {}),
+          stars: calculateStars(platformName, {}),
         },
       };
       results.push(obj);
