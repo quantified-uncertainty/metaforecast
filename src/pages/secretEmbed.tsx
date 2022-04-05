@@ -4,7 +4,7 @@ import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 
 import { platforms } from "../backend/platforms";
-import { DisplayForecast } from "../web/display/displayForecasts";
+import { DisplayForecast } from "../web/display/DisplayForecast";
 import { FrontendForecast } from "../web/platforms";
 import searchAccordingToQueryData from "../web/worker/searchAccordingToQueryData";
 

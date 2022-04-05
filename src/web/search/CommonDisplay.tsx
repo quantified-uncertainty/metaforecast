@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
 import React, { DependencyList, EffectCallback, Fragment, useEffect, useState } from "react";
 
-import ButtonsForStars from "../display/buttonsForStars";
-import Form from "../display/form";
-import { MultiSelectPlatform } from "../display/multiSelectPlatforms";
-import { SliderElement } from "../display/slider";
+import { ButtonsForStars } from "../display/ButtonsForStars";
+import { MultiSelectPlatform } from "../display/MultiSelectPlatform";
+import { QueryForm } from "../display/QueryForm";
+import { SliderElement } from "../display/SliderElement";
 import { FrontendForecast } from "../platforms";
 import searchAccordingToQueryData from "../worker/searchAccordingToQueryData";
 import { Props as AnySearchPageProps, QueryParameters } from "./anySearchPage";
@@ -76,7 +76,7 @@ const CommonDisplay: React.FC<Props> = ({
       numDisplay,
     };
 
-    let filterManually = (
+    const filterManually = (
       queryData: QueryParameters,
       results: FrontendForecast[]
     ) => {
@@ -102,7 +102,7 @@ const CommonDisplay: React.FC<Props> = ({
     const queryIsEmpty =
       !queryData || queryData.query == "" || queryData.query == undefined;
 
-    let results = queryIsEmpty
+    const results = queryIsEmpty
       ? filterManually(queryData, defaultResults)
       : await searchAccordingToQueryData(queryData, numDisplay);
 
@@ -110,8 +110,8 @@ const CommonDisplay: React.FC<Props> = ({
   }
 
   // I don't want the function which display forecasts (displayForecasts) to change with a change in queryParameters. But I want it to have access to the queryParameters, and in particular access to queryParameters.numDisplay. Hence why this function lives inside Home.
-  let getInfoToDisplayForecastsFunction = () => {
-    let numDisplayRounded =
+  const getInfoToDisplayForecastsFunction = () => {
+    const numDisplayRounded =
       numDisplay % 3 != 0
         ? numDisplay + (3 - (Math.round(numDisplay) % 3))
         : numDisplay;
@@ -156,7 +156,7 @@ const CommonDisplay: React.FC<Props> = ({
 
   useNoInitialEffect(() => {
     setResults([]);
-    let newTimeoutId = setTimeout(() => {
+    const newTimeoutId = setTimeout(() => {
       updateRoute();
       executeSearchOrAnswerWithDefaultResults();
     }, 500);
@@ -170,7 +170,7 @@ const CommonDisplay: React.FC<Props> = ({
   /* State controllers */
 
   /* Change the stars threshold */
-  let onChangeStars = (value: number) => {
+  const onChangeStars = (value: number) => {
     setQueryParameters({
       ...queryParameters,
       starsThreshold: value,
@@ -178,7 +178,7 @@ const CommonDisplay: React.FC<Props> = ({
   };
 
   /* Change the number of elements to display  */
-  let displayFunctionNumDisplaySlider = (value) => {
+  const displayFunctionNumDisplaySlider = (value: number) => {
     return (
       "Show " +
       Math.round(value) +
@@ -186,16 +186,16 @@ const CommonDisplay: React.FC<Props> = ({
       (Math.round(value) === 1 ? "" : "s")
     );
   };
-  let onChangeSliderForNumDisplay = (event) => {
+  const onChangeSliderForNumDisplay = (event) => {
     setNumDisplay(Math.round(event[0]));
     setForceSearch(forceSearch + 1); // FIXME - force new search iff numDisplay is greater than last search limit
   };
 
   /* Change the forecast threshold */
-  let displayFunctionNumForecasts = (value: number) => {
+  const displayFunctionNumForecasts = (value: number) => {
     return "# Forecasts > " + Math.round(value);
   };
-  let onChangeSliderForNumForecasts = (event) => {
+  const onChangeSliderForNumForecasts = (event) => {
     setQueryParameters({
       ...queryParameters,
       forecastsThreshold: Math.round(event[0]),
@@ -203,7 +203,7 @@ const CommonDisplay: React.FC<Props> = ({
   };
 
   /* Change on the search bar */
-  let onChangeSearchBar = (value: string) => {
+  const onChangeSearchBar = (value: string) => {
     setQueryParameters({
       ...queryParameters,
       query: value,
@@ -211,7 +211,7 @@ const CommonDisplay: React.FC<Props> = ({
   };
 
   /* Change selected platforms */
-  let onChangeSelectedPlatforms = (value) => {
+  const onChangeSelectedPlatforms = (value) => {
     setQueryParameters({
       ...queryParameters,
       forecastingPlatforms: value,
@@ -219,18 +219,18 @@ const CommonDisplay: React.FC<Props> = ({
   };
 
   // Change show id
-  let onChangeShowId = () => {
+  const onChangeShowId = () => {
     setShowIdToggle(!showIdToggle);
   };
 
   // Capture functionality
-  let onClickBack = () => {
-    let decreaseUntil0 = (num: number) => (num - 1 > 0 ? num - 1 : 0);
+  const onClickBack = () => {
+    const decreaseUntil0 = (num: number) => (num - 1 > 0 ? num - 1 : 0);
     setWhichResultToDisplayAndCapture(
       decreaseUntil0(whichResultToDisplayAndCapture)
     );
   };
-  let onClickForward = (whichResultToDisplayAndCapture: number) => {
+  const onClickForward = (whichResultToDisplayAndCapture: number) => {
     setWhichResultToDisplayAndCapture(whichResultToDisplayAndCapture + 1);
   };
 
@@ -240,7 +240,7 @@ const CommonDisplay: React.FC<Props> = ({
       <label className="mb-4 mt-4 flex flex-row justify-center items-center">
         {hasSearchbar ? (
           <div className="w-10/12 mb-2">
-            <Form
+            <QueryForm
               value={queryParameters.query}
               onChange={onChangeSearchBar}
               placeholder={placeholder}

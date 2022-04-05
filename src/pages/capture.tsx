@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import React from "react";
 
 import { displayForecastsWrapperForCapture } from "../web/display/displayForecastsWrappers";
-import Layout from "../web/display/layout";
+import { Layout } from "../web/display/Layout";
 import { Props } from "../web/search/anySearchPage";
 import CommonDisplay from "../web/search/CommonDisplay";
 

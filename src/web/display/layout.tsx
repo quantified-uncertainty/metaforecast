@@ -67,7 +67,7 @@ class ErrorBoundary extends React.Component<
 }
 
 /* Main */
-export default function Layout({ page, children }) {
+export const Layout = ({ page, children }) => {
   let lastUpdated = calculateLastUpdate();
   // The correct way to do this would be by passing a prop to Layout,
   // and to get the last updating using server side props.
@@ -150,4 +150,4 @@ export default function Layout({ page, children }) {
       </div>
     </div>
   );
-}
+};

@@ -5,7 +5,7 @@ import { useRouter } from "next/router"; // https://nextjs.org/docs/api-referenc
 import { useState } from "react";
 
 import { getPlatformsConfig } from "../backend/platforms";
-import displayForecasts from "../web/display/displayForecasts";
+import { DisplayForecasts } from "../web/display/DisplayForecasts";
 import { addLabelsToForecasts } from "../web/platforms";
 import { getDashboardForecastsByDashboardId } from "../web/worker/getDashboardForecasts";
 
@@ -88,11 +88,11 @@ export default function Home({
             numCols || 3
           } gap-4 mb-6`}
         >
-          {displayForecasts({
-            results: dashboardForecasts,
-            numDisplay: dashboardForecasts.length,
-            showIdToggle: false,
-          })}
+          <DisplayForecasts
+            results={dashboardForecasts}
+            numDisplay={dashboardForecasts.length}
+            showIdToggle={false}
+          />
         </div>
       </div>
     </div>

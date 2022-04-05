@@ -6,9 +6,9 @@ import { useState } from "react";
 
 import { DashboardItem } from "../backend/dashboards";
 import { getPlatformsConfig, PlatformConfig } from "../backend/platforms";
-import { DashboardCreator } from "../web/display/dashboardCreator";
-import displayForecasts from "../web/display/displayForecasts";
-import Layout from "../web/display/layout";
+import { DashboardCreator } from "../web/display/DashboardCreator";
+import { DisplayForecasts } from "../web/display/DisplayForecasts";
+import { Layout } from "../web/display/Layout";
 import { addLabelsToForecasts, FrontendForecast } from "../web/platforms";
 import { getDashboardForecastsByDashboardId } from "../web/worker/getDashboardForecasts";
 
@@ -70,12 +70,12 @@ const DashboardsPage: NextPage<Props> = ({
   );
   const [dashboardItem, setDashboardItem] = useState(initialDashboardItem);
 
-  let handleSubmit = async (data) => {
+  const handleSubmit = async (data) => {
     console.log(data);
     // Send to server to create
     // Get back the id
     let response = await axios({
-      url: `/api/create-dashboard-from-ids`,
+      url: "/api/create-dashboard-from-ids",
       method: "POST",
       headers: { "Content-Type": "application/json" },
       data: JSON.stringify(data),
@@ -107,7 +107,8 @@ const DashboardsPage: NextPage<Props> = ({
     }
   };
 
-  let isGraubardEasterEgg = (name) => (name == "Clay Graubard" ? true : false);
+  let isGraubardEasterEgg = (name: string) =>
+    name == "Clay Graubard" ? true : false;
 
   return (
     <Layout page="dashboard">
@@ -162,11 +163,11 @@ const DashboardsPage: NextPage<Props> = ({
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-        {displayForecasts({
-          results: dashboardForecasts,
-          numDisplay: dashboardForecasts.length,
-          showIdToggle: false,
-        })}
+        <DisplayForecasts
+          results={dashboardForecasts}
+          numDisplay={dashboardForecasts.length}
+          showIdToggle={false}
+        />
       </div>
       {/*  */}
       <h3 className="flex items-center col-start-2 col-end-2 w-full justify-center mt-8 mb-4">

@@ -1,4 +1,4 @@
-import displayForecasts from "./displayForecasts";
+import { DisplayForecasts } from "./DisplayForecasts";
 import displayOneForecast from "./displayOneForecastForCapture";
 
 export function displayForecastsWrapperForSearch({
@@ -8,7 +8,11 @@ export function displayForecastsWrapperForSearch({
 }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {displayForecasts({ results: results || [], numDisplay, showIdToggle })}
+      <DisplayForecasts
+        results={results || []}
+        numDisplay={numDisplay}
+        showIdToggle={showIdToggle}
+      />
     </div>
   );
 }

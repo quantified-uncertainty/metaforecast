@@ -4,7 +4,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { FrontendForecast } from "../platforms";
 import { uploadToImgur } from "../worker/uploadToImgur";
-import { DisplayForecast } from "./displayForecasts";
+import { DisplayForecast } from "./DisplayForecast";
 
 function displayOneForecastInner(result: FrontendForecast, containerRef) {
   return (

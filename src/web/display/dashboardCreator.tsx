@@ -1,46 +1,45 @@
 import React, { useState } from "react";
 
-let exampleInput = `{
+const exampleInput = `{
   "title": "Random example",
   "description": "Just a random description of a random example",
   "ids": [ "metaculus-372", "goodjudgmentopen-2244", "metaculus-7550", "kalshi-09d060ee-b184-4167-b86b-d773e56b4162", "wildeford-5d1a04e1a8", "metaculus-2817" ],
   "creator": "Peter Parker"
 }`;
 
-export function DashboardCreator({ handleSubmit }) {
-  let [value, setValue] = useState(exampleInput);
+interface Props {
+  handleSubmit: (data: any) => Promise<void>;
+}
+
+export const DashboardCreator: React.FC<Props> = ({ handleSubmit }) => {
+  const [value, setValue] = useState(exampleInput);
   const [displayingDoneMessage, setDisplayingDoneMessage] = useState(false);
   const [displayingDoneMessageTimer, setDisplayingDoneMessageTimer] =
     useState(null);
 
-  let handleChange = (event) => {
+  const handleChange = (event) => {
     setValue(event.target.value);
   };
 
-  let handleSubmitInner = (event) => {
+  const handleSubmitInner = (event) => {
     clearTimeout(displayingDoneMessageTimer);
     event.preventDefault();
-    //console.log(event)
-    console.log("value@handleSubmitInner@DashboardCreator");
-    //console.log(typeof(value));
+
     console.log(value);
     try {
       let newData = JSON.parse(value);
-      //console.log(typeof(newData))
-      //console.log(newData)
+
       if (!newData || !newData.ids || newData.ids.length == 0) {
         throw Error("Not enough objects");
       } else {
         handleSubmit(newData);
         setDisplayingDoneMessage(true);
-        let timer = setTimeout(() => setDisplayingDoneMessage(false), 3000);
+        const timer = setTimeout(() => setDisplayingDoneMessage(false), 3000);
         setDisplayingDoneMessageTimer(timer);
       }
     } catch (error) {
       setDisplayingDoneMessage(false);
-      //alert(error)
-      //console.log(error)
-      let substituteText = `Error: ${error.message}
+      const substituteText = `Error: ${error.message}
 
 Try something like:
 ${exampleInput}
@@ -49,6 +48,7 @@ Your old input was: ${value}`;
       setValue(substituteText);
     }
   };
+
   return (
     <form onSubmit={handleSubmitInner} className="block place-centers">
       <textarea
@@ -83,4 +83,4 @@ Your old input was: ${value}`;
       </div>
     </form>
   );
-}
+};

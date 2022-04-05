@@ -2,9 +2,9 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 
-import Layout from "../web/display/layout";
+import { Layout } from "../web/display/Layout";
 
-let readmeMarkdownText = `# About
+const readmeMarkdownText = `# About
 
 This webpage is a search engine for probabilities. Given a query, it searches for relevant questions in various prediction markets and forecasting platforms. For example, try searching for "China", "North Korea", "Semiconductors", "COVID", "Trump", or "X-risk". In addition to search, we also provide various [tools](http://localhost:3000/tools).
 
