@@ -5,6 +5,7 @@ import { useRouter } from "next/router"; // https://nextjs.org/docs/api-referenc
 import { useState } from "react";
 
 import { DashboardItem } from "../backend/dashboards";
+import { getPlatformsConfig, PlatformConfig } from "../backend/platforms";
 import { DashboardCreator } from "../web/display/dashboardCreator";
 import displayForecasts from "../web/display/displayForecasts";
 import Layout from "../web/display/layout";
@@ -15,39 +16,45 @@ interface Props {
   initialDashboardForecasts: FrontendForecast[];
   initialDashboardId?: string;
   initialDashboardItem?: DashboardItem;
+  platformsConfig: PlatformConfig[];
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async (
   context
 ) => {
-  console.log("getServerSideProps: ");
-  let urlQuery = context.query;
+  const dashboardIdQ = context.query.dashboardId;
+  const dashboardId: string | undefined =
+    typeof dashboardIdQ === "object" ? dashboardIdQ[0] : dashboardIdQ;
 
-  console.log(urlQuery);
-  let dashboardId = urlQuery.dashboardId;
-  let props;
+  const platformsConfig = getPlatformsConfig({ withGuesstimate: false });
 
-  if (!!dashboardId) {
-    let { dashboardForecasts, dashboardItem } =
-      await getDashboardForecastsByDashboardId({
-        dashboardId,
-      });
-    dashboardForecasts = addLabelsToForecasts(dashboardForecasts);
-
-    props = {
-      initialDashboardForecasts: dashboardForecasts,
-      initialDashboardId: urlQuery.dashboardId,
-      initialDashboardItem: dashboardItem,
-    };
-  } else {
-    props = {
-      initialDashboardForecasts: [],
-      initialDashboardId: urlQuery.dashboardId || undefined,
-      initialDashboardItem: undefined,
+  if (!dashboardId) {
+    return {
+      props: {
+        platformsConfig,
+        initialDashboardForecasts: [],
+        initialDashboardId: undefined,
+        initialDashboardItem: undefined,
+      },
     };
   }
+
+  const { dashboardForecasts, dashboardItem } =
+    await getDashboardForecastsByDashboardId({
+      dashboardId,
+    });
+  const frontendDashboardForecasts = addLabelsToForecasts(
+    dashboardForecasts,
+    platformsConfig
+  );
+
   return {
-    props,
+    props: {
+      initialDashboardForecasts: frontendDashboardForecasts,
+      initialDashboardId: dashboardId,
+      initialDashboardItem: dashboardItem,
+      platformsConfig,
+    },
   };
 };
 
@@ -55,6 +62,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 const DashboardsPage: NextPage<Props> = ({
   initialDashboardForecasts,
   initialDashboardItem,
+  platformsConfig,
 }) => {
   const router = useRouter();
   const [dashboardForecasts, setDashboardForecasts] = useState(
@@ -92,8 +100,9 @@ const DashboardsPage: NextPage<Props> = ({
         await getDashboardForecastsByDashboardId({
           dashboardId,
         });
-      console.log("response2", dashboardForecasts);
-      setDashboardForecasts(dashboardForecasts);
+      setDashboardForecasts(
+        addLabelsToForecasts(dashboardForecasts, platformsConfig)
+      );
       setDashboardItem(dashboardItem);
     }
   };

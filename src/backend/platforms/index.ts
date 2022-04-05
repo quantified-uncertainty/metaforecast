@@ -124,3 +124,29 @@ export const processPlatform = async (platform: Platform) => {
     console.log(`Platform ${platform.name} didn't return any results`);
   }
 };
+
+export interface PlatformConfig {
+  name: string;
+  label: string;
+  color: string;
+}
+
+// get frontend-safe version of platforms data
+export const getPlatformsConfig = (options: {
+  withGuesstimate: boolean;
+}): PlatformConfig[] => {
+  const platformsConfig = platforms.map((platform) => ({
+    name: platform.name,
+    label: platform.label,
+    color: platform.color,
+  }));
+  if (options.withGuesstimate) {
+    platformsConfig.push({
+      name: "guesstimate",
+      label: "Guesstimate",
+      color: "223900",
+    });
+  }
+
+  return platformsConfig;
+};

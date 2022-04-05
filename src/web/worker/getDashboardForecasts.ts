@@ -7,7 +7,7 @@ export async function getDashboardForecastsByDashboardId({
   dashboardId,
 }): Promise<{
   dashboardForecasts: Forecast[];
-  dashboardItem: DashboardItem | string;
+  dashboardItem: DashboardItem;
 }> {
   console.log("getDashboardForecastsByDashboardId: ");
   let dashboardContents: Forecast[] = [];

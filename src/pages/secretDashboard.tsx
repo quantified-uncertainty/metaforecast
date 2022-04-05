@@ -4,6 +4,7 @@
 import { useRouter } from "next/router"; // https://nextjs.org/docs/api-reference/next/router
 import { useState } from "react";
 
+import { getPlatformsConfig } from "../backend/platforms";
 import displayForecasts from "../web/display/displayForecasts";
 import { addLabelsToForecasts } from "../web/platforms";
 import { getDashboardForecastsByDashboardId } from "../web/worker/getDashboardForecasts";
@@ -12,10 +13,9 @@ import { getDashboardForecastsByDashboardId } from "../web/worker/getDashboardFo
 
 export async function getServerSideProps(context) {
   console.log("getServerSideProps: ");
-  let urlQuery = context.query; // this is an object, not a string which I have to parse!!
-  // so for instance if the url is metaforecasts.org/dashboards?a=b&c=d
-  // this returns ({a: "b", c: "d"}})
+  let urlQuery = context.query;
   console.log(urlQuery);
+
   let dashboardId = urlQuery.dashboardId;
   let numCols = urlQuery.numCols;
   let props;
@@ -25,7 +25,10 @@ export async function getServerSideProps(context) {
       await getDashboardForecastsByDashboardId({
         dashboardId,
       });
-    dashboardForecasts = addLabelsToForecasts(dashboardForecasts);
+    dashboardForecasts = addLabelsToForecasts(
+      dashboardForecasts,
+      getPlatformsConfig({ withGuesstimate: false })
+    );
     props = {
       initialDashboardForecasts: dashboardForecasts,
       initialDashboardId: urlQuery.dashboardId,

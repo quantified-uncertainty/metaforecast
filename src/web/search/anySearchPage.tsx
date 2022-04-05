@@ -1,8 +1,8 @@
 import { GetServerSideProps } from "next";
 
 import { getFrontpage } from "../../backend/frontpage";
-import { platforms } from "../../backend/platforms";
-import { addLabelsToForecasts, FrontendForecast, PlatformConfig } from "../platforms";
+import { getPlatformsConfig, PlatformConfig, platforms } from "../../backend/platforms";
+import { addLabelsToForecasts, FrontendForecast } from "../platforms";
 import searchAccordingToQueryData from "../worker/searchAccordingToQueryData";
 
 /* Common code for / and /capture */
@@ -29,16 +29,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 ) => {
   const urlQuery = context.query;
 
-  const platformsConfig = platforms.map((platform) => ({
-    name: platform.name,
-    label: platform.label,
-    color: platform.color,
-  }));
-  platformsConfig.push({
-    name: "guesstimate",
-    label: "Guesstimate",
-    color: "223900",
-  });
+  const platformsConfig = getPlatformsConfig({ withGuesstimate: true });
 
   const defaultQueryParameters: QueryParameters = {
     query: "",
@@ -74,7 +65,10 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   const defaultNumDisplay = 21;
   const initialNumDisplay = Number(urlQuery.numDisplay) || defaultNumDisplay;
 
-  const defaultResults = addLabelsToForecasts(await getFrontpage());
+  const defaultResults = addLabelsToForecasts(
+    await getFrontpage(),
+    platformsConfig
+  );
 
   const initialResults =
     !!initialQueryParameters &&

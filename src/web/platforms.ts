@@ -1,21 +1,17 @@
-import { Forecast, platforms } from "../backend/platforms";
-
-export interface PlatformConfig {
-  name: string;
-  label: string;
-  color: string;
-}
+import { Forecast, PlatformConfig } from "../backend/platforms";
 
 export type FrontendForecast = Forecast & {
   platformLabel: string;
   visualization?: any;
 };
 
+// ok on client side
 export const addLabelsToForecasts = (
-  forecasts: Forecast[]
+  forecasts: Forecast[],
+  platformsConfig: PlatformConfig[]
 ): FrontendForecast[] => {
   const platformNameToLabel = Object.fromEntries(
-    platforms.map((platform) => [platform.name, platform.label])
+    platformsConfig.map((platform) => [platform.name, platform.label])
   );
 
   return forecasts.map((result) => ({

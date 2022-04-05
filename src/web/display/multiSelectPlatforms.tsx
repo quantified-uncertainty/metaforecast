@@ -2,7 +2,7 @@ import chroma from "chroma-js";
 import React from "react";
 import Select from "react-select";
 
-import { PlatformConfig } from "../platforms";
+import { PlatformConfig } from "../../backend/platforms";
 
 const colourStyles = {
   control: (styles) => ({ ...styles, backgroundColor: "white" }),
