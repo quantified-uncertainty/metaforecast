@@ -1,41 +1,49 @@
 /* Imports */
 import axios from "axios";
-import { GetServerSideProps } from "next";
+import { GetServerSideProps, NextPage } from "next";
 import { useRouter } from "next/router"; // https://nextjs.org/docs/api-reference/next/router
 import { useState } from "react";
 
+import { DashboardItem } from "../backend/dashboards";
 import { DashboardCreator } from "../web/display/dashboardCreator";
 import displayForecasts from "../web/display/displayForecasts";
 import Layout from "../web/display/layout";
+import { addLabelsToForecasts, FrontendForecast } from "../web/platforms";
 import { getDashboardForecastsByDashboardId } from "../web/worker/getDashboardForecasts";
 
-/* get Props */
+interface Props {
+  initialDashboardForecasts: FrontendForecast[];
+  initialDashboardId?: string;
+  initialDashboardItem?: DashboardItem;
+}
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getServerSideProps: GetServerSideProps<Props> = async (
+  context
+) => {
   console.log("getServerSideProps: ");
-  let urlQuery = context.query; // this is an object, not a string which I have to parse!!
-  // so for instance if the url is metaforecasts.org/dashboards?a=b&c=d
-  // this returns ({a: "b", c: "d"}})
+  let urlQuery = context.query;
+
   console.log(urlQuery);
   let dashboardId = urlQuery.dashboardId;
   let props;
+
   if (!!dashboardId) {
-    console.log(dashboardId);
     let { dashboardForecasts, dashboardItem } =
       await getDashboardForecastsByDashboardId({
         dashboardId,
       });
+    dashboardForecasts = addLabelsToForecasts(dashboardForecasts);
+
     props = {
       initialDashboardForecasts: dashboardForecasts,
       initialDashboardId: urlQuery.dashboardId,
       initialDashboardItem: dashboardItem,
     };
   } else {
-    console.log();
     props = {
       initialDashboardForecasts: [],
-      initialDashboardId: urlQuery.dashboardId || null,
-      initialDashboardItem: null,
+      initialDashboardId: urlQuery.dashboardId || undefined,
+      initialDashboardItem: undefined,
     };
   }
   return {
@@ -44,10 +52,10 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 };
 
 /* Body */
-export default function Home({
+const DashboardsPage: NextPage<Props> = ({
   initialDashboardForecasts,
   initialDashboardItem,
-}) {
+}) => {
   const router = useRouter();
   const [dashboardForecasts, setDashboardForecasts] = useState(
     initialDashboardForecasts
@@ -188,4 +196,6 @@ export default function Home({
       </div>
     </Layout>
   );
-}
+};
+
+export default DashboardsPage;

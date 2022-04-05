@@ -1,4 +1,4 @@
-import { Forecast } from "../backend/platforms";
+import { Forecast, platforms } from "../backend/platforms";
 
 export interface PlatformConfig {
   name: string;
@@ -9,4 +9,17 @@ export interface PlatformConfig {
 export type FrontendForecast = Forecast & {
   platformLabel: string;
   visualization?: any;
+};
+
+export const addLabelsToForecasts = (
+  forecasts: Forecast[]
+): FrontendForecast[] => {
+  const platformNameToLabel = Object.fromEntries(
+    platforms.map((platform) => [platform.name, platform.label])
+  );
+
+  return forecasts.map((result) => ({
+    ...result,
+    platformLabel: platformNameToLabel[result.platform] || result.platform,
+  }));
 };

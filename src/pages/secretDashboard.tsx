@@ -5,6 +5,7 @@ import { useRouter } from "next/router"; // https://nextjs.org/docs/api-referenc
 import { useState } from "react";
 
 import displayForecasts from "../web/display/displayForecasts";
+import { addLabelsToForecasts } from "../web/platforms";
 import { getDashboardForecastsByDashboardId } from "../web/worker/getDashboardForecasts";
 
 /* get Props */
@@ -24,6 +25,7 @@ export async function getServerSideProps(context) {
       await getDashboardForecastsByDashboardId({
         dashboardId,
       });
+    dashboardForecasts = addLabelsToForecasts(dashboardForecasts);
     props = {
       initialDashboardForecasts: dashboardForecasts,
       initialDashboardId: urlQuery.dashboardId,

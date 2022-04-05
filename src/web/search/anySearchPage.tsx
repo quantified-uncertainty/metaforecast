@@ -2,7 +2,7 @@ import { GetServerSideProps } from "next";
 
 import { getFrontpage } from "../../backend/frontpage";
 import { platforms } from "../../backend/platforms";
-import { FrontendForecast, PlatformConfig } from "../platforms";
+import { addLabelsToForecasts, FrontendForecast, PlatformConfig } from "../platforms";
 import searchAccordingToQueryData from "../worker/searchAccordingToQueryData";
 
 /* Common code for / and /capture */
@@ -74,10 +74,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   const defaultNumDisplay = 21;
   const initialNumDisplay = Number(urlQuery.numDisplay) || defaultNumDisplay;
 
-  const defaultResults = (await getFrontpage()).map((result) => ({
-    ...result,
-    platformLabel: platformNameToLabel[result.platform] || result.platform,
-  }));
+  const defaultResults = addLabelsToForecasts(await getFrontpage());
 
   const initialResults =
     !!initialQueryParameters &&

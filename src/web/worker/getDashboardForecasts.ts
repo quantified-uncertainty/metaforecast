@@ -1,9 +1,17 @@
 import axios from "axios";
 
-export async function getDashboardForecastsByDashboardId({ dashboardId }) {
+import { DashboardItem } from "../../backend/dashboards";
+import { Forecast } from "../../backend/platforms";
+
+export async function getDashboardForecastsByDashboardId({
+  dashboardId,
+}): Promise<{
+  dashboardForecasts: Forecast[];
+  dashboardItem: DashboardItem | string;
+}> {
   console.log("getDashboardForecastsByDashboardId: ");
-  let dashboardContents = [];
-  let dashboardItem = null;
+  let dashboardContents: Forecast[] = [];
+  let dashboardItem: DashboardItem | any = null;
   try {
     let { data } = await axios({
       url: `${process.env.NEXT_PUBLIC_SITE_URL}/api/dashboard-by-id`,
@@ -14,7 +22,7 @@ export async function getDashboardForecastsByDashboardId({ dashboardId }) {
     });
     console.log(data);
     dashboardContents = data.dashboardContents;
-    dashboardItem = data.dashboardItem;
+    dashboardItem = data.dashboardItem as DashboardItem;
   } catch (error) {
     console.log(error);
   } finally {
