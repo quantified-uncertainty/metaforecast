@@ -207,9 +207,16 @@ function calculateStarsOmen(data) {
 }
 
 function calculateStarsPolymarket(data) {
-  let nuno = (data) => (data.volume > 10000 ? 4 : data.volume > 1000 ? 3 : 2);
+  // let nuno = (data) => (data.volume > 10000 ? 4 : data.volume > 1000 ? 3 : 2);
   // let eli = (data) => data.liquidity > 10000 ? 5 : 4
   // let misha = (data) => 4
+
+  let nuno = (data) =>
+    data.liquidity > 1000 && data.volume > 10000
+      ? 4
+      : data.liquidity > 500 && data.volume > 1000
+      ? 3
+      : 2;
   let starsDecimal = average([nuno(data)]); //, eli(data), misha(data)])
   // Substract 1 star if probability is above 90% or below 10%
   if (
