@@ -40,12 +40,12 @@ let domToImageWrapper = (reactRef) => {
 };
 
 let generateHtml = (result, imgSrc) => {
-  let html = `<a href="${result.item.url} target="_blank""><img src="${imgSrc}" alt="Metaforecast.org snapshot of ''${result.item.title}'', from ${result.item.platform}"></a>`;
+  let html = `<a href="${result.url} target="_blank""><img src="${imgSrc}" alt="Metaforecast.org snapshot of ''${result.title}'', from ${result.platform}"></a>`;
   return html;
 };
 
 let generateMarkdown = (result, imgSrc) => {
-  let markdown = `[![](${imgSrc})](${result.item.url})`;
+  let markdown = `[![](${imgSrc})](${result.url})`;
   return markdown;
 };
 
@@ -102,9 +102,7 @@ let generateIframeURL = (result) => {
   let iframeURL = "";
   if (result) {
     // if check not strictly necessary today
-    let parts = result.item.url
-      .replace("questions", "questions/embed")
-      .split("/");
+    let parts = result.url.replace("questions", "questions/embed").split("/");
     parts.pop();
     parts.pop();
     iframeURL = parts.join("/");
@@ -117,7 +115,7 @@ let metaculusEmbed = (result) => {
   let iframeURL = "";
   if (result) {
     iframeURL = generateIframeURL(result);
-    platform = result.item.platform;
+    platform = result.platform;
   }
 
   return (
@@ -148,7 +146,7 @@ let generateMetaculusSource = (result, hasDisplayBeenCaptured) => {
     }, 2000);
   };
 
-  if (result && hasDisplayBeenCaptured && result.item.platform == "Metaculus") {
+  if (result && hasDisplayBeenCaptured && result.platform == "Metaculus") {
     return (
       <div className="grid">
         <p className="bg-gray-100 cursor-pointer px-3 py-2 rounded-md shadow text-grey-7000 font-mono text-sm">
