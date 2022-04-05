@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,4 +5,49 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DIGITALOCEAN_POSTGRES")
+}
+
+model dashboards {
+  id          String   @id
+  title       String
+  description String
+  contents    Json
+  timestamp   DateTime @db.Timestamp(6)
+  creator     String
+  extra       Json
+}
+
+model frontpage {
+  id               Int  @id @default(autoincrement())
+  frontpage_full   Json
+  frontpage_sliced Json
+}
+
+model history {
+  id                String
+  title             String
+  url               String
+  platform          String
+  description       String
+  options           Json
+  timestamp         DateTime @db.Timestamp(6)
+  stars             Int
+  qualityindicators Json
+  extra             Json
+  pk                Int      @id @default(autoincrement())
+
+  @@index([id])
+}
+
+model questions {
+  id                String   @id
+  title             String
+  url               String
+  platform          String
+  description       String
+  options           Json
+  timestamp         DateTime @db.Timestamp(6)
+  stars             Int
+  qualityindicators Json
+  extra             Json
 }

@@ -27,6 +27,7 @@
     "dbshell": ". .env && psql $DIGITALOCEAN_POSTGRES"
   },
   "dependencies": {
+    "@prisma/client": "^3.11.1",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.1",
     "@types/jsdom": "^16.2.14",
