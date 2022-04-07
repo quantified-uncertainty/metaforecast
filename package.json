@@ -29,6 +29,7 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.1",
+    "@types/jsdom": "^16.2.14",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^17.0.39",
     "airtable": "^0.11.1",
@@ -48,6 +49,7 @@
     "html-to-image": "^1.7.0",
     "https": "^1.0.0",
     "isomorphic-fetch": "^3.0.0",
+    "jsdom": "^19.0.0",
     "json2csv": "^5.0.5",
     "multiselect-react-dropdown": "^2.0.17",
     "next": "12",
@@ -82,7 +84,7 @@
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.2.4",
     "@svgr/cli": "^6.2.1",
-    "netlify-cli": "^9.13.6",
-    "@types/pg": "^8.6.5"
+    "@types/pg": "^8.6.5",
+    "netlify-cli": "^9.13.6"
   }
 }
