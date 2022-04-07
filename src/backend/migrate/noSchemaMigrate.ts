@@ -1,9 +1,9 @@
 import "dotenv/config";
 
-import { readWritePool } from "../database/pg-wrapper";
+import { pool } from "../database/pg-wrapper";
 
 const migrate = async () => {
-  const client = await readWritePool.connect();
+  const client = await pool.connect();
 
   const execQuery = async (q: string) => {
     console.log(q);

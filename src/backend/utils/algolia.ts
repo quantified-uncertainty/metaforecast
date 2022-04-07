@@ -1,6 +1,6 @@
 import algoliasearch from "algoliasearch";
 
-import { pgReadWithReadCredentials } from "../database/pg-wrapper";
+import { pgRead } from "../database/pg-wrapper";
 import { platforms } from "../platforms";
 
 let cookie = process.env.ALGOLIA_MASTER_API_KEY;
@@ -20,7 +20,7 @@ let getoptionsstringforsearch = (record: any) => {
 };
 
 export async function rebuildAlgoliaDatabaseTheEasyWay() {
-  let records: any[] = await pgReadWithReadCredentials({
+  let records: any[] = await pgRead({
     tableName: "questions",
   });
 
