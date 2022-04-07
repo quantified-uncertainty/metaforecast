@@ -1,7 +1,7 @@
 /* Imports */
 import fs from "fs";
 
-import { pgReadWithReadCredentials } from "../../database/pg-wrapper";
+import { pgRead } from "../../database/pg-wrapper";
 
 /* Definitions */
 let locationData = "./data/";
@@ -9,7 +9,7 @@ let locationData = "./data/";
 /* Body */
 // let rawdata =  fs.readFileSync("./data/merged-questions.json") // run from topmost folder, not from src
 async function main() {
-  let data = await pgReadWithReadCredentials({ tableName: "questions" }); //JSON.parse(rawdata)
+  let data = await pgRead({ tableName: "questions" }); //JSON.parse(rawdata)
   let processDescription = (description) => {
     if (description == null || description == undefined || description == "") {
       return "";

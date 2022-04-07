@@ -1,7 +1,7 @@
-import { pgReadWithReadCredentials, pgUpsert } from "../../database/pg-wrapper";
+import { pgRead, pgUpsert } from "../../database/pg-wrapper";
 
 export async function updateHistory() {
-  let latest = await pgReadWithReadCredentials({ tableName: "questions" });
+  let latest = await pgRead({ tableName: "questions" });
   await pgUpsert({
     contents: latest,
     tableName: "history",

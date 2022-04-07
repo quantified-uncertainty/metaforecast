@@ -1,4 +1,3 @@
-import { pgInitialize } from "../database/pg-wrapper";
 import { doEverything } from "../flow/doEverything";
 import { updateHistory } from "../flow/history/updateHistory";
 import { rebuildNetlifySiteWithNewData } from "../flow/rebuildNetliftySiteWithNewData";
@@ -44,11 +43,6 @@ export const jobs: Job[] = [
     message: "All of the above",
     run: doEverything,
     separate: true,
-  },
-  {
-    name: "migrate",
-    message: "Initialize postgres database",
-    run: pgInitialize,
   },
 ];
 

@@ -1,8 +1,8 @@
-import { pgRead, readWritePool } from "./database/pg-wrapper";
+import { pgRead, pool } from "./database/pg-wrapper";
 import { Forecast } from "./platforms";
 
 export async function getFrontpage(): Promise<Forecast[]> {
-  const res = await readWritePool.query(
+  const res = await pool.query(
     "SELECT frontpage_sliced FROM frontpage ORDER BY id DESC LIMIT 1"
   );
   if (!res.rows.length) return [];
@@ -10,7 +10,7 @@ export async function getFrontpage(): Promise<Forecast[]> {
 }
 
 export async function getFrontpageFull(): Promise<Forecast[]> {
-  const res = await readWritePool.query(
+  const res = await pool.query(
     "SELECT frontpage_full FROM frontpage ORDER BY id DESC LIMIT 1"
   );
   if (!res.rows.length) return [];
@@ -23,18 +23,18 @@ export async function rebuildFrontpage() {
   });
 
   const frontpageSliced = (
-    await readWritePool.query(`
+    await pool.query(`
     SELECT * FROM questions
     WHERE
       (qualityindicators->>'stars')::int >= 3
       AND description != ''
-      AND JSON_ARRAY_LENGTH(options) > 0
+      AND JSONB_ARRAY_LENGTH(options) > 0
     ORDER BY RANDOM() LIMIT 50
   `)
   ).rows;
 
   const start = Date.now();
-  await readWritePool.query(
+  await pool.query(
     "INSERT INTO frontpage(frontpage_full, frontpage_sliced) VALUES($1, $2)",
     [JSON.stringify(frontpageFull), JSON.stringify(frontpageSliced)]
   );
