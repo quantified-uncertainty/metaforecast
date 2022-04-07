@@ -14,8 +14,8 @@ import { getDashboardForecastsByDashboardId } from "../web/worker/getDashboardFo
 
 interface Props {
   initialDashboardForecasts: FrontendForecast[];
-  initialDashboardId?: string;
-  initialDashboardItem?: DashboardItem;
+  initialDashboardId: string | null;
+  initialDashboardItem: DashboardItem | null;
   platformsConfig: PlatformConfig[];
 }
 
@@ -33,8 +33,8 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
       props: {
         platformsConfig,
         initialDashboardForecasts: [],
-        initialDashboardId: undefined,
-        initialDashboardItem: undefined,
+        initialDashboardId: null,
+        initialDashboardItem: null,
       },
     };
   }
