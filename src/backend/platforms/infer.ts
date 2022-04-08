@@ -17,6 +17,7 @@ String.prototype.replaceAll = function replaceAll(search, replace) {
 const DEBUG_MODE: "on" | "off" = "off"; // "off"
 const SLEEP_TIME_RANDOM = 7000; // miliseconds
 const SLEEP_TIME_EXTRA = 2000;
+
 /* Support functions */
 
 async function fetchPage(page, cookie) {
@@ -52,94 +53,50 @@ async function fetchStats(questionUrl, cookie) {
   if (response.includes("Sign up or sign in to forecast")) {
     throw Error("Not logged in");
   }
-
-  // Is binary?
-  let isbinary = response.includes("binary?&quot;:true");
-  // console.log(`is binary? ${isbinary}`)
+  // Init
   let options = [];
-  if (isbinary) {
-    // Crowd percentage
-    let htmlElements = response.split("\n");
-    // DEBUG_MODE == "on" ? htmlLines.forEach(line => console.log(line)) : id()
-    let h3Element = htmlElements.filter((str) => str.includes("<h3>"))[0];
-    // DEBUG_MODE == "on" ? console.log(h5elements) : id()
-    let crowdpercentage = h3Element.split(">")[1].split("<")[0];
-    let probability = Number(crowdpercentage.replace("%", "")) / 100;
-    options.push(
-      {
-        name: "Yes",
-        probability: probability,
-        type: "PROBABILITY",
-      },
-      {
+
+  // Parse the embedded json
+  let htmlElements = response.split("\n");
+  let jsonLines = htmlElements.filter((element) =>
+    element.includes("data-react-props")
+  );
+  let embeddedJsons = jsonLines.map((jsonLine, i) => {
+    let innerJSONasHTML = jsonLine.split('data-react-props="')[1].split('"')[0];
+    let json = JSON.parse(innerJSONasHTML.replaceAll("&quot;", '"'));
+    return json;
+  });
+  let firstEmbeddedJson = embeddedJsons[0];
+  let title = firstEmbeddedJson.question.name;
+  let description = firstEmbeddedJson.question.description;
+  let comments_count = firstEmbeddedJson.question.comments_count;
+  let numforecasters = firstEmbeddedJson.question.predictors_count;
+  let numforecasts = firstEmbeddedJson.question.prediction_sets_count;
+  let forecastType = firstEmbeddedJson.question.type;
+  if (
+    forecastType.includes("Binary") ||
+    forecastType.includes("NonExclusiveOpinionPoolQuestion") ||
+    forecastType.includes("Forecast::Question") ||
+    !forecastType.includes("Forecast::MultiTimePeriodQuestion")
+  ) {
+    options = firstEmbeddedJson.question.answers.map((answer) => ({
+      name: answer.name,
+      probability: answer.normalized_probability,
+      type: "PROBABILITY",
+    }));
+    if (options.length == 1 && options[0].name == "Yes") {
+      let probabilityNo =
+        options[0].probability > 1
+          ? 1 - options[0].probability / 100
+          : 1 - options[0].probability;
+      let optionNo = {
         name: "No",
-        probability: +(1 - probability).toFixed(2), // avoids floating point shenanigans
+        probability: probabilityNo,
         type: "PROBABILITY",
-      }
-    );
-  } else {
-    try {
-      let optionsBody = response.split("tbody")[1]; // Previously [1], then previously [3] but they added a new table.
-      // console.log(optionsBody)
-      let optionsHtmlElement = "<table" + optionsBody + "table>";
-      let tablesAsJson = Tabletojson.convert(optionsHtmlElement);
-      let firstTable = tablesAsJson[0];
-      options = firstTable.map((element) => ({
-        name: element["0"],
-        probability: Number(element["1"].replace("%", "")) / 100,
-        type: "PROBABILITY",
-      }));
-    } catch (error) {
-      let optionsBody = response.split("tbody")[3]; // Catch if the error is related to table position
-      let optionsHtmlElement = "<table" + optionsBody + "table>";
-      let tablesAsJson = Tabletojson.convert(optionsHtmlElement);
-      let firstTable = tablesAsJson[0];
-      if (firstTable) {
-        options = firstTable.map((element) => ({
-          name: element["0"],
-          probability: Number(element["1"].replace("%", "")) / 100,
-          type: "PROBABILITY",
-        }));
-      } else {
-        // New type of question, tricky to parse the options
-        // Just leave options = [] for now.
-        // https://www.cset-foretell.com/blog/rolling-question-formats
-      }
+      };
+      options.push(optionNo);
     }
   }
-  // Description
-  let descriptionraw = response.split(`<meta name="description" content="`)[1];
-  let descriptionprocessed1 = descriptionraw.split(`">`)[0];
-  let descriptionprocessed2 = descriptionprocessed1.replace(">", "");
-  let descriptionprocessed3 = descriptionprocessed2.replace(
-    "To suggest a change or clarification to this question, please select Request Clarification from the green gear-shaped dropdown button to the right of the question.",
-    ``
-  );
-  // console.log(descriptionprocessed3)
-  let descriptionprocessed4 = descriptionprocessed3.replaceAll(
-    "\r\n\r\n",
-    "\n"
-  );
-  let descriptionprocessed5 = descriptionprocessed4.replaceAll("\n\n", "\n");
-  let descriptionprocessed6 = descriptionprocessed5.replaceAll("&quot;", `"`);
-  let descriptionprocessed7 = descriptionprocessed6.replaceAll("&#39;", "'");
-  let descriptionprocessed8 = toMarkdown(descriptionprocessed7);
-  let description = descriptionprocessed8;
-
-  // Number of forecasts
-  //console.log(response)
-  //console.log(response.split("prediction_sets_count&quot;:")[1])
-  let numforecasts = response
-    .split("prediction_sets_count&quot;:")[1]
-    .split(",")[0];
-  // console.log(numforecasts)
-
-  // Number of predictors
-  let numforecasters = response
-    .split("predictors_count&quot;:")[1]
-    .split(",")[0];
-  // console.log(numpredictors)
-
   let result = {
     description: description,
     options: options,
@@ -147,10 +104,11 @@ async function fetchStats(questionUrl, cookie) {
     qualityindicators: {
       numforecasts: Number(numforecasts),
       numforecasters: Number(numforecasters),
+      comments_count: Number(comments_count),
       stars: calculateStars(platformName, { numforecasts }),
     },
   };
-
+  // console.log(JSON.stringify(result, null, 4));
   return result;
 }
 
@@ -218,10 +176,13 @@ async function infer_inner(cookie: string) {
           let question: Forecast = {
             id: id,
             title: title,
+            description: moreinfo.description,
             url: url,
             platform: platformName,
+            options: moreinfo.options,
             ...moreinfo,
           };
+          console.log(JSON.stringify(question, null, 4));
           if (
             i % 30 == 0 &&
             !(process.env.DEBUG_MODE == "on" || DEBUG_MODE == "on")
