@@ -549,8 +549,6 @@ let forecastFooter = ({
       >
         {platformLabel
           .replace("Good Judgment Open", "GJOpen")
-          .replace("OpenPhilanthropy", "OpenPhil")
-          .replace("AstralCodexTen", "ACX")
           .replace(/ /g, "\u00a0")}
       </div>
       <div
