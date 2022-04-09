@@ -1,5 +1,5 @@
 import { DisplayForecasts } from "./DisplayForecasts";
-import displayOneForecast from "./displayOneForecastForCapture";
+import { DisplayOneForecastForCapture } from "./DisplayOneForecastForCapture";
 
 export function displayForecastsWrapperForSearch({
   results,
@@ -23,9 +23,9 @@ export function displayForecastsWrapperForCapture({
 }) {
   return (
     <div className="grid grid-cols-1 w-full justify-center">
-      {displayOneForecast({
-        result: results[whichResultToDisplayAndCapture],
-      })}
+      <DisplayOneForecastForCapture
+        result={results[whichResultToDisplayAndCapture]}
+      />
     </div>
   );
 }

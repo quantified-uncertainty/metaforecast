@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { EventHandler, SyntheticEvent, useState } from "react";
+
+import { Button } from "./Button";
+import { InfoBox } from "./InfoBox";
 
 const exampleInput = `{
   "title": "Random example",
@@ -13,32 +16,27 @@ interface Props {
 
 export const DashboardCreator: React.FC<Props> = ({ handleSubmit }) => {
   const [value, setValue] = useState(exampleInput);
-  const [displayingDoneMessage, setDisplayingDoneMessage] = useState(false);
-  const [displayingDoneMessageTimer, setDisplayingDoneMessageTimer] =
-    useState(null);
+  const [acting, setActing] = useState(false);
 
   const handleChange = (event) => {
     setValue(event.target.value);
   };
 
-  const handleSubmitInner = (event) => {
-    clearTimeout(displayingDoneMessageTimer);
+  const handleSubmitInner: EventHandler<SyntheticEvent> = async (event) => {
     event.preventDefault();
 
-    console.log(value);
     try {
-      let newData = JSON.parse(value);
+      const newData = JSON.parse(value);
 
       if (!newData || !newData.ids || newData.ids.length == 0) {
         throw Error("Not enough objects");
       } else {
-        handleSubmit(newData);
-        setDisplayingDoneMessage(true);
-        const timer = setTimeout(() => setDisplayingDoneMessage(false), 3000);
-        setDisplayingDoneMessageTimer(timer);
+        setActing(true);
+        await handleSubmit(newData);
+        setActing(false);
       }
     } catch (error) {
-      setDisplayingDoneMessage(false);
+      setActing(false);
       const substituteText = `Error: ${error.message}
 
 Try something like:
@@ -50,36 +48,21 @@ Your old input was: ${value}`;
   };
 
   return (
-    <form onSubmit={handleSubmitInner} className="block place-centers">
-      <textarea
-        value={value}
-        onChange={handleChange}
-        rows={8}
-        cols={50}
-        className=""
-      />
-      <br />
-      <div className="grid grid-cols-3 text-center">
-        <button
-          className="block col-start-2 col-end-2 w-full bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-5 p-10 text-center"
-          onClick={handleSubmitInner}
+    <form onSubmit={handleSubmitInner}>
+      <div className="flex flex-col items-center space-y-5 max-w-2xl">
+        <textarea value={value} onChange={handleChange} rows={8} cols={50} />
+        <Button
+          disabled={acting}
+          onClick={acting ? undefined : handleSubmitInner}
         >
-          Create dashboard
-        </button>
-        <button
-          className={
-            displayingDoneMessage
-              ? "block col-start-2 col-end-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded mt-2 p-2 text-center "
-              : "hidden "
-          }
-        >
-          Done!
-        </button>
-        <p className="block col-start-1 col-end-4 bg-gray-200 text-gray-700  py-2 px-4 border border-transparent mt-5 p-10 text-center mb-6">
+          {acting ? "Creating..." : "Create dashboard"}
+        </Button>
+
+        <InfoBox>
           You can find the necessary ids by toggling the advanced options in the
           search, or by visiting{" "}
           <a href="/api/all-forecasts">/api/all-forecasts</a>
-        </p>
+        </InfoBox>
       </div>
     </form>
   );

@@ -1,24 +1,14 @@
 import { useRouter } from "next/router";
-import React, { DependencyList, EffectCallback, Fragment, useEffect, useState } from "react";
+import React, { Fragment, useState } from "react";
 
 import { ButtonsForStars } from "../display/ButtonsForStars";
 import { MultiSelectPlatform } from "../display/MultiSelectPlatform";
 import { QueryForm } from "../display/QueryForm";
 import { SliderElement } from "../display/SliderElement";
+import { useNoInitialEffect } from "../hooks";
 import { FrontendForecast } from "../platforms";
 import searchAccordingToQueryData from "../worker/searchAccordingToQueryData";
 import { Props as AnySearchPageProps, QueryParameters } from "./anySearchPage";
-
-const useNoInitialEffect = (effect: EffectCallback, deps: DependencyList) => {
-  const initial = React.useRef(true);
-  useEffect(() => {
-    if (initial.current) {
-      initial.current = false;
-      return;
-    }
-    return effect();
-  }, deps);
-};
 
 interface Props extends AnySearchPageProps {
   hasSearchbar: boolean;
