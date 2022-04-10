@@ -139,17 +139,17 @@ function isSignedIn(html) {
   if (!isSignedInBool) {
     console.log("Error: Not signed in.");
   }
-  console.log(`is signed in? ${isSignedInBool}`);
+  console.log(`is signed in? ${isSignedInBool ? "yes" : "no"}`);
   return isSignedInBool;
 }
 
-function isEnd(html) {
-  let isEndBool = html.includes("No questions match your filter");
-  if (isEndBool) {
+function reachedEnd(html) {
+  let reachedEndBool = html.includes("No questions match your filter");
+  if (reachedEndBool) {
     //console.log(html)
   }
-  console.log(`IsEnd? ${isEndBool}`);
-  return isEndBool;
+  console.log(`Reached end? ${reachedEndBool}`);
+  return reachedEndBool;
 }
 
 function sleep(ms: number) {
@@ -165,7 +165,7 @@ async function goodjudgmentopen_inner(cookie) {
   let results = [];
   let init = Date.now();
   // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
-  while (!isEnd(response) && isSignedIn(response)) {
+  while (!reachedEnd(response) && isSignedIn(response)) {
     let htmlLines = response.split("\n");
     DEBUG_MODE == "on" ? htmlLines.forEach((line) => console.log(line)) : id();
     let h5elements = htmlLines.filter((str) => str.includes("<h5> <a href="));
