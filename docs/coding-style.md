@@ -13,7 +13,6 @@
 # React
 
 - create one file per one component (tiny helper components in the same file are fine)
-- if
 - name file identically to the component it describes (e.g. `const DisplayForecasts: React.FC<Props> = ...` in `DisplayForecasts.ts`)
 - use named export instead of default export for all React components
   - it's better for refactoring
