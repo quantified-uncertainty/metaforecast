@@ -1,4 +1,5 @@
 import { GetServerSideProps, NextPage } from "next";
+import Error from "next/error";
 import Link from "next/link";
 
 import { DashboardItem } from "../../../backend/dashboards";
@@ -31,6 +32,10 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
     dashboardForecasts,
     platformsConfig
   );
+
+  if (!dashboardItem) {
+    context.res.statusCode = 404;
+  }
 
   return {
     props: {
@@ -89,7 +94,9 @@ const ViewDashboardPage: NextPage<Props> = ({
       <div className="flex flex-col my-8 space-y-8">
         {dashboardItem ? (
           <DashboardMetadata dashboardItem={dashboardItem} />
-        ) : null}
+        ) : (
+          <Error statusCode={404} />
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <DisplayForecasts
