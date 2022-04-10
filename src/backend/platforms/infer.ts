@@ -20,6 +20,12 @@ const SLEEP_TIME_EXTRA = 2000;
 
 /* Support functions */
 
+function cleanDescription(text) {
+  let md = toMarkdown(text);
+  let result = md.replaceAll("---", "-").replaceAll("  ", " ");
+  return result;
+}
+
 async function fetchPage(page, cookie) {
   console.log(`Page #${page}`);
   if (page == 1) {
@@ -68,7 +74,7 @@ async function fetchStats(questionUrl, cookie) {
   });
   let firstEmbeddedJson = embeddedJsons[0];
   let title = firstEmbeddedJson.question.name;
-  let description = firstEmbeddedJson.question.description;
+  let description = cleanDescription(firstEmbeddedJson.question.description);
   let comments_count = firstEmbeddedJson.question.comments_count;
   let numforecasters = firstEmbeddedJson.question.predictors_count;
   let numforecasts = firstEmbeddedJson.question.prediction_sets_count;
@@ -120,17 +126,17 @@ function isSignedIn(html) {
   if (!isSignedInBool) {
     console.log("Error: Not signed in.");
   }
-  console.log(`Signed in? ${isSignedInBool}`);
+  console.log(`Signed in? ${isSignedInBool ? "yes" : "no"}`);
   return isSignedInBool;
 }
 
-function isEnd(html) {
-  let isEndBool = html.includes("No questions match your filter");
-  if (isEndBool) {
+function reachedEnd(html) {
+  let reachedEndBool = html.includes("No questions match your filter");
+  if (reachedEndBool) {
     //console.log(html)
   }
-  console.log(`IsEnd? ${isEndBool}`);
-  return isEndBool;
+  console.log(`Reached end? ${reachedEndBool ? "yes" : "no"}`);
+  return reachedEndBool;
 }
 
 function sleep(ms) {
@@ -146,7 +152,7 @@ async function infer_inner(cookie: string) {
 
   await measureTime(async () => {
     // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
-    while (!isEnd(response) && isSignedIn(response)) {
+    while (!reachedEnd(response) && isSignedIn(response)) {
       let htmlLines = response.split("\n");
       // let h4elements = htmlLines.filter(str => str.includes("<h5> <a href=") || str.includes("<h4> <a href="))
       let questionHrefs = htmlLines.filter((str) =>
