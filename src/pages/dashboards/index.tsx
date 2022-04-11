@@ -8,6 +8,7 @@ import { DashboardCreator } from "../../web/display/DashboardCreator";
 import { Layout } from "../../web/display/Layout";
 import { LineHeader } from "../../web/display/LineHeader";
 import { addLabelsToForecasts, FrontendForecast } from "../../web/platforms";
+import { reqToBasePath } from "../../web/utils";
 import { getDashboardForecastsByDashboardId } from "../../web/worker/getDashboardForecasts";
 
 interface Props {
@@ -40,6 +41,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   const { dashboardForecasts, dashboardItem } =
     await getDashboardForecastsByDashboardId({
       dashboardId,
+      basePath: reqToBasePath(context.req), // required on server side to find the API endpoint
     });
   const frontendDashboardForecasts = addLabelsToForecasts(
     dashboardForecasts,

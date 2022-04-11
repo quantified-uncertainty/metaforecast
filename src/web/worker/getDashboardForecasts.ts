@@ -5,16 +5,24 @@ import { Forecast } from "../../backend/platforms";
 
 export async function getDashboardForecastsByDashboardId({
   dashboardId,
+  basePath,
+}: {
+  dashboardId: string;
+  basePath?: string;
 }): Promise<{
   dashboardForecasts: Forecast[];
   dashboardItem: DashboardItem;
 }> {
   console.log("getDashboardForecastsByDashboardId: ");
+  if (window === undefined && !basePath) {
+    throw new Error("`basePath` option is required on server side");
+  }
+
   let dashboardContents: Forecast[] = [];
   let dashboardItem: DashboardItem | any = null;
   try {
     let { data } = await axios({
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/api/dashboard-by-id`,
+      url: `${basePath || ""}/api/dashboard-by-id`,
       method: "post",
       data: {
         id: dashboardId,
