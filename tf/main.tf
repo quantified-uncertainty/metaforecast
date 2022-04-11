@@ -9,6 +9,10 @@ terraform {
       source  = "digitalocean/digitalocean"
       version = "~> 2.0"
     }
+    heroku = {
+      source  = "heroku/heroku"
+      version = "~> 5.0.2"
+    }
     local = {
       source  = "hashicorp/local"
       version = "~> 2"
@@ -24,6 +28,11 @@ provider "digitalocean" {
   token = var.digital_ocean_token
 }
 
+provider "heroku" {
+  email   = "me@berekuk.ru"
+  api_key = var.heroku_api_key
+}
+
 resource "digitalocean_database_cluster" "metaforecast_db" {
   name       = "postgres-green"
   engine     = "pg"
@@ -31,6 +40,19 @@ resource "digitalocean_database_cluster" "metaforecast_db" {
   region     = "nyc1"
   node_count = 1
   version    = 14
+}
+
+locals {
+  generated_env = merge(var.metaforecast_env, {
+    DIGITALOCEAN_POSTGRES = digitalocean_database_cluster.metaforecast_db.uri
+  })
+}
+
+resource "heroku_app" "metaforecast_backend" {
+  name   = "metaforecast-backend"
+  region = "us"
+
+  config_vars = local.generated_env
 }
 
 resource "vercel_project" "metaforecast" {
@@ -51,18 +73,9 @@ resource "vercel_env" "metaforecast" {
   project_id = vercel_project.metaforecast.id
   team_id    = var.vercel_team
   type       = "plain"
-  for_each   = var.metaforecast_env
+  for_each   = local.generated_env
   key        = each.key
   value      = each.value
-  target     = ["preview", "production"]
-}
-
-resource "vercel_env" "metaforecast_db" {
-  project_id = vercel_project.metaforecast.id
-  team_id    = var.vercel_team
-  type       = "plain"
-  key        = "DIGITALOCEAN_POSTGRES"
-  value      = digitalocean_database_cluster.metaforecast_db.uri
   target     = ["preview", "production"]
 }
 
