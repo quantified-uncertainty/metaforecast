@@ -2,6 +2,7 @@ import { IncomingMessage } from "http";
 
 export const reqToBasePath = (req: IncomingMessage) => {
   if (process.env.NEXT_PUBLIC_VERCEL_URL) {
+    console.log(process.env.NEXT_PUBLIC_VERCEL_URL);
     return process.env.NEXT_PUBLIC_VERCEL_URL;
   }
 

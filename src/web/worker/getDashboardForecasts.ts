@@ -14,7 +14,7 @@ export async function getDashboardForecastsByDashboardId({
   dashboardItem: DashboardItem;
 }> {
   console.log("getDashboardForecastsByDashboardId: ");
-  if (window === undefined && !basePath) {
+  if (typeof window === undefined && !basePath) {
     throw new Error("`basePath` option is required on server side");
   }
 
