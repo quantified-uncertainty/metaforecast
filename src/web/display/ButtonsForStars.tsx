@@ -5,11 +5,11 @@ interface Props {
   value: number;
 }
 
-const ButtonsForStars: React.FC<Props> = ({ onChange, value }) => {
+export const ButtonsForStars: React.FC<Props> = ({ onChange, value }) => {
   const onChangeInner = (buttonPressed: number) => {
     onChange(buttonPressed);
   };
-  let setStyle = (buttonNumber: number) =>
+  const setStyle = (buttonNumber: number) =>
     `flex row-span-1 col-start-${buttonNumber + 1} col-end-${
       buttonNumber + 2
     } items-center justify-center text-center${
@@ -37,5 +37,3 @@ const ButtonsForStars: React.FC<Props> = ({ onChange, value }) => {
     </div>
   );
 };
-
-export default ButtonsForStars;

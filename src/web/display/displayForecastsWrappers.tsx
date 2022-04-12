@@ -1,5 +1,5 @@
-import displayForecasts from "./displayForecasts";
-import displayOneForecast from "./displayOneForecastForCapture";
+import { DisplayForecasts } from "./DisplayForecasts";
+import { DisplayOneForecastForCapture } from "./DisplayOneForecastForCapture";
 
 export function displayForecastsWrapperForSearch({
   results,
@@ -8,7 +8,11 @@ export function displayForecastsWrapperForSearch({
 }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {displayForecasts({ results: results || [], numDisplay, showIdToggle })}
+      <DisplayForecasts
+        results={results || []}
+        numDisplay={numDisplay}
+        showIdToggle={showIdToggle}
+      />
     </div>
   );
 }
@@ -19,9 +23,9 @@ export function displayForecastsWrapperForCapture({
 }) {
   return (
     <div className="grid grid-cols-1 w-full justify-center">
-      {displayOneForecast({
-        result: results[whichResultToDisplayAndCapture],
-      })}
+      <DisplayOneForecastForCapture
+        result={results[whichResultToDisplayAndCapture]}
+      />
     </div>
   );
 }

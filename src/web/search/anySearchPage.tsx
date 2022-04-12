@@ -58,10 +58,6 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
     ).split("|");
   }
 
-  const platformNameToLabel = Object.fromEntries(
-    platforms.map((platform) => [platform.name, platform.label])
-  );
-
   const defaultNumDisplay = 21;
   const initialNumDisplay = Number(urlQuery.numDisplay) || defaultNumDisplay;
 

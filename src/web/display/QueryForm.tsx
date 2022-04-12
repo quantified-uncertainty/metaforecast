@@ -1,6 +1,16 @@
 import React from "react";
 
-export default function Form({ value, onChange, placeholder }) {
+interface Props {
+  value: string;
+  onChange: (v: string) => void;
+  placeholder: string;
+}
+
+export const QueryForm: React.FC<Props> = ({
+  value,
+  onChange,
+  placeholder,
+}) => {
   const handleInputChange = (event) => {
     event.preventDefault();
     onChange(event.target.value); // In this case, the query, e.g. "COVID.19"
@@ -21,4 +31,4 @@ export default function Form({ value, onChange, placeholder }) {
       />
     </form>
   );
-}
+};

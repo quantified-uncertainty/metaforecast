@@ -1,19 +1,20 @@
 import axios from "axios";
 
 import { DashboardItem } from "../../backend/dashboards";
-import { Forecast } from "../../backend/platforms";
+import { Forecast, getPlatformsConfig } from "../../backend/platforms";
+import { addLabelsToForecasts, FrontendForecast } from "../platforms";
 
 export async function getDashboardForecastsByDashboardId({
   dashboardId,
 }): Promise<{
-  dashboardForecasts: Forecast[];
+  dashboardForecasts: FrontendForecast[];
   dashboardItem: DashboardItem;
 }> {
   console.log("getDashboardForecastsByDashboardId: ");
-  let dashboardContents: Forecast[] = [];
-  let dashboardItem: DashboardItem | any = null;
+  let dashboardForecasts: Forecast[] = [];
+  let dashboardItem: DashboardItem | null = null;
   try {
-    let { data } = await axios({
+    const { data } = await axios({
       url: `${process.env.NEXT_PUBLIC_SITE_URL}/api/dashboard-by-id`,
       method: "post",
       data: {
@@ -21,13 +22,19 @@ export async function getDashboardForecastsByDashboardId({
       },
     });
     console.log(data);
-    dashboardContents = data.dashboardContents;
+
+    dashboardForecasts = data.dashboardContents;
     dashboardItem = data.dashboardItem as DashboardItem;
   } catch (error) {
     console.log(error);
   } finally {
+    const labeledDashboardForecasts = addLabelsToForecasts(
+      dashboardForecasts,
+      getPlatformsConfig({ withGuesstimate: false })
+    );
+
     return {
-      dashboardForecasts: dashboardContents,
+      dashboardForecasts: labeledDashboardForecasts,
       dashboardItem,
     };
   }

@@ -4,7 +4,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { FrontendForecast } from "../platforms";
 import { uploadToImgur } from "../worker/uploadToImgur";
-import { DisplayForecast } from "./displayForecasts";
+import { DisplayForecast } from "./DisplayForecast";
 
 function displayOneForecastInner(result: FrontendForecast, containerRef) {
   return (
@@ -171,7 +171,7 @@ interface Props {
   result: FrontendForecast;
 }
 
-const DisplayOneForecast: React.FC<Props> = ({ result }) => {
+export const DisplayOneForecastForCapture: React.FC<Props> = ({ result }) => {
   const [hasDisplayBeenCaptured, setHasDisplayBeenCaptured] = useState(false);
 
   useEffect(() => {
@@ -247,8 +247,6 @@ const DisplayOneForecast: React.FC<Props> = ({ result }) => {
     </div>
   );
 };
-
-export default DisplayOneForecast;
 
 // https://stackoverflow.com/questions/39501289/in-reactjs-how-to-copy-text-to-clipboard
 // Note: https://stackoverflow.com/questions/66016033/can-no-longer-upload-images-to-imgur-from-localhost

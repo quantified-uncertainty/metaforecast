@@ -76,9 +76,19 @@ function Track({ source, target, getTrackProps }) {
   );
 }
 
+interface Props {
+  value: number;
+  onChange: (event: any) => void;
+  displayFunction: (value: number) => string;
+}
+
 /* Body */
 // Two functions, essentially identical.
-export function SliderElement({ onChange, value, displayFunction }) {
+export const SliderElement: React.FC<Props> = ({
+  onChange,
+  value,
+  displayFunction,
+}) => {
   return (
     <Slider
       rootStyle={
@@ -122,4 +132,4 @@ export function SliderElement({ onChange, value, displayFunction }) {
       </Tracks>
     </Slider>
   );
-}
+};
