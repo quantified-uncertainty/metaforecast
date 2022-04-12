@@ -5,6 +5,7 @@ import { DashboardItem } from "../../../backend/dashboards";
 import { DisplayForecasts } from "../../../web/display/DisplayForecasts";
 import { FrontendForecast } from "../../../web/platforms";
 import { getDashboardForecastsByDashboardId } from "../../../web/worker/getDashboardForecasts";
+import { reqToBasePath } from "../../../web/utils";
 
 interface Props {
   dashboardForecasts: FrontendForecast[];
@@ -21,6 +22,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   const { dashboardItem, dashboardForecasts } =
     await getDashboardForecastsByDashboardId({
       dashboardId,
+      basePath: reqToBasePath(context.req), // required on server side to find the API endpoint
     });
 
   if (!dashboardItem) {
