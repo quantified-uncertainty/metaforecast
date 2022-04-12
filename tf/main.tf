@@ -69,6 +69,12 @@ resource "vercel_project" "metaforecast" {
   domain {
     name = "metaforecast.org"
   }
+
+  domain {
+    name                 = "www.metaforecast.org"
+    redirect             = "metaforecast.org"
+    redirect_status_code = 308
+  }
 }
 
 resource "vercel_env" "metaforecast" {
