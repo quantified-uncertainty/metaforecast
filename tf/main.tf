@@ -44,7 +44,8 @@ resource "digitalocean_database_cluster" "metaforecast_db" {
 
 locals {
   generated_env = merge(var.metaforecast_env, {
-    DIGITALOCEAN_POSTGRES = digitalocean_database_cluster.metaforecast_db.uri
+    # should we bring proper DO certificates to prod instead?
+    DIGITALOCEAN_POSTGRES = replace(digitalocean_database_cluster.metaforecast_db.uri, "/\\?sslmode=require$/", "")
   })
 }
 
