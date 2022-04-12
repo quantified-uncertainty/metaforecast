@@ -3,17 +3,15 @@ import Error from "next/error";
 import Link from "next/link";
 
 import { DashboardItem } from "../../../backend/dashboards";
-import { getPlatformsConfig } from "../../../backend/platforms";
 import { DisplayForecasts } from "../../../web/display/DisplayForecasts";
 import { InfoBox } from "../../../web/display/InfoBox";
 import { Layout } from "../../../web/display/Layout";
 import { LineHeader } from "../../../web/display/LineHeader";
-import { addLabelsToForecasts, FrontendForecast } from "../../../web/platforms";
+import { FrontendForecast } from "../../../web/platforms";
 import { getDashboardForecastsByDashboardId } from "../../../web/worker/getDashboardForecasts";
 
 interface Props {
   dashboardForecasts: FrontendForecast[];
-  dashboardId: string;
   dashboardItem: DashboardItem;
 }
 
@@ -22,16 +20,10 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 ) => {
   const dashboardId = context.query.id as string;
 
-  const platformsConfig = getPlatformsConfig({ withGuesstimate: false });
-
   const { dashboardForecasts, dashboardItem } =
     await getDashboardForecastsByDashboardId({
       dashboardId,
     });
-  const frontendDashboardForecasts = addLabelsToForecasts(
-    dashboardForecasts,
-    platformsConfig
-  );
 
   if (!dashboardItem) {
     context.res.statusCode = 404;
@@ -39,8 +31,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 
   return {
     props: {
-      dashboardForecasts: frontendDashboardForecasts,
-      dashboardId,
+      dashboardForecasts,
       dashboardItem,
     },
   };
@@ -87,7 +78,6 @@ const DashboardMetadata: React.FC<{ dashboardItem: DashboardItem }> = ({
 const ViewDashboardPage: NextPage<Props> = ({
   dashboardForecasts,
   dashboardItem,
-  dashboardId,
 }) => {
   return (
     <Layout page="view-dashboard">
