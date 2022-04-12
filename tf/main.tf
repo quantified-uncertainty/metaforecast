@@ -29,7 +29,7 @@ provider "digitalocean" {
 }
 
 provider "heroku" {
-  email   = "me@berekuk.ru"
+  email   = var.heroku_email
   api_key = var.heroku_api_key
 }
 
@@ -56,8 +56,9 @@ resource "heroku_app" "metaforecast_backend" {
 }
 
 resource "vercel_project" "metaforecast" {
-  name    = "metaforecast"
-  team_id = var.vercel_team
+  name      = "metaforecast"
+  team_id   = var.vercel_team
+  framework = "nextjs"
 
   git_repository {
     type = "github"

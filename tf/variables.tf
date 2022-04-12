@@ -10,6 +10,10 @@ variable "heroku_api_key" {
   type = string
 }
 
+variable "heroku_email" {
+  type = string
+}
+
 variable "vercel_team" {
   type    = string
   default = "quantified-uncertainty"
