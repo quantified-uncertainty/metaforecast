@@ -1,65 +1,12 @@
 import axios from "axios";
-import { GetServerSideProps, NextPage } from "next";
-import { useRouter } from "next/router"; // https://nextjs.org/docs/api-reference/next/router
+import { NextPage } from "next";
+import { useRouter } from "next/router";
 
-import { DashboardItem } from "../../backend/dashboards";
-import { getPlatformsConfig, PlatformConfig } from "../../backend/platforms";
 import { DashboardCreator } from "../../web/display/DashboardCreator";
 import { Layout } from "../../web/display/Layout";
 import { LineHeader } from "../../web/display/LineHeader";
-import { addLabelsToForecasts, FrontendForecast } from "../../web/platforms";
-import { reqToBasePath } from "../../web/utils";
-import { getDashboardForecastsByDashboardId } from "../../web/worker/getDashboardForecasts";
 
-interface Props {
-  initialDashboardForecasts: FrontendForecast[];
-  initialDashboardId: string | null;
-  initialDashboardItem: DashboardItem | null;
-  platformsConfig: PlatformConfig[];
-}
-
-export const getServerSideProps: GetServerSideProps<Props> = async (
-  context
-) => {
-  const dashboardIdQ = context.query.dashboardId;
-  const dashboardId: string | undefined =
-    typeof dashboardIdQ === "object" ? dashboardIdQ[0] : dashboardIdQ;
-
-  const platformsConfig = getPlatformsConfig({ withGuesstimate: false });
-
-  if (!dashboardId) {
-    return {
-      props: {
-        platformsConfig,
-        initialDashboardForecasts: [],
-        initialDashboardId: null,
-        initialDashboardItem: null,
-      },
-    };
-  }
-
-  const { dashboardForecasts, dashboardItem } =
-    await getDashboardForecastsByDashboardId({
-      dashboardId,
-      basePath: reqToBasePath(context.req), // required on server side to find the API endpoint
-    });
-  const frontendDashboardForecasts = addLabelsToForecasts(
-    dashboardForecasts,
-    platformsConfig
-  );
-
-  return {
-    props: {
-      initialDashboardForecasts: frontendDashboardForecasts,
-      initialDashboardId: dashboardId,
-      initialDashboardItem: dashboardItem,
-      platformsConfig,
-    },
-  };
-};
-
-/* Body */
-const DashboardsPage: NextPage<Props> = () => {
+const DashboardsPage: NextPage = () => {
   const router = useRouter();
 
   const handleSubmit = async (data) => {

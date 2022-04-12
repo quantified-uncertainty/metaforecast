@@ -1,7 +1,8 @@
 import axios from "axios";
 
 import { DashboardItem } from "../../backend/dashboards";
-import { Forecast } from "../../backend/platforms";
+import { Forecast, getPlatformsConfig } from "../../backend/platforms";
+import { addLabelsToForecasts, FrontendForecast } from "../platforms";
 
 export async function getDashboardForecastsByDashboardId({
   dashboardId,
@@ -10,7 +11,7 @@ export async function getDashboardForecastsByDashboardId({
   dashboardId: string;
   basePath?: string;
 }): Promise<{
-  dashboardForecasts: Forecast[];
+  dashboardForecasts: FrontendForecast[];
   dashboardItem: DashboardItem;
 }> {
   console.log("getDashboardForecastsByDashboardId: ");
@@ -18,8 +19,8 @@ export async function getDashboardForecastsByDashboardId({
     throw new Error("`basePath` option is required on server side");
   }
 
-  let dashboardContents: Forecast[] = [];
-  let dashboardItem: DashboardItem | any = null;
+  let dashboardForecasts: Forecast[] = [];
+  let dashboardItem: DashboardItem | null = null;
   try {
     let { data } = await axios({
       url: `${basePath || ""}/api/dashboard-by-id`,
@@ -29,13 +30,19 @@ export async function getDashboardForecastsByDashboardId({
       },
     });
     console.log(data);
-    dashboardContents = data.dashboardContents;
+
+    dashboardForecasts = data.dashboardContents;
     dashboardItem = data.dashboardItem as DashboardItem;
   } catch (error) {
     console.log(error);
   } finally {
+    const labeledDashboardForecasts = addLabelsToForecasts(
+      dashboardForecasts,
+      getPlatformsConfig({ withGuesstimate: false })
+    );
+
     return {
-      dashboardForecasts: dashboardContents,
+      dashboardForecasts: labeledDashboardForecasts,
       dashboardItem,
     };
   }
