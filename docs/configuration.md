@@ -1,11 +1,14 @@
 # Configuration
 
-Code reads its configuration from the environment variables.
 All configuration is done through environment variables.
 
 Not all of these are necessary to run the code. The most important ones are:
 
 - `DIGITALOCEAN_POSTGRES` pointing to the working Postgres database
+
+Environment for production deployments is configured through Terraform, see [infra.md](./infra.md) for details.
+
+For local development you can write `.env` file by hand or import it from Heroku with `heroku config -s -a metaforecast-backend` and then modify accordingly.
 
 There's also a template configuration file in `../env.example`.
 
