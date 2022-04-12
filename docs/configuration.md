@@ -5,14 +5,16 @@ All configuration is done through environment variables.
 Not all of these are necessary to run the code. The most important ones are:
 
 - `DIGITALOCEAN_POSTGRES` pointing to the working Postgres database
-- `NEXT_PUBLIC_SITE_URL` for the frontend to work properly
+
+Environment for production deployments is configured through Terraform, see [infra.md](./infra.md) for details.
+
+For local development you can write `.env` file by hand or import it from Heroku with `heroku config -s -a metaforecast-backend` and then modify accordingly.
 
 There's also a template configuration file in `../env.example`.
 
 ## Database endpoints
 
 - `DIGITALOCEAN_POSTGRES`, of the form `postgres://username:password@domain.com:port/configvars`. (Disregard `DIGITALOCEAN_` prefix, you can use any endpoint you like).
-- `DIGITALOCEAN_POSTGRES_PUBLIC`
 - `ALGOLIA_MASTER_API_KEY`, a string of 32 hexidecimal characters, like `19b6c2234e50c98d30668659a39e3127` (not an actual key).
 - `NEXT_PUBLIC_ALGOLIA_APP_ID`,
 - `NEXT_PUBLIC_ALGOLIA_SEARCH_KEY`
@@ -25,7 +27,6 @@ Note that not all of these cookies are needed to use all parts of the source cod
 
 - `GOODJUDGMENTOPENCOOKIE`
 - `INFER_COOKIE`
-- `CSETFORETELL_COOKIE`, deprecated, superseded by `INFER_COOKIE`.
 - `HYPERMINDCOOKIE`
 - `GOOGLE_API_KEY`, necessary to fetch Peter Wildeford's predictions.
 - `SECRET_BETFAIR_ENDPOINT`
@@ -37,7 +38,5 @@ Note that not all of these cookies are needed to use all parts of the source cod
 
 ## Others
 
-- `NEXT_PUBLIC_SITE_URL`, e.g., `http://localhost:3000` if you're running a local instance
-- `REBUIDNETLIFYHOOKURL`
 - `BACKUP_PROXY_IP`
 - `BACKUP_PROXY_PORT`

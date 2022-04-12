@@ -6,16 +6,24 @@ import { addLabelsToForecasts, FrontendForecast } from "../platforms";
 
 export async function getDashboardForecastsByDashboardId({
   dashboardId,
+  basePath,
+}: {
+  dashboardId: string;
+  basePath?: string;
 }): Promise<{
   dashboardForecasts: FrontendForecast[];
   dashboardItem: DashboardItem;
 }> {
   console.log("getDashboardForecastsByDashboardId: ");
+  if (typeof window === undefined && !basePath) {
+    throw new Error("`basePath` option is required on server side");
+  }
+
   let dashboardForecasts: Forecast[] = [];
   let dashboardItem: DashboardItem | null = null;
   try {
-    const { data } = await axios({
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/api/dashboard-by-id`,
+    let { data } = await axios({
+      url: `${basePath || ""}/api/dashboard-by-id`,
       method: "post",
       data: {
         id: dashboardId,

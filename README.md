@@ -20,7 +20,7 @@ $ npm install
 
 You'll need a PostgreSQL instance, either local (see https://www.postgresql.org/download/) or in the cloud (for example, you can spin one up on https://www.digitalocean.com/products/managed-databases-postgresql or https://supabase.com/).
 
-Environment can be set up with an `.env` file. You'll need to configure at least `DIGITALOCEAN_POSTGRES` for the fetching to work, and `NEXT_PUBLIC_SITE_URL` for the frontend.
+Environment can be set up with an `.env` file. You'll need to configure at least `DIGITALOCEAN_POSTGRES`.
 
 See [./docs/configuration.md](./docs/configuration.md) for details.
 
