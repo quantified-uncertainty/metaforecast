@@ -2,7 +2,7 @@ import { GetServerSideProps } from "next";
 
 import { getFrontpage } from "../../backend/frontpage";
 import { getPlatformsConfig, PlatformConfig, platforms } from "../../backend/platforms";
-import { addLabelsToForecasts, FrontendForecast } from "../platforms";
+import { addLabelsToQuestions, FrontendQuestion } from "../platforms";
 import searchAccordingToQueryData from "../worker/searchAccordingToQueryData";
 
 /* Common code for / and /capture */
@@ -15,8 +15,8 @@ export interface QueryParameters {
 }
 
 export interface Props {
-  defaultResults: FrontendForecast[];
-  initialResults: FrontendForecast[];
+  defaultResults: FrontendQuestion[];
+  initialResults: FrontendQuestion[];
   initialQueryParameters: QueryParameters;
   defaultQueryParameters: QueryParameters;
   initialNumDisplay: number;
@@ -61,7 +61,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   const defaultNumDisplay = 21;
   const initialNumDisplay = Number(urlQuery.numDisplay) || defaultNumDisplay;
 
-  const defaultResults = addLabelsToForecasts(
+  const defaultResults = addLabelsToQuestions(
     await getFrontpage(),
     platformsConfig
   );

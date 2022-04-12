@@ -1,6 +1,6 @@
 import algoliasearch from "algoliasearch";
 
-import { FrontendForecast } from "../platforms";
+import { FrontendQuestion } from "../platforms";
 
 const client = algoliasearch(
   process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
@@ -82,8 +82,8 @@ export default async function searchWithAlgolia({
   starsThreshold,
   filterByPlatforms,
   forecastsThreshold,
-}): Promise<FrontendForecast[]> {
-  let response = await index.search<FrontendForecast>(queryString, {
+}): Promise<FrontendQuestion[]> {
+  let response = await index.search<FrontendQuestion>(queryString, {
     hitsPerPage,
     filters: buildFilter({
       starsThreshold,
@@ -93,7 +93,7 @@ export default async function searchWithAlgolia({
     //facetFilters: buildFacetFilter({filterByPlatforms}),
     getRankingInfo: true,
   });
-  let results: FrontendForecast[] = response.hits;
+  let results: FrontendQuestion[] = response.hits;
 
   let recursionError = ["metaforecast", "metaforecasts", "metaforecasting"];
   if (

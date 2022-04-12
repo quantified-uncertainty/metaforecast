@@ -243,7 +243,7 @@ interface Props {
   expandFooterToFullWidth: boolean;
 }
 
-export const ForecastFooter: React.FC<Props> = ({
+export const QuestionFooter: React.FC<Props> = ({
   stars,
   platform,
   platformLabel,

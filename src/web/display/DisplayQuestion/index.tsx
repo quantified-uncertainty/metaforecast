@@ -1,9 +1,9 @@
 import { FaRegClipboard } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
-import { FrontendForecast } from "../../platforms";
+import { FrontendQuestion } from "../../platforms";
 import { Card } from "../Card";
-import { ForecastFooter } from "./ForecastFooter";
+import { QuestionFooter } from "./QuestionFooter";
 
 const truncateText = (length: number, text: string): string => {
   if (!text) {
@@ -268,14 +268,14 @@ const LastUpdated: React.FC<{ timestamp: string }> = ({ timestamp }) => (
 // Main component
 
 interface Props {
-  forecast: FrontendForecast;
+  question: FrontendQuestion;
   showTimeStamp: boolean;
   expandFooterToFullWidth: boolean;
   showIdToggle?: boolean;
 }
 
-export const DisplayForecast: React.FC<Props> = ({
-  forecast: {
+export const DisplayQuestion: React.FC<Props> = ({
+  question: {
     id,
     title,
     url,
@@ -372,7 +372,7 @@ export const DisplayForecast: React.FC<Props> = ({
             <LastUpdated timestamp={timestamp} />
           </div>
           <div className="w-full">
-            <ForecastFooter
+            <QuestionFooter
               stars={qualityindicators.stars}
               platform={platform}
               platformLabel={platformLabel || platform} // author || platformLabel,

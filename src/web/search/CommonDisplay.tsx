@@ -6,7 +6,7 @@ import { MultiSelectPlatform } from "../display/MultiSelectPlatform";
 import { QueryForm } from "../display/QueryForm";
 import { SliderElement } from "../display/SliderElement";
 import { useNoInitialEffect } from "../hooks";
-import { FrontendForecast } from "../platforms";
+import { FrontendQuestion } from "../platforms";
 import searchAccordingToQueryData from "../worker/searchAccordingToQueryData";
 import { Props as AnySearchPageProps, QueryParameters } from "./anySearchPage";
 
@@ -16,8 +16,8 @@ interface Props extends AnySearchPageProps {
   hasAdvancedOptions: boolean;
   placeholder: string;
   displaySeeMoreHint: boolean;
-  displayForecastsWrapper: (opts: {
-    results: FrontendForecast[];
+  displayQuestionsWrapper: (opts: {
+    results: FrontendQuestion[];
     numDisplay: number;
     whichResultToDisplayAndCapture: number;
     showIdToggle: boolean;
@@ -38,7 +38,7 @@ const CommonDisplay: React.FC<Props> = ({
   hasAdvancedOptions,
   placeholder,
   displaySeeMoreHint,
-  displayForecastsWrapper,
+  displayQuestionsWrapper,
 }) => {
   const router = useRouter();
   /* States */
@@ -68,7 +68,7 @@ const CommonDisplay: React.FC<Props> = ({
 
     const filterManually = (
       queryData: QueryParameters,
-      results: FrontendForecast[]
+      results: FrontendQuestion[]
     ) => {
       if (
         queryData.forecastingPlatforms &&
@@ -99,13 +99,13 @@ const CommonDisplay: React.FC<Props> = ({
     setResults(results);
   }
 
-  // I don't want the function which display forecasts (displayForecasts) to change with a change in queryParameters. But I want it to have access to the queryParameters, and in particular access to queryParameters.numDisplay. Hence why this function lives inside Home.
-  const getInfoToDisplayForecastsFunction = () => {
+  // I don't want the component which display questions (DisplayQuestions) to change with a change in queryParameters. But I want it to have access to the queryParameters, and in particular access to queryParameters.numDisplay. Hence why this function lives inside Home.
+  const getInfoToDisplayQuestionsFunction = () => {
     const numDisplayRounded =
       numDisplay % 3 != 0
         ? numDisplay + (3 - (Math.round(numDisplay) % 3))
         : numDisplay;
-    return displayForecastsWrapper({
+    return displayQuestionsWrapper({
       results,
       numDisplay: numDisplayRounded,
       whichResultToDisplayAndCapture,
@@ -307,7 +307,7 @@ const CommonDisplay: React.FC<Props> = ({
         </div>
       ) : null}
 
-      <div>{getInfoToDisplayForecastsFunction()}</div>
+      <div>{getInfoToDisplayQuestionsFunction()}</div>
 
       {displaySeeMoreHint &&
       (!results || (results.length != 0 && numDisplay < results.length)) ? (

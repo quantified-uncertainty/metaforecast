@@ -2,13 +2,13 @@ import { GetServerSideProps, NextPage } from "next";
 import Error from "next/error";
 
 import { DashboardItem } from "../../../backend/dashboards";
-import { DisplayForecasts } from "../../../web/display/DisplayForecasts";
-import { FrontendForecast } from "../../../web/platforms";
-import { getDashboardForecastsByDashboardId } from "../../../web/worker/getDashboardForecasts";
+import { DisplayQuestions } from "../../../web/display/DisplayQuestions";
+import { FrontendQuestion } from "../../../web/platforms";
 import { reqToBasePath } from "../../../web/utils";
+import { getDashboardQuestionsByDashboardId } from "../../../web/worker/getDashboardQuestions";
 
 interface Props {
-  dashboardForecasts: FrontendForecast[];
+  dashboardQuestions: FrontendQuestion[];
   dashboardItem: DashboardItem;
   numCols?: number;
 }
@@ -19,8 +19,8 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   const dashboardId = context.query.id as string;
   const numCols = Number(context.query.numCols);
 
-  const { dashboardItem, dashboardForecasts } =
-    await getDashboardForecastsByDashboardId({
+  const { dashboardItem, dashboardQuestions } =
+    await getDashboardQuestionsByDashboardId({
       dashboardId,
       basePath: reqToBasePath(context.req), // required on server side to find the API endpoint
     });
@@ -31,7 +31,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 
   return {
     props: {
-      dashboardForecasts,
+      dashboardQuestions,
       dashboardItem,
       numCols: !numCols ? null : numCols < 5 ? numCols : 4,
     },
@@ -39,7 +39,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 };
 
 const EmbedDashboardPage: NextPage<Props> = ({
-  dashboardForecasts,
+  dashboardQuestions,
   dashboardItem,
   numCols,
 }) => {
@@ -57,9 +57,9 @@ const EmbedDashboardPage: NextPage<Props> = ({
             numCols || 3
           } gap-4 mb-6`}
         >
-          <DisplayForecasts
-            results={dashboardForecasts}
-            numDisplay={dashboardForecasts.length}
+          <DisplayQuestions
+            results={dashboardQuestions}
+            numDisplay={dashboardQuestions.length}
             showIdToggle={false}
           />
         </div>

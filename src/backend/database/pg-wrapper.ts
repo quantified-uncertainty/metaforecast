@@ -1,13 +1,13 @@
 import { Pool, PoolClient } from "pg";
 
-import { Forecast } from "../platforms";
+import { Question } from "../platforms";
 import { hash } from "../utils/hash";
 import { measureTime } from "../utils/measureTime";
 import { roughSizeOfObject } from "../utils/roughSize";
 
-const forecastTableNames = ["questions", "history"];
+const questionTableNames = ["questions", "history"];
 
-const allTableNames = [...forecastTableNames, "dashboards", "frontpage"];
+const allTableNames = [...questionTableNames, "dashboards", "frontpage"];
 
 /* Postgres database connection code */
 const databaseURL = process.env.DIGITALOCEAN_POSTGRES;
@@ -51,11 +51,11 @@ export async function pgBulkInsert({
   tableName,
   client,
 }: {
-  data: Forecast[];
+  data: Question[];
   tableName: string;
   client: PoolClient;
 }) {
-  if (!forecastTableNames.includes(tableName)) {
+  if (!questionTableNames.includes(tableName)) {
     throw Error(
       `Table ${tableName} not in whitelist; stopping to avoid tricky sql injections`
     );
@@ -171,11 +171,11 @@ export async function pgUpsert({
   tableName,
   replacePlatform,
 }: {
-  contents: Forecast[];
+  contents: Question[];
   tableName: string;
   replacePlatform?: string;
 }) {
-  if (!forecastTableNames.includes(tableName)) {
+  if (!questionTableNames.includes(tableName)) {
     throw Error(
       `Table ${tableName} not in whitelist; stopping to avoid tricky sql injections`
     );

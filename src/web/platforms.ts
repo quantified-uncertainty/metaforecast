@@ -1,20 +1,20 @@
-import { Forecast, PlatformConfig } from "../backend/platforms";
+import { PlatformConfig, Question } from "../backend/platforms";
 
-export type FrontendForecast = Forecast & {
+export type FrontendQuestion = Question & {
   platformLabel: string;
   visualization?: any;
 };
 
 // ok on client side
-export const addLabelsToForecasts = (
-  forecasts: Forecast[],
+export const addLabelsToQuestions = (
+  questions: Question[],
   platformsConfig: PlatformConfig[]
-): FrontendForecast[] => {
+): FrontendQuestion[] => {
   const platformNameToLabel = Object.fromEntries(
     platformsConfig.map((platform) => [platform.name, platform.label])
   );
 
-  return forecasts.map((result) => ({
+  return questions.map((result) => ({
     ...result,
     platformLabel: platformNameToLabel[result.platform] || result.platform,
   }));

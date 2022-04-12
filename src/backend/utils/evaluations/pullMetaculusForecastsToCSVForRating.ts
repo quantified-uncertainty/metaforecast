@@ -8,8 +8,8 @@ import { pgRead } from "../../database/pg-wrapper";
 /* Utilities */
 
 /* Support functions */
-let getQualityIndicators = (forecast) =>
-  Object.entries(forecast.qualityindicators)
+let getQualityIndicators = (question) =>
+  Object.entries(question.qualityindicators)
     .map((entry) => `${entry[0]}: ${entry[1]}`)
     .join("; ");
 
@@ -28,22 +28,22 @@ let main = async () => {
   let highQualityPlatforms = ["Metaculus"]; // ['CSET-foretell', 'Foretold', 'Good Judgment Open', 'Metaculus', 'PredictIt', 'Rootclaim']
   let json = await pgRead({ tableName: "questions" });
   console.log(json.length);
-  //let uniquePlatforms = [...new Set(json.map(forecast => forecast.platform))]
+  //let uniquePlatforms = [...new Set(json.map(question => question.platform))]
   //console.log(uniquePlatforms)
 
-  let forecastsFromGoodPlatforms = json.filter((forecast) =>
-    highQualityPlatforms.includes(forecast.platform)
+  let questionsFromGoodPlatforms = json.filter((question) =>
+    highQualityPlatforms.includes(question.platform)
   );
-  let forecastsFromGoodPlatformsShuffled = shuffleArray(
-    forecastsFromGoodPlatforms
+  let questionsFromGoodPlatformsShuffled = shuffleArray(
+    questionsFromGoodPlatforms
   );
   let tsv =
     "index\ttitle\turl\tqualityindicators\n" +
-    forecastsFromGoodPlatforms
-      .map((forecast, index) => {
-        let row = `${index}\t${forecast.title}\t${
-          forecast.url
-        }\t${getQualityIndicators(forecast)}`;
+    questionsFromGoodPlatforms
+      .map((question, index) => {
+        let row = `${index}\t${question.title}\t${
+          question.url
+        }\t${getQualityIndicators(question)}`;
         console.log(row);
         return row;
       })

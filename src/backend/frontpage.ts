@@ -1,7 +1,7 @@
 import { pgRead, pool } from "./database/pg-wrapper";
-import { Forecast } from "./platforms";
+import { Question } from "./platforms";
 
-export async function getFrontpage(): Promise<Forecast[]> {
+export async function getFrontpage(): Promise<Question[]> {
   const res = await pool.query(
     "SELECT frontpage_sliced FROM frontpage ORDER BY id DESC LIMIT 1"
   );
@@ -9,7 +9,7 @@ export async function getFrontpage(): Promise<Forecast[]> {
   return res.rows[0].frontpage_sliced;
 }
 
-export async function getFrontpageFull(): Promise<Forecast[]> {
+export async function getFrontpageFull(): Promise<Question[]> {
   const res = await pool.query(
     "SELECT frontpage_full FROM frontpage ORDER BY id DESC LIMIT 1"
   );

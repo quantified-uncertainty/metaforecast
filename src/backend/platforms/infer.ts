@@ -1,12 +1,11 @@
 /* Imports */
 import axios from "axios";
-import { Tabletojson } from "tabletojson";
 
 import { applyIfSecretExists } from "../utils/getSecrets";
 import { measureTime } from "../utils/measureTime";
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
-import { Forecast, Platform } from "./";
+import { Platform, Question } from "./";
 
 /* Definitions */
 const platformName = "infer";
@@ -78,12 +77,12 @@ async function fetchStats(questionUrl, cookie) {
   let comments_count = firstEmbeddedJson.question.comments_count;
   let numforecasters = firstEmbeddedJson.question.predictors_count;
   let numforecasts = firstEmbeddedJson.question.prediction_sets_count;
-  let forecastType = firstEmbeddedJson.question.type;
+  let questionType = firstEmbeddedJson.question.type;
   if (
-    forecastType.includes("Binary") ||
-    forecastType.includes("NonExclusiveOpinionPoolQuestion") ||
-    forecastType.includes("Forecast::Question") ||
-    !forecastType.includes("Forecast::MultiTimePeriodQuestion")
+    questionType.includes("Binary") ||
+    questionType.includes("NonExclusiveOpinionPoolQuestion") ||
+    questionType.includes("Forecast::Question") ||
+    !questionType.includes("Forecast::MultiTimePeriodQuestion")
   ) {
     options = firstEmbeddedJson.question.answers.map((answer) => ({
       name: answer.name,
@@ -148,7 +147,7 @@ function sleep(ms) {
 async function infer_inner(cookie: string) {
   let i = 1;
   let response = await fetchPage(i, cookie);
-  let results: Forecast[] = [];
+  let results: Question[] = [];
 
   await measureTime(async () => {
     // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
@@ -179,7 +178,7 @@ async function infer_inner(cookie: string) {
           let questionNumRegex = new RegExp("questions/([0-9]+)");
           let questionNum = url.match(questionNumRegex)[1]; //.split("questions/")[1].split("-")[0];
           let id = `${platformName}-${questionNum}`;
-          let question: Forecast = {
+          let question: Question = {
             id: id,
             title: title,
             description: moreinfo.description,

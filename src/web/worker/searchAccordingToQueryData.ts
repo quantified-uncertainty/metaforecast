@@ -1,4 +1,4 @@
-import { FrontendForecast } from "../platforms";
+import { FrontendQuestion } from "../platforms";
 import { QueryParameters } from "../search/anySearchPage";
 import searchGuesstimate from "./searchGuesstimate";
 import searchWithAlgolia from "./searchWithAlgolia";
@@ -6,8 +6,8 @@ import searchWithAlgolia from "./searchWithAlgolia";
 export default async function searchAccordingToQueryData(
   queryData: QueryParameters,
   limit: number
-): Promise<FrontendForecast[]> {
-  let results: FrontendForecast[] = [];
+): Promise<FrontendQuestion[]> {
+  let results: FrontendQuestion[] = [];
 
   try {
     // defs

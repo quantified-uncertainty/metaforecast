@@ -4,12 +4,12 @@ import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 
 import { platforms } from "../backend/platforms";
-import { DisplayForecast } from "../web/display/DisplayForecast";
-import { FrontendForecast } from "../web/platforms";
+import { DisplayQuestion } from "../web/display/DisplayQuestion";
+import { FrontendQuestion } from "../web/platforms";
 import searchAccordingToQueryData from "../web/worker/searchAccordingToQueryData";
 
 interface Props {
-  results: FrontendForecast[];
+  results: FrontendQuestion[];
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async (
@@ -25,7 +25,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
     ...urlQuery,
   };
 
-  let results: FrontendForecast[] = [];
+  let results: FrontendQuestion[] = [];
   if (initialQueryParameters.query != "") {
     results = await searchAccordingToQueryData(initialQueryParameters, 1);
   }
@@ -46,8 +46,8 @@ const SecretEmbedPage: NextPage<Props> = ({ results }) => {
         <div>
           <div id="secretEmbed">
             {result ? (
-              <DisplayForecast
-                forecast={result}
+              <DisplayQuestion
+                question={result}
                 showTimeStamp={true}
                 expandFooterToFullWidth={true}
               />

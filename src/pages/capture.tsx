@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import React from "react";
 
-import { displayForecastsWrapperForCapture } from "../web/display/displayForecastsWrappers";
+import { displayQuestionsWrapperForCapture } from "../web/display/displayQuestionsWrappers";
 import { Layout } from "../web/display/Layout";
 import { Props } from "../web/search/anySearchPage";
 import CommonDisplay from "../web/search/CommonDisplay";
@@ -18,7 +18,7 @@ const CapturePage: NextPage<Props> = (props) => {
         hasAdvancedOptions={false}
         placeholder={"Get best title match..."}
         displaySeeMoreHint={false}
-        displayForecastsWrapper={displayForecastsWrapperForCapture}
+        displayQuestionsWrapper={displayQuestionsWrapperForCapture}
       />
     </Layout>
   );

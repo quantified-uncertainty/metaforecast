@@ -1,7 +1,7 @@
 /* Imports */
 import axios from "axios";
 
-import { FrontendForecast } from "../platforms";
+import { FrontendQuestion } from "../platforms";
 
 /* Definitions */
 let urlEndPoint =
@@ -11,7 +11,7 @@ let urlEndPoint =
 
 export default async function searchGuesstimate(
   query
-): Promise<FrontendForecast[]> {
+): Promise<FrontendQuestion[]> {
   let response = await axios({
     url: urlEndPoint,
     // credentials: "omit",
@@ -31,7 +31,7 @@ export default async function searchGuesstimate(
   });
 
   const models: any[] = response.data.hits;
-  const mappedModels: FrontendForecast[] = models.map((model, index) => {
+  const mappedModels: FrontendQuestion[] = models.map((model, index) => {
     let description = model.description
       ? model.description.replace(/\n/g, " ").replace(/  /g, " ")
       : "";
@@ -57,7 +57,7 @@ export default async function searchGuesstimate(
 
   // filter for duplicates. Surprisingly common.
   let uniqueTitles = [];
-  let uniqueModels: FrontendForecast[] = [];
+  let uniqueModels: FrontendQuestion[] = [];
   for (let model of mappedModels) {
     if (!uniqueTitles.includes(model.title) && !model.title.includes("copy")) {
       uniqueModels.push(model);
