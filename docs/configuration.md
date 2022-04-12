@@ -1,5 +1,6 @@
 # Configuration
 
+Code reads its configuration from the environment variables.
 All configuration is done through environment variables.
 
 Not all of these are necessary to run the code. The most important ones are:
@@ -23,7 +24,6 @@ Note that not all of these cookies are needed to use all parts of the source cod
 
 - `GOODJUDGMENTOPENCOOKIE`
 - `INFER_COOKIE`
-- `CSETFORETELL_COOKIE`, deprecated, superseded by `INFER_COOKIE`.
 - `HYPERMINDCOOKIE`
 - `GOOGLE_API_KEY`, necessary to fetch Peter Wildeford's predictions.
 - `SECRET_BETFAIR_ENDPOINT`

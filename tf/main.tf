@@ -61,7 +61,7 @@ resource "vercel_project" "metaforecast" {
 
   git_repository {
     type = "github"
-    repo = "QURIresearch/metaforecast"
+    repo = "quantified-uncertainty/metaforecast"
   }
 
   domain {
