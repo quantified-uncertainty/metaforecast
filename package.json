@@ -27,6 +27,8 @@
     "dbshell": ". .env && psql $DIGITALOCEAN_POSTGRES"
   },
   "dependencies": {
+    "@graphql-yoga/node": "^2.1.0",
+    "@pothos/core": "^3.5.1",
     "@prisma/client": "^3.11.1",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.1",
@@ -84,6 +86,10 @@
     "tunnel": "^0.0.6"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/schema-ast": "^2.4.1",
+    "@graphql-codegen/typescript": "^2.4.8",
+    "@graphql-codegen/typescript-operations": "^2.3.5",
     "@netlify/plugin-nextjs": "^4.2.4",
     "@svgr/cli": "^6.2.1",
     "@types/pg": "^8.6.5",

@@ -1,0 +1,15 @@
+schema:
+  - src/graphql/build-schema.js
+# This should be updated to match your client files
+# documents: 'client/**/!(*.d).{ts,tsx}'
+generates:
+  # This will take your schema and print an SDL schema.
+  schema.graphql:
+    plugins:
+      - schema-ast
+  # This will contain the generated apollo hooks and schema types needed to make type-safe queries with the apollo client
+  # __generated__/operations.ts:
+  #   plugins:
+  #     - typescript
+  #     - typescript-operations
+  #     - typescript-react-apollo

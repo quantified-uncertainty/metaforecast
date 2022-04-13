@@ -1,0 +1,11 @@
+type Query {
+  frontpage: [Question!]!
+}
+
+"""
+Forecast question.
+"""
+type Question {
+  id: String!
+  title: String!
+}
