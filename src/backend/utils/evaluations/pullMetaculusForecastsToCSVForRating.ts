@@ -1,6 +1,7 @@
 /* Imports */
 import fs from "fs";
 
+import { shuffleArray } from "../../../utils";
 import { pgRead } from "../../database/pg-wrapper";
 
 /* Definitions */
@@ -12,15 +13,6 @@ let getQualityIndicators = (question) =>
   Object.entries(question.qualityindicators)
     .map((entry) => `${entry[0]}: ${entry[1]}`)
     .join("; ");
-
-let shuffleArray = (array) => {
-  // See: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-};
 
 /* Body */
 
