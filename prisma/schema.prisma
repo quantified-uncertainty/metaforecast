@@ -2,12 +2,16 @@ generator client {
   provider = "prisma-client-js"
 }
 
+generator pothos {
+  provider = "prisma-pothos-types"
+}
+
 datasource db {
   provider = "postgresql"
   url      = env("DIGITALOCEAN_POSTGRES")
 }
 
-model dashboards {
+model Dashboard {
   id          String   @id
   title       String
   description String
@@ -15,15 +19,19 @@ model dashboards {
   timestamp   DateTime @db.Timestamp(6)
   creator     String
   extra       Json
+
+  @@map("dashboards")
 }
 
-model frontpage {
+model Frontpage {
   id               Int  @id @default(autoincrement())
   frontpage_full   Json
   frontpage_sliced Json
+
+  @@map("frontpage")
 }
 
-model history {
+model History {
   id                String
   title             String
   url               String
@@ -37,9 +45,10 @@ model history {
   pk                Int      @id @default(autoincrement())
 
   @@index([id])
+  @@map("history")
 }
 
-model questions {
+model Question {
   id                String   @id
   title             String
   url               String
@@ -50,4 +59,6 @@ model questions {
   stars             Int
   qualityindicators Json
   extra             Json
+
+  @@map("questions")
 }
