@@ -1,14 +1,14 @@
 import { useRouter } from "next/router";
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useMemo, useState } from "react";
+import { useQuery } from "urql";
 
 import { ButtonsForStars } from "../display/ButtonsForStars";
 import { MultiSelectPlatform } from "../display/MultiSelectPlatform";
 import { QueryForm } from "../display/QueryForm";
 import { SliderElement } from "../display/SliderElement";
-import { useNoInitialEffect } from "../hooks";
-import { FrontendQuestion } from "../platforms";
-import searchAccordingToQueryData from "../worker/searchAccordingToQueryData";
+import { useIsFirstRender, useNoInitialEffect } from "../hooks";
 import { Props as AnySearchPageProps, QueryParameters } from "./anySearchPage";
+import { QuestionFragment, SearchDocument } from "./queries.generated";
 
 interface Props extends AnySearchPageProps {
   hasSearchbar: boolean;
@@ -17,7 +17,7 @@ interface Props extends AnySearchPageProps {
   placeholder: string;
   displaySeeMoreHint: boolean;
   displayQuestionsWrapper: (opts: {
-    results: FrontendQuestion[];
+    results: QuestionFragment[];
     numDisplay: number;
     whichResultToDisplayAndCapture: number;
     showIdToggle: boolean;
@@ -27,7 +27,6 @@ interface Props extends AnySearchPageProps {
 /* Body */
 const CommonDisplay: React.FC<Props> = ({
   defaultResults,
-  initialResults,
   initialQueryParameters,
   defaultQueryParameters,
   initialNumDisplay,
@@ -40,8 +39,9 @@ const CommonDisplay: React.FC<Props> = ({
   displaySeeMoreHint,
   displayQuestionsWrapper,
 }) => {
-  const router = useRouter();
   /* States */
+  const router = useRouter();
+  const isFirstRender = useIsFirstRender();
 
   const [queryParameters, setQueryParameters] = useState<QueryParameters>(
     initialQueryParameters
@@ -52,52 +52,56 @@ const CommonDisplay: React.FC<Props> = ({
   // used to distinguish numDisplay updates which force search and don't force search, see effects below
   const [forceSearch, setForceSearch] = useState(0);
 
-  const [results, setResults] = useState(initialResults);
   const [advancedOptions, showAdvancedOptions] = useState(false);
   const [whichResultToDisplayAndCapture, setWhichResultToDisplayAndCapture] =
     useState(0);
   const [showIdToggle, setShowIdToggle] = useState(false);
 
-  /* Functions which I want to have access to the Home namespace */
-  // I don't want to create an "defaultResults" object for each search.
-  async function executeSearchOrAnswerWithDefaultResults() {
-    const queryData = {
-      ...queryParameters,
-      numDisplay,
-    };
+  const [typing, setTyping] = useState(false);
 
-    const filterManually = (
-      queryData: QueryParameters,
-      results: FrontendQuestion[]
-    ) => {
-      if (
-        queryData.forecastingPlatforms &&
-        queryData.forecastingPlatforms.length > 0
-      ) {
-        results = results.filter((result) =>
-          queryData.forecastingPlatforms.includes(result.platform)
-        );
-      }
-      if (queryData.starsThreshold === 4) {
-        results = results.filter(
-          (result) => result.qualityindicators.stars >= 4
-        );
-      }
-      if (queryData.forecastsThreshold) {
-        // results = results.filter(result => (result.qualityindicators && result.qualityindicators.numforecasts > forecastsThreshold))
-      }
-      return results;
-    };
+  // must match the query from anySearchPage.ts getServerSideProps
+  const [queryResults, reexecuteQuery] = useQuery({
+    query: SearchDocument,
+    variables: {
+      input: {
+        ...queryParameters,
+        limit: numDisplay,
+      },
+    },
+    pause: !isFirstRender,
+  });
 
-    const queryIsEmpty =
-      !queryData || queryData.query == "" || queryData.query == undefined;
+  const queryIsEmpty =
+    queryParameters.query === undefined || queryParameters.query === "";
 
-    const results = queryIsEmpty
-      ? filterManually(queryData, defaultResults)
-      : await searchAccordingToQueryData(queryData, numDisplay);
+  const results: QuestionFragment[] = useMemo(() => {
+    if (typing || queryResults.fetching) return []; // TODO - return results but show spinner or darken out all cards?
 
-    setResults(results);
-  }
+    if (queryIsEmpty) {
+      const filterManually = (results: QuestionFragment[]) => {
+        if (
+          queryParameters.forecastingPlatforms &&
+          queryParameters.forecastingPlatforms.length > 0
+        ) {
+          results = results.filter((result) =>
+            queryParameters.forecastingPlatforms.includes(result.platform.id)
+          );
+        }
+        if (queryParameters.starsThreshold === 4) {
+          results = results.filter(
+            (result) => result.qualityIndicators.stars >= 4
+          );
+        }
+        if (queryParameters.forecastsThreshold) {
+          // TODO / FIXME / remove?
+        }
+        return results;
+      };
+      return filterManually(defaultResults);
+    } else {
+      return queryResults.data?.result;
+    }
+  }, [queryResults.data, queryParameters]);
 
   // I don't want the component which display questions (DisplayQuestions) to change with a change in queryParameters. But I want it to have access to the queryParameters, and in particular access to queryParameters.numDisplay. Hence why this function lives inside Home.
   const getInfoToDisplayQuestionsFunction = () => {
@@ -145,10 +149,13 @@ const CommonDisplay: React.FC<Props> = ({
   useNoInitialEffect(updateRoute, [numDisplay]);
 
   useNoInitialEffect(() => {
-    setResults([]);
-    const newTimeoutId = setTimeout(() => {
+    setTyping(true);
+    const newTimeoutId = setTimeout(async () => {
       updateRoute();
-      executeSearchOrAnswerWithDefaultResults();
+      if (!queryIsEmpty) {
+        reexecuteQuery();
+      }
+      setTyping(false);
     }, 500);
 
     // avoid sending results if user has not stopped typing.
@@ -310,7 +317,7 @@ const CommonDisplay: React.FC<Props> = ({
       <div>{getInfoToDisplayQuestionsFunction()}</div>
 
       {displaySeeMoreHint &&
-      (!results || (results.length != 0 && numDisplay < results.length)) ? (
+      (!results || (results.length !== 0 && numDisplay < results.length)) ? (
         <div>
           <p className="mt-4 mb-4">
             {"Can't find what you were looking for?"}
@@ -336,7 +343,7 @@ const CommonDisplay: React.FC<Props> = ({
         </div>
       ) : null}
 
-      <br></br>
+      <br />
     </Fragment>
   );
 };

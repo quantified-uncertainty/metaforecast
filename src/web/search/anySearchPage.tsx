@@ -1,9 +1,8 @@
 import { GetServerSideProps } from "next";
 
-import { getFrontpage } from "../../backend/frontpage";
 import { getPlatformsConfig, PlatformConfig, platforms } from "../../backend/platforms";
-import { addLabelsToQuestions, FrontendQuestion } from "../platforms";
-import searchAccordingToQueryData from "../worker/searchAccordingToQueryData";
+import { ssrUrql } from "../urql";
+import { FrontpageDocument, QuestionFragment, SearchDocument } from "./queries.generated";
 
 /* Common code for / and /capture */
 
@@ -15,8 +14,7 @@ export interface QueryParameters {
 }
 
 export interface Props {
-  defaultResults: FrontendQuestion[];
-  initialResults: FrontendQuestion[];
+  defaultResults: QuestionFragment[];
   initialQueryParameters: QueryParameters;
   defaultQueryParameters: QueryParameters;
   initialNumDisplay: number;
@@ -27,6 +25,7 @@ export interface Props {
 export const getServerSideProps: GetServerSideProps<Props> = async (
   context
 ) => {
+  const [ssrCache, client] = ssrUrql();
   const urlQuery = context.query;
 
   const platformsConfig = getPlatformsConfig({ withGuesstimate: true });
@@ -61,28 +60,32 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   const defaultNumDisplay = 21;
   const initialNumDisplay = Number(urlQuery.numDisplay) || defaultNumDisplay;
 
-  const defaultResults = addLabelsToQuestions(
-    await getFrontpage(),
-    platformsConfig
-  );
+  const defaultResults = (await client.query(FrontpageDocument).toPromise())
+    .data.result;
 
-  const initialResults =
+  if (
     !!initialQueryParameters &&
     initialQueryParameters.query != "" &&
     initialQueryParameters.query != undefined
-      ? await searchAccordingToQueryData(
-          initialQueryParameters,
-          initialNumDisplay
-        )
-      : defaultResults;
+  ) {
+    // must match the query from CommonDisplay
+    await client
+      .query(SearchDocument, {
+        input: {
+          ...initialQueryParameters,
+          limit: initialNumDisplay,
+        },
+      })
+      .toPromise();
+  }
 
   return {
     props: {
+      urqlState: ssrCache.extractData(),
       initialQueryParameters,
       defaultQueryParameters,
       initialNumDisplay,
       defaultNumDisplay,
-      initialResults,
       defaultResults,
       platformsConfig,
     },

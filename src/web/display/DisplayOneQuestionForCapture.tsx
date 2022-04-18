@@ -2,11 +2,11 @@ import domtoimage from "dom-to-image"; // https://github.com/tsayen/dom-to-image
 import { useEffect, useRef, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import { FrontendQuestion } from "../platforms";
+import { QuestionFragment } from "../search/queries.generated";
 import { uploadToImgur } from "../worker/uploadToImgur";
 import { DisplayQuestion } from "./DisplayQuestion";
 
-function displayOneQuestionInner(result: FrontendQuestion, containerRef) {
+function displayOneQuestionInner(result: QuestionFragment, containerRef) {
   return (
     <div ref={containerRef}>
       {result ? (
@@ -168,7 +168,7 @@ let generateMetaculusSource = (result, hasDisplayBeenCaptured) => {
 };
 
 interface Props {
-  result: FrontendQuestion;
+  result: QuestionFragment;
 }
 
 export const DisplayOneQuestionForCapture: React.FC<Props> = ({ result }) => {

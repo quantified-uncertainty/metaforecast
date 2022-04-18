@@ -13,3 +13,15 @@ export const useNoInitialEffect = (
     return effect();
   }, deps);
 };
+
+export const useIsFirstRender = (): boolean => {
+  const isFirst = React.useRef(true);
+
+  if (isFirst.current) {
+    isFirst.current = false;
+
+    return true;
+  }
+
+  return isFirst.current;
+};

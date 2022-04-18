@@ -10,7 +10,7 @@ export { getServerSideProps } from "../web/search/anySearchPage";
 
 const IndexPage: NextPage<Props> = (props) => {
   return (
-    <Layout page={"search"}>
+    <Layout page="search">
       <CommonDisplay
         {...props}
         hasSearchbar={true}

@@ -1,7 +1,7 @@
 import { FaRegClipboard } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
-import { FrontendQuestion } from "../../platforms";
+import { QuestionFragment } from "../../search/queries.generated";
 import { Card } from "../Card";
 import { QuestionFooter } from "./QuestionFooter";
 
@@ -268,7 +268,7 @@ const LastUpdated: React.FC<{ timestamp: string }> = ({ timestamp }) => (
 // Main component
 
 interface Props {
-  question: FrontendQuestion;
+  question: QuestionFragment;
   showTimeStamp: boolean;
   expandFooterToFullWidth: boolean;
   showIdToggle?: boolean;
@@ -280,10 +280,9 @@ export const DisplayQuestion: React.FC<Props> = ({
     title,
     url,
     platform,
-    platformLabel,
     description,
     options,
-    qualityindicators,
+    qualityIndicators,
     timestamp,
     visualization,
   },
@@ -292,7 +291,7 @@ export const DisplayQuestion: React.FC<Props> = ({
   showIdToggle,
 }) => {
   const displayTimestampAtBottom =
-    checkIfDisplayTimeStampAtBottom(qualityindicators);
+    checkIfDisplayTimeStampAtBottom(qualityIndicators);
 
   const yesNoOptions =
     options.length === 2 &&
@@ -349,13 +348,13 @@ export const DisplayQuestion: React.FC<Props> = ({
               </div>
             )}
 
-            {platform !== "guesstimate" && options.length < 3 && (
+            {platform.id !== "guesstimate" && options.length < 3 && (
               <div className="text-gray-500">
                 <DisplayMarkdown description={description} />
               </div>
             )}
 
-            {platform === "guesstimate" && (
+            {platform.id === "guesstimate" && (
               <img
                 className="rounded-sm"
                 src={visualization}
@@ -373,11 +372,11 @@ export const DisplayQuestion: React.FC<Props> = ({
           </div>
           <div className="w-full">
             <QuestionFooter
-              stars={qualityindicators.stars}
-              platform={platform}
-              platformLabel={platformLabel || platform} // author || platformLabel,
-              numforecasts={qualityindicators.numforecasts}
-              qualityindicators={qualityindicators}
+              stars={qualityIndicators.stars}
+              platform={platform.id}
+              platformLabel={platform.label}
+              numforecasts={qualityIndicators.numForecasts}
+              qualityindicators={qualityIndicators}
               timestamp={timestamp}
               showTimeStamp={showTimeStamp && displayTimestampAtBottom}
               expandFooterToFullWidth={expandFooterToFullWidth}

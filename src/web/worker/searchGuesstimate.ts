@@ -1,18 +1,18 @@
 /* Imports */
 import axios from "axios";
 
-import { FrontendQuestion } from "../platforms";
+import { AlgoliaQuestion } from "../../backend/utils/algolia";
 
 /* Definitions */
-let urlEndPoint =
+const urlEndPoint =
   "https://m629r9ugsg-dsn.algolia.net/1/indexes/Space_production/query?x-algolia-agent=Algolia%20for%20vanilla%20JavaScript%203.32.1&x-algolia-application-id=M629R9UGSG&x-algolia-api-key=4e893740a2bd467a96c8bfcf95b2809c";
 
 /* Body */
 
 export default async function searchGuesstimate(
   query
-): Promise<FrontendQuestion[]> {
-  let response = await axios({
+): Promise<AlgoliaQuestion[]> {
+  const response = await axios({
     url: urlEndPoint,
     // credentials: "omit",
     headers: {
@@ -21,8 +21,6 @@ export default async function searchGuesstimate(
       "Accept-Language": "en-US,en;q=0.5",
       "content-type": "application/x-www-form-urlencoded",
     },
-    // referrer:
-    //   "https://m629r9ugsg-dsn.algolia.net/1/indexes/Space_production/query?x-algolia-agent=Algolia%20for%20vanilla%20JavaScript%203.32.1&x-algolia-application-id=M629R9UGSG&x-algolia-api-key=4e893740a2bd467a96c8bfcf95b2809c",
     data: `{\"params\":\"query=${query.replace(
       / /g,
       "%20"
@@ -31,25 +29,26 @@ export default async function searchGuesstimate(
   });
 
   const models: any[] = response.data.hits;
-  const mappedModels: FrontendQuestion[] = models.map((model, index) => {
-    let description = model.description
+  const mappedModels: AlgoliaQuestion[] = models.map((model, index) => {
+    const description = model.description
       ? model.description.replace(/\n/g, " ").replace(/  /g, " ")
       : "";
-    let stars = description.length > 250 ? 2 : 1;
+    const stars = description.length > 250 ? 2 : 1;
     return {
       id: `guesstimate-${model.id}`,
       title: model.name,
       url: `https://www.getguesstimate.com/models/${model.id}`,
       timestamp: model.created_at, // TODO - check that format matches
       platform: "guesstimate",
-      platformLabel: "Guesstimate",
-      description: description,
+      description,
       options: [],
       qualityindicators: {
         stars: stars,
         numforecasts: 1,
         numforecasters: 1,
       },
+      stars,
+      extra: {},
       visualization: model.big_screenshot,
       ranking: 10 * (index + 1) - 0.5, //(model._rankingInfo - 1*index)// hack
     };
@@ -57,7 +56,7 @@ export default async function searchGuesstimate(
 
   // filter for duplicates. Surprisingly common.
   let uniqueTitles = [];
-  let uniqueModels: FrontendQuestion[] = [];
+  let uniqueModels: AlgoliaQuestion[] = [];
   for (let model of mappedModels) {
     if (!uniqueTitles.includes(model.title) && !model.title.includes("copy")) {
       uniqueModels.push(model);

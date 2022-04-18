@@ -1,13 +1,15 @@
 import "nprogress/nprogress.css";
 import "../styles/main.css";
 
+import PlausibleProvider from "next-plausible";
+import { withUrqlClient } from "next-urql";
+import { AppProps } from "next/app";
 import Router from "next/router";
 import NProgress from "nprogress";
 
-import PlausibleProvider from "next-plausible";
+import { graphqlEndpoint } from "../web/urql";
 
 Router.events.on("routeChangeStart", (as, { shallow }) => {
-  console.log(shallow);
   if (!shallow) {
     NProgress.start();
   }
@@ -15,7 +17,7 @@ Router.events.on("routeChangeStart", (as, { shallow }) => {
 Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <PlausibleProvider domain="metaforecast.org">
       <Component {...pageProps} />
@@ -23,4 +25,9 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default withUrqlClient(
+  () => ({
+    url: graphqlEndpoint,
+  }),
+  { ssr: false }
+)(MyApp);

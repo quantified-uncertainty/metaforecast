@@ -1,10 +1,10 @@
 import React from "react";
 
-import { FrontendQuestion } from "../platforms";
+import { QuestionFragment } from "../search/queries.generated";
 import { DisplayQuestion } from "./DisplayQuestion";
 
 interface Props {
-  results: FrontendQuestion[];
+  results: QuestionFragment[];
   numDisplay: number;
   showIdToggle: boolean;
 }

@@ -2,57 +2,55 @@ import { GetServerSideProps, NextPage } from "next";
 import Error from "next/error";
 import Link from "next/link";
 
-import { DashboardItem } from "../../../backend/dashboards";
+import {
+    DashboardByIdDocument, DashboardFragment
+} from "../../../web/dashboards/queries.generated";
 import { DisplayQuestions } from "../../../web/display/DisplayQuestions";
 import { InfoBox } from "../../../web/display/InfoBox";
 import { Layout } from "../../../web/display/Layout";
 import { LineHeader } from "../../../web/display/LineHeader";
-import { FrontendQuestion } from "../../../web/platforms";
-import { reqToBasePath } from "../../../web/utils";
-import { getDashboardQuestionsByDashboardId } from "../../../web/worker/getDashboardQuestions";
+import { ssrUrql } from "../../../web/urql";
 
 interface Props {
-  dashboardQuestions: FrontendQuestion[];
-  dashboardItem: DashboardItem;
+  dashboard?: DashboardFragment;
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async (
   context
 ) => {
+  const [ssrCache, client] = ssrUrql();
   const dashboardId = context.query.id as string;
 
-  const { dashboardQuestions, dashboardItem } =
-    await getDashboardQuestionsByDashboardId({
-      dashboardId,
-      basePath: reqToBasePath(context.req), // required on server side to find the API endpoint
-    });
+  const dashboard = (
+    await client.query(DashboardByIdDocument, { id: dashboardId }).toPromise()
+  ).data?.result;
 
-  if (!dashboardItem) {
+  if (!dashboard) {
     context.res.statusCode = 404;
   }
 
   return {
     props: {
-      dashboardQuestions,
-      dashboardItem,
+      urqlState: ssrCache.extractData(),
+      dashboard,
     },
   };
 };
 
-const DashboardMetadata: React.FC<{ dashboardItem: DashboardItem }> = ({
-  dashboardItem,
+const DashboardMetadata: React.FC<{ dashboard: DashboardFragment }> = ({
+  dashboard,
 }) => (
   <div>
-    {dashboardItem?.title ? (
+    {dashboard.title ? (
       <h1 className="text-4xl text-center text-gray-600 mt-2 mb-2">
-        {dashboardItem.title}
+        {dashboard.title}
       </h1>
     ) : null}
 
-    {dashboardItem && dashboardItem.creator ? (
+    {dashboard.creator ? (
       <p className="text-lg text-center text-gray-600 mt-2 mb-2">
         Created by:{" "}
-        {dashboardItem.creator === "Clay Graubard" ? (
+        {dashboard.creator === "Clay Graubard" ? (
           <>
             @
             <a
@@ -63,40 +61,38 @@ const DashboardMetadata: React.FC<{ dashboardItem: DashboardItem }> = ({
             </a>
           </>
         ) : (
-          dashboardItem.creator
+          dashboard.creator
         )}
       </p>
     ) : null}
 
-    {dashboardItem?.description ? (
+    {dashboard.description ? (
       <p className="text-lg text-center text-gray-600 mt-2 mb-2">
-        {dashboardItem.description}
+        {dashboard.description}
       </p>
     ) : null}
   </div>
 );
 
 /* Body */
-const ViewDashboardPage: NextPage<Props> = ({
-  dashboardQuestions,
-  dashboardItem,
-}) => {
+const ViewDashboardPage: NextPage<Props> = ({ dashboard }) => {
   return (
     <Layout page="view-dashboard">
       <div className="flex flex-col my-8 space-y-8">
-        {dashboardItem ? (
-          <DashboardMetadata dashboardItem={dashboardItem} />
+        {dashboard ? (
+          <>
+            <DashboardMetadata dashboard={dashboard} />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <DisplayQuestions
+                results={dashboard.questions}
+                numDisplay={dashboard.questions.length}
+                showIdToggle={false}
+              />
+            </div>
+          </>
         ) : (
           <Error statusCode={404} />
         )}
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <DisplayQuestions
-            results={dashboardQuestions}
-            numDisplay={dashboardQuestions.length}
-            showIdToggle={false}
-          />
-        </div>
 
         <div className="max-w-xl self-center">
           <InfoBox>

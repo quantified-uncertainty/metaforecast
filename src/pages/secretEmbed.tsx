@@ -5,17 +5,18 @@ import React from "react";
 
 import { platforms } from "../backend/platforms";
 import { DisplayQuestion } from "../web/display/DisplayQuestion";
-import { FrontendQuestion } from "../web/platforms";
-import searchAccordingToQueryData from "../web/worker/searchAccordingToQueryData";
+import { QuestionFragment, SearchDocument } from "../web/search/queries.generated";
+import { ssrUrql } from "../web/urql";
 
 interface Props {
-  results: FrontendQuestion[];
+  results: QuestionFragment[];
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async (
   context
 ) => {
-  let urlQuery = context.query; // this is an object, not a string which I have to parse!!
+  const [ssrCache, client] = ssrUrql();
+  let urlQuery = context.query;
 
   let initialQueryParameters = {
     query: "",
@@ -25,14 +26,24 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
     ...urlQuery,
   };
 
-  let results: FrontendQuestion[] = [];
-  if (initialQueryParameters.query != "") {
-    results = await searchAccordingToQueryData(initialQueryParameters, 1);
+  let results: QuestionFragment[] = [];
+  if (initialQueryParameters.query !== "") {
+    results = (
+      await client
+        .query(SearchDocument, {
+          input: {
+            ...initialQueryParameters,
+            limit: 1,
+          },
+        })
+        .toPromise()
+    ).data.result;
   }
 
   return {
     props: {
-      results: results,
+      urqlState: ssrCache.extractData(),
+      results,
     },
   };
 };

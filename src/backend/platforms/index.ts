@@ -16,6 +16,20 @@ import { smarkets } from "./smarkets";
 import { wildeford } from "./wildeford";
 import { xrisk } from "./xrisk";
 
+export interface QualityIndicators {
+  stars: number;
+  numforecasts?: number | string;
+  numforecasters?: number;
+  liquidity?: number | string;
+  volume?: number;
+  volume7Days?: number;
+  volume24Hours?: number;
+  address?: number;
+  tradevolume?: string;
+  pool?: any;
+  createdTime?: any;
+}
+
 export interface Question {
   id: string;
   // "fantasyscotus-580"
@@ -53,7 +67,7 @@ export interface Question {
   stars?: number;
   // 2
 
-  qualityindicators: any;
+  qualityindicators: QualityIndicators;
   /*
   {
     "numforecasts": 120,

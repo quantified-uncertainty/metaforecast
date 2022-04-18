@@ -1,6 +1,8 @@
 import algoliasearch from "algoliasearch";
 
-import { pgRead } from "../database/pg-wrapper";
+import { Question } from "@prisma/client";
+
+import { prisma } from "../database/prisma";
 import { platforms } from "../platforms";
 
 let cookie = process.env.ALGOLIA_MASTER_API_KEY;
@@ -8,10 +10,14 @@ const algoliaAppId = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID;
 const client = algoliasearch(algoliaAppId, cookie);
 const index = client.initIndex("metaforecast");
 
-let getoptionsstringforsearch = (record: any) => {
+export type AlgoliaQuestion = Omit<Question, "timestamp"> & {
+  timestamp: string;
+};
+
+const getoptionsstringforsearch = (record: Question): string => {
   let result = "";
-  if (!!record.options && record.options.length > 0) {
-    result = record.options
+  if (!!record.options && (record.options as any[]).length > 0) {
+    result = (record.options as any[])
       .map((option: any) => option.name || null)
       .filter((x: any) => x != null)
       .join(", ");
@@ -19,23 +25,23 @@ let getoptionsstringforsearch = (record: any) => {
   return result;
 };
 
-export async function rebuildAlgoliaDatabaseTheEasyWay() {
-  let records: any[] = await pgRead({
-    tableName: "questions",
-  });
+export async function rebuildAlgoliaDatabase() {
+  const questions = await prisma.question.findMany();
 
   const platformNameToLabel = Object.fromEntries(
     platforms.map((platform) => [platform.name, platform.label])
   );
 
-  records = records.map((record, index: number) => ({
-    ...record,
-    platformLabel: platformNameToLabel[record.platform] || record.platform,
-    has_numforecasts: record.numforecasts ? true : false,
-    objectID: index,
-    optionsstringforsearch: getoptionsstringforsearch(record),
-  }));
-  // this is necessary to filter by missing attributes https://www.algolia.com/doc/guides/managing-results/refine-results/filtering/how-to/filter-by-null-or-missing-attributes/
+  const records: AlgoliaQuestion[] = questions.map(
+    (question, index: number) => ({
+      ...question,
+      timestamp: `${question.timestamp}`,
+      platformLabel:
+        platformNameToLabel[question.platform] || question.platform,
+      objectID: index,
+      optionsstringforsearch: getoptionsstringforsearch(question),
+    })
+  );
 
   if (index.exists()) {
     console.log("Index exists");
@@ -45,5 +51,3 @@ export async function rebuildAlgoliaDatabaseTheEasyWay() {
     );
   }
 }
-
-export const rebuildAlgoliaDatabase = rebuildAlgoliaDatabaseTheEasyWay;
