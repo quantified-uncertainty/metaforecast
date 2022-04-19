@@ -1,3 +1,14 @@
+input CreateDashboardInput {
+  creator: String
+  description: String
+  ids: [ID!]!
+  title: String!
+}
+
+type CreateDashboardResult {
+  dashboard: Dashboard!
+}
+
 type Dashboard {
   creator: String!
   description: String!
@@ -8,6 +19,10 @@ type Dashboard {
 
 """Date serialized as the Unix timestamp."""
 scalar Date
+
+type Mutation {
+  createDashboard(input: CreateDashboardInput!): CreateDashboardResult!
+}
 
 type PageInfo {
   endCursor: String

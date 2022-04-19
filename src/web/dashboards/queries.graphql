@@ -13,3 +13,11 @@ query DashboardById($id: ID!) {
     ...Dashboard
   }
 }
+
+mutation CreateDashboard($input: CreateDashboardInput!) {
+  result: createDashboard(input: $input) {
+    dashboard {
+      ...Dashboard
+    }
+  }
+}

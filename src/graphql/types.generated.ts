@@ -14,6 +14,18 @@ export type Scalars = {
   Date: any;
 };
 
+export type CreateDashboardInput = {
+  creator?: InputMaybe<Scalars['String']>;
+  description?: InputMaybe<Scalars['String']>;
+  ids: Array<Scalars['ID']>;
+  title: Scalars['String'];
+};
+
+export type CreateDashboardResult = {
+  __typename?: 'CreateDashboardResult';
+  dashboard: Dashboard;
+};
+
 export type Dashboard = {
   __typename?: 'Dashboard';
   creator: Scalars['String'];
@@ -21,6 +33,16 @@ export type Dashboard = {
   id: Scalars['ID'];
   questions: Array<Question>;
   title: Scalars['String'];
+};
+
+export type Mutation = {
+  __typename?: 'Mutation';
+  createDashboard: CreateDashboardResult;
+};
+
+
+export type MutationCreateDashboardArgs = {
+  input: CreateDashboardInput;
 };
 
 export type PageInfo = {

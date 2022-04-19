@@ -1,24 +1,33 @@
-import axios from "axios";
 import { NextPage } from "next";
 import { useRouter } from "next/router";
+import { useMutation } from "urql";
 
+import { CreateDashboardDocument } from "../../web/dashboards/queries.generated";
 import { DashboardCreator } from "../../web/display/DashboardCreator";
 import { Layout } from "../../web/display/Layout";
 import { LineHeader } from "../../web/display/LineHeader";
 
 const DashboardsPage: NextPage = () => {
   const router = useRouter();
+  const [createDashboardResult, createDashboard] = useMutation(
+    CreateDashboardDocument
+  );
 
-  const handleSubmit = async (data) => {
-    // Send to server to create
-    // Get back the id
-    let response = await axios({
-      url: "/api/create-dashboard-from-ids",
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      data: JSON.stringify(data),
-    }).then((res) => res.data);
-    await router.push(`/dashboards/view/${response.dashboardId}`);
+  const handleSubmit = async (data: any) => {
+    await createDashboard({
+      input: {
+        title: data.title,
+        description: data.description,
+        creator: data.creator,
+        ids: data.ids,
+      },
+    });
+    console.log(createDashboardResult);
+    const dashboardId = createDashboardResult?.data?.result?.dashboard?.id;
+    if (!dashboardId) {
+      throw new Error("Couldn't create a dashboard"); // TODO - toaster
+    }
+    await router.push(`/dashboards/view/${dashboardId}`);
   };
 
   return (

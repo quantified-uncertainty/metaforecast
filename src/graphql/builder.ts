@@ -37,3 +37,4 @@ builder.scalarType("Date", {
 });
 
 builder.queryType({});
+builder.mutationType({});

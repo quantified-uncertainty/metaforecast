@@ -27,7 +27,7 @@ builder.queryField("searchQuestions", (t) =>
       const forecastsThreshold = input.forecastsThreshold;
       const starsThreshold = input.starsThreshold;
       const platformsIncludeGuesstimate =
-        input.forecastingPlatforms.includes("guesstimate") &&
+        input.forecastingPlatforms?.includes("guesstimate") &&
         starsThreshold <= 1;
 
       // preparation
