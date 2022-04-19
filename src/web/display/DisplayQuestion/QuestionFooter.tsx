@@ -105,7 +105,7 @@ const getCurrencySymbolIfNeeded = ({
 
 const showFirstQualityIndicator = ({
   numforecasts,
-  timestamp,
+  lastUpdated,
   showTimeStamp,
   qualityindicators,
 }) => {
@@ -124,7 +124,7 @@ const showFirstQualityIndicator = ({
           <circle cx="4" cy="4" r="4" fill="rgb(29, 78, 216)" />
         </svg>
         {`Last updated: ${
-          timestamp && !!timestamp.slice ? timestamp.slice(0, 10) : "unknown"
+          lastUpdated ? lastUpdated.toISOString().slice(0, 10) : "unknown"
         }`}
       </span>
     );
@@ -135,13 +135,13 @@ const showFirstQualityIndicator = ({
 
 const displayQualityIndicators: React.FC<{
   numforecasts: number;
-  timestamp: number;
+  lastUpdated: Date;
   showTimeStamp: boolean;
   qualityindicators: any;
   platform: string; // id string - e.g. "goodjudgment", not "Good Judgment"
 }> = ({
   numforecasts,
-  timestamp,
+  lastUpdated,
   showTimeStamp,
   qualityindicators,
   platform,
@@ -151,7 +151,7 @@ const displayQualityIndicators: React.FC<{
     <div className="text-sm">
       {showFirstQualityIndicator({
         numforecasts,
-        timestamp,
+        lastUpdated,
         showTimeStamp,
         qualityindicators,
       })}
@@ -238,7 +238,7 @@ interface Props {
   platformLabel: string;
   numforecasts: any;
   qualityindicators: any;
-  timestamp: any;
+  lastUpdated: Date;
   showTimeStamp: boolean;
   expandFooterToFullWidth: boolean;
 }
@@ -249,7 +249,7 @@ export const QuestionFooter: React.FC<Props> = ({
   platformLabel,
   numforecasts,
   qualityindicators,
-  timestamp,
+  lastUpdated,
   showTimeStamp,
   expandFooterToFullWidth,
 }) => {
@@ -288,7 +288,7 @@ export const QuestionFooter: React.FC<Props> = ({
       >
         {displayQualityIndicators({
           numforecasts,
-          timestamp,
+          lastUpdated,
           showTimeStamp,
           qualityindicators,
           platform,

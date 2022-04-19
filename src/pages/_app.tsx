@@ -7,7 +7,7 @@ import { AppProps } from "next/app";
 import Router from "next/router";
 import NProgress from "nprogress";
 
-import { graphqlEndpoint } from "../web/urql";
+import { getUrqlClientOptions } from "../web/urql";
 
 Router.events.on("routeChangeStart", (as, { shallow }) => {
   if (!shallow) {
@@ -25,9 +25,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default withUrqlClient(
-  () => ({
-    url: graphqlEndpoint,
-  }),
-  { ssr: false }
-)(MyApp);
+export default withUrqlClient((ssr) => getUrqlClientOptions(ssr), {
+  ssr: false,
+})(MyApp);

@@ -254,13 +254,14 @@ const CopyText: React.FC<{ text: string; displayText: string }> = ({
   </div>
 );
 
-const LastUpdated: React.FC<{ timestamp: string }> = ({ timestamp }) => (
+const LastUpdated: React.FC<{ timestamp: Date }> = ({ timestamp }) => (
   <div className="flex items-center">
     <svg className="mt-1" height="10" width="16">
       <circle cx="4" cy="4" r="4" fill="rgb(29, 78, 216)" />
     </svg>
     <span className="text-gray-600">
-      Last updated: {timestamp ? timestamp.slice(0, 10) : "unknown"}
+      Last updated:{" "}
+      {timestamp ? timestamp.toISOString().slice(0, 10) : "unknown"}
     </span>
   </div>
 );
@@ -290,6 +291,7 @@ export const DisplayQuestion: React.FC<Props> = ({
   expandFooterToFullWidth,
   showIdToggle,
 }) => {
+  const lastUpdated = new Date(timestamp * 1000);
   const displayTimestampAtBottom =
     checkIfDisplayTimeStampAtBottom(qualityIndicators);
 
@@ -331,7 +333,7 @@ export const DisplayQuestion: React.FC<Props> = ({
                     showTimeStamp && !displayTimestampAtBottom ? "sm:block" : ""
                   }`}
                 >
-                  <LastUpdated timestamp={timestamp} />
+                  <LastUpdated timestamp={lastUpdated} />
                 </div>
               </div>
             )}
@@ -343,7 +345,7 @@ export const DisplayQuestion: React.FC<Props> = ({
                     showTimeStamp && !displayTimestampAtBottom ? "sm:block" : ""
                   } ml-6`}
                 >
-                  <LastUpdated timestamp={timestamp} />
+                  <LastUpdated timestamp={lastUpdated} />
                 </div>
               </div>
             )}
@@ -368,7 +370,7 @@ export const DisplayQuestion: React.FC<Props> = ({
             } self-center`}
           >
             {/* This one is exclusively for mobile*/}
-            <LastUpdated timestamp={timestamp} />
+            <LastUpdated timestamp={lastUpdated} />
           </div>
           <div className="w-full">
             <QuestionFooter
@@ -377,7 +379,7 @@ export const DisplayQuestion: React.FC<Props> = ({
               platformLabel={platform.label}
               numforecasts={qualityIndicators.numForecasts}
               qualityindicators={qualityIndicators}
-              timestamp={timestamp}
+              lastUpdated={lastUpdated}
               showTimeStamp={showTimeStamp && displayTimestampAtBottom}
               expandFooterToFullWidth={expandFooterToFullWidth}
             />
