@@ -33,10 +33,10 @@ const data0 = [
   { date: 9, probability: 0.7 },
 ];
 
-let l = 5;
+let l = 50;
 const data = Array.from(Array(l).keys()).map((x) => ({
   date: x,
-  probability: x / l,
+  probability: Math.abs(Math.sin((5 * x) / l)),
 }));
 
 let getDate = (x) => {
@@ -51,105 +51,79 @@ let dataAsXy = data.map((datum) => ({
 
 export const HistoryChart: React.FC<Props> = ({ question, history }) => {
   return (
-    <VictoryChart
-      domainPadding={20}
-      theme={VictoryTheme.material}
-      height={300}
-      containerComponent={<VictoryVoronoiContainer />}
-      domain={{
-        y: [0, 1],
-      }}
-    >
-      <VictoryGroup
-        color="darkblue"
-        data={dataAsXy}
-        labels={({ datum }) => `${datum.x}: ${Math.round(datum.y * 100)}%`}
-        labelComponent={
-          <VictoryTooltip
-            pointerLength={0}
-            dy={-12}
-            style={{
-              fontSize: 9,
-              fill: "black",
-              strokeWidth: 0.05,
-            }}
-            flyoutStyle={{
-              stroke: "black",
-              fill: "white",
-            }}
-            flyoutWidth={60}
-            cornerRadius={0}
-            flyoutPadding={7}
-          />
-        }
+    <div className="">
+      <VictoryChart
+        domainPadding={20}
+        theme={VictoryTheme.material}
+        height={400}
+        width={500}
+        containerComponent={<VictoryVoronoiContainer />}
+        domain={{
+          y: [0, 1],
+        }}
       >
-        <VictoryLine />
-        <VictoryScatter size={({ active }) => (active ? 3.75 : 3)} />
-      </VictoryGroup>
-      <VictoryAxis
-        // tickValues specifies both the number of ticks and where
-        // they are placed on the axis
-        tickValues={data.map((datum) => datum.date)}
-        tickCount={10}
-        tickFormat={dataAsXy.map((datum) => datum.x)}
-        style={{
-          grid: { stroke: null, strokeWidth: 0.5 },
-        }}
-        tickLabelComponent={
-          <VictoryLabel
-            dy={0}
-            angle={-30}
-            style={{ fontSize: 7, fill: "gray" }}
-          />
-        }
-      />
-      <VictoryAxis
-        dependentAxis
-        // tickFormat specifies how ticks should be displayed
-        tickFormat={(x) => `${x * 100}%`}
-        style={{
-          grid: { stroke: "#D3D3D3", strokeWidth: 0.5 },
-        }}
-      />
-    </VictoryChart>
+        <VictoryLabel
+          text="Chart Title"
+          x={250}
+          y={25}
+          textAnchor="middle"
+          style={{ fontSize: 20 }}
+        />
+        <VictoryGroup
+          color="darkblue"
+          data={dataAsXy}
+          labels={({ datum }) => `${datum.x}: ${Math.round(datum.y * 100)}%`}
+          labelComponent={
+            <VictoryTooltip
+              pointerLength={0}
+              dy={-12}
+              style={{
+                fontSize: 16,
+                fill: "black",
+                strokeWidth: 0.05,
+              }}
+              flyoutStyle={{
+                stroke: "black",
+                fill: "white",
+              }}
+              flyoutWidth={110}
+              cornerRadius={0}
+              flyoutPadding={7}
+            />
+          }
+        >
+          <VictoryLine />
+          <VictoryScatter size={({ active }) => (active ? 3.75 : 3)} />
+        </VictoryGroup>
+        <VictoryAxis
+          // tickValues specifies both the number of ticks and where
+          // they are placed on the axis
+          // tickValues={dataAsXy.map((datum) => datum.x)}
+          // tickFormat={dataAsXy.map((datum) => datum.x)}
+          tickCount={7}
+          style={{
+            grid: { stroke: null, strokeWidth: 0.5 },
+          }}
+          tickLabelComponent={
+            <VictoryLabel
+              dy={0}
+              angle={-30}
+              style={{ fontSize: 12, fill: "gray" }}
+            />
+          }
+        />
+        <VictoryAxis
+          dependentAxis
+          // tickFormat specifies how ticks should be displayed
+          tickFormat={(x) => `${x * 100}%`}
+          style={{
+            grid: { stroke: "#D3D3D3", strokeWidth: 0.5 },
+          }}
+          tickLabelComponent={
+            <VictoryLabel dy={0} style={{ fontSize: 12, fill: "gray" }} />
+          }
+        />
+      </VictoryChart>
+    </div>
   );
 };
-
-/*
-    <VictoryChart
-      // domainPadding will add space to each side of VictoryBar to
-      // prevent it from overlapping the axis
-      domainPadding={20}
-      theme={VictoryTheme.material}
-      height={300}
-      title={"Blah"}
-      containerComponent={<VictoryVoronoiContainer />}
-    >
-      <VictoryGroup
-        data={data.map((datum) => ({ x: datum.date, y: datum.probability }))}
-        labels={data.map((datum) => `1%`)}
-        style={{ labels: { fill: "black", fontSize: 10 } }}
-        labelComponent={
-          <VictoryTooltip style={{ fontSize: 10, fill: "black" }} dy={-15} />
-        }
-      >
-        <VictoryLine
-          height={300}
-          width={300}
-          style={{
-            data: { stroke: "#000080" },
-            parent: { border: "1px solid #ccc" },
-          }}
-          domain={{
-            y: [0, 1],
-          }}
-        ></VictoryLine>
-        <VictoryScatter
-          style={{
-            data: { fill: "#000080" },
-          }}
-          size={3}
-        />
-      </VictoryGroup>
-    </VictoryChart>
-*/

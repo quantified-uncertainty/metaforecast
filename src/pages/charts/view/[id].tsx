@@ -45,8 +45,10 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 const Chart: NextPage<Props> = ({ question, history }) => {
   return (
     <Layout page={"chart"}>
-      <div className="w-6/12 mb-4 mt-8 flex flex-row justify-center items-center bg-white">
-        <HistoryChart question={question} history={history} />
+      <div className="flex flex-col w-12/12 mb-4 mt-8 justify-center items-center self-center">
+        <div className="grid bg-white p-10">
+          <HistoryChart question={question} history={history} />
+        </div>
       </div>
     </Layout>
   );
