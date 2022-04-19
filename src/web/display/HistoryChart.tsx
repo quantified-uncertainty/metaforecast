@@ -2,6 +2,7 @@ import React from "react";
 
 import { FrontendForecast } from "../platforms";
 import * as V from "victory";
+import { HistoryChartFlyout } from "./HistoryChartFlyout";
 import {
   VictoryBar,
   VictoryLabel,
@@ -20,7 +21,7 @@ interface Props {
   history: number[];
 }
 
-const data = [
+const data0 = [
   { date: 1, probability: 0.1 },
   { date: 2, probability: 0.2 },
   { date: 3, probability: 0.4 },
@@ -31,6 +32,12 @@ const data = [
   { date: 8, probability: 0.65 },
   { date: 9, probability: 0.7 },
 ];
+
+let l = 5;
+const data = Array.from(Array(l).keys()).map((x) => ({
+  date: x,
+  probability: x / l,
+}));
 
 let getDate = (x) => {
   let date = new Date(x);
@@ -54,20 +61,36 @@ export const HistoryChart: React.FC<Props> = ({ question, history }) => {
       }}
     >
       <VictoryGroup
-        color="#c43a31"
+        color="darkblue"
         data={dataAsXy}
-        labels={({ datum }) => `${datum.y * 100}%`}
+        labels={({ datum }) => `${datum.x}: ${Math.round(datum.y * 100)}%`}
         labelComponent={
-          <VictoryTooltip style={{ fontSize: 10, fill: "black" }} />
+          <VictoryTooltip
+            pointerLength={0}
+            dy={-12}
+            style={{
+              fontSize: 9,
+              fill: "black",
+              strokeWidth: 0.05,
+            }}
+            flyoutStyle={{
+              stroke: "black",
+              fill: "white",
+            }}
+            flyoutWidth={60}
+            cornerRadius={0}
+            flyoutPadding={7}
+          />
         }
       >
         <VictoryLine />
-        <VictoryScatter size={({ active }) => (active ? 8 : 3)} />
+        <VictoryScatter size={({ active }) => (active ? 3.75 : 3)} />
       </VictoryGroup>
       <VictoryAxis
         // tickValues specifies both the number of ticks and where
         // they are placed on the axis
         tickValues={data.map((datum) => datum.date)}
+        tickCount={10}
         tickFormat={dataAsXy.map((datum) => datum.x)}
         style={{
           grid: { stroke: null, strokeWidth: 0.5 },
