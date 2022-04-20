@@ -62,21 +62,21 @@ const colors = ["dodgerblue", "crimson", "seagreen", "darkviolet", "turquoise"];
 const getVictoryGroup = (data, i) => {
   return (
     <VictoryGroup color={colors[i] || "darkgray"} data={dataAsXy(data)}>
-      <VictoryLine
-        name={`line${i}`}
+      <VictoryScatter
         //style={{ labels: { display: "none" } }}
+        size={({ active }) => (active ? 3.75 : 3)}
         //labels={() => null}
         //labelComponent={<span></span>}
       />
-      {
-        <VictoryScatter
+
+      {/* Doesn't work well with tooltips
+        <VictoryLine
+          name={`line${i}`}
           //style={{ labels: { display: "none" } }}
-          size={({ active }) => (active ? 3.75 : 3)}
           //labels={() => null}
           //labelComponent={<span></span>}
         />
-        // No idea how to disable labels
-      }
+        */}
     </VictoryGroup>
   );
 };

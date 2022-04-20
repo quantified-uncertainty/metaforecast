@@ -56,12 +56,12 @@ async function fakeGetHistoryQuestionById(id) {
     timestamp: `2022-04-${`0${x + 1}`.slice(-2)}T13:09:13.000Z`,
     options: [
       {
-        name: "X",
+        name: "Yes",
         type: "PROBABILITY",
         probability: 0.0351 + Math.abs(Math.sin(3 * x)) / 2,
       },
       {
-        name: "Y",
+        name: "No",
         type: "PROBABILITY",
         probability: 0.9649 - Math.abs(Math.sin(3 * x)) / 2,
       },
