@@ -81,27 +81,28 @@ const CommonDisplay: React.FC<Props> = ({
 
     if (queryIsEmpty) {
       const filterManually = (results: QuestionFragment[]) => {
+        let filteredResults = [...results];
         if (
           queryParameters.forecastingPlatforms &&
           queryParameters.forecastingPlatforms.length > 0
         ) {
-          results = results.filter((result) =>
+          filteredResults = filteredResults.filter((result) =>
             queryParameters.forecastingPlatforms.includes(result.platform.id)
           );
         }
         if (queryParameters.starsThreshold === 4) {
-          results = results.filter(
+          filteredResults = filteredResults.filter(
             (result) => result.qualityIndicators.stars >= 4
           );
         }
         if (queryParameters.forecastsThreshold) {
           // TODO / FIXME / remove?
         }
-        return results;
+        return filteredResults;
       };
       return filterManually(defaultResults);
     } else {
-      return queryResults.data?.result;
+      return queryResults.data?.result || [];
     }
   }, [queryResults.data, queryParameters]);
 

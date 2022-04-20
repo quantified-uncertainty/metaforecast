@@ -10,13 +10,13 @@ export { getServerSideProps } from "../web/search/anySearchPage";
 
 const CapturePage: NextPage<Props> = (props) => {
   return (
-    <Layout page={"capture"}>
+    <Layout page="capture">
       <CommonDisplay
         {...props}
         hasSearchbar={true}
         hasCapture={true}
         hasAdvancedOptions={false}
-        placeholder={"Get best title match..."}
+        placeholder="Get best title match..."
         displaySeeMoreHint={false}
         displayQuestionsWrapper={displayQuestionsWrapperForCapture}
       />
