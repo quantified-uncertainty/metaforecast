@@ -69,6 +69,8 @@ const CommonDisplay: React.FC<Props> = ({
       },
     },
     pause: !isFirstRender,
+    // note that if we don't force cache-only on SSR then queryResults.fetching is true which leads to an empty page
+    requestPolicy: isFirstRender ? "cache-only" : "network-only",
   });
 
   const queryIsEmpty =
