@@ -14,7 +14,7 @@ const DashboardsPage: NextPage = () => {
   );
 
   const handleSubmit = async (data: any) => {
-    await createDashboard({
+    const result = await createDashboard({
       input: {
         title: data.title,
         description: data.description,
@@ -22,8 +22,7 @@ const DashboardsPage: NextPage = () => {
         ids: data.ids,
       },
     });
-    console.log(createDashboardResult);
-    const dashboardId = createDashboardResult?.data?.result?.dashboard?.id;
+    const dashboardId = result?.data?.result?.dashboard?.id;
     if (!dashboardId) {
       throw new Error("Couldn't create a dashboard"); // TODO - toaster
     }
