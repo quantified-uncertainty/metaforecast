@@ -70,8 +70,12 @@ builder.mutationField("createDashboard", (t) =>
     },
     resolve: async (parent, args) => {
       const id = hash(JSON.stringify(args.input.ids));
-      const dashboard = await prisma.dashboard.create({
-        data: {
+      const dashboard = await prisma.dashboard.upsert({
+        where: {
+          id,
+        },
+        update: {},
+        create: {
           id,
           title: args.input.title,
           description: args.input.description || "",
