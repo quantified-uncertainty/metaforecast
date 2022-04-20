@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import { FrontendForecast } from "../../platforms";
 import { Card } from "../Card";
 import { ForecastFooter } from "./ForecastFooter";
+import { cleanText } from "../../utils";
 
 const truncateText = (length: number, text: string): string => {
   if (!text) {
@@ -75,24 +76,6 @@ if (!String.prototype.replaceAll) {
     return replaceAll(originalString, pattern, substitute);
   };
 }
-
-const cleanText = (text: string): string => {
-  // Note: should no longer be necessary
-  let textString = !!text ? text : "";
-  textString = textString
-    .replaceAll("] (", "](")
-    .replaceAll(") )", "))")
-    .replaceAll("( [", "([")
-    .replaceAll(") ,", "),")
-    .replaceAll("==", "") // Denotes a title in markdown
-    .replaceAll("Background\n", "")
-    .replaceAll("Context\n", "")
-    .replaceAll("--- \n", "- ")
-    .replaceAll(/\[(.*?)\]\(.*?\)/g, "$1");
-  textString = textString.slice(0, 1) == "=" ? textString.slice(1) : textString;
-  //console.log(textString)
-  return textString;
-};
 
 const primaryForecastColor = (probability: number) => {
   if (probability < 0.03) {
