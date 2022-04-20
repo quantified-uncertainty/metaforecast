@@ -6,6 +6,7 @@ import {
   VictoryBar,
   VictoryLabel,
   VictoryTooltip,
+  VictoryLegend,
   VictoryLine,
   VictoryScatter,
   VictoryChart,
@@ -34,6 +35,18 @@ const data2 = Array.from(Array(l).keys()).map((x) => ({
   probability: 1 - Math.abs(Math.sin((5 * x) / l)),
 }));
 
+const data3 = Array.from(Array(l).keys()).map((x) => ({
+  date: x,
+  probability: 1 - Math.abs(Math.sin((5 * x + 20) / l)),
+}));
+
+const buildDataset = (n, fn) => {
+  return Array.from(Array(n).keys()).map((x) => ({
+    date: x,
+    probability: fn(x),
+  }));
+};
+
 let getDate = (x) => {
   let date = new Date(x);
   return date.toISOString().slice(5, 10).replaceAll("-", "/");
@@ -45,14 +58,7 @@ let dataAsXy = (data) =>
     y: datum.probability,
   }));
 
-let colors = [
-  "royalblue",
-  "crimson",
-  "darkgreen",
-  "dodgerblue",
-  "darkviolet",
-  "limegreen",
-];
+let colors = ["dodgerblue", "crimson", "seagreen", "darkviolet", "turquoise"];
 const getVictoryGroup = (data, i) => {
   return (
     <VictoryGroup color={colors[i] || "darkgray"} data={dataAsXy(data)}>
@@ -76,6 +82,18 @@ const getVictoryGroup = (data, i) => {
 };
 
 export const HistoryChart: React.FC<Props> = ({ question, history }) => {
+  let height = 400;
+  let width = 500;
+  let dataSetsNames = ["Yes", "No", "Maybe", "Perhaps", "Possibly"];
+  let dataSets = [
+    buildDataset(50, (x) => 0.5),
+    buildDataset(50, (x) => Math.abs(Math.sin((5 * x) / 50) / 2)),
+    buildDataset(50, (x) => 1 - Math.abs(Math.sin((5 * x) / 50) / 2)),
+    buildDataset(50, (x) => Math.abs(Math.sin((3 * x + 25) / 50))),
+    buildDataset(50, (x) => 1 - Math.abs(Math.sin((3 * x + 25) / 50))),
+  ];
+  let dataSetsLength = dataSets.length;
+
   return (
     <div className="grid grid-rows-1 bg-white p-10">
       <a
@@ -89,10 +107,10 @@ export const HistoryChart: React.FC<Props> = ({ question, history }) => {
       </a>
       <VictoryChart
         domainPadding={20}
-        padding={{ top: 20, bottom: 50, left: 50, right: 50 }}
+        padding={{ top: 20, bottom: 50, left: 50, right: 100 }}
         theme={VictoryTheme.material}
-        height={340}
-        width={500}
+        height={height}
+        width={width}
         containerComponent={
           <VictoryVoronoiContainer
             labels={({ datum }) => `${datum.x}: ${Math.round(datum.y * 100)}%`}
@@ -124,9 +142,26 @@ export const HistoryChart: React.FC<Props> = ({ question, history }) => {
           y: [0, 1],
         }}
       >
-        {[data, data2]
-          .slice(0, 5)
-          .map((dataset, i) => getVictoryGroup(dataset, i))}
+        <VictoryLegend
+          x={width - 100}
+          y={height / 2 - 18 - (dataSetsLength - 1) * 13}
+          orientation="vertical"
+          gutter={20}
+          style={{ border: { stroke: "black" }, title: { fontSize: 20 } }}
+          data={
+            Array.from(Array(dataSetsLength).keys()).map((i) => ({
+              name: dataSetsNames[i],
+              symbol: { fill: colors[i] },
+            }))
+            /*[
+            { name: "One", symbol: { fill: "tomato", type: "star" } },
+            { name: "Two", symbol: { fill: "orange" } },
+            { name: "Three", symbol: { fill: "gold" } },
+          ]*/
+          }
+        />
+
+        {dataSets.slice(0, 5).map((dataset, i) => getVictoryGroup(dataset, i))}
         <VictoryAxis
           // tickValues specifies both the number of ticks and where
           // they are placed on the axis
