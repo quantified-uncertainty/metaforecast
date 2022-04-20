@@ -18,27 +18,12 @@ import {
 import ReactMarkdown from "react-markdown";
 import { cleanText } from "../utils";
 import gfm from "remark-gfm";
+import { xrisk } from "../../backend/platforms/xrisk";
 
 interface Props {
   question: FrontendForecast;
-  history: number[];
+  history: any[];
 }
-
-let l = 50;
-const data = Array.from(Array(l).keys()).map((x) => ({
-  date: x,
-  probability: Math.abs(Math.sin((5 * x) / l)),
-}));
-
-const data2 = Array.from(Array(l).keys()).map((x) => ({
-  date: x,
-  probability: 1 - Math.abs(Math.sin((5 * x) / l)),
-}));
-
-const data3 = Array.from(Array(l).keys()).map((x) => ({
-  date: x,
-  probability: 1 - Math.abs(Math.sin((5 * x + 20) / l)),
-}));
 
 const buildDataset = (n, fn) => {
   return Array.from(Array(n).keys()).map((x) => ({
@@ -47,33 +32,48 @@ const buildDataset = (n, fn) => {
   }));
 };
 
-let getDate = (x) => {
+let getDate0 = (x) => {
+  // for fake data
   let date = new Date(x);
   return date.toISOString().slice(5, 10).replaceAll("-", "/");
 };
 
+let timestampToString = (x) => {
+  // for real timestamps
+  console.log(x);
+  let date = new Date(Date.parse(x));
+  let dayOfMonth = date.getDate();
+  let month = date.getMonth() + 1;
+  let year = date.getFullYear();
+  let dateString = `${("0" + dayOfMonth).slice(-2)}/${("0" + month).slice(
+    -2
+  )}/${year.toString().slice(-2)}`;
+  console.log(dateString);
+  return dateString;
+};
+
 let dataAsXy = (data) =>
   data.map((datum) => ({
-    x: getDate(datum.date * (1000 * 60 * 60 * 24)),
+    x: timestampToString(datum.date), //getDate(datum.date * (1000 * 60 * 60 * 24)),
     y: datum.probability,
   }));
 
-let colors = ["dodgerblue", "crimson", "seagreen", "darkviolet", "turquoise"];
+const colors = ["dodgerblue", "crimson", "seagreen", "darkviolet", "turquoise"];
 const getVictoryGroup = (data, i) => {
   return (
     <VictoryGroup color={colors[i] || "darkgray"} data={dataAsXy(data)}>
       <VictoryLine
         name={`line${i}`}
-        style={{ labels: { display: "none" } }}
-        labels={() => null}
-        labelComponent={<span></span>}
+        //style={{ labels: { display: "none" } }}
+        //labels={() => null}
+        //labelComponent={<span></span>}
       />
       {
         <VictoryScatter
-          style={{ labels: { display: "none" } }}
+          //style={{ labels: { display: "none" } }}
           size={({ active }) => (active ? 3.75 : 3)}
-          labels={() => null}
-          labelComponent={<span></span>}
+          //labels={() => null}
+          //labelComponent={<span></span>}
         />
         // No idea how to disable labels
       }
@@ -84,14 +84,34 @@ const getVictoryGroup = (data, i) => {
 export const HistoryChart: React.FC<Props> = ({ question, history }) => {
   let height = 400;
   let width = 500;
-  let dataSetsNames = ["Yes", "No", "Maybe", "Perhaps", "Possibly"];
-  let dataSets = [
-    buildDataset(50, (x) => 0.5),
-    buildDataset(50, (x) => Math.abs(Math.sin((5 * x) / 50) / 2)),
-    buildDataset(50, (x) => 1 - Math.abs(Math.sin((5 * x) / 50) / 2)),
-    buildDataset(50, (x) => Math.abs(Math.sin((3 * x + 25) / 50))),
-    buildDataset(50, (x) => 1 - Math.abs(Math.sin((3 * x + 25) / 50))),
-  ];
+  let padding = { top: 20, bottom: 50, left: 50, right: 100 };
+  // let dataSetsNames = ["Yes", "No", "Maybe", "Perhaps", "Possibly"];
+  let dataSetsNames = [];
+  history.forEach((item) => {
+    let optionNames = item.options.map((option) => option.name);
+    dataSetsNames.push(...optionNames);
+  });
+  dataSetsNames = [...new Set(dataSetsNames)].slice(0, 5); // take the first 5
+  let dataSets = [];
+  dataSetsNames.forEach((name) => {
+    let newDataset = [];
+    let historyItems = history.forEach((item) => {
+      let relevantItemsArray = item.options.filter((x) => x.name == name);
+      let date = item.timestamp;
+      if (relevantItemsArray.length == 1) {
+        let relevantItem = relevantItemsArray[0];
+        if (relevantItem.type == "PROBABILITY") {
+          let result = {
+            date: date,
+            probability: relevantItem.probability,
+          };
+          newDataset.push(result);
+        }
+      }
+    });
+    dataSets.push(newDataset);
+  });
+
   let dataSetsLength = dataSets.length;
 
   return (
@@ -107,7 +127,7 @@ export const HistoryChart: React.FC<Props> = ({ question, history }) => {
       </a>
       <VictoryChart
         domainPadding={20}
-        padding={{ top: 20, bottom: 50, left: 50, right: 100 }}
+        padding={padding}
         theme={VictoryTheme.material}
         height={height}
         width={width}
@@ -133,7 +153,9 @@ export const HistoryChart: React.FC<Props> = ({ question, history }) => {
               />
             }
             voronoiBlacklist={
-              Array.from(Array(5).keys()).map((x, i) => `line${i}`)
+              ["line0", "line1", "line2", "line3", "line4"]
+
+              //Array.from(Array(5).keys()).map((x, i) => `line${i}`)
               // see: https://github.com/FormidableLabs/victory/issues/545
             }
           />
@@ -171,6 +193,10 @@ export const HistoryChart: React.FC<Props> = ({ question, history }) => {
           style={{
             grid: { stroke: null, strokeWidth: 0.5 },
           }}
+          //axisLabelComponent={
+          //  <VictoryLabel dy={40} style={{ fontSize: 10, fill: "gray" }} />
+          //}
+          // label="Date (dd/mm/yy)"
           tickLabelComponent={
             <VictoryLabel
               dy={0}

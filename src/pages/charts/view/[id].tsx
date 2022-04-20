@@ -53,17 +53,17 @@ async function fakeGetHistoryQuestionById(id) {
   let l = 30;
 
   let history = Array.from(Array(l).keys()).map((x) => ({
-    timestamp: `2022-04-${`0${x}`.slice(-2)}T13:09:13.000Z`,
+    timestamp: `2022-04-${`0${x + 1}`.slice(-2)}T13:09:13.000Z`,
     options: [
       {
-        name: "Yes",
+        name: "X",
         type: "PROBABILITY",
-        probability: 0.0351 + Math.abs(Math.sin(3 * x)),
+        probability: 0.0351 + Math.abs(Math.sin(3 * x)) / 2,
       },
       {
-        name: "No",
+        name: "Y",
         type: "PROBABILITY",
-        probability: 0.9649 - Math.abs(Math.sin(3 * x)),
+        probability: 0.9649 - Math.abs(Math.sin(3 * x)) / 2,
       },
     ],
   }));
