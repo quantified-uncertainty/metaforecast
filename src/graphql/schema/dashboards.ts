@@ -8,11 +8,18 @@ import { QuestionObj } from "./questions";
 const DashboardObj = builder.objectRef<Dashboard>("Dashboard").implement({
   fields: (t) => ({
     id: t.exposeID("id"),
-    title: t.exposeString("title"),
-    description: t.exposeString("description"),
-    creator: t.exposeString("creator"),
+    title: t.exposeString("title", {
+      description: "The title of the dashboard",
+    }),
+    description: t.exposeString("description", {
+      description: "The longer description of the dashboard",
+    }),
+    creator: t.exposeString("creator", {
+      description: 'The creator of the dashboard, e.g. "Peter Parker"',
+    }),
     questions: t.field({
       type: [QuestionObj],
+      description: "The list of questions on the dashboard",
       resolve: async (parent) => {
         return await prisma.question.findMany({
           where: {
@@ -29,6 +36,7 @@ const DashboardObj = builder.objectRef<Dashboard>("Dashboard").implement({
 builder.queryField("dashboard", (t) =>
   t.field({
     type: DashboardObj,
+    description: "Look up a single dashboard by its id",
     args: {
       id: t.arg({ type: "ID", required: true }),
     },
@@ -55,16 +63,25 @@ const CreateDashboardResult = builder
 
 const CreateDashboardInput = builder.inputType("CreateDashboardInput", {
   fields: (t) => ({
-    title: t.string({ required: true }),
-    description: t.string(),
-    creator: t.string(),
-    ids: t.idList({ required: true }),
+    title: t.string({
+      required: true,
+      description: "The title of the dashboard",
+    }),
+    description: t.string({
+      description: "The longer description of the dashboard",
+    }),
+    creator: t.string({
+      description: 'The creator of the dashboard, e.g. "Peter Parker"',
+    }),
+    ids: t.idList({ required: true, description: "List of question ids" }),
   }),
 });
 
 builder.mutationField("createDashboard", (t) =>
   t.field({
     type: CreateDashboardResult,
+    description:
+      "Create a new dashboard; if the dashboard with given ids already exists then it will be returned instead.",
     args: {
       input: t.arg({ type: CreateDashboardInput, required: true }),
     },

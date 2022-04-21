@@ -3,9 +3,15 @@ import { platforms, QualityIndicators } from "../../backend/platforms";
 import { builder } from "../builder";
 
 const PlatformObj = builder.objectRef<string>("Platform").implement({
-  description: "Platform supported by metaforecast",
+  description: "Forecasting platform supported by Metaforecast",
   fields: (t) => ({
+    id: t.id({
+      description: 'Short unique platform name, e.g. "xrisk"',
+      resolve: (x) => x,
+    }),
     label: t.string({
+      description:
+        'Platform name for displaying on frontend etc., e.g. "X-risk estimates"',
       resolve: (platformName) => {
         if (platformName === "metaforecast") {
           return "Metaforecast";
@@ -21,9 +27,6 @@ const PlatformObj = builder.objectRef<string>("Platform").implement({
         return platform.label;
       },
     }),
-    id: t.id({
-      resolve: (x) => x,
-    }),
   }),
 });
 
@@ -32,7 +35,9 @@ export const QualityIndicatorsObj = builder
   .implement({
     description: "Various indicators of the question's quality",
     fields: (t) => ({
-      stars: t.exposeInt("stars"),
+      stars: t.exposeInt("stars", {
+        description: "0 to 5",
+      }),
       numForecasts: t.int({
         nullable: true,
         resolve: (parent) =>
@@ -48,19 +53,28 @@ export const ProbabilityOptionObj = builder
   .implement({
     fields: (t) => ({
       name: t.exposeString("name", { nullable: true }),
-      probability: t.exposeFloat("probability", { nullable: true }), // number, 0 to 1
+      probability: t.exposeFloat("probability", {
+        description: "0 to 1",
+        nullable: true,
+      }),
     }),
   });
 
 export const QuestionObj = builder.prismaObject("Question", {
   findUnique: (question) => ({ id: question.id }),
   fields: (t) => ({
-    id: t.exposeID("id"),
+    id: t.exposeID("id", {
+      description: "Unique string which identifies the question",
+    }),
     title: t.exposeString("title"),
     description: t.exposeString("description"),
-    url: t.exposeString("url"),
+    url: t.exposeString("url", {
+      description:
+        "Non-unique, a very small number of platforms have a page for more than one prediction",
+    }),
     timestamp: t.field({
       type: "Date",
+      description: "Timestamp at which metaforecast fetched the question",
       resolve: (parent) => parent.timestamp,
     }),
     platform: t.field({
@@ -81,7 +95,7 @@ export const QuestionObj = builder.prismaObject("Question", {
       },
     }),
     visualization: t.string({
-      resolve: (parent) => (parent.extra as any)?.visualization,
+      resolve: (parent) => (parent.extra as any)?.visualization, // used for guesstimate only, see searchGuesstimate.ts
       nullable: true,
     }),
   }),

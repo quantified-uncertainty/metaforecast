@@ -8,6 +8,7 @@ import { QuestionObj } from "./questions";
 builder.queryField("frontpage", (t) =>
   t.field({
     type: [QuestionObj],
+    description: "Get a list of questions that are currently on the frontpage",
     resolve: async () => {
       const legacyQuestions = await getFrontpage();
       const ids = legacyQuestions.map((q) => q.id);

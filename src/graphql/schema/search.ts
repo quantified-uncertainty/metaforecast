@@ -7,9 +7,15 @@ import { QuestionObj } from "./questions";
 const SearchInput = builder.inputType("SearchInput", {
   fields: (t) => ({
     query: t.string({ required: true }),
-    starsThreshold: t.int(),
-    forecastsThreshold: t.int(),
-    forecastingPlatforms: t.stringList(),
+    starsThreshold: t.int({
+      description: "Minimum number of stars on a question",
+    }),
+    forecastsThreshold: t.int({
+      description: "Minimum number of forecasts on a question",
+    }),
+    forecastingPlatforms: t.stringList({
+      description: "List of platform ids to filter by",
+    }),
     limit: t.int(),
   }),
 });
@@ -17,13 +23,15 @@ const SearchInput = builder.inputType("SearchInput", {
 builder.queryField("searchQuestions", (t) =>
   t.field({
     type: [QuestionObj],
+    description:
+      "Search for questions; uses Algolia instead of the primary metaforecast database",
     args: {
       input: t.arg({ type: SearchInput, required: true }),
     },
     resolve: async (parent, { input }) => {
       // defs
       const query = input.query === undefined ? "" : input.query;
-      if (query == "") return [];
+      if (query === "") return [];
       const forecastsThreshold = input.forecastsThreshold;
       const starsThreshold = input.starsThreshold;
       const platformsIncludeGuesstimate =
