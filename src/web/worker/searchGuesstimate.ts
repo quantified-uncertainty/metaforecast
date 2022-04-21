@@ -34,7 +34,7 @@ export default async function searchGuesstimate(
       ? model.description.replace(/\n/g, " ").replace(/  /g, " ")
       : "";
     const stars = description.length > 250 ? 2 : 1;
-    return {
+    const q: AlgoliaQuestion = {
       id: `guesstimate-${model.id}`,
       title: model.name,
       url: `https://www.getguesstimate.com/models/${model.id}`,
@@ -48,10 +48,12 @@ export default async function searchGuesstimate(
         numforecasters: 1,
       },
       stars,
-      extra: {},
-      visualization: model.big_screenshot,
-      ranking: 10 * (index + 1) - 0.5, //(model._rankingInfo - 1*index)// hack
+      extra: {
+        visualization: model.big_screenshot,
+      },
+      // ranking: 10 * (index + 1) - 0.5, //(model._rankingInfo - 1*index)// hack
     };
+    return q;
   });
 
   // filter for duplicates. Surprisingly common.
