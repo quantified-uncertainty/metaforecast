@@ -69,15 +69,13 @@ const CommonDisplay: React.FC<Props> = ({
       },
     },
     pause: !isFirstRender,
-    // note that if we don't force cache-only on SSR then queryResults.fetching is true which leads to an empty page
-    requestPolicy: isFirstRender ? "cache-only" : "network-only",
   });
 
   const queryIsEmpty =
     queryParameters.query === undefined || queryParameters.query === "";
 
   const results: QuestionFragment[] = useMemo(() => {
-    if (typing || queryResults.fetching) return []; // TODO - return results but show spinner or darken out all cards?
+    if (typing || (!isFirstRender && queryResults.fetching)) return []; // TODO - return results but show spinner or darken out all cards?
 
     if (queryIsEmpty) {
       const filterManually = (results: QuestionFragment[]) => {
@@ -104,7 +102,15 @@ const CommonDisplay: React.FC<Props> = ({
     } else {
       return queryResults.data?.result || [];
     }
-  }, [queryResults.data, queryParameters]);
+  }, [
+    typing,
+    isFirstRender,
+    queryResults.data,
+    queryResults.fetching,
+    queryIsEmpty,
+    queryParameters,
+    defaultResults,
+  ]);
 
   // I don't want the component which display questions (DisplayQuestions) to change with a change in queryParameters. But I want it to have access to the queryParameters, and in particular access to queryParameters.numDisplay. Hence why this function lives inside Home.
   const getInfoToDisplayQuestionsFunction = () => {
