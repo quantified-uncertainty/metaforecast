@@ -2,16 +2,16 @@ import domtoimage from "dom-to-image"; // https://github.com/tsayen/dom-to-image
 import { useEffect, useRef, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import { FrontendForecast } from "../platforms";
+import { QuestionFragment } from "../search/queries.generated";
 import { uploadToImgur } from "../worker/uploadToImgur";
-import { DisplayForecast } from "./DisplayForecast";
+import { DisplayQuestion } from "./DisplayQuestion";
 
-function displayOneForecastInner(result: FrontendForecast, containerRef) {
+function displayOneQuestionInner(result: QuestionFragment, containerRef) {
   return (
     <div ref={containerRef}>
       {result ? (
-        <DisplayForecast
-          forecast={result}
+        <DisplayQuestion
+          question={result}
           showTimeStamp={true}
           expandFooterToFullWidth={true}
         />
@@ -168,10 +168,10 @@ let generateMetaculusSource = (result, hasDisplayBeenCaptured) => {
 };
 
 interface Props {
-  result: FrontendForecast;
+  result: QuestionFragment;
 }
 
-export const DisplayOneForecastForCapture: React.FC<Props> = ({ result }) => {
+export const DisplayOneQuestionForCapture: React.FC<Props> = ({ result }) => {
   const [hasDisplayBeenCaptured, setHasDisplayBeenCaptured] = useState(false);
 
   useEffect(() => {
@@ -226,7 +226,7 @@ export const DisplayOneForecastForCapture: React.FC<Props> = ({ result }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full justify-center">
       <div className="flex col-span-1 items-center justify-center">
-        {displayOneForecastInner(result, containerRef)}
+        {displayOneQuestionInner(result, containerRef)}
       </div>
       <div className="flex col-span-1 items-center justify-center">
         {generateCaptureButton(result, onCaptureButtonClick)}

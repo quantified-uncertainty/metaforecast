@@ -1,9 +1,9 @@
 import { FaRegClipboard } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
-import { FrontendForecast } from "../../platforms";
+import { QuestionFragment } from "../../search/queries.generated";
 import { Card } from "../Card";
-import { ForecastFooter } from "./ForecastFooter";
+import { QuestionFooter } from "./QuestionFooter";
 
 const truncateText = (length: number, text: string): string => {
   if (!text) {
@@ -254,13 +254,14 @@ const CopyText: React.FC<{ text: string; displayText: string }> = ({
   </div>
 );
 
-const LastUpdated: React.FC<{ timestamp: string }> = ({ timestamp }) => (
+const LastUpdated: React.FC<{ timestamp: Date }> = ({ timestamp }) => (
   <div className="flex items-center">
     <svg className="mt-1" height="10" width="16">
       <circle cx="4" cy="4" r="4" fill="rgb(29, 78, 216)" />
     </svg>
     <span className="text-gray-600">
-      Last updated: {timestamp ? timestamp.slice(0, 10) : "unknown"}
+      Last updated:{" "}
+      {timestamp ? timestamp.toISOString().slice(0, 10) : "unknown"}
     </span>
   </div>
 );
@@ -268,22 +269,21 @@ const LastUpdated: React.FC<{ timestamp: string }> = ({ timestamp }) => (
 // Main component
 
 interface Props {
-  forecast: FrontendForecast;
+  question: QuestionFragment;
   showTimeStamp: boolean;
   expandFooterToFullWidth: boolean;
   showIdToggle?: boolean;
 }
 
-export const DisplayForecast: React.FC<Props> = ({
-  forecast: {
+export const DisplayQuestion: React.FC<Props> = ({
+  question: {
     id,
     title,
     url,
     platform,
-    platformLabel,
     description,
     options,
-    qualityindicators,
+    qualityIndicators,
     timestamp,
     visualization,
   },
@@ -291,8 +291,9 @@ export const DisplayForecast: React.FC<Props> = ({
   expandFooterToFullWidth,
   showIdToggle,
 }) => {
+  const lastUpdated = new Date(timestamp * 1000);
   const displayTimestampAtBottom =
-    checkIfDisplayTimeStampAtBottom(qualityindicators);
+    checkIfDisplayTimeStampAtBottom(qualityIndicators);
 
   const yesNoOptions =
     options.length === 2 &&
@@ -332,7 +333,7 @@ export const DisplayForecast: React.FC<Props> = ({
                     showTimeStamp && !displayTimestampAtBottom ? "sm:block" : ""
                   }`}
                 >
-                  <LastUpdated timestamp={timestamp} />
+                  <LastUpdated timestamp={lastUpdated} />
                 </div>
               </div>
             )}
@@ -344,18 +345,18 @@ export const DisplayForecast: React.FC<Props> = ({
                     showTimeStamp && !displayTimestampAtBottom ? "sm:block" : ""
                   } ml-6`}
                 >
-                  <LastUpdated timestamp={timestamp} />
+                  <LastUpdated timestamp={lastUpdated} />
                 </div>
               </div>
             )}
 
-            {platform !== "guesstimate" && options.length < 3 && (
+            {platform.id !== "guesstimate" && options.length < 3 && (
               <div className="text-gray-500">
                 <DisplayMarkdown description={description} />
               </div>
             )}
 
-            {platform === "guesstimate" && (
+            {platform.id === "guesstimate" && (
               <img
                 className="rounded-sm"
                 src={visualization}
@@ -369,16 +370,16 @@ export const DisplayForecast: React.FC<Props> = ({
             } self-center`}
           >
             {/* This one is exclusively for mobile*/}
-            <LastUpdated timestamp={timestamp} />
+            <LastUpdated timestamp={lastUpdated} />
           </div>
           <div className="w-full">
-            <ForecastFooter
-              stars={qualityindicators.stars}
-              platform={platform}
-              platformLabel={platformLabel || platform} // author || platformLabel,
-              numforecasts={qualityindicators.numforecasts}
-              qualityindicators={qualityindicators}
-              timestamp={timestamp}
+            <QuestionFooter
+              stars={qualityIndicators.stars}
+              platform={platform.id}
+              platformLabel={platform.label}
+              numforecasts={qualityIndicators.numForecasts}
+              qualityindicators={qualityIndicators}
+              lastUpdated={lastUpdated}
               showTimeStamp={showTimeStamp && displayTimestampAtBottom}
               expandFooterToFullWidth={expandFooterToFullWidth}
             />

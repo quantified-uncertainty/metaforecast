@@ -15,7 +15,7 @@ const migrate = async () => {
     FantasySCOTUS: "fantasyscotus",
     Foretold: "foretold",
     "GiveWell/OpenPhilanthropy": "givewellopenphil",
-    "Good Judgment": "goodjudgement",
+    "Good Judgment": "goodjudgment",
     "Good Judgment Open": "goodjudgmentopen",
     Infer: "infer",
     Kalshi: "kalshi",

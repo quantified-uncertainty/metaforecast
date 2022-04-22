@@ -16,7 +16,21 @@ import { smarkets } from "./smarkets";
 import { wildeford } from "./wildeford";
 import { xrisk } from "./xrisk";
 
-export interface Forecast {
+export interface QualityIndicators {
+  stars: number;
+  numforecasts?: number | string;
+  numforecasters?: number;
+  liquidity?: number | string;
+  volume?: number;
+  volume7Days?: number;
+  volume24Hours?: number;
+  address?: number;
+  tradevolume?: string;
+  pool?: any;
+  createdTime?: any;
+}
+
+export interface Question {
   id: string;
   // "fantasyscotus-580"
 
@@ -53,7 +67,7 @@ export interface Forecast {
   stars?: number;
   // 2
 
-  qualityindicators: any;
+  qualityindicators: QualityIndicators;
   /*
   {
     "numforecasts": 120,
@@ -63,8 +77,8 @@ export interface Forecast {
   extra?: any;
 }
 
-// fetcher should return null if platform failed to fetch forecasts for some reason
-export type PlatformFetcher = () => Promise<Forecast[] | null>;
+// fetcher should return null if platform failed to fetch questions for some reason
+export type PlatformFetcher = () => Promise<Question[] | null>;
 
 export interface Platform {
   name: string; // short name for ids and `platform` db column, e.g. "xrisk"
@@ -76,7 +90,7 @@ export interface Platform {
 // draft for the future callback-based streaming/chunking API:
 // interface FetchOptions {
 //   since?: string; // some kind of cursor, Date object or opaque string?
-//   save: (forecasts: Forecast[]) => Promise<void>;
+//   save: (questions: Question[]) => Promise<void>;
 // }
 
 // export type PlatformFetcher = (options: FetchOptions) => Promise<void>;

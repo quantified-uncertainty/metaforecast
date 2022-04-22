@@ -2,7 +2,7 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { Forecast, Platform } from "./";
+import { Platform, Question } from "./";
 
 /* Definitions */
 const platformName = "polymarket";
@@ -68,7 +68,7 @@ export const polymarket: Platform = {
   label: "PolyMarket",
   color: "#00314e",
   async fetcher() {
-    let results: Forecast[] = [];
+    let results: Question[] = [];
     let webpageEndpointData = await fetchAllContractInfo();
     for (let marketInfo of webpageEndpointData) {
       let address = marketInfo.marketMakerAddress;
@@ -102,7 +102,7 @@ export const polymarket: Platform = {
             });
           }
 
-          let result: Forecast = {
+          let result: Question = {
             id: id,
             title: marketInfo.question,
             url: "https://polymarket.com/market/" + marketInfo.slug,

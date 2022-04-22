@@ -1,11 +1,12 @@
-import { IncomingMessage } from "http";
-
-export const reqToBasePath = (req: IncomingMessage) => {
+export const getBasePath = () => {
   if (process.env.NEXT_PUBLIC_VERCEL_URL) {
-    console.log(process.env.NEXT_PUBLIC_VERCEL_URL);
     return `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
   }
 
-  // we could just hardcode http://localhost:3000 here, but then `next dev -p <CUSTOM_PORT>` would break
-  return "http://" + req.headers.host;
+  // can be used for local development if you prefer non-default port
+  if (process.env.NEXT_PUBLIC_SITE_URL) {
+    return process.env.NEXT_PUBLIC_SITE_URL;
+  }
+
+  return "http://localhost:3000";
 };

@@ -1,49 +1,44 @@
 import { GetServerSideProps, NextPage } from "next";
 import Error from "next/error";
 
-import { DashboardItem } from "../../../backend/dashboards";
-import { DisplayForecasts } from "../../../web/display/DisplayForecasts";
-import { FrontendForecast } from "../../../web/platforms";
-import { getDashboardForecastsByDashboardId } from "../../../web/worker/getDashboardForecasts";
-import { reqToBasePath } from "../../../web/utils";
+import {
+    DashboardByIdDocument, DashboardFragment
+} from "../../../web/dashboards/queries.generated";
+import { DisplayQuestions } from "../../../web/display/DisplayQuestions";
+import { ssrUrql } from "../../../web/urql";
 
 interface Props {
-  dashboardForecasts: FrontendForecast[];
-  dashboardItem: DashboardItem;
+  dashboard?: DashboardFragment;
   numCols?: number;
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async (
   context
 ) => {
+  const [ssrCache, client] = ssrUrql();
   const dashboardId = context.query.id as string;
   const numCols = Number(context.query.numCols);
 
-  const { dashboardItem, dashboardForecasts } =
-    await getDashboardForecastsByDashboardId({
-      dashboardId,
-      basePath: reqToBasePath(context.req), // required on server side to find the API endpoint
-    });
+  const dashboard = (
+    await client.query(DashboardByIdDocument, { id: dashboardId }).toPromise()
+  ).data?.result;
 
-  if (!dashboardItem) {
+  if (!dashboard) {
     context.res.statusCode = 404;
   }
 
   return {
     props: {
-      dashboardForecasts,
-      dashboardItem,
+      // reduntant: page component doesn't do graphql requests, but it's still nice/more consistent to have data in cache
+      urqlState: ssrCache.extractData(),
+      dashboard,
       numCols: !numCols ? null : numCols < 5 ? numCols : 4,
     },
   };
 };
 
-const EmbedDashboardPage: NextPage<Props> = ({
-  dashboardForecasts,
-  dashboardItem,
-  numCols,
-}) => {
-  if (!dashboardItem) {
+const EmbedDashboardPage: NextPage<Props> = ({ dashboard, numCols }) => {
+  if (!dashboard) {
     return <Error statusCode={404} />;
   }
 
@@ -57,9 +52,9 @@ const EmbedDashboardPage: NextPage<Props> = ({
             numCols || 3
           } gap-4 mb-6`}
         >
-          <DisplayForecasts
-            results={dashboardForecasts}
-            numDisplay={dashboardForecasts.length}
+          <DisplayQuestions
+            results={dashboard.questions}
+            numDisplay={dashboard.questions.length}
             showIdToggle={false}
           />
         </div>

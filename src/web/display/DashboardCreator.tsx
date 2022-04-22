@@ -60,8 +60,10 @@ Your old input was: ${value}`;
 
         <InfoBox>
           You can find the necessary ids by toggling the advanced options in the
-          search, or by visiting{" "}
-          <a href="/api/all-forecasts">/api/all-forecasts</a>
+          search, or by using{" "}
+          <a href="/api/graphql?query=%7B%0A++questions%28first%3A+100%29+%7B%0A++++pageInfo+%7B%0A++++++hasNextPage%0A++++++endCursor%0A++++%7D%0A++++edges+%7B%0A++++++node+%7B%0A++++++++id%0A++++++++title%0A++++++++url%0A++++++%7D%0A++++%7D%0A++%7D%0A%7D">
+            GraphQL API
+          </a>
         </InfoBox>
       </div>
     </form>

@@ -1,0 +1,32 @@
+fragment Question on Question {
+  id
+  url
+  title
+  description
+  timestamp
+  options {
+    name
+    probability
+  }
+  platform {
+    id
+    label
+  }
+  qualityIndicators {
+    stars
+    numForecasts
+  }
+  visualization
+}
+
+query Frontpage {
+  result: frontpage {
+    ...Question
+  }
+}
+
+query Search($input: SearchInput!) {
+  result: searchQuestions(input: $input) {
+    ...Question
+  }
+}

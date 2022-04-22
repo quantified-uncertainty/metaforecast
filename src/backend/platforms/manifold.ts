@@ -2,7 +2,7 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { Forecast, Platform } from "./";
+import { Platform, Question } from "./";
 
 /* Definitions */
 const platformName = "manifold";
@@ -23,7 +23,7 @@ async function fetchData() {
   return response;
 }
 
-function showStatistics(results: Forecast[]) {
+function showStatistics(results: Question[]) {
   console.log(`Num unresolved markets: ${results.length}`);
   let sum = (arr) => arr.reduce((tally, a) => tally + a, 0);
   let num2StarsOrMore = results.filter(
@@ -44,7 +44,7 @@ function showStatistics(results: Forecast[]) {
 }
 
 async function processPredictions(predictions) {
-  let results: Forecast[] = await predictions.map((prediction) => {
+  let results: Question[] = await predictions.map((prediction) => {
     let id = `${platformName}-${prediction.id}`; // oops, doesn't match platform name
     let probability = prediction.probability;
     let options = [
@@ -59,7 +59,7 @@ async function processPredictions(predictions) {
         type: "PROBABILITY",
       },
     ];
-    const result: Forecast = {
+    const result: Question = {
       id: id,
       title: prediction.question,
       url: prediction.url,

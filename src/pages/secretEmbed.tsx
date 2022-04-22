@@ -4,18 +4,19 @@ import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 
 import { platforms } from "../backend/platforms";
-import { DisplayForecast } from "../web/display/DisplayForecast";
-import { FrontendForecast } from "../web/platforms";
-import searchAccordingToQueryData from "../web/worker/searchAccordingToQueryData";
+import { DisplayQuestion } from "../web/display/DisplayQuestion";
+import { QuestionFragment, SearchDocument } from "../web/search/queries.generated";
+import { ssrUrql } from "../web/urql";
 
 interface Props {
-  results: FrontendForecast[];
+  results: QuestionFragment[];
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async (
   context
 ) => {
-  let urlQuery = context.query; // this is an object, not a string which I have to parse!!
+  const [ssrCache, client] = ssrUrql();
+  let urlQuery = context.query;
 
   let initialQueryParameters = {
     query: "",
@@ -25,14 +26,24 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
     ...urlQuery,
   };
 
-  let results: FrontendForecast[] = [];
-  if (initialQueryParameters.query != "") {
-    results = await searchAccordingToQueryData(initialQueryParameters, 1);
+  let results: QuestionFragment[] = [];
+  if (initialQueryParameters.query !== "") {
+    results = (
+      await client
+        .query(SearchDocument, {
+          input: {
+            ...initialQueryParameters,
+            limit: 1,
+          },
+        })
+        .toPromise()
+    ).data.result;
   }
 
   return {
     props: {
-      results: results,
+      urqlState: ssrCache.extractData(),
+      results,
     },
   };
 };
@@ -46,8 +57,8 @@ const SecretEmbedPage: NextPage<Props> = ({ results }) => {
         <div>
           <div id="secretEmbed">
             {result ? (
-              <DisplayForecast
-                forecast={result}
+              <DisplayQuestion
+                question={result}
                 showTimeStamp={true}
                 expandFooterToFullWidth={true}
               />

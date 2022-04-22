@@ -1,6 +1,6 @@
 import algoliasearch from "algoliasearch";
 
-import { FrontendForecast } from "../platforms";
+import { AlgoliaQuestion } from "../../backend/utils/algolia";
 
 const client = algoliasearch(
   process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
@@ -13,22 +13,21 @@ let buildFilter = ({
   filterByPlatforms,
   forecastsThreshold,
 }) => {
-  let starsFilter = starsThreshold
+  const starsFilter = starsThreshold
     ? `qualityindicators.stars >= ${starsThreshold}`
     : null;
-  let platformsFilter = filterByPlatforms
+  const platformsFilter = filterByPlatforms
     ? filterByPlatforms.map((platform) => `platform:"${platform}"`).join(" OR ")
     : null;
-  console.log(platformsFilter);
-  // let numForecastsFilter = forecastsThreshold ? `has_numforecasts:true AND qualityindicators.numforecasts >= ${forecastsThreshold}` : null
-  let numForecastsFilter =
+  const numForecastsFilter =
     forecastsThreshold > 0
       ? `qualityindicators.numforecasts >= ${forecastsThreshold}`
       : null;
-  let finalFilter = [starsFilter, platformsFilter, numForecastsFilter]
+  const finalFilter = [starsFilter, platformsFilter, numForecastsFilter]
     .filter((f) => f != null)
     .map((f) => `( ${f} )`)
     .join(" AND ");
+
   console.log(
     "searchWithAlgolia.js/searchWithAlgolia/buildFilter",
     finalFilter
@@ -51,18 +50,6 @@ let buildFacetFilter = ({ filterByPlatforms }) => {
   return platformsFilter;
 };
 
-let normalizeArray = (array) => {
-  if (array.length == 0) {
-    return [];
-  }
-  let mean = array.reduce((a, b) => a + b) / array.length;
-  let sd = Math.sqrt(
-    array.map((x) => Math.pow(x - mean, 2)).reduce((a, b) => a + b)
-  );
-  let normalizedArray = array.map((result) => (result - sd) / mean);
-  return normalizedArray;
-};
-
 let noExactMatch = (queryString, result) => {
   queryString = queryString.toLowerCase();
   let title = result.title.toLowerCase();
@@ -75,6 +62,14 @@ let noExactMatch = (queryString, result) => {
   );
 };
 
+interface SearchOpts {
+  queryString: string;
+  hitsPerPage?: number;
+  starsThreshold: number;
+  filterByPlatforms: string[];
+  forecastsThreshold: number;
+}
+
 // only query string
 export default async function searchWithAlgolia({
   queryString,
@@ -82,8 +77,8 @@ export default async function searchWithAlgolia({
   starsThreshold,
   filterByPlatforms,
   forecastsThreshold,
-}): Promise<FrontendForecast[]> {
-  let response = await index.search<FrontendForecast>(queryString, {
+}: SearchOpts): Promise<AlgoliaQuestion[]> {
+  const response = await index.search<AlgoliaQuestion>(queryString, {
     hitsPerPage,
     filters: buildFilter({
       starsThreshold,
@@ -93,7 +88,7 @@ export default async function searchWithAlgolia({
     //facetFilters: buildFacetFilter({filterByPlatforms}),
     getRankingInfo: true,
   });
-  let results: FrontendForecast[] = response.hits;
+  let results = response.hits;
 
   let recursionError = ["metaforecast", "metaforecasts", "metaforecasting"];
   if (
@@ -103,10 +98,10 @@ export default async function searchWithAlgolia({
     results = [
       {
         id: "not-found",
+        objectID: "not-found",
         title: "No search results match your query",
         url: "https://metaforecast.org",
         platform: "metaforecast",
-        platformLabel: "Metaforecast",
         description: "Maybe try a broader query?",
         options: [
           {
@@ -121,24 +116,23 @@ export default async function searchWithAlgolia({
           },
         ],
         timestamp: `${new Date().toISOString().slice(0, 10)}`,
+        stars: 5, // legacy
         qualityindicators: {
           numforecasts: 1,
           numforecasters: 1,
           stars: 5,
         },
-        // noExactSearchResults: true,
-        // optionsstringforsearch: "Yes, No",
-        // has_numforecasts: true,
+        extra: {},
       },
     ];
   } else if (recursionError.includes(queryString.toLowerCase())) {
     results = [
       {
         id: "recursion-error",
+        objectID: "recursion-error",
         title: `Did you mean: ${queryString}?`,
         url: "https://metaforecast.org/recursion?bypassEasterEgg=true",
         platform: "metaforecast",
-        platformLabel: "Metaforecast",
         description:
           "Fatal error: Too much recursion. Click to proceed anyways",
         options: [
@@ -154,14 +148,13 @@ export default async function searchWithAlgolia({
           },
         ],
         timestamp: `${new Date().toISOString().slice(0, 10)}`,
+        stars: 5, // legacy
         qualityindicators: {
           numforecasts: 1,
           numforecasters: 1,
           stars: 5,
         },
-        // noExactSearchResults: true,
-        // optionsstringforsearch: "Yes, No",
-        // has_numforecasts: true,
+        extra: {},
       },
       ...results,
     ];
@@ -172,10 +165,10 @@ export default async function searchWithAlgolia({
   ) {
     results.unshift({
       id: "not-found-2",
+      objectID: "not-found-2",
       title: "No search results appear to match your query",
       url: "https://metaforecast.org",
       platform: "metaforecast",
-      platformLabel: "Metaforecast",
       description: "Maybe try a broader query? That said, we could be wrong.",
       options: [
         {
@@ -190,17 +183,14 @@ export default async function searchWithAlgolia({
         },
       ],
       timestamp: `${new Date().toISOString().slice(0, 10)}`,
+      stars: 1, // legacy
       qualityindicators: {
         numforecasts: 1,
         numforecasters: 1,
         stars: 1,
       },
-      // noExactSearchResults: true,
-      // optionsstringforsearch: "Yes, No",
-      // has_numforecasts: true,
+      extra: {},
     });
-  } else {
-    // results[0].noExactSearchResults = false;
   }
 
   return results;

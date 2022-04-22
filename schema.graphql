@@ -1,0 +1,86 @@
+input CreateDashboardInput {
+  creator: String
+  description: String
+  ids: [ID!]!
+  title: String!
+}
+
+type CreateDashboardResult {
+  dashboard: Dashboard!
+}
+
+type Dashboard {
+  creator: String!
+  description: String!
+  id: ID!
+  questions: [Question!]!
+  title: String!
+}
+
+"""Date serialized as the Unix timestamp."""
+scalar Date
+
+type Mutation {
+  createDashboard(input: CreateDashboardInput!): CreateDashboardResult!
+}
+
+type PageInfo {
+  endCursor: String
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+}
+
+"""Platform supported by metaforecast"""
+type Platform {
+  id: ID!
+  label: String!
+}
+
+type ProbabilityOption {
+  name: String
+  probability: Float
+}
+
+"""Various indicators of the question's quality"""
+type QualityIndicators {
+  numForecasts: Int
+  stars: Int!
+}
+
+type Query {
+  dashboard(id: ID!): Dashboard!
+  frontpage: [Question!]!
+  questions(after: String, before: String, first: Int, last: Int): QueryQuestionsConnection!
+  searchQuestions(input: SearchInput!): [Question!]!
+}
+
+type QueryQuestionsConnection {
+  edges: [QueryQuestionsConnectionEdge]!
+  pageInfo: PageInfo!
+}
+
+type QueryQuestionsConnectionEdge {
+  cursor: String!
+  node: Question!
+}
+
+type Question {
+  description: String!
+  id: ID!
+  options: [ProbabilityOption!]!
+  platform: Platform!
+  qualityIndicators: QualityIndicators!
+  timestamp: Date!
+  title: String!
+  url: String!
+  visualization: String
+}
+
+input SearchInput {
+  forecastingPlatforms: [String!]
+  forecastsThreshold: Int
+  limit: Int
+  query: String!
+  starsThreshold: Int
+}
