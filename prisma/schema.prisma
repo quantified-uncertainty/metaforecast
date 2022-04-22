@@ -60,5 +60,11 @@ model Question {
   qualityindicators Json
   extra             Json
 
+  onFrontpage FrontpageId?
   @@map("questions")
+}
+
+model FrontpageId {
+  question Question @relation(fields: [id], references: [id])
+  id       String   @unique
 }
