@@ -3,14 +3,13 @@ import { Question } from "@prisma/client";
 import { measureTime } from "./utils/measureTime";
 
 export async function getFrontpage(): Promise<Question[]> {
-  const questions = await prisma.question.findMany({
-    where: {
-      onFrontpage: {
-        isNot: null,
+  const questions = (
+    await prisma.frontpageId.findMany({
+      include: {
+        question: true,
       },
-    },
-  });
-  console.log(questions.length);
+    })
+  ).map((f) => f.question);
   return questions;
 }
 
