@@ -9,7 +9,9 @@ export async function getFrontpage(): Promise<Question[]> {
         question: true,
       },
     })
-  ).map((f) => f.question);
+  )
+    .map((f) => f.question)
+    .filter((q) => q);
   return questions;
 }
 
