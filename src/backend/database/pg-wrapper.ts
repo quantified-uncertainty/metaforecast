@@ -1,7 +1,6 @@
 import { Pool, PoolClient } from "pg";
 
 import { Question } from "../platforms";
-import { hash } from "../utils/hash";
 import { measureTime } from "../utils/measureTime";
 import { roughSizeOfObject } from "../utils/roughSize";
 
@@ -29,21 +28,6 @@ export async function pgRead({ tableName }: { tableName: string }) {
   }
   let command = `SELECT * from ${tableName}`;
   return (await pool.query(command)).rows;
-}
-
-export async function pgGetByIds({
-  ids,
-  table,
-}: {
-  ids: string[];
-  table: string;
-}) {
-  let idstring = `( ${ids.map((id: string) => `'${id}'`).join(", ")} )`; // (1, 2, 3)
-  let command = `SELECT * from ${table} where id in ${idstring}`;
-  // see: https://stackoverflow.com/questions/5803472/sql-where-id-in-id1-id2-idn
-  let results = (await pool.query(command)).rows;
-  console.log(results);
-  return results;
 }
 
 export async function pgBulkInsert({
@@ -115,57 +99,6 @@ export async function pgBulkInsert({
   }
 }
 
-export async function pgInsertIntoDashboard({ datum }) {
-  let text = `INSERT INTO dashboards VALUES($1, $2, $3, $4, $5, $6, $7)`;
-  let timestamp = datum.timestamp || new Date().toISOString();
-  timestamp = timestamp.slice(0, 19).replace("T", " ");
-  let values = [
-    hash(JSON.stringify(datum.contents)),
-    datum.title || "",
-    datum.description || "",
-    JSON.stringify(datum.contents || []),
-    timestamp, // fixed
-    datum.creator || "",
-    JSON.stringify(datum.extra || []),
-  ];
-  const client = await pool.connect();
-  let result;
-  try {
-    result = await client.query(text, values);
-  } catch (error) {
-    console.log(error);
-  } finally {
-    client.release();
-  }
-  // console.log(result)
-  return result;
-}
-/* For reference
-	  id text,
-		title text,
-		description text,
-		contents json,
-		timestamp timestamp,
-		creator text,
-		extra json
- */
-/*
-pgInsertIntoDashboard({
-  datum: {
-    title: "Test dashboard",
-    description: "A test dashboard",
-    contents: [
-      "rootclaim-did-former-new-england-patriots-tight-end-aaron-hernandez-commit-suicide-19060",
-      "metaculus-3912",
-      "givewellopenphil-2021-133",
-      "rootclaim-what-happened-to-barry-and-honey-sherman-19972",
-      "rootclaim-what-caused-the-disappearance-of-malaysia-airlines-flight-370",
-    ],
-    creator: "Nuño Sempere",
-  },
-  tableName: "dashboards",
-});
-*/
 export async function pgUpsert({
   contents,
   tableName,
