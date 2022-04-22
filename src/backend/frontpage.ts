@@ -1,5 +1,6 @@
 import { Question } from "@prisma/client";
 
+import { prisma } from "./database/prisma";
 import { measureTime } from "./utils/measureTime";
 
 export async function getFrontpage(): Promise<Question[]> {
