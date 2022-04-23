@@ -1,4 +1,6 @@
-import { pgUpsert } from "../database/pg-wrapper";
+import { Question } from "@prisma/client";
+
+import { prisma } from "../database/prisma";
 import { betfair } from "./betfair";
 import { fantasyscotus } from "./fantasyscotus";
 import { foretold } from "./foretold";
@@ -28,57 +30,23 @@ export interface QualityIndicators {
   tradevolume?: string;
   pool?: any;
   createdTime?: any;
+  shares_volume?: any;
+  yes_bid?: any;
+  yes_ask?: any;
+  spread?: any;
 }
 
-export interface Question {
-  id: string;
-  // "fantasyscotus-580"
-
-  title: string;
-  // "In Wooden v. U.S., the SCOTUS will affirm the lower court's decision"
-
-  url: string;
-  // "https://fantasyscotus.net/user-predictions/case/wooden-v-us/"
-
-  description: string;
-  // "62.50% (75 out of 120) of FantasySCOTUS players predict that the lower court's decision will be affirmed. FantasySCOTUS overall predicts an outcome of Affirm 6-3. Historically, FantasySCOTUS has chosen the correct side 50.00% of the time."
-  platform: string;
-  // "FantasySCOTUS"
-
-  options: any[];
-  /*
-  [
-    {
-      "name": "Yes",
-      "probability": 0.625,
-      "type": "PROBABILITY"
-    },
-    {
-      "name": "No",
-      "probability": 0.375,
-      "type": "PROBABILITY"
-    }
-  ]
-  */
-
-  timestamp: string;
-  // "2022-02-11T21:42:19.291Z"
-
-  stars?: number;
-  // 2
-
-  qualityindicators: QualityIndicators;
-  /*
-  {
-    "numforecasts": 120,
-    "stars": 2
-  }
-  */
-  extra?: any;
-}
+export type FetchedQuestion = Omit<
+  Question,
+  "extra" | "qualityindicators" | "timestamp"
+> & {
+  timestamp?: Date;
+  extra?: object; // required in DB but annoying to return empty; also this is slightly stricter than Prisma's JsonValue
+  qualityindicators: QualityIndicators; // slightly stronger type than Prisma's JsonValue
+};
 
 // fetcher should return null if platform failed to fetch questions for some reason
-export type PlatformFetcher = () => Promise<Question[] | null>;
+export type PlatformFetcher = () => Promise<FetchedQuestion[] | null>;
 
 export interface Platform {
   name: string; // short name for ids and `platform` db column, e.g. "xrisk"
@@ -94,13 +62,6 @@ export interface Platform {
 // }
 
 // export type PlatformFetcher = (options: FetchOptions) => Promise<void>;
-
-// interface Platform {
-//   name: string;
-//   color?: string;
-//   longName: string;
-//   fetcher: PlatformFetcher;
-// }
 
 export const platforms: Platform[] = [
   betfair,
@@ -126,13 +87,23 @@ export const processPlatform = async (platform: Platform) => {
     console.log(`Platform ${platform.name} doesn't have a fetcher, skipping`);
     return;
   }
-  let results = await platform.fetcher();
+  const results = await platform.fetcher();
   if (results && results.length) {
-    await pgUpsert({
-      contents: results,
-      tableName: "questions",
-      replacePlatform: platform.name,
-    });
+    await prisma.$transaction([
+      prisma.question.deleteMany({
+        where: {
+          platform: platform.name,
+        },
+      }),
+      prisma.question.createMany({
+        data: results.map((q) => ({
+          extra: {},
+          timestamp: new Date(),
+          ...q,
+          qualityindicators: q.qualityindicators as object, // fighting typescript
+        })),
+      }),
+    ]);
     console.log("Done");
   } else {
     console.log(`Platform ${platform.name} didn't return any results`);

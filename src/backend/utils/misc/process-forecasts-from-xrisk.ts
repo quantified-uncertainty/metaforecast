@@ -23,7 +23,7 @@ for (let datum of data) {
     options: datum.options,
     timestamp: datum.timestamps,
     qualityindicators: {
-      stars: 2, //datum["stars"]
+      stars: 2,
     },
   };
   results.push(result);

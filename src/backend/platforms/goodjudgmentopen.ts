@@ -114,7 +114,6 @@ async function fetchStats(questionUrl, cookie) {
   let result = {
     description: description,
     options: options,
-    timestamp: new Date().toISOString(),
     qualityindicators: {
       numforecasts: Number(numforecasts),
       numforecasters: Number(numforecasters),

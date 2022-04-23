@@ -40,7 +40,7 @@ ${datum["description"]}`
     ],
     timestamp: new Date().toISOString(),
     qualityindicators: {
-      stars: 2, //datum["stars"]
+      stars: 2,
     },
   };
   results.push(result);

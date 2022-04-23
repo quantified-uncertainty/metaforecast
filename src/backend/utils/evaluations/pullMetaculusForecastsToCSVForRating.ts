@@ -2,7 +2,7 @@
 import fs from "fs";
 
 import { shuffleArray } from "../../../utils";
-import { pgRead } from "../../database/pg-wrapper";
+import { prisma } from "../../database/prisma";
 
 /* Definitions */
 
@@ -18,7 +18,7 @@ let getQualityIndicators = (question) =>
 
 let main = async () => {
   let highQualityPlatforms = ["Metaculus"]; // ['CSET-foretell', 'Foretold', 'Good Judgment Open', 'Metaculus', 'PredictIt', 'Rootclaim']
-  let json = await pgRead({ tableName: "questions" });
+  let json = await prisma.question.findMany({});
   console.log(json.length);
   //let uniquePlatforms = [...new Set(json.map(question => question.platform))]
   //console.log(uniquePlatforms)

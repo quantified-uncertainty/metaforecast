@@ -5,7 +5,7 @@ import tunnel from "tunnel";
 
 import { hash } from "../utils/hash";
 import { calculateStars } from "../utils/stars";
-import { Platform } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "goodjudgment";
@@ -57,7 +57,7 @@ export const goodjudgment: Platform = {
       .then((query) => query.data);
 
     // Processing
-    let results = [];
+    let results: FetchedQuestion[] = [];
     let jsonTable = Tabletojson.convert(content, { stripHtmlFromCells: false });
     jsonTable.shift(); // deletes first element
     jsonTable.pop(); // deletes last element
@@ -100,14 +100,13 @@ export const goodjudgment: Platform = {
         analysis = analysis ? analysis[0] : "";
         analysis = analysis ? analysis[0] : ""; // not a duplicate
         // console.log(analysis)
-        let standardObj = {
-          id: id,
-          title: title,
+        let standardObj: FetchedQuestion = {
+          id,
+          title,
           url: endpoint,
           platform: platformName,
-          description: description,
-          options: options,
-          timestamp: new Date().toISOString(),
+          description,
+          options,
           qualityindicators: {
             stars: calculateStars(platformName, {}),
           },

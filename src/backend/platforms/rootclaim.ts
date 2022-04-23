@@ -3,7 +3,7 @@ import { JSDOM } from "jsdom";
 
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
-import { Platform, Question } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 const platformName = "rootclaim";
 const jsonEndpoint =
@@ -50,7 +50,7 @@ export const rootclaim: Platform = {
   color: "#0d1624",
   async fetcher() {
     const claims = await fetchAllRootclaims();
-    const results: Question[] = [];
+    const results: FetchedQuestion[] = [];
 
     for (const claim of claims) {
       const id = `${platformName}-${claim.slug.toLowerCase()}`;
@@ -71,14 +71,13 @@ export const rootclaim: Platform = {
 
       const description = await fetchDescription(url, claim.isclaim);
 
-      let obj: Question = {
+      let obj: FetchedQuestion = {
         id,
         title: toMarkdown(claim.question).replace("\n", ""),
         url,
         platform: platformName,
         description: toMarkdown(description).replace("&#39;", "'"),
         options: options,
-        timestamp: new Date().toISOString(),
         qualityindicators: {
           numforecasts: 1,
           stars: calculateStars(platformName, {}),

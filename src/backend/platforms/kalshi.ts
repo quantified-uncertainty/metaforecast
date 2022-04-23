@@ -2,7 +2,7 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { Platform } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "kalshi";
@@ -22,8 +22,8 @@ async function processMarkets(markets) {
   // console.log(markets)
   markets = markets.filter((market) => market.close_date > dateNow);
   let results = await markets.map((market) => {
-    let probability = market.last_price / 100;
-    let options = [
+    const probability = market.last_price / 100;
+    const options = [
       {
         name: "Yes",
         probability: probability,
@@ -35,15 +35,14 @@ async function processMarkets(markets) {
         type: "PROBABILITY",
       },
     ];
-    let id = `${platformName}-${market.id}`;
-    let result = {
-      id: id,
+    const id = `${platformName}-${market.id}`;
+    const result: FetchedQuestion = {
+      id,
       title: market.title.replaceAll("*", ""),
       url: `https://kalshi.com/markets/${market.ticker_name}`,
       platform: platformName,
       description: `${market.settle_details}. The resolution source is: ${market.ranged_group_name} (${market.settle_source_url})`,
-      options: options,
-      timestamp: new Date().toISOString(),
+      options,
       qualityindicators: {
         stars: calculateStars(platformName, {
           shares_volume: market.volume,

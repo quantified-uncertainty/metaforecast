@@ -2,7 +2,7 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { Platform, Question } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 const platformName = "fantasyscotus";
 
@@ -67,7 +67,7 @@ async function processData(data) {
   let historicalPercentageCorrect = data.stats.pcnt_correct;
   let historicalProbabilityCorrect =
     Number(historicalPercentageCorrect.replace("%", "")) / 100;
-  let results: Question[] = [];
+  let results: FetchedQuestion[] = [];
   for (let event of events) {
     if (event.accuracy == "") {
       let id = `${platformName}-${event.id}`;
@@ -75,7 +75,7 @@ async function processData(data) {
       let predictionData = await getPredictionsData(event.docket_url);
       let pAffirm = predictionData.proportionAffirm;
       //let trackRecord = event.prediction.includes("Affirm") ? historicalProbabilityCorrect : 1-historicalProbabilityCorrect
-      let eventObject: Question = {
+      let eventObject: FetchedQuestion = {
         id: id,
         title: `In ${event.short_name}, the SCOTUS will affirm the lower court's decision`,
         url: `https://fantasyscotus.net/user-predictions${event.docket_url}`,
@@ -99,7 +99,6 @@ async function processData(data) {
             type: "PROBABILITY",
           },
         ],
-        timestamp: new Date().toISOString(),
         qualityindicators: {
           numforecasts: Number(predictionData.numForecasts),
           stars: calculateStars(platformName, {}),

@@ -1,7 +1,7 @@
 /* Imports */
 import fs from "fs";
 
-import { pgRead } from "../../database/pg-wrapper";
+import { prisma } from "../../database/prisma";
 
 /* Definitions */
 
@@ -24,7 +24,7 @@ const main = async () => {
     "PredictIt",
     "Rootclaim",
   ];
-  const json = await pgRead({ tableName: "questions" });
+  const json = await prisma.question.findMany({});
   console.log(json.length);
   //let uniquePlatforms = [...new Set(json.map(forecast => forecast.platform))]
   //console.log(uniquePlatforms)

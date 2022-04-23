@@ -2,7 +2,7 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { Platform } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 
@@ -61,7 +61,7 @@ export const foretold: Platform = {
   label: "Foretold",
   color: "#62520b",
   async fetcher() {
-    let results = [];
+    let results: FetchedQuestion[] = [];
     for (let community of highQualityCommunities) {
       let questions = await fetchAllCommunityQuestions(community);
       questions = questions.map((question) => question.node);
@@ -84,14 +84,13 @@ export const foretold: Platform = {
             },
           ];
         }
-        let result = {
-          id: id,
+        let result: FetchedQuestion = {
+          id,
           title: question.name,
           url: `https://www.foretold.io/c/${community}/m/${question.id}`,
           platform: platformName,
           description: "",
-          options: options,
-          timestamp: new Date().toISOString(),
+          options,
           qualityindicators: {
             numforecasts: Math.floor(Number(question.measurementCount) / 2),
             stars: calculateStars(platformName, {}),
