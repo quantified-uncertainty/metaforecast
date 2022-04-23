@@ -1,3 +1,4 @@
+import { NextPage } from "next";
 import Link from "next/link";
 import React from "react";
 
@@ -45,7 +46,7 @@ const ToolCard: React.FC<Tool> = (tool) => {
   }
 };
 
-export default function Tools({ lastUpdated }) {
+const ToolsPage: NextPage = () => {
   let tools: Tool[] = [
     {
       title: "Search",
@@ -87,9 +88,11 @@ export default function Tools({ lastUpdated }) {
     <Layout page="tools">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-8 place-content-stretch">
         {tools.map((tool, i) => (
-          <ToolCard {...tool} key={`tool-${i}`} />
+          <ToolCard {...tool} key={i} />
         ))}
       </div>
     </Layout>
   );
-}
+};
+
+export default ToolsPage;

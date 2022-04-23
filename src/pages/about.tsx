@@ -1,7 +1,9 @@
+import { NextPage } from "next";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 
+import { Card } from "../web/display/Card";
 import { Layout } from "../web/display/Layout";
 
 const readmeMarkdownText = `# About
@@ -26,16 +28,16 @@ Also note that, whatever other redeeming features they might have, prediction ma
 
 `;
 
-export default function About() {
+const AboutPage: NextPage = () => {
   return (
     <Layout page="about">
-      <div className="px-2 py-2 bg-white rounded-md shadow place-content-stretch flex-grow place-self-center">
-        <ReactMarkdown
-          remarkPlugins={[gfm]}
-          children={readmeMarkdownText}
-          className="m-5"
-        />
-      </div>
+      <Card highlightOnHover={false}>
+        <div className="p-4">
+          <ReactMarkdown remarkPlugins={[gfm]} children={readmeMarkdownText} />
+        </div>
+      </Card>
     </Layout>
   );
-}
+};
+
+export default AboutPage;
