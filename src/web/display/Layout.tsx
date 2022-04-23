@@ -4,15 +4,32 @@ import React, { ErrorInfo } from "react";
 
 import { Logo2 } from "../icons/index";
 
-/* Utilities */
-const classNameSelected = (isSelected: boolean) =>
-  `no-underline py-4 px-2 ml-4 text-md font-medium cursor-pointer border-b-2 border-transparent ${
-    isSelected
-      ? "text-blue-700 border-blue-700"
-      : "text-gray-400 hover:text-blue-500 hover:border-blue-500"
-  }`;
+interface MenuItem {
+  page: string;
+  link: string;
+  title: string;
+}
 
-let calculateLastUpdate = () => {
+const menu: MenuItem[] = [
+  {
+    page: "search",
+    link: "/",
+    title: "Search",
+  },
+  {
+    page: "tools",
+    link: "/tools",
+    title: "Tools",
+  },
+  {
+    page: "about",
+    link: "/about",
+    title: "About",
+  },
+];
+
+/* Utilities */
+const calculateLastUpdate = () => {
   let today = new Date().toISOString();
   let yesterdayObj = new Date();
   yesterdayObj.setDate(yesterdayObj.getDate() - 1);
@@ -66,26 +83,16 @@ class ErrorBoundary extends React.Component<
   }
 }
 
+interface Props {
+  page: string; // id used for menu
+}
+
 /* Main */
-export const Layout = ({ page, children }) => {
+export const Layout: React.FC<Props> = ({ page, children }) => {
   let lastUpdated = calculateLastUpdate();
   // The correct way to do this would be by passing a prop to Layout,
   // and to get the last updating using server side props.
 
-  const refreshPage = () => {
-    // window.location.reload(true);
-    // window.location.replace(window.location.pathname);
-    // window.location.reload();
-    // https://developer.mozilla.org/en-US/docs/Web/API/Location/reload
-    // https://developer.mozilla.org/en-US/docs/Web/API/Location/replace
-    // https://developer.mozilla.org/en-US/docs/Web/API/Location/assign
-    // window.location.hostname
-    if (typeof window !== "undefined") {
-      if ((window.location as any) != window.location.pathname) {
-        window.location.assign(window.location.pathname);
-      }
-    }
-  };
   return (
     <div>
       <Head>
@@ -95,54 +102,56 @@ export const Layout = ({ page, children }) => {
       <div>
         <nav className="bg-white shadow">
           <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="items-center justify-between flex">
-              <div className="flex sm:flex-row">
-                <button onClick={refreshPage}>
+            <div className="flex items-center justify-between">
+              <div className="flex">
+                <Link href="/" passHref>
                   <a className="no-underline font-md justify-center items-center flex">
-                    <span className="mr-2 sm:text-lg text-blue-800">
+                    <span className="mr-2">
                       <Logo2 className="mt-1 mr-1 h-8 w-8" />
                     </span>
                     <span className="text-sm sm:text-2xl text-gray-700">
                       Metaforecast
                     </span>
                   </a>
-                </button>
-                <div
-                  className={`flex py-4 px-2 sm:ml-4 text-base text-gray-400 ${
-                    lastUpdated || "hidden"
-                  }`}
-                >
-                  <div className="hidden sm:inline-flex items-center text-gray-700">
-                    <svg className="ml-4 mr-1 mt-1" height="10" width="16">
-                      <circle cx="4" cy="4" r="4" fill="rgb(29, 78, 216)" />
-                    </svg>
+                </Link>
+                {lastUpdated ? (
+                  <div className="flex py-4 px-2 sm:ml-4">
+                    <div className="hidden sm:inline-flex items-center text-gray-700">
+                      <svg className="ml-4 mr-1 mt-1" height="10" width="16">
+                        <circle cx="4" cy="4" r="4" fill="rgb(29, 78, 216)" />
+                      </svg>
 
-                    <span>{`Last updated: ${
-                      lastUpdated && !!lastUpdated.slice
-                        ? lastUpdated.slice(0, 10)
-                        : "unknown"
-                    }`}</span>
+                      <span>{`Last updated: ${
+                        lastUpdated && !!lastUpdated.slice
+                          ? lastUpdated.slice(0, 10)
+                          : "unknown"
+                      }`}</span>
+                    </div>
                   </div>
-                </div>
+                ) : null}
               </div>
 
-              <div className="flex flex-row-reverse items-start space-x-4 text-sm sm:text-lg md:text-lg lg:text-lg">
-                <Link href={`/about`} passHref>
-                  <a className={classNameSelected(page === "about")}>About</a>
-                </Link>
-                <Link href={`/tools`} passHref>
-                  <a className={classNameSelected(page === "tools")}>Tools</a>
-                </Link>
-                <Link href={`/`} passHref>
-                  <a className={classNameSelected(page === "search")}>Search</a>
-                </Link>
+              <div className="flex space-x-4">
+                {menu.map((item) => (
+                  <Link href={item.link} passHref key={item.page}>
+                    <a
+                      className={`no-underline py-4 px-2 text-sm sm:text-lg font-medium cursor-pointer border-b-2 border-transparent ${
+                        page === item.page
+                          ? "text-blue-700 border-blue-700"
+                          : "text-gray-400 hover:text-blue-500 hover:border-blue-500"
+                      }`}
+                    >
+                      {item.title}
+                    </a>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
         </nav>
         <main>
           <ErrorBoundary>
-            <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left pt-5">
+            <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5">
               {children}
             </div>
           </ErrorBoundary>
