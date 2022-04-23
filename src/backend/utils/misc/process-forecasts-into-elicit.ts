@@ -1,7 +1,8 @@
 /* Imports */
 import fs from "fs";
 
-import { pgRead } from "../../database/pg-wrapper";
+import { prisma } from "../../database/prisma";
+import { QualityIndicators } from "../../platforms";
 
 /* Definitions */
 let locationData = "./data/";
@@ -9,8 +10,8 @@ let locationData = "./data/";
 /* Body */
 // let rawdata =  fs.readFileSync("./data/merged-questions.json") // run from topmost folder, not from src
 async function main() {
-  let data = await pgRead({ tableName: "questions" }); //JSON.parse(rawdata)
-  let processDescription = (description) => {
+  const data = await prisma.question.findMany({});
+  const processDescription = (description) => {
     if (description == null || description == undefined || description == "") {
       return "";
     } else {
@@ -32,14 +33,14 @@ async function main() {
   };
 
   let results = [];
-  for (let datum of data) {
+  for (const datum of data) {
     // do something
-    let description = processDescription(datum["description"]);
-    let forecasts = datum["qualityindicators"]
-      ? datum["qualityindicators"].numforecasts
+    const description = processDescription(datum["description"]);
+    const forecasts = datum["qualityindicators"]
+      ? (datum["qualityindicators"] as object as QualityIndicators).numforecasts
       : "unknown";
-    let stars = datum["qualityindicators"]
-      ? datum["qualityindicators"].stars
+    const stars = datum["qualityindicators"]
+      ? (datum["qualityindicators"] as object as QualityIndicators).stars
       : 2;
     results.push("Title: " + datum["title"]);
     results.push("URL: " + datum["url"]);

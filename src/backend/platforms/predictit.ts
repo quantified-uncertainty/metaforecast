@@ -2,7 +2,7 @@ import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
-import { Platform } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 const platformName = "predictit";
 
@@ -53,7 +53,7 @@ export const predictit: Platform = {
     }));
     // console.log(markets)
 
-    let results = [];
+    let results: FetchedQuestion[] = [];
     for (let market of markets) {
       // console.log(market.name)
       let id = `${platformName}-${market.id}`;
@@ -96,17 +96,16 @@ export const predictit: Platform = {
         ];
       }
 
-      let obj = {
-        id: id,
+      const obj: FetchedQuestion = {
+        id,
         title: market["name"],
         url: market.url,
         platform: platformName,
-        description: description,
-        options: options,
-        timestamp: new Date().toISOString(),
+        description,
+        options,
         qualityindicators: {
           stars: calculateStars(platformName, {}),
-          shares_volume: shares_volume,
+          shares_volume,
         },
       };
       // console.log(obj)

@@ -2,7 +2,7 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { Platform, Question } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "manifold";
@@ -23,7 +23,7 @@ async function fetchData() {
   return response;
 }
 
-function showStatistics(results: Question[]) {
+function showStatistics(results: FetchedQuestion[]) {
   console.log(`Num unresolved markets: ${results.length}`);
   let sum = (arr) => arr.reduce((tally, a) => tally + a, 0);
   let num2StarsOrMore = results.filter(
@@ -44,7 +44,7 @@ function showStatistics(results: Question[]) {
 }
 
 async function processPredictions(predictions) {
-  let results: Question[] = await predictions.map((prediction) => {
+  let results: FetchedQuestion[] = await predictions.map((prediction) => {
     let id = `${platformName}-${prediction.id}`; // oops, doesn't match platform name
     let probability = prediction.probability;
     let options = [
@@ -59,14 +59,13 @@ async function processPredictions(predictions) {
         type: "PROBABILITY",
       },
     ];
-    const result: Question = {
+    const result: FetchedQuestion = {
       id: id,
       title: prediction.question,
       url: prediction.url,
       platform: platformName,
       description: prediction.description,
       options: options,
-      timestamp: new Date().toISOString(),
       qualityindicators: {
         stars: calculateStars(platformName, {
           volume7Days: prediction.volume7Days,
@@ -86,7 +85,7 @@ async function processPredictions(predictions) {
   });
 
   const unresolvedResults = results.filter(
-    (result) => !result.extra.isResolved
+    (result) => !(result.extra as any).isResolved
   );
   return unresolvedResults;
 }

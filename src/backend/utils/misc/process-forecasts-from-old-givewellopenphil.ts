@@ -38,7 +38,7 @@ for (let datum of data) {
 		*/
     timestamp: "2021-02-23T15∶21∶37.005Z", //new Date().toISOString(),
     qualityindicators: {
-      stars: datum.qualityindicators.stars, //datum["stars"],
+      stars: datum.qualityindicators.stars,
     },
   };
   results.push(result);

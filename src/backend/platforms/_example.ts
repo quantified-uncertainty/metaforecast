@@ -2,7 +2,7 @@
 import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
-import { Platform } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "example";
@@ -24,9 +24,9 @@ async function fetchData() {
 
 async function processPredictions(predictions) {
   let results = await predictions.map((prediction) => {
-    let id = `${platformName}-${prediction.id}`;
-    let probability = prediction.probability;
-    let options = [
+    const id = `${platformName}-${prediction.id}`;
+    const probability = prediction.probability;
+    const options = [
       {
         name: "Yes",
         probability: probability,
@@ -38,19 +38,19 @@ async function processPredictions(predictions) {
         type: "PROBABILITY",
       },
     ];
-    let result = {
+    const result: FetchedQuestion = {
+      id,
       title: prediction.title,
       url: `https://example.com`,
       platform: platformName,
       description: prediction.description,
-      options: options,
-      timestamp: new Date().toISOString(),
+      options,
       qualityindicators: {
         stars: calculateStars(platformName, {
           /* some: somex, factors: factors */
         }),
-        other: prediction.otherx,
-        indicators: prediction.indicatorx,
+        // other: prediction.otherx,
+        // indicators: prediction.indicatorx,
       },
     };
     return result;

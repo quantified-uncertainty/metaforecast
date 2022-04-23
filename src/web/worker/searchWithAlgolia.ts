@@ -116,7 +116,6 @@ export default async function searchWithAlgolia({
           },
         ],
         timestamp: `${new Date().toISOString().slice(0, 10)}`,
-        stars: 5, // legacy
         qualityindicators: {
           numforecasts: 1,
           numforecasters: 1,
@@ -148,7 +147,6 @@ export default async function searchWithAlgolia({
           },
         ],
         timestamp: `${new Date().toISOString().slice(0, 10)}`,
-        stars: 5, // legacy
         qualityindicators: {
           numforecasts: 1,
           numforecasters: 1,
@@ -183,7 +181,6 @@ export default async function searchWithAlgolia({
         },
       ],
       timestamp: `${new Date().toISOString().slice(0, 10)}`,
-      stars: 1, // legacy
       qualityindicators: {
         numforecasts: 1,
         numforecasters: 1,

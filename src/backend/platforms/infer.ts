@@ -5,7 +5,7 @@ import { applyIfSecretExists } from "../utils/getSecrets";
 import { measureTime } from "../utils/measureTime";
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
-import { Platform, Question } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "infer";
@@ -105,7 +105,6 @@ async function fetchStats(questionUrl, cookie) {
   let result = {
     description: description,
     options: options,
-    timestamp: new Date().toISOString(),
     qualityindicators: {
       numforecasts: Number(numforecasts),
       numforecasters: Number(numforecasters),
@@ -147,7 +146,7 @@ function sleep(ms) {
 async function infer_inner(cookie: string) {
   let i = 1;
   let response = await fetchPage(i, cookie);
-  let results: Question[] = [];
+  let results: FetchedQuestion[] = [];
 
   await measureTime(async () => {
     // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
@@ -178,7 +177,7 @@ async function infer_inner(cookie: string) {
           let questionNumRegex = new RegExp("questions/([0-9]+)");
           let questionNum = url.match(questionNumRegex)[1]; //.split("questions/")[1].split("-")[0];
           let id = `${platformName}-${questionNum}`;
-          let question: Question = {
+          let question: FetchedQuestion = {
             id: id,
             title: title,
             description: moreinfo.description,

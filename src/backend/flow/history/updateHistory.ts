@@ -1,9 +1,8 @@
-import { pgRead, pgUpsert } from "../../database/pg-wrapper";
+import { prisma } from "../../database/prisma";
 
 export async function updateHistory() {
-  let latest = await pgRead({ tableName: "questions" });
-  await pgUpsert({
-    contents: latest,
-    tableName: "history",
+  const questions = await prisma.question.findMany({});
+  await prisma.history.createMany({
+    data: questions,
   });
 }

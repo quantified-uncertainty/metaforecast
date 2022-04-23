@@ -2,10 +2,10 @@ import "dotenv/config";
 
 import fs from "fs";
 
-import { pgRead } from "../database/pg-wrapper";
+import { prisma } from "../database/prisma";
 
 let main = async () => {
-  let json = await pgRead({ tableName: "questions" });
+  let json = await prisma.question.findMany({});
   let string = JSON.stringify(json, null, 2);
   let filename = "metaforecasts.json";
   fs.writeFileSync(filename, string);

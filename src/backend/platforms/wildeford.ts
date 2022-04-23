@@ -4,7 +4,7 @@ import { GoogleSpreadsheet } from "google-spreadsheet";
 import { applyIfSecretExists } from "../utils/getSecrets";
 import { hash } from "../utils/hash";
 import { calculateStars } from "../utils/stars";
-import { Platform } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "wildeford";
@@ -88,16 +88,14 @@ async function processPredictions(predictions) {
         type: "PROBABILITY",
       },
     ];
-    let result = {
-      id: id,
-      title: title,
+    let result: FetchedQuestion = {
+      id,
+      title,
       url: prediction["url"],
       platform: platformName,
       description: prediction["Notes"] || "",
-      options: options,
-      timestamp: new Date(
-        Date.parse(prediction["Prediction Date"] + "Z")
-      ).toISOString(),
+      options,
+      timestamp: new Date(Date.parse(prediction["Prediction Date"] + "Z")),
       qualityindicators: {
         stars: calculateStars(platformName, null),
       },

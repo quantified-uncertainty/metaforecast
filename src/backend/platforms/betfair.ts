@@ -3,7 +3,7 @@ import axios from "axios";
 import https from "https";
 
 import { calculateStars } from "../utils/stars";
-import { Platform, Question } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 const platformName = "betfair";
 
@@ -80,7 +80,7 @@ async function whipIntoShape(data) {
 async function processPredictions(data) {
   let predictions = await whipIntoShape(data);
   // console.log(JSON.stringify(predictions, null, 4))
-  let results: Question[] = predictions.map((prediction) => {
+  let results: FetchedQuestion[] = predictions.map((prediction) => {
     /* if(Math.floor(Math.random() * 10) % 20 ==0){
        console.log(JSON.stringify(prediction, null, 4))
     } */
@@ -126,7 +126,6 @@ async function processPredictions(data) {
       platform: platformName,
       description: description,
       options: options,
-      timestamp: new Date().toISOString(),
       qualityindicators: {
         stars: calculateStars(platformName, {
           volume: prediction.totalMatched,

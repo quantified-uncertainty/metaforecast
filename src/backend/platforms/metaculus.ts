@@ -3,7 +3,7 @@ import axios from "axios";
 
 import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
-import { Platform } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "metaculus";
@@ -148,14 +148,13 @@ export const metaculus: Platform = {
               ];
             }
             let id = `${platformName}-${result.id}`;
-            let interestingInfo = {
-              id: id,
+            let interestingInfo: FetchedQuestion = {
+              id,
               title: result.title,
               url: "https://www.metaculus.com" + result.page_url,
               platform: platformName,
-              description: description,
-              options: options,
-              timestamp: new Date().toISOString(),
+              description,
+              options,
               qualityindicators: {
                 numforecasts: Number(result.number_of_predictions),
                 stars: calculateStars(platformName, {

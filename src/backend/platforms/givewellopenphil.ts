@@ -47,12 +47,12 @@ async function main1() {
       );
     let description = "<h2 " + internalforecasts[1];
 
-    let result = {
-      title: title,
-      url: url,
+    const result = {
+      title,
+      url,
       platform: platformName,
-      description: description,
-      timestamp: new Date().toISOString(),
+      description,
+      options: [],
       qualityindicators: {
         stars: calculateStars(platformName, {}),
       },
@@ -80,7 +80,7 @@ export const givewellopenphil: Platform = {
     const dataWithDate = data.map((datum: any) => ({
       ...datum,
       platform: platformName,
-      timestamp: "2021-02-23",
+      timestamp: new Date("2021-02-23"),
     }));
     return dataWithDate;
   },

@@ -43,11 +43,10 @@ export default async function searchGuesstimate(
       description,
       options: [],
       qualityindicators: {
-        stars: stars,
+        stars,
         numforecasts: 1,
         numforecasters: 1,
       },
-      stars,
       extra: {
         visualization: model.big_screenshot,
       },
