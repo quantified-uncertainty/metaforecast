@@ -3,57 +3,28 @@ import { QuestionFragment } from "../../search/queries.generated";
 type QualityIndicator = QuestionFragment["qualityIndicators"];
 type IndicatorName = keyof QualityIndicator;
 
-const formatQualityIndicator = (indicator: IndicatorName) => {
-  let result: string | null = null;
-  switch (indicator) {
-    case "numForecasts":
-      result = null;
-      break;
+// this duplication can probably be simplified with typescript magic, but this is good enough for now
+type UsedIndicatorName =
+  | "volume"
+  | "numForecasters"
+  | "spread"
+  | "sharesVolume"
+  | "liquidity"
+  | "tradeVolume"
+  | "openInterest";
 
-    case "stars":
-      result = null;
-      break;
-
-    case "volume":
-      result = "Volume";
-      break;
-
-    case "numForecasters":
-      result = "Forecasters";
-      break;
-
-    // case "yesBid":
-    //   result = null; // "Yes bid"
-    //   break;
-
-    // case "yesAsk":
-    //   result = null; // "Yes ask"
-    //   break;
-
-    case "spread":
-      result = "Spread";
-      break;
-    case "sharesVolume":
-      result = "Shares vol.";
-      break;
-
-    case "openInterest":
-      result = "Interest";
-      break;
-
-    // case "resolution_data":
-    //   result = null;
-    //   break;
-
-    case "liquidity":
-      result = "Liquidity";
-      break;
-
-    case "tradeVolume":
-      result = "Volume";
-      break;
-  }
-  return result;
+const qualityIndicatorLabels: { [k in UsedIndicatorName]: string } = {
+  // numForecasts: null,
+  // stars: null,
+  // yesBid: "Yes bid",
+  // yesAsk: "Yes ask",
+  volume: "Volume",
+  numForecasters: "Forecasters",
+  spread: "Spread",
+  sharesVolume: "Shares vol.",
+  liquidity: "Liquidity",
+  tradeVolume: "Volume",
+  openInterest: "Interest",
 };
 
 const formatNumber = (num) => {
@@ -66,27 +37,16 @@ const formatNumber = (num) => {
   }
 };
 
-const formatQualityIndicators = (qualityIndicators: QualityIndicator) => {
-  let newQualityIndicators: { [k: string]: string | number } = {};
-  for (const key of Object.keys(qualityIndicators)) {
-    const newKey = formatQualityIndicator(key as IndicatorName);
-    if (newKey && qualityIndicators[key] !== null) {
-      newQualityIndicators[newKey] = qualityIndicators[key];
-    }
-  }
-  return newQualityIndicators;
-};
-
 /* Display functions*/
 
 const getPercentageSymbolIfNeeded = ({
   indicator,
   platform,
 }: {
-  indicator: string;
+  indicator: UsedIndicatorName;
   platform: string;
 }) => {
-  let indicatorsWhichNeedPercentageSymbol = ["Spread"];
+  let indicatorsWhichNeedPercentageSymbol: IndicatorName[] = ["spread"];
   if (indicatorsWhichNeedPercentageSymbol.includes(indicator)) {
     return "%";
   } else {
@@ -98,10 +58,15 @@ const getCurrencySymbolIfNeeded = ({
   indicator,
   platform,
 }: {
-  indicator: string;
+  indicator: UsedIndicatorName;
   platform: string;
 }) => {
-  let indicatorsWhichNeedCurrencySymbol = ["Volume", "Interest", "Liquidity"];
+  const indicatorsWhichNeedCurrencySymbol: IndicatorName[] = [
+    "volume",
+    "tradeVolume",
+    "openInterest",
+    "liquidity",
+  ];
   let dollarPlatforms = ["predictit", "kalshi", "polymarket"];
   if (indicatorsWhichNeedCurrencySymbol.includes(indicator)) {
     if (dollarPlatforms.includes(platform)) {
@@ -114,66 +79,50 @@ const getCurrencySymbolIfNeeded = ({
   }
 };
 
-const showFirstQualityIndicator: React.FC<{
+const FirstQualityIndicator: React.FC<{
   question: QuestionFragment;
-  showTimeStamp: boolean;
-}> = ({ question, showTimeStamp }) => {
-  const lastUpdated = new Date(question.timestamp * 1000);
-  if (!!question.qualityIndicators.numForecasts) {
+}> = ({ question }) => {
+  if (question.qualityIndicators.numForecasts) {
     return (
-      <div className="flex col-span-1 row-span-1">
-        {/*<span>{` ${numforecasts == 1 ? "Forecast" : "Forecasts:"}`}</span>&nbsp;*/}
+      <div className="flex">
         <span>Forecasts:</span>&nbsp;
         <span className="font-bold">
           {Number(question.qualityIndicators.numForecasts).toFixed(0)}
         </span>
       </div>
     );
-  } else if (showTimeStamp) {
-    return (
-      <span className="hidden sm:flex items-center justify-center text-gray-600 mt-2">
-        <svg className="ml-4 mr-1 mt-1" height="10" width="16">
-          <circle cx="4" cy="4" r="4" fill="rgb(29, 78, 216)" />
-        </svg>
-        {`Last updated: ${
-          lastUpdated ? lastUpdated.toISOString().slice(0, 10) : "unknown"
-        }`}
-      </span>
-    );
   } else {
     return null;
   }
 };
 
-const displayQualityIndicators: React.FC<{
+const QualityIndicatorsList: React.FC<{
   question: QuestionFragment;
-  showTimeStamp: boolean;
-}> = ({ question, showTimeStamp }) => {
-  const { qualityIndicators } = question;
+}> = ({ question }) => {
   return (
     <div className="text-sm">
-      {showFirstQualityIndicator({
-        question,
-        showTimeStamp,
+      <FirstQualityIndicator question={question} />
+      {Object.entries(question.qualityIndicators).map((entry, i) => {
+        const indicatorLabel = qualityIndicatorLabels[entry[0]];
+        if (!indicatorLabel || entry[1] === null) return;
+        const indicator = entry[0] as UsedIndicatorName; // guaranteed by the previous line
+        const value = entry[1];
+
+        return (
+          <div key={indicator}>
+            <span>{indicatorLabel}:</span>&nbsp;
+            <span className="font-bold">
+              {`${getCurrencySymbolIfNeeded({
+                indicator,
+                platform: question.platform.id,
+              })}${formatNumber(value)}${getPercentageSymbolIfNeeded({
+                indicator,
+                platform: question.platform.id,
+              })}`}
+            </span>
+          </div>
+        );
       })}
-      {Object.entries(formatQualityIndicators(question.qualityIndicators)).map(
-        (entry, i) => {
-          return (
-            <div className="col-span-1 row-span-1">
-              <span>${entry[0]}:</span>&nbsp;
-              <span className="font-bold">
-                {`${getCurrencySymbolIfNeeded({
-                  indicator: entry[0],
-                  platform: question.platform.id,
-                })}${formatNumber(entry[1])}${getPercentageSymbolIfNeeded({
-                  indicator: entry[0],
-                  platform: question.platform.id,
-                })}`}
-              </span>
-            </div>
-          );
-        }
-      )}
     </div>
   );
 };
@@ -235,16 +184,13 @@ function getStarsColor(numstars: number) {
 
 interface Props {
   question: QuestionFragment;
-  showTimeStamp: boolean;
   expandFooterToFullWidth: boolean;
 }
 
 export const QuestionFooter: React.FC<Props> = ({
   question,
-  showTimeStamp,
   expandFooterToFullWidth,
 }) => {
-  let debuggingWithBackground = false;
   return (
     <div
       className={`grid grid-cols-3 ${
@@ -254,14 +200,14 @@ export const QuestionFooter: React.FC<Props> = ({
       <div
         className={`self-center col-span-1 ${getStarsColor(
           question.qualityIndicators.stars
-        )} ${debuggingWithBackground ? "bg-red-200" : ""}`}
+        )}`}
       >
         {getstars(question.qualityIndicators.stars)}
       </div>
       <div
         className={`${
           expandFooterToFullWidth ? "place-self-center" : "self-center"
-        }  col-span-1 font-bold ${debuggingWithBackground ? "bg-red-100" : ""}`}
+        }  col-span-1 font-bold`}
       >
         {question.platform.label
           .replace("Good Judgment Open", "GJOpen")
@@ -272,12 +218,9 @@ export const QuestionFooter: React.FC<Props> = ({
           expandFooterToFullWidth
             ? "justify-self-end mr-4"
             : "justify-self-center"
-        } col-span-1 ${debuggingWithBackground ? "bg-red-100" : ""}`}
+        } col-span-1`}
       >
-        {displayQualityIndicators({
-          question,
-          showTimeStamp,
-        })}
+        <QualityIndicatorsList question={question} />
       </div>
     </div>
   );

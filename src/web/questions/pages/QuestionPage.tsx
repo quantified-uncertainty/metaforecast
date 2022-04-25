@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 import { Query } from "../../common/Query";
 import { Card } from "../../display/Card";
+import { QuestionFooter } from "../../display/DisplayQuestion/QuestionFooter";
 import { Layout } from "../../display/Layout";
 import { QuestionFragment } from "../../search/queries.generated";
 import { ssrUrql } from "../../urql";
@@ -39,8 +40,18 @@ const QuestionCardContents: React.FC<{ question: QuestionFragment }> = ({
   question,
 }) => (
   <div className="space-y-4">
-    <h1>{question.title}</h1>
+    <h1>
+      <a
+        className="text-black no-underline"
+        href={question.url}
+        target="_blank"
+      >
+        {question.title}
+      </a>
+    </h1>
+    <QuestionFooter question={question} expandFooterToFullWidth={true} />
     <QuestionOptions options={question.options} />
+
     <ReactMarkdown linkTarget="_blank" className="font-normal">
       {question.description}
     </ReactMarkdown>

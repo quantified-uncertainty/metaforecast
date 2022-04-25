@@ -4,7 +4,6 @@ import ReactMarkdown from "react-markdown";
 
 import { CopyText } from "../../common/CopyText";
 import { QuestionOptions } from "../../questions/components/QuestionOptions";
-import { formatProbability } from "../../questions/utils";
 import { QuestionFragment } from "../../search/queries.generated";
 import { Card } from "../Card";
 import { QuestionFooter } from "./QuestionFooter";
@@ -87,99 +86,12 @@ const cleanText = (text: string): string => {
   return textString;
 };
 
-const primaryForecastColor = (probability: number) => {
-  if (probability < 0.03) {
-    return "bg-red-600";
-  } else if (probability < 0.1) {
-    return "bg-red-600 opacity-80";
-  } else if (probability < 0.2) {
-    return "bg-red-600 opacity-70";
-  } else if (probability < 0.3) {
-    return "bg-red-600 opacity-60";
-  } else if (probability < 0.4) {
-    return "bg-red-600 opacity-50";
-  } else if (probability < 0.5) {
-    return "bg-gray-500";
-  } else if (probability < 0.6) {
-    return "bg-gray-500";
-  } else if (probability < 0.7) {
-    return "bg-green-600 opacity-50";
-  } else if (probability < 0.8) {
-    return "bg-green-600 opacity-60";
-  } else if (probability < 0.9) {
-    return "bg-green-600 opacity-70";
-  } else if (probability < 0.97) {
-    return "bg-green-600 opacity-80";
-  } else {
-    return "bg-green-600";
-  }
-};
-
-const textColor = (probability: number) => {
-  if (probability < 0.03) {
-    return "text-red-600";
-  } else if (probability < 0.1) {
-    return "text-red-600 opacity-80";
-  } else if (probability < 0.2) {
-    return "text-red-600 opacity-80";
-  } else if (probability < 0.3) {
-    return "text-red-600 opacity-70";
-  } else if (probability < 0.4) {
-    return "text-red-600 opacity-70";
-  } else if (probability < 0.5) {
-    return "text-gray-500";
-  } else if (probability < 0.6) {
-    return "text-gray-500";
-  } else if (probability < 0.7) {
-    return "text-green-600 opacity-70";
-  } else if (probability < 0.8) {
-    return "text-green-600 opacity-70";
-  } else if (probability < 0.9) {
-    return "text-green-600 opacity-80";
-  } else if (probability < 0.97) {
-    return "text-green-600 opacity-80";
-  } else {
-    return "text-green-600";
-  }
-};
-
-const primaryEstimateAsText = (probability: number) => {
-  if (probability < 0.03) {
-    return "Exceptionally unlikely";
-  } else if (probability < 0.1) {
-    return "Very unlikely";
-  } else if (probability < 0.4) {
-    return "Unlikely";
-  } else if (probability < 0.6) {
-    return "About Even";
-  } else if (probability < 0.9) {
-    return "Likely";
-  } else if (probability < 0.97) {
-    return "Very likely";
-  } else {
-    return "Virtually certain";
-  }
-};
-
-// Logical checks
-
-const checkIfDisplayTimeStampAtBottom = (qualityIndicators: {
-  [k: string]: any;
-}) => {
-  let indicators = Object.keys(qualityIndicators);
-  if (indicators.length == 1 && indicators[0] == "stars") {
-    return true;
-  } else {
-    return false;
-  }
-};
-
 // Auxiliary components
 
 const DisplayMarkdown: React.FC<{ description: string }> = ({
   description,
 }) => {
-  let formatted = truncateText(250, cleanText(description));
+  const formatted = truncateText(250, cleanText(description));
   // overflow-hidden overflow-ellipsis h-24
   return formatted === "" ? null : (
     <div className="overflow-clip">
@@ -217,19 +129,10 @@ export const DisplayQuestion: React.FC<Props> = ({
   expandFooterToFullWidth,
   showIdToggle,
 }) => {
-  const {
-    platform,
-    description,
-    options,
-    qualityIndicators,
-    timestamp,
-    visualization,
-  } = question;
-  const lastUpdated = new Date(timestamp * 1000);
-  const displayTimestampAtBottom =
-    checkIfDisplayTimeStampAtBottom(qualityIndicators);
+  const { options } = question;
+  const lastUpdated = new Date(question.timestamp * 1000);
 
-  const yesNoOptions =
+  const isBinary =
     options.length === 2 &&
     (options[0].name === "Yes" || options[0].name === "No");
 
@@ -243,7 +146,7 @@ export const DisplayQuestion: React.FC<Props> = ({
             </div>
           ) : null}
           <div>
-            <Link href={`/questions/${question.id}`}>
+            <Link href={`/questions/${question.id}`} passHref>
               <a className="float-right block ml-2 mt-1.5">
                 <FaExpand
                   size="18"
@@ -261,41 +164,17 @@ export const DisplayQuestion: React.FC<Props> = ({
               </a>
             </Card.Title>
           </div>
-          {yesNoOptions && (
+          {isBinary ? (
             <div className="flex justify-between">
-              <div className="space-x-2">
-                <span
-                  className={`${primaryForecastColor(
-                    options[0].probability
-                  )} text-white w-16 rounded-md px-1.5 py-0.5 font-bold`}
-                >
-                  {formatProbability(options[0].probability)}
-                </span>
-                <span
-                  className={`${textColor(
-                    options[0].probability
-                  )} text-gray-500 inline-block`}
-                >
-                  {primaryEstimateAsText(options[0].probability)}
-                </span>
-              </div>
-              <div
-                className={`hidden ${
-                  showTimeStamp && !displayTimestampAtBottom ? "sm:block" : ""
-                }`}
-              >
+              <QuestionOptions options={options} />
+              <div className={`hidden ${showTimeStamp ? "sm:block" : ""}`}>
                 <LastUpdated timestamp={lastUpdated} />
               </div>
             </div>
-          )}
-          {!yesNoOptions && (
+          ) : (
             <div className="space-y-2">
               <QuestionOptions options={options} />
-              <div
-                className={`hidden ${
-                  showTimeStamp && !displayTimestampAtBottom ? "sm:block" : ""
-                } ml-6`}
-              >
+              <div className={`hidden ${showTimeStamp ? "sm:block" : ""} ml-6`}>
                 <LastUpdated timestamp={lastUpdated} />
               </div>
             </div>
@@ -303,14 +182,14 @@ export const DisplayQuestion: React.FC<Props> = ({
 
           {question.platform.id !== "guesstimate" && options.length < 3 && (
             <div className="text-gray-500">
-              <DisplayMarkdown description={description} />
+              <DisplayMarkdown description={question.description} />
             </div>
           )}
 
           {question.platform.id === "guesstimate" && (
             <img
               className="rounded-sm"
-              src={visualization}
+              src={question.visualization}
               alt="Guesstimate Screenshot"
             />
           )}
@@ -324,7 +203,6 @@ export const DisplayQuestion: React.FC<Props> = ({
         <div className="w-full">
           <QuestionFooter
             question={question}
-            showTimeStamp={showTimeStamp && displayTimestampAtBottom}
             expandFooterToFullWidth={expandFooterToFullWidth}
           />
         </div>
