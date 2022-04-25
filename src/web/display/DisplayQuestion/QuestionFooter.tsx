@@ -68,9 +68,9 @@ const formatNumber = (num) => {
 
 const formatQualityIndicators = (qualityIndicators: QualityIndicator) => {
   let newQualityIndicators: { [k: string]: string | number } = {};
-  for (const key in Object.keys(qualityIndicators)) {
+  for (const key of Object.keys(qualityIndicators)) {
     const newKey = formatQualityIndicator(key as IndicatorName);
-    if (newKey) {
+    if (newKey && qualityIndicators[key] !== null) {
       newQualityIndicators[newKey] = qualityIndicators[key];
     }
   }
