@@ -15,6 +15,13 @@ fragment Question on Question {
   qualityIndicators {
     stars
     numForecasts
+    numForecasters
+    volume
+    spread
+    sharesVolume
+    openInterest
+    liquidity
+    tradeVolume
   }
   visualization
 }

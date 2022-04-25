@@ -34,18 +34,36 @@ export const QualityIndicatorsObj = builder
   .objectRef<QualityIndicators>("QualityIndicators")
   .implement({
     description: "Various indicators of the question's quality",
-    fields: (t) => ({
-      stars: t.exposeInt("stars", {
-        description: "0 to 5",
-      }),
-      numForecasts: t.int({
-        nullable: true,
-        resolve: (parent) =>
-          parent.numforecasts === undefined
-            ? undefined
-            : Number(parent.numforecasts),
-      }),
-    }),
+    fields: (t) => {
+      const maybeIntField = (name: keyof QualityIndicators) =>
+        t.int({
+          nullable: true,
+          resolve: (parent) =>
+            parent[name] === undefined ? undefined : Number(parent[name]),
+        });
+      const maybeFloatField = (name: keyof QualityIndicators) =>
+        t.float({
+          nullable: true,
+          resolve: (parent) =>
+            parent[name] === undefined ? undefined : Number(parent[name]),
+        });
+
+      return {
+        stars: t.exposeInt("stars", {
+          description: "0 to 5",
+        }),
+        numForecasts: maybeIntField("numforecasts"),
+        numForecasters: maybeIntField("numforecasters"),
+        volume: maybeFloatField("volume"),
+        // yesBid: maybeNumberField("yes_bid"),
+        // yesAsk: maybeNumberField("yes_ask"),
+        spread: maybeFloatField("spread"),
+        sharesVolume: maybeFloatField("shares_volume"),
+        openInterest: maybeFloatField("open_interest"),
+        liquidity: maybeFloatField("liquidity"),
+        tradeVolume: maybeFloatField("trade_volume"),
+      };
+    },
   });
 
 export const ProbabilityOptionObj = builder

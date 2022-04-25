@@ -74,10 +74,17 @@ type ProbabilityOption {
 
 """Various indicators of the question's quality"""
 type QualityIndicators {
+  liquidity: Float
+  numForecasters: Int
   numForecasts: Int
+  openInterest: Float
+  sharesVolume: Float
+  spread: Float
 
   """0 to 5"""
   stars: Int!
+  tradeVolume: Float
+  volume: Float
 }
 
 type Query {

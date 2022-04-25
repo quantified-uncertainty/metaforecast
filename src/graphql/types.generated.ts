@@ -81,9 +81,16 @@ export type ProbabilityOption = {
 /** Various indicators of the question's quality */
 export type QualityIndicators = {
   __typename?: 'QualityIndicators';
+  liquidity?: Maybe<Scalars['Float']>;
+  numForecasters?: Maybe<Scalars['Int']>;
   numForecasts?: Maybe<Scalars['Int']>;
+  openInterest?: Maybe<Scalars['Float']>;
+  sharesVolume?: Maybe<Scalars['Float']>;
+  spread?: Maybe<Scalars['Float']>;
   /** 0 to 5 */
   stars: Scalars['Int'];
+  tradeVolume?: Maybe<Scalars['Float']>;
+  volume?: Maybe<Scalars['Float']>;
 };
 
 export type Query = {
