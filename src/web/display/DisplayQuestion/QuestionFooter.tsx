@@ -1,7 +1,12 @@
-const formatQualityIndicator = (indicator) => {
-  let result;
+import { QuestionFragment } from "../../search/queries.generated";
+
+type QualityIndicator = QuestionFragment["qualityIndicators"];
+type IndicatorName = keyof QualityIndicator;
+
+const formatQualityIndicator = (indicator: IndicatorName) => {
+  let result: string | null = null;
   switch (indicator) {
-    case "numforecasts":
+    case "numForecasts":
       result = null;
       break;
 
@@ -13,38 +18,38 @@ const formatQualityIndicator = (indicator) => {
       result = "Volume";
       break;
 
-    case "numforecasters":
+    case "numForecasters":
       result = "Forecasters";
       break;
 
-    case "yes_bid":
-      result = null; // "Yes bid"
-      break;
+    // case "yesBid":
+    //   result = null; // "Yes bid"
+    //   break;
 
-    case "yes_ask":
-      result = null; // "Yes ask"
-      break;
+    // case "yesAsk":
+    //   result = null; // "Yes ask"
+    //   break;
 
     case "spread":
       result = "Spread";
       break;
-    case "shares_volume":
+    case "sharesVolume":
       result = "Shares vol.";
       break;
 
-    case "open_interest":
+    case "openInterest":
       result = "Interest";
       break;
 
-    case "resolution_data":
-      result = null;
-      break;
+    // case "resolution_data":
+    //   result = null;
+    //   break;
 
     case "liquidity":
       result = "Liquidity";
       break;
 
-    case "tradevolume":
+    case "tradeVolume":
       result = "Volume";
       break;
   }
@@ -61,11 +66,11 @@ const formatNumber = (num) => {
   }
 };
 
-const formatQualityIndicators = (qualityIndicators: any) => {
-  let newQualityIndicators = {};
-  for (let key in qualityIndicators) {
-    let newKey = formatQualityIndicator(key);
-    if (newKey) {
+const formatQualityIndicators = (qualityIndicators: QualityIndicator) => {
+  let newQualityIndicators: { [k: string]: string | number } = {};
+  for (const key of Object.keys(qualityIndicators)) {
+    const newKey = formatQualityIndicator(key as IndicatorName);
+    if (newKey && qualityIndicators[key] !== null) {
       newQualityIndicators[newKey] = qualityIndicators[key];
     }
   }
@@ -74,7 +79,13 @@ const formatQualityIndicators = (qualityIndicators: any) => {
 
 /* Display functions*/
 
-const getPercentageSymbolIfNeeded = ({ indicator, platform }) => {
+const getPercentageSymbolIfNeeded = ({
+  indicator,
+  platform,
+}: {
+  indicator: string;
+  platform: string;
+}) => {
   let indicatorsWhichNeedPercentageSymbol = ["Spread"];
   if (indicatorsWhichNeedPercentageSymbol.includes(indicator)) {
     return "%";
@@ -87,7 +98,7 @@ const getCurrencySymbolIfNeeded = ({
   indicator,
   platform,
 }: {
-  indicator: any;
+  indicator: string;
   platform: string;
 }) => {
   let indicatorsWhichNeedCurrencySymbol = ["Volume", "Interest", "Liquidity"];
@@ -137,7 +148,7 @@ const displayQualityIndicators: React.FC<{
   numforecasts: number;
   lastUpdated: Date;
   showTimeStamp: boolean;
-  qualityindicators: any;
+  qualityindicators: QuestionFragment["qualityIndicators"];
   platform: string; // id string - e.g. "goodjudgment", not "Good Judgment"
 }> = ({
   numforecasts,
@@ -237,7 +248,7 @@ interface Props {
   platform: string;
   platformLabel: string;
   numforecasts: any;
-  qualityindicators: any;
+  qualityindicators: QuestionFragment["qualityIndicators"];
   lastUpdated: Date;
   showTimeStamp: boolean;
   expandFooterToFullWidth: boolean;

@@ -34,6 +34,8 @@ export interface QualityIndicators {
   yes_bid?: any;
   yes_ask?: any;
   spread?: any;
+  open_interest?: any;
+  trade_volume?: any;
 }
 
 export type FetchedQuestion = Omit<
