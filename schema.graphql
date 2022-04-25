@@ -1,7 +1,16 @@
 input CreateDashboardInput {
+  """
+  The creator of the dashboard, e.g. "Peter Parker"
+  """
   creator: String
+
+  """The longer description of the dashboard"""
   description: String
+
+  """List of question ids"""
   ids: [ID!]!
+
+  """The title of the dashboard"""
   title: String!
 }
 
@@ -10,10 +19,19 @@ type CreateDashboardResult {
 }
 
 type Dashboard {
+  """
+  The creator of the dashboard, e.g. "Peter Parker"
+  """
   creator: String!
+
+  """The longer description of the dashboard"""
   description: String!
   id: ID!
+
+  """The list of questions on the dashboard"""
   questions: [Question!]!
+
+  """The title of the dashboard"""
   title: String!
 }
 
@@ -21,6 +39,9 @@ type Dashboard {
 scalar Date
 
 type Mutation {
+  """
+  Create a new dashboard; if the dashboard with given ids already exists then it will be returned instead.
+  """
   createDashboard(input: CreateDashboardInput!): CreateDashboardResult!
 }
 
@@ -31,27 +52,45 @@ type PageInfo {
   startCursor: String
 }
 
-"""Platform supported by metaforecast"""
+"""Forecasting platform supported by Metaforecast"""
 type Platform {
+  """
+  Short unique platform name, e.g. "xrisk"
+  """
   id: ID!
+
+  """
+  Platform name for displaying on frontend etc., e.g. "X-risk estimates"
+  """
   label: String!
 }
 
 type ProbabilityOption {
   name: String
+
+  """0 to 1"""
   probability: Float
 }
 
 """Various indicators of the question's quality"""
 type QualityIndicators {
   numForecasts: Int
+
+  """0 to 5"""
   stars: Int!
 }
 
 type Query {
+  """Look up a single dashboard by its id"""
   dashboard(id: ID!): Dashboard!
+
+  """Get a list of questions that are currently on the frontpage"""
   frontpage: [Question!]!
   questions(after: String, before: String, first: Int, last: Int): QueryQuestionsConnection!
+
+  """
+  Search for questions; uses Algolia instead of the primary metaforecast database
+  """
   searchQuestions(input: SearchInput!): [Question!]!
 }
 
@@ -67,20 +106,33 @@ type QueryQuestionsConnectionEdge {
 
 type Question {
   description: String!
+
+  """Unique string which identifies the question"""
   id: ID!
   options: [ProbabilityOption!]!
   platform: Platform!
   qualityIndicators: QualityIndicators!
+
+  """Timestamp at which metaforecast fetched the question"""
   timestamp: Date!
   title: String!
+
+  """
+  Non-unique, a very small number of platforms have a page for more than one prediction
+  """
   url: String!
   visualization: String
 }
 
 input SearchInput {
+  """List of platform ids to filter by"""
   forecastingPlatforms: [String!]
+
+  """Minimum number of forecasts on a question"""
   forecastsThreshold: Int
   limit: Int
   query: String!
+
+  """Minimum number of stars on a question"""
   starsThreshold: Int
 }
