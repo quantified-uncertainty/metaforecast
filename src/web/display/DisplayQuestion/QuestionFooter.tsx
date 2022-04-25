@@ -114,18 +114,19 @@ const getCurrencySymbolIfNeeded = ({
   }
 };
 
-const showFirstQualityIndicator = ({
-  numforecasts,
-  lastUpdated,
-  showTimeStamp,
-  qualityindicators,
-}) => {
-  if (!!numforecasts) {
+const showFirstQualityIndicator: React.FC<{
+  question: QuestionFragment;
+  showTimeStamp: boolean;
+}> = ({ question, showTimeStamp }) => {
+  const lastUpdated = new Date(question.timestamp * 1000);
+  if (!!question.qualityIndicators.numForecasts) {
     return (
       <div className="flex col-span-1 row-span-1">
         {/*<span>{` ${numforecasts == 1 ? "Forecast" : "Forecasts:"}`}</span>&nbsp;*/}
-        <span>{"Forecasts:"}</span>&nbsp;
-        <span className="font-bold">{Number(numforecasts).toFixed(0)}</span>
+        <span>Forecasts:</span>&nbsp;
+        <span className="font-bold">
+          {Number(question.qualityIndicators.numForecasts).toFixed(0)}
+        </span>
       </div>
     );
   } else if (showTimeStamp) {
@@ -145,39 +146,28 @@ const showFirstQualityIndicator = ({
 };
 
 const displayQualityIndicators: React.FC<{
-  numforecasts: number;
-  lastUpdated: Date;
+  question: QuestionFragment;
   showTimeStamp: boolean;
-  qualityindicators: QuestionFragment["qualityIndicators"];
-  platform: string; // id string - e.g. "goodjudgment", not "Good Judgment"
-}> = ({
-  numforecasts,
-  lastUpdated,
-  showTimeStamp,
-  qualityindicators,
-  platform,
-}) => {
-  // grid grid-cols-1
+}> = ({ question, showTimeStamp }) => {
+  const { qualityIndicators } = question;
   return (
     <div className="text-sm">
       {showFirstQualityIndicator({
-        numforecasts,
-        lastUpdated,
+        question,
         showTimeStamp,
-        qualityindicators,
       })}
-      {Object.entries(formatQualityIndicators(qualityindicators)).map(
+      {Object.entries(formatQualityIndicators(question.qualityIndicators)).map(
         (entry, i) => {
           return (
             <div className="col-span-1 row-span-1">
-              <span>{`${entry[0]}:`}</span>&nbsp;
+              <span>${entry[0]}:</span>&nbsp;
               <span className="font-bold">
                 {`${getCurrencySymbolIfNeeded({
                   indicator: entry[0],
-                  platform,
+                  platform: question.platform.id,
                 })}${formatNumber(entry[1])}${getPercentageSymbolIfNeeded({
                   indicator: entry[0],
-                  platform,
+                  platform: question.platform.id,
                 })}`}
               </span>
             </div>
@@ -244,29 +234,16 @@ function getStarsColor(numstars: number) {
 }
 
 interface Props {
-  stars: any;
-  platform: string;
-  platformLabel: string;
-  numforecasts: any;
-  qualityindicators: QuestionFragment["qualityIndicators"];
-  lastUpdated: Date;
+  question: QuestionFragment;
   showTimeStamp: boolean;
   expandFooterToFullWidth: boolean;
 }
 
 export const QuestionFooter: React.FC<Props> = ({
-  stars,
-  platform,
-  platformLabel,
-  numforecasts,
-  qualityindicators,
-  lastUpdated,
+  question,
   showTimeStamp,
   expandFooterToFullWidth,
 }) => {
-  // I experimented with justify-evenly, justify-around, etc., here: https://tailwindcss.com/docs/justify-content
-  // I came to the conclusion that as long as the description isn't justified too, aligning the footer symmetrically doesn't make sense
-  // because the contrast is jarring.
   let debuggingWithBackground = false;
   return (
     <div
@@ -275,18 +252,18 @@ export const QuestionFooter: React.FC<Props> = ({
       } text-gray-500 mb-2 mt-1`}
     >
       <div
-        className={`self-center col-span-1 ${getStarsColor(stars)} ${
-          debuggingWithBackground ? "bg-red-200" : ""
-        }`}
+        className={`self-center col-span-1 ${getStarsColor(
+          question.qualityIndicators.stars
+        )} ${debuggingWithBackground ? "bg-red-200" : ""}`}
       >
-        {getstars(stars)}
+        {getstars(question.qualityIndicators.stars)}
       </div>
       <div
         className={`${
           expandFooterToFullWidth ? "place-self-center" : "self-center"
         }  col-span-1 font-bold ${debuggingWithBackground ? "bg-red-100" : ""}`}
       >
-        {platformLabel
+        {question.platform.label
           .replace("Good Judgment Open", "GJOpen")
           .replace(/ /g, "\u00a0")}
       </div>
@@ -298,11 +275,8 @@ export const QuestionFooter: React.FC<Props> = ({
         } col-span-1 ${debuggingWithBackground ? "bg-red-100" : ""}`}
       >
         {displayQualityIndicators({
-          numforecasts,
-          lastUpdated,
+          question,
           showTimeStamp,
-          qualityindicators,
-          platform,
         })}
       </div>
     </div>

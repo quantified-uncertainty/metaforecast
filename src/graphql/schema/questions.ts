@@ -132,3 +132,20 @@ builder.queryField("questions", (t) =>
     {}
   )
 );
+
+builder.queryField("question", (t) =>
+  t.field({
+    type: QuestionObj,
+    description: "Look up a single question by its id",
+    args: {
+      id: t.arg({ type: "ID", required: true }),
+    },
+    resolve: async (parent, args) => {
+      return await prisma.question.findUnique({
+        where: {
+          id: String(args.id),
+        },
+      });
+    },
+  })
+);

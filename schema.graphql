@@ -93,6 +93,9 @@ type Query {
 
   """Get a list of questions that are currently on the frontpage"""
   frontpage: [Question!]!
+
+  """Look up a single question by its id"""
+  question(id: ID!): Question!
   questions(after: String, before: String, first: Int, last: Int): QueryQuestionsConnection!
 
   """

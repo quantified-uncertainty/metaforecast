@@ -1,0 +1,5 @@
+query QuestionById($id: ID!) {
+  result: question(id: $id) {
+    ...Question
+  }
+}
