@@ -1,7 +1,7 @@
 import * as Types from '../../graphql/types.generated';
 
 import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
-import { QuestionFragmentDoc } from '../search/queries.generated';
+import { QuestionFragmentDoc } from '../fragments.generated';
 export type DashboardFragment = { __typename?: 'Dashboard', id: string, title: string, description: string, creator: string, questions: Array<{ __typename?: 'Question', id: string, url: string, title: string, description: string, timestamp: number, visualization?: string | null, options: Array<{ __typename?: 'ProbabilityOption', name?: string | null, probability?: number | null }>, platform: { __typename?: 'Platform', id: string, label: string }, qualityIndicators: { __typename?: 'QualityIndicators', stars: number, numForecasts?: number | null, numForecasters?: number | null, volume?: number | null, spread?: number | null, sharesVolume?: number | null, openInterest?: number | null, liquidity?: number | null, tradeVolume?: number | null } }> };
 
 export type DashboardByIdQueryVariables = Types.Exact<{

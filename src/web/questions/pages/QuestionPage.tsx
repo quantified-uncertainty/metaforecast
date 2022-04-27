@@ -5,10 +5,11 @@ import { Query } from "../../common/Query";
 import { Card } from "../../display/Card";
 import { QuestionFooter } from "../../display/DisplayQuestion/QuestionFooter";
 import { Layout } from "../../display/Layout";
-import { QuestionFragment } from "../../search/queries.generated";
+import { QuestionWithHistoryFragment } from "../../fragments.generated";
 import { ssrUrql } from "../../urql";
+import { HistoryChart } from "../components/HistoryChart";
 import { QuestionOptions } from "../components/QuestionOptions";
-import { QuestionByIdDocument } from "../queries.generated";
+import { QuestionPageDocument } from "../queries.generated";
 
 interface Props {
   id: string;
@@ -21,7 +22,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   const id = context.query.id as string;
 
   const question =
-    (await client.query(QuestionByIdDocument, { id }).toPromise()).data
+    (await client.query(QuestionPageDocument, { id }).toPromise()).data
       ?.result || null;
 
   if (!question) {
@@ -36,9 +37,9 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   };
 };
 
-const QuestionCardContents: React.FC<{ question: QuestionFragment }> = ({
-  question,
-}) => (
+const QuestionCardContents: React.FC<{
+  question: QuestionWithHistoryFragment;
+}> = ({ question }) => (
   <div className="space-y-4">
     <h1>
       <a
@@ -55,6 +56,8 @@ const QuestionCardContents: React.FC<{ question: QuestionFragment }> = ({
     <ReactMarkdown linkTarget="_blank" className="font-normal">
       {question.description}
     </ReactMarkdown>
+
+    <HistoryChart question={question} />
   </div>
 );
 
@@ -63,7 +66,7 @@ const QuestionPage: NextPage<Props> = ({ id }) => {
     <Layout page="question">
       <div className="max-w-2xl mx-auto">
         <Card highlightOnHover={false}>
-          <Query document={QuestionByIdDocument} variables={{ id }}>
+          <Query document={QuestionPageDocument} variables={{ id }}>
             {({ data }) => <QuestionCardContents question={data.result} />}
           </Query>
         </Card>

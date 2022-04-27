@@ -1,4 +1,4 @@
-import { QuestionFragment } from "../../search/queries.generated";
+import { QuestionFragment } from "../../fragments.generated";
 import { formatProbability } from "../utils";
 
 type Option = QuestionFragment["options"][0];

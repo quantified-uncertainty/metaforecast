@@ -6,9 +6,10 @@ import { ButtonsForStars } from "../display/ButtonsForStars";
 import { MultiSelectPlatform } from "../display/MultiSelectPlatform";
 import { QueryForm } from "../display/QueryForm";
 import { SliderElement } from "../display/SliderElement";
+import { QuestionFragment } from "../fragments.generated";
 import { useIsFirstRender, useNoInitialEffect } from "../hooks";
 import { Props as AnySearchPageProps, QueryParameters } from "./anySearchPage";
-import { QuestionFragment, SearchDocument } from "./queries.generated";
+import { SearchDocument } from "./queries.generated";
 
 interface Props extends AnySearchPageProps {
   hasSearchbar: boolean;

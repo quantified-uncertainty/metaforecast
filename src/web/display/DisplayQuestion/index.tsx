@@ -3,8 +3,9 @@ import { FaExpand } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
 import { CopyText } from "../../common/CopyText";
+import { QuestionFragment } from "../../fragments.generated";
 import { QuestionOptions } from "../../questions/components/QuestionOptions";
-import { QuestionFragment } from "../../search/queries.generated";
+import { cleanText } from "../../utils";
 import { Card } from "../Card";
 import { QuestionFooter } from "./QuestionFooter";
 
@@ -67,24 +68,6 @@ if (!String.prototype.replaceAll) {
     return replaceAll(originalString, pattern, substitute);
   };
 }
-
-const cleanText = (text: string): string => {
-  // Note: should no longer be necessary
-  let textString = !!text ? text : "";
-  textString = textString
-    .replaceAll("] (", "](")
-    .replaceAll(") )", "))")
-    .replaceAll("( [", "([")
-    .replaceAll(") ,", "),")
-    .replaceAll("==", "") // Denotes a title in markdown
-    .replaceAll("Background\n", "")
-    .replaceAll("Context\n", "")
-    .replaceAll("--- \n", "- ")
-    .replaceAll(/\[(.*?)\]\(.*?\)/g, "$1");
-  textString = textString.slice(0, 1) == "=" ? textString.slice(1) : textString;
-  //console.log(textString)
-  return textString;
-};
 
 // Auxiliary components
 

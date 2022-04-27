@@ -1,4 +1,4 @@
-import { QuestionFragment } from "../../search/queries.generated";
+import { QuestionFragment } from "../../fragments.generated";
 
 type QualityIndicator = QuestionFragment["qualityIndicators"];
 type IndicatorName = keyof QualityIndicator;

@@ -1,31 +1,3 @@
-fragment Question on Question {
-  id
-  url
-  title
-  description
-  timestamp
-  options {
-    name
-    probability
-  }
-  platform {
-    id
-    label
-  }
-  qualityIndicators {
-    stars
-    numForecasts
-    numForecasters
-    volume
-    spread
-    sharesVolume
-    openInterest
-    liquidity
-    tradeVolume
-  }
-  visualization
-}
-
 query Frontpage {
   result: frontpage {
     ...Question
