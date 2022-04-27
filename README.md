@@ -14,7 +14,6 @@ This repository includes the source code for both the website and the library th
 $ git clone https://github.com/QURIresearch/metaforecast
 $ cd metaforecasts
 $ npm install
-$ npm run build  # or at least `prisma generate`
 ```
 
 ### 2. Set up a database and environment variables
@@ -39,7 +38,6 @@ See [./docs/configuration.md](./docs/configuration.md) for details.
 $ git clone https://github.com/QURIresearch/metaforecast
 $ cd metaforecasts
 $ npm install
-$ npm run build  # or at least `prisma generate`
 $ node src/backend/manual/manualDownload.js
 ```
 
