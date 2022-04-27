@@ -15,11 +15,15 @@ export const xrisk: Platform = {
       encoding: "utf-8",
     });
     let results = JSON.parse(fileRaw);
-    results = results.map((item) => ({
-      ...item,
-      id: `${platformName}-${hash(item.title + " | " + item.url)}`, // some titles are non-unique, but title+url pair is always unique
-      platform: platformName,
-    }));
+    results = results.map((item) => {
+      item.extra = item.moreoriginsdata;
+      delete item.moreoriginsdata;
+      return {
+        ...item,
+        id: `${platformName}-${hash(item.title + " | " + item.url)}`, // some titles are non-unique, but title+url pair is always unique
+        platform: platformName,
+      };
+    });
     return results;
   },
 };

@@ -146,14 +146,16 @@ export const DisplayQuestion: React.FC<Props> = ({
             </div>
           ) : null}
           <div>
-            <Link href={`/questions/${question.id}`} passHref>
-              <a className="float-right block ml-2 mt-1.5">
-                <FaExpand
-                  size="18"
-                  className="text-gray-400 hover:text-gray-700"
-                />
-              </a>
-            </Link>
+            {process.env.NEXT_PUBLIC_ENABLE_QUESTION_PAGES ? (
+              <Link href={`/questions/${question.id}`} passHref>
+                <a className="float-right block ml-2 mt-1.5">
+                  <FaExpand
+                    size="18"
+                    className="text-gray-400 hover:text-gray-700"
+                  />
+                </a>
+              </Link>
+            ) : null}
             <Card.Title>
               <a
                 className="text-black no-underline"

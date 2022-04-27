@@ -1,3 +1,5 @@
+import { History, Question } from "@prisma/client";
+
 import { prisma } from "../../backend/database/prisma";
 import { platforms, QualityIndicators } from "../../backend/platforms";
 import { builder } from "../builder";
@@ -78,44 +80,67 @@ export const ProbabilityOptionObj = builder
     }),
   });
 
+const QuestionShapeInterface = builder
+  .interfaceRef<Question | History>("QuestionShape")
+  .implement({
+    fields: (t) => ({
+      title: t.exposeString("title"),
+      description: t.exposeString("description"),
+      url: t.exposeString("url", {
+        description:
+          "Non-unique, a very small number of platforms have a page for more than one prediction",
+      }),
+      platform: t.field({
+        type: PlatformObj,
+        resolve: (parent) => parent.platform,
+      }),
+      timestamp: t.field({
+        type: "Date",
+        description: "Timestamp at which metaforecast fetched the question",
+        resolve: (parent) => parent.timestamp,
+      }),
+      qualityIndicators: t.field({
+        type: QualityIndicatorsObj,
+        resolve: (parent) =>
+          parent.qualityindicators as any as QualityIndicators,
+      }),
+      options: t.field({
+        type: [ProbabilityOptionObj],
+        resolve: ({ options }) => {
+          if (!Array.isArray(options)) {
+            return [];
+          }
+          return options as any[];
+        },
+      }),
+    }),
+  });
+
+export const HistoryObj = builder.prismaObject("History", {
+  findUnique: (history) => ({ pk: history.pk }),
+  interfaces: [QuestionShapeInterface],
+  fields: (t) => ({
+    id: t.exposeID("pk", {
+      description: "History items are identified by their integer ids",
+    }),
+    questionId: t.exposeID("id", {
+      description: "Unique string which identifies the question",
+    }),
+  }),
+});
+
 export const QuestionObj = builder.prismaObject("Question", {
   findUnique: (question) => ({ id: question.id }),
+  interfaces: [QuestionShapeInterface],
   fields: (t) => ({
     id: t.exposeID("id", {
       description: "Unique string which identifies the question",
-    }),
-    title: t.exposeString("title"),
-    description: t.exposeString("description"),
-    url: t.exposeString("url", {
-      description:
-        "Non-unique, a very small number of platforms have a page for more than one prediction",
-    }),
-    timestamp: t.field({
-      type: "Date",
-      description: "Timestamp at which metaforecast fetched the question",
-      resolve: (parent) => parent.timestamp,
-    }),
-    platform: t.field({
-      type: PlatformObj,
-      resolve: (parent) => parent.platform,
-    }),
-    qualityIndicators: t.field({
-      type: QualityIndicatorsObj,
-      resolve: (parent) => parent.qualityindicators as any as QualityIndicators,
-    }),
-    options: t.field({
-      type: [ProbabilityOptionObj],
-      resolve: ({ options }) => {
-        if (!Array.isArray(options)) {
-          return [];
-        }
-        return options as any[];
-      },
     }),
     visualization: t.string({
       resolve: (parent) => (parent.extra as any)?.visualization, // used for guesstimate only, see searchGuesstimate.ts
       nullable: true,
     }),
+    history: t.relation("history", {}),
   }),
 });
 
@@ -125,8 +150,7 @@ builder.queryField("questions", (t) =>
       type: "Question",
       cursor: "id",
       maxSize: 1000,
-      resolve: (query, parent, args, context, info) =>
-        prisma.question.findMany({ ...query }),
+      resolve: (query) => prisma.question.findMany({ ...query }),
     },
     {},
     {}

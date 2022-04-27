@@ -89,27 +89,69 @@ export const processPlatform = async (platform: Platform) => {
     console.log(`Platform ${platform.name} doesn't have a fetcher, skipping`);
     return;
   }
-  const results = await platform.fetcher();
-  if (results && results.length) {
-    await prisma.$transaction([
-      prisma.question.deleteMany({
-        where: {
-          platform: platform.name,
-        },
-      }),
-      prisma.question.createMany({
-        data: results.map((q) => ({
-          extra: {},
-          timestamp: new Date(),
-          ...q,
-          qualityindicators: q.qualityindicators as object, // fighting typescript
-        })),
-      }),
-    ]);
-    console.log("Done");
-  } else {
+  const fetchedQuestions = await platform.fetcher();
+  if (!fetchedQuestions || !fetchedQuestions.length) {
     console.log(`Platform ${platform.name} didn't return any results`);
+    return;
   }
+
+  const prepareQuestion = (q: FetchedQuestion): Question => {
+    return {
+      extra: {},
+      timestamp: new Date(),
+      ...q,
+      platform: platform.name,
+      qualityindicators: q.qualityindicators as object, // fighting typescript
+    };
+  };
+
+  const oldQuestions = await prisma.question.findMany({
+    where: {
+      platform: platform.name,
+    },
+  });
+
+  const fetchedIds = fetchedQuestions.map((q) => q.id);
+  const oldIds = oldQuestions.map((q) => q.id);
+
+  const fetchedIdsSet = new Set(fetchedIds);
+  const oldIdsSet = new Set(oldIds);
+
+  const createdQuestions: Question[] = [];
+  const updatedQuestions: Question[] = [];
+  const deletedIds = oldIds.filter((id) => !fetchedIdsSet.has(id));
+
+  for (const q of fetchedQuestions.map((q) => prepareQuestion(q))) {
+    if (oldIdsSet.has(q.id)) {
+      updatedQuestions.push(q);
+    } else {
+      // TODO - check if question has changed for better performance
+      createdQuestions.push(q);
+    }
+  }
+
+  await prisma.question.createMany({
+    data: createdQuestions,
+  });
+
+  for (const q of updatedQuestions) {
+    await prisma.question.update({
+      where: { id: q.id },
+      data: q,
+    });
+  }
+
+  await prisma.question.deleteMany({
+    where: {
+      id: {
+        in: deletedIds,
+      },
+    },
+  });
+
+  console.log(
+    `Done, ${deletedIds.length} deleted, ${updatedQuestions.length} updated, ${createdQuestions.length} created`
+  );
 };
 
 export interface PlatformConfig {

@@ -1,5 +1,6 @@
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  previewFeatures = ["interactiveTransactions"]
 }
 
 generator pothos {
@@ -25,15 +26,17 @@ model Dashboard {
 
 model History {
   id                String
+  idref             String?
+  question          Question? @relation(fields: [idref], references: [id], onDelete: SetNull, onUpdate: Restrict)
   title             String
   url               String
   platform          String
   description       String
   options           Json
-  timestamp         DateTime @db.Timestamp(6)
+  timestamp         DateTime  @db.Timestamp(6)
   qualityindicators Json
   extra             Json
-  pk                Int      @id @default(autoincrement())
+  pk                Int       @id @default(autoincrement())
 
   @@index([id])
   @@map("history")
@@ -75,6 +78,8 @@ model Question {
   extra             Json
 
   onFrontpage FrontpageId?
+  history     History[]
+
   @@map("questions")
 }
 
