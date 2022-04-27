@@ -1,36 +1,9 @@
 import { History, Question } from "@prisma/client";
 
 import { prisma } from "../../backend/database/prisma";
-import { platforms, QualityIndicators } from "../../backend/platforms";
+import { QualityIndicators } from "../../backend/platforms";
 import { builder } from "../builder";
-
-const PlatformObj = builder.objectRef<string>("Platform").implement({
-  description: "Forecasting platform supported by Metaforecast",
-  fields: (t) => ({
-    id: t.id({
-      description: 'Short unique platform name, e.g. "xrisk"',
-      resolve: (x) => x,
-    }),
-    label: t.string({
-      description:
-        'Platform name for displaying on frontend etc., e.g. "X-risk estimates"',
-      resolve: (platformName) => {
-        if (platformName === "metaforecast") {
-          return "Metaforecast";
-        }
-        if (platformName === "guesstimate") {
-          return "Guesstimate";
-        }
-        // kinda slow and repetitive, TODO - store a map {name => platform} somewhere and `getPlatform` util function?
-        const platform = platforms.find((p) => p.name === platformName);
-        if (!platform) {
-          throw new Error(`Unknown platform ${platformName}`);
-        }
-        return platform.label;
-      },
-    }),
-  }),
-});
+import { PlatformObj } from "./platforms";
 
 export const QualityIndicatorsObj = builder
   .objectRef<QualityIndicators>("QualityIndicators")

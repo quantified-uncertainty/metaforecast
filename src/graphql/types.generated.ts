@@ -43,6 +43,23 @@ export type Dashboard = {
   title: Scalars['String'];
 };
 
+export type History = QuestionShape & {
+  __typename?: 'History';
+  description: Scalars['String'];
+  /** History items are identified by their integer ids */
+  id: Scalars['ID'];
+  options: Array<ProbabilityOption>;
+  platform: Platform;
+  qualityIndicators: QualityIndicators;
+  /** Unique string which identifies the question */
+  questionId: Scalars['ID'];
+  /** Timestamp at which metaforecast fetched the question */
+  timestamp: Scalars['Date'];
+  title: Scalars['String'];
+  /** Non-unique, a very small number of platforms have a page for more than one prediction */
+  url: Scalars['String'];
+};
+
 export type Mutation = {
   __typename?: 'Mutation';
   /** Create a new dashboard; if the dashboard with given ids already exists then it will be returned instead. */
@@ -69,6 +86,7 @@ export type Platform = {
   id: Scalars['ID'];
   /** Platform name for displaying on frontend etc., e.g. "X-risk estimates" */
   label: Scalars['String'];
+  lastUpdated?: Maybe<Scalars['Date']>;
 };
 
 export type ProbabilityOption = {
@@ -99,6 +117,7 @@ export type Query = {
   dashboard: Dashboard;
   /** Get a list of questions that are currently on the frontpage */
   frontpage: Array<Question>;
+  platforms: Array<Platform>;
   /** Look up a single question by its id */
   question: Question;
   questions: QueryQuestionsConnection;
@@ -141,9 +160,10 @@ export type QueryQuestionsConnectionEdge = {
   node: Question;
 };
 
-export type Question = {
+export type Question = QuestionShape & {
   __typename?: 'Question';
   description: Scalars['String'];
+  history: Array<History>;
   /** Unique string which identifies the question */
   id: Scalars['ID'];
   options: Array<ProbabilityOption>;
@@ -155,6 +175,18 @@ export type Question = {
   /** Non-unique, a very small number of platforms have a page for more than one prediction */
   url: Scalars['String'];
   visualization?: Maybe<Scalars['String']>;
+};
+
+export type QuestionShape = {
+  description: Scalars['String'];
+  options: Array<ProbabilityOption>;
+  platform: Platform;
+  qualityIndicators: QualityIndicators;
+  /** Timestamp at which metaforecast fetched the question */
+  timestamp: Scalars['Date'];
+  title: Scalars['String'];
+  /** Non-unique, a very small number of platforms have a page for more than one prediction */
+  url: Scalars['String'];
 };
 
 export type SearchInput = {
