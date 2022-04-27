@@ -22,7 +22,7 @@ const StatusPage: NextPage = () => {
                   ? new Date(platform.lastUpdated * 1000)
                   : null;
                 const isStale =
-                  !ts || new Date().getTime() - ts.getTime() < 2 * 86400 * 1000;
+                  !ts || new Date().getTime() - ts.getTime() > 2 * 86400 * 1000;
                 return (
                   <tr key={platform.id}>
                     <td
