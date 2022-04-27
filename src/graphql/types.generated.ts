@@ -99,6 +99,8 @@ export type Query = {
   dashboard: Dashboard;
   /** Get a list of questions that are currently on the frontpage */
   frontpage: Array<Question>;
+  /** Look up a single question by its id */
+  question: Question;
   questions: QueryQuestionsConnection;
   /** Search for questions; uses Algolia instead of the primary metaforecast database */
   searchQuestions: Array<Question>;
@@ -106,6 +108,11 @@ export type Query = {
 
 
 export type QueryDashboardArgs = {
+  id: Scalars['ID'];
+};
+
+
+export type QueryQuestionArgs = {
   id: Scalars['ID'];
 };
 

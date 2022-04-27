@@ -24,6 +24,14 @@ List of all files used for graphql:
 
 `graphql-code-generator` converts those into `*.generated.ts` files which can be imported from the React components.
 
+# Notes on caching
+
+`urql` has both [document caching](https://formidable.com/open-source/urql/docs/basics/document-caching/) and [normalized caching](https://formidable.com/open-source/urql/docs/graphcache/normalized-caching/) (which we don't use yet).
+
+Unfortunately, it's useful only on a page level: since we like server-side rendering, we still have to hit `getServerSideProps` on navigation, even if we have data in cache.
+
+There are some possible workaround for this to make client-side navigation faster, but none of them are trivial to implement; relevant Next.js discussion to follow: https://github.com/vercel/next.js/discussions/19611
+
 # Recipes
 
 **I want to check out what Metaforecast's GraphQL API is capable of**
