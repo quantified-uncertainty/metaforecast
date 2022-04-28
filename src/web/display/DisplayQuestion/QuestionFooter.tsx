@@ -4,7 +4,9 @@ type QualityIndicator = QuestionFragment["qualityIndicators"];
 type IndicatorName = keyof QualityIndicator;
 
 // this duplication can probably be simplified with typescript magic, but this is good enough for now
-type UsedIndicatorName =
+export type UsedIndicatorName =
+  // | "numForecasts"
+  // | "stars"
   | "volume"
   | "numForecasters"
   | "spread"
@@ -13,9 +15,9 @@ type UsedIndicatorName =
   | "tradeVolume"
   | "openInterest";
 
-const qualityIndicatorLabels: { [k in UsedIndicatorName]: string } = {
-  // numForecasts: null,
-  // stars: null,
+export const qualityIndicatorLabels: { [k in UsedIndicatorName]: string } = {
+  // numForecasts: "Number of forecasts",
+  // stars: "Stars",
   // yesBid: "Yes bid",
   // yesAsk: "Yes ask",
   volume: "Volume",
@@ -96,6 +98,20 @@ const FirstQualityIndicator: React.FC<{
   }
 };
 
+export const formatIndicatorValue = (
+  value: any,
+  indicator: UsedIndicatorName,
+  platform: string
+): string => {
+  return `${getCurrencySymbolIfNeeded({
+    indicator,
+    platform: platform,
+  })}${formatNumber(value)}${getPercentageSymbolIfNeeded({
+    indicator,
+    platform: platform,
+  })}`;
+};
+
 const QualityIndicatorsList: React.FC<{
   question: QuestionFragment;
 }> = ({ question }) => {
@@ -112,13 +128,7 @@ const QualityIndicatorsList: React.FC<{
           <div key={indicator}>
             <span>{indicatorLabel}:</span>&nbsp;
             <span className="font-bold">
-              {`${getCurrencySymbolIfNeeded({
-                indicator,
-                platform: question.platform.id,
-              })}${formatNumber(value)}${getPercentageSymbolIfNeeded({
-                indicator,
-                platform: question.platform.id,
-              })}`}
+              {formatIndicatorValue(value, indicator, question.platform.id)}
             </span>
           </div>
         );
@@ -182,6 +192,14 @@ function getStarsColor(numstars: number) {
   return color;
 }
 
+export function getStarsElement(numStars) {
+  return (
+    <div className={`self-center col-span-1 ${getStarsColor(numStars)}`}>
+      {getstars(numStars)}
+    </div>
+  );
+}
+
 interface Props {
   question: QuestionFragment;
   expandFooterToFullWidth: boolean;
@@ -197,13 +215,7 @@ export const QuestionFooter: React.FC<Props> = ({
         expandFooterToFullWidth ? "justify-between" : ""
       } text-gray-500 mb-2 mt-1`}
     >
-      <div
-        className={`self-center col-span-1 ${getStarsColor(
-          question.qualityIndicators.stars
-        )}`}
-      >
-        {getstars(question.qualityIndicators.stars)}
-      </div>
+      {getStarsElement(question.qualityIndicators.stars)}
       <div
         className={`${
           expandFooterToFullWidth ? "place-self-center" : "self-center"
