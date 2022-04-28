@@ -75,7 +75,7 @@ const QuestionCardContents: React.FC<{
       linkTarget="_blank"
       className="font-normal text-gray-900 w-9/12"
     >
-      {question.description}
+      {question.description.replaceAll("---", "")}
     </ReactMarkdown>
 
     <h2 className="pt-2  text-xl place-self-center w-full text-center text-gray-900">
