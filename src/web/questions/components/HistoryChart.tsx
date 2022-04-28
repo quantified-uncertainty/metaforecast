@@ -32,7 +32,7 @@ let getDate0 = (x) => {
 };
 
 let formatOptionName = (name) => {
-  return name.length > 10 ? name.slice(0, 8) + "..." : name;
+  return name.length > 20 ? name.slice(0, 17) + "..." : name;
 };
 
 let getLength = (str) => {
@@ -52,7 +52,7 @@ let getLength = (str) => {
 
 let timestampToString = (x) => {
   // for real timestamps
-  console.log(x);
+  // console.log(x);
   let date = new Date(Date.parse(x));
   let dayOfMonth = date.getDate();
   let month = date.getMonth() + 1;
@@ -60,7 +60,7 @@ let timestampToString = (x) => {
   let dateString = `${("0" + dayOfMonth).slice(-2)}/${("0" + month).slice(
     -2
   )}/${year.toString().slice(-2)}`;
-  console.log(dateString);
+  // console.log(dateString);
   return dateString;
 };
 
@@ -100,6 +100,12 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
     dataSetsNames.push(...optionNames);
   });
   dataSetsNames = [...new Set(dataSetsNames)].slice(0, 5); // take the first 5
+  let isBinary =
+    (dataSetsNames[0] == "Yes" && dataSetsNames[1] == "No") ||
+    (dataSetsNames[0] == "No" && dataSetsNames[1] == "Yes");
+  if (isBinary) {
+    dataSetsNames = ["Yes"];
+  }
   let dataSets = [];
   let maxProbability = 0;
   let longestNameLength = 0;
@@ -135,6 +141,7 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
     }
     dataSets.push(newDataset);
   }
+
   let letterLength = 7;
   let labelLegendStart = 45;
 
@@ -147,9 +154,14 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
   let padding = {
     top: 20,
     bottom: 50,
-    left: 0,
+    left: 60,
     right: labelLegendStart + letterLength * longestNameLength,
   };
+
+  let legendData = Array.from(Array(dataSetsLength).keys()).map((i) => ({
+    name: formatOptionName(dataSetsNames[i]),
+    symbol: { fill: colors[i] },
+  }));
 
   return (
     <div className="flex justify-center items-center w-full">
@@ -204,11 +216,8 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
             y={height / 2 - 18 - (dataSetsLength - 1) * 13}
             orientation="vertical"
             gutter={20}
-            style={{ border: { stroke: "black" }, labels: { fontSize: 15 } }}
-            data={Array.from(Array(dataSetsLength).keys()).map((i) => ({
-              name: dataSetsNames[i],
-              symbol: { fill: colors[i] },
-            }))}
+            style={{ border: { stroke: "white" }, labels: { fontSize: 15 } }}
+            data={legendData}
           />
 
           {dataSets
