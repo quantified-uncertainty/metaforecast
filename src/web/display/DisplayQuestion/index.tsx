@@ -3,8 +3,9 @@ import { FaExpand } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
 import { CopyText } from "../../common/CopyText";
+import { QuestionFragment } from "../../fragments.generated";
 import { QuestionOptions } from "../../questions/components/QuestionOptions";
-import { QuestionFragment } from "../../search/queries.generated";
+import { cleanText } from "../../utils";
 import { Card } from "../Card";
 import { QuestionFooter } from "./QuestionFooter";
 
@@ -68,24 +69,6 @@ if (!String.prototype.replaceAll) {
   };
 }
 
-const cleanText = (text: string): string => {
-  // Note: should no longer be necessary
-  let textString = !!text ? text : "";
-  textString = textString
-    .replaceAll("] (", "](")
-    .replaceAll(") )", "))")
-    .replaceAll("( [", "([")
-    .replaceAll(") ,", "),")
-    .replaceAll("==", "") // Denotes a title in markdown
-    .replaceAll("Background\n", "")
-    .replaceAll("Context\n", "")
-    .replaceAll("--- \n", "- ")
-    .replaceAll(/\[(.*?)\]\(.*?\)/g, "$1");
-  textString = textString.slice(0, 1) == "=" ? textString.slice(1) : textString;
-  //console.log(textString)
-  return textString;
-};
-
 // Auxiliary components
 
 const DisplayMarkdown: React.FC<{ description: string }> = ({
@@ -146,16 +129,14 @@ export const DisplayQuestion: React.FC<Props> = ({
             </div>
           ) : null}
           <div>
-            {process.env.NEXT_PUBLIC_ENABLE_QUESTION_PAGES ? (
-              <Link href={`/questions/${question.id}`} passHref>
-                <a className="float-right block ml-2 mt-1.5">
-                  <FaExpand
-                    size="18"
-                    className="text-gray-400 hover:text-gray-700"
-                  />
-                </a>
-              </Link>
-            ) : null}
+            <Link href={`/questions/${question.id}`} passHref>
+              <a className="float-right block ml-2 mt-1.5">
+                <FaExpand
+                  size="18"
+                  className="text-gray-400 hover:text-gray-700"
+                />
+              </a>
+            </Link>
             <Card.Title>
               <a
                 className="text-black no-underline"

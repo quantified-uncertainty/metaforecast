@@ -1,6 +1,6 @@
 import React from "react";
 
-import { QuestionFragment } from "../search/queries.generated";
+import { QuestionFragment } from "../fragments.generated";
 import { DisplayQuestion } from "./DisplayQuestion";
 
 interface Props {

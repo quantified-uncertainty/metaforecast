@@ -1,8 +1,9 @@
 import { GetServerSideProps } from "next";
 
 import { getPlatformsConfig, PlatformConfig, platforms } from "../../backend/platforms";
+import { QuestionFragment } from "../fragments.generated";
 import { ssrUrql } from "../urql";
-import { FrontpageDocument, QuestionFragment, SearchDocument } from "./queries.generated";
+import { FrontpageDocument, SearchDocument } from "./queries.generated";
 
 /* Common code for / and /capture */
 

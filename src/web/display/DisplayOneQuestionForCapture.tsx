@@ -2,7 +2,7 @@ import domtoimage from "dom-to-image"; // https://github.com/tsayen/dom-to-image
 import { useEffect, useRef, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import { QuestionFragment } from "../search/queries.generated";
+import { QuestionFragment } from "../fragments.generated";
 import { uploadToImgur } from "../worker/uploadToImgur";
 import { DisplayQuestion } from "./DisplayQuestion";
 

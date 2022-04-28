@@ -1,5 +1,5 @@
-query QuestionById($id: ID!) {
+query QuestionPage($id: ID!) {
   result: question(id: $id) {
-    ...Question
+    ...QuestionWithHistory
   }
 }

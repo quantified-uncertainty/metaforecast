@@ -89,7 +89,8 @@
     "ts-node": "^10.7.0",
     "tunnel": "^0.0.6",
     "urql": "^2.2.0",
-    "urql-custom-scalars-exchange": "^0.1.5"
+    "urql-custom-scalars-exchange": "^0.1.5",
+    "victory": "^36.3.2"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.6.2",

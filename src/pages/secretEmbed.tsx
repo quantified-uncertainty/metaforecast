@@ -5,7 +5,8 @@ import React from "react";
 
 import { platforms } from "../backend/platforms";
 import { DisplayQuestion } from "../web/display/DisplayQuestion";
-import { QuestionFragment, SearchDocument } from "../web/search/queries.generated";
+import { QuestionFragment } from "../web/fragments.generated";
+import { SearchDocument } from "../web/search/queries.generated";
 import { ssrUrql } from "../web/urql";
 
 interface Props {
