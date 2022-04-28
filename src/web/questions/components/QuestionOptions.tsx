@@ -112,7 +112,8 @@ export const QuestionOptions: React.FC<{ options: Option[] }> = ({
   const isBinary =
     options.length === 2 &&
     (options[0].name === "Yes" || options[0].name === "No");
-
+  const getYesOption = (options) =>
+    options.find((option) => option.name == "Yes");
   const optionsSorted = options.sort((a, b) => b.probability - a.probability);
   const optionsMax5 = !!optionsSorted.slice ? optionsSorted.slice(0, 5) : []; // display max 5 options.
 
@@ -121,17 +122,17 @@ export const QuestionOptions: React.FC<{ options: Option[] }> = ({
       <div className="space-x-2">
         <span
           className={`${primaryForecastColor(
-            options[0].probability
+            getYesOption(options).probability
           )} text-white w-16 rounded-md px-1.5 py-0.5 font-bold`}
         >
-          {formatProbability(options[0].probability)}
+          {formatProbability(getYesOption(options).probability)}
         </span>
         <span
           className={`${textColor(
-            options[0].probability
+            getYesOption(options).probability
           )} text-gray-500 inline-block`}
         >
-          {primaryEstimateAsText(options[0].probability)}
+          {primaryEstimateAsText(getYesOption(options).probability)}
         </span>
       </div>
     );

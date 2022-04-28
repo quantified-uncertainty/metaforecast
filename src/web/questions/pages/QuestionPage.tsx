@@ -40,8 +40,8 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 const QuestionCardContents: React.FC<{
   question: QuestionWithHistoryFragment;
 }> = ({ question }) => (
-  <div className="space-y-4">
-    <h1>
+  <div className="grid grid-cols-1 space-y-4 place-items-center">
+    <h1 className="text-4xl place-self-center w-full text-center mt-10">
       <a
         className="text-black no-underline"
         href={question.url}
@@ -50,21 +50,31 @@ const QuestionCardContents: React.FC<{
         {question.title}
       </a>
     </h1>
-    <QuestionFooter question={question} expandFooterToFullWidth={true} />
+    <HistoryChart question={question} />
+    {/*
+        <div className="flex justify-center items-center w-full">
+      <div className="w-6/12">
+        <QuestionFooter question={question} expandFooterToFullWidth={true} />
+      </div>
+    </div>
     <QuestionOptions options={question.options} />
 
-    <ReactMarkdown linkTarget="_blank" className="font-normal">
+    */}
+
+    <h1 className="text-xl place-self-center w-full text-center mt-20">
+      {"Question description"}
+    </h1>
+
+    <ReactMarkdown linkTarget="_blank" className="font-normal w-9/12">
       {question.description}
     </ReactMarkdown>
-
-    <HistoryChart question={question} />
   </div>
 );
 
 const QuestionPage: NextPage<Props> = ({ id }) => {
   return (
     <Layout page="question">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <Card highlightOnHover={false}>
           <Query document={QuestionPageDocument} variables={{ id }}>
             {({ data }) => <QuestionCardContents question={data.result} />}

@@ -1,7 +1,15 @@
 import React from "react";
 import {
-    VictoryAxis, VictoryChart, VictoryGroup, VictoryLabel, VictoryLegend, VictoryScatter,
-    VictoryTheme, VictoryTooltip, VictoryVoronoiContainer
+  VictoryAxis,
+  VictoryChart,
+  VictoryGroup,
+  VictoryLabel,
+  VictoryLegend,
+  VictoryScatter,
+  VictoryLine,
+  VictoryTheme,
+  VictoryTooltip,
+  VictoryVoronoiContainer,
 } from "victory";
 
 import { QuestionWithHistoryFragment } from "../../fragments.generated";
@@ -48,26 +56,25 @@ const getVictoryGroup = (data, i) => {
   return (
     <VictoryGroup color={colors[i] || "darkgray"} data={dataAsXy(data)}>
       <VictoryScatter
+        name={`scatter-${i}`}
         //style={{ labels: { display: "none" } }}
         size={({ active }) => (active ? 3.75 : 3)}
         //labels={() => null}
         //labelComponent={<span></span>}
       />
 
-      {/* Doesn't work well with tooltips
-        <VictoryLine
-          name={`line${i}`}
-          //style={{ labels: { display: "none" } }}
-          //labels={() => null}
-          //labelComponent={<span></span>}
-        />
-        */}
+      <VictoryLine
+        name={`line-${i}`}
+        //style={{ labels: { display: "none" } }}
+        //labels={() => null}
+        //labelComponent={<span></span>}
+      />
     </VictoryGroup>
   );
 };
 
 export const HistoryChart: React.FC<Props> = ({ question }) => {
-  let height = 400;
+  let height = 300;
   let width = 500;
   let padding = { top: 20, bottom: 50, left: 50, right: 100 };
   // let dataSetsNames = ["Yes", "No", "Maybe", "Perhaps", "Possibly"];
@@ -78,6 +85,7 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
   });
   dataSetsNames = [...new Set(dataSetsNames)].slice(0, 5); // take the first 5
   let dataSets = [];
+  /*
   dataSetsNames.forEach((name) => {
     let newDataset = [];
     question.history.forEach((item) => {
@@ -96,112 +104,145 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
     });
     dataSets.push(newDataset);
   });
+  */
+
+  dataSetsNames.forEach((name) => {
+    let newDataset = [];
+    let previousDate = -Infinity;
+    for (let item of question.history) {
+      let relevantItemsArray = item.options.filter((x) => x.name == name);
+      let date = new Date(item.timestamp * 1000);
+      if (
+        relevantItemsArray.length == 1 &&
+        item.timestamp - previousDate > 12 * 60 * 60
+      ) {
+        let relevantItem = relevantItemsArray[0];
+        // if (relevantItem.type == "PROBABILITY") {
+        let result = {
+          date,
+          probability: relevantItem.probability,
+        };
+        newDataset.push(result);
+        // }
+        previousDate = item.timestamp;
+      }
+    }
+    dataSets.push(newDataset);
+  });
 
   let dataSetsLength = dataSets.length;
 
   return (
-    <div className="grid grid-rows-1 bg-white p-10">
-      <a
-        className="text‑inherit no-underline"
-        href={question.url}
-        target="_blank"
-      >
+    <div className="flex justify-center items-center w-full">
+      <div className="w-9/12">
+        <a
+          className="text‑inherit no-underline"
+          href={question.url}
+          target="_blank"
+        >
+          {/*
         <h1 className="text-3xl font-normal text-center mt-5">
           {question.title}
         </h1>
-      </a>
-      <VictoryChart
-        domainPadding={20}
-        padding={padding}
-        theme={VictoryTheme.material}
-        height={height}
-        width={width}
-        containerComponent={
-          <VictoryVoronoiContainer
-            labels={({ datum }) => `${datum.x}: ${Math.round(datum.y * 100)}%`}
-            labelComponent={
-              <VictoryTooltip
-                pointerLength={0}
-                dy={-12}
-                style={{
-                  fontSize: 10,
-                  fill: "black",
-                  strokeWidth: 0.05,
-                }}
-                flyoutStyle={{
-                  stroke: "black",
-                  fill: "white",
-                }}
-                flyoutWidth={80}
-                cornerRadius={0}
-                flyoutPadding={7}
-              />
-            }
-            voronoiBlacklist={
-              ["line0", "line1", "line2", "line3", "line4"]
+        */}
+        </a>
+        <VictoryChart
+          domainPadding={20}
+          padding={padding}
+          theme={VictoryTheme.material}
+          height={height}
+          width={width}
+          containerComponent={
+            <VictoryVoronoiContainer
+              labels={({ datum }) =>
+                `${datum.x}: ${Math.round(datum.y * 100)}%`
+              }
+              labelComponent={
+                <VictoryTooltip
+                  pointerLength={0}
+                  dy={-12}
+                  style={{
+                    fontSize: 10,
+                    fill: "black",
+                    strokeWidth: 0.05,
+                  }}
+                  flyoutStyle={{
+                    stroke: "black",
+                    fill: "white",
+                  }}
+                  flyoutWidth={80}
+                  cornerRadius={0}
+                  flyoutPadding={7}
+                />
+              }
+              voronoiBlacklist={
+                ["line-0", "line-1", "line-2", "line-3", "line-4"]
 
-              //Array.from(Array(5).keys()).map((x, i) => `line${i}`)
-              // see: https://github.com/FormidableLabs/victory/issues/545
-            }
-          />
-        }
-        domain={{
-          y: [0, 1],
-        }}
-      >
-        <VictoryLegend
-          x={width - 100}
-          y={height / 2 - 18 - (dataSetsLength - 1) * 13}
-          orientation="vertical"
-          gutter={20}
-          style={{ border: { stroke: "black" }, title: { fontSize: 20 } }}
-          data={
-            Array.from(Array(dataSetsLength).keys()).map((i) => ({
-              name: dataSetsNames[i],
-              symbol: { fill: colors[i] },
-            }))
-            /*[
+                //Array.from(Array(5).keys()).map((x, i) => `line${i}`)
+                // see: https://github.com/FormidableLabs/victory/issues/545
+              }
+            />
+          }
+          domain={{
+            y: [0, 1],
+          }}
+        >
+          <VictoryLegend
+            x={width - 100}
+            y={height / 2 - 18 - (dataSetsLength - 1) * 13}
+            orientation="vertical"
+            gutter={20}
+            style={{ border: { stroke: "black" }, title: { fontSize: 20 } }}
+            data={
+              Array.from(Array(dataSetsLength).keys()).map((i) => ({
+                name: dataSetsNames[i],
+                symbol: { fill: colors[i] },
+              }))
+              /*[
             { name: "One", symbol: { fill: "tomato", type: "star" } },
             { name: "Two", symbol: { fill: "orange" } },
             { name: "Three", symbol: { fill: "gold" } },
           ]*/
-          }
-        />
+            }
+          />
 
-        {dataSets.slice(0, 5).map((dataset, i) => getVictoryGroup(dataset, i))}
-        <VictoryAxis
-          // tickValues specifies both the number of ticks and where
-          // they are placed on the axis
-          // tickValues={dataAsXy.map((datum) => datum.x)}
-          // tickFormat={dataAsXy.map((datum) => datum.x)}
-          tickCount={7}
-          style={{
-            grid: { stroke: null, strokeWidth: 0.5 },
-          }}
-          //axisLabelComponent={
-          //  <VictoryLabel dy={40} style={{ fontSize: 10, fill: "gray" }} />
-          //}
-          // label="Date (dd/mm/yy)"
-          tickLabelComponent={
-            <VictoryLabel
-              dy={0}
-              angle={-30}
-              style={{ fontSize: 10, fill: "gray" }}
-            />
-          }
-        />
-        <VictoryAxis
-          dependentAxis
-          // tickFormat specifies how ticks should be displayed
-          tickFormat={(x) => `${x * 100}%`}
-          style={{
-            grid: { stroke: "#D3D3D3", strokeWidth: 0.5 },
-          }}
-          tickLabelComponent={
-            <VictoryLabel dy={0} style={{ fontSize: 10, fill: "gray" }} />
-          }
-        />
-      </VictoryChart>
+          {dataSets
+            .slice(0, 5)
+            .map((dataset, i) => getVictoryGroup(dataset, i))}
+          <VictoryAxis
+            // tickValues specifies both the number of ticks and where
+            // they are placed on the axis
+            // tickValues={dataAsXy.map((datum) => datum.x)}
+            // tickFormat={dataAsXy.map((datum) => datum.x)}
+            tickCount={7}
+            style={{
+              grid: { stroke: null, strokeWidth: 0.5 },
+            }}
+            //axisLabelComponent={
+            //  <VictoryLabel dy={40} style={{ fontSize: 10, fill: "gray" }} />
+            //}
+            // label="Date (dd/mm/yy)"
+            tickLabelComponent={
+              <VictoryLabel
+                dy={0}
+                angle={-30}
+                style={{ fontSize: 10, fill: "gray" }}
+              />
+            }
+          />
+          <VictoryAxis
+            dependentAxis
+            // tickFormat specifies how ticks should be displayed
+            tickFormat={(x) => `${x * 100}%`}
+            style={{
+              grid: { stroke: "#D3D3D3", strokeWidth: 0.5 },
+            }}
+            tickLabelComponent={
+              <VictoryLabel dy={0} style={{ fontSize: 10, fill: "gray" }} />
+            }
+          />
+        </VictoryChart>
+      </div>
     </div>
   );
 };
