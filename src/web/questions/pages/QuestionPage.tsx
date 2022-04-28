@@ -61,7 +61,7 @@ const QuestionCardContents: React.FC<{
 
     */}
 
-    <h1 className="text-xl place-self-center w-full text-center mt-20">
+    <h1 className="pt-10 text-xl place-self-center w-full text-center ">
       {"Question description"}
     </h1>
 

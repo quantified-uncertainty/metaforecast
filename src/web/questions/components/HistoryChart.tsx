@@ -31,6 +31,25 @@ let getDate0 = (x) => {
   return date.toISOString().slice(5, 10).replaceAll("-", "/");
 };
 
+let formatOptionName = (name) => {
+  return name.length > 10 ? name.slice(0, 8) + "..." : name;
+};
+
+let getLength = (str) => {
+  let capitalLetterLengthMultiplier = 1.25;
+  let smallLetterMultiplier = 0.8;
+  let numUpper = (str.match(/[A-Z]/g) || []).length;
+  let numSmallLetters = (str.match(/[fijlrt]/g) || []).length;
+  let numSpaces = (str.match(/[\s]/g) || []).length;
+  let length =
+    str.length +
+    -numUpper -
+    numSmallLetters +
+    numUpper * capitalLetterLengthMultiplier +
+    (numSmallLetters + numSpaces) * smallLetterMultiplier;
+  return length;
+};
+
 let timestampToString = (x) => {
   // for real timestamps
   console.log(x);
@@ -49,6 +68,7 @@ let dataAsXy = (data) =>
   data.map((datum) => ({
     x: timestampToString(datum.date), //getDate(datum.date * (1000 * 60 * 60 * 24)),
     y: datum.probability,
+    name: datum.name,
   }));
 
 const colors = ["dodgerblue", "crimson", "seagreen", "darkviolet", "turquoise"];
@@ -74,10 +94,6 @@ const getVictoryGroup = (data, i) => {
 };
 
 export const HistoryChart: React.FC<Props> = ({ question }) => {
-  let height = 300;
-  let width = 500;
-  let padding = { top: 20, bottom: 50, left: 50, right: 100 };
-  // let dataSetsNames = ["Yes", "No", "Maybe", "Perhaps", "Possibly"];
   let dataSetsNames = [];
   question.history.forEach((item) => {
     let optionNames = item.options.map((option) => option.name);
@@ -85,28 +101,10 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
   });
   dataSetsNames = [...new Set(dataSetsNames)].slice(0, 5); // take the first 5
   let dataSets = [];
-  /*
-  dataSetsNames.forEach((name) => {
-    let newDataset = [];
-    question.history.forEach((item) => {
-      let relevantItemsArray = item.options.filter((x) => x.name == name);
-      let date = new Date(item.timestamp * 1000);
-      if (relevantItemsArray.length == 1) {
-        let relevantItem = relevantItemsArray[0];
-        // if (relevantItem.type == "PROBABILITY") {
-        let result = {
-          date,
-          probability: relevantItem.probability,
-        };
-        newDataset.push(result);
-        // }
-      }
-    });
-    dataSets.push(newDataset);
-  });
-  */
+  let maxProbability = 0;
+  let longestNameLength = 0;
 
-  dataSetsNames.forEach((name) => {
+  for (let name of dataSetsNames) {
     let newDataset = [];
     let previousDate = -Infinity;
     for (let item of question.history) {
@@ -121,31 +119,46 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
         let result = {
           date,
           probability: relevantItem.probability,
+          name: relevantItem.name,
         };
+        maxProbability =
+          relevantItem.probability > maxProbability
+            ? relevantItem.probability
+            : maxProbability;
+        let length = getLength(relevantItem.name);
+        longestNameLength =
+          length > longestNameLength ? length : longestNameLength;
         newDataset.push(result);
         // }
         previousDate = item.timestamp;
       }
     }
     dataSets.push(newDataset);
-  });
+  }
+  let letterLength = 7;
+  let labelLegendStart = 45;
 
+  let domainMax =
+    maxProbability < 0.5 ? Math.round(10 * (maxProbability + 0.05)) / 10 : 1;
   let dataSetsLength = dataSets.length;
+  let goldenRatio = (1 + Math.sqrt(5)) / 2;
+  let width = 750;
+  let height = width / goldenRatio;
+  let padding = {
+    top: 20,
+    bottom: 50,
+    left: 0,
+    right: labelLegendStart + letterLength * longestNameLength,
+  };
 
   return (
     <div className="flex justify-center items-center w-full">
-      <div className="w-9/12">
+      <div className="w-10/12">
         <a
           className="text‑inherit no-underline"
           href={question.url}
           target="_blank"
-        >
-          {/*
-        <h1 className="text-3xl font-normal text-center mt-5">
-          {question.title}
-        </h1>
-        */}
-        </a>
+        ></a>
         <VictoryChart
           domainPadding={20}
           padding={padding}
@@ -154,15 +167,16 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
           width={width}
           containerComponent={
             <VictoryVoronoiContainer
-              labels={({ datum }) =>
-                `${datum.x}: ${Math.round(datum.y * 100)}%`
-              }
+              labels={({ datum }) => `Not shown`}
               labelComponent={
                 <VictoryTooltip
                   pointerLength={0}
                   dy={-12}
+                  text={({ datum }) =>
+                    `${datum.name}: ${Math.round(datum.y * 100)}%`
+                  }
                   style={{
-                    fontSize: 10,
+                    fontSize: 15,
                     fill: "black",
                     strokeWidth: 0.05,
                   }}
@@ -170,40 +184,31 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
                     stroke: "black",
                     fill: "white",
                   }}
-                  flyoutWidth={80}
                   cornerRadius={0}
                   flyoutPadding={7}
                 />
               }
               voronoiBlacklist={
                 ["line-0", "line-1", "line-2", "line-3", "line-4"]
-
                 //Array.from(Array(5).keys()).map((x, i) => `line${i}`)
                 // see: https://github.com/FormidableLabs/victory/issues/545
               }
             />
           }
           domain={{
-            y: [0, 1],
+            y: [0, domainMax],
           }}
         >
           <VictoryLegend
-            x={width - 100}
+            x={width - labelLegendStart - letterLength * longestNameLength}
             y={height / 2 - 18 - (dataSetsLength - 1) * 13}
             orientation="vertical"
             gutter={20}
-            style={{ border: { stroke: "black" }, title: { fontSize: 20 } }}
-            data={
-              Array.from(Array(dataSetsLength).keys()).map((i) => ({
-                name: dataSetsNames[i],
-                symbol: { fill: colors[i] },
-              }))
-              /*[
-            { name: "One", symbol: { fill: "tomato", type: "star" } },
-            { name: "Two", symbol: { fill: "orange" } },
-            { name: "Three", symbol: { fill: "gold" } },
-          ]*/
-            }
+            style={{ border: { stroke: "black" }, labels: { fontSize: 15 } }}
+            data={Array.from(Array(dataSetsLength).keys()).map((i) => ({
+              name: dataSetsNames[i],
+              symbol: { fill: colors[i] },
+            }))}
           />
 
           {dataSets
@@ -224,9 +229,9 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
             // label="Date (dd/mm/yy)"
             tickLabelComponent={
               <VictoryLabel
-                dy={0}
+                dy={10}
                 angle={-30}
-                style={{ fontSize: 10, fill: "gray" }}
+                style={{ fontSize: 15, fill: "gray" }}
               />
             }
           />
@@ -238,7 +243,7 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
               grid: { stroke: "#D3D3D3", strokeWidth: 0.5 },
             }}
             tickLabelComponent={
-              <VictoryLabel dy={0} style={{ fontSize: 10, fill: "gray" }} />
+              <VictoryLabel dy={0} style={{ fontSize: 15, fill: "gray" }} />
             }
           />
         </VictoryChart>
