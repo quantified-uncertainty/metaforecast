@@ -1,4 +1,5 @@
 import { GetServerSideProps, NextPage } from "next";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
 import { Query } from "../../common/Query";
@@ -46,11 +47,12 @@ const QuestionCardContents: React.FC<{
   <div className="grid grid-cols-1 space-y-4 place-items-center mb-5">
     <h1 className="text-4xl place-self-center w-full text-center mt-10 pl-5 pr-5">
       <a
-        className="text-black no-underline"
+        className="text-black no-underline hover:text-gray-600"
         href={question.url}
         target="_blank"
       >
-        {question.title}
+        {question.title}{" "}
+        <FaExternalLinkAlt className="text-gray-400 inline" size="24" />
       </a>
     </h1>
     <HistoryChart question={question} />
