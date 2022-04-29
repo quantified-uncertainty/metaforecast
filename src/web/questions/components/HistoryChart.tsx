@@ -1,15 +1,7 @@
 import React from "react";
 import {
-  VictoryAxis,
-  VictoryChart,
-  VictoryGroup,
-  VictoryLabel,
-  VictoryLegend,
-  VictoryScatter,
-  VictoryLine,
-  VictoryTheme,
-  VictoryTooltip,
-  VictoryVoronoiContainer,
+    VictoryAxis, VictoryChart, VictoryGroup, VictoryLabel, VictoryLegend, VictoryLine,
+    VictoryScatter, VictoryTheme, VictoryTooltip, VictoryVoronoiContainer
 } from "victory";
 
 import { QuestionWithHistoryFragment } from "../../fragments.generated";
@@ -17,19 +9,6 @@ import { QuestionWithHistoryFragment } from "../../fragments.generated";
 interface Props {
   question: QuestionWithHistoryFragment;
 }
-
-const buildDataset = (n, fn) => {
-  return Array.from(Array(n).keys()).map((x) => ({
-    date: x,
-    probability: fn(x),
-  }));
-};
-
-let getDate0 = (x) => {
-  // for fake data
-  let date = new Date(x);
-  return date.toISOString().slice(5, 10).replaceAll("-", "/");
-};
 
 let formatOptionName = (name) => {
   return name.length > 20 ? name.slice(0, 17) + "..." : name;
@@ -166,11 +145,6 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
   return (
     <div className="flex justify-center items-center w-full">
       <div className="w-10/12">
-        <a
-          className="text‑inherit no-underline"
-          href={question.url}
-          target="_blank"
-        ></a>
         <VictoryChart
           domainPadding={20}
           padding={padding}

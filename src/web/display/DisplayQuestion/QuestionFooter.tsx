@@ -1,4 +1,5 @@
 import { QuestionFragment } from "../../fragments.generated";
+import { Stars } from "../Stars";
 
 type QualityIndicator = QuestionFragment["qualityIndicators"];
 type IndicatorName = keyof QualityIndicator;
@@ -137,69 +138,6 @@ const QualityIndicatorsList: React.FC<{
   );
 };
 
-// Database-like functions
-export function getstars(numstars: number) {
-  let stars = "★★☆☆☆";
-  switch (numstars) {
-    case 0:
-      stars = "☆☆☆☆☆";
-      break;
-    case 1:
-      stars = "★☆☆☆☆";
-      break;
-    case 2:
-      stars = "★★☆☆☆";
-      break;
-    case 3:
-      stars = "★★★☆☆";
-      break;
-    case 4:
-      stars = "★★★★☆";
-      break;
-    case 5:
-      stars = "★★★★★";
-      break;
-    default:
-      stars = "★★☆☆☆";
-  }
-  return stars;
-}
-
-function getStarsColor(numstars: number) {
-  let color = "text-yellow-400";
-  switch (numstars) {
-    case 0:
-      color = "text-red-400";
-      break;
-    case 1:
-      color = "text-red-400";
-      break;
-    case 2:
-      color = "text-orange-400";
-      break;
-    case 3:
-      color = "text-yellow-400";
-      break;
-    case 4:
-      color = "text-green-400";
-      break;
-    case 5:
-      color = "text-blue-400";
-      break;
-    default:
-      color = "text-yellow-400";
-  }
-  return color;
-}
-
-export function getStarsElement(numStars) {
-  return (
-    <div className={`self-center col-span-1 ${getStarsColor(numStars)}`}>
-      {getstars(numStars)}
-    </div>
-  );
-}
-
 interface Props {
   question: QuestionFragment;
   expandFooterToFullWidth: boolean;
@@ -215,7 +153,7 @@ export const QuestionFooter: React.FC<Props> = ({
         expandFooterToFullWidth ? "justify-between" : ""
       } text-gray-500 mb-2 mt-1`}
     >
-      {getStarsElement(question.qualityIndicators.stars)}
+      <Stars num={question.qualityIndicators.stars} />
       <div
         className={`${
           expandFooterToFullWidth ? "place-self-center" : "self-center"
