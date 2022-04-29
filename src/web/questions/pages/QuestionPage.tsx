@@ -1,21 +1,17 @@
 import { GetServerSideProps, NextPage } from "next";
 import ReactMarkdown from "react-markdown";
-import { QualityIndicatorsObj } from "../../../graphql/schema/questions";
 
 import { Query } from "../../common/Query";
 import { Card } from "../../display/Card";
+import { DisplayOneQuestionForCapture } from "../../display/DisplayOneQuestionForCapture";
 import {
-  QuestionFooter,
-  qualityIndicatorLabels,
-  formatIndicatorValue,
-  UsedIndicatorName,
-  getStarsElement,
+    formatIndicatorValue, getStarsElement, qualityIndicatorLabels, UsedIndicatorName
 } from "../../display/DisplayQuestion/QuestionFooter";
 import { Layout } from "../../display/Layout";
+import { LineHeader } from "../../display/LineHeader";
 import { QuestionWithHistoryFragment } from "../../fragments.generated";
 import { ssrUrql } from "../../urql";
 import { HistoryChart } from "../components/HistoryChart";
-import { QuestionOptions } from "../components/QuestionOptions";
 import { QuestionPageDocument } from "../queries.generated";
 
 interface Props {
@@ -164,11 +160,21 @@ const QuestionPage: NextPage<Props> = ({ id }) => {
   return (
     <Layout page="question">
       <div className="max-w-4xl mx-auto mb-5">
-        <Card highlightOnHover={false}>
-          <Query document={QuestionPageDocument} variables={{ id }}>
-            {({ data }) => <QuestionCardContents question={data.result} />}
-          </Query>
-        </Card>
+        <Query document={QuestionPageDocument} variables={{ id }}>
+          {({ data }) => (
+            <div className="space-y-8">
+              <Card highlightOnHover={false}>
+                <QuestionCardContents question={data.result} />
+              </Card>
+              <div className="space-y-4">
+                <LineHeader>
+                  <h1>Capture</h1>
+                </LineHeader>
+                <DisplayOneQuestionForCapture result={data.result} />
+              </div>
+            </div>
+          )}
+        </Query>
       </div>
     </Layout>
   );

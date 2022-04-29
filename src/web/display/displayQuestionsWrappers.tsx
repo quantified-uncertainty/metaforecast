@@ -1,4 +1,3 @@
-import { DisplayOneQuestionForCapture } from "./DisplayOneQuestionForCapture";
 import { DisplayQuestions } from "./DisplayQuestions";
 
 export function displayQuestionsWrapperForSearch({
@@ -12,19 +11,6 @@ export function displayQuestionsWrapperForSearch({
         results={results || []}
         numDisplay={numDisplay}
         showIdToggle={showIdToggle}
-      />
-    </div>
-  );
-}
-
-export function displayQuestionsWrapperForCapture({
-  results,
-  whichResultToDisplayAndCapture,
-}) {
-  return (
-    <div className="grid grid-cols-1 w-full justify-center">
-      <DisplayOneQuestionForCapture
-        result={results[whichResultToDisplayAndCapture]}
       />
     </div>
   );

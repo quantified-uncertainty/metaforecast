@@ -52,19 +52,19 @@ const ToolsPage: NextPage = () => {
       title: "Search",
       description: "Find forecasting questions on many platforms.",
       innerLink: "/",
-      img: "https://i.imgur.com/Q94gVqG.png",
+      img: "/screenshots/frontpage.png",
     },
     {
       title: "[Beta] Present",
       description: "Present forecasts in dashboards.",
       innerLink: "/dashboards",
-      img: "https://i.imgur.com/x8qkuHQ.png",
+      img: "/screenshots/dashboard.png",
     },
     {
       title: "Capture",
       description:
-        "Capture forecasts save them to Imgur. Useful for posting them somewhere else as images. Currently rate limited by Imgur, so if you get a .gif of a fox falling flat on his face, that's why.",
-      innerLink: "/capture",
+        "Capture forecasts save them to Imgur. Useful for posting them somewhere else as images. Currently rate limited by Imgur, so if you get a .gif of a fox falling flat on his face, that's why. Capture button can be found on individual questions pages.",
+      innerLink: "/",
       img: "https://i.imgur.com/EXkFBzz.png",
     },
     {
@@ -75,9 +75,10 @@ const ToolsPage: NextPage = () => {
       img: "https://i.imgur.com/BQ4Zzjw.png",
     },
     {
-      title: "[Upcoming] Request",
+      title: "[Beta] Request",
       description:
-        "Interact with metaforecast's API and fetch forecasts for your application. Currently possible but documentation is poor, get in touch.",
+        "Interact with metaforecast's GraphQL API and fetch forecasts for your application. Currently possible but documentation is poor, get in touch.",
+      externalLink: "/api/graphql",
     },
     {
       title: "[Upcoming] Record",
