@@ -113,7 +113,13 @@ export const QuestionObj = builder.prismaObject("Question", {
       resolve: (parent) => (parent.extra as any)?.visualization, // used for guesstimate only, see searchGuesstimate.ts
       nullable: true,
     }),
-    history: t.relation("history", {}),
+    history: t.relation("history", {
+      query: () => ({
+        orderBy: {
+          timestamp: "asc",
+        },
+      }),
+    }),
   }),
 });
 
