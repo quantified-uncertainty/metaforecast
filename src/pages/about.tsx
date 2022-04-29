@@ -31,10 +31,12 @@ Also note that, whatever other redeeming features they might have, prediction ma
 const AboutPage: NextPage = () => {
   return (
     <Layout page="about">
-      <Card highlightOnHover={false}>
-        <div className="p-4">
-          <ReactMarkdown remarkPlugins={[gfm]} children={readmeMarkdownText} />
-        </div>
+      <Card highlightOnHover={false} large={true}>
+        <ReactMarkdown
+          remarkPlugins={[gfm]}
+          children={readmeMarkdownText}
+          className="max-w-prose mx-auto"
+        />
       </Card>
     </Layout>
   );

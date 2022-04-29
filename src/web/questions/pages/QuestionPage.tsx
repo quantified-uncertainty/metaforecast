@@ -5,15 +5,12 @@ import ReactMarkdown from "react-markdown";
 import { Query } from "../../common/Query";
 import { Card } from "../../display/Card";
 import { DisplayOneQuestionForCapture } from "../../display/DisplayOneQuestionForCapture";
-import {
-    formatIndicatorValue, qualityIndicatorLabels, UsedIndicatorName
-} from "../../display/DisplayQuestion/QuestionFooter";
 import { Layout } from "../../display/Layout";
 import { LineHeader } from "../../display/LineHeader";
-import { Stars } from "../../display/Stars";
 import { QuestionWithHistoryFragment } from "../../fragments.generated";
 import { ssrUrql } from "../../urql";
 import { HistoryChart } from "../components/HistoryChart";
+import { IndicatorsTable } from "../components/IndicatorsTable";
 import { QuestionPageDocument } from "../queries.generated";
 
 interface Props {
@@ -42,11 +39,18 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   };
 };
 
+const Section: React.FC<{ title: string }> = ({ title, children }) => (
+  <div className="space-y-4 flex flex-col items-center">
+    <h2 className="text-xl text-gray-900">{title}</h2>
+    <div>{children}</div>
+  </div>
+);
+
 const QuestionCardContents: React.FC<{
   question: QuestionWithHistoryFragment;
 }> = ({ question }) => (
-  <div className="grid grid-cols-1 space-y-4 place-items-center">
-    <h1 className="text-4xl place-self-center w-full text-center mt-10 pl-5 pr-5">
+  <div className="flex flex-col space-y-8 items-center pt-5">
+    <h1 className="sm:text-4xl text-2xl text-center">
       <a
         className="text-black no-underline hover:text-gray-600"
         href={question.url}
@@ -56,106 +60,33 @@ const QuestionCardContents: React.FC<{
         <FaExternalLinkAlt className="text-gray-400 inline" size="24" />
       </a>
     </h1>
-    <HistoryChart question={question} />
-
-    <h2 className="pt-10 text-xl place-self-center w-full text-center text-gray-900">
-      Question description
-    </h2>
-    <ReactMarkdown
-      linkTarget="_blank"
-      className="font-normal text-gray-900 w-9/12"
-    >
-      {question.description.replaceAll("---", "")}
-    </ReactMarkdown>
-
-    <h2 className="pt-2 text-xl place-self-center w-full text-center text-gray-900">
-      Indicators
-    </h2>
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-      <table className="w-full text-sm text-left text-gray-500">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-100">
-          <tr>
-            <th scope="col" className="px-6 py-3">
-              Indicator
-            </th>
-            <th scope="col" className="px-6 py-3">
-              Value
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr className="border-b">
-            <th
-              scope="row"
-              className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-            >
-              Stars
-            </th>
-            <td className="px-6 py-4">
-              <Stars num={question.qualityIndicators.stars} />
-            </td>
-          </tr>
-          <tr className="border-b">
-            <th
-              scope="row"
-              className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-            >
-              Platform
-            </th>
-            <td className="px-6 py-4">{question.platform.label}</td>
-          </tr>
-          {question.qualityIndicators.numForecasts ? (
-            <tr className="border-b">
-              <th
-                scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-              >
-                Number of forecasts
-              </th>
-              <td className="px-6 py-4">
-                {question.qualityIndicators.numForecasts}
-              </td>
-            </tr>
-          ) : null}
-          {Object.keys(question.qualityIndicators)
-            .filter(
-              (indicator) =>
-                question.qualityIndicators[indicator] != null &&
-                !!qualityIndicatorLabels[indicator]
-            )
-            .map((indicator: UsedIndicatorName) => {
-              return (
-                <tr className="bg-white border-b" key={indicator}>
-                  <th
-                    scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                  >
-                    {qualityIndicatorLabels[indicator]}
-                  </th>
-                  <td className="px-6 py-4">
-                    {formatIndicatorValue(
-                      question.qualityIndicators[indicator],
-                      indicator,
-                      question.platform.id
-                    )}
-                  </td>
-                </tr>
-              );
-            })}
-        </tbody>
-      </table>
+    <div className="max-w-3xl">
+      <HistoryChart question={question} />
     </div>
+
+    <Section title="Question description">
+      <ReactMarkdown
+        linkTarget="_blank"
+        className="font-normal text-gray-900 max-w-prose"
+      >
+        {question.description.replaceAll("---", "")}
+      </ReactMarkdown>
+    </Section>
+
+    <Section title="Indicators">
+      <IndicatorsTable question={question} />
+    </Section>
   </div>
 );
 
 const QuestionPage: NextPage<Props> = ({ id }) => {
   return (
     <Layout page="question">
-      <div className="max-w-4xl mx-auto mb-5">
+      <div className="max-w-4xl mx-auto">
         <Query document={QuestionPageDocument} variables={{ id }}>
           {({ data }) => (
             <div className="space-y-8">
-              <Card highlightOnHover={false}>
+              <Card highlightOnHover={false} large={true}>
                 <QuestionCardContents question={data.result} />
               </Card>
               <div className="space-y-4">

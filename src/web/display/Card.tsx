@@ -4,17 +4,22 @@ const CardTitle: React.FC = ({ children }) => (
 
 interface Props {
   highlightOnHover?: boolean;
+  large?: boolean;
 }
 
 type CardType = React.FC<Props> & {
   Title: typeof CardTitle;
 };
 
-export const Card: CardType = ({ children, highlightOnHover = true }) => (
+export const Card: CardType = ({
+  children,
+  large = false,
+  highlightOnHover = true,
+}) => (
   <div
-    className={`h-full px-4 py-3 bg-white rounded-md shadow ${
+    className={`h-full bg-white rounded-md shadow ${
       highlightOnHover ? "hover:bg-gray-100" : ""
-    }`}
+    } ${large ? "p-5 sm:p-10" : "px-4 py-3"}`}
   >
     {children}
   </div>

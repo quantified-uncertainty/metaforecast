@@ -143,94 +143,88 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
   }));
 
   return (
-    <div className="flex justify-center items-center w-full">
-      <div className="w-10/12">
-        <VictoryChart
-          domainPadding={20}
-          padding={padding}
-          theme={VictoryTheme.material}
-          height={height}
-          width={width}
-          containerComponent={
-            <VictoryVoronoiContainer
-              labels={({ datum }) => `Not shown`}
-              labelComponent={
-                <VictoryTooltip
-                  pointerLength={0}
-                  dy={-12}
-                  text={({ datum }) =>
-                    `${datum.name}: ${Math.round(datum.y * 100)}%`
-                  }
-                  style={{
-                    fontSize: 15,
-                    fill: "black",
-                    strokeWidth: 0.05,
-                  }}
-                  flyoutStyle={{
-                    stroke: "black",
-                    fill: "white",
-                  }}
-                  cornerRadius={0}
-                  flyoutPadding={7}
-                />
+    <VictoryChart
+      domainPadding={20}
+      padding={padding}
+      theme={VictoryTheme.material}
+      height={height}
+      width={width}
+      containerComponent={
+        <VictoryVoronoiContainer
+          labels={({ datum }) => `Not shown`}
+          labelComponent={
+            <VictoryTooltip
+              pointerLength={0}
+              dy={-12}
+              text={({ datum }) =>
+                `${datum.name}: ${Math.round(datum.y * 100)}%`
               }
-              voronoiBlacklist={
-                ["line-0", "line-1", "line-2", "line-3", "line-4"]
-                //Array.from(Array(5).keys()).map((x, i) => `line${i}`)
-                // see: https://github.com/FormidableLabs/victory/issues/545
-              }
+              style={{
+                fontSize: 15,
+                fill: "black",
+                strokeWidth: 0.05,
+              }}
+              flyoutStyle={{
+                stroke: "black",
+                fill: "white",
+              }}
+              cornerRadius={0}
+              flyoutPadding={7}
             />
           }
-          domain={{
-            y: [0, domainMax],
-          }}
-        >
-          <VictoryLegend
-            x={width - labelLegendStart - letterLength * longestNameLength}
-            y={height / 2 - 18 - (dataSetsLength - 1) * 13}
-            orientation="vertical"
-            gutter={20}
-            style={{ border: { stroke: "white" }, labels: { fontSize: 15 } }}
-            data={legendData}
-          />
+          voronoiBlacklist={
+            ["line-0", "line-1", "line-2", "line-3", "line-4"]
+            //Array.from(Array(5).keys()).map((x, i) => `line${i}`)
+            // see: https://github.com/FormidableLabs/victory/issues/545
+          }
+        />
+      }
+      domain={{
+        y: [0, domainMax],
+      }}
+    >
+      <VictoryLegend
+        x={width - labelLegendStart - letterLength * longestNameLength}
+        y={height / 2 - 18 - (dataSetsLength - 1) * 13}
+        orientation="vertical"
+        gutter={20}
+        style={{ border: { stroke: "white" }, labels: { fontSize: 15 } }}
+        data={legendData}
+      />
 
-          {dataSets
-            .slice(0, 5)
-            .map((dataset, i) => getVictoryGroup(dataset, i))}
-          <VictoryAxis
-            // tickValues specifies both the number of ticks and where
-            // they are placed on the axis
-            // tickValues={dataAsXy.map((datum) => datum.x)}
-            // tickFormat={dataAsXy.map((datum) => datum.x)}
-            tickCount={7}
-            style={{
-              grid: { stroke: null, strokeWidth: 0.5 },
-            }}
-            //axisLabelComponent={
-            //  <VictoryLabel dy={40} style={{ fontSize: 10, fill: "gray" }} />
-            //}
-            // label="Date (dd/mm/yy)"
-            tickLabelComponent={
-              <VictoryLabel
-                dy={10}
-                angle={-30}
-                style={{ fontSize: 15, fill: "gray" }}
-              />
-            }
+      {dataSets.slice(0, 5).map((dataset, i) => getVictoryGroup(dataset, i))}
+      <VictoryAxis
+        // tickValues specifies both the number of ticks and where
+        // they are placed on the axis
+        // tickValues={dataAsXy.map((datum) => datum.x)}
+        // tickFormat={dataAsXy.map((datum) => datum.x)}
+        tickCount={7}
+        style={{
+          grid: { stroke: null, strokeWidth: 0.5 },
+        }}
+        //axisLabelComponent={
+        //  <VictoryLabel dy={40} style={{ fontSize: 10, fill: "gray" }} />
+        //}
+        // label="Date (dd/mm/yy)"
+        tickLabelComponent={
+          <VictoryLabel
+            dy={10}
+            angle={-30}
+            style={{ fontSize: 15, fill: "gray" }}
           />
-          <VictoryAxis
-            dependentAxis
-            // tickFormat specifies how ticks should be displayed
-            tickFormat={(x) => `${x * 100}%`}
-            style={{
-              grid: { stroke: "#D3D3D3", strokeWidth: 0.5 },
-            }}
-            tickLabelComponent={
-              <VictoryLabel dy={0} style={{ fontSize: 15, fill: "gray" }} />
-            }
-          />
-        </VictoryChart>
-      </div>
-    </div>
+        }
+      />
+      <VictoryAxis
+        dependentAxis
+        // tickFormat specifies how ticks should be displayed
+        tickFormat={(x) => `${x * 100}%`}
+        style={{
+          grid: { stroke: "#D3D3D3", strokeWidth: 0.5 },
+        }}
+        tickLabelComponent={
+          <VictoryLabel dy={0} style={{ fontSize: 15, fill: "gray" }} />
+        }
+      />
+    </VictoryChart>
   );
 };

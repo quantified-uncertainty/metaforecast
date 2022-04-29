@@ -151,7 +151,7 @@ export const Layout: React.FC<Props> = ({ page, children }) => {
         </nav>
         <main>
           <ErrorBoundary>
-            <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5">
+            <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 mb-10">
               {children}
             </div>
           </ErrorBoundary>
