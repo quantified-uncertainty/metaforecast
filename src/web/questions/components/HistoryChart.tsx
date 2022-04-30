@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import React from "react";
 import {
     VictoryAxis, VictoryChart, VictoryGroup, VictoryLabel, VictoryLegend, VictoryLine,
@@ -10,17 +11,18 @@ interface Props {
   question: QuestionWithHistoryFragment;
 }
 
-let formatOptionName = (name) => {
+let formatOptionName = (name: string) => {
   return name.length > 20 ? name.slice(0, 17) + "..." : name;
 };
 
-let getLength = (str) => {
-  let capitalLetterLengthMultiplier = 1.25;
-  let smallLetterMultiplier = 0.8;
-  let numUpper = (str.match(/[A-Z]/g) || []).length;
-  let numSmallLetters = (str.match(/[fijlrt]/g) || []).length;
-  let numSpaces = (str.match(/[\s]/g) || []).length;
-  let length =
+let getLength = (str: string): number => {
+  // TODO - measure with temporary DOM element instead?
+  const capitalLetterLengthMultiplier = 1.25;
+  const smallLetterMultiplier = 0.8;
+  const numUpper = (str.match(/[A-Z]/g) || []).length;
+  const numSmallLetters = (str.match(/[fijlrt]/g) || []).length;
+  const numSpaces = (str.match(/[\s]/g) || []).length;
+  const length =
     str.length +
     -numUpper -
     numSmallLetters +
@@ -29,78 +31,58 @@ let getLength = (str) => {
   return length;
 };
 
-let timestampToString = (x) => {
-  // for real timestamps
-  // console.log(x);
-  let date = new Date(Date.parse(x));
-  let dayOfMonth = date.getDate();
-  let month = date.getMonth() + 1;
-  let year = date.getFullYear();
-  let dateString = `${("0" + dayOfMonth).slice(-2)}/${("0" + month).slice(
-    -2
-  )}/${year.toString().slice(-2)}`;
-  // console.log(dateString);
-  return dateString;
-};
+type DataSet = { date: Date; probability: number; name: string }[];
 
-let dataAsXy = (data) =>
+const dataAsXy = (data: DataSet) =>
   data.map((datum) => ({
-    x: timestampToString(datum.date), //getDate(datum.date * (1000 * 60 * 60 * 24)),
+    x: format(datum.date, "yyyy-MM-dd"),
     y: datum.probability,
     name: datum.name,
   }));
 
 const colors = ["dodgerblue", "crimson", "seagreen", "darkviolet", "turquoise"];
-const getVictoryGroup = (data, i) => {
+// can't be replaced with React component, VictoryChar requires VictoryGroup elements to be immediate children
+const getVictoryGroup = ({ data, i }: { data: DataSet; i: number }) => {
   return (
-    <VictoryGroup color={colors[i] || "darkgray"} data={dataAsXy(data)}>
+    <VictoryGroup color={colors[i] || "darkgray"} data={dataAsXy(data)} key={i}>
       <VictoryScatter
         name={`scatter-${i}`}
-        //style={{ labels: { display: "none" } }}
         size={({ active }) => (active ? 3.75 : 3)}
-        //labels={() => null}
-        //labelComponent={<span></span>}
       />
 
-      <VictoryLine
-        name={`line-${i}`}
-        //style={{ labels: { display: "none" } }}
-        //labels={() => null}
-        //labelComponent={<span></span>}
-      />
+      <VictoryLine name={`line-${i}`} />
     </VictoryGroup>
   );
 };
 
 export const HistoryChart: React.FC<Props> = ({ question }) => {
-  let dataSetsNames = [];
+  let dataSetsNames: string[] = [];
   question.history.forEach((item) => {
     let optionNames = item.options.map((option) => option.name);
     dataSetsNames.push(...optionNames);
   });
   dataSetsNames = [...new Set(dataSetsNames)].slice(0, 5); // take the first 5
-  let isBinary =
-    (dataSetsNames[0] == "Yes" && dataSetsNames[1] == "No") ||
-    (dataSetsNames[0] == "No" && dataSetsNames[1] == "Yes");
+  const isBinary =
+    (dataSetsNames[0] === "Yes" && dataSetsNames[1] === "No") ||
+    (dataSetsNames[0] === "No" && dataSetsNames[1] === "Yes");
   if (isBinary) {
     dataSetsNames = ["Yes"];
   }
-  let dataSets = [];
+  let dataSets: DataSet[] = [];
   let maxProbability = 0;
   let longestNameLength = 0;
 
-  for (let name of dataSetsNames) {
-    let newDataset = [];
+  for (const name of dataSetsNames) {
+    let newDataset: DataSet = [];
     let previousDate = -Infinity;
     for (let item of question.history) {
-      let relevantItemsArray = item.options.filter((x) => x.name == name);
-      let date = new Date(item.timestamp * 1000);
+      const relevantItemsArray = item.options.filter((x) => x.name === name);
+      const date = new Date(item.timestamp * 1000);
       if (
         relevantItemsArray.length == 1 &&
         item.timestamp - previousDate > 12 * 60 * 60
       ) {
         let relevantItem = relevantItemsArray[0];
-        // if (relevantItem.type == "PROBABILITY") {
         let result = {
           date,
           probability: relevantItem.probability,
@@ -110,34 +92,33 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
           relevantItem.probability > maxProbability
             ? relevantItem.probability
             : maxProbability;
-        let length = getLength(relevantItem.name);
+        let length = getLength(formatOptionName(relevantItem.name));
         longestNameLength =
           length > longestNameLength ? length : longestNameLength;
         newDataset.push(result);
-        // }
         previousDate = item.timestamp;
       }
     }
     dataSets.push(newDataset);
   }
 
-  let letterLength = 7;
-  let labelLegendStart = 45;
+  const letterLength = 7;
+  const labelLegendStart = 45;
 
-  let domainMax =
+  const domainMax =
     maxProbability < 0.5 ? Math.round(10 * (maxProbability + 0.05)) / 10 : 1;
-  let dataSetsLength = dataSets.length;
-  let goldenRatio = (1 + Math.sqrt(5)) / 2;
-  let width = 750;
-  let height = width / goldenRatio;
-  let padding = {
+  const dataSetsLength = dataSets.length;
+  const goldenRatio = (1 + Math.sqrt(5)) / 2;
+  const width = 750;
+  const height = width / goldenRatio;
+  const padding = {
     top: 20,
     bottom: 50,
     left: 60,
     right: labelLegendStart + letterLength * longestNameLength,
   };
 
-  let legendData = Array.from(Array(dataSetsLength).keys()).map((i) => ({
+  const legendData = Array.from(Array(dataSetsLength).keys()).map((i) => ({
     name: formatOptionName(dataSetsNames[i]),
     symbol: { fill: colors[i] },
   }));
@@ -154,6 +135,7 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
           labels={({ datum }) => `Not shown`}
           labelComponent={
             <VictoryTooltip
+              constrainToVisibleArea
               pointerLength={0}
               dy={-12}
               text={({ datum }) =>
@@ -192,7 +174,9 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
         data={legendData}
       />
 
-      {dataSets.slice(0, 5).map((dataset, i) => getVictoryGroup(dataset, i))}
+      {dataSets
+        .slice(0, 5)
+        .map((dataset, i) => getVictoryGroup({ data: dataset, i }))}
       <VictoryAxis
         // tickValues specifies both the number of ticks and where
         // they are placed on the axis
@@ -205,7 +189,6 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
         //axisLabelComponent={
         //  <VictoryLabel dy={40} style={{ fontSize: 10, fill: "gray" }} />
         //}
-        // label="Date (dd/mm/yy)"
         tickLabelComponent={
           <VictoryLabel
             dy={10}

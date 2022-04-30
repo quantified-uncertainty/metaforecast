@@ -40,7 +40,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 };
 
 const Section: React.FC<{ title: string }> = ({ title, children }) => (
-  <div className="space-y-4 flex flex-col items-center">
+  <div className="space-y-2 flex flex-col items-center">
     <h2 className="text-xl text-gray-900">{title}</h2>
     <div>{children}</div>
   </div>
@@ -49,7 +49,7 @@ const Section: React.FC<{ title: string }> = ({ title, children }) => (
 const QuestionCardContents: React.FC<{
   question: QuestionWithHistoryFragment;
 }> = ({ question }) => (
-  <div className="flex flex-col space-y-8 items-center pt-5">
+  <div className="flex flex-col space-y-4 items-center">
     <h1 className="sm:text-4xl text-2xl text-center">
       <a
         className="text-black no-underline hover:text-gray-600"
