@@ -56,12 +56,11 @@ const getVictoryGroup = ({ data, i }: { data: DataSet; i: number }) => {
 };
 
 export const HistoryChart: React.FC<Props> = ({ question }) => {
-  let dataSetsNames: string[] = [];
-  question.history.forEach((item) => {
-    let optionNames = item.options.map((option) => option.name);
-    dataSetsNames.push(...optionNames);
-  });
+  let dataSetsNames = question.options
+    .sort((a, b) => (a.probability < b.probability ? -1 : 1))
+    .map((o) => o.name);
   dataSetsNames = [...new Set(dataSetsNames)].slice(0, 5); // take the first 5
+
   const isBinary =
     (dataSetsNames[0] === "Yes" && dataSetsNames[1] === "No") ||
     (dataSetsNames[0] === "No" && dataSetsNames[1] === "Yes");
