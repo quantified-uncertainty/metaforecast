@@ -19,11 +19,14 @@ export async function getFrontpage(): Promise<Question[]> {
 export async function rebuildFrontpage() {
   await measureTime(async () => {
     const rows = await prisma.$queryRaw<{ id: string }[]>`
-      SELECT id FROM questions
+      SELECT questions.id FROM questions, history
       WHERE
-        (qualityindicators->>'stars')::int >= 3
-        AND description != ''
-        AND JSONB_ARRAY_LENGTH(options) > 0
+        questions.id = history.id
+        AND (questions.qualityindicators->>'stars')::int >= 3
+        AND questions.description != ''
+        AND JSONB_ARRAY_LENGTH(questions.options) > 0
+      GROUP BY questions.id
+      HAVING COUNT(DISTINCT history.timestamp) >= 7
       ORDER BY RANDOM() LIMIT 50
     `;
 

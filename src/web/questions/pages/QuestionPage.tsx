@@ -4,11 +4,11 @@ import ReactMarkdown from "react-markdown";
 
 import { Query } from "../../common/Query";
 import { Card } from "../../display/Card";
-import { DisplayOneQuestionForCapture } from "../../display/DisplayOneQuestionForCapture";
 import { Layout } from "../../display/Layout";
 import { LineHeader } from "../../display/LineHeader";
 import { QuestionWithHistoryFragment } from "../../fragments.generated";
 import { ssrUrql } from "../../urql";
+import { CaptureQuestion } from "../components/CaptureQuestion";
 import { HistoryChart } from "../components/HistoryChart";
 import { IndicatorsTable } from "../components/IndicatorsTable";
 import { QuestionPageDocument } from "../queries.generated";
@@ -93,7 +93,7 @@ const QuestionPage: NextPage<Props> = ({ id }) => {
                 <LineHeader>
                   <h1>Capture</h1>
                 </LineHeader>
-                <DisplayOneQuestionForCapture result={data.result} />
+                <CaptureQuestion question={data.result} />
               </div>
             </div>
           )}

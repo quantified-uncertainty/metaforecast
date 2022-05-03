@@ -5,7 +5,7 @@ import { QuestionFragment } from "../fragments.generated";
 import { ssrUrql } from "../urql";
 import { FrontpageDocument, SearchDocument } from "./queries.generated";
 
-/* Common code for / and /capture */
+/* Common code for / and /capture (/capture is deprecated, TODO - refactor) */
 
 export interface QueryParameters {
   query: string;

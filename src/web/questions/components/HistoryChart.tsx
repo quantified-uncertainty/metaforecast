@@ -41,7 +41,7 @@ const dataAsXy = (data: DataSet) =>
   }));
 
 const colors = ["dodgerblue", "crimson", "seagreen", "darkviolet", "turquoise"];
-// can't be replaced with React component, VictoryChar requires VictoryGroup elements to be immediate children
+// can't be replaced with React component, VictoryChart requires VictoryGroup elements to be immediate children
 const getVictoryGroup = ({ data, i }: { data: DataSet; i: number }) => {
   return (
     <VictoryGroup color={colors[i] || "darkgray"} data={dataAsXy(data)} key={i}>

@@ -1,8 +1,7 @@
-// import fetch from "fetch"
 import axios, { AxiosRequestConfig } from "axios";
 
-export async function uploadToImgur(dataURL, handleGettingImgurlImage) {
-  let request: AxiosRequestConfig = {
+export async function uploadToImgur(dataURL: string): Promise<string> {
+  const request: AxiosRequestConfig = {
     method: "post",
     url: "https://api.imgur.com/3/image",
     headers: {
@@ -12,18 +11,15 @@ export async function uploadToImgur(dataURL, handleGettingImgurlImage) {
       type: "base64",
       image: dataURL.split(",")[1],
     },
-    // redirect: "follow",
   };
-  let url;
+
+  let url = "https://i.imgur.com/qcThRRz.gif"; // Error image
   try {
-    let response = await axios(request).then((response) => response.data);
-    // console.log(dataURL)
-    // console.log(response)
+    const response = await axios(request).then((response) => response.data);
     url = `https://i.imgur.com/${response.data.id}.png`;
   } catch (error) {
     console.log("error", error);
   }
-  let errorImageURL = "https://i.imgur.com/qcThRRz.gif"; // Error image
-  url = url || errorImageURL;
-  handleGettingImgurlImage(url);
+
+  return url;
 }
