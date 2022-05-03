@@ -57,7 +57,7 @@ const getVictoryGroup = ({ data, i }: { data: DataSet; i: number }) => {
 
 export const HistoryChart: React.FC<Props> = ({ question }) => {
   let dataSetsNames = question.options
-    .sort((a, b) => (a.probability < b.probability ? -1 : 1))
+    .sort((a, b) => (a.probability > b.probability ? -1 : 1))
     .map((o) => o.name);
   dataSetsNames = [...new Set(dataSetsNames)].slice(0, 5); // take the first 5
 
