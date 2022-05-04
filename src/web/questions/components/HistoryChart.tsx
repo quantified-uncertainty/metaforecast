@@ -13,11 +13,11 @@ interface Props {
   question: QuestionWithHistoryFragment;
 }
 
-let formatOptionName = (name: string) => {
+const formatOptionName = (name: string) => {
   return name.length > 20 ? name.slice(0, 17) + "..." : name;
 };
 
-let getLength = (str: string): number => {
+const getLength = (str: string): number => {
   // TODO - measure with temporary DOM element instead?
   const capitalLetterLengthMultiplier = 1.25;
   const smallLetterMultiplier = 0.8;
@@ -33,21 +33,14 @@ let getLength = (str: string): number => {
   return length;
 };
 
-type DataSet = { date: Date; probability: number; name: string }[];
-
-const dataAsXy = (data: DataSet) =>
-  data.map((datum) => ({
-    x: datum.date,
-    y: datum.probability,
-    name: datum.name,
-  }));
+type DataSet = { x: Date; y: number; name: string }[];
 
 const colors = ["dodgerblue", "crimson", "seagreen", "darkviolet", "turquoise"];
 
 // can't be replaced with React component, VictoryChart requires VictoryGroup elements to be immediate children
 const getVictoryGroup = ({ data, i }: { data: DataSet; i: number }) => {
   return (
-    <VictoryGroup color={colors[i] || "darkgray"} data={dataAsXy(data)} key={i}>
+    <VictoryGroup color={colors[i] || "darkgray"} data={data} key={i}>
       <VictoryScatter
         name={`scatter-${i}`}
         size={({ active }) => (active ? 3.75 : 3)}
@@ -86,13 +79,13 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
       const relevantItemsArray = item.options.filter((x) => x.name === name);
       const date = new Date(item.timestamp * 1000);
       if (
-        relevantItemsArray.length == 1 &&
+        relevantItemsArray.length === 1 &&
         item.timestamp - previousDate > 12 * 60 * 60
       ) {
         let relevantItem = relevantItemsArray[0];
-        let result = {
-          date,
-          probability: relevantItem.probability,
+        const result = {
+          x: date,
+          y: relevantItem.probability,
           name: relevantItem.name,
         };
         maxProbability =
@@ -157,22 +150,43 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
               constrainToVisibleArea
               pointerLength={0}
               dy={-12}
+              labelComponent={
+                <VictoryLabel
+                  style={[
+                    {
+                      fontSize: 16,
+                      fill: "black",
+                      strokeWidth: 0.05,
+                    },
+                    {
+                      fontSize: 16,
+                      fill: "#777",
+                      strokeWidth: 0.05,
+                    },
+                  ]}
+                />
+              }
               text={({ datum }) =>
-                `${datum.name}: ${Math.round(datum.y * 100)}%`
+                `${datum.name}: ${Math.round(datum.y * 100)}%\n${format(
+                  datum.x,
+                  "yyyy-MM-dd"
+                )}`
               }
               style={{
-                fontSize: 15,
-                fill: "black",
-                strokeWidth: 0.05,
+                fontSize: 16, // needs to be set here and not just in labelComponent for text size calculations
+                fontFamily:
+                  '"Gill Sans", "Gill Sans MT", "Ser­avek", "Trebuchet MS", sans-serif',
+                // default font family from Victory, need to be specified explicitly for some reason, otherwise text size gets miscalculated
               }}
               flyoutStyle={{
-                stroke: "black",
+                stroke: "#999",
                 fill: "white",
               }}
-              cornerRadius={0}
-              flyoutPadding={7}
+              cornerRadius={4}
+              flyoutPadding={{ top: 4, bottom: 4, left: 12, right: 12 }}
             />
           }
+          radius={50}
           voronoiBlacklist={
             [...Array(5).keys()].map((i) => `line-${i}`)
             // see: https://github.com/FormidableLabs/victory/issues/545
@@ -209,7 +223,7 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
           <VictoryLabel
             dy={10}
             angle={-30}
-            style={{ fontSize: 15, fill: "gray" }}
+            style={{ fontSize: 15, fill: "#777" }}
           />
         }
         scale={{ x: "time" }}
@@ -221,7 +235,7 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
           grid: { stroke: "#D3D3D3", strokeWidth: 0.5 },
         }}
         tickLabelComponent={
-          <VictoryLabel dy={0} style={{ fontSize: 15, fill: "gray" }} />
+          <VictoryLabel dy={0} style={{ fontSize: 15, fill: "#777" }} />
         }
         // tickFormat specifies how ticks should be displayed
         tickFormat={(x) => `${x * 100}%`}
