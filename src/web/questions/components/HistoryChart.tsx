@@ -1,4 +1,6 @@
-import { format } from "date-fns";
+import {
+    addDays, differenceInDays, format, startOfDay, startOfToday, startOfTomorrow
+} from "date-fns";
 import React from "react";
 import {
     VictoryAxis, VictoryChart, VictoryGroup, VictoryLabel, VictoryLegend, VictoryLine,
@@ -35,12 +37,13 @@ type DataSet = { date: Date; probability: number; name: string }[];
 
 const dataAsXy = (data: DataSet) =>
   data.map((datum) => ({
-    x: format(datum.date, "yyyy-MM-dd"),
+    x: datum.date,
     y: datum.probability,
     name: datum.name,
   }));
 
 const colors = ["dodgerblue", "crimson", "seagreen", "darkviolet", "turquoise"];
+
 // can't be replaced with React component, VictoryChart requires VictoryGroup elements to be immediate children
 const getVictoryGroup = ({ data, i }: { data: DataSet; i: number }) => {
   return (
@@ -67,14 +70,19 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
   if (isBinary) {
     dataSetsNames = ["Yes"];
   }
+
   let dataSets: DataSet[] = [];
   let maxProbability = 0;
   let longestNameLength = 0;
 
+  const sortedHistory = question.history.sort((a, b) =>
+    a.timestamp < b.timestamp ? -1 : 1
+  );
+
   for (const name of dataSetsNames) {
     let newDataset: DataSet = [];
     let previousDate = -Infinity;
-    for (let item of question.history) {
+    for (let item of sortedHistory) {
       const relevantItemsArray = item.options.filter((x) => x.name === name);
       const date = new Date(item.timestamp * 1000);
       if (
@@ -122,6 +130,18 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
     symbol: { fill: colors[i] },
   }));
 
+  const minDate = sortedHistory.length
+    ? startOfDay(new Date(sortedHistory[0].timestamp * 1000))
+    : startOfToday();
+  const maxDate = sortedHistory.length
+    ? addDays(
+        startOfDay(
+          new Date(sortedHistory[sortedHistory.length - 1].timestamp * 1000)
+        ),
+        1
+      )
+    : startOfTomorrow();
+
   return (
     <VictoryChart
       domainPadding={20}
@@ -131,7 +151,7 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
       width={width}
       containerComponent={
         <VictoryVoronoiContainer
-          labels={({ datum }) => `Not shown`}
+          labels={() => "Not shown"}
           labelComponent={
             <VictoryTooltip
               constrainToVisibleArea
@@ -154,13 +174,17 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
             />
           }
           voronoiBlacklist={
-            ["line-0", "line-1", "line-2", "line-3", "line-4"]
-            //Array.from(Array(5).keys()).map((x, i) => `line${i}`)
+            [...Array(5).keys()].map((i) => `line-${i}`)
             // see: https://github.com/FormidableLabs/victory/issues/545
           }
         />
       }
+      scale={{
+        x: "time",
+        y: "linear",
+      }}
       domain={{
+        x: [minDate, maxDate],
         y: [0, domainMax],
       }}
     >
@@ -177,17 +201,10 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
         .slice(0, 5)
         .map((dataset, i) => getVictoryGroup({ data: dataset, i }))}
       <VictoryAxis
-        // tickValues specifies both the number of ticks and where
-        // they are placed on the axis
-        // tickValues={dataAsXy.map((datum) => datum.x)}
-        // tickFormat={dataAsXy.map((datum) => datum.x)}
-        tickCount={7}
+        tickCount={Math.min(7, differenceInDays(maxDate, minDate) + 1)}
         style={{
           grid: { stroke: null, strokeWidth: 0.5 },
         }}
-        //axisLabelComponent={
-        //  <VictoryLabel dy={40} style={{ fontSize: 10, fill: "gray" }} />
-        //}
         tickLabelComponent={
           <VictoryLabel
             dy={10}
@@ -195,17 +212,19 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
             style={{ fontSize: 15, fill: "gray" }}
           />
         }
+        scale={{ x: "time" }}
+        tickFormat={(t) => format(t, "yyyy-MM-dd")}
       />
       <VictoryAxis
         dependentAxis
-        // tickFormat specifies how ticks should be displayed
-        tickFormat={(x) => `${x * 100}%`}
         style={{
           grid: { stroke: "#D3D3D3", strokeWidth: 0.5 },
         }}
         tickLabelComponent={
           <VictoryLabel dy={0} style={{ fontSize: 15, fill: "gray" }} />
         }
+        // tickFormat specifies how ticks should be displayed
+        tickFormat={(x) => `${x * 100}%`}
       />
     </VictoryChart>
   );
