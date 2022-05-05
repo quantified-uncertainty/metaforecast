@@ -113,7 +113,7 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
   const height = width / goldenRatio;
   const padding = {
     top: 20,
-    bottom: 50,
+    bottom: 60,
     left: 60,
     right: labelLegendStart + letterLength * longestNameLength,
   };
@@ -221,7 +221,8 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
         }}
         tickLabelComponent={
           <VictoryLabel
-            dy={10}
+            dx={-30}
+            dy={-3}
             angle={-30}
             style={{ fontSize: 15, fill: "#777" }}
           />
