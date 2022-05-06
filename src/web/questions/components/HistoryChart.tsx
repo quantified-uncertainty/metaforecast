@@ -278,13 +278,22 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
         />
         {[...Array(MAX_LINES).keys()]
           .reverse() // affects svg render order, we want to render largest datasets on top of others
+          .filter((i) => i !== highlight)
           .map((i) =>
             getVictoryGroup({
               data: dataSets[i],
               i,
-              highlight: i === highlight,
+              highlight: false,
             })
           )}
+        {highlight === undefined
+          ? null
+          : // render highlighted series on top of everything else
+            getVictoryGroup({
+              data: dataSets[highlight],
+              i: highlight,
+              highlight: true,
+            })}
       </VictoryChart>
       <Legend
         items={dataSetsNames.map((name, i) => ({ name, color: colors[i] }))}
