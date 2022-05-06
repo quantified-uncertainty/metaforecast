@@ -12,7 +12,8 @@ export const getBasePath = () => {
 };
 
 export const cleanText = (text: string): string => {
-  // Note: should no longer be necessary
+  // Note: should no longer be necessary?
+  // Still needed for e.g. /questions/rootclaim-what-caused-the-disappearance-of-malaysia-airlines-flight-370
   let textString = !!text ? text : "";
   textString = textString
     .replaceAll("] (", "](")
