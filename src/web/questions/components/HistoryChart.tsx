@@ -81,7 +81,14 @@ const Legend: React.FC<{
 
 const buildDataSets = (question: QuestionWithHistoryFragment) => {
   let dataSetsNames = question.options
-    .sort((a, b) => (a.probability > b.probability ? -1 : 1))
+    .sort((a, b) => {
+      if (a.probability > b.probability) {
+        return -1;
+      } else if (a.probability < b.probability) {
+        return 1;
+      }
+      return a.name < b.name ? -1 : 1; // needed for stable sorting - otherwise it's possible to get order mismatch in SSR vs client-side
+    })
     .map((o) => o.name)
     .slice(0, MAX_LINES);
 
