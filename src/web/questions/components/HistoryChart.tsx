@@ -269,13 +269,15 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
           // tickFormat specifies how ticks should be displayed
           tickFormat={(x) => `${x * 100}%`}
         />
-        {
-          dataSets
-            .map((dataSet, i) =>
-              getVictoryGroup({ data: dataSet, i, highlight: i === highlight })
-            )
-            .reverse() // affects svg render order, we want to render largest datasets on top of others
-        }
+        {[...Array(MAX_LINES).keys()]
+          .reverse() // affects svg render order, we want to render largest datasets on top of others
+          .map((i) =>
+            getVictoryGroup({
+              data: dataSets[i],
+              i,
+              highlight: i === highlight,
+            })
+          )}
       </VictoryChart>
       <Legend
         items={dataSetsNames.map((name, i) => ({ name, color: colors[i] }))}
