@@ -2,20 +2,34 @@ import { useRouter } from "next/router";
 import React, { Fragment, useMemo, useState } from "react";
 import { useQuery } from "urql";
 
-import { ButtonsForStars } from "../display/ButtonsForStars";
-import { DisplayQuestions } from "../display/DisplayQuestions";
-import { MultiSelectPlatform } from "../display/MultiSelectPlatform";
-import { QueryForm } from "../display/QueryForm";
-import { SliderElement } from "../display/SliderElement";
-import { QuestionFragment } from "../fragments.generated";
-import { useIsFirstRender, useNoInitialEffect } from "../hooks";
-import { Props as AnySearchPageProps, QueryParameters } from "./anySearchPage";
-import { SearchDocument } from "./queries.generated";
+import { PlatformConfig } from "../../../backend/platforms";
+import { MultiSelectPlatform } from "../../common/MultiSelectPlatform";
+import { ButtonsForStars } from "../../display/ButtonsForStars";
+import { SliderElement } from "../../display/SliderElement";
+import { QuestionFragment } from "../../fragments.generated";
+import { useIsFirstRender, useNoInitialEffect } from "../../hooks";
+import { QuestionCardsList } from "../../questions/components/QuestionCardsList";
+import { SearchDocument } from "../queries.generated";
+import { QueryForm } from "./QueryForm";
 
-interface Props extends AnySearchPageProps {}
+export interface QueryParameters {
+  query: string;
+  starsThreshold: number;
+  forecastsThreshold: number;
+  forecastingPlatforms: string[]; // platform names
+}
+
+export interface Props {
+  defaultResults: QuestionFragment[];
+  initialQueryParameters: QueryParameters;
+  defaultQueryParameters: QueryParameters;
+  initialNumDisplay: number;
+  defaultNumDisplay: number;
+  platformsConfig: PlatformConfig[];
+}
 
 /* Body */
-export const CommonDisplay: React.FC<Props> = ({
+export const SearchScreen: React.FC<Props> = ({
   defaultResults,
   initialQueryParameters,
   defaultQueryParameters,
@@ -37,8 +51,6 @@ export const CommonDisplay: React.FC<Props> = ({
   const [forceSearch, setForceSearch] = useState(0);
 
   const [advancedOptions, showAdvancedOptions] = useState(false);
-  const [whichResultToDisplayAndCapture, setWhichResultToDisplayAndCapture] =
-    useState(0);
   const [showIdToggle, setShowIdToggle] = useState(false);
 
   const [typing, setTyping] = useState(false);
@@ -104,7 +116,7 @@ export const CommonDisplay: React.FC<Props> = ({
         : numDisplay;
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <DisplayQuestions
+        <QuestionCardsList
           results={results}
           numDisplay={numDisplayRounded}
           showIdToggle={showIdToggle}
@@ -204,7 +216,7 @@ export const CommonDisplay: React.FC<Props> = ({
   };
 
   /* Change selected platforms */
-  const onChangeSelectedPlatforms = (value) => {
+  const onChangeSelectedPlatforms = (value: string[]) => {
     setQueryParameters({
       ...queryParameters,
       forecastingPlatforms: value,
@@ -305,8 +317,6 @@ export const CommonDisplay: React.FC<Props> = ({
           </p>
         </div>
       ) : null}
-
-      <br />
     </Fragment>
   );
 };

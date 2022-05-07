@@ -1,11 +1,11 @@
 import domtoimage from "dom-to-image"; // https://github.com/tsayen/dom-to-image
 import { useEffect, useRef, useState } from "react";
 
+import { Button } from "../../common/Button";
 import { CopyParagraph } from "../../common/CopyParagraph";
-import { Button } from "../../display/Button";
-import { DisplayQuestion } from "../../display/DisplayQuestion";
 import { QuestionFragment } from "../../fragments.generated";
 import { uploadToImgur } from "../../worker/uploadToImgur";
+import { QuestionCard } from "./QuestionCard";
 
 const domToImageWrapper = async (node: HTMLDivElement) => {
   const scale = 3; // Increase for better quality
@@ -121,7 +121,7 @@ export const CaptureQuestion: React.FC<Props> = ({ question }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
       <div ref={containerRef}>
-        <DisplayQuestion
+        <QuestionCard
           question={question}
           showTimeStamp={true}
           showExpandButton={false}

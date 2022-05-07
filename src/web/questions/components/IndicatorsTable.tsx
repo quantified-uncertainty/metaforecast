@@ -1,8 +1,8 @@
+import { QuestionFragment } from "../../fragments.generated";
 import {
     formatIndicatorValue, qualityIndicatorLabels, UsedIndicatorName
-} from "../../display/DisplayQuestion/QuestionFooter";
-import { Stars } from "../../display/Stars";
-import { QuestionFragment } from "../../fragments.generated";
+} from "./QuestionCard/QuestionFooter";
+import { Stars } from "./Stars";
 
 interface Props {
   question: QuestionFragment;

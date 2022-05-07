@@ -1,7 +1,7 @@
 import React, { EventHandler, SyntheticEvent, useState } from "react";
 
-import { Button } from "./Button";
-import { InfoBox } from "./InfoBox";
+import { Button } from "../common/Button";
+import { InfoBox } from "../common/InfoBox";
 
 const exampleInput = `{
   "title": "Random example",

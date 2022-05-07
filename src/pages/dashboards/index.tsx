@@ -2,10 +2,10 @@ import { NextPage } from "next";
 import { useRouter } from "next/router";
 import { useMutation } from "urql";
 
+import { Layout } from "../../web/common/Layout";
+import { LineHeader } from "../../web/common/LineHeader";
 import { CreateDashboardDocument } from "../../web/dashboards/queries.generated";
 import { DashboardCreator } from "../../web/display/DashboardCreator";
-import { Layout } from "../../web/display/Layout";
-import { LineHeader } from "../../web/display/LineHeader";
 
 const DashboardsPage: NextPage = () => {
   const router = useRouter();

@@ -1,7 +1,7 @@
 import React from "react";
 
-import { QuestionFragment } from "../fragments.generated";
-import { DisplayQuestion } from "./DisplayQuestion";
+import { QuestionFragment } from "../../fragments.generated";
+import { QuestionCard } from "./QuestionCard";
 
 interface Props {
   results: QuestionFragment[];
@@ -9,18 +9,18 @@ interface Props {
   showIdToggle: boolean;
 }
 
-export const DisplayQuestions: React.FC<Props> = ({
+export const QuestionCardsList: React.FC<Props> = ({
   results,
   numDisplay,
   showIdToggle,
 }) => {
   if (!results) {
-    return <></>;
+    return null;
   }
   return (
     <>
       {results.slice(0, numDisplay).map((result) => (
-        <DisplayQuestion
+        <QuestionCard
           key={result.id}
           question={result}
           showTimeStamp={false}

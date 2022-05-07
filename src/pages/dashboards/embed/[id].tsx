@@ -4,7 +4,7 @@ import Error from "next/error";
 import {
     DashboardByIdDocument, DashboardFragment
 } from "../../../web/dashboards/queries.generated";
-import { DisplayQuestions } from "../../../web/display/DisplayQuestions";
+import { QuestionCardsList } from "../../../web/questions/components/QuestionCardsList";
 import { ssrUrql } from "../../../web/urql";
 
 interface Props {
@@ -52,7 +52,7 @@ const EmbedDashboardPage: NextPage<Props> = ({ dashboard, numCols }) => {
             numCols || 3
           } gap-4 mb-6`}
         >
-          <DisplayQuestions
+          <QuestionCardsList
             results={dashboard.questions}
             numDisplay={dashboard.questions.length}
             showIdToggle={false}

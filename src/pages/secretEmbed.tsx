@@ -4,8 +4,8 @@ import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 
 import { platforms } from "../backend/platforms";
-import { DisplayQuestion } from "../web/display/DisplayQuestion";
 import { QuestionFragment } from "../web/fragments.generated";
+import { QuestionCard } from "../web/questions/components/QuestionCard";
 import { SearchDocument } from "../web/search/queries.generated";
 import { ssrUrql } from "../web/urql";
 
@@ -58,7 +58,7 @@ const SecretEmbedPage: NextPage<Props> = ({ results }) => {
         <div>
           <div id="secretEmbed">
             {result ? (
-              <DisplayQuestion
+              <QuestionCard
                 question={result}
                 showTimeStamp={true}
                 expandFooterToFullWidth={true}

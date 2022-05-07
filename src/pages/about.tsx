@@ -3,8 +3,8 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 
-import { Card } from "../web/display/Card";
-import { Layout } from "../web/display/Layout";
+import { Card } from "../web/common/Card";
+import { Layout } from "../web/common/Layout";
 
 const readmeMarkdownText = `# About
 

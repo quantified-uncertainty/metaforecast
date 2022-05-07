@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import { Button } from "../display/Button";
+import { Button } from "./Button";
 
 // https://stackoverflow.com/questions/39501289/in-reactjs-how-to-copy-text-to-clipboard
 

@@ -2,11 +2,11 @@ import Link from "next/link";
 import { FaExpand } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
-import { CopyText } from "../../common/CopyText";
-import { QuestionFragment } from "../../fragments.generated";
-import { QuestionOptions } from "../../questions/components/QuestionOptions";
-import { cleanText } from "../../utils";
-import { Card } from "../Card";
+import { Card } from "../../../common/Card";
+import { CopyText } from "../../../common/CopyText";
+import { QuestionFragment } from "../../../fragments.generated";
+import { cleanText } from "../../../utils";
+import { QuestionOptions } from "../QuestionOptions";
 import { QuestionFooter } from "./QuestionFooter";
 
 const truncateText = (length: number, text: string): string => {
@@ -107,7 +107,7 @@ interface Props {
   showExpandButton?: boolean;
 }
 
-export const DisplayQuestion: React.FC<Props> = ({
+export const QuestionCard: React.FC<Props> = ({
   question,
   showTimeStamp,
   expandFooterToFullWidth,

@@ -2,10 +2,10 @@ import { GetServerSideProps, NextPage } from "next";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
+import { Card } from "../../common/Card";
+import { Layout } from "../../common/Layout";
+import { LineHeader } from "../../common/LineHeader";
 import { Query } from "../../common/Query";
-import { Card } from "../../display/Card";
-import { Layout } from "../../display/Layout";
-import { LineHeader } from "../../display/LineHeader";
 import { QuestionWithHistoryFragment } from "../../fragments.generated";
 import { ssrUrql } from "../../urql";
 import { CaptureQuestion } from "../components/CaptureQuestion";

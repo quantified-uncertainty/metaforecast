@@ -1,4 +1,4 @@
-import { QuestionFragment } from "../../fragments.generated";
+import { QuestionFragment } from "../../../fragments.generated";
 import { Stars } from "../Stars";
 
 type QualityIndicator = QuestionFragment["qualityIndicators"];

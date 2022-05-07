@@ -2,8 +2,8 @@ import { NextPage } from "next";
 import Link from "next/link";
 import React from "react";
 
-import { Card } from "../web/display/Card";
-import { Layout } from "../web/display/Layout";
+import { Card } from "../web/common/Card";
+import { Layout } from "../web/common/Layout";
 
 type AnyTool = {
   title: string;

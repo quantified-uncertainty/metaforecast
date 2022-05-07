@@ -2,13 +2,13 @@ import { GetServerSideProps, NextPage } from "next";
 import Error from "next/error";
 import Link from "next/link";
 
+import { InfoBox } from "../../../web/common/InfoBox";
+import { Layout } from "../../../web/common/Layout";
+import { LineHeader } from "../../../web/common/LineHeader";
 import {
     DashboardByIdDocument, DashboardFragment
 } from "../../../web/dashboards/queries.generated";
-import { DisplayQuestions } from "../../../web/display/DisplayQuestions";
-import { InfoBox } from "../../../web/display/InfoBox";
-import { Layout } from "../../../web/display/Layout";
-import { LineHeader } from "../../../web/display/LineHeader";
+import { QuestionCardsList } from "../../../web/questions/components/QuestionCardsList";
 import { ssrUrql } from "../../../web/urql";
 
 interface Props {
@@ -84,7 +84,7 @@ const ViewDashboardPage: NextPage<Props> = ({ dashboard }) => {
           <>
             <DashboardMetadata dashboard={dashboard} />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <DisplayQuestions
+              <QuestionCardsList
                 results={dashboard.questions}
                 numDisplay={dashboard.questions.length}
                 showIdToggle={false}
