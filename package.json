@@ -27,6 +27,7 @@
     "dbshell": ". .env && psql $DIGITALOCEAN_POSTGRES"
   },
   "dependencies": {
+    "@floating-ui/react-dom": "^0.7.0",
     "@graphql-yoga/node": "^2.1.0",
     "@pothos/core": "^3.5.1",
     "@pothos/plugin-prisma": "^3.4.0",

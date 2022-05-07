@@ -16,7 +16,6 @@ const getVictoryGroup = ({
   i: number;
   highlight?: boolean;
 }) => {
-  console.log(i, data, highlight, data.length);
   return (
     <VictoryGroup color={chartColors[i] || "darkgray"} data={data} key={i}>
       <VictoryLine
