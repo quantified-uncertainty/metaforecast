@@ -11,6 +11,7 @@ import { ssrUrql } from "../../urql";
 import { CaptureQuestion } from "../components/CaptureQuestion";
 import { HistoryChart } from "../components/HistoryChart";
 import { IndicatorsTable } from "../components/IndicatorsTable";
+import { Stars } from "../components/Stars";
 import { QuestionPageDocument } from "../queries.generated";
 
 interface Props {
@@ -40,42 +41,66 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 };
 
 const Section: React.FC<{ title: string }> = ({ title, children }) => (
-  <div className="space-y-2 flex flex-col items-center">
+  <div className="space-y-2 flex flex-col items-start">
     <h2 className="text-xl text-gray-900">{title}</h2>
     <div>{children}</div>
   </div>
 );
 
-const QuestionCardContents: React.FC<{
+const LargeQuestionCard: React.FC<{
   question: QuestionWithHistoryFragment;
 }> = ({ question }) => (
-  <div className="flex flex-col space-y-4 items-center">
-    <h1 className="sm:text-4xl text-2xl text-center">
+  <Card highlightOnHover={false} large={true}>
+    <h1 className="sm:text-3xl text-xl">
       <a
-        className="text-black no-underline hover:text-gray-600"
+        className="text-black no-underline hover:text-gray-700"
         href={question.url}
         target="_blank"
       >
         {question.title}{" "}
-        <FaExternalLinkAlt className="text-gray-400 inline" size="24" />
+        <FaExternalLinkAlt className="text-gray-400 inline sm:text-3xl text-xl mb-1" />
       </a>
     </h1>
-    <div className="max-w-3xl">
+
+    <div className="flex gap-2 mb-2">
+      <a
+        className="text-black no-underline bg-red-300 rounded p-1 px-2 text-xs hover:text-gray-600"
+        href={question.url}
+        target="_blank"
+      >
+        {question.platform.label}
+      </a>
+      <Stars num={question.qualityIndicators.stars} />
+    </div>
+
+    <div className="mb-8">
       <HistoryChart question={question} />
     </div>
 
-    <Section title="Question description">
-      <ReactMarkdown
-        linkTarget="_blank"
-        className="font-normal text-gray-900 max-w-prose"
-      >
-        {question.description.replaceAll("---", "")}
-      </ReactMarkdown>
-    </Section>
+    <ReactMarkdown
+      linkTarget="_blank"
+      className="font-normal text-gray-900 max-w-prose"
+    >
+      {question.description.replaceAll("---", "")}
+    </ReactMarkdown>
 
     <Section title="Indicators">
       <IndicatorsTable question={question} />
     </Section>
+  </Card>
+);
+
+const QuestionScreen: React.FC<{ question: QuestionWithHistoryFragment }> = ({
+  question,
+}) => (
+  <div className="space-y-8">
+    <LargeQuestionCard question={question} />
+    <div className="space-y-4">
+      <LineHeader>
+        <h1>Capture</h1>
+      </LineHeader>
+      <CaptureQuestion question={question} />
+    </div>
   </div>
 );
 
@@ -84,19 +109,7 @@ const QuestionPage: NextPage<Props> = ({ id }) => {
     <Layout page="question">
       <div className="max-w-4xl mx-auto">
         <Query document={QuestionPageDocument} variables={{ id }}>
-          {({ data }) => (
-            <div className="space-y-8">
-              <Card highlightOnHover={false} large={true}>
-                <QuestionCardContents question={data.result} />
-              </Card>
-              <div className="space-y-4">
-                <LineHeader>
-                  <h1>Capture</h1>
-                </LineHeader>
-                <CaptureQuestion question={data.result} />
-              </div>
-            </div>
-          )}
+          {({ data }) => <QuestionScreen question={data.result} />}
         </Query>
       </div>
     </Layout>

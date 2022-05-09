@@ -47,7 +47,7 @@ export const InnerChart: React.FC<{
     top: 20,
     bottom: 65,
     left: 60,
-    right: 20,
+    right: 5,
   };
 
   return (

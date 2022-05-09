@@ -22,7 +22,7 @@ export const HistoryChart: React.FC<Props> = ({ question }) => {
   const data = useMemo(() => buildChartData(question), [question]);
 
   return (
-    <div className="flex items-center flex-col sm:flex-row">
+    <div className="flex items-center flex-col space-y-4 sm:flex-row sm:space-y-0">
       <InnerChart data={data} highlight={highlight} />
       <Legend
         items={data.seriesNames.map((name, i) => ({
