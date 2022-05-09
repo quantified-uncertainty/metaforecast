@@ -1,5 +1,5 @@
+import { guesstimate } from "../../backend/platforms/guesstimate";
 import { AlgoliaQuestion } from "../../backend/utils/algolia";
-import searchGuesstimate from "../../web/worker/searchGuesstimate";
 import searchWithAlgolia from "../../web/worker/searchWithAlgolia";
 import { builder } from "../builder";
 import { QuestionObj } from "./questions";
@@ -54,7 +54,7 @@ builder.queryField("searchQuestions", (t) =>
         const [responsesNotGuesstimate, responsesGuesstimate] =
           await Promise.all([
             unawaitedAlgoliaResponse,
-            searchGuesstimate(query),
+            guesstimate.search(query),
           ]); // faster than two separate requests
         results = [...responsesNotGuesstimate, ...responsesGuesstimate];
       } else {

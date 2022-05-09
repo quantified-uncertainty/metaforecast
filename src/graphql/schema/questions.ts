@@ -2,6 +2,7 @@ import { History, Question } from "@prisma/client";
 
 import { prisma } from "../../backend/database/prisma";
 import { QualityIndicators } from "../../backend/platforms";
+import { guesstimate } from "../../backend/platforms/guesstimate";
 import { builder } from "../builder";
 import { PlatformObj } from "./platforms";
 
@@ -144,6 +145,13 @@ builder.queryField("question", (t) =>
       id: t.arg({ type: "ID", required: true }),
     },
     resolve: async (parent, args) => {
+      const parts = String(args.id).split("-");
+      const [platform, id] = [parts[0], parts.slice(1).join("-")];
+      if (platform === "guesstimate") {
+        const q = await guesstimate.fetchQuestion(Number(id));
+        console.log(q);
+        return q;
+      }
       return await prisma.question.findUnique({
         where: {
           id: String(args.id),

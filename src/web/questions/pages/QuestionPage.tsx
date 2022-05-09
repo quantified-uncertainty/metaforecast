@@ -74,7 +74,17 @@ const LargeQuestionCard: React.FC<{
     </div>
 
     <div className="mb-8">
-      <HistoryChart question={question} />
+      {question.platform.id === "guesstimate" ? (
+        <a className="no-underline" href={question.url} target="_blank">
+          <img
+            className="rounded-sm"
+            src={question.visualization}
+            alt="Guesstimate Screenshot"
+          />
+        </a>
+      ) : (
+        <HistoryChart question={question} />
+      )}
     </div>
 
     <ReactMarkdown

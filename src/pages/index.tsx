@@ -13,7 +13,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   const [ssrCache, client] = ssrUrql();
   const urlQuery = context.query;
 
-  const platformsConfig = getPlatformsConfig({ withGuesstimate: true });
+  const platformsConfig = getPlatformsConfig();
 
   const defaultQueryParameters: QueryParameters = {
     query: "",
