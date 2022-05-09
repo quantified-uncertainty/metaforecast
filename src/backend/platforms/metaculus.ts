@@ -152,7 +152,6 @@ export const metaculus: Platform = {
               id,
               title: result.title,
               url: "https://www.metaculus.com" + result.page_url,
-              platform: platformName,
               description,
               options,
               qualityindicators: {

@@ -163,7 +163,6 @@ export const smarkets: Platform = {
         id: id,
         title: name,
         url: "https://smarkets.com/event/" + market.event_id + market.slug,
-        platform: platformName,
         description: market.description,
         options: options,
         timestamp: new Date(),

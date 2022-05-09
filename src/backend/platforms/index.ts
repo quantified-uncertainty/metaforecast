@@ -41,7 +41,7 @@ export interface QualityIndicators {
 
 export type FetchedQuestion = Omit<
   Question,
-  "extra" | "qualityindicators" | "timestamp"
+  "extra" | "qualityindicators" | "timestamp" | "platform"
 > & {
   timestamp?: Date;
   extra?: object; // required in DB but annoying to return empty; also this is slightly stricter than Prisma's JsonValue

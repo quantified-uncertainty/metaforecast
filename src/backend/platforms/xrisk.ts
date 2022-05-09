@@ -21,7 +21,6 @@ export const xrisk: Platform = {
       return {
         ...item,
         id: `${platformName}-${hash(item.title + " | " + item.url)}`, // some titles are non-unique, but title+url pair is always unique
-        platform: platformName,
       };
     });
     return results;

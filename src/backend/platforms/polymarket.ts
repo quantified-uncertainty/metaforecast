@@ -106,7 +106,6 @@ export const polymarket: Platform = {
             id: id,
             title: marketInfo.question,
             url: "https://polymarket.com/market/" + marketInfo.slug,
-            platform: platformName,
             description: marketInfo.description,
             options: options,
             qualityindicators: {

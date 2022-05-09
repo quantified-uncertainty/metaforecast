@@ -92,7 +92,6 @@ async function processPredictions(predictions) {
       id,
       title,
       url: prediction["url"],
-      platform: platformName,
       description: prediction["Notes"] || "",
       options,
       timestamp: new Date(Date.parse(prediction["Prediction Date"] + "Z")),

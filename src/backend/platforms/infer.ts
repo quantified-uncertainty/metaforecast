@@ -179,7 +179,6 @@ async function infer_inner(cookie: string) {
             title: title,
             description: moreinfo.description,
             url: url,
-            platform: platformName,
             options: moreinfo.options,
             ...moreinfo,
           };

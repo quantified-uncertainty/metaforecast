@@ -75,7 +75,6 @@ export const rootclaim: Platform = {
         id,
         title: toMarkdown(claim.question).replace("\n", ""),
         url,
-        platform: platformName,
         description: toMarkdown(description).replace("&#39;", "'"),
         options: options,
         qualityindicators: {

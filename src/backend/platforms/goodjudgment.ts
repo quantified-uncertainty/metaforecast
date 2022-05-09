@@ -101,7 +101,6 @@ export const goodjudgment: Platform = {
           id,
           title,
           url: endpoint,
-          platform: platformName,
           description,
           options,
           qualityindicators: {

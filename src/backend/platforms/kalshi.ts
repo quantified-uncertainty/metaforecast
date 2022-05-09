@@ -40,7 +40,6 @@ async function processMarkets(markets) {
       id,
       title: market.title.replaceAll("*", ""),
       url: `https://kalshi.com/markets/${market.ticker_name}`,
-      platform: platformName,
       description: `${market.settle_details}. The resolution source is: ${market.ranged_group_name} (${market.settle_source_url})`,
       options,
       qualityindicators: {

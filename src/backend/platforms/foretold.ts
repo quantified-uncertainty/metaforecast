@@ -84,11 +84,10 @@ export const foretold: Platform = {
             },
           ];
         }
-        let result: FetchedQuestion = {
+        const result: FetchedQuestion = {
           id,
           title: question.name,
           url: `https://www.foretold.io/c/${community}/m/${question.id}`,
-          platform: platformName,
           description: "",
           options,
           qualityindicators: {

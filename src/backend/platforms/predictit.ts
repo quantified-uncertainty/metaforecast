@@ -100,7 +100,6 @@ export const predictit: Platform = {
         id,
         title: market["name"],
         url: market.url,
-        platform: platformName,
         description,
         options,
         qualityindicators: {

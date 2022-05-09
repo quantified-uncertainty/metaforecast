@@ -63,7 +63,6 @@ async function processPredictions(predictions) {
       id: id,
       title: prediction.question,
       url: prediction.url,
-      platform: platformName,
       description: prediction.description,
       options: options,
       qualityindicators: {

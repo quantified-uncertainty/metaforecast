@@ -41,8 +41,7 @@ async function processPredictions(predictions) {
     const result: FetchedQuestion = {
       id,
       title: prediction.title,
-      url: `https://example.com`,
-      platform: platformName,
+      url: "https://example.com",
       description: prediction.description,
       options,
       qualityindicators: {

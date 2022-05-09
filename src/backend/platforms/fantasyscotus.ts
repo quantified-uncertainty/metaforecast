@@ -79,7 +79,6 @@ async function processData(data) {
         id: id,
         title: `In ${event.short_name}, the SCOTUS will affirm the lower court's decision`,
         url: `https://fantasyscotus.net/user-predictions${event.docket_url}`,
-        platform: platformName,
         description: `${(pAffirm * 100).toFixed(2)}% (${
           predictionData.numAffirm
         } out of ${
