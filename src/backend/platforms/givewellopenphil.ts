@@ -8,8 +8,8 @@ import { Platform } from "./";
 const platformName = "givewellopenphil";
 
 /* Support functions */
-async function fetchPage(url: string) {
-  let response = await axios({
+async function fetchPage(url: string): Promise<string> {
+  const response = await axios({
     url: url,
     method: "GET",
     headers: {

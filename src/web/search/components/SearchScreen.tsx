@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React, { Fragment, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useQuery } from "urql";
 
 import { PlatformConfig } from "../../../backend/platforms";
@@ -126,7 +126,8 @@ export const SearchScreen: React.FC<Props> = ({
   };
 
   const updateRoute = () => {
-    const stringify = (key: string, value: any) => {
+    const stringify = (key: string, obj: { [k: string]: any }) => {
+      const value = obj[key];
       if (key === "forecastingPlatforms") {
         return value.join("|");
       } else {
@@ -134,15 +135,16 @@ export const SearchScreen: React.FC<Props> = ({
       }
     };
 
-    const query = {};
+    const query: { [k: string]: string } = {};
     for (const key of Object.keys(defaultQueryParameters)) {
-      const value = stringify(key, queryParameters[key]);
-      const defaultValue = stringify(key, defaultQueryParameters[key]);
+      const value = stringify(key, queryParameters);
+      const defaultValue = stringify(key, defaultQueryParameters);
       if (value === defaultValue) continue;
       query[key] = value;
     }
 
-    if (numDisplay !== defaultNumDisplay) query["numDisplay"] = numDisplay;
+    if (numDisplay !== defaultNumDisplay)
+      query["numDisplay"] = String(numDisplay);
 
     router.replace(
       {
@@ -191,8 +193,8 @@ export const SearchScreen: React.FC<Props> = ({
       (Math.round(value) === 1 ? "" : "s")
     );
   };
-  const onChangeSliderForNumDisplay = (event) => {
-    setNumDisplay(Math.round(event[0]));
+  const onChangeSliderForNumDisplay = (value: number) => {
+    setNumDisplay(Math.round(value));
     setForceSearch(forceSearch + 1); // FIXME - force new search iff numDisplay is greater than last search limit
   };
 
@@ -200,10 +202,10 @@ export const SearchScreen: React.FC<Props> = ({
   const displayFunctionNumForecasts = (value: number) => {
     return "# Forecasts > " + Math.round(value);
   };
-  const onChangeSliderForNumForecasts = (event) => {
+  const onChangeSliderForNumForecasts = (value: number) => {
     setQueryParameters({
       ...queryParameters,
-      forecastsThreshold: Math.round(event[0]),
+      forecastsThreshold: Math.round(value),
     });
   };
 
@@ -230,7 +232,7 @@ export const SearchScreen: React.FC<Props> = ({
 
   /* Final return */
   return (
-    <Fragment>
+    <>
       <label className="mb-4 mt-4 flex flex-row justify-center items-center">
         <div className="w-10/12 mb-2">
           <QueryForm
@@ -317,6 +319,6 @@ export const SearchScreen: React.FC<Props> = ({
           </p>
         </div>
       ) : null}
-    </Fragment>
+    </>
   );
 };

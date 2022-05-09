@@ -1,6 +1,7 @@
-/* Imports */
 import React from "react";
-import { Handles, Rail, Slider, Tracks } from "react-compound-slider";
+import {
+    GetHandleProps, GetTrackProps, Handles, Rail, Slider, SliderItem, Tracks
+} from "react-compound-slider";
 
 // https://sghall.github.io/react-compound-slider/#/getting-started/tutorial
 
@@ -24,12 +25,11 @@ const railStyle = {
 };
 
 /* Support functions */
-function Handle({
-  handle: { id, value, percent },
-  getHandleProps,
-  displayFunction,
-  handleWidth,
-}) {
+const Handle: React.FC<{
+  handle: SliderItem;
+  getHandleProps: GetHandleProps;
+  displayFunction: (value: number) => string;
+}> = ({ handle: { id, value, percent }, getHandleProps, displayFunction }) => {
   return (
     <>
       <div className="justify-center text-center text-gray-600 text-xs">
@@ -53,9 +53,13 @@ function Handle({
       ></div>
     </>
   );
-}
+};
 
-function Track({ source, target, getTrackProps }) {
+const Track: React.FC<{
+  source: SliderItem;
+  target: SliderItem;
+  getTrackProps: GetTrackProps;
+}> = ({ source, target, getTrackProps }) => {
   return (
     <div
       style={{
@@ -74,16 +78,15 @@ function Track({ source, target, getTrackProps }) {
       }
     />
   );
-}
+};
 
 interface Props {
   value: number;
-  onChange: (event: any) => void;
+  onChange: (value: number) => void;
   displayFunction: (value: number) => string;
 }
 
 /* Body */
-// Two functions, essentially identical.
 export const SliderElement: React.FC<Props> = ({
   onChange,
   value,
@@ -96,21 +99,20 @@ export const SliderElement: React.FC<Props> = ({
       }
       domain={[0, 200]}
       values={[value]}
-      onChange={onChange}
+      onChange={(values) => onChange(values[0])}
     >
       <Rail>
         {({ getRailProps }) => <div style={railStyle} {...getRailProps()} />}
       </Rail>
       <Handles>
         {({ handles, getHandleProps }) => (
-          <div className="slider-handles">
+          <div>
             {handles.map((handle) => (
               <Handle
                 key={handle.id}
                 handle={handle}
                 getHandleProps={getHandleProps}
                 displayFunction={displayFunction}
-                handleWidth={"15em"}
               />
             ))}
           </div>
@@ -118,7 +120,7 @@ export const SliderElement: React.FC<Props> = ({
       </Handles>
       <Tracks right={false}>
         {({ tracks, getTrackProps }) => (
-          <div className="slider-tracks">
+          <div>
             {tracks.map(({ id, source, target }) => (
               <Track
                 key={id}

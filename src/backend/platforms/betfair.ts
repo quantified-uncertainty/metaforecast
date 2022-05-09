@@ -8,10 +8,10 @@ import { FetchedQuestion, Platform } from "./";
 const platformName = "betfair";
 
 /* Definitions */
-let endpoint = process.env.SECRET_BETFAIR_ENDPOINT;
+const endpoint = process.env.SECRET_BETFAIR_ENDPOINT;
 
 /* Utilities */
-let arraysEqual = (a, b) => {
+const arraysEqual = (a: string[], b: string[]) => {
   if (a === b) return true;
   if (a == null || b == null) return false;
   if (a.length !== b.length) return false;
@@ -26,7 +26,8 @@ let arraysEqual = (a, b) => {
   }
   return true;
 };
-let mergeRunners = (runnerCatalog, runnerBook) => {
+
+const mergeRunners = (runnerCatalog, runnerBook) => {
   let keys = Object.keys(runnerCatalog);
   let result = [];
   for (let key of keys) {

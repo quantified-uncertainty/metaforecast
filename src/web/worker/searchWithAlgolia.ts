@@ -1,18 +1,31 @@
 import algoliasearch from "algoliasearch";
 
+import { Hit } from "@algolia/client-search";
+
 import { AlgoliaQuestion } from "../../backend/utils/algolia";
 
 const client = algoliasearch(
-  process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
-  process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_KEY
+  process.env.NEXT_PUBLIC_ALGOLIA_APP_ID || "",
+  process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_KEY || ""
 );
 const index = client.initIndex("metaforecast");
 
-let buildFilter = ({
+interface SearchOpts {
+  queryString: string;
+  hitsPerPage?: number;
+  starsThreshold: number;
+  filterByPlatforms: string[];
+  forecastsThreshold: number;
+}
+
+const buildFilter = ({
   starsThreshold,
   filterByPlatforms,
   forecastsThreshold,
-}) => {
+}: Pick<
+  SearchOpts,
+  "starsThreshold" | "filterByPlatforms" | "forecastsThreshold"
+>) => {
   const starsFilter = starsThreshold
     ? `qualityindicators.stars >= ${starsThreshold}`
     : null;
@@ -35,40 +48,21 @@ let buildFilter = ({
   return finalFilter;
 };
 
-let buildFacetFilter = ({ filterByPlatforms }) => {
-  let platformsFilter = [];
-  if (filterByPlatforms.length > 0) {
-    platformsFilter = [
-      [filterByPlatforms.map((platform) => `platform:${platform}`)],
-    ];
-  }
-  console.log(platformsFilter);
-  console.log(
-    "searchWithAlgolia.js/searchWithAlgolia/buildFacetFilter",
-    platformsFilter
-  );
-  return platformsFilter;
-};
-
-let noExactMatch = (queryString, result) => {
+const noExactMatch = (queryString: string, result: Hit<AlgoliaQuestion>) => {
   queryString = queryString.toLowerCase();
-  let title = result.title.toLowerCase();
-  let description = result.description.toLowerCase();
-  let optionsstringforsearch = result.optionsstringforsearch.toLowerCase();
+
+  const title = result.title.toLowerCase();
+  const description = result.description.toLowerCase();
+  const optionsstringforsearch = (
+    result.optionsstringforsearch || ""
+  ).toLowerCase();
+
   return !(
     title.includes(queryString) ||
     description.includes(queryString) ||
     optionsstringforsearch.includes(queryString)
   );
 };
-
-interface SearchOpts {
-  queryString: string;
-  hitsPerPage?: number;
-  starsThreshold: number;
-  filterByPlatforms: string[];
-  forecastsThreshold: number;
-}
 
 // only query string
 export default async function searchWithAlgolia({

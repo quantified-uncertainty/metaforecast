@@ -173,7 +173,7 @@ export const QuestionCard: React.FC<Props> = ({
             </div>
           )}
 
-          {question.platform.id === "guesstimate" && (
+          {question.platform.id === "guesstimate" && question.visualization && (
             <img
               className="rounded-sm"
               src={question.visualization}

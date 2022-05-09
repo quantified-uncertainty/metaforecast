@@ -36,5 +36,8 @@ export const getUrqlClientOptions = (ssr: SSRExchange) => ({
 export const ssrUrql = () => {
   const ssrCache = ssrExchange({ isClient: false });
   const client = initUrqlClient(getUrqlClientOptions(ssrCache), false);
+  if (!client) {
+    throw new Error("Expected non-null client instance from initUrqlClient");
+  }
   return [ssrCache, client] as const;
 };
