@@ -10,3 +10,22 @@ export const getBasePath = () => {
 
   return "http://localhost:3000";
 };
+
+export const cleanText = (text: string): string => {
+  // Note: should no longer be necessary?
+  // Still needed for e.g. /questions/rootclaim-what-caused-the-disappearance-of-malaysia-airlines-flight-370
+  let textString = !!text ? text : "";
+  textString = textString
+    .replaceAll("] (", "](")
+    .replaceAll(") )", "))")
+    .replaceAll("( [", "([")
+    .replaceAll(") ,", "),")
+    .replaceAll("==", "") // Denotes a title in markdown
+    .replaceAll("Background\n", "")
+    .replaceAll("Context\n", "")
+    .replaceAll("--- \n", "- ")
+    .replaceAll(/\[(.*?)\]\(.*?\)/g, "$1");
+  textString = textString.slice(0, 1) == "=" ? textString.slice(1) : textString;
+  //console.log(textString)
+  return textString;
+};

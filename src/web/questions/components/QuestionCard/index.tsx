@@ -2,10 +2,11 @@ import Link from "next/link";
 import { FaExpand } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
-import { CopyText } from "../../common/CopyText";
-import { QuestionOptions } from "../../questions/components/QuestionOptions";
-import { QuestionFragment } from "../../search/queries.generated";
-import { Card } from "../Card";
+import { Card } from "../../../common/Card";
+import { CopyText } from "../../../common/CopyText";
+import { QuestionFragment } from "../../../fragments.generated";
+import { cleanText } from "../../../utils";
+import { QuestionOptions } from "../QuestionOptions";
 import { QuestionFooter } from "./QuestionFooter";
 
 const truncateText = (length: number, text: string): string => {
@@ -68,24 +69,6 @@ if (!String.prototype.replaceAll) {
   };
 }
 
-const cleanText = (text: string): string => {
-  // Note: should no longer be necessary
-  let textString = !!text ? text : "";
-  textString = textString
-    .replaceAll("] (", "](")
-    .replaceAll(") )", "))")
-    .replaceAll("( [", "([")
-    .replaceAll(") ,", "),")
-    .replaceAll("==", "") // Denotes a title in markdown
-    .replaceAll("Background\n", "")
-    .replaceAll("Context\n", "")
-    .replaceAll("--- \n", "- ")
-    .replaceAll(/\[(.*?)\]\(.*?\)/g, "$1");
-  textString = textString.slice(0, 1) == "=" ? textString.slice(1) : textString;
-  //console.log(textString)
-  return textString;
-};
-
 // Auxiliary components
 
 const DisplayMarkdown: React.FC<{ description: string }> = ({
@@ -121,13 +104,15 @@ interface Props {
   showTimeStamp: boolean;
   expandFooterToFullWidth: boolean;
   showIdToggle?: boolean;
+  showExpandButton?: boolean;
 }
 
-export const DisplayQuestion: React.FC<Props> = ({
+export const QuestionCard: React.FC<Props> = ({
   question,
   showTimeStamp,
   expandFooterToFullWidth,
   showIdToggle,
+  showExpandButton = true,
 }) => {
   const { options } = question;
   const lastUpdated = new Date(question.timestamp * 1000);
@@ -146,7 +131,7 @@ export const DisplayQuestion: React.FC<Props> = ({
             </div>
           ) : null}
           <div>
-            {process.env.NEXT_PUBLIC_ENABLE_QUESTION_PAGES ? (
+            {showExpandButton ? (
               <Link href={`/questions/${question.id}`} passHref>
                 <a className="float-right block ml-2 mt-1.5">
                   <FaExpand

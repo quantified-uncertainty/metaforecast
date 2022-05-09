@@ -7,6 +7,7 @@ import { foretold } from "./foretold";
 import { givewellopenphil } from "./givewellopenphil";
 import { goodjudgment } from "./goodjudgment";
 import { goodjudgmentopen } from "./goodjudgmentopen";
+import { guesstimate } from "./guesstimate";
 import { infer } from "./infer";
 import { kalshi } from "./kalshi";
 import { manifold } from "./manifold";
@@ -72,6 +73,7 @@ export const platforms: Platform[] = [
   givewellopenphil,
   goodjudgment,
   goodjudgmentopen,
+  guesstimate,
   infer,
   kalshi,
   manifold,
@@ -161,21 +163,12 @@ export interface PlatformConfig {
 }
 
 // get frontend-safe version of platforms data
-export const getPlatformsConfig = (options: {
-  withGuesstimate: boolean;
-}): PlatformConfig[] => {
+export const getPlatformsConfig = (): PlatformConfig[] => {
   const platformsConfig = platforms.map((platform) => ({
     name: platform.name,
     label: platform.label,
     color: platform.color,
   }));
-  if (options.withGuesstimate) {
-    platformsConfig.push({
-      name: "guesstimate",
-      label: "Guesstimate",
-      color: "223900",
-    });
-  }
 
   return platformsConfig;
 };

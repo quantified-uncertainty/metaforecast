@@ -1,10 +1,16 @@
 import chroma from "chroma-js";
 import React from "react";
-import Select from "react-select";
+import Select, { StylesConfig } from "react-select";
 
 import { PlatformConfig } from "../../backend/platforms";
 
-const colourStyles = {
+type Option = {
+  value: string;
+  label: string;
+  color: string;
+};
+
+const colourStyles: StylesConfig<Option> = {
   control: (styles) => ({ ...styles, backgroundColor: "white" }),
   option: (styles, { data, isDisabled, isFocused, isSelected }) => {
     const color = chroma(data.color);
@@ -70,12 +76,6 @@ export const MultiSelectPlatform: React.FC<Props> = ({
   value,
   platformsConfig,
 }) => {
-  type Option = {
-    value: string;
-    label: string;
-    color: string;
-  };
-
   const options: Option[] = platformsConfig.map((platform) => ({
     value: platform.name,
     label: platform.label,

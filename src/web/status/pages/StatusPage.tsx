@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 
+import { Layout } from "../../common/Layout";
 import { Query } from "../../common/Query";
-import { Layout } from "../../display/Layout";
 import { PlatformsStatusDocument } from "../queries.generated";
 
 const StatusPage: NextPage = () => {

@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         quri: "url('/icons/logo.svg')",
       },
+      maxWidth: {
+        160: "160px",
+      },
     },
   },
   variants: {

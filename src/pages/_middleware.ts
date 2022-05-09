@@ -4,7 +4,6 @@ import { NextRequest, NextResponse } from "next/server";
 export async function middleware(req: NextRequest) {
   const { pathname, searchParams } = req.nextUrl;
 
-  console.log(pathname);
   if (pathname === "/dashboards") {
     const dashboardId = searchParams.get("dashboardId");
     if (dashboardId) {
@@ -12,6 +11,8 @@ export async function middleware(req: NextRequest) {
         new URL(`/dashboards/view/${dashboardId}`, req.url)
       );
     }
+  } else if (pathname === "/capture") {
+    return NextResponse.redirect(new URL("/", req.url));
   } else if (pathname === "/secretDashboard") {
     const dashboardId = searchParams.get("dashboardId");
     if (dashboardId) {

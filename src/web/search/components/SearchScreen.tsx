@@ -2,42 +2,40 @@ import { useRouter } from "next/router";
 import React, { Fragment, useMemo, useState } from "react";
 import { useQuery } from "urql";
 
-import { ButtonsForStars } from "../display/ButtonsForStars";
-import { MultiSelectPlatform } from "../display/MultiSelectPlatform";
-import { QueryForm } from "../display/QueryForm";
-import { SliderElement } from "../display/SliderElement";
-import { useIsFirstRender, useNoInitialEffect } from "../hooks";
-import { Props as AnySearchPageProps, QueryParameters } from "./anySearchPage";
-import { QuestionFragment, SearchDocument } from "./queries.generated";
+import { PlatformConfig } from "../../../backend/platforms";
+import { MultiSelectPlatform } from "../../common/MultiSelectPlatform";
+import { ButtonsForStars } from "../../display/ButtonsForStars";
+import { SliderElement } from "../../display/SliderElement";
+import { QuestionFragment } from "../../fragments.generated";
+import { useIsFirstRender, useNoInitialEffect } from "../../hooks";
+import { QuestionCardsList } from "../../questions/components/QuestionCardsList";
+import { SearchDocument } from "../queries.generated";
+import { QueryForm } from "./QueryForm";
 
-interface Props extends AnySearchPageProps {
-  hasSearchbar: boolean;
-  hasCapture: boolean;
-  hasAdvancedOptions: boolean;
-  placeholder: string;
-  displaySeeMoreHint: boolean;
-  displayQuestionsWrapper: (opts: {
-    results: QuestionFragment[];
-    numDisplay: number;
-    whichResultToDisplayAndCapture: number;
-    showIdToggle: boolean;
-  }) => React.ReactNode;
+export interface QueryParameters {
+  query: string;
+  starsThreshold: number;
+  forecastsThreshold: number;
+  forecastingPlatforms: string[]; // platform names
+}
+
+export interface Props {
+  defaultResults: QuestionFragment[];
+  initialQueryParameters: QueryParameters;
+  defaultQueryParameters: QueryParameters;
+  initialNumDisplay: number;
+  defaultNumDisplay: number;
+  platformsConfig: PlatformConfig[];
 }
 
 /* Body */
-const CommonDisplay: React.FC<Props> = ({
+export const SearchScreen: React.FC<Props> = ({
   defaultResults,
   initialQueryParameters,
   defaultQueryParameters,
   initialNumDisplay,
   defaultNumDisplay,
   platformsConfig,
-  hasSearchbar,
-  hasCapture,
-  hasAdvancedOptions,
-  placeholder,
-  displaySeeMoreHint,
-  displayQuestionsWrapper,
 }) => {
   /* States */
   const router = useRouter();
@@ -53,8 +51,6 @@ const CommonDisplay: React.FC<Props> = ({
   const [forceSearch, setForceSearch] = useState(0);
 
   const [advancedOptions, showAdvancedOptions] = useState(false);
-  const [whichResultToDisplayAndCapture, setWhichResultToDisplayAndCapture] =
-    useState(0);
   const [showIdToggle, setShowIdToggle] = useState(false);
 
   const [typing, setTyping] = useState(false);
@@ -118,12 +114,15 @@ const CommonDisplay: React.FC<Props> = ({
       numDisplay % 3 != 0
         ? numDisplay + (3 - (Math.round(numDisplay) % 3))
         : numDisplay;
-    return displayQuestionsWrapper({
-      results,
-      numDisplay: numDisplayRounded,
-      whichResultToDisplayAndCapture,
-      showIdToggle,
-    });
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <QuestionCardsList
+          results={results}
+          numDisplay={numDisplayRounded}
+          showIdToggle={showIdToggle}
+        />
+      </div>
+    );
   };
 
   const updateRoute = () => {
@@ -217,7 +216,7 @@ const CommonDisplay: React.FC<Props> = ({
   };
 
   /* Change selected platforms */
-  const onChangeSelectedPlatforms = (value) => {
+  const onChangeSelectedPlatforms = (value: string[]) => {
     setQueryParameters({
       ...queryParameters,
       forecastingPlatforms: value,
@@ -229,61 +228,29 @@ const CommonDisplay: React.FC<Props> = ({
     setShowIdToggle(!showIdToggle);
   };
 
-  // Capture functionality
-  const onClickBack = () => {
-    const decreaseUntil0 = (num: number) => (num - 1 > 0 ? num - 1 : 0);
-    setWhichResultToDisplayAndCapture(
-      decreaseUntil0(whichResultToDisplayAndCapture)
-    );
-  };
-  const onClickForward = (whichResultToDisplayAndCapture: number) => {
-    setWhichResultToDisplayAndCapture(whichResultToDisplayAndCapture + 1);
-  };
-
   /* Final return */
   return (
     <Fragment>
       <label className="mb-4 mt-4 flex flex-row justify-center items-center">
-        {hasSearchbar ? (
-          <div className="w-10/12 mb-2">
-            <QueryForm
-              value={queryParameters.query}
-              onChange={onChangeSearchBar}
-              placeholder={placeholder}
-            />
-          </div>
-        ) : null}
+        <div className="w-10/12 mb-2">
+          <QueryForm
+            value={queryParameters.query}
+            onChange={onChangeSearchBar}
+            placeholder="Find forecasts about..."
+          />
+        </div>
 
-        {hasAdvancedOptions ? (
-          <div className="w-2/12 flex justify-center ml-4 md:ml-2 lg:ml-0">
-            <button
-              className="text-gray-500 text-sm mb-2"
-              onClick={() => showAdvancedOptions(!advancedOptions)}
-            >
-              Advanced options ▼
-            </button>
-          </div>
-        ) : null}
-
-        {hasCapture ? (
-          <div className="w-2/12 flex justify-center ml-4 md:ml-2 gap-1 lg:ml-0">
-            <button
-              className="text-blue-500 cursor-pointer text-xl mb-3 pr-3 hover:text-blue-600"
-              onClick={() => onClickBack()}
-            >
-              ◀
-            </button>
-            <button
-              className="text-blue-500 cursor-pointer text-xl mb-3 pl-3 hover:text-blue-600"
-              onClick={() => onClickForward(whichResultToDisplayAndCapture)}
-            >
-              ▶
-            </button>
-          </div>
-        ) : null}
+        <div className="w-2/12 flex justify-center ml-4 md:ml-2 lg:ml-0">
+          <button
+            className="text-gray-500 text-sm mb-2"
+            onClick={() => showAdvancedOptions(!advancedOptions)}
+          >
+            Advanced options ▼
+          </button>
+        </div>
       </label>
 
-      {hasAdvancedOptions && advancedOptions ? (
+      {advancedOptions ? (
         <div className="flex-1 flex-col mx-auto justify-center items-center w-full">
           <div className="grid sm:grid-rows-4 sm:grid-cols-1 md:grid-rows-2 lg:grid-rows-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 items-center content-center bg-gray-50 rounded-md px-8 pt-4 pb-1 shadow mb-4">
             <div className="flex row-start-1 row-end-1  col-start-1 col-end-4 md:row-span-1 md:col-start-1 md:col-end-1 md:row-start-1 md:row-end-1 lg:row-span-1 lg:col-start-1 lg:col-end-1 lg:row-start-1 lg:row-end-1 items-center justify-center mb-4">
@@ -325,8 +292,7 @@ const CommonDisplay: React.FC<Props> = ({
 
       <div>{getInfoToDisplayQuestionsFunction()}</div>
 
-      {displaySeeMoreHint &&
-      (!results || (results.length !== 0 && numDisplay < results.length)) ? (
+      {!results || (results.length !== 0 && numDisplay < results.length) ? (
         <div>
           <p className="mt-4 mb-4">
             {"Can't find what you were looking for?"}
@@ -351,10 +317,6 @@ const CommonDisplay: React.FC<Props> = ({
           </p>
         </div>
       ) : null}
-
-      <br />
     </Fragment>
   );
 };
-
-export default CommonDisplay;
