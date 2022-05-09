@@ -9,10 +9,7 @@ import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "infer";
-let htmlEndPoint = "https://www.infer-pub.com/questions";
-String.prototype.replaceAll = function replaceAll(search, replace) {
-  return this.split(search).join(replace);
-};
+const htmlEndPoint = "https://www.infer-pub.com/questions";
 const DEBUG_MODE: "on" | "off" = "off"; // "off"
 const SLEEP_TIME_RANDOM = 7000; // miliseconds
 const SLEEP_TIME_EXTRA = 2000;

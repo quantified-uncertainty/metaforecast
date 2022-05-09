@@ -42,7 +42,7 @@ async function fetchPredictions() {
   const agent = new https.Agent({
     rejectUnauthorized: false,
   });
-  let response = await axios({
+  const response = await axios({
     url: endpoint,
     method: "GET",
     headers: {
@@ -115,18 +115,19 @@ async function processPredictions(data) {
     if (rules == undefined) {
       // console.log(prediction.description)
     }
+
     let title = rules.split("? ")[0] + "?";
     let description = rules.split("? ")[1].trim();
     if (title.includes("of the named")) {
       title = prediction.marketName + ": " + title;
     }
-    let result = {
-      id: id,
-      title: title,
+    const result = {
+      id,
+      title,
       url: `https://www.betfair.com/exchange/plus/politics/market/${prediction.marketId}`,
       platform: platformName,
-      description: description,
-      options: options,
+      description,
+      options,
       qualityindicators: {
         stars: calculateStars(platformName, {
           volume: prediction.totalMatched,

@@ -13,9 +13,9 @@ const index = client.initIndex("metaforecast");
 interface SearchOpts {
   queryString: string;
   hitsPerPage?: number;
-  starsThreshold: number;
-  filterByPlatforms: string[];
-  forecastsThreshold: number;
+  starsThreshold?: number;
+  filterByPlatforms?: string[];
+  forecastsThreshold?: number;
 }
 
 const buildFilter = ({
@@ -33,7 +33,7 @@ const buildFilter = ({
     ? filterByPlatforms.map((platform) => `platform:"${platform}"`).join(" OR ")
     : null;
   const numForecastsFilter =
-    forecastsThreshold > 0
+    forecastsThreshold && forecastsThreshold > 0
       ? `qualityindicators.numforecasts >= ${forecastsThreshold}`
       : null;
   const finalFilter = [starsFilter, platformsFilter, numForecastsFilter]

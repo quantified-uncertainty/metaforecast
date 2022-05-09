@@ -87,7 +87,7 @@ export const MultiSelectPlatform: React.FC<Props> = ({
 
   const selectValue = value.map((v) => id2option[v]).filter((v) => v);
 
-  const onSelectChange = (newValue: Option[]) => {
+  const onSelectChange = (newValue: readonly Option[]) => {
     onChange(newValue.map((o) => o.value));
   };
 

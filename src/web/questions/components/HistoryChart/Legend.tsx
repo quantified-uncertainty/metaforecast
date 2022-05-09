@@ -12,15 +12,17 @@ const LegendItem: React.FC<{ item: Item; onHighlight: () => void }> = ({
   onHighlight,
 }) => {
   const { x, y, reference, floating, strategy } = useFloating({
-    // placement: "right",
     middleware: [shift()],
   });
 
   const [showTooltip, setShowTooltip] = useState(false);
-  const textRef = useRef<HTMLDivElement>();
+  const textRef = useRef<HTMLDivElement>(null);
 
   const onHover = () => {
-    if (textRef.current.scrollWidth > textRef.current.clientWidth) {
+    if (
+      textRef.current &&
+      textRef.current.scrollWidth > textRef.current.clientWidth
+    ) {
       setShowTooltip(true);
     }
     onHighlight();

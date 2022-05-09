@@ -9,10 +9,7 @@ import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "goodjudgment";
-let endpoint = "https://goodjudgment.io/superforecasts/";
-String.prototype.replaceAll = function replaceAll(search, replace) {
-  return this.split(search).join(replace);
-};
+const endpoint = "https://goodjudgment.io/superforecasts/";
 
 /* Body */
 export const goodjudgment: Platform = {

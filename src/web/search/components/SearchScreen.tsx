@@ -61,7 +61,7 @@ export const SearchScreen: React.FC<Props> = ({
     variables: {
       input: {
         ...queryParameters,
-        limit: numDisplay,
+        limit: numDisplay + 50,
       },
     },
     pause: !isFirstRender,

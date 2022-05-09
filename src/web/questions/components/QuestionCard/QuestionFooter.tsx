@@ -30,13 +30,17 @@ export const qualityIndicatorLabels: { [k in UsedIndicatorName]: string } = {
   openInterest: "Interest",
 };
 
-const formatNumber = (num) => {
-  if (Number(num) < 1000) {
-    return Number(num).toFixed(0);
+const isUsedIndicatorName = (name: string): name is UsedIndicatorName => {
+  return name in qualityIndicatorLabels;
+};
+
+const formatNumber = (num: number) => {
+  if (num < 1000) {
+    return num.toFixed(0);
   } else if (num < 10000) {
-    return (Number(num) / 1000).toFixed(1) + "k";
+    return (num / 1000).toFixed(1) + "k";
   } else {
-    return (Number(num) / 1000).toFixed(0) + "k";
+    return (num / 1000).toFixed(0) + "k";
   }
 };
 
@@ -100,7 +104,7 @@ const FirstQualityIndicator: React.FC<{
 };
 
 export const formatIndicatorValue = (
-  value: any,
+  value: number,
   indicator: UsedIndicatorName,
   platform: string
 ): string => {
@@ -119,21 +123,26 @@ const QualityIndicatorsList: React.FC<{
   return (
     <div className="text-sm">
       <FirstQualityIndicator question={question} />
-      {Object.entries(question.qualityIndicators).map((entry, i) => {
-        const indicatorLabel = qualityIndicatorLabels[entry[0]];
-        if (!indicatorLabel || entry[1] === null) return;
-        const indicator = entry[0] as UsedIndicatorName; // guaranteed by the previous line
-        const value = entry[1];
+      {Object.entries(question.qualityIndicators).map(
+        ([indicator, value], i) => {
+          if (!isUsedIndicatorName(indicator)) return;
+          const indicatorLabel = qualityIndicatorLabels[indicator];
+          if (!indicatorLabel || value === null) return;
 
-        return (
-          <div key={indicator}>
-            <span>{indicatorLabel}:</span>&nbsp;
-            <span className="font-bold">
-              {formatIndicatorValue(value, indicator, question.platform.id)}
-            </span>
-          </div>
-        );
-      })}
+          return (
+            <div key={indicator}>
+              <span>{indicatorLabel}:</span>&nbsp;
+              <span className="font-bold">
+                {formatIndicatorValue(
+                  Number(value),
+                  indicator,
+                  question.platform.id
+                )}
+              </span>
+            </div>
+          );
+        }
+      )}
     </div>
   );
 };

@@ -1,6 +1,4 @@
-import * as React from "react";
-
-function SvgLogo2(props) {
+export const Logo2: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -69,6 +67,4 @@ function SvgLogo2(props) {
       />
     </svg>
   );
-}
-
-export default SvgLogo2;
+};

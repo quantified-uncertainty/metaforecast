@@ -140,6 +140,7 @@ builder.queryField("questions", (t) =>
 builder.queryField("question", (t) =>
   t.field({
     type: QuestionObj,
+    nullable: true,
     description: "Look up a single question by its id",
     args: {
       id: t.arg({ type: "ID", required: true }),
@@ -149,7 +150,6 @@ builder.queryField("question", (t) =>
       const [platform, id] = [parts[0], parts.slice(1).join("-")];
       if (platform === "guesstimate") {
         const q = await guesstimate.fetchQuestion(Number(id));
-        console.log(q);
         return q;
       }
       return await prisma.question.findUnique({

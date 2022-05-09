@@ -1,31 +1,5 @@
-export function getStarSymbols(numstars) {
-  let stars = "★★☆☆☆";
-  switch (numstars) {
-    case 0:
-      stars = "☆☆☆☆☆";
-      break;
-    case 1:
-      stars = "★☆☆☆☆";
-      break;
-    case 2:
-      stars = "★★☆☆☆";
-      break;
-    case 3:
-      stars = "★★★☆☆";
-      break;
-    case 4:
-      stars = "★★★★☆";
-      break;
-    case 5:
-      stars = "★★★★★";
-      break;
-    default:
-      stars = "★★☆☆☆";
-  }
-  return stars;
-}
-
-let average = (array) => array.reduce((a, b) => a + b, 0) / array.length;
+let average = (array: number[]) =>
+  array.reduce((a, b) => a + b, 0) / array.length;
 
 function calculateStarsAstralCodexTen(data) {
   let nuno = (data) => 3;

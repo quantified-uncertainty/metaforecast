@@ -1,26 +1,16 @@
-/* Imports */
 import textVersion from "textversionjs";
 
-/* Definitions */
-String.prototype.replaceAll = function replaceAll(search, replace) {
-  return this.split(search).join(replace);
-};
-
-var styleConfig = {
-  linkProcess: function (href, linkText) {
-    let newHref = href ? href.replace(/\(/g, "%28").replace(/\)/g, "%29") : "";
-    // Deal corretly in markdown with links that contain parenthesis
-    return `[${linkText}](${newHref})`;
-  },
-};
-
-/* Support functions */
-
-/* Body */
-
-export default function toMarkdown(htmlText) {
+export default function toMarkdown(htmlText: string) {
   let html2 = htmlText.replaceAll(`='`, `="`).replaceAll(`'>`, `">`);
-  return textVersion(html2, styleConfig);
+  return textVersion(html2, {
+    linkProcess: (href, linkText) => {
+      let newHref = href
+        ? href.replace(/\(/g, "%28").replace(/\)/g, "%29")
+        : "";
+      // Deal correctly in markdown with links that contain parenthesis
+      return `[${linkText}](${newHref})`;
+    },
+  });
 }
 
 // toMarkdown()

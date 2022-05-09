@@ -13,61 +13,24 @@ const truncateText = (length: number, text: string): string => {
   if (!text) {
     return "";
   }
-  if (!!text && text.length <= length) {
+  if (text.length <= length) {
     return text;
   }
   const breakpoints = " .!?";
-  let lastLetter = null;
-  let lastIndex = null;
+  let lastLetter: string | undefined = undefined;
+  let lastIndex: number | undefined = undefined;
   for (let index = length; index > 0; index--) {
-    let letter = text[index];
+    const letter = text[index];
     if (breakpoints.includes(letter)) {
       lastLetter = letter;
       lastIndex = index;
       break;
     }
   }
-  let truncatedText = !!text.slice
-    ? text.slice(0, lastIndex) + (lastLetter != "." ? "..." : "..")
-    : "";
+  let truncatedText =
+    text.slice(0, lastIndex) + (lastLetter != "." ? "..." : "..");
   return truncatedText;
 };
-
-// replaceAll polyfill
-function escapeRegExp(string) {
-  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
-}
-
-function replaceAll(
-  originalString: string,
-  pattern: string | RegExp,
-  substitute
-) {
-  return originalString.replace(
-    new RegExp(escapeRegExp(pattern), "g"),
-    substitute
-  );
-}
-
-if (!String.prototype.replaceAll) {
-  String.prototype.replaceAll = function (
-    pattern: string | RegExp,
-    substitute
-  ) {
-    let originalString = this;
-
-    // If a regex pattern
-    if (
-      Object.prototype.toString.call(pattern).toLowerCase() ===
-      "[object regexp]"
-    ) {
-      return originalString.replace(pattern, substitute);
-    }
-
-    // If a string
-    return replaceAll(originalString, pattern, substitute);
-  };
-}
 
 // Auxiliary components
 
@@ -153,14 +116,14 @@ export const QuestionCard: React.FC<Props> = ({
           </div>
           {isBinary ? (
             <div className="flex justify-between">
-              <QuestionOptions options={options} />
+              <QuestionOptions question={question} />
               <div className={`hidden ${showTimeStamp ? "sm:block" : ""}`}>
                 <LastUpdated timestamp={lastUpdated} />
               </div>
             </div>
           ) : (
             <div className="space-y-2">
-              <QuestionOptions options={options} />
+              <QuestionOptions question={question} />
               <div className={`hidden ${showTimeStamp ? "sm:block" : ""} ml-6`}>
                 <LastUpdated timestamp={lastUpdated} />
               </div>

@@ -32,19 +32,19 @@ builder.queryField("searchQuestions", (t) =>
       // defs
       const query = input.query === undefined ? "" : input.query;
       if (query === "") return [];
-      const forecastsThreshold = input.forecastsThreshold;
-      const starsThreshold = input.starsThreshold;
+      const { forecastsThreshold, starsThreshold } = input;
+
       const platformsIncludeGuesstimate =
         input.forecastingPlatforms?.includes("guesstimate") &&
-        starsThreshold <= 1;
+        (!starsThreshold || starsThreshold <= 1);
 
       // preparation
       const unawaitedAlgoliaResponse = searchWithAlgolia({
         queryString: query,
-        hitsPerPage: input.limit + 50,
-        starsThreshold,
-        filterByPlatforms: input.forecastingPlatforms,
-        forecastsThreshold,
+        hitsPerPage: input.limit ?? 50,
+        starsThreshold: starsThreshold ?? undefined,
+        filterByPlatforms: input.forecastingPlatforms ?? undefined,
+        forecastsThreshold: forecastsThreshold ?? undefined,
       });
 
       let results: AlgoliaQuestion[] = [];

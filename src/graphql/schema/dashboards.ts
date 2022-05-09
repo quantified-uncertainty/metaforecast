@@ -36,6 +36,7 @@ const DashboardObj = builder.objectRef<Dashboard>("Dashboard").implement({
 builder.queryField("dashboard", (t) =>
   t.field({
     type: DashboardObj,
+    nullable: true,
     description: "Look up a single dashboard by its id",
     args: {
       id: t.arg({ type: "ID", required: true }),

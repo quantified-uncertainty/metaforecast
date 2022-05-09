@@ -37,7 +37,9 @@ export const DashboardCreator: React.FC<Props> = ({ handleSubmit }) => {
       }
     } catch (error) {
       setActing(false);
-      const substituteText = `Error: ${error.message}
+      const substituteText = `Error: ${
+        error instanceof Error ? error.message : "Unknown"
+      }
 
 Try something like:
 ${exampleInput}
