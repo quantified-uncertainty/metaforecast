@@ -1,14 +1,19 @@
 import { NextPage } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import captureImg from "../../public/screenshots/capture.png";
+import dashboardImg from "../../public/screenshots/dashboard.png";
+import frontpageImg from "../../public/screenshots/frontpage.png";
+import twitterImg from "../../public/screenshots/twitter.png";
 import { Card } from "../web/common/Card";
 import { Layout } from "../web/common/Layout";
 
 type AnyTool = {
   title: string;
   description: string;
-  img?: string;
+  img?: StaticImageData;
 };
 
 type InnerTool = AnyTool & { innerLink: string };
@@ -24,7 +29,7 @@ const ToolCard: React.FC<Tool> = (tool) => {
       <div className="grid content-start gap-3">
         <div className="text-gray-800 text-lg font-medium">{tool.title}</div>
         <div className="text-gray-500">{tool.description}</div>
-        {tool.img && <img src={tool.img} className="text-gray-500" />}
+        {tool.img && <Image src={tool.img} className="text-gray-500" />}
       </div>
     </Card>
   );
@@ -52,27 +57,27 @@ const ToolsPage: NextPage = () => {
       title: "Search",
       description: "Find forecasting questions on many platforms.",
       innerLink: "/",
-      img: "/screenshots/frontpage.png",
+      img: frontpageImg,
     },
     {
       title: "[Beta] Present",
       description: "Present forecasts in dashboards.",
       innerLink: "/dashboards",
-      img: "/screenshots/dashboard.png",
+      img: dashboardImg,
     },
     {
       title: "Capture",
       description:
         "Capture forecasts save them to Imgur. Useful for posting them somewhere else as images. Currently rate limited by Imgur, so if you get a .gif of a fox falling flat on his face, that's why. Capture button can be found on individual questions pages.",
       innerLink: "/",
-      img: "https://i.imgur.com/EXkFBzz.png",
+      img: captureImg,
     },
     {
       title: "Summon",
       description:
         "Summon metaforecast on Twitter by mentioning @metaforecast, or on Discord by using Fletcher and !metaforecast, followed by search terms.",
       externalLink: "https://twitter.com/metaforecast",
-      img: "https://i.imgur.com/BQ4Zzjw.png",
+      img: twitterImg,
     },
     {
       title: "[Beta] Request",
