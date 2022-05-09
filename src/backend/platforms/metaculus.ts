@@ -1,7 +1,7 @@
 /* Imports */
 import axios from "axios";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import toMarkdown from "../utils/toMarkdown";
 import { FetchedQuestion, Platform } from "./";
 
@@ -131,7 +131,7 @@ export const metaculus: Platform = {
             let description = descriptionprocessed2;
 
             let isbinary = result.possibilities.type == "binary";
-            let options = [];
+            let options: FetchedQuestion["options"] = [];
             if (isbinary) {
               let probability = Number(result.community_prediction.full.q2);
               options = [
@@ -156,9 +156,6 @@ export const metaculus: Platform = {
               options,
               qualityindicators: {
                 numforecasts: Number(result.number_of_predictions),
-                stars: calculateStars(platformName, {
-                  numforecasts: result.number_of_predictions,
-                }),
               },
               extra: {
                 resolution_data: {
@@ -192,5 +189,15 @@ export const metaculus: Platform = {
     }
 
     return all_questions;
+  },
+  calculateStars(data) {
+    const { numforecasts } = data.qualityindicators;
+    let nuno = () =>
+      (numforecasts || 0) > 300 ? 4 : (numforecasts || 0) > 100 ? 3 : 2;
+    let eli = () => 3;
+    let misha = () => 3;
+    let starsDecimal = average([nuno(), eli(), misha()]);
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

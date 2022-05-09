@@ -2,7 +2,7 @@
 import axios from "axios";
 import fs from "fs";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import { Platform } from "./";
 
 const platformName = "givewellopenphil";
@@ -53,9 +53,7 @@ async function main1() {
       platform: platformName,
       description,
       options: [],
-      qualityindicators: {
-        stars: calculateStars(platformName, {}),
-      },
+      qualityindicators: {},
     }; // Note: This requires some processing afterwards
     // console.log(result)
     results.push(result);
@@ -83,5 +81,13 @@ export const givewellopenphil: Platform = {
       timestamp: new Date("2021-02-23"),
     }));
     return dataWithDate;
+  },
+  calculateStars(data) {
+    let nuno = () => 2;
+    let eli = () => null;
+    let misha = () => null;
+    let starsDecimal = average([nuno()]); //, eli(), misha()])
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

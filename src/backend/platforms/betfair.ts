@@ -2,7 +2,7 @@
 import axios from "axios";
 import https from "https";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import { FetchedQuestion, Platform } from "./";
 
 const platformName = "betfair";
@@ -121,17 +121,13 @@ async function processPredictions(data) {
     if (title.includes("of the named")) {
       title = prediction.marketName + ": " + title;
     }
-    const result = {
+    const result: FetchedQuestion = {
       id,
       title,
       url: `https://www.betfair.com/exchange/plus/politics/market/${prediction.marketId}`,
-      platform: platformName,
       description,
       options,
       qualityindicators: {
-        stars: calculateStars(platformName, {
-          volume: prediction.totalMatched,
-        }),
         volume: prediction.totalMatched,
       },
     };
@@ -148,5 +144,26 @@ export const betfair: Platform = {
     const data = await fetchPredictions();
     const results = await processPredictions(data); // somehow needed
     return results;
+  },
+  calculateStars(data) {
+    const volume = data.qualityindicators.volume || 0;
+    let nuno = () => (volume > 10000 ? 4 : volume > 1000 ? 3 : 2);
+    let eli = () => (volume > 10000 ? null : null);
+    let misha = () => null;
+    let starsDecimal = average([nuno()]); //, eli(), misha()])
+
+    const firstOption = data.options[0];
+
+    // Substract 1 star if probability is above 90% or below 10%
+    if (
+      firstOption &&
+      ((firstOption.probability || 0) < 0.1 ||
+        (firstOption.probability || 0) > 0.9)
+    ) {
+      starsDecimal = starsDecimal - 1;
+    }
+
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

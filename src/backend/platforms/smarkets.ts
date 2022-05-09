@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
@@ -166,14 +166,20 @@ export const smarkets: Platform = {
         description: market.description,
         options: options,
         timestamp: new Date(),
-        qualityindicators: {
-          stars: calculateStars(platformName, {}),
-        },
+        qualityindicators: {},
       };
       VERBOSE ? console.log(result) : empty();
       results.push(result);
     }
     VERBOSE ? console.log(results) : empty();
     return results;
+  },
+  calculateStars(data) {
+    let nuno = () => 2;
+    let eli = () => null;
+    let misha = () => null;
+    let starsDecimal = average([nuno()]); //, eli(), misha()])
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

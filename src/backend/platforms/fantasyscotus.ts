@@ -1,7 +1,6 @@
 /* Imports */
 import axios from "axios";
 
-import { calculateStars } from "../utils/stars";
 import { FetchedQuestion, Platform } from "./";
 
 const platformName = "fantasyscotus";
@@ -100,7 +99,6 @@ async function processData(data) {
         ],
         qualityindicators: {
           numforecasts: Number(predictionData.numForecasts),
-          stars: calculateStars(platformName, {}),
         },
       };
       results.push(eventObject);
@@ -119,5 +117,8 @@ export const fantasyscotus: Platform = {
     let rawData = await fetchData();
     let results = await processData(rawData);
     return results;
+  },
+  calculateStars(data) {
+    return 2;
   },
 };

@@ -6,3 +6,6 @@ export const shuffleArray = <T>(array: T[]): T[] => {
   }
   return array;
 };
+
+export const average = (array: number[]) =>
+  array.reduce((a, b) => a + b, 0) / array.length;

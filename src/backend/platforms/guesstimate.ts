@@ -1,12 +1,10 @@
 import axios from "axios";
-import { parseISO } from "date-fns";
 
-/* Imports */
 import { Question } from "@prisma/client";
 
 import { AlgoliaQuestion } from "../../backend/utils/algolia";
 import { prisma } from "../database/prisma";
-import { Platform } from "./";
+import { FetchedQuestion, Platform, prepareQuestion } from "./";
 
 /* Definitions */
 const searchEndpoint =
@@ -14,25 +12,20 @@ const searchEndpoint =
 
 const apiEndpoint = "https://guesstimate.herokuapp.com";
 
-/* Body */
-
 const modelToQuestion = (model: any): Question => {
   const { description } = model;
   // const description = model.description
   //   ? model.description.replace(/\n/g, " ").replace(/  /g, " ")
   //   : "";
-  const stars = description.length > 250 ? 2 : 1;
-  const timestamp = parseISO(model.created_at);
-  const q: Question = {
+  // const timestamp = parseISO(model.created_at);
+  const fq: FetchedQuestion = {
     id: `guesstimate-${model.id}`,
     title: model.name,
     url: `https://www.getguesstimate.com/models/${model.id}`,
-    timestamp,
-    platform: "guesstimate",
+    // timestamp,
     description,
     options: [],
     qualityindicators: {
-      stars,
       numforecasts: 1,
       numforecasters: 1,
     },
@@ -41,6 +34,7 @@ const modelToQuestion = (model: any): Question => {
     },
     // ranking: 10 * (index + 1) - 0.5, //(model._rankingInfo - 1*index)// hack
   };
+  const q = prepareQuestion(fq, guesstimate);
   return q;
 };
 
@@ -68,7 +62,7 @@ async function search(query: string): Promise<AlgoliaQuestion[]> {
   });
 
   // filter for duplicates. Surprisingly common.
-  let uniqueTitles = [];
+  let uniqueTitles: string[] = [];
   let uniqueModels: AlgoliaQuestion[] = [];
   for (let model of mappedModels) {
     if (!uniqueTitles.includes(model.title) && !model.title.includes("copy")) {
@@ -100,4 +94,5 @@ export const guesstimate: Platform & {
   color: "#223900",
   search,
   fetchQuestion,
+  calculateStars: (q) => (q.description.length > 250 ? 2 : 1),
 };

@@ -3,8 +3,8 @@ import axios from "axios";
 import { Tabletojson } from "tabletojson";
 import tunnel from "tunnel";
 
+import { average } from "../../utils";
 import { hash } from "../utils/hash";
-import { calculateStars } from "../utils/stars";
 import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
@@ -103,9 +103,7 @@ export const goodjudgment: Platform = {
           url: endpoint,
           description,
           options,
-          qualityindicators: {
-            stars: calculateStars(platformName, {}),
-          },
+          qualityindicators: {},
           extra: {
             superforecastercommentary: analysis || "",
           },
@@ -119,5 +117,13 @@ export const goodjudgment: Platform = {
     );
 
     return results;
+  },
+  calculateStars(data) {
+    let nuno = () => 4;
+    let eli = () => 4;
+    let misha = () => 3.5;
+    let starsDecimal = average([nuno()]); //, eli(), misha()])
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

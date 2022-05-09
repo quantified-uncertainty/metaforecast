@@ -41,11 +41,16 @@ export interface QualityIndicators {
 
 export type FetchedQuestion = Omit<
   Question,
-  "extra" | "qualityindicators" | "timestamp" | "platform"
+  "extra" | "qualityindicators" | "timestamp" | "platform" | "options"
 > & {
   timestamp?: Date;
   extra?: object; // required in DB but annoying to return empty; also this is slightly stricter than Prisma's JsonValue
-  qualityindicators: QualityIndicators; // slightly stronger type than Prisma's JsonValue
+  options: {
+    name?: string;
+    probability?: number;
+    type: "PROBABILITY";
+  }[]; // stronger type than Prisma's JsonValue
+  qualityindicators: Omit<QualityIndicators, "stars">; // slightly stronger type than Prisma's JsonValue
 };
 
 // fetcher should return null if platform failed to fetch questions for some reason
@@ -56,6 +61,7 @@ export interface Platform {
   label: string; // longer name for displaying on frontend etc., e.g. "X-risk estimates"
   color: string; // used on frontend
   fetcher?: PlatformFetcher;
+  calculateStars: (question: FetchedQuestion) => number;
 }
 
 // draft for the future callback-based streaming/chunking API:
@@ -86,6 +92,22 @@ export const platforms: Platform[] = [
   xrisk,
 ];
 
+export const prepareQuestion = (
+  q: FetchedQuestion,
+  platform: Platform
+): Question => {
+  return {
+    extra: {},
+    timestamp: new Date(),
+    ...q,
+    platform: platform.name,
+    qualityindicators: {
+      ...q.qualityindicators,
+      stars: platform.calculateStars(q),
+    },
+  };
+};
+
 export const processPlatform = async (platform: Platform) => {
   if (!platform.fetcher) {
     console.log(`Platform ${platform.name} doesn't have a fetcher, skipping`);
@@ -96,16 +118,6 @@ export const processPlatform = async (platform: Platform) => {
     console.log(`Platform ${platform.name} didn't return any results`);
     return;
   }
-
-  const prepareQuestion = (q: FetchedQuestion): Question => {
-    return {
-      extra: {},
-      timestamp: new Date(),
-      ...q,
-      platform: platform.name,
-      qualityindicators: q.qualityindicators as object, // fighting typescript
-    };
-  };
 
   const oldQuestions = await prisma.question.findMany({
     where: {
@@ -123,7 +135,7 @@ export const processPlatform = async (platform: Platform) => {
   const updatedQuestions: Question[] = [];
   const deletedIds = oldIds.filter((id) => !fetchedIdsSet.has(id));
 
-  for (const q of fetchedQuestions.map((q) => prepareQuestion(q))) {
+  for (const q of fetchedQuestions.map((q) => prepareQuestion(q, platform))) {
     if (oldIdsSet.has(q.id)) {
       updatedQuestions.push(q);
     } else {

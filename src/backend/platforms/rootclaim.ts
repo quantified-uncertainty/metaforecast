@@ -1,7 +1,7 @@
 import axios from "axios";
 import { JSDOM } from "jsdom";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import toMarkdown from "../utils/toMarkdown";
 import { FetchedQuestion, Platform } from "./";
 
@@ -79,11 +79,18 @@ export const rootclaim: Platform = {
         options: options,
         qualityindicators: {
           numforecasts: 1,
-          stars: calculateStars(platformName, {}),
         },
       };
       results.push(obj);
     }
     return results;
+  },
+  calculateStars(data) {
+    let nuno = () => 4;
+    let eli = () => null;
+    let misha = () => null;
+    let starsDecimal = average([nuno() /*, eli(data), misha(data)*/]);
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

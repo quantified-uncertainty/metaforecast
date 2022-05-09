@@ -1,7 +1,7 @@
 /* Imports */
 import axios from "axios";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
@@ -68,7 +68,8 @@ export const foretold: Platform = {
       questions = questions.filter((question) => question.previousAggregate); // Questions without any predictions
       questions.forEach((question) => {
         let id = `${platformName}-${question.id}`;
-        let options = [];
+
+        let options: FetchedQuestion["options"] = [];
         if (question.valueType == "PERCENTAGE") {
           let probability = question.previousAggregate.value.percentage;
           options = [
@@ -84,6 +85,7 @@ export const foretold: Platform = {
             },
           ];
         }
+
         const result: FetchedQuestion = {
           id,
           title: question.name,
@@ -92,7 +94,6 @@ export const foretold: Platform = {
           options,
           qualityindicators: {
             numforecasts: Math.floor(Number(question.measurementCount) / 2),
-            stars: calculateStars(platformName, {}),
           },
           /*liquidity: liquidity.toFixed(2),
           tradevolume: tradevolume.toFixed(2),
@@ -103,5 +104,13 @@ export const foretold: Platform = {
       });
     }
     return results;
+  },
+  calculateStars(data) {
+    let nuno = () => 2;
+    let eli = () => null;
+    let misha = () => null;
+    let starsDecimal = average([nuno()]); //, eli(), misha()])
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

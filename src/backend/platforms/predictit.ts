@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import toMarkdown from "../utils/toMarkdown";
 import { FetchedQuestion, Platform } from "./";
 
@@ -103,7 +103,6 @@ export const predictit: Platform = {
         description,
         options,
         qualityindicators: {
-          stars: calculateStars(platformName, {}),
           shares_volume,
         },
       };
@@ -112,5 +111,13 @@ export const predictit: Platform = {
     }
 
     return results;
+  },
+  calculateStars(data) {
+    let nuno = () => 3;
+    let eli = () => 3.5;
+    let misha = () => 2.5;
+    let starsDecimal = average([nuno(), eli(), misha()]);
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

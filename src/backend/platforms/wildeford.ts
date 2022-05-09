@@ -1,9 +1,9 @@
 /* Imports */
 import { GoogleSpreadsheet } from "google-spreadsheet";
 
+import { average } from "../../utils";
 import { applyIfSecretExists } from "../utils/getSecrets";
 import { hash } from "../utils/hash";
-import { calculateStars } from "../utils/stars";
 import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
@@ -76,7 +76,7 @@ async function processPredictions(predictions) {
     let title = prediction["Prediction"].replace(" [update]", "");
     let id = `${platformName}-${hash(title)}`;
     let probability = Number(prediction["Odds"].replace("%", "")) / 100;
-    let options = [
+    let options: FetchedQuestion["options"] = [
       {
         name: "Yes",
         probability: probability,
@@ -95,9 +95,7 @@ async function processPredictions(predictions) {
       description: prediction["Notes"] || "",
       options,
       timestamp: new Date(Date.parse(prediction["Prediction Date"] + "Z")),
-      qualityindicators: {
-        stars: calculateStars(platformName, null),
-      },
+      qualityindicators: {},
     };
     return result;
   });
@@ -124,5 +122,13 @@ export const wildeford: Platform = {
   async fetcher() {
     const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY; // See: https://developers.google.com/sheets/api/guides/authorizing#APIKey
     return await applyIfSecretExists(GOOGLE_API_KEY, wildeford_inner);
+  },
+  calculateStars(data) {
+    let nuno = () => 3;
+    let eli = () => null;
+    let misha = () => null;
+    let starsDecimal = average([nuno()]); //, eli(), misha()])
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

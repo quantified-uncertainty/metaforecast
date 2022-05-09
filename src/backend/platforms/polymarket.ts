@@ -1,7 +1,7 @@
 /* Imports */
 import axios from "axios";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
@@ -96,8 +96,8 @@ export const polymarket: Platform = {
           let options = [];
           for (let outcome in moreMarketInfo.outcomeTokenPrices) {
             options.push({
-              name: marketInfo.outcomes[outcome],
-              probability: moreMarketInfo.outcomeTokenPrices[outcome],
+              name: String(marketInfo.outcomes[outcome]),
+              probability: Number(moreMarketInfo.outcomeTokenPrices[outcome]),
               type: "PROBABILITY",
             });
           }
@@ -112,11 +112,6 @@ export const polymarket: Platform = {
               numforecasts: numforecasts.toFixed(0),
               liquidity: liquidity.toFixed(2),
               tradevolume: tradevolume.toFixed(2),
-              stars: calculateStars(platformName, {
-                liquidity,
-                option: options[0],
-                volume: tradevolume,
-              }),
             },
             extra: {
               address: marketInfo.address,
@@ -131,5 +126,34 @@ export const polymarket: Platform = {
       }
     }
     return results;
+  },
+  calculateStars(data) {
+    // let nuno = (data) => (data.volume > 10000 ? 4 : data.volume > 1000 ? 3 : 2);
+    // let eli = (data) => data.liquidity > 10000 ? 5 : 4
+    // let misha = (data) => 4
+
+    const liquidity = data.qualityindicators.liquidity || 0;
+    const volume = data.qualityindicators.tradevolume || 0;
+
+    let nuno = () =>
+      liquidity > 1000 && volume > 10000
+        ? 4
+        : liquidity > 500 && volume > 1000
+        ? 3
+        : 2;
+    let starsDecimal = average([nuno()]); //, eli(data), misha(data)])
+
+    // Substract 1 star if probability is above 90% or below 10%
+    if (
+      data.options instanceof Array &&
+      data.options[0] &&
+      ((data.options[0].probability || 0) < 0.1 ||
+        (data.options[0].probability || 0) > 0.9)
+    ) {
+      starsDecimal = starsDecimal - 1;
+    }
+
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

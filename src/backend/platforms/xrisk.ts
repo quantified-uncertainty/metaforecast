@@ -25,4 +25,5 @@ export const xrisk: Platform = {
     });
     return results;
   },
+  calculateStars: () => 2,
 };

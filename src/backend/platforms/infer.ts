@@ -1,9 +1,9 @@
 /* Imports */
 import axios from "axios";
 
+import { average } from "../../utils";
 import { applyIfSecretExists } from "../utils/getSecrets";
 import { measureTime } from "../utils/measureTime";
-import { calculateStars } from "../utils/stars";
 import toMarkdown from "../utils/toMarkdown";
 import { FetchedQuestion, Platform } from "./";
 
@@ -106,7 +106,6 @@ async function fetchStats(questionUrl, cookie) {
       numforecasts: Number(numforecasts),
       numforecasters: Number(numforecasters),
       comments_count: Number(comments_count),
-      stars: calculateStars(platformName, { numforecasts }),
     },
   };
   // console.log(JSON.stringify(result, null, 4));
@@ -177,9 +176,7 @@ async function infer_inner(cookie: string) {
           let question: FetchedQuestion = {
             id: id,
             title: title,
-            description: moreinfo.description,
             url: url,
-            options: moreinfo.options,
             ...moreinfo,
           };
           console.log(JSON.stringify(question, null, 4));
@@ -235,5 +232,13 @@ export const infer: Platform = {
   async fetcher() {
     let cookie = process.env.INFER_COOKIE;
     return await applyIfSecretExists(cookie, infer_inner);
+  },
+  calculateStars(data) {
+    let nuno = () => 2;
+    let eli = () => null;
+    let misha = () => null;
+    let starsDecimal = average([nuno()]); //, eli(), misha()])
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };
