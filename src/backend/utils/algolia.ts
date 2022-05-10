@@ -44,7 +44,7 @@ export async function rebuildAlgoliaDatabase() {
     })
   );
 
-  if (index.exists()) {
+  if (await index.exists()) {
     console.log("Index exists");
     await index.replaceAllObjects(records, { safe: true });
     console.log(

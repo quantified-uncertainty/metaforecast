@@ -55,7 +55,7 @@ export const rootclaim: Platform = {
     for (const claim of claims) {
       const id = `${platformName}-${claim.slug.toLowerCase()}`;
 
-      let options = [];
+      let options: FetchedQuestion["options"] = [];
       for (let scenario of claim.scenarios) {
         options.push({
           name: toMarkdown(scenario.name || scenario.text)
@@ -76,7 +76,7 @@ export const rootclaim: Platform = {
         title: toMarkdown(claim.question).replace("\n", ""),
         url,
         description: toMarkdown(description).replace("&#39;", "'"),
-        options: options,
+        options,
         qualityindicators: {
           numforecasts: 1,
         },

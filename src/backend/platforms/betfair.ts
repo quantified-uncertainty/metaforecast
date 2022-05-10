@@ -27,7 +27,7 @@ const arraysEqual = (a: string[], b: string[]) => {
   return true;
 };
 
-const mergeRunners = (runnerCatalog, runnerBook) => {
+const mergeRunners = (runnerCatalog: any, runnerBook: any) => {
   let keys = Object.keys(runnerCatalog);
   let result = [];
   for (let key of keys) {
@@ -45,16 +45,13 @@ async function fetchPredictions() {
   const response = await axios({
     url: endpoint,
     method: "GET",
-    headers: {
-      "Content-Type": "text/html",
-    },
     httpsAgent: agent,
   }).then((response) => response.data);
 
   return response;
 }
 
-async function whipIntoShape(data) {
+async function whipIntoShape(data: any) {
   let catalogues = data.market_catalogues;
   let books = data.market_books;
   let keys1 = Object.keys(catalogues).sort();
@@ -78,7 +75,7 @@ async function whipIntoShape(data) {
   return results;
 }
 
-async function processPredictions(data) {
+async function processPredictions(data: any) {
   let predictions = await whipIntoShape(data);
   // console.log(JSON.stringify(predictions, null, 4))
   let results: FetchedQuestion[] = predictions.map((prediction) => {
@@ -87,13 +84,17 @@ async function processPredictions(data) {
     } */
     let id = `${platformName}-${prediction.marketId}`;
     let normalizationFactor = prediction.options
-      .filter((option) => option.status == "ACTIVE" && option.totalMatched > 0)
-      .map((option) => option.lastPriceTraded)
-      .map((x) => 1 / x)
-      .reduce((a, b) => a + b, 0);
+      .filter(
+        (option: any) => option.status == "ACTIVE" && option.totalMatched > 0
+      )
+      .map((option: any) => option.lastPriceTraded)
+      .map((x: any) => 1 / x)
+      .reduce((a: any, b: any) => a + b, 0);
     let options = prediction.options
-      .filter((option) => option.status == "ACTIVE" && option.totalMatched > 0)
-      .map((option) => ({
+      .filter(
+        (option: any) => option.status == "ACTIVE" && option.totalMatched > 0
+      )
+      .map((option: any) => ({
         name: option.runnerName,
         probability:
           option.lastPriceTraded != 0
@@ -142,7 +143,7 @@ export const betfair: Platform = {
   color: "#3d674a",
   async fetcher() {
     const data = await fetchPredictions();
-    const results = await processPredictions(data); // somehow needed
+    const results = await processPredictions(data);
     return results;
   },
   calculateStars(data) {

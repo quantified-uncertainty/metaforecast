@@ -6,18 +6,17 @@ import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "kalshi";
-let jsonEndpoint = "https://trading-api.kalshi.com/v1/cached/markets/"; //"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
+let jsonEndpoint = "https://trading-api.kalshi.com/v1/cached/markets/";
 
 async function fetchAllMarkets() {
-  // for info which the polymarket graphql API
   let response = await axios
     .get(jsonEndpoint)
     .then((response) => response.data.markets);
-  // console.log(response)
+
   return response;
 }
 
-async function processMarkets(markets) {
+async function processMarkets(markets: any[]) {
   let dateNow = new Date().toISOString();
   // console.log(markets)
   markets = markets.filter((market) => market.close_date > dateNow);

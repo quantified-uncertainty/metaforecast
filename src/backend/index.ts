@@ -2,11 +2,10 @@
 import "dotenv/config";
 
 import readline from "readline";
-import util from "util";
 
 import { executeJobByName, jobs } from "./flow/jobs";
 
-let generateWhatToDoMessage = () => {
+const generateWhatToDoMessage = () => {
   const color = "\x1b[36m";
   const resetColor = "\x1b[0m";
   let completeMessages = [
@@ -23,10 +22,10 @@ let generateWhatToDoMessage = () => {
   return completeMessages;
 };
 
-let whattodoMessage = generateWhatToDoMessage();
+const whattodoMessage = generateWhatToDoMessage();
 
 /* BODY */
-let commandLineUtility = async () => {
+const commandLineUtility = async () => {
   const pickOption = async () => {
     if (process.argv.length === 3) {
       return process.argv[2]; // e.g., npm run cli polymarket
@@ -37,9 +36,15 @@ let commandLineUtility = async () => {
       output: process.stdout,
     });
 
-    const question = util.promisify(rl.question).bind(rl);
+    const question = (query: string) => {
+      return new Promise((resolve: (s: string) => void) => {
+        rl.question(query, resolve);
+      });
+    };
+
     const answer = await question(whattodoMessage);
     rl.close();
+
     return answer;
   };
 

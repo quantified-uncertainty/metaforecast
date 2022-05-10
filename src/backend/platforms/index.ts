@@ -1,5 +1,6 @@
 import { Question } from "@prisma/client";
 
+import { QuestionOption } from "../../common/types";
 import { prisma } from "../database/prisma";
 import { betfair } from "./betfair";
 import { fantasyscotus } from "./fantasyscotus";
@@ -45,11 +46,7 @@ export type FetchedQuestion = Omit<
 > & {
   timestamp?: Date;
   extra?: object; // required in DB but annoying to return empty; also this is slightly stricter than Prisma's JsonValue
-  options: {
-    name?: string;
-    probability?: number;
-    type: "PROBABILITY";
-  }[]; // stronger type than Prisma's JsonValue
+  options: QuestionOption[]; // stronger type than Prisma's JsonValue
   qualityindicators: Omit<QualityIndicators, "stars">; // slightly stronger type than Prisma's JsonValue
 };
 
@@ -92,10 +89,23 @@ export const platforms: Platform[] = [
   xrisk,
 ];
 
+// Typing notes:
+// There's a difference between prisma's Question type (type returned from `find` and `findMany`) and its input types due to JsonValue vs InputJsonValue mismatch.
+// On the other hand, we can't use Prisma.QuestionUpdateInput or Prisma.QuestionCreateManyInput either, because we use this question in guesstimate's code for preparing questions from guesstimate models...
+// So here we build a new type which should be ok to use both in place of prisma's Question type and as an input to its update or create methods.
+type PreparedQuestion = Omit<
+  Question,
+  "extra" | "qualityindicators" | "options"
+> & {
+  extra: NonNullable<Question["extra"]>;
+  qualityindicators: NonNullable<Question["qualityindicators"]>;
+  options: NonNullable<Question["options"]>;
+};
+
 export const prepareQuestion = (
   q: FetchedQuestion,
   platform: Platform
-): Question => {
+): PreparedQuestion => {
   return {
     extra: {},
     timestamp: new Date(),
@@ -131,8 +141,8 @@ export const processPlatform = async (platform: Platform) => {
   const fetchedIdsSet = new Set(fetchedIds);
   const oldIdsSet = new Set(oldIds);
 
-  const createdQuestions: Question[] = [];
-  const updatedQuestions: Question[] = [];
+  const createdQuestions: PreparedQuestion[] = [];
+  const updatedQuestions: PreparedQuestion[] = [];
   const deletedIds = oldIds.filter((id) => !fetchedIdsSet.has(id));
 
   for (const q of fetchedQuestions.map((q) => prepareQuestion(q, platform))) {
@@ -161,6 +171,13 @@ export const processPlatform = async (platform: Platform) => {
         in: deletedIds,
       },
     },
+  });
+
+  await prisma.history.createMany({
+    data: [...createdQuestions, ...updatedQuestions].map((q) => ({
+      ...q,
+      idref: q.id,
+    })),
   });
 
   console.log(

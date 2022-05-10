@@ -14,8 +14,8 @@ export const xrisk: Platform = {
     let fileRaw = fs.readFileSync("./input/xrisk-questions.json", {
       encoding: "utf-8",
     });
-    let results = JSON.parse(fileRaw);
-    results = results.map((item) => {
+    let parsedData = JSON.parse(fileRaw);
+    const results = parsedData.map((item: any) => {
       item.extra = item.moreoriginsdata;
       delete item.moreoriginsdata;
       return {

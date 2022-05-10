@@ -2,8 +2,8 @@ import axios from "axios";
 
 import { Question } from "@prisma/client";
 
-import { AlgoliaQuestion } from "../../backend/utils/algolia";
 import { prisma } from "../database/prisma";
+import { AlgoliaQuestion } from "../utils/algolia";
 import { FetchedQuestion, Platform, prepareQuestion } from "./";
 
 /* Definitions */
@@ -12,7 +12,7 @@ const searchEndpoint =
 
 const apiEndpoint = "https://guesstimate.herokuapp.com";
 
-const modelToQuestion = (model: any): Question => {
+const modelToQuestion = (model: any): ReturnType<typeof prepareQuestion> => {
   const { description } = model;
   // const description = model.description
   //   ? model.description.replace(/\n/g, " ").replace(/  /g, " ")
@@ -77,12 +77,11 @@ async function search(query: string): Promise<AlgoliaQuestion[]> {
 const fetchQuestion = async (id: number): Promise<Question> => {
   const response = await axios({ url: `${apiEndpoint}/spaces/${id}` });
   let q = modelToQuestion(response.data);
-  q = await prisma.question.upsert({
+  return await prisma.question.upsert({
     where: { id: q.id },
     create: q,
     update: q,
   });
-  return q;
 };
 
 export const guesstimate: Platform & {

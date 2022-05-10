@@ -18,8 +18,10 @@ let highQualityCommunities = [
 ];
 
 /* Support functions */
-async function fetchAllCommunityQuestions(communityId) {
-  let response = await axios({
+async function fetchAllCommunityQuestions(communityId: string) {
+  // TODO - fetch foretold graphql schema to type the result properly?
+  // (should be doable with graphql-code-generator, why not)
+  const response = await axios({
     url: graphQLendpoint,
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -30,10 +32,10 @@ async function fetchAllCommunityQuestions(communityId) {
           channelId: "${communityId}",
           states: OPEN,
           first: 500
-        ){
+        ) {
           total
-          edges{
-            node{
+          edges {
+            node {
               id
               name
               valueType
@@ -52,8 +54,8 @@ async function fetchAllCommunityQuestions(communityId) {
   })
     .then((res) => res.data)
     .then((res) => res.data.measurables.edges);
-  //console.log(response)
-  return response;
+
+  return response as any[];
 }
 
 export const foretold: Platform = {
@@ -67,11 +69,11 @@ export const foretold: Platform = {
       questions = questions.map((question) => question.node);
       questions = questions.filter((question) => question.previousAggregate); // Questions without any predictions
       questions.forEach((question) => {
-        let id = `${platformName}-${question.id}`;
+        const id = `${platformName}-${question.id}`;
 
         let options: FetchedQuestion["options"] = [];
         if (question.valueType == "PERCENTAGE") {
-          let probability = question.previousAggregate.value.percentage;
+          const probability = question.previousAggregate.value.percentage;
           options = [
             {
               name: "Yes",

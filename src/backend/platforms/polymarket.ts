@@ -6,8 +6,8 @@ import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "polymarket";
-let graphQLendpoint =
-  "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-5"; // "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-4"// "https://api.thegraph.com/subgraphs/name/tokenunion/polymarket-matic"//"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
+const graphQLendpoint =
+  "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-5";
 let units = 10 ** 6;
 
 async function fetchAllContractInfo() {
@@ -18,11 +18,11 @@ async function fetchAllContractInfo() {
       // "https://strapi-matic.poly.market/markets?active=true&_sort=volume:desc&_limit=-1" to get all markets, including closed ones
     )
     .then((query) => query.data);
-  response = response.filter((res) => res.closed != true);
+  response = response.filter((res: any) => res.closed != true);
   return response;
 }
 
-async function fetchIndividualContractData(marketMakerAddress) {
+async function fetchIndividualContractData(marketMakerAddress: string) {
   let daysSinceEra = Math.round(Date.now() / (1000 * 24 * 60 * 60)) - 7; // last week
   let response = await axios({
     url: graphQLendpoint,
@@ -59,7 +59,7 @@ async function fetchIndividualContractData(marketMakerAddress) {
   })
     .then((res) => res.data)
     .then((res) => res.data.fixedProductMarketMakers);
-  // console.log(response)
+
   return response;
 }
 
@@ -93,7 +93,7 @@ export const polymarket: Platform = {
           // let isbinary = Number(moreMarketInfo.conditions[0].outcomeSlotCount) == 2
           // let percentage = Number(moreMarketInfo.outcomeTokenPrices[0]) * 100
           // let percentageFormatted = isbinary ? (percentage.toFixed(0) + "%") : "none"
-          let options = [];
+          let options: FetchedQuestion["options"] = [];
           for (let outcome in moreMarketInfo.outcomeTokenPrices) {
             options.push({
               name: String(marketInfo.outcomes[outcome]),
@@ -107,7 +107,7 @@ export const polymarket: Platform = {
             title: marketInfo.question,
             url: "https://polymarket.com/market/" + marketInfo.slug,
             description: marketInfo.description,
-            options: options,
+            options,
             qualityindicators: {
               numforecasts: numforecasts.toFixed(0),
               liquidity: liquidity.toFixed(2),

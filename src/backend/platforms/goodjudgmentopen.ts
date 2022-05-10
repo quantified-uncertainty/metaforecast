@@ -4,6 +4,7 @@ import { Tabletojson } from "tabletojson";
 
 import { average } from "../../utils";
 import { applyIfSecretExists } from "../utils/getSecrets";
+import { sleep } from "../utils/sleep";
 import toMarkdown from "../utils/toMarkdown";
 import { FetchedQuestion, Platform } from "./";
 
@@ -23,11 +24,10 @@ const id = () => 0;
 /* Support functions */
 
 async function fetchPage(page: number, cookie: string) {
-  let response = await axios({
+  const response: string = await axios({
     url: htmlEndPoint + page,
     method: "GET",
     headers: {
-      "Content-Type": "text/html",
       Cookie: cookie,
     },
   }).then((res) => res.data);
@@ -36,11 +36,10 @@ async function fetchPage(page: number, cookie: string) {
 }
 
 async function fetchStats(questionUrl: string, cookie: string) {
-  let response = await axios({
+  let response: string = await axios({
     url: questionUrl + "/stats",
     method: "GET",
     headers: {
-      "Content-Type": "text/html",
       Cookie: cookie,
       Referer: questionUrl,
     },
@@ -74,7 +73,7 @@ async function fetchStats(questionUrl: string, cookie: string) {
     let optionsHtmlElement = "<table" + response.split("tbody")[1] + "table>";
     let tablesAsJson = Tabletojson.convert(optionsHtmlElement);
     let firstTable = tablesAsJson[0];
-    options = firstTable.map((element) => ({
+    options = firstTable.map((element: any) => ({
       name: element["0"],
       probability: Number(element["1"].replace("%", "")) / 100,
       type: "PROBABILITY",
@@ -133,17 +132,13 @@ function isSignedIn(html: string) {
   return isSignedInBool;
 }
 
-function reachedEnd(html) {
+function reachedEnd(html: string) {
   let reachedEndBool = html.includes("No questions match your filter");
   if (reachedEndBool) {
     //console.log(html)
   }
   console.log(`Reached end? ${reachedEndBool}`);
   return reachedEndBool;
-}
-
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 /* Body */
@@ -176,7 +171,11 @@ async function goodjudgmentopen_inner(cookie: string) {
             }
           }
           let questionNumRegex = new RegExp("questions/([0-9]+)");
-          let questionNum = url.match(questionNumRegex)[1]; //.split("questions/")[1].split("-")[0];
+          const questionNumMatch = url.match(questionNumRegex);
+          if (!questionNumMatch) {
+            throw new Error(`Couldn't find question num in ${url}`);
+          }
+          let questionNum = questionNumMatch[1];
           let id = `${platformName}-${questionNum}`;
           let question = {
             id: id,

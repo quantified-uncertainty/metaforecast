@@ -1,8 +1,8 @@
 import { addDays, startOfDay, startOfToday, startOfTomorrow } from "date-fns";
 
+import { isFullQuestionOption } from "../../../../common/types";
 import { QuestionWithHistoryFragment } from "../../../fragments.generated";
 import { isQuestionBinary } from "../../../utils";
-import { isFullQuestionOption } from "../../utils";
 
 export type ChartSeries = { x: Date; y: number; name: string }[];
 

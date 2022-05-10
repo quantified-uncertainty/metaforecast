@@ -1,6 +1,7 @@
+import { FullQuestionOption, isFullQuestionOption } from "../../../common/types";
 import { QuestionFragment } from "../../fragments.generated";
 import { isQuestionBinary } from "../../utils";
-import { formatProbability, FullQuestionOption, isFullQuestionOption } from "../utils";
+import { formatProbability } from "../utils";
 
 const textColor = (probability: number) => {
   if (probability < 0.03) {

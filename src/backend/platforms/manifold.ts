@@ -6,7 +6,7 @@ import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "manifold";
-let endpoint = "https://manifold.markets/api/v0/markets";
+const endpoint = "https://manifold.markets/api/v0/markets";
 // See https://manifoldmarkets.notion.site/Manifold-Markets-API-5e7d0aef4dcf452bb04b319e178fabc5
 
 /* Support functions */
@@ -43,8 +43,8 @@ function showStatistics(results: FetchedQuestion[]) {
   );
 }
 
-async function processPredictions(predictions) {
-  let results: FetchedQuestion[] = await predictions.map((prediction) => {
+function processPredictions(predictions: any[]): FetchedQuestion[] {
+  let results: FetchedQuestion[] = predictions.map((prediction) => {
     let id = `${platformName}-${prediction.id}`; // oops, doesn't match platform name
     let probability = prediction.probability;
     let options: FetchedQuestion["options"] = [
@@ -90,7 +90,7 @@ export const manifold: Platform = {
   color: "#793466",
   async fetcher() {
     let data = await fetchData();
-    let results = await processPredictions(data); // somehow needed
+    let results = processPredictions(data); // somehow needed
     showStatistics(results);
     return results;
   },

@@ -1,9 +1,8 @@
 import { doEverything } from "../flow/doEverything";
-import { updateHistory } from "../flow/history/updateHistory";
-import { rebuildNetlifySiteWithNewData } from "../flow/rebuildNetliftySiteWithNewData";
 import { rebuildFrontpage } from "../frontpage";
 import { platforms, processPlatform } from "../platforms";
 import { rebuildAlgoliaDatabase } from "../utils/algolia";
+import { sleep } from "../utils/sleep";
 
 interface Job {
   name: string;
@@ -24,16 +23,6 @@ export const jobs: Job[] = [
     run: rebuildAlgoliaDatabase,
   },
   {
-    name: "history",
-    message: "Update history",
-    run: updateHistory,
-  },
-  {
-    name: "netlify",
-    message: `Rebuild netlify site with new data`,
-    run: rebuildNetlifySiteWithNewData,
-  },
-  {
     name: "frontpage",
     message: "Rebuild frontpage",
     run: rebuildFrontpage,
@@ -45,10 +34,6 @@ export const jobs: Job[] = [
     separate: true,
   },
 ];
-
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
 
 async function tryCatchTryAgain(fun: () => Promise<void>) {
   try {

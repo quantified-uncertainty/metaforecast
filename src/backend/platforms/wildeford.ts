@@ -13,7 +13,7 @@ const endpoint = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit#gid=0`
 // https://docs.google.com/spreadsheets/d/1xcgYF7Q0D95TPHLLSgwhWBHFrWZUGJn7yTyAhDR4vi0/edit#gid=0
 /* Support functions */
 
-const formatRow = (row) => {
+const formatRow = (row: string[]) => {
   let colNames = [
     "Prediction Date",
     "Prediction",
@@ -23,15 +23,15 @@ const formatRow = (row) => {
     "Prediction Right?",
     "Brier Score",
     "Notes",
-  ];
-  let result = {};
-  row.forEach((col, i) => {
+  ] as const;
+  let result: Partial<{ [k in typeof colNames[number]]: string }> = {};
+  row.forEach((col: string, i) => {
     result[colNames[i]] = col;
   });
-  return result;
+  return result as Required<typeof result>;
 };
 
-async function fetchGoogleDoc(google_api_key) {
+async function fetchGoogleDoc(google_api_key: string) {
   // https://gist.github.com/micalevisk/9bc831bd4b3e5a3f62b9810330129c59
   let results = [];
   const doc = new GoogleSpreadsheet(SHEET_ID);
@@ -41,7 +41,7 @@ async function fetchGoogleDoc(google_api_key) {
   console.log(">>", doc.title);
 
   const sheet = doc.sheetsByIndex[0];
-  const rows = await sheet.getRows({ offset: 0 });
+  const rows = await sheet.getRows();
 
   console.log("# " + rows[0]._sheet.headerValues.join(","));
   let isEnd = false;
@@ -68,7 +68,9 @@ async function fetchGoogleDoc(google_api_key) {
   return results;
 }
 
-async function processPredictions(predictions) {
+async function processPredictions(
+  predictions: Awaited<ReturnType<typeof fetchGoogleDoc>>
+) {
   let currentPredictions = predictions.filter(
     (prediction) => prediction["Actual"] == "Unknown"
   );
@@ -101,8 +103,8 @@ async function processPredictions(predictions) {
   });
 
   results = results.reverse();
-  let uniqueTitles = [];
-  let uniqueResults = [];
+  let uniqueTitles: string[] = [];
+  let uniqueResults: FetchedQuestion[] = [];
   results.forEach((result) => {
     if (!uniqueTitles.includes(result.title)) uniqueResults.push(result);
     uniqueTitles.push(result.title);
@@ -110,7 +112,7 @@ async function processPredictions(predictions) {
   return uniqueResults;
 }
 
-export async function wildeford_inner(google_api_key) {
+export async function wildeford_inner(google_api_key: string) {
   let predictions = await fetchGoogleDoc(google_api_key);
   return await processPredictions(predictions);
 }
@@ -121,7 +123,7 @@ export const wildeford: Platform = {
   color: "#984158",
   async fetcher() {
     const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY; // See: https://developers.google.com/sheets/api/guides/authorizing#APIKey
-    return await applyIfSecretExists(GOOGLE_API_KEY, wildeford_inner);
+    return (await applyIfSecretExists(GOOGLE_API_KEY, wildeford_inner)) || null;
   },
   calculateStars(data) {
     let nuno = () => 3;

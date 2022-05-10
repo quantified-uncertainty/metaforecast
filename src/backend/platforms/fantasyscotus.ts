@@ -29,7 +29,7 @@ async function fetchData() {
   return response;
 }
 
-async function getPredictionsData(caseUrl) {
+async function getPredictionsData(caseUrl: string) {
   let newCaseUrl = `https://fantasyscotus.net/user-predictions${caseUrl}?filterscount=0&groupscount=0&sortdatafield=username&sortorder=asc&pagenum=0&pagesize=20&recordstartindex=0&recordendindex=20&_=${unixtime}`;
   //console.log(newCaseUrl)
   let predictions = await axios({
@@ -49,7 +49,7 @@ async function getPredictionsData(caseUrl) {
   }).then((res) => res.data);
 
   let predictionsAffirm = predictions.filter(
-    (prediction) => prediction.percent_affirm > 50
+    (prediction: any) => prediction.percent_affirm > 50
   );
   //console.log(predictions)
   //console.log(predictionsAffirm.length/predictions.length)
@@ -61,7 +61,7 @@ async function getPredictionsData(caseUrl) {
   };
 }
 
-async function processData(data) {
+async function processData(data: any) {
   let events = data.object_list;
   let historicalPercentageCorrect = data.stats.pcnt_correct;
   let historicalProbabilityCorrect =

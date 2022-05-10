@@ -10,7 +10,7 @@ let rawdata = fs.readFileSync("../data/merged-questions.json", {
 });
 let data = JSON.parse(rawdata);
 
-let results = [];
+let results: any[] = [];
 for (let datum of data) {
   // do something
 }

@@ -3,14 +3,7 @@ import { executeJobByName } from "./jobs";
 
 /* Do everything */
 export async function doEverything() {
-  let jobNames = [
-    ...platforms.map((platform) => platform.name),
-    "merge",
-    "algolia",
-    "history",
-    "netlify",
-  ];
-  // Removed Good Judgment from the fetcher, doing it using cron instead because cloudflare blocks the utility on heroku.
+  let jobNames = [...platforms.map((platform) => platform.name), "algolia"];
 
   console.log("");
   console.log("");

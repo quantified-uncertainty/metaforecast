@@ -21,7 +21,7 @@ async function fetchData() {
   return response;
 }
 
-async function processPredictions(predictions) {
+async function processPredictions(predictions: any[]) {
   let results = await predictions.map((prediction) => {
     const id = `${platformName}-${prediction.id}`;
     const probability = prediction.probability;
