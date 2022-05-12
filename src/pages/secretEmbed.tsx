@@ -29,16 +29,19 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 
   let results: QuestionFragment[] = [];
   if (initialQueryParameters.query !== "") {
-    results = (
-      await client
-        .query(SearchDocument, {
-          input: {
-            ...initialQueryParameters,
-            limit: 1,
-          },
-        })
-        .toPromise()
-    ).data.result;
+    const response = await client
+      .query(SearchDocument, {
+        input: {
+          ...initialQueryParameters,
+          limit: 1,
+        },
+      })
+      .toPromise();
+    if (response.data?.result) {
+      results = response.data.result;
+    } else {
+      throw new Error("GraphQL request failed");
+    }
   }
 
   return {

@@ -1,5 +1,5 @@
 import { GetServerSideProps, NextPage } from "next";
-import Error from "next/error";
+import NextError from "next/error";
 
 import {
     DashboardByIdDocument, DashboardFragment
@@ -19,9 +19,13 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   const dashboardId = context.query.id as string;
   const numCols = Number(context.query.numCols);
 
-  const dashboard = (
-    await client.query(DashboardByIdDocument, { id: dashboardId }).toPromise()
-  ).data?.result;
+  const response = await client
+    .query(DashboardByIdDocument, { id: dashboardId })
+    .toPromise();
+  if (!response.data) {
+    throw new Error(`GraphQL query failed: ${response.error}`);
+  }
+  const dashboard = response.data.result;
 
   if (!dashboard) {
     context.res.statusCode = 404;
@@ -32,14 +36,14 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
       // reduntant: page component doesn't do graphql requests, but it's still nice/more consistent to have data in cache
       urqlState: ssrCache.extractData(),
       dashboard,
-      numCols: !numCols ? null : numCols < 5 ? numCols : 4,
+      numCols: !numCols ? undefined : numCols < 5 ? numCols : 4,
     },
   };
 };
 
 const EmbedDashboardPage: NextPage<Props> = ({ dashboard, numCols }) => {
   if (!dashboard) {
-    return <Error statusCode={404} />;
+    return <NextError statusCode={404} />;
   }
 
   return (

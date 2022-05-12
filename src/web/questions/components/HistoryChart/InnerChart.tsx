@@ -34,10 +34,12 @@ const getVictoryGroup = ({
   );
 };
 
-export const InnerChart: React.FC<{
+export type Props = {
   data: ChartData;
   highlight: number | undefined;
-}> = ({
+};
+
+export const InnerChart: React.FC<Props> = ({
   data: { maxProbability, seriesList, minDate, maxDate },
   highlight,
 }) => {
@@ -120,7 +122,7 @@ export const InnerChart: React.FC<{
       <VictoryAxis
         tickCount={Math.min(7, differenceInDays(maxDate, minDate) + 1)}
         style={{
-          grid: { stroke: null, strokeWidth: 0.5 },
+          grid: { strokeWidth: 0.5 },
         }}
         tickLabelComponent={
           <VictoryLabel

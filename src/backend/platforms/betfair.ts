@@ -2,16 +2,16 @@
 import axios from "axios";
 import https from "https";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import { FetchedQuestion, Platform } from "./";
 
 const platformName = "betfair";
 
 /* Definitions */
-let endpoint = process.env.SECRET_BETFAIR_ENDPOINT;
+const endpoint = process.env.SECRET_BETFAIR_ENDPOINT;
 
 /* Utilities */
-let arraysEqual = (a, b) => {
+const arraysEqual = (a: string[], b: string[]) => {
   if (a === b) return true;
   if (a == null || b == null) return false;
   if (a.length !== b.length) return false;
@@ -26,7 +26,8 @@ let arraysEqual = (a, b) => {
   }
   return true;
 };
-let mergeRunners = (runnerCatalog, runnerBook) => {
+
+const mergeRunners = (runnerCatalog: any, runnerBook: any) => {
   let keys = Object.keys(runnerCatalog);
   let result = [];
   for (let key of keys) {
@@ -41,19 +42,16 @@ async function fetchPredictions() {
   const agent = new https.Agent({
     rejectUnauthorized: false,
   });
-  let response = await axios({
+  const response = await axios({
     url: endpoint,
     method: "GET",
-    headers: {
-      "Content-Type": "text/html",
-    },
     httpsAgent: agent,
   }).then((response) => response.data);
 
   return response;
 }
 
-async function whipIntoShape(data) {
+async function whipIntoShape(data: any) {
   let catalogues = data.market_catalogues;
   let books = data.market_books;
   let keys1 = Object.keys(catalogues).sort();
@@ -77,7 +75,7 @@ async function whipIntoShape(data) {
   return results;
 }
 
-async function processPredictions(data) {
+async function processPredictions(data: any) {
   let predictions = await whipIntoShape(data);
   // console.log(JSON.stringify(predictions, null, 4))
   let results: FetchedQuestion[] = predictions.map((prediction) => {
@@ -86,13 +84,17 @@ async function processPredictions(data) {
     } */
     let id = `${platformName}-${prediction.marketId}`;
     let normalizationFactor = prediction.options
-      .filter((option) => option.status == "ACTIVE" && option.totalMatched > 0)
-      .map((option) => option.lastPriceTraded)
-      .map((x) => 1 / x)
-      .reduce((a, b) => a + b, 0);
+      .filter(
+        (option: any) => option.status == "ACTIVE" && option.totalMatched > 0
+      )
+      .map((option: any) => option.lastPriceTraded)
+      .map((x: any) => 1 / x)
+      .reduce((a: any, b: any) => a + b, 0);
     let options = prediction.options
-      .filter((option) => option.status == "ACTIVE" && option.totalMatched > 0)
-      .map((option) => ({
+      .filter(
+        (option: any) => option.status == "ACTIVE" && option.totalMatched > 0
+      )
+      .map((option: any) => ({
         name: option.runnerName,
         probability:
           option.lastPriceTraded != 0
@@ -114,22 +116,19 @@ async function processPredictions(data) {
     if (rules == undefined) {
       // console.log(prediction.description)
     }
+
     let title = rules.split("? ")[0] + "?";
     let description = rules.split("? ")[1].trim();
     if (title.includes("of the named")) {
       title = prediction.marketName + ": " + title;
     }
-    let result = {
-      id: id,
-      title: title,
+    const result: FetchedQuestion = {
+      id,
+      title,
       url: `https://www.betfair.com/exchange/plus/politics/market/${prediction.marketId}`,
-      platform: platformName,
-      description: description,
-      options: options,
+      description,
+      options,
       qualityindicators: {
-        stars: calculateStars(platformName, {
-          volume: prediction.totalMatched,
-        }),
         volume: prediction.totalMatched,
       },
     };
@@ -142,9 +141,31 @@ export const betfair: Platform = {
   name: platformName,
   label: "Betfair",
   color: "#3d674a",
+  version: "v1",
   async fetcher() {
     const data = await fetchPredictions();
-    const results = await processPredictions(data); // somehow needed
+    const results = await processPredictions(data);
     return results;
+  },
+  calculateStars(data) {
+    const volume = data.qualityindicators.volume || 0;
+    let nuno = () => (volume > 10000 ? 4 : volume > 1000 ? 3 : 2);
+    let eli = () => (volume > 10000 ? null : null);
+    let misha = () => null;
+    let starsDecimal = average([nuno()]); //, eli(), misha()])
+
+    const firstOption = data.options[0];
+
+    // Substract 1 star if probability is above 90% or below 10%
+    if (
+      firstOption &&
+      ((firstOption.probability || 0) < 0.1 ||
+        (firstOption.probability || 0) > 0.9)
+    ) {
+      starsDecimal = starsDecimal - 1;
+    }
+
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

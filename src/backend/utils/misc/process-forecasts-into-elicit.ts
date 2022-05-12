@@ -11,7 +11,7 @@ let locationData = "./data/";
 // let rawdata =  fs.readFileSync("./data/merged-questions.json") // run from topmost folder, not from src
 async function main() {
   const data = await prisma.question.findMany({});
-  const processDescription = (description) => {
+  const processDescription = (description: string | null | undefined) => {
     if (description == null || description == undefined || description == "") {
       return "";
     } else {

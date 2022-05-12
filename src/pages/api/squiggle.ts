@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next/types";
-import { runMePlease } from "squiggle-experimental/dist/index.js";
+
+import { run } from "@quri/squiggle-lang";
 
 export default async function handler(
   req: NextApiRequest,
@@ -24,6 +25,6 @@ $ curl -X POST -H "Content-Type: application/json"     -d '{"model": "1 to 4"}' 
     });
   } else {
     console.log(body.model);
-    res.status(200).send(runMePlease(body.model));
+    res.status(200).send(run(body.model));
   }
 }

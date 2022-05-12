@@ -1,6 +1,8 @@
 import { addDays, startOfDay, startOfToday, startOfTomorrow } from "date-fns";
 
+import { isFullQuestionOption } from "../../../../common/types";
 import { QuestionWithHistoryFragment } from "../../../fragments.generated";
+import { isQuestionBinary } from "../../../utils";
 
 export type ChartSeries = { x: Date; y: number; name: string }[];
 
@@ -33,6 +35,7 @@ export const buildChartData = (
   question: QuestionWithHistoryFragment
 ): ChartData => {
   let seriesNames = question.options
+    .filter(isFullQuestionOption)
     .sort((a, b) => {
       if (a.probability > b.probability) {
         return -1;
@@ -44,9 +47,7 @@ export const buildChartData = (
     .map((o) => o.name)
     .slice(0, MAX_LINES);
 
-  const isBinary =
-    (seriesNames[0] === "Yes" && seriesNames[1] === "No") ||
-    (seriesNames[0] === "No" && seriesNames[1] === "Yes");
+  const isBinary = isQuestionBinary(question);
   if (isBinary) {
     seriesNames = ["Yes"];
   }
@@ -69,6 +70,9 @@ export const buildChartData = (
       const date = new Date(item.timestamp * 1000);
 
       for (const option of item.options) {
+        if (option.name == null || option.probability == null) {
+          continue;
+        }
         const idx = nameToIndex[option.name];
         if (idx === undefined) {
           continue;

@@ -45,8 +45,11 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   const defaultNumDisplay = 21;
   const initialNumDisplay = Number(urlQuery.numDisplay) || defaultNumDisplay;
 
-  const defaultResults = (await client.query(FrontpageDocument).toPromise())
-    .data.result;
+  const response = await client.query(FrontpageDocument).toPromise();
+  if (!response.data) {
+    throw new Error(`GraphQL query failed: ${response.error}`);
+  }
+  const defaultResults = response.data.result;
 
   if (
     !!initialQueryParameters &&
@@ -58,7 +61,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
       .query(SearchDocument, {
         input: {
           ...initialQueryParameters,
-          limit: initialNumDisplay,
+          limit: initialNumDisplay + 50,
         },
       })
       .toPromise();

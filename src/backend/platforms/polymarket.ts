@@ -1,13 +1,13 @@
 /* Imports */
 import axios from "axios";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "polymarket";
-let graphQLendpoint =
-  "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-5"; // "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-4"// "https://api.thegraph.com/subgraphs/name/tokenunion/polymarket-matic"//"https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket"//"https://subgraph-backup.poly.market/subgraphs/name/TokenUnion/polymarket"//'https://subgraph-matic.poly.market/subgraphs/name/TokenUnion/polymarket3'
+const graphQLendpoint =
+  "https://api.thegraph.com/subgraphs/name/polymarket/matic-markets-5";
 let units = 10 ** 6;
 
 async function fetchAllContractInfo() {
@@ -18,11 +18,11 @@ async function fetchAllContractInfo() {
       // "https://strapi-matic.poly.market/markets?active=true&_sort=volume:desc&_limit=-1" to get all markets, including closed ones
     )
     .then((query) => query.data);
-  response = response.filter((res) => res.closed != true);
+  response = response.filter((res: any) => res.closed != true);
   return response;
 }
 
-async function fetchIndividualContractData(marketMakerAddress) {
+async function fetchIndividualContractData(marketMakerAddress: string) {
   let daysSinceEra = Math.round(Date.now() / (1000 * 24 * 60 * 60)) - 7; // last week
   let response = await axios({
     url: graphQLendpoint,
@@ -59,7 +59,7 @@ async function fetchIndividualContractData(marketMakerAddress) {
   })
     .then((res) => res.data)
     .then((res) => res.data.fixedProductMarketMakers);
-  // console.log(response)
+
   return response;
 }
 
@@ -67,6 +67,7 @@ export const polymarket: Platform = {
   name: platformName,
   label: "PolyMarket",
   color: "#00314e",
+  version: "v1",
   async fetcher() {
     let results: FetchedQuestion[] = [];
     let webpageEndpointData = await fetchAllContractInfo();
@@ -93,11 +94,11 @@ export const polymarket: Platform = {
           // let isbinary = Number(moreMarketInfo.conditions[0].outcomeSlotCount) == 2
           // let percentage = Number(moreMarketInfo.outcomeTokenPrices[0]) * 100
           // let percentageFormatted = isbinary ? (percentage.toFixed(0) + "%") : "none"
-          let options = [];
+          let options: FetchedQuestion["options"] = [];
           for (let outcome in moreMarketInfo.outcomeTokenPrices) {
             options.push({
-              name: marketInfo.outcomes[outcome],
-              probability: moreMarketInfo.outcomeTokenPrices[outcome],
+              name: String(marketInfo.outcomes[outcome]),
+              probability: Number(moreMarketInfo.outcomeTokenPrices[outcome]),
               type: "PROBABILITY",
             });
           }
@@ -106,18 +107,12 @@ export const polymarket: Platform = {
             id: id,
             title: marketInfo.question,
             url: "https://polymarket.com/market/" + marketInfo.slug,
-            platform: platformName,
             description: marketInfo.description,
-            options: options,
+            options,
             qualityindicators: {
               numforecasts: numforecasts.toFixed(0),
               liquidity: liquidity.toFixed(2),
               tradevolume: tradevolume.toFixed(2),
-              stars: calculateStars(platformName, {
-                liquidity,
-                option: options[0],
-                volume: tradevolume,
-              }),
             },
             extra: {
               address: marketInfo.address,
@@ -132,5 +127,34 @@ export const polymarket: Platform = {
       }
     }
     return results;
+  },
+  calculateStars(data) {
+    // let nuno = (data) => (data.volume > 10000 ? 4 : data.volume > 1000 ? 3 : 2);
+    // let eli = (data) => data.liquidity > 10000 ? 5 : 4
+    // let misha = (data) => 4
+
+    const liquidity = data.qualityindicators.liquidity || 0;
+    const volume = data.qualityindicators.tradevolume || 0;
+
+    let nuno = () =>
+      liquidity > 1000 && volume > 10000
+        ? 4
+        : liquidity > 500 && volume > 1000
+        ? 3
+        : 2;
+    let starsDecimal = average([nuno()]); //, eli(data), misha(data)])
+
+    // Substract 1 star if probability is above 90% or below 10%
+    if (
+      data.options instanceof Array &&
+      data.options[0] &&
+      ((data.options[0].probability || 0) < 0.1 ||
+        (data.options[0].probability || 0) > 0.9)
+    ) {
+      starsDecimal = starsDecimal - 1;
+    }
+
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

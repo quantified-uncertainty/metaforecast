@@ -1,3 +1,5 @@
+import { QuestionFragment } from "./fragments.generated";
+
 export const getBasePath = () => {
   if (process.env.NEXT_PUBLIC_VERCEL_URL) {
     return `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
@@ -28,4 +30,13 @@ export const cleanText = (text: string): string => {
   textString = textString.slice(0, 1) == "=" ? textString.slice(1) : textString;
   //console.log(textString)
   return textString;
+};
+
+export const isQuestionBinary = (question: QuestionFragment): boolean => {
+  const { options } = question;
+  return (
+    options.length === 2 &&
+    ((options[0].name === "Yes" && options[1].name === "No") ||
+      (options[0].name === "No" && options[1].name === "Yes"))
+  );
 };

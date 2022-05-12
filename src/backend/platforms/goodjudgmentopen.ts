@@ -2,16 +2,17 @@
 import axios from "axios";
 import { Tabletojson } from "tabletojson";
 
+import { average } from "../../utils";
 import { applyIfSecretExists } from "../utils/getSecrets";
-import { calculateStars } from "../utils/stars";
+import { sleep } from "../utils/sleep";
 import toMarkdown from "../utils/toMarkdown";
-import { Platform } from "./";
+import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "goodjudgmentopen";
 
-let htmlEndPoint = "https://www.gjopen.com/questions?page=";
-let annoyingPromptUrls = [
+const htmlEndPoint = "https://www.gjopen.com/questions?page=";
+const annoyingPromptUrls = [
   "https://www.gjopen.com/questions/1933-what-forecasting-questions-should-we-ask-what-questions-would-you-like-to-forecast-on-gjopen",
   "https://www.gjopen.com/questions/1779-are-there-any-forecasting-tips-tricks-and-experiences-you-would-like-to-share-and-or-discuss-with-your-fellow-forecasters",
   "https://www.gjopen.com/questions/2246-are-there-any-forecasting-tips-tricks-and-experiences-you-would-like-to-share-and-or-discuss-with-your-fellow-forecasters-2022-thread",
@@ -22,12 +23,11 @@ const id = () => 0;
 
 /* Support functions */
 
-async function fetchPage(page, cookie) {
-  let response = await axios({
+async function fetchPage(page: number, cookie: string) {
+  const response: string = await axios({
     url: htmlEndPoint + page,
     method: "GET",
     headers: {
-      "Content-Type": "text/html",
       Cookie: cookie,
     },
   }).then((res) => res.data);
@@ -35,12 +35,11 @@ async function fetchPage(page, cookie) {
   return response;
 }
 
-async function fetchStats(questionUrl, cookie) {
-  let response = await axios({
+async function fetchStats(questionUrl: string, cookie: string) {
+  let response: string = await axios({
     url: questionUrl + "/stats",
     method: "GET",
     headers: {
-      "Content-Type": "text/html",
       Cookie: cookie,
       Referer: questionUrl,
     },
@@ -50,7 +49,7 @@ async function fetchStats(questionUrl, cookie) {
   // Is binary?
   let isbinary = response.includes("binary?&quot;:true");
 
-  let options = [];
+  let options: FetchedQuestion["options"] = [];
   if (isbinary) {
     // Crowd percentage
     let htmlElements = response.split("\n");
@@ -74,7 +73,7 @@ async function fetchStats(questionUrl, cookie) {
     let optionsHtmlElement = "<table" + response.split("tbody")[1] + "table>";
     let tablesAsJson = Tabletojson.convert(optionsHtmlElement);
     let firstTable = tablesAsJson[0];
-    options = firstTable.map((element) => ({
+    options = firstTable.map((element: any) => ({
       name: element["0"],
       probability: Number(element["1"].replace("%", "")) / 100,
       type: "PROBABILITY",
@@ -107,21 +106,12 @@ async function fetchStats(questionUrl, cookie) {
     .split(",")[0];
   //console.log(numpredictors)
 
-  // Calculate the stars
-  let minProbability = Math.min(...options.map((option) => option.probability));
-  let maxProbability = Math.max(...options.map((option) => option.probability));
-
   let result = {
-    description: description,
-    options: options,
+    description,
+    options,
     qualityindicators: {
       numforecasts: Number(numforecasts),
       numforecasters: Number(numforecasters),
-      stars: calculateStars("Good Judgment Open", {
-        numforecasts,
-        minProbability,
-        maxProbability,
-      }),
     },
     // this mismatches the code below, and needs to be fixed, but I'm doing typescript conversion and don't want to touch any logic for now
   } as any;
@@ -129,7 +119,7 @@ async function fetchStats(questionUrl, cookie) {
   return result;
 }
 
-function isSignedIn(html) {
+function isSignedIn(html: string) {
   let isSignedInBool = !(
     html.includes("You need to sign in or sign up before continuing") ||
     html.includes("Sign up")
@@ -142,7 +132,7 @@ function isSignedIn(html) {
   return isSignedInBool;
 }
 
-function reachedEnd(html) {
+function reachedEnd(html: string) {
   let reachedEndBool = html.includes("No questions match your filter");
   if (reachedEndBool) {
     //console.log(html)
@@ -151,13 +141,9 @@ function reachedEnd(html) {
   return reachedEndBool;
 }
 
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 /* Body */
 
-async function goodjudgmentopen_inner(cookie) {
+async function goodjudgmentopen_inner(cookie: string) {
   let i = 1;
   let response = await fetchPage(i, cookie);
 
@@ -185,7 +171,11 @@ async function goodjudgmentopen_inner(cookie) {
             }
           }
           let questionNumRegex = new RegExp("questions/([0-9]+)");
-          let questionNum = url.match(questionNumRegex)[1]; //.split("questions/")[1].split("-")[0];
+          const questionNumMatch = url.match(questionNumRegex);
+          if (!questionNumMatch) {
+            throw new Error(`Couldn't find question num in ${url}`);
+          }
+          let questionNum = questionNumMatch[1];
           let id = `${platformName}-${questionNum}`;
           let question = {
             id: id,
@@ -241,8 +231,26 @@ export const goodjudgmentopen: Platform = {
   name: platformName,
   label: "Good Judgment Open",
   color: "#002455",
+  version: "v1",
   async fetcher() {
     let cookie = process.env.GOODJUDGMENTOPENCOOKIE;
-    return await applyIfSecretExists(cookie, goodjudgmentopen_inner);
+    return (await applyIfSecretExists(cookie, goodjudgmentopen_inner)) || null;
+  },
+  calculateStars(data) {
+    let minProbability = Math.min(
+      ...data.options.map((option) => option.probability || 0)
+    );
+    let maxProbability = Math.max(
+      ...data.options.map((option) => option.probability || 0)
+    );
+
+    let nuno = () => ((data.qualityindicators.numforecasts || 0) > 100 ? 3 : 2);
+    let eli = () => 3;
+    let misha = () =>
+      minProbability > 0.1 || maxProbability < 0.9 ? 3.1 : 2.5;
+
+    let starsDecimal = average([nuno(), eli(), misha()]);
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

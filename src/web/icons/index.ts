@@ -1,3 +1,3 @@
-export { default as Favicon } from "./Favicon";
-export { default as Logo } from "./Logo";
-export { default as Logo2 } from "./Logo2";
+export { Favicon } from "./Favicon";
+export { Logo } from "./Logo";
+export { Logo2 } from "./Logo2";

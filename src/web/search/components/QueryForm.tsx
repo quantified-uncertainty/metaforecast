@@ -1,3 +1,5 @@
+import { ChangeEvent } from "react";
+
 interface Props {
   value: string;
   onChange: (v: string) => void;
@@ -9,7 +11,7 @@ export const QueryForm: React.FC<Props> = ({
   onChange,
   placeholder,
 }) => {
-  const handleInputChange = (event) => {
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
     onChange(event.target.value); // In this case, the query, e.g. "COVID.19"
   };

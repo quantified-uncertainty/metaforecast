@@ -1,4 +1,4 @@
-import React, { EventHandler, SyntheticEvent, useState } from "react";
+import React, { ChangeEvent, EventHandler, SyntheticEvent, useState } from "react";
 
 import { Button } from "../common/Button";
 import { InfoBox } from "../common/InfoBox";
@@ -18,7 +18,7 @@ export const DashboardCreator: React.FC<Props> = ({ handleSubmit }) => {
   const [value, setValue] = useState(exampleInput);
   const [acting, setActing] = useState(false);
 
-  const handleChange = (event) => {
+  const handleChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setValue(event.target.value);
   };
 
@@ -37,7 +37,9 @@ export const DashboardCreator: React.FC<Props> = ({ handleSubmit }) => {
       }
     } catch (error) {
       setActing(false);
-      const substituteText = `Error: ${error.message}
+      const substituteText = `Error: ${
+        error instanceof Error ? error.message : "Unknown"
+      }
 
 Try something like:
 ${exampleInput}

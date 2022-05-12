@@ -1,27 +1,24 @@
 /* Imports */
 import axios from "axios";
 import { Tabletojson } from "tabletojson";
-import tunnel from "tunnel";
 
+import { average } from "../../utils";
 import { hash } from "../utils/hash";
-import { calculateStars } from "../utils/stars";
 import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "goodjudgment";
-let endpoint = "https://goodjudgment.io/superforecasts/";
-String.prototype.replaceAll = function replaceAll(search, replace) {
-  return this.split(search).join(replace);
-};
+const endpoint = "https://goodjudgment.io/superforecasts/";
 
 /* Body */
 export const goodjudgment: Platform = {
   name: platformName,
   label: "Good Judgment",
   color: "#7d4f1b",
+  version: "v1",
   async fetcher() {
     // Proxy fuckery
-    let proxy;
+    // let proxy;
     /*
 	 * try {
     proxy = await axios
@@ -32,19 +29,19 @@ export const goodjudgment: Platform = {
     console.log("Proxy generation failed; using backup proxy instead");
     // hard-coded backup proxy
 		*/
-    proxy = {
-      ip: process.env.BACKUP_PROXY_IP,
-      port: process.env.BACKUP_PROXY_PORT,
-    };
-    // }
-    let agent = tunnel.httpsOverHttp({
-      proxy: {
-        host: proxy.ip,
-        port: proxy.port,
-      },
-    });
+    // proxy = {
+    //   ip: process.env.BACKUP_PROXY_IP,
+    //   port: process.env.BACKUP_PROXY_PORT,
+    // };
+    // // }
+    // let agent = tunnel.httpsOverHttp({
+    //   proxy: {
+    //     host: proxy.ip,
+    //     port: proxy.port,
+    //   },
+    // });
 
-    let content = await axios
+    const content = await axios
       .request({
         url: "https://goodjudgment.io/superforecasts/",
         method: "get",
@@ -61,17 +58,16 @@ export const goodjudgment: Platform = {
     let jsonTable = Tabletojson.convert(content, { stripHtmlFromCells: false });
     jsonTable.shift(); // deletes first element
     jsonTable.pop(); // deletes last element
-    // console.log(jsonTable)
+
     for (let table of jsonTable) {
-      // console.log(table)
       let title = table[0]["0"].split("\t\t\t").splice(3)[0];
       if (title != undefined) {
         title = title.replaceAll("</a>", "");
-        let id = `${platformName}-${hash(title)}`;
-        let description = table
-          .filter((row) => row["0"].includes("BACKGROUND:"))
-          .map((row) => row["0"])
-          .map((text) =>
+        const id = `${platformName}-${hash(title)}`;
+        const description = table
+          .filter((row: any) => row["0"].includes("BACKGROUND:"))
+          .map((row: any) => row["0"])
+          .map((text: any) =>
             text
               .split("BACKGROUND:")[1]
               .split("Examples of Superforecaster")[0]
@@ -83,16 +79,16 @@ export const goodjudgment: Platform = {
               .replaceAll("      ", "")
               .replaceAll("<br> ", "")
           )[0];
-        let options = table
-          .filter((row) => "4" in row)
-          .map((row) => ({
+        const options = table
+          .filter((row: any) => "4" in row)
+          .map((row: any) => ({
             name: row["2"]
               .split('<span class="qTitle">')[1]
               .replace("</span>", ""),
             probability: Number(row["3"].split("%")[0]) / 100,
             type: "PROBABILITY",
           }));
-        let analysis = table.filter((row) =>
+        let analysis = table.filter((row: any) =>
           row[0] ? row[0].toLowerCase().includes("commentary") : false
         );
         // "Examples of Superforecaster Commentary" / Analysis
@@ -104,12 +100,9 @@ export const goodjudgment: Platform = {
           id,
           title,
           url: endpoint,
-          platform: platformName,
           description,
           options,
-          qualityindicators: {
-            stars: calculateStars(platformName, {}),
-          },
+          qualityindicators: {},
           extra: {
             superforecastercommentary: analysis || "",
           },
@@ -123,5 +116,13 @@ export const goodjudgment: Platform = {
     );
 
     return results;
+  },
+  calculateStars(data) {
+    let nuno = () => 4;
+    let eli = () => 4;
+    let misha = () => 3.5;
+    let starsDecimal = average([nuno()]); //, eli(), misha()])
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

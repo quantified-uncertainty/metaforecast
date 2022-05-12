@@ -1,180 +1,212 @@
 import axios from "axios";
 
-import { calculateStars } from "../utils/stars";
+import { QuestionOption } from "../../common/types";
+import { average } from "../../utils";
 import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "smarkets";
-let htmlEndPointEntrance = "https://api.smarkets.com/v3/events/";
-let VERBOSE = false;
-let empty = () => 0;
+const apiEndpoint = "https://api.smarkets.com/v3"; // documented at https://docs.smarkets.com/
+
+type Context = {
+  verbose: boolean;
+};
 
 /* Support functions */
 
-async function fetchEvents(url) {
-  let response = await axios({
-    url: htmlEndPointEntrance + url,
-    method: "GET",
-    headers: {
-      "Content-Type": "text/html",
-    },
-  }).then((res) => res.data);
-  VERBOSE ? console.log(response) : empty();
-  return response;
+async function fetchEvents(ctx: Context) {
+  let queryString =
+    "?state=new&state=upcoming&state=live&type_domain=politics&type_scope=single_event&with_new_type=true&sort=id&limit=50";
+
+  let events = [];
+  while (queryString) {
+    const data = await axios({
+      url: `${apiEndpoint}/events/${queryString}`,
+      method: "GET",
+    }).then((res) => res.data);
+
+    events.push(...data.events);
+    queryString = data.pagination.next_page;
+  }
+  ctx.verbose && console.log(events);
+
+  return events;
 }
 
-async function fetchMarkets(eventid) {
-  let response = await axios({
-    url: `https://api.smarkets.com/v3/events/${eventid}/markets/`,
+async function fetchSingleEvent(id: string, ctx: Context) {
+  const events = await fetchEvents(ctx);
+  const event = events.find((event) => event.id === id);
+  if (!event) {
+    throw new Error(`Event ${id} not found`);
+  }
+  return event;
+}
+
+async function fetchMarkets(eventId: string) {
+  const response = await axios({
+    url: `${apiEndpoint}/events/${eventId}/markets/`,
     method: "GET",
-    headers: {
-      "Content-Type": "text/json",
-    },
   })
     .then((res) => res.data)
     .then((res) => res.markets);
   return response;
 }
 
-async function fetchContracts(marketid) {
-  let response = await axios({
-    url: `https://api.smarkets.com/v3/markets/${marketid}/contracts/`,
+async function fetchContracts(marketId: string, ctx: Context) {
+  const response = await axios({
+    url: `${apiEndpoint}/markets/${marketId}/contracts/?include_hidden=true`,
     method: "GET",
-    headers: {
-      "Content-Type": "text/html",
-    },
   }).then((res) => res.data);
-  VERBOSE ? console.log(response) : empty();
-  return response;
+  ctx.verbose && console.log(response);
+
+  if (!(response.contracts instanceof Array)) {
+    throw new Error("Invalid response while fetching contracts");
+  }
+  return response.contracts as any[];
 }
 
-async function fetchPrices(marketid) {
-  let response = await axios({
-    url: `https://api.smarkets.com/v3/markets/${marketid}/last_executed_prices/`,
+async function fetchPrices(marketId: string, ctx: Context) {
+  const response = await axios({
+    url: `https://api.smarkets.com/v3/markets/${marketId}/last_executed_prices/`,
     method: "GET",
-    headers: {
-      "Content-Type": "text/html",
-    },
   }).then((res) => res.data);
-  VERBOSE ? console.log(response) : empty();
-  return response;
+  ctx.verbose && console.log(response);
+  if (!response.last_executed_prices) {
+    throw new Error("Invalid response while fetching prices");
+  }
+  return response.last_executed_prices;
 }
 
-export const smarkets: Platform = {
-  name: platformName,
-  label: "Smarkets",
-  color: "#6f5b41",
-  async fetcher() {
-    let htmlPath =
-      "?state=new&state=upcoming&state=live&type_domain=politics&type_scope=single_event&with_new_type=true&sort=id&limit=50";
+async function processEventMarkets(event: any, ctx: Context) {
+  ctx.verbose && console.log(Date.now());
+  ctx.verbose && console.log(event.name);
 
-    let events = [];
-    while (htmlPath) {
-      let data = await fetchEvents(htmlPath);
-      events.push(...data.events);
-      htmlPath = data.pagination.next_page;
-    }
-    VERBOSE ? console.log(events) : empty();
-    let markets = [];
-    for (let event of events) {
-      VERBOSE ? console.log(Date.now()) : empty();
-      VERBOSE ? console.log(event.name) : empty();
-      let eventMarkets = await fetchMarkets(event.id);
-      eventMarkets = eventMarkets.map((market) => ({
-        ...market,
-        slug: event.full_slug,
-      }));
-      VERBOSE ? console.log("Markets fetched") : empty();
-      VERBOSE ? console.log(event.id) : empty();
-      VERBOSE ? console.log(eventMarkets) : empty();
-      markets.push(...eventMarkets);
-      //let lastPrices = await fetchPrices(market.id)
-    }
-    VERBOSE ? console.log(markets) : empty();
+  let markets = await fetchMarkets(event.id);
+  markets = markets.map((market: any) => ({
+    ...market,
+    // smarkets doesn't have separate urls for different markets in a single event
+    // we could use anchors (e.g. https://smarkets.com/event/886716/politics/uk/uk-party-leaders/next-conservative-leader#contract-collapse-9815728-control), but it's unclear if they aren't going to change
+    slug: event.full_slug,
+  }));
+  ctx.verbose && console.log(`Markets for ${event.id} fetched`);
+  ctx.verbose && console.log(markets);
 
-    let results = [];
-    for (let market of markets) {
-      VERBOSE ? console.log("================") : empty();
-      VERBOSE ? console.log("Market: ", market) : empty();
-      let id = `${platformName}-${market.id}`;
-      let name = market.name;
+  let results: FetchedQuestion[] = [];
+  for (const market of markets) {
+    ctx.verbose && console.log("================");
+    ctx.verbose && console.log("Market:", market);
 
-      let contracts = await fetchContracts(market.id);
-      VERBOSE ? console.log("Contracts: ", contracts) : empty();
-      let prices = await fetchPrices(market.id);
-      VERBOSE
-        ? console.log("Prices: ", prices["last_executed_prices"][market.id])
-        : empty();
+    const contracts = await fetchContracts(market.id, ctx);
+    ctx.verbose && console.log("Contracts:", contracts);
+    const prices = await fetchPrices(market.id, ctx);
+    ctx.verbose && console.log("Prices:", prices[market.id]);
 
-      let optionsObj = {};
-      for (let contract of contracts["contracts"]) {
-        optionsObj[contract.id] = { name: contract.name };
+    let optionsObj: {
+      [k: string]: QuestionOption;
+    } = {};
+
+    const contractsById = Object.fromEntries(
+      contracts.map((c) => [c.id as string, c])
+    );
+
+    for (const price of prices[market.id]) {
+      const contract = contractsById[price.contract_id];
+      if (!contract) {
+        console.warn(
+          `Couldn't find contract ${price.contract_id} in contracts data for ${market.id}, event ${market.event_id}, skipping`
+        );
+        continue;
       }
-      for (let price of prices["last_executed_prices"][market.id]) {
-        optionsObj[price.contract_id] = {
-          ...optionsObj[price.contract_id],
-          probability: price.last_executed_price
-            ? Number(price.last_executed_price)
-            : null,
-          type: "PROBABILITY",
-        };
-      }
-      let options: any[] = Object.values(optionsObj);
-      // monkey patch the case where there are only two options and only one has traded.
-      if (
-        options.length == 2 &&
-        options.map((option) => option.probability).includes(null)
-      ) {
-        let nonNullPrice =
-          options[0].probability == null
-            ? options[1].probability
-            : options[0].probability;
+      optionsObj[price.contract_id] = {
+        name: contract.name,
+        probability: contract.hidden ? 0 : Number(price.last_executed_price),
+        type: "PROBABILITY",
+      };
+    }
+    let options: QuestionOption[] = Object.values(optionsObj);
+    ctx.verbose && console.log("Options before patching:", options);
+
+    // monkey patch the case where there are only two options and only one has traded.
+    if (
+      options.length === 2 &&
+      options.map((option) => option.probability).includes(0)
+    ) {
+      const nonNullPrice = options[0].probability || options[1].probability;
+
+      if (nonNullPrice) {
         options = options.map((option) => {
-          let probability = option.probability;
           return {
             ...option,
-            probability: probability == null ? 100 - nonNullPrice : probability,
+            probability: option.probability || 100 - nonNullPrice,
             // yes, 100, because prices are not yet normalized.
           };
         });
       }
-
-      // Normalize normally
-      let totalValue = options
-        .map((element) => Number(element.probability))
-        .reduce((a, b) => a + b, 0);
-
-      options = options.map((element) => ({
-        ...element,
-        probability: Number(element.probability) / totalValue,
-      }));
-      VERBOSE ? console.log(options) : empty();
-
-      /*
-    if(contracts["contracts"].length == 2){
-      isBinary = true
-      percentage = ( Number(prices["last_executed_prices"][market.id][0].last_executed_price) + (100 - Number(prices["last_executed_prices"][market.id][1].last_executed_price)) ) / 2
-      percentage = Math.round(percentage)+"%"
-      let contractName = contracts["contracts"][0].name
-      name = name+ (contractName=="Yes"?'':` (${contracts["contracts"][0].name})`)
     }
-    */
-      let result: FetchedQuestion = {
-        id: id,
-        title: name,
-        url: "https://smarkets.com/event/" + market.event_id + market.slug,
-        platform: platformName,
-        description: market.description,
-        options: options,
-        timestamp: new Date(),
-        qualityindicators: {
-          stars: calculateStars(platformName, {}),
-        },
-      };
-      VERBOSE ? console.log(result) : empty();
-      results.push(result);
+    ctx.verbose && console.log("Options after patching:", options);
+
+    // Normalize normally
+    const totalValue = options
+      .map((element) => Number(element.probability))
+      .reduce((a, b) => a + b, 0);
+
+    options = options.map((element) => ({
+      ...element,
+      probability: Number(element.probability) / totalValue,
+    }));
+    ctx.verbose && console.log("Normalized options:", options);
+
+    const result: FetchedQuestion = {
+      id: `${platformName}-${market.id}`,
+      title: market.name,
+      url: "https://smarkets.com/event/" + market.event_id + market.slug,
+      description: market.description,
+      options,
+      timestamp: new Date(),
+      qualityindicators: {},
+    };
+    ctx.verbose && console.log(result);
+    results.push(result);
+  }
+  return results;
+}
+
+export const smarkets: Platform<"eventId" | "verbose"> = {
+  name: platformName,
+  label: "Smarkets",
+  color: "#6f5b41",
+  version: "v2",
+  fetcherArgs: ["eventId", "verbose"],
+  async fetcher(opts) {
+    const ctx = {
+      verbose: Boolean(opts.args?.verbose) || false,
+    };
+
+    let events: any[] = [];
+    let partial = true;
+    if (opts.args?.eventId) {
+      events = [await fetchSingleEvent(opts.args.eventId, ctx)];
+    } else {
+      events = await fetchEvents(ctx);
+      partial = false;
     }
-    VERBOSE ? console.log(results) : empty();
-    return results;
+
+    let results: FetchedQuestion[] = [];
+    for (const event of events) {
+      const eventResults = await processEventMarkets(event, ctx);
+      results.push(...eventResults);
+    }
+    return {
+      questions: results,
+      partial,
+    };
+  },
+  calculateStars(data) {
+    const nuno = () => 2;
+    const eli = () => null;
+    const misha = () => null;
+    const starsDecimal = average([nuno()]); //, eli(), misha()])
+    const starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

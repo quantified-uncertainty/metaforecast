@@ -2,14 +2,14 @@
 import axios from "axios";
 import fs from "fs";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import { Platform } from "./";
 
 const platformName = "givewellopenphil";
 
 /* Support functions */
-async function fetchPage(url: string) {
-  let response = await axios({
+async function fetchPage(url: string): Promise<string> {
+  const response = await axios({
     url: url,
     method: "GET",
     headers: {
@@ -53,9 +53,7 @@ async function main1() {
       platform: platformName,
       description,
       options: [],
-      qualityindicators: {
-        stars: calculateStars(platformName, {}),
-      },
+      qualityindicators: {},
     }; // Note: This requires some processing afterwards
     // console.log(result)
     results.push(result);
@@ -70,6 +68,7 @@ export const givewellopenphil: Platform = {
   name: platformName,
   label: "GiveWell/OpenPhilanthropy",
   color: "#32407e",
+  version: "v1",
   async fetcher() {
     // main1()
     return; // not necessary to refill the DB every time
@@ -83,5 +82,13 @@ export const givewellopenphil: Platform = {
       timestamp: new Date("2021-02-23"),
     }));
     return dataWithDate;
+  },
+  calculateStars(data) {
+    let nuno = () => 2;
+    let eli = () => null;
+    let misha = () => null;
+    let starsDecimal = average([nuno()]); //, eli(), misha()])
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

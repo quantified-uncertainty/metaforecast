@@ -1,6 +1,4 @@
-import * as React from "react";
-
-function SvgLogo(props) {
+export const Logo: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
   return (
     <svg
       width={1333.333}
@@ -76,6 +74,4 @@ function SvgLogo(props) {
       />
     </svg>
   );
-}
-
-export default SvgLogo;
+};

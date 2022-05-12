@@ -1,7 +1,7 @@
+import { FullQuestionOption, isFullQuestionOption } from "../../../common/types";
 import { QuestionFragment } from "../../fragments.generated";
+import { isQuestionBinary } from "../../utils";
 import { formatProbability } from "../utils";
-
-type Option = QuestionFragment["options"][0];
 
 const textColor = (probability: number) => {
   if (probability < 0.03) {
@@ -89,7 +89,7 @@ const chooseColor = (probability: number) => {
   }
 };
 
-const OptionRow: React.FC<{ option: Option }> = ({ option }) => {
+const OptionRow: React.FC<{ option: FullQuestionOption }> = ({ option }) => {
   return (
     <div className="flex items-center">
       <div
@@ -106,15 +106,19 @@ const OptionRow: React.FC<{ option: Option }> = ({ option }) => {
   );
 };
 
-export const QuestionOptions: React.FC<{ options: Option[] }> = ({
-  options,
+export const QuestionOptions: React.FC<{ question: QuestionFragment }> = ({
+  question,
 }) => {
-  const isBinary =
-    options.length === 2 &&
-    (options[0].name === "Yes" || options[0].name === "No");
+  const isBinary = isQuestionBinary(question);
 
   if (isBinary) {
-    const yesOption = options.find((o) => o.name === "Yes");
+    const yesOption = question.options.find((o) => o.name === "Yes");
+    if (!yesOption) {
+      return null; // shouldn't happen
+    }
+    if (!isFullQuestionOption(yesOption)) {
+      return null; // missing data
+    }
     return (
       <div className="space-x-2">
         <span
@@ -134,8 +138,11 @@ export const QuestionOptions: React.FC<{ options: Option[] }> = ({
       </div>
     );
   } else {
-    const optionsSorted = options.sort((a, b) => b.probability - a.probability);
-    const optionsMax5 = !!optionsSorted.slice ? optionsSorted.slice(0, 5) : []; // display max 5 options.
+    const optionsSorted = question.options
+      .filter(isFullQuestionOption)
+      .sort((a, b) => b.probability - a.probability);
+
+    const optionsMax5 = optionsSorted.slice(0, 5); // display max 5 options.
 
     return (
       <div className="space-y-2">

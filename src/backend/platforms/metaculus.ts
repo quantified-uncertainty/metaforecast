@@ -1,18 +1,19 @@
 /* Imports */
 import axios from "axios";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
+import { sleep } from "../utils/sleep";
 import toMarkdown from "../utils/toMarkdown";
 import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "metaculus";
-let jsonEndPoint = "https://www.metaculus.com/api2/questions/?page=";
 let now = new Date().toISOString();
 let DEBUG_MODE = "off";
 let SLEEP_TIME = 5000;
+
 /* Support functions */
-async function fetchMetaculusQuestions(next) {
+async function fetchMetaculusQuestions(next: string) {
   // Numbers about a given address: how many, how much, at what price, etc.
   let response;
   let data;
@@ -24,15 +25,17 @@ async function fetchMetaculusQuestions(next) {
     });
     data = response.data;
   } catch (error) {
-    console.log(`Error in  async function fetchMetaculusQuestions(next)`);
-    if (!!error.response.headers["retry-after"]) {
-      let timeout = error.response.headers["retry-after"];
-      console.log(`Timeout: ${timeout}`);
-      await sleep(Number(timeout) * 1000 + SLEEP_TIME);
-    } else {
-      await sleep(SLEEP_TIME);
-    }
+    console.log(`Error in async function fetchMetaculusQuestions(next)`);
     console.log(error);
+    if (axios.isAxiosError(error)) {
+      if (error.response?.headers["retry-after"]) {
+        const timeout = error.response.headers["retry-after"];
+        console.log(`Timeout: ${timeout}`);
+        await sleep(Number(timeout) * 1000 + SLEEP_TIME);
+      } else {
+        await sleep(SLEEP_TIME);
+      }
+    }
   } finally {
     try {
       response = await axios({
@@ -50,11 +53,7 @@ async function fetchMetaculusQuestions(next) {
   return data;
 }
 
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-async function fetchMetaculusQuestionDescription(slug) {
+async function fetchMetaculusQuestionDescription(slug: string) {
   try {
     let response = await axios({
       method: "get",
@@ -67,11 +66,12 @@ async function fetchMetaculusQuestionDescription(slug) {
       `We encountered some error when attempting to fetch a metaculus page. Trying again`
     );
     if (
+      axios.isAxiosError(error) &&
       typeof error.response != "undefined" &&
       typeof error.response.headers != "undefined" &&
       typeof error.response.headers["retry-after"] != "undefined"
     ) {
-      let timeout = error.response.headers["retry-after"];
+      const timeout = error.response.headers["retry-after"];
       console.log(`Timeout: ${timeout}`);
       await sleep(Number(timeout) * 1000 + SLEEP_TIME);
     } else {
@@ -98,6 +98,7 @@ export const metaculus: Platform = {
   name: platformName,
   label: "Metaculus",
   color: "#006669",
+  version: "v1",
   async fetcher() {
     // let metaculusQuestionsInit = await fetchMetaculusQuestions(1)
     // let numQueries = Math.round(Number(metaculusQuestionsInit.count) / 20)
@@ -131,7 +132,7 @@ export const metaculus: Platform = {
             let description = descriptionprocessed2;
 
             let isbinary = result.possibilities.type == "binary";
-            let options = [];
+            let options: FetchedQuestion["options"] = [];
             if (isbinary) {
               let probability = Number(result.community_prediction.full.q2);
               options = [
@@ -152,14 +153,10 @@ export const metaculus: Platform = {
               id,
               title: result.title,
               url: "https://www.metaculus.com" + result.page_url,
-              platform: platformName,
               description,
               options,
               qualityindicators: {
                 numforecasts: Number(result.number_of_predictions),
-                stars: calculateStars(platformName, {
-                  numforecasts: result.number_of_predictions,
-                }),
               },
               extra: {
                 resolution_data: {
@@ -193,5 +190,16 @@ export const metaculus: Platform = {
     }
 
     return all_questions;
+  },
+
+  calculateStars(data) {
+    const { numforecasts } = data.qualityindicators;
+    let nuno = () =>
+      (numforecasts || 0) > 300 ? 4 : (numforecasts || 0) > 100 ? 3 : 2;
+    let eli = () => 3;
+    let misha = () => 3;
+    let starsDecimal = average([nuno(), eli(), misha()]);
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { JSDOM } from "jsdom";
 
-import { calculateStars } from "../utils/stars";
+import { average } from "../../utils";
 import toMarkdown from "../utils/toMarkdown";
 import { FetchedQuestion, Platform } from "./";
 
@@ -48,6 +48,7 @@ export const rootclaim: Platform = {
   name: platformName,
   label: "Rootclaim",
   color: "#0d1624",
+  version: "v1",
   async fetcher() {
     const claims = await fetchAllRootclaims();
     const results: FetchedQuestion[] = [];
@@ -55,7 +56,7 @@ export const rootclaim: Platform = {
     for (const claim of claims) {
       const id = `${platformName}-${claim.slug.toLowerCase()}`;
 
-      let options = [];
+      let options: FetchedQuestion["options"] = [];
       for (let scenario of claim.scenarios) {
         options.push({
           name: toMarkdown(scenario.name || scenario.text)
@@ -75,16 +76,22 @@ export const rootclaim: Platform = {
         id,
         title: toMarkdown(claim.question).replace("\n", ""),
         url,
-        platform: platformName,
         description: toMarkdown(description).replace("&#39;", "'"),
-        options: options,
+        options,
         qualityindicators: {
           numforecasts: 1,
-          stars: calculateStars(platformName, {}),
         },
       };
       results.push(obj);
     }
     return results;
+  },
+  calculateStars(data) {
+    let nuno = () => 4;
+    let eli = () => null;
+    let misha = () => null;
+    let starsDecimal = average([nuno() /*, eli(data), misha(data)*/]);
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

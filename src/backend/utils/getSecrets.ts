@@ -1,5 +1,5 @@
 export async function applyIfSecretExists<T>(
-  cookie: string,
+  cookie: string | undefined,
   fun: (cookie: string) => T
 ) {
   if (cookie) {

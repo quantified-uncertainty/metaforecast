@@ -12,7 +12,7 @@
       "dom.iterable",
       "esnext"
     ],
-    "strict": false,
+    "strict": true,
     "noEmit": true,
     "incremental": true,
     "moduleResolution": "node",

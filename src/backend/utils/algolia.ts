@@ -5,13 +5,14 @@ import { Question } from "@prisma/client";
 import { prisma } from "../database/prisma";
 import { platforms } from "../platforms";
 
-let cookie = process.env.ALGOLIA_MASTER_API_KEY;
-const algoliaAppId = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID;
+let cookie = process.env.ALGOLIA_MASTER_API_KEY || "";
+const algoliaAppId = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID || "";
 const client = algoliasearch(algoliaAppId, cookie);
 const index = client.initIndex("metaforecast");
 
 export type AlgoliaQuestion = Omit<Question, "timestamp"> & {
   timestamp: string;
+  optionsstringforsearch?: string;
 };
 
 const getoptionsstringforsearch = (record: Question): string => {
@@ -43,7 +44,7 @@ export async function rebuildAlgoliaDatabase() {
     })
   );
 
-  if (index.exists()) {
+  if (await index.exists()) {
     console.log("Index exists");
     await index.replaceAllObjects(records, { safe: true });
     console.log(

@@ -1,38 +1,37 @@
 /* Imports */
 import axios from "axios";
 
+import { FullQuestionOption } from "../../common/types";
+import { average } from "../../utils";
 import { applyIfSecretExists } from "../utils/getSecrets";
 import { measureTime } from "../utils/measureTime";
-import { calculateStars } from "../utils/stars";
+import { sleep } from "../utils/sleep";
 import toMarkdown from "../utils/toMarkdown";
 import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "infer";
-let htmlEndPoint = "https://www.infer-pub.com/questions";
-String.prototype.replaceAll = function replaceAll(search, replace) {
-  return this.split(search).join(replace);
-};
+const htmlEndPoint = "https://www.infer-pub.com/questions";
 const DEBUG_MODE: "on" | "off" = "off"; // "off"
 const SLEEP_TIME_RANDOM = 7000; // miliseconds
 const SLEEP_TIME_EXTRA = 2000;
 
 /* Support functions */
 
-function cleanDescription(text) {
+function cleanDescription(text: string) {
   let md = toMarkdown(text);
   let result = md.replaceAll("---", "-").replaceAll("  ", " ");
   return result;
 }
 
-async function fetchPage(page, cookie) {
+async function fetchPage(page: number, cookie: string) {
   console.log(`Page #${page}`);
   if (page == 1) {
     cookie = cookie.split(";")[0]; // Interesting that it otherwise doesn't work :(
   }
   let urlEndpoint = `${htmlEndPoint}/?page=${page}`;
   console.log(urlEndpoint);
-  let response = await axios({
+  const response: string = await axios({
     url: urlEndpoint,
     method: "GET",
     headers: {
@@ -44,8 +43,8 @@ async function fetchPage(page, cookie) {
   return response;
 }
 
-async function fetchStats(questionUrl, cookie) {
-  let response = await axios({
+async function fetchStats(questionUrl: string, cookie: string) {
+  let response: string = await axios({
     url: questionUrl + "/stats",
     method: "GET",
     headers: {
@@ -59,7 +58,7 @@ async function fetchStats(questionUrl, cookie) {
     throw Error("Not logged in");
   }
   // Init
-  let options = [];
+  let options: FullQuestionOption[] = [];
 
   // Parse the embedded json
   let htmlElements = response.split("\n");
@@ -84,7 +83,7 @@ async function fetchStats(questionUrl, cookie) {
     questionType.includes("Forecast::Question") ||
     !questionType.includes("Forecast::MultiTimePeriodQuestion")
   ) {
-    options = firstEmbeddedJson.question.answers.map((answer) => ({
+    options = firstEmbeddedJson.question.answers.map((answer: any) => ({
       name: answer.name,
       probability: answer.normalized_probability,
       type: "PROBABILITY",
@@ -94,12 +93,11 @@ async function fetchStats(questionUrl, cookie) {
         options[0].probability > 1
           ? 1 - options[0].probability / 100
           : 1 - options[0].probability;
-      let optionNo = {
+      options.push({
         name: "No",
         probability: probabilityNo,
         type: "PROBABILITY",
-      };
-      options.push(optionNo);
+      });
     }
   }
   let result = {
@@ -109,14 +107,13 @@ async function fetchStats(questionUrl, cookie) {
       numforecasts: Number(numforecasts),
       numforecasters: Number(numforecasters),
       comments_count: Number(comments_count),
-      stars: calculateStars(platformName, { numforecasts }),
     },
   };
   // console.log(JSON.stringify(result, null, 4));
   return result;
 }
 
-function isSignedIn(html) {
+function isSignedIn(html: string) {
   let isSignedInBool = !(
     html.includes("You need to sign in or sign up before continuing") ||
     html.includes("Sign up")
@@ -128,17 +125,13 @@ function isSignedIn(html) {
   return isSignedInBool;
 }
 
-function reachedEnd(html) {
+function reachedEnd(html: string) {
   let reachedEndBool = html.includes("No questions match your filter");
   if (reachedEndBool) {
     //console.log(html)
   }
   console.log(`Reached end? ${reachedEndBool ? "yes" : "no"}`);
   return reachedEndBool;
-}
-
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 /* Body */
@@ -173,17 +166,18 @@ async function infer_inner(cookie: string) {
         await sleep(Math.random() * SLEEP_TIME_RANDOM + SLEEP_TIME_EXTRA); // don't be as noticeable
 
         try {
-          let moreinfo = await fetchStats(url, cookie);
-          let questionNumRegex = new RegExp("questions/([0-9]+)");
-          let questionNum = url.match(questionNumRegex)[1]; //.split("questions/")[1].split("-")[0];
-          let id = `${platformName}-${questionNum}`;
+          const moreinfo = await fetchStats(url, cookie);
+          const questionNumRegex = new RegExp("questions/([0-9]+)");
+          const questionNumMatch = url.match(questionNumRegex);
+          if (!questionNumMatch) {
+            throw new Error(`Couldn't find question num in ${url}`);
+          }
+          let questionNum = questionNumMatch[1];
+          const id = `${platformName}-${questionNum}`;
           let question: FetchedQuestion = {
-            id: id,
-            title: title,
-            description: moreinfo.description,
-            url: url,
-            platform: platformName,
-            options: moreinfo.options,
+            id,
+            title,
+            url,
             ...moreinfo,
           };
           console.log(JSON.stringify(question, null, 4));
@@ -236,8 +230,17 @@ export const infer: Platform = {
   name: platformName,
   label: "Infer",
   color: "#223900",
+  version: "v1",
   async fetcher() {
     let cookie = process.env.INFER_COOKIE;
-    return await applyIfSecretExists(cookie, infer_inner);
+    return (await applyIfSecretExists(cookie, infer_inner)) || null;
+  },
+  calculateStars(data) {
+    let nuno = () => 2;
+    let eli = () => null;
+    let misha = () => null;
+    let starsDecimal = average([nuno()]); //, eli(), misha()])
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   },
 };

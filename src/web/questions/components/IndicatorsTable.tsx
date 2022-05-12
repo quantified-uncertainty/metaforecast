@@ -45,18 +45,18 @@ export const IndicatorsTable: React.FC<Props> = ({ question }) => (
         ) : null}
         {Object.keys(question.qualityIndicators)
           .filter(
-            (indicator) =>
-              question.qualityIndicators[indicator] != null &&
-              !!qualityIndicatorLabels[indicator]
+            (indicator): indicator is UsedIndicatorName =>
+              (question.qualityIndicators as any)[indicator] != null &&
+              indicator in qualityIndicatorLabels
           )
-          .map((indicator: UsedIndicatorName) => {
+          .map((indicator) => {
             return (
               <TableRow
                 title={qualityIndicatorLabels[indicator]}
                 key={indicator}
               >
                 {formatIndicatorValue(
-                  question.qualityIndicators[indicator],
+                  Number(question.qualityIndicators[indicator]), // must be non-null due to former check
                   indicator,
                   question.platform.id
                 )}

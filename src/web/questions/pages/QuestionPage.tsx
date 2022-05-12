@@ -74,7 +74,7 @@ const LargeQuestionCard: React.FC<{
     </div>
 
     <div className="mb-8">
-      {question.platform.id === "guesstimate" ? (
+      {question.platform.id === "guesstimate" && question.visualization ? (
         <a className="no-underline" href={question.url} target="_blank">
           <img
             className="rounded-sm"
