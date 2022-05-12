@@ -68,6 +68,7 @@ export const givewellopenphil: Platform = {
   name: platformName,
   label: "GiveWell/OpenPhilanthropy",
   color: "#32407e",
+  version: "v1",
   async fetcher() {
     // main1()
     return; // not necessary to refill the DB every time

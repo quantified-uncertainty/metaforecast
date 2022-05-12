@@ -51,25 +51,42 @@ export type FetchedQuestion = Omit<
 };
 
 // fetcher should return null if platform failed to fetch questions for some reason
-export type PlatformFetcher = () => Promise<FetchedQuestion[] | null>;
+type PlatformFetcherV1 = () => Promise<FetchedQuestion[] | null>;
 
-export interface Platform {
+type PlatformFetcherV2Result = {
+  questions: FetchedQuestion[];
+  // if partial is true then we won't cleanup old questions from the database; this is useful when manually invoking a fetcher with arguments for updating a single question
+  partial: boolean;
+} | null;
+
+type PlatformFetcherV2<ArgNames extends string> = (opts: {
+  args?: { [k in ArgNames]: string };
+}) => Promise<PlatformFetcherV2Result>;
+
+export type PlatformFetcher<ArgNames extends string> =
+  | PlatformFetcherV1
+  | PlatformFetcherV2<ArgNames>;
+
+// using "" as ArgNames default is technically incorrect, but shouldn't cause any real issues
+// (I couldn't find a better solution for signifying an empty value, though there probably is one)
+export type Platform<ArgNames extends string = ""> = {
   name: string; // short name for ids and `platform` db column, e.g. "xrisk"
   label: string; // longer name for displaying on frontend etc., e.g. "X-risk estimates"
   color: string; // used on frontend
-  fetcher?: PlatformFetcher;
   calculateStars: (question: FetchedQuestion) => number;
-}
+} & (
+  | {
+      version: "v1";
+      fetcher?: PlatformFetcherV1;
+    }
+  | {
+      version: "v2";
+      fetcherArgs?: ArgNames[];
+      fetcher?: PlatformFetcherV2<ArgNames>;
+    }
+);
 
-// draft for the future callback-based streaming/chunking API:
-// interface FetchOptions {
-//   since?: string; // some kind of cursor, Date object or opaque string?
-//   save: (questions: Question[]) => Promise<void>;
-// }
-
-// export type PlatformFetcher = (options: FetchOptions) => Promise<void>;
-
-export const platforms: Platform[] = [
+export const platforms: Platform<string>[] = [
   betfair,
   fantasyscotus,
   foretold,
@@ -104,7 +121,7 @@ type PreparedQuestion = Omit<
 
 export const prepareQuestion = (
   q: FetchedQuestion,
-  platform: Platform
+  platform: Platform<any>
 ): PreparedQuestion => {
   return {
     extra: {},
@@ -118,12 +135,26 @@ export const prepareQuestion = (
   };
 };
 
-export const processPlatform = async (platform: Platform) => {
+export const processPlatform = async <T extends string = "">(
+  platform: Platform<T>,
+  args?: { [k in T]: string }
+) => {
   if (!platform.fetcher) {
     console.log(`Platform ${platform.name} doesn't have a fetcher, skipping`);
     return;
   }
-  const fetchedQuestions = await platform.fetcher();
+  const result =
+    platform.version === "v1"
+      ? { questions: await platform.fetcher(), partial: false } // this is not exactly PlatformFetcherV2Result, since `questions` can be null
+      : await platform.fetcher({ args });
+
+  if (!result) {
+    console.log(`Platform ${platform.name} didn't return any results`);
+    return;
+  }
+
+  const { questions: fetchedQuestions, partial } = result;
+
   if (!fetchedQuestions || !fetchedQuestions.length) {
     console.log(`Platform ${platform.name} didn't return any results`);
     return;
@@ -154,24 +185,32 @@ export const processPlatform = async (platform: Platform) => {
     }
   }
 
+  const stats: { created?: number; updated?: number; deleted?: number } = {};
+
   await prisma.question.createMany({
     data: createdQuestions,
   });
+  stats.created = createdQuestions.length;
 
   for (const q of updatedQuestions) {
     await prisma.question.update({
       where: { id: q.id },
       data: q,
     });
+    stats.updated ??= 0;
+    stats.updated++;
   }
 
-  await prisma.question.deleteMany({
-    where: {
-      id: {
-        in: deletedIds,
+  if (!partial) {
+    await prisma.question.deleteMany({
+      where: {
+        id: {
+          in: deletedIds,
+        },
       },
-    },
-  });
+    });
+    stats.deleted = deletedIds.length;
+  }
 
   await prisma.history.createMany({
     data: [...createdQuestions, ...updatedQuestions].map((q) => ({
@@ -181,7 +220,10 @@ export const processPlatform = async (platform: Platform) => {
   });
 
   console.log(
-    `Done, ${deletedIds.length} deleted, ${updatedQuestions.length} updated, ${createdQuestions.length} created`
+    "Done, " +
+      Object.entries(stats)
+        .map(([k, v]) => `${v} ${k}`)
+        .join(", ")
   );
 };
 

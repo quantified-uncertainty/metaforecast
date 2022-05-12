@@ -15,6 +15,7 @@ export const goodjudgment: Platform = {
   name: platformName,
   label: "Good Judgment",
   color: "#7d4f1b",
+  version: "v1",
   async fetcher() {
     // Proxy fuckery
     // let proxy;

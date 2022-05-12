@@ -59,6 +59,7 @@ export const example: Platform = {
   name: platformName,
   label: "Example platform",
   color: "#ff0000",
+  version: "v1",
   async fetcher() {
     let data = await fetchData();
     let results = await processPredictions(data); // somehow needed

@@ -88,6 +88,7 @@ export const manifold: Platform = {
   name: platformName,
   label: "Manifold Markets",
   color: "#793466",
+  version: "v1",
   async fetcher() {
     let data = await fetchData();
     let results = processPredictions(data); // somehow needed

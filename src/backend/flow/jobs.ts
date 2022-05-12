@@ -4,18 +4,20 @@ import { platforms, processPlatform } from "../platforms";
 import { rebuildAlgoliaDatabase } from "../utils/algolia";
 import { sleep } from "../utils/sleep";
 
-interface Job {
+interface Job<ArgNames extends string = ""> {
   name: string;
   message: string;
-  run: () => Promise<void>;
+  args?: ArgNames[];
+  run: (args?: { [k in ArgNames]: string }) => Promise<void>;
   separate?: boolean;
 }
 
-export const jobs: Job[] = [
+export const jobs: Job<string>[] = [
   ...platforms.map((platform) => ({
     name: platform.name,
     message: `Download predictions from ${platform.name}`,
-    run: () => processPlatform(platform),
+    ...(platform.version === "v2" ? { args: platform.fetcherArgs } : {}),
+    run: (args: any) => processPlatform(platform, args),
   })),
   {
     name: "algolia",
@@ -35,27 +37,39 @@ export const jobs: Job[] = [
   },
 ];
 
-async function tryCatchTryAgain(fun: () => Promise<void>) {
+async function tryCatchTryAgain<T extends object = never>(
+  fun: (args: T) => Promise<void>,
+  args: T
+) {
   try {
     console.log("Initial try");
-    await fun();
+    await fun(args);
   } catch (error) {
     sleep(10000);
     console.log("Second try");
     console.log(error);
     try {
-      await fun();
+      await fun(args);
     } catch (error) {
       console.log(error);
     }
   }
 }
 
-export const executeJobByName = async (option: string) => {
-  const job = jobs.find((job) => job.name === option);
+export const executeJobByName = async (
+  jobName: string,
+  jobArgs: { [k: string]: string } = {}
+) => {
+  const job = jobs.find((job) => job.name === jobName);
   if (!job) {
-    console.log(`Error, job ${option} not found`);
-  } else {
-    await tryCatchTryAgain(job.run);
+    console.log(`Error, job ${jobName} not found`);
+    return;
   }
+  for (const key of Object.keys(jobArgs)) {
+    if (!job.args || job.args.indexOf(key) < 0) {
+      throw new Error(`Job ${jobName} doesn't accept ${key} argument`);
+    }
+  }
+
+  await tryCatchTryAgain(job.run, jobArgs);
 };

@@ -67,6 +67,7 @@ export const polymarket: Platform = {
   name: platformName,
   label: "PolyMarket",
   color: "#00314e",
+  version: "v1",
   async fetcher() {
     let results: FetchedQuestion[] = [];
     let webpageEndpointData = await fetchAllContractInfo();

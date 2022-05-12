@@ -231,6 +231,7 @@ export const goodjudgmentopen: Platform = {
   name: platformName,
   label: "Good Judgment Open",
   color: "#002455",
+  version: "v1",
   async fetcher() {
     let cookie = process.env.GOODJUDGMENTOPENCOOKIE;
     return (await applyIfSecretExists(cookie, goodjudgmentopen_inner)) || null;

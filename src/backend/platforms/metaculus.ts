@@ -98,6 +98,7 @@ export const metaculus: Platform = {
   name: platformName,
   label: "Metaculus",
   color: "#006669",
+  version: "v1",
   async fetcher() {
     // let metaculusQuestionsInit = await fetchMetaculusQuestions(1)
     // let numQueries = Math.round(Number(metaculusQuestionsInit.count) / 20)

@@ -24,31 +24,54 @@ const generateWhatToDoMessage = () => {
 
 const whattodoMessage = generateWhatToDoMessage();
 
-/* BODY */
-const commandLineUtility = async () => {
-  const pickOption = async () => {
-    if (process.argv.length === 3) {
-      return process.argv[2]; // e.g., npm run cli polymarket
-    }
+const askForJobName = async () => {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
 
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout,
+  const question = (query: string) => {
+    return new Promise((resolve: (s: string) => void) => {
+      rl.question(query, resolve);
     });
-
-    const question = (query: string) => {
-      return new Promise((resolve: (s: string) => void) => {
-        rl.question(query, resolve);
-      });
-    };
-
-    const answer = await question(whattodoMessage);
-    rl.close();
-
-    return answer;
   };
 
-  await executeJobByName(await pickOption());
+  const answer = await question(whattodoMessage);
+  rl.close();
+
+  return answer;
+};
+
+const pickJob = async (): Promise<[string, { [k: string]: string }]> => {
+  if (process.argv.length < 3) {
+    const jobName = await askForJobName();
+    return [jobName, {}]; // e.g., npm run cli polymarket
+  }
+
+  const jobName = process.argv[2];
+  if ((process.argv.length - 3) % 2) {
+    throw new Error("Number of extra arguments must be even");
+  }
+
+  const args: { [k: string]: string } = {};
+  for (let i = 3; i < process.argv.length; i += 2) {
+    let argName = process.argv[i];
+    const argValue = process.argv[i + 1];
+    if (argName.slice(0, 2) !== "--") {
+      throw new Error(`${argName} should start with --`);
+    }
+    argName = argName.slice(2);
+    args[argName] = argValue;
+  }
+
+  return [jobName, args];
+};
+
+/* BODY */
+const commandLineUtility = async () => {
+  const [jobName, jobArgs] = await pickJob();
+
+  await executeJobByName(jobName, jobArgs);
   process.exit();
 };
 

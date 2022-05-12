@@ -141,6 +141,7 @@ export const betfair: Platform = {
   name: platformName,
   label: "Betfair",
   color: "#3d674a",
+  version: "v1",
   async fetcher() {
     const data = await fetchPredictions();
     const results = await processPredictions(data);

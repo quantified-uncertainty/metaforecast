@@ -62,6 +62,7 @@ export const foretold: Platform = {
   name: platformName,
   label: "Foretold",
   color: "#62520b",
+  version: "v1",
   async fetcher() {
     let results: FetchedQuestion[] = [];
     for (let community of highQualityCommunities) {
