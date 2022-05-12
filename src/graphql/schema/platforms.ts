@@ -1,5 +1,5 @@
 import { prisma } from "../../backend/database/prisma";
-import { platforms } from "../../backend/platforms";
+import { platforms } from "../../backend/platforms/registry";
 import { builder } from "../builder";
 
 export const PlatformObj = builder.objectRef<string>("Platform").implement({

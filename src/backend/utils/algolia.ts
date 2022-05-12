@@ -3,7 +3,7 @@ import algoliasearch from "algoliasearch";
 import { Question } from "@prisma/client";
 
 import { prisma } from "../database/prisma";
-import { platforms } from "../platforms";
+import { platforms } from "../platforms/registry";
 
 let cookie = process.env.ALGOLIA_MASTER_API_KEY || "";
 const algoliaAppId = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID || "";

@@ -1,7 +1,7 @@
 import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 
-import { getPlatformsConfig, platforms } from "../backend/platforms";
+import { getPlatformsConfig, platforms } from "../backend/platforms/registry";
 import { Layout } from "../web/common/Layout";
 import { Props, QueryParameters, SearchScreen } from "../web/search/components/SearchScreen";
 import { FrontpageDocument, SearchDocument } from "../web/search/queries.generated";

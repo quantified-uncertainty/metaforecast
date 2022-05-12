@@ -1,6 +1,7 @@
 import { doEverything } from "../flow/doEverything";
 import { rebuildFrontpage } from "../frontpage";
-import { platforms, processPlatform } from "../platforms";
+import { processPlatform } from "../platforms";
+import { platforms } from "../platforms/registry";
 import { rebuildAlgoliaDatabase } from "../utils/algolia";
 import { sleep } from "../utils/sleep";
 

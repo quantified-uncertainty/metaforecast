@@ -3,7 +3,7 @@
 import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 
-import { platforms } from "../backend/platforms";
+import { platforms } from "../backend/platforms/registry";
 import { QuestionFragment } from "../web/fragments.generated";
 import { QuestionCard } from "../web/questions/components/QuestionCard";
 import { SearchDocument } from "../web/search/queries.generated";

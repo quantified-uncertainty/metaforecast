@@ -1,4 +1,4 @@
-import { platforms } from "../platforms";
+import { platforms } from "../platforms/registry";
 import { executeJobByName } from "./jobs";
 
 /* Do everything */

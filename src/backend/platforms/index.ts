@@ -2,23 +2,9 @@ import { Question } from "@prisma/client";
 
 import { QuestionOption } from "../../common/types";
 import { prisma } from "../database/prisma";
-import { betfair } from "./betfair";
-import { fantasyscotus } from "./fantasyscotus";
-import { foretold } from "./foretold";
-import { givewellopenphil } from "./givewellopenphil";
-import { goodjudgment } from "./goodjudgment";
-import { goodjudgmentopen } from "./goodjudgmentopen";
-import { guesstimate } from "./guesstimate";
-import { infer } from "./infer";
-import { kalshi } from "./kalshi";
-import { manifold } from "./manifold";
-import { metaculus } from "./metaculus";
-import { polymarket } from "./polymarket";
-import { predictit } from "./predictit";
-import { rootclaim } from "./rootclaim";
-import { smarkets } from "./smarkets";
-import { wildeford } from "./wildeford";
-import { xrisk } from "./xrisk";
+
+// This file includes comon types and functions for working with platforms.
+// The registry of all platforms is in a separate file, ./registry.ts, to avoid circular dependencies.
 
 export interface QualityIndicators {
   stars: number;
@@ -85,26 +71,6 @@ export type Platform<ArgNames extends string = ""> = {
       fetcher?: PlatformFetcherV2<ArgNames>;
     }
 );
-
-export const platforms: Platform<string>[] = [
-  betfair,
-  fantasyscotus,
-  foretold,
-  givewellopenphil,
-  goodjudgment,
-  goodjudgmentopen,
-  guesstimate,
-  infer,
-  kalshi,
-  manifold,
-  metaculus,
-  polymarket,
-  predictit,
-  rootclaim,
-  smarkets,
-  wildeford,
-  xrisk,
-];
 
 // Typing notes:
 // There's a difference between prisma's Question type (type returned from `find` and `findMany`) and its input types due to JsonValue vs InputJsonValue mismatch.
@@ -232,14 +198,3 @@ export interface PlatformConfig {
   label: string;
   color: string;
 }
-
-// get frontend-safe version of platforms data
-export const getPlatformsConfig = (): PlatformConfig[] => {
-  const platformsConfig = platforms.map((platform) => ({
-    name: platform.name,
-    label: platform.label,
-    color: platform.color,
-  }));
-
-  return platformsConfig;
-};
