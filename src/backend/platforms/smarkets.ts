@@ -164,6 +164,10 @@ async function processEventMarkets(event: any, ctx: Context) {
       options,
       timestamp: new Date(),
       qualityindicators: {},
+      extra: {
+        contracts,
+        prices,
+      },
     };
     ctx.verbose && console.log(result);
     results.push(result);
