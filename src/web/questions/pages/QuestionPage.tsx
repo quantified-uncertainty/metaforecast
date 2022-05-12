@@ -87,16 +87,19 @@ const LargeQuestionCard: React.FC<{
       )}
     </div>
 
-    <ReactMarkdown
-      linkTarget="_blank"
-      className="font-normal text-gray-900 max-w-prose"
-    >
-      {question.description.replaceAll("---", "")}
-    </ReactMarkdown>
-
-    <Section title="Indicators">
-      <IndicatorsTable question={question} />
-    </Section>
+    <div className="mx-auto max-w-prose">
+      <Section title="Question description">
+        <ReactMarkdown
+          linkTarget="_blank"
+          className="font-normal text-gray-900"
+        >
+          {question.description.replaceAll("---", "")}
+        </ReactMarkdown>
+      </Section>
+      <Section title="Indicators">
+        <IndicatorsTable question={question} />
+      </Section>
+    </div>
   </Card>
 );
 

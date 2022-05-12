@@ -59,3 +59,8 @@ ul {
   list-style-type: square;
   margin-left: 20px;
 }
+
+ol {
+  list-style: decimal;
+  margin-left: 20px;
+}
