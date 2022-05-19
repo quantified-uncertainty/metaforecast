@@ -4,7 +4,6 @@ import axios from "axios";
 
 import { average } from "../../utils";
 import { sleep } from "../utils/sleep";
-import toMarkdown from "../utils/toMarkdown";
 import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
@@ -134,11 +133,13 @@ async function fetchQuestionPage(slug: string) {
 
   let description: string = "";
   if (!isPublicFigurePrediction) {
-    const descriptionraw = questionPage.split(
-      `<div class="content" ng-bind-html-compile="qctrl.question.description_html">`
-    )[1];
-    const descriptionprocessed1 = descriptionraw.split("</div>")[0];
-    description = toMarkdown(descriptionprocessed1);
+    const match = questionPage.match(
+      /\s*window\.metacData\.question = (.+);\s*/
+    );
+    if (!match) {
+      throw new Error("metacData not found");
+    }
+    description = JSON.parse(match[1]).description;
   }
 
   return {
