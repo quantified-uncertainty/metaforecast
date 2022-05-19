@@ -62,7 +62,7 @@ const LargeQuestionCard: React.FC<{
       </a>
     </h1>
 
-    <div className="flex gap-2 mb-2">
+    <div className="flex gap-2 mb-10">
       <a
         className="text-black no-underline bg-red-300 rounded p-1 px-2 text-xs hover:text-gray-600"
         href={question.url}
@@ -73,7 +73,7 @@ const LargeQuestionCard: React.FC<{
       <Stars num={question.qualityIndicators.stars} />
     </div>
 
-    <div className="mb-8">
+    <div className="mb-10">
       {question.platform.id === "guesstimate" && question.visualization ? (
         <a className="no-underline" href={question.url} target="_blank">
           <img
@@ -96,9 +96,11 @@ const LargeQuestionCard: React.FC<{
           {question.description.replaceAll("---", "")}
         </ReactMarkdown>
       </Section>
-      <Section title="Indicators">
-        <IndicatorsTable question={question} />
-      </Section>
+      <div className="mt-5">
+        <Section title="Indicators">
+          <IndicatorsTable question={question} />
+        </Section>
+      </div>
     </div>
   </Card>
 );

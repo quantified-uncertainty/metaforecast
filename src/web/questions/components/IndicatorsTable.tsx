@@ -1,6 +1,8 @@
 import { QuestionFragment } from "../../fragments.generated";
 import {
-    formatIndicatorValue, qualityIndicatorLabels, UsedIndicatorName
+  formatIndicatorValue,
+  qualityIndicatorLabels,
+  UsedIndicatorName,
 } from "./QuestionCard/QuestionFooter";
 import { Stars } from "./Stars";
 

@@ -1,10 +1,19 @@
 import { differenceInDays, format } from "date-fns";
 import {
-    VictoryAxis, VictoryChart, VictoryGroup, VictoryLabel, VictoryLine, VictoryScatter,
-    VictoryTheme, VictoryTooltip, VictoryVoronoiContainer
+  VictoryAxis,
+  VictoryChart,
+  VictoryGroup,
+  VictoryLabel,
+  VictoryLine,
+  VictoryScatter,
+  VictoryTheme,
+  VictoryTooltip,
+  VictoryVoronoiContainer,
 } from "victory";
 
 import { chartColors, ChartData, ChartSeries, height, width } from "./utils";
+
+let dateFormat = "MMM do y"; // "yyyy-MM-dd"
 
 // can't be replaced with React component, VictoryChart requires VictoryGroup elements to be immediate children
 const getVictoryGroup = ({
@@ -71,12 +80,12 @@ export const InnerChart: React.FC<Props> = ({
                 <VictoryLabel
                   style={[
                     {
-                      fontSize: 18,
+                      fontSize: 16,
                       fill: "black",
                       strokeWidth: 0.05,
                     },
                     {
-                      fontSize: 18,
+                      fontSize: 16,
                       fill: "#777",
                       strokeWidth: 0.05,
                     },
@@ -86,11 +95,11 @@ export const InnerChart: React.FC<Props> = ({
               text={({ datum }) =>
                 `${datum.name}: ${Math.round(datum.y * 100)}%\n${format(
                   datum.x,
-                  "yyyy-MM-dd"
+                  dateFormat
                 )}`
               }
               style={{
-                fontSize: 18, // needs to be set here and not just in labelComponent for text size calculations
+                fontSize: 17, // needs to be set here and not just in labelComponent for text size calculations
                 fontFamily:
                   '"Gill Sans", "Gill Sans MT", "Ser­avek", "Trebuchet MS", sans-serif',
                 // default font family from Victory, need to be specified explicitly for some reason, otherwise text size gets miscalculated
@@ -100,7 +109,7 @@ export const InnerChart: React.FC<Props> = ({
                 fill: "white",
               }}
               cornerRadius={4}
-              flyoutPadding={{ top: 4, bottom: 4, left: 12, right: 12 }}
+              flyoutPadding={{ top: 4, bottom: 4, left: 16, right: 16 }}
             />
           }
           radius={50}
@@ -129,11 +138,11 @@ export const InnerChart: React.FC<Props> = ({
             dx={-38}
             dy={-5}
             angle={-30}
-            style={{ fontSize: 18, fill: "#777" }}
+            style={{ fontSize: 15, fill: "#777" }}
           />
         }
         scale={{ x: "time" }}
-        tickFormat={(t) => format(t, "yyyy-MM-dd")}
+        tickFormat={(t) => format(t, dateFormat)}
       />
       <VictoryAxis
         dependentAxis
