@@ -58,17 +58,17 @@ const LargeQuestionCard: React.FC<{
         target="_blank"
       >
         {question.title}{" "}
-        <FaExternalLinkAlt className="text-gray-400 inline sm:text-3xl text-xl mb-1" />
       </a>
     </h1>
 
-    <div className="flex gap-2 mb-10">
+    <div className="flex gap-2 mb-3">
       <a
-        className="text-black no-underline bg-red-300 rounded p-1 px-2 text-xs hover:text-gray-600"
+        className="text-black no-underline border-2 rounded-lg border-gray-400 rounded p-1 px-2 text-2xs hover:text-gray-600"
         href={question.url}
         target="_blank"
       >
-        {question.platform.label}
+        {question.platform.label}{" "}
+        <FaExternalLinkAlt className="text-gray-400 inline sm:text-md text-md mb-1" />
       </a>
       <Stars num={question.qualityIndicators.stars} />
     </div>

@@ -31,13 +31,15 @@ const getVictoryGroup = ({
         name={`line-${i}`}
         style={{
           data: {
-            strokeOpacity: highlight ? 1 : 0.5,
+            // strokeOpacity: highlight ?  1 : 0.5,
+            strokeOpacity: 0.6,
+            strokeWidth: 3,
           },
         }}
       />
       <VictoryScatter
         name={`scatter-${i}`}
-        size={({ active }) => (active || highlight ? 3.75 : 3)}
+        size={({ active }) => (active || highlight ? 0 : 0)} //(active || highlight ? 3.75 : 3)}
       />
     </VictoryGroup>
   );
@@ -56,9 +58,9 @@ export const InnerChart: React.FC<Props> = ({
     maxProbability < 0.5 ? Math.round(10 * (maxProbability + 0.05)) / 10 : 1;
   const padding = {
     top: 20,
-    bottom: 65,
-    left: 60,
-    right: 5,
+    bottom: 75,
+    left: 70,
+    right: 17,
   };
 
   return (
@@ -135,8 +137,8 @@ export const InnerChart: React.FC<Props> = ({
         }}
         tickLabelComponent={
           <VictoryLabel
-            dx={-38}
-            dy={-5}
+            dx={-40}
+            dy={0}
             angle={-30}
             style={{ fontSize: 15, fill: "#777" }}
           />
