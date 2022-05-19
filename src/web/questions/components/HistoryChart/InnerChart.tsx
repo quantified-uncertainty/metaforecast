@@ -3,9 +3,11 @@ import {
   VictoryAxis,
   VictoryChart,
   VictoryGroup,
+  VictoryStack,
   VictoryLabel,
   VictoryLine,
   VictoryScatter,
+  VictoryArea,
   VictoryTheme,
   VictoryTooltip,
   VictoryVoronoiContainer,
@@ -20,10 +22,12 @@ const getVictoryGroup = ({
   data,
   i,
   highlight,
+  isBinary,
 }: {
   data: ChartSeries;
   i: number;
   highlight?: boolean;
+  isBinary?: boolean;
 }) => {
   return (
     <VictoryGroup color={chartColors[i] || "darkgray"} data={data} key={i}>
@@ -33,10 +37,20 @@ const getVictoryGroup = ({
           data: {
             // strokeOpacity: highlight ?  1 : 0.5,
             strokeOpacity: 0.6,
-            strokeWidth: 3,
+            strokeWidth: isBinary ? 4 : 3,
           },
         }}
       />
+      {isBinary ? (
+        <VictoryArea
+          standalone={false}
+          style={{
+            data: { fill: chartColors[i], fillOpacity: 0.1, strokeOpacity: 0 },
+          }}
+          data={data}
+        />
+      ) : null}
+
       <VictoryScatter
         name={`scatter-${i}`}
         size={({ active }) => (active || highlight ? 0 : 0)} //(active || highlight ? 3.75 : 3)}
@@ -63,9 +77,12 @@ export const InnerChart: React.FC<Props> = ({
     right: 17,
   };
 
+  const isBinary = seriesList.length == 1;
+  console.log(isBinary);
+
   return (
     <VictoryChart
-      domainPadding={20}
+      domainPadding={0}
       padding={padding}
       theme={VictoryTheme.material}
       height={height}
@@ -157,24 +174,32 @@ export const InnerChart: React.FC<Props> = ({
         // tickFormat specifies how ticks should be displayed
         tickFormat={(x) => `${x * 100}%`}
       />
+
       {[...Array(seriesList.length).keys()]
         .reverse() // affects svg render order, we want to render largest datasets on top of others
-        .filter((i) => i !== highlight)
+        //.filter((i) => i !== highlight)
         .map((i) =>
           getVictoryGroup({
             data: seriesList[i],
             i,
-            highlight: false,
+            highlight: i == highlight, // false
+            isBinary: isBinary,
           })
         )}
-      {highlight === undefined
+
+      {
+        // note: this produces an annoying change of color effect
+        /*
+        highlight === undefined
         ? null
         : // render highlighted series on top of everything else
           getVictoryGroup({
             data: seriesList[highlight],
-            i: highlight,
+            i: highlight, 
             highlight: true,
-          })}
+          })
+        */
+      }
     </VictoryChart>
   );
 };

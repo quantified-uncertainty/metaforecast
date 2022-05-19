@@ -61,7 +61,7 @@ const LargeQuestionCard: React.FC<{
       </a>
     </h1>
 
-    <div className="flex gap-2 mb-3">
+    <div className="flex gap-2 mb-5">
       <a
         className="text-black no-underline border-2 rounded-lg border-gray-400 rounded p-1 px-2 text-2xs hover:text-gray-600"
         href={question.url}
