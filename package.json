@@ -46,6 +46,7 @@
     "@types/textversionjs": "^1.1.1",
     "@types/tunnel": "^0.0.3",
     "airtable": "^0.11.1",
+    "ajv": "^8.11.0",
     "algoliasearch": "^4.10.3",
     "autoprefixer": "^10.1.0",
     "axios": "^0.25.0",

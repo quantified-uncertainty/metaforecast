@@ -1,4 +1,5 @@
 /* Imports */
+import Ajv, { JTDDataType } from "ajv/dist/jtd";
 import axios from "axios";
 
 import { average } from "../../utils";
@@ -8,24 +9,87 @@ import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "metaculus";
-let now = new Date().toISOString();
-let DEBUG_MODE = "off";
-let SLEEP_TIME = 5000;
+const now = new Date().toISOString();
+const SLEEP_TIME = 5000;
 
-/* Support functions */
-async function fetchMetaculusQuestions(next: string) {
-  // Numbers about a given address: how many, how much, at what price, etc.
-  let response;
-  let data;
+const apiQuestionSchema = {
+  properties: {
+    page_url: {
+      type: "string",
+    },
+    title: {
+      type: "string",
+    },
+    publish_time: {
+      type: "string",
+    },
+    close_time: {
+      type: "string",
+    },
+    resolve_time: {
+      type: "string",
+    },
+    number_of_predictions: {
+      type: "uint32",
+    },
+    possibilities: {
+      properties: {
+        type: {
+          type: "string", // TODO - enum?
+        },
+      },
+      additionalProperties: true,
+    },
+    community_prediction: {
+      properties: {
+        full: {
+          properties: {
+            q1: {
+              type: "float64",
+            },
+            q2: {
+              type: "float64",
+            },
+            q3: {
+              type: "float64",
+            },
+          },
+          additionalProperties: true,
+        },
+      },
+      additionalProperties: true,
+    },
+  },
+  additionalProperties: true,
+} as const;
+
+const apiMultipleQuestionsSchema = {
+  properties: {
+    results: {
+      elements: apiQuestionSchema,
+    },
+    next: {
+      type: "string",
+      nullable: true,
+    },
+  },
+  additionalProperties: true,
+} as const;
+
+type ApiQuestion = JTDDataType<typeof apiQuestionSchema>;
+type ApiMultipleQuestions = JTDDataType<typeof apiMultipleQuestionsSchema>;
+
+const validateApiQuestion = new Ajv().compile<ApiQuestion>(apiQuestionSchema);
+const validateApiMultipleQuestions = new Ajv().compile<
+  JTDDataType<typeof apiMultipleQuestionsSchema>
+>(apiMultipleQuestionsSchema);
+
+async function fetchWithRetries<T = unknown>(url: string): Promise<T> {
   try {
-    response = await axios({
-      url: next,
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    });
-    data = response.data;
+    const response = await axios.get<T>(url);
+    return response.data;
   } catch (error) {
-    console.log(`Error in async function fetchMetaculusQuestions(next)`);
+    console.log(`Error while fetching ${url}`);
     console.log(error);
     if (axios.isAxiosError(error)) {
       if (error.response?.headers["retry-after"]) {
@@ -36,170 +100,183 @@ async function fetchMetaculusQuestions(next: string) {
         await sleep(SLEEP_TIME);
       }
     }
-  } finally {
-    try {
-      response = await axios({
-        url: next,
-        method: "GET",
-        headers: { "Content-Type": "application/json" },
-      });
-      data = response.data;
-    } catch (error) {
-      console.log(error);
-      return { results: [] };
-    }
   }
-  // console.log(response)
-  return data;
+  const response = await axios.get<T>(url);
+  return response.data;
 }
 
-async function fetchMetaculusQuestionDescription(slug: string) {
-  try {
-    let response = await axios({
-      method: "get",
-      url: "https://www.metaculus.com" + slug,
-    }).then((response) => response.data);
-    return response;
-  } catch (error) {
-    console.log(`Error in: fetchMetaculusQuestionDescription`);
-    console.log(
-      `We encountered some error when attempting to fetch a metaculus page. Trying again`
-    );
-    if (
-      axios.isAxiosError(error) &&
-      typeof error.response != "undefined" &&
-      typeof error.response.headers != "undefined" &&
-      typeof error.response.headers["retry-after"] != "undefined"
-    ) {
-      const timeout = error.response.headers["retry-after"];
-      console.log(`Timeout: ${timeout}`);
-      await sleep(Number(timeout) * 1000 + SLEEP_TIME);
-    } else {
-      await sleep(SLEEP_TIME);
-    }
-    try {
-      let response = await axios({
-        method: "get",
-        url: "https://www.metaculus.com" + slug,
-      }).then((response) => response.data);
-      // console.log(response)
-      return response;
-    } catch (error) {
-      console.log(
-        `We encountered some error when attempting to fetch a metaculus page.`
-      );
-      console.log("Error", error);
-      throw "Giving up";
-    }
+/* Support functions */
+async function fetchApiQuestions(next: string): Promise<ApiMultipleQuestions> {
+  const data = await fetchWithRetries<object>(next);
+  if (validateApiMultipleQuestions(data)) {
+    return data;
   }
+  throw new Error("Response validation failed");
 }
 
-export const metaculus: Platform = {
+async function fetchSingleApiQuestion(url: string): Promise<ApiQuestion> {
+  const data = await fetchWithRetries<object>(url);
+  if (validateApiQuestion(data)) {
+    return data;
+  }
+  throw new Error("Response validation failed");
+}
+
+async function fetchQuestionHtml(slug: string) {
+  return await fetchWithRetries<string>("https://www.metaculus.com" + slug);
+}
+
+async function fetchQuestionPage(slug: string) {
+  const questionPage = await fetchQuestionHtml(slug);
+  const isPublicFigurePrediction = questionPage.includes(
+    "A public prediction by"
+  );
+
+  let description: string = "";
+  if (!isPublicFigurePrediction) {
+    const descriptionraw = questionPage.split(
+      `<div class="content" ng-bind-html-compile="qctrl.question.description_html">`
+    )[1];
+    const descriptionprocessed1 = descriptionraw.split("</div>")[0];
+    description = toMarkdown(descriptionprocessed1);
+  }
+
+  return {
+    isPublicFigurePrediction,
+    description,
+  };
+}
+
+async function apiQuestionToFetchedQuestion(
+  apiQuestion: ApiQuestion
+): Promise<FetchedQuestion | null> {
+  if (apiQuestion.publish_time > now || now > apiQuestion.resolve_time) {
+    return null;
+  }
+  await sleep(SLEEP_TIME / 2);
+
+  const questionPage = await fetchQuestionPage(apiQuestion.page_url);
+
+  if (questionPage.isPublicFigurePrediction) {
+    console.log("- [Skipping public prediction]");
+    return null;
+  }
+
+  const isBinary = apiQuestion.possibilities.type === "binary";
+  let options: FetchedQuestion["options"] = [];
+  if (isBinary) {
+    const probability = Number(apiQuestion.community_prediction.full.q2);
+    options = [
+      {
+        name: "Yes",
+        probability: probability,
+        type: "PROBABILITY",
+      },
+      {
+        name: "No",
+        probability: 1 - probability,
+        type: "PROBABILITY",
+      },
+    ];
+  }
+  const question: FetchedQuestion = {
+    id: `${platformName}-${apiQuestion.id}`,
+    title: apiQuestion.title,
+    url: "https://www.metaculus.com" + apiQuestion.page_url,
+    description: questionPage.description,
+    options,
+    qualityindicators: {
+      numforecasts: apiQuestion.number_of_predictions,
+    },
+    extra: {
+      resolution_data: {
+        publish_time: apiQuestion.publish_time,
+        resolution: apiQuestion.resolution,
+        close_time: apiQuestion.close_time,
+        resolve_time: apiQuestion.resolve_time,
+      },
+    },
+    //"status": result.status,
+    //"publish_time": result.publish_time,
+    //"close_time": result.close_time,
+    //"type": result.possibilities.type, // We want binary ones here.
+    //"last_activity_time": result.last_activity_time,
+  };
+  if (apiQuestion.number_of_predictions < 10) {
+    return null;
+  }
+
+  return question;
+}
+
+export const metaculus: Platform<"id" | "debug"> = {
   name: platformName,
   label: "Metaculus",
   color: "#006669",
-  version: "v1",
-  async fetcher() {
-    // let metaculusQuestionsInit = await fetchMetaculusQuestions(1)
-    // let numQueries = Math.round(Number(metaculusQuestionsInit.count) / 20)
-    // console.log(`Downloading... This might take a while. Total number of queries: ${numQueries}`)
-    // for (let i = 4; i <= numQueries; i++) { // change numQueries to 10 if one want to just test }
-    let all_questions = [];
-    let next = "https://www.metaculus.com/api2/questions/";
+  version: "v2",
+  fetcherArgs: ["id", "debug"],
+  async fetcher(opts) {
+    let allQuestions: FetchedQuestion[] = [];
+
+    if (opts.args?.id) {
+      const apiQuestion = await fetchSingleApiQuestion(
+        `https://www.metaculus.com/api2/questions/${opts.args?.id}`
+      );
+      const question = await apiQuestionToFetchedQuestion(apiQuestion);
+      console.log(question);
+      return {
+        questions: question ? [question] : [],
+        partial: true,
+      };
+    }
+
+    let next: string | null = "https://www.metaculus.com/api2/questions/";
     let i = 1;
     while (next) {
-      if (i % 20 == 0) {
+      if (i % 20 === 0) {
         console.log("Sleeping for 500ms");
         await sleep(SLEEP_TIME);
       }
       console.log(`\nQuery #${i}`);
-      let metaculusQuestions = await fetchMetaculusQuestions(next);
-      let results = metaculusQuestions.results;
-      let j = false;
-      for (let result of results) {
-        if (result.publish_time < now && now < result.resolve_time) {
-          await sleep(SLEEP_TIME / 2);
-          let questionPage = await fetchMetaculusQuestionDescription(
-            result.page_url
-          );
-          if (!questionPage.includes("A public prediction by")) {
-            // console.log(questionPage)
-            let descriptionraw = questionPage.split(
-              `<div class="content" ng-bind-html-compile="qctrl.question.description_html">`
-            )[1]; //.split(`<div class="question__content">`)[1]
-            let descriptionprocessed1 = descriptionraw.split("</div>")[0];
-            let descriptionprocessed2 = toMarkdown(descriptionprocessed1);
-            let description = descriptionprocessed2;
 
-            let isbinary = result.possibilities.type == "binary";
-            let options: FetchedQuestion["options"] = [];
-            if (isbinary) {
-              let probability = Number(result.community_prediction.full.q2);
-              options = [
-                {
-                  name: "Yes",
-                  probability: probability,
-                  type: "PROBABILITY",
-                },
-                {
-                  name: "No",
-                  probability: 1 - probability,
-                  type: "PROBABILITY",
-                },
-              ];
-            }
-            let id = `${platformName}-${result.id}`;
-            let interestingInfo: FetchedQuestion = {
-              id,
-              title: result.title,
-              url: "https://www.metaculus.com" + result.page_url,
-              description,
-              options,
-              qualityindicators: {
-                numforecasts: Number(result.number_of_predictions),
-              },
-              extra: {
-                resolution_data: {
-                  publish_time: result.publish_time,
-                  resolution: result.resolution,
-                  close_time: result.close_time,
-                  resolve_time: result.resolve_time,
-                },
-              },
-              //"status": result.status,
-              //"publish_time": result.publish_time,
-              //"close_time": result.close_time,
-              //"type": result.possibilities.type, // We want binary ones here.
-              //"last_activity_time": result.last_activity_time,
-            };
-            if (Number(result.number_of_predictions) >= 10) {
-              console.log(`- ${interestingInfo.title}`);
-              all_questions.push(interestingInfo);
-              if ((!j && i % 20 == 0) || DEBUG_MODE == "on") {
-                console.log(interestingInfo);
-                j = true;
-              }
-            }
-          } else {
-            console.log("- [Skipping public prediction]");
-          }
+      const metaculusQuestions: ApiMultipleQuestions = await fetchApiQuestions(
+        next
+      );
+      const results = metaculusQuestions.results;
+
+      let j = false;
+
+      for (const result of results) {
+        const question = await apiQuestionToFetchedQuestion(result);
+        if (!question) {
+          continue;
         }
+        console.log(`- ${question.title}`);
+        if ((!j && i % 20 === 0) || opts.args?.debug) {
+          console.log(question);
+          j = true;
+        }
+        allQuestions.push(question);
       }
+
       next = metaculusQuestions.next;
       i = i + 1;
     }
 
-    return all_questions;
+    return {
+      questions: allQuestions,
+      partial: false,
+    };
   },
 
   calculateStars(data) {
     const { numforecasts } = data.qualityindicators;
-    let nuno = () =>
+    const nuno = () =>
       (numforecasts || 0) > 300 ? 4 : (numforecasts || 0) > 100 ? 3 : 2;
-    let eli = () => 3;
-    let misha = () => 3;
-    let starsDecimal = average([nuno(), eli(), misha()]);
-    let starsInteger = Math.round(starsDecimal);
+    const eli = () => 3;
+    const misha = () => 3;
+    const starsDecimal = average([nuno(), eli(), misha()]);
+    const starsInteger = Math.round(starsDecimal);
     return starsInteger;
   },
 };
