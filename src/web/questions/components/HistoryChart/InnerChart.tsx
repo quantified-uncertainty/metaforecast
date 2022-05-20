@@ -37,7 +37,7 @@ const getVictoryGroup = ({
           data: {
             // strokeOpacity: highlight ?  1 : 0.5,
             strokeOpacity: 0.6,
-            strokeWidth: isBinary ? 4 : 3,
+            strokeWidth: 3,
           },
         }}
       />
@@ -82,7 +82,7 @@ export const InnerChart: React.FC<Props> = ({
 
   return (
     <VictoryChart
-      domainPadding={0}
+      domainPadding={{ x: 0 }}
       padding={padding}
       theme={VictoryTheme.material}
       height={height}
@@ -147,6 +147,11 @@ export const InnerChart: React.FC<Props> = ({
         y: [0, domainMax],
       }}
     >
+      {
+        // Note: axis is not in fact unaligned. Fetchers are at ~12:00
+        // whereas the date is at the beginning of the day
+        // however, it still doesn't look very pretty.
+      }
       <VictoryAxis
         tickCount={Math.min(7, differenceInDays(maxDate, minDate) + 1)}
         style={{
