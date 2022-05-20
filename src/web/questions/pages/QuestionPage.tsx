@@ -91,17 +91,19 @@ const LargeQuestionCard: React.FC<{
       </div>
 
       <div className="mb-10">
-        {question.platform.id === "guesstimate" && question.visualization ? (
-          <a className="no-underline" href={question.url} target="_blank">
-            <img
-              className="rounded-sm"
-              src={question.visualization}
-              alt="Guesstimate Screenshot"
-            />
-          </a>
-        ) : (
-          <HistoryChart question={question} />
-        )}
+        {
+          question.platform.id === "guesstimate" && question.visualization ? (
+            <a className="no-underline" href={question.url} target="_blank">
+              <img
+                className="rounded-sm"
+                src={question.visualization}
+                alt="Guesstimate Screenshot"
+              />
+            </a>
+          ) : question.options.length > 0 ? (
+            <HistoryChart question={question} />
+          ) : null /* Don't display chart if there are no options, for now. */
+        }
       </div>
 
       <div className="mx-auto max-w-prose">
