@@ -116,14 +116,24 @@ export const QuestionCard: React.FC<Props> = ({
           </div>
           {isBinary ? (
             <div className="flex justify-between">
-              <QuestionOptions question={question} />
+              <QuestionOptions
+                question={question}
+                maxNumOptions={5}
+                optionTextSize={"text-normal"}
+                onlyFirstEstimate={false}
+              />
               <div className={`hidden ${showTimeStamp ? "sm:block" : ""}`}>
                 <LastUpdated timestamp={lastUpdated} />
               </div>
             </div>
           ) : (
             <div className="space-y-2">
-              <QuestionOptions question={question} />
+              <QuestionOptions
+                question={question}
+                maxNumOptions={5}
+                optionTextSize={"text-sm"}
+                onlyFirstEstimate={false}
+              />
               <div className={`hidden ${showTimeStamp ? "sm:block" : ""} ml-6`}>
                 <LastUpdated timestamp={lastUpdated} />
               </div>

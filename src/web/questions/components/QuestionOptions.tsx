@@ -1,4 +1,7 @@
-import { FullQuestionOption, isFullQuestionOption } from "../../../common/types";
+import {
+  FullQuestionOption,
+  isFullQuestionOption,
+} from "../../../common/types";
 import { QuestionFragment } from "../../fragments.generated";
 import { isQuestionBinary } from "../../utils";
 import { formatProbability } from "../utils";
@@ -89,26 +92,38 @@ const chooseColor = (probability: number) => {
   }
 };
 
-const OptionRow: React.FC<{ option: FullQuestionOption }> = ({ option }) => {
+const OptionRow: React.FC<{
+  option: FullQuestionOption;
+  optionTextSize: string;
+}> = ({ option, optionTextSize }) => {
   return (
     <div className="flex items-center">
       <div
         className={`${chooseColor(
           option.probability
-        )} w-14 flex-none rounded-md py-0.5 text-sm text-center`}
+        )} w-14 flex-none rounded-md py-0.5 ${
+          optionTextSize || "text-sm"
+        } text-center`}
       >
         {formatProbability(option.probability)}
       </div>
-      <div className="text-gray-700 pl-3 leading-snug text-sm">
+      <div
+        className={`text-gray-700 pl-3 leading-snug ${
+          optionTextSize || "text-sm"
+        }`}
+      >
         {option.name}
       </div>
     </div>
   );
 };
 
-export const QuestionOptions: React.FC<{ question: QuestionFragment }> = ({
-  question,
-}) => {
+export const QuestionOptions: React.FC<{
+  question: QuestionFragment;
+  maxNumOptions: number;
+  optionTextSize: string;
+  onlyFirstEstimate: boolean;
+}> = ({ question, maxNumOptions, optionTextSize, onlyFirstEstimate }) => {
   const isBinary = isQuestionBinary(question);
 
   if (isBinary) {
@@ -124,30 +139,65 @@ export const QuestionOptions: React.FC<{ question: QuestionFragment }> = ({
         <span
           className={`${primaryForecastColor(
             yesOption.probability
-          )} text-white w-16 rounded-md px-1.5 py-0.5 font-bold`}
+          )} text-white w-16 rounded-md px-2 py-1 font-bold ${
+            optionTextSize || "text-normal"
+          }`}
         >
           {formatProbability(yesOption.probability)}
         </span>
         <span
-          className={`${textColor(
-            yesOption.probability
-          )} text-gray-500 inline-block`}
+          className={`${textColor(yesOption.probability)} ${
+            optionTextSize || "text-normal"
+          } text-gray-500 inline-block`}
         >
           {primaryEstimateAsText(yesOption.probability)}
         </span>
       </div>
     );
+  } else if (onlyFirstEstimate) {
+    if (question.options.length > 0) {
+      const yesOption =
+        question.options.length > 0 ? question.options[0] : null;
+      if (!yesOption) {
+        return null; // shouldn't happen
+      }
+      if (!isFullQuestionOption(yesOption)) {
+        return null; // missing data
+      }
+      return (
+        <div className="space-x-2">
+          <span
+            className={`${primaryForecastColor(
+              yesOption.probability
+            )} text-white w-16 rounded-md px-2 py-1 font-bold ${
+              optionTextSize || "text-normal"
+            }`}
+          >
+            {formatProbability(yesOption.probability)}
+          </span>
+          <span
+            className={`${textColor(yesOption.probability)} ${
+              optionTextSize || "text-normal"
+            } text-gray-500 inline-block`}
+          >
+            {yesOption.name}
+          </span>
+        </div>
+      );
+    } else {
+      return null;
+    }
   } else {
     const optionsSorted = question.options
       .filter(isFullQuestionOption)
       .sort((a, b) => b.probability - a.probability);
 
-    const optionsMax5 = optionsSorted.slice(0, 5); // display max 5 options.
+    const optionsMaxN = optionsSorted.slice(0, maxNumOptions); // display max 5 options.
 
     return (
       <div className="space-y-2">
-        {optionsMax5.map((option, i) => (
-          <OptionRow option={option} key={i} />
+        {optionsMaxN.map((option, i) => (
+          <OptionRow option={option} key={i} optionTextSize={optionTextSize} />
         ))}
       </div>
     );

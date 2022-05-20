@@ -36,8 +36,8 @@ const getVictoryGroup = ({
         style={{
           data: {
             // strokeOpacity: highlight ?  1 : 0.5,
-            strokeOpacity: 0.6,
-            strokeWidth: 3,
+            strokeOpacity: highlight && !isBinary ? 0.8 : 0.6,
+            strokeWidth: highlight && !isBinary ? 4 : 3,
           },
         }}
       />
@@ -196,14 +196,14 @@ export const InnerChart: React.FC<Props> = ({
         // note: this produces an annoying change of color effect
         /*
         highlight === undefined
-        ? null
-        : // render highlighted series on top of everything else
-          getVictoryGroup({
-            data: seriesList[highlight],
-            i: highlight, 
-            highlight: true,
-          })
-        */
+          ? null
+          : // render highlighted series on top of everything else
+            getVictoryGroup({
+              data: seriesList[highlight],
+              i: highlight,
+              highlight: true,
+            })
+            */
       }
     </VictoryChart>
   );
