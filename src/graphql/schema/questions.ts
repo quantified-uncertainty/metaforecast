@@ -70,8 +70,16 @@ const QuestionShapeInterface = builder
       }),
       timestamp: t.field({
         type: "Date",
-        description: "Timestamp at which metaforecast fetched the question",
-        resolve: (parent) => parent.timestamp,
+        description:
+          "Last timestamp at which metaforecast fetched the question",
+        deprecationReason: "Renamed to `fetched`",
+        resolve: (parent) => parent.fetched,
+      }),
+      fetched: t.field({
+        type: "Date",
+        description:
+          "Last timestamp at which metaforecast fetched the question",
+        resolve: (parent) => parent.fetched,
       }),
       qualityIndicators: t.field({
         type: QualityIndicatorsObj,
@@ -114,10 +122,15 @@ export const QuestionObj = builder.prismaObject("Question", {
       resolve: (parent) => (parent.extra as any)?.visualization, // used for guesstimate only, see searchGuesstimate.ts
       nullable: true,
     }),
+    firstSeen: t.field({
+      type: "Date",
+      description: "First timestamp at which metaforecast fetched the question",
+      resolve: (parent) => parent.firstSeen,
+    }),
     history: t.relation("history", {
       query: () => ({
         orderBy: {
-          timestamp: "asc",
+          fetched: "asc",
         },
       }),
     }),
@@ -130,7 +143,21 @@ builder.queryField("questions", (t) =>
       type: "Question",
       cursor: "id",
       maxSize: 1000,
-      resolve: (query) => prisma.question.findMany({ ...query }),
+      args: {
+        orderBy: t.arg({
+          type: builder.enumType("QuestionsOrderBy", {
+            values: ["FIRST_SEEN_DESC"] as const,
+          }),
+        }),
+      },
+      resolve: (query, parent, args) => {
+        return prisma.question.findMany({
+          ...query,
+          ...(args.orderBy === "FIRST_SEEN_DESC"
+            ? { orderBy: [{ firstSeen: "desc" }, { id: "asc" }] }
+            : {}), // TODO - explicit default order?
+        });
+      },
     },
     {},
     {}

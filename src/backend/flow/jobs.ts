@@ -1,7 +1,7 @@
 import { doEverything } from "../flow/doEverything";
 import { rebuildFrontpage } from "../frontpage";
 import { processPlatform } from "../platforms";
-import { platforms } from "../platforms/registry";
+import { getPlatforms } from "../platforms/registry";
 import { rebuildAlgoliaDatabase } from "../utils/algolia";
 import { sleep } from "../utils/sleep";
 
@@ -14,7 +14,7 @@ interface Job<ArgNames extends string = ""> {
 }
 
 export const jobs: Job<string>[] = [
-  ...platforms.map((platform) => ({
+  ...getPlatforms().map((platform) => ({
     name: platform.name,
     message: `Download predictions from ${platform.name}`,
     ...(platform.version === "v2" ? { args: platform.fetcherArgs } : {}),

@@ -79,7 +79,7 @@ export const givewellopenphil: Platform = {
     const dataWithDate = data.map((datum: any) => ({
       ...datum,
       platform: platformName,
-      timestamp: new Date("2021-02-23"),
+      // timestamp: new Date("2021-02-23"),
     }));
     return dataWithDate;
   },
