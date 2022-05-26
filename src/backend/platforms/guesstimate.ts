@@ -22,7 +22,7 @@ const modelToQuestion = (model: any): ReturnType<typeof prepareQuestion> => {
     title: model.name,
     url: `https://www.getguesstimate.com/models/${model.id}`,
     // timestamp,
-    description,
+    description: description || "",
     options: [],
     qualityindicators: {
       numforecasts: 1,
@@ -90,5 +90,5 @@ export const guesstimate: Platform & {
   search,
   version: "v1",
   fetchQuestion,
-  calculateStars: (q) => (q.description.length > 250 ? 2 : 1),
+  calculateStars: (q) => (q.description?.length > 250 ? 2 : 1),
 };
