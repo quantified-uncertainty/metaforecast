@@ -4,10 +4,13 @@ import axios from "axios";
 
 /* Definitions */
 const VERBOSE = true;
+let ISO_DATE_TODAY = new Date().toISOString().slice(0, 10);
 let print = (message) => (VERBOSE ? console.log(message) : null);
 let graphQLendpoint = "https://metaforecast.org/api/graphql";
 let buildQuery = (endCursor) => `{
-  questions(first: 1000 ${!!endCursor ? `after: "${endCursor}"` : ""}) {
+  questions(first: 1000 ${
+    !!endCursor ? `after: "${endCursor}"` : ""
+  } orderBy: FIRST_SEEN_DESC) {
     edges {
       node {
         id
@@ -48,19 +51,8 @@ let getSomeMetaforecastPredictions = async (query) => {
 };
 
 let save = (questions) => {
-  fs.writeFileSync("forecasts.json", JSON.stringify(questions, null, 4));
-  let tsvHeaders = "title\tplatform\tdate\tforecast\n";
-  let tsvRows = questions
-    .map(
-      (question) =>
-        `${question.title}\t${question.platform}\t${
-          question.timestamp
-        }\t${JSON.stringify(question.options)}`
-    )
-    .join("\n");
-  let tsvFile = tsvHeaders + tsvRows;
-  print("Saving results to results.tsv");
-  fs.writeFileSync("forecasts.tsv", tsvFile);
+  print("Saving Results");
+  fs.writeFileSync("forecasts-today.json", JSON.stringify(questions, null, 4));
 };
 
 let getNodes = (questions) => {
@@ -73,15 +65,22 @@ let getAllMetaforecastPredictions = async () => {
   print("Fetching forecasts");
   let results = [];
   let firstQuery = await getSomeMetaforecastPredictions(buildQuery());
-  results.push(...getNodes(firstQuery.questions));
+  let nodes = getNodes(firstQuery.questions);
+  let nodesToday = nodes.filter(
+    (node) => node.firstSeenStr.slice(0, 10) == ISO_DATE_TODAY
+  );
+  results.push(...nodesToday);
   let endCursor = firstQuery.questions.pageInfo.endCursor;
-  while (endCursor) {
+  while (endCursor && nodesToday.length > 0) {
     print("Cursor: " + endCursor);
     let queryResults = await getSomeMetaforecastPredictions(
       buildQuery(endCursor)
     );
     let nodes = getNodes(queryResults.questions);
-    results.push(...nodes);
+    nodesToday = nodes.filter(
+      (node) => node.firstSeenStr.slice(0, 10) == ISO_DATE_TODAY
+    );
+    results.push(...nodesToday);
     endCursor = queryResults.questions.pageInfo.endCursor;
   }
   //results = results.map((result) => result.node);
