@@ -140,10 +140,12 @@ export const QuestionCard: React.FC<Props> = ({
           <LastUpdated timestamp={lastUpdated} />
         </div>
         <div className="w-full">
-          <QuestionFooter
-            question={question}
-            expandFooterToFullWidth={expandFooterToFullWidth}
-          />
+          <div className="mb-2 mt-1">
+            <QuestionFooter
+              question={question}
+              expandFooterToFullWidth={expandFooterToFullWidth}
+            />
+          </div>
         </div>
       </div>
     </Card>
