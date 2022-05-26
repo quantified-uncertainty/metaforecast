@@ -81,6 +81,11 @@ const QuestionShapeInterface = builder
           "Last timestamp at which metaforecast fetched the question",
         resolve: (parent) => parent.fetched,
       }),
+      fetchedStr: t.string({
+        description:
+          "Last timestamp at which metaforecast fetched the question, in ISO 8601 format",
+        resolve: (parent) => parent.fetched.toISOString(),
+      }),
       qualityIndicators: t.field({
         type: QualityIndicatorsObj,
         resolve: (parent) =>
@@ -126,6 +131,11 @@ export const QuestionObj = builder.prismaObject("Question", {
       type: "Date",
       description: "First timestamp at which metaforecast fetched the question",
       resolve: (parent) => parent.firstSeen,
+    }),
+    firstSeenStr: t.string({
+      description:
+        "First timestamp at which metaforecast fetched the question, in ISO 8601 format",
+      resolve: (parent) => parent.firstSeen.toISOString(),
     }),
     history: t.relation("history", {
       query: () => ({
