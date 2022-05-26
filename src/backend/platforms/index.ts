@@ -32,7 +32,6 @@ export type FetchedQuestion = Omit<
   | "qualityindicators"
   | "fetched"
   | "firstSeen"
-  | "timestamp"
   | "platform"
   | "options"
 > & {
@@ -83,12 +82,7 @@ export type Platform<ArgNames extends string = ""> = {
 // So here we build a new type which should be ok to use both in place of prisma's Question type and as an input to its update or create methods.
 type PreparedQuestion = Omit<
   Question,
-  | "extra"
-  | "qualityindicators"
-  | "options"
-  | "fetched"
-  | "firstSeen"
-  | "timestamp"
+  "extra" | "qualityindicators" | "options" | "fetched" | "firstSeen"
 > & {
   fetched: Date;
   extra: NonNullable<Question["extra"]>;
@@ -120,7 +114,6 @@ export const upsertSingleQuestion = async (
     create: {
       ...q,
       firstSeen: new Date(),
-      timestamp: q.fetched, // deprecated
     },
     update: q,
   });
@@ -183,7 +176,6 @@ export const processPlatform = async <T extends string = "">(
     data: createdQuestions.map((q) => ({
       ...q,
       firstSeen: new Date(),
-      timestamp: q.fetched, // deprecated
     })),
   });
   stats.created = createdQuestions.length;
@@ -211,7 +203,6 @@ export const processPlatform = async <T extends string = "">(
   await prisma.history.createMany({
     data: [...createdQuestions, ...updatedQuestions].map((q) => ({
       ...q,
-      timestamp: q.fetched, // deprecated
       idref: q.id,
     })),
   });

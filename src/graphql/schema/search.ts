@@ -63,15 +63,8 @@ builder.queryField("searchQuestions", (t) =>
 
       return results.map((q) => ({
         ...q,
-        fetched: new Date(
-          q.fetched || q.timestamp || new Date().toISOString() // q.timestamp is deprecated, TODO - just use `q.fetched`
-        ),
-        timestamp: new Date(
-          q.fetched || q.timestamp || new Date().toISOString()
-        ),
-        firstSeen: new Date(
-          q.firstSeen || new Date().toISOString() // TODO - q.firstSeen is not yet populated in algolia
-        ),
+        fetched: new Date(q.fetched),
+        firstSeen: new Date(q.firstSeen),
       }));
     },
   })

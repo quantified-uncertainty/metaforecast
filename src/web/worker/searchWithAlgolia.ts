@@ -111,6 +111,7 @@ export default async function searchWithAlgolia({
           },
         ],
         fetched: new Date().toISOString(),
+        firstSeen: new Date().toISOString(),
         qualityindicators: {
           numforecasts: 1,
           numforecasters: 1,
@@ -131,6 +132,7 @@ export default async function searchWithAlgolia({
         description:
           "Fatal error: Too much recursion. Click to proceed anyways",
         fetched: new Date().toISOString(),
+        firstSeen: new Date().toISOString(),
         options: [
           {
             name: "Yes",
@@ -178,6 +180,7 @@ export default async function searchWithAlgolia({
         },
       ],
       fetched: new Date().toISOString(),
+      firstSeen: new Date().toISOString(),
       qualityindicators: {
         numforecasts: 1,
         numforecasters: 1,

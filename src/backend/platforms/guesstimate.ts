@@ -57,7 +57,6 @@ async function search(query: string): Promise<AlgoliaQuestion[]> {
     return questionToAlgoliaQuestion({
       ...q,
       fetched: new Date(),
-      timestamp: new Date(),
       firstSeen: new Date(),
     });
   });

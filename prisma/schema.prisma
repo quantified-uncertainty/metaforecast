@@ -50,7 +50,6 @@ model Question {
   //   }
   // ]
   options   Json
-  timestamp DateTime @db.Timestamp(6) // deprecated
   fetched   DateTime @db.Timestamp(6)
   firstSeen DateTime @map("first_seen") @db.Timestamp(6)
 
@@ -79,7 +78,6 @@ model History {
   platform          String
   description       String
   options           Json
-  timestamp         DateTime  @db.Timestamp(6) // deprecated
   fetched           DateTime  @db.Timestamp(6)
   qualityindicators Json
   extra             Json

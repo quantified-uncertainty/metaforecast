@@ -10,13 +10,9 @@ const algoliaAppId = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID || "";
 const client = algoliasearch(algoliaAppId, cookie);
 const index = client.initIndex("metaforecast");
 
-export type AlgoliaQuestion = Omit<
-  Question,
-  "fetched" | "firstSeen" | "timestamp"
-> & {
-  timestamp?: string; // deprecated
-  fetched?: string;
-  firstSeen?: string;
+export type AlgoliaQuestion = Omit<Question, "fetched" | "firstSeen"> & {
+  fetched: string;
+  firstSeen: string;
   optionsstringforsearch?: string;
   platformLabel: string;
   objectID: string;
@@ -39,7 +35,6 @@ export const questionToAlgoliaQuestion = (
   return {
     ...question,
     fetched: question.fetched.toISOString(),
-    timestamp: question.timestamp.toISOString(), // deprecated
     firstSeen: question.firstSeen.toISOString(),
     platformLabel: platformNameToLabel(question.platform),
     objectID: question.id,
