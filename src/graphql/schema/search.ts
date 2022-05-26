@@ -63,7 +63,8 @@ builder.queryField("searchQuestions", (t) =>
 
       return results.map((q) => ({
         ...q,
-        timestamp: new Date(q.timestamp),
+        fetched: new Date(q.fetched),
+        firstSeen: new Date(q.firstSeen),
       }));
     },
   })

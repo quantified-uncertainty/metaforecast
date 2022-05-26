@@ -3,16 +3,19 @@ import algoliasearch from "algoliasearch";
 import { Question } from "@prisma/client";
 
 import { prisma } from "../database/prisma";
-import { platforms } from "../platforms/registry";
+import { platformNameToLabel } from "../platforms/registry";
 
-let cookie = process.env.ALGOLIA_MASTER_API_KEY || "";
+const cookie = process.env.ALGOLIA_MASTER_API_KEY || "";
 const algoliaAppId = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID || "";
 const client = algoliasearch(algoliaAppId, cookie);
 const index = client.initIndex("metaforecast");
 
-export type AlgoliaQuestion = Omit<Question, "timestamp"> & {
-  timestamp: string;
+export type AlgoliaQuestion = Omit<Question, "fetched" | "firstSeen"> & {
+  fetched: string;
+  firstSeen: string;
   optionsstringforsearch?: string;
+  platformLabel: string;
+  objectID: string;
 };
 
 const getoptionsstringforsearch = (record: Question): string => {
@@ -26,23 +29,23 @@ const getoptionsstringforsearch = (record: Question): string => {
   return result;
 };
 
+export const questionToAlgoliaQuestion = (
+  question: Question
+): AlgoliaQuestion => {
+  return {
+    ...question,
+    fetched: question.fetched.toISOString(),
+    firstSeen: question.firstSeen.toISOString(),
+    platformLabel: platformNameToLabel(question.platform),
+    objectID: question.id,
+    optionsstringforsearch: getoptionsstringforsearch(question),
+  };
+};
+
 export async function rebuildAlgoliaDatabase() {
   const questions = await prisma.question.findMany();
 
-  const platformNameToLabel = Object.fromEntries(
-    platforms.map((platform) => [platform.name, platform.label])
-  );
-
-  const records: AlgoliaQuestion[] = questions.map(
-    (question, index: number) => ({
-      ...question,
-      timestamp: `${question.timestamp}`,
-      platformLabel:
-        platformNameToLabel[question.platform] || question.platform,
-      objectID: index,
-      optionsstringforsearch: getoptionsstringforsearch(question),
-    })
-  );
+  const records: AlgoliaQuestion[] = questions.map(questionToAlgoliaQuestion);
 
   if (await index.exists()) {
     console.log("Index exists");

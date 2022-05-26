@@ -1,9 +1,12 @@
-import { platforms } from "../platforms/registry";
+import { getPlatforms } from "../platforms/registry";
 import { executeJobByName } from "./jobs";
 
 /* Do everything */
 export async function doEverything() {
-  let jobNames = [...platforms.map((platform) => platform.name), "algolia"];
+  let jobNames = [
+    ...getPlatforms().map((platform) => platform.name),
+    "algolia",
+  ];
 
   console.log("");
   console.log("");

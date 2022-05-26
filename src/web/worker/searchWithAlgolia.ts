@@ -96,6 +96,7 @@ export default async function searchWithAlgolia({
         title: "No search results match your query",
         url: "https://metaforecast.org",
         platform: "metaforecast",
+        platformLabel: "metaforecast",
         description: "Maybe try a broader query?",
         options: [
           {
@@ -109,7 +110,8 @@ export default async function searchWithAlgolia({
             type: "PROBABILITY",
           },
         ],
-        timestamp: `${new Date().toISOString().slice(0, 10)}`,
+        fetched: new Date().toISOString(),
+        firstSeen: new Date().toISOString(),
         qualityindicators: {
           numforecasts: 1,
           numforecasters: 1,
@@ -126,8 +128,11 @@ export default async function searchWithAlgolia({
         title: `Did you mean: ${queryString}?`,
         url: "https://metaforecast.org/recursion?bypassEasterEgg=true",
         platform: "metaforecast",
+        platformLabel: "metaforecast",
         description:
           "Fatal error: Too much recursion. Click to proceed anyways",
+        fetched: new Date().toISOString(),
+        firstSeen: new Date().toISOString(),
         options: [
           {
             name: "Yes",
@@ -140,7 +145,6 @@ export default async function searchWithAlgolia({
             type: "PROBABILITY",
           },
         ],
-        timestamp: `${new Date().toISOString().slice(0, 10)}`,
         qualityindicators: {
           numforecasts: 1,
           numforecasters: 1,
@@ -161,6 +165,7 @@ export default async function searchWithAlgolia({
       title: "No search results appear to match your query",
       url: "https://metaforecast.org",
       platform: "metaforecast",
+      platformLabel: "metaforecast",
       description: "Maybe try a broader query? That said, we could be wrong.",
       options: [
         {
@@ -174,7 +179,8 @@ export default async function searchWithAlgolia({
           type: "PROBABILITY",
         },
       ],
-      timestamp: `${new Date().toISOString().slice(0, 10)}`,
+      fetched: new Date().toISOString(),
+      firstSeen: new Date().toISOString(),
       qualityindicators: {
         numforecasts: 1,
         numforecasters: 1,

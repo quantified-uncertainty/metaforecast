@@ -28,9 +28,13 @@ export interface QualityIndicators {
 
 export type FetchedQuestion = Omit<
   Question,
-  "extra" | "qualityindicators" | "timestamp" | "platform" | "options"
+  | "extra"
+  | "qualityindicators"
+  | "fetched"
+  | "firstSeen"
+  | "platform"
+  | "options"
 > & {
-  timestamp?: Date;
   extra?: object; // required in DB but annoying to return empty; also this is slightly stricter than Prisma's JsonValue
   options: QuestionOption[]; // stronger type than Prisma's JsonValue
   qualityindicators: Omit<QualityIndicators, "stars">; // slightly stronger type than Prisma's JsonValue
@@ -78,8 +82,9 @@ export type Platform<ArgNames extends string = ""> = {
 // So here we build a new type which should be ok to use both in place of prisma's Question type and as an input to its update or create methods.
 type PreparedQuestion = Omit<
   Question,
-  "extra" | "qualityindicators" | "options"
+  "extra" | "qualityindicators" | "options" | "fetched" | "firstSeen"
 > & {
+  fetched: Date;
   extra: NonNullable<Question["extra"]>;
   qualityindicators: NonNullable<Question["qualityindicators"]>;
   options: NonNullable<Question["options"]>;
@@ -91,14 +96,28 @@ export const prepareQuestion = (
 ): PreparedQuestion => {
   return {
     extra: {},
-    timestamp: new Date(),
     ...q,
+    fetched: new Date(),
     platform: platform.name,
     qualityindicators: {
       ...q.qualityindicators,
       stars: platform.calculateStars(q),
     },
   };
+};
+
+export const upsertSingleQuestion = async (
+  q: PreparedQuestion
+): Promise<Question> => {
+  return await prisma.question.upsert({
+    where: { id: q.id },
+    create: {
+      ...q,
+      firstSeen: new Date(),
+    },
+    update: q,
+  });
+  // TODO - update history?
 };
 
 export const processPlatform = async <T extends string = "">(
@@ -144,9 +163,9 @@ export const processPlatform = async <T extends string = "">(
 
   for (const q of fetchedQuestions.map((q) => prepareQuestion(q, platform))) {
     if (oldIdsSet.has(q.id)) {
+      // TODO - check if question has changed for better performance
       updatedQuestions.push(q);
     } else {
-      // TODO - check if question has changed for better performance
       createdQuestions.push(q);
     }
   }
@@ -154,7 +173,10 @@ export const processPlatform = async <T extends string = "">(
   const stats: { created?: number; updated?: number; deleted?: number } = {};
 
   await prisma.question.createMany({
-    data: createdQuestions,
+    data: createdQuestions.map((q) => ({
+      ...q,
+      firstSeen: new Date(),
+    })),
   });
   stats.created = createdQuestions.length;
 

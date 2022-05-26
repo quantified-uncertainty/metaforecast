@@ -96,7 +96,8 @@ async function processPredictions(
       url: prediction["url"],
       description: prediction["Notes"] || "",
       options,
-      timestamp: new Date(Date.parse(prediction["Prediction Date"] + "Z")),
+      //// TODO - use `created` field for this
+      // timestamp: new Date(Date.parse(prediction["Prediction Date"] + "Z")),
       qualityindicators: {},
     };
     return result;

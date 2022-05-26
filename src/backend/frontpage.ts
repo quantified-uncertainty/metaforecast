@@ -26,7 +26,7 @@ export async function rebuildFrontpage() {
         AND questions.description != ''
         AND JSONB_ARRAY_LENGTH(questions.options) > 0
       GROUP BY questions.id
-      HAVING COUNT(DISTINCT history.timestamp) >= 7
+      HAVING COUNT(DISTINCT history.fetched) >= 7
       ORDER BY RANDOM() LIMIT 50
     `;
 

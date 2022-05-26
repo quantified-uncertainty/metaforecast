@@ -1,5 +1,5 @@
 import { prisma } from "../../backend/database/prisma";
-import { platforms } from "../../backend/platforms/registry";
+import { getPlatforms } from "../../backend/platforms/registry";
 import { builder } from "../builder";
 
 export const PlatformObj = builder.objectRef<string>("Platform").implement({
@@ -20,7 +20,7 @@ export const PlatformObj = builder.objectRef<string>("Platform").implement({
           return "Guesstimate";
         }
         // kinda slow and repetitive, TODO - store a map {name => platform} somewhere and `getPlatform` util function?
-        const platform = platforms.find((p) => p.name === platformName);
+        const platform = getPlatforms().find((p) => p.name === platformName);
         if (!platform) {
           throw new Error(`Unknown platform ${platformName}`);
         }
@@ -36,10 +36,10 @@ export const PlatformObj = builder.objectRef<string>("Platform").implement({
             platform: platformName,
           },
           _max: {
-            timestamp: true,
+            fetched: true,
           },
         });
-        return res._max.timestamp;
+        return res._max.fetched;
       },
     }),
   }),
@@ -49,7 +49,7 @@ builder.queryField("platforms", (t) =>
   t.field({
     type: [PlatformObj],
     resolve: async (parent, args) => {
-      return platforms.map((platform) => platform.name);
+      return getPlatforms().map((platform) => platform.name);
     },
   })
 );

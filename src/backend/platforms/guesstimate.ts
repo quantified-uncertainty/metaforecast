@@ -2,9 +2,8 @@ import axios from "axios";
 
 import { Question } from "@prisma/client";
 
-import { prisma } from "../database/prisma";
-import { AlgoliaQuestion } from "../utils/algolia";
-import { FetchedQuestion, Platform, prepareQuestion } from "./";
+import { AlgoliaQuestion, questionToAlgoliaQuestion } from "../utils/algolia";
+import { FetchedQuestion, Platform, prepareQuestion, upsertSingleQuestion } from "./";
 
 /* Definitions */
 const searchEndpoint =
@@ -55,10 +54,11 @@ async function search(query: string): Promise<AlgoliaQuestion[]> {
   const models: any[] = response.data.hits;
   const mappedModels: AlgoliaQuestion[] = models.map((model) => {
     const q = modelToQuestion(model);
-    return {
+    return questionToAlgoliaQuestion({
       ...q,
-      timestamp: String(q.timestamp),
-    };
+      fetched: new Date(),
+      firstSeen: new Date(),
+    });
   });
 
   // filter for duplicates. Surprisingly common.
@@ -76,12 +76,8 @@ async function search(query: string): Promise<AlgoliaQuestion[]> {
 
 const fetchQuestion = async (id: number): Promise<Question> => {
   const response = await axios({ url: `${apiEndpoint}/spaces/${id}` });
-  let q = modelToQuestion(response.data);
-  return await prisma.question.upsert({
-    where: { id: q.id },
-    create: q,
-    update: q,
-  });
+  const q = modelToQuestion(response.data);
+  return await upsertSingleQuestion(q);
 };
 
 export const guesstimate: Platform & {
