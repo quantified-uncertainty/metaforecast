@@ -33,7 +33,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
     props: {
       // reduntant: page component doesn't do graphql requests, but it's still nice/more consistent to have data in cache
       urqlState: ssrCache.extractData(),
-      dashboard,
+      dashboard: dashboard || undefined,
     },
   };
 };

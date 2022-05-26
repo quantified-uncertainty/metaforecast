@@ -1,7 +1,4 @@
-import {
-  FullQuestionOption,
-  isFullQuestionOption,
-} from "../../../common/types";
+import { FullQuestionOption, isFullQuestionOption } from "../../../common/types";
 import { QuestionFragment } from "../../fragments.generated";
 import { isQuestionBinary } from "../../utils";
 import { formatProbability } from "../utils";
@@ -62,6 +59,18 @@ const primaryForecastColor = (probability: number) => {
   }
 };
 
+const chooseColor = (probability: number) => {
+  if (probability < 0.1) {
+    return "bg-blue-50 text-blue-500";
+  } else if (probability < 0.3) {
+    return "bg-blue-100 text-blue-600";
+  } else if (probability < 0.7) {
+    return "bg-blue-200 text-blue-700";
+  } else {
+    return "bg-blue-300 text-blue-800";
+  }
+};
+
 const primaryEstimateAsText = (probability: number) => {
   if (probability < 0.03) {
     return "Exceptionally unlikely";
@@ -80,39 +89,38 @@ const primaryEstimateAsText = (probability: number) => {
   }
 };
 
-const chooseColor = (probability: number) => {
-  if (probability < 0.1) {
-    return "bg-blue-50 text-blue-500";
-  } else if (probability < 0.3) {
-    return "bg-blue-100 text-blue-600";
-  } else if (probability < 0.7) {
-    return "bg-blue-200 text-blue-700";
-  } else {
-    return "bg-blue-300 text-blue-800";
-  }
+type OptionProps = {
+  option: FullQuestionOption;
+  mode: "primary" | "normal"; // affects font size and colors
+  textMode: "name" | "probability"; // whether to output option name or probability estimate as text
 };
 
-const OptionRow: React.FC<{
-  option: FullQuestionOption;
-  optionTextSize: string;
-}> = ({ option, optionTextSize }) => {
+const OptionRow: React.FC<OptionProps> = ({ option, mode, textMode }) => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center space-x-2">
       <div
-        className={`${chooseColor(
-          option.probability
-        )} w-14 flex-none rounded-md py-0.5 ${
-          optionTextSize || "text-sm"
-        } text-center`}
+        className={`flex-none rounded-md text-center ${
+          mode === "primary"
+            ? "text-normal text-white px-2 py-0.5 font-bold"
+            : "text-sm w-14 py-0.5"
+        } ${
+          mode === "primary"
+            ? primaryForecastColor(option.probability)
+            : chooseColor(option.probability)
+        }`}
       >
         {formatProbability(option.probability)}
       </div>
       <div
-        className={`text-gray-700 pl-3 leading-snug ${
-          optionTextSize || "text-sm"
+        className={`leading-snug ${
+          mode === "primary" ? "text-normal" : "text-sm"
+        } ${
+          mode === "primary" ? textColor(option.probability) : "text-gray-700"
         }`}
       >
-        {option.name}
+        {textMode === "name"
+          ? option.name
+          : primaryEstimateAsText(option.probability)}
       </div>
     </div>
   );
@@ -121,9 +129,8 @@ const OptionRow: React.FC<{
 export const QuestionOptions: React.FC<{
   question: QuestionFragment;
   maxNumOptions: number;
-  optionTextSize: string;
-  onlyFirstEstimate: boolean;
-}> = ({ question, maxNumOptions, optionTextSize, onlyFirstEstimate }) => {
+  forcePrimaryMode?: boolean;
+}> = ({ question, maxNumOptions, forcePrimaryMode = false }) => {
   const isBinary = isQuestionBinary(question);
 
   if (isBinary) {
@@ -134,59 +141,10 @@ export const QuestionOptions: React.FC<{
     if (!isFullQuestionOption(yesOption)) {
       return null; // missing data
     }
+
     return (
-      <div className="space-x-2">
-        <span
-          className={`${primaryForecastColor(
-            yesOption.probability
-          )} text-white w-16 rounded-md px-2 py-1 font-bold ${
-            optionTextSize || "text-normal"
-          }`}
-        >
-          {formatProbability(yesOption.probability)}
-        </span>
-        <span
-          className={`${textColor(yesOption.probability)} ${
-            optionTextSize || "text-normal"
-          } text-gray-500 inline-block`}
-        >
-          {primaryEstimateAsText(yesOption.probability)}
-        </span>
-      </div>
+      <OptionRow option={yesOption} mode="primary" textMode="probability" />
     );
-  } else if (onlyFirstEstimate) {
-    if (question.options.length > 0) {
-      const yesOption =
-        question.options.length > 0 ? question.options[0] : null;
-      if (!yesOption) {
-        return null; // shouldn't happen
-      }
-      if (!isFullQuestionOption(yesOption)) {
-        return null; // missing data
-      }
-      return (
-        <div className="space-x-2">
-          <span
-            className={`${primaryForecastColor(
-              yesOption.probability
-            )} text-white w-16 rounded-md px-2 py-1 font-bold ${
-              optionTextSize || "text-normal"
-            }`}
-          >
-            {formatProbability(yesOption.probability)}
-          </span>
-          <span
-            className={`${textColor(yesOption.probability)} ${
-              optionTextSize || "text-normal"
-            } text-gray-500 inline-block`}
-          >
-            {yesOption.name}
-          </span>
-        </div>
-      );
-    } else {
-      return null;
-    }
   } else {
     const optionsSorted = question.options
       .filter(isFullQuestionOption)
@@ -197,7 +155,12 @@ export const QuestionOptions: React.FC<{
     return (
       <div className="space-y-2">
         {optionsMaxN.map((option, i) => (
-          <OptionRow option={option} key={i} optionTextSize={optionTextSize} />
+          <OptionRow
+            key={i}
+            option={option}
+            mode={forcePrimaryMode ? "primary" : "normal"}
+            textMode="name"
+          />
         ))}
       </div>
     );

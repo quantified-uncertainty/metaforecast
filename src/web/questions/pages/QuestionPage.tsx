@@ -1,4 +1,5 @@
 import { GetServerSideProps, NextPage } from "next";
+import NextError from "next/error";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
@@ -11,8 +12,8 @@ import { ssrUrql } from "../../urql";
 import { CaptureQuestion } from "../components/CaptureQuestion";
 import { HistoryChart } from "../components/HistoryChart";
 import { IndicatorsTable } from "../components/IndicatorsTable";
-import { Stars } from "../components/Stars";
 import { QuestionOptions } from "../components/QuestionOptions";
+import { Stars } from "../components/Stars";
 import { QuestionPageDocument } from "../queries.generated";
 
 interface Props {
@@ -48,16 +49,22 @@ const Section: React.FC<{ title: string }> = ({ title, children }) => (
   </div>
 );
 
+const PlatformLink: React.FC<{ question: QuestionWithHistoryFragment }> = ({
+  question,
+}) => (
+  <a
+    className="px-2 py-1 border-2 border-gray-400 rounded-lg text-black no-underline text-normal hover:bg-gray-100 flex flex-nowrap space-x-1 items-center"
+    href={question.url}
+    target="_blank"
+  >
+    <span>{question.platform.label}</span>
+    <FaExternalLinkAlt className="text-gray-400 inline sm:text-md text-md" />
+  </a>
+);
+
 const LargeQuestionCard: React.FC<{
   question: QuestionWithHistoryFragment;
 }> = ({ question }) => {
-  let probabilities = question.options;
-  let optionsOrderedByProbability = question.options.sort((a, b) =>
-    (a.probability || 0) > (b.probability || 0) ? -1 : 1
-  );
-  let optionWithHighestProbability =
-    question.options.length > 0 ? [optionsOrderedByProbability[0]] : [];
-
   return (
     <Card highlightOnHover={false} large={true}>
       <h1 className="sm:text-3xl text-xl">
@@ -66,28 +73,18 @@ const LargeQuestionCard: React.FC<{
           href={question.url}
           target="_blank"
         >
-          {question.title}{" "}
+          {question.title}
         </a>
       </h1>
 
-      <div className="flex gap-2 mb-5 mt-5">
-        <a
-          className="text-black no-underline border-2 rounded-lg border-gray-400 rounded p-1 px-2 text-normal hover:text-gray-600"
-          href={question.url}
-          target="_blank"
-        >
-          {question.platform.label}{" "}
-          <FaExternalLinkAlt className="text-gray-400 inline sm:text-md text-md mb-1" />
-        </a>
+      <div className="flex items-center gap-2 mb-5 mt-5">
+        <PlatformLink question={question} />
         <Stars num={question.qualityIndicators.stars} />
-        <span className="border-2 border-white p-1 px-2 ">
-          <QuestionOptions
-            question={{ ...question }}
-            maxNumOptions={1}
-            optionTextSize={"text-normal"}
-            onlyFirstEstimate={true}
-          />
-        </span>
+        <QuestionOptions
+          question={{ ...question }}
+          maxNumOptions={1}
+          forcePrimaryMode={true}
+        />
       </div>
 
       <div className="mb-10">
@@ -143,7 +140,13 @@ const QuestionPage: NextPage<Props> = ({ id }) => {
     <Layout page="question">
       <div className="max-w-4xl mx-auto">
         <Query document={QuestionPageDocument} variables={{ id }}>
-          {({ data }) => <QuestionScreen question={data.result} />}
+          {({ data }) =>
+            data.result ? (
+              <QuestionScreen question={data.result} />
+            ) : (
+              <NextError statusCode={404} />
+            )
+          }
         </Query>
       </div>
     </Layout>

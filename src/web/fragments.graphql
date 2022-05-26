@@ -3,7 +3,7 @@ fragment Question on Question {
   url
   title
   description
-  timestamp
+  fetched
   options {
     name
     probability
@@ -29,7 +29,7 @@ fragment Question on Question {
 fragment QuestionWithHistory on Question {
   ...Question
   history {
-    timestamp
+    fetched
     options {
       name
       probability

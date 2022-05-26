@@ -65,6 +65,7 @@ const SecretEmbedPage: NextPage<Props> = ({ results }) => {
                 question={result}
                 showTimeStamp={true}
                 expandFooterToFullWidth={true}
+                showExpandButton={false}
               />
             ) : null}
           </div>

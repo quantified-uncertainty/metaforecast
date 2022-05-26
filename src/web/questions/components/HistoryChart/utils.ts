@@ -58,16 +58,16 @@ export const buildChartData = (
   let seriesList: ChartSeries[] = [...Array(seriesNames.length)].map((x) => []);
 
   const sortedHistory = question.history.sort((a, b) =>
-    a.timestamp < b.timestamp ? -1 : 1
+    a.fetched < b.fetched ? -1 : 1
   );
 
   {
     let previousDate = -Infinity;
     for (const item of sortedHistory) {
-      if (item.timestamp - previousDate < 12 * 60 * 60) {
+      if (item.fetched - previousDate < 12 * 60 * 60) {
         continue;
       }
-      const date = new Date(item.timestamp * 1000);
+      const date = new Date(item.fetched * 1000);
 
       for (const option of item.options) {
         if (option.name == null || option.probability == null) {
@@ -84,7 +84,7 @@ export const buildChartData = (
         };
         seriesList[idx].push(result);
       }
-      previousDate = item.timestamp;
+      previousDate = item.fetched;
     }
   }
 
@@ -96,12 +96,12 @@ export const buildChartData = (
   }
 
   const minDate = sortedHistory.length
-    ? startOfDay(new Date(sortedHistory[0].timestamp * 1000))
+    ? startOfDay(new Date(sortedHistory[0].fetched * 1000))
     : startOfToday();
   const maxDate = sortedHistory.length
     ? addDays(
         startOfDay(
-          new Date(sortedHistory[sortedHistory.length - 1].timestamp * 1000)
+          new Date(sortedHistory[sortedHistory.length - 1].fetched * 1000)
         ),
         1
       )

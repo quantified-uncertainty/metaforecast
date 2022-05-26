@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 import { Card } from "../../../common/Card";
 import { CopyText } from "../../../common/CopyText";
 import { QuestionFragment } from "../../../fragments.generated";
-import { cleanText } from "../../../utils";
+import { cleanText, isQuestionBinary } from "../../../utils";
 import { QuestionOptions } from "../QuestionOptions";
 import { QuestionFooter } from "./QuestionFooter";
 
@@ -78,11 +78,9 @@ export const QuestionCard: React.FC<Props> = ({
   showExpandButton = true,
 }) => {
   const { options } = question;
-  const lastUpdated = new Date(question.timestamp * 1000);
+  const lastUpdated = new Date(question.fetched * 1000);
 
-  const isBinary =
-    options.length === 2 &&
-    (options[0].name === "Yes" || options[0].name === "No");
+  const isBinary = isQuestionBinary(question);
 
   return (
     <Card>
@@ -114,31 +112,12 @@ export const QuestionCard: React.FC<Props> = ({
               </a>
             </Card.Title>
           </div>
-          {isBinary ? (
-            <div className="flex justify-between">
-              <QuestionOptions
-                question={question}
-                maxNumOptions={5}
-                optionTextSize={"text-normal"}
-                onlyFirstEstimate={false}
-              />
-              <div className={`hidden ${showTimeStamp ? "sm:block" : ""}`}>
-                <LastUpdated timestamp={lastUpdated} />
-              </div>
+          <div className={isBinary ? "flex justify-between" : "space-y-4"}>
+            <QuestionOptions question={question} maxNumOptions={5} />
+            <div className={`hidden ${showTimeStamp ? "sm:block" : ""}`}>
+              <LastUpdated timestamp={lastUpdated} />
             </div>
-          ) : (
-            <div className="space-y-2">
-              <QuestionOptions
-                question={question}
-                maxNumOptions={5}
-                optionTextSize={"text-sm"}
-                onlyFirstEstimate={false}
-              />
-              <div className={`hidden ${showTimeStamp ? "sm:block" : ""} ml-6`}>
-                <LastUpdated timestamp={lastUpdated} />
-              </div>
-            </div>
-          )}
+          </div>
 
           {question.platform.id !== "guesstimate" && options.length < 3 && (
             <div className="text-gray-500">
