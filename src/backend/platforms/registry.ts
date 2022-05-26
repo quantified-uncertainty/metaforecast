@@ -17,30 +17,43 @@ import { smarkets } from "./smarkets";
 import { wildeford } from "./wildeford";
 import { xrisk } from "./xrisk";
 
-export const platforms: Platform<string>[] = [
-  betfair,
-  fantasyscotus,
-  foretold,
-  givewellopenphil,
-  goodjudgment,
-  goodjudgmentopen,
-  guesstimate,
-  infer,
-  kalshi,
-  manifold,
-  metaculus,
-  polymarket,
-  predictit,
-  rootclaim,
-  smarkets,
-  wildeford,
-  xrisk,
-];
+// function instead of const array, this helps to fight circular dependencies
+export const getPlatforms = (): Platform<string>[] => {
+  return [
+    betfair,
+    fantasyscotus,
+    foretold,
+    givewellopenphil,
+    goodjudgment,
+    goodjudgmentopen,
+    guesstimate,
+    infer,
+    kalshi,
+    manifold,
+    metaculus,
+    polymarket,
+    predictit,
+    rootclaim,
+    smarkets,
+    wildeford,
+    xrisk,
+  ];
+};
+
+let _nameToLabelCache: { [k: string]: string } | undefined;
+export function platformNameToLabel(name: string): string {
+  if (!_nameToLabelCache) {
+    _nameToLabelCache = Object.fromEntries(
+      getPlatforms().map((platform) => [platform.name, platform.label])
+    );
+  }
+  return _nameToLabelCache[name] || name;
+}
 
 // get frontend-safe version of platforms data
 
 export const getPlatformsConfig = (): PlatformConfig[] => {
-  const platformsConfig = platforms.map((platform) => ({
+  const platformsConfig = getPlatforms().map((platform) => ({
     name: platform.name,
     label: platform.label,
     color: platform.color,

@@ -1,7 +1,7 @@
 import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 
-import { getPlatformsConfig, platforms } from "../backend/platforms/registry";
+import { getPlatforms, getPlatformsConfig } from "../backend/platforms/registry";
 import { Layout } from "../web/common/Layout";
 import { Props, QueryParameters, SearchScreen } from "../web/search/components/SearchScreen";
 import { FrontpageDocument, SearchDocument } from "../web/search/queries.generated";
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
     query: "",
     starsThreshold: 2,
     forecastsThreshold: 0,
-    forecastingPlatforms: platforms.map((platform) => platform.name),
+    forecastingPlatforms: getPlatforms().map((platform) => platform.name),
   };
 
   const initialQueryParameters: QueryParameters = {

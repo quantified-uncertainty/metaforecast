@@ -162,7 +162,6 @@ async function processEventMarkets(event: any, ctx: Context) {
       url: "https://smarkets.com/event/" + market.event_id + market.slug,
       description: market.description,
       options,
-      timestamp: new Date(),
       qualityindicators: {},
       extra: {
         contracts,

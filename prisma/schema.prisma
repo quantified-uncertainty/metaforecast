@@ -24,24 +24,6 @@ model Dashboard {
   @@map("dashboards")
 }
 
-model History {
-  id                String
-  idref             String?
-  question          Question? @relation(fields: [idref], references: [id], onDelete: SetNull, onUpdate: Restrict)
-  title             String
-  url               String
-  platform          String
-  description       String
-  options           Json
-  timestamp         DateTime  @db.Timestamp(6)
-  qualityindicators Json
-  extra             Json
-  pk                Int       @id @default(autoincrement())
-
-  @@index([id])
-  @@map("history")
-}
-
 model Question {
   /// E.g. "fantasyscotus-580"
   id          String @id
@@ -68,7 +50,9 @@ model Question {
   //   }
   // ]
   options   Json
-  timestamp DateTime @db.Timestamp(6)
+  timestamp DateTime @db.Timestamp(6) // deprecated
+  fetched   DateTime @db.Timestamp(6)
+  firstSeen DateTime @map("first_seen") @db.Timestamp(6)
 
   // {
   //   "numforecasts": 120,
@@ -80,7 +64,31 @@ model Question {
   onFrontpage FrontpageId?
   history     History[]
 
+  @@index([platform])
+  @@index([fetched])
+  @@index([firstSeen])
   @@map("questions")
+}
+
+model History {
+  id                String
+  idref             String?
+  question          Question? @relation(fields: [idref], references: [id], onDelete: SetNull, onUpdate: Restrict)
+  title             String
+  url               String
+  platform          String
+  description       String
+  options           Json
+  timestamp         DateTime  @db.Timestamp(6) // deprecated
+  fetched           DateTime  @db.Timestamp(6)
+  qualityindicators Json
+  extra             Json
+  pk                Int       @id @default(autoincrement())
+
+  @@index([id])
+  @@index([platform])
+  @@index([fetched])
+  @@map("history")
 }
 
 model FrontpageId {

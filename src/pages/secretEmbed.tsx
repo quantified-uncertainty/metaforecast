@@ -3,7 +3,7 @@
 import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 
-import { platforms } from "../backend/platforms/registry";
+import { getPlatforms } from "../backend/platforms/registry";
 import { QuestionFragment } from "../web/fragments.generated";
 import { QuestionCard } from "../web/questions/components/QuestionCard";
 import { SearchDocument } from "../web/search/queries.generated";
@@ -23,7 +23,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
     query: "",
     starsThreshold: 2,
     forecastsThreshold: 0,
-    forecastingPlatforms: platforms.map((platform) => platform.name),
+    forecastingPlatforms: getPlatforms().map((platform) => platform.name),
     ...urlQuery,
   };
 
