@@ -1,4 +1,5 @@
 import domtoimage from "dom-to-image"; // https://github.com/tsayen/dom-to-image
+import { Resizable } from "re-resizable";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "../../common/Button";
@@ -118,35 +119,44 @@ export const CaptureQuestion: React.FC<Props> = ({ question }) => {
     await exportAsPictureAndCode();
   };
 
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
-      <div ref={containerRef}>
-        <QuestionCard
-          question={question}
-          showTimeStamp={true}
-          showExpandButton={false}
-          expandFooterToFullWidth={true}
-        />
+  if (imgSrc) {
+    return (
+      <div className="flex flex-col items-center space-y-4">
+        <div>
+          <img src={imgSrc} />
+        </div>
+        <div>
+          <ImageSource question={question} imgSrc={imgSrc} />
+        </div>
+        <div className="justify-self-stretch">
+          <MetaculusEmbed question={question} />
+        </div>
+        <div>
+          <MetaculusSource question={question} />
+        </div>
       </div>
+    );
+  }
+
+  return (
+    <div className="flex flex-col items-center space-y-4">
+      <Resizable
+        minWidth={320}
+        bounds="parent"
+        enable={{ right: true, left: true }}
+      >
+        <div ref={containerRef}>
+          <QuestionCard
+            question={question}
+            showTimeStamp={true}
+            showExpandButton={false}
+            expandFooterToFullWidth={true}
+          />
+        </div>
+      </Resizable>
       <div>
         <Button onClick={onCaptureButtonClick}>{mainButtonText}</Button>
       </div>
-      {imgSrc ? (
-        <>
-          <div>
-            <img src={imgSrc} />
-          </div>
-          <div>
-            <ImageSource question={question} imgSrc={imgSrc} />
-          </div>
-          <div className="justify-self-stretch">
-            <MetaculusEmbed question={question} />
-          </div>
-          <div>
-            <MetaculusSource question={question} />
-          </div>
-        </>
-      ) : null}
     </div>
   );
 };

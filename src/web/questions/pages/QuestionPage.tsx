@@ -83,6 +83,7 @@ const LargeQuestionCard: React.FC<{
     </Card>
   );
 };
+
 const QuestionScreen: React.FC<{ question: QuestionWithHistoryFragment }> = ({
   question,
 }) => (
@@ -93,6 +94,8 @@ const QuestionScreen: React.FC<{ question: QuestionWithHistoryFragment }> = ({
         <h1>Capture</h1>
       </LineHeader>
       <CaptureQuestion question={question} />
+    </div>
+    <div className="space-y-4">
       <LineHeader>
         <h1>Embed</h1>
       </LineHeader>
