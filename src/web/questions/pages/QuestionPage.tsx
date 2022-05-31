@@ -1,11 +1,10 @@
 import { GetServerSideProps, NextPage } from "next";
 import NextError from "next/error";
 import ReactMarkdown from "react-markdown";
-
+import { BoxedLink } from "../../common/BoxedLink";
 import { Card } from "../../common/Card";
 import { CopyParagraph } from "../../common/CopyParagraph";
 import { Layout } from "../../common/Layout";
-import { LineHeader } from "../../common/LineHeader";
 import { Query } from "../../common/Query";
 import { QuestionWithHistoryFragment } from "../../fragments.generated";
 import { ssrUrql } from "../../urql";
@@ -43,12 +42,50 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   };
 };
 
-const Section: React.FC<{ title: string }> = ({ title, children }) => (
-  <div className="space-y-2 flex flex-col items-start">
-    <h2 className="text-xl text-gray-900">{title}</h2>
+const Section: React.FC<{ title: string; id?: string }> = ({
+  title,
+  children,
+  id,
+}) => (
+  <div className="space-y-4 flex flex-col items-start" id={id}>
+    <div className="border-b-2 border-gray-200 w-full group">
+      <h2 className="text-xl leading-3 text-gray-900">
+        <span>{title}</span>
+        {id ? (
+          <>
+            {" "}
+            <a
+              className="text-gray-300 no-underline hidden group-hover:inline"
+              href={`#${id}`}
+            >
+              #
+            </a>
+          </>
+        ) : null}
+      </h2>
+    </div>
     <div>{children}</div>
   </div>
 );
+
+const EmbedSection: React.FC<{ question: QuestionWithHistoryFragment }> = ({
+  question,
+}) => {
+  const url = getBasePath() + `/questions/embed/${question.id}`;
+  return (
+    <Section title="Embed" id="embed">
+      <div className="mb-2">
+        <BoxedLink url={url} size="small">
+          Preview
+        </BoxedLink>
+      </div>
+      <CopyParagraph
+        text={`<iframe src="${url}" height="600" width="600" frameborder="0" />`}
+        buttonText="Copy HTML"
+      />
+    </Section>
+  );
+};
 
 const LargeQuestionCard: React.FC<{
   question: QuestionWithHistoryFragment;
@@ -65,8 +102,8 @@ const LargeQuestionCard: React.FC<{
         <QuestionChartOrVisualization question={question} />
       </div>
 
-      <div className="mx-auto max-w-prose">
-        <Section title="Question description">
+      <div className="mx-auto max-w-prose space-y-8">
+        <Section title="Question description" id="description">
           <ReactMarkdown
             linkTarget="_blank"
             className="font-normal text-gray-900"
@@ -74,39 +111,17 @@ const LargeQuestionCard: React.FC<{
             {question.description.replaceAll("---", "")}
           </ReactMarkdown>
         </Section>
-        <div className="mt-5">
-          <Section title="Indicators">
-            <IndicatorsTable question={question} />
-          </Section>
-        </div>
+        <Section title="Indicators" id="indicators">
+          <IndicatorsTable question={question} />
+        </Section>
+        <Section title="Capture" id="capture">
+          <CaptureQuestion question={question} />
+        </Section>
+        <EmbedSection question={question} />
       </div>
     </Card>
   );
 };
-const QuestionScreen: React.FC<{ question: QuestionWithHistoryFragment }> = ({
-  question,
-}) => (
-  <div className="space-y-8">
-    <LargeQuestionCard question={question} />
-    <div className="space-y-4">
-      <LineHeader>
-        <h1>Capture</h1>
-      </LineHeader>
-      <CaptureQuestion question={question} />
-      <LineHeader>
-        <h1>Embed</h1>
-      </LineHeader>
-      <div className="max-w-md mx-auto">
-        <CopyParagraph
-          text={`<iframe src="${
-            getBasePath() + `/questions/embed/${question.id}`
-          }" height="600" width="600" frameborder="0" />`}
-          buttonText="Copy HTML"
-        />
-      </div>
-    </div>
-  </div>
-);
 
 const QuestionPage: NextPage<Props> = ({ id }) => {
   return (
@@ -115,7 +130,7 @@ const QuestionPage: NextPage<Props> = ({ id }) => {
         <Query document={QuestionPageDocument} variables={{ id }}>
           {({ data }) =>
             data.result ? (
-              <QuestionScreen question={data.result} />
+              <LargeQuestionCard question={data.result} />
             ) : (
               <NextError statusCode={404} />
             )

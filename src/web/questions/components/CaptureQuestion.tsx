@@ -1,6 +1,6 @@
 import domtoimage from "dom-to-image"; // https://github.com/tsayen/dom-to-image
+import { Resizable } from "re-resizable";
 import { useEffect, useRef, useState } from "react";
-
 import { Button } from "../../common/Button";
 import { CopyParagraph } from "../../common/CopyParagraph";
 import { QuestionFragment } from "../../fragments.generated";
@@ -79,6 +79,15 @@ const MetaculusSource: React.FC<{
   );
 };
 
+const GrayContainer: React.FC<{ title: string }> = ({ title, children }) => (
+  <div className="bg-gray-100 p-2 space-y-1">
+    <div className="uppercase text-xs font-bold tracking-wide text-gray-600">
+      {title}:
+    </div>
+    <div>{children}</div>
+  </div>
+);
+
 interface Props {
   question: QuestionFragment;
 }
@@ -118,35 +127,55 @@ export const CaptureQuestion: React.FC<Props> = ({ question }) => {
     await exportAsPictureAndCode();
   };
 
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
-      <div ref={containerRef}>
-        <QuestionCard
-          question={question}
-          showTimeStamp={true}
-          showExpandButton={false}
-          expandFooterToFullWidth={true}
-        />
-      </div>
-      <div>
-        <Button onClick={onCaptureButtonClick}>{mainButtonText}</Button>
-      </div>
-      {imgSrc ? (
-        <>
-          <div>
+  if (imgSrc) {
+    return (
+      <div className="space-y-4">
+        <GrayContainer title="Generated image">
+          <a href={imgSrc} target="_blank">
             <img src={imgSrc} />
+          </a>
+        </GrayContainer>
+        <div>
+          <ImageSource question={question} imgSrc={imgSrc} />
+        </div>
+        {question.platform.id === "metaculus" ? (
+          <>
+            <div className="justify-self-stretch">
+              <MetaculusEmbed question={question} />
+            </div>
+            <div>
+              <MetaculusSource question={question} />
+            </div>
+          </>
+        ) : null}
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-2 flex flex-col">
+      <GrayContainer title="Resizable preview">
+        <Resizable
+          minWidth={320}
+          bounds="window"
+          enable={{ right: true, left: true }}
+        >
+          <div ref={containerRef}>
+            <QuestionCard
+              container={(children) => (
+                <div className="px-4 py-3 bg-white">{children}</div>
+              )}
+              question={question}
+              showTimeStamp={true}
+              showExpandButton={false}
+              expandFooterToFullWidth={true}
+            />
           </div>
-          <div>
-            <ImageSource question={question} imgSrc={imgSrc} />
-          </div>
-          <div className="justify-self-stretch">
-            <MetaculusEmbed question={question} />
-          </div>
-          <div>
-            <MetaculusSource question={question} />
-          </div>
-        </>
-      ) : null}
+        </Resizable>
+      </GrayContainer>
+      <Button onClick={onCaptureButtonClick} size="small">
+        {mainButtonText}
+      </Button>
     </div>
   );
 };
