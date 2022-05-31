@@ -1,19 +1,20 @@
 import { GetServerSideProps, NextPage } from "next";
 import NextError from "next/error";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 
 import { Card } from "../../common/Card";
+import { CopyParagraph } from "../../common/CopyParagraph";
 import { Layout } from "../../common/Layout";
 import { LineHeader } from "../../common/LineHeader";
 import { Query } from "../../common/Query";
 import { QuestionWithHistoryFragment } from "../../fragments.generated";
 import { ssrUrql } from "../../urql";
+import { getBasePath } from "../../utils";
 import { CaptureQuestion } from "../components/CaptureQuestion";
-import { HistoryChart } from "../components/HistoryChart";
 import { IndicatorsTable } from "../components/IndicatorsTable";
-import { QuestionOptions } from "../components/QuestionOptions";
-import { Stars } from "../components/Stars";
+import { QuestionChartOrVisualization } from "../components/QuestionChartOrVisualization";
+import { QuestionInfoRow } from "../components/QuestionInfoRow";
+import { QuestionTitle } from "../components/QuestionTitle";
 import { QuestionPageDocument } from "../queries.generated";
 
 interface Props {
@@ -49,58 +50,19 @@ const Section: React.FC<{ title: string }> = ({ title, children }) => (
   </div>
 );
 
-const PlatformLink: React.FC<{ question: QuestionWithHistoryFragment }> = ({
-  question,
-}) => (
-  <a
-    className="px-2 py-1 border-2 border-gray-400 rounded-lg text-black no-underline text-normal hover:bg-gray-100 flex flex-nowrap space-x-1 items-center"
-    href={question.url}
-    target="_blank"
-  >
-    <span>{question.platform.label}</span>
-    <FaExternalLinkAlt className="text-gray-400 inline sm:text-md text-md" />
-  </a>
-);
-
 const LargeQuestionCard: React.FC<{
   question: QuestionWithHistoryFragment;
 }> = ({ question }) => {
   return (
     <Card highlightOnHover={false} large={true}>
-      <h1 className="sm:text-3xl text-xl">
-        <a
-          className="text-black no-underline hover:text-gray-700"
-          href={question.url}
-          target="_blank"
-        >
-          {question.title}
-        </a>
-      </h1>
+      <QuestionTitle question={question} />
 
-      <div className="flex items-center gap-2 mb-5 mt-5">
-        <PlatformLink question={question} />
-        <Stars num={question.qualityIndicators.stars} />
-        <QuestionOptions
-          question={{ ...question }}
-          maxNumOptions={1}
-          forcePrimaryMode={true}
-        />
+      <div className="mb-5 mt-5">
+        <QuestionInfoRow question={question} />
       </div>
 
       <div className="mb-10">
-        {
-          question.platform.id === "guesstimate" && question.visualization ? (
-            <a className="no-underline" href={question.url} target="_blank">
-              <img
-                className="rounded-sm"
-                src={question.visualization}
-                alt="Guesstimate Screenshot"
-              />
-            </a>
-          ) : question.options.length > 0 ? (
-            <HistoryChart question={question} />
-          ) : null /* Don't display chart if there are no options, for now. */
-        }
+        <QuestionChartOrVisualization question={question} />
       </div>
 
       <div className="mx-auto max-w-prose">
@@ -131,6 +93,17 @@ const QuestionScreen: React.FC<{ question: QuestionWithHistoryFragment }> = ({
         <h1>Capture</h1>
       </LineHeader>
       <CaptureQuestion question={question} />
+      <LineHeader>
+        <h1>Embed</h1>
+      </LineHeader>
+      <div className="max-w-md mx-auto">
+        <CopyParagraph
+          text={`<iframe src="${
+            getBasePath() + `/questions/embed/${question.id}`
+          }" height="600" width="600" frameborder="0" />`}
+          buttonText="Copy HTML"
+        />
+      </div>
     </div>
   </div>
 );
