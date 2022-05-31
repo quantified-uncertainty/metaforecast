@@ -63,7 +63,7 @@ const LastUpdated: React.FC<{ timestamp: Date }> = ({ timestamp }) => (
 // Main component
 
 interface Props {
-  container: (children: ReactNode) => ReactElement;
+  container?: (children: ReactNode) => ReactElement;
   question: QuestionFragment;
   showTimeStamp: boolean;
   expandFooterToFullWidth: boolean;
