@@ -42,10 +42,27 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   };
 };
 
-const Section: React.FC<{ title: string }> = ({ title, children }) => (
-  <div className="space-y-4 flex flex-col items-start">
-    <div className="border-b-2 border-gray-200 w-full">
-      <h2 className="text-xl leading-3 text-gray-900">{title}</h2>
+const Section: React.FC<{ title: string; id?: string }> = ({
+  title,
+  children,
+  id,
+}) => (
+  <div className="space-y-4 flex flex-col items-start" id={id}>
+    <div className="border-b-2 border-gray-200 w-full group">
+      <h2 className="text-xl leading-3 text-gray-900">
+        <span>{title}</span>
+        {id ? (
+          <>
+            {" "}
+            <a
+              className="text-gray-300 no-underline hidden group-hover:inline"
+              href={`#${id}`}
+            >
+              #
+            </a>
+          </>
+        ) : null}
+      </h2>
     </div>
     <div>{children}</div>
   </div>
@@ -56,7 +73,7 @@ const EmbedSection: React.FC<{ question: QuestionWithHistoryFragment }> = ({
 }) => {
   const url = getBasePath() + `/questions/embed/${question.id}`;
   return (
-    <Section title="Embed">
+    <Section title="Embed" id="embed">
       <div className="mb-2">
         <BoxedLink url={url} size="small">
           Preview
@@ -86,7 +103,7 @@ const LargeQuestionCard: React.FC<{
       </div>
 
       <div className="mx-auto max-w-prose space-y-8">
-        <Section title="Question description">
+        <Section title="Question description" id="description">
           <ReactMarkdown
             linkTarget="_blank"
             className="font-normal text-gray-900"
@@ -94,10 +111,10 @@ const LargeQuestionCard: React.FC<{
             {question.description.replaceAll("---", "")}
           </ReactMarkdown>
         </Section>
-        <Section title="Indicators">
+        <Section title="Indicators" id="indicators">
           <IndicatorsTable question={question} />
         </Section>
-        <Section title="Capture">
+        <Section title="Capture" id="capture">
           <CaptureQuestion question={question} />
         </Section>
         <EmbedSection question={question} />
