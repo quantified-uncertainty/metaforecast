@@ -1,7 +1,7 @@
 import Link from "next/link";
+import { ReactElement, ReactNode } from "react";
 import { FaExpand } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
-
 import { Card } from "../../../common/Card";
 import { CopyText } from "../../../common/CopyText";
 import { QuestionFragment } from "../../../fragments.generated";
@@ -63,6 +63,7 @@ const LastUpdated: React.FC<{ timestamp: Date }> = ({ timestamp }) => (
 // Main component
 
 interface Props {
+  container: (children: ReactNode) => ReactElement;
   question: QuestionFragment;
   showTimeStamp: boolean;
   expandFooterToFullWidth: boolean;
@@ -71,6 +72,7 @@ interface Props {
 }
 
 export const QuestionCard: React.FC<Props> = ({
+  container = (children) => <Card>{children}</Card>,
   question,
   showTimeStamp,
   expandFooterToFullWidth,
@@ -82,72 +84,70 @@ export const QuestionCard: React.FC<Props> = ({
 
   const isBinary = isQuestionBinary(question);
 
-  return (
-    <Card>
-      <div className="h-full flex flex-col space-y-4">
-        <div className="flex-grow space-y-4">
-          {showIdToggle ? (
-            <div className="mx-10">
-              <CopyText text={question.id} displayText={`[${question.id}]`} />
-            </div>
-          ) : null}
-          <div>
-            {showExpandButton ? (
-              <Link href={`/questions/${question.id}`} passHref>
-                <a className="float-right block ml-2 mt-1.5">
-                  <FaExpand
-                    size="18"
-                    className="text-gray-400 hover:text-gray-700"
-                  />
-                </a>
-              </Link>
-            ) : null}
-            <Card.Title>
-              <a
-                className="text-black no-underline"
-                href={question.url}
-                target="_blank"
-              >
-                {question.title}
+  return container(
+    <div className="h-full flex flex-col space-y-4">
+      <div className="flex-grow space-y-4">
+        {showIdToggle ? (
+          <div className="mx-10">
+            <CopyText text={question.id} displayText={`[${question.id}]`} />
+          </div>
+        ) : null}
+        <div>
+          {showExpandButton ? (
+            <Link href={`/questions/${question.id}`} passHref>
+              <a className="float-right block ml-2 mt-1.5">
+                <FaExpand
+                  size="18"
+                  className="text-gray-400 hover:text-gray-700"
+                />
               </a>
-            </Card.Title>
-          </div>
-          <div className={isBinary ? "flex justify-between" : "space-y-4"}>
-            <QuestionOptions question={question} maxNumOptions={5} />
-            <div className={`hidden ${showTimeStamp ? "sm:block" : ""}`}>
-              <LastUpdated timestamp={lastUpdated} />
-            </div>
-          </div>
-
-          {question.platform.id !== "guesstimate" && options.length < 3 && (
-            <div className="text-gray-500">
-              <DisplayMarkdown description={question.description} />
-            </div>
-          )}
-
-          {question.platform.id === "guesstimate" && question.visualization && (
-            <img
-              className="rounded-sm"
-              src={question.visualization}
-              alt="Guesstimate Screenshot"
-            />
-          )}
+            </Link>
+          ) : null}
+          <Card.Title>
+            <a
+              className="text-black no-underline"
+              href={question.url}
+              target="_blank"
+            >
+              {question.title}
+            </a>
+          </Card.Title>
         </div>
-        <div
-          className={`sm:hidden ${!showTimeStamp ? "hidden" : ""} self-center`}
-        >
-          {/* This one is exclusively for mobile*/}
-          <LastUpdated timestamp={lastUpdated} />
-        </div>
-        <div className="w-full">
-          <div className="mb-2 mt-1">
-            <QuestionFooter
-              question={question}
-              expandFooterToFullWidth={expandFooterToFullWidth}
-            />
+        <div className={isBinary ? "flex justify-between" : "space-y-4"}>
+          <QuestionOptions question={question} maxNumOptions={5} />
+          <div className={`hidden ${showTimeStamp ? "sm:block" : ""}`}>
+            <LastUpdated timestamp={lastUpdated} />
           </div>
+        </div>
+
+        {question.platform.id !== "guesstimate" && options.length < 3 && (
+          <div className="text-gray-500">
+            <DisplayMarkdown description={question.description} />
+          </div>
+        )}
+
+        {question.platform.id === "guesstimate" && question.visualization && (
+          <img
+            className="rounded-sm"
+            src={question.visualization}
+            alt="Guesstimate Screenshot"
+          />
+        )}
+      </div>
+      <div
+        className={`sm:hidden ${!showTimeStamp ? "hidden" : ""} self-center`}
+      >
+        {/* This one is exclusively for mobile*/}
+        <LastUpdated timestamp={lastUpdated} />
+      </div>
+      <div className="w-full">
+        <div className="mb-2 mt-1">
+          <QuestionFooter
+            question={question}
+            expandFooterToFullWidth={expandFooterToFullWidth}
+          />
         </div>
       </div>
-    </Card>
+    </div>
   );
 };
