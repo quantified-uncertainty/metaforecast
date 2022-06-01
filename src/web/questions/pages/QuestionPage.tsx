@@ -1,8 +1,9 @@
 import { GetServerSideProps, NextPage } from "next";
 import NextError from "next/error";
+import React from "react";
 import ReactMarkdown from "react-markdown";
-import { BoxedLink } from "../../common/BoxedLink";
 import { Card } from "../../common/Card";
+import { Collapsible } from "../../common/Collapsible";
 import { CopyParagraph } from "../../common/CopyParagraph";
 import { Layout } from "../../common/Layout";
 import { Query } from "../../common/Query";
@@ -74,15 +75,15 @@ const EmbedSection: React.FC<{ question: QuestionWithHistoryFragment }> = ({
   const url = getBasePath() + `/questions/embed/${question.id}`;
   return (
     <Section title="Embed" id="embed">
-      <div className="mb-2">
-        <BoxedLink url={url} size="small">
-          Preview
-        </BoxedLink>
-      </div>
       <CopyParagraph
         text={`<iframe src="${url}" height="600" width="600" frameborder="0" />`}
         buttonText="Copy HTML"
       />
+      <div className="mt-2">
+        <Collapsible title="Preview">
+          {() => <iframe src={url} height="600" width="600" frameBorder="0" />}
+        </Collapsible>
+      </div>
     </Section>
   );
 };
