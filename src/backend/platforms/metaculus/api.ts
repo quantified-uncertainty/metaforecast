@@ -88,7 +88,7 @@ const optionalPageProps = {
   },
 } as const;
 
-const apiQuestionSchema = {
+const questionSchema = {
   discriminator: "type",
   mapping: {
     forecast: {
@@ -141,10 +141,19 @@ const apiQuestionSchema = {
   },
 } as const;
 
-const apiMultipleQuestionsSchema = {
+const knownQuestionTypes = Object.keys(questionSchema.mapping);
+
+const shallowMultipleQuestionsSchema = {
   properties: {
     results: {
-      elements: apiQuestionSchema,
+      elements: {
+        properties: {
+          type: {
+            type: "string",
+          },
+        },
+        additionalProperties: true,
+      },
     },
     next: {
       type: "string",
@@ -160,15 +169,22 @@ export type ApiCommon = JTDDataType<{
 export type ApiPredictable = JTDDataType<{
   properties: typeof predictableProps;
 }>;
-export type ApiQuestion = JTDDataType<typeof apiQuestionSchema>;
-export type ApiMultipleQuestions = JTDDataType<
-  typeof apiMultipleQuestionsSchema
+export type ApiQuestion = JTDDataType<typeof questionSchema>;
+
+type ApiShallowMultipleQuestions = JTDDataType<
+  typeof shallowMultipleQuestionsSchema
 >;
 
-const validateApiQuestion = new Ajv().compile<ApiQuestion>(apiQuestionSchema);
-const validateApiMultipleQuestions = new Ajv().compile<ApiMultipleQuestions>(
-  apiMultipleQuestionsSchema
-);
+export type ApiMultipleQuestions = {
+  results: ApiQuestion[];
+  next: ApiShallowMultipleQuestions["next"]; // Omit<ApiShallowMultipleQuestions, "results"> doesn't work correctly here
+};
+
+const validateQuestion = new Ajv().compile<ApiQuestion>(questionSchema);
+const validateShallowMultipleQuestions =
+  new Ajv().compile<ApiShallowMultipleQuestions>(
+    shallowMultipleQuestionsSchema
+  );
 
 async function fetchWithRetries<T = unknown>(url: string): Promise<T> {
   try {
@@ -209,12 +225,35 @@ const fetchAndValidate = async <T = unknown>(
 export async function fetchApiQuestions(
   next: string
 ): Promise<ApiMultipleQuestions> {
-  return await fetchAndValidate(next, validateApiMultipleQuestions);
+  const data = await fetchAndValidate(next, validateShallowMultipleQuestions);
+
+  const isDefined = <T>(argument: T | undefined): argument is T => {
+    return argument !== undefined;
+  };
+
+  return {
+    ...data,
+    results: data.results
+      .map((result) => {
+        if (!knownQuestionTypes.includes(result.type)) {
+          console.warn(`Unknown result type ${result.type}, skipping`);
+          return undefined;
+        }
+        if (!validateQuestion(result)) {
+          throw new Error(
+            `Response validation failed: ` +
+              JSON.stringify(validateQuestion.errors)
+          );
+        }
+        return result;
+      })
+      .filter(isDefined),
+  };
 }
 
 export async function fetchSingleApiQuestion(id: number): Promise<ApiQuestion> {
   return await fetchAndValidate(
     `https://www.metaculus.com/api2/questions/${id}/`,
-    validateApiQuestion
+    validateQuestion
   );
 }
