@@ -12,7 +12,7 @@ import {
 
 const platformName = "metaculus";
 const now = new Date().toISOString();
-const SLEEP_TIME = 2500;
+const SLEEP_TIME = 1000;
 
 async function apiQuestionToFetchedQuestions(
   apiQuestion: ApiQuestion
@@ -21,8 +21,6 @@ async function apiQuestionToFetchedQuestions(
   // - to 0 questions if we don't want it;
   // - to 1 question if it's a simple forecast
   // - to multiple questions if it's a group (see https://github.com/quantified-uncertainty/metaforecast/pull/84 for details)
-
-  await sleep(SLEEP_TIME);
 
   const skip = (q: ApiPredictable): boolean => {
     if (q.publish_time > now || now > q.resolve_time) {
@@ -72,6 +70,7 @@ async function apiQuestionToFetchedQuestions(
   };
 
   if (apiQuestion.type === "group") {
+    await sleep(SLEEP_TIME);
     const apiQuestionDetails = await fetchSingleApiQuestion(apiQuestion.id);
     return apiQuestion.sub_questions
       .filter((q) => !skip(q))
@@ -92,6 +91,7 @@ async function apiQuestionToFetchedQuestions(
       return [];
     }
 
+    await sleep(SLEEP_TIME);
     const apiQuestionDetails = await fetchSingleApiQuestion(apiQuestion.id);
     const tmp = buildFetchedQuestion(apiQuestion);
     return [
@@ -138,12 +138,9 @@ export const metaculus: Platform<"id" | "debug"> = {
     let next: string | null = "https://www.metaculus.com/api2/questions/";
     let i = 1;
     while (next) {
-      if (i % 20 === 0) {
-        console.log(`Sleeping for ${SLEEP_TIME}ms`);
-        await sleep(SLEEP_TIME);
-      }
       console.log(`\nQuery #${i} - ${next}`);
 
+      await sleep(SLEEP_TIME);
       const apiQuestions: ApiMultipleQuestions = await fetchApiQuestions(next);
       const results = apiQuestions.results;
 
