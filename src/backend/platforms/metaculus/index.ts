@@ -74,7 +74,10 @@ async function apiQuestionToFetchedQuestions(
   if (apiQuestion.type === "group") {
     await sleep(SLEEP_TIME);
     const apiQuestionDetails = await fetchSingleApiQuestion(apiQuestion.id);
-    return apiQuestion.sub_questions
+    if (apiQuestionDetails.type !== "group") {
+      throw new Error("Expected `group` type"); // shouldn't happen, this is mostly for typescript
+    }
+    return (apiQuestionDetails.sub_questions || [])
       .filter((q) => !skip(q))
       .map((sq) => {
         const tmp = buildFetchedQuestion(sq);

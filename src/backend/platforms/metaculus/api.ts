@@ -106,6 +106,9 @@ const questionSchema = {
       properties: {
         ...commonProps,
         ...pageProps,
+      },
+      optionalProperties: {
+        ...optionalPageProps,
         sub_questions: {
           elements: {
             properties: {
@@ -115,9 +118,6 @@ const questionSchema = {
             additionalProperties: true,
           },
         },
-      },
-      optionalProperties: {
-        ...optionalPageProps,
       },
       additionalProperties: true,
     },
