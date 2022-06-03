@@ -85,7 +85,6 @@ async function apiQuestionToFetchedQuestions(
         };
       });
   } else if (apiQuestion.type === "forecast") {
-    const apiQuestionDetails = await fetchSingleApiQuestion(apiQuestion.id);
     if (apiQuestion.group) {
       return []; // sub-question, should be handled on the group level
     }
@@ -93,6 +92,7 @@ async function apiQuestionToFetchedQuestions(
       return [];
     }
 
+    const apiQuestionDetails = await fetchSingleApiQuestion(apiQuestion.id);
     const tmp = buildFetchedQuestion(apiQuestion);
     return [
       {
