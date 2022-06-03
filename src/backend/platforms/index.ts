@@ -1,7 +1,7 @@
 import { Question } from "@prisma/client";
-
 import { QuestionOption } from "../../common/types";
 import { prisma } from "../database/prisma";
+import { getRobot, Robot } from "../robot";
 
 // This file includes comon types and functions for working with platforms.
 // The registry of all platforms is in a separate file, ./registry.ts, to avoid circular dependencies.
@@ -40,6 +40,10 @@ export type FetchedQuestion = Omit<
   qualityindicators: Omit<QualityIndicators, "stars">; // slightly stronger type than Prisma's JsonValue
 };
 
+type MFStorage = {
+  upsert: (q: FetchedQuestion) => Promise<void>;
+};
+
 // fetcher should return null if platform failed to fetch questions for some reason
 type PlatformFetcherV1 = () => Promise<FetchedQuestion[] | null>;
 
@@ -53,13 +57,18 @@ type PlatformFetcherV2<ArgNames extends string> = (opts: {
   args?: { [k in ArgNames]: string };
 }) => Promise<PlatformFetcherV2Result>;
 
-export type PlatformFetcher<ArgNames extends string> =
-  | PlatformFetcherV1
-  | PlatformFetcherV2<ArgNames>;
+type PlatformFetcherV3<
+  ArgNames extends string,
+  RobotContext = unknown
+> = (opts: {
+  args?: { [k in ArgNames]: string };
+  robot: Robot<RobotContext>;
+  storage: MFStorage;
+}) => Promise<void>;
 
 // using "" as ArgNames default is technically incorrect, but shouldn't cause any real issues
 // (I couldn't find a better solution for signifying an empty value, though there probably is one)
-export type Platform<ArgNames extends string = ""> = {
+export type Platform<ArgNames extends string = "", RobotContext = unknown> = {
   name: string; // short name for ids and `platform` db column, e.g. "xrisk"
   label: string; // longer name for displaying on frontend etc., e.g. "X-risk estimates"
   color: string; // used on frontend
@@ -73,6 +82,11 @@ export type Platform<ArgNames extends string = ""> = {
       version: "v2";
       fetcherArgs?: ArgNames[];
       fetcher?: PlatformFetcherV2<ArgNames>;
+    }
+  | {
+      version: "v3";
+      fetcherArgs?: ArgNames[];
+      fetcher?: PlatformFetcherV3<ArgNames, RobotContext>;
     }
 );
 
@@ -92,7 +106,7 @@ type PreparedQuestion = Omit<
 
 export const prepareQuestion = (
   q: FetchedQuestion,
-  platform: Platform<any>
+  platform: Platform<any, any>
 ): PreparedQuestion => {
   return {
     extra: {},
@@ -120,14 +134,29 @@ export const upsertSingleQuestion = async (
   // TODO - update history?
 };
 
-export const processPlatform = async <T extends string = "">(
-  platform: Platform<T>,
+export const processPlatform = async <T extends string = "", RC = unknown>(
+  platform: Platform<T, RC>,
   args?: { [k in T]: string }
 ) => {
   if (!platform.fetcher) {
     console.log(`Platform ${platform.name} doesn't have a fetcher, skipping`);
     return;
   }
+
+  if (platform.version === "v3") {
+    const robot = getRobot(platform);
+    const storage: MFStorage = {
+      async upsert(q) {
+        await upsertSingleQuestion(prepareQuestion(q, platform));
+      },
+    };
+    await platform.fetcher({
+      robot,
+      storage,
+    });
+    return;
+  }
+
   const result =
     platform.version === "v1"
       ? { questions: await platform.fetcher(), partial: false } // this is not exactly PlatformFetcherV2Result, since `questions` can be null
