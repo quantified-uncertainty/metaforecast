@@ -38,19 +38,21 @@ async function apiQuestionToFetchedQuestions(
     const isBinary = q.possibilities.type === "binary";
     let options: FetchedQuestion["options"] = [];
     if (isBinary) {
-      const probability = Number(q.community_prediction.full.q2);
-      options = [
-        {
-          name: "Yes",
-          probability: probability,
-          type: "PROBABILITY",
-        },
-        {
-          name: "No",
-          probability: 1 - probability,
-          type: "PROBABILITY",
-        },
-      ];
+      const probability = q.community_prediction.full.q2;
+      if (probability !== undefined) {
+        options = [
+          {
+            name: "Yes",
+            probability: probability,
+            type: "PROBABILITY",
+          },
+          {
+            name: "No",
+            probability: 1 - probability,
+            type: "PROBABILITY",
+          },
+        ];
+      }
     }
     return {
       id: `${platformName}-${q.id}`,

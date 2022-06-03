@@ -49,7 +49,8 @@ const predictableProps = {
   community_prediction: {
     properties: {
       full: {
-        properties: {
+        // q1/q2/q3 can be missing, e.g. https://www.metaculus.com/api2/questions/1633/
+        optionalProperties: {
           q1: {
             type: "float64",
           },
