@@ -68,15 +68,39 @@ export const getRobot = <Context>(
 
     async schedule({ url, context = {} }) {
       const now = new Date();
-      await prisma.robot.create({
-        data: {
-          url,
+
+      const oldJob = await prisma.robot.findFirst({
+        where: {
           platform: platform.name,
-          created: now,
-          scheduled: now,
-          context,
+          url,
+          completed: {
+            equals: null,
+          },
         },
       });
+
+      if (oldJob) {
+        await prisma.robot.update({
+          where: {
+            id: oldJob.id,
+          },
+          data: {
+            created: now,
+            scheduled: now,
+            context,
+          },
+        });
+      } else {
+        await prisma.robot.create({
+          data: {
+            url,
+            platform: platform.name,
+            created: now,
+            scheduled: now,
+            context,
+          },
+        });
+      }
     },
   };
 };
