@@ -90,6 +90,6 @@ model History {
 }
 
 model FrontpageId {
-  question Question @relation(fields: [id], references: [id])
+  question Question @relation(fields: [id], references: [id], onDelete: Cascade)
   id       String   @unique
 }
