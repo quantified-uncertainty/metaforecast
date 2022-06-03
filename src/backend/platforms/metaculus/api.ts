@@ -131,6 +131,12 @@ const apiQuestionSchema = {
       },
       additionalProperties: true,
     },
+    discussion: {
+      optionalProperties: {
+        ...optionalPageProps,
+      },
+      additionalProperties: true,
+    },
   },
 } as const;
 
