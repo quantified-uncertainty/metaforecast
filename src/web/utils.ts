@@ -14,8 +14,8 @@ export const getBasePath = () => {
 };
 
 export const cleanText = (text: string): string => {
-  // Note: should no longer be necessary?
-  // Still needed for e.g. /questions/rootclaim-what-caused-the-disappearance-of-malaysia-airlines-flight-370
+  // TODO - move to GraphQL:
+  // { description(clean: true, truncate: 250) }
   let textString = !!text ? text : "";
   textString = textString
     .replaceAll("] (", "](")
@@ -23,12 +23,13 @@ export const cleanText = (text: string): string => {
     .replaceAll("( [", "([")
     .replaceAll(") ,", "),")
     .replaceAll("==", "") // Denotes a title in markdown
-    .replaceAll("Background\n", "")
-    .replaceAll("Context\n", "")
+    .replaceAll(/^#+ /gm, "")
+    .replaceAll(/^Background\n/gm, "")
+    .replaceAll(/^Context\n/gm, "")
     .replaceAll("--- \n", "- ")
     .replaceAll(/\[(.*?)\]\(.*?\)/g, "$1");
   textString = textString.slice(0, 1) == "=" ? textString.slice(1) : textString;
-  //console.log(textString)
+
   return textString;
 };
 
