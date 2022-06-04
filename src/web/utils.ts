@@ -23,7 +23,7 @@ export const cleanText = (text: string): string => {
     .replaceAll("( [", "([")
     .replaceAll(") ,", "),")
     .replaceAll("==", "") // Denotes a title in markdown
-    .replaceAll(/^#+ /gm, "")
+    .replaceAll(/^#+\s+/gm, "")
     .replaceAll(/^Background\n/gm, "")
     .replaceAll(/^Context\n/gm, "")
     .replaceAll("--- \n", "- ")
