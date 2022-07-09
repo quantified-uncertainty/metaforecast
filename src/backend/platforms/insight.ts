@@ -106,9 +106,8 @@ export const insight: Platform = {
   version: "v0",
   async fetcher() {
     let bearer = process.env.INSIGHT_BEARER;
-    let pageNum = 1
-    let data = await fetchData(bearer);
-    console.log(data)
+    // let data = await fetchData(bearer);
+    // console.log(data)
     let results = [] // await processPredictions(data); // somehow needed
     return results;
   },
