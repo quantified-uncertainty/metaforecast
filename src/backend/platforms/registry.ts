@@ -7,6 +7,7 @@ import { goodjudgmentopen } from "./goodjudgmentopen";
 import { guesstimate } from "./guesstimate";
 import { Platform, PlatformConfig } from "./index";
 import { infer } from "./infer";
+import { insight } from "./insight";
 import { kalshi } from "./kalshi";
 import { manifold } from "./manifold";
 import { metaculus } from "./metaculus";
@@ -28,6 +29,7 @@ export const getPlatforms = (): Platform<string>[] => {
     goodjudgmentopen,
     guesstimate,
     infer,
+    insight,
     kalshi,
     manifold,
     metaculus,

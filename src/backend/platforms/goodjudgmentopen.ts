@@ -17,11 +17,18 @@ const annoyingPromptUrls = [
   "https://www.gjopen.com/questions/1779-are-there-any-forecasting-tips-tricks-and-experiences-you-would-like-to-share-and-or-discuss-with-your-fellow-forecasters",
   "https://www.gjopen.com/questions/2246-are-there-any-forecasting-tips-tricks-and-experiences-you-would-like-to-share-and-or-discuss-with-your-fellow-forecasters-2022-thread",
   "https://www.gjopen.com/questions/2237-what-forecasting-questions-should-we-ask-what-questions-would-you-like-to-forecast-on-gjopen",
+  "https://www.gjopen.com/questions/2437-what-forecasting-questions-should-we-ask-what-questions-would-you-like-to-forecast-on-gjopen"
 ];
 const DEBUG_MODE: "on" | "off" = "off"; // "on"
 const id = () => 0;
 
 /* Support functions */
+
+function cleanDescription(text: string) {
+  let md = toMarkdown(text);
+  let result = md.replaceAll("---", "-").replaceAll("  ", " ");
+  return result;
+}
 
 async function fetchPage(page: number, cookie: string) {
   const response: string = await axios({
@@ -40,82 +47,68 @@ async function fetchStats(questionUrl: string, cookie: string) {
     url: questionUrl + "/stats",
     method: "GET",
     headers: {
+      "Content-Type": "text/html",
       Cookie: cookie,
       Referer: questionUrl,
     },
   }).then((res) => res.data);
-  //console.log(response)
 
-  // Is binary?
-  let isbinary = response.includes("binary?&quot;:true");
+  if (response.includes("Sign up or sign in to forecast")) {
+    throw Error("Not logged in");
+  }
+  // Init
+  let options: FullQuestionOption[] = [];
 
-  let options: FetchedQuestion["options"] = [];
-  if (isbinary) {
-    // Crowd percentage
-    let htmlElements = response.split("\n");
-    let h3Element = htmlElements.filter((str) => str.includes("<h3>"))[0];
-    // console.log(h3Element)
-    let crowdpercentage = h3Element.split(">")[1].split("<")[0];
-    let probability = Number(crowdpercentage.replace("%", "")) / 100;
-    options.push(
-      {
-        name: "Yes",
-        probability: probability,
-        type: "PROBABILITY",
-      },
-      {
-        name: "No",
-        probability: +(1 - probability).toFixed(2), // avoids floating point shenanigans
-        type: "PROBABILITY",
-      }
-    );
-  } else {
-    let optionsHtmlElement = "<table" + response.split("tbody")[1] + "table>";
-    let tablesAsJson = Tabletojson.convert(optionsHtmlElement);
-    let firstTable = tablesAsJson[0];
-    options = firstTable.map((element: any) => ({
-      name: element["0"],
-      probability: Number(element["1"].replace("%", "")) / 100,
+  // Parse the embedded json
+  let htmlElements = response.split("\n");
+  let jsonLines = htmlElements.filter((element) =>
+    element.includes("data-react-props")
+  );
+  let embeddedJsons = jsonLines.map((jsonLine, i) => {
+    let innerJSONasHTML = jsonLine.split('data-react-props="')[1].split('"')[0];
+    let json = JSON.parse(innerJSONasHTML.replaceAll("&quot;", '"'));
+    return json;
+  });
+  let firstEmbeddedJson = embeddedJsons[0];
+  let title = firstEmbeddedJson.question.name;
+  let description = cleanDescription(firstEmbeddedJson.question.description);
+  let comments_count = firstEmbeddedJson.question.comments_count;
+  let numforecasters = firstEmbeddedJson.question.predictors_count;
+  let numforecasts = firstEmbeddedJson.question.prediction_sets_count;
+  let questionType = firstEmbeddedJson.question.type;
+  if (
+    questionType.includes("Binary") ||
+    questionType.includes("NonExclusiveOpinionPoolQuestion") ||
+    questionType.includes("Forecast::Question") ||
+    !questionType.includes("Forecast::MultiTimePeriodQuestion")
+  ) {
+    options = firstEmbeddedJson.question.answers.map((answer: any) => ({
+      name: answer.name,
+      probability: answer.normalized_probability,
       type: "PROBABILITY",
     }));
-    //console.log(optionsHtmlElement)
-    //console.log(options)
+    if (options.length == 1 && options[0].name == "Yes") {
+      let probabilityNo =
+        options[0].probability > 1
+          ? 1 - options[0].probability / 100
+          : 1 - options[0].probability;
+      options.push({
+        name: "No",
+        probability: probabilityNo,
+        type: "PROBABILITY",
+      });
+    }
   }
-
-  // Description
-  let descriptionraw = response.split(
-    `<div id="question-background" class="collapse smb">`
-  )[1];
-  let descriptionprocessed1 = descriptionraw.split(`</div>`)[0];
-  let descriptionprocessed2 = toMarkdown(descriptionprocessed1);
-  let descriptionprocessed3 = descriptionprocessed2
-    .split("\n")
-    .filter((string) => !string.includes("Confused? Check our"))
-    .join("\n");
-  let description = descriptionprocessed3;
-
-  // Number of forecasts
-  let numforecasts = response
-    .split("prediction_sets_count&quot;:")[1]
-    .split(",")[0];
-  //console.log(numforecasts)
-
-  // Number of predictors
-  let numforecasters = response
-    .split("predictors_count&quot;:")[1]
-    .split(",")[0];
-  //console.log(numpredictors)
-
   let result = {
-    description,
-    options,
+    description: description,
+    options: options,
     qualityindicators: {
       numforecasts: Number(numforecasts),
       numforecasters: Number(numforecasters),
+      comments_count: Number(comments_count),
     },
-    // this mismatches the code below, and needs to be fixed, but I'm doing typescript conversion and don't want to touch any logic for now
-  } as any;
-
+  };
+  // console.log(JSON.stringify(result, null, 4));
   return result;
 }
 
@@ -150,6 +143,7 @@ async function goodjudgmentopen_inner(cookie: string) {
   let results = [];
   let init = Date.now();
   // console.log("Downloading... This might take a couple of minutes. Results will be shown.")
+  console.log("Page #1")
   while (!reachedEnd(response) && isSignedIn(response)) {
     let htmlLines = response.split("\n");
     DEBUG_MODE == "on" ? htmlLines.forEach((line) => console.log(line)) : id();
@@ -187,6 +181,8 @@ async function goodjudgmentopen_inner(cookie: string) {
           if (j % 30 == 0 || DEBUG_MODE == "on") {
             console.log(`Page #${i}`);
             console.log(question);
+          }else{
+            console.log(question.title)
           }
           // console.log(question)
           results.push(question);
