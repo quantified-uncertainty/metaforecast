@@ -11,8 +11,8 @@ This repository includes the source code for both the website and the library th
 ### 1. Download this repository
 
 ```
-$ git clone https://github.com/QURIresearch/metaforecast
-$ cd metaforecasts
+$ git clone https://github.com/quantified-uncertainty/metaforecast
+$ cd metaforecast
 $ npm install
 ```
 
@@ -26,17 +26,28 @@ See [./docs/configuration.md](./docs/configuration.md) for details.
 
 ### 3. Actually run
 
-`npm run cli` starts a local CLI which presents the user with choices. If you would like to skip that step, use the option name instead, e.g., `npm run cli wildeford`.
+After installing and building (`npm run build`) the application, `npm run cli` starts a local CLI which presents the user with choices. If you would like to skip that step, use the option name instead, e.g., `npm run cli wildeford`.
 
 ![](./public/screenshot-cli.png)
 
 `npm run next-dev` starts a Next.js dev server with the website on `http://localhost:3000`.
 
+So overall this would look like
+
+```
+$ git clone https://github.com/quantified-uncertainty/metaforecast
+$ cd metaforecast
+$ npm install
+$ npm run build
+$ npm run cli
+$ npm run next-dev
+```
+
 ### 4. Example: download the metaforecasts database
 
 ```
-$ git clone https://github.com/QURIresearch/metaforecast
-$ cd metaforecasts
+$ git clone https://github.com/quantified-uncertainty/metaforecast
+$ cd metaforecast
 $ npm install
 $ node src/backend/manual/manualDownload.js
 ```
