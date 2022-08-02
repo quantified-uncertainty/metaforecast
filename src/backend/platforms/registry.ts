@@ -19,7 +19,7 @@ import { wildeford } from "./wildeford";
 import { xrisk } from "./xrisk";
 
 // function instead of const array, this helps to fight circular dependencies
-export const getPlatforms = (): Platform<string>[] => {
+export const getPlatforms = (): Platform<string, any>[] => {
   return [
     betfair,
     fantasyscotus,

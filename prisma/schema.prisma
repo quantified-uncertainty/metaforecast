@@ -93,3 +93,14 @@ model FrontpageId {
   question Question @relation(fields: [id], references: [id], onDelete: Cascade)
   id       String   @unique
 }
+
+model Robot {
+  id        Int       @id @default(autoincrement())
+  platform  String
+  url       String // non-unique, rescheduling always creates a new row
+  context   Json
+  created   DateTime  @db.Timestamp(6)
+  scheduled DateTime  @db.Timestamp(6) // can be equal to `created` or can be in the future for rescheduling or other purposes
+  completed DateTime? @db.Timestamp(6) // becomes non-null when the job is done
+  tried     Int       @default(0) // used to set a limit on max attempts for badly written platforms
+}

@@ -1,6 +1,4 @@
-import Ajv, { JTDDataType, ValidateFunction } from "ajv/dist/jtd";
-import axios from "axios";
-import { sleep } from "../../utils/sleep";
+import Ajv, { JTDDataType } from "ajv/dist/jtd";
 
 // Type examples:
 // - group: https://www.metaculus.com/api2/questions/9866/
@@ -186,46 +184,38 @@ const validateShallowMultipleQuestions =
     shallowMultipleQuestionsSchema
   );
 
-async function fetchWithRetries<T = unknown>(url: string): Promise<T> {
-  try {
-    const response = await axios.get<T>(url);
-    return response.data;
-  } catch (error) {
-    console.log(`Error while fetching ${url}`);
-    console.log(error);
-    if (axios.isAxiosError(error)) {
-      if (error.response?.headers["retry-after"]) {
-        const timeout = error.response.headers["retry-after"];
-        console.log(`Timeout: ${timeout}`);
-        await sleep(Number(timeout) * 1000 + 1000);
-      } else {
-        await sleep(RETRY_SLEEP_TIME);
-      }
-    }
-  }
-  const response = await axios.get<T>(url);
-  return response.data;
-}
+// async function fetchWithRetries<T = unknown>(url: string): Promise<T> {
+//   try {
+//     const response = await axios.get<T>(url);
+//     return response.data;
+//   } catch (error) {
+//     console.log(`Error while fetching ${url}`);
+//     console.log(error);
+//     if (axios.isAxiosError(error)) {
+//       if (error.response?.headers["retry-after"]) {
+//         const timeout = error.response.headers["retry-after"];
+//         console.log(`Timeout: ${timeout}`);
+//         await sleep(Number(timeout) * 1000 + 1000);
+//       } else {
+//         await sleep(RETRY_SLEEP_TIME);
+//       }
+//     }
+//   }
+//   const response = await axios.get<T>(url);
+//   return response.data;
+// }
 
-const fetchAndValidate = async <T = unknown>(
-  url: string,
-  validator: ValidateFunction<T>
-): Promise<T> => {
-  console.log(url);
-  const data = await fetchWithRetries<object>(url);
-  if (validator(data)) {
-    return data;
-  }
-  throw new Error(
-    `Response validation for url ${url} failed: ` +
-      JSON.stringify(validator.errors)
-  );
-};
-
-export async function fetchApiQuestions(
-  next: string
+export async function prepareApiQuestions(
+  data: unknown
 ): Promise<ApiMultipleQuestions> {
-  const data = await fetchAndValidate(next, validateShallowMultipleQuestions);
+  if (!validateShallowMultipleQuestions(data)) {
+    throw new Error(
+      `Response validation failed: ` +
+        JSON.stringify(validateShallowMultipleQuestions.errors) +
+        "\n\n" +
+        JSON.stringify(data)
+    );
+  }
 
   const isDefined = <T>(argument: T | undefined): argument is T => {
     return argument !== undefined;
@@ -251,9 +241,16 @@ export async function fetchApiQuestions(
   };
 }
 
-export async function fetchSingleApiQuestion(id: number): Promise<ApiQuestion> {
-  return await fetchAndValidate(
-    `https://www.metaculus.com/api2/questions/${id}/`,
-    validateQuestion
-  );
+export async function prepareSingleApiQuestion(
+  data: unknown
+): Promise<ApiQuestion> {
+  if (!validateQuestion(data)) {
+    throw new Error(
+      `Response validation failed: ` +
+        JSON.stringify(validateQuestion.errors) +
+        "\n\n" +
+        JSON.stringify(data)
+    );
+  }
+  return data;
 }
