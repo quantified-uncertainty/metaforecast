@@ -65,7 +65,7 @@ async function fetchData(bearer: string) {
 
         console.log(`Page = #${pageNum}`);
         // console.log(newPageData)
-        // console.dir(finalObject, {depth: null});
+        console.dir(finalObject, {depth: null});
         results.push(... finalObject);
 
         let newPagination = newPage.meta.pagination;
@@ -79,30 +79,35 @@ async function fetchData(bearer: string) {
 }
 
 async function processPredictions(predictions: any[]) {
-    let filteredPredictions = predictions.filter(prediction => !prediction.is_resolved && prediction.category != "Sports")
-    let results = filteredPredictions.map((prediction) => {
+    let results = await predictions.map((prediction) => {
         const id = `${platformName}-${
             prediction.id
         }`;
-        const options: FetchedQuestion["options"] = prediction.options
+        const probability = prediction.probability;
+        const options: FetchedQuestion["options"] = [
+            {
+                name: "Yes",
+                probability: probability,
+                type: "PROBABILITY"
+            }, {
+                name: "No",
+                probability: 1 - probability,
+                type: "PROBABILITY"
+            },
+        ];
         const result: FetchedQuestion = {
             id,
             title: prediction.title,
-            url: `https:${
-                prediction.url
-            }`,
-            description: prediction.rules,
+            url: "https://example.com",
+            description: prediction.description,
             options,
             qualityindicators: {
-                volume: prediction.volume,
-                createdTime: prediction.created_at
                 // other: prediction.otherx,
                 // indicators: prediction.indicatorx,
             }
         };
         return result;
     });
-    // Filter results
     return results; // resultsProcessed
 }
 
@@ -112,12 +117,12 @@ export const insight: Platform = {
     name: platformName,
     label: "Insight Prediction",
     color: "#ff0000",
-    version: "v1",
+    version: "v0",
     async fetcher() {
         let bearer = process.env.INSIGHT_BEARER;
         let data = await fetchData(bearer);
-        let results = await processPredictions(data);
-        console.log(results);
+        // console.log(data);
+        let results = []; // await processPredictions(data); // somehow needed
         return results;
     },
     calculateStars(data) {

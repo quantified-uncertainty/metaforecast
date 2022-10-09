@@ -74,7 +74,7 @@ const getCurrencySymbolIfNeeded = ({
     "openInterest",
     "liquidity",
   ];
-  let dollarPlatforms = ["predictit", "kalshi", "polymarket", "insight"];
+  let dollarPlatforms = ["predictit", "kalshi", "polymarket"];
   if (indicatorsWhichNeedCurrencySymbol.includes(indicator)) {
     if (dollarPlatforms.includes(platform)) {
       return "$";
