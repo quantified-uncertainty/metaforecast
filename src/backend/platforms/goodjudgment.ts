@@ -1,10 +1,11 @@
 /* Imports */
 import axios from "axios";
-import { Tabletojson } from "tabletojson";
+import {Tabletojson} from "tabletojson";
 
-import { average } from "../../utils";
-import { hash } from "../utils/hash";
-import { FetchedQuestion, Platform } from "./";
+import {average} from "../../utils";
+import {hash} from "../utils/hash";
+import {FetchedQuestion, Platform} from "./";
+import {FullQuestionOption} from "../../common/types";
 
 /* Definitions */
 const platformName = "goodjudgment";
@@ -30,32 +31,30 @@ export const goodjudgment: Platform = {
     // hard-coded backup proxy
 		*/
     // proxy = {
-    //   ip: process.env.BACKUP_PROXY_IP,
-    //   port: process.env.BACKUP_PROXY_PORT,
+    // ip: process.env.BACKUP_PROXY_IP,
+    // port: process.env.BACKUP_PROXY_PORT,
     // };
     // // }
     // let agent = tunnel.httpsOverHttp({
-    //   proxy: {
+    // proxy: {
     //     host: proxy.ip,
     //     port: proxy.port,
-    //   },
+    // },
     // });
 
-    const content = await axios
-      .request({
-        url: "https://goodjudgment.io/superforecasts/",
-        method: "get",
-        headers: {
-          "User-Agent": "Chrome",
-        },
-        // agent,
-        // port: 80,
-      })
-      .then((query) => query.data);
+    const content = await axios.request({
+      url: "https://goodjudgment.io/superforecasts/",
+      method: "get",
+      headers: {
+        "User-Agent": "Chrome"
+      },
+      // agent,
+      // port: 80,
+    }).then((query) => query.data);
 
     // Processing
     let results: FetchedQuestion[] = [];
-    let jsonTable = Tabletojson.convert(content, { stripHtmlFromCells: false });
+    let jsonTable = Tabletojson.convert(content, {stripHtmlFromCells: false});
     jsonTable.shift(); // deletes first element
     jsonTable.pop(); // deletes last element
 
@@ -63,38 +62,21 @@ export const goodjudgment: Platform = {
       let title = table[0]["0"].split("\t\t\t").splice(3)[0];
       if (title != undefined) {
         title = title.replaceAll("</a>", "");
-        const id = `${platformName}-${hash(title)}`;
-        const description = table
-          .filter((row: any) => row["0"].includes("BACKGROUND:"))
-          .map((row: any) => row["0"])
-          .map((text: any) =>
-            text
-              .split("BACKGROUND:")[1]
-              .split("Examples of Superforecaster")[0]
-              .split("AT A GLANCE")[0]
-              .replaceAll("\n\n", "\n")
-              .split("\n")
-              .slice(3)
-              .join(" ")
-              .replaceAll("      ", "")
-              .replaceAll("<br> ", "")
-          )[0];
-        const options = table
-          .filter((row: any) => "4" in row)
-          .map((row: any) => ({
-            name: row["2"]
-              .split('<span class="qTitle">')[1]
-              .replace("</span>", ""),
-            probability: Number(row["3"].split("%")[0]) / 100,
-            type: "PROBABILITY",
-          }));
-        let analysis = table.filter((row: any) =>
-          row[0] ? row[0].toLowerCase().includes("commentary") : false
-        );
+        const id = `${platformName}-${
+          hash(title)
+        }`;
+        const description = table.filter((row : any) => row["0"].includes("BACKGROUND:")).map((row : any) => row["0"]).map((text : any) => text.split("BACKGROUND:")[1].split("Examples of Superforecaster")[0].split("AT A GLANCE")[0].replaceAll("\n\n", "\n").split("\n").slice(3).join(" ").replaceAll("      ", "").replaceAll("<br> ", ""))[0];
+        const options = table.filter((row : any) => "4" in row).map((row : any) => ({
+          name: row["2"].split('<span class="qTitle">')[1].replace("</span>", ""),
+          probability: Number(row["3"].split("%")[0]) / 100,
+          type: "PROBABILITY"
+        }));
+        let analysis = table.filter((row : any) => row[0] ? row[0].toLowerCase().includes("commentary") : false);
         // "Examples of Superforecaster Commentary" / Analysis
         // The following is necessary twice, because we want to check if there is an empty list, and then get the first element of the first element of the list.
         analysis = analysis ? analysis[0] : "";
-        analysis = analysis ? analysis[0] : ""; // not a duplicate
+        analysis = analysis ? analysis[0] : "";
+        // not a duplicate
         // console.log(analysis)
         let standardObj: FetchedQuestion = {
           id,
@@ -104,16 +86,14 @@ export const goodjudgment: Platform = {
           options,
           qualityindicators: {},
           extra: {
-            superforecastercommentary: analysis || "",
-          },
+            superforecastercommentary: analysis || ""
+          }
         };
         results.push(standardObj);
       }
     }
 
-    console.log(
-      "Failing is not unexpected; see utils/pullSuperforecastsManually.sh/js"
-    );
+    console.log("Failing is not unexpected; see utils/pullSuperforecastsManually.sh/js");
 
     return results;
   },
@@ -121,8 +101,8 @@ export const goodjudgment: Platform = {
     let nuno = () => 4;
     let eli = () => 4;
     let misha = () => 3.5;
-    let starsDecimal = average([nuno()]); //, eli(), misha()])
+    let starsDecimal = average([nuno()]); // , eli(), misha()])
     let starsInteger = Math.round(starsDecimal);
     return starsInteger;
-  },
+  }
 };
