@@ -91,3 +91,12 @@ Overall, the services which we use are:
 
 - Commits follow [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary)
 - For elicit and metaculus, this library currently filters out questions with <10 predictions.
+
+## To do
+
+- [ ] Fix Manifold Markets interface
+- [ ] Fix Insight Markets interface
+- [ ] Add database of *resolved* questions
+- [ ] Embed on EA Forum/LW
+- [ ] Post EA forum post with updates
+- [ ] Think about what to do with Metaculus Bot predictions on Manifold
