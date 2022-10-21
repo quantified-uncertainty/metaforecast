@@ -10,24 +10,17 @@ import twitterImg from "../../public/screenshots/twitter.png";
 import { Card } from "../web/common/Card";
 import { Layout } from "../web/common/Layout";
 
-/*
 type StaticImageData = {
   src: string;
   height: number;
   width: number;
   placeholder?: string;
 };
-*/
 
 type AnyTool = {
   title: string;
   description: string;
-  img?: {
-    src: string;
-    height: number;
-    width: number;
-    placeholder?: string;
-  };
+  img?: StaticImageData;
 };
 
 type InnerTool = AnyTool & { innerLink: string };
