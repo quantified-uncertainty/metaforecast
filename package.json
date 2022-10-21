@@ -110,10 +110,8 @@
     "@graphql-codegen/typed-document-node": "^2.3.5",
     "@graphql-codegen/typescript": "^2.7.5",
     "@graphql-codegen/typescript-operations": "^2.5.5",
-    "@netlify/plugin-nextjs": "^4.27.3",
     "@svgr/cli": "^6.5.0",
     "@types/pg": "^8.6.5",
-    "eslint": "^8.25.0",
-    "netlify-cli": "^12.0.11"
+    "eslint": "^8.25.0"
   }
 }
