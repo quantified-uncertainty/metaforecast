@@ -7,7 +7,8 @@
     "url": "git+https://github.com/QURIresearch/metaforecast.git"
   },
   "keywords": [
-    "forecasts", "predictions"
+    "forecasts",
+    "predictions"
   ],
   "author": "Nuño Sempere",
   "license": "MIT",
@@ -111,6 +112,7 @@
     "@graphql-codegen/typescript-operations": "^2.5.5",
     "@svgr/cli": "^6.5.0",
     "@types/pg": "^8.6.5",
-    "eslint": "^8.25.0"
+    "eslint": "^8.25.0",
+    "eslint-config-next": "^12.3.1"
   }
 }

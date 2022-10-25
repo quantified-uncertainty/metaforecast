@@ -31,7 +31,7 @@ yarn-error.log*
 
 # yarn vs npm conflict
 package-lock.json ## use yarn.lock instead
-yarn.lock
+# yarn.lock
 
 # Local Netlify folder
 .netlify
