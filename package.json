@@ -7,8 +7,7 @@
     "url": "git+https://github.com/QURIresearch/metaforecast.git"
   },
   "keywords": [
-    "forecasts",
-    "predictions"
+    "forecasts", "predictions"
   ],
   "author": "Nuño Sempere",
   "license": "MIT",
@@ -101,6 +100,9 @@
     "urql": "^2.2.3",
     "urql-custom-scalars-exchange": "^0.1.6",
     "victory": "^36.6.8"
+  },
+  "resolutions": {
+    "@types/react": "<18.0.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.13.7",

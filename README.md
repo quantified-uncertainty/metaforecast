@@ -92,3 +92,14 @@ Overall, the services which we use are:
 - Commits follow [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary)
 - For elicit and metaculus, this library currently filters out questions with <10 predictions.
 - The database is updated once a day, at 3:00 AM UTC, with the command `ts-node -T src/backend/flow/doEverythingForScheduler.ts`. The frontpage is updated after that, at 6:00 AM UTC with the command `ts-node -T src/backend/index.ts frontpage`. It's possible that either of these two operations makes the webpage briefly go down.
+
+## To do
+
+- [ ] Upgrade to [React 18](https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html). This will require dealing with the workaround we used for [this issue](https://github.com/vercel/next.js/issues/36019#issuecomment-1103266481)
+- [ ] Add database of resolutions
+- [ ] Update Metaculus and Manifold Markets fetchers
+- [ ] Allow users to embed predictions in the EA Forum/LessWrong (in progress)
+- [ ] Find a long-term mantainer for this project
+- [ ] Allow users to record their own predictions
+- [ ] Release snapshots (@niplav working on this)
+- [ ] ...

@@ -17,12 +17,14 @@ Router.events.on("routeChangeStart", (as, { shallow }) => {
 Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <PlausibleProvider domain="metaforecast.org">
       <Component {...pageProps} />
     </PlausibleProvider>
   );
+  // Workaround in package.json for: https://github.com/vercel/next.js/issues/36019#issuecomment-1103266481
 }
 
 export default withUrqlClient((ssr) => getUrqlClientOptions(ssr), {
