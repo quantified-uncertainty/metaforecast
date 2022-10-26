@@ -211,15 +211,17 @@ const fetchAndValidate = async <T = unknown>(
   url: string,
   validator: ValidateFunction<T>
 ): Promise<T> => {
-  console.log(url);
+  // console.log(url);
   const data = await fetchWithRetries<object>(url);
   if (validator(data)) {
     return data;
+  }else{
+    console.log(data)
+    throw new Error(
+      `Response validation for url ${url} failed: ` +
+        JSON.stringify(validator.errors, null, 4)
+    );
   }
-  throw new Error(
-    `Response validation for url ${url} failed: ` +
-      JSON.stringify(validator.errors)
-  );
 };
 
 export async function fetchApiQuestions(
