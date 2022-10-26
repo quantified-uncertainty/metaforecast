@@ -64,6 +64,7 @@ const predictableProps = {
         additionalProperties: true,
       },
     },
+    nullable: true,
     additionalProperties: true,
   },
 } as const;

@@ -36,7 +36,7 @@ async function apiQuestionToFetchedQuestions(apiQuestion: ApiQuestion): Promise<
       const isBinary = q.possibilities.type === "binary";
       let options: FetchedQuestion["options"] = [];
       if (isBinary) {
-        const probability = q.community_prediction.full.q2;
+        const probability = q.community_prediction?.full.q2;
         if (probability !== undefined) {
           options = [
             {
