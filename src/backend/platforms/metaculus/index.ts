@@ -72,7 +72,14 @@ async function apiQuestionToFetchedQuestions(apiQuestion: ApiQuestion): Promise<
 
   if (apiQuestion.type === "group") {
     await sleep(SLEEP_TIME);
-    const apiQuestionDetails = await fetchSingleApiQuestion(apiQuestion.id);
+    let apiQuestionDetailsTemp
+    try{
+      apiQuestionDetailsTemp = await fetchSingleApiQuestion(apiQuestion.id);
+    }catch(error){
+      console.log(error)
+      return []
+    }
+    const apiQuestionDetails = apiQuestionDetailsTemp
     if (apiQuestionDetails.type !== "group") {
       console.log("Error: expected `group` type")
       return [] //throw new Error("Expected `group` type"); // shouldn't happen, this is mostly for typescript
@@ -119,8 +126,8 @@ async function apiQuestionToFetchedQuestions(apiQuestion: ApiQuestion): Promise<
     }
 
     await sleep(SLEEP_TIME);
-    const apiQuestionDetails = await fetchSingleApiQuestion(apiQuestion.id);
     try{
+      const apiQuestionDetails = await fetchSingleApiQuestion(apiQuestion.id);
       const tmp = buildFetchedQuestion(apiQuestion);
       return [{
           ... tmp,
@@ -154,15 +161,21 @@ export const metaculus: Platform<"id" | "debug"> = {
     let allQuestions: FetchedQuestion[] = [];
 
     if (opts.args ?. id) {
-      console.log("Using optional id arg.")
-      const id = Number(opts.args.id);
-      const apiQuestion = await fetchSingleApiQuestion(id);
-      const questions = await apiQuestionToFetchedQuestions(apiQuestion);
-      console.log(questions);
-      return {questions, partial: true};
+      try{
+        console.log("Using optional id arg.")
+        const id = Number(opts.args.id);
+        const apiQuestion = await fetchSingleApiQuestion(id);
+        const questions = await apiQuestionToFetchedQuestions(apiQuestion);
+        console.log(questions);
+        return {questions, partial: true};
+  
+      }catch(error){
+        console.log(error)
+        return {questions: [], partial: true};
+      }
     }
 
-    let next: string |null = "https://www.metaculus.com/api2/questions/";
+    let next: string | null = "https://www.metaculus.com/api2/questions/";
     let i = 1;
     while (next) {
       console.log(`\nQuery #${i} - ${next}`);
