@@ -74,8 +74,9 @@ async function apiQuestionToFetchedQuestions(apiQuestion: ApiQuestion): Promise<
     await sleep(SLEEP_TIME);
     const apiQuestionDetails = await fetchSingleApiQuestion(apiQuestion.id);
     if (apiQuestionDetails.type !== "group") {
-      throw new Error("Expected `group` type"); // shouldn't happen, this is mostly for typescript
-    }
+      console.log("Error: expected `group` type")
+      return [] //throw new Error("Expected `group` type"); // shouldn't happen, this is mostly for typescript
+    }else{
       try{
         let result = (apiQuestionDetails.sub_questions || []).filter((q) => ! skip(q)).map((sq) => {
           const tmp = buildFetchedQuestion(sq);
@@ -99,6 +100,8 @@ async function apiQuestionToFetchedQuestions(apiQuestion: ApiQuestion): Promise<
         console.log(error)
         return []
       }
+    }
+      
   } else if (apiQuestion.type === "forecast") {
     if (apiQuestion.group) {
       return []; // sub-question, should be handled on the group level
