@@ -6,12 +6,12 @@ import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "manifold";
-const endpoint = "https://manifold.markets/api/v0/markets";
+const ENDPOINT = "https://manifold.markets/api/v0/markets";
 // See https://manifoldmarkets.notion.site/Manifold-Markets-API-5e7d0aef4dcf452bb04b319e178fabc5
 
 /* Support functions */
 
-async function fetchData() {
+async function fetchPage(endpoint: string) {
   let response = await axios({
     url: endpoint,
     method: "GET",
@@ -21,6 +21,31 @@ async function fetchData() {
   }).then((response) => response.data);
   // console.log(response)
   return response;
+}
+
+async function fetchAllData(){
+  let endpoint = ENDPOINT
+  let end = false
+  let allData = []
+  let counter = 1
+  while(!end){
+    console.log(`Query #${counter}: ${endpoint}`)
+    let newData = await fetchPage(endpoint)
+    if(Array.isArray(newData)){
+      allData.push(...newData)
+      let hasReachedEnd = (newData.length == 0) || (newData[newData.length -1] == undefined) || (newData[newData.length -1].id == undefined)
+      if(!hasReachedEnd){
+        let lastId = newData[newData.length -1].id
+        endpoint = `${ENDPOINT}?before=${lastId}`
+      }else{
+        end = true
+      }
+    }else{
+      end = true
+    }
+    counter = counter +1
+  }
+  return allData
 }
 
 function showStatistics(results: FetchedQuestion[]) {
@@ -63,7 +88,7 @@ function processPredictions(predictions: any[]): FetchedQuestion[] {
       id: id,
       title: prediction.question,
       url: prediction.url,
-      description: prediction.description,
+      description: prediction.description || "",
       options,
       qualityindicators: {
         createdTime: prediction.createdTime,
@@ -90,7 +115,7 @@ export const manifold: Platform = {
   color: "#793466",
   version: "v1",
   async fetcher() {
-    let data = await fetchData();
+    let data = await fetchAllData();
     let results = processPredictions(data); // somehow needed
     showStatistics(results);
     return results;
