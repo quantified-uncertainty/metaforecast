@@ -95,11 +95,12 @@ Overall, the services which we use are:
 
 ## To do
 
+- [x] Update Metaculus and Manifold Markets fetchers
 - [ ] Upgrade to [React 18](https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html). This will require dealing with the workaround we used for [this issue](https://github.com/vercel/next.js/issues/36019#issuecomment-1103266481)
+- [ ] Add markets from [Insight Prediction](https://insightprediction.com/).
 - [ ] Add database of resolutions
-- [ ] Update Metaculus and Manifold Markets fetchers
 - [ ] Allow users to embed predictions in the EA Forum/LessWrong (in progress)
 - [ ] Find a long-term mantainer for this project
 - [ ] Allow users to record their own predictions
-- [ ] Release snapshots (@niplav working on this)
+- [ ] Release snapshots (I think @niplav is working on this)
 - [ ] ...
