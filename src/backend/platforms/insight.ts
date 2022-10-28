@@ -83,7 +83,6 @@ const getAnswerProbability = (answer : any) => {
 // Fetching
 async function fetchPage(bearer: string, pageNum: number) {
   let pageUrl = `${marketsEnpoint}&page=${pageNum}`
-  console.log(`Fetching page #${pageNum}`) // : ${pageUrl}
   const response = await axios({
     url: pageUrl, // &orderBy=is_resolved&sortedBy=desc`,
     method: "GET",
@@ -172,6 +171,9 @@ async function fetchAllMarkets(bearer: string) {
   let categories = []
   let isEnd = false
   while (! isEnd) {
+    if(pageNum % 20 == 0){
+      console.log(`Fetching page #${pageNum}`) // : ${pageUrl}
+    }
     let page = await fetchPage(bearer, pageNum)
     // console.log(JSON.stringify(page, null, 2))
     let data = page.data
