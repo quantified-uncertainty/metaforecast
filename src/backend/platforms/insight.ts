@@ -65,6 +65,20 @@ const getOrderbookPrize = (orderbook : any) => {
   return yes_price_orderbook
 }
 
+const getAnswerProbability = (answer : any) => {
+  let orderbook = answer.orderbook
+  let latest_yes_price = answer.latest_yes_price
+  if (!! orderbook && hasActiveYesNoOrderBook(orderbook)) {
+    let yes_price_orderbook = getOrderbookPrize(orderbook)
+    let yes_probability = (latest_yes_price ? geomMean(latest_yes_price, yes_price_orderbook) : yes_price_orderbook) / 100
+    return yes_probability
+  } else if (!! latest_yes_price) {
+    return latest_yes_price / 100
+  } else {
+    return -1
+  }
+}
+
 // Fetching
 async function fetchPage(bearer: string, pageNum: number) {
   let pageUrl = `${marketsEnpoint}&page=${pageNum}`
@@ -98,25 +112,15 @@ async function fetchMarket(bearer: string, marketId: number) {
 }
 
 const processMarket = (market : any) => {
-  let hasData = !!market && !!market.answer && !!market.answer.data
-  const id = `${platformName}-${
-    market.id
-  }`;
+  let options: FetchedQuestion["options"] = []
 
-  if (hasData) {
+  if (!!market && !!market.answer && !!market.answer.data) {
     let data = market.answer.data
-    // console.log("has data")
-    if (isBinaryQuestion(data)) {
-      let orderbook = data[0].orderbook
-      // console.log("has orderbook")
-      // console.log(JSON.stringify(orderbook, null, 2))
-      if (!! orderbook && hasActiveYesNoOrderBook(orderbook)) { // console.log("has active orderbook")
-
-        let latest_yes_price = data[0].latest_yes_price
-        let yes_price_orderbook = getOrderbookPrize(orderbook)
-        let yes_probability = latest_yes_price ? geomMean(latest_yes_price, yes_price_orderbook) : yes_price_orderbook
-        const probability = yes_probability / 100;
-        const options: FetchedQuestion["options"] = [
+    if (isBinaryQuestion(data)) { // Binary questions
+      let answer = data[0]
+      let probability = getAnswerProbability(answer)
+      if (probability != -1) {
+        options = [
           {
             name: "Yes",
             probability: probability,
@@ -127,40 +131,24 @@ const processMarket = (market : any) => {
             type: "PROBABILITY"
           },
         ];
-        const result: FetchedQuestion = {
-          id: id,
-          title: market.title,
-          url: market.url,
-          description: processDescriptionText(market.rules),
-          options,
-          qualityindicators: market.coin_id == "USD" ? (
-            {volume: market.volume}
-          ) : ({})
-        };
-        return result;
-
-      } else {
-        return null
-      }
+      } 
     } else { // non binary question
-      console.log("Non-binary question")
-      console.log(market)
-      console.log(data)
-      let options = []
       for (let answer of data) {
-        let orderbook = answer.orderbook
-        if (!! orderbook && hasActiveYesNoOrderBook(orderbook)) {
-          let latest_yes_price = answer.latest_yes_price
-          let yes_price_orderbook = getOrderbookPrize(orderbook)
-          let yes_probability = latest_yes_price ? geomMean(latest_yes_price, yes_price_orderbook) : yes_price_orderbook
+        let probability = getAnswerProbability(answer)
+        if (probability != -1) {
           let newOption: QuestionOption = ({
             name: String(answer.title),
-            probability: Number(yes_probability / 100),
+            probability: probability,
             type: "PROBABILITY"
           });
           options.push(newOption)
         }
       }
+    }
+    if (!! options && Array.isArray(options) && options.length > 0) {
+      const id = `${platformName}-${
+        market.id
+      }`
       const result: FetchedQuestion = {
         id: id,
         title: market.title,
@@ -173,13 +161,12 @@ const processMarket = (market : any) => {
       };
       return result;
     }
-  } else {
-    return null
-  }
+  } 
+  return null
 }
 
 async function fetchAllMarkets(bearer: string) {
-  let pageNum = 2559
+  let pageNum = 1
   let markets = []
   let categories = []
   let isEnd = false
