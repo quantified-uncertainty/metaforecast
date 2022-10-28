@@ -172,6 +172,7 @@ export const QuestionFooter: React.FC<Props> = ({
       >
         {question.platform.label
           .replace("Good Judgment Open", "GJOpen")
+          .replace("Insight Prediction", "Insight")
           .replace(/ /g, "\u00a0")}
       </div>
       <div
