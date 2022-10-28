@@ -2,6 +2,7 @@
 import axios from "axios";
 
 import {FetchedQuestion, Platform} from ".";
+import toMarkdown from "../utils/toMarkdown";
 
 /* Definitions */
 const platformName = "insight";
@@ -10,9 +11,43 @@ const getMarketEndpoint = (id : number) => `https://insightprediction.com/api/ma
 
 /* Support functions */
 
+// Stubs
+const excludeMarketFromTitle = (title : any) => {
+  if (!!title) {
+    return title.includes(" vs ") || title.includes(" Over: ")
+  } else {
+    return true
+  }
+}
+
+const hasActiveYesNoOrderBook = (orderbook : any) => {
+  if (!!orderbook) {
+    let yes = !!orderbook.yes && !!orderbook.yes.buy && Array.isArray(orderbook.yes.buy) && orderbook.yes.buy.length != 0 && !!orderbook.yes.buy[0].price && !!orderbook.yes.sell && Array.isArray(orderbook.yes.sell) && orderbook.yes.sell.length != 0 && !!orderbook.yes.sell[0].price
+    let no = !!orderbook.no && !!orderbook.no.buy && Array.isArray(orderbook.no.buy) && orderbook.no.buy.length != 0 && !!orderbook.no.buy[0].price && !!orderbook.no.sell && Array.isArray(orderbook.no.sell) && orderbook.no.sell.length != 0 && !!orderbook.no.sell[0].price
+    return yes && no
+  } else {
+    return false
+  }
+}
+
+const isBinaryQuestion = (data : any) => Array.isArray(data) && data.length == 1
+
+const geomMean = (a : number, b : number) => Math.sqrt(a * b)
+
+const processRelativeUrls = (a : string) => a.replaceAll("] (/", "](http://insightprediction.com/").replaceAll("](/", "](http://insightprediction.com/")
+
+const processDescriptionText = (text : any) => {
+  if (typeof text === 'string') {
+    return processRelativeUrls(toMarkdown(text))
+  } else {
+    return ""
+  }
+}
+
+// Fetching
 async function fetchPage(bearer: string, pageNum: number) {
   let pageUrl = `${marketsEnpoint}&page=${pageNum}`
-  console.log(`Fetching page #${pageNum}: ${pageUrl}`)
+  console.log(`Fetching page #${pageNum}`) // : ${pageUrl}
   const response = await axios({
     url: pageUrl, // &orderBy=is_resolved&sortedBy=desc`,
     method: "GET",
@@ -41,41 +76,17 @@ async function fetchMarket(bearer: string, marketId: number) {
 
 }
 
-const excludeMarketFromTitle = (title : any) => {
-  if (!!title) {
-    return title.includes(" vs ") || title.includes(" Over: ")
-  } else {
-    return true
-  }
-
-}
-
-const isObject = (x : any) => {
-  return typeof x === 'object' && !Array.isArray(x) && x !== null
-}
-const isObjectNotEmpty = (x : any) => isObject(x) && Object.keys(x).length != 0
-
-const hasActiveYesNoOrderBook = (orderbook : any) => {
-  if (!!orderbook) {
-    let yes = orderbook.yes && orderbook.yes.buy && Array.isArray(orderbook.yes.buy) && orderbook.yes.buy.length != 0 && orderbook.yes.buy[0].price && orderbook.yes.sell && Array.isArray(orderbook.yes.sell) && orderbook.yes.sell.length != 0 && orderbook.yes.sell[0].price
-    let no = orderbook.no && orderbook.no.buy && Array.isArray(orderbook.no.buy) && orderbook.no.buy.length != 0 && orderbook.no.buy[0].price && orderbook.no.sell && Array.isArray(orderbook.no.sell) && orderbook.no.sell.length != 0 && orderbook.no.sell[0].price
-    return isObjectNotEmpty(yes) && isObjectNotEmpty(no)
-  } else {
-    return false
-  }
-}
-
-const isBinaryQuestion = (data : any) => Array.isArray(data) && data.length == 1
-
-const geomMean = (a : number, b : number) => Math.sqrt(a * b)
 
 const processMarket = (market : any) => {
   let hasData = !!market && !!market.answer && !!market.answer.data
   if (hasData) {
     let data = market.answer.data
+    // console.log("has data")
     if (isBinaryQuestion(data)) {
       let orderbook = data[0].orderbook
-      if (!! orderbook && hasActiveYesNoOrderBook(orderbook)) {
+      // console.log("has orderbook")
+      // console.log(JSON.stringify(orderbook, null, 2))
+      if (!! orderbook && hasActiveYesNoOrderBook(orderbook)) { // console.log("has active orderbook")
         let yes_min_cents = orderbook.yes.buy[0].price
         let yes_max_cents = orderbook.yes.sell[0].price
         let yes_min = Number(yes_min_cents.slice(0, -1))
@@ -84,7 +95,7 @@ const processMarket = (market : any) => {
         let latest_yes_price = data[0].latest_yes_price
         let yes_probability = latest_yes_price ? geomMean(latest_yes_price, yes_price_orderbook) : yes_price_orderbook
         const id = `${platformName}-${
-          data.id
+          market.id
         }`;
         const probability = yes_probability / 100;
         const options: FetchedQuestion["options"] = [
@@ -99,14 +110,14 @@ const processMarket = (market : any) => {
           },
         ];
         const result: FetchedQuestion = {
-          id,
-          title: data.title,
-          url: data.urls,
-          description: data.rules || "",
+          id: id,
+          title: market.title,
+          url: market.url,
+          description: processDescriptionText(market.rules),
           options,
-          qualityindicators: {
-            trade_volume: data.volume
-          }
+          qualityindicators: market.coin_id == "USD" ? (
+            {volume: market.volume}
+          ) : ({})
         };
         return result;
 
@@ -122,7 +133,7 @@ const processMarket = (market : any) => {
 }
 
 async function fetchAllMarkets(bearer: string) {
-  let pageNum = 122
+  let pageNum = 1
   let markets = []
   let categories = []
   let isEnd = false
@@ -141,17 +152,22 @@ async function fetchAllMarkets(bearer: string) {
         let fullMarketDataResponse = await fetchMarket(bearer, initMarketData.id)
         let fullMarketData = fullMarketDataResponse.data
         let processedMarketData = processMarket(fullMarketData)
-        
-        let title = fullMarketData.title
-        console.log(`Adding: ${title}`)
+
+        console.log(`- Adding: ${
+          fullMarketData.title
+        }`)
         console.group()
+        console.log(fullMarketData)
         console.log(JSON.stringify(processedMarketData, null, 2))
         console.groupEnd()
-        markets.push(processedMarketData)
 
+        if (processedMarketData != null) {
+          markets.push(processedMarketData)
+        }
+        
         let category = fullMarketData.category
         categories.push(category)
-        
+
       }
     } else {
       isEnd = true
@@ -159,6 +175,7 @@ async function fetchAllMarkets(bearer: string) {
   }
   console.log(markets)
   console.log(categories)
+  return markets
 }
 /*
 async function fetchQuestionStats(bearer : string, marketId : number) {
@@ -260,12 +277,12 @@ export const insight: Platform = {
     let bearer = process.env.INSIGHT_BEARER;
     if (!! bearer) {
       let data = await fetchAllMarkets(bearer);
-      console.log(data);
+      return data
     } else {
       throw Error("No INSIGHT_BEARER available in environment")
     }
-    let results: FetchedQuestion[] = []; // await processPredictions(data); // somehow needed
-    return results;
+    // let results: FetchedQuestion[] = []; // await processPredictions(data); // somehow needed
+    // return results;
   },
   calculateStars(data) {
     return 2;
