@@ -97,7 +97,7 @@ export default async function searchWithAlgolia({
         url: "https://metaforecast.org",
         platform: "metaforecast",
         platformLabel: "metaforecast",
-        description: "Maybe try a broader query?",
+        description: "Maybe try a broader query, e.g., reduce the number of 'stars' by clicking in 'Advanced options'?",
         options: [
           {
             name: "Yes",
@@ -166,7 +166,7 @@ export default async function searchWithAlgolia({
       url: "https://metaforecast.org",
       platform: "metaforecast",
       platformLabel: "metaforecast",
-      description: "Maybe try a broader query? That said, we could be wrong.",
+      description: "Maybe try a broader query? Maybe try a broader query, e.g., reduce the number of 'stars' by clicking in 'Advanced options'? That said, we could be wrong.",
       options: [
         {
           name: "Yes",
