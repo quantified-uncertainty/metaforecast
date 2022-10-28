@@ -1,20 +1,32 @@
 /* Imports */
+import {or} from "ajv/dist/compile/codegen";
 import axios from "axios";
 
 import {FetchedQuestion, Platform} from ".";
+import {QuestionOption} from "../../common/types";
 import toMarkdown from "../utils/toMarkdown";
 
 /* Definitions */
 const platformName = "insight";
 const marketsEnpoint = "https://insightprediction.com/api/markets?orderBy=is_resolved&sortedBy=asc";
 const getMarketEndpoint = (id : number) => `https://insightprediction.com/api/markets/${id}`;
+const SPORTS_CATEGORIES = [
+  'World Cup',
+  'MLB',
+  'Futures',
+  'Sports',
+  'EPL',
+  'Golf',
+  'NHL',
+  'College Football'
+]
 
 /* Support functions */
 
 // Stubs
 const excludeMarketFromTitle = (title : any) => {
   if (!!title) {
-    return title.includes(" vs ") || title.includes(" Over: ")
+    return title.includes(" vs ") || title.includes(" Over: ") || title.includes("NFL") || title.includes("Will there be a first time winner") || title.includes("Premier League")
   } else {
     return true
   }
@@ -42,6 +54,15 @@ const processDescriptionText = (text : any) => {
   } else {
     return ""
   }
+}
+
+const getOrderbookPrize = (orderbook : any) => {
+  let yes_min_cents = orderbook.yes.buy[0].price
+  let yes_max_cents = orderbook.yes.sell[0].price
+  let yes_min = Number(yes_min_cents.slice(0, -1))
+  let yes_max = Number(yes_max_cents.slice(0, -1))
+  let yes_price_orderbook = geomMean(yes_min, yes_max)
+  return yes_price_orderbook
 }
 
 // Fetching
@@ -76,9 +97,12 @@ async function fetchMarket(bearer: string, marketId: number) {
 
 }
 
-
 const processMarket = (market : any) => {
   let hasData = !!market && !!market.answer && !!market.answer.data
+  const id = `${platformName}-${
+    market.id
+  }`;
+
   if (hasData) {
     let data = market.answer.data
     // console.log("has data")
@@ -87,16 +111,10 @@ const processMarket = (market : any) => {
       // console.log("has orderbook")
       // console.log(JSON.stringify(orderbook, null, 2))
       if (!! orderbook && hasActiveYesNoOrderBook(orderbook)) { // console.log("has active orderbook")
-        let yes_min_cents = orderbook.yes.buy[0].price
-        let yes_max_cents = orderbook.yes.sell[0].price
-        let yes_min = Number(yes_min_cents.slice(0, -1))
-        let yes_max = Number(yes_max_cents.slice(0, -1))
-        let yes_price_orderbook = geomMean(yes_min, yes_max)
+
         let latest_yes_price = data[0].latest_yes_price
+        let yes_price_orderbook = getOrderbookPrize(orderbook)
         let yes_probability = latest_yes_price ? geomMean(latest_yes_price, yes_price_orderbook) : yes_price_orderbook
-        const id = `${platformName}-${
-          market.id
-        }`;
         const probability = yes_probability / 100;
         const options: FetchedQuestion["options"] = [
           {
@@ -125,7 +143,35 @@ const processMarket = (market : any) => {
         return null
       }
     } else { // non binary question
-      return null // for now
+      console.log("Non-binary question")
+      console.log(market)
+      console.log(data)
+      let options = []
+      for (let answer of data) {
+        let orderbook = answer.orderbook
+        if (!! orderbook && hasActiveYesNoOrderBook(orderbook)) {
+          let latest_yes_price = answer.latest_yes_price
+          let yes_price_orderbook = getOrderbookPrize(orderbook)
+          let yes_probability = latest_yes_price ? geomMean(latest_yes_price, yes_price_orderbook) : yes_price_orderbook
+          let newOption: QuestionOption = ({
+            name: String(answer.title),
+            probability: Number(yes_probability / 100),
+            type: "PROBABILITY"
+          });
+          options.push(newOption)
+        }
+      }
+      const result: FetchedQuestion = {
+        id: id,
+        title: market.title,
+        url: market.url,
+        description: processDescriptionText(market.rules),
+        options,
+        qualityindicators: market.coin_id == "USD" ? (
+          {volume: market.volume}
+        ) : ({})
+      };
+      return result;
     }
   } else {
     return null
@@ -133,7 +179,7 @@ const processMarket = (market : any) => {
 }
 
 async function fetchAllMarkets(bearer: string) {
-  let pageNum = 1
+  let pageNum = 2559
   let markets = []
   let categories = []
   let isEnd = false
@@ -153,18 +199,18 @@ async function fetchAllMarkets(bearer: string) {
         let fullMarketData = fullMarketDataResponse.data
         let processedMarketData = processMarket(fullMarketData)
 
-        console.log(`- Adding: ${
-          fullMarketData.title
-        }`)
-        console.group()
-        console.log(fullMarketData)
-        console.log(JSON.stringify(processedMarketData, null, 2))
-        console.groupEnd()
+        if (processedMarketData != null && ! SPORTS_CATEGORIES.includes(fullMarketData.category)) {
+          console.log(`- Adding: ${
+            fullMarketData.title
+          }`)
+          console.group()
+          console.log(fullMarketData)
+          console.log(JSON.stringify(processedMarketData, null, 2))
+          console.groupEnd()
 
-        if (processedMarketData != null) {
           markets.push(processedMarketData)
         }
-        
+
         let category = fullMarketData.category
         categories.push(category)
 
