@@ -5,6 +5,7 @@ import axios from "axios";
 import {FetchedQuestion, Platform} from ".";
 import {QuestionOption} from "../../common/types";
 import toMarkdown from "../utils/toMarkdown";
+import { average } from "../../utils";
 
 /* Definitions */
 const platformName = "insight";
@@ -318,6 +319,19 @@ export const insight: Platform = {
     // return results;
   },
   calculateStars(data) {
-    return 2;
+    let nuno = () => {
+      if((data.qualityindicators.volume || 0) > 10000){
+        return 4
+      } else if((data.qualityindicators.volume || 0) > 1000){
+        return 3
+      } else{
+        return 2
+      }
+    }
+    let eli = () => null;
+    let misha = () => null;
+    let starsDecimal = average([nuno()]); //, eli(data), misha(data)])
+    let starsInteger = Math.round(starsDecimal);
+    return starsInteger;
   }
 };
