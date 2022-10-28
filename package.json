@@ -7,7 +7,8 @@
     "url": "git+https://github.com/QURIresearch/metaforecast.git"
   },
   "keywords": [
-    "forecasts", "predictions"
+    "forecasts",
+    "predictions"
   ],
   "author": "Nuño Sempere",
   "license": "MIT",
@@ -40,7 +41,7 @@
     "@types/google-spreadsheet": "^3.3.0",
     "@types/jsdom": "^16.2.15",
     "@types/nprogress": "^0.2.0",
-    "@types/react": "^17.0.50",
+    "@types/react": "<18.0.0",
     "@types/react-copy-to-clipboard": "^5.0.4",
     "@types/textversionjs": "^1.1.1",
     "@types/tunnel": "^0.0.3",
