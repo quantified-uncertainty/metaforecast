@@ -1590,16 +1590,16 @@
     chalk "4.1.2"
     cross-spawn "7.0.3"
 
-"@quri/squiggle-lang@^0.2.12":
-  version "0.2.12"
-  resolved "https://registry.yarnpkg.com/@quri/squiggle-lang/-/squiggle-lang-0.2.12.tgz#e8fdb22a84aa75df71c071d1ed4ae5c55f15d447"
-  integrity sha512-fgv9DLvPlX/TqPSacKSW3GZ5S9H/YwqaMoRdFrn5SJjHnnMh/xJW/9iyzzgOxPCXov9xFeDvL159tkbStMm7vw==
+"@quri/squiggle-lang@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@quri/squiggle-lang/-/squiggle-lang-0.5.0.tgz#bc1dfbf3ed1fb63e3b81a446a3545871e7f36d1c"
+  integrity sha512-crA2ylou8ePDBJyIONYRN5TWqYrLyLsrGwrmA8LrcUZOtS5kgG+wUhvmT91tHgQx/JHtAzdDlYBHCzQPwW8gmQ==
   dependencies:
     "@rescript/std" "^9.1.4"
     "@stdlib/stats" "^0.0.13"
     jstat "^1.9.5"
     lodash "^4.17.21"
-    mathjs "^11.0.1"
+    mathjs "^11.2.1"
     pdfast "^0.2.0"
 
 "@repeaterjs/repeater@^3.0.4":
@@ -2337,7 +2337,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@<18.0.0", "@types/react@^17.0.50":
+"@types/react@*", "@types/react@<18.0.0":
   version "17.0.52"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.52.tgz#10d8b907b5c563ac014a541f289ae8eaa9bf2e9b"
   integrity sha512-vwk8QqVODi0VaZZpDXQCmEmiOuyjEFPY7Ttaw5vjM112LOq37yz1CDJGrRJwA1fYEq4Iitd5rnjd1yWAc/bT+A==
@@ -5600,7 +5600,7 @@ markdown-table@^3.0.0:
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-3.0.2.tgz#9b59eb2c1b22fe71954a65ff512887065a7bb57c"
   integrity sha512-y8j3a5/DkJCmS5x4dMCQL+OR0+2EAq3DOtio1COSHsmW2BGXnNCK3v12hJt1LrUz5iZH5g0LmuYOjDdI+czghA==
 
-mathjs@^11.0.1:
+mathjs@^11.2.1:
   version "11.3.2"
   resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-11.3.2.tgz#6bac058b486247db41475a52f6fbe3bb01e5ef6f"
   integrity sha512-p3QRDt16OrS7R/7Y29qHldua9YkiyPQLenjsqcPuE+feo3q5iO77G8QXeBxfDHhQUqH+5IGlJIZozl7hpaPUvg==

@@ -21,7 +21,7 @@ export default async function handler(
     res.status(400).send({
       tag: "Error",
       value: `Incorrect request to server. Try sending a json which contains a "model" property, such as:
-$ curl -X POST -H "Content-Type: application/json"     -d '{"model": "1 to 4"}'     https://metaforecast.org/api/squiggle `,
+$ curl -X POST -H "Content-Type: application/json" -d '{"model": "x= 1 to 10\ny=1 to 100\nresult = mean(x*y)\nresult"}' https://metaforecast.org/api/squiggle`,
     });
   } else {
     console.log(body.model);
