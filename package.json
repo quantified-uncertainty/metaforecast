@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "@floating-ui/react-dom": "^0.7.2",
-    "@graphql-yoga/node": "^2.13.13",
     "@pothos/core": "^3.22.8",
     "@pothos/plugin-prisma": "^3.35.6",
     "@pothos/plugin-relay": "^3.28.6",

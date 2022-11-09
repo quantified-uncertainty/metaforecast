@@ -17,8 +17,8 @@ const truncateText = (length: number, text: string): string => {
     return text;
   }
   const breakpoints = " .!?";
-  let lastLetter: string | undefined = undefined;
-  let lastIndex: number | undefined = undefined;
+  let lastLetter
+  let lastIndex
   for (let index = length; index > 0; index--) {
     const letter = text[index];
     if (breakpoints.includes(letter)) {
