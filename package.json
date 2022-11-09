@@ -60,6 +60,7 @@
     "google-spreadsheet": "^3.3.0",
     "graphql": "^16.6.0",
     "graphql-request": "^4.3.0",
+    "graphql-yoga": "^3.0.0-next.10",
     "html-to-image": "^1.10.8",
     "https": "^1.0.0",
     "isomorphic-fetch": "^3.0.0",
