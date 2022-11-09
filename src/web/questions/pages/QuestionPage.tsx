@@ -72,7 +72,7 @@ const Section: React.FC<{ title: string; id?: string }> = ({
 const EmbedSection: React.FC<{ question: QuestionWithHistoryFragment }> = ({
   question,
 }) => {
-  const url = /*getBasePath() */ + `https://metaforecast.org/questions/embed/${question.id}`;
+  const url = /*getBasePath() + */ `https://metaforecast.org/questions/embed/${question.id}`;
   return (
     <Section title="Embed" id="embed">
       <CopyParagraph
