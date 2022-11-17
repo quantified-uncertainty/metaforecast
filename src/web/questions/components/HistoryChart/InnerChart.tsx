@@ -16,7 +16,7 @@ import {
 import { chartColors, ChartData, ChartSeries, goldenRatio } from "./utils";
 
 const height = 200
-const width = height * goldenRatio
+const width = 200 * goldenRatio
 let dateFormat = "dd/MM/yy"; // "yyyy-MM-dd" // "MMM do yy"
 
 // can't be replaced with React component, VictoryChart requires VictoryGroup elements to be immediate children
@@ -73,8 +73,8 @@ export const InnerChart: React.FC<Props> = ({
   const domainMax =
     maxProbability < 0.5 ? Math.round(10 * (maxProbability + 0.05)) / 10 : 1;
   const padding = {
-    top: 15,
-    bottom: 50,
+    top: 12,
+    bottom: 33,
     left: 30,
     right: 17,
   };
@@ -164,7 +164,7 @@ export const InnerChart: React.FC<Props> = ({
             dx={-10}
             dy={0}
             angle={-30}
-            style={{ fontSize: 10, fill: "#777" }}
+            style={{ fontSize: 9, fill: "#777" }}
           />
         }
         scale={{ x: "time" }}

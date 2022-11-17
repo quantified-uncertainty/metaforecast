@@ -30,18 +30,19 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
     props: {
       urqlState: ssrCache.extractData(),
       id,
+      question
     },
   };
 };
 
 const EmbedQuestionPage: NextPage<Props> = ({ id }) => {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="block bg-white min-h-screen">
       <Query document={QuestionPageDocument} variables={{ id }}>
         {({ data: { result: question } }) =>
           question ? (
-            <div className="flex flex-col pl-4 pt-2 ">
-              <QuestionTitle question={question} linkToMetaforecast={true} />
+            <div className="flex flex-col p-2 w-full h-12/12">
+              {/*<QuestionTitle question={question} linkToMetaforecast={true} /> */}
 
               <div className="mb-1 mt-1">
                 <QuestionInfoRow question={question} />
