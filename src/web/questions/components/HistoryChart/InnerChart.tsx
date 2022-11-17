@@ -15,9 +15,9 @@ import {
 
 import { chartColors, ChartData, ChartSeries, goldenRatio } from "./utils";
 
-const height = 400
+const height = 200
 const width = height * goldenRatio
-let dateFormat = "MMM do y"; // "yyyy-MM-dd"
+let dateFormat = "dd/MM/yy"; // "yyyy-MM-dd" // "MMM do yy"
 
 // can't be replaced with React component, VictoryChart requires VictoryGroup elements to be immediate children
 const getVictoryGroup = ({
@@ -39,7 +39,7 @@ const getVictoryGroup = ({
           data: {
             // strokeOpacity: highlight ?  1 : 0.5,
             strokeOpacity: highlight && !isBinary ? 0.8 : 0.6,
-            strokeWidth: highlight && !isBinary ? 4 : 3,
+            strokeWidth: highlight && !isBinary ? 2.5 : 1.5,
           },
         }}
       />
@@ -73,9 +73,9 @@ export const InnerChart: React.FC<Props> = ({
   const domainMax =
     maxProbability < 0.5 ? Math.round(10 * (maxProbability + 0.05)) / 10 : 1;
   const padding = {
-    top: 20,
-    bottom: 75,
-    left: 70,
+    top: 15,
+    bottom: 50,
+    left: 30,
     right: 17,
   };
 
@@ -101,12 +101,12 @@ export const InnerChart: React.FC<Props> = ({
                 <VictoryLabel
                   style={[
                     {
-                      fontSize: 16,
+                      fontSize: 10,
                       fill: "black",
                       strokeWidth: 0.05,
                     },
                     {
-                      fontSize: 16,
+                      fontSize: 10,
                       fill: "#777",
                       strokeWidth: 0.05,
                     },
@@ -120,7 +120,7 @@ export const InnerChart: React.FC<Props> = ({
                 )}`
               }
               style={{
-                fontSize: 17, // needs to be set here and not just in labelComponent for text size calculations
+                fontSize: 10, // needs to be set here and not just in labelComponent for text size calculations
                 fontFamily:
                   '"Gill Sans", "Gill Sans MT", "Ser­avek", "Trebuchet MS", sans-serif',
                 // default font family from Victory, need to be specified explicitly for some reason, otherwise text size gets miscalculated
@@ -130,10 +130,10 @@ export const InnerChart: React.FC<Props> = ({
                 fill: "white",
               }}
               cornerRadius={4}
-              flyoutPadding={{ top: 4, bottom: 4, left: 16, right: 16 }}
+              flyoutPadding={{ top: 4, bottom: 4, left: 10, right: 10 }}
             />
           }
-          radius={50}
+          radius={20}
           voronoiBlacklist={
             [...Array(seriesList.length).keys()].map((i) => `line-${i}`)
             // see: https://github.com/FormidableLabs/victory/issues/545
@@ -161,10 +161,10 @@ export const InnerChart: React.FC<Props> = ({
         }}
         tickLabelComponent={
           <VictoryLabel
-            dx={-40}
+            dx={-10}
             dy={0}
             angle={-30}
-            style={{ fontSize: 15, fill: "#777" }}
+            style={{ fontSize: 10, fill: "#777" }}
           />
         }
         scale={{ x: "time" }}
@@ -176,7 +176,7 @@ export const InnerChart: React.FC<Props> = ({
           grid: { stroke: "#D3D3D3", strokeWidth: 0.5 },
         }}
         tickLabelComponent={
-          <VictoryLabel dy={0} style={{ fontSize: 18, fill: "#777" }} />
+          <VictoryLabel dy={0} dx={5} style={{ fontSize: 9, fill: "#777" }} />
         }
         // tickFormat specifies how ticks should be displayed
         tickFormat={(x) => `${x * 100}%`}
@@ -207,6 +207,7 @@ export const InnerChart: React.FC<Props> = ({
             })
             */
       }
+      
     </VictoryChart>
   );
 };

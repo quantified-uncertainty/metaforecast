@@ -40,14 +40,14 @@ const EmbedQuestionPage: NextPage<Props> = ({ id }) => {
       <Query document={QuestionPageDocument} variables={{ id }}>
         {({ data: { result: question } }) =>
           question ? (
-            <div className="flex flex-col p-4 ">
+            <div className="flex flex-col pl-4 pt-2 ">
               <QuestionTitle question={question} linkToMetaforecast={true} />
 
-              <div className="mb-5 mt-5">
+              <div className="mb-1 mt-1">
                 <QuestionInfoRow question={question} />
               </div>
 
-              <div className="mb-10">
+              <div className="mb-0">
                 <QuestionChartOrVisualization question={question} />
               </div>
             </div>
