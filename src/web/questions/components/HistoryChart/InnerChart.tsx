@@ -13,8 +13,10 @@ import {
   VictoryVoronoiContainer,
 } from "victory";
 
-import { chartColors, ChartData, ChartSeries, height, width } from "./utils";
+import { chartColors, ChartData, ChartSeries, goldenRatio } from "./utils";
 
+const height = 400
+const width = height * goldenRatio
 let dateFormat = "MMM do y"; // "yyyy-MM-dd"
 
 // can't be replaced with React component, VictoryChart requires VictoryGroup elements to be immediate children

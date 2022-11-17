@@ -18,7 +18,7 @@ export const chartColors = [
   "#F59E0B", // amber-500
 ];
 
-const goldenRatio = (1 + Math.sqrt(5)) / 2;
+export const goldenRatio = (1 + Math.sqrt(5)) / 2;
 // used both for chart and for ssr placeholder
 export const width = 750;
 export const height = width / goldenRatio;
