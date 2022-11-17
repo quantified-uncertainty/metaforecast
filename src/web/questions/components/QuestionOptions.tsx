@@ -101,7 +101,7 @@ const OptionRow: React.FC<OptionProps> = ({ option, mode, textMode }) => {
       <div
         className={`flex-none rounded-md text-center ${
           mode === "primary"
-            ? "text-normal text-white px-2 py-0.5 font-bold"
+            ? "text-sm md:text-lg text-normal text-white px-2 py-0.5 font-bold"
             : "text-sm w-14 py-0.5"
         } ${
           mode === "primary"
@@ -113,7 +113,7 @@ const OptionRow: React.FC<OptionProps> = ({ option, mode, textMode }) => {
       </div>
       <div
         className={`leading-snug ${
-          mode === "primary" ? "text-normal" : "text-sm"
+          mode === "primary" ? "text-sm md:text-lg text-normal" : "text-sm"
         } ${
           mode === "primary" ? textColor(option.probability) : "text-gray-700"
         }`}

@@ -54,5 +54,5 @@ function getStarsColor(numstars: number) {
 }
 
 export const Stars: React.FC<{ num: number }> = ({ num }) => {
-  return <div className={getStarsColor(num)}>{getstars(num)}</div>;
+  return <div className={getStarsColor(num) + " text-xs md:text-lg"}>{getstars(num)}</div>;
 };
