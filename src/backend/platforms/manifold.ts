@@ -92,8 +92,8 @@ function processPredictions(predictions: any[]): FetchedQuestion[] {
       options,
       qualityindicators: {
         createdTime: prediction.createdTime,
-        volume7Days: prediction.volume7Days,
-        volume24Hours: prediction.volume24Hours,
+        // volume7Days: prediction.volume7Days, // deprecated.
+        volume24Hours: prediction.volume24Hours, 
         pool: prediction.pool, // normally liquidity, but I don't actually want to show it.
       },
       extra: {
@@ -122,9 +122,9 @@ export const manifold: Platform = {
   },
   calculateStars(data) {
     let nuno = () =>
-      (data.qualityindicators.volume7Days || 0) > 250 ||
+      (data.qualityindicators.volume24Hours || 0) > 100 ||
       ((data.qualityindicators.pool || 0) > 500 &&
-        (data.qualityindicators.volume7Days || 0) > 100)
+        (data.qualityindicators.volume24Hours || 0) > 50)
         ? 2
         : 1;
     let eli = () => null;
