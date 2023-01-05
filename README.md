@@ -89,6 +89,7 @@ Overall, the services which we use are:
 
 ## Various notes
 
+- This repository is released under the [MIT license](https://opensource.org/licenses/MIT). See `LICENSE.md`
 - Commits follow [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary)
 - For elicit and metaculus, this library currently filters out questions with <10 predictions.
 - The database is updated once a day, at 3:00 AM UTC, with the command `ts-node -T src/backend/flow/doEverythingForScheduler.ts`. The frontpage is updated after that, at 6:00 AM UTC with the command `ts-node -T src/backend/index.ts frontpage`. It's possible that either of these two operations makes the webpage briefly go down.
@@ -97,6 +98,7 @@ Overall, the services which we use are:
 
 - [x] Update Metaculus and Manifold Markets fetchers
 - [x] Add markets from [Insight Prediction](https://insightprediction.com/).
+- [ ] Use <https://news.manifold.markets/p/above-the-fold-midterms-special> to update stars calculation for Manifold.
 - [ ] Add a few more snippets, with fetching individual questions, questions with histories, questions added within the last 24h to the /contrib folder (good first issue)
 - [ ] Refactor code so that users can capture and push the question history chart to imgur (good first issue)
 - [ ] Upgrade to [React 18](https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html). This will require dealing with the workaround we used for [this issue](https://github.com/vercel/next.js/issues/36019#issuecomment-1103266481)

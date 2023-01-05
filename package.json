@@ -24,7 +24,8 @@
     "build": "prisma generate && next build",
     "next-start": "next start",
     "next-export": "next export",
-    "dbshell": ". .env && psql $DIGITALOCEAN_POSTGRES"
+    "dbshell": ". .env && psql $DIGITALOCEAN_POSTGRES",
+    "upgrade-interactive": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
     "@floating-ui/react-dom": "^0.7.2",
