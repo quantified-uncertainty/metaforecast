@@ -13,7 +13,7 @@ import {
 
 const platformName = "metaculus";
 const now = new Date().toISOString();
-const SLEEP_TIME = 1000;
+const SLEEP_TIME = 2000;
 
 async function apiQuestionToFetchedQuestions(apiQuestion: ApiQuestion): Promise<FetchedQuestion[]> {
   // one item can expand:
