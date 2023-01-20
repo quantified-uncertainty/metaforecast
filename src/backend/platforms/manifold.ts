@@ -18,7 +18,6 @@ async function fetchPage(endpoint: string) {
     headers: {
       "Content-Type": "text/json",
     },
-    'accept-encoding': 'application/json'
   }).then((response) => response.data);
   // console.log(response)
   return response;
