@@ -41,16 +41,17 @@ export const goodjudgment: Platform = {
     //     port: proxy.port,
     // },
     // });
-
+    /*
     const content = await axios.request({
       url: "https://goodjudgment.io/superforecasts/",
       method: "get",
       headers: {
-        "User-Agent": "Chrome"
+        "User-Agent": "Firefox"
       },
       // agent,
       // port: 80,
     }).then((query) => query.data);
+    console.log(content)
 
     // Processing
     let results: FetchedQuestion[] = [];
@@ -59,6 +60,7 @@ export const goodjudgment: Platform = {
     jsonTable.pop(); // deletes last element
 
     for (let table of jsonTable) {
+      console.log(table)
       let title = table[0]["0"].split("\t\t\t").splice(3)[0];
       if (title != undefined) {
         title = title.replaceAll("</a>", "");
@@ -96,6 +98,9 @@ export const goodjudgment: Platform = {
     console.log("Failing is not unexpected; see utils/pullSuperforecastsManually.sh/js");
 
     return results;
+    */
+    console.log("Good Judgment fetcher out of commission for now.")
+    return []
   },
   calculateStars(data) {
     let nuno = () => 4;
