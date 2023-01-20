@@ -16,8 +16,9 @@ async function fetchPage(endpoint: string) {
     url: endpoint,
     method: "GET",
     headers: {
-      "Content-Type": "text/html",
+      "Content-Type": "text/json",
     },
+    'accept-encoding': 'application/json'
   }).then((response) => response.data);
   // console.log(response)
   return response;
@@ -31,6 +32,7 @@ async function fetchAllData(){
   while(!end){
     console.log(`Query #${counter}: ${endpoint}`)
     let newData = await fetchPage(endpoint)
+    // console.log(newData)
     if(Array.isArray(newData)){
       allData.push(...newData)
       let hasReachedEnd = (newData.length == 0) || (newData[newData.length -1] == undefined) || (newData[newData.length -1].id == undefined)
