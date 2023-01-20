@@ -71,6 +71,7 @@ export const kalshi: Platform = {
   version: "v1",
   fetcher: async function () {
     let markets = await fetchAllMarkets();
+    console.log(markets)
     return await processMarkets(markets);
   },
   calculateStars(data) {

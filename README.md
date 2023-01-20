@@ -98,6 +98,10 @@ Overall, the services which we use are:
 
 - [x] Update Metaculus and Manifold Markets fetchers
 - [x] Add markets from [Insight Prediction](https://insightprediction.com/).
+- [ ] Update broken fetchers:
+  - [ ] For Good Judgment: Maybe too much trouble, as GJ seems to have gone to a bit of trouble to make this hard.
+  - [ ] Kalshi: Requires a US person to create an account to access their v2 api.
+  - [ ]
 - [ ] Use <https://news.manifold.markets/p/above-the-fold-midterms-special> to update stars calculation for Manifold.
 - [ ] Add a few more snippets, with fetching individual questions, questions with histories, questions added within the last 24h to the /contrib folder (good first issue)
 - [ ] Refactor code so that users can capture and push the question history chart to imgur (good first issue)
