@@ -108,7 +108,7 @@ function isSignedIn(html : string) {
 }
 
 function reachedEnd(html : string) {
-  let reachedEndBool = html.includes("No questions match your filter");
+  let reachedEndBool = html.includes("No questions match your filter") || !html.includes("Good Judgment");
   if (reachedEndBool) { // console.log(html)
   }
   console.log(`Reached end? ${reachedEndBool}`);
