@@ -1,7 +1,12 @@
 import axios, { AxiosRequestConfig } from "axios";
 
+interface AxiosRequestConfigWithAnyHeaders extends Omit<AxiosRequestConfig, "headers"> {
+	headers?: any;
+  // See: <https://github.com/axios/axios/issues/4193>
+}
+
 export async function uploadToImgur(dataURL: string): Promise<string> {
-  const request: AxiosRequestConfig = {
+  const request: AxiosRequestConfigWithAnyHeaders = {
     method: "post",
     url: "https://api.imgur.com/3/image",
     headers: {
