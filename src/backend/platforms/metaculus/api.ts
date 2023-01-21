@@ -242,11 +242,15 @@ export async function fetchApiQuestions(
           console.warn(`Unknown result type ${result.type}, skipping`);
           return undefined;
         }
+
         if (!validateQuestion(result)) {
-          throw new Error(
-            `Response validation failed: ` +
+          //throw new Error(
+          console.log(  `Response validation failed: ` +
               JSON.stringify(validateQuestion.errors)
           );
+          console.log("Failed result: ")
+          console.log(result)
+          return undefined
         }
         return result;
       })
