@@ -1,13 +1,48 @@
 /* Imports */
 import axios from "axios";
 
-import { average } from "../../utils";
-import { FetchedQuestion, Platform } from "./";
+import api from 'api';
+const kalshi_api = api('@trading-api/v2.0#13mtbs10lc863irx');
+
+import {average} from "../../utils";
+import {FetchedQuestion, Platform} from "./";
 
 /* Definitions */
 const platformName = "kalshi";
-let jsonEndpoint = "https://trading-api.kalshi.com/v1/cached/markets/";
+let jsonEndpoint = "https://trading-api.kalshi.com/v2";
 
+async function fetchAllMarkets() {
+  try {
+    let response = await kalshi_api.login({email: process.env.KALSHI_EMAIL, password: process.env.KALSHI_PASSWORD})
+    console.log(response.data)
+    let exchange_status = await kalshi_api.getExchangeStatus()
+    console.log(exchange_status.data)
+
+    // kalshi_api.auth(process.env.KALSHI_EMAIL, process.env.KALSHI_PASSWORD);
+    kalshi_api.auth(response.member_id, response.token)
+    /* 
+    */
+    let market_params = ({
+      limit: '100',
+      cursor: null,
+      event_ticker: null,
+      series_ticker: null,
+      max_close_ts: null,
+      min_close_ts: null,
+      status: null,
+      tickers: null
+    })
+    let markets = await kalshi_api.getMarkets(market_params).then(({data}) => console.log(data))
+    console.log(markets)
+
+  } catch (error) {
+    console.log(error)
+  }
+
+  return 1
+}
+
+/*
 async function fetchAllMarkets() {
   let response = await axios
     .get(jsonEndpoint)
@@ -63,6 +98,7 @@ async function processMarkets(markets: any[]) {
 
   return results;
 }
+*/
 
 export const kalshi: Platform = {
   name: platformName,
@@ -70,33 +106,23 @@ export const kalshi: Platform = {
   color: "#615691",
   version: "v1",
   fetcher: async function () {
-    let markets = await fetchAllMarkets();
-    console.log(markets)
-    return await processMarkets(markets);
+    // let markets = await fetchAllMarkets();
+    // console.log(markets)
+    return []
   },
   calculateStars(data) {
-    let nuno = () =>
-      ((data.extra as any)?.open_interest || 0) > 500 &&
-      data.qualityindicators.shares_volume > 10000
-        ? 4
-        : data.qualityindicators.shares_volume > 2000
-        ? 3
-        : 2;
+    let nuno = () => ((data.extra as any) ?. open_interest || 0) > 500 && data.qualityindicators.shares_volume > 10000 ? 4 : data.qualityindicators.shares_volume > 2000 ? 3 : 2;
     // let eli = (data) => data.interest > 10000 ? 5 : 4
     // let misha = (data) => 4
-    let starsDecimal = average([nuno()]); //, eli(data), misha(data)])
+    let starsDecimal = average([nuno()]);
+    // , eli(data), misha(data)])
 
     // Substract 1 star if probability is above 90% or below 10%
-    if (
-      data.options instanceof Array &&
-      data.options[0] &&
-      ((data.options[0].probability || 0) < 0.1 ||
-        (data.options[0].probability || 0) > 0.9)
-    ) {
+    if (data.options instanceof Array && data.options[0] && ((data.options[0].probability || 0) < 0.1 || (data.options[0].probability || 0) > 0.9)) {
       starsDecimal = starsDecimal - 1;
     }
 
     let starsInteger = Math.round(starsDecimal);
     return starsInteger;
-  },
+  }
 };
