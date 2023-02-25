@@ -8,7 +8,7 @@ import { Layout } from "../web/common/Layout";
 
 const readmeMarkdownText = `# About
 
-This webpage is a search engine for probabilities. Given a query, it searches for relevant questions in various prediction markets and forecasting platforms. For example, try searching for "China", "North Korea", "Semiconductors", "COVID", "Trump", or "X-risk". In addition to search, we also provide various [tools](http://localhost:3000/tools).
+This webpage is a search engine for probabilities. Given a query, it searches for relevant questions in various prediction markets and forecasting platforms. For example, try searching for "China", "North Korea", "Semiconductors", "COVID", "Trump", or "X-risk". In addition to search, we also provide various [tools](http://metaforecast.org/tools).
 
 We are very interested in integrating Metaforecast with other services, and the whole thing is [open source](https://github.com/QURIresearch/metaforecast). So far, Metaforecast has been integrated with [Twitter](https://twitter.com/NunoSempere/status/1433160907308294144), [Fletcher](https://fletcher.fun/), [GlobalGuessing](https://globalguessing.com/russia-ukraine-forecasts/) and previously [Elicit](https://elicit.org/).
 
