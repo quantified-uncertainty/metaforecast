@@ -32,8 +32,8 @@ async function fetchAllMarkets() {
       status: null,
       tickers: null
     })
-    let markets = await kalshi_api.getMarkets(market_params).then(({data: any}) => console.log(data))
-    console.log(markets)
+    // let markets = await kalshi_api.getMarkets(market_params).then(({data: any}) => console.log(data))
+    // console.log(markets)
 
   } catch (error) {
     console.log(error)
