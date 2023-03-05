@@ -20,6 +20,7 @@
     "cli": "ts-node -T src/backend/index.ts",
     "reload": "heroku run:detached ts-node -T src/backend/flow/doEverythingForScheduler.js",
     "setCookies": "./src/backend/manual/setCookies.sh",
+    "cookies": "./src/backend/manual/setCookies.sh",
     "next-dev": "next dev",
     "build": "prisma generate && next build",
     "next-start": "next start",
