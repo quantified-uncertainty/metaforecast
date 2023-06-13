@@ -43,7 +43,7 @@ const predictableProps = {
     },
     additionalProperties: true,
   },
-  number_of_predictions: {
+  prediction_count: {
     type: "uint32",
   },
   community_prediction: {
