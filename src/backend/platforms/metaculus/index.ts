@@ -25,7 +25,7 @@ async function apiQuestionToFetchedQuestions(apiQuestion: ApiQuestion): Promise<
     if (q.publish_time > now || now > q.resolve_time) {
       return true;
     }
-    if (q.number_of_predictions < 10) {
+    if (q.prediction_count < 10) {
       return true;
     }
     return false;
@@ -57,7 +57,7 @@ async function apiQuestionToFetchedQuestions(apiQuestion: ApiQuestion): Promise<
         }`,
         options,
         qualityindicators: {
-          numforecasts: q.number_of_predictions
+          numforecasts: q.prediction_count
         },
         extra: {
           resolution_data: {
