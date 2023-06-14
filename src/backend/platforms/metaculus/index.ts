@@ -57,7 +57,7 @@ async function apiQuestionToFetchedQuestions(apiQuestion: ApiQuestion): Promise<
         }`,
         options,
         qualityindicators: {
-          numforecasts: q.number_of_predictions
+          numforecasts: q.prediction_count
         },
         extra: {
           resolution_data: {
