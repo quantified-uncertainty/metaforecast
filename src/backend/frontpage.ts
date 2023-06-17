@@ -24,6 +24,7 @@ export async function rebuildFrontpage() {
         questions.id = history.id
         AND (questions.qualityindicators->>'stars')::int >= 3
         AND questions.description != ''
+				AND questions.url NOT LIKE '%kalshi%'
         AND JSONB_ARRAY_LENGTH(questions.options) > 0
       GROUP BY questions.id
       HAVING COUNT(DISTINCT history.fetched) >= 7
