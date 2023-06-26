@@ -101,7 +101,7 @@ export const polymarket: Platform = {
               tradevolume: tradevolume.toFixed(2)
             },
             extra: {
-              address: strapi_matic_item.address
+              address: strapi_matic_item.marketMakerAddress
             },
             /*
              */
