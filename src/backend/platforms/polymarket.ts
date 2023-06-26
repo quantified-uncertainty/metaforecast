@@ -7,6 +7,7 @@ import {FetchedQuestion, Platform} from "./";
 /* Definitions */
 const platformName = "polymarket";
 const graphQLendpoint = "https://gamma-api.polymarket.com/query";
+const verbose = true
 
 async function fetchFromStrapiMaticEndpoint() { // for info which the polymarket graphql API
   let response = await axios.get("https://strapi-matic.poly.market/markets?active=true&_sort=volume:desc&closed=false&_limit=-1"
@@ -49,7 +50,7 @@ async function fetchGammaApiEndpoint(market_id) {
         }
       `}
     )
-  }).then((res) => res.data).then((res) => res.data.market);
+  }).then((res) => res?.data).then((res) => res?.data?.market);
 
   return response;
 }
@@ -63,6 +64,7 @@ export const polymarket: Platform = {
     let results: FetchedQuestion[] = [];
     let strapi_matic_items = await fetchFromStrapiMaticEndpoint();
     for (let strapi_matic_item of strapi_matic_items) { // metaforecast id, using mm address for backwards compatibility
+      if(verbose) console.log(strapi_matic_item.id)
       let address = strapi_matic_item.marketMakerAddress;
       let addressLowerCase = address.toLowerCase();
       let metaforecast_id = `${platformName}-${
@@ -71,7 +73,8 @@ export const polymarket: Platform = {
 
       if (strapi_matic_item.outcomes[0] != "Long" && strapi_matic_item.outcomes[1] != "Long") {
         let gamma_api_item = await fetchGammaApiEndpoint(strapi_matic_item.id);
-        if (gamma_api_item.length > 0) { // console.log(id);
+        if(verbose) console.log(gamma_api_item)
+        if (gamma_api_item != null) { // console.log(id);
           let tradevolume = gamma_api_item.volumeNum
           let liquidity = gamma_api_item.liquidity;
           // let isbinary = Number(moreMarketInfo.conditions[0].outcomeSlotCount) == 2
@@ -94,7 +97,7 @@ export const polymarket: Platform = {
             description: strapi_matic_item.description,
             options,
             qualityindicators: {
-              liquidity: liquidity.toFixed(2),
+              liquidity: liquidity,
               tradevolume: tradevolume.toFixed(2)
             },
             extra: {
