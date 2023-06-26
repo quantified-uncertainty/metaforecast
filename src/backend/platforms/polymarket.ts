@@ -7,7 +7,7 @@ import { FetchedQuestion, Platform } from "./";
 /* Definitions */
 const platformName = "polymarket";
 const graphQLendpoint = "https://gamma-api.polymarket.com/query";
-const verbose = true;
+const verbose = false;
 
 async function fetchFromStrapiMaticEndpoint() {
   // for info which the polymarket graphql API
@@ -116,15 +116,15 @@ export const polymarket: Platform = {
              */
           };
           if (strapi_matic_item.category !== "Sports") {
-            console.log(result);
+            if (verbose) console.log(result);
             results.push(result);
           }
         }
       }
     }
-    console.log(results);
-    return [];
-    // return results;
+    if (verbose) console.log(results);
+    // return [];
+    return results;
   },
   calculateStars(data) {
     // let nuno = (data) => (data.volume > 10000 ? 4 : data.volume > 1000 ? 3 : 2);
