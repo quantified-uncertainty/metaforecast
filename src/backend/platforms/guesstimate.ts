@@ -3,7 +3,12 @@ import axios from "axios";
 import { Question } from "@prisma/client";
 
 import { AlgoliaQuestion, questionToAlgoliaQuestion } from "../utils/algolia";
-import { FetchedQuestion, Platform, prepareQuestion, upsertSingleQuestion } from "./";
+import {
+  FetchedQuestion,
+  Platform,
+  prepareQuestion,
+  upsertSingleQuestion,
+} from "./";
 
 /* Definitions */
 const searchEndpoint =

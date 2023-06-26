@@ -126,7 +126,8 @@ function isSignedIn(html: string) {
 }
 
 function reachedEnd(html: string) {
-  let reachedEndBool = html.includes("No questions match your filter") || !html.includes("infer");
+  let reachedEndBool =
+    html.includes("No questions match your filter") || !html.includes("infer");
   if (reachedEndBool) {
     //console.log(html)
   }

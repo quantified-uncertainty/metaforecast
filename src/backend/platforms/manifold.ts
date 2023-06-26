@@ -23,30 +23,33 @@ async function fetchPage(endpoint: string) {
   return response;
 }
 
-async function fetchAllData(){
-  let endpoint = ENDPOINT
-  let end = false
-  let allData = []
-  let counter = 1
-  while(!end){
-    console.log(`Query #${counter}: ${endpoint}`)
-    let newData = await fetchPage(endpoint)
+async function fetchAllData() {
+  let endpoint = ENDPOINT;
+  let end = false;
+  let allData = [];
+  let counter = 1;
+  while (!end) {
+    console.log(`Query #${counter}: ${endpoint}`);
+    let newData = await fetchPage(endpoint);
     // console.log(newData)
-    if(Array.isArray(newData)){
-      allData.push(...newData)
-      let hasReachedEnd = (newData.length == 0) || (newData[newData.length -1] == undefined) || (newData[newData.length -1].id == undefined)
-      if(!hasReachedEnd){
-        let lastId = newData[newData.length -1].id
-        endpoint = `${ENDPOINT}?before=${lastId}`
-      }else{
-        end = true
+    if (Array.isArray(newData)) {
+      allData.push(...newData);
+      let hasReachedEnd =
+        newData.length == 0 ||
+        newData[newData.length - 1] == undefined ||
+        newData[newData.length - 1].id == undefined;
+      if (!hasReachedEnd) {
+        let lastId = newData[newData.length - 1].id;
+        endpoint = `${ENDPOINT}?before=${lastId}`;
+      } else {
+        end = true;
       }
-    }else{
-      end = true
+    } else {
+      end = true;
     }
-    counter = counter +1
+    counter = counter + 1;
   }
-  return allData
+  return allData;
 }
 
 function showStatistics(results: FetchedQuestion[]) {
@@ -94,7 +97,7 @@ function processPredictions(predictions: any[]): FetchedQuestion[] {
       qualityindicators: {
         createdTime: prediction.createdTime,
         // volume7Days: prediction.volume7Days, // deprecated.
-        volume24Hours: prediction.volume24Hours, 
+        volume24Hours: prediction.volume24Hours,
         pool: prediction.pool, // normally liquidity, but I don't actually want to show it.
       },
       extra: {

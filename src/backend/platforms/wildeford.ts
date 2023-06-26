@@ -24,7 +24,7 @@ const formatRow = (row: string[]) => {
     "Brier Score",
     "Notes",
   ] as const;
-  let result: Partial<{ [k in typeof colNames[number]]: string }> = {};
+  let result: Partial<{ [k in (typeof colNames)[number]]: string }> = {};
   row.forEach((col: string, i) => {
     result[colNames[i]] = col;
   });

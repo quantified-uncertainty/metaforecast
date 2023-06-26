@@ -1,96 +1,128 @@
 /* Imports */
-import {or} from "ajv/dist/compile/codegen";
+import { or } from "ajv/dist/compile/codegen";
 import axios from "axios";
 
-import {FetchedQuestion, Platform} from ".";
-import {QuestionOption} from "../../common/types";
+import { FetchedQuestion, Platform } from ".";
+import { QuestionOption } from "../../common/types";
 import toMarkdown from "../utils/toMarkdown";
 import { average } from "../../utils";
 
 /* Definitions */
 const platformName = "insight";
-const marketsEnpoint = "https://insightprediction.com/api/markets?orderBy=is_resolved&sortedBy=asc";
-const getMarketEndpoint = (id : number) => `https://insightprediction.com/api/markets/${id}`;
+const marketsEnpoint =
+  "https://insightprediction.com/api/markets?orderBy=is_resolved&sortedBy=asc";
+const getMarketEndpoint = (id: number) =>
+  `https://insightprediction.com/api/markets/${id}`;
 const SPORTS_CATEGORIES = [
-  'World Cup',
-  'MLB',
-  'Futures',
-  'Sports',
-  'EPL',
-  'Golf',
-  'NHL',
-  'College Football'
-]
+  "World Cup",
+  "MLB",
+  "Futures",
+  "Sports",
+  "EPL",
+  "Golf",
+  "NHL",
+  "College Football",
+];
 
 /* Support functions */
 
 // Stubs
-const excludeMarketFromTitle = (title : any) => {
+const excludeMarketFromTitle = (title: any) => {
   if (!!title) {
-    return title.includes(" vs ") || title.includes(" Over: ") || title.includes("NFL") || title.includes("Will there be a first time winner") || title.includes("Premier League")
+    return (
+      title.includes(" vs ") ||
+      title.includes(" Over: ") ||
+      title.includes("NFL") ||
+      title.includes("Will there be a first time winner") ||
+      title.includes("Premier League")
+    );
   } else {
-    return true
+    return true;
   }
-}
+};
 
-const hasActiveYesNoOrderBook = (orderbook : any) => {
+const hasActiveYesNoOrderBook = (orderbook: any) => {
   if (!!orderbook) {
-    let yes = !!orderbook.yes && !!orderbook.yes.buy && Array.isArray(orderbook.yes.buy) && orderbook.yes.buy.length != 0 && !!orderbook.yes.buy[0].price && !!orderbook.yes.sell && Array.isArray(orderbook.yes.sell) && orderbook.yes.sell.length != 0 && !!orderbook.yes.sell[0].price
-    let no = !!orderbook.no && !!orderbook.no.buy && Array.isArray(orderbook.no.buy) && orderbook.no.buy.length != 0 && !!orderbook.no.buy[0].price && !!orderbook.no.sell && Array.isArray(orderbook.no.sell) && orderbook.no.sell.length != 0 && !!orderbook.no.sell[0].price
-    return yes && no
+    let yes =
+      !!orderbook.yes &&
+      !!orderbook.yes.buy &&
+      Array.isArray(orderbook.yes.buy) &&
+      orderbook.yes.buy.length != 0 &&
+      !!orderbook.yes.buy[0].price &&
+      !!orderbook.yes.sell &&
+      Array.isArray(orderbook.yes.sell) &&
+      orderbook.yes.sell.length != 0 &&
+      !!orderbook.yes.sell[0].price;
+    let no =
+      !!orderbook.no &&
+      !!orderbook.no.buy &&
+      Array.isArray(orderbook.no.buy) &&
+      orderbook.no.buy.length != 0 &&
+      !!orderbook.no.buy[0].price &&
+      !!orderbook.no.sell &&
+      Array.isArray(orderbook.no.sell) &&
+      orderbook.no.sell.length != 0 &&
+      !!orderbook.no.sell[0].price;
+    return yes && no;
   } else {
-    return false
+    return false;
   }
-}
+};
 
-const isBinaryQuestion = (data : any) => Array.isArray(data) && data.length == 1
+const isBinaryQuestion = (data: any) => Array.isArray(data) && data.length == 1;
 
-const geomMean = (a : number, b : number) => Math.sqrt(a * b)
+const geomMean = (a: number, b: number) => Math.sqrt(a * b);
 
-const processRelativeUrls = (a : string) => a.replaceAll("] (/", "](http://insightprediction.com/").replaceAll("](/", "](http://insightprediction.com/")
+const processRelativeUrls = (a: string) =>
+  a
+    .replaceAll("] (/", "](http://insightprediction.com/")
+    .replaceAll("](/", "](http://insightprediction.com/");
 
-const processDescriptionText = (text : any) => {
-  if (typeof text === 'string') {
-    return processRelativeUrls(toMarkdown(text))
+const processDescriptionText = (text: any) => {
+  if (typeof text === "string") {
+    return processRelativeUrls(toMarkdown(text));
   } else {
-    return ""
+    return "";
   }
-}
+};
 
-const getOrderbookPrize = (orderbook : any) => {
-  let yes_min_cents = orderbook.yes.buy[0].price
-  let yes_max_cents = orderbook.yes.sell[0].price
-  let yes_min = Number(yes_min_cents.slice(0, -1))
-  let yes_max = Number(yes_max_cents.slice(0, -1))
-  let yes_price_orderbook = geomMean(yes_min, yes_max)
-  return yes_price_orderbook
-}
+const getOrderbookPrize = (orderbook: any) => {
+  let yes_min_cents = orderbook.yes.buy[0].price;
+  let yes_max_cents = orderbook.yes.sell[0].price;
+  let yes_min = Number(yes_min_cents.slice(0, -1));
+  let yes_max = Number(yes_max_cents.slice(0, -1));
+  let yes_price_orderbook = geomMean(yes_min, yes_max);
+  return yes_price_orderbook;
+};
 
-const getAnswerProbability = (answer : any) => {
-  let orderbook = answer.orderbook
-  let latest_yes_price = answer.latest_yes_price
-  if (!! orderbook && hasActiveYesNoOrderBook(orderbook)) {
-    let yes_price_orderbook = getOrderbookPrize(orderbook)
-    let yes_probability = (latest_yes_price ? geomMean(latest_yes_price, yes_price_orderbook) : yes_price_orderbook) / 100
-    return yes_probability
-  } else if (!! latest_yes_price) {
-    return latest_yes_price / 100
+const getAnswerProbability = (answer: any) => {
+  let orderbook = answer.orderbook;
+  let latest_yes_price = answer.latest_yes_price;
+  if (!!orderbook && hasActiveYesNoOrderBook(orderbook)) {
+    let yes_price_orderbook = getOrderbookPrize(orderbook);
+    let yes_probability =
+      (latest_yes_price
+        ? geomMean(latest_yes_price, yes_price_orderbook)
+        : yes_price_orderbook) / 100;
+    return yes_probability;
+  } else if (!!latest_yes_price) {
+    return latest_yes_price / 100;
   } else {
-    return -1
+    return -1;
   }
-}
+};
 
 // Fetching
 async function fetchPage(bearer: string, pageNum: number) {
-  let pageUrl = `${marketsEnpoint}&page=${pageNum}`
+  let pageUrl = `${marketsEnpoint}&page=${pageNum}`;
   const response = await axios({
     url: pageUrl, // &orderBy=is_resolved&sortedBy=desc`,
     method: "GET",
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",
-      Authorization: `Bearer ${bearer}`
-    }
+      Authorization: `Bearer ${bearer}`,
+    },
   }).then((res) => res.data);
   // console.log(response);
   return response;
@@ -103,115 +135,123 @@ async function fetchMarket(bearer: string, marketId: number) {
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",
-      Authorization: `Bearer ${bearer}`
-    }
+      Authorization: `Bearer ${bearer}`,
+    },
   }).then((res) => res.data);
   // console.log(response)
   return response;
-
 }
 
-const processMarket = (market : any) => {
-  let options: FetchedQuestion["options"] = []
+const processMarket = (market: any) => {
+  let options: FetchedQuestion["options"] = [];
 
   if (!!market && !!market.answer && !!market.answer.data) {
-    let data = market.answer.data
-    if (isBinaryQuestion(data)) { // Binary questions
-      let answer = data[0]
-      let probability = getAnswerProbability(answer)
+    let data = market.answer.data;
+    if (isBinaryQuestion(data)) {
+      // Binary questions
+      let answer = data[0];
+      let probability = getAnswerProbability(answer);
       if (probability != -1) {
         options = [
           {
             name: "Yes",
             probability: probability,
-            type: "PROBABILITY"
-          }, {
+            type: "PROBABILITY",
+          },
+          {
             name: "No",
             probability: 1 - probability,
-            type: "PROBABILITY"
+            type: "PROBABILITY",
           },
         ];
-      } 
-    } else { // non binary question
+      }
+    } else {
+      // non binary question
       for (let answer of data) {
-        let probability = getAnswerProbability(answer)
+        let probability = getAnswerProbability(answer);
         if (probability != -1) {
-          let newOption: QuestionOption = ({
+          let newOption: QuestionOption = {
             name: String(answer.title),
             probability: probability,
-            type: "PROBABILITY"
-          });
-          options.push(newOption)
+            type: "PROBABILITY",
+          };
+          options.push(newOption);
         }
       }
     }
-    if (!! options && Array.isArray(options) && options.length > 0) {
-      const id = `${platformName}-${
-        market.id
-      }`
+    if (!!options && Array.isArray(options) && options.length > 0) {
+      const id = `${platformName}-${market.id}`;
       const result: FetchedQuestion = {
         id: id,
         title: market.title,
         url: market.url,
         description: processDescriptionText(market.rules),
         options,
-        qualityindicators: market.coin_id == "USD" ? (
-          {volume: market.volume}
-        ) : ({})
+        qualityindicators:
+          market.coin_id == "USD" ? { volume: market.volume } : {},
       };
       return result;
     }
-  } 
-  return null
-}
+  }
+  return null;
+};
 
 async function fetchAllMarkets(bearer: string) {
-  let pageNum = 1
-  let markets = []
-  let categories = []
-  let isEnd = false
-  while (! isEnd) {
-    if(pageNum % 20 == 0){
-      console.log(`Fetching page #${pageNum}`) // : ${pageUrl}
+  let pageNum = 1;
+  let markets = [];
+  let categories = [];
+  let isEnd = false;
+  while (!isEnd) {
+    if (pageNum % 20 == 0) {
+      console.log(`Fetching page #${pageNum}`); // : ${pageUrl}
     }
-    let page = await fetchPage(bearer, pageNum)
+    let page = await fetchPage(bearer, pageNum);
     // console.log(JSON.stringify(page, null, 2))
-    let data = page.data
-    if (!! data && Array.isArray(data) && data.length > 0) {
-      let lastMarket = data[data.length - 1]
-      let isLastMarketResolved = lastMarket.is_resolved
+    let data = page.data;
+    if (!!data && Array.isArray(data) && data.length > 0) {
+      let lastMarket = data[data.length - 1];
+      let isLastMarketResolved = lastMarket.is_resolved;
       if (isLastMarketResolved == true) {
-        isEnd = true
+        isEnd = true;
       }
-      let newMarkets = data.filter(market => !market.is_resolved && !market.is_expired && ! excludeMarketFromTitle(market.title))
+      let newMarkets = data.filter(
+        (market) =>
+          !market.is_resolved &&
+          !market.is_expired &&
+          !excludeMarketFromTitle(market.title)
+      );
       for (let initMarketData of newMarkets) {
-        let fullMarketDataResponse = await fetchMarket(bearer, initMarketData.id)
-        let fullMarketData = fullMarketDataResponse.data
-        let processedMarketData = processMarket(fullMarketData)
+        let fullMarketDataResponse = await fetchMarket(
+          bearer,
+          initMarketData.id
+        );
+        let fullMarketData = fullMarketDataResponse.data;
+        let processedMarketData = processMarket(fullMarketData);
 
-        if (processedMarketData != null && ! SPORTS_CATEGORIES.includes(fullMarketData.category)) {
-          console.log(`- Adding: ${
-            fullMarketData.title
-          }`)
-          console.group()
-          console.log(fullMarketData)
-          console.log(JSON.stringify(processedMarketData, null, 2))
-          console.groupEnd()
+        if (
+          processedMarketData != null &&
+          !SPORTS_CATEGORIES.includes(fullMarketData.category)
+        ) {
+          console.log(`- Adding: ${fullMarketData.title}`);
+          console.group();
+          console.log(fullMarketData);
+          console.log(JSON.stringify(processedMarketData, null, 2));
+          console.groupEnd();
 
-          markets.push(processedMarketData)
+          markets.push(processedMarketData);
         }
 
-        let category = fullMarketData.category
-        categories.push(category)
-
+        let category = fullMarketData.category;
+        categories.push(category);
       }
     } else {
-      isEnd = true
-    } pageNum = pageNum + 1
+      isEnd = true;
+    }
+    pageNum = pageNum + 1;
   }
-  console.log(markets)
-  console.log(categories)
-  return markets
+  console.log(markets);
+  console.log(categories);
+  return markets;
 }
 /*
 async function fetchQuestionStats(bearer : string, marketId : number) {
@@ -311,29 +351,29 @@ export const insight: Platform = {
   version: "v1",
   async fetcher() {
     let bearer = process.env.INSIGHT_BEARER;
-    if (!! bearer) {
+    if (!!bearer) {
       let data = await fetchAllMarkets(bearer);
-      return data
+      return data;
     } else {
-      throw Error("No INSIGHT_BEARER available in environment")
+      throw Error("No INSIGHT_BEARER available in environment");
     }
     // let results: FetchedQuestion[] = []; // await processPredictions(data); // somehow needed
     // return results;
   },
   calculateStars(data) {
     let nuno = () => {
-      if((data.qualityindicators.volume || 0) > 10000){
-        return 4
-      } else if((data.qualityindicators.volume || 0) > 1000){
-        return 3
-      } else{
-        return 2
+      if ((data.qualityindicators.volume || 0) > 10000) {
+        return 4;
+      } else if ((data.qualityindicators.volume || 0) > 1000) {
+        return 3;
+      } else {
+        return 2;
       }
-    }
+    };
     let eli = () => null;
     let misha = () => null;
     let starsDecimal = average([nuno()]); //, eli(data), misha(data)])
     let starsInteger = Math.round(starsDecimal);
     return starsInteger;
-  }
+  },
 };

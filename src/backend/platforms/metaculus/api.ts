@@ -216,8 +216,8 @@ const fetchAndValidate = async <T = unknown>(
   const data = await fetchWithRetries<object>(url);
   if (validator(data)) {
     return data;
-  }else{
-    console.log(data)
+  } else {
+    console.log(data);
     throw new Error(
       `Response validation for url ${url} failed: ` +
         JSON.stringify(validator.errors, null, 4)
@@ -245,12 +245,13 @@ export async function fetchApiQuestions(
 
         if (!validateQuestion(result)) {
           //throw new Error(
-          console.log(  `Response validation failed: ` +
+          console.log(
+            `Response validation failed: ` +
               JSON.stringify(validateQuestion.errors)
           );
-          console.log("Failed result: ")
-          console.log(result)
-          return undefined
+          console.log("Failed result: ");
+          console.log(result);
+          return undefined;
         }
         return result;
       })
