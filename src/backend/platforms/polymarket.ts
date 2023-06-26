@@ -17,7 +17,7 @@ async function fetchFromStrapiMaticEndpoint() { // for info which the polymarket
   return response;
 }
 
-async function fetchGammaApiEndpoint(market_id) {
+async function fetchGammaApiEndpoint(market_id: any) {
   let response = await axios({
     url: graphQLendpoint,
     method: "POST",
