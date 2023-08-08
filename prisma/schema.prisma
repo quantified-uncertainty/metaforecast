@@ -86,6 +86,7 @@ model History {
   @@index([id])
   @@index([platform])
   @@index([fetched])
+  @@index([idref])
   @@map("history")
 }
 
