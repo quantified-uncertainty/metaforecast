@@ -354,6 +354,7 @@ export const insight: Platform = {
   version: "v1",
   async fetcher() {
     return []; // insight API seems down.
+		/*
     let bearer = process.env.INSIGHT_BEARER;
     if (!!bearer) {
       let data = await fetchAllMarkets(bearer);
@@ -361,6 +362,7 @@ export const insight: Platform = {
     } else {
       throw Error("No INSIGHT_BEARER available in environment");
     }
+		*/
     // let results: FetchedQuestion[] = []; // await processPredictions(data); // somehow needed
     // return results;
   },
