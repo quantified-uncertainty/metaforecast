@@ -204,7 +204,7 @@ async function fetchAllMarkets(bearer: string) {
   let isEnd = false;
   while (!isEnd) {
     // if (pageNum % 20 == 0) {
-      console.log(`Fetching page #${pageNum}`); // : ${pageUrl}
+    console.log(`Fetching page #${pageNum}`); // : ${pageUrl}
     // }
     let page = await fetchPage(bearer, pageNum);
     // console.log(JSON.stringify(page, null, 2))
@@ -249,8 +249,8 @@ async function fetchAllMarkets(bearer: string) {
       isEnd = true;
     }
     pageNum = pageNum + 1;
-		console.log("Waiting for 5 secs before fetching next page.")
-		await sleep(1000 + Math.random() * 1000); // don't be as noticeable
+    console.log("Waiting for 5 secs before fetching next page.");
+    await sleep(1000 + Math.random() * 1000); // don't be as noticeable
   }
   console.log(markets);
   console.log(categories);
@@ -353,7 +353,7 @@ export const insight: Platform = {
   color: "#ff0000",
   version: "v1",
   async fetcher() {
-		return []; // insight API seems down.
+    return []; // insight API seems down.
     let bearer = process.env.INSIGHT_BEARER;
     if (!!bearer) {
       let data = await fetchAllMarkets(bearer);

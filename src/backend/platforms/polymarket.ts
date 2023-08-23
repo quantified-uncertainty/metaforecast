@@ -115,7 +115,10 @@ export const polymarket: Platform = {
             /*
              */
           };
-          if (strapi_matic_item.category !== "Sports" && gamma_api_item.category != "Sports") {
+          if (
+            strapi_matic_item.category !== "Sports" &&
+            gamma_api_item.category != "Sports"
+          ) {
             if (verbose) console.log(result);
             results.push(result);
           }
