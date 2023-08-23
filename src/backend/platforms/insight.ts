@@ -6,6 +6,7 @@ import { FetchedQuestion, Platform } from ".";
 import { QuestionOption } from "../../common/types";
 import toMarkdown from "../utils/toMarkdown";
 import { average } from "../../utils";
+import { sleep } from "../utils/sleep";
 
 /* Definitions */
 const platformName = "insight";
@@ -202,9 +203,9 @@ async function fetchAllMarkets(bearer: string) {
   let categories = [];
   let isEnd = false;
   while (!isEnd) {
-    if (pageNum % 20 == 0) {
+    // if (pageNum % 20 == 0) {
       console.log(`Fetching page #${pageNum}`); // : ${pageUrl}
-    }
+    // }
     let page = await fetchPage(bearer, pageNum);
     // console.log(JSON.stringify(page, null, 2))
     let data = page.data;
@@ -248,6 +249,8 @@ async function fetchAllMarkets(bearer: string) {
       isEnd = true;
     }
     pageNum = pageNum + 1;
+		console.log("Waiting for 5 secs before fetching next page.")
+		await sleep(1000 + Math.random() * 1000); // don't be as noticeable
   }
   console.log(markets);
   console.log(categories);
@@ -350,6 +353,7 @@ export const insight: Platform = {
   color: "#ff0000",
   version: "v1",
   async fetcher() {
+		return []; // insight API seems down.
     let bearer = process.env.INSIGHT_BEARER;
     if (!!bearer) {
       let data = await fetchAllMarkets(bearer);
