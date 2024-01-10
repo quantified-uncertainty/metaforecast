@@ -6,7 +6,7 @@ import { FetchedQuestion, Platform } from "./";
 
 /* Definitions */
 const platformName = "manifold";
-const ENDPOINT = "https://manifold.markets/api/v0/markets";
+const ENDPOINT = "https://api.manifold.markets/v0/markets";
 // See https://manifoldmarkets.notion.site/Manifold-Markets-API-5e7d0aef4dcf452bb04b319e178fabc5
 
 /* Support functions */
