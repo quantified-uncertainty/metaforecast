@@ -35,7 +35,6 @@ resource "heroku_app" "backend" {
 
 resource "vercel_project" "main" {
   name      = "metaforecast"
-  team_id   = var.vercel_team
   framework = "nextjs"
 
   git_repository = {
