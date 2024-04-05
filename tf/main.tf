@@ -27,6 +27,10 @@ resource "heroku_app" "backend" {
   region = "us"
 
   config_vars = local.generated_env
+
+  organization {
+    name = "quantified-uncertainty-researc"
+  }
 }
 
 resource "vercel_project" "main" {
@@ -47,4 +51,10 @@ resource "vercel_project" "main" {
       target = ["preview", "production"]
     }
   ])
+
+  vercel_authentication = {
+    deployment_type = "only_preview_deployments"
+  }
+
+  serverless_function_region = "iad1"
 }
