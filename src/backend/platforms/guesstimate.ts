@@ -2,7 +2,7 @@ import axios from "axios";
 
 import { Question } from "@prisma/client";
 
-import { AlgoliaQuestion, questionToAlgoliaQuestion } from "../utils/algolia";
+import { ElasticQuestion, questionToElasticDocument } from "../utils/elastic";
 import {
   FetchedQuestion,
   Platform,
@@ -42,7 +42,7 @@ const modelToQuestion = (model: any): ReturnType<typeof prepareQuestion> => {
   return q;
 };
 
-async function search(query: string): Promise<AlgoliaQuestion[]> {
+async function search(query: string): Promise<ElasticQuestion[]> {
   const response = await axios({
     url: searchEndpoint,
     headers: {
@@ -57,9 +57,9 @@ async function search(query: string): Promise<AlgoliaQuestion[]> {
   });
 
   const models: any[] = response.data.hits;
-  const mappedModels: AlgoliaQuestion[] = models.map((model) => {
+  const mappedModels: ElasticQuestion[] = models.map((model) => {
     const q = modelToQuestion(model);
-    return questionToAlgoliaQuestion({
+    return questionToElasticDocument({
       ...q,
       fetched: new Date(),
       firstSeen: new Date(),
@@ -68,7 +68,7 @@ async function search(query: string): Promise<AlgoliaQuestion[]> {
 
   // filter for duplicates. Surprisingly common.
   let uniqueTitles: string[] = [];
-  let uniqueModels: AlgoliaQuestion[] = [];
+  let uniqueModels: ElasticQuestion[] = [];
   for (let model of mappedModels) {
     if (!uniqueTitles.includes(model.title) && !model.title.includes("copy")) {
       uniqueModels.push(model);

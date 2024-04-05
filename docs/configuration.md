@@ -16,12 +16,6 @@ There's also a template configuration file in `../env.example`.
 
 - `DIGITALOCEAN_POSTGRES`, of the form `postgres://username:password@domain.com:port/configvars`. (Disregard `DIGITALOCEAN_` prefix, you can use any endpoint you like).
 
-Algolia (legacy):
-
-- `ALGOLIA_MASTER_API_KEY`, a string of 32 hexidecimal characters, like `19b6c2234e50c98d30668659a39e3127` (not an actual key).
-- `NEXT_PUBLIC_ALGOLIA_APP_ID`,
-- `NEXT_PUBLIC_ALGOLIA_SEARCH_KEY`
-
 Elasticsearch:
 
 - `ELASTIC_HOST` (e.g. `https://metaforecast-elastic.k8s.quantifieduncertainty.org`)
@@ -45,8 +39,3 @@ Note that not all of these cookies are needed to use all parts of the source cod
 
 - `POSTGRES_NO_SSL`, can be set to a non-empty value to disable SSL; can be useful for local development.
 - `DEBUG_MODE`, usually `off`, which controls log verbosity.
-
-## Others
-
-- `BACKUP_PROXY_IP`
-- `BACKUP_PROXY_PORT`

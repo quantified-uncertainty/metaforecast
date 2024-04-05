@@ -5,7 +5,6 @@ import { executeJobByName } from "./jobs";
 export async function doEverything() {
   let jobNames = [
     ...getPlatforms().map((platform) => platform.name),
-    // "algolia",
     "elastic",
   ];
 

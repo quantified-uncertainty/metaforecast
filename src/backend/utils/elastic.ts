@@ -1,3 +1,5 @@
+import crypto from "crypto";
+
 import { Client as ElasticClient } from "@elastic/elasticsearch";
 import { Question } from "@prisma/client";
 
@@ -12,7 +14,7 @@ const client = new ElasticClient({
   },
 });
 
-const INDEX_NAME = process.env.ELASTIC_INDEX!;
+const ALIAS_NAME = process.env.ELASTIC_INDEX!;
 
 export type ElasticQuestion = Omit<Question, "fetched" | "firstSeen"> & {
   fetched: string;
@@ -47,12 +49,22 @@ export function questionToElasticDocument(question: Question): ElasticQuestion {
 export async function rebuildElasticDatabase() {
   const questions = await prisma.question.findMany();
 
-  if (!(await client.indices.exists({ index: INDEX_NAME }))) {
-    console.log("Creating an index");
-    await client.indices.create({ index: INDEX_NAME });
-  } else {
-    console.log("Index exists");
+  const oldIndexNames: string[] = [];
+  if (await client.indices.existsAlias({ name: ALIAS_NAME })) {
+    const alias = await client.indices.getAlias({ name: ALIAS_NAME });
+    oldIndexNames.push(...Object.keys(alias));
   }
+
+  const suffix = crypto.randomBytes(16).toString("hex");
+  const index = `${ALIAS_NAME}-${suffix}`;
+
+  console.log(`Creating a new index ${index}`);
+  await client.indices.create({
+    index,
+    settings: {
+      number_of_replicas: 0,
+    },
+  });
 
   let count = 0;
   let operations: { id: string; document: ElasticQuestion }[] = [];
@@ -61,7 +73,7 @@ export async function rebuildElasticDatabase() {
     if (!operations.length) return;
     await client.bulk({
       operations: operations.flatMap((op) => [
-        { index: { _index: INDEX_NAME, _id: op.id } },
+        { index: { _index: index, _id: op.id } },
         op.document,
       ]),
     });
@@ -80,6 +92,20 @@ export async function rebuildElasticDatabase() {
     }
   }
   await flush();
+  console.log(`Pushed ${count} records to Elasticsearch.`);
 
-  console.log(`Pushed ${questions.length} records to Elasticsearch.`);
+  console.log("Switching alias to new index");
+  await client.indices.updateAliases({
+    body: {
+      actions: [
+        { remove: { index: "*", alias: ALIAS_NAME } },
+        { add: { index, alias: ALIAS_NAME } },
+      ],
+    },
+  });
+
+  for (const oldIndexName of oldIndexNames) {
+    console.log(`Removing old index ${oldIndexName}`);
+    await client.indices.delete({ index: oldIndexName });
+  }
 }
