@@ -15,9 +15,19 @@ There's also a template configuration file in `../env.example`.
 ## Database endpoints
 
 - `DIGITALOCEAN_POSTGRES`, of the form `postgres://username:password@domain.com:port/configvars`. (Disregard `DIGITALOCEAN_` prefix, you can use any endpoint you like).
+
+Algolia (legacy):
+
 - `ALGOLIA_MASTER_API_KEY`, a string of 32 hexidecimal characters, like `19b6c2234e50c98d30668659a39e3127` (not an actual key).
 - `NEXT_PUBLIC_ALGOLIA_APP_ID`,
 - `NEXT_PUBLIC_ALGOLIA_SEARCH_KEY`
+
+Elasticsearch:
+
+- `ELASTIC_HOST` (e.g. `https://metaforecast-elastic.k8s.quantifieduncertainty.org`)
+- `ELASTIC_INDEX` (e.g. `metaforecast`)
+- `ELASTIC_USER` (usually `elastic`)
+- `ELASTIC_PASSWORD`
 
 ## Platform cookies and keys
 

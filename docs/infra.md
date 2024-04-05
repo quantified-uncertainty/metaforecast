@@ -10,7 +10,7 @@ Managed with Terraform:
 
 TODO:
 
-- Algolia
+- Elasticsearch
 - Twitter bot
 - DNS?
 

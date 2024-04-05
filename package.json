@@ -29,6 +29,7 @@
     "upgrade-interactive": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
+    "@elastic/elasticsearch": "^8.13.0",
     "@floating-ui/react-dom": "^0.7.2",
     "@graphql-yoga/plugin-response-cache": "^1.1.0",
     "@pothos/core": "^3.22.8",
