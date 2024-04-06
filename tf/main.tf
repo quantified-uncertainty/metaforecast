@@ -22,6 +22,13 @@ locals {
   })
 }
 
+resource "digitalocean_project_resources" "main" {
+  project = var.digitalocean_project_id
+  resources = [
+    digitalocean_database_cluster.main.id
+  ]
+}
+
 resource "heroku_app" "backend" {
   name   = "metaforecast-backend"
   region = "us"
