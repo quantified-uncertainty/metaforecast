@@ -14,7 +14,7 @@ import {
 const searchEndpoint =
   "https://m629r9ugsg-dsn.algolia.net/1/indexes/Space_production/query?x-algolia-agent=Algolia%20for%20vanilla%20JavaScript%203.32.1&x-algolia-application-id=M629R9UGSG&x-algolia-api-key=4e893740a2bd467a96c8bfcf95b2809c";
 
-const apiEndpoint = "https://guesstimate.herokuapp.com";
+const apiEndpoint = "https://api.getguesstimate.com";
 
 const modelToQuestion = (model: any): ReturnType<typeof prepareQuestion> => {
   const { description } = model;
