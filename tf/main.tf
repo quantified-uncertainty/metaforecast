@@ -25,7 +25,7 @@ locals {
 resource "digitalocean_project_resources" "main" {
   project = var.digitalocean_project_id
   resources = [
-    digitalocean_database_cluster.main.id
+    digitalocean_database_cluster.main.urn
   ]
 }
 
