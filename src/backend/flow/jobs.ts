@@ -2,7 +2,7 @@ import { doEverything } from "../flow/doEverything";
 import { rebuildFrontpage } from "../frontpage";
 import { processPlatform } from "../platforms";
 import { getPlatforms } from "../platforms/registry";
-import { rebuildAlgoliaDatabase } from "../utils/algolia";
+import { rebuildElasticDatabase } from "../utils/elastic";
 import { sleep } from "../utils/sleep";
 
 interface Job<ArgNames extends string = ""> {
@@ -21,9 +21,9 @@ export const jobs: Job<string>[] = [
     run: (args: any) => processPlatform(platform, args),
   })),
   {
-    name: "algolia",
-    message: 'Rebuild algolia database ("index")',
-    run: rebuildAlgoliaDatabase,
+    name: "elastic",
+    message: "Rebuild Elasticsearch database",
+    run: rebuildElasticDatabase,
   },
   {
     name: "frontpage",

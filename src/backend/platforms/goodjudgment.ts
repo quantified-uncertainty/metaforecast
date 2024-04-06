@@ -5,7 +5,6 @@ import { Tabletojson } from "tabletojson";
 import { average } from "../../utils";
 import { hash } from "../utils/hash";
 import { FetchedQuestion, Platform } from "./";
-import { FullQuestionOption } from "../../common/types";
 
 /* Definitions */
 const platformName = "goodjudgment";
@@ -31,8 +30,8 @@ export const goodjudgment: Platform = {
     // hard-coded backup proxy
 		*/
     // proxy = {
-    // ip: process.env.BACKUP_PROXY_IP,
-    // port: process.env.BACKUP_PROXY_PORT,
+    // ip: ...
+    // port: ...
     // };
     // // }
     // let agent = tunnel.httpsOverHttp({

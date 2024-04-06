@@ -2,7 +2,7 @@ import axios from "axios";
 
 import { Question } from "@prisma/client";
 
-import { AlgoliaQuestion, questionToAlgoliaQuestion } from "../utils/algolia";
+import { ElasticQuestion, questionToElasticDocument } from "../utils/elastic";
 import {
   FetchedQuestion,
   Platform,
@@ -14,7 +14,7 @@ import {
 const searchEndpoint =
   "https://m629r9ugsg-dsn.algolia.net/1/indexes/Space_production/query?x-algolia-agent=Algolia%20for%20vanilla%20JavaScript%203.32.1&x-algolia-application-id=M629R9UGSG&x-algolia-api-key=4e893740a2bd467a96c8bfcf95b2809c";
 
-const apiEndpoint = "https://guesstimate.herokuapp.com";
+const apiEndpoint = "https://api.getguesstimate.com";
 
 const modelToQuestion = (model: any): ReturnType<typeof prepareQuestion> => {
   const { description } = model;
@@ -42,7 +42,7 @@ const modelToQuestion = (model: any): ReturnType<typeof prepareQuestion> => {
   return q;
 };
 
-async function search(query: string): Promise<AlgoliaQuestion[]> {
+async function search(query: string): Promise<ElasticQuestion[]> {
   const response = await axios({
     url: searchEndpoint,
     headers: {
@@ -57,9 +57,9 @@ async function search(query: string): Promise<AlgoliaQuestion[]> {
   });
 
   const models: any[] = response.data.hits;
-  const mappedModels: AlgoliaQuestion[] = models.map((model) => {
+  const mappedModels: ElasticQuestion[] = models.map((model) => {
     const q = modelToQuestion(model);
-    return questionToAlgoliaQuestion({
+    return questionToElasticDocument({
       ...q,
       fetched: new Date(),
       firstSeen: new Date(),
@@ -68,7 +68,7 @@ async function search(query: string): Promise<AlgoliaQuestion[]> {
 
   // filter for duplicates. Surprisingly common.
   let uniqueTitles: string[] = [];
-  let uniqueModels: AlgoliaQuestion[] = [];
+  let uniqueModels: ElasticQuestion[] = [];
   for (let model of mappedModels) {
     if (!uniqueTitles.includes(model.title) && !model.title.includes("copy")) {
       uniqueModels.push(model);

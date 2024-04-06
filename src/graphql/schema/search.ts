@@ -1,6 +1,8 @@
+import { SearchHit } from "@elastic/elasticsearch/lib/api/types";
+
 import { guesstimate } from "../../backend/platforms/guesstimate";
-import { AlgoliaQuestion } from "../../backend/utils/algolia";
-import searchWithAlgolia from "../../web/worker/searchWithAlgolia";
+import { ElasticQuestion } from "../../backend/utils/elastic";
+import { searchWithElastic } from "../../web/worker/searchWithElastic";
 import { builder } from "../builder";
 import { QuestionObj } from "./questions";
 
@@ -24,7 +26,7 @@ builder.queryField("searchQuestions", (t) =>
   t.field({
     type: [QuestionObj],
     description:
-      "Search for questions; uses Algolia instead of the primary metaforecast database",
+      "Search for questions; uses Elasticsearch instead of the primary metaforecast database",
     args: {
       input: t.arg({ type: SearchInput, required: true }),
     },
@@ -39,7 +41,7 @@ builder.queryField("searchQuestions", (t) =>
         (!starsThreshold || starsThreshold <= 1);
 
       // preparation
-      const unawaitedAlgoliaResponse = searchWithAlgolia({
+      const unawaitedElasticResponse = searchWithElastic({
         queryString: query,
         hitsPerPage: input.limit ?? 50,
         starsThreshold: starsThreshold ?? undefined,
@@ -47,18 +49,23 @@ builder.queryField("searchQuestions", (t) =>
         forecastsThreshold: forecastsThreshold ?? undefined,
       });
 
-      let results: AlgoliaQuestion[] = [];
+      let results: ElasticQuestion[] = [];
+
+      const toDocs = (hits: SearchHit<ElasticQuestion>[]) =>
+        hits
+          .map((hit) => hit._source)
+          .filter((doc): doc is NonNullable<typeof doc> => !!doc);
 
       // consider the guesstimate and the non-guesstimate cases separately.
       if (platformsIncludeGuesstimate) {
         const [responsesNotGuesstimate, responsesGuesstimate] =
           await Promise.all([
-            unawaitedAlgoliaResponse,
+            unawaitedElasticResponse,
             guesstimate.search(query),
           ]); // faster than two separate requests
-        results = [...responsesNotGuesstimate, ...responsesGuesstimate];
+        results = [...toDocs(responsesNotGuesstimate), ...responsesGuesstimate];
       } else {
-        results = await unawaitedAlgoliaResponse;
+        results = toDocs(await unawaitedElasticResponse);
       }
 
       return results.map((q) => ({
