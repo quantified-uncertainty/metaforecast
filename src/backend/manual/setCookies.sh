@@ -55,7 +55,6 @@ case $platform in
         echo "Cookie found:"
         echo "$cookie"
         echo "Running: \$heroku config:set GOODJUDGMENTOPENCOOKIE='\$cookie'"
-        # netlify env:set GOODJUDGMENTOPENCOOKIE "$cookie"
 				heroku config:set GOODJUDGMENTOPENCOOKIE="$cookie" -a metaforecast-backend
     ;;
     * )
