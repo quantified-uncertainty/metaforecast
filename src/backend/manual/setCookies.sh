@@ -30,8 +30,10 @@ case $platform in
         echo ""
         echo "Cookie found:"
         echo "$cookie"
-				echo "Running: \$heroku config:set INFER_COOKIE='\$cookie'"
-				heroku config:set INFER_COOKIE="$cookie" -a metaforecast-backend
+        echo "Running: \$heroku config:set INFER_COOKIE='\$cookie'"
+        heroku config:set INFER_COOKIE="$cookie" -a metaforecast-backend
+        
+        echo "WARNING! This cookie also needs to be updated in QURI 1Password vault, or it will be overwritten by Terraform."
     ;;
     "1" )
         echo "Platform: Good Judgment Open"
@@ -55,7 +57,9 @@ case $platform in
         echo "Cookie found:"
         echo "$cookie"
         echo "Running: \$heroku config:set GOODJUDGMENTOPENCOOKIE='\$cookie'"
-				heroku config:set GOODJUDGMENTOPENCOOKIE="$cookie" -a metaforecast-backend
+        heroku config:set GOODJUDGMENTOPENCOOKIE="$cookie" -a metaforecast-backend
+
+        echo "WARNING! This cookie also needs to be updated in QURI 1Password vault, or it will be overwritten by Terraform."
     ;;
     * )
         echo "Option not in {0,1}, exiting."
