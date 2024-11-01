@@ -1,5 +1,4 @@
-import Error from "next/error";
-import { FetchedQuestion, Platform } from "..";
+import { FetchedQuestion, Platform } from "../";
 import { average } from "../../../utils";
 import { sleep } from "../../utils/sleep";
 import {
