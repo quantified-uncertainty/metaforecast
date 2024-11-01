@@ -1,10 +1,6 @@
-# To deploy Metaforecast as a Kubernetes chart, you need to provide a valid image.
-# QURI doesn't have a public container registry, so you'll have to build the image yourself (from the `ops/Dockerfile` in this repo).
-# At QURI, we use a private container registry, and do builds with Argo Workflows.
 image:
-  pullSecret: '' # name of kubernetes secret that provides access to the private container registry
-  name: '' # full name of the image - override this
-  tag: '' # tag of the image - override this
+  name: ghcr.io/quantified-uncertainty/metaforecast
+  tag: ''
 
 # Secret; you should create this in your k8s cluster.
 envSecret: metaforecast-env

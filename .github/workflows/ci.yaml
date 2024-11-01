@@ -65,3 +65,12 @@ jobs:
           subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
+
+      - name: Commit new image tag
+        run: |
+          sed -i "s/^  tag:.*/  tag: sha-${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.revision'] }}/" ./ops/chart/values.yaml
+          git config --global user.email "ops@quantifieduncertainty.org"
+          git config --global user.name "GitHub Actions"
+          git add .
+          git commit -m 'Update image tag'
+          git push origin ${{ github.ref_name }}
