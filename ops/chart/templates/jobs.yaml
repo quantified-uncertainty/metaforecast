@@ -9,6 +9,9 @@ spec:
   schedule: {{ $job.schedule | required "schedule is required" }}
   timeZone: Etc/UTC
   jobTemplate:
+    labels:
+      app: {{ $.Release.Name }}
+      cronjob: {{ $jobname }}
     spec:
       template:
         spec:
