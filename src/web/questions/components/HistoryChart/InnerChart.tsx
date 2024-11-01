@@ -1,13 +1,12 @@
 import { differenceInDays, format } from "date-fns";
 import {
+  VictoryArea,
   VictoryAxis,
   VictoryChart,
   VictoryGroup,
-  VictoryStack,
   VictoryLabel,
   VictoryLine,
   VictoryScatter,
-  VictoryArea,
   VictoryTheme,
   VictoryTooltip,
   VictoryVoronoiContainer,
@@ -15,8 +14,8 @@ import {
 
 import { chartColors, ChartData, ChartSeries, goldenRatio } from "./utils";
 
-const height = 200
-const width = 200 * goldenRatio
+const height = 200;
+const width = 200 * goldenRatio;
 let dateFormat = "dd/MM/yy"; // "yyyy-MM-dd" // "MMM do yy"
 
 // can't be replaced with React component, VictoryChart requires VictoryGroup elements to be immediate children
@@ -207,7 +206,6 @@ export const InnerChart: React.FC<Props> = ({
             })
             */
       }
-      
     </VictoryChart>
   );
 };
