@@ -1,6 +1,6 @@
 image:
   name: ghcr.io/quantified-uncertainty/metaforecast
-  tag: ''
+  tag: sha-7d7683102c5274aab515ffb195f5fbcb647b95b9
 
 # Secret; you should create this in your k8s cluster.
 envSecret: metaforecast-env
