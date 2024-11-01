@@ -5,8 +5,13 @@ FROM node:$DOCKER_NODE_VERSION AS build
 
 WORKDIR /app
 
-# https://github.com/prisma/prisma/issues/16553
-RUN apk add openssl1.1-compat
+# Install OpenSSL - necessary for Prisma client
+# Mount caches via https://stackoverflow.com/a/72851168
+RUN --mount=type=cache,id=apt-lists,target=/var/lib/apt/lists,sharing=locked \
+    --mount=type=cache,id=apt-cache,target=/var/cache/apt,sharing=locked \
+    rm -f /etc/apt/apt.conf.d/docker-clean \
+    && apt-get update \
+    && apt-get install -y openssl
 
 # Install pnpm globally
 RUN npm install -g pnpm
