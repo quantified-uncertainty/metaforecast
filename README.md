@@ -13,7 +13,7 @@ This repository includes the source code for both the website and the library th
 ```
 $ git clone https://github.com/quantified-uncertainty/metaforecast
 $ cd metaforecast
-$ npm install
+$ pnpm install
 ```
 
 ### 2. Set up a database and environment variables
@@ -26,7 +26,7 @@ See [./docs/configuration.md](./docs/configuration.md) for details.
 
 ### 3. Actually run
 
-After installing and building (`npm run build`) the application, `npm run cli` starts a local CLI which presents the user with choices. If you would like to skip that step, use the option name instead, e.g., `npm run cli wildeford`.
+After installing and building (`pnpm run build`) the application, `pnpm run cli` starts a local CLI which presents the user with choices. If you would like to skip that step, use the option name instead, e.g., `pnpm run cli wildeford`.
 
 ![](./public/screenshot-cli.png)
 
@@ -37,10 +37,10 @@ So overall this would look like
 ```
 $ git clone https://github.com/quantified-uncertainty/metaforecast
 $ cd metaforecast
-$ npm install
-$ npm run build
-$ npm run cli
-$ npm run next-dev
+$ pnpm install
+$ pnpm run build
+$ pnpm run cli
+$ pnpm run next-dev
 ```
 
 ### 4. Example: download the metaforecasts database
@@ -48,7 +48,7 @@ $ npm run next-dev
 ```
 $ git clone https://github.com/quantified-uncertainty/metaforecast
 $ cd metaforecast
-$ npm install
+$ pnpm install
 $ node src/backend/manual/manualDownload.js
 ```
 
