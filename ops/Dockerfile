@@ -5,6 +5,9 @@ FROM node:$DOCKER_NODE_VERSION AS build
 
 WORKDIR /app
 
+# https://github.com/prisma/prisma/issues/16553
+RUN apk add openssl1.1-compat
+
 # Install pnpm globally
 RUN npm install -g pnpm
 
