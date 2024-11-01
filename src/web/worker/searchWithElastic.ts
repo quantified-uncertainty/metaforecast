@@ -6,13 +6,19 @@ import {
 
 import { ElasticQuestion } from "../../backend/utils/elastic";
 
-const client = new ElasticClient({
-  node: process.env.ELASTIC_HOST,
-  auth: {
-    username: process.env.ELASTIC_USER!,
-    password: process.env.ELASTIC_PASSWORD!,
-  },
-});
+let _CACHED_CLIENT: ElasticClient | null = null;
+function getClient() {
+  if (!_CACHED_CLIENT) {
+    _CACHED_CLIENT = new ElasticClient({
+      node: process.env.ELASTIC_HOST,
+      auth: {
+        username: process.env.ELASTIC_USER!,
+        password: process.env.ELASTIC_PASSWORD!,
+      },
+    });
+  }
+  return _CACHED_CLIENT;
+}
 
 const INDEX_NAME = process.env.ELASTIC_INDEX!;
 
@@ -89,7 +95,7 @@ export async function searchWithElastic({
   filterByPlatforms,
   forecastsThreshold,
 }: SearchOpts): Promise<SearchHit<ElasticQuestion>[]> {
-  const response = await client.search<ElasticQuestion>({
+  const response = await getClient().search<ElasticQuestion>({
     index: INDEX_NAME,
     sort: [{ "qualityindicators.stars": "desc" }, "_score"],
     query: {

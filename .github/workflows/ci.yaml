@@ -56,11 +56,9 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      # This step generates an artifact attestation for the image, which is an
-      # unforgeable statement about where and how it was built.  It increases
-      # supply chain security for people who consume the image.  For more
-      # information, see
-      # https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds
+      # This step generates an artifact attestation for the image, which is an unforgeable statement about where and how it was built.
+      # It increases supply chain security for people who consume the image.
+      # For more information, see https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v1
         with:

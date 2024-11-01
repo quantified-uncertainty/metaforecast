@@ -6,13 +6,19 @@ import { Question } from "@prisma/client";
 import { prisma } from "../database/prisma";
 import { platformNameToLabel } from "../platforms/registry";
 
-const client = new ElasticClient({
-  node: process.env.ELASTIC_HOST,
-  auth: {
-    username: process.env.ELASTIC_USER!,
-    password: process.env.ELASTIC_PASSWORD!,
-  },
-});
+let _CACHED_CLIENT: ElasticClient | null = null;
+function getClient() {
+  if (!_CACHED_CLIENT) {
+    _CACHED_CLIENT = new ElasticClient({
+      node: process.env.ELASTIC_HOST,
+      auth: {
+        username: process.env.ELASTIC_USER!,
+        password: process.env.ELASTIC_PASSWORD!,
+      },
+    });
+  }
+  return _CACHED_CLIENT;
+}
 
 const ALIAS_NAME = process.env.ELASTIC_INDEX!;
 
@@ -50,8 +56,8 @@ export async function rebuildElasticDatabase() {
   const questions = await prisma.question.findMany();
 
   const oldIndexNames: string[] = [];
-  if (await client.indices.existsAlias({ name: ALIAS_NAME })) {
-    const alias = await client.indices.getAlias({ name: ALIAS_NAME });
+  if (await getClient().indices.existsAlias({ name: ALIAS_NAME })) {
+    const alias = await getClient().indices.getAlias({ name: ALIAS_NAME });
     oldIndexNames.push(...Object.keys(alias));
   }
 
@@ -59,7 +65,7 @@ export async function rebuildElasticDatabase() {
   const index = `${ALIAS_NAME}-${suffix}`;
 
   console.log(`Creating a new index ${index}`);
-  await client.indices.create({
+  await getClient().indices.create({
     index,
     settings: {
       number_of_replicas: 0,
@@ -71,7 +77,7 @@ export async function rebuildElasticDatabase() {
 
   const flush = async () => {
     if (!operations.length) return;
-    await client.bulk({
+    await getClient().bulk({
       operations: operations.flatMap((op) => [
         { index: { _index: index, _id: op.id } },
         op.document,
@@ -95,7 +101,7 @@ export async function rebuildElasticDatabase() {
   console.log(`Pushed ${count} records to Elasticsearch.`);
 
   console.log("Switching alias to new index");
-  await client.indices.updateAliases({
+  await getClient().indices.updateAliases({
     body: {
       actions: [
         { remove: { index: "*", alias: ALIAS_NAME } },
@@ -106,6 +112,6 @@ export async function rebuildElasticDatabase() {
 
   for (const oldIndexName of oldIndexNames) {
     console.log(`Removing old index ${oldIndexName}`);
-    await client.indices.delete({ index: oldIndexName });
+    await getClient().indices.delete({ index: oldIndexName });
   }
 }
