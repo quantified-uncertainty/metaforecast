@@ -45,7 +45,7 @@ const askForJobName = async () => {
 const pickJob = async (): Promise<[string, { [k: string]: string }]> => {
   if (process.argv.length < 3) {
     const jobName = await askForJobName();
-    return [jobName, {}]; // e.g., npm run cli polymarket
+    return [jobName, {}]; // e.g., pnpm run cli polymarket
   }
 
   const jobName = process.argv[2];
