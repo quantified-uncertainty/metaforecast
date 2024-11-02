@@ -1,5 +1,5 @@
-import { NextPage } from "next";
-import { useRouter } from "next/router";
+"use client";
+import { useRouter } from "next/navigation";
 import { useMutation } from "urql";
 
 import { Layout } from "../../web/common/Layout";
@@ -7,7 +7,7 @@ import { LineHeader } from "../../web/common/LineHeader";
 import { CreateDashboardDocument } from "../../web/dashboards/queries.generated";
 import { DashboardCreator } from "../../web/display/DashboardCreator";
 
-const DashboardsPage: NextPage = () => {
+export default function () {
   const router = useRouter();
   const [createDashboardResult, createDashboard] = useMutation(
     CreateDashboardDocument
@@ -26,7 +26,7 @@ const DashboardsPage: NextPage = () => {
     if (!dashboardId) {
       throw new Error("Couldn't create a dashboard"); // TODO - toaster
     }
-    await router.push(`/dashboards/view/${dashboardId}`);
+    router.push(`/dashboards/view/${dashboardId}`);
   };
 
   return (
@@ -40,6 +40,4 @@ const DashboardsPage: NextPage = () => {
       </div>
     </Layout>
   );
-};
-
-export default DashboardsPage;
+}

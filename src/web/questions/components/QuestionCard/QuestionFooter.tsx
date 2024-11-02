@@ -157,11 +157,11 @@ export const QuestionFooter: React.FC<Props> = ({
   expandFooterToFullWidth,
 }) => {
   return (
-    <div
-      className={`grid grid-cols-3 ${
-        expandFooterToFullWidth ? "justify-between" : ""
-      } text-gray-500`}
-    >
+    (<div
+            className={`grid grid-cols-3 ${
+              expandFooterToFullWidth ? "justify-between" : ""
+            } text-gray-500`}
+          >
       <div className="self-center">
         <Stars num={question.qualityIndicators.stars} />
       </div>
@@ -184,6 +184,6 @@ export const QuestionFooter: React.FC<Props> = ({
       >
         <QualityIndicatorsList question={question} />
       </div>
-    </div>
+    </div>)
   );
 };

@@ -1,5 +1,7 @@
+"use client";
+import React, { FC, useMemo, useState } from "react";
+
 import dynamic from "next/dynamic";
-import React, { useMemo, useState } from "react";
 
 import { QuestionWithHistoryFragment } from "../../../fragments.generated";
 import { Props as InnerChartProps } from "./InnerChart"; // hopefully doesn't import code, just types - need to check
@@ -16,7 +18,7 @@ interface Props {
   question: QuestionWithHistoryFragment;
 }
 
-export const HistoryChart: React.FC<Props> = ({ question }) => {
+export const HistoryChart: FC<Props> = ({ question }) => {
   // maybe use context instead?
   const [highlight, setHighlight] = useState<number | undefined>(undefined);
 

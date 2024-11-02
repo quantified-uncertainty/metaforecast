@@ -1,5 +1,8 @@
-import { useRouter } from "next/router";
-import React, { useMemo, useState } from "react";
+"use client";
+import React, { FC, useMemo, useState } from "react";
+
+import { clsx } from "clsx";
+import { usePathname, useRouter } from "next/navigation";
 import { useQuery } from "urql";
 
 import { PlatformConfig } from "../../../backend/platforms";
@@ -19,17 +22,17 @@ export interface QueryParameters {
   forecastingPlatforms: string[]; // platform names
 }
 
-export interface Props {
+export type Props = {
   defaultResults: QuestionFragment[];
   initialQueryParameters: QueryParameters;
   defaultQueryParameters: QueryParameters;
   initialNumDisplay: number;
   defaultNumDisplay: number;
   platformsConfig: PlatformConfig[];
-}
+};
 
 /* Body */
-export const SearchScreen: React.FC<Props> = ({
+export const SearchScreen: FC<Props> = ({
   defaultResults,
   initialQueryParameters,
   defaultQueryParameters,
@@ -39,6 +42,7 @@ export const SearchScreen: React.FC<Props> = ({
 }) => {
   /* States */
   const router = useRouter();
+  const pathname = usePathname();
   const isFirstRender = useIsFirstRender();
 
   const [queryParameters, setQueryParameters] = useState<QueryParameters>(
@@ -109,9 +113,9 @@ export const SearchScreen: React.FC<Props> = ({
   ]);
 
   // I don't want the component which display questions (DisplayQuestions) to change with a change in queryParameters. But I want it to have access to the queryParameters, and in particular access to queryParameters.numDisplay. Hence why this function lives inside Home.
-  const getInfoToDisplayQuestionsFunction = () => {
+  const getInfoToDisplayQuestions = () => {
     const numDisplayRounded =
-      numDisplay % 3 != 0
+      numDisplay % 3 !== 0
         ? numDisplay + (3 - (Math.round(numDisplay) % 3))
         : numDisplay;
     return (
@@ -146,14 +150,7 @@ export const SearchScreen: React.FC<Props> = ({
     if (numDisplay !== defaultNumDisplay)
       query["numDisplay"] = String(numDisplay);
 
-    router.replace(
-      {
-        pathname: router.pathname,
-        query,
-      },
-      undefined,
-      { shallow: true }
-    );
+    router.replace(`${pathname}?${new URLSearchParams(query).toString()}`);
   };
 
   useNoInitialEffect(updateRoute, [numDisplay]);
@@ -292,16 +289,17 @@ export const SearchScreen: React.FC<Props> = ({
         </div>
       ) : null}
 
-      <div>{getInfoToDisplayQuestionsFunction()}</div>
+      <div>{getInfoToDisplayQuestions()}</div>
 
       {!results || (results.length !== 0 && numDisplay < results.length) ? (
         <div>
           <p className="mt-4 mb-4">
             {"Can't find what you were looking for?"}
             <span
-              className={`cursor-pointer text-blue-800 ${
-                !results ? "hidden" : ""
-              }`}
+              className={clsx(
+                "cursor-pointer text-blue-800",
+                !results && "hidden"
+              )}
               onClick={() => {
                 setNumDisplay(numDisplay * 2);
               }}

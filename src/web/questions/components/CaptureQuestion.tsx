@@ -1,6 +1,9 @@
+"use client";
+import { FC, PropsWithChildren, useEffect, useRef, useState } from "react";
+
 import domtoimage from "dom-to-image"; // https://github.com/tsayen/dom-to-image
 import { Resizable } from "re-resizable";
-import { useEffect, useRef, useState } from "react";
+
 import { Button } from "../../common/Button";
 import { CopyParagraph } from "../../common/CopyParagraph";
 import { QuestionFragment } from "../../fragments.generated";
@@ -66,7 +69,7 @@ const MetaculusEmbed: React.FC<{ question: QuestionFragment }> = ({
   return <iframe className="w-full h-80" src={iframeURL} />;
 };
 
-const MetaculusSource: React.FC<{
+const MetaculusSource: FC<{
   question: QuestionFragment;
 }> = ({ question }) => {
   if (question.platform.id !== "metaculus") return null;
@@ -79,7 +82,10 @@ const MetaculusSource: React.FC<{
   );
 };
 
-const GrayContainer: React.FC<{ title: string }> = ({ title, children }) => (
+const GrayContainer: FC<PropsWithChildren<{ title: string }>> = ({
+  title,
+  children,
+}) => (
   <div className="bg-gray-100 p-2 space-y-1">
     <div className="uppercase text-xs font-bold tracking-wide text-gray-600">
       {title}:

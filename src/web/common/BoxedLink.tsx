@@ -1,3 +1,5 @@
+import { FC, PropsWithChildren } from "react";
+
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 type Props = {
@@ -5,7 +7,7 @@ type Props = {
   size?: "normal" | "small";
 };
 
-export const BoxedLink: React.FC<Props> = ({
+export const BoxedLink: FC<PropsWithChildren<Props>> = ({
   url,
   size = "normal",
   children,

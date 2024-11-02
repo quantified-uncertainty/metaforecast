@@ -1,4 +1,4 @@
-import React, { ChangeEvent, EventHandler, SyntheticEvent, useState } from "react";
+import { ChangeEvent, EventHandler, FC, SyntheticEvent, useState } from "react";
 
 import { Button } from "../common/Button";
 import { InfoBox } from "../common/InfoBox";
@@ -14,7 +14,7 @@ interface Props {
   handleSubmit: (data: any) => Promise<void>;
 }
 
-export const DashboardCreator: React.FC<Props> = ({ handleSubmit }) => {
+export const DashboardCreator: FC<Props> = ({ handleSubmit }) => {
   const [value, setValue] = useState(exampleInput);
   const [acting, setActing] = useState(false);
 

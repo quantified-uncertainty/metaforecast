@@ -1,10 +1,10 @@
-import { NextPage } from "next";
 import React from "react";
+
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 
-import { Card } from "../web/common/Card";
-import { Layout } from "../web/common/Layout";
+import { Card } from "../../web/common/Card";
+import { Layout } from "../../web/common/Layout";
 
 const readmeMarkdownText = `# About
 
@@ -28,7 +28,7 @@ Also note that, whatever other redeeming features they might have, prediction ma
 
 `;
 
-const AboutPage: NextPage = () => {
+export default function AboutPage() {
   return (
     <Layout page="about">
       <Card highlightOnHover={false} large={true}>
@@ -40,6 +40,4 @@ const AboutPage: NextPage = () => {
       </Card>
     </Layout>
   );
-};
-
-export default AboutPage;
+}

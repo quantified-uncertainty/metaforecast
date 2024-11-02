@@ -1,4 +1,6 @@
-const CardTitle: React.FC = ({ children }) => (
+import { FC, PropsWithChildren } from "react";
+
+const CardTitle: FC<PropsWithChildren> = ({ children }) => (
   <div className="text-gray-800 text-lg font-medium">{children}</div>
 );
 
@@ -7,7 +9,7 @@ interface Props {
   large?: boolean;
 }
 
-type CardType = React.FC<Props> & {
+type CardType = FC<PropsWithChildren<Props>> & {
   Title: typeof CardTitle;
 };
 

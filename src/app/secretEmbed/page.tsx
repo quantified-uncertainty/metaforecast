@@ -1,34 +1,33 @@
-/* Imports */
-
-import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 
-import { getPlatforms } from "../backend/platforms/registry";
-import { QuestionFragment } from "../web/fragments.generated";
-import { QuestionCard } from "../web/questions/components/QuestionCard";
-import { SearchDocument } from "../web/search/queries.generated";
-import { ssrUrql } from "../web/urql";
+import { getPlatforms } from "../../backend/platforms/registry";
+import { QuestionFragment } from "../../web/fragments.generated";
+import { QuestionCard } from "../../web/questions/components/QuestionCard";
+import { SearchDocument } from "../../web/search/queries.generated";
+import { getUrqlRscClient } from "../../web/urql";
 
 interface Props {
   results: QuestionFragment[];
 }
 
-export const getServerSideProps: GetServerSideProps<Props> = async (
-  context
-) => {
-  const [ssrCache, client] = ssrUrql();
-  let urlQuery = context.query;
-
-  let initialQueryParameters = {
+export default async function ({
+  searchParams: searchParamsPromise,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const searchParams = await searchParamsPromise;
+  const initialQueryParameters = {
     query: "",
     starsThreshold: 2,
     forecastsThreshold: 0,
     forecastingPlatforms: getPlatforms().map((platform) => platform.name),
-    ...urlQuery,
+    ...searchParams,
   };
 
   let results: QuestionFragment[] = [];
   if (initialQueryParameters.query !== "") {
+    const client = getUrqlRscClient();
+
     const response = await client
       .query(SearchDocument, {
         input: {
@@ -44,15 +43,6 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
     }
   }
 
-  return {
-    props: {
-      urqlState: ssrCache.extractData(),
-      results,
-    },
-  };
-};
-
-const SecretEmbedPage: NextPage<Props> = ({ results }) => {
   let result = results.length ? results[0] : null;
 
   return (
@@ -77,6 +67,4 @@ const SecretEmbedPage: NextPage<Props> = ({ results }) => {
       </div>
     </div>
   );
-};
-
-export default SecretEmbedPage;
+}

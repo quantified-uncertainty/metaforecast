@@ -1,6 +1,10 @@
-import { initUrqlClient, SSRExchange } from "next-urql";
-import { cacheExchange, dedupExchange, fetchExchange, ssrExchange } from "urql";
-import customScalarsExchange from "urql-custom-scalars-exchange";
+import { cacheExchange, fetchExchange } from "urql";
+
+import customScalarsExchange from "@atmina/urql-custom-scalars-exchange";
+import { createClient } from "@urql/core";
+// import { initUrqlClient, SSRExchange } from "next-urql";
+import { SSRExchange } from "@urql/next";
+import { registerUrql } from "@urql/next/rsc";
 
 import schema from "../graphql/introspection.json";
 import { getBasePath } from "./utils";
@@ -21,23 +25,32 @@ const scalarsExchange = customScalarsExchange({
   },
 });
 
-export const getUrqlClientOptions = (ssr: SSRExchange) => ({
-  url: graphqlEndpoint,
-  exchanges: [
-    dedupExchange,
-    scalarsExchange,
-    cacheExchange,
-    ssr,
-    fetchExchange,
-  ],
-});
+export function getUrqlClientOptions(ssr: SSRExchange) {
+  return {
+    url: graphqlEndpoint,
+    exchanges: [scalarsExchange, cacheExchange, ssr, fetchExchange],
+  };
+}
 
-// for getServerSideProps/getStaticProps only
-export const ssrUrql = () => {
-  const ssrCache = ssrExchange({ isClient: false });
-  const client = initUrqlClient(getUrqlClientOptions(ssrCache), false);
-  if (!client) {
-    throw new Error("Expected non-null client instance from initUrqlClient");
-  }
-  return [ssrCache, client] as const;
-};
+export function getUrqlRscClient() {
+  const makeClient = () => {
+    return createClient({
+      url: graphqlEndpoint,
+      exchanges: [scalarsExchange, cacheExchange, fetchExchange],
+    });
+  };
+
+  const { getClient } = registerUrql(makeClient);
+
+  return getClient();
+}
+
+// // for getServerSideProps/getStaticProps only
+// export const ssrUrql = () => {
+//   const ssrCache = ssrExchange({ isClient: false });
+//   const client = initUrqlClient(getUrqlClientOptions(ssrCache), false);
+//   if (!client) {
+//     throw new Error("Expected non-null client instance from initUrqlClient");
+//   }
+//   return [ssrCache, client] as const;
+// };

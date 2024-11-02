@@ -1,3 +1,5 @@
+import { FC, PropsWithChildren } from "react";
+
 import { QuestionFragment } from "../../fragments.generated";
 import {
   formatIndicatorValue,
@@ -10,7 +12,10 @@ interface Props {
   question: QuestionFragment;
 }
 
-const TableRow: React.FC<{ title: string }> = ({ title, children }) => (
+const TableRow: FC<PropsWithChildren<{ title: string }>> = ({
+  title,
+  children,
+}) => (
   <tr className="border-b">
     <th
       scope="row"

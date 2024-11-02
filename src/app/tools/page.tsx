@@ -1,14 +1,15 @@
+import React, { FC } from "react";
+
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
-import captureImg from "../../public/screenshots/capture.png";
-import dashboardImg from "../../public/screenshots/dashboard.png";
-import frontpageImg from "../../public/screenshots/frontpage.png";
-import twitterImg from "../../public/screenshots/twitter.png";
-import { Card } from "../web/common/Card";
-import { Layout } from "../web/common/Layout";
+import captureImg from "../../../public/screenshots/capture.png";
+import dashboardImg from "../../../public/screenshots/dashboard.png";
+import frontpageImg from "../../../public/screenshots/frontpage.png";
+import twitterImg from "../../../public/screenshots/twitter.png";
+import { Card } from "../../web/common/Card";
+import { Layout } from "../../web/common/Layout";
 
 type AnyTool = {
   title: string;
@@ -23,21 +24,35 @@ type UpcomingTool = AnyTool;
 type Tool = InnerTool | ExternalTool | UpcomingTool;
 
 /* Display one tool */
-const ToolCard: React.FC<Tool> = (tool) => {
+const ToolCard: FC<Tool> = (tool) => {
   const inner = (
     <Card>
       <div className="grid content-start gap-3">
         <div className="text-gray-800 text-lg font-medium">{tool.title}</div>
         <div className="text-gray-500">{tool.description}</div>
-        {tool.img && <Image src={tool.img} className="text-gray-500" />}
+        {tool.img && (
+          <Image
+            src={tool.img}
+            alt={tool.title}
+            className="text-gray-500"
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
+          />
+        )}
       </div>
     </Card>
   );
 
   if ("innerLink" in tool) {
     return (
-      <Link href={tool.innerLink} passHref>
-        <a className="text‑inherit no-underline">{inner}</a>
+      <Link
+        href={tool.innerLink}
+        passHref
+        className="text‑inherit no-underline"
+      >
+        {inner}
       </Link>
     );
   } else if ("externalLink" in tool) {

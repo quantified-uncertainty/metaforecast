@@ -1,3 +1,5 @@
+import { FC } from "react";
+
 import { differenceInDays, format } from "date-fns";
 import {
   VictoryArea,
@@ -65,7 +67,7 @@ export type Props = {
   highlight: number | undefined;
 };
 
-export const InnerChart: React.FC<Props> = ({
+export const InnerChart: FC<Props> = ({
   data: { maxProbability, seriesList, minDate, maxDate },
   highlight,
 }) => {
