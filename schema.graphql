@@ -131,13 +131,13 @@ type Query {
   questions(after: String, before: String, first: Int, last: Int, orderBy: QuestionsOrderBy): QueryQuestionsConnection!
 
   """
-  Search for questions; uses Algolia instead of the primary metaforecast database
+  Search for questions; uses Elasticsearch instead of the primary metaforecast database
   """
   searchQuestions(input: SearchInput!): [Question!]!
 }
 
 type QueryQuestionsConnection {
-  edges: [QueryQuestionsConnectionEdge]!
+  edges: [QueryQuestionsConnectionEdge!]!
   pageInfo: PageInfo!
 }
 

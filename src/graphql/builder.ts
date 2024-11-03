@@ -1,10 +1,10 @@
-import SchemaBuilder from "@pothos/core";
-import PrismaPlugin from "@pothos/plugin-prisma";
-import RelayPlugin from "@pothos/plugin-relay";
+import SchemaBuilder from '@pothos/core';
+import PrismaPlugin from '@pothos/plugin-prisma';
+import type PrismaTypes from '@pothos/plugin-prisma/generated';
+import RelayPlugin from '@pothos/plugin-relay';
 
-import { prisma } from "../backend/database/prisma";
+import { prisma } from '../backend/database/prisma';
 
-import type PrismaTypes from "@pothos/plugin-prisma/generated";
 export const builder = new SchemaBuilder<{
   PrismaTypes: PrismaTypes;
   Scalars: {
@@ -13,12 +13,15 @@ export const builder = new SchemaBuilder<{
       Output: Date;
     };
   };
+
+  DefaultFieldNullability: false;
 }>({
   plugins: [PrismaPlugin, RelayPlugin],
   prisma: {
     client: prisma,
   },
-  relayOptions: {
+  defaultFieldNullability: false,
+  relay: {
     clientMutationId: "omit",
     cursorType: "String",
     // these are required for some reason, though it's not documented and probably a bug

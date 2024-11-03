@@ -169,7 +169,7 @@ export const InnerChart: FC<Props> = ({
           />
         }
         scale={{ x: "time" }}
-        tickFormat={(t) => format(t, dateFormat)}
+        tickFormat={(t: Date) => format(t, dateFormat)}
       />
       <VictoryAxis
         dependentAxis
@@ -180,7 +180,7 @@ export const InnerChart: FC<Props> = ({
           <VictoryLabel dy={0} dx={5} style={{ fontSize: 9, fill: "#777" }} />
         }
         // tickFormat specifies how ticks should be displayed
-        tickFormat={(x) => `${x * 100}%`}
+        tickFormat={(x: number) => `${x * 100}%`}
       />
 
       {[...Array(seriesList.length).keys()]
