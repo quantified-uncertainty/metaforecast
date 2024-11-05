@@ -1,10 +1,11 @@
 "use client";
 import { FC } from "react";
 
-import { Collapsible } from "../../../web/common/Collapsible";
-import { CopyParagraph } from "../../../web/common/CopyParagraph";
-import { QuestionWithHistoryFragment } from "../../../web/fragments.generated";
-import { getBasePath } from "../../../web/utils";
+import { Collapsible } from "@/web/common/Collapsible";
+import { CopyParagraph } from "@/web/common/CopyParagraph";
+import { QuestionWithHistoryFragment } from "@/web/fragments.generated";
+import { getBasePath } from "@/web/utils";
+
 import { Section } from "./Section";
 
 export const EmbedSection: FC<{ question: QuestionWithHistoryFragment }> = ({

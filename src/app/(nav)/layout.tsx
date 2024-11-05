@@ -1,37 +1,13 @@
 import React, { FC, PropsWithChildren } from "react";
 
-import Head from "next/head";
 import Link from "next/link";
 
-import { Logo2 } from "../icons";
-import { ErrorBoundary } from "./ErrorBoundary";
-
-interface MenuItem {
-  page: string;
-  link: string;
-  title: string;
-}
-
-const menu: MenuItem[] = [
-  {
-    page: "search",
-    link: "/",
-    title: "Search",
-  },
-  {
-    page: "tools",
-    link: "/tools",
-    title: "Tools",
-  },
-  {
-    page: "about",
-    link: "/about",
-    title: "About",
-  },
-];
+import { ErrorBoundary } from "../../web/common/ErrorBoundary";
+import { Logo2 } from "../../web/icons";
+import { NavMenu } from "./NavMenu";
 
 /* Utilities */
-const calculateLastUpdate = () => {
+function calculateLastUpdate() {
   let today = new Date().toISOString();
   let yesterdayObj = new Date();
   yesterdayObj.setDate(yesterdayObj.getDate() - 1);
@@ -41,24 +17,16 @@ const calculateLastUpdate = () => {
   } else {
     return yesterday.slice(0, 10);
   }
-};
-
-interface Props {
-  page: string; // id used for menu
 }
 
 /* Main */
-export const Layout: FC<PropsWithChildren<Props>> = ({ page, children }) => {
-  let lastUpdated = calculateLastUpdate();
+const Layout: FC<PropsWithChildren> = ({ children }) => {
+  const lastUpdated = calculateLastUpdate();
   // The correct way to do this would be by passing a prop to Layout,
   // and to get the last updating using server side props.
 
   return (
     <div>
-      <Head>
-        <title>Metaforecast</title>
-        <link rel="icon" href="/icons/logo.svg" />
-      </Head>
       <div>
         <nav className="bg-white shadow">
           <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -93,22 +61,7 @@ export const Layout: FC<PropsWithChildren<Props>> = ({ page, children }) => {
                 ) : null}
               </div>
 
-              <div className="flex space-x-4">
-                {menu.map((item) => (
-                  <Link
-                    href={item.link}
-                    passHref
-                    key={item.page}
-                    className={`no-underline py-4 px-2 text-sm sm:text-lg font-medium cursor-pointer border-b-2 border-transparent ${
-                      page === item.page
-                        ? "text-blue-700 border-blue-700"
-                        : "text-gray-400 hover:text-blue-500 hover:border-blue-500"
-                    }`}
-                  >
-                    {item.title}
-                  </Link>
-                ))}
-              </div>
+              <NavMenu />
             </div>
           </div>
         </nav>
@@ -123,3 +76,5 @@ export const Layout: FC<PropsWithChildren<Props>> = ({ page, children }) => {
     </div>
   );
 };
+
+export default Layout;

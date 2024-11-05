@@ -1,19 +1,12 @@
 import React from "react";
 
 import {
-  getPlatforms,
-  getPlatformsConfig,
-} from "../backend/platforms/registry";
-import { Layout } from "../web/common/Layout";
-import {
-  QueryParameters,
-  SearchScreen,
-} from "../web/search/components/SearchScreen";
-import {
   FrontpageDocument,
   SearchDocument,
-} from "../web/search/queries.generated";
-import { getUrqlRscClient } from "../web/urql";
+} from "@/app/(nav)/queries.generated";
+import { QueryParameters, SearchScreen } from "@/app/(nav)/SearchScreen";
+import { getPlatforms, getPlatformsConfig } from "@/backend/platforms/registry";
+import { getUrqlRscClient } from "@/web/urql";
 
 export default async function IndexPage({
   searchParams: searchParamsPromise,
@@ -85,9 +78,5 @@ export default async function IndexPage({
     platformsConfig,
   };
 
-  return (
-    <Layout page="search">
-      <SearchScreen {...props} />
-    </Layout>
-  );
+  return <SearchScreen {...props} />;
 }

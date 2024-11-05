@@ -2,10 +2,9 @@
 import { useRouter } from "next/navigation";
 import { useMutation } from "urql";
 
-import { Layout } from "../../web/common/Layout";
-import { LineHeader } from "../../web/common/LineHeader";
-import { CreateDashboardDocument } from "../../web/dashboards/queries.generated";
-import { DashboardCreator } from "../../web/display/DashboardCreator";
+import { LineHeader } from "../../../web/common/LineHeader";
+import { CreateDashboardDocument } from "../../../web/dashboards/queries.generated";
+import { DashboardCreator } from "../../../web/display/DashboardCreator";
 
 export default function () {
   const router = useRouter();
@@ -30,14 +29,12 @@ export default function () {
   };
 
   return (
-    <Layout page="dashboard">
-      <div className="flex flex-col my-8 space-y-8">
-        <LineHeader>Create a dashboard!</LineHeader>
+    <div className="flex flex-col my-8 space-y-8">
+      <LineHeader>Create a dashboard!</LineHeader>
 
-        <div className="self-center">
-          <DashboardCreator handleSubmit={handleSubmit} />
-        </div>
+      <div className="self-center">
+        <DashboardCreator handleSubmit={handleSubmit} />
       </div>
-    </Layout>
+    </div>
   );
 }

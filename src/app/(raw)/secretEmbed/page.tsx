@@ -1,10 +1,10 @@
 import React from "react";
 
-import { getPlatforms } from "../../backend/platforms/registry";
-import { QuestionFragment } from "../../web/fragments.generated";
-import { QuestionCard } from "../../web/questions/components/QuestionCard";
-import { SearchDocument } from "../../web/search/queries.generated";
-import { getUrqlRscClient } from "../../web/urql";
+import { SearchDocument } from "@/app/(nav)/queries.generated";
+import { getPlatforms } from "@/backend/platforms/registry";
+import { QuestionFragment } from "@/web/fragments.generated";
+import { QuestionCard } from "@/web/questions/components/QuestionCard";
+import { getUrqlRscClient } from "@/web/urql";
 
 interface Props {
   results: QuestionFragment[];
@@ -43,7 +43,7 @@ export default async function ({
     }
   }
 
-  let result = results.length ? results[0] : null;
+  const result = results.length ? results[0] : null;
 
   return (
     <div className="mb-4 mt-8 flex flex-row justify-center items-center">

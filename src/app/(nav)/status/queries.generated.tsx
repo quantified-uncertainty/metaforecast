@@ -1,4 +1,4 @@
-import * as Types from '../../graphql/types.generated';
+import * as Types from '../../../graphql/types.generated';
 
 import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
 export type PlatformsStatusQueryVariables = Types.Exact<{ [key: string]: never; }>;

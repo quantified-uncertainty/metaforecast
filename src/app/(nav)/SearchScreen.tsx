@@ -5,14 +5,14 @@ import { clsx } from "clsx";
 import { usePathname, useRouter } from "next/navigation";
 import { useQuery } from "urql";
 
-import { PlatformConfig } from "../../../backend/platforms";
-import { MultiSelectPlatform } from "../../common/MultiSelectPlatform";
-import { ButtonsForStars } from "../../display/ButtonsForStars";
-import { SliderElement } from "../../display/SliderElement";
-import { QuestionFragment } from "../../fragments.generated";
-import { useIsFirstRender, useNoInitialEffect } from "../../hooks";
-import { QuestionCardsList } from "../../questions/components/QuestionCardsList";
-import { SearchDocument } from "../queries.generated";
+import { type PlatformConfig } from "../../backend/platforms";
+import { MultiSelectPlatform } from "../../web/common/MultiSelectPlatform";
+import { ButtonsForStars } from "../../web/display/ButtonsForStars";
+import { SliderElement } from "../../web/display/SliderElement";
+import { QuestionFragment } from "../../web/fragments.generated";
+import { useIsFirstRender, useNoInitialEffect } from "../../web/hooks";
+import { QuestionCardsList } from "../../web/questions/components/QuestionCardsList";
+import { SearchDocument } from "./queries.generated";
 import { QueryForm } from "./QueryForm";
 
 export interface QueryParameters {

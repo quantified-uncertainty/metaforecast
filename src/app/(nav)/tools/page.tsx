@@ -1,15 +1,14 @@
 import React, { FC } from "react";
 
-import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import captureImg from "../../../public/screenshots/capture.png";
-import dashboardImg from "../../../public/screenshots/dashboard.png";
-import frontpageImg from "../../../public/screenshots/frontpage.png";
-import twitterImg from "../../../public/screenshots/twitter.png";
-import { Card } from "../../web/common/Card";
-import { Layout } from "../../web/common/Layout";
+import { Card } from "@/web/common/Card";
+
+import captureImg from "./capture.png";
+import dashboardImg from "./dashboard.png";
+import frontpageImg from "./frontpage.png";
+import twitterImg from "./twitter.png";
 
 type AnyTool = {
   title: string;
@@ -66,8 +65,8 @@ const ToolCard: FC<Tool> = (tool) => {
   }
 };
 
-const ToolsPage: NextPage = () => {
-  let tools: Tool[] = [
+export default function ToolsPage() {
+  const tools: Tool[] = [
     {
       title: "Search",
       description: "Find forecasting questions on many platforms.",
@@ -105,15 +104,12 @@ const ToolsPage: NextPage = () => {
       description: "Save your forecasts or bets.",
     },
   ];
-  return (
-    <Layout page="tools">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-8 place-content-stretch">
-        {tools.map((tool, i) => (
-          <ToolCard {...tool} key={i} />
-        ))}
-      </div>
-    </Layout>
-  );
-};
 
-export default ToolsPage;
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-8 place-content-stretch">
+      {tools.map((tool, i) => (
+        <ToolCard {...tool} key={i} />
+      ))}
+    </div>
+  );
+}

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { InfoBox } from "@/web/common/InfoBox";
-import { Layout } from "@/web/common/Layout";
 import { LineHeader } from "@/web/common/LineHeader";
 import {
   DashboardByIdDocument,
@@ -66,29 +65,25 @@ export default async function ({
   }
 
   return (
-    <Layout page="view-dashboard">
-      <div className="flex flex-col my-8 space-y-8">
-        <DashboardMetadata dashboard={dashboard} />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <QuestionCardsList
-            results={dashboard.questions}
-            numDisplay={dashboard.questions.length}
-            showIdToggle={false}
-          />
-        </div>
-
-        <div className="max-w-xl self-center">
-          <InfoBox>
-            Dashboards cannot be changed after they are created.
-          </InfoBox>
-        </div>
-
-        <LineHeader>
-          <Link href="/dashboards" passHref>
-            Create your own dashboard
-          </Link>
-        </LineHeader>
+    <div className="flex flex-col my-8 space-y-8">
+      <DashboardMetadata dashboard={dashboard} />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <QuestionCardsList
+          results={dashboard.questions}
+          numDisplay={dashboard.questions.length}
+          showIdToggle={false}
+        />
       </div>
-    </Layout>
+
+      <div className="max-w-xl self-center">
+        <InfoBox>Dashboards cannot be changed after they are created.</InfoBox>
+      </div>
+
+      <LineHeader>
+        <Link href="/dashboards" passHref>
+          Create your own dashboard
+        </Link>
+      </LineHeader>
+    </div>
   );
 }

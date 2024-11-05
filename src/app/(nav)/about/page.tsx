@@ -3,8 +3,7 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 
-import { Card } from "../../web/common/Card";
-import { Layout } from "../../web/common/Layout";
+import { Card } from "../../../web/common/Card";
 
 const readmeMarkdownText = `# About
 
@@ -30,14 +29,12 @@ Also note that, whatever other redeeming features they might have, prediction ma
 
 export default function AboutPage() {
   return (
-    <Layout page="about">
-      <Card highlightOnHover={false} large={true}>
-        <ReactMarkdown
-          remarkPlugins={[gfm]}
-          children={readmeMarkdownText}
-          className="max-w-prose mx-auto"
-        />
-      </Card>
-    </Layout>
+    <Card highlightOnHover={false} large={true}>
+      <ReactMarkdown
+        remarkPlugins={[gfm]}
+        children={readmeMarkdownText}
+        className="max-w-prose mx-auto"
+      />
+    </Card>
   );
 }

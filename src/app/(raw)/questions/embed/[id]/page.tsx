@@ -23,8 +23,6 @@ export default async function ({
   return (
     <div className="block bg-white min-h-screen">
       <div className="flex flex-col p-2 w-full h-12/12">
-        {/*<QuestionTitle question={question} linkToMetaforecast={true} /> */}
-
         <div className="mb-1 mt-1">
           <QuestionInfoRow question={question} />
         </div>
