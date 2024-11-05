@@ -4,10 +4,13 @@ import React, {
   useState,
 } from 'react';
 
+import debounce from 'lodash/debounce';
+
 import { type PlatformConfig } from '../../backend/platforms';
 import { MultiSelectPlatform } from '../../web/common/MultiSelectPlatform';
 import { ButtonsForStars } from '../../web/display/ButtonsForStars';
 import { SliderElement } from '../../web/display/SliderElement';
+import { SearchQuery } from './common';
 import {
   useSearchQuery,
   useUpdateSearchQuery,
@@ -30,10 +33,14 @@ export const SearchForm: FC<Props> = ({ platformsConfig }) => {
   const [advancedOptions, showAdvancedOptions] = useState(false);
   const [showIdToggle, setShowIdToggle] = useState(false);
 
-  const updateRoute = useUpdateSearchQuery();
+  const updateSearchQuery = useUpdateSearchQuery();
+
+  const submit = debounce((patch: Partial<SearchQuery>) => {
+    updateSearchQuery(patch);
+  }, 300);
 
   const onChangeStars = (value: number) => {
-    updateRoute({ starsThreshold: value });
+    submit({ starsThreshold: value });
   };
 
   /* Change the forecast threshold */
@@ -41,19 +48,19 @@ export const SearchForm: FC<Props> = ({ platformsConfig }) => {
     return "# Forecasts > " + Math.round(value);
   };
   const onChangeSliderForNumForecasts = (value: number) => {
-    updateRoute({
+    submit({
       forecastsThreshold: Math.round(value),
     });
   };
 
   const onChangeSearchText = (value: string) => {
-    updateRoute({
+    submit({
       query: value,
     });
   };
 
   const onChangeSelectedPlatforms = (value: string[]) => {
-    updateRoute({
+    submit({
       forecastingPlatforms: value,
     });
   };

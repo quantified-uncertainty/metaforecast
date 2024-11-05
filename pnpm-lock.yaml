@@ -122,6 +122,9 @@ dependencies:
   jsdom:
     specifier: ^19.0.0
     version: 19.0.0
+  lodash:
+    specifier: ^4.17.21
+    version: 4.17.21
   next:
     specifier: 15.0.2
     version: 15.0.2(@babel/core@7.26.0)(react-dom@19.0.0-rc-02c0e824-20241028)(react@19.0.0-rc-02c0e824-20241028)
@@ -241,6 +244,9 @@ devDependencies:
   '@graphql-typed-document-node/core':
     specifier: ^3.2.0
     version: 3.2.0(graphql@16.9.0)
+  '@types/lodash':
+    specifier: ^4.17.13
+    version: 4.17.13
   '@types/pg':
     specifier: ^8.11.10
     version: 8.11.10
@@ -3099,6 +3105,10 @@ packages:
     dependencies:
       '@types/node': 22.8.6
     dev: false
+
+  /@types/lodash@4.17.13:
+    resolution: {integrity: sha512-lfx+dftrEZcdBPczf9d0Qv0x+j/rfNCMuC6OcfXmO8gkfeNAY88PgKUbvG56whcN23gc27yenwF6oJZXGFpYxg==}
+    dev: true
 
   /@types/mdast@4.0.4:
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
