@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 
+import { QuestionCardsList } from "@/app/(nav)/QuestionCardsList";
 import { DashboardByIdDocument } from "@/web/dashboards/queries.generated";
-import { QuestionCardsList } from "@/web/questions/components/QuestionCardsList";
 import { getUrqlRscClient } from "@/web/urql";
 
 export default async function ({
@@ -45,11 +45,7 @@ export default async function ({
             numCols || 3
           } gap-4 mb-6`}
         >
-          <QuestionCardsList
-            results={dashboard.questions}
-            numDisplay={dashboard.questions.length}
-            showIdToggle={false}
-          />
+          <QuestionCardsList results={dashboard.questions} />
         </div>
       </div>
     </div>

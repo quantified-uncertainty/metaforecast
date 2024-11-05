@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from "react";
+import { FC, ReactElement, ReactNode } from "react";
 
 import Link from "next/link";
 import { FaExpand } from "react-icons/fa";
@@ -77,7 +77,7 @@ interface Props {
   showExpandButton?: boolean;
 }
 
-export const QuestionCard: React.FC<Props> = ({
+export const QuestionCard: FC<Props> = ({
   container = (children) => <Card>{children}</Card>,
   question,
   showTimeStamp,

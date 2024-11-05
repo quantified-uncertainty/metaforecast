@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { QuestionCardsList } from "@/app/(nav)/QuestionCardsList";
 import { InfoBox } from "@/web/common/InfoBox";
 import { LineHeader } from "@/web/common/LineHeader";
 import {
   DashboardByIdDocument,
   DashboardFragment,
 } from "@/web/dashboards/queries.generated";
-import { QuestionCardsList } from "@/web/questions/components/QuestionCardsList";
 import { getUrqlRscClient } from "@/web/urql";
 
 const DashboardMetadata: React.FC<{ dashboard: DashboardFragment }> = ({
@@ -68,11 +68,7 @@ export default async function ({
     <div className="flex flex-col my-8 space-y-8">
       <DashboardMetadata dashboard={dashboard} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <QuestionCardsList
-          results={dashboard.questions}
-          numDisplay={dashboard.questions.length}
-          showIdToggle={false}
-        />
+        <QuestionCardsList results={dashboard.questions} />
       </div>
 
       <div className="max-w-xl self-center">

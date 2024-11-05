@@ -1,6 +1,13 @@
-import React from "react";
+import { FC, useState } from "react";
+
 import {
-    GetHandleProps, GetTrackProps, Handles, Rail, Slider, SliderItem, Tracks
+  GetHandleProps,
+  GetTrackProps,
+  Handles,
+  Rail,
+  Slider,
+  SliderItem,
+  Tracks,
 } from "react-compound-slider";
 
 // https://sghall.github.io/react-compound-slider/#/getting-started/tutorial
@@ -25,7 +32,7 @@ const railStyle = {
 };
 
 /* Support functions */
-const Handle: React.FC<{
+const Handle: FC<{
   handle: SliderItem;
   getHandleProps: GetHandleProps;
   displayFunction: (value: number) => string;
@@ -55,7 +62,7 @@ const Handle: React.FC<{
   );
 };
 
-const Track: React.FC<{
+const Track: FC<{
   source: SliderItem;
   target: SliderItem;
   getTrackProps: GetTrackProps;
@@ -80,18 +87,20 @@ const Track: React.FC<{
   );
 };
 
-interface Props {
-  value: number;
+type Props = {
+  defaultValue: number;
   onChange: (value: number) => void;
   displayFunction: (value: number) => string;
-}
+};
 
 /* Body */
-export const SliderElement: React.FC<Props> = ({
+export const SliderElement: FC<Props> = ({
   onChange,
-  value,
+  defaultValue,
   displayFunction,
 }) => {
+  const [value, setValue] = useState(defaultValue);
+
   return (
     <Slider
       rootStyle={
@@ -99,7 +108,10 @@ export const SliderElement: React.FC<Props> = ({
       }
       domain={[0, 200]}
       values={[value]}
-      onChange={(values) => onChange(values[0])}
+      onChange={(values) => {
+        setValue(values[0]);
+        onChange(values[0]);
+      }}
     >
       <Rail>
         {({ getRailProps }) => <div style={railStyle} {...getRailProps()} />}

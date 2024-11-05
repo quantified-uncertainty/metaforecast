@@ -1,5 +1,6 @@
+import React, { FC } from "react";
+
 import chroma from "chroma-js";
-import React from "react";
 import Select, { StylesConfig } from "react-select";
 
 import { PlatformConfig } from "../../backend/platforms";
@@ -65,13 +66,13 @@ const colourStyles: StylesConfig<Option> = {
   }),
 };
 
-interface Props {
+type Props = {
   onChange: (platforms: string[]) => void;
   value: string[];
   platformsConfig: PlatformConfig[];
-}
+};
 
-export const MultiSelectPlatform: React.FC<Props> = ({
+export const MultiSelectPlatform: FC<Props> = ({
   onChange,
   value,
   platformsConfig,
