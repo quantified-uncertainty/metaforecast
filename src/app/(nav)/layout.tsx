@@ -19,21 +19,19 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
         <nav className="bg-white shadow">
           <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
-              <div className="flex gap-8 items-center">
+              <div className="flex gap-8">
                 <Link
                   href="/"
-                  className="no-underline font-md justify-center items-center flex"
+                  className="no-underline font-md flex gap-2 items-center"
                 >
-                  <span className="mr-2">
-                    <Logo2 className="mt-1 mr-1 h-8 w-8" />
-                  </span>
+                  <Logo2 className="h-8 w-8" />
                   <span className="text-sm sm:text-2xl text-gray-700">
                     Metaforecast
                   </span>
                 </Link>
                 <Link
                   href="/status"
-                  className="no-underline text-sm font-md text-slate-400 hover:text-slate-900"
+                  className="hidden sm:block no-underline text-sm text-slate-400 hover:text-slate-900 self-baseline mt-1.5 sm:mt-2.5"
                 >
                   Status
                 </Link>
