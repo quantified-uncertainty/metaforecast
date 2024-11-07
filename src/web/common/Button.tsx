@@ -1,12 +1,10 @@
+import { FC } from 'react';
+
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: "small" | "normal";
 }
 
-export const Button: React.FC<Props> = ({
-  children,
-  size = "normal",
-  ...rest
-}) => {
+export const Button: FC<Props> = ({ children, size = "normal", ...rest }) => {
   const padding = size === "normal" ? "px-5 py-4" : "px-3 py-2";
   return (
     <button

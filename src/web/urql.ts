@@ -1,9 +1,15 @@
-import { initUrqlClient, SSRExchange } from "next-urql";
-import { cacheExchange, dedupExchange, fetchExchange, ssrExchange } from "urql";
-import customScalarsExchange from "urql-custom-scalars-exchange";
+import {
+  cacheExchange,
+  fetchExchange,
+} from 'urql';
 
-import schema from "../graphql/introspection.json";
-import { getBasePath } from "./utils";
+import customScalarsExchange from '@atmina/urql-custom-scalars-exchange';
+import { createClient } from '@urql/core';
+import { SSRExchange } from '@urql/next';
+import { registerUrql } from '@urql/next/rsc';
+
+import schema from '../graphql/introspection.json';
+import { getBasePath } from './utils';
 
 export const graphqlEndpoint = `${getBasePath()}/api/graphql`;
 
@@ -21,23 +27,23 @@ const scalarsExchange = customScalarsExchange({
   },
 });
 
-export const getUrqlClientOptions = (ssr: SSRExchange) => ({
-  url: graphqlEndpoint,
-  exchanges: [
-    dedupExchange,
-    scalarsExchange,
-    cacheExchange,
-    ssr,
-    fetchExchange,
-  ],
-});
+export function getUrqlClientOptions(ssr: SSRExchange | undefined) {
+  return {
+    url: graphqlEndpoint,
+    exchanges: [
+      scalarsExchange,
+      cacheExchange,
+      ...(ssr ? [ssr] : []),
+      fetchExchange,
+    ],
+  };
+}
 
-// for getServerSideProps/getStaticProps only
-export const ssrUrql = () => {
-  const ssrCache = ssrExchange({ isClient: false });
-  const client = initUrqlClient(getUrqlClientOptions(ssrCache), false);
-  if (!client) {
-    throw new Error("Expected non-null client instance from initUrqlClient");
-  }
-  return [ssrCache, client] as const;
-};
+export function getUrqlRscClient() {
+  // this is overly complicated, we could just call `React.cache` here as `registerUrql` does
+  const { getClient } = registerUrql(() =>
+    createClient(getUrqlClientOptions(undefined))
+  );
+
+  return getClient();
+}

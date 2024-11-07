@@ -1,3 +1,5 @@
+import { FC } from "react";
+
 import { differenceInDays, format } from "date-fns";
 import {
   VictoryArea,
@@ -65,7 +67,7 @@ export type Props = {
   highlight: number | undefined;
 };
 
-export const InnerChart: React.FC<Props> = ({
+export const InnerChart: FC<Props> = ({
   data: { maxProbability, seriesList, minDate, maxDate },
   highlight,
 }) => {
@@ -167,7 +169,7 @@ export const InnerChart: React.FC<Props> = ({
           />
         }
         scale={{ x: "time" }}
-        tickFormat={(t) => format(t, dateFormat)}
+        tickFormat={(t: Date) => format(t, dateFormat)}
       />
       <VictoryAxis
         dependentAxis
@@ -178,7 +180,7 @@ export const InnerChart: React.FC<Props> = ({
           <VictoryLabel dy={0} dx={5} style={{ fontSize: 9, fill: "#777" }} />
         }
         // tickFormat specifies how ticks should be displayed
-        tickFormat={(x) => `${x * 100}%`}
+        tickFormat={(x: number) => `${x * 100}%`}
       />
 
       {[...Array(seriesList.length).keys()]

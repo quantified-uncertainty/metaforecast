@@ -1,8 +1,9 @@
-import chroma from "chroma-js";
-import React from "react";
-import Select, { StylesConfig } from "react-select";
+import React, { FC } from 'react';
 
-import { PlatformConfig } from "../../backend/platforms";
+import chroma from 'chroma-js';
+import Select, { StylesConfig } from 'react-select';
+
+import { PlatformConfig } from '../../backend/platforms';
 
 type Option = {
   value: string;
@@ -10,12 +11,11 @@ type Option = {
   color: string;
 };
 
-const colourStyles: StylesConfig<Option> = {
+const colorStyles: StylesConfig<Option> = {
   control: (styles) => ({ ...styles, backgroundColor: "white" }),
   option: (styles, { data, isDisabled, isFocused, isSelected }) => {
     const color = chroma(data.color);
-    const scale = chroma.scale([data.color, "black"]);
-    const darker = scale(0.5).css(); // #FF7F7F
+
     return {
       ...styles,
       backgroundColor: isDisabled
@@ -65,13 +65,13 @@ const colourStyles: StylesConfig<Option> = {
   }),
 };
 
-interface Props {
+type Props = {
   onChange: (platforms: string[]) => void;
   value: string[];
   platformsConfig: PlatformConfig[];
-}
+};
 
-export const MultiSelectPlatform: React.FC<Props> = ({
+export const MultiSelectPlatform: FC<Props> = ({
   onChange,
   value,
   platformsConfig,
@@ -100,7 +100,7 @@ export const MultiSelectPlatform: React.FC<Props> = ({
       closeMenuOnSelect={false}
       options={options}
       value={selectValue}
-      styles={colourStyles}
+      styles={colorStyles}
     />
   );
 };

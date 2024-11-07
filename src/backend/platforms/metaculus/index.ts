@@ -1,6 +1,9 @@
-import { FetchedQuestion, Platform } from "../";
-import { average } from "../../../utils";
-import { sleep } from "../../utils/sleep";
+import {
+  FetchedQuestion,
+  Platform,
+} from '../';
+import { average } from '../../../utils';
+import { sleep } from '../../utils/sleep';
 import {
   ApiCommon,
   ApiMultipleQuestions,
@@ -8,7 +11,7 @@ import {
   ApiQuestion,
   fetchApiQuestions,
   fetchSingleApiQuestion,
-} from "./api";
+} from './api';
 
 const platformName = "metaculus";
 const now = new Date().toISOString();
@@ -201,9 +204,9 @@ export const metaculus: Platform<"id" | "debug"> = {
   },
 
   calculateStars(data) {
-    const { numforecasts } = data.qualityindicators;
-    const nuno = () =>
-      (numforecasts || 0) > 300 ? 4 : (numforecasts || 0) > 100 ? 3 : 2;
+    let { numforecasts } = data.qualityindicators;
+    numforecasts = Number(numforecasts);
+    const nuno = () => (numforecasts > 300 ? 4 : numforecasts > 100 ? 3 : 2);
     const eli = () => 3;
     const misha = () => 3;
     const starsDecimal = average([nuno(), eli(), misha()]);

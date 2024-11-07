@@ -1,13 +1,12 @@
 /* Imports */
-import axios from "axios";
-import { Tabletojson } from "tabletojson";
+import axios from 'axios';
 
-import { average } from "../../utils";
-import { applyIfSecretExists } from "../utils/getSecrets";
-import { sleep } from "../utils/sleep";
-import toMarkdown from "../utils/toMarkdown";
-import { FetchedQuestion, Platform } from "./";
-import { FullQuestionOption } from "../../common/types";
+import { FullQuestionOption } from '../../common/types';
+import { average } from '../../utils';
+import { applyIfSecretExists } from '../utils/getSecrets';
+import { sleep } from '../utils/sleep';
+import toMarkdown from '../utils/toMarkdown';
+import { Platform } from './';
 
 /* Definitions */
 const platformName = "goodjudgmentopen";
@@ -242,7 +241,8 @@ export const goodjudgmentopen: Platform = {
       ...data.options.map((option) => option.probability || 0)
     );
 
-    let nuno = () => ((data.qualityindicators.numforecasts || 0) > 100 ? 3 : 2);
+    let nuno = () =>
+      Number(data.qualityindicators.numforecasts || 0) > 100 ? 3 : 2;
     let eli = () => 3;
     let misha = () =>
       minProbability > 0.1 || maxProbability < 0.9 ? 3.1 : 2.5;

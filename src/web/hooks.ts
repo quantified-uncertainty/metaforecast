@@ -1,4 +1,9 @@
-import React, { DependencyList, EffectCallback, useEffect } from "react";
+import React, {
+  DependencyList,
+  EffectCallback,
+  useEffect,
+  useRef,
+} from "react";
 
 export const useNoInitialEffect = (
   effect: EffectCallback,
@@ -14,14 +19,12 @@ export const useNoInitialEffect = (
   }, deps);
 };
 
-export const useIsFirstRender = (): boolean => {
-  const isFirst = React.useRef(true);
+export function useIsFirstRender(): boolean {
+  const isFirst = useRef(true);
 
-  if (isFirst.current) {
+  useEffect(() => {
     isFirst.current = false;
-
-    return true;
-  }
+  }, []);
 
   return isFirst.current;
-};
+}

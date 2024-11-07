@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { FC, useState } from "react";
+
 import { FaCaretDown, FaCaretRight } from "react-icons/fa";
 
-export const Collapsible: React.FC<{
+export const Collapsible: FC<{
   title: string;
   children: () => React.ReactElement | null;
 }> = ({ title, children }) => {

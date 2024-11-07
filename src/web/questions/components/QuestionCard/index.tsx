@@ -1,7 +1,10 @@
+import { FC, ReactElement, ReactNode } from "react";
+
 import Link from "next/link";
-import { ReactElement, ReactNode } from "react";
 import { FaExpand } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
+import rehypeExternalLinks from "rehype-external-links";
+
 import { Card } from "../../../common/Card";
 import { CopyText } from "../../../common/CopyText";
 import { QuestionFragment } from "../../../fragments.generated";
@@ -17,8 +20,8 @@ const truncateText = (length: number, text: string): string => {
     return text;
   }
   const breakpoints = " .!?";
-  let lastLetter
-  let lastIndex
+  let lastLetter;
+  let lastIndex;
   for (let index = length; index > 0; index--) {
     const letter = text[index];
     if (breakpoints.includes(letter)) {
@@ -41,7 +44,10 @@ const DisplayMarkdown: React.FC<{ description: string }> = ({
   // overflow-hidden overflow-ellipsis h-24
   return formatted === "" ? null : (
     <div className="overflow-clip">
-      <ReactMarkdown linkTarget="_blank" className="font-normal">
+      <ReactMarkdown
+        rehypePlugins={[[rehypeExternalLinks, { target: "_blank" }]]}
+        className="font-normal"
+      >
         {formatted}
       </ReactMarkdown>
     </div>
@@ -71,7 +77,7 @@ interface Props {
   showExpandButton?: boolean;
 }
 
-export const QuestionCard: React.FC<Props> = ({
+export const QuestionCard: FC<Props> = ({
   container = (children) => <Card>{children}</Card>,
   question,
   showTimeStamp,
@@ -94,13 +100,15 @@ export const QuestionCard: React.FC<Props> = ({
         ) : null}
         <div>
           {showExpandButton ? (
-            <Link href={`/questions/${question.id}`} passHref>
-              <a className="float-right block ml-2 mt-1.5">
-                <FaExpand
-                  size="18"
-                  className="text-gray-400 hover:text-gray-700"
-                />
-              </a>
+            <Link
+              href={`/questions/${question.id}`}
+              passHref
+              className="float-right block ml-2 mt-1.5"
+            >
+              <FaExpand
+                size="18"
+                className="text-gray-400 hover:text-gray-700"
+              />
             </Link>
           ) : null}
           <Card.Title>
