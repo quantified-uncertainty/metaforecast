@@ -1,6 +1,7 @@
 "use client";
 import React, {
   FC,
+  use,
   useState,
 } from 'react';
 
@@ -16,6 +17,7 @@ import {
   useUpdateSearchQuery,
 } from './hooks';
 import { QueryForm } from './QueryForm';
+import { SearchUIContext } from './SearchUIProvider';
 
 export type Props = {
   platformsConfig: PlatformConfig[];
@@ -31,7 +33,6 @@ export const SearchForm: FC<Props> = ({ platformsConfig }) => {
 
   /* States */
   const [advancedOptions, showAdvancedOptions] = useState(false);
-  const [showIdToggle, setShowIdToggle] = useState(false);
 
   const updateSearchQuery = useUpdateSearchQuery();
 
@@ -65,7 +66,9 @@ export const SearchForm: FC<Props> = ({ platformsConfig }) => {
     });
   };
 
-  const onChangeShowId = () => setShowIdToggle(!showIdToggle);
+  const { showId, setShowId } = use(SearchUIContext);
+
+  const onChangeShowId = () => setShowId(!showId);
 
   return (
     <div>

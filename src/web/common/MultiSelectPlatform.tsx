@@ -1,9 +1,9 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import chroma from "chroma-js";
-import Select, { StylesConfig } from "react-select";
+import chroma from 'chroma-js';
+import Select, { StylesConfig } from 'react-select';
 
-import { PlatformConfig } from "../../backend/platforms";
+import { PlatformConfig } from '../../backend/platforms';
 
 type Option = {
   value: string;
@@ -11,12 +11,11 @@ type Option = {
   color: string;
 };
 
-const colourStyles: StylesConfig<Option> = {
+const colorStyles: StylesConfig<Option> = {
   control: (styles) => ({ ...styles, backgroundColor: "white" }),
   option: (styles, { data, isDisabled, isFocused, isSelected }) => {
     const color = chroma(data.color);
-    const scale = chroma.scale([data.color, "black"]);
-    const darker = scale(0.5).css(); // #FF7F7F
+
     return {
       ...styles,
       backgroundColor: isDisabled
@@ -101,7 +100,7 @@ export const MultiSelectPlatform: FC<Props> = ({
       closeMenuOnSelect={false}
       options={options}
       value={selectValue}
-      styles={colourStyles}
+      styles={colorStyles}
     />
   );
 };

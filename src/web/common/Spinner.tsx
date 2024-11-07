@@ -1,5 +1,7 @@
+import { FC } from 'react';
+
 // via https://github.com/tailwindlabs/heroicons/issues/131#issuecomment-829192663
-export const Spinner: React.FC = () => (
+export const Spinner: FC = () => (
   <svg
     className="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-500"
     fill="none"

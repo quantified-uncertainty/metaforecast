@@ -2,26 +2,24 @@
 
 import {
   createContext,
-  Dispatch,
   FC,
   PropsWithChildren,
-  SetStateAction,
-  useReducer,
+  useState,
 } from 'react';
 
 export const SearchUIContext = createContext<{
   showId: boolean;
-  dispatch: Dispatch<SetStateAction<boolean>>;
+  setShowId: (showId: boolean) => void;
 }>({
   showId: false,
-  dispatch: () => {},
+  setShowId: () => {},
 });
 
 export const SearchUIProvider: FC<PropsWithChildren> = ({ children }) => {
-  const [showId, dispatch] = useReducer((showId: boolean) => !showId, false);
+  const [showId, setShowId] = useState(false);
 
   return (
-    <SearchUIContext.Provider value={{ showId, dispatch }}>
+    <SearchUIContext.Provider value={{ showId, setShowId }}>
       {children}
     </SearchUIContext.Provider>
   );
