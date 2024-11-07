@@ -176,6 +176,9 @@ dependencies:
   react-is:
     specifier: 19.0.0-rc-02c0e824-20241028
     version: 19.0.0-rc-02c0e824-20241028
+  react-loading-skeleton:
+    specifier: ^3.5.0
+    version: 3.5.0(react@19.0.0-rc-02c0e824-20241028)
   react-markdown:
     specifier: ^9.0.1
     version: 9.0.1(@types/react@18.3.12)(react@19.0.0-rc-02c0e824-20241028)
@@ -8520,6 +8523,14 @@ packages:
 
   /react-is@19.0.0-rc-02c0e824-20241028:
     resolution: {integrity: sha512-dbZlYPxscH1wTMEaQVVHHsTgZuA9UcD/wWpojKyq8b03FCc3Xwu0bbFUiYOuVfOynVAPWbt+BIZGMXE1Kss5yQ==}
+    dev: false
+
+  /react-loading-skeleton@3.5.0(react@19.0.0-rc-02c0e824-20241028):
+    resolution: {integrity: sha512-gxxSyLbrEAdXTKgfbpBEFZCO/P153DnqSCQau2+o6lNy1jgMRr2MmRmOzMmyrwSaSYLRB8g7b0waYPmUjz7IhQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 19.0.0-rc-02c0e824-20241028
     dev: false
 
   /react-markdown@9.0.1(@types/react@18.3.12)(react@19.0.0-rc-02c0e824-20241028):

@@ -1,10 +1,10 @@
 "use client";
 
-import { FC } from "react";
+import { FC } from 'react';
 
-import clsx from "clsx";
-import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
+import clsx from 'clsx';
+import Link from 'next/link';
+import { useSelectedLayoutSegment } from 'next/navigation';
 
 type MenuItem = {
   segment: string | null;
@@ -32,7 +32,6 @@ const menu: MenuItem[] = [
 
 export const NavMenu: FC = () => {
   const segment = useSelectedLayoutSegment();
-  console.log(segment);
 
   return (
     <div className="flex space-x-4">

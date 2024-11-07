@@ -87,6 +87,7 @@
     "react-hook-form": "^7.38.0",
     "react-icons": "^4.6.0",
     "react-is": "19.0.0-rc-02c0e824-20241028",
+    "react-loading-skeleton": "^3.5.0",
     "react-markdown": "^9.0.1",
     "react-select": "^5.8.2",
     "rehype-external-links": "^3.0.0",
