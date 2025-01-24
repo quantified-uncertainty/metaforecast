@@ -1,45 +1,44 @@
-/* Imports */
 import axios from "axios";
 
 import { average } from "../../utils";
-import { FetchedQuestion, Platform } from "./";
+import { FetchedQuestion, Platform } from "./index.js";
 
 /* Definitions */
 const platformName = "manifold";
-const ENDPOINT = "https://api.manifold.markets/v0/markets";
-// See https://manifoldmarkets.notion.site/Manifold-Markets-API-5e7d0aef4dcf452bb04b319e178fabc5
 
-/* Support functions */
+// See https://docs.manifold.markets/api
+const ENDPOINT = "https://api.manifold.markets/v0/markets";
 
 async function fetchPage(endpoint: string) {
-  let response = await axios({
+  const response = await axios({
     url: endpoint,
     method: "GET",
     headers: {
       "Content-Type": "text/json",
     },
   }).then((response) => response.data);
-  // console.log(response)
+
   return response;
 }
 
 async function fetchAllData() {
   let endpoint = ENDPOINT;
   let end = false;
-  let allData = [];
+  const allData = [];
   let counter = 1;
   while (!end) {
     console.log(`Query #${counter}: ${endpoint}`);
-    let newData = await fetchPage(endpoint);
+    const newData = await fetchPage(endpoint);
     // console.log(newData)
     if (Array.isArray(newData)) {
       allData.push(...newData);
-      let hasReachedEnd =
+      const hasReachedEnd =
         newData.length == 0 ||
         newData[newData.length - 1] == undefined ||
         newData[newData.length - 1].id == undefined;
+
       if (!hasReachedEnd) {
-        let lastId = newData[newData.length - 1].id;
+        const lastId = newData[newData.length - 1].id;
         endpoint = `${ENDPOINT}?before=${lastId}`;
       } else {
         end = true;
@@ -54,10 +53,12 @@ async function fetchAllData() {
 
 function showStatistics(results: FetchedQuestion[]) {
   console.log(`Num unresolved markets: ${results.length}`);
-  let sum = (arr: number[]) => arr.reduce((tally, a) => tally + a, 0);
-  let num2StarsOrMore = results.filter(
+  const sum = (arr: number[]) => arr.reduce((a, b) => a + b, 0);
+
+  const num2StarsOrMore = results.filter(
     (result) => manifold.calculateStars(result) >= 2
   );
+
   console.log(
     `Manifold has ${num2StarsOrMore.length} markets with 2 stars or more`
   );
@@ -73,10 +74,11 @@ function showStatistics(results: FetchedQuestion[]) {
 }
 
 function processPredictions(predictions: any[]): FetchedQuestion[] {
-  let results: FetchedQuestion[] = predictions.map((prediction) => {
-    let id = `${platformName}-${prediction.id}`; // oops, doesn't match platform name
-    let probability = prediction.probability;
-    let options: FetchedQuestion["options"] = [
+  const results: FetchedQuestion[] = predictions.map((prediction) => {
+    const id = `${platformName}-${prediction.id}`; // oops, doesn't match platform name
+    const probability = prediction.probability;
+
+    const options: FetchedQuestion["options"] = [
       {
         name: "Yes",
         probability: probability,
@@ -88,8 +90,9 @@ function processPredictions(predictions: any[]): FetchedQuestion[] {
         type: "PROBABILITY",
       },
     ];
+
     const result: FetchedQuestion = {
-      id: id,
+      id,
       title: prediction.question,
       url: prediction.url,
       description: prediction.description || "",
@@ -119,22 +122,21 @@ export const manifold: Platform = {
   color: "#793466",
   version: "v1",
   async fetcher() {
-    let data = await fetchAllData();
-    let results = processPredictions(data); // somehow needed
+    const data = await fetchAllData();
+    const results = processPredictions(data); // somehow needed
     showStatistics(results);
     return results;
   },
   calculateStars(data) {
-    let nuno = () =>
+    const nuno = () =>
       (data.qualityindicators.volume24Hours || 0) > 100 ||
       ((data.qualityindicators.pool || 0) > 500 &&
         (data.qualityindicators.volume24Hours || 0) > 50)
         ? 2
         : 1;
-    let eli = () => null;
-    let misha = () => null;
-    let starsDecimal = average([nuno()]); //, eli(data), misha(data)])
-    let starsInteger = Math.round(starsDecimal);
+
+    const starsDecimal = average([nuno()]);
+    const starsInteger = Math.round(starsDecimal);
     return starsInteger;
   },
 };

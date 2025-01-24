@@ -6,7 +6,7 @@ import { prisma } from "../database/prisma";
 // This file includes comon types and functions for working with platforms.
 // The registry of all platforms is in a separate file, ./registry.ts, to avoid circular dependencies.
 
-export interface QualityIndicators {
+export type QualityIndicators = {
   stars: number;
   numforecasts?: number | string;
   numforecasters?: number;
@@ -24,7 +24,7 @@ export interface QualityIndicators {
   spread?: any;
   open_interest?: any;
   trade_volume?: any;
-}
+};
 
 export type FetchedQuestion = Omit<
   Question,
@@ -52,10 +52,6 @@ type PlatformFetcherV2Result = {
 type PlatformFetcherV2<ArgNames extends string> = (opts: {
   args?: { [k in ArgNames]: string };
 }) => Promise<PlatformFetcherV2Result>;
-
-export type PlatformFetcher<ArgNames extends string> =
-  | PlatformFetcherV1
-  | PlatformFetcherV2<ArgNames>;
 
 // using "" as ArgNames default is technically incorrect, but shouldn't cause any real issues
 // (I couldn't find a better solution for signifying an empty value, though there probably is one)
@@ -90,10 +86,10 @@ type PreparedQuestion = Omit<
   options: NonNullable<Question["options"]>;
 };
 
-export const prepareQuestion = (
+export function prepareQuestion(
   q: FetchedQuestion,
   platform: Platform<any>
-): PreparedQuestion => {
+): PreparedQuestion {
   return {
     extra: {},
     ...q,
@@ -104,11 +100,11 @@ export const prepareQuestion = (
       stars: platform.calculateStars(q),
     },
   };
-};
+}
 
-export const upsertSingleQuestion = async (
+export async function upsertSingleQuestion(
   q: PreparedQuestion
-): Promise<Question> => {
+): Promise<Question> {
   return await prisma.question.upsert({
     where: { id: q.id },
     create: {
@@ -118,12 +114,14 @@ export const upsertSingleQuestion = async (
     update: q,
   });
   // TODO - update history?
-};
+}
 
-export const processPlatform = async <T extends string = "">(
+export async function processPlatform<T extends string = "">(
   platform: Platform<T>,
-  args?: { [k in T]: string }
-) => {
+  args?: {
+    [k in T]: string;
+  }
+) {
   if (!platform.fetcher) {
     console.log(`Platform ${platform.name} doesn't have a fetcher, skipping`);
     return;
@@ -213,10 +211,10 @@ export const processPlatform = async <T extends string = "">(
         .map(([k, v]) => `${v} ${k}`)
         .join(", ")
   );
-};
+}
 
-export interface PlatformConfig {
+export type PlatformConfig = {
   name: string;
   label: string;
   color: string;
-}
+};

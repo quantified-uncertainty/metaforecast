@@ -1,14 +1,13 @@
-/* Imports */
 import "dotenv/config";
 
 import readline from "readline";
 
 import { executeJobByName, jobs } from "./flow/jobs";
 
-const generateWhatToDoMessage = () => {
+function generateWhatToDoMessage() {
   const color = "\x1b[36m";
   const resetColor = "\x1b[0m";
-  let completeMessages = [
+  const completeMessages = [
     ...jobs.map((job) => {
       return (
         (job.separate ? "\n" : "") +
@@ -19,12 +18,13 @@ const generateWhatToDoMessage = () => {
     }),
     `\nChoose one option, wisely: `,
   ].join("\n");
+
   return completeMessages;
-};
+}
 
-const whattodoMessage = generateWhatToDoMessage();
+const whatToDoMessage = generateWhatToDoMessage();
 
-const askForJobName = async () => {
+async function askForJobName() {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -36,13 +36,13 @@ const askForJobName = async () => {
     });
   };
 
-  const answer = await question(whattodoMessage);
+  const answer = await question(whatToDoMessage);
   rl.close();
 
   return answer;
-};
+}
 
-const pickJob = async (): Promise<[string, { [k: string]: string }]> => {
+async function pickJob(): Promise<[string, { [k: string]: string }]> {
   if (process.argv.length < 3) {
     const jobName = await askForJobName();
     return [jobName, {}]; // e.g., pnpm run cli polymarket
@@ -65,14 +65,15 @@ const pickJob = async (): Promise<[string, { [k: string]: string }]> => {
   }
 
   return [jobName, args];
-};
+}
 
 /* BODY */
-const commandLineUtility = async () => {
+async function commandLineUtility() {
+  // TODO - use commander or inquirer
   const [jobName, jobArgs] = await pickJob();
 
   await executeJobByName(jobName, jobArgs);
   process.exit();
-};
+}
 
 commandLineUtility();

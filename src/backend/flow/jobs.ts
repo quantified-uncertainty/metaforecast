@@ -5,13 +5,13 @@ import { getPlatforms } from "../platforms/registry";
 import { rebuildElasticDatabase } from "../utils/elastic";
 import { sleep } from "../utils/sleep";
 
-interface Job<ArgNames extends string = ""> {
+type Job<ArgNames extends string = ""> = {
   name: string;
   message: string;
   args?: ArgNames[];
   run: (args?: { [k in ArgNames]: string }) => Promise<void>;
   separate?: boolean;
-}
+};
 
 export const jobs: Job<string>[] = [
   ...getPlatforms().map((platform) => ({
@@ -57,10 +57,10 @@ async function tryCatchTryAgain<T extends object = never>(
   }
 }
 
-export const executeJobByName = async (
+export async function executeJobByName(
   jobName: string,
   jobArgs: { [k: string]: string } = {}
-) => {
+) {
   const job = jobs.find((job) => job.name === jobName);
   if (!job) {
     console.log(`Error, job ${jobName} not found`);
@@ -73,4 +73,4 @@ export const executeJobByName = async (
   }
 
   await tryCatchTryAgain(job.run, jobArgs);
-};
+}

@@ -3,7 +3,7 @@ import { executeJobByName } from "./jobs";
 
 /* Do everything */
 export async function doEverything() {
-  let jobNames = [
+  const jobNames = [
     ...getPlatforms().map((platform) => platform.name),
     "elastic",
   ];
