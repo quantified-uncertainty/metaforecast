@@ -1,14 +1,9 @@
+import { Question } from "@prisma/client";
 import axios from "axios";
 
-import { Question } from "@prisma/client";
-
+import { prepareQuestion, upsertSingleQuestion } from "../robot";
+import { FetchedQuestion, Platform } from "../types";
 import { ElasticQuestion, questionToElasticDocument } from "../utils/elastic";
-import {
-  FetchedQuestion,
-  Platform,
-  prepareQuestion,
-  upsertSingleQuestion,
-} from "./";
 
 /* Definitions */
 const searchEndpoint =

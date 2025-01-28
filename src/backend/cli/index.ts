@@ -2,16 +2,18 @@ import "dotenv/config";
 
 import readline from "readline";
 
-import { executeJobByName, jobs } from "./flow/jobs";
+import { executeJobByName, jobs } from "./jobs";
+
+function cyan(str: string) {
+  return `\x1b[36m${str}\x1b[0m`;
+}
 
 function generateWhatToDoMessage() {
-  const color = "\x1b[36m";
-  const resetColor = "\x1b[0m";
   const completeMessages = [
     ...jobs.map((job) => {
       return (
         (job.separate ? "\n" : "") +
-        `[${color}${job.name}${resetColor}]:`.padStart(30) +
+        `[${cyan(job.name)}]:`.padStart(30) +
         " " +
         job.message
       );

@@ -1,15 +1,20 @@
-import { doEverything } from "../flow/doEverything";
 import { rebuildFrontpage } from "../frontpage";
-import { processPlatform } from "../platforms";
+import {
+  importMarketsFromJsonArchiveFile,
+  importSingleMarket,
+} from "../platforms/manifold/extended";
 import { getPlatforms } from "../platforms/registry";
+import { processPlatform } from "../robot";
 import { rebuildElasticDatabase } from "../utils/elastic";
 import { sleep } from "../utils/sleep";
+import { doEverything } from "./doEverything";
 
 type Job<ArgNames extends string = ""> = {
   name: string;
   message: string;
   args?: ArgNames[];
   run: (args?: { [k in ArgNames]: string }) => Promise<void>;
+  retry?: boolean;
   separate?: boolean;
 };
 
@@ -35,6 +40,30 @@ export const jobs: Job<string>[] = [
     message: "All of the above",
     run: doEverything,
     separate: true,
+  },
+  {
+    name: "manifold-json",
+    message: "Process all Manifold markets from a JSON archive",
+    retry: false,
+    args: ["filename"],
+    run: async (args) => {
+      if (!args?.filename) {
+        throw new Error("filename is required");
+      }
+      await importMarketsFromJsonArchiveFile(args.filename);
+    },
+  },
+  {
+    name: "manifold-one",
+    message: "Download a single Manifold market",
+    retry: false,
+    args: ["id"],
+    run: async (args) => {
+      if (!args?.id) {
+        throw new Error("id is required");
+      }
+      await importSingleMarket(args.id);
+    },
   },
 ];
 
@@ -72,5 +101,9 @@ export async function executeJobByName(
     }
   }
 
-  await tryCatchTryAgain(job.run, jobArgs);
+  if (job.retry) {
+    await tryCatchTryAgain(job.run, jobArgs);
+  } else {
+    await job.run(jobArgs);
+  }
 }

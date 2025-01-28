@@ -1,76 +1,7 @@
 import { Question } from "@prisma/client";
 
-import { QuestionOption } from "../../common/types";
 import { prisma } from "../database/prisma";
-
-// This file includes comon types and functions for working with platforms.
-// The registry of all platforms is in a separate file, ./registry.ts, to avoid circular dependencies.
-
-export type QualityIndicators = {
-  stars: number;
-  numforecasts?: number | string;
-  numforecasters?: number;
-  liquidity?: number | string;
-  volume?: number;
-  volume7Days?: number;
-  volume24Hours?: number;
-  address?: number;
-  tradevolume?: string;
-  pool?: any;
-  createdTime?: any;
-  shares_volume?: any;
-  yes_bid?: any;
-  yes_ask?: any;
-  spread?: any;
-  open_interest?: any;
-  trade_volume?: any;
-};
-
-export type FetchedQuestion = Omit<
-  Question,
-  | "extra"
-  | "qualityindicators"
-  | "fetched"
-  | "firstSeen"
-  | "platform"
-  | "options"
-> & {
-  extra?: object; // required in DB but annoying to return empty; also this is slightly stricter than Prisma's JsonValue
-  options: QuestionOption[]; // stronger type than Prisma's JsonValue
-  qualityindicators: Omit<QualityIndicators, "stars">; // slightly stronger type than Prisma's JsonValue
-};
-
-// fetcher should return null if platform failed to fetch questions for some reason
-type PlatformFetcherV1 = () => Promise<FetchedQuestion[] | null>;
-
-type PlatformFetcherV2Result = {
-  questions: FetchedQuestion[];
-  // if partial is true then we won't cleanup old questions from the database; this is useful when manually invoking a fetcher with arguments for updating a single question
-  partial: boolean;
-} | null;
-
-type PlatformFetcherV2<ArgNames extends string> = (opts: {
-  args?: { [k in ArgNames]: string };
-}) => Promise<PlatformFetcherV2Result>;
-
-// using "" as ArgNames default is technically incorrect, but shouldn't cause any real issues
-// (I couldn't find a better solution for signifying an empty value, though there probably is one)
-export type Platform<ArgNames extends string = ""> = {
-  name: string; // short name for ids and `platform` db column, e.g. "xrisk"
-  label: string; // longer name for displaying on frontend etc., e.g. "X-risk estimates"
-  color: string; // used on frontend
-  calculateStars: (question: FetchedQuestion) => number;
-} & (
-  | {
-      version: "v1";
-      fetcher?: PlatformFetcherV1;
-    }
-  | {
-      version: "v2";
-      fetcherArgs?: ArgNames[];
-      fetcher?: PlatformFetcherV2<ArgNames>;
-    }
-);
+import { FetchedQuestion, Platform } from "../types";
 
 // Typing notes:
 // There's a difference between prisma's Question type (type returned from `find` and `findMany`) and its input types due to JsonValue vs InputJsonValue mismatch.
@@ -143,6 +74,8 @@ export async function processPlatform<T extends string = "">(
     return;
   }
 
+  // Bulk update, optimized for performance.
+
   const oldQuestions = await prisma.question.findMany({
     where: {
       platform: platform.name,
@@ -212,9 +145,3 @@ export async function processPlatform<T extends string = "">(
         .join(", ")
   );
 }
-
-export type PlatformConfig = {
-  name: string;
-  label: string;
-  color: string;
-};

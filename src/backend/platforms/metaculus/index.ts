@@ -1,9 +1,7 @@
-import {
-  FetchedQuestion,
-  Platform,
-} from '../';
-import { average } from '../../../utils';
-import { sleep } from '../../utils/sleep';
+import { FetchedQuestion, Platform } from "@/backend/types";
+
+import { average } from "../../../utils";
+import { sleep } from "../../utils/sleep";
 import {
   ApiCommon,
   ApiMultipleQuestions,
@@ -11,7 +9,7 @@ import {
   ApiQuestion,
   fetchApiQuestions,
   fetchSingleApiQuestion,
-} from './api';
+} from "./api";
 
 const platformName = "metaculus";
 const now = new Date().toISOString();

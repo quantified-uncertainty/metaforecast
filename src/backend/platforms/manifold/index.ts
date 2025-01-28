@@ -1,12 +1,11 @@
+import { FetchedQuestion, Platform } from "@/backend/types";
+
 import { average } from "../../../utils";
-import { FetchedQuestion, Platform } from "../index.js";
-import { fetchAllMarkets, ManifoldMarket } from "./api";
+import { fetchAllMarketsLite } from "./api";
+import { ManifoldLiteMarket } from "./apiSchema";
 
 /* Definitions */
 const platformName = "manifold";
-
-// See https://docs.manifold.markets/api
-const ENDPOINT = "https://api.manifold.markets/v0/markets";
 
 function showStatistics(results: FetchedQuestion[]) {
   console.log(`Num unresolved markets: ${results.length}`);
@@ -30,13 +29,15 @@ function showStatistics(results: FetchedQuestion[]) {
   );
 }
 
-function processPredictions(predictions: ManifoldMarket[]): FetchedQuestion[] {
+function processPredictions(
+  predictions: ManifoldLiteMarket[]
+): FetchedQuestion[] {
   const results: FetchedQuestion[] = predictions
     .filter(
       (
         p
-      ): p is ManifoldMarket & {
-        probability: NonNullable<ManifoldMarket["probability"]>;
+      ): p is ManifoldLiteMarket & {
+        probability: NonNullable<ManifoldLiteMarket["probability"]>;
       } => p.isResolved && p.probability !== undefined
     )
     .map((prediction) => {
@@ -80,7 +81,7 @@ export const manifold: Platform = {
   color: "#793466",
   version: "v1",
   async fetcher() {
-    const data = await fetchAllMarkets();
+    const data = await fetchAllMarketsLite();
     const results = processPredictions(data); // somehow needed
     showStatistics(results);
     return results;
