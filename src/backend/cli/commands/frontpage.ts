@@ -5,7 +5,7 @@ import { rebuildFrontpage } from "@/backend/frontpage";
 export function addFrontpageCommand(program: Command) {
   program
     .command("frontpage")
-    .description("Rebuild frontpage")
+    .description("rebuild frontpage")
     .action(async () => {
       await rebuildFrontpage();
     });

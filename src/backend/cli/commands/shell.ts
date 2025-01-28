@@ -12,6 +12,7 @@ export function addShellCommand(program: Command) {
   program
     .command("shell", { isDefault: true })
     .argument("[command]")
+    .description("interactive shell")
     .action(async (command) => {
       // if command name would be known, it would be handled by other commands
       if (command) {

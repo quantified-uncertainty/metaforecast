@@ -11,9 +11,9 @@ import { addShellCommand } from "./commands/shell";
 function makeProgram() {
   const program = new Command();
 
+  addPlatformCommands(program);
   addElasticCommand(program);
   addFrontpageCommand(program);
-  addPlatformCommands(program);
   addAllCommand(program);
 
   addShellCommand(program);

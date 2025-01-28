@@ -7,7 +7,7 @@ export function addPlatformCommands(program: Command) {
   for (const platform of getPlatforms()) {
     const command = program
       .command(platform.name)
-      .description(`Download predictions from ${platform.name}`)
+      .description(`download predictions from ${platform.name}`)
       .action(async () => {
         await processPlatform(platform);
       });

@@ -34,5 +34,8 @@ export async function processAll() {
 }
 
 export function addAllCommand(program: Command) {
-  program.command("all").action(processAll);
+  program
+    .command("all")
+    .description("process all platforms and rebuild elasticsearch database")
+    .action(processAll);
 }
