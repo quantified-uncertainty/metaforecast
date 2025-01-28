@@ -1,3 +1,4 @@
+import { type Command } from "@commander-js/extra-typings";
 import { Question } from "@prisma/client";
 
 import { QuestionOption } from "@/common/types";
@@ -44,28 +45,25 @@ type PlatformFetcherV2Result = {
   // if partial is true then we won't cleanup old questions from the database; this is useful when manually invoking a fetcher with arguments for updating a single question
   partial: boolean;
 } | null;
-type PlatformFetcherV2<ArgNames extends string> = (opts: {
-  args?: {
-    [k in ArgNames]: string;
-  };
-}) => Promise<PlatformFetcherV2Result>;
+type PlatformFetcherV2 = () => Promise<PlatformFetcherV2Result>;
 
 // using "" as ArgNames default is technically incorrect, but shouldn't cause any real issues
 // (I couldn't find a better solution for signifying an empty value, though there probably is one)
-export type Platform<ArgNames extends string = ""> = {
+export type Platform = {
   name: string; // short name for ids and `platform` db column, e.g. "xrisk"
   label: string; // longer name for displaying on frontend etc., e.g. "X-risk estimates"
   color: string; // used on frontend
   calculateStars: (question: FetchedQuestion) => number;
+  // extended commander configuration, e.g. subcommands
+  extendCliCommand?: (command: Command) => void;
 } & (
   | {
       version: "v1";
-      fetcher?: PlatformFetcherV1;
+      fetcher: PlatformFetcherV1;
     }
   | {
       version: "v2";
-      fetcherArgs?: ArgNames[];
-      fetcher?: PlatformFetcherV2<ArgNames>;
+      fetcher?: PlatformFetcherV2;
     }
 );
 

@@ -1,81 +1,29 @@
 import "dotenv/config";
 
-import readline from "readline";
+import { Command } from "@commander-js/extra-typings";
 
-import { executeJobByName, jobs } from "./jobs";
+import { addAllCommand } from "./commands/all";
+import { addElasticCommand } from "./commands/elastic";
+import { addFrontpageCommand } from "./commands/frontpage";
+import { addPlatformCommands } from "./commands/platform-commands";
+import { addShellCommand } from "./commands/shell";
 
-function cyan(str: string) {
-  return `\x1b[36m${str}\x1b[0m`;
+function makeProgram() {
+  const program = new Command();
+
+  addElasticCommand(program);
+  addFrontpageCommand(program);
+  addPlatformCommands(program);
+  addAllCommand(program);
+
+  addShellCommand(program);
+
+  return program;
 }
 
-function generateWhatToDoMessage() {
-  const completeMessages = [
-    ...jobs.map((job) => {
-      return (
-        (job.separate ? "\n" : "") +
-        `[${cyan(job.name)}]:`.padStart(30) +
-        " " +
-        job.message
-      );
-    }),
-    `\nChoose one option, wisely: `,
-  ].join("\n");
-
-  return completeMessages;
+function main() {
+  const program = makeProgram();
+  program.parse();
 }
 
-const whatToDoMessage = generateWhatToDoMessage();
-
-async function askForJobName() {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-
-  const question = (query: string) => {
-    return new Promise((resolve: (s: string) => void) => {
-      rl.question(query, resolve);
-    });
-  };
-
-  const answer = await question(whatToDoMessage);
-  rl.close();
-
-  return answer;
-}
-
-async function pickJob(): Promise<[string, { [k: string]: string }]> {
-  if (process.argv.length < 3) {
-    const jobName = await askForJobName();
-    return [jobName, {}]; // e.g., pnpm run cli polymarket
-  }
-
-  const jobName = process.argv[2];
-  if ((process.argv.length - 3) % 2) {
-    throw new Error("Number of extra arguments must be even");
-  }
-
-  const args: { [k: string]: string } = {};
-  for (let i = 3; i < process.argv.length; i += 2) {
-    let argName = process.argv[i];
-    const argValue = process.argv[i + 1];
-    if (argName.slice(0, 2) !== "--") {
-      throw new Error(`${argName} should start with --`);
-    }
-    argName = argName.slice(2);
-    args[argName] = argValue;
-  }
-
-  return [jobName, args];
-}
-
-/* BODY */
-async function commandLineUtility() {
-  // TODO - use commander or inquirer
-  const [jobName, jobArgs] = await pickJob();
-
-  await executeJobByName(jobName, jobArgs);
-  process.exit();
-}
-
-commandLineUtility();
+main();

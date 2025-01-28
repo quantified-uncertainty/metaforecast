@@ -91,4 +91,8 @@ export const guesstimate: Platform & {
   version: "v1",
   fetchQuestion,
   calculateStars: (q) => (q.description?.length > 250 ? 2 : 1),
+  fetcher: async () => {
+    console.log(`Platform Guesstimate doesn't have a fetcher, skipping`);
+    return null;
+  },
 };

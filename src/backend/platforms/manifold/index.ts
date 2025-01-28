@@ -3,6 +3,10 @@ import { FetchedQuestion, Platform } from "@/backend/types";
 import { average } from "../../../utils";
 import { fetchAllMarketsLite } from "./api";
 import { ManifoldLiteMarket } from "./apiSchema";
+import {
+  importMarketsFromJsonArchiveFile,
+  importSingleMarket,
+} from "./extended";
 
 /* Definitions */
 const platformName = "manifold";
@@ -80,12 +84,33 @@ export const manifold: Platform = {
   label: "Manifold Markets",
   color: "#793466",
   version: "v1",
+
+  extendCliCommand(command) {
+    command
+      .command("fetch-one")
+      .argument("<id>", "Fetch a single question by id")
+      .description(
+        "Saves only to the extended tables, not to the main 'questions' table"
+      )
+      .action(async (id) => {
+        await importSingleMarket(id);
+      });
+
+    command
+      .command("json-archive")
+      .argument("<filename>", "Filename of the JSON archive")
+      .action(async (filename) => {
+        await importMarketsFromJsonArchiveFile(filename);
+      });
+  },
+
   async fetcher() {
     const data = await fetchAllMarketsLite();
     const results = processPredictions(data); // somehow needed
     showStatistics(results);
     return results;
   },
+
   calculateStars(data) {
     const nuno = () =>
       (data.qualityindicators.volume24Hours || 0) > 100 ||

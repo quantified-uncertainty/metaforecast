@@ -19,7 +19,7 @@ type PreparedQuestion = Omit<
 
 export function prepareQuestion(
   q: FetchedQuestion,
-  platform: Platform<any>
+  platform: Platform
 ): PreparedQuestion {
   return {
     extra: {},
@@ -47,33 +47,17 @@ export async function upsertSingleQuestion(
   // TODO - update history?
 }
 
-export async function processPlatform<T extends string = "">(
-  platform: Platform<T>,
-  args?: {
-    [k in T]: string;
-  }
-) {
-  if (!platform.fetcher) {
-    console.log(`Platform ${platform.name} doesn't have a fetcher, skipping`);
-    return;
-  }
-  const result =
-    platform.version === "v1"
-      ? { questions: await platform.fetcher(), partial: false } // this is not exactly PlatformFetcherV2Result, since `questions` can be null
-      : await platform.fetcher({ args });
+type SaveStats = {
+  created?: number;
+  updated?: number;
+  deleted?: number;
+};
 
-  if (!result) {
-    console.log(`Platform ${platform.name} didn't return any results`);
-    return;
-  }
-
-  const { questions: fetchedQuestions, partial } = result;
-
-  if (!fetchedQuestions || !fetchedQuestions.length) {
-    console.log(`Platform ${platform.name} didn't return any results`);
-    return;
-  }
-
+export async function saveQuestions(
+  platform: Platform,
+  fetchedQuestions: FetchedQuestion[],
+  partial: boolean
+): Promise<SaveStats> {
   // Bulk update, optimized for performance.
 
   const oldQuestions = await prisma.question.findMany({
@@ -101,7 +85,7 @@ export async function processPlatform<T extends string = "">(
     }
   }
 
-  const stats: { created?: number; updated?: number; deleted?: number } = {};
+  const stats: SaveStats = {};
 
   await prisma.question.createMany({
     data: createdQuestions.map((q) => ({
@@ -137,6 +121,33 @@ export async function processPlatform<T extends string = "">(
       idref: q.id,
     })),
   });
+
+  return stats;
+}
+
+export async function processPlatform(platform: Platform) {
+  if (!platform.fetcher) {
+    console.log(`Platform ${platform.name} doesn't have a fetcher, skipping`);
+    return;
+  }
+  const result =
+    platform.version === "v1"
+      ? { questions: await platform.fetcher(), partial: false } // this is not exactly PlatformFetcherV2Result, since `questions` can be null
+      : await platform.fetcher();
+
+  if (!result) {
+    console.log(`Platform ${platform.name} didn't return any results`);
+    return;
+  }
+
+  const { questions: fetchedQuestions, partial } = result;
+
+  if (!fetchedQuestions || !fetchedQuestions.length) {
+    console.log(`Platform ${platform.name} didn't return any results`);
+    return;
+  }
+
+  const stats = await saveQuestions(platform, fetchedQuestions, partial);
 
   console.log(
     "Done, " +
