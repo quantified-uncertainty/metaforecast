@@ -1,3 +1,9 @@
+## Move to Squiggle monorepo
+
+**This repository is deprecated.**
+
+To make things easier to maintain by [QURI](https://quantifieduncertainty.org/) team, we moved Metaforecast source code to [Squiggle monorepo](https://github.com/quantified-uncertainty/squiggle). Refer to [apps/metaforecast](https://github.com/quantified-uncertainty/squiggle/tree/main/apps/metaforecast) for the latest source code.
+
 ## What this is
 
 [Metaforecast](https://metaforecast.org) is a search engine for probabilities from various prediction markes and forecasting platforms. Try searching "Trump", "China" or "Semiconductors".
