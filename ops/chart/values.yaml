@@ -1,7 +1,7 @@
 image:
   name: ghcr.io/quantified-uncertainty/metaforecast
   # do not edit; this tag will be updated by the CI GitHub Action on each commit
-  tag: sha-474261cff1e4b5adbb90c7a2674e9ad5ccbb962d
+  tag: sha-5cab2fb719811d0532bf2e379c652c7aff5d824e
 
 # Secret; you should create this in your k8s cluster.
 envSecret: metaforecast-env
