@@ -118,4 +118,3 @@ Overall, the services which we use are:
 - [ ] Find a long-term mantainer for this project
 - [ ] Allow users to record their own predictions
 - [ ] Release snapshots (I think @niplav is working on this)
-- [ ] ...
